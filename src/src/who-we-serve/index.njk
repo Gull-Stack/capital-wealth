@@ -1,0 +1,145 @@
+---
+layout: layouts/base.njk
+title: "Who We Serve | Retirement Planning for Utah Families | Capital Wealth Advisors"
+description: "Capital Wealth Advisors serves retirees, diligent savers with $500K+, and tax-conscious planners in Utah and nationwide. Learn if we're the right fit for you."
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Who We Serve", url: "/who-we-serve/" }
+---
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Who We Serve</h1>
+            <p class="hero-subtitle">We work with families who have saved diligently and want expert guidance to make the most of their retirement.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Client Profiles -->
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>Our Ideal Clients</h2>
+            <p class="text-lg">We specialize in working with families who share these characteristics.</p>
+        </div>
+
+        <div class="grid grid-cols-3">
+            {% for client in site.whoWeServe %}
+            <div class="card">
+                <h3 class="text-accent">{{ client.title }}</h3>
+                <p>{{ client.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Detailed Profiles -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="text-center mb-xl">Do Any of These Sound Like You?</h2>
+
+        <div class="grid grid-cols-2">
+            <div class="card">
+                <h3>Approaching Retirement (Age 55-65)</h3>
+                <p>You've spent decades saving and are now within striking distance of retirement. You need answers to critical questions:</p>
+                <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>Do I have enough to retire?</li>
+                    <li>When should I claim Social Security?</li>
+                    <li>How do I turn savings into income?</li>
+                    <li>What about healthcare before Medicare?</li>
+                    <li>How will taxes change in retirement?</li>
+                </ul>
+                <a href="/services/retirement-money-map/" class="btn btn-secondary mt-lg">See Our Planning Process</a>
+            </div>
+
+            <div class="card">
+                <h3>Recently Retired (Age 62-70)</h3>
+                <p>You've made the leap into retirement and need to optimize your new financial reality:</p>
+                <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>Am I withdrawing from the right accounts?</li>
+                    <li>Should I do Roth conversions now?</li>
+                    <li>How do I navigate Medicare and IRMAA?</li>
+                    <li>Is my portfolio positioned correctly?</li>
+                    <li>What about Required Minimum Distributions?</li>
+                </ul>
+                <a href="/services/tax-planning/" class="btn btn-secondary mt-lg">Tax-Efficient Strategies</a>
+            </div>
+
+            <div class="card">
+                <h3>Established Retirees (Age 70+)</h3>
+                <p>You've been retired for years and want to preserve and transfer your wealth:</p>
+                <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>How do I manage RMDs efficiently?</li>
+                    <li>Is my estate plan up to date?</li>
+                    <li>Am I being tax-efficient with withdrawals?</li>
+                    <li>Should I consider charitable strategies?</li>
+                    <li>Is my portfolio still appropriate?</li>
+                </ul>
+                <a href="/services/estate-planning/" class="btn btn-secondary mt-lg">Legacy Planning</a>
+            </div>
+
+            <div class="card">
+                <h3>Federal Employees</h3>
+                <p>You have a unique benefits package that requires specialized knowledge:</p>
+                <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>How do I maximize my FERS annuity?</li>
+                    <li>What's the best TSP strategy for me?</li>
+                    <li>Should I keep FEGLI into retirement?</li>
+                    <li>How does FEHB work with Medicare?</li>
+                    <li>When is the optimal time to retire?</li>
+                </ul>
+                <a href="/services/federal-benefits/" class="btn btn-secondary mt-lg">Federal Benefits Planning</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Minimum Requirements -->
+<section class="section">
+    <div class="container">
+        <div class="text-center">
+            <h2>Minimum Requirements</h2>
+            <p class="text-lg">To provide the level of service our clients expect, we work with families who have:</p>
+
+            <div class="grid grid-cols-3 mt-xl">
+                <div class="card">
+                    <div class="case-study-metric">$500K+</div>
+                    <div class="case-study-label">Retirement Savings</div>
+                    <p class="mt-md">Enough savings to benefit from comprehensive planning strategies.</p>
+                </div>
+
+                <div class="card">
+                    <div class="case-study-metric">Retirement</div>
+                    <div class="case-study-label">Focus Area</div>
+                    <p class="mt-md">Approaching retirement, recently retired, or already in retirement.</p>
+                </div>
+
+                <div class="card">
+                    <div class="case-study-metric">Partnership</div>
+                    <div class="case-study-label">Mindset</div>
+                    <p class="mt-md">Willing to engage in a collaborative, ongoing planning relationship.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-dark">
+    <div class="container">
+        <div class="text-center">
+            <h2>Think We Might Be the Right Fit?</h2>
+            <p class="text-lg">Schedule a complimentary consultation to discuss your situation and how we can help.</p>
+
+            <div class="hero-cta mt-lg">
+                <a href="/contact/" class="btn btn-primary btn-lg">Schedule a Consultation</a>
+                <a href="tel:{{ site.phone }}" class="btn btn-secondary btn-lg">Call {{ site.phone }}</a>
+            </div>
+
+            <p class="mt-md text-muted">No obligation. No pressure. Just a conversation about your financial future.</p>
+        </div>
+    </div>
+</section>

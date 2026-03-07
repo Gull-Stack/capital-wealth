@@ -1,0 +1,216 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Capital Wealth Advisors",
+  "alternateName": ["CWA", "Capital Wealth"],
+  "description": "Fiduciary financial advisor in Lehi, Utah specializing in retirement income planning, tax-efficient strategies, 401(k) rollovers, and Social Security optimization. Founded 2010.",
+  "url": "https://capitalwealth.com",
+  "sameAs": [
+    "https://www.linkedin.com/company/capital-wealth-advisors",
+    "https://www.facebook.com/CapitalWealthAdvisors"
+  ],
+  "logo": "https://capitalwealth.com/assets/images/logo.png",
+  "image": "https://capitalwealth.com/assets/images/office.jpg",
+  "telephone": "+1-801-210-2800",
+  "email": "info@capitalwealth.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1850 W Ashton Blvd, Ste 175",
+    "addressLocality": "Lehi",
+    "addressRegion": "UT",
+    "postalCode": "84043",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.4138,
+    "longitude": -111.8771
+  },
+  "foundingDate": "2010",
+  "founder": {
+    "@type": "Person",
+    "name": "Michael Stevens",
+    "jobTitle": "Investment Adviser Representative",
+    "description": "BS Business Management from Utah Valley University, Series 66 certified, California insurance license #0G96805, Board member Junior Achievement of Utah"
+  },
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "Michael Stevens",
+      "jobTitle": "Founder & Lead Advisor"
+    },
+    {
+      "@type": "Person", 
+      "name": "Brent Thompson",
+      "jobTitle": "Advisor"
+    }
+  ],
+  "areaServed": {
+    "@type": "State",
+    "name": "Utah"
+  },
+  "serviceArea": {
+    "@type": "AdministrativeArea",
+    "name": "United States"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Financial Advisory Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tax-Efficient Retirement Strategies",
+          "description": "Minimize taxes in retirement with strategic planning and optimization."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Comprehensive Portfolio Management",
+          "description": "Professional investment management aligned with your retirement goals."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Personalized Retirement Money Map",
+          "description": "Our proprietary planning tool creates your personalized financial blueprint."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "401(k) & IRA Rollovers",
+          "description": "Strategic rollover guidance to maximize your retirement savings."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Social Security Optimization",
+          "description": "Maximize your Social Security benefits with strategic claiming strategies."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Medicare & IRMAA Planning",
+          "description": "Navigate Medicare options and minimize IRMAA surcharges."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Estate & Legacy Planning",
+          "description": "Protect and transfer your wealth to future generations efficiently."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Federal Employee Benefits",
+          "description": "Specialized planning for federal employees and their unique benefits."
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "47",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "priceRange": "Fee-only advisory services based on assets under management",
+  "paymentAccepted": "Advisory fees",
+  "currenciesAccepted": "USD",
+  "openingHours": [
+    "Mo-Fr 09:00-17:00"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "knowsAbout": [
+    "Retirement Income Planning",
+    "Tax-Efficient Investing", 
+    "Social Security Optimization",
+    "Medicare Planning",
+    "IRMAA Avoidance",
+    "Roth IRA Conversions",
+    "401(k) Rollovers",
+    "Estate Planning Coordination",
+    "Federal Employee Benefits",
+    "Utah Tax Planning",
+    "Fiduciary Financial Advice"
+  ],
+  "slogan": "Strategic Income & Tax Planning for Your Retirement",
+  "parentOrganization": null,
+  "subOrganization": [],
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "Junior Achievement of Utah",
+      "description": "Board member organization focused on financial literacy education"
+    }
+  ],
+  "award": [],
+  "certification": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Series 66 - Uniform Combined State Law Examination",
+      "credentialCategory": "Investment Adviser Representative"
+    },
+    {
+      "@type": "EducationalOccupationalCredential", 
+      "name": "California Insurance License #0G96805",
+      "credentialCategory": "Insurance License"
+    }
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "Capital Wealth Advisors",
+    "logo": "https://capitalwealth.com/assets/images/logo.png"
+  },
+  "keywords": [
+    "financial advisor",
+    "retirement planning",
+    "Lehi Utah",
+    "fiduciary advisor",
+    "tax planning",
+    "Social Security optimization",
+    "Medicare planning", 
+    "401k rollover",
+    "IRA planning",
+    "estate planning",
+    "federal employee benefits",
+    "investment management",
+    "retirement income",
+    "IRMAA planning"
+  ],
+  "mainEntityOfPage": "https://capitalwealth.com",
+  "potentialAction": {
+    "@type": "ScheduleAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://capitalwealth.com/contact/"
+    },
+    "result": {
+      "@type": "Event",
+      "name": "Financial Planning Consultation"
+    }
+  }
+}

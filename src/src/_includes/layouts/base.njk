@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or site.title }}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ title or site.title }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/logos/favicon.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <!-- Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "{{ site.title }}",
+        "description": "{{ site.description }}",
+        "url": "{{ site.url }}",
+        "telephone": "{{ site.phone }}",
+        "email": "{{ site.email }}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ site.address.street }}",
+            "addressLocality": "{{ site.address.city }}",
+            "addressRegion": "{{ site.address.state }}",
+            "postalCode": "{{ site.address.zip }}",
+            "addressCountry": "US"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "{{ site.founder.name }}",
+            "jobTitle": "{{ site.founder.title }}"
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "Utah"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Financial Advisory Services",
+            "itemListElement": [
+                {% for service in site.services %}
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "{{ service.name }}",
+                        "description": "{{ service.description }}"
+                    }
+                }{% if not loop.last %},{% endif %}
+                {% endfor %}
+            ]
+        }
+    }
+    </script>
+    
+    {% if breadcrumbs %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {% for crumb in breadcrumbs %}
+            {
+                "@type": "ListItem",
+                "position": {{ loop.index }},
+                "name": "{{ crumb.name }}",
+                "item": "{{ site.url }}{{ crumb.url }}"
+            }{% if not loop.last %},{% endif %}
+            {% endfor %}
+        ]
+    }
+    </script>
+    {% endif %}
+    
+    {% if faqSchema %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {% for faq in faqSchema %}
+            {
+                "@type": "Question",
+                "name": "{{ faq.question }}",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{ faq.answer }}"
+                }
+            }{% if not loop.last %},{% endif %}
+            {% endfor %}
+        ]
+    }
+    </script>
+    {% endif %}
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="/assets/images/logos/logo-white.png" alt="Capital Wealth Advisors" style="height: 50px; width: auto;">
+                        </a>
+                    </div>
+                    
+                    <div class="nav-links" id="navLinks">
+                        <a href="/about/">About</a>
+                        <a href="/services/">Services</a>
+                        <a href="/who-we-serve/">Who We Serve</a>
+                        <a href="/case-studies/">Case Studies</a>
+                        <a href="/contact/">Contact</a>
+                        <a href="tel:{{ site.phone }}" class="nav-phone">{{ site.phone }}</a>
+                    </div>
+                    
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/assets/images/logos/logo-white.png" alt="Capital Wealth Advisors" style="height: 60px; width: auto; margin-bottom: 1rem;">
+                    </div>
+                    <p class="footer-tagline">Strategic Income & Tax Planning for Your Retirement</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>{{ site.address.street }}<br>
+                       {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</p>
+                    <p><a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
+                    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        {% for service in site.services | slice(0, 4) %}
+                        <li><a href="/services/{{ service.slug }}/">{{ service.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="/faq/">FAQ</a></li>
+                        <li><a href="/disclosures/">Disclosures</a></li>
+                        <li><a href="/brand-facts/">About Us</a></li>
+                        <li><a href="/guides/best-financial-advisor-lehi-utah-2026/">Planning Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; {{ "now" | date("%Y") }} Capital Wealth Advisors. All rights reserved.</p>
+                    <p>Investment advisory services offered through Capital Wealth Advisors. Michael Stevens, IAR.</p>
+                    <p><a href="/disclosures/">Important Disclosures</a></p>
+                </div>
+                <div class="footer-credit">
+                    <p>Website by <a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+    // Transparent header → solid on scroll
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Scroll reveal animations (B.O.S.S. style)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+      observer.observe(el);
+    });
+    </script>
+</body>
+</html>

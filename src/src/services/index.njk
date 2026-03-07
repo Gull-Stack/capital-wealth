@@ -1,0 +1,273 @@
+---
+layout: layouts/base.njk
+title: "Financial Advisory Services | Retirement Planning | Capital Wealth Advisors"
+description: "Comprehensive retirement planning services including tax-efficient strategies, portfolio management, Social Security optimization, Medicare planning, and estate planning. Serving Utah families since 2010."
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Services", url: "/services/" }
+---
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Comprehensive Retirement Planning Services</h1>
+            <p class="hero-subtitle">Everything you need to create, implement, and maintain a successful retirement strategy.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>Our Core Services</h2>
+            <p class="text-lg">We specialize in retirement income planning and tax optimization for families with $500K+ in retirement savings.</p>
+        </div>
+        
+        <div class="grid grid-cols-2">
+            {% for service in site.services %}
+            <div class="card">
+                <div class="service-tag">Service {{ loop.index }}</div>
+                <h3>{{ service.name }}</h3>
+                <p>{{ service.description }}</p>
+                <a href="/services/{{ service.slug }}/" class="btn btn-secondary mt-md">Learn More</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Our Process -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="text-center mb-xl">Our Comprehensive Planning Process</h2>
+        
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="process-number">1</div>
+                <h3>Discovery & Analysis</h3>
+                <p>We gather all your financial information and analyze your current situation, goals, and risk tolerance.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">2</div>
+                <h3>Strategy Development</h3>
+                <p>Create a personalized retirement plan with tax-efficient strategies and income optimization.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">3</div>
+                <h3>Implementation</h3>
+                <p>Execute your plan with proper account structures, investments, and legal documentation.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">4</div>
+                <h3>Ongoing Management</h3>
+                <p>Regular reviews and adjustments to keep your plan optimized as laws and life circumstances change.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Categories -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-xl">Service Categories</h2>
+        
+        <div class="grid grid-cols-3">
+            <div class="card">
+                <h3 class="text-accent">Income Planning</h3>
+                <p>Strategies to create reliable retirement income streams that last throughout your retirement.</p>
+                
+                <div class="mt-md">
+                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                        <li>Tax-efficient withdrawal strategies</li>
+                        <li>Social Security optimization</li>
+                        <li>Pension maximization</li>
+                        <li>Annuity analysis</li>
+                        <li>Roth conversion strategies</li>
+                    </ul>
+                </div>
+                
+                <a href="/services/tax-planning/" class="btn btn-secondary mt-lg">Explore Income Planning</a>
+            </div>
+            
+            <div class="card">
+                <h3 class="text-accent">Investment Management</h3>
+                <p>Professional portfolio management aligned with your retirement timeline and risk tolerance.</p>
+                
+                <div class="mt-md">
+                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                        <li>Asset allocation strategies</li>
+                        <li>Risk management</li>
+                        <li>Tax-loss harvesting</li>
+                        <li>Rebalancing</li>
+                        <li>Performance monitoring</li>
+                    </ul>
+                </div>
+                
+                <a href="/services/portfolio-management/" class="btn btn-secondary mt-lg">Learn About Management</a>
+            </div>
+            
+            <div class="card">
+                <h3 class="text-accent">Protection Planning</h3>
+                <p>Safeguard your wealth and ensure your legacy is protected for future generations.</p>
+                
+                <div class="mt-md">
+                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                        <li>Estate planning coordination</li>
+                        <li>Trust strategies</li>
+                        <li>Insurance analysis</li>
+                        <li>Medicare planning</li>
+                        <li>Long-term care planning</li>
+                    </ul>
+                </div>
+                
+                <a href="/services/estate-planning/" class="btn btn-secondary mt-lg">Protect Your Legacy</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Specialized Services -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="text-center mb-xl">Specialized Planning Services</h2>
+        
+        <div class="grid grid-cols-2">
+            <div class="case-study">
+                <div class="case-study-metric">Federal</div>
+                <div class="case-study-label">Employee Benefits</div>
+                <h3>FERS, TSP, and Federal Benefits Planning</h3>
+                <p>Specialized strategies for federal employees including FERS optimization, TSP management, FEGLI analysis, and coordination with other federal benefits.</p>
+                
+                <div class="mt-md">
+                    <span class="service-tag">FERS Planning</span>
+                    <span class="service-tag">TSP Optimization</span>
+                    <span class="service-tag">FEGLI Analysis</span>
+                </div>
+                
+                <a href="/services/federal-benefits/" class="btn btn-primary mt-lg">Federal Benefits Planning</a>
+            </div>
+            
+            <div class="case-study">
+                <div class="case-study-metric">Money Map</div>
+                <div class="case-study-label">Proprietary Process</div>
+                <h3>Retirement Money Map</h3>
+                <p>Our signature planning tool that creates a visual roadmap of your financial future, showing exactly how your money will work throughout retirement.</p>
+                
+                <div class="mt-md">
+                    <span class="service-tag">Visual Planning</span>
+                    <span class="service-tag">Cash Flow Analysis</span>
+                    <span class="service-tag">Scenario Planning</span>
+                </div>
+                
+                <a href="/services/retirement-money-map/" class="btn btn-primary mt-lg">See the Money Map</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Who We Serve -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-xl">Who We Serve</h2>
+        
+        <div class="grid grid-cols-3">
+            {% for client in site.whoWeServe %}
+            <div class="card">
+                <h3 class="text-accent">{{ client.title }}</h3>
+                <p>{{ client.description }}</p>
+                
+                <div class="mt-lg">
+                    <a href="/who-we-serve/" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="text-center mt-xl">
+            <div class="card" style="max-width: 600px; margin: 0 auto;">
+                <h3 class="text-accent">Minimum Investment Requirement</h3>
+                <p>We work with families who have saved $500,000 or more for retirement. This allows us to provide the comprehensive planning and personal attention our clients deserve.</p>
+                
+                <div class="stats mt-lg">
+                    <div class="stat">
+                        <span class="stat-number">$500K</span>
+                        <span class="stat-label">Minimum Assets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Guarantees -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="text-center mb-xl">Our Service Commitments</h2>
+        
+        <div class="grid grid-cols-2">
+            <div class="process-step">
+                <div class="process-number">✓</div>
+                <h3>Fiduciary Standard</h3>
+                <p>We are legally obligated to act in your best interest at all times. No conflicts, no commissions, just honest advice.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">✓</div>
+                <h3>Transparent Fees</h3>
+                <p>Clear, upfront pricing with no hidden fees or surprise charges. You'll always know what you're paying and why.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">✓</div>
+                <h3>Ongoing Education</h3>
+                <p>We believe informed clients make better decisions. Expect regular education and clear explanations of all strategies.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">✓</div>
+                <h3>Proactive Communication</h3>
+                <p>Regular updates on your plan's progress and proactive communication about changes that might affect your strategy.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Getting Started -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-xl">Getting Started is Simple</h2>
+        
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="process-number">1</div>
+                <h3>Schedule Consultation</h3>
+                <p>Call {{ site.phone }} or use our online form to schedule your complimentary initial consultation.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">2</div>
+                <h3>Meet & Discover</h3>
+                <p>We'll discuss your goals, review your current situation, and explore how we can help optimize your retirement plan.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">3</div>
+                <h3>Begin Planning</h3>
+                <p>If we're a good fit, we'll start creating your personalized retirement strategy using our comprehensive planning process.</p>
+            </div>
+        </div>
+        
+        <div class="text-center mt-xl">
+            <h3>Ready to optimize your retirement strategy?</h3>
+            <div class="hero-cta mt-lg">
+                <a href="/contact/" class="btn btn-primary btn-lg">Schedule Consultation</a>
+                <a href="tel:{{ site.phone }}" class="btn btn-secondary btn-lg">Call {{ site.phone }}</a>
+            </div>
+        </div>
+    </div>
+</section>

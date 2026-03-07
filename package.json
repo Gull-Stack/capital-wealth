@@ -1,0 +1,16 @@
+{
+  "name": "capital-wealth-advisors",
+  "version": "1.0.0",
+  "description": "Capital Wealth Advisors - Financial Advisory Website",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "keywords": ["eleventy", "financial", "advisor", "retirement"],
+  "author": "GullStack",
+  "license": "MIT"
+}

@@ -1,0 +1,241 @@
+---
+layout: layouts/base.njk
+title: "Contact Capital Wealth Advisors | Schedule Consultation | Lehi, UT"
+description: "Schedule a consultation with Capital Wealth Advisors in Lehi, Utah. Call 801.210.2800 or email info@capitalwealth.com. Initial consultations are complimentary."
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Contact", url: "/contact/" }
+---
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Contact Capital Wealth Advisors</h1>
+            <p class="hero-subtitle">Ready to take control of your retirement planning? Let's start the conversation.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information -->
+<section class="section">
+    <div class="container">
+        <div class="grid grid-cols-2">
+            <!-- Contact Details -->
+            <div>
+                <h2>Get in Touch</h2>
+                <p class="text-lg">We're here to answer your retirement planning questions and help you create a financial strategy that works for your unique situation.</p>
+                
+                <div class="mt-xl">
+                    <div class="card">
+                        <h3 class="text-accent">Schedule a Consultation</h3>
+                        <p class="mb-lg">Initial consultations are complimentary for qualified families with $500K+ in retirement savings.</p>
+                        
+                        <div class="hero-cta">
+                            <a href="tel:{{ site.phone }}" class="btn btn-primary">Call {{ site.phone }}</a>
+                            <a href="mailto:{{ site.email }}" class="btn btn-secondary">Email Us</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-lg">
+                    <h3>Office Location</h3>
+                    <p>{{ site.address.street }}<br>
+                       {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</p>
+                    
+                    <h3 class="mt-lg">Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+                       Saturday: By appointment<br>
+                       Sunday: Closed</p>
+                    
+                    <h3 class="mt-lg">Emergency Contact</h3>
+                    <p>For urgent matters outside business hours, please call our main number and leave a detailed message. We will respond as quickly as possible.</p>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div>
+                <div class="card">
+                    <h3>Request a Consultation</h3>
+                    <p>Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
+                    
+                    <form class="mt-lg" action="#" method="post">
+                        <div style="margin-bottom: 1rem;">
+                            <label for="name" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Full Name *</label>
+                            <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Email Address *</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label for="phone" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label for="savings" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Retirement Savings Amount</label>
+                            <select id="savings" name="savings" style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
+                                <option value="">Please select</option>
+                                <option value="250k-500k">$250K - $500K</option>
+                                <option value="500k-1m">$500K - $1M</option>
+                                <option value="1m-2m">$1M - $2M</option>
+                                <option value="2m-plus">$2M+</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label for="retirement-timeline" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Retirement Timeline</label>
+                            <select id="retirement-timeline" name="retirement-timeline" style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
+                                <option value="">Please select</option>
+                                <option value="retired">Already retired</option>
+                                <option value="1-2-years">1-2 years</option>
+                                <option value="3-5-years">3-5 years</option>
+                                <option value="5-10-years">5-10 years</option>
+                                <option value="10-plus-years">10+ years</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="questions" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Questions or Comments</label>
+                            <textarea id="questions" name="questions" rows="4" placeholder="Tell us about your retirement planning goals or any specific questions you have..." style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem; resize: vertical;"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Request Consultation</button>
+                    </form>
+                    
+                    <p class="text-sm text-muted mt-md">By submitting this form, you agree to be contacted by Capital Wealth Advisors regarding your retirement planning needs. We respect your privacy and will never share your information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What to Expect -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="text-center mb-xl">What to Expect in Your Consultation</h2>
+        
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="process-number">1</div>
+                <h3>Discovery</h3>
+                <p>We'll discuss your current financial situation, retirement goals, and any concerns you have about your future.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">2</div>
+                <h3>Analysis</h3>
+                <p>We'll review your existing accounts, investment strategy, and identify opportunities for improvement.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="process-number">3</div>
+                <h3>Recommendations</h3>
+                <p>Based on our analysis, we'll provide initial recommendations and explain how we can help optimize your retirement plan.</p>
+            </div>
+        </div>
+        
+        <div class="text-center mt-xl">
+            <div class="card" style="max-width: 600px; margin: 0 auto;">
+                <h3 class="text-accent">No Pressure, Just Information</h3>
+                <p>Our initial consultation is educational. We'll provide valuable insights whether or not you decide to work with us. Our goal is to help you make informed decisions about your financial future.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Areas -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-xl">We Serve Clients Throughout Utah and Beyond</h2>
+        
+        <div class="grid grid-cols-2">
+            <div class="card">
+                <h3 class="text-accent">Local Utah Focus</h3>
+                <p>Based in Lehi, we serve families throughout the Salt Lake Valley and Utah County:</p>
+                <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>Lehi</li>
+                    <li>American Fork</li>
+                    <li>Pleasant Grove</li>
+                    <li>Orem</li>
+                    <li>Provo</li>
+                    <li>Salt Lake City</li>
+                    <li>West Jordan</li>
+                    <li>South Jordan</li>
+                    <li>Draper</li>
+                    <li>Sandy</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3 class="text-accent">Virtual Services Available</h3>
+                <p>We also serve clients nationwide through virtual meetings and digital planning tools. Our services include:</p>
+                <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>Video consultations</li>
+                    <li>Digital document sharing</li>
+                    <li>Online portfolio access</li>
+                    <li>Phone and email support</li>
+                    <li>Secure client portal</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Directions -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="text-center mb-xl">Directions to Our Office</h2>
+        
+        <div class="grid grid-cols-2">
+            <div>
+                <h3>{{ site.address.street }}</h3>
+                <h3>{{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</h3>
+                
+                <div class="mt-lg">
+                    <h4 class="text-accent">From Salt Lake City:</h4>
+                    <p>Take I-15 South to Exit 279 (Main Street/Lehi). Turn right on Main Street, then left on Ashton Boulevard. Our office building is on the right.</p>
+                    
+                    <h4 class="text-accent mt-lg">From Provo:</h4>
+                    <p>Take I-15 North to Exit 279 (Main Street/Lehi). Turn left on Main Street, then left on Ashton Boulevard. Our office building is on the right.</p>
+                    
+                    <h4 class="text-accent mt-lg">Parking:</h4>
+                    <p>Free parking is available in front of the building and in the adjacent parking lot.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Office Building Details</h3>
+                <p>We're located in a modern office complex with easy access and ample parking. Look for the Capital Wealth Advisors sign in the lobby directory.</p>
+                
+                <div class="mt-md">
+                    <span class="service-tag">Suite 175</span>
+                    <span class="service-tag">Second Floor</span>
+                    <span class="service-tag">Elevator Available</span>
+                </div>
+                
+                <p class="mt-lg">If you have trouble finding our office, please call {{ site.phone }} and we'll be happy to guide you in.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Emergency Contact -->
+<section class="section">
+    <div class="container">
+        <div class="text-center">
+            <h2>Have Questions? We're Here to Help</h2>
+            <p class="text-lg">Don't wait to start planning your financial future. Contact us today to schedule your complimentary consultation.</p>
+            
+            <div class="hero-cta mt-lg">
+                <a href="tel:{{ site.phone }}" class="btn btn-primary btn-lg">Call {{ site.phone }}</a>
+                <a href="mailto:{{ site.email }}" class="btn btn-secondary btn-lg">Email {{ site.email }}</a>
+            </div>
+            
+            <p class="mt-md text-muted">Initial consultations are complimentary for qualified families with $500K+ in retirement savings.</p>
+        </div>
+    </div>
+</section>

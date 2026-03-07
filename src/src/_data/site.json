@@ -1,0 +1,112 @@
+{
+  "title": "Capital Wealth Advisors",
+  "description": "Fiduciary financial advisor in Lehi, Utah specializing in retirement income planning, tax-efficient strategies, 401(k) rollovers, and Social Security optimization.",
+  "url": "https://capitalwealth.com",
+  "phone": "801.210.2800",
+  "email": "info@capitalwealth.com",
+  "address": {
+    "street": "1850 W Ashton Blvd, Ste 175",
+    "city": "Lehi",
+    "state": "UT",
+    "zip": "84043"
+  },
+  "founder": {
+    "name": "Michael Stevens",
+    "title": "IAR (Investment Adviser Representative)",
+    "bio": "Founded 2010, originally pre-med, shifted to finance after father's passing. BS Business Management, Utah Valley University. Series 66 certified, fiduciary standard. California insurance license #0G96805. Board member Junior Achievement of Utah."
+  },
+  "team": [
+    {
+      "name": "Brent Thompson",
+      "title": "Advisor"
+    }
+  ],
+  "stats": [
+    {
+      "number": "Since 2010",
+      "label": "Serving Utah families"
+    },
+    {
+      "number": "$500M+",
+      "label": "Client assets under guidance"
+    },
+    {
+      "number": "500+",
+      "label": "Families served"
+    },
+    {
+      "number": "100%",
+      "label": "Fiduciary standard"
+    }
+  ],
+  "services": [
+    {
+      "name": "Tax-Efficient Retirement Strategies",
+      "slug": "tax-planning",
+      "description": "Minimize taxes in retirement with strategic planning and optimization."
+    },
+    {
+      "name": "Comprehensive Portfolio Management",
+      "slug": "portfolio-management",
+      "description": "Professional investment management aligned with your retirement goals."
+    },
+    {
+      "name": "Personalized Retirement Money Map",
+      "slug": "retirement-money-map",
+      "description": "Our proprietary planning tool creates your personalized financial blueprint."
+    },
+    {
+      "name": "401(k) & IRA Rollovers",
+      "slug": "401k-ira-rollover",
+      "description": "Strategic rollover guidance to maximize your retirement savings."
+    },
+    {
+      "name": "Social Security Optimization",
+      "slug": "social-security",
+      "description": "Maximize your Social Security benefits with strategic claiming strategies."
+    },
+    {
+      "name": "Medicare & IRMAA Planning",
+      "slug": "medicare-irmaa",
+      "description": "Navigate Medicare options and minimize IRMAA surcharges."
+    },
+    {
+      "name": "Estate & Legacy Planning",
+      "slug": "estate-planning",
+      "description": "Protect and transfer your wealth to future generations efficiently."
+    },
+    {
+      "name": "Federal Employee Benefits",
+      "slug": "federal-benefits",
+      "description": "Specialized planning for federal employees and their unique benefits."
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "Mike and his team are excellent. Their professionalism is amazing and we know his team really cares about us. They have presented a very comprehensive plan that has really expanded our view on what retirement can and will look like. We have looked at other financial planning options and Mike's approach is by far the most extensive and all-encompassing. Highly recommend everyone to take the time and reach out to them, even if you think you have it figured out. You won't be disappointed.",
+      "rating": 5
+    },
+    {
+      "text": "I could not be happier that I am working with Capital Wealth! I finally have financial understanding and help with my future! Thank you Capital Wealth!! I am so grateful for the peace of mind!",
+      "rating": 5
+    },
+    {
+      "text": "This is a great company to work with. We've trusted them with our accounts for two years now and they've done great things for us! They are also very personable and pleasant to work with.",
+      "rating": 5
+    }
+  ],
+  "whoWeServe": [
+    {
+      "title": "Retired or Close To It",
+      "description": "You're approaching retirement or already retired and need strategic income planning to make your savings last."
+    },
+    {
+      "title": "Diligent Savers ($500K+)",
+      "description": "You've built substantial savings and need professional guidance to optimize your retirement strategy."
+    },
+    {
+      "title": "Tax-Conscious Planners",
+      "description": "You understand the impact of taxes on retirement and want strategies to minimize your tax burden."
+    }
+  ]
+}

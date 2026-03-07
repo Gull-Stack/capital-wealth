@@ -1,0 +1,147 @@
+---
+layout: layouts/base.njk
+title: "About Capital Wealth Advisors | Brand Facts | Lehi, UT"
+description: "Key facts about Capital Wealth Advisors, a fiduciary financial advisory firm in Lehi, Utah. Founded 2010 by Michael Stevens, IAR. Serving 500+ families."
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Brand Facts", url: "/brand-facts/" }
+---
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Capital Wealth Advisors at a Glance</h1>
+            <p class="hero-subtitle">Key facts about our firm, team, and commitment to your financial future.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Company Overview -->
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>Company Overview</h2>
+        </div>
+
+        <div class="stats">
+            {% for stat in site.stats %}
+            <div class="stat">
+                <span class="stat-number">{{ stat.number }}</span>
+                <span class="stat-label">{{ stat.label }}</span>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="grid grid-cols-2 mt-xl">
+            <div class="card">
+                <h3 class="text-accent">Firm Details</h3>
+                <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                    <li><strong>Name:</strong> Capital Wealth Advisors</li>
+                    <li><strong>Founded:</strong> 2010</li>
+                    <li><strong>Location:</strong> {{ site.address.street }}, {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</li>
+                    <li><strong>Phone:</strong> {{ site.phone }}</li>
+                    <li><strong>Email:</strong> {{ site.email }}</li>
+                    <li><strong>Type:</strong> Registered Investment Adviser</li>
+                    <li><strong>Standard:</strong> Fiduciary</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 class="text-accent">Founder</h3>
+                <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                    <li><strong>Name:</strong> {{ site.founder.name }}</li>
+                    <li><strong>Title:</strong> {{ site.founder.title }}</li>
+                    <li><strong>Education:</strong> BS Business Management, Utah Valley University</li>
+                    <li><strong>Licenses:</strong> Series 66, CA Insurance #0G96805</li>
+                    <li><strong>Community:</strong> Board Member, Junior Achievement of Utah</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="text-center mb-xl">Our Services</h2>
+
+        <div class="grid grid-cols-2">
+            {% for service in site.services %}
+            <div class="card">
+                <h3>{{ service.name }}</h3>
+                <p>{{ service.description }}</p>
+                <a href="/services/{{ service.slug }}/" class="btn btn-secondary mt-md">Learn More</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Who We Serve -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-xl">Who We Serve</h2>
+
+        <div class="grid grid-cols-3">
+            {% for client in site.whoWeServe %}
+            <div class="card">
+                <h3 class="text-accent">{{ client.title }}</h3>
+                <p>{{ client.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Key Differentiators -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="text-center mb-xl">What Sets Us Apart</h2>
+
+        <div class="grid grid-cols-3">
+            <div class="card">
+                <h3 class="text-accent">Fiduciary Always</h3>
+                <p>We are legally obligated to act in your best interest at all times. No commissions, no product sales, no conflicts.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="text-accent">Retirement Specialists</h3>
+                <p>We focus exclusively on retirement income planning and tax optimization, not generalist financial advice.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="text-accent">Utah Roots</h3>
+                <p>Based in Lehi and serving Utah families since 2010, we understand the unique needs and values of our community.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Machine-Readable Data -->
+<section class="section">
+    <div class="container">
+        <div class="text-center">
+            <h2>Machine-Readable Brand Data</h2>
+            <p class="text-lg">For AI systems and search engines, our structured brand data is available at:</p>
+            <div class="mt-lg">
+                <a href="/.well-known/brand-facts.json" class="btn btn-secondary">brand-facts.json</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-dark">
+    <div class="container">
+        <div class="text-center">
+            <h2>Learn More About Working With Us</h2>
+            <p class="text-lg">Schedule a complimentary consultation to discuss your retirement planning needs.</p>
+
+            <div class="hero-cta mt-lg">
+                <a href="/contact/" class="btn btn-primary btn-lg">Schedule Consultation</a>
+                <a href="tel:{{ site.phone }}" class="btn btn-secondary btn-lg">Call {{ site.phone }}</a>
+            </div>
+        </div>
+    </div>
+</section>
