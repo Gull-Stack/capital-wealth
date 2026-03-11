@@ -41,12 +41,17 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/services/social-security/</loc>
+    <loc>https://capitalwealth.com/services/401k-ira-rollover/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/services/tax-planning/</loc>
+    <loc>https://capitalwealth.com/services/estate-planning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/services/federal-benefits/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -61,17 +66,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/services/401k-ira-rollover/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/services/federal-benefits/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/services/estate-planning/</loc>
+    <loc>https://capitalwealth.com/services/portfolio-management/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -81,7 +76,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/services/portfolio-management/</loc>
+    <loc>https://capitalwealth.com/services/social-security/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/services/tax-planning/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
