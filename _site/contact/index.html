@@ -176,7 +176,7 @@
                     <div class="nav-links" id="navLinks">
                         <a href="/about/">About</a>
                         <a href="/services/">Services</a>
-                        <a href="/services/federal-benefits/">Federal Benefits</a>
+                        <a href="https://capital-wealth-federal.vercel.app" target="_blank" rel="noopener">Federal Benefits</a>
                         <a href="/who-we-serve/">Who We Serve</a>
                         <a href="/case-studies/">Case Studies</a>
                         <a href="/contact/">Contact</a>
@@ -247,7 +247,7 @@
                     <h3>Request a Consultation</h3>
                     <p>Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
                     
-                    <form class="mt-lg" action="#" method="post">
+                    <form class="mt-lg" id="contact-form">
                         <div style="margin-bottom: 1rem;">
                             <label for="name" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Full Name *</label>
                             <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
@@ -267,10 +267,10 @@
                             <label for="savings" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Retirement Savings Amount</label>
                             <select id="savings" name="savings" style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
                                 <option value="">Please select</option>
-                                <option value="250k-500k">$250K - $500K</option>
-                                <option value="500k-1m">$500K - $1M</option>
-                                <option value="1m-2m">$1M - $2M</option>
-                                <option value="2m-plus">$2M+</option>
+                                <option value="$250K - $500K">$250K - $500K</option>
+                                <option value="$500K - $1M">$500K - $1M</option>
+                                <option value="$1M - $2M">$1M - $2M</option>
+                                <option value="$2M+">$2M+</option>
                             </select>
                         </div>
                         
@@ -278,11 +278,11 @@
                             <label for="retirement-timeline" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Retirement Timeline</label>
                             <select id="retirement-timeline" name="retirement-timeline" style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
                                 <option value="">Please select</option>
-                                <option value="retired">Already retired</option>
-                                <option value="1-2-years">1-2 years</option>
-                                <option value="3-5-years">3-5 years</option>
-                                <option value="5-10-years">5-10 years</option>
-                                <option value="10-plus-years">10+ years</option>
+                                <option value="Already retired">Already retired</option>
+                                <option value="1-2 years">1-2 years</option>
+                                <option value="3-5 years">3-5 years</option>
+                                <option value="5-10 years">5-10 years</option>
+                                <option value="10+ years">10+ years</option>
                             </select>
                         </div>
                         
@@ -291,8 +291,56 @@
                             <textarea id="questions" name="questions" rows="4" placeholder="Tell us about your retirement planning goals or any specific questions you have..." style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem; resize: vertical;"></textarea>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Request Consultation</button>
+                        <!-- Honeypot -->
+                        <div style="position:absolute;left:-9999px;"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+                        
+                        <button type="submit" id="submit-btn" class="btn btn-primary btn-lg" style="width: 100%;">Request Consultation</button>
+                        <div id="form-status" style="margin-top: 12px; text-align: center; font-weight: 500;"></div>
                     </form>
+                    
+                    <script>
+                    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+                      e.preventDefault();
+                      var btn = document.getElementById('submit-btn');
+                      var status = document.getElementById('form-status');
+                      
+                      // Honeypot check
+                      if (this.querySelector('[name="website"]').value) return;
+                      
+                      btn.disabled = true;
+                      btn.textContent = 'Sending...';
+                      status.textContent = '';
+                      
+                      try {
+                        var res = await fetch('/api/submit-lead', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({
+                            name: document.getElementById('name').value,
+                            email: document.getElementById('email').value,
+                            phone: document.getElementById('phone').value,
+                            savings: document.getElementById('savings').value,
+                            retirementTimeline: document.getElementById('retirement-timeline').value,
+                            questions: document.getElementById('questions').value
+                          })
+                        });
+                        var data = await res.json();
+                        if (res.ok) {
+                          status.style.color = '#2d8a4e';
+                          status.textContent = data.message || "Thank you! We'll be in touch within one business day.";
+                          this.reset();
+                        } else {
+                          status.style.color = '#c0392b';
+                          status.textContent = data.error || 'Something went wrong. Please try again.';
+                        }
+                      } catch (err) {
+                        status.style.color = '#c0392b';
+                        status.textContent = 'Network error. Please try again or call us at 801.210.2800.';
+                      }
+                      btn.disabled = false;
+                      btn.textContent = 'Request Consultation';
+                    });
+                    </script>
                     
                     <p class="text-sm text-muted mt-md">By submitting this form, you agree to be contacted by Capital Wealth Advisors regarding your retirement planning needs. We respect your privacy and will never share your information.</p>
                 </div>
