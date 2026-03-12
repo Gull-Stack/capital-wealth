@@ -97,33 +97,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Form Handling (if contact forms are added)
+// Form validation (visual only — actual submission handled by page-specific JS)
 document.addEventListener('DOMContentLoaded', function() {
-    const forms = document.querySelectorAll('form');
-    
-    forms.forEach(form => {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Basic form validation
-            const requiredFields = this.querySelectorAll('[required]');
-            let isValid = true;
-            
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    isValid = false;
-                    field.classList.add('error');
-                } else {
-                    field.classList.remove('error');
-                }
-            });
-            
-            if (isValid) {
-                // Handle form submission here
-                console.log('Form submitted successfully');
-                // In a real implementation, you would send the data to your backend
+    const inputs = document.querySelectorAll('form [required]');
+    inputs.forEach(field => {
+        field.addEventListener('blur', function() {
+            if (!this.value.trim()) {
+                this.classList.add('error');
             } else {
-                console.log('Please fill in all required fields');
+                this.classList.remove('error');
             }
         });
     });
@@ -183,53 +165,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add CSS for mobile menu states
+// Add CSS for scroll and form error states
 const style = document.createElement('style');
 style.textContent = `
-    @media (max-width: 767px) {
-        .nav-links {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--bg-secondary);
-            border-top: 1px solid var(--bg-light);
-            padding: var(--spacing-lg);
-            transform: translateY(-10px);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-        
-        .nav-links.active {
-            transform: translateY(0);
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .nav-links a {
-            display: block;
-            padding: var(--spacing-sm) 0;
-            border-bottom: 1px solid var(--bg-light);
-        }
-        
-        .nav-links a:last-child {
-            border-bottom: none;
-        }
-        
-        .mobile-menu-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-        
-        .mobile-menu-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-        
-        .mobile-menu-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -6px);
-        }
-    }
-    
     .header.scrolled {
         background: rgba(10, 10, 15, 0.98);
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
