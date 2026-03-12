@@ -28,7 +28,7 @@ breadcrumbs:
         <div class="grid grid-cols-2">
             {% for service in site.services %}
             <div class="card">
-                <div class="service-tag">Service {{ loop.index }}</div>
+
                 <h3>{{ service.name }}</h3>
                 <p>{{ service.description }}</p>
                 <a href="/services/{{ service.slug }}/" class="btn btn-secondary mt-md">Learn More</a>
