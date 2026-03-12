@@ -8,198 +8,317 @@ breadcrumbs:
   - { name: "Federal Employee Benefits", url: "/services/federal-benefits/" }
 ---
 
-<!-- Hero -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1>Federal Employee Benefits Planning</h1>
-            <p class="hero-subtitle">Specialized planning for FERS, TSP, FEGLI, and the unique benefits of federal employment.</p>
+{# ═══════════════════════════════════════════════════════════
+   HERO — Mountain summit style, matching homepage
+   ═══════════════════════════════════════════════════════════ #}
+<section class="hero-mountain">
+    <div class="hero-mountain-overlay"></div>
+    <div class="hero-mountain-content">
+        <p class="hero-eyebrow">Specialized Planning for Federal Employees</p>
+        <h1 class="hero-display" style="letter-spacing: 0.08em; text-transform: uppercase;">Federal Retirement<br>Planning Specialists</h1>
+        <div style="width: 60px; height: 3px; background: var(--accent-secondary); margin: 1.5rem auto;"></div>
+        <p class="hero-sub">Expert guidance for FERS, TSP, FEGLI, FEHB, and the unique complexities of your federal benefits package.</p>
+        <div class="hero-cta">
+            <a href="/contact/" class="btn btn-cw-primary btn-lg">Schedule Your Federal Benefits Review &rarr;</a>
         </div>
     </div>
 </section>
 
-<!-- Why Specialized Planning -->
-<section class="section">
+{# ═══════════════════════════════════════════════════════════
+   DIAGONAL DIVIDER → White section
+   ═══════════════════════════════════════════════════════════ #}
+<div class="diagonal-divider"></div>
+
+{# ═══════════════════════════════════════════════════════════
+   WHY SPECIALIZED PLANNING — B.O.S.S. editorial (B&W image + card)
+   ═══════════════════════════════════════════════════════════ #}
+<section class="boss-editorial reveal">
+    <img src="/assets/images/services/federal-benefits.jpg" alt="Federal employee planning retirement benefits" class="boss-editorial-img">
+    <div class="boss-editorial-card">
+        <h2>Federal Benefits Are Complex</h2>
+        <h3>your benefits package is one of the best in the country</h3>
+        <p>But maximizing it requires specialized knowledge that most financial advisors don't have. FERS, TSP, FEGLI, FEHB, the FERS supplement, SCD dates, high-3 calculations — we speak your language because federal retirement is what we do.</p>
+        <a href="/contact/" class="btn btn-primary">Talk to a Federal Specialist</a>
+    </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   STATS — Big numbers on white
+   ═══════════════════════════════════════════════════════════ #}
+<section class="section-white reveal" style="padding: 3rem 2rem;">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--accent-primary);">FERS</span>
+                <span class="stat-label" style="color: #888;">Pension Optimization</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--accent-primary);">TSP</span>
+                <span class="stat-label" style="color: #888;">Investment Strategy</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--accent-primary);">FEGLI</span>
+                <span class="stat-label" style="color: #888;">Coverage Analysis</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--accent-primary);">FEHB</span>
+                <span class="stat-label" style="color: #888;">Health Benefits Planning</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   SERVICES — Clean grid with tags (matching homepage style)
+   ═══════════════════════════════════════════════════════════ #}
+<div class="blue-divider"></div>
+
+<section class="section-light">
     <div class="container">
         <div class="text-center mb-xl">
-            <h2>Federal Benefits Are Complex</h2>
-            <p class="text-lg">Your federal benefits package is one of the best in the country, but maximizing it requires specialized knowledge.</p>
+            <p class="editorial-eyebrow">what we optimize</p>
+            <h2>Federal Benefits We Help Maximize</h2>
+            <p class="text-lg">Every aspect of your federal benefits, analyzed and optimized by specialists.</p>
         </div>
-
-        <div class="grid grid-cols-3">
-            <div class="case-study">
-                <div class="case-study-metric">FERS</div>
-                <div class="case-study-label">Pension System</div>
-                <h3>Retirement Annuity</h3>
-                <p>Understanding your FERS annuity calculation, special retirement provisions, and how to maximize your pension benefit.</p>
+        
+        <div class="services-grid stagger-children">
+            <div class="service-card reveal" style="cursor: default;">
+                <div class="service-card-body">
+                    <span class="service-tag">01</span>
+                    <h3>FERS Pension Planning</h3>
+                    <ul style="color: #555; margin-left: 1.5rem; margin-top: 0.75rem; line-height: 1.8;">
+                        <li>Annuity calculation and projections</li>
+                        <li>Survivor benefit election analysis</li>
+                        <li>Special provisions (LEO, ATC, firefighter)</li>
+                        <li>VERA/VSIP early retirement</li>
+                        <li>FERS supplement until age 62</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-card reveal" style="cursor: default;">
+                <div class="service-card-body">
+                    <span class="service-tag">02</span>
+                    <h3>TSP Management</h3>
+                    <ul style="color: #555; margin-left: 1.5rem; margin-top: 0.75rem; line-height: 1.8;">
+                        <li>Fund allocation optimization (C, S, I, F, G, L)</li>
+                        <li>Traditional vs. Roth TSP analysis</li>
+                        <li>TSP rollover strategies at retirement</li>
+                        <li>Withdrawal options and timing</li>
+                        <li>Catch-up contribution planning</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-card reveal" style="cursor: default;">
+                <div class="service-card-body">
+                    <span class="service-tag">03</span>
+                    <h3>FEGLI Life Insurance</h3>
+                    <ul style="color: #555; margin-left: 1.5rem; margin-top: 0.75rem; line-height: 1.8;">
+                        <li>Basic vs. optional coverage analysis</li>
+                        <li>Cost comparison at different ages</li>
+                        <li>Private insurance alternatives</li>
+                        <li>Post-retirement cost projections</li>
+                        <li>Open season decision support</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="service-card reveal" style="cursor: default;">
+                <div class="service-card-body">
+                    <span class="service-tag">04</span>
+                    <h3>FEHB Health Benefits</h3>
+                    <ul style="color: #555; margin-left: 1.5rem; margin-top: 0.75rem; line-height: 1.8;">
+                        <li>Keeping FEHB into retirement</li>
+                        <li>FEHB and Medicare coordination</li>
+                        <li>Plan selection at retirement</li>
+                        <li>Dental and vision options</li>
+                        <li>Flexible spending accounts</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="case-study">
-                <div class="case-study-metric">TSP</div>
-                <div class="case-study-label">Thrift Savings Plan</div>
-                <h3>Investment Strategy</h3>
-                <p>Optimizing your TSP allocation across L, C, S, I, F, and G funds based on your retirement timeline.</p>
+            <div class="service-card reveal" style="cursor: default;">
+                <div class="service-card-body">
+                    <span class="service-tag">05</span>
+                    <h3>Social Security Coordination</h3>
+                    <ul style="color: #555; margin-left: 1.5rem; margin-top: 0.75rem; line-height: 1.8;">
+                        <li>FERS annuity + SS timing strategies</li>
+                        <li>Spousal benefit coordination</li>
+                        <li>FERS supplement bridge planning</li>
+                        <li>Windfall Elimination Provision (WEP)</li>
+                        <li>Government Pension Offset (GPO)</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="case-study">
-                <div class="case-study-metric">FEGLI</div>
-                <div class="case-study-label">Life Insurance</div>
-                <h3>Coverage Analysis</h3>
-                <p>Evaluating whether FEGLI coverage makes sense as you approach retirement or if alternatives are more cost-effective.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Services -->
-<section class="section section-dark">
-    <div class="container">
-        <h2 class="text-center mb-xl">Federal Benefits We Help Optimize</h2>
-
-        <div class="grid grid-cols-2">
-            <div class="card">
-                <h3 class="text-accent">FERS Pension Planning</h3>
-                <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
-                    <li>Annuity calculation and projections</li>
-                    <li>Survivor benefit election analysis</li>
-                    <li>Special retirement provisions (LEO, ATC, firefighter)</li>
-                    <li>Voluntary early retirement (VERA/VSIP)</li>
-                    <li>Disability retirement options</li>
-                    <li>FERS supplement until age 62</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3 class="text-accent">TSP Management</h3>
-                <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
-                    <li>Fund allocation optimization</li>
-                    <li>Traditional vs. Roth TSP analysis</li>
-                    <li>TSP rollover strategies at retirement</li>
-                    <li>Withdrawal options and timing</li>
-                    <li>TSP loan considerations</li>
-                    <li>Lifecycle fund analysis</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3 class="text-accent">FEGLI Analysis</h3>
-                <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
-                    <li>Basic vs. optional coverage analysis</li>
-                    <li>Cost comparison at different ages</li>
-                    <li>Private insurance alternatives</li>
-                    <li>Post-retirement cost projections</li>
-                    <li>Open season decision support</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3 class="text-accent">FEHB Health Benefits</h3>
-                <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
-                    <li>Keeping FEHB into retirement</li>
-                    <li>FEHB and Medicare coordination</li>
-                    <li>Plan selection at retirement</li>
-                    <li>Dental and vision options</li>
-                    <li>Flexible spending accounts</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Retirement Timeline -->
-<section class="section">
-    <div class="container">
-        <h2 class="text-center mb-xl">Federal Retirement Planning Timeline</h2>
-
-        <div class="process-steps">
-            <div class="process-step">
-                <div class="process-number">5yr</div>
-                <h3>5 Years Before Retirement</h3>
-                <p>Review high-3 salary calculations, maximize TSP contributions, evaluate FEGLI options.</p>
-            </div>
-
-            <div class="process-step">
-                <div class="process-number">2yr</div>
-                <h3>2 Years Before Retirement</h3>
-                <p>Confirm service computation dates, plan TSP withdrawal strategy, analyze survivor benefit options.</p>
-            </div>
-
-            <div class="process-step">
-                <div class="process-number">6mo</div>
-                <h3>6 Months Before Retirement</h3>
-                <p>Submit retirement application, coordinate FEHB continuation, finalize income plan.</p>
-            </div>
-
-            <div class="process-step">
-                <div class="process-number">Day 1</div>
-                <h3>Retirement Day</h3>
-                <p>Implement income strategy, begin TSP withdrawals if needed, coordinate all benefit payments.</p>
+            <div class="service-card reveal" style="cursor: default;">
+                <div class="service-card-body">
+                    <span class="service-tag">06</span>
+                    <h3>Tax-Efficient Withdrawals</h3>
+                    <ul style="color: #555; margin-left: 1.5rem; margin-top: 0.75rem; line-height: 1.8;">
+                        <li>TSP + Roth + taxable sequencing</li>
+                        <li>Roth conversion strategies</li>
+                        <li>RMD planning and management</li>
+                        <li>IRMAA surcharge avoidance</li>
+                        <li>Lifetime tax burden minimization</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Where Are You? -->
-<section class="section">
-    <div class="container">
-        <h2 class="text-center mb-xl">Where Are You in Your Federal Career?</h2>
-        <div class="grid grid-cols-3">
-            <div class="card">
-                <h3>Planning for FERS Retirement?</h3>
-                <p>5-10 years from retirement is the ideal time to start optimizing your federal benefits strategy. Don't leave money on the table.</p>
-                <a href="/contact/" class="text-accent">Schedule a Review &rarr;</a>
+{# ═══════════════════════════════════════════════════════════
+   CASE STUDIES — B.O.S.S. editorial (B&W bg + overlapping cards)
+   ═══════════════════════════════════════════════════════════ #}
+<div class="diagonal-divider-reverse"></div>
+
+<section class="boss-editorial reveal" style="min-height: 550px;">
+    <img src="/assets/images/photos/thinking-about-retirement.webp" alt="Federal employee planning retirement" class="boss-editorial-img">
+    <div style="position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: flex-start; max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; gap: 2rem; flex-wrap: wrap;">
+        <div style="max-width: 350px;">
+            <div style="background: var(--bg-secondary); padding: 2rem 2.5rem; display: inline-block; margin-bottom: 1rem;">
+                <p class="editorial-eyebrow" style="margin: 0;">where are you?</p>
+                <h2 style="color: #fff; font-size: 2.2rem; text-transform: uppercase; font-weight: 800; line-height: 1.1; margin: 0.5rem 0 0;">Your Federal<br>Career Stage</h2>
             </div>
-            <div class="card">
-                <h3>Maximizing Your TSP?</h3>
-                <p>Are your TSP allocations aligned with your timeline and risk tolerance? Most federal employees leave significant growth on the table.</p>
-                <a href="/contact/" class="text-accent">Get TSP Analysis &rarr;</a>
+        </div>
+        <div class="boss-editorial-card" style="margin: 0; max-width: 340px;">
+            <span style="color: var(--accent-primary); font-size: 1.8rem; font-weight: 800;">5-10 Years Out</span>
+            <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0.5rem 0;">Planning for FERS Retirement</h3>
+            <p>The ideal time to start optimizing. Review high-3 salary calculations, maximize TSP contributions, and evaluate FEGLI options before it's too late.</p>
+            <a href="/contact/" class="btn-cw-primary" style="font-size: 0.75rem; padding: 0.6rem 1.5rem; margin-top: 1rem; display: inline-block;">Schedule a Review</a>
+        </div>
+    </div>
+</section>
+
+{# Second scenario — flipped layout #}
+<section class="case-split">
+    <div style="background: #fff; padding: 4rem 3rem; display: flex; flex-direction: column; justify-content: center;">
+        <span style="color: var(--accent-primary); font-size: 2rem; font-weight: 800;">TSP Maxed Out?</span>
+        <h3 style="color: #1a1a1a; font-size: 1.5rem; font-weight: 700; margin: 0.5rem 0;">Maximizing Your TSP</h3>
+        <p style="color: #555; line-height: 1.7;">Are your TSP allocations aligned with your timeline and risk tolerance? Most federal employees leave significant growth on the table with default L Fund allocations.</p>
+        <div style="margin-top: 1rem;">
+            <span style="display: inline-block; background: var(--accent-primary); color: #fff; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-right: 0.5rem;">TSP Strategy</span>
+            <span style="display: inline-block; background: var(--accent-primary); color: #fff; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Roth TSP</span>
+        </div>
+    </div>
+    <div style="overflow: hidden;">
+        <img src="/assets/images/photos/retirement-ready.webp" alt="Federal employee reviewing TSP allocations" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%);">
+    </div>
+</section>
+
+{# Third scenario — image left, card right #}
+<section class="case-split">
+    <div style="overflow: hidden;">
+        <img src="/assets/images/photos/already-retired.webp" alt="Retired federal employee enjoying retirement" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%);">
+    </div>
+    <div style="background: var(--bg-secondary); padding: 4rem 3rem; display: flex; flex-direction: column; justify-content: center;">
+        <span style="color: var(--accent-secondary); font-size: 2rem; font-weight: 800;">Already Retired</span>
+        <h3 style="color: #fff; font-size: 1.5rem; font-weight: 700; margin: 0.5rem 0;">Optimize Your Federal Retirement</h3>
+        <p style="color: rgba(255,255,255,0.7); line-height: 1.7;">Retired from federal service? Optimize your withdrawal strategy, manage RMDs from your TSP, coordinate FEHB with Medicare, and ensure your income lasts.</p>
+        <div style="margin-top: 1rem;">
+            <span style="display: inline-block; background: var(--accent-secondary); color: #fff; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-right: 0.5rem;">Withdrawal Strategy</span>
+            <span style="display: inline-block; background: var(--accent-secondary); color: #fff; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Medicare</span>
+        </div>
+    </div>
+</section>
+
+<div class="blue-divider"></div>
+
+{# ═══════════════════════════════════════════════════════════
+   TIMELINE — B.O.S.S. process grid (B&W bg + white cards)
+   ═══════════════════════════════════════════════════════════ #}
+<section class="boss-editorial reveal" style="min-height: 600px;">
+    <img src="/assets/images/photos/tax-efficient-strategies.webp" alt="Federal retirement planning timeline" class="boss-editorial-img">
+    <div style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 3rem 2rem;">
+        <div style="background: var(--bg-secondary); padding: 2rem 2.5rem; display: inline-block; margin-bottom: 2rem;">
+            <p class="editorial-eyebrow" style="margin: 0;">planning timeline</p>
+            <h2 style="color: #fff; font-size: 2.2rem; text-transform: uppercase; font-weight: 800; line-height: 1.1; margin: 0.5rem 0 0;">Federal Retirement<br>Planning Timeline</h2>
+        </div>
+        <div class="process-grid">
+            <div style="background: #fff; padding: 2.5rem 2rem; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+                <div style="background: var(--accent-primary); color: #fff; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; margin-bottom: 1.25rem;">5yr</div>
+                <h3 style="color: #1a1a1a; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">5 Years Before</h3>
+                <p style="color: #555; line-height: 1.7; font-size: 0.9rem;">Review high-3 salary calculations, maximize TSP contributions, evaluate FEGLI options, and start building your withdrawal strategy.</p>
             </div>
-            <div class="card">
-                <h3>Already Retired?</h3>
-                <p>Optimize your withdrawal strategy, manage RMDs, and ensure your federal retirement income lasts throughout your lifetime.</p>
-                <a href="/contact/" class="text-accent">Review Your Plan &rarr;</a>
+            <div style="background: #fff; padding: 2.5rem 2rem; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+                <div style="background: var(--accent-primary); color: #fff; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; margin-bottom: 1.25rem;">2yr</div>
+                <h3 style="color: #1a1a1a; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">2 Years Before</h3>
+                <p style="color: #555; line-height: 1.7; font-size: 0.9rem;">Confirm service computation dates, plan TSP withdrawal strategy, analyze survivor benefit options, and project your annuity.</p>
+            </div>
+            <div style="background: #fff; padding: 2.5rem 2rem; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+                <div style="background: var(--accent-primary); color: #fff; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; margin-bottom: 1.25rem;">6mo</div>
+                <h3 style="color: #1a1a1a; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">6 Months Before</h3>
+                <p style="color: #555; line-height: 1.7; font-size: 0.9rem;">Submit retirement application, coordinate FEHB continuation, finalize income plan, and prepare for the transition.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Testimonials -->
-<section class="section section-dark">
+<div class="diagonal-divider"></div>
+
+{# ═══════════════════════════════════════════════════════════
+   TESTIMONIALS — B.O.S.S. style (white bg, bold squares)
+   ═══════════════════════════════════════════════════════════ #}
+<section style="background: #fff; padding: 5rem 2rem;" class="reveal">
     <div class="container">
-        <h2 class="text-center mb-xl">What Federal Employees Say</h2>
-        <div class="grid grid-cols-3">
-            <div class="card">
-                <p style="font-style: italic; margin-bottom: 1rem;">"I had no idea how much I was leaving on the table with my TSP allocations. They helped me restructure everything and I'm now on track to retire three years earlier than planned."</p>
-                <p class="text-accent" style="font-weight: 600;">Michael R.</p>
-                <p class="text-muted" style="font-size: 0.875rem;">GS-14, Department of Defense</p>
+        <div class="testimonial-grid">
+            <div>
+                <div style="background: var(--bg-secondary); padding: 2rem 2.5rem; display: inline-block;">
+                    <p class="editorial-eyebrow" style="margin: 0;">testimonials</p>
+                    <h2 style="color: #fff; font-size: 2rem; text-transform: uppercase; font-weight: 800; line-height: 1.1; margin: 0.5rem 0 0;">What Federal<br>Employees Say</h2>
+                </div>
             </div>
-            <div class="card">
-                <p style="font-style: italic; margin-bottom: 1rem;">"The team understood FERS inside and out. They walked me through the FERS supplement, coordinated my Social Security timing, and helped me understand my FEHB options in retirement."</p>
-                <p class="text-accent" style="font-weight: 600;">Sandra L.</p>
-                <p class="text-muted" style="font-size: 0.875rem;">GS-13, Department of Veterans Affairs</p>
-            </div>
-            <div class="card">
-                <p style="font-style: italic; margin-bottom: 1rem;">"After 30 years of federal service, I was overwhelmed by the decisions I had to make. They made it simple and gave me confidence that my retirement plan is solid."</p>
-                <p class="text-accent" style="font-weight: 600;">James T.</p>
-                <p class="text-muted" style="font-size: 0.875rem;">GS-15, Department of Homeland Security</p>
+            <div style="display: grid; gap: 1.5rem;">
+                <div style="background: #f4f5f7; border-left: 4px solid var(--accent-primary); padding: 2rem 2.5rem;">
+                    <div style="color: var(--accent-secondary); font-size: 1.2rem; margin-bottom: 0.5rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p style="color: #333; line-height: 1.7; font-size: 0.95rem; font-style: italic;">"I had no idea how much I was leaving on the table with my TSP allocations. They helped me restructure everything and I'm now on track to retire three years earlier than planned."</p>
+                    <p style="color: var(--accent-primary); font-weight: 600; margin-top: 1rem;">Michael R.</p>
+                    <p style="color: #888; font-size: 0.85rem;">GS-14, Department of Defense, 22 years of service</p>
+                </div>
+                <div style="background: #f4f5f7; border-left: 4px solid var(--accent-primary); padding: 2rem 2.5rem;">
+                    <div style="color: var(--accent-secondary); font-size: 1.2rem; margin-bottom: 0.5rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p style="color: #333; line-height: 1.7; font-size: 0.95rem; font-style: italic;">"The team understood FERS inside and out. They walked me through the FERS supplement, coordinated my Social Security timing, and helped me understand my FEHB options in retirement. Worth every penny."</p>
+                    <p style="color: var(--accent-primary); font-weight: 600; margin-top: 1rem;">Sandra L.</p>
+                    <p style="color: #888; font-size: 0.85rem;">GS-13, Department of Veterans Affairs, 28 years of service</p>
+                </div>
+                <div style="background: #f4f5f7; border-left: 4px solid var(--accent-primary); padding: 2rem 2.5rem;">
+                    <div style="color: var(--accent-secondary); font-size: 1.2rem; margin-bottom: 0.5rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p style="color: #333; line-height: 1.7; font-size: 0.95rem; font-style: italic;">"After 30 years of federal service, I was overwhelmed by the decisions I had to make. They made it simple and gave me confidence that my retirement plan is solid."</p>
+                    <p style="color: var(--accent-primary); font-weight: 600; margin-top: 1rem;">James T.</p>
+                    <p style="color: #888; font-size: 0.85rem;">GS-15, Department of Homeland Security, 30 years of service</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- CTA -->
-<section class="section section-dark">
-    <div class="container">
-        <div class="text-center">
-            <h2>Federal Employee? Let's Optimize Your Benefits</h2>
-            <p class="text-lg">Your federal benefits are valuable. Make sure you're getting the most from them.</p>
+{# ═══════════════════════════════════════════════════════════
+   FIDUCIARY COMMITMENT
+   ═══════════════════════════════════════════════════════════ #}
+<section class="fiduciary-section" style="background: linear-gradient(rgba(13,27,42,0.9), rgba(13,27,42,0.95)), url('/assets/images/photos/homepage-mountain-bg.webp') center/cover fixed;">
+    <div class="container text-center">
+        <p class="editorial-eyebrow">our commitment</p>
+        <h2 style="color: var(--accent-secondary); font-size: 2.5rem;">We are legally obligated to act in YOUR best interest</h2>
+        <p class="text-xl" style="max-width: 700px; margin: 1.5rem auto;">As fiduciary advisors specializing in federal retirement, we put your interests first. No conflicts, no hidden commissions — just honest advice from people who understand your benefits.</p>
+        <div style="display: flex; gap: 1.5rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap;">
+            <img src="/assets/images/badges/bbb2.png" alt="BBB Accredited Business" style="height: 50px; filter: brightness(1.5);">
+            <img src="/assets/images/badges/brokercheck.png" alt="BrokerCheck Verified" style="height: 45px; filter: brightness(1.5);">
+        </div>
+    </div>
+</section>
 
-            <div class="hero-cta mt-lg">
-                <a href="/contact/" class="btn btn-primary btn-lg">Schedule Federal Benefits Review</a>
-                <a href="tel:{{ site.phone }}" class="btn btn-secondary btn-lg">Call {{ site.phone }}</a>
-            </div>
-
-            <p class="mt-md text-muted">Initial consultations are complimentary for qualified families.</p>
+{# ═══════════════════════════════════════════════════════════
+   FINAL CTA
+   ═══════════════════════════════════════════════════════════ #}
+<section class="cta-final">
+    <div class="container text-center">
+        <h2>Ready to Optimize Your Federal Benefits?</h2>
+        <p class="text-xl">Your service deserves a secure retirement. Initial consultations are complimentary for qualified federal employees.</p>
+        <div class="hero-cta mt-lg">
+            <a href="/contact/" class="btn btn-primary btn-lg">Schedule Your Federal Benefits Review</a>
+            <a href="tel:8012102800" class="btn btn-ghost btn-lg">Call 801.210.2800</a>
         </div>
     </div>
 </section>
