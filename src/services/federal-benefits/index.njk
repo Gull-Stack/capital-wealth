@@ -9,17 +9,18 @@ breadcrumbs:
 ---
 
 {# ═══════════════════════════════════════════════════════════
-   HERO — Mountain summit style, matching homepage
+   HERO — Capitol building, dark overlay, gold accents
    ═══════════════════════════════════════════════════════════ #}
-<section class="hero-mountain">
-    <div class="hero-mountain-overlay"></div>
-    <div class="hero-mountain-content">
-        <p class="hero-eyebrow">Specialized Planning for Federal Employees</p>
-        <h1 class="hero-display" style="letter-spacing: 0.08em; text-transform: uppercase;">Federal Retirement<br>Planning Specialists</h1>
-        <div style="width: 60px; height: 3px; background: var(--accent-secondary); margin: 1.5rem auto;"></div>
-        <p class="hero-sub">Expert guidance for FERS, TSP, FEGLI, FEHB, and the unique complexities of your federal benefits package.</p>
-        <div class="hero-cta">
-            <a href="/contact/" class="btn btn-cw-primary btn-lg">Schedule Your Federal Benefits Review &rarr;</a>
+<section style="position: relative; min-height: 85vh; display: flex; align-items: center; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background: url('/assets/images/photos/hero-capitol.jpg') center/cover no-repeat;"></div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(13,27,42,0.85) 0%, rgba(13,27,42,0.7) 50%, rgba(13,27,42,0.6) 100%);"></div>
+    <div class="container" style="position: relative; z-index: 2; max-width: 800px; padding: 6rem 2rem;">
+        <span style="display: inline-block; background: var(--accent-secondary, #c9a84c); color: #1a1a1a; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.5rem 1.25rem; margin-bottom: 1.5rem;">Capital Wealth Federal</span>
+        <h1 style="color: #fff; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; text-transform: uppercase; line-height: 1.05; margin: 0 0 1.5rem;">Federal Retirement <span style="color: var(--accent-secondary, #c9a84c);">Planning Specialists</span></h1>
+        <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem; line-height: 1.7; max-width: 600px; margin-bottom: 2.5rem;">Expert guidance for federal employees navigating FERS retirement, TSP optimization, and comprehensive benefits planning. Your service deserves a secure future.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="/contact/" style="display: inline-block; background: var(--accent-secondary, #c9a84c); color: #1a1a1a; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 2rem; text-decoration: none;">Schedule a Consultation</a>
+            <a href="/services/" style="display: inline-block; background: transparent; color: var(--accent-secondary, #c9a84c); font-size: 0.8rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 2rem; text-decoration: none; border: 2px solid var(--accent-secondary, #c9a84c);">Explore Services</a>
         </div>
     </div>
 </section>
