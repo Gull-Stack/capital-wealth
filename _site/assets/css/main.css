@@ -654,8 +654,17 @@ a:hover {
   gap: var(--spacing-xl);
   margin-bottom: var(--spacing-xl);
 }
+.footer-5col {
+  grid-template-columns: 1.5fr 1fr 1fr 0.8fr 1fr;
+}
+@media (max-width: 1024px) {
+  .footer-5col {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 @media (max-width: 768px) {
-  .footer-content {
+  .footer-content,
+  .footer-5col {
     grid-template-columns: 1fr;
   }
 }

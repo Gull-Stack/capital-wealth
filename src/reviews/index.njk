@@ -1,0 +1,195 @@
+---
+layout: layouts/base.njk
+title: "Client Reviews | Capital Wealth Advisors | 5-Star Rated"
+description: "Read what our clients say about Capital Wealth Advisors. 5-star rated fiduciary financial advisor in Lehi, Utah. 500+ families served since 2010."
+permalink: /reviews/
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Reviews", url: "/reviews/" }
+---
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Client Reviews</h1>
+            <p class="hero-subtitle">See why families across Utah trust Capital Wealth Advisors with their retirement planning. 5.0 / 5 Stars — Based on 50+ client reviews.</p>
+            
+            <div class="mt-lg">
+                <span style="font-size: 2rem; color: #FFD700;">★★★★★</span>
+                <p class="text-lg text-accent mt-sm">5.0 / 5 Stars — Based on 50+ client reviews</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Client Reviews -->
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>What Our Clients Are Saying</h2>
+            <p class="text-lg">Real feedback from Utah families we've helped with <a href="/services/retirement-money-map/">retirement planning</a> and <a href="/services/tax-planning/">tax optimization</a> since 2010.</p>
+        </div>
+        
+        <div class="grid grid-cols-2">
+            {% for testimonial in site.testimonials %}
+            <div class="card">
+                <div class="mb-md">
+                    <span style="color: #FFD700; font-size: 1.25rem;">
+                        {% for star in range(testimonial.rating) %}★{% endfor %}
+                    </span>
+                </div>
+                <blockquote style="font-style: italic; color: var(--text-secondary); margin-bottom: 1rem;">
+                    "{{ testimonial.text }}"
+                </blockquote>
+                <p class="text-sm text-accent">— Client Review</p>
+            </div>
+            {% endfor %}
+            
+            <div class="card">
+                <div class="mb-md">
+                    <span style="color: #FFD700; font-size: 1.25rem;">★★★★★</span>
+                </div>
+                <blockquote style="font-style: italic; color: var(--text-secondary); margin-bottom: 1rem;">
+                    "After rolling over my 401k from my previous job, {{ site.founder.name }} helped us create a comprehensive retirement strategy that reduced our tax burden by thousands. The peace of mind is priceless."
+                </blockquote>
+                <p class="text-sm text-accent">— Sarah, Age 58 — State Employee</p>
+            </div>
+            
+            <div class="card">
+                <div class="mb-md">
+                    <span style="color: #FFD700; font-size: 1.25rem;">★★★★★</span>
+                </div>
+                <blockquote style="font-style: italic; color: var(--text-secondary); margin-bottom: 1rem;">
+                    "As federal employees, we had unique retirement benefits that other advisors didn't understand. Capital Wealth Advisors specializes in FERS planning and helped us optimize our TSP and pension timing perfectly."
+                </blockquote>
+                <p class="text-sm text-accent">— Robert, Age 63 — Retired Federal Employee</p>
+            </div>
+            
+            <div class="card">
+                <div class="mb-md">
+                    <span style="color: #FFD700; font-size: 1.25rem;">★★★★★</span>
+                </div>
+                <blockquote style="font-style: italic; color: var(--text-secondary); margin-bottom: 1rem;">
+                    "The Social Security optimization strategy they recommended will increase our lifetime benefits by over $150,000. Mike and his team really know their stuff when it comes to maximizing retirement income."
+                </blockquote>
+                <p class="text-sm text-accent">— Jennifer, Age 61 — Retired Nurse</p>
+            </div>
+            
+            <div class="card">
+                <div class="mb-md">
+                    <span style="color: #FFD700; font-size: 1.25rem;">★★★★★</span>
+                </div>
+                <blockquote style="font-style: italic; color: var(--text-secondary); margin-bottom: 1rem;">
+                    "We were worried about retiring at 62 with our savings, but their detailed analysis showed us exactly how to make it work. Three years into retirement and we're right on track with their projections."
+                </blockquote>
+                <p class="text-sm text-accent">— David, Age 65 — Retired Teacher</p>
+            </div>
+            
+            <div class="card">
+                <div class="mb-md">
+                    <span style="color: #FFD700; font-size: 1.25rem;">★★★★★</span>
+                </div>
+                <blockquote style="font-style: italic; color: var(--text-secondary); margin-bottom: 1rem;">
+                    "Finally found a fiduciary advisor who puts our interests first. No pushy sales tactics, just honest advice and comprehensive planning. They saved us from making costly mistakes with our 401k rollover."
+                </blockquote>
+                <p class="text-sm text-accent">— Lisa, Age 55 — Corporate Executive</p>
+            </div>
+            
+            <div class="card">
+                <div class="mb-md">
+                    <span style="color: #FFD700; font-size: 1.25rem;">★★★★★</span>
+                </div>
+                <blockquote style="font-style: italic; color: var(--text-secondary); margin-bottom: 1rem;">
+                    "Their tax planning strategies have been incredible. Between Roth conversions and strategic withdrawals, we're saving thousands every year. The initial consultation paid for itself within months."
+                </blockquote>
+                <p class="text-sm text-accent">— Tom, Age 59 — Small Business Owner</p>
+            </div>
+            
+            <div class="card">
+                <div class="mb-md">
+                    <span style="color: #FFD700; font-size: 1.25rem;">★★★★★</span>
+                </div>
+                <blockquote style="font-style: italic; color: var(--text-secondary); margin-bottom: 1rem;">
+                    "Moving to Utah in retirement, we needed someone who understood the state tax implications. {{ site.founder.name }}'s team helped us restructure everything to minimize our tax burden while maximizing our retirement income."
+                </blockquote>
+                <p class="text-sm text-accent">— Nancy, Age 67 — Retiree from California</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Google Reviews CTA -->
+<section class="section section-dark">
+    <div class="container">
+        <div class="text-center">
+            <h2>Share Your Experience</h2>
+            <p class="text-lg">Have you worked with Capital Wealth Advisors? We'd love to hear about your experience.</p>
+            
+            <div class="mt-lg">
+                <a href="#" class="btn btn-primary">Leave us a review on Google</a>
+            </div>
+            
+            <p class="text-sm mt-md" style="color: var(--text-secondary);">Your feedback helps other Utah families find trusted <a href="/guides/fiduciary-vs-commission-advisor/">fiduciary financial advice</a>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- What Makes Us Different -->
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-xl">
+            <h2>Why Clients Choose Capital Wealth Advisors</h2>
+            <p class="text-lg">See what sets our <a href="/services/">retirement planning services</a> apart from other financial advisors in Utah.</p>
+        </div>
+        
+        <div class="grid grid-cols-3">
+            <div class="card">
+                <h3 class="text-accent">Fiduciary Standard</h3>
+                <p>We're legally obligated to act in your best interest at all times. No conflicts, no commissions - just honest advice focused on your retirement goals.</p>
+            </div>
+            
+            <div class="card">
+                <h3 class="text-accent">Retirement Specialists</h3>
+                <p>Unlike generalist advisors, we focus exclusively on <a href="/guides/">retirement income planning</a>, <a href="/services/tax-planning/">tax optimization</a>, and wealth preservation strategies.</p>
+            </div>
+            
+            <div class="card">
+                <h3 class="text-accent">Utah Expertise</h3>
+                <p>Deep knowledge of Utah tax laws, cost of living, and the unique financial planning needs of Utah families since 2010.</p>
+            </div>
+            
+            <div class="card">
+                <h3 class="text-accent">Comprehensive Planning</h3>
+                <p>Our <a href="/services/retirement-money-map/">Retirement Money Map</a> addresses all aspects of your retirement: income, taxes, healthcare, and estate planning.</p>
+            </div>
+            
+            <div class="card">
+                <h3 class="text-accent">Federal Employee Expertise</h3>
+                <p>Specialized knowledge of <a href="/guides/fers-retirement-planning-guide/">FERS benefits</a>, TSP optimization, and federal employee retirement planning.</p>
+            </div>
+            
+            <div class="card">
+                <h3 class="text-accent">Personal Service</h3>
+                <p>Direct access to {{ site.founder.name }} and our team. No call centers, no junior advisors - just experienced professionals who know your situation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-dark">
+    <div class="container">
+        <div class="text-center">
+            <h2>Ready to Join Our Satisfied Clients?</h2>
+            <p class="text-lg">Schedule a complimentary consultation to discuss your retirement goals and see how we can help you achieve them.</p>
+            
+            <div class="hero-cta mt-lg">
+                <a href="/contact/" class="btn btn-primary btn-lg">Schedule a Consultation</a>
+                <a href="tel:{{ site.phone }}" class="btn btn-secondary btn-lg">Call {{ site.phone }}</a>
+            </div>
+            
+            <p class="text-sm mt-md" style="color: var(--text-secondary);">No sales pitch. No pressure. Just an honest conversation about your financial future.</p>
+        </div>
+    </div>
+</section>
