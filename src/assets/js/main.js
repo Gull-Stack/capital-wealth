@@ -1,20 +1,40 @@
-// Mobile Menu Toggle
+// Mobile Menu Toggle — slide-in panel from right
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function closeMenu() {
+        navLinks.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        if (navOverlay) navOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function openMenu() {
+        navLinks.classList.add('active');
+        mobileMenuToggle.classList.add('active');
+        if (navOverlay) navOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
     
     if (mobileMenuToggle && navLinks) {
         mobileMenuToggle.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            mobileMenuToggle.classList.toggle('active');
+            if (navLinks.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
         });
         
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!mobileMenuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-                navLinks.classList.remove('active');
-                mobileMenuToggle.classList.remove('active');
-            }
+        // Close menu when tapping overlay
+        if (navOverlay) {
+            navOverlay.addEventListener('click', closeMenu);
+        }
+
+        // Close menu when clicking a nav link
+        navLinks.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', closeMenu);
         });
     }
 });

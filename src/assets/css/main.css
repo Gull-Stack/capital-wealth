@@ -180,36 +180,57 @@ a:hover {
   gap: var(--spacing-lg);
 }
 
-/* Mobile nav - slides open when .active is toggled */
+/* Mobile nav overlay */
 @media (max-width: 767px) {
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 998;
+  }
+
+  .nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
   .nav-links {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position: fixed;
+    top: 0;
     right: 0;
-    background: rgba(10, 10, 15, 0.98);
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding: var(--spacing-lg);
-    transform: translateY(-10px);
-    opacity: 0;
+    bottom: 0;
+    width: 75%;
+    max-width: 320px;
+    background: linear-gradient(180deg, var(--bg-primary) 0%, #0a1520 100%);
+    border-left: 1px solid rgba(43, 123, 185, 0.3);
+    padding: 80px var(--spacing-lg) var(--spacing-lg);
+    transform: translateX(100%);
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s ease;
     z-index: 999;
+    overflow-y: auto;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.4);
   }
 
   .nav-links.active {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translateX(0);
     visibility: visible;
   }
 
   .nav-links a {
     display: block;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    font-size: 1rem;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(43, 123, 185, 0.15);
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
   }
 
   .nav-links a:last-child {
