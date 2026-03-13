@@ -248,6 +248,41 @@ a:hover {
   color: var(--accent-secondary);
 }
 
+/* Header CTA Buttons */
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-btn-orange {
+  background: #e8873a;
+  color: #fff !important;
+}
+
+.nav-btn-orange:hover {
+  background: #d4752e;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+.nav-btn-blue {
+  background: #3b82c4;
+  color: #fff !important;
+}
+
+.nav-btn-blue:hover {
+  background: #2d6da8;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
@@ -1503,16 +1538,17 @@ a:hover {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .tilted-card:nth-child(1) {
-  transform: rotate(-2deg);
+  transform: none;
 }
 .tilted-card:nth-child(2) {
-  transform: rotate(1deg) translateY(-10px);
+  transform: none;
 }
 .tilted-card:nth-child(3) {
-  transform: rotate(2.5deg);
+  transform: none;
 }
 .tilted-card:hover {
-  transform: rotate(0deg) translateY(-8px) !important;
+  transform: translateY(-6px) !important;
+  border-color: var(--accent-secondary, #c9a96e);
   box-shadow: 0 25px 60px rgba(0,0,0,0.2);
 }
 .tilted-card-dark {
