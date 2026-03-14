@@ -405,12 +405,12 @@ a:hover {
   top: calc(100% + 16px);
   left: 0;
   width: 420px;
-  background: rgba(10, 16, 28, 0.92);
+  background: rgba(80, 90, 110, 0.35);
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 24px;
-  padding: 1rem;
+  padding: 1.25rem 1rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
@@ -424,67 +424,44 @@ a:hover {
   pointer-events: all;
 }
 
-/* Featured top card */
-.nav-dd-featured {
-  display: block;
-  background: rgba(13, 27, 42, 0.7);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 1.25rem;
-  text-decoration: none;
-  transition: background 0.2s ease;
-}
-.nav-dd-featured:hover {
-  background: rgba(13, 27, 42, 0.85);
-}
-.nav-dd-featured strong {
-  display: block;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.35rem;
-}
-.nav-dd-featured span {
-  display: block;
-  color: rgba(255,255,255,0.55);
-  font-size: 0.82rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-/* Regular items */
+/* Dropdown items — Giga style: all bright by default, dim siblings on hover */
 .nav-dd-item {
   display: block;
-  padding: 0.75rem 0.75rem;
+  padding: 1rem 1.1rem;
   text-decoration: none;
-  border-radius: 12px;
-  transition: background 0.2s ease;
+  border-radius: 14px;
+  transition: background 0.2s ease, opacity 0.2s ease;
 }
 .nav-dd-item strong {
   display: block;
-  color: rgba(255,255,255,0.75);
-  font-size: 0.88rem;
-  font-weight: 500;
-  margin-bottom: 0.2rem;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
   transition: color 0.2s ease;
 }
 .nav-dd-item span {
   display: block;
-  color: rgba(255,255,255,0.35);
-  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.5;
   transition: color 0.2s ease;
 }
-.nav-dd-item:hover {
-  background: rgba(255,255,255,0.06);
+/* When any item in the menu is hovered, dim ALL items... */
+.nav-dropdown-menu:hover .nav-dd-item {
+  opacity: 0.45;
+}
+/* ...then un-dim + highlight the one being hovered */
+.nav-dropdown-menu:hover .nav-dd-item:hover {
+  opacity: 1;
+  background: rgba(13, 27, 42, 0.6);
 }
 .nav-dd-item:hover strong {
   color: #fff;
 }
 .nav-dd-item:hover span {
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.65);
 }
 .nav-dropdown-divider {
   display: none;
