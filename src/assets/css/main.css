@@ -923,20 +923,7 @@ a:hover {
   overflow: hidden;
   padding: 6rem 2rem 5rem;
 }
-.cta-aurora-section::before {
-  content: '';
-  position: absolute;
-  bottom: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 900px;
-  height: 600px;
-  background: url('/assets/images/logos/logo-white.png') center/contain no-repeat;
-  opacity: 0.04;
-  filter: grayscale(1) brightness(2);
-  pointer-events: none;
-  z-index: 0;
-}
+/* bg logo removed */
 /* logo handled via ::before pseudo-element on cta-aurora-section */
 .cta-aurora-inner {
   max-width: 1200px;
@@ -961,75 +948,30 @@ a:hover {
   z-index: 2;
 }
 .aurora-blob-1 {
-  width: 550px;
-  height: 400px;
-  filter: blur(70px);
-  background: rgba(60, 130, 255, 0.45);
-  animation: aurora1 8s ease-in-out infinite alternate;
-}
-.aurora-blob-2 {
   width: 500px;
   height: 350px;
-  filter: blur(60px);
-  background: rgba(212, 160, 90, 0.4);
-  animation: aurora2 10s ease-in-out infinite alternate;
+  filter: blur(80px);
+  background: rgba(60, 130, 255, 0.3);
+}
+.aurora-blob-2 {
+  width: 450px;
+  height: 300px;
+  filter: blur(70px);
+  background: rgba(212, 160, 90, 0.25);
 }
 .aurora-blob-3 {
-  width: 450px;
-  height: 320px;
-  filter: blur(80px);
-  background: rgba(100, 180, 255, 0.35);
-  animation: aurora3 7s ease-in-out infinite alternate;
-}
-.aurora-blob-4 {
   width: 400px;
   height: 280px;
-  filter: blur(70px);
-  background: rgba(230, 170, 100, 0.3);
-  animation: aurora4 12s ease-in-out infinite alternate;
+  filter: blur(90px);
+  background: rgba(100, 180, 255, 0.22);
 }
-@keyframes aurora1 {
-  0% { top: 5%; left: -10%; opacity: 0; }
-  12% { opacity: 0; }
-  18% { opacity: 0.55; }
-  30% { top: 20%; left: 30%; opacity: 0.6; }
-  45% { opacity: 0.05; }
-  60% { top: 35%; left: 60%; opacity: 0; }
-  75% { opacity: 0.5; }
-  85% { top: 15%; left: 40%; opacity: 0.55; }
-  100% { top: 10%; left: 15%; opacity: 0.02; }
+.aurora-blob-4 {
+  width: 350px;
+  height: 250px;
+  filter: blur(80px);
+  background: rgba(230, 170, 100, 0.2);
 }
-@keyframes aurora2 {
-  0% { top: 20%; right: -15%; opacity: 0.02; }
-  15% { opacity: 0.5; }
-  25% { top: 10%; right: 25%; opacity: 0.55; }
-  40% { opacity: 0; }
-  55% { top: 40%; right: 55%; opacity: 0.03; }
-  65% { opacity: 0.5; }
-  80% { top: 15%; right: 35%; opacity: 0.45; }
-  100% { top: 5%; right: 10%; opacity: 0; }
-}
-@keyframes aurora3 {
-  0% { bottom: 0%; right: -10%; opacity: 0; }
-  20% { opacity: 0; }
-  28% { opacity: 0.45; }
-  40% { bottom: 25%; right: 40%; opacity: 0.5; }
-  55% { opacity: 0.02; }
-  70% { bottom: 15%; right: 65%; opacity: 0; }
-  82% { opacity: 0.45; }
-  100% { bottom: 10%; right: 20%; opacity: 0.03; }
-}
-@keyframes aurora4 {
-  0% { top: 10%; left: 25%; opacity: 0.03; }
-  10% { opacity: 0.4; }
-  22% { top: 20%; left: 50%; opacity: 0.45; }
-  38% { opacity: 0; }
-  50% { top: 30%; left: 75%; opacity: 0; }
-  68% { opacity: 0.4; }
-  78% { top: 15%; left: 60%; opacity: 0.42; }
-  90% { opacity: 0.02; }
-  100% { top: 20%; left: 40%; opacity: 0; }
-}
+/* Aurora animations handled by JS for randomness */
 @media (max-width: 768px) {
   .aurora-blob-1, .aurora-blob-2, .aurora-blob-3, .aurora-blob-4 {
     width: 250px;

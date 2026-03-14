@@ -227,6 +227,40 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// ═══ RANDOM AURORA ANIMATION ═══
+(function() {
+    var blobs = document.querySelectorAll('.aurora-blob');
+    if (!blobs.length) return;
+
+    blobs.forEach(function(blob) {
+        blob.style.position = 'absolute';
+        blob.style.opacity = '0';
+        blob.style.transition = 'none';
+        moveBlob(blob);
+    });
+
+    function rand(min, max) { return Math.random() * (max - min) + min; }
+
+    function moveBlob(blob) {
+        // Random position
+        var x = rand(-10, 85);
+        var y = rand(-10, 80);
+        // Random opacity — often invisible, sometimes bright
+        var shouldShow = Math.random() > 0.4;
+        var opacity = shouldShow ? rand(0.15, 0.45) : 0;
+        // Random duration for this step
+        var duration = rand(2000, 6000);
+
+        blob.style.transition = 'left ' + duration + 'ms ease-in-out, top ' + duration + 'ms ease-in-out, opacity ' + (duration * 0.7) + 'ms ease-in-out';
+        blob.style.left = x + '%';
+        blob.style.top = y + '%';
+        blob.style.opacity = opacity;
+
+        // Schedule next random move
+        setTimeout(function() { moveBlob(blob); }, duration + rand(500, 3000));
+    }
+})();
+
 // ═══ TESTIMONIAL CAROUSEL ═══
 (function() {
     var photos = document.querySelectorAll('.giga-testimonial-slide-photo');
