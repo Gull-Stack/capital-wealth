@@ -261,6 +261,61 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 })();
 
+// ═══ SERVICES CANVAS TABS ═══
+(function() {
+    var tabs = document.querySelectorAll('.svc-tab');
+    var imgs = document.querySelectorAll('.svc-canvas-img');
+    var desc = document.getElementById('svcDesc');
+    if (!tabs.length) return;
+
+    var descriptions = [
+        'Minimize taxes in retirement through strategic Roth conversions, bracket management, and income planning.',
+        'Actively managed, diversified portfolios designed for retirement income and long-term growth.',
+        'Our proprietary blueprint that maps every dollar from now through retirement and beyond.',
+        'Expert guidance on rollovers, consolidation, and optimizing your retirement accounts.',
+        'Maximize your lifetime Social Security benefits with data-driven claiming strategies.',
+        'Navigate Medicare enrollment, supplement selection, and IRMAA surcharge avoidance.',
+        'Protect your wealth and ensure a smooth transfer to the next generation.',
+        'FERS, TSP, FEGLI, and FEHB expertise for federal workers and retirees.'
+    ];
+
+    var current = 0;
+    var timer;
+
+    function activate(i) {
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        imgs.forEach(function(im) { im.classList.remove('active'); });
+        tabs[i].classList.add('active');
+        imgs[i].classList.add('active');
+        if (desc) {
+            desc.style.opacity = '0';
+            setTimeout(function() {
+                desc.textContent = descriptions[i];
+                desc.style.opacity = '1';
+            }, 200);
+        }
+        current = i;
+    }
+
+    function next() {
+        activate((current + 1) % tabs.length);
+    }
+
+    function startTimer() {
+        clearInterval(timer);
+        timer = setInterval(next, 5000);
+    }
+
+    tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+            activate(parseInt(this.getAttribute('data-svc')));
+            startTimer();
+        });
+    });
+
+    startTimer();
+})();
+
 // ═══ TESTIMONIAL CAROUSEL ═══
 (function() {
     var photos = document.querySelectorAll('.giga-testimonial-slide-photo');

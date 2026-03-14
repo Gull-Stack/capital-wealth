@@ -189,90 +189,63 @@ description: "Fiduciary financial advisor in Lehi, Utah. Retirement income plann
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   SERVICES — Giga-style aurora hero + numbered card grid
+   SERVICES — Agent Canvas style (vertical tabs + big image)
    ═══════════════════════════════════════════════════════════ #}
-<section class="services-hero">
-    <div class="services-hero-aurora">
-        <div class="aurora-blob aurora-blob-1"></div>
-        <div class="aurora-blob aurora-blob-2"></div>
-        <div class="aurora-blob aurora-blob-3"></div>
-    </div>
-    <div class="services-hero-inner">
-        <div class="services-hero-content">
-            <svg class="services-hero-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            <h2 class="services-hero-heading">Comprehensive<br>Retirement Planning</h2>
-            <p class="services-hero-sub">Tailored to your unique situation and goals.</p>
-            <a href="/contact/" class="cta-btn cta-btn-primary" style="margin-top: 0.5rem;">Schedule a Free Review</a>
+<section class="svc-canvas">
+    <div class="svc-canvas-card">
+        <div class="svc-canvas-left">
+            <div class="svc-canvas-header">
+                <svg class="svc-canvas-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                <h2 class="svc-canvas-heading">Comprehensive Retirement Planning</h2>
+            </div>
+            <p class="svc-canvas-sub">Tailored to your unique situation and goals.</p>
+            <a href="/contact/" class="cta-btn cta-btn-primary" style="margin-bottom: 2rem;">Schedule a Free Review</a>
+            <div class="svc-tabs">
+                <button class="svc-tab active" data-svc="0">
+                    <div class="svc-tab-bar"><div class="svc-tab-fill"></div></div>
+                    <span class="svc-tab-label">Tax-Efficient Strategies</span>
+                </button>
+                <button class="svc-tab" data-svc="1">
+                    <div class="svc-tab-bar"><div class="svc-tab-fill"></div></div>
+                    <span class="svc-tab-label">Portfolio Management</span>
+                </button>
+                <button class="svc-tab" data-svc="2">
+                    <div class="svc-tab-bar"><div class="svc-tab-fill"></div></div>
+                    <span class="svc-tab-label">Retirement Money Map</span>
+                </button>
+                <button class="svc-tab" data-svc="3">
+                    <div class="svc-tab-bar"><div class="svc-tab-fill"></div></div>
+                    <span class="svc-tab-label">401(k) & IRA Rollovers</span>
+                </button>
+                <button class="svc-tab" data-svc="4">
+                    <div class="svc-tab-bar"><div class="svc-tab-fill"></div></div>
+                    <span class="svc-tab-label">Social Security Optimization</span>
+                </button>
+                <button class="svc-tab" data-svc="5">
+                    <div class="svc-tab-bar"><div class="svc-tab-fill"></div></div>
+                    <span class="svc-tab-label">Medicare & IRMAA Planning</span>
+                </button>
+                <button class="svc-tab" data-svc="6">
+                    <div class="svc-tab-bar"><div class="svc-tab-fill"></div></div>
+                    <span class="svc-tab-label">Estate & Legacy Planning</span>
+                </button>
+                <button class="svc-tab" data-svc="7">
+                    <div class="svc-tab-bar"><div class="svc-tab-fill"></div></div>
+                    <span class="svc-tab-label">Federal Employee Benefits</span>
+                </button>
+            </div>
+            <p class="svc-canvas-desc" id="svcDesc">Minimize taxes in retirement through strategic Roth conversions, bracket management, and income planning.</p>
         </div>
-    </div>
-</section>
-
-<section class="services-cards-section">
-    <div class="services-cards-inner">
-        <a href="/services/tax-planning/" class="giga-service-card">
-            <div class="giga-service-img"><img src="/assets/images/services/tax-planning.jpg" alt="Tax planning" loading="lazy"></div>
-            <div class="giga-service-body">
-                <span class="giga-service-num">01</span>
-                <h3 class="giga-service-title">Tax-Efficient Strategies</h3>
-                <p class="giga-service-desc">Minimize taxes in retirement through strategic Roth conversions, bracket management, and income planning.</p>
-            </div>
-        </a>
-        <a href="/services/portfolio-management/" class="giga-service-card">
-            <div class="giga-service-img"><img src="/assets/images/services/portfolio.jpg" alt="Portfolio management" loading="lazy"></div>
-            <div class="giga-service-body">
-                <span class="giga-service-num">02</span>
-                <h3 class="giga-service-title">Portfolio Management</h3>
-                <p class="giga-service-desc">Actively managed, diversified portfolios designed for retirement income and long-term growth.</p>
-            </div>
-        </a>
-        <a href="/services/retirement-money-map/" class="giga-service-card">
-            <div class="giga-service-img"><img src="/assets/images/services/money-map.jpg" alt="Retirement Money Map" loading="lazy"></div>
-            <div class="giga-service-body">
-                <span class="giga-service-num">03</span>
-                <h3 class="giga-service-title">Retirement Money Map</h3>
-                <p class="giga-service-desc">Our proprietary blueprint that maps every dollar from now through retirement and beyond.</p>
-            </div>
-        </a>
-        <a href="/services/401k-ira-rollover/" class="giga-service-card">
-            <div class="giga-service-img"><img src="/assets/images/services/401k-rollover.jpg" alt="401k and IRA rollovers" loading="lazy"></div>
-            <div class="giga-service-body">
-                <span class="giga-service-num">04</span>
-                <h3 class="giga-service-title">401(k) & IRA Rollovers</h3>
-                <p class="giga-service-desc">Expert guidance on rollovers, consolidation, and optimizing your retirement accounts.</p>
-            </div>
-        </a>
-        <a href="/services/social-security/" class="giga-service-card">
-            <div class="giga-service-img"><img src="/assets/images/services/social-security.jpg" alt="Social Security optimization" loading="lazy"></div>
-            <div class="giga-service-body">
-                <span class="giga-service-num">05</span>
-                <h3 class="giga-service-title">Social Security Optimization</h3>
-                <p class="giga-service-desc">Maximize your lifetime Social Security benefits with data-driven claiming strategies.</p>
-            </div>
-        </a>
-        <a href="/services/medicare-irmaa/" class="giga-service-card">
-            <div class="giga-service-img"><img src="/assets/images/services/medicare.jpg" alt="Medicare and IRMAA planning" loading="lazy"></div>
-            <div class="giga-service-body">
-                <span class="giga-service-num">06</span>
-                <h3 class="giga-service-title">Medicare & IRMAA Planning</h3>
-                <p class="giga-service-desc">Navigate Medicare enrollment, supplement selection, and IRMAA surcharge avoidance.</p>
-            </div>
-        </a>
-        <a href="/services/estate-planning/" class="giga-service-card">
-            <div class="giga-service-img"><img src="/assets/images/services/estate-planning.jpg" alt="Estate and legacy planning" loading="lazy"></div>
-            <div class="giga-service-body">
-                <span class="giga-service-num">07</span>
-                <h3 class="giga-service-title">Estate & Legacy Planning</h3>
-                <p class="giga-service-desc">Protect your wealth and ensure a smooth transfer to the next generation.</p>
-            </div>
-        </a>
-        <a href="/services/federal-benefits/" class="giga-service-card">
-            <div class="giga-service-img"><img src="/assets/images/services/federal-benefits.jpg" alt="Federal employee benefits" loading="lazy"></div>
-            <div class="giga-service-body">
-                <span class="giga-service-num">08</span>
-                <h3 class="giga-service-title">Federal Employee Benefits</h3>
-                <p class="giga-service-desc">FERS, TSP, FEGLI, and FEHB expertise for federal workers and retirees.</p>
-            </div>
-        </a>
+        <div class="svc-canvas-right">
+            <img class="svc-canvas-img active" data-svc="0" src="/assets/images/services/tax-planning.jpg" alt="Tax-Efficient Strategies">
+            <img class="svc-canvas-img" data-svc="1" src="/assets/images/services/portfolio.jpg" alt="Portfolio Management">
+            <img class="svc-canvas-img" data-svc="2" src="/assets/images/services/money-map.jpg" alt="Retirement Money Map">
+            <img class="svc-canvas-img" data-svc="3" src="/assets/images/services/401k-rollover.jpg" alt="401k & IRA Rollovers">
+            <img class="svc-canvas-img" data-svc="4" src="/assets/images/services/social-security.jpg" alt="Social Security Optimization">
+            <img class="svc-canvas-img" data-svc="5" src="/assets/images/services/medicare.jpg" alt="Medicare & IRMAA Planning">
+            <img class="svc-canvas-img" data-svc="6" src="/assets/images/services/estate-planning.jpg" alt="Estate & Legacy Planning">
+            <img class="svc-canvas-img" data-svc="7" src="/assets/images/services/federal-benefits.jpg" alt="Federal Employee Benefits">
+        </div>
     </div>
 </section>
 
