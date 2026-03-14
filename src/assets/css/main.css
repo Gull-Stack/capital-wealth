@@ -1516,6 +1516,7 @@ a:hover {
 .fundamentals-inner {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 4rem;
@@ -2681,6 +2682,7 @@ a:hover {
 .hero-transition-inner {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
