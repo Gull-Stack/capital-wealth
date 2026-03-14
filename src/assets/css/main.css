@@ -1784,16 +1784,10 @@ a:hover {
   background: #fff;
   padding: 5rem 2rem;
 }
-.giga-testimonials-inner {
+.giga-testimonials-header {
   max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 4rem;
-  align-items: center;
-  border: 1px solid #e0e0e0;
-  border-radius: 16px;
-  padding: 3.5rem;
+  margin: 0 auto 2rem;
+  padding: 0 2rem;
 }
 .giga-testimonials-heading {
   font-family: var(--font-display);
@@ -1802,12 +1796,24 @@ a:hover {
   letter-spacing: -0.02em;
   line-height: 1.12;
   color: #1a1a1a;
-  margin: 0 0 2rem;
+  margin: 0;
+}
+.giga-testimonials-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 3rem;
+  background: #f7f7f8;
 }
 .giga-testimonial-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 5/4;
   overflow: hidden;
   border-radius: 12px;
 }
@@ -1909,10 +1915,16 @@ a:hover {
   border-color: var(--accent-secondary);
 }
 @media (max-width: 768px) {
+  .giga-testimonials-header {
+    padding: 0;
+  }
+  .giga-testimonials-heading {
+    font-size: 2rem;
+  }
   .giga-testimonials-inner {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
   }
   .giga-testimonials-heading {
     font-size: 2rem;
