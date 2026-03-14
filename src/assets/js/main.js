@@ -30,6 +30,18 @@
 })();
 
 // Mobile Menu — full-screen Giga style
+// Align nav dropdown with nav pill left edge
+document.addEventListener('DOMContentLoaded', function() {
+    const navPill = document.querySelector('.nav-left-pill');
+    function setNavLeft() {
+        if (navPill) {
+            document.documentElement.style.setProperty('--nav-left', navPill.getBoundingClientRect().left + 'px');
+        }
+    }
+    setNavLeft();
+    window.addEventListener('resize', setNavLeft);
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const mobileMenu = document.getElementById('mobileMenu');
