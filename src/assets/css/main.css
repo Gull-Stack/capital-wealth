@@ -370,6 +370,7 @@ a:hover {
 @media (max-width: 767px) {
   .header {
     padding: 0.75rem 1rem;
+    pointer-events: all;
   }
   .nav-float {
     border-radius: 0;
