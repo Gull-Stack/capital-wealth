@@ -265,19 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
     var tabs = document.querySelectorAll('.svc-tab');
     var imgs = document.querySelectorAll('.svc-canvas-img');
-    var desc = document.getElementById('svcDesc');
     if (!tabs.length) return;
-
-    var descriptions = [
-        'Minimize taxes in retirement through strategic Roth conversions, bracket management, and income planning.',
-        'Actively managed, diversified portfolios designed for retirement income and long-term growth.',
-        'Our proprietary blueprint that maps every dollar from now through retirement and beyond.',
-        'Expert guidance on rollovers, consolidation, and optimizing your retirement accounts.',
-        'Maximize your lifetime Social Security benefits with data-driven claiming strategies.',
-        'Navigate Medicare enrollment, supplement selection, and IRMAA surcharge avoidance.',
-        'Protect your wealth and ensure a smooth transfer to the next generation.',
-        'FERS, TSP, FEGLI, and FEHB expertise for federal workers and retirees.'
-    ];
 
     var current = 0;
     var timer;
@@ -287,13 +275,6 @@ document.addEventListener('DOMContentLoaded', function() {
         imgs.forEach(function(im) { im.classList.remove('active'); });
         tabs[i].classList.add('active');
         imgs[i].classList.add('active');
-        if (desc) {
-            desc.style.opacity = '0';
-            setTimeout(function() {
-                desc.textContent = descriptions[i];
-                desc.style.opacity = '1';
-            }, 200);
-        }
         current = i;
     }
 
