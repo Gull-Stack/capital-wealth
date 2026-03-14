@@ -1507,6 +1507,115 @@ a:hover {
 }
 
 /* Final CTA */
+/* ═══ FIVE FUNDAMENTALS — Giga style ═══ */
+.fundamentals-section {
+  background: var(--bg-primary);
+  padding: 5rem 2rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.fundamentals-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+}
+.fundamentals-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-secondary);
+  margin-bottom: 1.25rem;
+}
+.fundamentals-eyebrow::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-secondary);
+}
+.fundamentals-heading {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  color: #fff;
+  margin: 0;
+}
+.fundamentals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.fundamental-card {
+  padding: 2rem 1.5rem;
+  border-left: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.fundamental-card:nth-child(1),
+.fundamental-card:nth-child(4) {
+  border-left: none;
+}
+.fundamental-card:nth-child(4),
+.fundamental-card:nth-child(5) {
+  border-bottom: none;
+}
+.fundamental-icon {
+  width: 28px;
+  height: 28px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 1rem;
+}
+.fundamental-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0.5rem;
+}
+.fundamental-desc {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.5;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .fundamentals-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .fundamentals-heading {
+    font-size: 2rem;
+  }
+  .fundamentals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fundamental-card:nth-child(4) {
+    border-left: none;
+  }
+  .fundamental-card:nth-child(3) {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+}
+@media (max-width: 480px) {
+  .fundamentals-grid {
+    grid-template-columns: 1fr;
+  }
+  .fundamental-card {
+    border-left: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .fundamental-card:last-child {
+    border-bottom: none;
+  }
+}
+
 /* Old cta-final replaced by Giga-style */
 .cta-final-giga {
   padding: 5rem 2rem;
