@@ -230,74 +230,74 @@
         {{ content | safe }}
     </main>
 
+    <!-- Logo Backdrop Section (between CTA and footer) -->
+    <section class="logo-backdrop-section">
+        <div class="logo-backdrop-container">
+            <img src="/assets/images/logos/logo-white.png" alt="" aria-hidden="true" class="logo-backdrop-img">
+            <div class="logo-backdrop-glow logo-backdrop-glow-1"></div>
+            <div class="logo-backdrop-glow logo-backdrop-glow-2"></div>
+            <div class="logo-backdrop-glow logo-backdrop-glow-3"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer-giga">
-    <!-- Animated logo backdrop -->
-    <div class="footer-logo-backdrop">
-        <img src="/assets/images/logos/logo-white.png" alt="" aria-hidden="true" class="footer-backdrop-logo">
-        <div class="footer-backdrop-glow"></div>
-    </div>
-
-    <div class="footer-giga-inner">
-        <!-- Left column: Logo + pills -->
-        <div class="footer-giga-left">
-            <img src="/assets/images/logos/logo-white.png" alt="Capital Wealth Advisors" class="footer-giga-logo">
-            <div class="footer-giga-pills">
-                <a href="/contact/" class="footer-pill footer-pill-primary">Schedule Consultation</a>
-                <a href="tel:8012102800" class="footer-pill footer-pill-outline">Call 801.210.2800</a>
-                <a href="mailto:info@capitalwealth.com" class="footer-pill footer-pill-outline">info@capitalwealth.com</a>
+        <div class="footer-giga-inner">
+            <div class="footer-giga-left">
+                <img src="/assets/images/logos/logo-white.png" alt="Capital Wealth Advisors" class="footer-giga-logo">
+                <div class="footer-giga-pills">
+                    <a href="/contact/" class="footer-pill footer-pill-primary">Schedule Consultation</a>
+                    <a href="tel:8012102800" class="footer-pill footer-pill-outline">Call 801.210.2800</a>
+                    <a href="mailto:info@capitalwealth.com" class="footer-pill footer-pill-outline">info@capitalwealth.com</a>
+                </div>
+            </div>
+            <div class="footer-giga-nav">
+                <div class="footer-giga-col">
+                    <h5 class="footer-giga-heading">Services</h5>
+                    <ul>
+                        {% for service in site.services %}
+                        <li><a href="/services/{{ service.slug }}/">{{ service.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="footer-giga-col">
+                    <h5 class="footer-giga-heading">Resources</h5>
+                    <ul>
+                        <li><a href="/guides/">Guides</a></li>
+                        <li><a href="/faq/">FAQ</a></li>
+                        <li><a href="/guides/how-much-do-i-need-to-retire-in-utah/">Retiring in Utah</a></li>
+                        <li><a href="/guides/401k-rollover-complete-guide/">401(k) Guide</a></li>
+                        <li><a href="/guides/when-to-take-social-security/">Social Security</a></li>
+                        <li><a href="/guides/fers-retirement-planning-guide/">FERS Guide</a></li>
+                        <li><a href="/guides/retirement-tax-planning-strategies/">Tax Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-giga-col">
+                    <h5 class="footer-giga-heading">Company</h5>
+                    <ul>
+                        <li><a href="/about/">About Us</a></li>
+                        <li><a href="/reviews/">Reviews</a></li>
+                        <li><a href="/press/">Press & Media</a></li>
+                        <li><a href="/case-studies/">Case Studies</a></li>
+                        <li><a href="/disclosures/">Disclosures</a></li>
+                        <li><a href="/brand-facts/">Brand Facts</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <!-- Right columns: Nav links -->
-        <div class="footer-giga-nav">
-            <div class="footer-giga-col">
-                <h5 class="footer-giga-heading">Services</h5>
-                <ul>
-                    {% for service in site.services %}
-                    <li><a href="/services/{{ service.slug }}/">{{ service.name }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="footer-giga-col">
-                <h5 class="footer-giga-heading">Resources</h5>
-                <ul>
-                    <li><a href="/guides/">Guides</a></li>
-                    <li><a href="/faq/">FAQ</a></li>
-                    <li><a href="/guides/how-much-do-i-need-to-retire-in-utah/">Retiring in Utah</a></li>
-                    <li><a href="/guides/401k-rollover-complete-guide/">401(k) Guide</a></li>
-                    <li><a href="/guides/when-to-take-social-security/">Social Security</a></li>
-                    <li><a href="/guides/fers-retirement-planning-guide/">FERS Guide</a></li>
-                    <li><a href="/guides/retirement-tax-planning-strategies/">Tax Planning</a></li>
-                </ul>
-            </div>
-            <div class="footer-giga-col">
-                <h5 class="footer-giga-heading">Company</h5>
-                <ul>
-                    <li><a href="/about/">About Us</a></li>
-                    <li><a href="/reviews/">Reviews</a></li>
-                    <li><a href="/press/">Press & Media</a></li>
-                    <li><a href="/case-studies/">Case Studies</a></li>
-                    <li><a href="/disclosures/">Disclosures</a></li>
-                    <li><a href="/brand-facts/">Brand Facts</a></li>
-                </ul>
+        <div class="footer-giga-sub">
+            <div class="footer-giga-sub-inner">
+                <div class="footer-giga-legal">
+                    <p>&copy; {{ "now" | date("%Y") }} Capital Wealth Advisors. All rights reserved.</p>
+                    <p>Investment advisory services offered through Capital Wealth Advisors. Michael Stevens, IAR.</p>
+                    <p><a href="/disclosures/">Important Disclosures</a></p>
+                </div>
+                <div class="footer-giga-credit">
+                    <p>Website by <a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a></p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Sub footer -->
-    <div class="footer-giga-sub">
-        <div class="footer-giga-sub-inner">
-            <div class="footer-giga-legal">
-                <p>&copy; {{ "now" | date("%Y") }} Capital Wealth Advisors. All rights reserved.</p>
-                <p>Investment advisory services offered through Capital Wealth Advisors. Michael Stevens, IAR.</p>
-                <p><a href="/disclosures/">Important Disclosures</a></p>
-            </div>
-            <div class="footer-giga-credit">
-                <p>Website by <a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a></p>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <script src="/assets/js/main.js"></script>
     <script>

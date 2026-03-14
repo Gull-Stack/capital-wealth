@@ -916,73 +916,94 @@ a:hover {
   margin-bottom: var(--spacing-xs);
 }
 
-/* ═══ GIGA FOOTER ═══ */
-.footer-giga {
-  background: #060e18;
+/* ═══ LOGO BACKDROP SECTION ═══ */
+.logo-backdrop-section {
+  background: linear-gradient(180deg, var(--bg-primary) 0%, #0a1628 50%, #060e18 100%);
   position: relative;
   overflow: hidden;
-  padding-top: 4rem;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.footer-logo-backdrop {
+.logo-backdrop-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.logo-backdrop-img {
+  width: 600px;
+  max-width: 80vw;
+  height: auto;
+  opacity: 0.06;
+  filter: grayscale(1) brightness(2);
+  transform: translateY(30%);
+  position: relative;
+  z-index: 1;
+}
+.logo-backdrop-glow {
   position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 400px;
-  height: 300px;
+  border-radius: 50%;
+  filter: blur(60px);
   pointer-events: none;
   z-index: 0;
 }
-.footer-backdrop-logo {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.logo-backdrop-glow-1 {
   width: 350px;
-  height: auto;
-  opacity: 0.04;
-  filter: grayscale(1);
+  height: 250px;
+  bottom: 20%;
+  left: 35%;
+  background: rgba(30, 100, 220, 0.12);
+  animation: glowDance1 5s ease-in-out infinite alternate;
 }
-.footer-backdrop-glow {
-  position: absolute;
-  bottom: 20px;
+.logo-backdrop-glow-2 {
+  width: 280px;
+  height: 200px;
+  bottom: 30%;
+  right: 30%;
+  background: rgba(212, 148, 76, 0.1);
+  animation: glowDance2 7s ease-in-out infinite alternate;
+}
+.logo-backdrop-glow-3 {
+  width: 200px;
+  height: 180px;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
-  height: 200px;
-  background: radial-gradient(ellipse at center,
-    rgba(30, 100, 200, 0.15) 0%,
-    rgba(212, 148, 76, 0.1) 30%,
-    rgba(30, 100, 200, 0.08) 50%,
-    transparent 70%);
-  animation: footerGlow 6s ease-in-out infinite alternate;
-  filter: blur(40px);
+  background: rgba(50, 140, 255, 0.08);
+  animation: glowDance3 4s ease-in-out infinite alternate;
 }
-@keyframes footerGlow {
-  0% {
-    opacity: 0.6;
-    background: radial-gradient(ellipse at center,
-      rgba(30, 100, 200, 0.15) 0%,
-      rgba(212, 148, 76, 0.1) 30%,
-      rgba(30, 100, 200, 0.08) 50%,
-      transparent 70%);
+@keyframes glowDance1 {
+  0% { opacity: 0.5; transform: translate(0, 0) scale(1); }
+  50% { opacity: 1; transform: translate(20px, -15px) scale(1.15); }
+  100% { opacity: 0.6; transform: translate(-10px, 10px) scale(0.95); }
+}
+@keyframes glowDance2 {
+  0% { opacity: 0.4; transform: translate(0, 0) scale(1); }
+  50% { opacity: 0.9; transform: translate(-25px, -10px) scale(1.1); }
+  100% { opacity: 0.5; transform: translate(15px, 5px) scale(1.05); }
+}
+@keyframes glowDance3 {
+  0% { opacity: 0.3; transform: translateX(-50%) scale(1); }
+  50% { opacity: 0.8; transform: translateX(-45%) scale(1.2); }
+  100% { opacity: 0.4; transform: translateX(-55%) scale(0.9); }
+}
+@media (max-width: 768px) {
+  .logo-backdrop-section {
+    height: 220px;
   }
-  50% {
-    opacity: 1;
-    background: radial-gradient(ellipse at center,
-      rgba(212, 148, 76, 0.18) 0%,
-      rgba(30, 100, 200, 0.12) 30%,
-      rgba(212, 148, 76, 0.06) 50%,
-      transparent 70%);
+  .logo-backdrop-img {
+    width: 350px;
   }
-  100% {
-    opacity: 0.7;
-    background: radial-gradient(ellipse at center,
-      rgba(50, 120, 220, 0.14) 0%,
-      rgba(212, 148, 76, 0.12) 35%,
-      rgba(50, 120, 220, 0.06) 55%,
-      transparent 70%);
-  }
+}
+
+/* ═══ GIGA FOOTER ═══ */
+.footer-giga {
+  background: #060e18;
+  padding-top: 3rem;
 }
 .footer-giga-inner {
   max-width: 1200px;
