@@ -38,10 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Mobile Services Accordion
 document.addEventListener('DOMContentLoaded', function() {
-    const toggle = document.getElementById('mobileServicesToggle');
-    const panel = document.getElementById('mobileServicesPanel');
+    var toggle = document.getElementById('mobileServicesToggle');
+    var panel = document.getElementById('mobileServicesPanel');
     if (toggle && panel) {
-        toggle.addEventListener('click', function() {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             toggle.classList.toggle('active');
             panel.classList.toggle('active');
         });

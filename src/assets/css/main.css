@@ -309,22 +309,23 @@ a:hover {
   opacity: 0.6;
 }
 
-/* Client Login link at top */
+/* Client Login button at top */
 .mobile-menu-login {
   display: block;
-  color: #fff !important;
-  font-size: 1rem;
+  color: var(--bg-primary) !important;
+  font-size: 0.9rem;
   font-weight: 500;
-  padding: 0.9rem 1.5rem;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 12px;
+  padding: 0.85rem 1.5rem;
+  background: #fff;
+  border: none;
+  border-radius: 100px;
   text-decoration: none;
   text-align: center;
   transition: background 0.2s ease;
 }
 .mobile-menu-login:hover {
-  background: rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.9);
+  opacity: 1 !important;
 }
 
 /* Services accordion */
