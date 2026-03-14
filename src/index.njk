@@ -398,24 +398,58 @@ description: "Fiduciary financial advisor in Lehi, Utah. Retirement income plann
 
 
 {# ═══════════════════════════════════════════════════════════
-   TESTIMONIALS — B.O.S.S. style (white bg, bold squares)
+   TESTIMONIALS — Giga-style rotating photo + quote
    ═══════════════════════════════════════════════════════════ #}
-<section style="background: #fff; padding: 5rem 2rem;" class="reveal">
-    <div class="container">
-        <div class="testimonial-grid">
-            <div>
-                <div style="background: var(--bg-secondary); padding: 2rem 2.5rem; display: inline-block;">
-                    <p class="editorial-eyebrow" style="margin: 0;">testimonials</p>
-                    <h2 style="color: #fff; font-size: 2rem; text-transform: uppercase; font-weight: 800; line-height: 1.1; margin: 0.5rem 0 0;">What Our<br>Clients Say</h2>
-                </div>
+<section class="giga-testimonials">
+    <div class="giga-testimonials-inner">
+        <div class="giga-testimonials-left">
+            <span class="fundamentals-eyebrow">Client Stories</span>
+            <h2 class="giga-testimonials-heading">Real Families.<br>Real Results.</h2>
+            <div class="giga-testimonial-frame">
+                <img class="giga-testimonial-photo active" src="/assets/images/testimonials/kathy.jpg" alt="Kathy W." data-index="0">
+                <img class="giga-testimonial-photo" src="/assets/images/testimonials/julie.jpg" alt="Julie R." data-index="1">
+                <img class="giga-testimonial-photo" src="/assets/images/testimonials/cory.jpg" alt="Cory M." data-index="2">
+                <img class="giga-testimonial-photo" src="/assets/images/testimonials/collette.jpg" alt="Collette D." data-index="3">
+                <img class="giga-testimonial-photo" src="/assets/images/testimonials/christina.jpg" alt="Christina L." data-index="4">
             </div>
-            <div style="display: grid; gap: 1.5rem;">
-                {% for testimonial in site.testimonials %}
-                <div style="background: #f4f5f7; border-left: 4px solid var(--accent-primary); padding: 2rem 2.5rem;">
-                    <div style="color: var(--accent-secondary); font-size: 1.2rem; margin-bottom: 0.5rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p style="color: #333; line-height: 1.7; font-size: 0.95rem; font-style: italic;">"{{ testimonial.text }}"</p>
-                </div>
-                {% endfor %}
+        </div>
+        <div class="giga-testimonials-right">
+            <div class="giga-testimonial-slide active" data-index="0">
+                <div class="giga-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote class="giga-testimonial-quote">"Mike and his team are excellent. Their professionalism is amazing and we know his team really cares about us. They have presented a very comprehensive plan that has really expanded our view on what retirement can and will look like."</blockquote>
+                <div class="giga-testimonial-author">Kathy W.</div>
+                <div class="giga-testimonial-title">Retired Educator</div>
+            </div>
+            <div class="giga-testimonial-slide" data-index="1">
+                <div class="giga-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote class="giga-testimonial-quote">"I could not be happier that I am working with Capital Wealth! I finally have financial understanding and help with my future! Thank you Capital Wealth!! I am so grateful for the peace of mind!"</blockquote>
+                <div class="giga-testimonial-author">Julie R.</div>
+                <div class="giga-testimonial-title">Recently Retired</div>
+            </div>
+            <div class="giga-testimonial-slide" data-index="2">
+                <div class="giga-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote class="giga-testimonial-quote">"This is a great company to work with. We've trusted them with our accounts for two years now and they've done great things for us! They are also very personable and pleasant to work with."</blockquote>
+                <div class="giga-testimonial-author">Cory M.</div>
+                <div class="giga-testimonial-title">Business Owner</div>
+            </div>
+            <div class="giga-testimonial-slide" data-index="3">
+                <div class="giga-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote class="giga-testimonial-quote">"They saved us over $142,000 in taxes over the first five years of retirement. I had no idea we were leaving that much on the table. Capital Wealth changed our entire outlook."</blockquote>
+                <div class="giga-testimonial-author">Collette D.</div>
+                <div class="giga-testimonial-title">Tax Savings Client</div>
+            </div>
+            <div class="giga-testimonial-slide" data-index="4">
+                <div class="giga-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote class="giga-testimonial-quote">"As a federal employee, I had no idea how complex my benefits were until Capital Wealth walked us through everything — FERS, TSP, survivor benefits, all of it. We finally have a plan that makes sense for our family."</blockquote>
+                <div class="giga-testimonial-author">Christina L.</div>
+                <div class="giga-testimonial-title">GS-14, Department of Defense</div>
+            </div>
+            <div class="giga-testimonial-dots">
+                <button class="giga-dot active" data-index="0" aria-label="Testimonial 1"></button>
+                <button class="giga-dot" data-index="1" aria-label="Testimonial 2"></button>
+                <button class="giga-dot" data-index="2" aria-label="Testimonial 3"></button>
+                <button class="giga-dot" data-index="3" aria-label="Testimonial 4"></button>
+                <button class="giga-dot" data-index="4" aria-label="Testimonial 5"></button>
             </div>
         </div>
     </div>

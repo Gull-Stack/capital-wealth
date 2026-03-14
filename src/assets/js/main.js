@@ -227,6 +227,42 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// ═══ TESTIMONIAL CAROUSEL ═══
+(function() {
+    var photos = document.querySelectorAll('.giga-testimonial-photo');
+    var slides = document.querySelectorAll('.giga-testimonial-slide');
+    var dots = document.querySelectorAll('.giga-dot');
+    if (!photos.length) return;
+
+    var current = 0;
+    var total = photos.length;
+    var interval;
+
+    function showSlide(i) {
+        photos.forEach(function(p) { p.classList.remove('active'); });
+        slides.forEach(function(s) { s.classList.remove('active'); });
+        dots.forEach(function(d) { d.classList.remove('active'); });
+        photos[i].classList.add('active');
+        slides[i].classList.add('active');
+        dots[i].classList.add('active');
+        current = i;
+    }
+
+    function next() {
+        showSlide((current + 1) % total);
+    }
+
+    dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+            showSlide(parseInt(this.getAttribute('data-index')));
+            clearInterval(interval);
+            interval = setInterval(next, 6000);
+        });
+    });
+
+    interval = setInterval(next, 6000);
+})();
+
 // Add CSS for form error states
 const style = document.createElement('style');
 style.textContent = `

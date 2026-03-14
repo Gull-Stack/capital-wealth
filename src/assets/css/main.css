@@ -1616,6 +1616,123 @@ a:hover {
   }
 }
 
+/* ═══ GIGA TESTIMONIALS ═══ */
+.giga-testimonials {
+  background: #fff;
+  padding: 5rem 2rem;
+}
+.giga-testimonials-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+.giga-testimonials-heading {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  color: #1a1a1a;
+  margin: 0 0 2rem;
+}
+.giga-testimonial-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border: 6px solid #e8e8e8;
+}
+.giga-testimonial-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.giga-testimonial-photo.active {
+  opacity: 1;
+}
+.giga-testimonials-right {
+  position: relative;
+}
+.giga-testimonial-slide {
+  display: none;
+  animation: fadeInQuote 0.5s ease;
+}
+.giga-testimonial-slide.active {
+  display: block;
+}
+@keyframes fadeInQuote {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.giga-testimonial-stars {
+  color: var(--accent-secondary);
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.25rem;
+}
+.giga-testimonial-quote {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  border: none;
+  font-style: italic;
+}
+.giga-testimonial-author {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1a1a1a;
+}
+.giga-testimonial-title {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.2rem;
+}
+.giga-testimonial-dots {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.giga-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.25s ease;
+}
+.giga-dot.active {
+  background: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+}
+.giga-dot:hover {
+  border-color: var(--accent-secondary);
+}
+@media (max-width: 768px) {
+  .giga-testimonials-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .giga-testimonials-heading {
+    font-size: 2rem;
+  }
+  .giga-testimonial-quote {
+    font-size: 1.05rem;
+  }
+}
+
 /* Old cta-final replaced by Giga-style */
 .cta-final-giga {
   padding: 5rem 2rem;
