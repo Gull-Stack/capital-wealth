@@ -93,24 +93,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// FAQ Accordion
+// FAQ Accordion (old + new)
 document.addEventListener('DOMContentLoaded', function() {
+    // Old style
     const faqQuestions = document.querySelectorAll('.faq-question');
-    
     faqQuestions.forEach(question => {
         question.addEventListener('click', function() {
             const faqItem = this.closest('.faq-item');
             const isActive = faqItem.classList.contains('active');
-            
-            // Close all FAQ items
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            // Open clicked item if it wasn't active
-            if (!isActive) {
-                faqItem.classList.add('active');
-            }
+            document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+            if (!isActive) faqItem.classList.add('active');
+        });
+    });
+    // New two-column style
+    document.querySelectorAll('.faq-acc-item').forEach(item => {
+        item.addEventListener('click', function() {
+            const isActive = this.classList.contains('active');
+            document.querySelectorAll('.faq-acc-item').forEach(i => i.classList.remove('active'));
+            if (!isActive) this.classList.add('active');
         });
     });
 });
