@@ -1960,10 +1960,17 @@ a:hover {
   background: #060e18;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
-.cta-final-inner-centered {
-  max-width: 800px;
+.cta-final-inner {
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.cta-final-left {
+  flex: 1;
 }
 .cta-final-heading {
   font-family: var(--font-display);
@@ -1972,18 +1979,19 @@ a:hover {
   letter-spacing: -0.02em;
   line-height: 1.1;
   color: #fff;
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
 }
 .cta-final-sub {
-  font-size: 1.05rem;
-  color: rgba(255,255,255,0.55);
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.45);
   line-height: 1.6;
-  margin: 0 0 2rem;
+  margin: 0;
+  max-width: 520px;
 }
 .cta-final-actions {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  flex-shrink: 0;
 }
 .cta-btn {
   display: inline-flex;
@@ -2019,11 +2027,19 @@ a:hover {
   transform: translateY(-1px);
 }
 @media (max-width: 768px) {
+  .cta-final-inner {
+    flex-direction: column;
+    text-align: center;
+  }
   .cta-final-heading {
     font-size: 2rem;
   }
+  .cta-final-sub {
+    max-width: 100%;
+  }
   .cta-final-actions {
     flex-direction: column;
+    width: 100%;
   }
   .cta-btn {
     width: 100%;
