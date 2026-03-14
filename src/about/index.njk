@@ -7,236 +7,145 @@ breadcrumbs:
   - { name: "About", url: "/about/" }
 ---
 
-<!-- Hero -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1>About Capital Wealth Advisors</h1>
-            <p class="hero-subtitle">Serving Utah families since 2010 with personalized retirement planning and fiduciary financial advice.</p>
+{# ═══════════════════════════════════════════════════════════
+   HERO — Full-width image with overlay text
+   ═══════════════════════════════════════════════════════════ #}
+<section class="about-hero">
+    <img src="/assets/images/photos/homepage-mountain-bg.webp" alt="Utah mountain landscape" class="about-hero-bg">
+    <div class="about-hero-overlay">
+        <div class="container">
+            <p class="editorial-eyebrow" style="color: var(--accent-secondary);">our story</p>
+            <h1>Built on Trust.<br>Driven by Results.</h1>
+            <p class="about-hero-sub">Since 2010, we've helped over 500 Utah families retire with confidence — not anxiety.</p>
         </div>
     </div>
 </section>
 
-<!-- Mike's Story -->
-<section class="section">
-    <div class="container">
-        <div class="bio-section">
-            <div class="bio-photo">
-                <img src="/assets/images/mike-stevens.jpg" alt="Michael Stevens — Founder & Lead Advisor, Capital Wealth Advisors" loading="lazy">
+{# ═══════════════════════════════════════════════════════════
+   MIKE BIO — Editorial split (photo left, story right)
+   ═══════════════════════════════════════════════════════════ #}
+<section style="background: #fff; padding: 5rem 2rem;">
+    <div class="about-bio-split">
+        <div class="about-bio-photo">
+            <img src="/assets/images/mike-stevens.jpg" alt="Michael Stevens, IAR — Founder of Capital Wealth Advisors" loading="lazy">
+        </div>
+        <div class="about-bio-text">
+            <p class="editorial-eyebrow">meet the founder</p>
+            <h2>Michael Stevens, IAR</h2>
+            <p class="about-bio-role">Investment Adviser Representative & Founder</p>
+            <p>Michael was on a pre-med track when his father passed away during college. That moment changed everything — it shifted his focus from medicine to money, and sparked a mission to help families avoid the financial chaos that comes with life's biggest transitions.</p>
+            <p>He earned his BS in Business Management from Utah Valley University, got his Series 66 certification, and launched Capital Wealth Advisors in 2010. Fifteen years later, he's guided over 500 families and $500M+ in assets — all under a fiduciary standard. No commissions. No conflicts. Just honest advice.</p>
+            <div class="about-credentials">
+                <span>Series 66 Certified</span>
+                <span>Fiduciary Standard</span>
+                <span>CA License #0G96805</span>
+                <span>JA Utah Board Member</span>
             </div>
-            
-            <div class="bio-content">
-                <h2>Michael Stevens, IAR</h2>
-                <p class="text-lg text-accent">Investment Adviser Representative & Founder</p>
-                
-                <p>Michael Stevens didn't start his career planning to become a financial advisor. Originally on a pre-med track, his path changed dramatically when his father passed away during his college years. This life-changing event shifted his perspective and ultimately led him to the world of finance, where he discovered his passion for helping families navigate complex financial decisions.</p>
-                
-                <p>After completing his BS in Business Management at Utah Valley University, Michael earned his Series 66 certification and began building what would become Capital Wealth Advisors in 2010. His commitment to the fiduciary standard means he is legally obligated to act in his clients' best interests at all times - no conflicts, no commissions, just honest advice.</p>
-                
-                <p>Michael holds a California insurance license (#0G96805) and serves on the board of Junior Achievement of Utah, where he helps educate young people about financial literacy and entrepreneurship. This community involvement reflects his belief that financial education should be accessible to everyone.</p>
-                
-                <div class="bio-credentials">
-                    <span class="credential">Series 66 Certified</span>
-                    <span class="credential">Fiduciary Standard</span>
-                    <span class="credential">California Licensed #0G96805</span>
-                    <span class="credential">JA Utah Board Member</span>
-                    <span class="credential">UVU Business Graduate</span>
+        </div>
+    </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   STATS — Big numbers
+   ═══════════════════════════════════════════════════════════ #}
+<section class="about-stats-bar">
+    <div class="container">
+        <div class="about-stats-grid">
+            <div class="about-stat">
+                <span class="about-stat-num">500+</span>
+                <span class="about-stat-label">Families Served</span>
+            </div>
+            <div class="about-stat">
+                <span class="about-stat-num">$500M+</span>
+                <span class="about-stat-label">Assets Under Guidance</span>
+            </div>
+            <div class="about-stat">
+                <span class="about-stat-num">15+</span>
+                <span class="about-stat-label">Years of Experience</span>
+            </div>
+            <div class="about-stat">
+                <span class="about-stat-num">100%</span>
+                <span class="about-stat-label">Fiduciary — Always</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   TEAM — Side-by-side cards
+   ═══════════════════════════════════════════════════════════ #}
+<section style="background: #fff; padding: 5rem 2rem;">
+    <div class="container">
+        <div class="text-center" style="margin-bottom: 3rem;">
+            <p class="editorial-eyebrow">the team</p>
+            <h2>People Who Actually Care About Your Money</h2>
+        </div>
+        <div class="about-team-grid">
+            <div class="about-team-card">
+                <div class="about-team-photo">
+                    <img src="/assets/images/mike-stevens.jpg" alt="Michael Stevens" loading="lazy">
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Our Team -->
-<section class="section section-dark">
-    <div class="container">
-        <div class="text-center mb-xl">
-            <h2>Our Team</h2>
-            <p class="text-lg">Experienced professionals dedicated to your financial success.</p>
-        </div>
-        
-        <div class="grid grid-cols-2">
-            <div class="card">
                 <h3>Michael Stevens</h3>
-                <p class="text-accent">Founder & Lead Advisor</p>
-                <p>{{ site.founder.bio }}</p>
-                
-                <div class="mt-md">
-                    <span class="service-tag">Retirement Planning</span>
-                    <span class="service-tag">Tax Strategies</span>
-                    <span class="service-tag">Estate Planning</span>
-                </div>
+                <p class="about-team-role">Founder & Lead Advisor</p>
+                <p>15 years of fiduciary financial planning. Specializes in retirement income, tax strategy, and making sure you don't outlive your money.</p>
             </div>
-            
-            <div class="card">
+            <div class="about-team-card">
+                <div class="about-team-photo about-team-photo--placeholder">
+                    <span>BT</span>
+                </div>
                 <h3>Brent Thompson</h3>
-                <p class="text-accent">Advisor</p>
-                <p>Brent brings extensive experience in comprehensive financial planning and portfolio management. He works closely with Michael to ensure every client receives personalized attention and strategic guidance tailored to their unique retirement goals.</p>
-                
-                <div class="mt-md">
-                    <span class="service-tag">Portfolio Management</span>
-                    <span class="service-tag">Financial Planning</span>
-                    <span class="service-tag">Client Relations</span>
-                </div>
+                <p class="about-team-role">Advisor</p>
+                <p>Comprehensive financial planning and portfolio management. Works closely with Michael to deliver personalized strategies for every client.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Our Mission -->
-<section class="section">
+{# ═══════════════════════════════════════════════════════════
+   IMAGE BREAK — Full-width color photo
+   ═══════════════════════════════════════════════════════════ #}
+<div class="about-image-break">
+    <img src="/assets/images/photos/couple-boat.jpg" alt="Couple enjoying retirement" loading="lazy">
+</div>
+
+{# ═══════════════════════════════════════════════════════════
+   WHAT MAKES US DIFFERENT — 3 pillars, not 9 sections of fluff
+   ═══════════════════════════════════════════════════════════ #}
+<section style="background: var(--bg-primary); padding: 5rem 2rem;">
     <div class="container">
-        <div class="text-center mb-xl">
-            <h2>Our Mission</h2>
-            <p class="text-2xl">To provide comprehensive retirement planning that gives our clients confidence and peace of mind for their financial future.</p>
+        <div class="text-center" style="margin-bottom: 3rem;">
+            <p class="editorial-eyebrow" style="color: var(--accent-secondary);">why capital wealth</p>
+            <h2 style="color: #fff;">Three Things That Actually Matter</h2>
         </div>
-        
-        <div class="grid grid-cols-3">
-            <div class="card">
-                <h3 class="text-accent">Fiduciary Commitment</h3>
-                <p>We are legally bound to act in your best interest at all times. No sales quotas, no product commissions - just honest, objective advice.</p>
+        <div class="about-pillars">
+            <div class="about-pillar">
+                <span class="about-pillar-num">01</span>
+                <h3>Legally on Your Side</h3>
+                <p>We're fiduciaries. That means we're legally required to put your interests first — not sell you products, not hit quotas, not earn commissions. Just do right by you.</p>
             </div>
-            
-            <div class="card">
-                <h3 class="text-accent">Comprehensive Planning</h3>
-                <p>Our holistic approach addresses all aspects of your retirement: income planning, tax optimization, estate planning, and risk management.</p>
+            <div class="about-pillar">
+                <span class="about-pillar-num">02</span>
+                <h3>Retirement Is All We Do</h3>
+                <p>We don't dabble. Income planning, tax optimization, Social Security timing, Medicare strategy — this is our entire focus, every day, for every client.</p>
             </div>
-            
-            <div class="card">
-                <h3 class="text-accent">Utah Expertise</h3>
-                <p>Deep knowledge of Utah tax laws, local regulations, and the unique financial planning needs of Utah families.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Our Values -->
-<section class="section section-dark">
-    <div class="container">
-        <h2 class="text-center mb-xl">Our Core Values</h2>
-        
-        <div class="grid grid-cols-2">
-            <div class="process-step">
-                <div class="process-number">1</div>
-                <h3>Integrity First</h3>
-                <p>Every recommendation we make is in your best interest, period. Our fiduciary standard isn't just legal - it's moral.</p>
-            </div>
-            
-            <div class="process-step">
-                <div class="process-number">2</div>
-                <h3>Education Focus</h3>
-                <p>We believe informed clients make better decisions. We take time to explain strategies and ensure you understand your options.</p>
-            </div>
-            
-            <div class="process-step">
-                <div class="process-number">3</div>
-                <h3>Long-term Relationships</h3>
-                <p>We're not here for quick transactions. We build lasting relationships that span decades, adapting as your needs change.</p>
-            </div>
-            
-            <div class="process-step">
-                <div class="process-number">4</div>
-                <h3>Proactive Service</h3>
-                <p>We stay ahead of changes in tax law, regulations, and market conditions to keep your plan optimized.</p>
+            <div class="about-pillar">
+                <span class="about-pillar-num">03</span>
+                <h3>Utah Born & Raised</h3>
+                <p>We know Utah tax law, Utah families, and Utah's unique financial landscape. Community board seats, local radio, youth education — we're invested here.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Why Choose Us -->
-<section class="section">
-    <div class="container">
-        <h2 class="text-center mb-xl">Why Families Choose Capital Wealth Advisors</h2>
-        
-        <div class="grid grid-cols-1">
-            <div class="card">
-                <div class="grid grid-cols-2">
-                    <div>
-                        <h3>Specialization in Retirement</h3>
-                        <p>Unlike generalist advisors, we focus exclusively on retirement income planning and tax optimization for families approaching or in retirement.</p>
-                        
-                        <h4 class="text-accent mt-lg">Our Expertise Includes:</h4>
-                        <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
-                            <li>Tax-efficient withdrawal strategies</li>
-                            <li>Social Security optimization</li>
-                            <li>Medicare and IRMAA planning</li>
-                            <li>Estate and legacy planning</li>
-                            <li>Federal employee benefits</li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <div class="stats">
-                            <div class="stat">
-                                <span class="stat-number">500+</span>
-                                <span class="stat-label">Families Served</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">$500M+</span>
-                                <span class="stat-label">Assets Under Guidance</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">15+</span>
-                                <span class="stat-label">Years Experience</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Community Involvement -->
-<section class="section section-dark">
-    <div class="container">
-        <h2 class="text-center mb-xl">Community Involvement</h2>
-        
-        <div class="text-center">
-            <div class="card" style="max-width: 600px; margin: 0 auto;">
-                <h3 class="text-accent">Junior Achievement of Utah</h3>
-                <p>Michael serves on the board of Junior Achievement of Utah, helping educate young people about financial literacy, entrepreneurship, and workforce readiness. This involvement reflects our commitment to improving financial education in our community.</p>
-                
-                <p>Through JA Utah, we've helped teach financial literacy to hundreds of students, believing that early education creates stronger financial futures for Utah families.</p>
-                
-                <div class="mt-lg">
-                    <span class="service-tag">Financial Literacy</span>
-                    <span class="service-tag">Youth Education</span>
-                    <span class="service-tag">Community Service</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Radio Show -->
-<section class="section">
+{# ═══════════════════════════════════════════════════════════
+   CTA — Clean close
+   ═══════════════════════════════════════════════════════════ #}
+<section style="background: #fff; padding: 5rem 2rem;">
     <div class="container">
         <div class="text-center">
-            <h2>As Heard On Utah Radio</h2>
-            <p class="text-lg">Michael regularly shares retirement planning insights and answers listener questions on local Utah radio programs.</p>
-            
-            <div class="card mt-lg" style="max-width: 500px; margin: 2rem auto;">
-                <h3>Financial Planning Insights</h3>
-                <p>Tune in to hear practical retirement planning advice, market commentary, and answers to common financial questions from Utah families.</p>
-                
-                <div class="mt-md">
-                    <span class="service-tag">Radio Guest</span>
-                    <span class="service-tag">Utah Media</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="section section-dark">
-    <div class="container">
-        <div class="text-center">
-            <h2>Ready to Start Your Financial Journey?</h2>
-            <p class="text-lg">Let's discuss your retirement goals and how we can help you achieve them.</p>
-            
-            <div class="hero-cta mt-lg">
+            <h2>Ready to Talk?</h2>
+            <p style="color: #555; font-size: 1.15rem; max-width: 500px; margin: 0 auto 2rem;">No pressure. No pitch. Just a conversation about your retirement and whether we're the right fit.</p>
+            <div class="hero-cta">
                 <a href="/contact/" class="btn btn-primary btn-lg">Schedule a Consultation</a>
                 <a href="tel:{{ site.phone }}" class="btn btn-secondary btn-lg">Call {{ site.phone }}</a>
             </div>
