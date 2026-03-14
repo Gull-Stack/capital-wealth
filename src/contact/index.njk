@@ -115,14 +115,30 @@ breadcrumbs:
                       e.preventDefault();
                       var btn = document.getElementById('submit-btn');
                       var status = document.getElementById('form-status');
-                      
+
                       // Honeypot check
                       if (this.querySelector('[name="website"]').value) return;
-                      
+
                       btn.disabled = true;
                       btn.textContent = 'Sending...';
                       status.textContent = '';
-                      
+
+                      // Get first-touch tracking data from cookie
+                      function getCookie(name) {
+                        var value = '; ' + document.cookie;
+                        var parts = value.split('; ' + name + '=');
+                        if (parts.length === 2) return parts.pop().split(';').shift();
+                        return null;
+                      }
+
+                      var trackingData = {};
+                      try {
+                        var cookieData = getCookie('cw_first_touch');
+                        if (cookieData) {
+                          trackingData = JSON.parse(cookieData);
+                        }
+                      } catch (e) {}
+
                       try {
                         var res = await fetch('/api/submit-lead', {
                           method: 'POST',
@@ -133,7 +149,15 @@ breadcrumbs:
                             phone: document.getElementById('phone').value,
                             savings: document.getElementById('savings').value,
                             retirementTimeline: document.getElementById('retirement-timeline').value,
-                            questions: document.getElementById('questions').value
+                            questions: document.getElementById('questions').value,
+                            utm_source: trackingData.utm_source || '',
+                            utm_medium: trackingData.utm_medium || '',
+                            utm_campaign: trackingData.utm_campaign || '',
+                            utm_content: trackingData.utm_content || '',
+                            utm_term: trackingData.utm_term || '',
+                            referrer: trackingData.referrer || '',
+                            landing_page: trackingData.landing_page || '',
+                            submitted_from: window.location.pathname
                           })
                         });
                         var data = await res.json();

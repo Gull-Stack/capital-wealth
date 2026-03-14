@@ -34,7 +34,11 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    const { name, email, phone, savings, retirementTimeline, questions } = req.body;
+    const {
+      name, email, phone, savings, retirementTimeline, questions,
+      utm_source, utm_medium, utm_campaign, utm_content, utm_term,
+      referrer, landing_page, submitted_from
+    } = req.body;
 
     if (!name || !email || !phone) {
       return res.status(400).json({ error: 'Name, email, and phone are required.' });
@@ -56,6 +60,14 @@ export default async function handler(req, res) {
       status: 'new',
       email_sent: false,
       created_at: new Date().toISOString(),
+      utm_source: utm_source || null,
+      utm_medium: utm_medium || null,
+      utm_campaign: utm_campaign || null,
+      utm_content: utm_content || null,
+      utm_term: utm_term || null,
+      referrer: referrer || null,
+      landing_page: landing_page || null,
+      submitted_from: submitted_from || null,
     };
 
     // Insert into Supabase (if configured)
@@ -121,6 +133,17 @@ export default async function handler(req, res) {
               <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Timeline:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.retirement_timeline || 'Not specified'}</td></tr>
             </table>
             ${leadData.message ? `<div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px; border: 1px solid #ddd;"><strong>Questions/Comments:</strong><br/><p style="margin: 10px 0 0 0;">${leadData.message}</p></div>` : ''}
+            <div style="margin-top: 20px; padding: 15px; background: #e8f4f8; border-radius: 8px; border: 1px solid #b3d9e6;">
+              <h3 style="margin: 0 0 10px 0; color: #1a2332;">Lead Source</h3>
+              <table style="width: 100%; border-collapse: collapse;">
+                ${leadData.utm_source ? `<tr><td style="padding: 5px;"><strong>UTM Source:</strong></td><td style="padding: 5px;">${leadData.utm_source}</td></tr>` : ''}
+                ${leadData.utm_medium ? `<tr><td style="padding: 5px;"><strong>UTM Medium:</strong></td><td style="padding: 5px;">${leadData.utm_medium}</td></tr>` : ''}
+                ${leadData.utm_campaign ? `<tr><td style="padding: 5px;"><strong>UTM Campaign:</strong></td><td style="padding: 5px;">${leadData.utm_campaign}</td></tr>` : ''}
+                ${leadData.referrer ? `<tr><td style="padding: 5px;"><strong>Referrer:</strong></td><td style="padding: 5px;">${leadData.referrer}</td></tr>` : ''}
+                ${leadData.landing_page ? `<tr><td style="padding: 5px;"><strong>Landing Page:</strong></td><td style="padding: 5px;"><a href="${leadData.landing_page}">${leadData.landing_page}</a></td></tr>` : ''}
+                ${leadData.submitted_from ? `<tr><td style="padding: 5px;"><strong>Submitted From:</strong></td><td style="padding: 5px;">${leadData.submitted_from}</td></tr>` : ''}
+              </table>
+            </div>
           </div>
           <div style="background: #1a2332; padding: 15px; text-align: center;">
             <p style="color: rgba(255,255,255,0.5); margin: 0; font-size: 12px;">Lead from capitalwealth.com</p>

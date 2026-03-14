@@ -1,3 +1,34 @@
+// Lead Source Tracking — UTM params + referrer + landing page (first-touch)
+(function() {
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+        return null;
+    }
+
+    function setCookie(name, value, days) {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+        document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+    }
+
+    // Only set first-touch cookie if it doesn't exist
+    if (!getCookie('cw_first_touch')) {
+        const params = new URLSearchParams(window.location.search);
+        const trackingData = {
+            utm_source: params.get('utm_source') || '',
+            utm_medium: params.get('utm_medium') || '',
+            utm_campaign: params.get('utm_campaign') || '',
+            utm_content: params.get('utm_content') || '',
+            utm_term: params.get('utm_term') || '',
+            referrer: document.referrer || '',
+            landing_page: window.location.href
+        };
+        setCookie('cw_first_touch', JSON.stringify(trackingData), 30); // 30 days
+    }
+})();
+
 // Mobile Menu — full-screen Giga style
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
