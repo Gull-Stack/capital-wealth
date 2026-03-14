@@ -941,7 +941,7 @@ a:hover {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: url('/assets/images/photos/hero-utah-mountains.jpg') top center/cover no-repeat;
+  background: url('/assets/images/photos/hero-alpenglow.jpg') center center/cover no-repeat;
   background-attachment: fixed;
 }
 .hero-mountain-overlay {
