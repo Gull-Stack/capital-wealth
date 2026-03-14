@@ -134,19 +134,20 @@ a:hover {
 
 /* Header */
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   background: transparent;
   border-bottom: none;
-  transition: background 0.3s, backdrop-filter 0.3s;
+  transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+  padding: 0.5rem 0;
 }
 .header.scrolled {
-  position: fixed;
-  background: rgba(13, 27, 42, 0.92);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: rgba(13, 27, 42, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.06);
 }
 
 .nav-content {
@@ -916,12 +917,13 @@ a:hover {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: url('/assets/images/photos/homepage-mountain-bg.webp') center/cover no-repeat;
+  background: url('/assets/images/photos/hero-utah-autumn.jpg') center/cover no-repeat;
+  background-attachment: fixed;
 }
 .hero-mountain-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(13,27,42,0.25) 0%, rgba(13,27,42,0.65) 60%, rgba(13,27,42,0.9) 100%);
+  background: linear-gradient(180deg, rgba(30,20,15,0.3) 0%, rgba(30,20,15,0.45) 50%, rgba(13,27,42,0.7) 100%);
 }
 .hero-mountain-content {
   position: relative;

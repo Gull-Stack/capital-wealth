@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         const currentScrollY = window.scrollY;
         
-        if (currentScrollY > 100) {
+        if (currentScrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
@@ -185,14 +185,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add CSS for scroll and form error states
+// Add CSS for form error states
 const style = document.createElement('style');
 style.textContent = `
-    .header.scrolled {
-        background: rgba(10, 10, 15, 0.98);
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-    }
-    
     form .error {
         border-color: #ef4444;
         box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
