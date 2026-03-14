@@ -1769,6 +1769,135 @@ a:hover {
   }
 }
 
+/* ═══ GIGA SERVICES ═══ */
+.services-hero {
+  background: #060e18;
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 2rem;
+}
+.services-hero-aurora {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.services-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+.services-hero-content {
+  max-width: 500px;
+}
+.services-hero-icon {
+  width: 40px;
+  height: 40px;
+  color: var(--accent-secondary);
+  margin-bottom: 1.5rem;
+}
+.services-hero-heading {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  color: #fff;
+  margin: 0 0 1rem;
+}
+.services-hero-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+/* Services Card Grid */
+.services-cards-section {
+  background: #fff;
+  padding: 4rem 2rem;
+}
+.services-cards-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.giga-service-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+.giga-service-card:hover {
+  border-color: #ccc;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+.giga-service-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.giga-service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.giga-service-card:hover .giga-service-img img {
+  transform: scale(1.05);
+}
+.giga-service-body {
+  padding: 1.5rem;
+}
+.giga-service-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--accent-secondary);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.giga-service-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+.giga-service-desc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .services-hero-heading {
+    font-size: 2.2rem;
+  }
+  .services-cards-inner {
+    grid-template-columns: 1fr;
+  }
+  .giga-service-img {
+    height: 180px;
+  }
+}
+
 /* ═══ GIGA TESTIMONIALS ═══ */
 .giga-testimonials {
   background: #fff;
