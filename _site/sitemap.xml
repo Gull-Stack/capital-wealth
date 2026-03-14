@@ -16,11 +16,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://capitalwealth.com/disclosures/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -31,12 +26,57 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://capitalwealth.com/guides/401k-rollover-complete-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://capitalwealth.com/guides/best-financial-advisor-lehi-utah-2026/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/</loc>
+    <loc>https://capitalwealth.com/guides/can-i-retire-at-62-with-500k/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/guides/fers-retirement-planning-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/guides/fiduciary-vs-commission-advisor/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/guides/how-much-do-i-need-to-retire-in-utah/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/guides/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/guides/retirement-tax-planning-strategies/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/guides/when-to-take-social-security/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/press/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/reviews/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -91,52 +131,17 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/guides/how-much-do-i-need-to-retire-in-utah/</loc>
+    <loc>https://capitalwealth.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/guides/401k-rollover-complete-guide/</loc>
+    <loc>https://capitalwealth.com/leads/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/guides/when-to-take-social-security/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/guides/fers-retirement-planning-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/guides/fiduciary-vs-commission-advisor/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/guides/retirement-tax-planning-strategies/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/guides/can-i-retire-at-62-with-500k/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/guides/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/reviews/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/press/</loc>
+    <loc>https://capitalwealth.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

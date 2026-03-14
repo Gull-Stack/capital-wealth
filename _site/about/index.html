@@ -18,7 +18,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-semiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+      @font-face { font-family: 'Geist'; src: url('https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+      @font-face { font-family: 'Geist'; src: url('https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-medium.woff2') format('woff2'); font-weight: 500; font-display: swap; }
+      @font-face { font-family: 'Geist'; src: url('https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-semiBold.woff2') format('woff2'); font-weight: 600; font-display: swap; }
+    </style>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/images/logos/favicon.png">
@@ -171,300 +179,285 @@
     
     
     
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LD4VE3SQNT"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'G-LD4VE3SQNT');
+</script>
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-content">
-                    <div class="logo">
-                        <a href="/">
-                            <img src="/assets/images/logos/logo-white.png" alt="Capital Wealth Advisors" style="height: 50px; width: auto;">
-                        </a>
+        <div class="nav-float">
+            <div class="nav-left-pill">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/assets/images/logos/logo-white.png" alt="Capital Wealth Advisors" style="height: 48px; width: auto;">
+                    </a>
+                </div>
+                <div class="nav-main-desktop">
+                    <div class="nav-dropdown">
+                        <a href="/services/" class="nav-dropdown-trigger">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <div class="nav-dropdown-menu">
+                            <a href="/services/tax-planning/" class="nav-dd-item">
+                                <strong>Tax-Efficient Strategies</strong>
+                                <span>Minimize taxes with smart withdrawal sequencing.</span>
+                            </a>
+                            <a href="/services/portfolio-management/" class="nav-dd-item">
+                                <strong>Portfolio Management</strong>
+                                <span>Diversified portfolios aligned with your timeline.</span>
+                            </a>
+                            <a href="/services/retirement-money-map/" class="nav-dd-item">
+                                <strong>Retirement Money Map</strong>
+                                <span>A clear plan for every dollar in retirement.</span>
+                            </a>
+                            <a href="/services/401k-ira-rollover/" class="nav-dd-item">
+                                <strong>401(k) & IRA Rollovers</strong>
+                                <span>Consolidate accounts and optimize your strategy.</span>
+                            </a>
+                            <a href="/services/social-security/" class="nav-dd-item">
+                                <strong>Social Security Optimization</strong>
+                                <span>Time your benefits to maximize lifetime income.</span>
+                            </a>
+                            <a href="/services/estate-planning/" class="nav-dd-item">
+                                <strong>Estate & Legacy Planning</strong>
+                                <span>Protect your family and pass wealth efficiently.</span>
+                            </a>
+                        </div>
                     </div>
-                    
-                    <div class="nav-links" id="navLinks">
-                        <a href="/about/">About</a>
-                        <a href="/services/">Services</a>
-                        <a href="/services/federal-benefits/">Federal</a>
-                        <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener">Client Login</a>
-                        <a href="/who-we-serve/">Who We Serve</a>
-                        <a href="/case-studies/">Case Studies</a>
-                        <a href="/contact/" class="nav-btn nav-btn-orange">Contact Us</a>
-                        <a href="tel:801.210.2800" class="nav-btn nav-btn-blue">801.210.2800</a>
-                    </div>
-                    
-                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    <a href="/who-we-serve/">Who We Serve</a>
+                    <a href="/case-studies/">Case Studies</a>
                 </div>
             </div>
-        </nav>
-        <div class="nav-overlay" id="navOverlay"></div>
+            <div class="nav-right-actions">
+                <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="nav-btn nav-btn-orange">Client Login</a>
+                <a href="/contact/" class="nav-btn nav-btn-blue">Contact Us</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Full-screen mobile menu (Giga style) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/assets/images/logos/logo-white.png" alt="Capital Wealth Advisors" style="height: 48px; width: auto;">
+                    </a>
+                </div>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </button>
+            </div>
+            <div class="mobile-menu-body">
+                <div class="mobile-menu-section">
+                    <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="mobile-menu-login">Client Login &rarr;</a>
+                </div>
+                <div class="mobile-menu-section">
+                    <button type="button" class="mobile-accordion-toggle" id="mobileServicesToggle">
+                        <span>Services</span>
+                        <svg class="mobile-accordion-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="mobile-accordion-panel" id="mobileServicesPanel">
+                        <a href="/services/tax-planning/">Tax-Efficient Strategies</a>
+                        <a href="/services/portfolio-management/">Portfolio Management</a>
+                        <a href="/services/retirement-money-map/">Retirement Money Map</a>
+                        <a href="/services/401k-ira-rollover/">401(k) & IRA Rollovers</a>
+                        <a href="/services/social-security/">Social Security Optimization</a>
+                        <a href="/services/estate-planning/">Estate & Legacy Planning</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-section">
+                    <p class="mobile-menu-label">Company</p>
+                    <a href="/who-we-serve/">Who We Serve</a>
+                    <a href="/case-studies/">Case Studies</a>
+                    <a href="/about/">About Us</a>
+                    <a href="/contact/">Contact</a>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <main>
         
-<!-- Hero -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1>About Capital Wealth Advisors</h1>
-            <p class="hero-subtitle">Serving Utah families since 2010 with personalized retirement planning and fiduciary financial advice.</p>
+
+<section class="about-hero">
+    <img src="/assets/images/photos/homepage-mountain-bg.webp" alt="Utah mountain landscape" class="about-hero-bg">
+    <div class="about-hero-overlay">
+        <div class="container">
+            <p class="editorial-eyebrow" style="color: var(--accent-secondary);">our story</p>
+            <h1>Built on Trust.<br>Driven by Results.</h1>
+            <p class="about-hero-sub">Since 2010, we've helped over 500 Utah families retire with confidence — not anxiety.</p>
         </div>
     </div>
 </section>
 
-<!-- Mike's Story -->
-<section class="section">
-    <div class="container">
-        <div class="bio-section">
-            <div class="bio-photo">
-                <img src="/assets/images/photos/mike-tvheader.webp" alt="Michael Stevens, IAR — Capital Wealth Advisors" loading="lazy">
+
+<section style="background: #fff; padding: 5rem 2rem;">
+    <div class="about-bio-split">
+        <div class="about-bio-photo">
+            <img src="/assets/images/mike-stevens.jpg" alt="Michael Stevens, IAR — Founder of Capital Wealth Advisors" loading="lazy">
+        </div>
+        <div class="about-bio-text">
+            <p class="editorial-eyebrow">meet the founder</p>
+            <h2>Michael Stevens, IAR</h2>
+            <p class="about-bio-role">Investment Adviser Representative & Founder</p>
+            <p>Michael was on a pre-med track when his father passed away during college. That moment changed everything — it shifted his focus from medicine to money, and sparked a mission to help families avoid the financial chaos that comes with life's biggest transitions.</p>
+            <p>He earned his BS in Business Management from Utah Valley University, got his Series 66 certification, and launched Capital Wealth Advisors in 2010. Fifteen years later, he's guided over 500 families and $500M+ in assets — all under a fiduciary standard. No commissions. No conflicts. Just honest advice.</p>
+            <div class="about-credentials">
+                <span>Series 66 Certified</span>
+                <span>Fiduciary Standard</span>
+                <span>CA License #0G96805</span>
+                <span>JA Utah Board Member</span>
             </div>
-            
-            <div class="bio-content">
-                <h2>Michael Stevens, IAR</h2>
-                <p class="text-lg text-accent">Investment Adviser Representative & Founder</p>
-                
-                <p>Michael Stevens didn't start his career planning to become a financial advisor. Originally on a pre-med track, his path changed dramatically when his father passed away during his college years. This life-changing event shifted his perspective and ultimately led him to the world of finance, where he discovered his passion for helping families navigate complex financial decisions.</p>
-                
-                <p>After completing his BS in Business Management at Utah Valley University, Michael earned his Series 66 certification and began building what would become Capital Wealth Advisors in 2010. His commitment to the fiduciary standard means he is legally obligated to act in his clients' best interests at all times - no conflicts, no commissions, just honest advice.</p>
-                
-                <p>Michael holds a California insurance license (#0G96805) and serves on the board of Junior Achievement of Utah, where he helps educate young people about financial literacy and entrepreneurship. This community involvement reflects his belief that financial education should be accessible to everyone.</p>
-                
-                <div class="bio-credentials">
-                    <span class="credential">Series 66 Certified</span>
-                    <span class="credential">Fiduciary Standard</span>
-                    <span class="credential">California Licensed #0G96805</span>
-                    <span class="credential">JA Utah Board Member</span>
-                    <span class="credential">UVU Business Graduate</span>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-stats-bar">
+    <div class="container">
+        <div class="about-stats-grid">
+            <div class="about-stat">
+                <span class="about-stat-num">500+</span>
+                <span class="about-stat-label">Families Served</span>
+            </div>
+            <div class="about-stat">
+                <span class="about-stat-num">$500M+</span>
+                <span class="about-stat-label">Assets Under Guidance</span>
+            </div>
+            <div class="about-stat">
+                <span class="about-stat-num">15+</span>
+                <span class="about-stat-label">Years of Experience</span>
+            </div>
+            <div class="about-stat">
+                <span class="about-stat-num">100%</span>
+                <span class="about-stat-label">Fiduciary — Always</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section style="background: #fff; padding: 5rem 2rem;">
+    <div class="container">
+        <div class="text-center" style="margin-bottom: 3rem;">
+            <p class="editorial-eyebrow">the team</p>
+            <h2>People Who Actually Care About Your Money</h2>
+        </div>
+        <div class="about-team-grid">
+            <div class="about-team-card">
+                <div class="about-team-photo">
+                    <img src="/assets/images/mike-stevens.jpg" alt="Michael Stevens" loading="lazy">
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Our Team -->
-<section class="section section-dark">
-    <div class="container">
-        <div class="text-center mb-xl">
-            <h2>Our Team</h2>
-            <p class="text-lg">Experienced professionals dedicated to your financial success.</p>
-        </div>
-        
-        <div class="grid grid-cols-2">
-            <div class="card">
                 <h3>Michael Stevens</h3>
-                <p class="text-accent">Founder & Lead Advisor</p>
-                <p>Founded 2010, originally pre-med, shifted to finance after father&#39;s passing. BS Business Management, Utah Valley University. Series 66 certified, fiduciary standard. California insurance license #0G96805. Board member Junior Achievement of Utah.</p>
-                
-                <div class="mt-md">
-                    <span class="service-tag">Retirement Planning</span>
-                    <span class="service-tag">Tax Strategies</span>
-                    <span class="service-tag">Estate Planning</span>
-                </div>
+                <p class="about-team-role">Founder & Lead Advisor</p>
+                <p>15 years of fiduciary financial planning. Specializes in retirement income, tax strategy, and making sure you don't outlive your money.</p>
             </div>
-            
-            <div class="card">
+            <div class="about-team-card">
+                <div class="about-team-photo about-team-photo--placeholder">
+                    <span>BT</span>
+                </div>
                 <h3>Brent Thompson</h3>
-                <p class="text-accent">Advisor</p>
-                <p>Brent brings extensive experience in comprehensive financial planning and portfolio management. He works closely with Michael to ensure every client receives personalized attention and strategic guidance tailored to their unique retirement goals.</p>
-                
-                <div class="mt-md">
-                    <span class="service-tag">Portfolio Management</span>
-                    <span class="service-tag">Financial Planning</span>
-                    <span class="service-tag">Client Relations</span>
-                </div>
+                <p class="about-team-role">Advisor</p>
+                <p>Comprehensive financial planning and portfolio management. Works closely with Michael to deliver personalized strategies for every client.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Our Mission -->
-<section class="section">
+
+<div class="about-image-break">
+    <img src="/assets/images/photos/couple-boat.jpg" alt="Couple enjoying retirement" loading="lazy">
+</div>
+
+
+<section style="background: var(--bg-primary); padding: 5rem 2rem;">
     <div class="container">
-        <div class="text-center mb-xl">
-            <h2>Our Mission</h2>
-            <p class="text-2xl">To provide comprehensive retirement planning that gives our clients confidence and peace of mind for their financial future.</p>
+        <div class="text-center" style="margin-bottom: 3rem;">
+            <p class="editorial-eyebrow" style="color: var(--accent-secondary);">why capital wealth</p>
+            <h2 style="color: #fff;">Three Things That Actually Matter</h2>
         </div>
-        
-        <div class="grid grid-cols-3">
-            <div class="card">
-                <h3 class="text-accent">Fiduciary Commitment</h3>
-                <p>We are legally bound to act in your best interest at all times. No sales quotas, no product commissions - just honest, objective advice.</p>
+        <div class="about-pillars">
+            <div class="about-pillar">
+                <span class="about-pillar-num">01</span>
+                <h3>Legally on Your Side</h3>
+                <p>We're fiduciaries. That means we're legally required to put your interests first — not sell you products, not hit quotas, not earn commissions. Just do right by you.</p>
             </div>
-            
-            <div class="card">
-                <h3 class="text-accent">Comprehensive Planning</h3>
-                <p>Our holistic approach addresses all aspects of your retirement: income planning, tax optimization, estate planning, and risk management.</p>
+            <div class="about-pillar">
+                <span class="about-pillar-num">02</span>
+                <h3>Retirement Is All We Do</h3>
+                <p>We don't dabble. Income planning, tax optimization, Social Security timing, Medicare strategy — this is our entire focus, every day, for every client.</p>
             </div>
-            
-            <div class="card">
-                <h3 class="text-accent">Utah Expertise</h3>
-                <p>Deep knowledge of Utah tax laws, local regulations, and the unique financial planning needs of Utah families.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Our Values -->
-<section class="section section-dark">
-    <div class="container">
-        <h2 class="text-center mb-xl">Our Core Values</h2>
-        
-        <div class="grid grid-cols-2">
-            <div class="process-step">
-                <div class="process-number">1</div>
-                <h3>Integrity First</h3>
-                <p>Every recommendation we make is in your best interest, period. Our fiduciary standard isn't just legal - it's moral.</p>
-            </div>
-            
-            <div class="process-step">
-                <div class="process-number">2</div>
-                <h3>Education Focus</h3>
-                <p>We believe informed clients make better decisions. We take time to explain strategies and ensure you understand your options.</p>
-            </div>
-            
-            <div class="process-step">
-                <div class="process-number">3</div>
-                <h3>Long-term Relationships</h3>
-                <p>We're not here for quick transactions. We build lasting relationships that span decades, adapting as your needs change.</p>
-            </div>
-            
-            <div class="process-step">
-                <div class="process-number">4</div>
-                <h3>Proactive Service</h3>
-                <p>We stay ahead of changes in tax law, regulations, and market conditions to keep your plan optimized.</p>
+            <div class="about-pillar">
+                <span class="about-pillar-num">03</span>
+                <h3>Utah Born & Raised</h3>
+                <p>We know Utah tax law, Utah families, and Utah's unique financial landscape. Community board seats, local radio, youth education — we're invested here.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Why Choose Us -->
-<section class="section">
-    <div class="container">
-        <h2 class="text-center mb-xl">Why Families Choose Capital Wealth Advisors</h2>
-        
-        <div class="grid grid-cols-1">
-            <div class="card">
-                <div class="grid grid-cols-2">
-                    <div>
-                        <h3>Specialization in Retirement</h3>
-                        <p>Unlike generalist advisors, we focus exclusively on retirement income planning and tax optimization for families approaching or in retirement.</p>
-                        
-                        <h4 class="text-accent mt-lg">Our Expertise Includes:</h4>
-                        <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
-                            <li>Tax-efficient withdrawal strategies</li>
-                            <li>Social Security optimization</li>
-                            <li>Medicare and IRMAA planning</li>
-                            <li>Estate and legacy planning</li>
-                            <li>Federal employee benefits</li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <div class="stats">
-                            <div class="stat">
-                                <span class="stat-number">500+</span>
-                                <span class="stat-label">Families Served</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">$500M+</span>
-                                <span class="stat-label">Assets Under Guidance</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">15+</span>
-                                <span class="stat-label">Years Experience</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Community Involvement -->
-<section class="section section-dark">
-    <div class="container">
-        <h2 class="text-center mb-xl">Community Involvement</h2>
-        
-        <div class="text-center">
-            <div class="card" style="max-width: 600px; margin: 0 auto;">
-                <h3 class="text-accent">Junior Achievement of Utah</h3>
-                <p>Michael serves on the board of Junior Achievement of Utah, helping educate young people about financial literacy, entrepreneurship, and workforce readiness. This involvement reflects our commitment to improving financial education in our community.</p>
-                
-                <p>Through JA Utah, we've helped teach financial literacy to hundreds of students, believing that early education creates stronger financial futures for Utah families.</p>
-                
-                <div class="mt-lg">
-                    <span class="service-tag">Financial Literacy</span>
-                    <span class="service-tag">Youth Education</span>
-                    <span class="service-tag">Community Service</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Radio Show -->
-<section class="section">
+<section style="background: #fff; padding: 5rem 2rem;">
     <div class="container">
         <div class="text-center">
-            <h2>As Heard On Utah Radio</h2>
-            <p class="text-lg">Michael regularly shares retirement planning insights and answers listener questions on local Utah radio programs.</p>
-            
-            <div class="card mt-lg" style="max-width: 500px; margin: 2rem auto;">
-                <h3>Financial Planning Insights</h3>
-                <p>Tune in to hear practical retirement planning advice, market commentary, and answers to common financial questions from Utah families.</p>
-                
-                <div class="mt-md">
-                    <span class="service-tag">Radio Guest</span>
-                    <span class="service-tag">Utah Media</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="section section-dark">
-    <div class="container">
-        <div class="text-center">
-            <h2>Ready to Start Your Financial Journey?</h2>
-            <p class="text-lg">Let's discuss your retirement goals and how we can help you achieve them.</p>
-            
-            <div class="hero-cta mt-lg">
+            <h2>Ready to Talk?</h2>
+            <p style="color: #555; font-size: 1.15rem; max-width: 500px; margin: 0 auto 2rem;">No pressure. No pitch. Just a conversation about your retirement and whether we're the right fit.</p>
+            <div class="hero-cta">
                 <a href="/contact/" class="btn btn-primary btn-lg">Schedule a Consultation</a>
                 <a href="tel:801.210.2800" class="btn btn-secondary btn-lg">Call 801.210.2800</a>
             </div>
         </div>
     </div>
 </section>
+
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content footer-5col">
-                <!-- Column 1: Logo + Contact -->
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="/assets/images/logos/logo-white.png" alt="Capital Wealth Advisors" style="height: 50px; width: auto; margin-bottom: 0.75rem;">
-                    </div>
-                    <p class="footer-tagline">Strategic Income & Tax Planning for Your Retirement</p>
-                    <div style="margin-top: 1.25rem; font-size: 0.85rem; line-height: 1.8; color: rgba(255,255,255,0.6);">
-                        <p>1850 W Ashton Blvd, Ste 175<br>
-                           Lehi, UT 84043</p>
-                        <p><a href="tel:801.210.2800" style="color: rgba(255,255,255,0.8);">801.210.2800</a></p>
-                        <p><a href="mailto:info@capitalwealth.com" style="color: rgba(255,255,255,0.8);">info@capitalwealth.com</a></p>
-                    </div>
+    <!-- CTA (every page) -->
+    <section class="cta-aurora-section">
+        <div class="cta-aurora-inner">
+            <div class="cta-aurora-left">
+                <span class="cta-final-eyebrow"><span class="cta-pulse-dot"></span> Get Your Free Consultation</span>
+                <h2 class="cta-final-heading">Ready to Build Your<br>Retirement Plan?</h2>
+            </div>
+            <div class="cta-aurora-right">
+                <p class="cta-final-sub">Start the conversation today. Initial consultations are complimentary for qualified families.</p>
+                <div class="cta-final-actions">
+                    <a href="/contact/" class="cta-btn cta-btn-primary">Schedule Your Consultation</a>
+                    <a href="tel:8012102800" class="cta-btn cta-btn-outline">Call 801.210.2800</a>
                 </div>
-                
-                <!-- Column 2: All Services -->
-                <div class="footer-section">
-                    <h4>Services</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-giga">
+        <div class="footer-aurora-blobs">
+            <div class="aurora-blob aurora-blob-1"></div>
+            <div class="aurora-blob aurora-blob-2"></div>
+            <div class="aurora-blob aurora-blob-3"></div>
+            <div class="aurora-blob aurora-blob-4"></div>
+        </div>
+        <div class="footer-giga-inner">
+            <div class="footer-giga-left">
+                <img src="/assets/images/logos/logo-white.png" alt="Capital Wealth Advisors" class="footer-giga-logo">
+                <div class="footer-giga-pills">
+                    <a href="/contact/" class="footer-pill footer-pill-primary">Schedule Consultation</a>
+                    <a href="tel:8012102800" class="footer-pill footer-pill-outline">Call 801.210.2800</a>
+                    <a href="mailto:info@capitalwealth.com" class="footer-pill footer-pill-outline">info@capitalwealth.com</a>
+                </div>
+            </div>
+            <div class="footer-giga-nav">
+                <div class="footer-giga-col">
+                    <h5 class="footer-giga-heading">Services</h5>
                     <ul>
                         
                         <li><a href="/services/tax-planning/">Tax-Efficient Retirement Strategies</a></li>
@@ -485,51 +478,39 @@
                         
                     </ul>
                 </div>
-                
-                <!-- Column 3: Resources -->
-                <div class="footer-section">
-                    <h4>Resources</h4>
+                <div class="footer-giga-col">
+                    <h5 class="footer-giga-heading">Resources</h5>
                     <ul>
-                        <li><a href="/guides/">Guides &amp; Education</a></li>
+                        <li><a href="/guides/">Guides</a></li>
                         <li><a href="/faq/">FAQ</a></li>
                         <li><a href="/guides/how-much-do-i-need-to-retire-in-utah/">Retiring in Utah</a></li>
-                        <li><a href="/guides/401k-rollover-complete-guide/">401(k) Rollover Guide</a></li>
-                        <li><a href="/guides/when-to-take-social-security/">Social Security Guide</a></li>
+                        <li><a href="/guides/401k-rollover-complete-guide/">401(k) Guide</a></li>
+                        <li><a href="/guides/when-to-take-social-security/">Social Security</a></li>
                         <li><a href="/guides/fers-retirement-planning-guide/">FERS Guide</a></li>
-                        <li><a href="/guides/retirement-tax-planning-strategies/">Tax Planning Guide</a></li>
+                        <li><a href="/guides/retirement-tax-planning-strategies/">Tax Planning</a></li>
                     </ul>
                 </div>
-                
-                <!-- Column 4: Company -->
-                <div class="footer-section">
-                    <h4>Company</h4>
+                <div class="footer-giga-col">
+                    <h5 class="footer-giga-heading">Company</h5>
                     <ul>
                         <li><a href="/about/">About Us</a></li>
                         <li><a href="/reviews/">Reviews</a></li>
-                        <li><a href="/press/">Press &amp; Media</a></li>
+                        <li><a href="/press/">Press & Media</a></li>
                         <li><a href="/case-studies/">Case Studies</a></li>
                         <li><a href="/disclosures/">Disclosures</a></li>
                         <li><a href="/brand-facts/">Brand Facts</a></li>
                     </ul>
                 </div>
-                
-                <!-- Column 5: Get Started -->
-                <div class="footer-section footer-cta-section">
-                    <h4>Get Started</h4>
-                    <p style="color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.6; margin-bottom: 1.25rem;">Ready to take control of your retirement? Schedule a complimentary consultation.</p>
-                    <a href="/contact/" class="nav-btn nav-btn-orange" style="display: block; text-align: center; margin-bottom: 0.75rem;">Schedule Consultation</a>
-                    <a href="tel:801.210.2800" class="nav-btn nav-btn-blue" style="display: block; text-align: center; margin-bottom: 0.75rem;">Call 801.210.2800</a>
-                    <a href="mailto:info@capitalwealth.com" style="display: block; text-align: center; color: rgba(255,255,255,0.7); font-size: 0.85rem; transition: color 0.2s;">info@capitalwealth.com</a>
-                </div>
             </div>
-            
-            <div class="footer-bottom">
-                <div class="footer-legal">
+        </div>
+        <div class="footer-giga-sub">
+            <div class="footer-giga-sub-inner">
+                <div class="footer-giga-legal">
                     <p>&copy; 2026 Capital Wealth Advisors. All rights reserved.</p>
                     <p>Investment advisory services offered through Capital Wealth Advisors. Michael Stevens, IAR.</p>
                     <p><a href="/disclosures/">Important Disclosures</a></p>
                 </div>
-                <div class="footer-credit">
+                <div class="footer-giga-credit">
                     <p>Website by <a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a></p>
                 </div>
             </div>
