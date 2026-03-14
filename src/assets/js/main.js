@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ═══ TESTIMONIAL CAROUSEL ═══
 (function() {
-    var photos = document.querySelectorAll('.giga-testimonial-photo');
+    var photos = document.querySelectorAll('.giga-testimonial-slide-photo');
     var slides = document.querySelectorAll('.giga-testimonial-slide');
     var dots = document.querySelectorAll('.giga-dot');
     if (!photos.length) return;

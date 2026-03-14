@@ -1646,19 +1646,41 @@ a:hover {
   width: 100%;
   aspect-ratio: 4/3;
   overflow: hidden;
-  border: 6px solid #e8e8e8;
+  border-radius: 12px;
 }
-.giga-testimonial-photo {
+.giga-testimonial-slide-photo {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   opacity: 0;
   transition: opacity 0.6s ease;
 }
-.giga-testimonial-photo.active {
+.giga-testimonial-slide-photo.active {
   opacity: 1;
+}
+.giga-testimonial-slide-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.giga-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--bg-primary) 0%, rgba(13,27,42,0.4) 40%, transparent 70%);
+  pointer-events: none;
+}
+.giga-photo-highlight {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.4;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  pointer-events: none;
 }
 .giga-testimonials-right {
   position: relative;
