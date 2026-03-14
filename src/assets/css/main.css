@@ -992,32 +992,46 @@ a:hover {
   animation: aurora4 12s ease-in-out infinite alternate;
 }
 @keyframes aurora1 {
-  0% { top: 5%; left: -10%; opacity: 0.1; }
-  20% { opacity: 0.6; }
-  50% { top: 35%; left: 60%; opacity: 0.25; }
-  80% { opacity: 0.55; }
-  100% { top: 10%; left: 30%; opacity: 0.15; }
+  0% { top: 5%; left: -10%; opacity: 0; }
+  12% { opacity: 0; }
+  18% { opacity: 0.55; }
+  30% { top: 20%; left: 30%; opacity: 0.6; }
+  45% { opacity: 0.05; }
+  60% { top: 35%; left: 60%; opacity: 0; }
+  75% { opacity: 0.5; }
+  85% { top: 15%; left: 40%; opacity: 0.55; }
+  100% { top: 10%; left: 15%; opacity: 0.02; }
 }
 @keyframes aurora2 {
-  0% { top: 15%; right: -15%; opacity: 0.08; }
-  25% { opacity: 0.55; }
-  50% { top: 40%; right: 55%; opacity: 0.2; }
-  75% { opacity: 0.5; }
-  100% { top: 5%; right: 20%; opacity: 0.12; }
+  0% { top: 20%; right: -15%; opacity: 0.02; }
+  15% { opacity: 0.5; }
+  25% { top: 10%; right: 25%; opacity: 0.55; }
+  40% { opacity: 0; }
+  55% { top: 40%; right: 55%; opacity: 0.03; }
+  65% { opacity: 0.5; }
+  80% { top: 15%; right: 35%; opacity: 0.45; }
+  100% { top: 5%; right: 10%; opacity: 0; }
 }
 @keyframes aurora3 {
-  0% { bottom: 0%; right: -10%; opacity: 0.07; }
-  30% { opacity: 0.5; }
-  50% { bottom: 30%; right: 60%; opacity: 0.15; }
-  70% { opacity: 0.45; }
-  100% { bottom: 10%; right: 25%; opacity: 0.1; }
+  0% { bottom: 0%; right: -10%; opacity: 0; }
+  20% { opacity: 0; }
+  28% { opacity: 0.45; }
+  40% { bottom: 25%; right: 40%; opacity: 0.5; }
+  55% { opacity: 0.02; }
+  70% { bottom: 15%; right: 65%; opacity: 0; }
+  82% { opacity: 0.45; }
+  100% { bottom: 10%; right: 20%; opacity: 0.03; }
 }
 @keyframes aurora4 {
-  0% { top: 10%; left: 25%; opacity: 0.06; }
-  35% { opacity: 0.45; }
-  50% { top: 30%; left: 75%; opacity: 0.12; }
-  85% { opacity: 0.4; }
-  100% { top: 15%; left: 55%; opacity: 0.08; }
+  0% { top: 10%; left: 25%; opacity: 0.03; }
+  10% { opacity: 0.4; }
+  22% { top: 20%; left: 50%; opacity: 0.45; }
+  38% { opacity: 0; }
+  50% { top: 30%; left: 75%; opacity: 0; }
+  68% { opacity: 0.4; }
+  78% { top: 15%; left: 60%; opacity: 0.42; }
+  90% { opacity: 0.02; }
+  100% { top: 20%; left: 40%; opacity: 0; }
 }
 @media (max-width: 768px) {
   .aurora-blob-1, .aurora-blob-2, .aurora-blob-3, .aurora-blob-4 {
@@ -1047,10 +1061,11 @@ a:hover {
   gap: 1.5rem;
 }
 .footer-giga-logo {
-  height: 60px;
+  height: 70px;
   width: auto;
   object-fit: contain;
   display: block;
+  margin-left: 0;
 }
 .footer-giga-pills {
   display: flex;
@@ -1094,12 +1109,12 @@ a:hover {
 }
 .footer-giga-heading {
   font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.35);
-  margin: 0 0 1rem;
+  color: rgba(255,255,255,0.45);
+  margin: 0 0 1.25rem;
 }
 .footer-giga-col ul {
   list-style: none;
