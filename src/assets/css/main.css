@@ -1424,11 +1424,11 @@ a:hover {
 /* Mountain Hero — compact to entice scrolling */
 .hero-mountain {
   position: relative;
-  min-height: 72vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: url('/assets/images/photos/hero-alpenglow.jpg') center center/cover no-repeat;
+  background: url('/assets/images/hero-wildflowers.jpg') center 40%/cover no-repeat;
   background-attachment: fixed;
 }
 @media (max-width: 767px) {
@@ -1462,7 +1462,7 @@ a:hover {
 .hero-mountain-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(30,20,15,0.2) 0%, rgba(13,27,42,0.3) 55%, rgba(13,27,42,0.85) 85%, rgba(13,27,42,1) 100%);
+  background: linear-gradient(180deg, rgba(10,20,40,0.15) 0%, rgba(13,27,42,0.25) 50%, rgba(13,27,42,0.8) 80%, rgba(13,27,42,1) 100%);
 }
 .hero-mountain-content {
   position: relative;
@@ -1500,9 +1500,9 @@ a:hover {
 }
 .hero-display {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5.5vw, 4.2rem);
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
   font-weight: 300;
-  line-height: 0.95;
+  line-height: 1.05;
   color: #fff;
   margin-bottom: 1.5rem;
   letter-spacing: -0.03em;
@@ -1510,10 +1510,10 @@ a:hover {
   -webkit-font-smoothing: antialiased;
 }
 .hero-sub {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   line-height: 1.7;
-  color: rgba(255,255,255,0.6);
-  max-width: 550px;
+  color: rgba(255,255,255,0.75);
+  max-width: 580px;
   margin: 0 auto 2.5rem;
   font-weight: 300;
 }
