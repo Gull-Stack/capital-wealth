@@ -396,13 +396,13 @@ a:hover {
   position: absolute;
   top: calc(100% + 16px);
   left: 0;
-  width: 380px;
-  background: rgba(13, 27, 42, 0.92);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 20px;
-  padding: 1.5rem 1.75rem;
+  width: 420px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 24px;
+  padding: 1rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
@@ -415,36 +415,59 @@ a:hover {
   transform: translateY(0);
   pointer-events: all;
 }
+
+/* Featured top card */
+.nav-dd-featured {
+  display: block;
+  background: rgba(13, 27, 42, 0.7);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.nav-dd-featured:hover {
+  background: rgba(13, 27, 42, 0.85);
+}
+.nav-dd-featured strong {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.nav-dd-featured span {
+  display: block;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Regular items */
 .nav-dd-item {
   display: block;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 0.85rem 0.5rem;
   text-decoration: none;
   transition: opacity 0.15s ease;
 }
-.nav-dd-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-.nav-dd-item:first-child {
-  padding-top: 0;
-}
 .nav-dd-item strong {
   display: block;
-  color: #fff;
-  font-size: 0.92rem;
-  font-weight: 600;
-  margin-bottom: 0.3rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
 }
 .nav-dd-item span {
   display: block;
-  color: rgba(255,255,255,0.45);
-  font-size: 0.8rem;
+  color: rgba(255,255,255,0.35);
+  font-size: 0.78rem;
   font-weight: 400;
   line-height: 1.5;
 }
 .nav-dd-item:hover {
-  opacity: 0.7;
+  opacity: 0.65;
 }
 .nav-dropdown-divider {
   display: none;
