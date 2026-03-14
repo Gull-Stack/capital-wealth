@@ -1297,7 +1297,7 @@ a:hover {
 /* Mountain Hero — compact to entice scrolling */
 .hero-mountain {
   position: relative;
-  min-height: 80vh;
+  min-height: 72vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1341,7 +1341,7 @@ a:hover {
   position: relative;
   z-index: 2;
   max-width: 800px;
-  padding: 10rem 2rem 3rem;
+  padding: 8rem 2rem 2rem;
   margin: 0 auto;
   text-align: center;
 }
