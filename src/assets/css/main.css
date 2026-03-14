@@ -2038,17 +2038,16 @@ a:hover {
   display: none;
 }
 .svc-tab.active .svc-tab-desc {
-  display: block;
+  display: inline;
 }
 .svc-tab-arrow {
   display: none;
-  align-items: center;
   color: var(--accent-secondary);
-  margin-left: 0.4rem;
+  margin-left: 0.35rem;
   vertical-align: middle;
 }
 .svc-tab.active .svc-tab-arrow {
-  display: inline-flex;
+  display: inline;
 }
 .svc-tab-arrow svg {
   width: 16px;
