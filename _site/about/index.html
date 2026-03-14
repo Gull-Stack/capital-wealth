@@ -23,6 +23,15 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/images/logos/favicon.png">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDDW501PMV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DDDW501PMV');
+    </script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/main.css">
     
@@ -177,7 +186,8 @@
                     <div class="nav-links" id="navLinks">
                         <a href="/about/">About</a>
                         <a href="/services/">Services</a>
-                        <a href="/services/federal-benefits/">Federal Benefits</a>
+                        <a href="/services/federal-benefits/">Federal</a>
+                        <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener">Client Login</a>
                         <a href="/who-we-serve/">Who We Serve</a>
                         <a href="/case-studies/">Case Studies</a>
                         <a href="/contact/" class="nav-btn nav-btn-orange">Contact Us</a>
@@ -192,6 +202,7 @@
                 </div>
             </div>
         </nav>
+        <div class="nav-overlay" id="navOverlay"></div>
     </header>
 
     <main>
@@ -211,7 +222,7 @@
     <div class="container">
         <div class="bio-section">
             <div class="bio-photo">
-                <span>Michael Stevens Photo</span>
+                <img src="/assets/images/photos/mike-tvheader.webp" alt="Michael Stevens, IAR — Capital Wealth Advisors" loading="lazy">
             </div>
             
             <div class="bio-content">
