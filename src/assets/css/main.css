@@ -923,24 +923,21 @@ a:hover {
   overflow: hidden;
   padding: 6rem 2rem 5rem;
 }
-.cta-aurora-backdrop {
+.cta-aurora-section::before {
+  content: '';
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  pointer-events: none;
-}
-.cta-aurora-logo {
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 900px;
-  max-width: 90vw;
-  height: auto;
+  height: 600px;
+  background: url('/assets/images/logos/logo-white.png') center/contain no-repeat;
   opacity: 0.04;
   filter: grayscale(1) brightness(2);
-  transform: translateY(40%);
-  position: relative;
-  z-index: 1;
+  pointer-events: none;
+  z-index: 0;
 }
+/* logo handled via ::before pseudo-element on cta-aurora-section */
 .cta-aurora-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -1044,6 +1041,14 @@ a:hover {
 .footer-giga {
   background: #060e18;
   padding-top: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.footer-aurora-blobs {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
 }
 .footer-giga-inner {
   max-width: 1200px;
@@ -1053,19 +1058,19 @@ a:hover {
   grid-template-columns: 1fr 2fr;
   gap: 4rem;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .footer-giga-left {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1.5rem;
 }
 .footer-giga-logo {
-  height: 70px;
+  height: 75px;
   width: auto;
   object-fit: contain;
   display: block;
-  margin-left: 0;
 }
 .footer-giga-pills {
   display: flex;
@@ -1137,7 +1142,7 @@ a:hover {
 .footer-giga-sub {
   border-top: 1px solid rgba(255,255,255,0.06);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .footer-giga-sub-inner {
   max-width: 1200px;
