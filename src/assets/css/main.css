@@ -935,7 +935,7 @@ a:hover {
   width: 900px;
   max-width: 90vw;
   height: auto;
-  opacity: 0.07;
+  opacity: 0.04;
   filter: grayscale(1) brightness(2);
   transform: translateY(40%);
   position: relative;
@@ -947,11 +947,14 @@ a:hover {
   padding: 0 2rem;
   position: relative;
   z-index: 3;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: start;
 }
-.cta-aurora-content {
-  max-width: 550px;
+.cta-aurora-left {}
+.cta-aurora-right {
+  padding-top: 1.5rem;
 }
 /* Aurora blobs — strong drifting glow like Giga */
 .aurora-blob {
@@ -961,60 +964,60 @@ a:hover {
   z-index: 2;
 }
 .aurora-blob-1 {
-  width: 500px;
-  height: 350px;
-  filter: blur(80px);
-  background: rgba(60, 130, 255, 0.35);
-  animation: aurora1 12s ease-in-out infinite alternate;
+  width: 550px;
+  height: 400px;
+  filter: blur(70px);
+  background: rgba(60, 130, 255, 0.45);
+  animation: aurora1 8s ease-in-out infinite alternate;
 }
 .aurora-blob-2 {
-  width: 450px;
-  height: 300px;
-  filter: blur(70px);
-  background: rgba(212, 160, 90, 0.3);
-  animation: aurora2 14s ease-in-out infinite alternate;
+  width: 500px;
+  height: 350px;
+  filter: blur(60px);
+  background: rgba(212, 160, 90, 0.4);
+  animation: aurora2 10s ease-in-out infinite alternate;
 }
 .aurora-blob-3 {
-  width: 400px;
-  height: 280px;
-  filter: blur(90px);
-  background: rgba(100, 180, 255, 0.25);
-  animation: aurora3 10s ease-in-out infinite alternate;
+  width: 450px;
+  height: 320px;
+  filter: blur(80px);
+  background: rgba(100, 180, 255, 0.35);
+  animation: aurora3 7s ease-in-out infinite alternate;
 }
 .aurora-blob-4 {
-  width: 350px;
-  height: 250px;
-  filter: blur(80px);
-  background: rgba(230, 170, 100, 0.2);
-  animation: aurora4 16s ease-in-out infinite alternate;
+  width: 400px;
+  height: 280px;
+  filter: blur(70px);
+  background: rgba(230, 170, 100, 0.3);
+  animation: aurora4 12s ease-in-out infinite alternate;
 }
 @keyframes aurora1 {
-  0% { top: 10%; left: -5%; opacity: 0.08; }
-  25% { opacity: 0.5; }
-  50% { top: 30%; left: 55%; opacity: 0.2; }
-  75% { opacity: 0.45; }
-  100% { top: 15%; left: 25%; opacity: 0.1; }
+  0% { top: 5%; left: -10%; opacity: 0.1; }
+  20% { opacity: 0.6; }
+  50% { top: 35%; left: 60%; opacity: 0.25; }
+  80% { opacity: 0.55; }
+  100% { top: 10%; left: 30%; opacity: 0.15; }
 }
 @keyframes aurora2 {
-  0% { top: 20%; right: -10%; opacity: 0.06; }
-  30% { opacity: 0.45; }
-  50% { top: 35%; right: 50%; opacity: 0.15; }
-  70% { opacity: 0.4; }
-  100% { top: 10%; right: 15%; opacity: 0.08; }
+  0% { top: 15%; right: -15%; opacity: 0.08; }
+  25% { opacity: 0.55; }
+  50% { top: 40%; right: 55%; opacity: 0.2; }
+  75% { opacity: 0.5; }
+  100% { top: 5%; right: 20%; opacity: 0.12; }
 }
 @keyframes aurora3 {
-  0% { bottom: 5%; right: -5%; opacity: 0.05; }
-  35% { opacity: 0.4; }
-  50% { bottom: 25%; right: 55%; opacity: 0.1; }
-  65% { opacity: 0.35; }
-  100% { bottom: 10%; right: 20%; opacity: 0.07; }
+  0% { bottom: 0%; right: -10%; opacity: 0.07; }
+  30% { opacity: 0.5; }
+  50% { bottom: 30%; right: 60%; opacity: 0.15; }
+  70% { opacity: 0.45; }
+  100% { bottom: 10%; right: 25%; opacity: 0.1; }
 }
 @keyframes aurora4 {
-  0% { top: 15%; left: 30%; opacity: 0.04; }
-  40% { opacity: 0.35; }
-  50% { top: 25%; left: 70%; opacity: 0.08; }
-  80% { opacity: 0.3; }
-  100% { top: 20%; left: 50%; opacity: 0.06; }
+  0% { top: 10%; left: 25%; opacity: 0.06; }
+  35% { opacity: 0.45; }
+  50% { top: 30%; left: 75%; opacity: 0.12; }
+  85% { opacity: 0.4; }
+  100% { top: 15%; left: 55%; opacity: 0.08; }
 }
 @media (max-width: 768px) {
   .aurora-blob-1, .aurora-blob-2, .aurora-blob-3, .aurora-blob-4 {
@@ -2009,10 +2012,10 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 32px;
+  padding: 11px 26px;
   border-radius: 100px;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   text-decoration: none;
   white-space: nowrap;
   transition: all 0.25s ease;
@@ -2040,10 +2043,11 @@ a:hover {
 }
 @media (max-width: 768px) {
   .cta-aurora-inner {
-    justify-content: flex-start;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
-  .cta-aurora-content {
-    max-width: 100%;
+  .cta-aurora-right {
+    padding-top: 0;
   }
   .cta-final-heading {
     font-size: 2rem;
