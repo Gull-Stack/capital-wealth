@@ -1992,9 +1992,8 @@ a:hover {
 
 /* ═══ RESOURCES CTA SECTION ═══ */
 .resources-section {
-  background: var(--bg-primary);
+  background: #fff;
   padding: 5rem 2rem;
-  border-top: 1px solid rgba(255,255,255,0.06);
 }
 .resources-inner {
   max-width: 1200px;
@@ -2011,15 +2010,30 @@ a:hover {
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1.12;
-  color: #fff;
+  color: #1a1a1a;
   margin: 0 0 1rem;
 }
 .resources-sub {
   font-size: 0.95rem;
-  color: rgba(255,255,255,0.45);
+  color: rgba(0,0,0,0.5);
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 1.5rem;
   max-width: 380px;
+}
+.resources-cta {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  background: var(--accent-secondary);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.resources-cta:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
 }
 .resources-right {
   display: flex;
@@ -2031,15 +2045,16 @@ a:hover {
   align-items: center;
   gap: 1.25rem;
   padding: 1.25rem 1.5rem;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(0,0,0,0.08);
   border-radius: 12px;
   text-decoration: none;
   transition: all 0.25s ease;
-  background: rgba(255,255,255,0.02);
+  background: rgba(0,0,0,0.02);
+  color: inherit;
 }
 .resource-card:hover {
-  border-color: rgba(255,255,255,0.15);
-  background: rgba(255,255,255,0.05);
+  border-color: rgba(0,0,0,0.15);
+  background: rgba(0,0,0,0.04);
   transform: translateX(4px);
 }
 .resource-card-icon {
@@ -2063,13 +2078,13 @@ a:hover {
   font-family: var(--font-display);
   font-size: 0.95rem;
   font-weight: 600;
-  color: #fff;
+  color: #1a1a1a;
   margin: 0 0 0.3rem;
   line-height: 1.3;
 }
 .resource-card-text p {
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.4);
+  color: rgba(0,0,0,0.45);
   margin: 0;
   line-height: 1.5;
 }
@@ -2080,12 +2095,12 @@ a:hover {
   color: var(--accent-secondary);
   white-space: nowrap;
   padding: 6px 14px;
-  border: 1px solid rgba(212,148,76,0.3);
+  border: 1px solid rgba(212,148,76,0.25);
   border-radius: 100px;
   transition: all 0.2s ease;
 }
 .resource-card:hover .resource-card-btn {
-  background: rgba(212,148,76,0.1);
+  background: rgba(212,148,76,0.08);
   border-color: var(--accent-secondary);
 }
 @media (max-width: 768px) {
