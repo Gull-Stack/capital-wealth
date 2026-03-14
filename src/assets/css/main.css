@@ -1662,7 +1662,7 @@ a:hover {
 /* ═══ FIVE FUNDAMENTALS — Giga style ═══ */
 .fundamentals-section {
   background: var(--bg-primary);
-  padding: 4rem 2rem 5rem;
+  padding: 4rem 2rem 1rem;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 .fundamentals-inner {
@@ -1793,18 +1793,17 @@ a:hover {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  grid-template-rows: 1fr;
   gap: 0;
   background: rgba(0,0,0,0.2);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 16px;
   overflow: hidden;
+  min-height: 620px;
 }
 .svc-canvas-left {
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
-  overflow: hidden;
 }
 .svc-canvas-header {
   display: flex;
@@ -1920,26 +1919,20 @@ a:hover {
   color: rgba(255,255,255,0.5);
   line-height: 1.6;
   margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.35s ease;
+  display: none;
 }
 .svc-tab.active .svc-tab-desc {
-  max-height: 100px;
-  opacity: 1;
+  display: block;
 }
 .svc-tab-arrow {
-  display: inline-flex;
+  display: none;
   align-items: center;
   color: var(--accent-secondary);
   margin-left: 0.4rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
   vertical-align: middle;
 }
 .svc-tab.active .svc-tab-arrow {
-  opacity: 1;
+  display: inline-flex;
 }
 .svc-tab-arrow svg {
   width: 16px;
@@ -1951,7 +1944,6 @@ a:hover {
 }
 .svc-canvas-right {
   position: relative;
-  min-height: 580px;
   align-self: stretch;
 }
 .svc-img-float {
