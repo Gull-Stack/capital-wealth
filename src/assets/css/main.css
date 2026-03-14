@@ -1097,7 +1097,7 @@ a:hover {
 /* Mountain Hero — compact to entice scrolling */
 .hero-mountain {
   position: relative;
-  min-height: 85vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1107,13 +1107,13 @@ a:hover {
 .hero-mountain-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(30,20,15,0.2) 0%, rgba(13,27,42,0.4) 40%, rgba(13,27,42,0.85) 75%, rgba(13,27,42,1) 100%);
+  background: linear-gradient(180deg, rgba(30,20,15,0.2) 0%, rgba(13,27,42,0.3) 55%, rgba(13,27,42,0.85) 85%, rgba(13,27,42,1) 100%);
 }
 .hero-mountain-content {
   position: relative;
   z-index: 2;
   max-width: 800px;
-  padding: 10rem 2rem 6rem;
+  padding: 10rem 2rem 3rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -2252,7 +2252,7 @@ a:hover {
    ═══════════════════════════════════════════════════════════ */
 .hero-transition {
   background: var(--bg-primary);
-  padding: 4rem 2rem;
+  padding: 2.5rem 2rem 3rem;
 }
 .hero-transition-inner {
   max-width: 1100px;
