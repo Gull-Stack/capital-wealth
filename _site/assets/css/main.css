@@ -1430,12 +1430,17 @@ a:hover {
 .titan-hero-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 2rem 0;
+  padding: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: stretch;
   min-height: 55vh;
+}
+.titan-hero-left,
+.titan-hero-right {
+  border-top: 1px solid rgba(0,0,0,0.12);
+  padding-top: 2.5rem;
 }
 .titan-hero-left {
   display: flex;
@@ -1443,12 +1448,12 @@ a:hover {
   justify-content: center;
 }
 .titan-hero-h1 {
-  font-family: var(--font-display);
+  font-family: var(--font-family);
   font-size: clamp(2.6rem, 4.5vw, 3.8rem);
   font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-  color: #1a1a1a;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  color: var(--navy);
   margin: 0 0 2rem;
 }
 .titan-hero-buttons {
@@ -1461,7 +1466,7 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.9rem 1.8rem;
-  background: #1a1a1a;
+  background: var(--navy);
   color: #fff;
   font-size: 0.8rem;
   font-weight: 600;
@@ -1472,7 +1477,7 @@ a:hover {
   transition: all 0.2s ease;
 }
 .titan-hero-btn-primary:hover {
-  background: #333;
+  background: #1b2d44;
   transform: translateY(-1px);
 }
 .titan-hero-btn-secondary {
@@ -1483,7 +1488,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #1a1a1a;
+  color: var(--navy);
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -1546,10 +1551,10 @@ a:hover {
   letter-spacing: 0.04em;
 }
 .titan-hero-stat-num {
-  font-family: var(--font-display);
+  font-family: 'Geist Mono', monospace;
   font-size: 1.8rem;
   font-weight: 400;
-  color: #1a1a1a;
+  color: var(--navy);
   letter-spacing: -0.02em;
 }
 @media (max-width: 768px) {
@@ -1557,10 +1562,14 @@ a:hover {
     grid-template-columns: 1fr;
     gap: 2rem;
     min-height: auto;
-    padding: 2rem 2rem 0;
+    padding: 0 2rem;
+  }
+  .titan-hero-right {
+    border-top: none;
+    padding-top: 0;
   }
   .titan-hero-h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
   .titan-hero-right {
     aspect-ratio: 16 / 10;
