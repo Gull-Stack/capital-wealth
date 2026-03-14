@@ -341,9 +341,13 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-weight: 500;
-  padding: 0;
+  padding: 0.75rem 0;
   margin-bottom: 0;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  position: relative;
+  z-index: 10;
 }
 .mobile-accordion-arrow {
   color: rgba(255,255,255,0.35);
