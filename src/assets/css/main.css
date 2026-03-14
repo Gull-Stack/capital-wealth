@@ -1772,7 +1772,7 @@ a:hover {
 /* ═══ SERVICES CANVAS ═══ */
 .svc-canvas {
   background: var(--bg-primary);
-  padding: 5rem 2rem;
+  padding: 1rem 2rem 5rem;
 }
 .svc-canvas-inner {
   max-width: 1200px;
@@ -1954,14 +1954,12 @@ a:hover {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transform: scale(1.02);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease;
   mask: linear-gradient(0deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 40%);
   -webkit-mask: linear-gradient(0deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 40%);
 }
 .svc-canvas-img.active {
   opacity: 1;
-  transform: scale(1);
 }
 @media (max-width: 768px) {
   .svc-canvas-inner {
