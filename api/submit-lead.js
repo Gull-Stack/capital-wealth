@@ -37,11 +37,22 @@ export default async function handler(req, res) {
     const {
       name, email, phone, savings, retirementTimeline, questions,
       utm_source, utm_medium, utm_campaign, utm_content, utm_term,
-      referrer, landing_page, submitted_from
+      referrer, landing_page, submitted_from, website
     } = req.body;
+
+    // Honeypot — hidden field that bots auto-fill
+    if (website) {
+      return res.status(200).json({ success: true, message: "Thank you!" });
+    }
 
     if (!name || !email || !phone) {
       return res.status(400).json({ error: 'Name, email, and phone are required.' });
+    }
+
+    // Bot pattern detection — known spam patterns
+    const spamPatterns = [/^(moving_|vulkan_|true_|888starz)/i, /@igurant/i, /@cool-affiliates/i, /mailinator\.com/i];
+    if (spamPatterns.some(p => p.test(name) || p.test(email))) {
+      return res.status(200).json({ success: true, message: "Thank you!" });
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
