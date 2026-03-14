@@ -916,33 +916,42 @@ a:hover {
   margin-bottom: var(--spacing-xs);
 }
 
-/* ═══ LOGO BACKDROP SECTION ═══ */
-.logo-backdrop-section {
+/* ═══ CTA + AURORA MERGED SECTION ═══ */
+.cta-aurora-section {
   background: #060e18;
   position: relative;
-  overflow: visible;
-  height: 200px;
-  margin-top: -80px;
-  z-index: 2;
-}
-.logo-backdrop-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
+  padding: 6rem 2rem 5rem;
+}
+.cta-aurora-backdrop {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  pointer-events: none;
 }
-.logo-backdrop-img {
+.cta-aurora-logo {
   width: 900px;
   max-width: 90vw;
   height: auto;
-  opacity: 0.08;
+  opacity: 0.07;
   filter: grayscale(1) brightness(2);
-  transform: translateY(35%);
+  transform: translateY(40%);
   position: relative;
   z-index: 1;
+}
+.cta-aurora-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+}
+.cta-aurora-content {
+  max-width: 550px;
 }
 /* Aurora blobs — strong drifting glow like Giga */
 .aurora-blob {
@@ -1008,13 +1017,6 @@ a:hover {
   100% { top: 20%; left: 50%; opacity: 0.06; }
 }
 @media (max-width: 768px) {
-  .logo-backdrop-section {
-    height: 160px;
-    margin-top: -50px;
-  }
-  .logo-backdrop-img {
-    width: 500px;
-  }
   .aurora-blob-1, .aurora-blob-2, .aurora-blob-3, .aurora-blob-4 {
     width: 250px;
     height: 180px;
@@ -1042,9 +1044,10 @@ a:hover {
   gap: 1.5rem;
 }
 .footer-giga-logo {
-  height: 45px;
+  height: 60px;
   width: auto;
   object-fit: contain;
+  display: block;
 }
 .footer-giga-pills {
   display: flex;
@@ -1957,21 +1960,7 @@ a:hover {
 }
 
 /* Old cta-final replaced by Giga-style */
-.cta-final-giga {
-  padding: 5rem 2rem 8rem;
-  background: #060e18;
-  position: relative;
-  z-index: 1;
-  border-top: 1px solid rgba(255,255,255,0.06);
-}
-.cta-final-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-.cta-final-left {
-  max-width: 650px;
-}
+/* old cta-final-giga replaced by cta-aurora-section */
 .cta-final-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -2050,9 +2039,11 @@ a:hover {
   transform: translateY(-1px);
 }
 @media (max-width: 768px) {
-  .cta-final-inner {
-    flex-direction: column;
-    text-align: center;
+  .cta-aurora-inner {
+    justify-content: flex-start;
+  }
+  .cta-aurora-content {
+    max-width: 100%;
   }
   .cta-final-heading {
     font-size: 2rem;
