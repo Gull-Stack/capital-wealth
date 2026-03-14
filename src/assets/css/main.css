@@ -1232,12 +1232,12 @@ a:hover {
 }
 .hero-display {
   font-family: var(--font-display);
-  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-size: clamp(2.5rem, 5.5vw, 4.2rem);
   font-weight: 300;
-  line-height: 1.05;
+  line-height: 0.95;
   color: #fff;
   margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
 }
@@ -1628,6 +1628,9 @@ a:hover {
   grid-template-columns: 1fr 1.2fr;
   gap: 4rem;
   align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 3.5rem;
 }
 .giga-testimonials-heading {
   font-family: var(--font-display);
@@ -1724,6 +1727,7 @@ a:hover {
   .giga-testimonials-inner {
     grid-template-columns: 1fr;
     gap: 2rem;
+    padding: 2rem;
   }
   .giga-testimonials-heading {
     font-size: 2rem;
