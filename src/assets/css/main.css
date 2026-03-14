@@ -986,7 +986,7 @@ a:hover {
 }
 @media (max-width: 768px) {
   .faq-section {
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
   }
   .faq-inner {
     grid-template-columns: 1fr;
@@ -1856,7 +1856,7 @@ a:hover {
 }
 @media (max-width: 768px) {
   .fundamentals-section {
-    padding: 2.5rem 1rem 0.5rem;
+    padding: 3rem 2rem 1rem;
   }
   .fundamentals-inner {
     grid-template-columns: 1fr;
@@ -1864,18 +1864,18 @@ a:hover {
     padding: 0;
   }
   .fundamentals-heading {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .fundamentals-grid {
     grid-template-columns: 1fr;
     gap: 0;
   }
   .fundamental-card {
-    display: grid;
-    grid-template-columns: 28px 1fr;
-    gap: 0 0.75rem;
-    align-items: start;
-    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
     border-left: none;
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
@@ -1883,19 +1883,17 @@ a:hover {
     border-bottom: none;
   }
   .fundamental-icon {
-    grid-row: 1 / 3;
-    margin-bottom: 0;
-    margin-top: 0.1rem;
-    width: 20px;
-    height: 20px;
+    margin-bottom: 0.75rem;
+    width: 28px;
+    height: 28px;
   }
   .fundamental-title {
-    margin-bottom: 0.15rem;
-    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
   }
   .fundamental-desc {
-    grid-column: 2;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    max-width: 320px;
   }
 }
 
@@ -2083,7 +2081,7 @@ a:hover {
 }
 @media (max-width: 768px) {
   .svc-canvas {
-    padding: 1rem 1rem 3rem;
+    padding: 1rem 2rem 3rem;
   }
   .svc-canvas-inner {
     grid-template-columns: 1fr;
