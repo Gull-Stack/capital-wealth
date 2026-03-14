@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function startTimer() {
         clearInterval(timer);
-        timer = setInterval(next, 5000);
+        timer = setInterval(next, 8000);
     }
 
     tabs.forEach(function(tab) {

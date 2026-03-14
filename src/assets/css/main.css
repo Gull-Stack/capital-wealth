@@ -1778,13 +1778,17 @@ a:hover {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 0;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  overflow: hidden;
 }
 .svc-canvas-left {
   display: flex;
   flex-direction: column;
+  padding: 2.5rem;
 }
 .svc-canvas-header {
   display: flex;
@@ -1801,25 +1805,26 @@ a:hover {
 .svc-canvas-heading {
   font-family: var(--font-display);
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   margin: 0;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 .svc-canvas-sub {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.45);
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.5);
   line-height: 1.5;
   margin: 0 0 1.25rem;
 }
 .svc-canvas-cta {
   display: inline-block;
-  padding: 0.65rem 1.8rem;
-  background: var(--accent-secondary);
+  padding: 0.5rem 1.5rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
   color: #fff;
   font-size: 0.85rem;
   font-weight: 500;
-  border-radius: 100px;
+  border-radius: 1000px;
   text-decoration: none;
   margin-bottom: 2rem;
   text-align: center;
@@ -1827,8 +1832,8 @@ a:hover {
   align-self: flex-start;
 }
 .svc-canvas-cta:hover {
-  filter: brightness(1.1);
-  transform: translateY(-1px);
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.2);
 }
 .svc-tabs {
   display: flex;
@@ -1846,8 +1851,8 @@ a:hover {
 }
 .svc-tab-bar {
   width: 100%;
-  height: 2px;
-  background: rgba(255,255,255,0.08);
+  height: 1px;
+  background: rgba(255,255,255,0.1);
   overflow: hidden;
 }
 .svc-tab-fill {
@@ -1856,25 +1861,28 @@ a:hover {
   background: #fff;
 }
 .svc-tab.active .svc-tab-fill {
-  animation: svcFill 5s linear forwards;
+  animation: svcFill 8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .svc-tab.active .svc-tab-bar {
-  height: 3px;
-  background: rgba(255,255,255,0.15);
+  height: 2px;
 }
 @keyframes svcFill {
-  from { width: 0%; }
-  to { width: 100%; }
+  0% { width: 0%; }
+  85% { width: 92%; }
+  100% { width: 100%; }
 }
 .svc-tab-content {
-  padding: 0.85rem 0;
+  padding: 0.7rem 0;
+  display: flex;
+  flex-direction: column;
 }
 .svc-tab-label {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: rgba(255,255,255,0.35);
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
   display: block;
+  line-height: 2.2;
 }
 .svc-tab.active .svc-tab-label {
   color: #fff;
@@ -1884,33 +1892,54 @@ a:hover {
   color: rgba(255,255,255,0.6);
 }
 .svc-tab-desc {
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.45);
-  line-height: 1.55;
-  margin: 0.4rem 0 0;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  margin: 0;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.35s ease, opacity 0.3s ease, margin 0.35s ease;
+  transition: max-height 0.4s ease, opacity 0.35s ease;
 }
 .svc-tab.active .svc-tab-desc {
-  max-height: 80px;
+  max-height: 100px;
   opacity: 1;
-  margin-top: 0.4rem;
+}
+.svc-tab-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--accent-secondary);
+  margin-top: 0.5rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.35s ease;
+  text-decoration: none;
+}
+.svc-tab.active .svc-tab-arrow {
+  max-height: 30px;
+  opacity: 1;
+}
+.svc-tab-arrow svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease;
+}
+.svc-tab:hover .svc-tab-arrow svg {
+  transform: translateX(3px);
 }
 .svc-canvas-right {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 0.5rem;
+  position: relative;
+  min-height: 500px;
 }
 .svc-img-float {
-  position: relative;
-  width: 85%;
-  aspect-ratio: 4 / 3;
-  border-radius: 12px;
+  position: absolute;
+  inset: 24px;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
 }
 .svc-canvas-img {
   position: absolute;
@@ -1919,7 +1948,9 @@ a:hover {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.6s ease;
+  mask: linear-gradient(0deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 40%);
+  -webkit-mask: linear-gradient(0deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 40%);
 }
 .svc-canvas-img.active {
   opacity: 1;
@@ -1927,13 +1958,13 @@ a:hover {
 @media (max-width: 768px) {
   .svc-canvas-inner {
     grid-template-columns: 1fr;
-    gap: 2rem;
   }
   .svc-canvas-right {
+    min-height: 250px;
     order: -1;
   }
   .svc-img-float {
-    width: 100%;
+    inset: 12px;
   }
 }
 
