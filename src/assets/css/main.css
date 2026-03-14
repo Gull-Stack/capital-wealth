@@ -1510,7 +1510,7 @@ a:hover {
 /* ═══ FIVE FUNDAMENTALS — Giga style ═══ */
 .fundamentals-section {
   background: var(--bg-primary);
-  padding: 5rem 2rem;
+  padding: 4rem 2rem 5rem;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 .fundamentals-inner {
@@ -2679,7 +2679,7 @@ a:hover {
   padding: 2.5rem 2rem 3rem;
 }
 .hero-transition-inner {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
