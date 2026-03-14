@@ -1804,14 +1804,20 @@ a:hover {
 }
 .svc-canvas-heading {
   font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 400;
   color: #fff;
   margin: 0;
   letter-spacing: -0.02em;
 }
+.svc-heading-glow {
+  background: linear-gradient(90deg, rgb(185, 210, 240) 0%, rgb(255, 255, 255) 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .svc-canvas-sub {
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: rgba(255,255,255,0.5);
   line-height: 1.5;
   margin: 0 0 1.25rem;
@@ -1877,12 +1883,12 @@ a:hover {
   flex-direction: column;
 }
 .svc-tab-label {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: rgba(255,255,255,0.35);
   transition: color 0.3s ease;
   display: block;
-  line-height: 2.2;
+  line-height: 2.4;
 }
 .svc-tab.active .svc-tab-label {
   color: #fff;
@@ -1892,7 +1898,7 @@ a:hover {
   color: rgba(255,255,255,0.6);
 }
 .svc-tab-desc {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: rgba(255,255,255,0.5);
   line-height: 1.6;
   margin: 0;
@@ -1933,7 +1939,7 @@ a:hover {
 }
 .svc-canvas-right {
   position: relative;
-  min-height: 500px;
+  min-height: 580px;
 }
 .svc-img-float {
   position: absolute;
@@ -1948,12 +1954,14 @@ a:hover {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 0.6s ease;
+  transform: scale(1.02);
+  transition: opacity 0.8s ease, transform 0.8s ease;
   mask: linear-gradient(0deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 40%);
   -webkit-mask: linear-gradient(0deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 40%);
 }
 .svc-canvas-img.active {
   opacity: 1;
+  transform: scale(1);
 }
 @media (max-width: 768px) {
   .svc-canvas-inner {
