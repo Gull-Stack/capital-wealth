@@ -405,10 +405,10 @@ a:hover {
   top: calc(100% + 16px);
   left: 0;
   width: 420px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(10, 16, 28, 0.92);
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 24px;
   padding: 1rem;
   opacity: 0;
@@ -456,16 +456,18 @@ a:hover {
 /* Regular items */
 .nav-dd-item {
   display: block;
-  padding: 0.85rem 0.5rem;
+  padding: 0.75rem 0.75rem;
   text-decoration: none;
-  transition: opacity 0.15s ease;
+  border-radius: 12px;
+  transition: background 0.2s ease;
 }
 .nav-dd-item strong {
   display: block;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.75);
   font-size: 0.88rem;
   font-weight: 500;
   margin-bottom: 0.2rem;
+  transition: color 0.2s ease;
 }
 .nav-dd-item span {
   display: block;
@@ -473,9 +475,16 @@ a:hover {
   font-size: 0.78rem;
   font-weight: 400;
   line-height: 1.5;
+  transition: color 0.2s ease;
 }
 .nav-dd-item:hover {
-  opacity: 0.65;
+  background: rgba(255,255,255,0.06);
+}
+.nav-dd-item:hover strong {
+  color: #fff;
+}
+.nav-dd-item:hover span {
+  color: rgba(255,255,255,0.55);
 }
 .nav-dropdown-divider {
   display: none;
