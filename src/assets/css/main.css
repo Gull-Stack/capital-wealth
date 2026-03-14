@@ -1964,13 +1964,33 @@ a:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
 }
 .cta-final-left {
-  flex: 1;
+  max-width: 650px;
+}
+.cta-final-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 1.25rem;
+}
+.cta-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-secondary);
+  display: inline-block;
+  animation: ctaPulse 2s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(212, 148, 76, 0.4);
+}
+@keyframes ctaPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
 }
 .cta-final-heading {
   font-family: var(--font-display);
@@ -1985,13 +2005,12 @@ a:hover {
   font-size: 0.95rem;
   color: rgba(255,255,255,0.45);
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 2rem;
   max-width: 520px;
 }
 .cta-final-actions {
   display: flex;
   gap: 1rem;
-  flex-shrink: 0;
 }
 .cta-btn {
   display: inline-flex;
