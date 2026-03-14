@@ -563,6 +563,9 @@ a:hover {
   border: none;
   cursor: pointer;
   padding: var(--spacing-xs);
+  position: relative;
+  z-index: 1001;
+  pointer-events: all;
 }
 
 .mobile-menu-toggle span {
