@@ -326,16 +326,36 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+  .header {
+    padding: 0.75rem 1rem;
+  }
   .nav-float {
     border-radius: 0;
-    padding: 0.75rem 1.25rem;
+    padding: 0;
     background: transparent;
   }
   .header.scrolled .nav-float {
-    background: rgba(0, 0, 0, 0.8);
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  .header.scrolled {
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+  }
+  .nav-left-pill {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
+    padding: 0;
     border-radius: 0;
+  }
+  .nav-main-desktop { display: none !important; }
+  .nav-right-actions { display: none !important; }
+  .mobile-menu-toggle {
+    display: flex !important;
   }
 }
 
@@ -496,7 +516,7 @@ a:hover {
 .mobile-menu-toggle {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   background: none;
   border: none;
   cursor: pointer;
@@ -504,9 +524,9 @@ a:hover {
 }
 
 .mobile-menu-toggle span {
-  width: 24px;
-  height: 2px;
-  background: var(--text-primary);
+  width: 22px;
+  height: 1.5px;
+  background: #fff;
   transition: transform 0.2s ease;
 }
 
