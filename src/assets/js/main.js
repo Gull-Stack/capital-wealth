@@ -36,6 +36,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Mobile Services Accordion
+document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.getElementById('mobileServicesToggle');
+    const panel = document.getElementById('mobileServicesPanel');
+    if (toggle && panel) {
+        toggle.addEventListener('click', function() {
+            toggle.classList.toggle('active');
+            panel.classList.toggle('active');
+        });
+    }
+});
+
 // FAQ Accordion
 document.addEventListener('DOMContentLoaded', function() {
     const faqQuestions = document.querySelectorAll('.faq-question');
