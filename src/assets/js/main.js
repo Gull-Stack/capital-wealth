@@ -1,39 +1,36 @@
-// Mobile Menu Toggle — slide-in panel from right
+// Mobile Menu — full-screen Giga style
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-    const navLinks = document.getElementById('navLinks');
-    const navOverlay = document.getElementById('navOverlay');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+    function openMenu() {
+        mobileMenu.classList.add('active');
+        mobileMenuToggle.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
 
     function closeMenu() {
-        navLinks.classList.remove('active');
+        mobileMenu.classList.remove('active');
         mobileMenuToggle.classList.remove('active');
-        if (navOverlay) navOverlay.classList.remove('active');
         document.body.style.overflow = '';
     }
 
-    function openMenu() {
-        navLinks.classList.add('active');
-        mobileMenuToggle.classList.add('active');
-        if (navOverlay) navOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-    
-    if (mobileMenuToggle && navLinks) {
+    if (mobileMenuToggle && mobileMenu) {
         mobileMenuToggle.addEventListener('click', function() {
-            if (navLinks.classList.contains('active')) {
+            if (mobileMenu.classList.contains('active')) {
                 closeMenu();
             } else {
                 openMenu();
             }
         });
-        
-        // Close menu when tapping overlay
-        if (navOverlay) {
-            navOverlay.addEventListener('click', closeMenu);
+
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener('click', closeMenu);
         }
 
-        // Close menu when clicking a nav link
-        navLinks.querySelectorAll('a').forEach(function(link) {
+        // Close menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(function(link) {
             link.addEventListener('click', closeMenu);
         });
     }
