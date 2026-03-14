@@ -1793,6 +1793,7 @@ a:hover {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: 1fr;
   gap: 0;
   background: rgba(0,0,0,0.2);
   border: 1px solid rgba(255,255,255,0.1);
@@ -1803,6 +1804,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
+  overflow: hidden;
 }
 .svc-canvas-header {
   display: flex;
@@ -1859,6 +1861,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 0;
+  flex: 1;
+  min-height: 0;
 }
 .svc-tab {
   display: flex;
@@ -1928,24 +1932,18 @@ a:hover {
 .svc-tab-arrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.78rem;
-  font-weight: 500;
   color: var(--accent-secondary);
-  margin-top: 0.5rem;
-  max-height: 0;
-  overflow: hidden;
+  margin-left: 0.4rem;
   opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.35s ease;
-  text-decoration: none;
+  transition: opacity 0.3s ease;
+  vertical-align: middle;
 }
 .svc-tab.active .svc-tab-arrow {
-  max-height: 30px;
   opacity: 1;
 }
 .svc-tab-arrow svg {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   transition: transform 0.2s ease;
 }
 .svc-tab:hover .svc-tab-arrow svg {
@@ -1954,6 +1952,7 @@ a:hover {
 .svc-canvas-right {
   position: relative;
   min-height: 580px;
+  align-self: stretch;
 }
 .svc-img-float {
   position: absolute;
