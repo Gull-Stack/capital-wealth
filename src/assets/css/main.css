@@ -1349,6 +1349,12 @@ a:hover {
   gap: 0;
   align-items: center;
 }
+.media-inner--flipped {
+  grid-template-columns: 1.5fr 1fr;
+}
+.media-photo--large {
+  min-height: 420px;
+}
 .media-text {
   padding: 3rem;
   color: #1a1a1a;
@@ -1423,7 +1429,8 @@ a:hover {
     margin: 2rem auto;
     padding: 2rem;
   }
-  .media-inner { grid-template-columns: 1fr; }
+  .media-inner, .media-inner--flipped { grid-template-columns: 1fr; }
+  .media-photo--large { min-height: 280px; }
   .media-text { padding: 2rem; }
   .diagonal-divider, .diagonal-divider-reverse { height: 50px; }
   .tools-header { max-width: 100%; margin: 2rem 1.5rem; padding: 2rem; }
