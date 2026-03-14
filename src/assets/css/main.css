@@ -918,7 +918,7 @@ a:hover {
 
 /* ═══ LOGO BACKDROP SECTION ═══ */
 .logo-backdrop-section {
-  background: linear-gradient(180deg, var(--bg-primary) 0%, #0a1628 50%, #060e18 100%);
+  background: linear-gradient(180deg, #060e18 0%, #060e18 100%);
   position: relative;
   overflow: hidden;
   height: 340px;
@@ -935,12 +935,12 @@ a:hover {
   justify-content: center;
 }
 .logo-backdrop-img {
-  width: 600px;
-  max-width: 80vw;
+  width: 840px;
+  max-width: 90vw;
   height: auto;
   opacity: 0.06;
   filter: grayscale(1) brightness(2);
-  transform: translateY(30%);
+  transform: translateY(45%);
   position: relative;
   z-index: 1;
 }
@@ -1937,7 +1937,7 @@ a:hover {
 /* Old cta-final replaced by Giga-style */
 .cta-final-giga {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #0d1b2a 0%, #132d46 100%);
+  background: #060e18;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 .cta-final-inner {
