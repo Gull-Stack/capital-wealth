@@ -442,14 +442,14 @@ a:hover {
 .nav-dropdown-menu {
   position: absolute;
   top: calc(100% + 16px);
-  left: 0;
-  width: 420px;
-  background: rgba(80, 90, 110, 0.35);
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 24px;
-  padding: 1.25rem 1rem;
+  left: -1rem;
+  width: 440px;
+  background: rgba(40, 50, 65, 0.55);
+  backdrop-filter: blur(48px) saturate(1.4);
+  -webkit-backdrop-filter: blur(48px) saturate(1.4);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 0.75rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
@@ -466,9 +466,9 @@ a:hover {
 /* Dropdown items — Giga style: all bright by default, dim siblings on hover */
 .nav-dd-item {
   display: block;
-  padding: 1rem 1.1rem;
+  padding: 0.85rem 1rem;
   text-decoration: none;
-  border-radius: 14px;
+  border-radius: 8px;
   transition: background 0.2s ease, opacity 0.2s ease;
 }
 .nav-dd-item strong {
@@ -494,7 +494,7 @@ a:hover {
 /* ...then un-dim + highlight the one being hovered */
 .nav-dropdown-menu:hover .nav-dd-item:hover {
   opacity: 1;
-  background: rgba(13, 27, 42, 0.6);
+  background: rgba(255, 255, 255, 0.08);
 }
 .nav-dd-item:hover strong {
   color: #fff;
