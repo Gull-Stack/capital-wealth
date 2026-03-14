@@ -1095,6 +1095,34 @@ a:hover {
   background: url('/assets/images/photos/hero-alpenglow.jpg') center center/cover no-repeat;
   background-attachment: fixed;
 }
+@media (max-width: 767px) {
+  .hero-mountain {
+    background-attachment: scroll;
+    min-height: 70vh;
+  }
+  .hero-mountain-content {
+    padding: 7rem 1.5rem 2rem;
+  }
+  .hero-display {
+    font-size: 2.4rem;
+    line-height: 1.1;
+  }
+  .hero-sub {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-eyebrow {
+    font-size: 0.6rem;
+    padding: 0.4rem 0.9rem;
+    margin-bottom: 1.25rem;
+  }
+  .hero-transition {
+    padding: 1.5rem 1.25rem 2rem;
+  }
+  .hero-transition-statement {
+    font-size: 1rem;
+  }
+}
 .hero-mountain-overlay {
   position: absolute;
   inset: 0;
