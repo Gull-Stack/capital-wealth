@@ -1421,7 +1421,163 @@ a:hover {
    B.O.S.S. INSPIRED COMPONENTS
    ═══════════════════════════════════════════════════ */
 
-/* Mountain Hero — compact to entice scrolling */
+/* ═══ TITAN-STYLE HERO ═══ */
+.titan-hero {
+  background: #fff;
+  padding-top: 100px;
+}
+.titan-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  min-height: 55vh;
+}
+.titan-hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titan-hero-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 4.5vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #1a1a1a;
+  margin: 0 0 2rem;
+}
+.titan-hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.titan-hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.8rem;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.2s ease;
+}
+.titan-hero-btn-primary:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+.titan-hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.titan-hero-btn-secondary:hover {
+  opacity: 0.6;
+}
+.titan-hero-btn-secondary span {
+  font-size: 0.65rem;
+}
+.titan-hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f0eb;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+.titan-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.titan-hero-footer {
+  border-top: 1px solid rgba(0,0,0,0.08);
+  margin-top: 3rem;
+}
+.titan-hero-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+}
+.titan-hero-desc {
+  font-size: 0.95rem;
+  color: rgba(0,0,0,0.5);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 480px;
+}
+.titan-hero-stats {
+  display: flex;
+  gap: 3rem;
+  border-left: 1px solid rgba(0,0,0,0.08);
+  padding-left: 2rem;
+}
+.titan-hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.titan-hero-stat-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.titan-hero-stat-num {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 768px) {
+  .titan-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    min-height: auto;
+    padding: 2rem 2rem 0;
+  }
+  .titan-hero-h1 {
+    font-size: 2.4rem;
+  }
+  .titan-hero-right {
+    aspect-ratio: 16 / 10;
+  }
+  .titan-hero-footer-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .titan-hero-stats {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding-top: 1.5rem;
+    gap: 2rem;
+  }
+}
+
+/* Mountain Hero — kept for other pages */
 .hero-mountain {
   position: relative;
   min-height: 80vh;
