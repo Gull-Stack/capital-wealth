@@ -3919,10 +3919,18 @@ a:hover {
   margin: 0 0 3rem;
 }
 .titan-stories-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(25,79,144,0.15) transparent;
 }
+.titan-stories-grid::-webkit-scrollbar { height: 4px; }
+.titan-stories-grid::-webkit-scrollbar-track { background: transparent; }
+.titan-stories-grid::-webkit-scrollbar-thumb { background: rgba(25,79,144,0.15); border-radius: 100px; }
 .titan-story-card {
   background: #f0f1f3;
   border-radius: 12px;
@@ -3930,6 +3938,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  min-width: 320px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
 }
 .titan-story-title {
   font-family: var(--font-family);
@@ -4260,60 +4271,51 @@ p, li { font-size: max(1rem, inherit); }
   border-top: 1px solid rgba(0,0,0,0.08);
 }
 .titan-service-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0.9rem 0;
+  display: block;
+  padding: 1.1rem 0;
   border-bottom: 1px solid rgba(0,0,0,0.06);
   text-decoration: none;
   transition: all 0.2s ease;
-  flex-wrap: wrap;
-  gap: 0.2rem;
 }
 .titan-service-name {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: var(--navy);
-  transition: opacity 0.2s ease;
-}
-.titan-service-item:hover .titan-service-name {
-  opacity: 0.7;
+  display: block;
+  margin-bottom: 0.2rem;
 }
 .titan-service-desc {
-  width: 100%;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: rgba(25,79,144,0.45);
-  line-height: 1.6;
-  margin-top: 0.15rem;
+  line-height: 1.55;
+  display: inline;
 }
 .titan-service-arrow {
-  font-size: 0.9rem;
   color: var(--accent-secondary);
-  opacity: 0;
-  transition: opacity 0.2s ease;
+  font-weight: 600;
+  margin-left: 0.25rem;
+  transition: margin-left 0.2s ease;
 }
 .titan-service-item:hover .titan-service-arrow {
-  opacity: 1;
+  margin-left: 0.5rem;
 }
 .titan-services-right {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
+  border-left: 1px solid rgba(0,0,0,0.08);
+  padding-left: 4rem;
 }
 .titan-services-img-wrap {
   width: 100%;
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 4px;
   overflow: hidden;
-  padding: 6px;
 }
 .titan-services-img-wrap img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 2px;
 }
 @media (max-width: 768px) {
   .titan-services-inner { grid-template-columns: 1fr; gap: 2rem; }
-  .titan-services-right { order: -1; }
+  .titan-services-right { order: -1; border-left: none; padding-left: 0; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 2rem; max-height: 350px; }
 }
