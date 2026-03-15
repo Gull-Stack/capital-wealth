@@ -1588,6 +1588,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
 }
 .titan-hero-img {
   width: 100%;
@@ -4218,4 +4219,102 @@ p, li { font-size: max(1rem, inherit); }
 .faq-inner {
   border-top: 1px solid rgba(0,0,0,0.1);
   padding-top: 3rem;
+}
+
+/* ═══ TITAN SERVICES SECTION ═══ */
+.titan-services {
+  background: var(--navy);
+  padding: 5rem 2rem;
+}
+.titan-services-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.titan-services-left {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.titan-services-left-top {
+  margin-bottom: 2rem;
+}
+.titan-services-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+.titan-services-sub {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.45);
+  margin: 0 0 1.5rem;
+}
+.titan-services-list {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.titan-service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+.titan-service-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  transition: color 0.2s ease;
+}
+.titan-service-item:hover .titan-service-name,
+.titan-service-item-active .titan-service-name {
+  color: #fff;
+}
+.titan-service-desc {
+  width: 100%;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.6;
+  margin-top: 0.25rem;
+}
+.titan-service-arrow {
+  font-size: 0.9rem;
+  color: var(--accent-secondary);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.titan-service-item:hover .titan-service-arrow,
+.titan-service-item-active .titan-service-arrow {
+  opacity: 1;
+}
+.titan-services-right {
+  display: flex;
+  align-items: stretch;
+}
+.titan-services-img-wrap {
+  width: 100%;
+  border-left: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+}
+.titan-services-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 768px) {
+  .titan-services-inner { grid-template-columns: 1fr; }
+  .titan-services-right { max-height: 300px; }
+  .titan-services-img-wrap { border-left: none; border-top: 1px solid rgba(255,255,255,0.08); }
 }
