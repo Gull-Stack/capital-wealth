@@ -296,7 +296,6 @@
 <section class="contact-hero-section">
     <div class="contact-hero-inner">
         <div class="contact-hero-text">
-            <p class="titan-section-label">GET IN TOUCH</p>
             <h1 class="titan-hero-h1">Let's Talk About Your Retirement</h1>
             <p class="titan-hero-body">No pressure. No pitch. Just a conversation about your goals and whether we're the right fit. Initial consultations are complimentary for qualified families.</p>
 
@@ -330,54 +329,63 @@
                     </div>
                 </div>
             </div>
+
+            <p class="contact-trust-line">Confidential. No obligation. 20-30 minutes.</p>
         </div>
 
         <div class="contact-form-wrap">
-            
-            <div style="display: grid; grid-template-columns: 1fr; gap: 0; align-items: start;">
-
-            
             <div class="contact-form-card">
                 <h2 class="contact-form-title">Request a Consultation</h2>
                 <p class="contact-form-subtitle">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
 
                 <form id="contact-form">
-                    <div style="margin-bottom: 1.25rem;">
-                        <label for="name" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Full Name *</label>
-                        <input type="text" id="name" name="name" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                    <div class="contact-form-grid">
+                        <div style="margin-bottom: 1.25rem;">
+                            <label for="first_name" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">First Name *</label>
+                            <input type="text" id="first_name" name="first_name" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                        </div>
+
+                        <div style="margin-bottom: 1.25rem;">
+                            <label for="last_name" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Last Name *</label>
+                            <input type="text" id="last_name" name="last_name" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                        </div>
                     </div>
 
-                    <div style="margin-bottom: 1.25rem;">
-                        <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Email Address *</label>
-                        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                    <div class="contact-form-grid">
+                        <div style="margin-bottom: 1.25rem;">
+                            <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Email Address *</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                        </div>
+
+                        <div style="margin-bottom: 1.25rem;">
+                            <label for="phone" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                        </div>
                     </div>
 
-                    <div style="margin-bottom: 1.25rem;">
-                        <label for="phone" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
-                    </div>
+                    <div class="contact-form-grid">
+                        <div style="margin-bottom: 1.25rem;">
+                            <label for="savings" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Savings Amount</label>
+                            <select id="savings" name="savings" style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                                <option value="">Please select</option>
+                                <option value="$250K - $500K">$250K - $500K</option>
+                                <option value="$500K - $1M">$500K - $1M</option>
+                                <option value="$1M - $2M">$1M - $2M</option>
+                                <option value="$2M+">$2M+</option>
+                            </select>
+                        </div>
 
-                    <div style="margin-bottom: 1.25rem;">
-                        <label for="savings" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Retirement Savings Amount</label>
-                        <select id="savings" name="savings" style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
-                            <option value="">Please select</option>
-                            <option value="$250K - $500K">$250K - $500K</option>
-                            <option value="$500K - $1M">$500K - $1M</option>
-                            <option value="$1M - $2M">$1M - $2M</option>
-                            <option value="$2M+">$2M+</option>
-                        </select>
-                    </div>
-
-                    <div style="margin-bottom: 1.25rem;">
-                        <label for="retirement-timeline" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Retirement Timeline</label>
-                        <select id="retirement-timeline" name="retirement-timeline" style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
-                            <option value="">Please select</option>
-                            <option value="Already retired">Already retired</option>
-                            <option value="1-2 years">1-2 years</option>
-                            <option value="3-5 years">3-5 years</option>
-                            <option value="5-10 years">5-10 years</option>
-                            <option value="10+ years">10+ years</option>
-                        </select>
+                        <div style="margin-bottom: 1.25rem;">
+                            <label for="retirement-timeline" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Retirement Timeline</label>
+                            <select id="retirement-timeline" name="retirement-timeline" style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                                <option value="">Please select</option>
+                                <option value="Already retired">Already retired</option>
+                                <option value="1-2 years">1-2 years</option>
+                                <option value="3-5 years">3-5 years</option>
+                                <option value="5-10 years">5-10 years</option>
+                                <option value="10+ years">10+ years</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div style="margin-bottom: 1.75rem;">
@@ -421,12 +429,15 @@
                     }
                   } catch (e) {}
 
+                  // Combine first and last name
+                  var fullName = document.getElementById('first_name').value + ' ' + document.getElementById('last_name').value;
+
                   try {
                     var res = await fetch('/api/submit-lead', {
                       method: 'POST',
                       headers: { 'Content-Type': 'application/json' },
                       body: JSON.stringify({
-                        name: document.getElementById('name').value,
+                        name: fullName,
                         email: document.getElementById('email').value,
                         phone: document.getElementById('phone').value,
                         savings: document.getElementById('savings').value,
