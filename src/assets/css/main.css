@@ -4494,3 +4494,42 @@ p, li { font-size: max(1rem, inherit); }
   margin-top: 2rem;
   text-align: center;
 }
+
+/* ═══ MOBILE FIXES BATCH ═══ */
+
+/* Hero CTAs stack on mobile */
+@media (max-width: 768px) {
+  .titan-hero-buttons { flex-direction: column; gap: 0.75rem; }
+  .titan-hero-buttons a { width: 100%; text-align: center; justify-content: center; }
+}
+
+/* Remove comparison border-top (wasted space) */
+.titan-comparison { border-top: none; }
+.titan-comparison-inner { border-top: none; padding-top: 0; }
+
+/* Podcast icon left-align on mobile */
+@media (max-width: 768px) {
+  .titan-media-art { text-align: left; }
+  .titan-media-art img { margin: 0; }
+}
+
+/* Testimonial cards full width on mobile — no cut-off */
+@media (max-width: 768px) {
+  .titan-review-card { width: calc(100% - 2rem) !important; min-width: calc(100% - 2rem) !important; }
+}
+
+/* Force ALL heading fonts to Geist — nuclear option */
+.titan-bio-name,
+.titan-book-h2,
+.titan-media-h2,
+.titan-cta-h2,
+.titan-comparison-h2,
+.titan-stories-h2,
+.titan-qualifier-h2,
+.titan-fundamentals-h2,
+.titan-services-h2,
+.faq-heading {
+  font-family: var(--font-family) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.03em !important;
+}
