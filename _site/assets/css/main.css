@@ -1535,6 +1535,46 @@ a:hover {
 .mt-xl { margin-top: var(--spacing-xl); }
 
 /* Section Divider — thin line separator between same-background sections */
+/* Titan-style vertical border lines running down both sides of content */
+.titan-hero-inner,
+.titan-hero-footer-inner,
+.titan-fundamentals-inner,
+.titan-services-inner,
+.titan-comparison-inner,
+.titan-bio-inner,
+.titan-book-inner,
+.titan-media-inner,
+.titan-media-logos-inner,
+.titan-principles-inner,
+.titan-resources-inner,
+.titan-reviews-inner,
+.faq-inner {
+  border-left: 1px solid #e9eaeb;
+  border-right: 1px solid #e9eaeb;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+@media (max-width: 768px) {
+  .titan-hero-inner,
+  .titan-hero-footer-inner,
+  .titan-fundamentals-inner,
+  .titan-services-inner,
+  .titan-comparison-inner,
+  .titan-bio-inner,
+  .titan-book-inner,
+  .titan-media-inner,
+  .titan-media-logos-inner,
+  .titan-principles-inner,
+  .titan-resources-inner,
+  .titan-reviews-inner,
+  .faq-inner {
+    border-left: none;
+    border-right: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 .section-divider {
   height: 1px;
   background: rgba(0,0,0,0.08);
@@ -1636,7 +1676,7 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 30% center;
+  object-position: 75% center;
 }
 .titan-hero-footer {
   margin-top: 3rem;
@@ -4122,29 +4162,35 @@ a:hover {
   gap: 0;
 }
 .titan-principle-item {
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: relative;
 }
 .titan-principle-item:last-child {
   border-bottom: none;
 }
 .titan-principle-num {
-  font-size: 0.8rem;
-  color: rgba(25,79,144,0.3);
-  margin-bottom: 0.75rem;
-  font-weight: 600;
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+  font-size: 0.75rem;
+  color: rgba(25,79,144,0.25);
+  font-weight: 500;
+  font-family: 'Geist Mono', monospace;
 }
 .titan-principle-text {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--navy);
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
+  line-height: 1.35;
+  margin-bottom: 0.35rem;
+  padding-right: 3rem;
 }
 .titan-principle-sub {
-  font-size: 0.9rem;
-  color: rgba(25,79,144,0.55);
+  font-size: 0.85rem;
+  color: rgba(25,79,144,0.5);
   line-height: 1.5;
+  padding-right: 3rem;
 }
 @media (max-width: 900px) {
   .titan-principles-inner {
