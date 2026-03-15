@@ -133,13 +133,87 @@ a:hover {
 }
 
 /* Header */
-.header {
+/* ═══ TITAN NAV ═══ */
+.titan-header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1rem 1.5rem;
-  pointer-events: none;
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.titan-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+}
+.titan-nav-logo a {
+  display: flex;
+  align-items: center;
+}
+.titan-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.titan-nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--navy);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+.titan-nav-link:hover {
+  opacity: 0.6;
+}
+.titan-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.titan-nav-join {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--navy);
+  padding: 0.55rem 1.25rem;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.titan-nav-join:hover {
+  background: #1b2d44;
+}
+@media (max-width: 768px) {
+  .titan-nav-links { display: none; }
+  .titan-nav-right { display: none; }
+  .titan-header { padding: 0; }
+  .titan-header .mobile-menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  .titan-header .mobile-menu-toggle span {
+    width: 22px;
+    height: 2px;
+    background: var(--navy);
+    display: block;
+    transition: all 0.2s ease;
+  }
+}
+
+/* OLD NAV — hidden but kept for mobile menu */
+.header {
+  display: none;
 }
 .nav-float {
   max-width: 1100px;
@@ -153,8 +227,6 @@ a:hover {
   padding: 0;
   pointer-events: all;
 }
-
-/* Left pill: logo + links with frosted glass — always visible */
 .nav-left-pill {
   display: flex;
   align-items: center;
@@ -441,16 +513,15 @@ a:hover {
   height: 20px;
 }
 .nav-dropdown-menu {
-  position: fixed;
-  top: 70px;
-  left: var(--nav-left, 24px);
+  position: absolute;
+  top: calc(100% + 12px);
+  left: -1rem;
   width: 480px;
-  background: rgba(45, 55, 70, 0.6);
-  backdrop-filter: blur(48px) saturate(1.5);
-  -webkit-backdrop-filter: blur(48px) saturate(1.5);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 14px;
-  padding: 1rem;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 0.75rem;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
@@ -477,7 +548,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  color: #fff;
+  color: var(--navy);
   font-size: 0.92rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
@@ -496,7 +567,7 @@ a:hover {
 }
 .nav-dd-item span {
   display: block;
-  color: rgba(255,255,255,0.55);
+  color: rgba(13,27,42,0.45);
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.5;
@@ -504,13 +575,12 @@ a:hover {
 }
 /* When any item in the menu is hovered, dim ALL items... */
 .nav-dropdown-menu:hover .nav-dd-item {
-  opacity: 0.45;
+  opacity: 0.5;
 }
-/* ...then un-dim + highlight the one being hovered */
 .nav-dropdown-menu:hover .nav-dd-item:hover {
   opacity: 1;
-  background: rgba(0, 0, 0, 0.25);
-  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.06);
 }
 .nav-dd-item:hover strong {
   color: #fff;
@@ -1425,7 +1495,7 @@ a:hover {
 /* ═══ TITAN-STYLE HERO ═══ */
 .titan-hero {
   background: #fff;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .titan-hero-inner {
   max-width: 1200px;
@@ -1953,13 +2023,13 @@ a:hover {
 }
 .titan-fundamentals-h2 {
   font-family: var(--font-family);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
   font-weight: 500;
   color: var(--navy);
   letter-spacing: -0.03em;
   line-height: 1.15;
   margin: 0 0 3rem;
-  max-width: 650px;
+  white-space: nowrap;
 }
 .titan-fundamentals-grid {
   display: grid;
@@ -1995,14 +2065,13 @@ a:hover {
   line-height: 1.6;
   margin: 0;
 }
-/* Bottom row: 2 cards centered */
-.titan-fund-card:nth-child(4),
-.titan-fund-card:nth-child(5) {
-  grid-column: span 1;
+.titan-fund-card-cta {
+  background: var(--navy);
+  border-color: transparent;
 }
-.titan-fundamentals-grid::after {
-  content: '';
-  grid-column: span 1;
+.titan-fund-card-cta:hover {
+  background: #1b2d44;
+  border-color: transparent;
 }
 @media (max-width: 768px) {
   .titan-fundamentals {
@@ -2012,15 +2081,15 @@ a:hover {
     font-size: 1.8rem;
     margin-bottom: 2rem;
   }
+  .titan-fundamentals-h2 {
+    white-space: normal;
+  }
   .titan-fundamentals-grid {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
   .titan-fund-card {
     padding: 1.5rem 1.25rem;
-  }
-  .titan-fundamentals-grid::after {
-    display: none;
   }
 }
 
