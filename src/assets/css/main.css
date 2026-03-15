@@ -4380,6 +4380,9 @@ p, li { font-size: max(1rem, inherit); }
   padding-top: 3rem;
 }
 .titan-reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 2.5rem;
 }
 .titan-reviews-rating {
@@ -4397,10 +4400,54 @@ p, li { font-size: max(1rem, inherit); }
   font-size: 0.85rem;
   color: rgba(25,79,144,0.4);
 }
-.titan-reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.titan-reviews-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.titan-reviews-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--navy);
+  transition: all 0.2s ease;
+}
+.titan-reviews-arrow:hover {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+}
+.titan-reviews-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 8px;
+  background: rgba(0,0,0,0.04);
+  border-radius: 100px;
+}
+.titan-reviews-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background: rgba(25,79,144,0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.titan-reviews-dot.active {
+  width: 20px;
+  background: var(--navy);
+}
+.titan-reviews-track {
+  display: flex;
   gap: 1.25rem;
+  overflow: hidden;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .titan-review-card {
   background: #f0f1f3;
@@ -4409,6 +4456,8 @@ p, li { font-size: max(1rem, inherit); }
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  min-width: calc(33.333% - 0.84rem);
+  flex-shrink: 0;
 }
 .titan-review-stars {
   color: #f5a623;
@@ -4436,7 +4485,8 @@ p, li { font-size: max(1rem, inherit); }
   letter-spacing: 0.06em;
 }
 @media (max-width: 768px) {
-  .titan-reviews-grid { grid-template-columns: 1fr; }
+  .titan-review-card { min-width: 85%; }
+  .titan-reviews-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
 
 .titan-reviews-cta {

@@ -346,4 +346,51 @@ document.head.appendChild(style);
     onScroll(); // check initial state
 })();
 
-// Slider removed — using grid cards for reviews
+// Titan reviews carousel
+(function() {
+    var track = document.querySelector('.titan-reviews-track');
+    var cards = document.querySelectorAll('.titan-review-card');
+    var prevBtn = document.querySelector('.titan-reviews-prev');
+    var nextBtn = document.querySelector('.titan-reviews-next');
+    var dotsContainer = document.querySelector('.titan-reviews-dots');
+    if (!track || !cards.length || !dotsContainer) return;
+
+    function getPerView() { return window.innerWidth <= 768 ? 1 : 3; }
+    var perView = getPerView();
+    var totalPages = Math.ceil(cards.length / perView);
+    var currentPage = 0;
+
+    function buildDots() {
+        dotsContainer.innerHTML = '';
+        totalPages = Math.ceil(cards.length / perView);
+        for (var i = 0; i < totalPages; i++) {
+            var dot = document.createElement('span');
+            dot.className = 'titan-reviews-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('data-page', i);
+            dot.addEventListener('click', function() { goToPage(parseInt(this.getAttribute('data-page'))); });
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    function goToPage(page) {
+        if (page < 0) page = totalPages - 1;
+        if (page >= totalPages) page = 0;
+        currentPage = page;
+        var card = cards[0];
+        var gap = 20; // 1.25rem
+        var cardWidth = card.offsetWidth + gap;
+        track.style.transform = 'translateX(-' + (currentPage * perView * cardWidth) + 'px)';
+        var dots = dotsContainer.querySelectorAll('.titan-reviews-dot');
+        dots.forEach(function(d, idx) { d.classList.toggle('active', idx === currentPage); });
+    }
+
+    buildDots();
+    prevBtn.addEventListener('click', function() { goToPage(currentPage - 1); });
+    nextBtn.addEventListener('click', function() { goToPage(currentPage + 1); });
+
+    window.addEventListener('resize', function() {
+        perView = getPerView();
+        buildDots();
+        goToPage(0);
+    });
+})();
