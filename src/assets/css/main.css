@@ -4039,3 +4039,27 @@ p, li { font-size: max(1rem, inherit); }
 /* Card titles flush to top (no number above them anymore) */
 .titan-fund-card { padding-top: 1.5rem; }
 .titan-fund-card-title { margin-top: 0; }
+
+/* ═══ GLASS BUTTON — for dark backgrounds ═══ */
+.titan-media-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.2s ease;
+}
+.titan-media-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+}
