@@ -590,12 +590,12 @@ a:hover {
 }
 /* When any item in the menu is hovered, dim ALL items... */
 .nav-dropdown-menu:hover .nav-dd-item {
-  opacity: 0.5;
+  opacity: 0.45;
 }
 .nav-dropdown-menu:hover .nav-dd-item:hover {
   opacity: 1;
-  background: rgba(0, 0, 0, 0.03);
-  border-color: rgba(0, 0, 0, 0.06);
+  background: var(--navy);
+  border-color: transparent;
 }
 .nav-dd-item:hover strong {
   color: #fff;
