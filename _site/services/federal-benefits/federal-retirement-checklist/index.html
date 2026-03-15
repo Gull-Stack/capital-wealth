@@ -567,5 +567,30 @@
       observer.observe(el);
     });
     </script>
+
+    <!-- Sticky CTA bar (shows after scrolling past hero) -->
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-cta-inner">
+            <span class="sticky-cta-text">Ready to plan your retirement?</span>
+            <a href="/contact/" class="sticky-cta-btn">Schedule Free Consultation</a>
+            <a href="tel:8012102800" class="sticky-cta-phone">801.210.2800</a>
+        </div>
+    </div>
+    <script>
+    (function() {
+        var bar = document.getElementById('stickyCta');
+        if (!bar) return;
+        var shown = false;
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 600 && !shown) {
+                bar.classList.add('visible');
+                shown = true;
+            } else if (window.scrollY <= 600 && shown) {
+                bar.classList.remove('visible');
+                shown = false;
+            }
+        });
+    })();
+    </script>
 </body>
 </html>

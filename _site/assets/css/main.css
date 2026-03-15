@@ -5277,3 +5277,54 @@ html { font-size: 18px; }
     padding: 3rem 1.5rem;
   }
 }
+
+/* Sticky CTA bar */
+.sticky-cta {
+  position: fixed;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  background: rgba(13, 27, 42, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: bottom 0.3s ease;
+  padding: 0.65rem 1.5rem;
+}
+.sticky-cta.visible { bottom: 0; }
+.sticky-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.sticky-cta-text {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.sticky-cta-btn {
+  padding: 0.5rem 1.25rem;
+  background: #e8873a;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background 0.2s ease;
+}
+.sticky-cta-btn:hover { background: #d4752e; }
+.sticky-cta-phone {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.sticky-cta-phone:hover { color: #fff; }
+@media (max-width: 640px) {
+  .sticky-cta-text { display: none; }
+  .sticky-cta-inner { gap: 1rem; }
+}
