@@ -4438,3 +4438,8 @@ p, li { font-size: max(1rem, inherit); }
 @media (max-width: 768px) {
   .titan-reviews-grid { grid-template-columns: 1fr; }
 }
+
+.titan-reviews-cta {
+  margin-top: 2rem;
+  text-align: center;
+}
