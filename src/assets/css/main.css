@@ -206,7 +206,8 @@ a:hover {
 }
 @media (max-width: 768px) {
   .titan-nav-links { display: none; }
-  .titan-nav-right { display: none; }
+  .titan-nav-right .titan-nav-link { font-size: 0.78rem; font-weight: 600; }
+  .titan-nav-right .titan-nav-join { display: none; }
   .titan-header { padding: 0; }
   .titan-header .mobile-menu-toggle {
     display: flex !important;
@@ -463,8 +464,7 @@ a:hover {
 
 @media (max-width: 767px) {
   .header {
-    padding: 0.75rem 1rem;
-    pointer-events: all;
+    display: none !important;
   }
   .nav-float {
     border-radius: 0;
