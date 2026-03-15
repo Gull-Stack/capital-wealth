@@ -393,4 +393,21 @@ document.head.appendChild(style);
         buildDots();
         goToPage(0);
     });
+
+    // Touch/drag support
+    var startX = 0, isDragging = false;
+    track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; isDragging = true; }, {passive: true});
+    track.addEventListener('mousedown', function(e) { startX = e.clientX; isDragging = true; });
+    track.addEventListener('touchend', function(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        var diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 50) { diff > 0 ? goToPage(currentPage + 1) : goToPage(currentPage - 1); }
+    });
+    track.addEventListener('mouseup', function(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        var diff = startX - e.clientX;
+        if (Math.abs(diff) > 50) { diff > 0 ? goToPage(currentPage + 1) : goToPage(currentPage - 1); }
+    });
 })();

@@ -4145,12 +4145,12 @@ p, li { font-size: max(1rem, inherit); }
   padding-top: 3rem;
 }
 .titan-cta-h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-family);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 400;
+  font-weight: 500;
   color: #fff;
   margin: 0;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   line-height: 1.15;
 }
 .titan-cta-sub {
@@ -4178,15 +4178,15 @@ p, li { font-size: max(1rem, inherit); }
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 4rem;
-  padding: 3rem 0;
+  grid-template-columns: 1.2fr 3fr;
+  gap: 3rem;
+  padding: 3.5rem 0;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 .titan-footer-logo {
-  height: 48px;
+  height: 52px;
   width: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 .titan-footer-pills {
   display: flex;
@@ -4225,7 +4225,7 @@ p, li { font-size: max(1rem, inherit); }
 }
 .titan-footer-col li { margin-bottom: 0.5rem; }
 .titan-footer-col a {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: rgba(255,255,255,0.55);
   text-decoration: none;
   transition: color 0.2s ease;
@@ -4456,8 +4456,10 @@ p, li { font-size: max(1rem, inherit); }
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: calc(33.333% - 0.84rem);
   min-width: calc(33.333% - 0.84rem);
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 .titan-review-stars {
   color: #f5a623;
@@ -4470,7 +4472,6 @@ p, li { font-size: max(1rem, inherit); }
   line-height: 1.65;
   margin: 0;
   flex: 1;
-  font-style: italic;
 }
 .titan-review-author {
   font-size: 0.82rem;
