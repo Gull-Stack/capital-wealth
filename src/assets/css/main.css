@@ -4553,3 +4553,63 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
   color: var(--navy);
 }
+
+/* ═══ MIKE FEEDBACK: BIGGER + WARMER ═══ */
+
+/* Global base font bump — 18px instead of 16px */
+html { font-size: 18px; }
+
+/* Hero — even bigger for instant impact */
+.titan-hero-h1 { font-size: clamp(3rem, 6.5vw, 5rem) !important; }
+.titan-hero-body { font-size: 1.15rem !important; line-height: 1.75 !important; }
+
+/* Section headings — punch harder */
+.titan-fundamentals-h2,
+.titan-comparison-h2,
+.titan-stories-h2,
+.titan-qualifier-h2,
+.titan-services-h2,
+.titan-book-h2,
+.titan-media-h2,
+.titan-cta-h2,
+.faq-heading { font-size: clamp(2.2rem, 3.5vw, 3.2rem) !important; }
+
+/* Service items — easier to scan */
+.titan-service-name { font-size: 1.15rem !important; }
+.titan-service-desc { font-size: 0.95rem !important; }
+
+/* Cards — more readable */
+.titan-fund-card-title { font-size: 1.15rem !important; }
+.titan-fund-card-desc { font-size: 1rem !important; line-height: 1.7 !important; }
+
+/* Reviews — let the words breathe */
+.titan-review-text { font-size: 1rem !important; line-height: 1.7 !important; }
+
+/* FAQ — generous sizing */
+.faq-acc-q { font-size: 1.15rem !important; }
+.faq-acc-a { font-size: 1rem !important; line-height: 1.75 !important; }
+
+/* Bio — warm and personal */
+.titan-bio-quote { font-size: 1.3rem !important; line-height: 1.65 !important; }
+.titan-bio-title { font-size: 1.05rem !important; }
+
+/* Qualifier — confident */
+.titan-qualifier-item { font-size: 1.15rem !important; padding: 1.15rem 1.25rem !important; }
+
+/* Stats — bigger numbers */
+.titan-hero-stat-num { font-size: clamp(1.8rem, 3vw, 2.4rem) !important; }
+
+/* Footer links — easier to tap */
+.titan-footer-col a { font-size: 0.95rem !important; }
+.titan-footer-col li { margin-bottom: 0.6rem !important; }
+
+/* Warm up — slightly warmer white for light sections */
+.titan-fundamentals,
+.titan-comparison,
+.titan-stories,
+.faq-section,
+.titan-services { background: #fefefe !important; }
+
+@media (max-width: 768px) {
+  html { font-size: 17px; }
+}
