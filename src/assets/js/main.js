@@ -345,3 +345,45 @@ document.head.appendChild(style);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll(); // check initial state
 })();
+
+// Titan stories slider
+(function() {
+    var track = document.querySelector('.titan-stories-track');
+    var slides = document.querySelectorAll('.titan-story-slide');
+    var prevBtn = document.querySelector('.titan-stories-prev');
+    var nextBtn = document.querySelector('.titan-stories-next');
+    var dotsContainer = document.querySelector('.titan-stories-dots');
+    if (!track || !slides.length) return;
+
+    var slidesPerView = window.innerWidth <= 768 ? 1 : 3;
+    var totalPages = Math.ceil(slides.length / slidesPerView);
+    var currentPage = 0;
+
+    // Create dots
+    for (var i = 0; i < totalPages; i++) {
+        var dot = document.createElement('span');
+        dot.className = 'titan-stories-dot' + (i === 0 ? ' active' : '');
+        dotsContainer.appendChild(dot);
+    }
+    var dots = dotsContainer.querySelectorAll('.titan-stories-dot');
+
+    function goToPage(page) {
+        if (page < 0) page = totalPages - 1;
+        if (page >= totalPages) page = 0;
+        currentPage = page;
+        var slideWidth = slides[0].offsetWidth + 48; // gap
+        track.style.transform = 'translateX(-' + (currentPage * slidesPerView * slideWidth) + 'px)';
+        dots.forEach(function(d, idx) {
+            d.classList.toggle('active', idx === currentPage);
+        });
+    }
+
+    prevBtn.addEventListener('click', function() { goToPage(currentPage - 1); });
+    nextBtn.addEventListener('click', function() { goToPage(currentPage + 1); });
+
+    window.addEventListener('resize', function() {
+        slidesPerView = window.innerWidth <= 768 ? 1 : 3;
+        totalPages = Math.ceil(slides.length / slidesPerView);
+        goToPage(0);
+    });
+})();

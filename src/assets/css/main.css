@@ -3918,57 +3918,97 @@ a:hover {
   letter-spacing: -0.03em;
   margin: 0 0 3rem;
 }
-.titan-stories-grid {
+/* ═══ TITAN STORIES SLIDER ═══ */
+.titan-stories-header {
   display: flex;
-  gap: 1.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 1rem;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(25,79,144,0.15) transparent;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
 }
-.titan-stories-grid::-webkit-scrollbar { height: 4px; }
-.titan-stories-grid::-webkit-scrollbar-track { background: transparent; }
-.titan-stories-grid::-webkit-scrollbar-thumb { background: rgba(25,79,144,0.15); border-radius: 100px; }
-.titan-story-card {
-  background: #f0f1f3;
-  border-radius: 12px;
-  padding: 2rem;
+.titan-stories-nav {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 0.75rem;
-  min-width: 320px;
-  scroll-snap-align: start;
+}
+.titan-stories-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--navy);
+  transition: all 0.2s ease;
+}
+.titan-stories-arrow:hover {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+}
+.titan-stories-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 8px;
+  background: rgba(0,0,0,0.04);
+  border-radius: 100px;
+}
+.titan-stories-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background: rgba(25,79,144,0.2);
+  transition: all 0.3s ease;
+}
+.titan-stories-dot.active {
+  width: 20px;
+  background: var(--navy);
+}
+.titan-stories-track {
+  display: flex;
+  gap: 3rem;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.titan-story-slide {
+  min-width: calc(33.333% - 2rem);
   flex-shrink: 0;
 }
-.titan-story-title {
-  font-family: var(--font-family);
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--navy);
-  margin: 0;
+.titan-story-quote {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  line-height: 0.8;
+  color: var(--accent-secondary);
+  display: block;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
 }
-.titan-story-desc {
-  font-size: 0.9rem;
-  color: rgba(25,79,144,0.55);
-  line-height: 1.65;
-  margin: 0;
-  flex: 1;
+.titan-story-text {
+  font-size: 1rem;
+  color: rgba(25,79,144,0.6);
+  line-height: 1.7;
+  margin: 0 0 1.25rem;
 }
 .titan-story-author {
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--navy);
+  display: block;
+  margin-bottom: 0.35rem;
 }
 .titan-story-tag {
   font-size: 0.72rem;
   font-weight: 500;
   color: rgba(25,79,144,0.4);
-  background: rgba(25,79,144,0.05);
-  padding: 0.3rem 0.7rem;
-  border-radius: 100px;
-  align-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+@media (max-width: 768px) {
+  .titan-story-slide { min-width: 85%; }
+  .titan-stories-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
 
 /* ═══ QUALIFIER ═══ */
