@@ -4213,6 +4213,23 @@ p, li { font-size: max(1rem, inherit); }
   flex-direction: column;
   gap: 0.5rem;
 }
+.footer-trust-badges {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  opacity: 0.75;
+}
+.footer-trust-badges svg {
+  flex-shrink: 0;
+}
+.footer-fiduciary-text {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
 .titan-footer-pill {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.5);
@@ -4304,6 +4321,109 @@ p, li { font-size: max(1rem, inherit); }
   padding-top: 3rem;
 }
 
+/* ═══ TITAN RESOURCES SECTION ═══ */
+.titan-resources {
+  background: #fefefe;
+  padding: 5rem 2rem;
+}
+.titan-resources-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 4rem;
+  align-items: start;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 3rem;
+}
+.titan-resources-left {
+  position: sticky;
+  top: 2rem;
+}
+.titan-resources-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0.5rem 0 1rem;
+  letter-spacing: -0.03em;
+}
+.titan-resources-desc {
+  font-size: 1.05rem;
+  color: rgba(25,79,144,0.65);
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+}
+.titan-resources-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+.titan-resource-card {
+  background: #fff;
+  border: 1px solid rgba(25,79,144,0.12);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+}
+.titan-resource-card:hover {
+  border-color: var(--accent-secondary);
+  box-shadow: 0 4px 16px rgba(232,135,58,0.12);
+  transform: translateY(-2px);
+}
+.resource-card-icon {
+  color: var(--accent-secondary);
+  flex-shrink: 0;
+}
+.resource-card-title {
+  font-family: var(--font-family);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+  line-height: 1.35;
+}
+.resource-card-desc {
+  font-size: 0.9rem;
+  color: rgba(25,79,144,0.55);
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+.resource-card-cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-secondary);
+  border: 1px solid var(--accent-secondary);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  align-self: flex-start;
+  transition: all 0.2s ease;
+}
+.titan-resource-card:hover .resource-card-cta {
+  background: var(--accent-secondary);
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .titan-resources-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .titan-resources-left {
+    position: static;
+  }
+  .titan-resources-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ═══ TITAN SERVICES SECTION ═══ */
 .titan-services {
   background: #fff;
@@ -4315,7 +4435,7 @@ p, li { font-size: max(1rem, inherit); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: start;
+  align-items: stretch;
   border-top: 1px solid rgba(0,0,0,0.1);
   padding-top: 3rem;
 }
@@ -4512,6 +4632,58 @@ p, li { font-size: max(1rem, inherit); }
   .titan-reviews-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
 
+/* Photo-based testimonial cards */
+.titan-review-photo-card {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 2rem;
+  width: 100%;
+  min-width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+.titan-review-photo-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+}
+.titan-review-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.titan-review-photo-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.65) 60%, transparent 100%);
+  color: #fff;
+  padding: 2.5rem 1.5rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: var(--font-family);
+}
+.titan-review-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+@media (max-width: 900px) {
+  .titan-review-photo-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .titan-review-photo-wrap {
+    aspect-ratio: 16 / 10;
+  }
+}
+
 .titan-reviews-cta {
   margin-top: 2rem;
   text-align: center;
@@ -4570,6 +4742,13 @@ h1, h2, h3, h4, h5, h6,
 .titan-qualifier-item {
   font-weight: 500;
   color: var(--navy);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.qualifier-icon {
+  color: var(--accent-secondary);
+  flex-shrink: 0;
 }
 
 /* ═══ MIKE FEEDBACK: BIGGER + WARMER ═══ */
@@ -4840,6 +5019,116 @@ html { font-size: 18px; }
   .service-problem,
   .service-solution,
   .service-process {
+    padding: 3rem 1.5rem;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CONTACT PAGE REDESIGN - Titan-style unified layout
+   ═══════════════════════════════════════════════════════════ */
+.contact-hero-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #fefdf8 100%);
+  padding: 4rem 2rem;
+  position: relative;
+}
+.contact-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background: linear-gradient(180deg, rgba(232,135,58,0.04) 0%, transparent 100%);
+  pointer-events: none;
+}
+.contact-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  position: relative;
+}
+.contact-hero-text {
+  padding-top: 2rem;
+}
+.contact-info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+.contact-info-item {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+}
+.contact-info-item svg {
+  color: var(--accent-secondary);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+.contact-info-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.contact-info-value {
+  font-size: 1rem;
+  color: rgba(25,79,144,0.75);
+  line-height: 1.6;
+  margin: 0;
+}
+.contact-info-value a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact-info-value a:hover {
+  color: var(--accent-secondary);
+}
+.contact-form-wrap {
+  position: sticky;
+  top: 2rem;
+}
+.contact-form-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  border: 1px solid rgba(25,79,144,0.08);
+}
+.contact-form-title {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 0.75rem;
+}
+.contact-form-subtitle {
+  color: rgba(25,79,144,0.6);
+  margin: 0 0 2rem;
+  line-height: 1.6;
+}
+.contact-form-disclaimer {
+  font-size: 0.85rem;
+  color: rgba(25,79,144,0.45);
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+@media (max-width: 900px) {
+  .contact-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .contact-form-wrap {
+    position: static;
+  }
+  .contact-hero-section {
     padding: 3rem 1.5rem;
   }
 }
