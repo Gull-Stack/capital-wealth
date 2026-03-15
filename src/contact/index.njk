@@ -7,307 +7,185 @@ breadcrumbs:
   - { name: "Contact", url: "/contact/" }
 ---
 
-<!-- Hero -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1>Contact Capital Wealth Advisors</h1>
-            <p class="hero-subtitle">Ready to take control of your retirement planning? Let's start the conversation.</p>
+<section class="titan-hero">
+    <div class="titan-hero-inner" style="grid-template-columns: 1fr;">
+        <div style="max-width: 700px;">
+            <p class="titan-section-label">GET IN TOUCH</p>
+            <h1 class="titan-hero-h1">Let's Talk About Your Retirement</h1>
+            <p class="titan-hero-body">No pressure. No pitch. Just a conversation about your goals and whether we're the right fit. Initial consultations are complimentary for qualified families.</p>
         </div>
     </div>
 </section>
 
-<!-- Contact Information -->
-<section class="section">
-    <div class="container">
-        <div class="grid grid-cols-2">
-            <!-- Contact Details -->
+{# Two-column: Form Left, Details Right #}
+<section style="background: #f0f1f3; padding: 5rem 2rem;">
+    <div class="titan-fundamentals-inner">
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: start;">
+
+            {# Contact Form #}
+            <div style="background: #fff; border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
+                <h2 style="font-family: var(--font-family); font-size: 1.6rem; font-weight: 600; color: var(--navy); margin-bottom: 1rem;">Request a Consultation</h2>
+                <p style="color: rgba(25,79,144,0.6); margin-bottom: 2rem;">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
+
+                <form id="contact-form">
+                    <div style="margin-bottom: 1.25rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Full Name *</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                    </div>
+
+                    <div style="margin-bottom: 1.25rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Email Address *</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                    </div>
+
+                    <div style="margin-bottom: 1.25rem;">
+                        <label for="phone" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                    </div>
+
+                    <div style="margin-bottom: 1.25rem;">
+                        <label for="savings" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Retirement Savings Amount</label>
+                        <select id="savings" name="savings" style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                            <option value="">Please select</option>
+                            <option value="$250K - $500K">$250K - $500K</option>
+                            <option value="$500K - $1M">$500K - $1M</option>
+                            <option value="$1M - $2M">$1M - $2M</option>
+                            <option value="$2M+">$2M+</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 1.25rem;">
+                        <label for="retirement-timeline" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Retirement Timeline</label>
+                        <select id="retirement-timeline" name="retirement-timeline" style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
+                            <option value="">Please select</option>
+                            <option value="Already retired">Already retired</option>
+                            <option value="1-2 years">1-2 years</option>
+                            <option value="3-5 years">3-5 years</option>
+                            <option value="5-10 years">5-10 years</option>
+                            <option value="10+ years">10+ years</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 1.75rem;">
+                        <label for="questions" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Questions or Comments</label>
+                        <textarea id="questions" name="questions" rows="4" placeholder="Tell us about your retirement planning goals or any specific questions you have..." style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; resize: vertical; font-family: var(--font-family);"></textarea>
+                    </div>
+
+                    <!-- Honeypot -->
+                    <div style="position:absolute;left:-9999px;"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+
+                    <button type="submit" id="submit-btn" class="titan-hero-btn-primary" style="width: 100%; justify-content: center;">REQUEST CONSULTATION <span>→</span></button>
+                    <div id="form-status" style="margin-top: 12px; text-align: center; font-weight: 500;"></div>
+                </form>
+
+                <script>
+                document.getElementById('contact-form').addEventListener('submit', async function(e) {
+                  e.preventDefault();
+                  var btn = document.getElementById('submit-btn');
+                  var status = document.getElementById('form-status');
+
+                  // Honeypot check
+                  if (this.querySelector('[name="website"]').value) return;
+
+                  btn.disabled = true;
+                  btn.innerHTML = 'SENDING...';
+                  status.textContent = '';
+
+                  // Get first-touch tracking data from cookie
+                  function getCookie(name) {
+                    var value = '; ' + document.cookie;
+                    var parts = value.split('; ' + name + '=');
+                    if (parts.length === 2) return parts.pop().split(';').shift();
+                    return null;
+                  }
+
+                  var trackingData = {};
+                  try {
+                    var cookieData = getCookie('cw_first_touch');
+                    if (cookieData) {
+                      trackingData = JSON.parse(cookieData);
+                    }
+                  } catch (e) {}
+
+                  try {
+                    var res = await fetch('/api/submit-lead', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        phone: document.getElementById('phone').value,
+                        savings: document.getElementById('savings').value,
+                        retirementTimeline: document.getElementById('retirement-timeline').value,
+                        questions: document.getElementById('questions').value,
+                        utm_source: trackingData.utm_source || '',
+                        utm_medium: trackingData.utm_medium || '',
+                        utm_campaign: trackingData.utm_campaign || '',
+                        utm_content: trackingData.utm_content || '',
+                        utm_term: trackingData.utm_term || '',
+                        referrer: trackingData.referrer || '',
+                        landing_page: trackingData.landing_page || '',
+                        submitted_from: window.location.pathname
+                      })
+                    });
+                    var data = await res.json();
+                    if (res.ok) {
+                      status.style.color = '#2d8a4e';
+                      status.textContent = data.message || "Thank you! We'll be in touch within one business day.";
+                      this.reset();
+                    } else {
+                      status.style.color = '#c0392b';
+                      status.textContent = data.error || 'Something went wrong. Please try again.';
+                    }
+                  } catch (err) {
+                    status.style.color = '#c0392b';
+                    status.textContent = 'Network error. Please try again or call us at 801.210.2800.';
+                  }
+                  btn.disabled = false;
+                  btn.innerHTML = 'REQUEST CONSULTATION <span>→</span>';
+                });
+                </script>
+
+                <p style="font-size: 0.85rem; color: rgba(25,79,144,0.45); margin-top: 1.5rem; line-height: 1.6;">By submitting this form, you agree to be contacted by Capital Wealth Advisors regarding your retirement planning needs. We respect your privacy and will never share your information.</p>
+            </div>
+
+            {# Office Details #}
             <div>
-                <h2>Get in Touch</h2>
-                <p class="text-lg">We're here to answer your retirement planning questions and help you create a financial strategy that works for your unique situation.</p>
-                
-                <div class="mt-xl">
-                    <div class="card">
-                        <h3 class="text-accent">Schedule a Consultation</h3>
-                        <p class="mb-lg">Initial consultations are complimentary for qualified families with $500K+ in retirement savings.</p>
-                        
-                        <div class="hero-cta">
-                            <a href="tel:{{ site.phone }}" class="btn btn-primary">Call {{ site.phone }}</a>
-                            <a href="mailto:{{ site.email }}" class="btn btn-secondary">Email Us</a>
-                        </div>
+                <div style="background: #fff; border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="font-family: var(--font-family); font-size: 1.3rem; font-weight: 600; color: var(--navy); margin-bottom: 1.5rem;">Office Information</h3>
+                    <div style="margin-bottom: 1.5rem;">
+                        <p style="font-weight: 600; color: var(--navy); margin-bottom: 0.5rem;">Address</p>
+                        <p style="color: rgba(25,79,144,0.65); line-height: 1.6;">1850 W Ashton Blvd, Suite 175<br>Lehi, UT 84043</p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <p style="font-weight: 600; color: var(--navy); margin-bottom: 0.5rem;">Phone</p>
+                        <p style="color: rgba(25,79,144,0.65);"><a href="tel:8012102800" style="color: var(--navy); text-decoration: none; font-weight: 500;">801.210.2800</a></p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <p style="font-weight: 600; color: var(--navy); margin-bottom: 0.5rem;">Email</p>
+                        <p style="color: rgba(25,79,144,0.65);"><a href="mailto:info@capitalwealth.com" style="color: var(--navy); text-decoration: none; font-weight: 500;">info@capitalwealth.com</a></p>
+                    </div>
+                    <div>
+                        <p style="font-weight: 600; color: var(--navy); margin-bottom: 0.5rem;">Hours</p>
+                        <p style="color: rgba(25,79,144,0.65); line-height: 1.6;">Monday - Friday: 9am - 5pm<br>Virtual meetings available nationwide</p>
                     </div>
                 </div>
-                
-                <div class="mt-lg">
-                    <h3>Office Location</h3>
-                    <p>{{ site.address.street }}<br>
-                       {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</p>
-                    
-                    <h3 class="mt-lg">Office Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
-                       Saturday: By appointment<br>
-                       Sunday: Closed</p>
-                    
-                    <h3 class="mt-lg">Emergency Contact</h3>
-                    <p>For urgent matters outside business hours, please call our main number and leave a detailed message. We will respond as quickly as possible.</p>
-                </div>
-            </div>
-            
-            <!-- Contact Form -->
-            <div>
-                <div class="card">
-                    <h3>Request a Consultation</h3>
-                    <p>Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
-                    
-                    <form class="mt-lg" id="contact-form">
-                        <div style="margin-bottom: 1rem;">
-                            <label for="name" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Full Name *</label>
-                            <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
-                        </div>
-                        
-                        <div style="margin-bottom: 1rem;">
-                            <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Email Address *</label>
-                            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
-                        </div>
-                        
-                        <div style="margin-bottom: 1rem;">
-                            <label for="phone" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
-                        </div>
-                        
-                        <div style="margin-bottom: 1rem;">
-                            <label for="savings" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Retirement Savings Amount</label>
-                            <select id="savings" name="savings" style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
-                                <option value="">Please select</option>
-                                <option value="$250K - $500K">$250K - $500K</option>
-                                <option value="$500K - $1M">$500K - $1M</option>
-                                <option value="$1M - $2M">$1M - $2M</option>
-                                <option value="$2M+">$2M+</option>
-                            </select>
-                        </div>
-                        
-                        <div style="margin-bottom: 1rem;">
-                            <label for="retirement-timeline" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Retirement Timeline</label>
-                            <select id="retirement-timeline" name="retirement-timeline" style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem;">
-                                <option value="">Please select</option>
-                                <option value="Already retired">Already retired</option>
-                                <option value="1-2 years">1-2 years</option>
-                                <option value="3-5 years">3-5 years</option>
-                                <option value="5-10 years">5-10 years</option>
-                                <option value="10+ years">10+ years</option>
-                            </select>
-                        </div>
-                        
-                        <div style="margin-bottom: 1.5rem;">
-                            <label for="questions" style="display: block; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600;">Questions or Comments</label>
-                            <textarea id="questions" name="questions" rows="4" placeholder="Tell us about your retirement planning goals or any specific questions you have..." style="width: 100%; padding: 0.75rem; border: 2px solid var(--bg-light); border-radius: var(--border-radius); background: var(--bg-light); color: var(--text-primary); font-size: 1rem; resize: vertical;"></textarea>
-                        </div>
-                        
-                        <!-- Honeypot -->
-                        <div style="position:absolute;left:-9999px;"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
-                        
-                        <button type="submit" id="submit-btn" class="btn btn-primary btn-lg" style="width: 100%;">Request Consultation</button>
-                        <div id="form-status" style="margin-top: 12px; text-align: center; font-weight: 500;"></div>
-                    </form>
-                    
-                    <script>
-                    document.getElementById('contact-form').addEventListener('submit', async function(e) {
-                      e.preventDefault();
-                      var btn = document.getElementById('submit-btn');
-                      var status = document.getElementById('form-status');
 
-                      // Honeypot check
-                      if (this.querySelector('[name="website"]').value) return;
-
-                      btn.disabled = true;
-                      btn.textContent = 'Sending...';
-                      status.textContent = '';
-
-                      // Get first-touch tracking data from cookie
-                      function getCookie(name) {
-                        var value = '; ' + document.cookie;
-                        var parts = value.split('; ' + name + '=');
-                        if (parts.length === 2) return parts.pop().split(';').shift();
-                        return null;
-                      }
-
-                      var trackingData = {};
-                      try {
-                        var cookieData = getCookie('cw_first_touch');
-                        if (cookieData) {
-                          trackingData = JSON.parse(cookieData);
-                        }
-                      } catch (e) {}
-
-                      try {
-                        var res = await fetch('/api/submit-lead', {
-                          method: 'POST',
-                          headers: { 'Content-Type': 'application/json' },
-                          body: JSON.stringify({
-                            name: document.getElementById('name').value,
-                            email: document.getElementById('email').value,
-                            phone: document.getElementById('phone').value,
-                            savings: document.getElementById('savings').value,
-                            retirementTimeline: document.getElementById('retirement-timeline').value,
-                            questions: document.getElementById('questions').value,
-                            utm_source: trackingData.utm_source || '',
-                            utm_medium: trackingData.utm_medium || '',
-                            utm_campaign: trackingData.utm_campaign || '',
-                            utm_content: trackingData.utm_content || '',
-                            utm_term: trackingData.utm_term || '',
-                            referrer: trackingData.referrer || '',
-                            landing_page: trackingData.landing_page || '',
-                            submitted_from: window.location.pathname
-                          })
-                        });
-                        var data = await res.json();
-                        if (res.ok) {
-                          status.style.color = '#2d8a4e';
-                          status.textContent = data.message || "Thank you! We'll be in touch within one business day.";
-                          this.reset();
-                        } else {
-                          status.style.color = '#c0392b';
-                          status.textContent = data.error || 'Something went wrong. Please try again.';
-                        }
-                      } catch (err) {
-                        status.style.color = '#c0392b';
-                        status.textContent = 'Network error. Please try again or call us at 801.210.2800.';
-                      }
-                      btn.disabled = false;
-                      btn.textContent = 'Request Consultation';
-                    });
-                    </script>
-                    
-                    <p class="text-sm text-muted mt-md">By submitting this form, you agree to be contacted by Capital Wealth Advisors regarding your retirement planning needs. We respect your privacy and will never share your information.</p>
+                <div style="background: var(--navy); border-radius: 12px; padding: 2rem; color: #fff;">
+                    <h3 style="font-family: var(--font-family); font-size: 1.2rem; font-weight: 600; margin-bottom: 1rem;">Prefer to Call?</h3>
+                    <p style="color: rgba(255,255,255,0.75); margin-bottom: 1.5rem; line-height: 1.6;">We're happy to answer your questions over the phone and schedule a time that works for you.</p>
+                    <a href="tel:8012102800" class="titan-hero-btn-secondary" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); color: #fff; width: 100%; justify-content: center;">CALL 801.210.2800 <span>→</span></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- What to Expect -->
-<section class="section section-dark">
-    <div class="container">
-        <h2 class="text-center mb-xl">What to Expect in Your Consultation</h2>
-        
-        <div class="process-steps">
-            <div class="process-step">
-                <div class="process-number">1</div>
-                <h3>Discovery</h3>
-                <p>We'll discuss your current financial situation, retirement goals, and any concerns you have about your future.</p>
-            </div>
-            
-            <div class="process-step">
-                <div class="process-number">2</div>
-                <h3>Analysis</h3>
-                <p>We'll review your existing accounts, investment strategy, and identify opportunities for improvement.</p>
-            </div>
-            
-            <div class="process-step">
-                <div class="process-number">3</div>
-                <h3>Recommendations</h3>
-                <p>Based on our analysis, we'll provide initial recommendations and explain how we can help optimize your retirement plan.</p>
-            </div>
-        </div>
-        
-        <div class="text-center mt-xl">
-            <div class="card" style="max-width: 600px; margin: 0 auto;">
-                <h3 class="text-accent">No Pressure, Just Information</h3>
-                <p>Our initial consultation is educational. We'll provide valuable insights whether or not you decide to work with us. Our goal is to help you make informed decisions about your financial future.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Service Areas -->
-<section class="section">
-    <div class="container">
-        <h2 class="text-center mb-xl">We Serve Clients Throughout Utah and Beyond</h2>
-        
-        <div class="grid grid-cols-2">
-            <div class="card">
-                <h3 class="text-accent">Local Utah Focus</h3>
-                <p>Based in Lehi, we serve families throughout the Salt Lake Valley and Utah County:</p>
-                <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem;">
-                    <li>Lehi</li>
-                    <li>American Fork</li>
-                    <li>Pleasant Grove</li>
-                    <li>Orem</li>
-                    <li>Provo</li>
-                    <li>Salt Lake City</li>
-                    <li>West Jordan</li>
-                    <li>South Jordan</li>
-                    <li>Draper</li>
-                    <li>Sandy</li>
-                </ul>
-            </div>
-            
-            <div class="card">
-                <h3 class="text-accent">Virtual Services Available</h3>
-                <p>We also serve clients nationwide through virtual meetings and digital planning tools. Our services include:</p>
-                <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-top: 1rem;">
-                    <li>Video consultations</li>
-                    <li>Digital document sharing</li>
-                    <li>Online portfolio access</li>
-                    <li>Phone and email support</li>
-                    <li>Secure client portal</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Directions -->
-<section class="section section-dark">
-    <div class="container">
-        <h2 class="text-center mb-xl">Directions to Our Office</h2>
-        
-        <div class="grid grid-cols-2">
-            <div>
-                <h3>{{ site.address.street }}</h3>
-                <h3>{{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</h3>
-                
-                <div class="mt-lg">
-                    <h4 class="text-accent">From Salt Lake City:</h4>
-                    <p>Take I-15 South to Exit 279 (Main Street/Lehi). Turn right on Main Street, then left on Ashton Boulevard. Our office building is on the right.</p>
-                    
-                    <h4 class="text-accent mt-lg">From Provo:</h4>
-                    <p>Take I-15 North to Exit 279 (Main Street/Lehi). Turn left on Main Street, then left on Ashton Boulevard. Our office building is on the right.</p>
-                    
-                    <h4 class="text-accent mt-lg">Parking:</h4>
-                    <p>Free parking is available in front of the building and in the adjacent parking lot.</p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <h3>Office Building Details</h3>
-                <p>We're located in a modern office complex with easy access and ample parking. Look for the Capital Wealth Advisors sign in the lobby directory.</p>
-                
-                <div class="mt-md">
-                    <span class="service-tag">Suite 175</span>
-                    <span class="service-tag">Second Floor</span>
-                    <span class="service-tag">Elevator Available</span>
-                </div>
-                
-                <p class="mt-lg">If you have trouble finding our office, please call {{ site.phone }} and we'll be happy to guide you in.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Emergency Contact -->
-<section class="section">
-    <div class="container">
-        <div class="text-center">
-            <h2>Have Questions? We're Here to Help</h2>
-            <p class="text-lg">Don't wait to start planning your financial future. Contact us today to schedule your complimentary consultation.</p>
-            
-            <div class="hero-cta mt-lg">
-                <a href="tel:{{ site.phone }}" class="btn btn-primary btn-lg">Call {{ site.phone }}</a>
-                <a href="mailto:{{ site.email }}" class="btn btn-secondary btn-lg">Email {{ site.email }}</a>
-            </div>
-            
-            <p class="mt-md text-muted">Initial consultations are complimentary for qualified families with $500K+ in retirement savings.</p>
-        </div>
-    </div>
-</section>
+{# Responsive stacking #}
+<style>
+@media (max-width: 900px) {
+    section[style*="padding: 5rem 2rem;"] > div > div[style*="grid-template-columns: 1.2fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+</style>
