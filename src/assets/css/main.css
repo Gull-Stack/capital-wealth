@@ -4223,7 +4223,7 @@ p, li { font-size: max(1rem, inherit); }
 
 /* ═══ TITAN SERVICES SECTION ═══ */
 .titan-services {
-  background: var(--navy);
+  background: #fff;
   padding: 5rem 2rem;
 }
 .titan-services-inner {
@@ -4231,13 +4231,12 @@ p, li { font-size: max(1rem, inherit); }
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
-  overflow: hidden;
+  gap: 4rem;
+  align-items: start;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 3rem;
 }
 .titan-services-left {
-  padding: 2.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -4246,47 +4245,46 @@ p, li { font-size: max(1rem, inherit); }
 }
 .titan-services-h2 {
   font-family: var(--font-family);
-  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
   font-weight: 500;
-  color: #fff;
+  color: var(--navy);
   margin: 0 0 0.5rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 .titan-services-sub {
   font-size: 0.95rem;
-  color: rgba(255,255,255,0.45);
+  color: rgba(25,79,144,0.45);
   margin: 0 0 1.5rem;
 }
 .titan-services-list {
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(0,0,0,0.08);
 }
 .titan-service-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 0.9rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
   text-decoration: none;
   transition: all 0.2s ease;
   flex-wrap: wrap;
-  gap: 0.25rem;
+  gap: 0.2rem;
 }
 .titan-service-name {
   font-size: 1rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.6);
-  transition: color 0.2s ease;
+  color: var(--navy);
+  transition: opacity 0.2s ease;
 }
-.titan-service-item:hover .titan-service-name,
-.titan-service-item-active .titan-service-name {
-  color: #fff;
+.titan-service-item:hover .titan-service-name {
+  opacity: 0.7;
 }
 .titan-service-desc {
   width: 100%;
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.4);
+  color: rgba(25,79,144,0.45);
   line-height: 1.6;
-  margin-top: 0.25rem;
+  margin-top: 0.15rem;
 }
 .titan-service-arrow {
   font-size: 0.9rem;
@@ -4294,27 +4292,28 @@ p, li { font-size: max(1rem, inherit); }
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-.titan-service-item:hover .titan-service-arrow,
-.titan-service-item-active .titan-service-arrow {
+.titan-service-item:hover .titan-service-arrow {
   opacity: 1;
 }
 .titan-services-right {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
 }
 .titan-services-img-wrap {
   width: 100%;
-  border-left: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 4px;
   overflow: hidden;
+  padding: 6px;
 }
 .titan-services-img-wrap img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
+  border-radius: 2px;
 }
 @media (max-width: 768px) {
-  .titan-services-inner { grid-template-columns: 1fr; }
-  .titan-services-right { max-height: 300px; }
-  .titan-services-img-wrap { border-left: none; border-top: 1px solid rgba(255,255,255,0.08); }
+  .titan-services-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .titan-services-right { order: -1; }
 }
