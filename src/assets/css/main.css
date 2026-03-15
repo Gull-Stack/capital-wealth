@@ -1003,17 +1003,17 @@ a:hover {
   top: 100px;
 }
 .faq-heading {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  line-height: 1.12;
-  color: #1a1a1a;
-  margin: 0 0 1rem;
+  font-family: var(--font-family);
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--navy);
+  margin: 0 0 0.75rem;
 }
 .faq-sub {
-  font-size: 0.95rem;
-  color: rgba(0,0,0,0.5);
+  font-size: 1rem;
+  color: rgba(25,79,144,0.45);
   line-height: 1.6;
   margin: 0 0 1.5rem;
   max-width: 320px;
@@ -1028,46 +1028,58 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding: 1.25rem 0;
+  padding: 1.35rem 0;
   background: none;
   border: none;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.07);
   cursor: pointer;
   text-align: left;
   transition: all 0.2s ease;
 }
 .faq-acc-item:first-child {
-  border-top: 1px solid rgba(0,0,0,0.08);
+  border-top: 1px solid rgba(0,0,0,0.07);
 }
 .faq-acc-q {
   flex: 1;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--navy);
   line-height: 1.4;
 }
 .faq-acc-icon {
-  font-size: 1.2rem;
-  color: rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: rgba(25,79,144,0.4);
+  transition: all 0.3s ease;
   margin-left: 1rem;
   font-weight: 300;
+  flex-shrink: 0;
 }
 .faq-acc-item.active .faq-acc-icon {
   transform: rotate(45deg);
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
 }
 .faq-acc-a {
   width: 100%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease, padding 0.35s ease;
-  font-size: 0.9rem;
-  color: rgba(0,0,0,0.55);
+  font-size: 1rem;
+  color: rgba(25,79,144,0.5);
   line-height: 1.7;
   padding-top: 0;
 }
 .faq-acc-item.active .faq-acc-a {
-  max-height: 200px;
+  max-height: 250px;
   padding-top: 0.75rem;
 }
 @media (max-width: 768px) {
