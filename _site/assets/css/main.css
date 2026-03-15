@@ -3513,3 +3513,417 @@ a:hover {
     padding-left: 1.5rem;
   }
 }
+
+/* ═══ TITAN SHARED ELEMENTS ═══ */
+.titan-section-label {
+  font-family: var(--font-family);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(13,27,42,0.4);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+.titan-section-sub {
+  font-size: 1.05rem;
+  color: rgba(13,27,42,0.5);
+  line-height: 1.6;
+  margin: -1rem 0 2.5rem;
+  max-width: 550px;
+}
+.titan-section-cta {
+  margin-top: 2.5rem;
+}
+.titan-trust-line {
+  font-size: 0.8rem;
+  color: rgba(13,27,42,0.35);
+  margin-top: 0.75rem;
+}
+.titan-hero-subhead {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--navy);
+  margin: -1rem 0 1rem;
+  opacity: 0.7;
+}
+.titan-hero-body {
+  font-size: 1rem;
+  color: rgba(13,27,42,0.6);
+  line-height: 1.7;
+  margin: 0 0 2rem;
+  max-width: 480px;
+}
+.titan-fund-card-num {
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(13,27,42,0.3);
+  letter-spacing: 0.02em;
+}
+
+/* ═══ COMPARISON TABLE ═══ */
+.titan-comparison {
+  background: #fff;
+  padding: 5rem 2rem;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+.titan-comparison-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.titan-comparison-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin: 0 0 3rem;
+}
+.titan-comparison-table {
+  width: 100%;
+}
+.titan-comp-row {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  align-items: center;
+}
+.titan-comp-header {
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+.titan-comp-feature {
+  padding: 1rem 0;
+  font-size: 0.95rem;
+  color: var(--navy);
+  font-weight: 500;
+}
+.titan-comp-us {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 0.9rem;
+}
+.titan-comp-them {
+  padding: 1rem;
+  text-align: center;
+  color: rgba(13,27,42,0.35);
+  font-size: 0.85rem;
+}
+.titan-comp-header .titan-comp-us {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+  font-weight: 600;
+}
+.titan-comp-header .titan-comp-them {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+/* ═══ MIKE STEVENS BIO ═══ */
+.titan-bio {
+  background: #f5f0eb;
+  padding: 5rem 2rem;
+}
+.titan-bio-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+.titan-bio-photo {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.titan-bio-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.titan-bio-name {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.02em;
+}
+.titan-bio-title {
+  font-size: 0.95rem;
+  color: rgba(13,27,42,0.5);
+  margin: 0 0 1.5rem;
+}
+.titan-bio-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.titan-bio-credentials span {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--navy);
+  background: rgba(13,27,42,0.06);
+  padding: 0.4rem 0.9rem;
+  border-radius: 100px;
+}
+.titan-bio-quote {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--navy);
+  line-height: 1.6;
+  margin: 0 0 2rem;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--accent-secondary);
+}
+
+/* ═══ BOOK SECTION ═══ */
+.titan-book {
+  background: #fff;
+  padding: 5rem 2rem;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+.titan-book-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+.titan-book-cover img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+.titan-book-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--navy);
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.02em;
+}
+.titan-book-sub {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 1.25rem;
+}
+.titan-book-desc {
+  font-size: 1rem;
+  color: rgba(13,27,42,0.6);
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+}
+.titan-book-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+.titan-book-list li {
+  font-size: 0.9rem;
+  color: var(--navy);
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.titan-book-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent-secondary);
+  font-weight: 600;
+}
+
+/* ═══ MEDIA / PODCAST ═══ */
+.titan-media {
+  background: var(--navy);
+  padding: 5rem 2rem 0;
+}
+.titan-media-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.titan-media-content .titan-section-label {
+  color: rgba(255,255,255,0.4);
+}
+.titan-media-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+.titan-media-desc {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+  margin: 0 0 2rem;
+}
+.titan-media-art img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+.titan-media-logos {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 4rem;
+  padding: 2rem 0;
+}
+.titan-media-logos-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.titan-media-logos-inner .titan-section-label {
+  color: rgba(255,255,255,0.3);
+  margin: 0;
+  white-space: nowrap;
+}
+.titan-media-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.titan-media-logo-row img {
+  height: 28px;
+  opacity: 0.5;
+  filter: brightness(10);
+  transition: opacity 0.2s ease;
+}
+.titan-media-logo-row img:hover {
+  opacity: 0.8;
+}
+
+/* ═══ CLIENT STORIES ═══ */
+.titan-stories {
+  background: #fff;
+  padding: 5rem 2rem;
+}
+.titan-stories-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.titan-stories-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin: 0 0 3rem;
+}
+.titan-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.titan-story-card {
+  background: #f5f0eb;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.titan-story-title {
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+}
+.titan-story-desc {
+  font-size: 0.9rem;
+  color: rgba(13,27,42,0.55);
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+.titan-story-author {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--navy);
+}
+.titan-story-tag {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(13,27,42,0.4);
+  background: rgba(13,27,42,0.05);
+  padding: 0.3rem 0.7rem;
+  border-radius: 100px;
+  align-self: flex-start;
+}
+
+/* ═══ QUALIFIER ═══ */
+.titan-qualifier {
+  background: #f5f0eb;
+  padding: 5rem 2rem;
+}
+.titan-qualifier-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.titan-qualifier-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin: 0 0 2.5rem;
+}
+.titan-qualifier-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  text-align: left;
+}
+.titan-qualifier-item {
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: var(--navy);
+  border-bottom: 1px solid rgba(13,27,42,0.08);
+}
+
+/* ═══ MOBILE RESPONSIVE — NEW SECTIONS ═══ */
+@media (max-width: 768px) {
+  .titan-comparison-inner { padding: 0; }
+  .titan-comp-row { grid-template-columns: 1.2fr 0.8fr 0.8fr; }
+  .titan-comp-feature { font-size: 0.82rem; }
+  .titan-comp-us, .titan-comp-them { font-size: 0.75rem; padding: 0.75rem 0.5rem; }
+  .titan-bio-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .titan-bio-photo { max-width: 280px; }
+  .titan-book-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .titan-book-cover { text-align: center; }
+  .titan-book-cover img { max-width: 250px; margin: 0 auto; }
+  .titan-media-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .titan-media-art { order: -1; }
+  .titan-media-art img { max-width: 200px; }
+  .titan-media-logos-inner { flex-direction: column; gap: 1rem; }
+  .titan-media-logo-row { flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+  .titan-stories-grid { grid-template-columns: 1fr; }
+  .titan-qualifier-grid { grid-template-columns: 1fr; }
+}
