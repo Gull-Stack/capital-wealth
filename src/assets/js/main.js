@@ -354,3 +354,26 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+// Titan nav — flat at top, glass pill on scroll
+(function() {
+    const nav = document.querySelector('.titan-nav');
+    if (!nav) return;
+    
+    let ticking = false;
+    function onScroll() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                if (window.scrollY > 60) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+    
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // check initial state
+})();
