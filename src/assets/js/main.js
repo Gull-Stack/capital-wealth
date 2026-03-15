@@ -349,7 +349,7 @@ document.head.appendChild(style);
 // Titan reviews carousel
 (function() {
     var track = document.querySelector('.titan-reviews-track');
-    var cards = document.querySelectorAll('.titan-review-card');
+    var cards = document.querySelectorAll('.titan-review-photo-card');
     var prevBtn = document.querySelector('.titan-reviews-prev');
     var nextBtn = document.querySelector('.titan-reviews-next');
     var dotsContainer = document.querySelector('.titan-reviews-dots');

@@ -1533,6 +1533,15 @@ a:hover {
 .mt-md { margin-top: var(--spacing-md); }
 .mt-lg { margin-top: var(--spacing-lg); }
 .mt-xl { margin-top: var(--spacing-xl); }
+
+/* Section Divider — thin line separator between same-background sections */
+.section-divider {
+  height: 1px;
+  background: rgba(0,0,0,0.08);
+  max-width: 85%;
+  margin: 0 auto;
+}
+
 /* ═══════════════════════════════════════════════════
    B.O.S.S. INSPIRED COMPONENTS
    ═══════════════════════════════════════════════════ */
@@ -1627,7 +1636,6 @@ a:hover {
   object-fit: cover;
 }
 .titan-hero-footer {
-  border-top: 1px solid rgba(0,0,0,0.08);
   margin-top: 3rem;
 }
 .titan-hero-footer-inner {
@@ -4636,7 +4644,7 @@ p, li { font-size: max(1rem, inherit); }
 /* Photo-based testimonial cards */
 .titan-review-photo-card {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 0.65fr 1.35fr;
   gap: 2rem;
   width: 100%;
   min-width: 100%;
@@ -4646,7 +4654,8 @@ p, li { font-size: max(1rem, inherit); }
 }
 .titan-review-photo-wrap {
   position: relative;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
   aspect-ratio: 4 / 5;
