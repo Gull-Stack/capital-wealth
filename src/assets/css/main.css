@@ -211,7 +211,7 @@ a:hover {
 @media (max-width: 768px) {
   .titan-nav-links { display: none; }
   .titan-nav-right { display: none; }
-  .titan-header { padding: 0.6rem 1.25rem; }
+  .titan-header { padding: 0.6rem 0.75rem; }
   .titan-mobile-actions {
     display: flex;
     align-items: center;
@@ -5346,8 +5346,8 @@ html { font-size: 18px; }
   .titan-resources-inner,
   .titan-reviews-inner,
   .faq-inner {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   /* FAQ buttons stack on mobile */
@@ -5393,3 +5393,25 @@ html { font-size: 18px; }
 }
 .faq-all-link:hover { opacity: 1; }
 .faq-all-link span { font-size: 0.75rem; }
+
+/* ═══ TIGHTER MOBILE SIDE PADDING GLOBALLY ═══ */
+@media (max-width: 768px) {
+  .titan-hero,
+  .titan-fundamentals,
+  .titan-services,
+  .titan-comparison,
+  .titan-bio,
+  .titan-book,
+  .titan-media,
+  .titan-stories,
+  .titan-principles,
+  .titan-qualifier,
+  .faq-section,
+  .service-problem,
+  .service-solution,
+  .service-process,
+  section[style*="padding"] {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+}
