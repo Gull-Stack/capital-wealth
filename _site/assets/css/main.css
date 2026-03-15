@@ -206,7 +206,8 @@ a:hover {
 }
 @media (max-width: 768px) {
   .titan-nav-links { display: none; }
-  .titan-nav-right { display: none; }
+  .titan-nav-right .titan-nav-link { font-size: 0.78rem; font-weight: 600; }
+  .titan-nav-right .titan-nav-join { display: none; }
   .titan-header { padding: 0; }
   .titan-header .mobile-menu-toggle {
     display: flex !important;
@@ -463,8 +464,7 @@ a:hover {
 
 @media (max-width: 767px) {
   .header {
-    padding: 0.75rem 1rem;
-    pointer-events: all;
+    display: none !important;
   }
   .nav-float {
     border-radius: 0;
@@ -590,12 +590,12 @@ a:hover {
 }
 /* When any item in the menu is hovered, dim ALL items... */
 .nav-dropdown-menu:hover .nav-dd-item {
-  opacity: 0.5;
+  opacity: 0.45;
 }
 .nav-dropdown-menu:hover .nav-dd-item:hover {
   opacity: 1;
-  background: rgba(0, 0, 0, 0.03);
-  border-color: rgba(0, 0, 0, 0.06);
+  background: var(--navy);
+  border-color: transparent;
 }
 .nav-dd-item:hover strong {
   color: #fff;
@@ -1003,17 +1003,17 @@ a:hover {
   top: 100px;
 }
 .faq-heading {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  line-height: 1.12;
-  color: #1a1a1a;
-  margin: 0 0 1rem;
+  font-family: var(--font-family);
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--navy);
+  margin: 0 0 0.75rem;
 }
 .faq-sub {
-  font-size: 0.95rem;
-  color: rgba(0,0,0,0.5);
+  font-size: 1rem;
+  color: rgba(25,79,144,0.45);
   line-height: 1.6;
   margin: 0 0 1.5rem;
   max-width: 320px;
@@ -1028,46 +1028,58 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding: 1.25rem 0;
+  padding: 1.35rem 0;
   background: none;
   border: none;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.07);
   cursor: pointer;
   text-align: left;
   transition: all 0.2s ease;
 }
 .faq-acc-item:first-child {
-  border-top: 1px solid rgba(0,0,0,0.08);
+  border-top: 1px solid rgba(0,0,0,0.07);
 }
 .faq-acc-q {
   flex: 1;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--navy);
   line-height: 1.4;
 }
 .faq-acc-icon {
-  font-size: 1.2rem;
-  color: rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: rgba(25,79,144,0.4);
+  transition: all 0.3s ease;
   margin-left: 1rem;
   font-weight: 300;
+  flex-shrink: 0;
 }
 .faq-acc-item.active .faq-acc-icon {
   transform: rotate(45deg);
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
 }
 .faq-acc-a {
   width: 100%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease, padding 0.35s ease;
-  font-size: 0.9rem;
-  color: rgba(0,0,0,0.55);
+  font-size: 1rem;
+  color: rgba(25,79,144,0.5);
   line-height: 1.7;
   padding-top: 0;
 }
 .faq-acc-item.active .faq-acc-a {
-  max-height: 200px;
+  max-height: 250px;
   padding-top: 0.75rem;
 }
 @media (max-width: 768px) {
@@ -1588,6 +1600,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
 }
 .titan-hero-img {
   width: 100%;
@@ -3640,13 +3653,7 @@ a:hover {
   margin: 0 0 2rem;
   max-width: 480px;
 }
-.titan-fund-card-num {
-  font-family: 'Geist Mono', monospace;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: rgba(25,79,144,0.3);
-  letter-spacing: 0.02em;
-}
+/* numbers removed from cards */
 
 /* ═══ COMPARISON TABLE ═══ */
 .titan-comparison {
@@ -3715,20 +3722,22 @@ a:hover {
 
 /* ═══ MIKE STEVENS BIO ═══ */
 .titan-bio {
-  background: #f0f1f3;
+  background: #fff;
   padding: 5rem 2rem;
 }
 .titan-bio-inner {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 3rem;
 }
 .titan-bio-photo {
-  border-radius: 12px;
   overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
 }
 .titan-bio-photo img {
   width: 100%;
@@ -3736,12 +3745,12 @@ a:hover {
   display: block;
 }
 .titan-bio-name {
-  font-family: var(--font-family);
-  font-size: 2rem;
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 400;
   color: var(--navy);
   margin: 0 0 0.25rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .titan-bio-title {
   font-size: 0.95rem;
@@ -3794,12 +3803,12 @@ a:hover {
   display: block;
 }
 .titan-book-h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-family);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--navy);
   margin: 0 0 0.25rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 .titan-book-sub {
   font-size: 0.85rem;
@@ -3852,12 +3861,12 @@ a:hover {
   color: rgba(255,255,255,0.4);
 }
 .titan-media-h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-family);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 400;
+  font-weight: 500;
   color: #fff;
   margin: 0 0 1rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 .titan-media-desc {
   font-size: 1rem;
@@ -3923,46 +3932,97 @@ a:hover {
   letter-spacing: -0.03em;
   margin: 0 0 3rem;
 }
-.titan-stories-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-.titan-story-card {
-  background: #f0f1f3;
-  border-radius: 12px;
-  padding: 2rem;
+/* ═══ TITAN STORIES SLIDER ═══ */
+.titan-stories-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.titan-stories-nav {
+  display: flex;
+  align-items: center;
   gap: 0.75rem;
 }
-.titan-story-title {
-  font-family: var(--font-family);
-  font-size: 1.1rem;
-  font-weight: 600;
+.titan-stories-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   color: var(--navy);
-  margin: 0;
+  transition: all 0.2s ease;
 }
-.titan-story-desc {
-  font-size: 0.9rem;
-  color: rgba(25,79,144,0.55);
-  line-height: 1.65;
-  margin: 0;
-  flex: 1;
+.titan-stories-arrow:hover {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+}
+.titan-stories-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 8px;
+  background: rgba(0,0,0,0.04);
+  border-radius: 100px;
+}
+.titan-stories-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background: rgba(25,79,144,0.2);
+  transition: all 0.3s ease;
+}
+.titan-stories-dot.active {
+  width: 20px;
+  background: var(--navy);
+}
+.titan-stories-track {
+  display: flex;
+  gap: 3rem;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.titan-story-slide {
+  min-width: calc(33.333% - 2rem);
+  flex-shrink: 0;
+}
+.titan-story-quote {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  line-height: 0.8;
+  color: var(--accent-secondary);
+  display: block;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+.titan-story-text {
+  font-size: 1rem;
+  color: rgba(25,79,144,0.6);
+  line-height: 1.7;
+  margin: 0 0 1.25rem;
 }
 .titan-story-author {
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--navy);
+  display: block;
+  margin-bottom: 0.35rem;
 }
 .titan-story-tag {
   font-size: 0.72rem;
   font-weight: 500;
   color: rgba(25,79,144,0.4);
-  background: rgba(25,79,144,0.05);
-  padding: 0.3rem 0.7rem;
-  border-radius: 100px;
-  align-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+@media (max-width: 768px) {
+  .titan-story-slide { min-width: 85%; }
+  .titan-stories-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
 
 /* ═══ QUALIFIER ═══ */
@@ -4014,4 +4074,482 @@ a:hover {
   .titan-media-logo-row { flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
   .titan-stories-grid { grid-template-columns: 1fr; }
   .titan-qualifier-grid { grid-template-columns: 1fr; }
+}
+
+/* ═══ RETIREE FONT BOOST — 10% larger ═══ */
+h2, h3, h4, h5, h6 {
+  font-size-adjust: inherit;
+}
+.titan-hero-h1 { font-size: clamp(2.8rem, 6vw, 4.6rem) !important; }
+.titan-fundamentals-h2,
+.titan-comparison-h2,
+.titan-stories-h2,
+.titan-qualifier-h2 { font-size: clamp(2.2rem, 3.5vw, 3rem) !important; }
+.titan-bio-name { font-size: 2.2rem !important; }
+.titan-book-h2,
+.titan-media-h2 { font-size: clamp(2.2rem, 3.5vw, 3rem) !important; }
+.titan-hero-subhead { font-size: clamp(1.5rem, 2.8vw, 2rem) !important; }
+.titan-hero-body { font-size: 1.1rem !important; }
+.titan-fund-card-title { font-size: 1.1rem !important; }
+.titan-fund-card-desc { font-size: 1rem !important; }
+.titan-comp-feature { font-size: 1.05rem !important; }
+.titan-story-desc { font-size: 1rem !important; }
+.titan-book-desc { font-size: 1.1rem !important; }
+.titan-media-desc { font-size: 1.1rem !important; }
+.titan-bio-quote { font-size: 1.25rem !important; }
+.titan-qualifier-item { font-size: 1.1rem !important; }
+.faq-acc-q { font-size: 1.05rem !important; }
+.faq-acc-a { font-size: 0.95rem !important; }
+p, li { font-size: max(1rem, inherit); }
+
+/* Card titles flush to top (no number above them anymore) */
+.titan-fund-card { padding-top: 1.5rem; }
+.titan-fund-card-title { margin-top: 0; }
+
+/* ═══ GLASS BUTTON — for dark backgrounds ═══ */
+.titan-media-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.2s ease;
+}
+.titan-media-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ═══ TITAN CTA ═══ */
+.titan-cta {
+  background: var(--navy);
+  padding: 5rem 2rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.titan-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 3rem;
+}
+.titan-cta-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.titan-cta-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+}
+.titan-cta-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .titan-cta-inner { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* ═══ TITAN FOOTER ═══ */
+.titan-footer {
+  background: var(--navy);
+  padding: 0 2rem 2rem;
+  position: relative;
+}
+.titan-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 3fr;
+  gap: 3rem;
+  padding: 3.5rem 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.titan-footer-logo {
+  height: 52px;
+  width: auto;
+  margin-bottom: 1.75rem;
+}
+.titan-footer-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.titan-footer-pill {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.titan-footer-pill:hover { color: #fff; }
+.titan-footer-pill-primary {
+  color: #fff;
+  font-weight: 600;
+}
+.titan-footer-pill-outline {}
+.titan-footer-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.titan-footer-heading {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin: 0 0 1rem;
+}
+.titan-footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.titan-footer-col li { margin-bottom: 0.5rem; }
+.titan-footer-col a {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.titan-footer-col a:hover { color: #fff; }
+.titan-footer-sub {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 1.5rem 0 0;
+}
+.titan-footer-sub-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.titan-footer-legal p {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.3);
+  margin: 0 0 0.25rem;
+  line-height: 1.5;
+}
+.titan-footer-legal a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+}
+.titan-footer-legal a:hover { color: rgba(255,255,255,0.7); }
+.titan-footer-credit p {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.25);
+  margin: 0;
+}
+.titan-footer-credit a {
+  color: rgba(255,255,255,0.35);
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .titan-footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .titan-footer-nav { grid-template-columns: 1fr 1fr; }
+  .titan-footer-sub-inner { flex-direction: column; align-items: flex-start; }
+}
+
+/* ═══ TITAN GRID LINES — site-wide ═══ */
+.titan-book-inner,
+.titan-bio-inner {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 3rem;
+}
+.titan-qualifier-inner {
+  border-top: 1px solid rgba(25,79,144,0.1);
+  padding-top: 3rem;
+}
+.faq-inner {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 3rem;
+}
+
+/* ═══ TITAN SERVICES SECTION ═══ */
+.titan-services {
+  background: #fff;
+  padding: 5rem 2rem;
+}
+.titan-services-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 3rem;
+}
+.titan-services-left {
+  display: flex;
+  flex-direction: column;
+}
+.titan-services-left-top {
+  margin-bottom: 2rem;
+}
+.titan-services-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 500;
+  color: var(--navy);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.03em;
+}
+.titan-services-sub {
+  font-size: 0.95rem;
+  color: rgba(25,79,144,0.45);
+  margin: 0 0 1.5rem;
+}
+.titan-services-list {
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.titan-service-item {
+  display: block;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.titan-service-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--navy);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.titan-service-desc {
+  font-size: 0.9rem;
+  color: rgba(25,79,144,0.45);
+  line-height: 1.55;
+  display: inline;
+}
+.titan-service-arrow {
+  color: var(--accent-secondary);
+  font-weight: 600;
+  margin-left: 0.25rem;
+  transition: margin-left 0.2s ease;
+}
+.titan-service-item:hover .titan-service-arrow {
+  margin-left: 0.5rem;
+}
+.titan-services-right {
+  display: flex;
+  align-items: stretch;
+  border-left: 1px solid rgba(0,0,0,0.08);
+  padding-left: 4rem;
+}
+.titan-services-img-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+.titan-services-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 768px) {
+  .titan-services-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .titan-services-right { order: -1; border-left: none; padding-left: 0; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 2rem; max-height: 350px; }
+}
+
+/* ═══ TITAN REVIEWS GRID ═══ */
+.titan-reviews-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 3rem;
+}
+.titan-reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+}
+.titan-reviews-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.titan-reviews-stars {
+  color: #f5a623;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+.titan-reviews-count {
+  font-size: 0.85rem;
+  color: rgba(25,79,144,0.4);
+}
+.titan-reviews-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.titan-reviews-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--navy);
+  transition: all 0.2s ease;
+}
+.titan-reviews-arrow:hover {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+}
+.titan-reviews-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 8px;
+  background: rgba(0,0,0,0.04);
+  border-radius: 100px;
+}
+.titan-reviews-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background: rgba(25,79,144,0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.titan-reviews-dot.active {
+  width: 20px;
+  background: var(--navy);
+}
+.titan-reviews-viewport {
+  overflow: hidden;
+}
+.titan-reviews-track {
+  display: flex;
+  gap: 1.25rem;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.titan-review-card {
+  background: #f0f1f3;
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: calc(33.333% - 0.84rem);
+  min-width: calc(33.333% - 0.84rem);
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.titan-review-stars {
+  color: #f5a623;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+.titan-review-text {
+  font-size: 0.95rem;
+  color: var(--navy);
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+.titan-review-author {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-top: 0.25rem;
+}
+.titan-review-source {
+  font-size: 0.7rem;
+  color: rgba(25,79,144,0.35);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+@media (max-width: 768px) {
+  .titan-review-card { min-width: 85%; }
+  .titan-reviews-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+}
+
+.titan-reviews-cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* ═══ MOBILE FIXES BATCH ═══ */
+
+/* Hero CTAs stack on mobile */
+@media (max-width: 768px) {
+  .titan-hero-buttons { flex-direction: column; gap: 0.75rem; }
+  .titan-hero-buttons a { width: 100%; text-align: center; justify-content: center; }
+}
+
+/* Remove comparison border-top (wasted space) */
+.titan-comparison { border-top: none; }
+.titan-comparison-inner { border-top: none; padding-top: 0; }
+
+/* Podcast icon left-align on mobile */
+@media (max-width: 768px) {
+  .titan-media-art { text-align: left; }
+  .titan-media-art img { margin: 0; }
+}
+
+/* Testimonial cards full width on mobile — no cut-off */
+@media (max-width: 768px) {
+  .titan-review-card { width: calc(100% - 2rem) !important; min-width: calc(100% - 2rem) !important; }
+}
+
+/* Force ALL heading fonts to Geist — nuclear option */
+.titan-bio-name,
+.titan-book-h2,
+.titan-media-h2,
+.titan-cta-h2,
+.titan-comparison-h2,
+.titan-stories-h2,
+.titan-qualifier-h2,
+.titan-fundamentals-h2,
+.titan-services-h2,
+.faq-heading {
+  font-family: var(--font-family) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.03em !important;
+}
+
+/* ═══ ABSOLUTE FONT OVERRIDE — NO EXCEPTIONS ═══ */
+h1, h2, h3, h4, h5, h6,
+[class*="h2"], [class*="h3"],
+[class*="heading"], [class*="title"], [class*="name"] {
+  font-family: var(--font-family) !important;
+}
+/* Only subhead/quote uses display font */
+.titan-hero-subhead, .titan-bio-quote {
+  font-family: var(--font-display) !important;
+}
+/* Qualifier items — no checkmarks, just clean text with lines */
+.titan-qualifier-item {
+  font-weight: 500;
+  color: var(--navy);
 }

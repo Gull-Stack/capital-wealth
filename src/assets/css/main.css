@@ -3722,20 +3722,22 @@ a:hover {
 
 /* ═══ MIKE STEVENS BIO ═══ */
 .titan-bio {
-  background: #f0f1f3;
+  background: #fff;
   padding: 5rem 2rem;
 }
 .titan-bio-inner {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 3rem;
 }
 .titan-bio-photo {
-  border-radius: 12px;
   overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
 }
 .titan-bio-photo img {
   width: 100%;
@@ -4443,10 +4445,12 @@ p, li { font-size: max(1rem, inherit); }
   width: 20px;
   background: var(--navy);
 }
+.titan-reviews-viewport {
+  overflow: hidden;
+}
 .titan-reviews-track {
   display: flex;
   gap: 1.25rem;
-  overflow: hidden;
   transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .titan-review-card {
@@ -4532,4 +4536,20 @@ p, li { font-size: max(1rem, inherit); }
   font-family: var(--font-family) !important;
   font-weight: 500 !important;
   letter-spacing: -0.03em !important;
+}
+
+/* ═══ ABSOLUTE FONT OVERRIDE — NO EXCEPTIONS ═══ */
+h1, h2, h3, h4, h5, h6,
+[class*="h2"], [class*="h3"],
+[class*="heading"], [class*="title"], [class*="name"] {
+  font-family: var(--font-family) !important;
+}
+/* Only subhead/quote uses display font */
+.titan-hero-subhead, .titan-bio-quote {
+  font-family: var(--font-display) !important;
+}
+/* Qualifier items — no checkmarks, just clean text with lines */
+.titan-qualifier-item {
+  font-weight: 500;
+  color: var(--navy);
 }

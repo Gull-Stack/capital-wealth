@@ -239,39 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// ═══ RANDOM AURORA ANIMATION ═══
-(function() {
-    var blobs = document.querySelectorAll('.aurora-blob');
-    if (!blobs.length) return;
-
-    blobs.forEach(function(blob) {
-        blob.style.position = 'absolute';
-        blob.style.opacity = '0';
-        blob.style.transition = 'none';
-        moveBlob(blob);
-    });
-
-    function rand(min, max) { return Math.random() * (max - min) + min; }
-
-    function moveBlob(blob) {
-        // Random position
-        var x = rand(-10, 85);
-        var y = rand(-10, 80);
-        // Random opacity — often invisible, sometimes bright
-        var shouldShow = Math.random() > 0.4;
-        var opacity = shouldShow ? rand(0.15, 0.45) : 0;
-        // Random duration for this step
-        var duration = rand(2000, 6000);
-
-        blob.style.transition = 'left ' + duration + 'ms ease-in-out, top ' + duration + 'ms ease-in-out, opacity ' + (duration * 0.7) + 'ms ease-in-out';
-        blob.style.left = x + '%';
-        blob.style.top = y + '%';
-        blob.style.opacity = opacity;
-
-        // Schedule next random move
-        setTimeout(function() { moveBlob(blob); }, duration + rand(500, 3000));
-    }
-})();
+// Aurora removed — clean Titan layout
 
 // ═══ SERVICES CANVAS TABS ═══
 (function() {
@@ -376,4 +344,70 @@ document.head.appendChild(style);
     
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll(); // check initial state
+})();
+
+// Titan reviews carousel
+(function() {
+    var track = document.querySelector('.titan-reviews-track');
+    var cards = document.querySelectorAll('.titan-review-card');
+    var prevBtn = document.querySelector('.titan-reviews-prev');
+    var nextBtn = document.querySelector('.titan-reviews-next');
+    var dotsContainer = document.querySelector('.titan-reviews-dots');
+    if (!track || !cards.length || !dotsContainer) return;
+
+    function getPerView() { return window.innerWidth <= 768 ? 1 : 3; }
+    var perView = getPerView();
+    var totalPages = Math.ceil(cards.length / perView);
+    var currentPage = 0;
+
+    function buildDots() {
+        dotsContainer.innerHTML = '';
+        totalPages = Math.ceil(cards.length / perView);
+        for (var i = 0; i < totalPages; i++) {
+            var dot = document.createElement('span');
+            dot.className = 'titan-reviews-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('data-page', i);
+            dot.addEventListener('click', function() { goToPage(parseInt(this.getAttribute('data-page'))); });
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    function goToPage(page) {
+        if (page < 0) page = totalPages - 1;
+        if (page >= totalPages) page = 0;
+        currentPage = page;
+        var card = cards[0];
+        var gap = 20; // 1.25rem
+        var cardWidth = card.offsetWidth + gap;
+        track.style.transform = 'translateX(-' + (currentPage * perView * cardWidth) + 'px)';
+        var dots = dotsContainer.querySelectorAll('.titan-reviews-dot');
+        dots.forEach(function(d, idx) { d.classList.toggle('active', idx === currentPage); });
+    }
+
+    buildDots();
+    prevBtn.addEventListener('click', function() { goToPage(currentPage - 1); });
+    nextBtn.addEventListener('click', function() { goToPage(currentPage + 1); });
+
+    window.addEventListener('resize', function() {
+        perView = getPerView();
+        buildDots();
+        goToPage(0);
+    });
+
+    // Touch/drag support
+    var startX = 0, isDragging = false;
+    track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; isDragging = true; }, {passive: true});
+    track.addEventListener('mousedown', function(e) { startX = e.clientX; isDragging = true; });
+    track.addEventListener('touchend', function(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        var diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 50) { diff > 0 ? goToPage(currentPage + 1) : goToPage(currentPage - 1); }
+    });
+    track.addEventListener('mouseup', function(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        var diff = startX - e.clientX;
+        if (Math.abs(diff) > 50) { diff > 0 ? goToPage(currentPage + 1) : goToPage(currentPage - 1); }
+    });
 })();
