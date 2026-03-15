@@ -7,8 +7,8 @@
 
 :root {
   /* Capital Wealth brand colors */
-  --bg-primary: #0d1b2a;
-  --bg-secondary: #1b2d44;
+  --bg-primary: #194F90;
+  --bg-secondary: #15437a;
   --bg-card: #1e3350;
   --bg-light: #264060;
   
@@ -25,7 +25,8 @@
   /* Typography */
   --font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: 'Cormorant Garamond', Georgia, serif;
-  --navy: #0d1b2a;
+  --navy: #194F90;
+  --brand-grey: #7b868C;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -201,7 +202,7 @@ a:hover {
   transition: all 0.2s ease;
 }
 .titan-nav-join:hover {
-  background: #1b2d44;
+  background: #15437a;
 }
 @media (max-width: 768px) {
   .titan-nav-links { display: none; }
@@ -245,7 +246,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: var(--spacing-lg);
-  background: rgba(13, 27, 42, 0.4);
+  background: rgba(25, 79, 144, 0.4);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255,255,255,0.08);
@@ -254,7 +255,7 @@ a:hover {
   transition: background 0.4s ease;
 }
 .header.scrolled .nav-left-pill {
-  background: rgba(13, 27, 42, 0.65);
+  background: rgba(25, 79, 144, 0.65);
 }
 .nav-main-desktop {
   display: none;
@@ -581,7 +582,7 @@ a:hover {
 }
 .nav-dd-item span {
   display: block;
-  color: rgba(13,27,42,0.45);
+  color: rgba(25,79,144,0.45);
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1561,7 +1562,7 @@ a:hover {
   transition: all 0.2s ease;
 }
 .titan-hero-btn-primary:hover {
-  background: #1b2d44;
+  background: #15437a;
   transform: translateY(-1px);
 }
 .titan-hero-btn-secondary {
@@ -1710,7 +1711,7 @@ a:hover {
 .hero-mountain-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10,20,40,0.15) 0%, rgba(13,27,42,0.25) 50%, rgba(13,27,42,0.8) 80%, rgba(13,27,42,1) 100%);
+  background: linear-gradient(180deg, rgba(10,20,40,0.15) 0%, rgba(25,79,144,0.25) 50%, rgba(25,79,144,0.8) 80%, rgba(25,79,144,1) 100%);
 }
 .hero-mountain-content {
   position: relative;
@@ -2075,7 +2076,7 @@ a:hover {
 }
 .titan-fund-card-desc {
   font-size: 0.9rem;
-  color: rgba(13,27,42,0.55);
+  color: rgba(25,79,144,0.55);
   line-height: 1.6;
   margin: 0;
 }
@@ -2084,7 +2085,7 @@ a:hover {
   border-color: transparent;
 }
 .titan-fund-card-cta:hover {
-  background: #1b2d44;
+  background: #15437a;
   border-color: transparent;
 }
 @media (max-width: 768px) {
@@ -2507,7 +2508,7 @@ a:hover {
 .giga-photo-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, var(--bg-primary) 0%, rgba(13,27,42,0.4) 40%, transparent 70%);
+  background: linear-gradient(to top, var(--bg-primary) 0%, rgba(25,79,144,0.4) 40%, transparent 70%);
   pointer-events: none;
 }
 .giga-photo-highlight {
@@ -2904,7 +2905,7 @@ a:hover {
   z-index: 2;
 }
 .tools-header {
-  background: rgba(13,27,42,0.92);
+  background: rgba(25,79,144,0.92);
   padding: 2.5rem 3rem;
   max-width: 550px;
   margin-top: 3rem;
@@ -3322,7 +3323,7 @@ a:hover {
   min-height: 500px;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, rgba(13,27,42,0.92) 0%, rgba(13,27,42,0.7) 100%);
+  background: linear-gradient(135deg, rgba(25,79,144,0.92) 0%, rgba(25,79,144,0.7) 100%);
   padding: 2rem;
 }
 .about-hero h1 {
@@ -3604,13 +3605,13 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(13,27,42,0.4);
+  color: rgba(25,79,144,0.4);
   margin-bottom: 0.75rem;
   display: block;
 }
 .titan-section-sub {
   font-size: 1.05rem;
-  color: rgba(13,27,42,0.5);
+  color: rgba(25,79,144,0.5);
   line-height: 1.6;
   margin: -1rem 0 2.5rem;
   max-width: 550px;
@@ -3620,7 +3621,7 @@ a:hover {
 }
 .titan-trust-line {
   font-size: 0.8rem;
-  color: rgba(13,27,42,0.35);
+  color: rgba(25,79,144,0.35);
   margin-top: 0.75rem;
 }
 .titan-hero-subhead {
@@ -3634,7 +3635,7 @@ a:hover {
 }
 .titan-hero-body {
   font-size: 1rem;
-  color: rgba(13,27,42,0.6);
+  color: rgba(25,79,144,0.6);
   line-height: 1.7;
   margin: 0 0 2rem;
   max-width: 480px;
@@ -3643,7 +3644,7 @@ a:hover {
   font-family: 'Geist Mono', monospace;
   font-size: 0.75rem;
   font-weight: 500;
-  color: rgba(13,27,42,0.3);
+  color: rgba(25,79,144,0.3);
   letter-spacing: 0.02em;
 }
 
@@ -3695,7 +3696,7 @@ a:hover {
 .titan-comp-them {
   padding: 1rem;
   text-align: center;
-  color: rgba(13,27,42,0.35);
+  color: rgba(25,79,144,0.35);
   font-size: 0.85rem;
 }
 .titan-comp-header .titan-comp-us {
@@ -3744,7 +3745,7 @@ a:hover {
 }
 .titan-bio-title {
   font-size: 0.95rem;
-  color: rgba(13,27,42,0.5);
+  color: rgba(25,79,144,0.5);
   margin: 0 0 1.5rem;
 }
 .titan-bio-credentials {
@@ -3757,7 +3758,7 @@ a:hover {
   font-size: 0.78rem;
   font-weight: 500;
   color: var(--navy);
-  background: rgba(13,27,42,0.06);
+  background: rgba(25,79,144,0.06);
   padding: 0.4rem 0.9rem;
   border-radius: 100px;
 }
@@ -3810,7 +3811,7 @@ a:hover {
 }
 .titan-book-desc {
   font-size: 1rem;
-  color: rgba(13,27,42,0.6);
+  color: rgba(25,79,144,0.6);
   line-height: 1.7;
   margin: 0 0 1.5rem;
 }
@@ -3944,7 +3945,7 @@ a:hover {
 }
 .titan-story-desc {
   font-size: 0.9rem;
-  color: rgba(13,27,42,0.55);
+  color: rgba(25,79,144,0.55);
   line-height: 1.65;
   margin: 0;
   flex: 1;
@@ -3957,8 +3958,8 @@ a:hover {
 .titan-story-tag {
   font-size: 0.72rem;
   font-weight: 500;
-  color: rgba(13,27,42,0.4);
-  background: rgba(13,27,42,0.05);
+  color: rgba(25,79,144,0.4);
+  background: rgba(25,79,144,0.05);
   padding: 0.3rem 0.7rem;
   border-radius: 100px;
   align-self: flex-start;
@@ -3992,7 +3993,7 @@ a:hover {
   padding: 1rem 1.25rem;
   font-size: 1rem;
   color: var(--navy);
-  border-bottom: 1px solid rgba(13,27,42,0.08);
+  border-bottom: 1px solid rgba(25,79,144,0.08);
 }
 
 /* ═══ MOBILE RESPONSIVE — NEW SECTIONS ═══ */
