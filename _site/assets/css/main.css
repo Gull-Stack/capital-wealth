@@ -204,11 +204,27 @@ a:hover {
 .titan-nav-join:hover {
   background: #15437a;
 }
+/* Mobile actions: Client Login + hamburger, hidden on desktop */
+.titan-mobile-actions {
+  display: none;
+}
 @media (max-width: 768px) {
   .titan-nav-links { display: none; }
-  .titan-nav-right .titan-nav-link { display: none; }
-  .titan-nav-right .titan-nav-join { display: none; }
+  .titan-nav-right { display: none; }
   .titan-header { padding: 0; }
+  .titan-mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    pointer-events: all;
+  }
+  .titan-mobile-login {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--navy);
+    text-decoration: none;
+    white-space: nowrap;
+  }
   .titan-header .mobile-menu-toggle {
     display: flex !important;
     flex-direction: column;
