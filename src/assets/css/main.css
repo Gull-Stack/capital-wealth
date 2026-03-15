@@ -3789,12 +3789,12 @@ a:hover {
   display: block;
 }
 .titan-book-h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-family);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--navy);
   margin: 0 0 0.25rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 .titan-book-sub {
   font-size: 0.85rem;
@@ -3847,12 +3847,12 @@ a:hover {
   color: rgba(255,255,255,0.4);
 }
 .titan-media-h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-family);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 400;
+  font-weight: 500;
   color: #fff;
   margin: 0 0 1rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 .titan-media-desc {
   font-size: 1rem;
