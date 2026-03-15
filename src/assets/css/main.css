@@ -211,7 +211,7 @@ a:hover {
 @media (max-width: 768px) {
   .titan-nav-links { display: none; }
   .titan-nav-right { display: none; }
-  .titan-header { padding: 0; }
+  .titan-header { padding: 0.6rem 1.25rem; }
   .titan-mobile-actions {
     display: flex;
     align-items: center;
@@ -4809,7 +4809,8 @@ p, li { font-size: max(1rem, inherit); }
     gap: 1.5rem;
   }
   .titan-review-photo-wrap {
-    aspect-ratio: 16 / 10;
+    width: 100%;
+    aspect-ratio: 4 / 3;
   }
 }
 
@@ -5345,8 +5346,8 @@ html { font-size: 18px; }
   .titan-resources-inner,
   .titan-reviews-inner,
   .faq-inner {
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   /* FAQ buttons stack on mobile */
@@ -5368,8 +5369,8 @@ html { font-size: 18px; }
   }
   .titan-review-text,
   .titan-stories .titan-review-text {
-    font-size: 0.92rem !important;
-    line-height: 1.5 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.45 !important;
   }
 }
 
