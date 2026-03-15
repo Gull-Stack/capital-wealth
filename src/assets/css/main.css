@@ -3640,13 +3640,7 @@ a:hover {
   margin: 0 0 2rem;
   max-width: 480px;
 }
-.titan-fund-card-num {
-  font-family: 'Geist Mono', monospace;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: rgba(25,79,144,0.3);
-  letter-spacing: 0.02em;
-}
+/* numbers removed from cards */
 
 /* ═══ COMPARISON TABLE ═══ */
 .titan-comparison {
@@ -4015,3 +4009,33 @@ a:hover {
   .titan-stories-grid { grid-template-columns: 1fr; }
   .titan-qualifier-grid { grid-template-columns: 1fr; }
 }
+
+/* ═══ RETIREE FONT BOOST — 10% larger ═══ */
+h2, h3, h4, h5, h6 {
+  font-size-adjust: inherit;
+}
+.titan-hero-h1 { font-size: clamp(2.8rem, 6vw, 4.6rem) !important; }
+.titan-fundamentals-h2,
+.titan-comparison-h2,
+.titan-stories-h2,
+.titan-qualifier-h2 { font-size: clamp(2.2rem, 3.5vw, 3rem) !important; }
+.titan-bio-name { font-size: 2.2rem !important; }
+.titan-book-h2,
+.titan-media-h2 { font-size: clamp(2.2rem, 3.5vw, 3rem) !important; }
+.titan-hero-subhead { font-size: clamp(1.5rem, 2.8vw, 2rem) !important; }
+.titan-hero-body { font-size: 1.1rem !important; }
+.titan-fund-card-title { font-size: 1.1rem !important; }
+.titan-fund-card-desc { font-size: 1rem !important; }
+.titan-comp-feature { font-size: 1.05rem !important; }
+.titan-story-desc { font-size: 1rem !important; }
+.titan-book-desc { font-size: 1.1rem !important; }
+.titan-media-desc { font-size: 1.1rem !important; }
+.titan-bio-quote { font-size: 1.25rem !important; }
+.titan-qualifier-item { font-size: 1.1rem !important; }
+.faq-acc-q { font-size: 1.05rem !important; }
+.faq-acc-a { font-size: 0.95rem !important; }
+p, li { font-size: max(1rem, inherit); }
+
+/* Card titles flush to top (no number above them anymore) */
+.titan-fund-card { padding-top: 1.5rem; }
+.titan-fund-card-title { margin-top: 0; }
