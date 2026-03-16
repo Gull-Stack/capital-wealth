@@ -6035,3 +6035,104 @@ html { font-size: 18px; }
     gap: 1.5rem;
   }
 }
+
+/* ═══════════════════════════════════════════
+   TEAM GRID — Titan editorial style
+   ═══════════════════════════════════════════ */
+.team-section {
+  background: #f8f8f8;
+  padding: 5rem 2rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.team-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.team-header {
+  margin-bottom: 3.5rem;
+}
+.team-heading {
+  font-family: var(--font-family);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--navy);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+.team-heading strong {
+  font-weight: 400;
+  font-style: italic;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+}
+.team-name {
+  font-family: var(--font-family);
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  font-weight: 500;
+  color: var(--navy);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.4rem;
+}
+.team-title {
+  font-family: var(--font-family);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(25,79,144,0.45);
+  margin: 0 0 1.2rem;
+}
+.team-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e8e9eb;
+  position: relative;
+}
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.team-photo--placeholder {
+  background: linear-gradient(145deg, #194F90 0%, #0d1b2a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-initials {
+  font-family: var(--font-family);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+  .team-name {
+    font-size: 1.2rem;
+  }
+  .team-initials {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 0.75rem;
+  }
+}
