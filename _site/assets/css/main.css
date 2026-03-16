@@ -1676,7 +1676,7 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 75% center;
+  object-position: center 40%;
 }
 .titan-hero-footer {
   margin-top: 3rem;
@@ -5410,8 +5410,628 @@ html { font-size: 18px; }
   .service-problem,
   .service-solution,
   .service-process,
+  .svc-hero,
+  .svc-overview,
+  .svc-core,
+  .svc-process,
+  .svc-specialized,
+  .svc-audience,
+  .svc-start,
   section[style*="padding"] {
     padding-left: 0.75rem !important;
     padding-right: 0.75rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SERVICES PAGE — Titan editorial rebuild (.svc- prefix)
+   ═══════════════════════════════════════════════════════════ */
+
+/* --- Section 1: Hero --- */
+.svc-hero {
+  background: #fff;
+  padding: 7rem 2rem 3rem;
+}
+.svc-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-left: 1px solid #e9eaeb;
+  border-right: 1px solid #e9eaeb;
+  padding: 0 2.5rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 3rem;
+}
+.svc-hero-h1 {
+  font-family: var(--font-family);
+  font-size: clamp(2.6rem, 4.5vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--navy);
+  margin: 0 0 1rem;
+}
+.svc-hero-sub {
+  font-size: 1.1rem;
+  color: rgba(25,79,144,0.5);
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0;
+}
+
+/* --- Section 2: Overview --- */
+.svc-overview {
+  background: #fff;
+  padding: 0 2rem 5rem;
+}
+.svc-overview-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: stretch;
+  border-left: 1px solid #e9eaeb;
+  border-right: 1px solid #e9eaeb;
+  padding: 3rem 2.5rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.svc-overview-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin: 0 0 1.5rem;
+}
+.svc-overview-text {
+  font-size: 1rem;
+  color: rgba(25,79,144,0.55);
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+.svc-overview-text:last-child {
+  margin-bottom: 0;
+}
+.svc-overview-text em {
+  color: var(--navy);
+  font-style: italic;
+}
+.svc-overview-right {
+  display: flex;
+  align-items: stretch;
+}
+.svc-overview-img-wrap {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+.svc-overview-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+
+/* --- Section 3: Core Services Grid --- */
+.svc-core {
+  background: #fff;
+  padding: 0 2rem 5rem;
+}
+.svc-core-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-left: 1px solid #e9eaeb;
+  border-right: 1px solid #e9eaeb;
+  padding: 3rem 2.5rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.svc-core-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5rem;
+}
+.svc-core-sub {
+  font-size: 1rem;
+  color: rgba(25,79,144,0.45);
+  line-height: 1.6;
+  margin: 0 0 2.5rem;
+  max-width: 520px;
+}
+.svc-core-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.svc-core-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 2rem 1.75rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.25s ease;
+}
+.svc-core-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(25,79,144,0.08);
+  border-color: rgba(0,0,0,0.12);
+}
+.svc-core-card-title {
+  font-family: var(--font-family);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+  line-height: 1.35;
+}
+.svc-core-card-desc {
+  font-size: 0.92rem;
+  color: rgba(25,79,144,0.5);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+.svc-core-card-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: gap 0.2s ease;
+}
+.svc-core-card:hover .svc-core-card-link {
+  gap: 0.5rem;
+}
+.svc-core-card-link span {
+  color: var(--accent-secondary);
+}
+
+/* --- Section 4: Process Accordion --- */
+.svc-process {
+  background: #fff;
+  padding: 0 2rem 5rem;
+}
+.svc-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+  border-left: 1px solid #e9eaeb;
+  border-right: 1px solid #e9eaeb;
+  padding: 3rem 2.5rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.svc-process-left {
+  position: sticky;
+  top: 100px;
+}
+.svc-process-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin: 0 0 0.75rem;
+}
+.svc-process-sub {
+  font-size: 1rem;
+  color: rgba(25,79,144,0.45);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 300px;
+}
+.svc-accordion {
+  display: flex;
+  flex-direction: column;
+}
+.svc-accordion-item {
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+.svc-accordion-item:first-child {
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+.svc-accordion-trigger {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.35rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 1rem;
+  transition: all 0.2s ease;
+}
+.svc-accordion-trigger:hover {
+  opacity: 0.7;
+}
+.svc-accordion-num {
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(25,79,144,0.3);
+  flex-shrink: 0;
+  width: 2rem;
+}
+.svc-accordion-title {
+  flex: 1;
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--navy);
+  line-height: 1.4;
+}
+.svc-accordion-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: rgba(25,79,144,0.4);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  font-weight: 300;
+}
+.svc-accordion-item.active .svc-accordion-icon {
+  transform: rotate(45deg);
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+}
+.svc-accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+.svc-accordion-item.active .svc-accordion-panel {
+  max-height: 300px;
+  padding-bottom: 1.25rem;
+}
+.svc-accordion-panel p {
+  font-size: 0.95rem;
+  color: rgba(25,79,144,0.5);
+  line-height: 1.7;
+  margin: 0;
+  padding-left: 3rem;
+}
+
+/* --- Section 5: Specialized Services --- */
+.svc-specialized {
+  background: #fff;
+  padding: 0 2rem 5rem;
+}
+.svc-specialized-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-left: 1px solid #e9eaeb;
+  border-right: 1px solid #e9eaeb;
+  padding: 3rem 2.5rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.svc-specialized-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin: 0 0 2rem;
+}
+.svc-specialized-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.svc-specialized-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.svc-specialized-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.svc-tag {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background: rgba(25,79,144,0.05);
+  color: var(--navy);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: 1px solid rgba(25,79,144,0.08);
+}
+.svc-specialized-card-title {
+  font-family: var(--font-family);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+  line-height: 1.3;
+}
+.svc-specialized-card-desc {
+  font-size: 0.95rem;
+  color: rgba(25,79,144,0.5);
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+.svc-specialized-card .titan-hero-btn-primary {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+/* --- Section 6: Who We Serve --- */
+.svc-audience {
+  background: #fff;
+  padding: 0 2rem 5rem;
+}
+.svc-audience-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-left: 1px solid #e9eaeb;
+  border-right: 1px solid #e9eaeb;
+  padding: 3rem 2.5rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.svc-audience-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin: 0 0 2rem;
+  max-width: 540px;
+}
+.svc-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.svc-audience-card {
+  background: #f0f1f3;
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+.svc-audience-card:hover {
+  background: #ede6df;
+  border-color: rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+.svc-audience-card-title {
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+}
+.svc-audience-card-desc {
+  font-size: 0.9rem;
+  color: rgba(25,79,144,0.55);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+.svc-audience-card-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: gap 0.2s ease;
+}
+.svc-audience-card-link:hover {
+  gap: 0.5rem;
+}
+.svc-audience-card-link span {
+  color: var(--accent-secondary);
+}
+.svc-audience-note {
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.svc-audience-note-num {
+  font-family: 'Geist Mono', monospace;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+.svc-audience-note-text {
+  font-size: 0.92rem;
+  color: rgba(25,79,144,0.5);
+  line-height: 1.6;
+}
+
+/* --- Section 7: Getting Started --- */
+.svc-start {
+  background: #fff;
+  padding: 0 2rem 5rem;
+}
+.svc-start-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-left: 1px solid #e9eaeb;
+  border-right: 1px solid #e9eaeb;
+  padding: 3rem 2.5rem 4rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.svc-start-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+  margin: 0 0 2.5rem;
+}
+.svc-start-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.svc-start-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.svc-start-num {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Geist Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--navy);
+}
+.svc-start-step-title {
+  font-family: var(--font-family);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0;
+}
+.svc-start-step-desc {
+  font-size: 0.9rem;
+  color: rgba(25,79,144,0.5);
+  line-height: 1.6;
+  margin: 0;
+}
+.svc-start-cta {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* --- Services Page Mobile --- */
+@media (max-width: 768px) {
+  .svc-hero {
+    padding: 6rem 1rem 2rem;
+  }
+  .svc-hero-inner {
+    border-left: none;
+    border-right: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .svc-hero-h1 {
+    font-size: 2.2rem;
+  }
+  .svc-overview {
+    padding: 0 1rem 3rem;
+  }
+  .svc-overview-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    border-left: none;
+    border-right: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .svc-overview-right {
+    order: -1;
+    max-height: 280px;
+  }
+  .svc-core {
+    padding: 0 1rem 3rem;
+  }
+  .svc-core-inner {
+    border-left: none;
+    border-right: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .svc-core-grid {
+    grid-template-columns: 1fr;
+  }
+  .svc-process {
+    padding: 0 1rem 3rem;
+  }
+  .svc-process-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    border-left: none;
+    border-right: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .svc-process-left {
+    position: static;
+  }
+  .svc-specialized {
+    padding: 0 1rem 3rem;
+  }
+  .svc-specialized-inner {
+    border-left: none;
+    border-right: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .svc-specialized-grid {
+    grid-template-columns: 1fr;
+  }
+  .svc-audience {
+    padding: 0 1rem 3rem;
+  }
+  .svc-audience-inner {
+    border-left: none;
+    border-right: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .svc-audience-grid {
+    grid-template-columns: 1fr;
+  }
+  .svc-audience-note {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .svc-start {
+    padding: 0 1rem 3rem;
+  }
+  .svc-start-inner {
+    border-left: none;
+    border-right: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .svc-start-steps {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
