@@ -1758,7 +1758,10 @@ a:hover {
     font-size: 2.2rem;
   }
   .titan-hero-right {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 3 / 4;
+  }
+  .titan-hero-img {
+    object-position: 65% 70%;
   }
   .titan-hero-footer-inner {
     grid-template-columns: 1fr;
