@@ -1647,6 +1647,27 @@ a:hover {
   background: #15437a;
   transform: translateY(-1px);
 }
+.titan-hero-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.8rem;
+  background: transparent;
+  color: var(--navy);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  border: 1.5px solid var(--navy);
+  transition: all 0.2s ease;
+}
+.titan-hero-btn-outline:hover {
+  background: var(--navy);
+  color: #fff;
+  transform: translateY(-1px);
+}
 .titan-hero-btn-secondary {
   display: inline-flex;
   align-items: center;
