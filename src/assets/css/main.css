@@ -6354,3 +6354,66 @@ html { font-size: 18px; }
     padding: 2rem 0.75rem;
   }
 }
+
+/* ═══════════════════════════════════════════
+   TITAN RESULTS BAR — Stats under hero
+   ═══════════════════════════════════════════ */
+.titan-results-bar {
+  padding: 2rem 2rem;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.titan-results-bar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+}
+.titan-results-desc {
+  font-size: 0.92rem;
+  color: rgba(0,0,0,0.45);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 480px;
+}
+.titan-results-stats {
+  display: flex;
+  gap: 3rem;
+  border-left: 1px solid rgba(0,0,0,0.08);
+  padding-left: 2rem;
+}
+.titan-results-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.titan-results-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.titan-results-num {
+  font-family: 'Geist Mono', monospace;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+@media (max-width: 768px) {
+  .titan-results-bar-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .titan-results-stats {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding-top: 1.5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+}
