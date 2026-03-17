@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/.well-known");
   eleventyConfig.addPassthroughCopy({"src/brand-facts.json": "brand-facts.json"});
+  eleventyConfig.addPassthroughCopy({"src/llms.txt": "llms.txt"});
 
   // Nunjucks filters
   eleventyConfig.addFilter("date", function(value, format) {
