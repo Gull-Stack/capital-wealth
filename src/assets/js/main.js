@@ -13,20 +13,113 @@
         document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
     }
 
+    // Auto-detect source from referrer when no UTMs present
+    function detectSource(referrer) {
+        if (!referrer) return { source: 'direct', medium: 'none' };
+        var r = referrer.toLowerCase();
+        if (r.includes('google.com')) return { source: 'google', medium: 'organic' };
+        if (r.includes('bing.com')) return { source: 'bing', medium: 'organic' };
+        if (r.includes('yahoo.com')) return { source: 'yahoo', medium: 'organic' };
+        if (r.includes('duckduckgo.com')) return { source: 'duckduckgo', medium: 'organic' };
+        if (r.includes('facebook.com') || r.includes('fb.com')) return { source: 'facebook', medium: 'social' };
+        if (r.includes('instagram.com')) return { source: 'instagram', medium: 'social' };
+        if (r.includes('linkedin.com')) return { source: 'linkedin', medium: 'social' };
+        if (r.includes('twitter.com') || r.includes('t.co') || r.includes('x.com')) return { source: 'twitter', medium: 'social' };
+        if (r.includes('youtube.com')) return { source: 'youtube', medium: 'social' };
+        if (r.includes('chatgpt.com') || r.includes('openai.com')) return { source: 'chatgpt', medium: 'ai' };
+        if (r.includes('perplexity.ai')) return { source: 'perplexity', medium: 'ai' };
+        if (r.includes('gemini.google.com')) return { source: 'gemini', medium: 'ai' };
+        // Extract domain as referral source
+        try { return { source: new URL(referrer).hostname.replace('www.', ''), medium: 'referral' }; } catch(e) {}
+        return { source: 'unknown', medium: 'referral' };
+    }
+
     // Only set first-touch cookie if it doesn't exist
     if (!getCookie('cw_first_touch')) {
-        const params = new URLSearchParams(window.location.search);
-        const trackingData = {
-            utm_source: params.get('utm_source') || '',
-            utm_medium: params.get('utm_medium') || '',
+        var params = new URLSearchParams(window.location.search);
+        var hasUtm = params.get('utm_source');
+        var detected = detectSource(document.referrer);
+        var trackingData = {
+            utm_source: params.get('utm_source') || detected.source,
+            utm_medium: params.get('utm_medium') || detected.medium,
             utm_campaign: params.get('utm_campaign') || '',
             utm_content: params.get('utm_content') || '',
             utm_term: params.get('utm_term') || '',
             referrer: document.referrer || '',
             landing_page: window.location.href
         };
-        setCookie('cw_first_touch', JSON.stringify(trackingData), 30); // 30 days
+        setCookie('cw_first_touch', JSON.stringify(trackingData), 30);
     }
+})();
+
+// GA4 Event Tracking
+(function() {
+    if (typeof gtag !== 'function') return;
+
+    // Track phone clicks
+    document.addEventListener('click', function(e) {
+        var link = e.target.closest('a[href^="tel:"]');
+        if (link) {
+            gtag('event', 'phone_click', {
+                event_category: 'contact',
+                event_label: link.href.replace('tel:', ''),
+                value: 1
+            });
+        }
+    });
+
+    // Track email clicks
+    document.addEventListener('click', function(e) {
+        var link = e.target.closest('a[href^="mailto:"]');
+        if (link) {
+            gtag('event', 'email_click', {
+                event_category: 'contact',
+                event_label: link.href.replace('mailto:', ''),
+                value: 1
+            });
+        }
+    });
+
+    // Track CTA button clicks
+    document.addEventListener('click', function(e) {
+        var btn = e.target.closest('.titan-hero-btn-primary, .service-process-cta, .service-problem-cta-btn');
+        if (btn) {
+            gtag('event', 'cta_click', {
+                event_category: 'engagement',
+                event_label: btn.textContent.trim().substring(0, 50),
+                link_url: btn.href || '',
+                page_location: window.location.pathname
+            });
+        }
+    });
+
+    // Track form submission (fires on success)
+    var form = document.getElementById('contact-form');
+    if (form) {
+        form.addEventListener('submit', function() {
+            gtag('event', 'generate_lead', {
+                event_category: 'conversion',
+                event_label: 'consultation_request',
+                value: 1
+            });
+        });
+    }
+
+    // Track scroll depth (25%, 50%, 75%, 100%)
+    var scrollMarks = { 25: false, 50: false, 75: false, 100: false };
+    window.addEventListener('scroll', function() {
+        var scrollPct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        [25, 50, 75, 100].forEach(function(mark) {
+            if (scrollPct >= mark && !scrollMarks[mark]) {
+                scrollMarks[mark] = true;
+                gtag('event', 'scroll_depth', {
+                    event_category: 'engagement',
+                    event_label: mark + '%',
+                    value: mark
+                });
+            }
+        });
+    });
 })();
 
 // Mobile Menu — full-screen Giga style
