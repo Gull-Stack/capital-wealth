@@ -6,9 +6,9 @@ author: "Capital Wealth Team"title: Can I Retire at 62 with $500K? Complete Anal
 description: Honest assessment of retiring with $500,000 at age 62. Learn what $500K actually generates monthly, bridge strategies, and when it might be enough.
 permalink: /guides/can-i-retire-at-62-with-500k/
 breadcrumbs:
-  - Home: /
-  - Guides: /guides/
-  - Can I Retire at 62 with $500K?
+  - { name: "Home", url: "/" }
+  - { name: "Guides", url: "/guides/" }
+  - { name: "Can I Retire at 62 with $500K?", url: "" }
 faqSchema:
   - question: "Can you retire at 62 with $500,000?"
     answer: "While challenging, retiring at 62 with $500K is possible in specific situations: if you have additional income sources like a pension or part-time work, live in a low-cost area, or have minimal debt and low expenses. Most financial experts recommend having 10-12x annual expenses saved."

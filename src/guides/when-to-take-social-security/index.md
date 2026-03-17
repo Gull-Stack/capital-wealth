@@ -6,9 +6,9 @@ author: "Capital Wealth Team"title: When to Take Social Security - Age 62, 67, o
 description: Discover the optimal Social Security claiming strategy. Compare benefits at 62 vs 67 vs 70, break-even analysis, spousal benefits, and tax implications.
 permalink: /guides/when-to-take-social-security/
 breadcrumbs:
-  - Home: /
-  - Guides: /guides/
-  - When to Take Social Security
+  - { name: "Home", url: "/" }
+  - { name: "Guides", url: "/guides/" }
+  - { name: "When to Take Social Security", url: "" }
 faqSchema:
   - question: "What's the difference between taking Social Security at 62 vs 67 vs 70?"
     answer: "Taking Social Security at 62 reduces benefits by about 30%, taking at full retirement age (67) gives you 100% of benefits, and delaying until 70 increases benefits by 24%. The monthly difference can be $800-1,200+ for typical earners."

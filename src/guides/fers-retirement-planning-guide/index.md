@@ -6,9 +6,9 @@ author: "Capital Wealth Team"title: FERS Retirement Planning Guide 2026 - Federa
 description: Complete FERS retirement guide for federal employees. Learn pension calculations, TSP strategies, FEHB benefits, FERS supplement, and Social Security coordination.
 permalink: /guides/fers-retirement-planning-guide/
 breadcrumbs:
-  - Home: /
-  - Guides: /guides/
-  - FERS Retirement Planning Guide
+  - { name: "Home", url: "/" }
+  - { name: "Guides", url: "/guides/" }
+  - { name: "FERS Retirement Planning Guide", url: "" }
 faqSchema:
   - question: "How is my FERS pension calculated?"
     answer: "Your FERS pension equals 1% (or 1.1% if retiring at age 62+ with 20+ years) times your high-3 average salary times your years of creditable service. For example, 30 years at $80,000 high-3 equals $24,000 annually."

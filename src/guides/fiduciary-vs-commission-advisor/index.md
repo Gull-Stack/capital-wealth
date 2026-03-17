@@ -6,9 +6,9 @@ author: "Capital Wealth Team"title: Fiduciary vs Commission Financial Advisor - 
 description: Learn the critical differences between fiduciary and commission-based financial advisors. Discover red flags, fee structures, and how to verify fiduciary status.
 permalink: /guides/fiduciary-vs-commission-advisor/
 breadcrumbs:
-  - Home: /
-  - Guides: /guides/
-  - Fiduciary vs Commission Advisor
+  - { name: "Home", url: "/" }
+  - { name: "Guides", url: "/guides/" }
+  - { name: "Fiduciary vs Commission Advisor", url: "" }
 faqSchema:
   - question: "What's the difference between a fiduciary and commission-based advisor?"
     answer: "Fiduciary advisors are legally required to act in your best interest and must disclose conflicts of interest. Commission-based advisors follow a suitability standard, meaning they only need to recommend suitable products, not necessarily the best ones for you."

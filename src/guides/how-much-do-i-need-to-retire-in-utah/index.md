@@ -6,9 +6,9 @@ author: "Capital Wealth Team"title: How Much Do I Need to Retire in Utah? Comple
 description: Discover exactly how much money you need to retire comfortably in Utah. Get real cost data, scenarios for retiring at 62-67, and expert guidance.
 permalink: /guides/how-much-do-i-need-to-retire-in-utah/
 breadcrumbs:
-  - Home: /
-  - Guides: /guides/
-  - How Much to Retire in Utah
+  - { name: "Home", url: "/" }
+  - { name: "Guides", url: "/guides/" }
+  - { name: "How Much to Retire in Utah", url: "" }
 faqSchema:
   - question: "How much money do I need to retire comfortably in Utah?"
     answer: "For a comfortable retirement in Utah, most retirees need between $800,000 to $1.5 million in savings, depending on their lifestyle and retirement age. This assumes annual retirement expenses of $50,000-$75,000."

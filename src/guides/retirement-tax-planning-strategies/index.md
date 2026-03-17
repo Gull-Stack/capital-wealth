@@ -6,9 +6,9 @@ author: "Capital Wealth Team"title: Retirement Tax Planning Strategies 2026 - Mi
 description: Comprehensive retirement tax planning guide. Learn Roth conversions, tax bracket management, RMD strategies, capital gains harvesting, and Utah tax tips.
 permalink: /guides/retirement-tax-planning-strategies/
 breadcrumbs:
-  - Home: /
-  - Guides: /guides/
-  - Retirement Tax Planning Strategies
+  - { name: "Home", url: "/" }
+  - { name: "Guides", url: "/guides/" }
+  - { name: "Retirement Tax Planning Strategies", url: "" }
 faqSchema:
   - question: "What is a Roth conversion ladder and how does it work?"
     answer: "A Roth conversion ladder involves converting traditional IRA/401k funds to Roth accounts gradually over several years, typically in low tax brackets. This creates a stream of tax-free income in later retirement while managing current tax liability."

@@ -6,9 +6,9 @@ author: "Capital Wealth Team"title: 401(k) Rollover Guide 2026 - Complete Step-b
 description: Complete guide to 401k rollovers. Learn direct vs indirect rollovers, tax implications, common mistakes, and when to rollover vs leave your 401k.
 permalink: /guides/401k-rollover-complete-guide/
 breadcrumbs:
-  - Home: /
-  - Guides: /guides/
-  - 401(k) Rollover Complete Guide
+  - { name: "Home", url: "/" }
+  - { name: "Guides", url: "/guides/" }
+  - { name: "401(k) Rollover Complete Guide", url: "" }
 faqSchema:
   - question: "What is the difference between a direct and indirect 401(k) rollover?"
     answer: "A direct rollover moves funds directly between retirement accounts without you touching the money, avoiding taxes and penalties. An indirect rollover sends the check to you, requiring redeposit within 60 days or facing taxes and penalties."

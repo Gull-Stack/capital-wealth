@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://capitalwealth.com/sitemap.xml
+Sitemap: https://www.capitalwealth.com/sitemap.xml
