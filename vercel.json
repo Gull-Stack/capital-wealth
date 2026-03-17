@@ -8,6 +8,8 @@
     { "source": "/book/", "destination": "https://www.retirerightbook.com/", "permanent": true },
     { "source": "/federal", "destination": "/services/federal-benefits/", "permanent": true },
     { "source": "/federal/", "destination": "/services/federal-benefits/", "permanent": true },
+    { "source": "/refer", "destination": "/refer-a-friend/", "permanent": true },
+    { "source": "/refer/", "destination": "/refer-a-friend/", "permanent": true },
     { "source": "/services/federal-benefits/fers", "destination": "/services/federal-benefits/fers-retirement/", "permanent": true },
     { "source": "/services/federal-benefits/fers/", "destination": "/services/federal-benefits/fers-retirement/", "permanent": true },
     { "source": "/services/federal-benefits/medicare-irmaa", "destination": "/services/medicare-irmaa/", "permanent": true },
