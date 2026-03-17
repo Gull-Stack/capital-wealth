@@ -1,6 +1,8 @@
 ---
-layout: layouts/base.njk
-title: Fiduciary vs Commission Financial Advisor - Complete Comparison Guide 2026
+layout: layouts/guide.njk
+readTime: 10
+category: "CHOOSING AN ADVISOR"
+author: "Capital Wealth Team"title: Fiduciary vs Commission Financial Advisor - Complete Comparison Guide 2026
 description: Learn the critical differences between fiduciary and commission-based financial advisors. Discover red flags, fee structures, and how to verify fiduciary status.
 permalink: /guides/fiduciary-vs-commission-advisor/
 breadcrumbs:
@@ -355,16 +357,7 @@ Poor investment selection and high fees compound over time:
 
 Choosing between a fiduciary and commission-based advisor isn't just about fees—it's about ensuring you receive advice that's truly in your best interest. The right advisor can make the difference between a comfortable retirement and financial stress.
 
-<div class="section section-dark text-center mt-xl">
-<div class="container">
-<h3>Experience True Fiduciary Service</h3>
-<p class="hero-subtitle">Work with an advisor who is legally and ethically bound to put your interests first, always.</p>
-<div class="mt-lg">
-<a href="/contact/" class="btn btn-primary">Schedule Your Complimentary Consultation</a>
-</div>
-<p class="mt-lg">Call {{ site.phone }} to speak with {{ site.founder.name }} today</p>
-</div>
-</div>
+
 
 {{ site.founder.name }} and the team at Capital Wealth Advisors are proud to serve as fiduciary advisors for our Utah clients. We believe transparency, honesty, and putting your interests first aren't just good business practices—they're ethical obligations.
 

@@ -1,6 +1,8 @@
 ---
-layout: layouts/base.njk
-title: FERS Retirement Planning Guide 2026 - Federal Employee Complete Guide
+layout: layouts/guide.njk
+readTime: 15
+category: "FEDERAL EMPLOYEES"
+author: "Capital Wealth Team"title: FERS Retirement Planning Guide 2026 - Federal Employee Complete Guide
 description: Complete FERS retirement guide for federal employees. Learn pension calculations, TSP strategies, FEHB benefits, FERS supplement, and Social Security coordination.
 permalink: /guides/fers-retirement-planning-guide/
 breadcrumbs:
@@ -397,16 +399,7 @@ The supplement is subject to an earnings test similar to Social Security:
 
 FERS provides an excellent foundation for retirement, but optimizing your benefits requires careful planning and coordination. Whether you're early in your federal career or approaching retirement, the right strategy can significantly increase your retirement security.
 
-<div class="section section-dark text-center mt-xl">
-<div class="container">
-<h3>Optimize Your FERS Retirement Strategy</h3>
-<p class="hero-subtitle">Get expert guidance on maximizing your federal employee benefits and creating a comprehensive retirement plan.</p>
-<div class="mt-lg">
-<a href="/contact/" class="btn btn-primary">Schedule Your Complimentary Consultation</a>
-</div>
-<p class="mt-lg">Call {{ site.phone }} to speak with {{ site.founder.name }} today</p>
-</div>
-</div>
+
 
 {{ site.founder.name }} at Capital Wealth Advisors has extensive experience helping federal employees optimize their FERS benefits. As a fiduciary advisor, we provide unbiased guidance to help you make the most of your federal retirement benefits.
 

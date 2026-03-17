@@ -1,6 +1,8 @@
 ---
-layout: layouts/base.njk
-title: Retirement Tax Planning Strategies 2026 - Minimize Taxes in Retirement
+layout: layouts/guide.njk
+readTime: 12
+category: "TAX PLANNING"
+author: "Capital Wealth Team"title: Retirement Tax Planning Strategies 2026 - Minimize Taxes in Retirement
 description: Comprehensive retirement tax planning guide. Learn Roth conversions, tax bracket management, RMD strategies, capital gains harvesting, and Utah tax tips.
 permalink: /guides/retirement-tax-planning-strategies/
 breadcrumbs:
@@ -410,16 +412,7 @@ Concentrate charitable giving in alternating years to exceed standard deduction.
 
 Effective retirement tax planning can save thousands of dollars annually and help your money last throughout retirement. The strategies you implement today will impact your financial security for decades to come.
 
-<div class="section section-dark text-center mt-xl">
-<div class="container">
-<h3>Minimize Your Retirement Taxes</h3>
-<p class="hero-subtitle">Get expert guidance on tax-efficient retirement strategies tailored to your situation and Utah tax laws.</p>
-<div class="mt-lg">
-<a href="/contact/" class="btn btn-primary">Schedule Your Complimentary Consultation</a>
-</div>
-<p class="mt-lg">Call {{ site.phone }} to speak with {{ site.founder.name }} today</p>
-</div>
-</div>
+
 
 {{ site.founder.name }} at Capital Wealth Advisors specializes in tax-efficient retirement planning for Utah residents. As a fiduciary advisor, we coordinate your investment strategy with comprehensive tax planning to minimize your lifetime tax burden.
 

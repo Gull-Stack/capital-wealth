@@ -7,42 +7,65 @@ breadcrumbs:
   - { name: "Case Studies", url: "/case-studies/" }
 ---
 
-<!-- Hero -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1>Retirement Planning Case Studies</h1>
-            <p class="hero-subtitle">Real-world scenarios showing how strategic planning transforms retirement outcomes.</p>
+{# ═══════════════════════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════════════════════ #}
+<section class="titan-hero">
+    <div class="titan-hero-inner">
+        <div class="titan-hero-left">
+            <p class="titan-section-label">CASE STUDIES</p>
+            <h1 class="titan-hero-h1">Plans That Actually Worked</h1>
+            <p class="titan-hero-body">Hypothetical scenarios based on real client situations. See the strategies, the numbers, and the outcomes that come from working with a fiduciary who specializes in retirement.</p>
+            <div class="titan-hero-buttons">
+                <a href="/contact/" class="titan-hero-btn-primary">SCHEDULE CONSULTATION <span>→</span></a>
+            </div>
+        </div>
+        <div class="titan-hero-right">
+            <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg" alt="Couple enjoying retirement" class="titan-hero-img">
         </div>
     </div>
 </section>
 
-<!-- Disclaimer -->
-<section class="section">
-    <div class="container">
-        <div class="card" style="max-width: 800px; margin: 0 auto;">
-            <p class="text-muted">The following case studies are hypothetical examples based on common client situations. They are for illustrative purposes only and do not represent actual client results. Individual outcomes will vary based on each person's unique financial situation.</p>
+{# ═══════════════════════════════════════════════════════════
+   RESULTS BAR — Aggregate outcomes
+   ═══════════════════════════════════════════════════════════ #}
+<section class="titan-results-bar">
+    <div class="titan-results-bar-inner">
+        <p class="titan-results-desc">These hypothetical scenarios illustrate common retirement challenges and how coordinated planning can transform outcomes. Individual results vary.</p>
+        <div class="titan-results-stats">
+            <div class="titan-results-stat">
+                <span class="titan-results-label">Avg. Tax Savings</span>
+                <span class="titan-results-num">$142K</span>
+            </div>
+            <div class="titan-results-stat">
+                <span class="titan-results-label">Savings Extended</span>
+                <span class="titan-results-num">8 Years</span>
+            </div>
+            <div class="titan-results-stat">
+                <span class="titan-results-label">IRMAA Avoided Per Year</span>
+                <span class="titan-results-num">$8,400</span>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Case Study 1 -->
-<section class="section section-dark">
-    <div class="container">
-        <div class="grid grid-cols-2">
-            <div>
-                <div class="service-tag">Case Study 1</div>
-                <h2>Thinking About Retirement</h2>
-                <p class="text-lg text-accent">Age 58 couple, combined $750K in retirement savings</p>
-
-                <div class="mt-lg">
-                    <h3>The Situation</h3>
-                    <p>A married couple, both age 58, wanted to retire at 62. They had $750K across multiple 401(k) accounts, two Social Security benefits, and a small pension. Their concern: would their money last?</p>
+{# ═══════════════════════════════════════════════════════════
+   CASE STUDY 1 — Thinking About Retirement
+   ═══════════════════════════════════════════════════════════ #}
+<section class="cs-section cs-section-light">
+    <div class="cs-inner">
+        <div class="cs-grid">
+            <div class="cs-situation">
+                <span class="titan-section-label">CASE STUDY 1</span>
+                <h2 class="cs-h2">Thinking About Retirement</h2>
+                <p class="cs-subtitle">Age 58 couple · $750K in retirement savings</p>
+                <div class="cs-block">
+                    <h3 class="cs-h3">The Situation</h3>
+                    <p class="cs-body">A married couple, both age 58, wanted to retire at 62. They had $750K across multiple 401(k) accounts, two Social Security benefits, and a small pension. Their concern: would their money last?</p>
                 </div>
-
-                <div class="mt-lg">
-                    <h3>The Challenge</h3>
-                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                <div class="cs-block">
+                    <h3 class="cs-h3">The Challenge</h3>
+                    <ul class="cs-list">
                         <li>4-year gap before Social Security eligibility</li>
                         <li>Healthcare coverage before Medicare at 65</li>
                         <li>Multiple scattered retirement accounts</li>
@@ -50,36 +73,32 @@ breadcrumbs:
                     </ul>
                 </div>
             </div>
-
-            <div>
-                <div class="card">
-                    <h3 class="text-accent">Our Strategy</h3>
-                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+            <div class="cs-strategy">
+                <div class="cs-strategy-card">
+                    <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cs-logo">
+                    <h3 class="cs-strategy-h3">Our Strategy</h3>
+                    <ul class="cs-strategy-list">
                         <li>Consolidated 401(k) accounts into managed IRA</li>
-                        <li>Created bridge income strategy for ages 62-65</li>
+                        <li>Created bridge income strategy for ages 62–65</li>
                         <li>Designed Roth conversion ladder during lower-income years</li>
                         <li>Optimized Social Security claiming for both spouses</li>
                         <li>Established healthcare gap coverage plan</li>
                     </ul>
-
-                    <div class="mt-lg">
-                        <h3 class="text-accent">Projected Outcomes</h3>
-                        <div class="stats mt-md">
-                            <div class="stat">
-                                <span class="stat-number">8 Years</span>
-                                <span class="stat-label">Extended Savings</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">$142K</span>
-                                <span class="stat-label">Tax Savings</span>
-                            </div>
+                    <h3 class="cs-outcomes-h3">Projected Outcomes</h3>
+                    <div class="cs-outcomes">
+                        <div class="cs-outcome">
+                            <span class="cs-outcome-num">8 Years</span>
+                            <span class="cs-outcome-label">Extended Savings</span>
+                        </div>
+                        <div class="cs-outcome">
+                            <span class="cs-outcome-num">$142K</span>
+                            <span class="cs-outcome-label">Tax Savings</span>
                         </div>
                     </div>
-
-                    <div class="mt-md">
-                        <span class="service-tag">Tax Planning</span>
-                        <span class="service-tag">Income Strategy</span>
-                        <span class="service-tag">Roth Conversions</span>
+                    <div class="cs-tags">
+                        <span class="cs-tag">Tax Planning</span>
+                        <span class="cs-tag">Income Strategy</span>
+                        <span class="cs-tag">Roth Conversions</span>
                     </div>
                 </div>
             </div>
@@ -87,23 +106,23 @@ breadcrumbs:
     </div>
 </section>
 
-<!-- Case Study 2 -->
-<section class="section">
-    <div class="container">
-        <div class="grid grid-cols-2">
-            <div>
-                <div class="service-tag">Case Study 2</div>
-                <h2>Retirement Ready</h2>
-                <p class="text-lg text-accent">Age 65, $1.2M in assets, ready to retire</p>
-
-                <div class="mt-lg">
-                    <h3>The Situation</h3>
-                    <p>A single retiree, age 65, with $1.2M in a traditional IRA and a Social Security benefit of $2,800/month. They needed $6,000/month in retirement income and were concerned about taxes and Medicare costs.</p>
+{# ═══════════════════════════════════════════════════════════
+   CASE STUDY 2 — Retirement Ready
+   ═══════════════════════════════════════════════════════════ #}
+<section class="cs-section cs-section-dark">
+    <div class="cs-inner">
+        <div class="cs-grid">
+            <div class="cs-situation">
+                <span class="titan-section-label" style="color: rgba(255,255,255,0.4);">CASE STUDY 2</span>
+                <h2 class="cs-h2" style="color: #fff;">Retirement Ready</h2>
+                <p class="cs-subtitle" style="color: rgba(255,255,255,0.5);">Age 65 · $1.2M in assets · Ready to retire</p>
+                <div class="cs-block">
+                    <h3 class="cs-h3" style="color: #fff;">The Situation</h3>
+                    <p class="cs-body" style="color: rgba(255,255,255,0.6);">A single retiree, age 65, with $1.2M in a traditional IRA and a Social Security benefit of $2,800/month. They needed $6,000/month in retirement income and were concerned about taxes and Medicare costs.</p>
                 </div>
-
-                <div class="mt-lg">
-                    <h3>The Challenge</h3>
-                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                <div class="cs-block">
+                    <h3 class="cs-h3" style="color: #fff;">The Challenge</h3>
+                    <ul class="cs-list" style="color: rgba(255,255,255,0.55);">
                         <li>Large traditional IRA creating future RMD issues</li>
                         <li>Income level triggering IRMAA surcharges</li>
                         <li>No Roth savings for tax-free income</li>
@@ -111,36 +130,32 @@ breadcrumbs:
                     </ul>
                 </div>
             </div>
-
-            <div>
-                <div class="card">
-                    <h3 class="text-accent">Our Strategy</h3>
-                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+            <div class="cs-strategy">
+                <div class="cs-strategy-card">
+                    <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cs-logo">
+                    <h3 class="cs-strategy-h3">Our Strategy</h3>
+                    <ul class="cs-strategy-list">
                         <li>Designed strategic Roth conversion schedule</li>
                         <li>Managed income to avoid first IRMAA threshold</li>
                         <li>Delayed Social Security to age 70 for maximum benefit</li>
                         <li>Created bridge income from IRA during delay period</li>
                         <li>Established QCD strategy for charitable giving</li>
                     </ul>
-
-                    <div class="mt-lg">
-                        <h3 class="text-accent">Projected Outcomes</h3>
-                        <div class="stats mt-md">
-                            <div class="stat">
-                                <span class="stat-number">$180K</span>
-                                <span class="stat-label">Lifetime Savings</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">$8,400/yr</span>
-                                <span class="stat-label">IRMAA Avoided</span>
-                            </div>
+                    <h3 class="cs-outcomes-h3">Projected Outcomes</h3>
+                    <div class="cs-outcomes">
+                        <div class="cs-outcome">
+                            <span class="cs-outcome-num">$180K</span>
+                            <span class="cs-outcome-label">Lifetime Savings</span>
+                        </div>
+                        <div class="cs-outcome">
+                            <span class="cs-outcome-num">$8,400/yr</span>
+                            <span class="cs-outcome-label">IRMAA Avoided</span>
                         </div>
                     </div>
-
-                    <div class="mt-md">
-                        <span class="service-tag">Social Security</span>
-                        <span class="service-tag">Medicare</span>
-                        <span class="service-tag">IRMAA</span>
+                    <div class="cs-tags">
+                        <span class="cs-tag">Social Security</span>
+                        <span class="cs-tag">Medicare</span>
+                        <span class="cs-tag">IRMAA</span>
                     </div>
                 </div>
             </div>
@@ -148,23 +163,23 @@ breadcrumbs:
     </div>
 </section>
 
-<!-- Case Study 3 -->
-<section class="section section-dark">
-    <div class="container">
-        <div class="grid grid-cols-2">
-            <div>
-                <div class="service-tag">Case Study 3</div>
-                <h2>Already Retired — Legacy Focus</h2>
-                <p class="text-lg text-accent">Age 70 couple, $2.1M portfolio, focused on legacy</p>
-
-                <div class="mt-lg">
-                    <h3>The Situation</h3>
-                    <p>A couple, both age 70, with $2.1M across multiple account types. Their income needs were met, but they were concerned about estate taxes and leaving a meaningful legacy to their children and grandchildren.</p>
+{# ═══════════════════════════════════════════════════════════
+   CASE STUDY 3 — Already Retired, Legacy Focus
+   ═══════════════════════════════════════════════════════════ #}
+<section class="cs-section cs-section-light">
+    <div class="cs-inner">
+        <div class="cs-grid">
+            <div class="cs-situation">
+                <span class="titan-section-label">CASE STUDY 3</span>
+                <h2 class="cs-h2">Already Retired — Legacy Focus</h2>
+                <p class="cs-subtitle">Age 70 couple · $2.1M portfolio · Focused on legacy</p>
+                <div class="cs-block">
+                    <h3 class="cs-h3">The Situation</h3>
+                    <p class="cs-body">A couple, both age 70, with $2.1M across multiple account types. Their income needs were met, but they were concerned about estate taxes and leaving a meaningful legacy to their children and grandchildren.</p>
                 </div>
-
-                <div class="mt-lg">
-                    <h3>The Challenge</h3>
-                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                <div class="cs-block">
+                    <h3 class="cs-h3">The Challenge</h3>
+                    <ul class="cs-list">
                         <li>Large RMDs increasing tax burden annually</li>
                         <li>Outdated estate documents</li>
                         <li>Beneficiary designations not aligned with wishes</li>
@@ -172,36 +187,32 @@ breadcrumbs:
                     </ul>
                 </div>
             </div>
-
-            <div>
-                <div class="card">
-                    <h3 class="text-accent">Our Strategy</h3>
-                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+            <div class="cs-strategy">
+                <div class="cs-strategy-card">
+                    <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cs-logo">
+                    <h3 class="cs-strategy-h3">Our Strategy</h3>
+                    <ul class="cs-strategy-list">
                         <li>Implemented QCD strategy to reduce taxable RMDs</li>
                         <li>Coordinated estate document updates with attorney</li>
                         <li>Restructured beneficiary designations</li>
                         <li>Created donor-advised fund for charitable goals</li>
                         <li>Optimized asset allocation for legacy and income</li>
                     </ul>
-
-                    <div class="mt-lg">
-                        <h3 class="text-accent">Projected Outcomes</h3>
-                        <div class="stats mt-md">
-                            <div class="stat">
-                                <span class="stat-number">40%</span>
-                                <span class="stat-label">More to Heirs</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">$95K</span>
-                                <span class="stat-label">Tax Savings</span>
-                            </div>
+                    <h3 class="cs-outcomes-h3">Projected Outcomes</h3>
+                    <div class="cs-outcomes">
+                        <div class="cs-outcome">
+                            <span class="cs-outcome-num">40%</span>
+                            <span class="cs-outcome-label">More to Heirs</span>
+                        </div>
+                        <div class="cs-outcome">
+                            <span class="cs-outcome-num">$95K</span>
+                            <span class="cs-outcome-label">Tax Savings</span>
                         </div>
                     </div>
-
-                    <div class="mt-md">
-                        <span class="service-tag">Estate Planning</span>
-                        <span class="service-tag">Legacy</span>
-                        <span class="service-tag">Charitable</span>
+                    <div class="cs-tags">
+                        <span class="cs-tag">Estate Planning</span>
+                        <span class="cs-tag">Legacy</span>
+                        <span class="cs-tag">Charitable</span>
                     </div>
                 </div>
             </div>
@@ -209,23 +220,23 @@ breadcrumbs:
     </div>
 </section>
 
-<!-- Case Study 4 -->
-<section class="section">
-    <div class="container">
-        <div class="grid grid-cols-2">
-            <div>
-                <div class="service-tag">Case Study 4</div>
-                <h2>Federal Employee Retirement</h2>
-                <p class="text-lg text-accent">Age 60 federal employee, 30 years of service</p>
-
-                <div class="mt-lg">
-                    <h3>The Situation</h3>
-                    <p>A federal employee, age 60, with 30 years of FERS service, $600K in TSP, and FEGLI coverage. They wanted to retire at their Minimum Retirement Age and needed to understand how all their benefits fit together.</p>
+{# ═══════════════════════════════════════════════════════════
+   CASE STUDY 4 — Federal Employee Retirement
+   ═══════════════════════════════════════════════════════════ #}
+<section class="cs-section cs-section-dark">
+    <div class="cs-inner">
+        <div class="cs-grid">
+            <div class="cs-situation">
+                <span class="titan-section-label" style="color: rgba(255,255,255,0.4);">CASE STUDY 4</span>
+                <h2 class="cs-h2" style="color: #fff;">Federal Employee Retirement</h2>
+                <p class="cs-subtitle" style="color: rgba(255,255,255,0.5);">Age 60 · 30 years of service · $600K in TSP</p>
+                <div class="cs-block">
+                    <h3 class="cs-h3" style="color: #fff;">The Situation</h3>
+                    <p class="cs-body" style="color: rgba(255,255,255,0.6);">A federal employee, age 60, with 30 years of FERS service, $600K in TSP, and FEGLI coverage. They wanted to retire at their Minimum Retirement Age and needed to understand how all their benefits fit together.</p>
                 </div>
-
-                <div class="mt-lg">
-                    <h3>The Challenge</h3>
-                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                <div class="cs-block">
+                    <h3 class="cs-h3" style="color: #fff;">The Challenge</h3>
+                    <ul class="cs-list" style="color: rgba(255,255,255,0.55);">
                         <li>Complex FERS annuity calculations</li>
                         <li>TSP withdrawal strategy decisions</li>
                         <li>FEGLI costs rising significantly with age</li>
@@ -233,36 +244,32 @@ breadcrumbs:
                     </ul>
                 </div>
             </div>
-
-            <div>
-                <div class="card">
-                    <h3 class="text-accent">Our Strategy</h3>
-                    <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+            <div class="cs-strategy">
+                <div class="cs-strategy-card">
+                    <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cs-logo">
+                    <h3 class="cs-strategy-h3">Our Strategy</h3>
+                    <ul class="cs-strategy-list">
                         <li>Calculated optimal FERS retirement date</li>
                         <li>Designed TSP withdrawal and rollover strategy</li>
                         <li>Analyzed FEGLI vs. private insurance options</li>
                         <li>Created FEHB to Medicare transition plan</li>
                         <li>Built comprehensive income bridge strategy</li>
                     </ul>
-
-                    <div class="mt-lg">
-                        <h3 class="text-accent">Projected Outcomes</h3>
-                        <div class="stats mt-md">
-                            <div class="stat">
-                                <span class="stat-number">$3,200/mo</span>
-                                <span class="stat-label">FERS Annuity</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">$48K</span>
-                                <span class="stat-label">FEGLI Savings</span>
-                            </div>
+                    <h3 class="cs-outcomes-h3">Projected Outcomes</h3>
+                    <div class="cs-outcomes">
+                        <div class="cs-outcome">
+                            <span class="cs-outcome-num">$3,200/mo</span>
+                            <span class="cs-outcome-label">FERS Annuity</span>
+                        </div>
+                        <div class="cs-outcome">
+                            <span class="cs-outcome-num">$48K</span>
+                            <span class="cs-outcome-label">FEGLI Savings</span>
                         </div>
                     </div>
-
-                    <div class="mt-md">
-                        <span class="service-tag">FERS</span>
-                        <span class="service-tag">TSP</span>
-                        <span class="service-tag">Federal Benefits</span>
+                    <div class="cs-tags">
+                        <span class="cs-tag">FERS</span>
+                        <span class="cs-tag">TSP</span>
+                        <span class="cs-tag">Federal Benefits</span>
                     </div>
                 </div>
             </div>
@@ -270,19 +277,46 @@ breadcrumbs:
     </div>
 </section>
 
-<!-- CTA -->
-<section class="section section-dark">
-    <div class="container">
-        <div class="text-center">
-            <h2>Your Situation Is Unique — Let's Talk About It</h2>
-            <p class="text-lg">Every family's retirement looks different. We create personalized strategies for your specific circumstances.</p>
-
-            <div class="hero-cta mt-lg">
-                <a href="/contact/" class="btn btn-primary btn-lg">Schedule a Consultation</a>
-                <a href="tel:{{ site.phone }}" class="btn btn-secondary btn-lg">Call {{ site.phone }}</a>
+{# ═══════════════════════════════════════════════════════════
+   CTA — Bottom
+   ═══════════════════════════════════════════════════════════ #}
+<section class="service-process">
+    <div class="service-process-inner">
+        <div class="service-process-left">
+            <h2 class="service-process-h2">Your Situation Is Unique</h2>
+            <p class="service-process-subtitle">Every family's retirement looks different. Let's build a plan for yours.</p>
+            <a href="/contact/" class="service-process-cta">SCHEDULE CONSULTATION</a>
+        </div>
+        <div class="service-process-right">
+            <div class="service-process-steps">
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 1) Discovery Call</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>30-minute call to understand your situation, goals, and timeline. No sales pitch — just clarity on whether we're the right fit.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 2) Comprehensive Analysis</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>We model your income, taxes, healthcare, and estate plan — showing exactly what retirement looks like with and without strategic planning.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 3) Your Retirement Money Map</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>A clear, coordinated plan that turns your savings into reliable retirement income — tax-efficient, healthcare-covered, and legacy-protected.</p>
+                    </div>
+                </div>
             </div>
-
-            <p class="mt-md text-muted">Initial consultations are complimentary for qualified families.</p>
         </div>
     </div>
 </section>

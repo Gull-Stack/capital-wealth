@@ -1,6 +1,8 @@
 ---
-layout: layouts/base.njk
-title: When to Take Social Security - Age 62, 67, or 70? Complete Guide 2026
+layout: layouts/guide.njk
+readTime: 10
+category: "SOCIAL SECURITY"
+author: "Capital Wealth Team"title: When to Take Social Security - Age 62, 67, or 70? Complete Guide 2026
 description: Discover the optimal Social Security claiming strategy. Compare benefits at 62 vs 67 vs 70, break-even analysis, spousal benefits, and tax implications.
 permalink: /guides/when-to-take-social-security/
 breadcrumbs:
@@ -340,16 +342,7 @@ Adjusted Gross Income + Nontaxable Interest + 50% of Social Security = Combined 
 
 Your Social Security claiming decision is irreversible in most cases and can impact your financial security for decades. The right strategy depends on your health, financial situation, marital status, and overall retirement goals.
 
-<div class="section section-dark text-center mt-xl">
-<div class="container">
-<h3>Maximize Your Social Security Benefits</h3>
-<p class="hero-subtitle">Get personalized analysis of your optimal Social Security claiming strategy.</p>
-<div class="mt-lg">
-<a href="/contact/" class="btn btn-primary">Schedule Your Complimentary Consultation</a>
-</div>
-<p class="mt-lg">Call {{ site.phone }} to speak with {{ site.founder.name }} today</p>
-</div>
-</div>
+
 
 {{ site.founder.name }} at Capital Wealth Advisors specializes in Social Security optimization for Utah retirees. As a fiduciary advisor, we provide unbiased analysis to help you make the claiming decision that maximizes your lifetime benefits.
 

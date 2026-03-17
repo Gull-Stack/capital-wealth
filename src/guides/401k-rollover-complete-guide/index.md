@@ -1,6 +1,8 @@
 ---
-layout: layouts/base.njk
-title: 401(k) Rollover Guide 2026 - Complete Step-by-Step Process
+layout: layouts/guide.njk
+readTime: 12
+category: "401(K) & IRA"
+author: "Capital Wealth Team"title: 401(k) Rollover Guide 2026 - Complete Step-by-Step Process
 description: Complete guide to 401k rollovers. Learn direct vs indirect rollovers, tax implications, common mistakes, and when to rollover vs leave your 401k.
 permalink: /guides/401k-rollover-complete-guide/
 breadcrumbs:
@@ -314,16 +316,7 @@ If you have several old 401(k) accounts:
 
 401(k) rollovers are powerful tools for taking control of your retirement savings, but the details matter. Whether you're seeking better investment options, lower fees, or simplified account management, proper execution is crucial to avoid taxes and penalties.
 
-<div class="section section-dark text-center mt-xl">
-<div class="container">
-<h3>Get Expert 401(k) Rollover Guidance</h3>
-<p class="hero-subtitle">Avoid costly mistakes and maximize your retirement savings potential with professional rollover assistance.</p>
-<div class="mt-lg">
-<a href="/contact/" class="btn btn-primary">Schedule Your Complimentary Consultation</a>
-</div>
-<p class="mt-lg">Call {{ site.phone }} to speak with {{ site.founder.name }} today</p>
-</div>
-</div>
+
 
 {{ site.founder.name }} at Capital Wealth Advisors specializes in helping clients navigate complex 401(k) rollover decisions. As a fiduciary advisor, we ensure your rollover strategy aligns with your overall retirement goals while minimizing fees and taxes.
 

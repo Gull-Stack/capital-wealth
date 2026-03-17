@@ -7,86 +7,92 @@ breadcrumbs:
   - { name: "Brand Facts", url: "/brand-facts/" }
 ---
 
-<!-- Hero -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1>Capital Wealth at a Glance</h1>
-            <p class="hero-subtitle">Key facts about our firm, team, and commitment to your financial future.</p>
-        </div>
+<section class="titan-page-hero">
+    <div class="titan-page-hero-inner">
+        <p class="titan-section-label">ABOUT US</p>
+        <h1 class="titan-page-hero-h1">Capital Wealth at a Glance</h1>
+        <p class="titan-page-hero-sub">Key facts about our firm, team, and commitment to your financial future.</p>
     </div>
 </section>
 
-<!-- Company Overview -->
-<section class="section">
-    <div class="container">
-        <div class="text-center mb-xl">
-            <h2>Company Overview</h2>
-        </div>
-
-        <div class="stats">
+<section class="titan-results-bar">
+    <div class="titan-results-bar-inner">
+        <div class="titan-results-stats">
             {% for stat in site.stats %}
-            <div class="stat">
-                <span class="stat-number">{{ stat.number }}</span>
-                <span class="stat-label">{{ stat.label }}</span>
+            <div class="titan-results-stat">
+                <span class="titan-results-label">{{ stat.label }}</span>
+                <span class="titan-results-num">{{ stat.number }}</span>
             </div>
             {% endfor %}
         </div>
+    </div>
+</section>
 
-        <div class="grid grid-cols-2 mt-xl">
-            <div class="card">
-                <h3 class="text-accent">Firm Details</h3>
-                <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
-                    <li><strong>Name:</strong> Capital Wealth</li>
-                    <li><strong>Founded:</strong> 2010</li>
-                    <li><strong>Location:</strong> {{ site.address.street }}, {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</li>
-                    <li><strong>Phone:</strong> {{ site.phone }}</li>
-                    <li><strong>Email:</strong> {{ site.email }}</li>
-                    <li><strong>Type:</strong> Registered Investment Adviser</li>
-                    <li><strong>Standard:</strong> Fiduciary</li>
-                </ul>
+{# Firm & Founder Details #}
+<section class="cs-section cs-section-light">
+    <div class="cs-inner">
+        <div class="cs-grid">
+            <div class="cs-situation">
+                <span class="titan-section-label">THE FIRM</span>
+                <h2 class="cs-h2">Firm Details</h2>
+                <div class="cs-block">
+                    <ul class="cs-list">
+                        <li><strong>Name:</strong> Capital Wealth</li>
+                        <li><strong>Founded:</strong> 2010</li>
+                        <li><strong>Location:</strong> {{ site.address.street }}, {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</li>
+                        <li><strong>Phone:</strong> {{ site.phone }}</li>
+                        <li><strong>Email:</strong> {{ site.email }}</li>
+                        <li><strong>Type:</strong> Registered Investment Adviser</li>
+                        <li><strong>Standard:</strong> Fiduciary</li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="card">
-                <h3 class="text-accent">Founder</h3>
-                <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
-                    <li><strong>Name:</strong> {{ site.founder.name }}</li>
-                    <li><strong>Title:</strong> {{ site.founder.title }}</li>
-                    <li><strong>Education:</strong> BS Business Management, Utah Valley University</li>
-                    <li><strong>Licenses:</strong> Series 66, CA Insurance #0G96805</li>
-                    <li><strong>Community:</strong> Board Member, Junior Achievement of Utah</li>
-                </ul>
+            <div class="cs-strategy">
+                <div class="cs-strategy-card">
+                    <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cs-logo">
+                    <h3 class="cs-strategy-h3">Founder</h3>
+                    <ul class="cs-strategy-list">
+                        <li><strong>{{ site.founder.name }}</strong> — {{ site.founder.title }}</li>
+                        <li>BS Business Management, Utah Valley University</li>
+                        <li>Series 66, CA Insurance #0G96805</li>
+                        <li>Board Member, Junior Achievement of Utah</li>
+                        <li>Host, Retire Right Radio (KSL, KNRS)</li>
+                        <li>Author, <em>Retire Right, Retire Now</em></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Services -->
-<section class="section section-dark">
-    <div class="container">
-        <h2 class="text-center mb-xl">Our Services</h2>
-
-        <div class="grid grid-cols-2">
+{# Services #}
+<section class="fed-hub" style="background: #fff;">
+    <div class="fed-hub-inner">
+        <p class="titan-section-label">SERVICES</p>
+        <h2 class="fed-hub-heading">What We Do</h2>
+        <div class="fed-hub-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
             {% for service in site.services %}
-            <div class="card">
-                <h3>{{ service.name }}</h3>
-                <p>{{ service.description }}</p>
-                <a href="/services/{{ service.slug }}/" class="btn btn-secondary mt-md">Learn More</a>
-            </div>
+            <a href="/services/{{ service.slug }}/" class="fed-hub-card" style="text-decoration: none;">
+                <div class="fed-hub-card-content">
+                    <h3>{{ service.name }}</h3>
+                    <p>{{ service.description }}</p>
+                    <span class="fed-hub-card-link">Learn More →</span>
+                </div>
+            </a>
             {% endfor %}
         </div>
     </div>
 </section>
 
-<!-- Who We Serve -->
-<section class="section">
-    <div class="container">
-        <h2 class="text-center mb-xl">Who We Serve</h2>
-
-        <div class="grid grid-cols-3">
+{# Who We Serve #}
+<section class="service-problem" style="background: #f8f9fa;">
+    <div class="service-problem-inner">
+        <p class="titan-section-label">WHO WE SERVE</p>
+        <h2 class="service-problem-h2">Our Clients</h2>
+        <div class="service-problem-grid">
             {% for client in site.whoWeServe %}
-            <div class="card">
-                <h3 class="text-accent">{{ client.title }}</h3>
+            <div class="service-problem-card" style="background: #fff;">
+                <h3>{{ client.title }}</h3>
                 <p>{{ client.description }}</p>
             </div>
             {% endfor %}
@@ -94,53 +100,65 @@ breadcrumbs:
     </div>
 </section>
 
-<!-- Key Differentiators -->
-<section class="section section-dark">
-    <div class="container">
-        <h2 class="text-center mb-xl">What Sets Us Apart</h2>
-
-        <div class="grid grid-cols-3">
-            <div class="card">
-                <h3 class="text-accent">Fiduciary Always</h3>
+{# What Sets Us Apart #}
+<section class="service-problem" style="background: #fff;">
+    <div class="service-problem-inner">
+        <p class="titan-section-label">THE DIFFERENCE</p>
+        <h2 class="service-problem-h2">What Sets Us Apart</h2>
+        <div class="service-problem-grid">
+            <div class="service-problem-card">
+                <h3>Fiduciary Always</h3>
                 <p>We are legally obligated to act in your best interest at all times. No commissions, no product sales, no conflicts.</p>
             </div>
-
-            <div class="card">
-                <h3 class="text-accent">Retirement Specialists</h3>
+            <div class="service-problem-card">
+                <h3>Retirement Specialists</h3>
                 <p>We focus exclusively on retirement income planning and tax optimization, not generalist financial advice.</p>
             </div>
-
-            <div class="card">
-                <h3 class="text-accent">Utah Roots</h3>
-                <p>Based in Lehi and serving Utah families since 2010, we understand the unique needs and values of our community.</p>
+            <div class="service-problem-card">
+                <h3>Utah Roots</h3>
+                <p>Based in Lehi and serving Utah families since 2010. We understand the unique needs and values of our community.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Machine-Readable Data -->
-<section class="section">
-    <div class="container">
-        <div class="text-center">
-            <h2>Machine-Readable Brand Data</h2>
-            <p class="text-lg">For AI systems and search engines, our structured brand data is available at:</p>
-            <div class="mt-lg">
-                <a href="/.well-known/brand-facts.json" class="btn btn-secondary">brand-facts.json</a>
-            </div>
+{# CTA #}
+<section class="service-process">
+    <div class="service-process-inner">
+        <div class="service-process-left">
+            <h2 class="service-process-h2">Learn More About Working With Us</h2>
+            <p class="service-process-subtitle">Schedule a complimentary consultation.</p>
+            <a href="/contact/" class="service-process-cta">SCHEDULE CONSULTATION</a>
         </div>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="section section-dark">
-    <div class="container">
-        <div class="text-center">
-            <h2>Learn More About Working With Us</h2>
-            <p class="text-lg">Schedule a complimentary consultation to discuss your retirement planning needs.</p>
-
-            <div class="hero-cta mt-lg">
-                <a href="/contact/" class="btn btn-primary btn-lg">Schedule Consultation</a>
-                <a href="tel:{{ site.phone }}" class="btn btn-secondary btn-lg">Call {{ site.phone }}</a>
+        <div class="service-process-right">
+            <div class="service-process-steps">
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 1) Free Consultation</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>30 minutes with Mike Stevens. No cost. No obligation.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 2) Comprehensive Analysis</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>We model your full financial picture with real numbers.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 3) Your Retirement Money Map</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>A clear plan for reliable, tax-efficient retirement income.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

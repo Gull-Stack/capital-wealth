@@ -1,0 +1,65 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="titan-page-hero">
+    <div class="titan-page-hero-inner">
+        <p class="titan-section-label">{{ category or "RETIREMENT GUIDE" }}</p>
+        <h1 class="titan-page-hero-h1">{{ title }}</h1>
+        <p class="titan-page-hero-sub">{{ description }}</p>
+    </div>
+</section>
+
+<section class="guide-article">
+    <div class="guide-article-inner">
+        {% if readTime or author %}
+        <div class="guide-meta">
+            {% if readTime %}<span class="guide-meta-item">{{ readTime }} min read</span>{% endif %}
+            {% if author %}<span class="guide-meta-item">By {{ author }}</span>{% endif %}
+            <span class="guide-meta-item">Updated 2026</span>
+        </div>
+        {% endif %}
+        {{ content | safe }}
+    </div>
+</section>
+
+<section class="service-process">
+    <div class="service-process-inner">
+        <div class="service-process-left">
+            <h2 class="service-process-h2">Need Personalized Guidance?</h2>
+            <p class="service-process-subtitle">Guides give you the knowledge. We give you the plan.</p>
+            <a href="/contact/" class="service-process-cta">SCHEDULE CONSULTATION</a>
+        </div>
+        <div class="service-process-right">
+            <div class="service-process-steps">
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 1) Free Consultation</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>30 minutes with Mike Stevens to review your situation. No cost. No pressure.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 2) Comprehensive Analysis</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>We model your income, taxes, healthcare, and estate plan with real numbers.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 3) Your Retirement Money Map</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>A clear, coordinated plan that turns savings into reliable retirement income.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,6 +1,8 @@
 ---
-layout: layouts/base.njk
-title: Can I Retire at 62 with $500K? Complete Analysis & Strategies 2026
+layout: layouts/guide.njk
+readTime: 8
+category: "EARLY RETIREMENT"
+author: "Capital Wealth Team"title: Can I Retire at 62 with $500K? Complete Analysis & Strategies 2026
 description: Honest assessment of retiring with $500,000 at age 62. Learn what $500K actually generates monthly, bridge strategies, and when it might be enough.
 permalink: /guides/can-i-retire-at-62-with-500k/
 breadcrumbs:
@@ -447,16 +449,7 @@ The dream of early retirement at 62 is appealing, but is $500,000 enough to make
 
 Retiring at 62 with $500,000 is challenging but not impossible. Success depends heavily on your specific situation, expenses, health, and willingness to make significant lifestyle adjustments.
 
-<div class="section section-dark text-center mt-xl">
-<div class="container">
-<h3>Analyze Your Early Retirement Feasibility</h3>
-<p class="hero-subtitle">Get a realistic assessment of your retirement readiness and explore strategies to make early retirement work.</p>
-<div class="mt-lg">
-<a href="/contact/" class="btn btn-primary">Schedule Your Complimentary Consultation</a>
-</div>
-<p class="mt-lg">Call {{ site.phone }} to speak with {{ site.founder.name }} today</p>
-</div>
-</div>
+
 
 {{ site.founder.name }} at Capital Wealth Advisors provides honest, realistic retirement planning analysis. We'll help you understand whether early retirement with $500K is feasible for your situation and develop strategies to improve your odds of success.
 

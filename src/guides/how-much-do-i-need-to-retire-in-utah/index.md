@@ -1,6 +1,8 @@
 ---
-layout: layouts/base.njk
-title: How Much Do I Need to Retire in Utah? Complete 2026 Guide
+layout: layouts/guide.njk
+readTime: 10
+category: "UTAH RETIREMENT"
+author: "Capital Wealth Team"title: How Much Do I Need to Retire in Utah? Complete 2026 Guide
 description: Discover exactly how much money you need to retire comfortably in Utah. Get real cost data, scenarios for retiring at 62-67, and expert guidance.
 permalink: /guides/how-much-do-i-need-to-retire-in-utah/
 breadcrumbs:
@@ -211,16 +213,7 @@ Use this formula for Utah retirement planning:
 
 Determining how much you need to retire in Utah depends on your specific situation, lifestyle goals, and risk tolerance. While general guidelines suggest $800,000-$1.5 million, your actual needs may be higher or lower based on your circumstances.
 
-<div class="section section-dark text-center mt-xl">
-<div class="container">
-<h3>Ready to create your personalized Utah retirement plan?</h3>
-<p class="hero-subtitle">Get expert guidance on your specific retirement needs and Utah-optimized strategies.</p>
-<div class="mt-lg">
-<a href="/contact/" class="btn btn-primary">Schedule Your Complimentary Consultation</a>
-</div>
-<p class="mt-lg">Call {{ site.phone }} to speak with {{ site.founder.name }} today</p>
-</div>
-</div>
+
 
 {{ site.founder.name }} and the team at Capital Wealth Advisors have helped hundreds of Utah families create successful retirement plans. As a fiduciary financial advisor, we're committed to putting your interests first and helping you achieve the retirement you've worked so hard to earn.
 

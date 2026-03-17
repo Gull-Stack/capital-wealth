@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://capitalwealth.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/who-we-serve/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/leads/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/resources/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/financial-advisor-idaho/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/case-studies/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/retirement-planning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/retirement-tax-strategies/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/financial-advisor-utah/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/retirement-income-planning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://capitalwealth.com/guides/401k-rollover-complete-guide/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -36,52 +96,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/who-we-serve/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://capitalwealth.com/brand-facts/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://capitalwealth.com/faq/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/leads/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/press/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/financial-advisor-idaho/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/case-studies/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/retirement-tax-strategies/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -96,32 +116,22 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/retirement-planning/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://capitalwealth.com/guides/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/financial-advisor-utah/</loc>
+    <loc>https://capitalwealth.com/reviews/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/retirement-income-planning/</loc>
+    <loc>https://capitalwealth.com/press/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://capitalwealth.com/services/social-security/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/services/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -141,7 +151,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://capitalwealth.com/services/federal-benefits/social-security-federal/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/services/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://capitalwealth.com/services/federal-benefits/federal-retirement-checklist/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://capitalwealth.com/services/federal-benefits/fers-retirement/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -151,17 +176,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/services/federal-benefits/social-security-federal/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://capitalwealth.com/services/federal-benefits/fehb-retirement/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/services/federal-benefits/fers-retirement/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -181,11 +196,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/services/annuities/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://capitalwealth.com/services/estate-planning/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -196,22 +206,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://capitalwealth.com/reviews/</loc>
+    <loc>https://capitalwealth.com/services/annuities/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://capitalwealth.com/services/portfolio-management/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://capitalwealth.com/resources/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
