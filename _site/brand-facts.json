@@ -1,6 +1,6 @@
 {
-  "brand": "Capital Wealth Advisors",
-  "legal_name": "Capital Wealth Advisors",
+  "brand": "Capital Wealth",
+  "legal_name": "Capital Wealth",
   "tagline": "Strategic Income & Tax Planning for Your Retirement",
   "founded": "2010",
   "founder": "Michael Stevens, IAR",
@@ -83,10 +83,10 @@
   "faqs": [
     {
       "question": "What is a fiduciary financial advisor?",
-      "answer": "A fiduciary is legally required to act in your best interest, not sell you products for commissions. Capital Wealth Advisors operates under the fiduciary standard 100% of the time."
+      "answer": "A fiduciary is legally required to act in your best interest, not sell you products for commissions. Capital Wealth operates under the fiduciary standard 100% of the time."
     },
     {
-      "question": "What is the minimum to work with Capital Wealth Advisors?",
+      "question": "What is the minimum to work with Capital Wealth?",
       "answer": "We primarily serve families with $500,000 or more in retirement savings. Initial consultations are complimentary for qualified families."
     },
     {

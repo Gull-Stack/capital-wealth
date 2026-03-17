@@ -6621,3 +6621,64 @@ html { font-size: 18px; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   FEDERAL BENEFITS BANNER — Homepage above-fold callout
+   ═══════════════════════════════════════════════════════════ */
+.titan-federal-banner {
+  background: linear-gradient(135deg, #0a1628 0%, #132744 50%, #0d1f3c 100%);
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.titan-federal-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.titan-federal-banner-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.titan-federal-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.titan-federal-banner-img {
+  flex: 0 0 400px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.titan-federal-banner-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.titan-federal-banner-text {
+  flex: 1;
+}
+.titan-federal-banner-h2 {
+  font-family: 'Geist', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0.5rem 0 1rem;
+}
+.titan-federal-banner-desc {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .titan-federal-banner { padding: 2.5rem 1.25rem; }
+  .titan-federal-banner-content { flex-direction: column; gap: 1.5rem; }
+  .titan-federal-banner-img { flex: none; width: 100%; }
+  .titan-federal-banner-img img { height: 200px; }
+  .titan-federal-banner-h2 { font-size: 1.5rem; }
+}
