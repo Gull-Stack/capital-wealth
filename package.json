@@ -4,13 +4,22 @@
   "description": "Capital Wealth Advisors - Financial Advisory Website",
   "main": ".eleventy.js",
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy && npx cleancss -o _site/assets/css/main.css _site/assets/css/main.css && npx uglifyjs _site/assets/js/main.js -o _site/assets/js/main.js -c -m",
     "serve": "eleventy --serve"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1"
   },
-  "keywords": ["eleventy", "financial", "advisor", "retirement"],
+  "keywords": [
+    "eleventy",
+    "financial",
+    "advisor",
+    "retirement"
+  ],
   "author": "GullStack",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "uglify-js": "^3.19.3"
+  }
 }
