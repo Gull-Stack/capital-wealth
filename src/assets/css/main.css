@@ -5375,15 +5375,17 @@ html { font-size: 18px; }
 /* Sticky CTA bar */
 .sticky-cta {
   position: fixed;
-  bottom: -60px;
+  bottom: -80px;
   left: 0;
   right: 0;
   z-index: 900;
-  background: rgba(13, 27, 42, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: bottom 0.3s ease;
-  padding: 0.65rem 1.5rem;
+  background: linear-gradient(135deg, rgba(10, 22, 40, 0.97) 0%, rgba(19, 39, 68, 0.97) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0.85rem 2rem;
+  border-top: 1px solid rgba(232, 135, 58, 0.25);
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.3);
 }
 .sticky-cta.visible { bottom: 0; }
 .sticky-cta-inner {
@@ -5392,35 +5394,49 @@ html { font-size: 18px; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 .sticky-cta-text {
-  color: rgba(255,255,255,0.7);
-  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+  font-family: 'Geist', sans-serif;
+  font-size: 0.9rem;
   font-weight: 500;
+  letter-spacing: 0.01em;
 }
 .sticky-cta-btn {
-  padding: 0.5rem 1.25rem;
-  background: #e8873a;
+  padding: 0.6rem 1.75rem;
+  background: linear-gradient(135deg, #e8873a 0%, #d4752e 100%);
   color: #fff;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  border-radius: 100px;
-  transition: background 0.2s ease;
-}
-.sticky-cta-btn:hover { background: #d4752e; }
-.sticky-cta-phone {
-  color: rgba(255,255,255,0.6);
+  font-family: 'Geist', sans-serif;
   font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(232, 135, 58, 0.3);
+}
+.sticky-cta-btn:hover {
+  background: linear-gradient(135deg, #d4752e 0%, #c06828 100%);
+  box-shadow: 0 4px 16px rgba(232, 135, 58, 0.4);
+  transform: translateY(-1px);
+}
+.sticky-cta-phone {
+  color: rgba(255,255,255,0.7);
+  font-family: 'Geist', sans-serif;
+  font-size: 0.85rem;
   font-weight: 500;
   text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
 }
-.sticky-cta-phone:hover { color: #fff; }
+.sticky-cta-phone:hover { color: #e8873a; }
 @media (max-width: 640px) {
+  .sticky-cta { padding: 0.75rem 1.25rem; }
   .sticky-cta-text { display: none; }
-  .sticky-cta-inner { gap: 1rem; }
+  .sticky-cta-inner { gap: 1.25rem; }
+  .sticky-cta-btn { padding: 0.55rem 1.5rem; font-size: 0.75rem; }
 }
 
 /* ═══ MOBILE CONSISTENCY FIXES ═══ */
