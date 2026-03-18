@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+title: "Retire Right Radio Blog | Capital Wealth Advisors"
+description: "Expert retirement planning insights from Mike Stevens and the Capital Wealth Advisors team. Based on Retire Right Radio episodes aired on KAOX, KID, KNRS, and KSL."
+permalink: /blog/
+eleventyExcludeFromCollections: true
+---
+
+<section class="blog-index-hero">
+    <div class="container">
+        <div class="blog-hero-content">
+            <h1 class="blog-hero-title">Retire Right Radio Blog</h1>
+            <p class="blog-hero-subtitle">Expert retirement planning insights from Mike Stevens and the Capital Wealth Advisors team. Based on episodes aired on KAOX, KID, KNRS, and KSL.</p>
+        </div>
+    </div>
+</section>
+
+<section class="blog-index-grid">
+    <div class="container">
+        <div class="blog-posts-grid">
+            {% for post in collections.blog | reverse %}
+            <article class="blog-card">
+                <div class="blog-card-header">
+                    <div class="blog-card-meta">
+                        <span class="blog-card-date">{{ post.data.date | date }}</span>
+                        {% if post.data.readTime %}
+                        <span class="blog-card-read-time">{{ post.data.readTime }} min read</span>
+                        {% endif %}
+                    </div>
+                    <h2 class="blog-card-title">
+                        <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    </h2>
+                    <p class="blog-card-description">{{ post.data.description }}</p>
+                </div>
+                {% if post.data.tags %}
+                <div class="blog-card-tags">
+                    {% for tag in post.data.tags %}
+                        {% if tag != 'blog' %}
+                        <span class="blog-tag">{{ tag }}</span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+                <div class="blog-card-footer">
+                    <a href="{{ post.url }}" class="blog-card-link">Read Article <span class="arrow">→</span></a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="blog-cta-section">
+    <div class="container">
+        <div class="blog-cta-content">
+            <h2>Ready to Start Your Retirement Planning?</h2>
+            <p>Schedule a complimentary consultation with our fiduciary financial advisors.</p>
+            <div class="blog-cta-actions">
+                <a href="/contact/" class="blog-cta-button">Schedule Free Consultation</a>
+                <a href="tel:8012102800" class="blog-cta-phone">Call 801.210.2800</a>
+            </div>
+        </div>
+    </div>
+</section>

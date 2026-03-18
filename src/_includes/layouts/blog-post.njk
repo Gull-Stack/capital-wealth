@@ -1,0 +1,130 @@
+---
+layout: layouts/base.njk
+---
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title }}",
+    "description": "{{ description }}",
+    "image": "{{ site.url }}/assets/images/photos/CWA-Mountain-Couple-home-header.webp",
+    "datePublished": "{{ date | date('iso') }}",
+    "dateModified": "{{ dateModified | date('iso') }}",
+    "author": {
+        "@type": "Person",
+        "name": "{{ author or 'Mike Stevens' }}",
+        "jobTitle": "Investment Adviser Representative",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Capital Wealth Advisors",
+            "url": "{{ site.url }}"
+        }
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Capital Wealth Advisors",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.url }}/assets/images/logos/logo-horizontal-color.png"
+        },
+        "url": "{{ site.url }}"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    }
+}
+</script>
+
+{% if faqSchema %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {% for faq in faqSchema %}
+        {
+            "@type": "Question",
+            "name": "{{ faq.question }}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ faq.answer }}"
+            }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ]
+}
+</script>
+{% endif %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "{{ site.url }}/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{ title }}",
+            "item": "{{ site.url }}{{ page.url }}"
+        }
+    ]
+}
+</script>
+
+<section class="guide-blog">
+    <div class="guide-blog-inner">
+        <div class="guide-blog-header">
+            <a href="/blog/" class="guide-blog-category">Blog</a>
+            <h1 class="guide-blog-title">{{ title }}</h1>
+            <p class="guide-blog-desc">{{ description }}</p>
+            <div class="guide-blog-meta">
+                {% if readTime %}<span class="guide-blog-meta-item">{{ readTime }} MIN READ</span>{% endif %}
+                <span class="guide-blog-meta-item">{{ date | date }}</span>
+                <span class="guide-blog-meta-item">{{ author or 'Mike Stevens' }}</span>
+            </div>
+            {% if tags %}
+            <div class="blog-tags">
+                {% for tag in tags %}
+                    {% if tag != 'blog' %}
+                    <span class="blog-tag">{{ tag }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        <div class="guide-blog-body">
+            <p class="blog-attribution"><em>Originally aired on KAOX, KID, KNRS, and KSL</em></p>
+            {{ content | safe }}
+        </div>
+    </div>
+</section>
+
+<section class="blog-cta-block">
+    <div class="blog-cta-inner">
+        <div class="blog-cta-content">
+            <h2>Ready to Create Your Retirement Money Map?</h2>
+            <p>Get a complimentary Retirement Money Map™ analysis and discover how to optimize your retirement income strategy.</p>
+            <div class="blog-cta-actions">
+                <a href="/contact/" class="blog-cta-button">Schedule Free Consultation</a>
+                <div class="blog-cta-contact">
+                    <a href="tel:8012105500" class="blog-cta-phone">Call 801.210.5500</a>
+                    <a href="sms:8012105500" class="blog-cta-text">Text "VISIT" to 801.210.5500</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
