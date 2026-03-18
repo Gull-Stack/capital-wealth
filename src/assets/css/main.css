@@ -4019,6 +4019,58 @@ a:hover {
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
+/* ═══ SUB-PAGE HERO (service/SEO pages — compact with small accent image) ═══ */
+.titan-subhero {
+  background: #fff;
+  padding-top: 80px;
+}
+.titan-subhero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 3rem;
+  align-items: end;
+}
+.titan-subhero-content {
+  padding-top: 1rem;
+}
+.titan-subhero h1 {
+  font-family: var(--font-family);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0.5rem 0 1rem;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.titan-subhero-body {
+  font-size: 1rem;
+  color: rgba(25,79,144,0.55);
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+  max-width: 600px;
+}
+.titan-subhero-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+@media (max-width: 768px) {
+  .titan-subhero-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1.25rem;
+  }
+  .titan-subhero-img {
+    height: 160px;
+    order: -1;
+  }
+}
+
 /* ═══ PAGE HERO (simple hero for non-service pages — white bg, matches site) ═══ */
 .titan-page-hero {
   background: #fff;
@@ -5652,18 +5704,27 @@ html { font-size: 18px; }
 .service-problem-cta-card {
   background: var(--navy);
   border-color: var(--navy);
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
 }
 .service-problem-cta-card h3 {
   color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
 }
 .service-problem-cta-card p {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.65);
+  font-size: 0.92rem;
+  line-height: 1.6;
   flex: 1;
 }
 .service-problem-cta-card:hover {
   background: #163f73;
+  transform: translateY(-2px);
 }
 .service-problem-cta-btn {
   display: inline-block;
