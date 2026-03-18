@@ -2,24 +2,23 @@
 layout: layouts/base.njk
 ---
 
-<section class="titan-page-hero">
-    <div class="titan-page-hero-inner">
-        <p class="titan-section-label">{{ category or "RETIREMENT GUIDE" }}</p>
-        <h1 class="titan-page-hero-h1">{{ title }}</h1>
-        <p class="titan-page-hero-sub">{{ description }}</p>
-    </div>
-</section>
-
-<section class="guide-article">
-    <div class="guide-article-inner">
-        {% if readTime or author %}
-        <div class="guide-meta">
-            {% if readTime %}<span class="guide-meta-item">{{ readTime }} min read</span>{% endif %}
-            {% if author %}<span class="guide-meta-item">By {{ author }}</span>{% endif %}
-            <span class="guide-meta-item">Updated 2026</span>
+<section class="guide-blog">
+    <div class="guide-blog-inner">
+        <div class="guide-blog-header">
+            {% if category %}
+            <a href="/guides/" class="guide-blog-category">{{ category }}</a>
+            {% endif %}
+            <h1 class="guide-blog-title">{{ title }}</h1>
+            <p class="guide-blog-desc">{{ description }}</p>
+            <div class="guide-blog-meta">
+                {% if readTime %}<span class="guide-blog-meta-item">{{ readTime }} MIN READ</span>{% endif %}
+                <span class="guide-blog-meta-item">Updated 2026</span>
+                {% if author %}<span class="guide-blog-meta-item">{{ author }}</span>{% endif %}
+            </div>
         </div>
-        {% endif %}
-        {{ content | safe }}
+        <div class="guide-blog-body">
+            {{ content | safe }}
+        </div>
     </div>
 </section>
 
