@@ -91,10 +91,16 @@ layout: layouts/base.njk
             <a href="/blog/" class="guide-blog-category">Blog</a>
             <h1 class="guide-blog-title">{{ title }}</h1>
             <p class="guide-blog-desc">{{ description }}</p>
+            <div class="blog-author-byline">
+                <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens" class="blog-author-img" width="48" height="48" loading="lazy">
+                <div class="blog-author-info">
+                    <span class="blog-author-name">{{ author or 'Mike Stevens' }}</span>
+                    <span class="blog-author-role">Capital Wealth Advisors</span>
+                </div>
+            </div>
             <div class="guide-blog-meta">
                 {% if readTime %}<span class="guide-blog-meta-item">{{ readTime }} MIN READ</span>{% endif %}
                 <span class="guide-blog-meta-item">{{ date | date }}</span>
-                <span class="guide-blog-meta-item">{{ author or 'Mike Stevens' }}</span>
             </div>
             {% if tags %}
             <div class="blog-tags">
