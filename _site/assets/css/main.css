@@ -8068,7 +8068,7 @@ html { font-size: 18px; }
 /* Blog Hero Section - Editorial Magazine Style */
 .blog-titan-hero {
   background: #f5f3ef;
-  padding: 4rem 0;
+  padding: 6rem 0 5rem;
   text-align: center;
 }
 
@@ -8098,10 +8098,10 @@ html { font-size: 18px; }
 
 /* icon removed — hero is title-only */
 
-/* Article Count */
+/* Blog Description */
 .blog-article-count {
   background: white;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   text-align: center;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
@@ -8113,12 +8113,15 @@ html { font-size: 18px; }
 }
 
 .blog-article-count-text {
-  font-family: 'Geist Mono', monospace;
-  font-size: 0.875rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
   font-weight: 400;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #888;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: rgba(0,0,0,0.55);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* Featured Section */
@@ -8508,7 +8511,7 @@ html { font-size: 18px; }
 
 @media (max-width: 480px) {
   .blog-titan-hero {
-    padding: 3rem 0;
+    padding: 4rem 0 3.5rem;
   }
   
   .blog-titan-hero-content {
