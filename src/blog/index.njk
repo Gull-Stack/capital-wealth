@@ -10,86 +10,334 @@ breadcrumbs:
 ---
 
 {# ═══════════════════════════════════════════════════════════
-   HERO
+   HERO SECTION — Editorial Magazine Style
    ═══════════════════════════════════════════════════════════ #}
-<section class="titan-page-hero">
-    <div class="titan-page-hero-inner">
-        <p class="titan-section-label">RETIRE RIGHT RADIO</p>
-        <h1 class="titan-page-hero-h1">Expert Retirement Planning Insights</h1>
-        <p class="titan-page-hero-sub">In-depth articles from Mike Stevens and the Capital Wealth team, based on episodes aired on KAOX, KID, KNRS, and KSL.</p>
+<section class="blog-titan-hero">
+    <div class="blog-titan-hero-inner">
+        <div class="blog-titan-hero-content">
+            <h1 class="blog-titan-hero-left">Retire Right</h1>
+            <div class="blog-titan-hero-center">
+                <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="blog-hero-illustration">
+                    <circle cx="60" cy="60" r="58" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+                    <circle cx="60" cy="60" r="45" stroke="#1a1a1a" stroke-width="1" fill="none"/>
+                    <line x1="60" y1="20" x2="60" y2="35" stroke="#1a1a1a" stroke-width="2"/>
+                    <line x1="60" y1="85" x2="60" y2="100" stroke="#1a1a1a" stroke-width="2"/>
+                    <line x1="20" y1="60" x2="35" y2="60" stroke="#1a1a1a" stroke-width="2"/>
+                    <line x1="85" y1="60" x2="100" y2="60" stroke="#1a1a1a" stroke-width="2"/>
+                    <line x1="60" y1="30" x2="60" y2="90" stroke="#1a1a1a" stroke-width="3"/>
+                    <circle cx="60" cy="60" r="4" fill="#1a1a1a"/>
+                </svg>
+            </div>
+            <h1 class="blog-titan-hero-right">Radio</h1>
+        </div>
     </div>
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   BLOG GRID — Titan card style (matches /guides/)
+   ARTICLE COUNT — Roman Numerals
    ═══════════════════════════════════════════════════════════ #}
-<section class="guides-hub">
-    <div class="guides-hub-inner">
-        <div class="guides-grid">
-            {% for post in collections.blog | reverse %}
-            <a href="{{ post.url }}" class="guide-card">
-                {% set topicTags = [] %}
-                {% for tag in post.data.tags %}
-                    {% if tag != 'blog' %}
-                        {% set topicTags = (topicTags.push(tag), topicTags) %}
-                    {% endif %}
-                {% endfor %}
-                {% if topicTags.length %}
-                <span class="guide-card-label">{{ topicTags[0] | upper }}</span>
+<section class="blog-article-count">
+    <div class="blog-article-count-inner">
+        <span class="blog-article-count-text">
+            {% set totalArticles = collections.blog.length %}
+            {% if totalArticles == 1 %}I{% endif %}
+            {% if totalArticles == 2 %}II{% endif %}
+            {% if totalArticles == 3 %}III{% endif %}
+            {% if totalArticles == 4 %}IV{% endif %}
+            {% if totalArticles == 5 %}V{% endif %}
+            {% if totalArticles == 6 %}VI{% endif %}
+            {% if totalArticles == 7 %}VII{% endif %}
+            {% if totalArticles == 8 %}VIII{% endif %}
+            {% if totalArticles == 9 %}IX{% endif %}
+            {% if totalArticles == 10 %}X{% endif %}
+            {% if totalArticles > 10 %}{{ totalArticles }}{% endif %}
+            ARTICLES
+        </span>
+    </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   FEATURED SECTION — Two Column Layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="blog-featured-section">
+    <div class="blog-featured-inner">
+        <div class="blog-featured-header">
+            <h2 class="blog-featured-title">Featured</h2>
+            <div class="blog-featured-divider"></div>
+        </div>
+        
+        <div class="blog-featured-content">
+            {# Featured Post (Left) #}
+            {% set featuredPost = collections.blog | reverse | first %}
+            {% for post in collections.blog %}
+                {% if post.data.featured %}
+                    {% set featuredPost = post %}
                 {% endif %}
-                <h3 class="guide-card-title">{{ post.data.title }}</h3>
-                <p class="guide-card-desc">{{ post.data.description }}</p>
-                <div class="guide-card-meta">
-                    <span>{{ post.data.date | date }}</span>
-                    {% if post.data.readTime %}<span>{{ post.data.readTime }} min read</span>{% endif %}
-                </div>
-                <span class="guide-card-link">Read Article →</span>
-            </a>
             {% endfor %}
-        </div>
-    </div>
-</section>
+            
+            <div class="blog-featured-main">
+                <a href="{{ featuredPost.url }}" class="blog-featured-card">
+                    <div class="blog-featured-card-content">
+                        <h3 class="blog-featured-card-title">{{ featuredPost.data.title }}</h3>
+                        <div class="blog-featured-card-graphic">
+                            <svg width="100%" height="80" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="30" width="40" height="20" fill="#e5e5e5"/>
+                                <rect x="70" y="25" width="60" height="30" fill="#d4d4d4"/>
+                                <rect x="150" y="35" width="30" height="10" fill="#e5e5e5"/>
+                                <rect x="200" y="20" width="80" height="40" fill="#d4d4d4"/>
+                            </svg>
+                        </div>
+                        <time class="blog-featured-card-date">{{ featuredPost.data.date | date }}</time>
+                    </div>
+                </a>
+            </div>
 
-{# ═══════════════════════════════════════════════════════════
-   CTA — Titan service-process style
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-process">
-    <div class="service-process-inner">
-        <div class="service-process-left">
-            <h2 class="service-process-h2">Hear Something That Resonated?</h2>
-            <p class="service-process-subtitle">These articles are the starting point. Your personalized plan is the destination.</p>
-            <a href="/contact/" class="service-process-cta">SCHEDULE CONSULTATION</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Free Consultation</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>30 minutes with Mike Stevens to review your situation. No cost. No pressure.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Comprehensive Analysis</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>We model your income, taxes, healthcare, and estate plan with real numbers.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Your Retirement Money Map</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>A clear, coordinated plan that turns savings into reliable retirement income.</p>
-                    </div>
-                </div>
+            {# Recent Articles (Right) #}
+            <div class="blog-featured-sidebar">
+                {% for post in collections.blog | reverse | slice(1, 4) %}
+                <a href="{{ post.url }}" class="blog-recent-article">
+                    <span class="blog-recent-title">{{ post.data.title }}</span>
+                    <time class="blog-recent-date">{{ post.data.date | date }}</time>
+                </a>
+                {% endfor %}
             </div>
         </div>
     </div>
 </section>
+
+{# ═══════════════════════════════════════════════════════════
+   SEARCH BAR & TAG FILTERS
+   ═══════════════════════════════════════════════════════════ #}
+<section class="blog-search-section">
+    <div class="blog-search-inner">
+        <div class="blog-search-bar">
+            <input type="text" id="blogSearch" placeholder="Search articles..." class="blog-search-input">
+        </div>
+        <div class="blog-tag-filters" id="blogTagFilters">
+            <!-- Tags will be generated by JavaScript -->
+        </div>
+    </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   ALL ARTICLES LIST
+   ═══════════════════════════════════════════════════════════ #}
+<section class="blog-articles-section">
+    <div class="blog-articles-inner">
+        <div class="blog-articles-list" id="blogArticlesList">
+            {% for post in collections.blog | reverse %}
+            <article class="blog-article-row" data-title="{{ post.data.title | lower }}" data-description="{{ post.data.description | lower }}" data-tags="{{ post.data.tags | join(',') | lower }}">
+                <a href="{{ post.url }}" class="blog-article-link">
+                    <span class="blog-article-title">{{ post.data.title }}</span>
+                    <time class="blog-article-date">{{ post.data.date | date }}</time>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+        
+        <div class="blog-pagination" id="blogPagination">
+            <!-- Pagination will be generated by JavaScript -->
+        </div>
+    </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   JAVASCRIPT FOR SEARCH & PAGINATION
+   ═══════════════════════════════════════════════════════════ #}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('blogSearch');
+    const tagFiltersContainer = document.getElementById('blogTagFilters');
+    const articlesContainer = document.getElementById('blogArticlesList');
+    const paginationContainer = document.getElementById('blogPagination');
+    
+    const allArticles = Array.from(document.querySelectorAll('.blog-article-row'));
+    let filteredArticles = [...allArticles];
+    let currentPage = 1;
+    const articlesPerPage = 10;
+    let activeTagFilter = null;
+    
+    // Generate tag filters
+    const allTags = new Set();
+    allArticles.forEach(article => {
+        const tags = article.dataset.tags.split(',').filter(tag => tag.trim() && tag !== 'blog');
+        tags.forEach(tag => allTags.add(tag.trim()));
+    });
+    
+    if (allTags.size > 0) {
+        const allButton = document.createElement('button');
+        allButton.textContent = 'All';
+        allButton.className = 'blog-tag-pill active';
+        allButton.addEventListener('click', () => filterByTag(null));
+        tagFiltersContainer.appendChild(allButton);
+        
+        allTags.forEach(tag => {
+            const button = document.createElement('button');
+            button.textContent = tag.charAt(0).toUpperCase() + tag.slice(1).replace('-', ' ');
+            button.className = 'blog-tag-pill';
+            button.dataset.tag = tag;
+            button.addEventListener('click', () => filterByTag(tag));
+            tagFiltersContainer.appendChild(button);
+        });
+    }
+    
+    // Search functionality with fuzzy matching
+    function searchArticles(query) {
+        if (!query.trim()) {
+            return allArticles;
+        }
+        
+        const searchTerms = query.toLowerCase().split(' ').filter(term => term.length > 0);
+        
+        return allArticles.filter(article => {
+            const title = article.dataset.title;
+            const description = article.dataset.description;
+            const tags = article.dataset.tags;
+            const searchContent = `${title} ${description} ${tags}`;
+            
+            return searchTerms.every(term => 
+                searchContent.includes(term) || 
+                // Simple fuzzy matching - allow 1 character difference for words 4+ chars
+                (term.length >= 4 && searchContent.split(' ').some(word => 
+                    Math.abs(word.length - term.length) <= 1 && 
+                    [...term].filter((char, i) => char === word[i]).length >= term.length - 1
+                ))
+            );
+        });
+    }
+    
+    // Tag filtering
+    function filterByTag(tag) {
+        activeTagFilter = tag;
+        
+        // Update active tag button
+        document.querySelectorAll('.blog-tag-pill').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        if (tag) {
+            document.querySelector(`[data-tag="${tag}"]`).classList.add('active');
+            filteredArticles = allArticles.filter(article => 
+                article.dataset.tags.includes(tag)
+            );
+        } else {
+            document.querySelector('.blog-tag-pill').classList.add('active');
+            filteredArticles = [...allArticles];
+        }
+        
+        // Apply search if there's a search query
+        const searchQuery = searchInput.value.trim();
+        if (searchQuery) {
+            filteredArticles = searchArticles(searchQuery).filter(article => 
+                activeTagFilter ? article.dataset.tags.includes(activeTagFilter) : true
+            );
+        }
+        
+        currentPage = 1;
+        updateDisplay();
+    }
+    
+    // Search input handler
+    searchInput.addEventListener('input', function() {
+        const query = this.value.trim();
+        
+        if (query) {
+            let searchResults = searchArticles(query);
+            
+            // Apply tag filter if active
+            if (activeTagFilter) {
+                searchResults = searchResults.filter(article => 
+                    article.dataset.tags.includes(activeTagFilter)
+                );
+            }
+            
+            filteredArticles = searchResults;
+        } else {
+            // No search query, show all articles (filtered by tag if applicable)
+            filteredArticles = activeTagFilter 
+                ? allArticles.filter(article => article.dataset.tags.includes(activeTagFilter))
+                : [...allArticles];
+        }
+        
+        currentPage = 1;
+        updateDisplay();
+    });
+    
+    // Update display with pagination
+    function updateDisplay() {
+        // Hide all articles
+        allArticles.forEach(article => {
+            article.style.display = 'none';
+        });
+        
+        // Calculate pagination
+        const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+        const startIndex = (currentPage - 1) * articlesPerPage;
+        const endIndex = startIndex + articlesPerPage;
+        const pageArticles = filteredArticles.slice(startIndex, endIndex);
+        
+        // Show current page articles
+        pageArticles.forEach(article => {
+            article.style.display = 'block';
+        });
+        
+        // Update pagination
+        updatePagination(totalPages);
+    }
+    
+    // Update pagination controls
+    function updatePagination(totalPages) {
+        paginationContainer.innerHTML = '';
+        
+        if (totalPages <= 1) return;
+        
+        // Previous button
+        const prevButton = document.createElement('button');
+        prevButton.textContent = '← Previous';
+        prevButton.className = 'blog-pagination-btn' + (currentPage === 1 ? ' disabled' : '');
+        prevButton.disabled = currentPage === 1;
+        prevButton.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                updateDisplay();
+            }
+        });
+        paginationContainer.appendChild(prevButton);
+        
+        // Page numbers
+        for (let i = 1; i <= totalPages; i++) {
+            if (i === 1 || i === totalPages || Math.abs(i - currentPage) <= 1) {
+                const pageButton = document.createElement('button');
+                pageButton.textContent = i;
+                pageButton.className = 'blog-pagination-num' + (i === currentPage ? ' active' : '');
+                pageButton.addEventListener('click', () => {
+                    currentPage = i;
+                    updateDisplay();
+                });
+                paginationContainer.appendChild(pageButton);
+            } else if (Math.abs(i - currentPage) === 2) {
+                const dots = document.createElement('span');
+                dots.textContent = '...';
+                dots.className = 'blog-pagination-dots';
+                paginationContainer.appendChild(dots);
+            }
+        }
+        
+        // Next button
+        const nextButton = document.createElement('button');
+        nextButton.textContent = 'Next →';
+        nextButton.className = 'blog-pagination-btn' + (currentPage === totalPages ? ' disabled' : '');
+        nextButton.disabled = currentPage === totalPages;
+        nextButton.addEventListener('click', () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                updateDisplay();
+            }
+        });
+        paginationContainer.appendChild(nextButton);
+    }
+    
+    // Initial display
+    updateDisplay();
+});
+</script>
