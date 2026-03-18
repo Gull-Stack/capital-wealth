@@ -4,60 +4,91 @@ title: "Retire Right Radio Blog | Capital Wealth Advisors"
 description: "Expert retirement planning insights from Mike Stevens and the Capital Wealth Advisors team. Based on Retire Right Radio episodes aired on KAOX, KID, KNRS, and KSL."
 permalink: /blog/
 eleventyExcludeFromCollections: true
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Blog", url: "/blog/" }
 ---
 
-<section class="blog-index-hero">
-    <div class="container">
-        <div class="blog-hero-content">
-            <h1 class="blog-hero-title">Retire Right Radio Blog</h1>
-            <p class="blog-hero-subtitle">Expert retirement planning insights from Mike Stevens and the Capital Wealth Advisors team. Based on episodes aired on KAOX, KID, KNRS, and KSL.</p>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════════════════════ #}
+<section class="titan-page-hero">
+    <div class="titan-page-hero-inner">
+        <p class="titan-section-label">RETIRE RIGHT RADIO</p>
+        <h1 class="titan-page-hero-h1">Expert Retirement Planning Insights</h1>
+        <p class="titan-page-hero-sub">In-depth articles from Mike Stevens and the Capital Wealth team, based on episodes aired on KAOX, KID, KNRS, and KSL.</p>
     </div>
 </section>
 
-<section class="blog-index-grid">
-    <div class="container">
-        <div class="blog-posts-grid">
+{# ═══════════════════════════════════════════════════════════
+   BLOG GRID — Titan card style (matches /guides/)
+   ═══════════════════════════════════════════════════════════ #}
+<section class="guides-hub">
+    <div class="guides-hub-inner">
+        <div class="guides-grid">
             {% for post in collections.blog | reverse %}
-            <article class="blog-card">
-                <div class="blog-card-header">
-                    <div class="blog-card-meta">
-                        <span class="blog-card-date">{{ post.data.date | date }}</span>
-                        {% if post.data.readTime %}
-                        <span class="blog-card-read-time">{{ post.data.readTime }} min read</span>
-                        {% endif %}
-                    </div>
-                    <h2 class="blog-card-title">
-                        <a href="{{ post.url }}">{{ post.data.title }}</a>
-                    </h2>
-                    <p class="blog-card-description">{{ post.data.description }}</p>
-                </div>
-                {% if post.data.tags %}
-                <div class="blog-card-tags">
-                    {% for tag in post.data.tags %}
-                        {% if tag != 'blog' %}
-                        <span class="blog-tag">{{ tag }}</span>
-                        {% endif %}
-                    {% endfor %}
-                </div>
+            <a href="{{ post.url }}" class="guide-card">
+                {% set topicTags = [] %}
+                {% for tag in post.data.tags %}
+                    {% if tag != 'blog' %}
+                        {% set topicTags = (topicTags.push(tag), topicTags) %}
+                    {% endif %}
+                {% endfor %}
+                {% if topicTags.length %}
+                <span class="guide-card-label">{{ topicTags[0] | upper }}</span>
                 {% endif %}
-                <div class="blog-card-footer">
-                    <a href="{{ post.url }}" class="blog-card-link">Read Article <span class="arrow">→</span></a>
+                <h3 class="guide-card-title">{{ post.data.title }}</h3>
+                <p class="guide-card-desc">{{ post.data.description }}</p>
+                <div class="guide-card-meta">
+                    <span>{{ post.data.date | date }}</span>
+                    {% if post.data.readTime %}<span>{{ post.data.readTime }} min read</span>{% endif %}
                 </div>
-            </article>
+                <span class="guide-card-link">Read Article →</span>
+            </a>
             {% endfor %}
         </div>
     </div>
 </section>
 
-<section class="blog-cta-section">
-    <div class="container">
-        <div class="blog-cta-content">
-            <h2>Ready to Start Your Retirement Planning?</h2>
-            <p>Schedule a complimentary consultation with our fiduciary financial advisors.</p>
-            <div class="blog-cta-actions">
-                <a href="/contact/" class="blog-cta-button">Schedule Free Consultation</a>
-                <a href="tel:8012102800" class="blog-cta-phone">Call 801.210.2800</a>
+{# ═══════════════════════════════════════════════════════════
+   CTA — Titan service-process style
+   ═══════════════════════════════════════════════════════════ #}
+<section class="service-process">
+    <div class="service-process-inner">
+        <div class="service-process-left">
+            <h2 class="service-process-h2">Hear Something That Resonated?</h2>
+            <p class="service-process-subtitle">These articles are the starting point. Your personalized plan is the destination.</p>
+            <a href="/contact/" class="service-process-cta">SCHEDULE CONSULTATION</a>
+        </div>
+        <div class="service-process-right">
+            <div class="service-process-steps">
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 1) Free Consultation</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>30 minutes with Mike Stevens to review your situation. No cost. No pressure.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 2) Comprehensive Analysis</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>We model your income, taxes, healthcare, and estate plan with real numbers.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 3) Your Retirement Money Map</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>A clear, coordinated plan that turns savings into reliable retirement income.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
