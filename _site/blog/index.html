@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retire Right Radio Blog | Capital Wealth Advisors</title>
-    <meta name="description" content="Expert retirement planning insights from Mike Stevens and the Capital Wealth Advisors team. Based on Retire Right Radio episodes aired on KAOX, KID, KNRS, and KSL.">
+    <title>Retirement Planning Blog | Capital Wealth Advisors</title>
+    <meta name="description" content="Expert retirement planning articles covering Social Security, tax strategies, estate planning, and income optimization from Capital Wealth Advisors in Lehi, Utah.">
     
     <link rel="canonical" href="https://www.capitalwealth.com/blog/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Retire Right Radio Blog | Capital Wealth Advisors">
-    <meta property="og:description" content="Expert retirement planning insights from Mike Stevens and the Capital Wealth Advisors team. Based on Retire Right Radio episodes aired on KAOX, KID, KNRS, and KSL.">
+    <meta property="og:title" content="Retirement Planning Blog | Capital Wealth Advisors">
+    <meta property="og:description" content="Expert retirement planning articles covering Social Security, tax strategies, estate planning, and income optimization from Capital Wealth Advisors in Lehi, Utah.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/blog/">
     
@@ -320,15 +320,10 @@
 <section class="blog-titan-hero">
     <div class="blog-titan-hero-inner">
         <div class="blog-titan-hero-content">
-            <h1 class="blog-titan-hero-left">Retire Right</h1>
-            <h1 class="blog-titan-hero-right">Radio</h1>
+            <h1 class="blog-titan-hero-left">Capital Wealth</h1>
+            <h1 class="blog-titan-hero-right">Blog</h1>
         </div>
-    </div>
-</section>
-
-<section class="blog-article-count">
-    <div class="blog-article-count-inner">
-        <p class="blog-article-count-text">Retirement strategies, tax planning insights, and financial guidance from Mike Stevens — straight from the airwaves of Retire Right Radio.</p>
+        <p class="blog-titan-hero-desc">Retirement strategies, tax planning insights, and financial guidance from the advisors at Capital Wealth — helping Utah families retire with confidence.</p>
     </div>
 </section>
 
@@ -337,7 +332,6 @@
     <div class="blog-featured-inner">
         <div class="blog-featured-header">
             <h2 class="blog-featured-title">Featured</h2>
-            <div class="blog-featured-divider"></div>
         </div>
         
         <div class="blog-featured-content">
@@ -362,19 +356,17 @@
                         <div class="blog-featured-card-graphic">
                             <svg width="100%" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 
-                                <polygon points="0,120 80,40 160,120" fill="#d4cfc7" opacity="0.5"/>
-                                <polygon points="60,120 160,25 260,120" fill="#c4bfb5" opacity="0.6"/>
-                                <polygon points="180,120 280,35 380,120" fill="#d4cfc7" opacity="0.5"/>
+                                <polygon points="0,120 80,40 160,120" fill="#194F90" opacity="0.08"/>
+                                <polygon points="60,120 160,25 260,120" fill="#194F90" opacity="0.12"/>
+                                <polygon points="180,120 280,35 380,120" fill="#194F90" opacity="0.08"/>
                                 
-                                <circle cx="200" cy="45" r="22" fill="none" stroke="#b8a88a" stroke-width="1.5" opacity="0.6"/>
-                                <circle cx="200" cy="45" r="14" fill="none" stroke="#b8a88a" stroke-width="1" opacity="0.4"/>
+                                <circle cx="200" cy="45" r="22" fill="none" stroke="#2b7bb9" stroke-width="1.5" opacity="0.3"/>
+                                <circle cx="200" cy="45" r="14" fill="none" stroke="#2b7bb9" stroke-width="1" opacity="0.2"/>
                                 
-                                <line x1="30" y1="95" x2="370" y2="95" stroke="#b8a88a" stroke-width="0.75" opacity="0.4"/>
+                                <line x1="30" y1="95" x2="370" y2="95" stroke="#194F90" stroke-width="0.75" opacity="0.15"/>
                                 
-                                <path d="M185,45 Q170,30 175,15" fill="none" stroke="#b8a88a" stroke-width="1" opacity="0.35"/>
-                                <path d="M215,45 Q230,30 225,15" fill="none" stroke="#b8a88a" stroke-width="1" opacity="0.35"/>
-                                <path d="M180,50 Q160,30 168,8" fill="none" stroke="#b8a88a" stroke-width="0.75" opacity="0.25"/>
-                                <path d="M220,50 Q240,30 232,8" fill="none" stroke="#b8a88a" stroke-width="0.75" opacity="0.25"/>
+                                <polyline points="40,90 100,75 160,80 220,55 280,60 340,40" fill="none" stroke="#2b7bb9" stroke-width="1.5" opacity="0.25"/>
+                                <polyline points="40,95 100,85 160,88 220,70 280,72 340,55" fill="none" stroke="#f09f54" stroke-width="1" opacity="0.2"/>
                             </svg>
                         </div>
                         <time class="blog-featured-card-date">9/13/2024</time>
@@ -519,7 +511,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             return searchTerms.every(term => 
                 searchContent.includes(term) || 
-                // Simple fuzzy matching - allow 1 character difference for words 4+ chars
                 (term.length >= 4 && searchContent.split(' ').some(word => 
                     Math.abs(word.length - term.length) <= 1 && 
                     [...term].filter((char, i) => char === word[i]).length >= term.length - 1
@@ -532,7 +523,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function filterByTag(tag) {
         activeTagFilter = tag;
         
-        // Update active tag button
         document.querySelectorAll('.blog-tag-pill').forEach(btn => {
             btn.classList.remove('active');
         });
@@ -547,7 +537,6 @@ document.addEventListener('DOMContentLoaded', function() {
             filteredArticles = [...allArticles];
         }
         
-        // Apply search if there's a search query
         const searchQuery = searchInput.value.trim();
         if (searchQuery) {
             filteredArticles = searchArticles(searchQuery).filter(article => 
@@ -565,17 +554,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (query) {
             let searchResults = searchArticles(query);
-            
-            // Apply tag filter if active
             if (activeTagFilter) {
                 searchResults = searchResults.filter(article => 
                     article.dataset.tags.includes(activeTagFilter)
                 );
             }
-            
             filteredArticles = searchResults;
         } else {
-            // No search query, show all articles (filtered by tag if applicable)
             filteredArticles = activeTagFilter 
                 ? allArticles.filter(article => article.dataset.tags.includes(activeTagFilter))
                 : [...allArticles];
@@ -587,23 +572,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update display with pagination
     function updateDisplay() {
-        // Hide all articles
         allArticles.forEach(article => {
             article.style.display = 'none';
         });
         
-        // Calculate pagination
         const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
         const startIndex = (currentPage - 1) * articlesPerPage;
         const endIndex = startIndex + articlesPerPage;
         const pageArticles = filteredArticles.slice(startIndex, endIndex);
         
-        // Show current page articles
         pageArticles.forEach(article => {
             article.style.display = 'block';
         });
         
-        // Update pagination
         updatePagination(totalPages);
     }
     
@@ -613,7 +594,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (totalPages <= 1) return;
         
-        // Previous button
         const prevButton = document.createElement('button');
         prevButton.textContent = '← Previous';
         prevButton.className = 'blog-pagination-btn' + (currentPage === 1 ? ' disabled' : '');
@@ -626,7 +606,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         paginationContainer.appendChild(prevButton);
         
-        // Page numbers
         for (let i = 1; i <= totalPages; i++) {
             if (i === 1 || i === totalPages || Math.abs(i - currentPage) <= 1) {
                 const pageButton = document.createElement('button');
@@ -645,7 +624,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
-        // Next button
         const nextButton = document.createElement('button');
         nextButton.textContent = 'Next →';
         nextButton.className = 'blog-pagination-btn' + (currentPage === totalPages ? ' disabled' : '');
