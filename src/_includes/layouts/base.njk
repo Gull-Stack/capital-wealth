@@ -47,16 +47,25 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/main.css">
     
-    <!-- Schema JSON-LD -->
+    <!-- Schema JSON-LD: Organization + LocalBusiness + FinancialService -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "FinancialService",
+        "@type": ["FinancialService", "LocalBusiness", "Organization"],
+        "@id": "{{ site.url }}/#organization",
         "name": "{{ site.title }}",
+        "legalName": "Capital Wealth Advisors, LLC",
         "description": "{{ site.description }}",
         "url": "{{ site.url }}",
         "telephone": "{{ site.phone }}",
         "email": "{{ site.email }}",
+        "foundingDate": "2009",
+        "numberOfEmployees": { "@type": "QuantitativeValue", "value": 5 },
+        "slogan": "Strategic Income & Tax Planning for Your Retirement",
+        "knowsAbout": ["Retirement Planning", "FERS Federal Benefits", "TSP Planning", "Roth Conversions", "Social Security Optimization", "Medicare IRMAA", "Tax-Efficient Withdrawals", "Estate Planning", "401k Rollovers", "Fiduciary Financial Advice"],
+        "logo": "{{ site.url }}/assets/images/logos/logo-horizontal-color.png",
+        "image": "{{ site.url }}/assets/images/photos/CWA-Mountain-Couple-home-header.webp",
+        "sameAs": ["https://www.linkedin.com/in/mstevens317/"],
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "{{ site.address.street }}",
@@ -65,15 +74,36 @@
             "postalCode": "{{ site.address.zip }}",
             "addressCountry": "US"
         },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.4167,
+            "longitude": -111.8908
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Advisory Fee",
         "founder": {
             "@type": "Person",
             "name": "{{ site.founder.name }}",
-            "jobTitle": "{{ site.founder.title }}"
+            "jobTitle": "{{ site.founder.title }}",
+            "description": "Investment Adviser Representative, fiduciary, host of Retire Right Radio, author of Retire Right Retire Now",
+            "sameAs": "https://www.linkedin.com/in/mstevens317/"
         },
-        "areaServed": {
-            "@type": "State",
-            "name": "Utah"
-        },
+        "areaServed": [
+            { "@type": "State", "name": "Utah" },
+            { "@type": "State", "name": "Idaho" },
+            { "@type": "Country", "name": "United States" }
+        ],
+        "hasCredential": [
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Series 66 Investment Adviser Representative" },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "California Insurance License #0G96805" }
+        ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Financial Advisory Services",

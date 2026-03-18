@@ -47,16 +47,25 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/main.css">
     
-    <!-- Schema JSON-LD -->
+    <!-- Schema JSON-LD: Organization + LocalBusiness + FinancialService -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "FinancialService",
+        "@type": ["FinancialService", "LocalBusiness", "Organization"],
+        "@id": "https://www.capitalwealth.com/#organization",
         "name": "Capital Wealth",
+        "legalName": "Capital Wealth Advisors, LLC",
         "description": "Fiduciary financial advisor in Lehi, Utah specializing in retirement income planning, tax-efficient strategies, 401(k) rollovers, and Social Security optimization.",
         "url": "https://www.capitalwealth.com",
         "telephone": "801.210.2800",
         "email": "info@capitalwealth.com",
+        "foundingDate": "2009",
+        "numberOfEmployees": { "@type": "QuantitativeValue", "value": 5 },
+        "slogan": "Strategic Income & Tax Planning for Your Retirement",
+        "knowsAbout": ["Retirement Planning", "FERS Federal Benefits", "TSP Planning", "Roth Conversions", "Social Security Optimization", "Medicare IRMAA", "Tax-Efficient Withdrawals", "Estate Planning", "401k Rollovers", "Fiduciary Financial Advice"],
+        "logo": "https://www.capitalwealth.com/assets/images/logos/logo-horizontal-color.png",
+        "image": "https://www.capitalwealth.com/assets/images/photos/CWA-Mountain-Couple-home-header.webp",
+        "sameAs": ["https://www.linkedin.com/in/mstevens317/"],
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "1850 W Ashton Blvd, Ste 175",
@@ -65,15 +74,36 @@
             "postalCode": "84043",
             "addressCountry": "US"
         },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.4167,
+            "longitude": -111.8908
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Advisory Fee",
         "founder": {
             "@type": "Person",
             "name": "Michael Stevens",
-            "jobTitle": "IAR (Investment Adviser Representative)"
+            "jobTitle": "IAR (Investment Adviser Representative)",
+            "description": "Investment Adviser Representative, fiduciary, host of Retire Right Radio, author of Retire Right Retire Now",
+            "sameAs": "https://www.linkedin.com/in/mstevens317/"
         },
-        "areaServed": {
-            "@type": "State",
-            "name": "Utah"
-        },
+        "areaServed": [
+            { "@type": "State", "name": "Utah" },
+            { "@type": "State", "name": "Idaho" },
+            { "@type": "Country", "name": "United States" }
+        ],
+        "hasCredential": [
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Series 66 Investment Adviser Representative" },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "California Insurance License #0G96805" }
+        ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Financial Advisory Services",
