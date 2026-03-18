@@ -8096,15 +8096,7 @@ html { font-size: 18px; }
   line-height: 1.1;
 }
 
-.blog-titan-hero-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.blog-hero-illustration {
-  opacity: 0.8;
-}
+/* icon removed — hero is title-only */
 
 /* Article Count */
 .blog-article-count {
@@ -8474,10 +8466,7 @@ html { font-size: 18px; }
     font-size: 2.5rem;
   }
   
-  .blog-hero-illustration {
-    width: 80px;
-    height: 80px;
-  }
+  /* icon removed */
   
   .blog-featured-content {
     grid-template-columns: 1fr;
