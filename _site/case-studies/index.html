@@ -357,8 +357,8 @@
                 </div>
                 
                 <div class="finpay-nav-right">
-                    <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="finpay-nav-link client-login">Client Login</a>
                     <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Call</a>
+                    <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="finpay-nav-link client-login">Client Login</a>
                     
                     <!-- Mobile Hamburger Button -->
                     <button class="mobile-menu-button" id="mobile-menu-button" aria-label="Toggle mobile menu">
@@ -405,6 +405,7 @@
                         
                         <div class="mobile-nav-cta">
                             <a href="/contact/" class="mobile-cta-btn">Schedule a Call</a>
+                            <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="mobile-cta-secondary">Client Login</a>
                         </div>
                     </div>
                 </div>
@@ -832,8 +833,11 @@
         right: -100%;
         width: 320px;
         height: 100vh;
-        background: white;
-        box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        box-shadow: -8px 0 32px rgba(0,0,0,0.08);
+        border-left: 1px solid rgba(0,0,0,0.05);
         transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         z-index: 9999;
         overflow-y: auto;
@@ -844,7 +848,7 @@
     }
 
     .mobile-nav-content {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -854,9 +858,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 1.5rem;
-        border-bottom: 1px solid var(--gray-200);
-        margin-bottom: 1.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        margin-bottom: 2rem;
     }
 
     .mobile-menu-close {
@@ -865,6 +869,13 @@
         cursor: pointer;
         padding: 8px;
         color: var(--gray-600);
+        border-radius: 6px;
+        transition: all 0.2s ease;
+    }
+
+    .mobile-menu-close:hover {
+        background: rgba(0,0,0,0.05);
+        color: var(--gray-800);
     }
 
     .mobile-nav-links {
@@ -941,8 +952,8 @@
     }
 
     .mobile-nav-cta {
-        padding-top: 1.5rem;
-        border-top: 1px solid var(--gray-200);
+        padding-top: 2rem;
+        border-top: 1px solid rgba(0,0,0,0.08);
         margin-top: auto;
     }
 
@@ -963,13 +974,35 @@
         transform: translateY(-1px);
     }
 
+    .mobile-cta-secondary {
+        display: block;
+        background: transparent;
+        color: var(--cw-primary);
+        border: 2px solid var(--cw-primary);
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        transition: all 0.2s ease;
+        margin-top: 0.75rem;
+    }
+
+    .mobile-cta-secondary:hover {
+        background: var(--cw-primary);
+        color: white;
+        transform: translateY(-1px);
+    }
+
     .mobile-nav-overlay {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.15);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
         z-index: 9998;
         opacity: 0;
         visibility: hidden;
@@ -991,14 +1024,24 @@
             display: block;
         }
 
+        .finpay-nav {
+            justify-content: space-between;
+        }
+
         .finpay-nav-right {
             display: flex;
             align-items: center;
             gap: 1rem;
+            margin-left: auto;
         }
 
         .client-login {
             font-size: 0.875rem;
+            order: 1;
+        }
+
+        .mobile-menu-button {
+            order: 2;
         }
 
         .desktop-cta {
@@ -1032,9 +1075,22 @@
             height: 32px;
         }
 
+        .finpay-nav-right {
+            gap: 0.75rem;
+        }
+
         .client-login {
             font-size: 0.8rem;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .mobile-menu-button {
+            padding: 4px;
+        }
+
+        .hamburger-line {
+            width: 20px;
+            height: 2.5px;
         }
     }
     </style>

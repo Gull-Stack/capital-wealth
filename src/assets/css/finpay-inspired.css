@@ -767,9 +767,13 @@ p {
   }
   
   .finpay-hero-image {
-    height: 400px !important; /* Smaller on mobile */
+    height: 500px !important; /* Increased from 400px to better show the walking couple */
     width: 100% !important;
     margin-left: 0 !important;
+  }
+  
+  .finpay-hero-image img {
+    object-position: center 30% !important; /* Adjusted position for mobile to show walking couple */
   }
   
   /* Enhanced mobile sticky CTA */
