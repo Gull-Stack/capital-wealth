@@ -1700,10 +1700,17 @@ Utah's health-conscious culture, combined with medical advances, means many Utah
     <script>
     // Mobile Navigation Functionality
     document.addEventListener('DOMContentLoaded', () => {
+        console.log('DOMContentLoaded fired for mobile menu');
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenuClose = document.getElementById('mobile-menu-close');
         const mobileNavMenu = document.getElementById('mobile-nav-menu');
         const body = document.body;
+
+        console.log('Mobile menu elements found:', {
+            button: !!mobileMenuButton,
+            close: !!mobileMenuClose,
+            menu: !!mobileNavMenu
+        });
 
         // Create overlay
         const overlay = document.createElement('div');
@@ -1712,22 +1719,33 @@ Utah's health-conscious culture, combined with medical advances, means many Utah
         body.appendChild(overlay);
 
         function openMobileMenu() {
-            mobileMenuButton.classList.add('active');
-            mobileNavMenu.classList.add('active');
+            console.log('Opening mobile menu');
+            if (mobileMenuButton) mobileMenuButton.classList.add('active');
+            if (mobileNavMenu) mobileNavMenu.classList.add('active');
             overlay.classList.add('active');
             body.style.overflow = 'hidden';
         }
 
         function closeMobileMenu() {
-            mobileMenuButton.classList.remove('active');
-            mobileNavMenu.classList.remove('active');
+            console.log('Closing mobile menu');
+            if (mobileMenuButton) mobileMenuButton.classList.remove('active');
+            if (mobileNavMenu) mobileNavMenu.classList.remove('active');
             overlay.classList.remove('active');
             body.style.overflow = '';
         }
 
-        // Event listeners
-        mobileMenuButton?.addEventListener('click', openMobileMenu);
-        mobileMenuClose?.addEventListener('click', closeMobileMenu);
+        // Event listeners with better error handling
+        if (mobileMenuButton) {
+            console.log('Adding click listener to mobile menu button');
+            mobileMenuButton.addEventListener('click', openMobileMenu);
+        } else {
+            console.error('Mobile menu button not found!');
+        }
+        
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener('click', closeMobileMenu);
+        }
+        
         overlay.addEventListener('click', closeMobileMenu);
 
         // Mobile dropdown toggles
