@@ -1291,54 +1291,52 @@ How much volatility your plan can actually absorb without threatening your incom
     </style>
 
     <script>
-    // Mobile Navigation Functionality
-    document.addEventListener('DOMContentLoaded', () => {
-        console.log('DOMContentLoaded fired for mobile menu');
+    // Mobile Navigation Functionality - Enhanced with fallback
+    function initMobileMenu() {
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenuClose = document.getElementById('mobile-menu-close');
         const mobileNavMenu = document.getElementById('mobile-nav-menu');
         const body = document.body;
 
-        console.log('Mobile menu elements found:', {
-            button: !!mobileMenuButton,
-            close: !!mobileMenuClose,
-            menu: !!mobileNavMenu
-        });
+        if (!mobileMenuButton || !mobileNavMenu) {
+            return; // Elements not ready yet
+        }
 
-        // Create overlay
-        const overlay = document.createElement('div');
-        overlay.className = 'mobile-nav-overlay';
-        overlay.id = 'mobile-nav-overlay';
-        body.appendChild(overlay);
+        // Create overlay if it doesn't exist
+        let overlay = document.getElementById('mobile-nav-overlay');
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.className = 'mobile-nav-overlay';
+            overlay.id = 'mobile-nav-overlay';
+            body.appendChild(overlay);
+        }
 
         function openMobileMenu() {
-            console.log('Opening mobile menu');
-            if (mobileMenuButton) mobileMenuButton.classList.add('active');
-            if (mobileNavMenu) mobileNavMenu.classList.add('active');
+            mobileMenuButton.classList.add('active');
+            mobileNavMenu.classList.add('active');
             overlay.classList.add('active');
             body.style.overflow = 'hidden';
         }
 
         function closeMobileMenu() {
-            console.log('Closing mobile menu');
-            if (mobileMenuButton) mobileMenuButton.classList.remove('active');
-            if (mobileNavMenu) mobileNavMenu.classList.remove('active');
+            mobileMenuButton.classList.remove('active');
+            mobileNavMenu.classList.remove('active');
             overlay.classList.remove('active');
             body.style.overflow = '';
         }
 
-        // Event listeners with better error handling
-        if (mobileMenuButton) {
-            console.log('Adding click listener to mobile menu button');
-            mobileMenuButton.addEventListener('click', openMobileMenu);
-        } else {
-            console.error('Mobile menu button not found!');
+        // Remove existing listeners to prevent duplicates
+        mobileMenuButton.removeEventListener('click', openMobileMenu);
+        if (mobileMenuClose) {
+            mobileMenuClose.removeEventListener('click', closeMobileMenu);
         }
-        
+        overlay.removeEventListener('click', closeMobileMenu);
+
+        // Add event listeners
+        mobileMenuButton.addEventListener('click', openMobileMenu);
         if (mobileMenuClose) {
             mobileMenuClose.addEventListener('click', closeMobileMenu);
         }
-        
         overlay.addEventListener('click', closeMobileMenu);
 
         // Mobile dropdown toggles
@@ -1348,8 +1346,10 @@ How much volatility your plan can actually absorb without threatening your incom
                 const targetId = toggle.getAttribute('data-target');
                 const targetMenu = document.getElementById(targetId);
                 
-                toggle.classList.toggle('active');
-                targetMenu.classList.toggle('active');
+                if (targetMenu) {
+                    toggle.classList.toggle('active');
+                    targetMenu.classList.toggle('active');
+                }
             });
         });
 
@@ -1365,7 +1365,17 @@ How much volatility your plan can actually absorb without threatening your incom
                 closeMobileMenu();
             }
         });
-    });
+    }
+
+    // Try to initialize immediately if DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initMobileMenu);
+    } else {
+        initMobileMenu();
+    }
+
+    // Fallback with a small delay to ensure elements exist
+    setTimeout(initMobileMenu, 100);
 
     // Smooth scroll reveal animations
     const observerOptions = {
