@@ -16,6 +16,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.capitalwealth.com/blog/three-stages-retirement-jun-21-2025/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/blog/taking-control-retirement-jun-28-2025/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/blog/make-your-money-work-aug-16-2025/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/blog/four-retirement-unknowns-aug-23-2025/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/blog/four-retirement-unknowns-oct-25-2025/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.capitalwealth.com/blog/preparing-for-market-volatility-jan-2-2026/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -346,11 +371,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/services/federal-benefits/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -367,6 +387,16 @@
   </url>
   <url>
     <loc>https://www.capitalwealth.com/index-original/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/book/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
