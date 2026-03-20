@@ -1063,27 +1063,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Sticky CTA popup functionality
+// Enhanced Sticky CTA functionality with proper session persistence
 document.addEventListener('DOMContentLoaded', () => {
     let stickyShown = false;
+    let ctaDismissed = sessionStorage.getItem('cwa-cta-dismissed') === 'true';
     const stickyCta = document.getElementById('sticky-cta');
     
+    if (!stickyCta) return;
+    
     function showStickyCta() {
-        if (!stickyShown && stickyCta) {
+        if (!stickyShown && !ctaDismissed && stickyCta) {
             stickyCta.style.transform = 'translateY(0)';
             stickyShown = true;
         }
     }
     
-    function hideStickyCta() {
+    function hideStickyCta(temporary = false) {
         if (stickyCta) {
             stickyCta.style.transform = 'translateY(120%)';
             stickyShown = false;
+            
+            // If not temporarily hiding, mark as dismissed for session
+            if (!temporary) {
+                ctaDismissed = true;
+                sessionStorage.setItem('cwa-cta-dismissed', 'true');
+            }
         }
     }
     
-    // Show after scrolling past hero section
+    // Show/hide based on scroll position - only if not dismissed
     window.addEventListener('scroll', () => {
+        if (ctaDismissed) return;
+        
         const heroHeight = document.querySelector('.finpay-hero')?.offsetHeight || 600;
         const footerTop = document.querySelector('.finpay-footer')?.offsetTop || 9999;
         const scrollTop = window.pageYOffset;
@@ -1092,19 +1103,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (scrollTop > heroHeight && (scrollTop + windowHeight) < footerTop - 200) {
             showStickyCta();
         } else {
-            hideStickyCta();
+            hideStickyCta(true); // Temporarily hide, don't mark as dismissed
         }
     });
     
-    // Close button functionality
-    document.getElementById('close-sticky-cta')?.addEventListener('click', () => {
-        hideStickyCta();
-        sessionStorage.setItem('cta-dismissed', 'true');
+    // Close button functionality - permanently dismiss for session
+    document.getElementById('close-sticky-cta')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        hideStickyCta(false); // Permanently dismiss
     });
     
-    // Don't show if user already dismissed it this session
-    if (sessionStorage.getItem('cta-dismissed')) {
-        hideStickyCta();
+    // Initialize - hide if already dismissed
+    if (ctaDismissed) {
+        stickyCta.style.transform = 'translateY(120%)';
     }
 });
 </script>

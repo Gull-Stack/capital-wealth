@@ -270,7 +270,9 @@
                         <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="height: 36px; width: auto;">
                     </a>
                 </div>
-                <div class="finpay-nav-links">
+                
+                <!-- Desktop Navigation -->
+                <div class="finpay-nav-links desktop-nav">
                     <div class="nav-dropdown" style="position: relative;">
                         <a href="/services/" class="finpay-nav-link" style="display: flex; align-items: center; gap: 4px;">
                             Services 
@@ -329,9 +331,58 @@
                     <a href="/about/" class="finpay-nav-link">Our Team</a>
                     <a href="https://www.retirerightbook.com/" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
                 </div>
-                <div class="finpay-nav-right" style="display: flex; align-items: center; gap: 1.5rem;">
-                    <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="finpay-nav-link">Client Login</a>
-                    <a href="/contact/" class="finpay-nav-cta">Schedule a Call</a>
+                
+                <div class="finpay-nav-right">
+                    <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="finpay-nav-link client-login">Client Login</a>
+                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Call</a>
+                    
+                    <!-- Mobile Hamburger Button -->
+                    <button class="mobile-menu-button" id="mobile-menu-button" aria-label="Toggle mobile menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+                
+                <!-- Mobile Navigation Menu -->
+                <div class="mobile-nav-menu" id="mobile-nav-menu">
+                    <div class="mobile-nav-content">
+                        <div class="mobile-nav-header">
+                            <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="height: 32px; width: auto;">
+                            <button class="mobile-menu-close" id="mobile-menu-close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="mobile-nav-links">
+                            <div class="mobile-nav-section">
+                                <button class="mobile-dropdown-toggle" data-target="mobile-services-menu">
+                                    Services
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="dropdown-arrow">
+                                        <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <div class="mobile-dropdown-menu" id="mobile-services-menu">
+                                    <a href="/services/tax-planning/">Tax-Efficient Strategies</a>
+                                    <a href="/services/portfolio-management/">Portfolio Management</a>
+                                    <a href="/services/retirement-money-map/">Retirement Money Map</a>
+                                    <a href="/services/social-security/">Social Security Optimization</a>
+                                    <a href="/services/estate-planning/">Estate & Legacy Planning</a>
+                                </div>
+                            </div>
+                            
+                            <a href="/services/federal-benefits/" class="mobile-nav-link">Federal</a>
+                            <a href="/blog/" class="mobile-nav-link">Blog</a>
+                            <a href="/about/" class="mobile-nav-link">Our Team</a>
+                            <a href="https://www.retirerightbook.com/" class="mobile-nav-link" target="_blank" rel="noopener">Book</a>
+                        </div>
+                        
+                        <div class="mobile-nav-cta">
+                            <a href="/contact/" class="mobile-cta-btn">Schedule a Call</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -1034,60 +1085,230 @@
 
 <div style="border-top:1px solid rgba(0,0,0,0.1); padding-top:2rem; margin-bottom:3rem;">
 <h2 style="font-family:var(--font-family); font-size:1.5rem; font-weight:500; color:var(--navy); margin:0 0 1.5rem;">Lifestyle & Warmth Photos</h2>
-<p style="font-size:0.9rem; color:rgba(25,79,144,0.6); margin-bottom:2rem;">Professional photos for adding warmth and human connection to the website and marketing materials.</p>
-
-<!-- TODO: Download images from Google Drive and add them here -->
-<!-- Google Drive folder: https://drive.google.com/drive/folders/1KqVVoLydT1JM65gG_xjLPQnDGhkj-91u?usp=drive_link -->
+<p style="font-size:0.9rem; color:rgba(25,79,144,0.6); margin-bottom:2rem;">Professional lifestyle photos for adding warmth and human connection to website and marketing materials. Perfect for retirement planning, financial freedom, and active lifestyle messaging.</p>
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;">
 
-<!-- Placeholder for Google Drive images - These need to be manually downloaded and added -->
-<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06); background:#f8f9fa;">
-  <div style="aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f0f1f3;">
-    <div style="text-align:center; color:rgba(25,79,144,0.4); padding:2rem;">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-        <circle cx="8.5" cy="8.5" r="1.5"/>
-        <polyline points="21,15 16,10 5,21"/>
+<!-- Active & Healthy Living -->
+<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06);">
+  <div style="aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f0f1f3; position:relative;">
+    <div style="text-align:center; color:rgba(25,79,144,0.4); padding:1rem;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+        <rect x="2" y="9" width="20" height="12" rx="2" ry="2"/>
+        <circle cx="12" cy="15" r="1"/>
       </svg>
-      <p style="font-size:0.8rem; margin:0.5rem 0 0;">Download from<br>Google Drive</p>
+      <p style="font-size:0.7rem; margin:0.25rem 0 0; font-weight:500;">Active Woman Jogging</p>
     </div>
+    <div style="position:absolute; top:0.5rem; right:0.5rem; background:rgba(240,159,84,1); color:white; padding:0.25rem 0.5rem; border-radius:12px; font-size:0.6rem; font-weight:600;">AVAILABLE</div>
   </div>
   <div style="padding:0.75rem 1rem;">
-    <strong style="color:var(--navy); font-size:0.85rem;">Warmth Photos Needed</strong>
-    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">From AE Google Drive folder</p>
+    <strong style="color:var(--navy); font-size:0.85rem;">Active Woman Jogging</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Mountain lake setting • Healthy retirement lifestyle</p>
   </div>
 </div>
 
-<!-- Example with existing photos for layout reference -->
+<!-- Couples & Connection -->
 <div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06);">
+  <div style="aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f0f1f3; position:relative;">
+    <div style="text-align:center; color:rgba(25,79,144,0.4); padding:1rem;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+        <rect x="2" y="9" width="20" height="12" rx="2" ry="2"/>
+        <circle cx="12" cy="15" r="1"/>
+      </svg>
+      <p style="font-size:0.7rem; margin:0.25rem 0 0; font-weight:500;">Couple Alpine Hiking</p>
+    </div>
+    <div style="position:absolute; top:0.5rem; right:0.5rem; background:rgba(240,159,84,1); color:white; padding:0.25rem 0.5rem; border-radius:12px; font-size:0.6rem; font-weight:600;">AVAILABLE</div>
+  </div>
+  <div style="padding:0.75rem 1rem;">
+    <strong style="color:var(--navy); font-size:0.85rem;">Couple Alpine Hiking</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Active retirement • Alpine hillside setting</p>
+  </div>
+</div>
+
+<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06);">
+  <div style="aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f0f1f3; position:relative;">
+    <div style="text-align:center; color:rgba(25,79,144,0.4); padding:1rem;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+        <rect x="2" y="9" width="20" height="12" rx="2" ry="2"/>
+        <circle cx="12" cy="15" r="1"/>
+      </svg>
+      <p style="font-size:0.7rem; margin:0.25rem 0 0; font-weight:500;">Mountain Trail Sunset</p>
+    </div>
+    <div style="position:absolute; top:0.5rem; right:0.5rem; background:rgba(240,159,84,1); color:white; padding:0.25rem 0.5rem; border-radius:12px; font-size:0.6rem; font-weight:600;">AVAILABLE</div>
+  </div>
+  <div style="padding:0.75rem 1rem;">
+    <strong style="color:var(--navy); font-size:0.85rem;">Mountain Trail Sunset</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Retirement journey • Golden hour atmosphere</p>
+  </div>
+</div>
+
+<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06);">
+  <div style="aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f0f1f3; position:relative;">
+    <div style="text-align:center; color:rgba(25,79,144,0.4); padding:1rem;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+        <rect x="2" y="9" width="20" height="12" rx="2" ry="2"/>
+        <circle cx="12" cy="15" r="1"/>
+      </svg>
+      <p style="font-size:0.7rem; margin:0.25rem 0 0; font-weight:500;">Lake Dock Together</p>
+    </div>
+    <div style="position:absolute; top:0.5rem; right:0.5rem; background:rgba(240,159,84,1); color:white; padding:0.25rem 0.5rem; border-radius:12px; font-size:0.6rem; font-weight:600;">AVAILABLE</div>
+  </div>
+  <div style="padding:0.75rem 1rem;">
+    <strong style="color:var(--navy); font-size:0.85rem;">Lake Dock Together</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Couple holding hands • Peaceful retirement</p>
+  </div>
+</div>
+
+<!-- Summit & Goals -->
+<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06);">
+  <div style="aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f0f1f3; position:relative;">
+    <div style="text-align:center; color:rgba(25,79,144,0.4); padding:1rem;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+        <rect x="2" y="9" width="20" height="12" rx="2" ry="2"/>
+        <circle cx="12" cy="15" r="1"/>
+      </svg>
+      <p style="font-size:0.7rem; margin:0.25rem 0 0; font-weight:500;">Mountain Summit</p>
+    </div>
+    <div style="position:absolute; top:0.5rem; right:0.5rem; background:rgba(240,159,84,1); color:white; padding:0.25rem 0.5rem; border-radius:12px; font-size:0.6rem; font-weight:600;">AVAILABLE</div>
+  </div>
+  <div style="padding:0.75rem 1rem;">
+    <strong style="color:var(--navy); font-size:0.85rem;">Mountain Summit Goals</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Overlooking valley • Achievement & success</p>
+  </div>
+</div>
+
+<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06);">
+  <div style="aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f0f1f3; position:relative;">
+    <div style="text-align:center; color:rgba(25,79,144,0.4); padding:1rem;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+        <rect x="2" y="9" width="20" height="12" rx="2" ry="2"/>
+        <circle cx="12" cy="15" r="1"/>
+      </svg>
+      <p style="font-size:0.7rem; margin:0.25rem 0 0; font-weight:500;">Waterfront Sunset</p>
+    </div>
+    <div style="position:absolute; top:0.5rem; right:0.5rem; background:rgba(240,159,84,1); color:white; padding:0.25rem 0.5rem; border-radius:12px; font-size:0.6rem; font-weight:600;">AVAILABLE</div>
+  </div>
+  <div style="padding:0.75rem 1rem;">
+    <strong style="color:var(--navy); font-size:0.85rem;">Waterfront Sunset Walk</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Retirement lifestyle • Evening stroll</p>
+  </div>
+</div>
+
+<!-- Financial Freedom & Legacy -->
+<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06);">
+  <div style="aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f0f1f3; position:relative;">
+    <div style="text-align:center; color:rgba(25,79,144,0.4); padding:1rem;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+        <rect x="2" y="9" width="20" height="12" rx="2" ry="2"/>
+        <circle cx="12" cy="15" r="1"/>
+      </svg>
+      <p style="font-size:0.7rem; margin:0.25rem 0 0; font-weight:500;">Golden Meadow</p>
+    </div>
+    <div style="position:absolute; top:0.5rem; right:0.5rem; background:rgba(240,159,84,1); color:white; padding:0.25rem 0.5rem; border-radius:12px; font-size:0.6rem; font-weight:600;">AVAILABLE</div>
+  </div>
+  <div style="padding:0.75rem 1rem;">
+    <strong style="color:var(--navy); font-size:0.85rem;">Financial Freedom</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Golden sunset • Mountain meadow</p>
+  </div>
+</div>
+
+<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06);">
+  <div style="aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f0f1f3; position:relative;">
+    <div style="text-align:center; color:rgba(25,79,144,0.4); padding:1rem;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+        <rect x="2" y="9" width="20" height="12" rx="2" ry="2"/>
+        <circle cx="12" cy="15" r="1"/>
+      </svg>
+      <p style="font-size:0.7rem; margin:0.25rem 0 0; font-weight:500;">Family Legacy</p>
+    </div>
+    <div style="position:absolute; top:0.5rem; right:0.5rem; background:rgba(240,159,84,1); color:white; padding:0.25rem 0.5rem; border-radius:12px; font-size:0.6rem; font-weight:600;">AVAILABLE</div>
+  </div>
+  <div style="padding:0.75rem 1rem;">
+    <strong style="color:var(--navy); font-size:0.85rem;">Legacy Planning</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Grandmother & grandchild • Lakeside</p>
+  </div>
+</div>
+
+<!-- More Lifestyle Images (Additional 7 images) -->
+<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06);">
+  <div style="aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center; background:#f0f1f3; position:relative;">
+    <div style="text-align:center; color:rgba(25,79,144,0.4); padding:1rem;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+        <rect x="2" y="9" width="20" height="12" rx="2" ry="2"/>
+        <circle cx="12" cy="15" r="1"/>
+      </svg>
+      <p style="font-size:0.7rem; margin:0.25rem 0 0; font-weight:500;">Autumn Forest</p>
+    </div>
+    <div style="position:absolute; top:0.5rem; right:0.5rem; background:rgba(240,159,84,1); color:white; padding:0.25rem 0.5rem; border-radius:12px; font-size:0.6rem; font-weight:600;">AVAILABLE</div>
+  </div>
+  <div style="padding:0.75rem 1rem;">
+    <strong style="color:var(--navy); font-size:0.85rem;">Autumn Forest Hike</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Happy senior couple • Outdoor lifestyle</p>
+  </div>
+</div>
+
+<!-- Example existing photos for comparison -->
+<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06); border-color:rgba(25,79,144,0.2);">
   <div style="aspect-ratio:4/3; overflow:hidden;">
     <img src="/assets/images/photos/CWA-Mountain-Couple-home-header.webp" alt="Couple in Utah mountains" style="width:100%; height:100%; object-fit:cover;">
   </div>
   <div style="padding:0.75rem 1rem;">
-    <strong style="color:var(--navy); font-size:0.85rem;">Utah Mountains Couple</strong>
-    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Current hero image</p>
+    <strong style="color:var(--navy); font-size:0.85rem;">Current Homepage Hero</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Currently in use • Mountain couple</p>
   </div>
 </div>
 
-<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06);">
+<div style="border-radius:12px; overflow:hidden; border:1px solid rgba(0,0,0,0.06); border-color:rgba(25,79,144,0.2);">
   <div style="aspect-ratio:4/3; overflow:hidden;">
     <img src="/assets/images/photos/already-retired.webp" alt="Already retired couple" style="width:100%; height:100%; object-fit:cover;">
   </div>
   <div style="padding:0.75rem 1rem;">
-    <strong style="color:var(--navy); font-size:0.85rem;">Happy Retirees</strong>
-    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Service page header</p>
+    <strong style="color:var(--navy); font-size:0.85rem;">Service Page Header</strong>
+    <p style="font-size:0.72rem; color:rgba(25,79,144,0.4); margin:0.2rem 0 0;">Currently in use • Happy retirees</p>
   </div>
 </div>
 
 </div>
 
-<div style="background:rgba(240,159,84,0.1); border-radius:8px; padding:1rem; margin:2rem 0;">
-  <p style="font-size:0.9rem; color:#194F90; margin:0;">
-    <strong>Action Required:</strong> Download lifestyle photos from the Google Drive folder 
-    <a href="https://drive.google.com/drive/folders/1KqVVoLydT1JM65gG_xjLPQnDGhkj-91u?usp=drive_link" target="_blank" style="color:#194F90; text-decoration:underline;">here</a> 
-    and add them to <code>/assets/images/lifestyle/</code> directory, then update this section with the actual images.
+<div style="background:rgba(25,79,144,0.05); border-left:4px solid var(--navy); padding:1.5rem; margin:2rem 0; border-radius:8px;">
+  <h3 style="color:var(--navy); font-size:1rem; font-weight:600; margin:0 0 0.5rem;">📋 Implementation Status</h3>
+  <p style="font-size:0.9rem; color:#194F90; margin:0 0 1rem; line-height:1.6;">
+    <strong>15 lifestyle images identified</strong> from AE Google Drive folder. These professional photos will add warmth and human connection to the Capital Wealth brand.
   </p>
+  
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem; margin:1rem 0;">
+    <div style="background:white; padding:0.75rem; border-radius:6px; border:1px solid rgba(25,79,144,0.1);">
+      <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+        <div style="width:8px; height:8px; background:#f09f54; border-radius:50%;"></div>
+        <strong style="font-size:0.8rem; color:var(--navy);">Images Available</strong>
+      </div>
+      <p style="font-size:0.75rem; color:rgba(25,79,144,0.6); margin:0;">Ready to download from Google Drive</p>
+    </div>
+    <div style="background:white; padding:0.75rem; border-radius:6px; border:1px solid rgba(25,79,144,0.1);">
+      <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+        <div style="width:8px; height:8px; background:#7b868c; border-radius:50%;"></div>
+        <strong style="font-size:0.8rem; color:var(--navy);">Directory Created</strong>
+      </div>
+      <p style="font-size:0.75rem; color:rgba(25,79,144,0.6); margin:0;"><code>/assets/images/lifestyle/</code></p>
+    </div>
+  </div>
+
+  <div style="background:rgba(240,159,84,0.1); border-radius:6px; padding:1rem; margin:1rem 0;">
+    <p style="font-size:0.85rem; color:#194F90; margin:0;">
+      <strong>Next Steps:</strong> Manual download of images from 
+      <a href="https://drive.google.com/drive/folders/1KqVVoLydT1JM65gG_xjLPQnDGhkj-91u?usp=sharing" target="_blank" style="color:#194F90; text-decoration:underline;">Google Drive folder</a> 
+      required to complete integration.
+    </p>
+  </div>
 </div>
 
 </div>
@@ -1189,7 +1410,311 @@
     </div>
 </footer>
 
+    <style>
+    /* Mobile Navigation Styles */
+    .mobile-menu-button {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        margin-left: 1rem;
+    }
+
+    .hamburger-line {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background: var(--gray-700);
+        margin: 4px 0;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+    }
+
+    .mobile-menu-button.active .hamburger-line:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .mobile-menu-button.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-button.active .hamburger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .mobile-nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 320px;
+        height: 100vh;
+        background: white;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+        transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: 9999;
+        overflow-y: auto;
+    }
+
+    .mobile-nav-menu.active {
+        right: 0;
+    }
+
+    .mobile-nav-content {
+        padding: 1.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--gray-200);
+        margin-bottom: 1.5rem;
+    }
+
+    .mobile-menu-close {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        color: var(--gray-600);
+    }
+
+    .mobile-nav-links {
+        flex: 1;
+    }
+
+    .mobile-nav-section {
+        margin-bottom: 0.5rem;
+    }
+
+    .mobile-dropdown-toggle {
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 1rem 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--gray-700);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .mobile-dropdown-toggle:hover {
+        color: var(--cw-primary);
+    }
+
+    .dropdown-arrow {
+        transition: transform 0.3s ease;
+    }
+
+    .mobile-dropdown-toggle.active .dropdown-arrow {
+        transform: rotate(180deg);
+    }
+
+    .mobile-dropdown-menu {
+        max-height: 0;
+        overflow: hidden;
+        padding-left: 1rem;
+        transition: max-height 0.3s ease;
+    }
+
+    .mobile-dropdown-menu.active {
+        max-height: 300px;
+    }
+
+    .mobile-dropdown-menu a {
+        display: block;
+        padding: 0.75rem 0;
+        color: var(--gray-600);
+        text-decoration: none;
+        font-size: 0.95rem;
+        border-bottom: 1px solid var(--gray-100);
+    }
+
+    .mobile-dropdown-menu a:hover {
+        color: var(--cw-primary);
+    }
+
+    .mobile-nav-link {
+        display: block;
+        padding: 1rem 0;
+        color: var(--gray-700);
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border-bottom: 1px solid var(--gray-100);
+    }
+
+    .mobile-nav-link:hover {
+        color: var(--cw-primary);
+    }
+
+    .mobile-nav-cta {
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--gray-200);
+        margin-top: auto;
+    }
+
+    .mobile-cta-btn {
+        display: block;
+        background: var(--cw-primary);
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+
+    .mobile-cta-btn:hover {
+        background: var(--cw-secondary);
+        transform: translateY(-1px);
+    }
+
+    .mobile-nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 9998;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Responsive Navigation Breakpoints */
+    @media (max-width: 1024px) {
+        .finpay-nav-links.desktop-nav {
+            display: none;
+        }
+
+        .mobile-menu-button {
+            display: block;
+        }
+
+        .finpay-nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .client-login {
+            font-size: 0.875rem;
+        }
+
+        .desktop-cta {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .mobile-menu-button {
+            display: none !important;
+        }
+
+        .mobile-nav-menu {
+            display: none !important;
+        }
+
+        .finpay-nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+    }
+
+    /* Enhanced responsive navigation */
+    @media (max-width: 768px) {
+        .finpay-nav {
+            padding: var(--space-3) 0;
+        }
+
+        .finpay-nav-logo img {
+            height: 32px;
+        }
+
+        .client-login {
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+    </style>
+
     <script>
+    // Mobile Navigation Functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileNavMenu = document.getElementById('mobile-nav-menu');
+        const body = document.body;
+
+        // Create overlay
+        const overlay = document.createElement('div');
+        overlay.className = 'mobile-nav-overlay';
+        overlay.id = 'mobile-nav-overlay';
+        body.appendChild(overlay);
+
+        function openMobileMenu() {
+            mobileMenuButton.classList.add('active');
+            mobileNavMenu.classList.add('active');
+            overlay.classList.add('active');
+            body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenuButton.classList.remove('active');
+            mobileNavMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            body.style.overflow = '';
+        }
+
+        // Event listeners
+        mobileMenuButton?.addEventListener('click', openMobileMenu);
+        mobileMenuClose?.addEventListener('click', closeMobileMenu);
+        overlay.addEventListener('click', closeMobileMenu);
+
+        // Mobile dropdown toggles
+        const dropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const targetId = toggle.getAttribute('data-target');
+                const targetMenu = document.getElementById(targetId);
+                
+                toggle.classList.toggle('active');
+                targetMenu.classList.toggle('active');
+            });
+        });
+
+        // Close mobile menu when clicking nav links
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link, .mobile-dropdown-menu a, .mobile-cta-btn');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileNavMenu.classList.contains('active')) {
+                closeMobileMenu();
+            }
+        });
+    });
+
     // Smooth scroll reveal animations
     const observerOptions = {
         threshold: 0.1,

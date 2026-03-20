@@ -2031,6 +2031,62 @@ a:hover {
   text-align: left;
 }
 
+/* Form Styling Improvements */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select, 
+textarea {
+  border: 1px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 0.85rem !important;
+  font-size: 1rem !important;
+  font-family: var(--font-family) !important;
+  background: #fff !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+  width: 100% !important;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+select:focus, 
+textarea:focus {
+  outline: none !important;
+  border-color: #194F90 !important;
+  box-shadow: 0 0 0 3px rgba(25, 79, 144, 0.1) !important;
+}
+
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+input[type="tel"]:hover, 
+select:hover, 
+textarea:hover {
+  border-color: #9ca3af !important;
+}
+
+/* Form labels */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #194F90 !important;
+  font-weight: 500 !important;
+  font-size: 0.95rem !important;
+}
+
+/* Form container improvements */
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Getting started section */
 .svc-start {
   padding: var(--spacing-3xl) 0;
