@@ -454,6 +454,35 @@
   margin-bottom: 32px;
 }
 
+.campus-preview {
+  margin-top: 24px;
+  position: relative;
+  display: inline-block;
+}
+
+.campus-img {
+  width: 280px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.campus-badge {
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  background: white;
+  border-radius: 8px;
+  padding: 6px 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.wsu-logo {
+  height: 32px;
+  width: auto;
+}
+
 .event-details {
   display: flex;
   flex-direction: column;
@@ -1257,6 +1286,13 @@ document.addEventListener('DOMContentLoaded', function() {
             <path d="9,12 l2,2 4,-4"/>
           </svg>
           <span>FREE for Federal Employees</span>
+        </div>
+      </div>
+      
+      <div class="campus-preview">
+        <img src="/assets/images/photos/weber-state-davis-campus.jpg" alt="Weber State University Davis Campus" class="campus-img">
+        <div class="campus-badge">
+          <img src="/assets/images/logos/weber-state-logo.png" alt="Weber State University" class="wsu-logo">
         </div>
       </div>
     </div>
