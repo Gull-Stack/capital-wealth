@@ -35,6 +35,7 @@ async function syncToSalesforce(leadData) {
     params.append('email', leadData.email || '');
     params.append('phone', leadData.phone || '');
     params.append('lead_source', 'Website Form');
+    params.append('Campaign_ID', '701VS00000dB91aYAC');
     params.append('description', descParts.join('\n'));
 
     const response = await fetch(
