@@ -15,6 +15,7 @@
   --cw-primary: #194F90;
   --cw-secondary: #15437a;
   --cw-light-blue: #2b7bb9;
+  --cw-orange: #F09F54; /* Capital Wealth orange accent */
   
   /* Finpay-inspired neutrals */
   --white: #ffffff;
@@ -253,9 +254,9 @@ p {
   box-shadow: var(--shadow);
 }
 
-/* Hero Section - Finpay style */
+/* Hero Section - Finpay style with reduced spacing */
 .finpay-hero {
-  padding: var(--space-32) 0 var(--space-24);
+  padding: var(--space-20) 0 var(--space-12); /* Reduced from 32/24 to 20/12 */
   background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
   position: relative;
 }
@@ -263,7 +264,7 @@ p {
 .finpay-hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-16);
+  gap: var(--space-8); /* Reduced from 16 to 8 */
   align-items: center;
   max-width: var(--container-lg);
   margin: 0 auto;
@@ -272,7 +273,7 @@ p {
 @media (max-width: 768px) {
   .finpay-hero-content {
     grid-template-columns: 1fr;
-    gap: var(--space-12);
+    gap: var(--space-6); /* Reduced gap for mobile */
     text-align: center;
   }
 }
@@ -298,8 +299,18 @@ p {
 
 .finpay-hero-buttons {
   display: flex;
-  gap: var(--space-4);
-  align-items: center;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: var(--space-3); /* Reduced gap */
+  align-items: stretch; /* Full width buttons */
+}
+
+/* Desktop: keep buttons side by side for larger screens */
+@media (min-width: 768px) {
+  .finpay-hero-buttons {
+    flex-direction: row;
+    align-items: center;
+    max-width: fit-content;
+  }
 }
 
 .finpay-btn-primary {
@@ -338,35 +349,79 @@ p {
   transform: translateY(-1px);
 }
 
+.finpay-btn-orange {
+  background: var(--cw-orange);
+  color: var(--white);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.finpay-btn-orange:hover {
+  background: #e8904a; /* Slightly darker orange on hover */
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-1px);
+}
+
 .finpay-hero-image {
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
+  height: 600px; /* Set a tall height */
+  position: relative;
 }
 
 .finpay-hero-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Cover the container */
+  object-position: center; /* Center the image */
   display: block;
 }
 
-/* Stats Section - Clean like Finpay's "3k+ businesses" */
+/* Allow image to overflow on larger screens */
+@media (min-width: 1024px) {
+  .finpay-hero-image {
+    height: 700px;
+    width: 120%; /* Overflow right side */
+    margin-left: 0;
+  }
+  
+  .finpay-hero-content {
+    overflow: hidden; /* Hide overflow on the container */
+  }
+}
+
+@media (min-width: 1280px) {
+  .finpay-hero-image {
+    height: 800px; /* Even taller on very large screens */
+    width: 130%;
+  }
+}
+
+/* Stats Section - Clean like Finpay's "3k+ businesses" with reduced spacing */
 .finpay-stats {
   background: var(--white);
-  padding: var(--space-16) 0;
+  padding: var(--space-8) 0; /* Reduced from 16 to 8 */
 }
 
 .finpay-stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-12);
+  gap: var(--space-6); /* Reduced from 12 to 6 */
   max-width: var(--container-lg);
   margin: 0 auto;
 }
 
 .finpay-stat {
   text-align: center;
-  padding: var(--space-8);
+  padding: var(--space-4); /* Reduced from 8 to 4 */
 }
 
 .finpay-stat-number {
@@ -386,10 +441,10 @@ p {
   letter-spacing: 0.05em;
 }
 
-/* Services Section - Professional card-based approach */
+/* Services Section - Professional card-based approach with reduced spacing */
 .finpay-services {
   background: var(--gray-50);
-  padding: var(--space-24) 0;
+  padding: var(--space-16) 0; /* Reduced from 24 to 16 */
   position: relative;
 }
 
@@ -472,10 +527,10 @@ p {
   transform: translateX(4px);
 }
 
-/* Comparison Section - Clean table approach */
+/* Comparison Section - Clean table approach with reduced spacing */
 .finpay-comparison {
   background: var(--white);
-  padding: var(--space-24) 0;
+  padding: var(--space-16) 0; /* Reduced from 24 to 16 */
 }
 
 .finpay-comparison-content {
@@ -512,6 +567,12 @@ p {
   font-weight: 600;
 }
 
+.finpay-comp-header .finpay-comp-feature,
+.finpay-comp-header .finpay-comp-us,
+.finpay-comp-header .finpay-comp-them {
+  color: var(--white) !important; /* Ensure all header text is white */
+}
+
 .finpay-comp-feature {
   font-weight: 500;
   color: var(--gray-800);
@@ -528,10 +589,10 @@ p {
   color: var(--gray-500);
 }
 
-/* CTA Section */
+/* CTA Section with reduced spacing */
 .finpay-cta {
   background: linear-gradient(135deg, var(--cw-primary) 0%, var(--cw-secondary) 100%);
-  padding: var(--space-24) 0;
+  padding: var(--space-16) 0; /* Reduced from 24 to 16 */
   color: var(--white);
   text-align: center;
 }

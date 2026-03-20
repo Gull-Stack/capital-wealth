@@ -16,7 +16,7 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
                 <p class="description">You've spent decades building your savings. Now it's time to turn them into a retirement you can actually enjoy — with reliable income, lower taxes, and a plan that works even when markets don't.</p>
                 <div class="finpay-hero-buttons">
                     <a href="/contact/" class="finpay-btn-primary">Get Your Free Assessment <span>→</span></a>
-                    <a href="/book/" class="finpay-btn-secondary">Free Book Chapter</a>
+                    <a href="/book/" class="finpay-btn-orange">Free Book Chapter</a>
                 </div>
             </div>
             <div class="finpay-hero-right">
@@ -56,7 +56,7 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 <section class="finpay-services">
     <div class="container">
         <div class="finpay-services-header">
-            <p class="finpay-services-label">The Retirement Money Map™</p>
+            <p class="finpay-services-label" style="color: #F09F54;">The Retirement Money Map™</p>
             <h2>Five Pillars. One Plan. Zero Guesswork.</h2>
             <p>A comprehensive framework that turns your savings into reliable retirement income — with tax efficiency, market protection, and healthcare planning all coordinated.</p>
         </div>
@@ -102,13 +102,7 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
                 </a>
             </div>
             
-            <div class="finpay-card">
-                <h3 style="color: #194F90; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Social Security Optimization</h3>
-                <p style="color: #525252; line-height: 1.6; margin-bottom: 1rem;">Time your benefits to maximize lifetime income for you and your spouse. Strategic claiming saves thousands.</p>
-                <a href="/services/social-security/" style="color: #194F90; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
-                    Learn more <span style="transition: transform 0.2s ease;">→</span>
-                </a>
-            </div>
+
         </div>
     </div>
 </section>
@@ -233,10 +227,23 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
                         <span style="font-size: 0.75rem;">Experience</span>
                     </div>
                 </div>
-                <p style="color: #a3a3a3; font-size: 0.875rem;">
+                
+                <!-- Contact Info -->
+                <p style="color: #a3a3a3; font-size: 0.875rem; margin-bottom: 1rem;">
                     <a href="tel:8012102800" style="color: white; text-decoration: none;">(801) 210-2800</a><br>
-                    <a href="mailto:info@capitalwealth.com" style="color: white; text-decoration: none;">info@capitalwealth.com</a>
+                    <a href="mailto:info@capitalwealth.com" style="color: white; text-decoration: none;">info@capitalwealth.com</a><br>
+                    <span>1245 Brickyard Rd #600-18, Salt Lake City, UT 84106</span>
                 </p>
+                
+                <!-- Trust Badges -->
+                <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1rem;">
+                    <a href="https://www.bbb.org/us/ut/lehi/profile/financial-planning-consultants/capital-wealth-advisors-1166-90025236" target="_blank" rel="noopener" style="display: block;">
+                        <img src="/assets/images/badges/bbb.png" alt="Better Business Bureau A+ Rating" style="height: 40px; width: auto;">
+                    </a>
+                    <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener" style="display: block;">
+                        <img src="/assets/images/badges/brokercheck.png" alt="FINRA BrokerCheck" style="height: 40px; width: auto;">
+                    </a>
+                </div>
             </div>
             
             <div class="finpay-footer-links">
@@ -347,4 +354,102 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+
+// Sticky CTA popup functionality
+document.addEventListener('DOMContentLoaded', () => {
+    let stickyShown = false;
+    const stickyCta = document.getElementById('sticky-cta');
+    
+    function showStickyCta() {
+        if (!stickyShown && stickyCta) {
+            stickyCta.style.transform = 'translateY(0)';
+            stickyShown = true;
+        }
+    }
+    
+    function hideStickyCta() {
+        if (stickyCta) {
+            stickyCta.style.transform = 'translateY(100%)';
+            stickyShown = false;
+        }
+    }
+    
+    // Show after scrolling past hero section
+    window.addEventListener('scroll', () => {
+        const heroHeight = document.querySelector('.finpay-hero')?.offsetHeight || 600;
+        const footerTop = document.querySelector('.finpay-footer')?.offsetTop || 9999;
+        const scrollTop = window.pageYOffset;
+        const windowHeight = window.innerHeight;
+        
+        if (scrollTop > heroHeight && (scrollTop + windowHeight) < footerTop - 200) {
+            showStickyCta();
+        } else {
+            hideStickyCta();
+        }
+    });
+    
+    // Close button functionality
+    document.getElementById('close-sticky-cta')?.addEventListener('click', () => {
+        hideStickyCta();
+        sessionStorage.setItem('cta-dismissed', 'true');
+    });
+    
+    // Don't show if user already dismissed it this session
+    if (sessionStorage.getItem('cta-dismissed')) {
+        hideStickyCta();
+    }
+});
 </script>
+
+<!-- Sticky Bottom CTA Popup -->
+<div id="sticky-cta" style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #194F90 0%, #15437a 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    ">
+    <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
+        <div style="flex: 1;">
+            <h4 style="margin: 0 0 0.25rem 0; font-size: 1.125rem; font-weight: 600;">Ready to retire with confidence?</h4>
+            <p style="margin: 0; font-size: 0.875rem; opacity: 0.9;">Get your complimentary retirement assessment today.</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <a href="/contact/" style="
+                background: #F09F54; 
+                color: white; 
+                padding: 0.75rem 1.5rem; 
+                border-radius: 8px; 
+                font-weight: 600; 
+                text-decoration: none; 
+                transition: all 0.2s ease;
+                font-size: 0.875rem;
+                white-space: nowrap;
+                " 
+                onmouseover="this.style.background='#e8904a'" 
+                onmouseout="this.style.background='#F09F54'">
+                Schedule Free Call
+            </a>
+            <button id="close-sticky-cta" style="
+                background: none; 
+                border: none; 
+                color: white; 
+                font-size: 1.25rem; 
+                cursor: pointer; 
+                padding: 0.5rem;
+                opacity: 0.7;
+                transition: opacity 0.2s ease;
+                " 
+                onmouseover="this.style.opacity='1'" 
+                onmouseout="this.style.opacity='0.7'">
+                ×
+            </button>
+        </div>
+    </div>
+</div>
