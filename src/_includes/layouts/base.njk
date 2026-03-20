@@ -233,7 +233,7 @@
     </script>
     {% endif %}
 </head>
-<body>
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
     <!-- Finpay-inspired header -->
     <header class="finpay-header">
         <div class="container">
