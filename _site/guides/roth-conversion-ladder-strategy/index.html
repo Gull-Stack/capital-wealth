@@ -723,7 +723,7 @@
         width: 28px;
         height: 28px;
         cursor: pointer;
-        z-index: 1001;
+        z-index: 10002;
     }
     .mobile-menu-btn span {
         display: block;
@@ -745,7 +745,7 @@
         background: rgba(255,255,255,0.98);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        z-index: 1000;
+        z-index: 10001;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -818,8 +818,8 @@
     }
     </style>
 
+    <!-- Mobile menu functions in isolated script to prevent const collisions from killing them -->
     <script>
-    // GullStack Mobile Menu Pattern - Simple & Proven
     function toggleMobileMenu() {
         document.querySelector('.mobile-menu-btn').classList.toggle('active');
         document.getElementById('mobileNav').classList.toggle('active');
@@ -830,51 +830,54 @@
         document.getElementById('mobileNav').classList.remove('active');
         document.body.style.overflow = '';
     }
+    </script>
+    <script>
+    // Smooth scroll reveal animations (wrapped in IIFE to avoid const collisions with page scripts)
+    (function() {
+        var observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-    // Smooth scroll reveal animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+        // Apply reveal animation to cards and sections
+        document.addEventListener('DOMContentLoaded', function() {
+            var revealElements = document.querySelectorAll('.finpay-service-card, .finpay-stat, .finpay-comparison-content');
+            
+            revealElements.forEach(function(el, index) {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease ' + (index * 0.1) + 's, transform 0.6s ease ' + (index * 0.1) + 's';
+                observer.observe(el);
+            });
+        });
+
+        // Header scroll effect
+        var lastScrollTop = 0;
+        var header = document.querySelector('.finpay-header');
+        
+        window.addEventListener('scroll', function() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
             }
+            
+            lastScrollTop = scrollTop;
         });
-    }, observerOptions);
-
-    // Apply reveal animation to cards and sections
-    document.addEventListener('DOMContentLoaded', () => {
-        const revealElements = document.querySelectorAll('.finpay-service-card, .finpay-stat, .finpay-comparison-content');
-        
-        revealElements.forEach((el, index) => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-            observer.observe(el);
-        });
-    });
-
-    // Header scroll effect
-    let lastScrollTop = 0;
-    const header = document.querySelector('.finpay-header');
-    
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        if (scrollTop > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.98)';
-            header.style.boxShadow = '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)';
-        } else {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-            header.style.boxShadow = 'none';
-        }
-        
-        lastScrollTop = scrollTop;
-    });
+    })();
     </script>
 </body>
 </html>

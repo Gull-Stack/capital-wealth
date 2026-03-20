@@ -356,11 +356,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/federal-workshop-confirmed/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/fers-retirement-planning-idaho/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -496,17 +491,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/services/401k-ira-rollover/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/services/annuities/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/services/estate-planning/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -531,17 +516,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/services/federal-benefits/fers-retirement/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/services/federal-benefits/social-security-federal/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/services/federal-benefits/tsp-planning/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -551,22 +526,87 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/services/medicare-irmaa/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/services/portfolio-management/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/services/retirement-income/</loc>
+    <loc>https://www.capitalwealth.com/services/retirement-money-map/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/services/retirement-money-map/</loc>
+    <loc>https://www.capitalwealth.com/who-we-serve/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/book/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/federal-benefits-seminar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/federal-workshop-confirmed/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/index-finpay-complete/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/index-finpay/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/index-original/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/401k-ira-rollover/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/estate-planning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/federal-benefits/fers-retirement/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/federal-benefits/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/federal-benefits/tsp-planning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/medicare-irmaa/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/retirement-income/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -582,46 +622,6 @@
   </url>
   <url>
     <loc>https://www.capitalwealth.com/services/tax-planning/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/who-we-serve/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/services/federal-benefits/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/index-finpay/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/index-finpay-complete/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/index-original/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/book/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/federal-benefits-seminar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
