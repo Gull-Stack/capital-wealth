@@ -1,6 +1,6 @@
 ---
 title: "Optimizing Retirement Income"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Optimize every dollar of retirement income with advanced strategies. Turn your nest egg into a reliable paycheck that grows over time."
 date: 2025-10-18
 dateModified: 2026-03-19
 author: "Mike Stevens"

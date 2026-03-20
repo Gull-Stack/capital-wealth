@@ -1,6 +1,6 @@
 ---
 title: "Thanksgiving Special"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Give thanks for smart retirement planning. Mike Stevens shares gratitude and essential strategies for a financially secure retirement."
 date: 2025-11-29
 dateModified: 2026-03-19
 author: "Mike Stevens"

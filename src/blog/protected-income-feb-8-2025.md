@@ -1,6 +1,6 @@
 ---
 title: "Protected Income"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Create bulletproof retirement income that market crashes can't touch. Learn how to protect your lifestyle from economic uncertainty."
 date: 2025-02-08
 dateModified: 2026-03-19
 author: "Mike Stevens"

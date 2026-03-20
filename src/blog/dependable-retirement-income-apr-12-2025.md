@@ -1,6 +1,6 @@
 ---
 title: "Dependable Retirement Income"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Transform your retirement savings into reliable income that lasts. Learn the essential strategies for creating dependable cash flow in retirement."
 date: 2025-04-12
 dateModified: 2026-03-19
 author: "Mike Stevens"

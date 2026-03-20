@@ -1,6 +1,6 @@
 ---
 title: "Behavioral Finance"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Discover how behavioral finance biases can derail your retirement plan and the proven strategies to overcome emotional investment decisions."
 date: 2025-12-13
 dateModified: 2026-03-19
 author: "Mike Stevens"

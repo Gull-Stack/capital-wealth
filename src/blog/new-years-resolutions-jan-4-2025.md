@@ -1,6 +1,6 @@
 ---
 title: "New Years Resolutions"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Turn your New Year's resolutions into real retirement success. Proven strategies to transform financial goals into lasting wealth."
 date: 2025-01-04
 dateModified: 2026-03-19
 author: "Mike Stevens"

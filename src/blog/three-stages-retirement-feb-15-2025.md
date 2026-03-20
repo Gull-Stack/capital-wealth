@@ -1,6 +1,6 @@
 ---
 title: "Three Stages Retirement"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Master the three distinct stages of retirement. Financial strategies that evolve with your changing needs and goals throughout retirement."
 date: 2025-02-15
 dateModified: 2026-03-19
 author: "Mike Stevens"

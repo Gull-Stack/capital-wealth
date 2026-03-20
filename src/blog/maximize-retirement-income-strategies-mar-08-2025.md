@@ -1,6 +1,6 @@
 ---
 title: "Maximize Retirement Income Strategies"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Transform retirement fear into financial freedom. Ultimate strategies to maximize income and avoid the 40% who run out of money in retirement."
 date: 2025-03-08
 dateModified: 2026-03-19
 author: "Mike Stevens"

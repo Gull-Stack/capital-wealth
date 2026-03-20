@@ -1,6 +1,6 @@
 ---
 title: "Retirement Income Blueprint"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Follow the proven retirement income blueprint that ensures your money lasts. Step-by-step strategies for building sustainable retirement cash flow."
 date: 2025-05-17
 dateModified: 2026-03-19
 author: "Mike Stevens"

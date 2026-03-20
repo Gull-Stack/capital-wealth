@@ -1,6 +1,6 @@
 ---
 title: "Behavioral Finance"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Master the psychology behind smart retirement decisions. Learn how emotions can sabotage your financial plan and proven strategies to avoid costly mistakes."
 date: 2025-01-25
 dateModified: 2026-03-19
 author: "Mike Stevens"

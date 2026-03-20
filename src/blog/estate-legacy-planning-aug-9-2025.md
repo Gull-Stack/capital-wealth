@@ -1,6 +1,6 @@
 ---
 title: "Estate Legacy Planning"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Estate planning goes beyond a basic will. Learn the essential strategies Utah families need to protect their legacy and minimize estate taxes."
 date: 2025-08-09
 dateModified: 2026-03-19
 author: "Mike Stevens"

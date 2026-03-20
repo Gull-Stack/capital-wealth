@@ -1,6 +1,6 @@
 ---
 title: "Planning Large Iras"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Don't let a large IRA become a tax time bomb. Strategic planning solutions that protect your wealth from massive tax hits at retirement."
 date: 2025-08-02
 dateModified: 2026-03-19
 author: "Mike Stevens"

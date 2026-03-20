@@ -1,6 +1,6 @@
 ---
 title: "Social Security Privatization"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Should Social Security be privatized? What Utah retirees need to know about potential changes and how to protect your retirement income."
 date: 2025-09-13
 dateModified: 2026-03-19
 author: "Mike Stevens"

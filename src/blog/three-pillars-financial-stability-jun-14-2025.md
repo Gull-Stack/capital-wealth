@@ -1,6 +1,6 @@
 ---
 title: "Three Pillars Financial Stability"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Build unshakeable financial stability on three proven pillars. The foundation every Utah retiree needs for lasting financial security."
 date: 2025-06-14
 dateModified: 2026-03-19
 author: "Mike Stevens"

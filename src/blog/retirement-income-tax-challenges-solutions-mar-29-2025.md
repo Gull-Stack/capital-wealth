@@ -1,6 +1,6 @@
 ---
 title: "Retirement Income Tax Challenges Solutions"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Solve retirement income tax challenges before they destroy your wealth. Smart solutions to keep more of what you've earned."
 date: 2025-03-29
 dateModified: 2026-03-19
 author: "Mike Stevens"

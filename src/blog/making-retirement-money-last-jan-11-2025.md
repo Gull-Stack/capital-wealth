@@ -1,6 +1,6 @@
 ---
 title: "Making Retirement Money Last"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Forced into early retirement? Essential survival strategies to make your money last when retirement comes sooner than expected."
 date: 2025-01-11
 dateModified: 2026-03-19
 author: "Mike Stevens"

@@ -1,6 +1,6 @@
 ---
 title: "Falling Interest Rates Retirement Strategy"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Discover how falling interest rates can revolutionize your retirement strategy. Turn economic uncertainty into financial opportunity."
 date: 2025-03-22
 dateModified: 2026-03-19
 author: "Mike Stevens"

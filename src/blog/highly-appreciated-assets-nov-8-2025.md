@@ -1,6 +1,6 @@
 ---
 title: "Highly Appreciated Assets"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Avoid the 30-40% tax hit on appreciated assets. Smart strategies to preserve wealth from Utah real estate, stock gains, and family businesses."
 date: 2025-11-08
 dateModified: 2026-03-19
 author: "Mike Stevens"

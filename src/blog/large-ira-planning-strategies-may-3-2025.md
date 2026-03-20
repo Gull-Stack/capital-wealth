@@ -1,6 +1,6 @@
 ---
 title: "Large Ira Planning Strategies"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Strategic solutions for large IRA balances that won't trigger massive tax bills. Essential planning for retirees with substantial retirement accounts."
 date: 2025-05-03
 dateModified: 2026-03-19
 author: "Mike Stevens"

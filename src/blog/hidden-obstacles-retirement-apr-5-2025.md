@@ -1,6 +1,6 @@
 ---
 title: "Hidden Obstacles Retirement"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Uncover the hidden obstacles that could derail your retirement. Learn how to protect your nest egg from threats you haven't considered."
 date: 2025-04-05
 dateModified: 2026-03-19
 author: "Mike Stevens"

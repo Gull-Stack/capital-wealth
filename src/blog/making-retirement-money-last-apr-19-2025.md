@@ -1,6 +1,6 @@
 ---
 title: "Making Retirement Money Last"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Make your retirement savings last as long as Utah's mountains endure. Complete strategies for financial longevity in uncertain times."
 date: 2025-04-19
 dateModified: 2026-03-19
 author: "Mike Stevens"

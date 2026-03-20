@@ -1,6 +1,6 @@
 ---
 title: "Preserving Retirement From Taxes"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Shield your retirement from crushing tax bills. Proven strategies to preserve more wealth by legally minimizing taxes in retirement."
 date: 2025-04-26
 dateModified: 2026-03-19
 author: "Mike Stevens"

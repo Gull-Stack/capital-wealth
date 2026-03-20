@@ -1,6 +1,6 @@
 ---
 title: "Tax Savvy Retirement Strategies June 7 2025"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Become tax-savvy in retirement with advanced strategies that can save thousands annually. Smart moves for Utah retirees seeking tax efficiency."
 date: 2025-06-07
 dateModified: 2026-03-19
 author: "Mike Stevens"

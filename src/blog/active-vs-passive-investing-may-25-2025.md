@@ -1,6 +1,6 @@
 ---
 title: "Active Vs Passive Investing"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Learn how active vs passive investing strategies affect your retirement portfolio. Mike Stevens breaks down which approach works best for retirees."
 date: 2025-05-25
 dateModified: 2026-03-19
 author: "Mike Stevens"

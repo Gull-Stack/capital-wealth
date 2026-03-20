@@ -1,6 +1,6 @@
 ---
 title: "Make Money Work"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Master the ultimate Utah retirement tax strategy. Make your money work smarter by minimizing taxes and maximizing after-tax income."
 date: 2025-05-31
 dateModified: 2026-03-19
 author: "Mike Stevens"

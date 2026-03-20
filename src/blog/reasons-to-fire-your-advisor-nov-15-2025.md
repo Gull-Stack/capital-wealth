@@ -1,6 +1,6 @@
 ---
 title: "Reasons To Fire Your Advisor"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Is your financial advisor costing you money? Warning signs it's time to fire your advisor and find one who truly has your best interests."
 date: 2025-11-15
 dateModified: 2026-03-19
 author: "Mike Stevens"

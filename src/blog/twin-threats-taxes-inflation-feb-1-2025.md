@@ -1,6 +1,6 @@
 ---
 title: "Twin Threats Taxes Inflation"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Fight the twin threats of taxes and inflation that erode retirement wealth. Defensive strategies to protect your purchasing power."
 date: 2025-02-01
 dateModified: 2026-03-19
 author: "Mike Stevens"

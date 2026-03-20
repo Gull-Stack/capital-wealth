@@ -1,6 +1,6 @@
 ---
 title: "Creating Lasting Legacy"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Build a legacy that goes beyond money. Discover essential strategies for preserving wealth and values for Utah families across generations."
 date: 2025-05-10
 dateModified: 2026-03-19
 author: "Mike Stevens"

@@ -1,6 +1,6 @@
 ---
 title: "Retirement Spending Reality"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "The shocking truth about retirement spending that financial planners don't tell you. Real-world strategies for actual retirement costs."
 date: 2025-07-26
 dateModified: 2026-03-19
 author: "Mike Stevens"

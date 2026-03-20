@@ -1,6 +1,6 @@
 ---
 title: "Maximize Retirement Income"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Maximize your retirement income without sacrificing security. Capital Wealth's proven blueprint for Utah retirees seeking financial independence."
 date: 2025-07-05
 dateModified: 2026-03-19
 author: "Mike Stevens"

@@ -1,6 +1,6 @@
 ---
 title: "Preserving Optimizing 401k"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Preserve and optimize your 401k for maximum retirement benefit. Expert strategies to avoid costly mistakes when transitioning to retirement."
 date: 2025-01-18
 dateModified: 2026-03-19
 author: "Mike Stevens"

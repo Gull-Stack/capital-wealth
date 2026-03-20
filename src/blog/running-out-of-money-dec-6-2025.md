@@ -1,6 +1,6 @@
 ---
 title: "Running Out Of Money"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Terrified of running out of money in retirement? Proven strategies to ensure your savings last longer than you do."
 date: 2025-12-06
 dateModified: 2026-03-19
 author: "Mike Stevens"

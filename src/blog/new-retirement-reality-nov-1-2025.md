@@ -1,6 +1,6 @@
 ---
 title: "New Retirement Reality"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "The retirement game has changed forever. Learn why old strategies fail and how Utah retirees must adapt to avoid financial failure."
 date: 2025-11-01
 dateModified: 2026-03-19
 author: "Mike Stevens"

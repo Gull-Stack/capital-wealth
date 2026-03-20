@@ -1,6 +1,6 @@
 ---
 title: "Taxes In Retirement Trump Era Planning"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Navigate retirement taxes in the Trump era. How changing tax policies affect your retirement strategy and what to do about it now."
 date: 2025-03-01
 dateModified: 2026-03-19
 author: "Mike Stevens"

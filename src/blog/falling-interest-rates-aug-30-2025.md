@@ -1,6 +1,6 @@
 ---
 title: "Falling Interest Rates"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Navigate falling interest rates without losing your shirt. Essential strategies for Utah retirees to profit from changing economic conditions."
 date: 2025-08-30
 dateModified: 2026-03-19
 author: "Mike Stevens"

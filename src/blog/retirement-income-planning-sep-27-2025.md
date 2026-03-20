@@ -1,6 +1,6 @@
 ---
 title: "Retirement Income Planning"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Master retirement income planning before it's too late. Essential strategies to turn your savings into reliable lifetime income streams."
 date: 2025-09-27
 dateModified: 2026-03-19
 author: "Mike Stevens"

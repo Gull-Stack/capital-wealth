@@ -1,6 +1,6 @@
 ---
 title: "Longevity Challenge"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Master the 30-year retirement challenge. Essential strategies to make your money and purpose last through a longer, healthier retirement."
 date: 2025-07-19
 dateModified: 2026-03-19
 author: "Mike Stevens"

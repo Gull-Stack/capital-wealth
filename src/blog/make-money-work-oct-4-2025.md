@@ -1,6 +1,6 @@
 ---
 title: "Make Money Work"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Escape the daily grind with smart money strategies. Utah retirees' complete guide to achieving true financial freedom in retirement."
 date: 2025-10-04
 dateModified: 2026-03-19
 author: "Mike Stevens"

@@ -1,6 +1,6 @@
 ---
 title: "Retirement Planning Women Utah"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Utah women face unique retirement challenges. Essential planning strategies to overcome the gender wealth gap and retire with confidence."
 date: 2025-03-15
 dateModified: 2026-03-19
 author: "Mike Stevens"

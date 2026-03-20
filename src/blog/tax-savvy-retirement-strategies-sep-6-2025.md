@@ -1,6 +1,6 @@
 ---
 title: "Tax Savvy Retirement Strategies"
-description: "Retirement planning insights and strategies from Mike Stevens and Capital Wealth Advisors."
+description: "Advanced tax strategies that put money back in your pocket. Learn the retirement tax moves that separate smart retirees from the rest."
 date: 2025-09-06
 dateModified: 2026-03-19
 author: "Mike Stevens"
