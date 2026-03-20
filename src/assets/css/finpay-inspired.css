@@ -254,6 +254,23 @@ p {
   box-shadow: var(--shadow);
 }
 
+.client-login-cta {
+  background: transparent;
+  color: var(--gray-800);
+  border: 1.5px solid var(--gray-800);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.client-login-cta:hover {
+  background: var(--gray-800);
+  color: var(--white);
+}
+
 /* Hero Section - Finpay style with reduced spacing */
 .finpay-hero {
   padding: var(--space-20) 0 var(--space-12); /* Reduced from 32/24 to 20/12 */
