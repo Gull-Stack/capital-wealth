@@ -30,6 +30,24 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/images/logos/favicon.png">
     
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '416279113963143');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=416279113963143&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNE17HRDX8"></script>
     <script>
@@ -559,6 +577,45 @@
 }
 </style>
 
+<script>
+// Federal Benefits Workshop Conversion Tracking
+function trackFederalWorkshopRegistration() {
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'CompleteRegistration', {
+            content_name: 'Federal Benefits Workshop',
+            content_category: 'Workshop Registration',
+            content_ids: ['federal-workshop-april-9'],
+            value: 500,
+            currency: 'USD',
+            predicted_ltv: 2500
+        });
+    }
+}
+
+// Federal benefits lead tracking
+function trackFederalBenefitsLead() {
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead', {
+            content_name: 'Federal Benefits Interest',
+            content_category: 'Federal Employee',
+            source: 'Landing Page'
+        });
+    }
+}
+
+// Track lead when user scrolls 50% down the page
+let leadTracked = false;
+window.addEventListener('scroll', function() {
+    if (!leadTracked && window.scrollY > document.body.scrollHeight * 0.5) {
+        trackFederalBenefitsLead();
+        leadTracked = true;
+    }
+});
+</script>
+
+<style>
+</style>
+
 
 <section class="federal-hero">
     <div class="container">
@@ -591,7 +648,7 @@
                 <h2>Reserve Your Seat</h2>
                 <p style="margin-bottom: 2rem; color: var(--warm-gray);">Join fellow federal employees for this exclusive workshop. Limited to 50 attendees.</p>
                 
-                <form action="/contact/" method="post">
+                <form action="/contact/" method="post" onsubmit="trackFederalWorkshopRegistration()">
                     <div class="form-group">
                         <label for="firstName">First Name *</label>
                         <input type="text" id="firstName" name="firstName" required>
