@@ -360,58 +360,35 @@
                     <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Call</a>
                     <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="finpay-nav-link client-login">Client Login</a>
                     
-                    <!-- Mobile Hamburger Button -->
-                    <button class="mobile-menu-button" id="mobile-menu-button" aria-label="Toggle mobile menu">
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                    </button>
-                </div>
-                
-                <!-- Mobile Navigation Menu -->
-                <div class="mobile-nav-menu" id="mobile-nav-menu">
-                    <div class="mobile-nav-content">
-                        <div class="mobile-nav-header">
-                            <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="height: 32px; width: auto;">
-                            <button class="mobile-menu-close" id="mobile-menu-close">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                        
-                        <div class="mobile-nav-links">
-                            <div class="mobile-nav-section">
-                                <button class="mobile-dropdown-toggle" data-target="mobile-services-menu">
-                                    Services
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="dropdown-arrow">
-                                        <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
-                                <div class="mobile-dropdown-menu" id="mobile-services-menu">
-                                    <a href="/services/tax-planning/">Tax-Efficient Strategies</a>
-                                    <a href="/services/portfolio-management/">Portfolio Management</a>
-                                    <a href="/services/retirement-money-map/">Retirement Money Map</a>
-                                    <a href="/services/social-security/">Social Security Optimization</a>
-                                    <a href="/services/estate-planning/">Estate & Legacy Planning</a>
-                                </div>
-                            </div>
-                            
-                            <a href="/services/federal-benefits/" class="mobile-nav-link">Federal</a>
-                            <a href="/blog/" class="mobile-nav-link">Blog</a>
-                            <a href="/about/" class="mobile-nav-link">Our Team</a>
-                            <a href="https://www.retirerightbook.com/" class="mobile-nav-link" target="_blank" rel="noopener">Book</a>
-                        </div>
-                        
-                        <div class="mobile-nav-cta">
-                            <a href="/contact/" class="mobile-cta-btn">Schedule a Call</a>
-                            <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="mobile-cta-secondary">Client Login</a>
-                        </div>
+                    <!-- Mobile Menu Button (GullStack Pattern) -->
+                    <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
+
+    <!-- Mobile Navigation (GullStack Pattern) -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-group">
+            <span class="mobile-nav-label">Services</span>
+            <a href="/services/" onclick="closeMobileMenu()">All Services</a>
+            <a href="/services/tax-planning/" onclick="closeMobileMenu()">Tax-Efficient Strategies</a>
+            <a href="/services/portfolio-management/" onclick="closeMobileMenu()">Portfolio Management</a>
+            <a href="/services/retirement-money-map/" onclick="closeMobileMenu()">Retirement Money Map</a>
+            <a href="/services/social-security/" onclick="closeMobileMenu()">Social Security Optimization</a>
+            <a href="/services/estate-planning/" onclick="closeMobileMenu()">Estate & Legacy Planning</a>
+        </div>
+        <a href="/services/federal-benefits/" onclick="closeMobileMenu()">Federal</a>
+        <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
+        <a href="/about/" onclick="closeMobileMenu()">Our Team</a>
+        <a href="https://www.retirerightbook.com/" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
+        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Call</a>
+        <a href="https://login.orionadvisor.com/login.html" onclick="closeMobileMenu()" target="_blank" rel="noopener" class="client-login-mobile">Client Login</a>
+    </div>
 
     <main style="padding-top: 100px;">
         
@@ -654,392 +631,124 @@
 </footer>
 
     <style>
-    /* Mobile Navigation Styles */
-    .mobile-menu-button {
+    /* GullStack Mobile Navigation Pattern - Proven & Simple */
+    
+    /* Mobile menu button */
+    .mobile-menu-btn {
         display: none;
-        background: none;
-        border: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 28px;
+        height: 28px;
         cursor: pointer;
-        padding: 8px;
-        margin-left: 1rem;
+        z-index: 1001;
     }
-
-    .hamburger-line {
+    .mobile-menu-btn span {
         display: block;
-        width: 24px;
-        height: 3px;
+        width: 100%;
+        height: 2px;
         background: var(--gray-700);
-        margin: 4px 0;
-        transition: all 0.3s ease;
         border-radius: 2px;
+        transition: all 0.3s ease;
     }
+    .mobile-menu-btn.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
+    .mobile-menu-btn.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-    .mobile-menu-button.active .hamburger-line:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-    }
-
-    .mobile-menu-button.active .hamburger-line:nth-child(2) {
-        opacity: 0;
-    }
-
-    .mobile-menu-button.active .hamburger-line:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-    }
-
-    .mobile-nav-menu {
+    /* Mobile nav overlay (full-screen centered) */
+    .mobile-nav {
+        display: none;
         position: fixed;
-        top: 0;
-        right: -100%;
-        width: 320px;
-        height: 100vh;
-        background: rgba(255, 255, 255, 0.98);
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(255,255,255,0.98);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        box-shadow: -8px 0 32px rgba(0,0,0,0.08);
-        border-left: 1px solid rgba(0,0,0,0.05);
-        transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        z-index: 9999;
-        overflow-y: auto;
-    }
-
-    .mobile-nav-menu.active {
-        right: 0;
-    }
-
-    .mobile-nav-content {
-        padding: 2rem 1.5rem;
-        height: 100%;
-        display: flex;
+        z-index: 1000;
         flex-direction: column;
-    }
-
-    .mobile-nav-header {
-        display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding-bottom: 2rem;
-        border-bottom: 1px solid rgba(0,0,0,0.08);
-        margin-bottom: 2rem;
+        justify-content: center;
+        gap: 28px;
+        overflow-y: auto;
+        padding: 80px 24px;
     }
-
-    .mobile-menu-close {
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 8px;
-        color: var(--gray-600);
-        border-radius: 6px;
-        transition: all 0.2s ease;
-    }
-
-    .mobile-menu-close:hover {
-        background: rgba(0,0,0,0.05);
-        color: var(--gray-800);
-    }
-
-    .mobile-nav-links {
-        flex: 1;
-    }
-
-    .mobile-nav-section {
-        margin-bottom: 0.5rem;
-    }
-
-    .mobile-dropdown-toggle {
-        width: 100%;
-        background: none;
-        border: none;
-        padding: 1rem 0;
-        font-size: 1.1rem;
-        font-weight: 500;
+    .mobile-nav.active { display: flex; }
+    .mobile-nav a {
         color: var(--gray-700);
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-    }
-
-    .mobile-dropdown-toggle:hover {
-        color: var(--cw-primary);
-    }
-
-    .dropdown-arrow {
-        transition: transform 0.3s ease;
-    }
-
-    .mobile-dropdown-toggle.active .dropdown-arrow {
-        transform: rotate(180deg);
-    }
-
-    .mobile-dropdown-menu {
-        max-height: 0;
-        overflow: hidden;
-        padding-left: 1rem;
-        transition: max-height 0.3s ease;
-    }
-
-    .mobile-dropdown-menu.active {
-        max-height: 300px;
-    }
-
-    .mobile-dropdown-menu a {
-        display: block;
-        padding: 0.75rem 0;
-        color: var(--gray-600);
-        text-decoration: none;
-        font-size: 0.95rem;
-        border-bottom: 1px solid var(--gray-100);
-    }
-
-    .mobile-dropdown-menu a:hover {
-        color: var(--cw-primary);
-    }
-
-    .mobile-nav-link {
-        display: block;
-        padding: 1rem 0;
-        color: var(--gray-700);
-        text-decoration: none;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         font-weight: 500;
-        border-bottom: 1px solid var(--gray-100);
+        transition: color 0.2s;
+        text-decoration: none;
     }
-
-    .mobile-nav-link:hover {
-        color: var(--cw-primary);
-    }
-
-    .mobile-nav-cta {
-        padding-top: 2rem;
-        border-top: 1px solid rgba(0,0,0,0.08);
-        margin-top: auto;
-    }
-
-    .mobile-cta-btn {
-        display: block;
+    .mobile-nav a:hover { color: var(--cw-primary); }
+    .mobile-nav .btn-primary {
+        margin-top: 16px;
+        padding: 16px 32px;
+        font-size: 1.1rem;
         background: var(--cw-primary);
         color: white;
-        padding: 1rem 1.5rem;
         border-radius: 8px;
         font-weight: 600;
-        text-decoration: none;
-        text-align: center;
-        transition: all 0.2s ease;
     }
-
-    .mobile-cta-btn:hover {
-        background: var(--cw-secondary);
-        transform: translateY(-1px);
-    }
-
-    .mobile-cta-secondary {
-        display: block;
+    .mobile-nav .client-login-mobile {
         background: transparent;
         color: var(--cw-primary);
         border: 2px solid var(--cw-primary);
-        padding: 1rem 1.5rem;
+        padding: 12px 24px;
         border-radius: 8px;
-        font-weight: 600;
-        text-decoration: none;
-        text-align: center;
-        transition: all 0.2s ease;
-        margin-top: 0.75rem;
+        font-size: 1rem;
+        margin-top: 8px;
     }
 
-    .mobile-cta-secondary:hover {
-        background: var(--cw-primary);
-        color: white;
-        transform: translateY(-1px);
+    .mobile-nav-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
     }
-
-    .mobile-nav-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.15);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        z-index: 9998;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
+    .mobile-nav-label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: rgba(0,0,0,0.4);
+        margin-bottom: 4px;
     }
+    .mobile-nav-group a { font-size: 1.1rem !important; }
 
-    .mobile-nav-overlay.active {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    /* Responsive Navigation Breakpoints */
-    @media (max-width: 1024px) {
-        .finpay-nav-links.desktop-nav {
-            display: none;
-        }
-
-        .mobile-menu-button {
-            display: block;
-        }
-
-        .finpay-nav {
-            justify-content: space-between;
-        }
-
+    /* Responsive breakpoints */
+    @media (max-width: 768px) {
+        .finpay-nav-links.desktop-nav { display: none; }
+        .mobile-menu-btn { display: flex; }
+        .desktop-cta { display: none; }
+        
         .finpay-nav-right {
             display: flex;
             align-items: center;
             gap: 1rem;
-            margin-left: auto;
         }
-
+        
         .client-login {
             font-size: 0.875rem;
-            order: 1;
-        }
-
-        .mobile-menu-button {
-            order: 2;
-        }
-
-        .desktop-cta {
-            display: none;
         }
     }
-
-    @media (min-width: 1025px) {
-        .mobile-menu-button {
-            display: none !important;
-        }
-
-        .mobile-nav-menu {
-            display: none !important;
-        }
-
-        .finpay-nav-right {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-    }
-
-    /* Enhanced responsive navigation */
-    @media (max-width: 768px) {
-        .finpay-nav {
-            padding: var(--space-3) 0;
-        }
-
-        .finpay-nav-logo img {
-            height: 32px;
-        }
-
-        .finpay-nav-right {
-            gap: 0.75rem;
-        }
-
-        .client-login {
-            font-size: 0.8rem;
-            padding: 0.5rem 0.75rem;
-        }
-
-        .mobile-menu-button {
-            padding: 4px;
-        }
-
-        .hamburger-line {
-            width: 20px;
-            height: 2.5px;
-        }
+    @media (min-width: 769px) {
+        .mobile-menu-btn { display: none; }
+        .mobile-nav { display: none !important; }
     }
     </style>
 
     <script>
-    // Mobile Navigation Functionality - Enhanced with fallback
-    function initMobileMenu() {
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenuClose = document.getElementById('mobile-menu-close');
-        const mobileNavMenu = document.getElementById('mobile-nav-menu');
-        const body = document.body;
-
-        if (!mobileMenuButton || !mobileNavMenu) {
-            return; // Elements not ready yet
-        }
-
-        // Create overlay if it doesn't exist
-        let overlay = document.getElementById('mobile-nav-overlay');
-        if (!overlay) {
-            overlay = document.createElement('div');
-            overlay.className = 'mobile-nav-overlay';
-            overlay.id = 'mobile-nav-overlay';
-            body.appendChild(overlay);
-        }
-
-        function openMobileMenu() {
-            mobileMenuButton.classList.add('active');
-            mobileNavMenu.classList.add('active');
-            overlay.classList.add('active');
-            body.style.overflow = 'hidden';
-        }
-
-        function closeMobileMenu() {
-            mobileMenuButton.classList.remove('active');
-            mobileNavMenu.classList.remove('active');
-            overlay.classList.remove('active');
-            body.style.overflow = '';
-        }
-
-        // Remove existing listeners to prevent duplicates
-        mobileMenuButton.removeEventListener('click', openMobileMenu);
-        if (mobileMenuClose) {
-            mobileMenuClose.removeEventListener('click', closeMobileMenu);
-        }
-        overlay.removeEventListener('click', closeMobileMenu);
-
-        // Add event listeners
-        mobileMenuButton.addEventListener('click', openMobileMenu);
-        if (mobileMenuClose) {
-            mobileMenuClose.addEventListener('click', closeMobileMenu);
-        }
-        overlay.addEventListener('click', closeMobileMenu);
-
-        // Mobile dropdown toggles
-        const dropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
-        dropdownToggles.forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                const targetId = toggle.getAttribute('data-target');
-                const targetMenu = document.getElementById(targetId);
-                
-                if (targetMenu) {
-                    toggle.classList.toggle('active');
-                    targetMenu.classList.toggle('active');
-                }
-            });
-        });
-
-        // Close mobile menu when clicking nav links
-        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link, .mobile-dropdown-menu a, .mobile-cta-btn');
-        mobileNavLinks.forEach(link => {
-            link.addEventListener('click', closeMobileMenu);
-        });
-
-        // Close on escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && mobileNavMenu.classList.contains('active')) {
-                closeMobileMenu();
-            }
-        });
+    // GullStack Mobile Menu Pattern - Simple & Proven
+    function toggleMobileMenu() {
+        document.querySelector('.mobile-menu-btn').classList.toggle('active');
+        document.getElementById('mobileNav').classList.toggle('active');
+        document.body.style.overflow = document.getElementById('mobileNav').classList.contains('active') ? 'hidden' : '';
     }
-
-    // Try to initialize immediately if DOM is ready
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initMobileMenu);
-    } else {
-        initMobileMenu();
+    function closeMobileMenu() {
+        document.querySelector('.mobile-menu-btn').classList.remove('active');
+        document.getElementById('mobileNav').classList.remove('active');
+        document.body.style.overflow = '';
     }
-
-    // Fallback with a small delay to ensure elements exist
-    setTimeout(initMobileMenu, 100);
 
     // Smooth scroll reveal animations
     const observerOptions = {
