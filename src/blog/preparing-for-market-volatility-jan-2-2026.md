@@ -1,5 +1,5 @@
 ---
-title: "Preparing for Market Volatility: Your Complete Utah Retirement Defense Strategy"
+title: "Market Volatility: Utah Retirement Defense"
 description: "Market corrections are inevitable, but they don't have to derail your Utah retirement. Learn proven strategies to protect and grow your wealth through volatility."
 date: 2026-01-02
 dateModified: 2026-03-18

@@ -1,5 +1,5 @@
 ---
-title: "When Geopolitical Storms Hit Your Retirement Harbor: Lessons from the Iran Conflict"
+title: "Geopolitical Storms & Your Retirement Harbor"
 description: "How Utah retirees can protect their financial security when international conflicts and market volatility threaten retirement peace of mind."
 date: 2026-03-07
 dateModified: 2026-03-18

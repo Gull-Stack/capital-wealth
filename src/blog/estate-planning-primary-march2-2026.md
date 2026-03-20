@@ -1,5 +1,5 @@
 ---
-title: "Estate and Legacy Planning: Essential Guide for Utah Families"
+title: "Estate Planning Essential Guide for Utah Families"
 description: "Comprehensive estate planning strategies for Utah families, covering wills, trusts, beneficiary designations, and tax-efficient wealth transfer techniques."
 date: 2026-03-02
 dateModified: 2026-03-17

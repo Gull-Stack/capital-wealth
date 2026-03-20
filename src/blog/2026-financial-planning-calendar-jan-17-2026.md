@@ -1,5 +1,5 @@
 ---
-title: "The Utah Retiree's 2026 Financial Calendar: 12 Months to Retirement Success"
+title: "Utah Retiree's 2026 Financial Calendar"
 description: "A comprehensive month-by-month financial planning guide specifically designed for Utah retirees to optimize retirement security and leverage state advantages."
 date: 2026-01-17
 dateModified: 2026-03-18

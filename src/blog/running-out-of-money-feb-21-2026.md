@@ -1,5 +1,5 @@
 ---
-title: "Olympic-Level Mistakes: Why Utah Retirees Can't Afford to Think Like Olympic Hosts"
+title: "Olympic Mistakes Utah Retirees Can't Afford"
 description: "Learn from the financial disasters of Olympic host cities to avoid running out of money in retirement. Strategic planning prevents costly mistakes."
 date: 2026-02-21
 dateModified: 2026-03-18

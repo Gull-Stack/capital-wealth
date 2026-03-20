@@ -541,11 +541,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/book/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/federal-workshop-confirmed/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

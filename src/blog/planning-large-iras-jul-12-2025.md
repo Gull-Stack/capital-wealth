@@ -1,5 +1,5 @@
 ---
-title: "Large IRA Planning: When Success Creates New Problems"
+title: "Large IRA Planning: When Success Creates Problems"
 description: "Large IRA balance creating tax headaches? Learn smart distribution strategies that minimize taxes and maximize your retirement income."
 date: 2025-07-12
 dateModified: 2026-03-19

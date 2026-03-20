@@ -1,5 +1,5 @@
 ---
-title: "The Reality of Retirement Spending: Why Utah Retirees Need More Than 70%"
+title: "Utah Retirement Spending: More Than 70% Needed"
 description: "Discover why the traditional 70% retirement income rule falls short for Utah retirees and learn practical strategies for accurate retirement income planning."
 date: 2026-03-14
 dateModified: 2026-03-17

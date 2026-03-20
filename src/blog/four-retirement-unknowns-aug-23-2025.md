@@ -1,5 +1,5 @@
 ---
-title: "Four Retirement Unknowns: Navigating the Uncertain Waters of Your Golden Years"
+title: "Four Retirement Unknowns: Golden Years Navigation"
 description: "Explore the four biggest retirement unknowns — market volatility, taxes, Social Security, and longevity — plus a fun Social Security trivia segment with Mike Stevens."
 date: 2025-08-23
 dateModified: 2026-03-19

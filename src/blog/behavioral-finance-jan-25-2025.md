@@ -1,5 +1,5 @@
 ---
-title: "Behavioral Finance Biases That Derail Retirement Plans"
+title: "Behavioral Finance Biases Derailing Retirement"
 description: "Master the psychology behind smart retirement decisions. Learn how emotions can sabotage your financial plan and proven strategies to avoid costly mistakes."
 date: 2025-01-25
 dateModified: 2026-03-19

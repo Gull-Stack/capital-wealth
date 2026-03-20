@@ -1,5 +1,5 @@
 ---
-title: "Make Your Money Work for You: Complete Federal Employee Retirement Guide"
+title: "Complete Federal Employee Retirement Guide"
 description: "A comprehensive guide to federal employee retirement planning, Social Security optimization, and financial strategies based on Retire Right Radio episode from September 14, 2024."
 date: 2024-09-14
 dateModified: 2026-03-17

@@ -1,5 +1,5 @@
 ---
-title: "Retirement Income Planning: The Death of the Three-Legged Stool and What Utah Retirees Must Do Now"
+title: "Death of the Three-Legged Stool: Utah Retirement"
 description: "The traditional retirement model is dead. Learn how Utah retirees can create sustainable income streams and potentially retire years earlier than expected."
 date: 2026-02-07
 dateModified: 2026-03-18

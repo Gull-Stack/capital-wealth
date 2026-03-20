@@ -1,5 +1,5 @@
 ---
-title: "Financial Resolutions That Actually Work: The Utah Retiree's Guide to 2026 Success"
+title: "Financial Resolutions That Work: Utah 2026 Guide"
 description: "Why 92% of financial resolutions fail and how Utah retirees can succeed with proven strategies that leverage state advantages and professional guidance."
 date: 2026-01-10
 dateModified: 2026-03-18

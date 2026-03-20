@@ -1,5 +1,5 @@
 ---
-title: "How to Make Your Retirement Savings Last a Lifetime"
+title: "Make Your Retirement Savings Last a Lifetime"
 description: "Forced into early retirement? Essential survival strategies to make your money last when retirement comes sooner than expected."
 date: 2025-01-11
 dateModified: 2026-03-19

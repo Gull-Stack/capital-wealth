@@ -1,5 +1,5 @@
 ---
-title: "Make Your Money Work for You: A Personal Journey Through Financial Planning and the Retirement Money Map"
+title: "Personal Journey Through Retirement Money Map"
 description: "Mike Stevens shares his personal story and the five essential components of the Retirement Money Map — income, tax, inflation, legacy, and investment planning for Utah retirees."
 date: 2025-08-16
 dateModified: 2026-03-19

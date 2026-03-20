@@ -1,5 +1,5 @@
 ---
-title: "Making Your Money Work for You: Utah's Path to Financial Freedom in Retirement"
+title: "Utah's Path to Financial Freedom in Retirement"
 description: "The personal story behind Utah's leading retirement advisor and essential strategies to ensure your money works for you, not against you, in retirement."
 date: 2026-01-03
 dateModified: 2026-03-18

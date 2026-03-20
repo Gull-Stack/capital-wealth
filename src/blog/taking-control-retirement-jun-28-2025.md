@@ -1,5 +1,5 @@
 ---
-title: "Taking Control of Your Retirement: Navigating Market Volatility and Global Uncertainty"
+title: "Taking Control: Retirement Market Volatility"
 description: "Learn how to protect your retirement savings during global conflicts and market volatility with proven strategies from Capital Wealth Advisors in Lehi, Utah."
 date: 2025-06-28
 dateModified: 2026-03-19

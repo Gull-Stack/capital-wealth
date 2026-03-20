@@ -1,5 +1,5 @@
 ---
-title: "New Year, New Retirement Reality: Why 2026 Could Be Your Best Year Yet (But Only If You Plan for This)"
+title: "2026 Retirement Reality: Your Best Year Yet"
 description: "How much of your retirement account is actually yours after taxes? Utah retirees can maximize their golden years with proper financial literacy and planning."
 date: 2026-01-31
 dateModified: 2026-03-18

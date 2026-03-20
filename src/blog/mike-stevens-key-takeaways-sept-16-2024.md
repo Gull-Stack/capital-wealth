@@ -1,5 +1,5 @@
 ---
-title: "Federal Employee Retirement Planning: 15 Key Takeaways from Mike Stevens"
+title: "Federal Retirement: 15 Key Takeaways"
 description: "Quick reference guide with 15 actionable insights to help federal employees optimize their retirement strategy, featuring key takeaways from Retire Right Radio."
 date: 2024-09-16
 dateModified: 2026-03-17

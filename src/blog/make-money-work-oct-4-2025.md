@@ -1,5 +1,5 @@
 ---
-title: "Make Your Money Work: From Daily Grind to Financial Freedom"
+title: "From Daily Grind to Financial Freedom"
 description: "Escape the daily grind with smart money strategies. Utah retirees' complete guide to achieving true financial freedom in retirement."
 date: 2025-10-04
 dateModified: 2026-03-19

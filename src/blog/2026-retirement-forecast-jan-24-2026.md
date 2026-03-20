@@ -1,5 +1,5 @@
 ---
-title: "Market Madness or Golden Opportunity? The 2026 Retirement Forecast Every Utah Retiree Must Read"
+title: "2026 Retirement Forecast: Utah Market Opportunity"
 description: "Analysts predict 8-18% S&P 500 gains for 2026, but what does this really mean for Utah retirees? Cut through the market noise with expert guidance."
 date: 2026-01-24
 dateModified: 2026-03-18
