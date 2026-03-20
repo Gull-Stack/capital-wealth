@@ -1,5 +1,5 @@
 ---
-title: "Making Retirement Money Last"
+title: "Making Retirement Money Last: The New Utah Reality"
 description: "Make your retirement savings last as long as Utah's mountains endure. Complete strategies for financial longevity in uncertain times."
 date: 2025-04-19
 dateModified: 2026-03-19

@@ -1,5 +1,5 @@
 ---
-title: "Planning Large Iras"
+title: "Large IRA Strategies to Avoid a Family Financial Nightmare"
 description: "Don't let a large IRA become a tax time bomb. Strategic planning solutions that protect your wealth from massive tax hits at retirement."
 date: 2025-08-02
 dateModified: 2026-03-19

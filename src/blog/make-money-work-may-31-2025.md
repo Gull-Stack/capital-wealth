@@ -1,5 +1,5 @@
 ---
-title: "Make Money Work"
+title: "Make Your Money Work: Tax Certainty in Uncertain Times"
 description: "Master the ultimate Utah retirement tax strategy. Make your money work smarter by minimizing taxes and maximizing after-tax income."
 date: 2025-05-31
 dateModified: 2026-03-19

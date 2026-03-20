@@ -1,5 +1,5 @@
 ---
-title: "Behavioral Finance"
+title: "Behavioral Finance: When Psychology Meets Retirement"
 description: "Discover how behavioral finance biases can derail your retirement plan and the proven strategies to overcome emotional investment decisions."
 date: 2025-12-13
 dateModified: 2026-03-19

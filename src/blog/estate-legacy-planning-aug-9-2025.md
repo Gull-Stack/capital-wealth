@@ -1,5 +1,5 @@
 ---
-title: "Estate Legacy Planning"
+title: "Estate Planning Lessons from the Calgary Tragedy"
 description: "Estate planning goes beyond a basic will. Learn the essential strategies Utah families need to protect their legacy and minimize estate taxes."
 date: 2025-08-09
 dateModified: 2026-03-19

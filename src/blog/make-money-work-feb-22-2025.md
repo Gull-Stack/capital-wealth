@@ -1,5 +1,5 @@
 ---
-title: "Make Money Work"
+title: "Make Your Money Work: From Earning to Learning"
 description: "Transform your portfolio into a reliable paycheck. Learn proven strategies to make your retirement savings work harder for you."
 date: 2025-02-22
 dateModified: 2026-03-19

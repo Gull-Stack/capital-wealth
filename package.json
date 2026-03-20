@@ -4,7 +4,7 @@
   "description": "Capital Wealth Advisors - Financial Advisory Website",
   "main": ".eleventy.js",
   "scripts": {
-    "build": "eleventy && npx cleancss -o _site/assets/css/main.css _site/assets/css/main.css && npx uglifyjs _site/assets/js/main.js -o _site/assets/js/main.js -c -m",
+    "build": "eleventy && npx cleancss -o _site/assets/css/main.css _site/assets/css/main.css && npx cleancss -o _site/assets/css/finpay-inspired.css _site/assets/css/finpay-inspired.css && npx uglifyjs _site/assets/js/main.js -o _site/assets/js/main.js -c -m",
     "serve": "eleventy --serve"
   },
   "dependencies": {

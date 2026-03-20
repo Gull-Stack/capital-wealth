@@ -1,5 +1,5 @@
 ---
-title: "Estate Legacy Planning"
+title: "Estate Planning: Why Love Means Legal Protection"
 description: "Protect your family's financial future with proper estate planning. Essential legal strategies Utah families need to safeguard their legacy."
 date: 2025-11-22
 dateModified: 2026-03-19
