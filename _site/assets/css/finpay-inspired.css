@@ -381,7 +381,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Cover the container */
-  object-position: center; /* Center the image */
+  object-position: center right; /* Show right side with hikers */
   display: block;
 }
 
@@ -389,19 +389,22 @@ p {
 @media (min-width: 1024px) {
   .finpay-hero-image {
     height: 700px;
-    width: 120%; /* Overflow right side */
-    margin-left: 0;
+    width: 150%; /* Extend further to screen edge */
+    margin-left: 10%; /* Push it more to the right */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
   
   .finpay-hero-content {
-    overflow: hidden; /* Hide overflow on the container */
+    overflow: visible; /* Allow overflow to show image extending */
   }
 }
 
 @media (min-width: 1280px) {
   .finpay-hero-image {
     height: 800px; /* Even taller on very large screens */
-    width: 130%;
+    width: 160%;
+    margin-left: 15%; /* Push even more to the right */
   }
 }
 
