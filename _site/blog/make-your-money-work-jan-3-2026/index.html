@@ -18,17 +18,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-semiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Finpay-inspired Helvetica fonts -->
     <style>
-      @font-face { font-family: 'Geist'; src: url('https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
-      @font-face { font-family: 'Geist'; src: url('https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-medium.woff2') format('woff2'); font-weight: 500; font-display: swap; }
-      @font-face { font-family: 'Geist'; src: url('https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-semiBold.woff2') format('woff2'); font-weight: 600; font-display: swap; }
-      @font-face { font-family: 'Geist Mono'; src: url('https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-mono-regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
-      @font-face { font-family: 'Geist Mono'; src: url('https://cdn.jsdelivr.net/gh/leo-mattar/titan-fonts/fonts/geist-mono-medium.woff2') format('woff2'); font-weight: 500; font-display: swap; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        /* Fallback to system fonts for Helvetica-like appearance */
+        :root {
+            --font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
     </style>
     
     <!-- Favicon -->
@@ -44,8 +40,8 @@
       gtag('config', 'G-LD4VE3SQNT');
     </script>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- Finpay-inspired styles -->
+    <link rel="stylesheet" href="/assets/css/finpay-inspired.css">
     
     <!-- Schema JSON-LD: Organization + LocalBusiness + FinancialService -->
     <script type="application/ld+json">
@@ -245,106 +241,83 @@
     
 </head>
 <body>
-    <header class="titan-header">
-        <div class="titan-nav">
-            <div class="titan-nav-logo">
-                <a href="/">
-                    <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="height: 36px; width: auto;">
-                </a>
-            </div>
-            <div class="titan-nav-links">
-                <div class="nav-dropdown">
-                    <a href="/services/" class="titan-nav-link">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                    <div class="nav-dropdown-menu">
-                        <a href="/services/tax-planning/" class="nav-dd-item">
-                            <strong>Tax-Efficient Strategies</strong>
-                            <span>Minimize taxes with smart withdrawal sequencing.</span>
-                        </a>
-                        <a href="/services/portfolio-management/" class="nav-dd-item">
-                            <strong>Portfolio Management</strong>
-                            <span>Diversified portfolios aligned with your timeline.</span>
-                        </a>
-                        <a href="/services/retirement-money-map/" class="nav-dd-item">
-                            <strong>Retirement Money Map</strong>
-                            <span>A clear plan for every dollar in retirement.</span>
-                        </a>
-                        <a href="/services/401k-ira-rollover/" class="nav-dd-item">
-                            <strong>401(k) & IRA Rollovers</strong>
-                            <span>Consolidate accounts and optimize your strategy.</span>
-                        </a>
-                        <a href="/services/social-security/" class="nav-dd-item">
-                            <strong>Social Security Optimization</strong>
-                            <span>Time your benefits to maximize lifetime income.</span>
-                        </a>
-                        <a href="/services/estate-planning/" class="nav-dd-item">
-                            <strong>Estate & Legacy Planning</strong>
-                            <span>Protect your family and pass wealth efficiently.</span>
-                        </a>
-                    </div>
-                </div>
-                <a href="/services/federal-benefits/" class="titan-nav-link">Federal</a>
-                <a href="/blog/" class="titan-nav-link">Blog</a>
-                <a href="/about/" class="titan-nav-link">Our Team</a>
-                <a href="https://www.retirerightbook.com/" class="titan-nav-link" target="_blank" rel="noopener">Book</a>
-            </div>
-            <div class="titan-nav-right">
-                <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="titan-nav-link">Client Login</a>
-                <a href="/contact/" class="titan-nav-join">Schedule a Call</a>
-            </div>
-            <div class="titan-mobile-actions">
-                <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="titan-mobile-login">Client Login</a>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-        
-        <!-- Full-screen mobile menu (Giga style) -->
-        <div class="mobile-menu" id="mobileMenu">
-            <div class="mobile-menu-header">
-                <div class="logo">
+    <!-- Finpay-inspired header -->
+    <header class="finpay-header">
+        <div class="container">
+            <nav class="finpay-nav">
+                <div class="finpay-nav-logo">
                     <a href="/">
-                        <img src="/assets/images/logos/logo-horizontal-white.png" alt="Capital Wealth" style="height: 32px; width: auto;">
+                        <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="height: 36px; width: auto;">
                     </a>
                 </div>
-                <button class="mobile-menu-close" id="mobileMenuClose">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
-                </button>
-            </div>
-            <div class="mobile-menu-body">
-                <div class="mobile-menu-section">
-                    <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="mobile-menu-login">Client Login &rarr;</a>
-                </div>
-                <div class="mobile-menu-section">
-                    <button type="button" class="mobile-accordion-toggle" id="mobileServicesToggle">
-                        <span>Services</span>
-                        <svg class="mobile-accordion-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
-                    <div class="mobile-accordion-panel" id="mobileServicesPanel">
-                        <a href="/services/tax-planning/">Tax-Efficient Strategies</a>
-                        <a href="/services/portfolio-management/">Portfolio Management</a>
-                        <a href="/services/retirement-money-map/">Retirement Money Map</a>
-                        <a href="/services/401k-ira-rollover/">401(k) & IRA Rollovers</a>
-                        <a href="/services/social-security/">Social Security Optimization</a>
-                        <a href="/services/estate-planning/">Estate & Legacy Planning</a>
+                <div class="finpay-nav-links">
+                    <div class="nav-dropdown" style="position: relative;">
+                        <a href="/services/" class="finpay-nav-link" style="display: flex; align-items: center; gap: 4px;">
+                            Services 
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu" style="
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background: white;
+                            border-radius: 12px;
+                            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+                            padding: 1rem;
+                            min-width: 280px;
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: translateY(-10px);
+                            transition: all 0.2s ease;
+                            z-index: 1000;">
+                            <a href="/services/tax-planning/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
+                                <strong style="color: #404040; font-weight: 600;">Tax-Efficient Strategies</strong>
+                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Minimize taxes with smart withdrawal sequencing.</span>
+                            </a>
+                            <a href="/services/portfolio-management/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
+                                <strong style="color: #404040; font-weight: 600;">Portfolio Management</strong>
+                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Diversified portfolios aligned with your timeline.</span>
+                            </a>
+                            <a href="/services/retirement-money-map/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
+                                <strong style="color: #404040; font-weight: 600;">Retirement Money Map</strong>
+                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">A clear plan for every dollar in retirement.</span>
+                            </a>
+                            <a href="/services/social-security/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
+                                <strong style="color: #404040; font-weight: 600;">Social Security Optimization</strong>
+                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Time your benefits to maximize lifetime income.</span>
+                            </a>
+                            <a href="/services/estate-planning/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; transition: background 0.2s;">
+                                <strong style="color: #404040; font-weight: 600;">Estate & Legacy Planning</strong>
+                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Protect your family and pass wealth efficiently.</span>
+                            </a>
+                        </div>
+                        <style>
+                            .nav-dropdown:hover .nav-dropdown-menu {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateY(0);
+                            }
+                            .nav-dropdown-menu a:hover {
+                                background: #f5f5f5 !important;
+                            }
+                        </style>
                     </div>
+                    <a href="/services/federal-benefits/" class="finpay-nav-link">Federal</a>
+                    <a href="/blog/" class="finpay-nav-link">Blog</a>
+                    <a href="/about/" class="finpay-nav-link">Our Team</a>
+                    <a href="https://www.retirerightbook.com/" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
                 </div>
-                <div class="mobile-menu-section">
-                    <p class="mobile-menu-label">Company</p>
-                    <a href="/who-we-serve/">Who We Serve</a>
-                    <a href="/case-studies/">Case Studies</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="/about/">About Us</a>
-                    <a href="/contact/">Contact</a>
+                <div class="finpay-nav-right" style="display: flex; align-items: center; gap: 1.5rem;">
+                    <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="finpay-nav-link">Client Login</a>
+                    <a href="/contact/" class="finpay-nav-cta">Schedule a Call</a>
                 </div>
-            </div>
+            </nav>
         </div>
-
     </header>
 
-    <main>
+    <main style="padding-top: 100px;">
         
 <script type="application/ld+json">
 {
@@ -1036,128 +1009,51 @@
 </section>
     </main>
 
-    <footer class="titan-footer">
-        <div class="titan-footer-inner">
-            <div class="titan-footer-left">
-                <img src="/assets/images/logos/logo-horizontal-white.png" alt="Capital Wealth" class="titan-footer-logo">
-                <div class="titan-titan-footer-pills">
-                    <a href="/contact/" class="titan-footer-pill titan-footer-pill-primary">Schedule Consultation</a>
-                    <a href="tel:8012102800" class="titan-footer-pill titan-footer-pill-outline">Call 801.210.2800</a>
-                    <a href="mailto:info@capitalwealth.com" class="titan-footer-pill titan-footer-pill-outline">info@capitalwealth.com</a>
-                </div>
-                <div class="footer-trust-badges">
-                    <img src="/assets/images/badges/bbb.png" alt="BBB Accredited Business" style="height: 36px; width: auto;">
-                    <img src="/assets/images/badges/brokercheck.png" alt="BrokerCheck by FINRA" style="height: 28px; width: auto;">
-                </div>
-                <p class="footer-fiduciary-text">Fiduciary. Always.</p>
-            </div>
-            <div class="titan-footer-nav">
-                <div class="titan-footer-col">
-                    <h5 class="titan-footer-heading">Services</h5>
-                    <ul>
-                        
-                        <li><a href="/services/tax-planning/">Tax-Efficient Retirement Strategies</a></li>
-                        
-                        <li><a href="/services/portfolio-management/">Comprehensive Portfolio Management</a></li>
-                        
-                        <li><a href="/services/retirement-money-map/">Personalized Retirement Money Map</a></li>
-                        
-                        <li><a href="/services/401k-ira-rollover/">401(k) &amp; IRA Rollovers</a></li>
-                        
-                        <li><a href="/services/social-security/">Social Security Optimization</a></li>
-                        
-                        <li><a href="/services/medicare-irmaa/">Medicare &amp; IRMAA Planning</a></li>
-                        
-                        <li><a href="/services/estate-planning/">Estate &amp; Legacy Planning</a></li>
-                        
-                        <li><a href="/services/federal-benefits/">Federal Employee Benefits</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="titan-footer-col">
-                    <h5 class="titan-footer-heading">Resources</h5>
-                    <ul>
-                        <li><a href="/guides/">Guides</a></li>
-                        <li><a href="/faq/">FAQ</a></li>
-                        <li><a href="/guides/how-much-do-i-need-to-retire-in-utah/">Retiring in Utah</a></li>
-                        <li><a href="/guides/401k-rollover-complete-guide/">401(k) Guide</a></li>
-                        <li><a href="/guides/when-to-take-social-security/">Social Security</a></li>
-                        <li><a href="/guides/fers-retirement-planning-guide/">FERS Guide</a></li>
-                        <li><a href="/guides/retirement-tax-planning-strategies/">Tax Planning</a></li>
-                    </ul>
-                </div>
-                <div class="titan-footer-col">
-                    <h5 class="titan-footer-heading">Company</h5>
-                    <ul>
-                        <li><a href="/about/">About Us</a></li>
-                        <li><a href="/reviews/">Reviews</a></li>
-                        <li><a href="/press/">Press & Media</a></li>
-                        <li><a href="/case-studies/">Case Studies</a></li>
-                        <li><a href="/disclosures/">Disclosures</a></li>
-                        <li><a href="/brand-facts/">Brand Facts</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="titan-footer-sub">
-            <div class="titan-footer-sub-inner">
-                <div class="titan-footer-legal">
-                    <p>&copy; 2026 Capital Wealth. All rights reserved.</p>
-                    <p>Investment advisory services offered through Capital Wealth. Michael Stevens, IAR.</p>
-                    <p><a href="/disclosures/">Important Disclosures</a></p>
-                </div>
-                <div class="titan-footer-credit">
-                    <p>Website by <a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/assets/js/main.js"></script>
     <script>
-    // Transparent header → solid on scroll
-    const header = document.querySelector('.header');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 60);
-    });
+    // Smooth scroll reveal animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
 
-    // Scroll reveal animations (B.O.S.S. style)
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
-      observer.observe(el);
-    });
-    </script>
-
-    <!-- Sticky CTA bar (shows after scrolling past hero) -->
-    <div class="sticky-cta" id="stickyCta">
-        <div class="sticky-cta-inner">
-            <span class="sticky-cta-text">Ready to plan your retirement?</span>
-            <a href="/contact/" class="sticky-cta-btn">Schedule Free Consultation</a>
-            <a href="tel:8012102800" class="sticky-cta-phone">801.210.2800</a>
-        </div>
-    </div>
-    <script>
-    (function() {
-        var bar = document.getElementById('stickyCta');
-        if (!bar) return;
-        var shown = false;
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 600 && !shown) {
-                bar.classList.add('visible');
-                shown = true;
-            } else if (window.scrollY <= 600 && shown) {
-                bar.classList.remove('visible');
-                shown = false;
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
             }
         });
-    })();
+    }, observerOptions);
+
+    // Apply reveal animation to cards and sections
+    document.addEventListener('DOMContentLoaded', () => {
+        const revealElements = document.querySelectorAll('.finpay-service-card, .finpay-stat, .finpay-comparison-content');
+        
+        revealElements.forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(el);
+        });
+    });
+
+    // Header scroll effect
+    let lastScrollTop = 0;
+    const header = document.querySelector('.finpay-header');
+    
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > 100) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+            header.style.boxShadow = '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = 'none';
+        }
+        
+        lastScrollTop = scrollTop;
+    });
     </script>
 </body>
 </html>
