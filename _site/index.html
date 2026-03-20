@@ -377,10 +377,10 @@
     <div class="container">
         <div class="finpay-hero-content">
             <div class="finpay-hero-left">
-                <h1 class="hero-title-large">Retire with confidence.<br>Not confusion.</h1>
-                <p class="subtitle">A Portfolio Is Not a Plan.</p>
-                <p class="description">You've spent decades building your savings. Now it's time to turn them into a retirement you can actually enjoy — with reliable income, lower taxes, and a plan that works even when markets don't.</p>
-                <div class="finpay-hero-buttons hero-buttons-stacked">
+                <h1 class="hero-title-large hero-animate">Retire with confidence.<br>Not confusion.</h1>
+                <p class="subtitle hero-animate">A Portfolio Is Not a Plan.</p>
+                <p class="description hero-animate">You've spent decades building your savings. Now it's time to turn them into a retirement you can actually enjoy — with reliable income, lower taxes, and a plan that works even when markets don't.</p>
+                <div class="finpay-hero-buttons hero-buttons-stacked hero-animate">
                     <a href="/contact/" class="finpay-btn-primary">Get Your Free Assessment <span>→</span></a>
                     <a href="/book/" class="finpay-btn-orange">Free Book Chapter</a>
                 </div>
@@ -1328,6 +1328,109 @@
         height: 280px;
     }
 }
+
+/* ═══════════════════════════════════════════
+   SCROLL-TRIGGERED ANIMATIONS
+   ═══════════════════════════════════════════ */
+
+/* Hero text fade-up */
+.hero-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.hero-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stats fly in from right */
+.finpay-stat {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.finpay-stat.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Service cards fade up staggered */
+.finpay-card,
+.finpay-service-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.finpay-card.visible,
+.finpay-service-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Federal cards slide in from left */
+.federal-card {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.federal-card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Meet Mike section */
+.meet-mike-photo,
+.meet-mike-details {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.meet-mike-photo.visible,
+.meet-mike-details.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Book section */
+.book-left,
+.book-right {
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.book-left {
+    transform: translateX(-40px);
+}
+.book-right {
+    transform: translateX(40px);
+}
+.book-left.visible,
+.book-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Hero image scale-in */
+.finpay-hero-image {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.finpay-hero-image.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Comparison table rows */
+.finpay-comparison-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.finpay-comparison-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 </style>
 
 <script>
@@ -1345,12 +1448,61 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Apply reveal animation to cards and stats
+// Apply reveal animation to all animated elements
 document.addEventListener('DOMContentLoaded', () => {
-    const revealElements = document.querySelectorAll('.finpay-card, .finpay-stat, .federal-stat');
-    
-    revealElements.forEach((el, index) => {
+    // Hero elements - stagger from top
+    const heroElements = document.querySelectorAll('.hero-animate');
+    heroElements.forEach((el, index) => {
+        el.style.transitionDelay = `${0.2 + index * 0.15}s`;
+        observer.observe(el);
+    });
+
+    // Hero image
+    const heroImage = document.querySelector('.finpay-hero-image');
+    if (heroImage) {
+        heroImage.style.transitionDelay = '0.4s';
+        observer.observe(heroImage);
+    }
+
+    // Stats fly in from right with stagger
+    const stats = document.querySelectorAll('.finpay-stat');
+    stats.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.15}s`;
+        observer.observe(el);
+    });
+
+    // Service cards
+    const cards = document.querySelectorAll('.finpay-card, .finpay-service-card');
+    cards.forEach((el, index) => {
         el.style.transitionDelay = `${index * 0.1}s`;
+        observer.observe(el);
+    });
+
+    // Federal cards
+    const federalCards = document.querySelectorAll('.federal-card');
+    federalCards.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.12}s`;
+        observer.observe(el);
+    });
+
+    // Meet Mike
+    const mikeElements = document.querySelectorAll('.meet-mike-photo, .meet-mike-details');
+    mikeElements.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.2}s`;
+        observer.observe(el);
+    });
+
+    // Book section
+    const bookElements = document.querySelectorAll('.book-left, .book-right');
+    bookElements.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.2}s`;
+        observer.observe(el);
+    });
+
+    // Comparison table
+    const compElements = document.querySelectorAll('.finpay-comparison-content');
+    compElements.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.08}s`;
         observer.observe(el);
     });
 });
