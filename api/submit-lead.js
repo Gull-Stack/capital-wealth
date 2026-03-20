@@ -143,8 +143,30 @@ export default async function handler(req, res) {
     };
 
     // Insert into Supabase (if configured)
+    // Only send fields that exist in the Supabase leads table
     let savedLead = null;
     if (SUPABASE_URL && SUPABASE_KEY) {
+      const supabaseData = {
+        name: leadData.name,
+        email: leadData.email,
+        phone: leadData.phone,
+        message: leadData.message,
+        source: leadData.source,
+        status: leadData.status,
+        email_sent: leadData.email_sent,
+        created_at: leadData.created_at,
+        savings: leadData.savings,
+        retirement_timeline: leadData.retirement_timeline,
+        utm_source: leadData.utm_source,
+        utm_medium: leadData.utm_medium,
+        utm_campaign: leadData.utm_campaign,
+        referrer: leadData.referrer,
+        landing_page: leadData.landing_page,
+        submitted_from: leadData.submitted_from,
+      };
+      // Remove null/undefined values
+      Object.keys(supabaseData).forEach(k => supabaseData[k] == null && delete supabaseData[k]);
+      
       const response = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
         method: 'POST',
         headers: {
@@ -153,7 +175,7 @@ export default async function handler(req, res) {
           'Authorization': `Bearer ${SUPABASE_KEY}`,
           'Prefer': 'return=representation',
         },
-        body: JSON.stringify(leadData),
+        body: JSON.stringify(supabaseData),
       });
       if (response.ok) {
         savedLead = await response.json();
