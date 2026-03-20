@@ -708,12 +708,13 @@ p {
 /* Responsive design */
 @media (max-width: 768px) {
   .finpay-hero {
-    padding: var(--space-24) 0 var(--space-16);
+    padding: var(--space-16) 0 var(--space-8); /* Further reduced spacing on mobile */
   }
   
   .finpay-hero-buttons {
     flex-direction: column;
     align-items: stretch;
+    gap: var(--space-3);
   }
   
   .finpay-services-grid {
@@ -722,6 +723,23 @@ p {
   
   .finpay-stats-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-8);
+    gap: var(--space-4); /* Reduced mobile gap */
+  }
+  
+  .finpay-hero-image {
+    height: 400px !important; /* Smaller on mobile */
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  
+  /* Responsive sticky CTA */
+  #sticky-cta > div {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    text-align: center;
+  }
+  
+  #sticky-cta > div > div:last-child {
+    justify-content: center !important;
   }
 }
