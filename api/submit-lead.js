@@ -143,29 +143,34 @@ export default async function handler(req, res) {
     };
 
     // Insert into Supabase (if configured)
-    // Only send fields that exist in the Supabase leads table
+    // Store ALL form data - known columns go direct, extras go in message as JSON
     let savedLead = null;
     if (SUPABASE_URL && SUPABASE_KEY) {
-      const supabaseData = {
-        name: leadData.name,
-        email: leadData.email,
-        phone: leadData.phone,
-        message: leadData.message,
-        source: leadData.source,
-        status: leadData.status,
-        email_sent: leadData.email_sent,
-        created_at: leadData.created_at,
-        savings: leadData.savings,
-        retirement_timeline: leadData.retirement_timeline,
-        utm_source: leadData.utm_source,
-        utm_medium: leadData.utm_medium,
-        utm_campaign: leadData.utm_campaign,
-        referrer: leadData.referrer,
-        landing_page: leadData.landing_page,
-        submitted_from: leadData.submitted_from,
-      };
-      // Remove null/undefined values
-      Object.keys(supabaseData).forEach(k => supabaseData[k] == null && delete supabaseData[k]);
+      // Fields that exist in the Supabase leads table
+      const knownColumns = ['name','email','phone','interest','concern','service','location',
+        'message','source','status','email_sent','created_at','savings','retirement_timeline',
+        'utm_source','utm_medium','utm_campaign','referrer','landing_page','submitted_from'];
+      
+      const supabaseData = {};
+      const extraData = {};
+      
+      // Split data into known columns vs extras
+      for (const [key, value] of Object.entries(leadData)) {
+        if (value == null || value === '') continue;
+        if (knownColumns.includes(key)) {
+          supabaseData[key] = value;
+        } else {
+          extraData[key] = value;
+        }
+      }
+      
+      // Append extra fields to message so NOTHING is lost
+      if (Object.keys(extraData).length > 0) {
+        const extraText = Object.entries(extraData).map(([k,v]) => `${k}: ${v}`).join(' | ');
+        supabaseData.message = supabaseData.message 
+          ? `${supabaseData.message}\n\n--- Additional Data ---\n${extraText}`
+          : `--- Form Data ---\n${extraText}`;
+      }
       
       const response = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
         method: 'POST',
@@ -183,7 +188,7 @@ export default async function handler(req, res) {
     }
 
     // Sync to Salesforce Web-to-Lead (fire-and-forget, don't block on failure)
-    syncToSalesforce(leadData).catch(() => {});
+    syncToSalesforce(leadData).catch(err => console.error('Salesforce sync error:', err.message));
 
     if (SENDGRID_API_KEY) {
       // Federal Workshop specific email template
