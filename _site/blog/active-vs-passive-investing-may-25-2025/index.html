@@ -349,6 +349,7 @@
 
     <!-- Mobile Navigation (GullStack Pattern) -->
     <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" onclick="closeMobileMenu()" aria-label="Close menu">&times;</button>
         <div class="mobile-nav-group">
             <span class="mobile-nav-label">Services</span>
             <a href="/services/" onclick="closeMobileMenu()">All Services</a>
@@ -1277,6 +1278,20 @@
         padding: 80px 24px;
     }
     .mobile-nav.active { display: flex; }
+    .mobile-nav-close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        line-height: 1;
+        color: var(--gray-700);
+        cursor: pointer;
+        padding: 8px;
+        z-index: 10003;
+    }
+    .mobile-nav-close:hover { color: var(--cw-primary); }
     .mobile-nav a {
         color: var(--gray-700);
         font-size: 1.3rem;
