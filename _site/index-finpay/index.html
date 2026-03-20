@@ -1150,10 +1150,10 @@
             body.style.overflow = '';
         }
 
-        // Event listeners
-        mobileMenuButton?.addEventListener('click', openMobileMenu);
-        mobileMenuClose?.addEventListener('click', closeMobileMenu);
-        overlay.addEventListener('click', closeMobileMenu);
+        // Event listeners with null checks
+        if (mobileMenuButton) mobileMenuButton.addEventListener('click', openMobileMenu);
+        if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+        if (overlay) overlay.addEventListener('click', closeMobileMenu);
 
         // Mobile dropdown toggles
         const dropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
@@ -1179,6 +1179,51 @@
                 closeMobileMenu();
             }
         });
+    });
+
+    // Fallback mobile menu initialization in case DOMContentLoaded fails
+    window.addEventListener('load', () => {
+        // Check if mobile menu was initialized
+        const button = document.getElementById('mobile-menu-button');
+        const overlay = document.getElementById('mobile-nav-overlay');
+        
+        if (button && !overlay) {
+            console.log('Mobile menu not initialized, running fallback...');
+            
+            // Create overlay
+            const newOverlay = document.createElement('div');
+            newOverlay.className = 'mobile-nav-overlay';
+            newOverlay.id = 'mobile-nav-overlay';
+            document.body.appendChild(newOverlay);
+            
+            // Add click handlers directly
+            button.onclick = () => {
+                const menu = document.getElementById('mobile-nav-menu');
+                button.classList.add('active');
+                menu.classList.add('active');
+                newOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            };
+            
+            newOverlay.onclick = () => {
+                const menu = document.getElementById('mobile-nav-menu');
+                button.classList.remove('active');
+                menu.classList.remove('active');
+                newOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            };
+            
+            const closeBtn = document.getElementById('mobile-menu-close');
+            if (closeBtn) {
+                closeBtn.onclick = () => {
+                    const menu = document.getElementById('mobile-nav-menu');
+                    button.classList.remove('active');
+                    menu.classList.remove('active');
+                    newOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                };
+            }
+        }
     });
 
     // Smooth scroll reveal animations
