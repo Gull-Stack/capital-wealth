@@ -1,11 +1,56 @@
 // Capital Wealth Advisors - Lead Submission API
-// Emails via SendGrid, stores in Supabase (if configured)
+// Emails via SendGrid, stores in Supabase (if configured), syncs to Salesforce
 
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY;
 const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
 const SALES_EMAIL = process.env.SITE_EMAIL || 'info@capitalwealth.com';
 const FROM_EMAIL = process.env.FROM_EMAIL || 'leads@gullstack.com';
+
+// Salesforce Web-to-Lead config
+const SF_OID = process.env.SALESFORCE_OID || '00DDm0000011JUMMA2';
+
+async function syncToSalesforce(leadData) {
+  try {
+    // Split name into first/last
+    const nameParts = (leadData.name || '').trim().split(/\s+/);
+    const firstName = nameParts[0] || '';
+    const lastName = nameParts.slice(1).join(' ') || nameParts[0] || '';
+
+    // Build description from all extra fields
+    const descParts = [];
+    if (leadData.savings) descParts.push(`Savings: ${leadData.savings}`);
+    if (leadData.retirement_timeline) descParts.push(`Timeline: ${leadData.retirement_timeline}`);
+    if (leadData.message) descParts.push(`Questions: ${leadData.message}`);
+    if (leadData.submitted_from) descParts.push(`Page: ${leadData.submitted_from}`);
+    if (leadData.utm_source) descParts.push(`UTM Source: ${leadData.utm_source}`);
+    if (leadData.utm_medium) descParts.push(`UTM Medium: ${leadData.utm_medium}`);
+    if (leadData.utm_campaign) descParts.push(`UTM Campaign: ${leadData.utm_campaign}`);
+
+    const params = new URLSearchParams();
+    params.append('oid', SF_OID);
+    params.append('retURL', 'https://capitalwealth.com/');
+    params.append('first_name', firstName);
+    params.append('last_name', lastName);
+    params.append('email', leadData.email || '');
+    params.append('phone', leadData.phone || '');
+    params.append('lead_source', 'Website Form');
+    params.append('description', descParts.join('\n'));
+
+    const response = await fetch(
+      'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString(),
+      }
+    );
+    return response.ok;
+  } catch (e) {
+    console.error('Salesforce Web-to-Lead sync failed:', e.message);
+    return false;
+  }
+}
 
 async function sendEmail({ to, from, fromName, subject, html, replyTo, cc }) {
   const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
@@ -98,6 +143,9 @@ export default async function handler(req, res) {
         savedLead = await response.json();
       }
     }
+
+    // Sync to Salesforce Web-to-Lead (fire-and-forget, don't block on failure)
+    syncToSalesforce(leadData).catch(() => {});
 
     if (SENDGRID_API_KEY) {
       // Send confirmation to the prospect
