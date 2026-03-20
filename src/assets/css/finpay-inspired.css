@@ -273,7 +273,7 @@ p {
 @media (max-width: 768px) {
   .finpay-hero-content {
     grid-template-columns: 1fr;
-    gap: var(--space-6); /* Reduced gap for mobile */
+    gap: var(--space-4); /* Further reduced gap for mobile to bring image closer */
     text-align: center;
   }
 }
@@ -748,7 +748,7 @@ p {
   }
   
   .finpay-hero {
-    padding: var(--space-16) 0 var(--space-8); /* Further reduced spacing on mobile */
+    padding: var(--space-8) 0 var(--space-4); /* Further reduced spacing on mobile to bring image up */
   }
   
   .finpay-hero-buttons {
@@ -767,7 +767,7 @@ p {
   }
   
   .finpay-hero-image {
-    height: 500px !important; /* Increased from 400px to better show the walking couple */
+    height: 350px !important; /* Reduced height to fit better above the fold while still showing the walking couple */
     width: 100% !important;
     margin-left: 0 !important;
   }
