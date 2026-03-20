@@ -1,244 +1,165 @@
 ---
 layout: layouts/base.njk
 title: "Federal Employee Benefits Workshop - April 9, 2026 | Capital Wealth"
-description: "Exclusive federal benefits workshop for Hill AFB employees. Maximize FERS, TSP, FEGLI & healthcare benefits. Free workshop April 9 at Weber State University."
-bodyClass: "federal-workshop-page"
+description: "Free federal benefits workshop for Hill AFB employees. Maximize FERS, TSP, FEGLI & healthcare benefits. April 9, 2026 at Weber State University."
+bodyClass: "landing-page"
 ---
 
+<!-- Landing page header override styles -->
 <style>
-/* Federal Workshop Page - Premium Capital Wealth Brand Styling */
-.federal-workshop-page {
-  background: var(--white);
+/* Override header for landing page only */
+.landing-page .finpay-nav-links,
+.landing-page .finpay-nav-right,
+.landing-page .desktop-cta,
+.landing-page .client-login-cta,
+.landing-page .mobile-menu-btn {
+  display: none !important;
 }
 
-/* Hero Section - Premium Federal Styling */
-.federal-hero {
-  background: linear-gradient(
-    135deg, 
-    rgba(25, 79, 144, 0.93) 0%, 
-    rgba(20, 67, 122, 0.95) 100%
-  ), 
-  url('/assets/images/photos/CWA-Mountain-Couple-home-header.webp');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+.landing-page .finpay-nav {
+  justify-content: center;
+}
+
+.landing-page .finpay-nav-logo {
+  margin: 0;
+}
+
+/* Landing page specific styles */
+.landing-page {
+  --cw-primary: #194F90;
+  --cw-orange: #F09F54;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #194F90 0%, #0f2b4a 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
-  color: var(--white);
   position: relative;
   overflow: hidden;
 }
 
-.federal-hero::before {
+.hero-section::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.08) 0%, transparent 50%);
-  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: url('/assets/images/logos/logo-icon-color.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.03;
+  z-index: 1;
 }
 
-.federal-hero-content {
+.hero-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-20);
+  grid-template-columns: 1fr 500px;
+  gap: 80px;
   align-items: center;
   position: relative;
   z-index: 2;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--space-6);
+  padding: 120px 24px 80px;
 }
 
-@media (max-width: 1200px) {
-  .federal-hero-content {
-    grid-template-columns: 1fr;
-    gap: var(--space-16);
-    text-align: center;
-    max-width: 800px;
-  }
-}
-
-.federal-hero-left h1 {
-  font-size: 4rem;
+.hero-left h1 {
+  font-size: 3.5rem;
   font-weight: 800;
   line-height: 1.1;
-  margin-bottom: var(--space-6);
-  color: var(--white);
+  color: white;
+  margin-bottom: 24px;
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
-.federal-hero-left .subtitle {
+.hero-subtitle {
   font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: var(--space-8);
-  opacity: 0.95;
-  color: var(--cw-orange);
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-}
-
-.federal-hero-left .description {
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: var(--space-10);
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-.event-highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-6);
-  margin-bottom: var(--space-8);
-}
-
-.highlight-item {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: var(--radius-lg);
-  padding: var(--space-6);
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.highlight-item:hover {
-  transform: translateY(-2px);
-}
-
-.highlight-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--space-3);
-  display: block;
-}
-
-.highlight-text {
   font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.event-details-badge {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
-  border-radius: var(--radius-xl);
-  padding: var(--space-8);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-}
-
-.event-details-badge h3 {
   color: var(--cw-orange);
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: var(--space-6);
-  text-align: center;
+  margin-bottom: 24px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
 }
 
 .event-detail {
   display: flex;
   align-items: center;
-  margin-bottom: var(--space-4);
-  font-size: 1.1rem;
+  gap: 16px;
+  font-size: 1.125rem;
   font-weight: 600;
-  padding: var(--space-3);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.05);
+  color: white;
 }
 
-.event-detail:last-child {
-  margin-bottom: 0;
-}
-
-.event-icon {
-  font-size: 1.4rem;
-  margin-right: var(--space-4);
+.event-detail svg {
+  width: 24px;
+  height: 24px;
   color: var(--cw-orange);
-  min-width: 24px;
 }
 
-/* Registration Form - Premium Design */
-.registration-card {
-  background: var(--white);
-  border-radius: var(--radius-xl);
-  padding: var(--space-12);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
-  position: relative;
-  overflow: hidden;
-  max-width: 500px;
-  margin: 0 auto;
+/* Registration Form */
+.registration-form {
+  background: white;
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
 }
 
-.registration-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  background: linear-gradient(90deg, var(--cw-primary), var(--cw-orange));
+.form-header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.registration-card h2 {
-  font-size: 2.5rem;
+.form-header h2 {
+  font-size: 2.25rem;
   font-weight: 800;
   color: var(--cw-primary);
-  margin-bottom: var(--space-4);
-  text-align: center;
-  line-height: 1.2;
+  margin-bottom: 12px;
 }
 
-.registration-subtitle {
-  text-align: center;
+.form-subtitle {
+  font-size: 1.125rem;
   color: var(--gray-600);
-  font-size: 1.2rem;
-  margin-bottom: var(--space-4);
   font-weight: 500;
-  line-height: 1.5;
-}
-
-.urgency-banner {
-  background: linear-gradient(135deg, #DC2626, #EF4444);
-  color: white;
-  padding: var(--space-4);
-  border-radius: var(--radius-lg);
-  text-align: center;
-  margin-bottom: var(--space-8);
-  font-weight: 700;
-  font-size: 1.1rem;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
 }
 
 .form-group {
-  margin-bottom: var(--space-6);
+  margin-bottom: 24px;
 }
 
 .form-group label {
   display: block;
   font-weight: 700;
   color: var(--cw-primary);
-  margin-bottom: var(--space-3);
-  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-size: 1rem;
 }
 
 .form-group input,
 .form-group select {
   width: 100%;
-  padding: var(--space-4);
+  padding: 16px;
   border: 2px solid var(--gray-200);
-  border-radius: var(--radius-lg);
-  font-size: 1.1rem;
+  border-radius: 12px;
+  font-size: 1rem;
   font-family: var(--font-family);
-  transition: all 0.3s ease;
-  background: var(--white);
-  font-weight: 500;
+  transition: all 0.2s ease;
+  background: white;
 }
 
 .form-group input:focus,
@@ -246,158 +167,234 @@ bodyClass: "federal-workshop-page"
   outline: none;
   border-color: var(--cw-primary);
   box-shadow: 0 0 0 4px rgba(25, 79, 144, 0.1);
-  transform: translateY(-1px);
 }
 
-.federal-submit-btn {
+.submit-btn {
   width: 100%;
-  background: linear-gradient(135deg, var(--cw-primary), var(--cw-secondary));
-  color: var(--white);
-  padding: var(--space-5) var(--space-8);
+  background: var(--cw-orange);
+  color: white;
+  padding: 20px;
   border: none;
-  border-radius: var(--radius-lg);
-  font-size: 1.3rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
   font-weight: 800;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(25, 79, 144, 0.3);
-  margin-top: var(--space-8);
+  transition: all 0.2s ease;
+  box-shadow: 0 8px 25px rgba(240, 159, 84, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-.federal-submit-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(25, 79, 144, 0.4);
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(240, 159, 84, 0.4);
 }
 
-.form-footer {
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Social Proof Section */
+.social-proof {
+  background: #f0f1f3;
+  padding: 80px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.stat-item {
   text-align: center;
-  margin-top: var(--space-8);
-  padding-top: var(--space-6);
-  border-top: 2px solid var(--gray-200);
 }
 
-.contact-info {
-  color: var(--gray-600);
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--cw-primary);
+  display: block;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.stat-label {
   font-size: 1rem;
+  color: var(--gray-700);
   font-weight: 600;
 }
 
-.contact-info strong {
-  color: var(--cw-primary);
-  font-size: 1.1rem;
+/* What You'll Learn Section */
+.learn-section {
+  background: white;
+  padding: 120px 0;
 }
 
-/* Value Proposition Section */
-.value-section {
-  padding: var(--space-24) 0;
-  background: linear-gradient(135deg, var(--gray-50), var(--white));
-}
-
-.value-header {
+.section-header {
   text-align: center;
-  max-width: 900px;
-  margin: 0 auto var(--space-20);
+  max-width: 800px;
+  margin: 0 auto 80px;
+  padding: 0 24px;
 }
 
-.value-header h2 {
+.section-header h2 {
   font-size: 3rem;
-  color: var(--cw-primary);
-  margin-bottom: var(--space-6);
   font-weight: 800;
-  line-height: 1.2;
+  color: var(--cw-primary);
+  margin-bottom: 24px;
+  line-height: 1.1;
 }
 
-.value-header .description {
-  font-size: 1.3rem;
+.section-header p {
+  font-size: 1.25rem;
   color: var(--gray-600);
-  font-weight: 500;
   line-height: 1.6;
 }
 
-.value-grid {
+.cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: var(--space-8);
-  margin-top: var(--space-16);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-.value-card {
-  background: var(--white);
-  border-radius: var(--radius-xl);
-  padding: var(--space-10);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+.learn-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 40px;
   transition: all 0.3s ease;
-  text-align: left;
-  border: 1px solid var(--gray-100);
 }
 
-.value-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+.learn-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-.value-icon {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, var(--cw-primary), var(--cw-orange));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: var(--space-6);
-  font-size: 2.2rem;
-  color: var(--white);
-  box-shadow: 0 8px 20px rgba(25, 79, 144, 0.3);
-}
-
-.value-card h3 {
-  font-size: 1.6rem;
+.card-icon {
+  width: 48px;
+  height: 48px;
   color: var(--cw-primary);
-  margin-bottom: var(--space-4);
+  margin-bottom: 24px;
+}
+
+.learn-card h3 {
+  font-size: 1.5rem;
   font-weight: 700;
+  color: var(--cw-primary);
+  margin-bottom: 16px;
   line-height: 1.3;
 }
 
-.value-card p {
+.learn-card p {
   color: var(--gray-600);
-  line-height: 1.7;
-  font-size: 1.1rem;
-  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
 }
 
-/* Host Section */
+/* Free Analysis Section */
+.analysis-section {
+  background: #f0f1f3;
+  padding: 120px 0;
+}
+
+.analysis-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.analysis-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.analysis-header h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--cw-primary);
+  margin-bottom: 24px;
+}
+
+.analysis-subtitle {
+  font-size: 1.25rem;
+  color: var(--gray-600);
+  margin-bottom: 32px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  color: var(--cw-primary);
+  margin: 0 auto 24px;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cw-primary);
+  margin-bottom: 16px;
+}
+
+.feature-item p {
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+.analysis-note {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.analysis-note p {
+  font-size: 1.125rem;
+  color: var(--gray-700);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Meet Your Host Section */
 .host-section {
-  padding: var(--space-24) 0;
-  background: var(--white);
+  background: white;
+  padding: 120px 0;
 }
 
 .host-content {
   display: grid;
-  grid-template-columns: 350px 1fr;
-  gap: var(--space-16);
+  grid-template-columns: 400px 1fr;
+  gap: 80px;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-@media (max-width: 900px) {
-  .host-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: var(--space-12);
-  }
+  padding: 0 24px;
 }
 
 .host-image {
-  border-radius: var(--radius-xl);
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .host-image img {
@@ -406,502 +403,435 @@ bodyClass: "federal-workshop-page"
   display: block;
 }
 
-.host-label {
-  color: var(--cw-orange);
-  font-weight: 800;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: var(--space-4);
-}
-
 .host-details h3 {
   font-size: 2.5rem;
-  color: var(--cw-primary);
-  margin-bottom: var(--space-3);
   font-weight: 800;
-  line-height: 1.2;
+  color: var(--cw-primary);
+  margin-bottom: 8px;
 }
 
 .host-title {
+  font-size: 1.25rem;
   color: var(--gray-600);
-  font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: var(--space-8);
+  margin-bottom: 32px;
 }
 
 .credentials {
-  margin-bottom: var(--space-8);
+  margin-bottom: 32px;
 }
 
 .credential-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: var(--space-4);
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 1.125rem;
   color: var(--gray-700);
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-.credential-check {
+.check-icon {
+  width: 20px;
+  height: 20px;
   color: var(--cw-orange);
-  margin-right: var(--space-4);
-  font-weight: 800;
-  font-size: 1.2rem;
   margin-top: 2px;
-  min-width: 20px;
+  flex-shrink: 0;
 }
 
 .host-quote {
-  background: linear-gradient(135deg, var(--gray-50), var(--white));
-  padding: var(--space-8);
-  border-radius: var(--radius-xl);
+  background: #f9fafb;
+  padding: 32px;
+  border-radius: 16px;
   border-left: 6px solid var(--cw-orange);
   font-style: italic;
   color: var(--gray-700);
   line-height: 1.7;
-  font-size: 1.1rem;
-  font-weight: 500;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  font-size: 1.125rem;
 }
 
-/* Social Proof Section */
-.social-proof-section {
-  padding: var(--space-20) 0;
-  background: linear-gradient(135deg, var(--cw-primary), var(--cw-secondary));
-  color: var(--white);
+/* SF-182 Section */
+.sf182-section {
+  background: #f8f9fa;
+  padding: 64px 0;
 }
 
-.social-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-8);
-  text-align: center;
-  max-width: 1000px;
+.sf182-content {
+  max-width: 800px;
   margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
 }
 
-.stat-item {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: var(--radius-xl);
-  padding: var(--space-8);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.sf182-content p {
+  font-size: 1.125rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+  margin: 0;
 }
 
-.stat-number {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--cw-orange);
-  display: block;
-  margin-bottom: var(--space-2);
-}
-
-.stat-label {
-  font-size: 1.1rem;
-  font-weight: 600;
-  opacity: 0.9;
-}
-
-/* Urgency CTA Section */
-.urgency-cta {
-  background: linear-gradient(135deg, var(--gray-900), var(--gray-800));
-  padding: var(--space-20) 0;
-  color: var(--white);
+/* Final CTA Section */
+.final-cta {
+  background: linear-gradient(135deg, #194F90 0%, #0f2b4a 100%);
+  padding: 120px 0;
+  color: white;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-.urgency-cta::before {
+.final-cta::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('/assets/images/photos/CWA-Mountain-Couple-home-header.webp');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: url('/assets/images/logos/logo-icon-color.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.03;
+  z-index: 1;
 }
 
-.urgency-content {
-  max-width: 800px;
+.cta-content {
+  max-width: 900px;
   margin: 0 auto;
+  padding: 0 24px;
   position: relative;
   z-index: 2;
 }
 
-.urgency-cta h2 {
+.cta-content h2 {
   font-size: 3rem;
-  color: var(--white);
-  margin-bottom: var(--space-6);
   font-weight: 800;
-  line-height: 1.2;
+  margin-bottom: 24px;
+  line-height: 1.1;
 }
 
-.urgency-text {
-  font-size: 1.4rem;
-  margin-bottom: var(--space-10);
-  opacity: 0.95;
-  font-weight: 500;
+.cta-description {
+  font-size: 1.25rem;
+  margin-bottom: 48px;
+  opacity: 0.9;
   line-height: 1.6;
-}
-
-.urgency-details {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: var(--radius-xl);
-  padding: var(--space-8);
-  margin-bottom: var(--space-10);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.urgency-details h3 {
-  color: var(--cw-orange);
-  font-size: 1.6rem;
-  margin-bottom: var(--space-6);
-  font-weight: 700;
 }
 
 .event-summary {
-  font-size: 1.2rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 48px;
+  backdrop-filter: blur(20px);
+}
+
+.event-summary h3 {
+  font-size: 1.5rem;
+  color: var(--cw-orange);
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.event-summary-details {
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .cta-buttons {
   display: flex;
-  gap: var(--space-6);
+  gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 32px;
 }
 
-.cta-primary {
-  background: linear-gradient(135deg, var(--cw-orange), #E07A3A);
-  color: var(--white);
-  padding: var(--space-5) var(--space-10);
-  border-radius: var(--radius-lg);
+.btn-primary {
+  background: var(--cw-orange);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 12px;
   font-weight: 800;
   text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(240, 159, 84, 0.4);
-  font-size: 1.3rem;
+  transition: all 0.2s ease;
+  font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 8px 25px rgba(240, 159, 84, 0.4);
 }
 
-.cta-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(240, 159, 84, 0.6);
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(240, 159, 84, 0.6);
 }
 
-.cta-secondary {
-  color: var(--white);
+.btn-secondary {
+  color: white;
   text-decoration: none;
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-5);
-  font-size: 1.1rem;
+  gap: 12px;
+  padding: 20px 32px;
+  font-size: 1.125rem;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: var(--radius-lg);
-  transition: all 0.3s ease;
+  border-radius: 12px;
+  transition: all 0.2s ease;
 }
 
-.cta-secondary:hover {
+.btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Mobile Optimization */
+.urgency-note {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cw-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 64px;
+    text-align: center;
+  }
+  
+  .hero-left h1 {
+    font-size: 3rem;
+  }
+  
+  .registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .host-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 48px;
+  }
+  
+  .host-image {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
-  .federal-hero {
-    background-attachment: scroll;
-    min-height: auto;
-    padding: var(--space-20) 0;
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
   }
   
-  .federal-hero-left h1 {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .hero-left h1 {
     font-size: 2.5rem;
-    line-height: 1.2;
   }
   
-  .federal-hero-left .subtitle {
-    font-size: 1.3rem;
+  .section-header h2,
+  .analysis-header h2,
+  .cta-content h2 {
+    font-size: 2.25rem;
   }
   
-  .federal-hero-left .description {
-    font-size: 1.1rem;
+  .hero-content,
+  .social-proof,
+  .learn-section,
+  .analysis-section,
+  .host-section,
+  .final-cta {
+    padding: 80px 0;
   }
   
-  .registration-card {
-    padding: var(--space-8);
-    margin: 0 var(--space-4);
-  }
-  
-  .registration-card h2 {
-    font-size: 2rem;
+  .registration-form {
+    padding: 32px 24px;
+    margin: 0 16px;
   }
   
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
-  .value-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .value-header h2 {
-    font-size: 2.2rem;
-  }
-  
-  .urgency-cta h2 {
-    font-size: 2.2rem;
-  }
-  
-  .event-highlights {
-    grid-template-columns: 1fr;
-  }
-  
-  .social-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 480px) {
-  .federal-hero-left h1 {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .hero-left h1 {
     font-size: 2rem;
   }
   
-  .registration-card {
-    margin: 0 var(--space-2);
-    padding: var(--space-6);
+  .section-header h2,
+  .analysis-header h2,
+  .cta-content h2 {
+    font-size: 1.875rem;
   }
   
-  .value-card {
-    padding: var(--space-6);
+  .registration-form {
+    padding: 24px 16px;
   }
   
-  .social-stats {
-    grid-template-columns: 1fr;
+  .stat-number {
+    font-size: 2.5rem;
   }
-}
-
-/* Loading State */
-.federal-submit-btn:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-  transform: none;
-}
-
-/* Success State */
-.form-success {
-  background: linear-gradient(135deg, #059669, #10B981);
-  color: white;
-  padding: var(--space-6);
-  border-radius: var(--radius-lg);
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.2rem;
 }
 </style>
 
+<!-- Registration Success Tracking Script -->
 <script>
-// Enhanced Federal Workshop Conversion Tracking
-function trackFederalWorkshopRegistration() {
-  console.log('Federal workshop registration tracked');
-  
-  // Facebook Pixel tracking
-  if (typeof fbq !== 'undefined') {
-    fbq('track', 'CompleteRegistration', {
-      content_name: 'Federal Benefits Workshop April 9 2026',
-      content_category: 'Workshop Registration',
-      content_ids: ['federal-workshop-april-9-2026'],
-      value: 750,
-      currency: 'USD',
-      predicted_ltv: 5000,
-      custom_data: {
-        workshop_date: '2026-04-09',
-        location: 'Weber State University Davis Campus',
-        target_audience: 'Hill AFB Federal Employees'
-      }
-    });
-  }
-  
-  // Google Analytics tracking
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'federal_workshop_registration', {
-      event_category: 'workshop',
-      event_label: 'April 9 2026 Hill AFB',
-      value: 750,
-      workshop_date: '2026-04-09'
-    });
-  }
-}
-
-// Enhanced lead scoring for federal employees
-function trackFederalBenefitsInterest() {
-  if (typeof fbq !== 'undefined') {
-    fbq('track', 'Lead', {
-      content_name: 'Federal Benefits Workshop Interest',
-      content_category: 'Federal Employee Lead',
-      source: 'Landing Page Engagement',
-      custom_data: {
-        lead_quality: 'High - Federal Employee',
-        interest_level: 'Workshop Attendance'
-      }
-    });
-  }
-}
-
-// Track engagement at different scroll depths
-let engagementTracked = {
-  quarter: false,
-  half: false,
-  threequarter: false
-};
-
-window.addEventListener('scroll', function() {
-  const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-  
-  if (!engagementTracked.quarter && scrollPercent > 25) {
-    engagementTracked.quarter = true;
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'scroll_depth', { event_category: 'engagement', value: 25 });
-    }
-  }
-  
-  if (!engagementTracked.half && scrollPercent > 50) {
-    engagementTracked.half = true;
-    trackFederalBenefitsInterest();
-  }
-  
-  if (!engagementTracked.threequarter && scrollPercent > 75) {
-    engagementTracked.threequarter = true;
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'scroll_depth', { event_category: 'engagement', value: 75 });
-    }
-  }
-});
-
-// Form validation and enhancement
 document.addEventListener('DOMContentLoaded', function() {
-  const form = document.querySelector('#federal-workshop-form');
+  const form = document.querySelector('#registration-form');
+  let scrollDepthTracked = { 25: false, 50: false, 75: false };
   
+  // Form handling
   if (form) {
-    // Add real-time validation
-    const inputs = form.querySelectorAll('input, select');
-    inputs.forEach(input => {
-      input.addEventListener('blur', function() {
-        validateField(this);
-      });
-      
-      input.addEventListener('input', function() {
-        if (this.classList.contains('error')) {
-          validateField(this);
-        }
-      });
-    });
-    
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // Validate all fields
-      let isValid = true;
-      const requiredFields = form.querySelectorAll('[required]');
-      
-      requiredFields.forEach(field => {
-        if (!validateField(field)) {
-          isValid = false;
-        }
-      });
-      
-      if (isValid) {
-        trackFederalWorkshopRegistration();
+      // Validate form
+      if (validateForm()) {
+        trackRegistration();
         
-        const submitBtn = form.querySelector('.federal-submit-btn');
-        const originalText = submitBtn.textContent;
-        
+        const submitBtn = form.querySelector('.submit-btn');
         submitBtn.textContent = 'Securing Your Spot...';
         submitBtn.disabled = true;
         
         // Simulate API call
         setTimeout(() => {
-          submitBtn.textContent = 'Registration Confirmed!';
-          setTimeout(() => {
-            window.location.href = '/federal-workshop-confirmed/';
-          }, 1000);
+          window.location.href = '/federal-workshop-confirmed/';
         }, 2000);
       }
     });
+    
+    // Real-time validation
+    const inputs = form.querySelectorAll('input[required], select[required]');
+    inputs.forEach(input => {
+      input.addEventListener('blur', () => validateField(input));
+    });
+  }
+  
+  function validateForm() {
+    const requiredFields = form.querySelectorAll('input[required], select[required]');
+    let isValid = true;
+    
+    requiredFields.forEach(field => {
+      if (!validateField(field)) {
+        isValid = false;
+      }
+    });
+    
+    return isValid;
   }
   
   function validateField(field) {
     const value = field.value.trim();
     let isValid = true;
-    let errorMessage = '';
     
-    // Remove existing error styling
-    field.classList.remove('error');
-    const existingError = field.parentNode.querySelector('.error-message');
-    if (existingError) {
-      existingError.remove();
-    }
+    // Remove existing error
+    field.style.borderColor = '';
+    const errorMsg = field.parentNode.querySelector('.error-message');
+    if (errorMsg) errorMsg.remove();
     
-    // Check if required field is empty
+    // Required field check
     if (field.hasAttribute('required') && !value) {
       isValid = false;
-      errorMessage = 'This field is required';
+      showError(field, 'This field is required');
     }
     
     // Email validation
-    if (field.type === 'email' && value) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(value)) {
-        isValid = false;
-        errorMessage = 'Please enter a valid email address';
-      }
+    if (field.type === 'email' && value && !isValidEmail(value)) {
+      isValid = false;
+      showError(field, 'Please enter a valid email address');
     }
     
     // Phone validation
-    if (field.type === 'tel' && value) {
-      const phoneRegex = /^\(?[\d\s\-\(\)\+\.]{10,}$/;
-      if (!phoneRegex.test(value)) {
-        isValid = false;
-        errorMessage = 'Please enter a valid phone number';
-      }
+    if (field.type === 'tel' && value && !isValidPhone(value)) {
+      isValid = false;
+      showError(field, 'Please enter a valid phone number');
     }
     
-    if (!isValid) {
-      field.classList.add('error');
-      field.style.borderColor = '#DC2626';
-      
-      const errorElement = document.createElement('div');
-      errorElement.className = 'error-message';
-      errorElement.style.color = '#DC2626';
-      errorElement.style.fontSize = '0.875rem';
-      errorElement.style.marginTop = '0.5rem';
-      errorElement.style.fontWeight = '600';
-      errorElement.textContent = errorMessage;
-      
-      field.parentNode.appendChild(errorElement);
-    } else {
+    if (isValid) {
       field.style.borderColor = '#10B981';
     }
     
     return isValid;
   }
-});
-
-// Smooth scroll for anchor links
-document.addEventListener('DOMContentLoaded', function() {
-  const links = document.querySelectorAll('a[href^="#"]');
   
-  links.forEach(link => {
+  function showError(field, message) {
+    field.style.borderColor = '#DC2626';
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'error-message';
+    errorDiv.style.cssText = 'color: #DC2626; font-size: 0.875rem; margin-top: 4px; font-weight: 600;';
+    errorDiv.textContent = message;
+    field.parentNode.appendChild(errorDiv);
+  }
+  
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+  
+  function isValidPhone(phone) {
+    return /^\(?[\d\s\-\(\)\+\.]{10,}$/.test(phone);
+  }
+  
+  function trackRegistration() {
+    // Facebook Pixel
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'CompleteRegistration', {
+        content_name: 'Federal Benefits Workshop April 9 2026',
+        content_category: 'Workshop Registration',
+        content_ids: ['federal-workshop-april-9-2026'],
+        value: 750,
+        currency: 'USD'
+      });
+    }
+    
+    // Google Analytics
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'federal_workshop_registration', {
+        event_category: 'workshop',
+        event_label: 'April 9 2026 Hill AFB',
+        value: 750
+      });
+    }
+  }
+  
+  // Scroll depth tracking
+  function trackScrollDepth() {
+    const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    
+    [25, 50, 75].forEach(percent => {
+      if (!scrollDepthTracked[percent] && scrollPercent > percent) {
+        scrollDepthTracked[percent] = true;
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'scroll_depth', {
+            event_category: 'engagement',
+            value: percent
+          });
+        }
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', trackScrollDepth);
+  
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
@@ -916,263 +846,333 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-{# Federal Benefits Workshop Landing Page #}
-<section class="federal-hero">
-  <div class="federal-hero-content">
-    <div class="federal-hero-left">
-      <h1>Maximize Your Federal Benefits</h1>
-      <p class="subtitle">Exclusive Workshop for Hill AFB Employees</p>
-      <p class="description">Join fellow federal employees for this comprehensive benefits workshop designed specifically for Air Force personnel at Hill AFB.</p>
+<!-- Hero Section -->
+<section class="hero-section" id="registration-form">
+  <div class="hero-content">
+    <div class="hero-left">
+      <h1>Maximize Your Federal Retirement Benefits</h1>
+      <div class="hero-subtitle">Free Workshop — April 9, 2026 | Weber State University Davis Campus</div>
       
-      <div class="event-highlights">
-        <div class="highlight-item">
-          <span class="highlight-icon">💰</span>
-          <div class="highlight-text">Maximize TSP</div>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-icon">🛡️</span>
-          <div class="highlight-text">Optimize FERS</div>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-icon">📈</span>
-          <div class="highlight-text">Tax Strategies</div>
-        </div>
+      <div class="hero-description">
+        Join fellow Hill AFB federal employees for this exclusive benefits workshop. Learn advanced strategies to maximize your FERS, TSP, and healthcare benefits for a secure, worry-free retirement.
       </div>
       
-      <div class="event-details-badge">
-        <h3>📅 Workshop Details</h3>
+      <div class="event-details">
         <div class="event-detail">
-          <span class="event-icon">📅</span>
-          <span><strong>Thursday, April 9, 2026</strong></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          <span>Thursday, April 9, 2026</span>
         </div>
+        
         <div class="event-detail">
-          <span class="event-icon">⏰</span>
-          <span><strong>9:00 AM - 11:00 AM</strong></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12,6 12,12 16,14"/>
+          </svg>
+          <span>9:00 AM - 11:00 AM</span>
         </div>
+        
         <div class="event-detail">
-          <span class="event-icon">📍</span>
-          <span><strong>Weber State University - Davis Campus</strong></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>Weber State University Davis Campus</span>
         </div>
+        
         <div class="event-detail">
-          <span class="event-icon">🎟️</span>
-          <span><strong>FREE</strong> (Limited Seating)</span>
-        </div>
-        <div class="event-detail">
-          <span class="event-icon">🎯</span>
-          <span><strong>Hill AFB Federal Employees Only</strong></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="9,12 l2,2 4,-4"/>
+          </svg>
+          <span>FREE for Federal Employees</span>
         </div>
       </div>
     </div>
     
-    <div class="registration-card">
-      <h2>Reserve Your Seat</h2>
-      <p class="registration-subtitle">Join fellow federal employees for this exclusive benefits optimization workshop</p>
-      
-      <div class="urgency-banner">
-        🔥 Only 12 Spots Remaining - Register Now!
+    <div class="registration-form">
+      <div class="form-header">
+        <h2>Reserve Your Free Seat</h2>
+        <div class="form-subtitle">Limited to 50 Hill AFB employees only</div>
       </div>
       
-      <form id="federal-workshop-form" action="/api/submit-lead" method="post">
+      <form id="registration-form" action="/api/submit-lead" method="post">
         <div class="form-group">
-          <label for="firstName">First Name *</label>
-          <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required>
         </div>
         
         <div class="form-group">
-          <label for="lastName">Last Name *</label>
-          <input type="text" id="lastName" name="lastName" required placeholder="Your last name">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required>
         </div>
         
         <div class="form-group">
-          <label for="email">Email Address *</label>
-          <input type="email" id="email" name="email" required placeholder="your.email@domain.com">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
         </div>
         
         <div class="form-group">
-          <label for="phone">Phone Number *</label>
-          <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
         </div>
         
         <div class="form-group">
-          <label for="agency">Your Department/Agency</label>
+          <label for="agency">Your Agency</label>
           <select id="agency" name="agency">
-            <option value="">Select your department</option>
-            <option value="air-force-hill">Air Force - Hill AFB</option>
-            <option value="air-force-other">Air Force - Other Base</option>
-            <option value="irs">Internal Revenue Service</option>
-            <option value="usda">USDA Forest Service</option>
-            <option value="va">Veterans Affairs</option>
-            <option value="dod-army">Department of Defense - Army</option>
-            <option value="dod-navy">Department of Defense - Navy</option>
-            <option value="dhs">Department of Homeland Security</option>
-            <option value="doi">Department of Interior</option>
-            <option value="other">Other Federal Agency</option>
+            <option value="">Select your agency</option>
+            <option value="Hill AFB">Hill AFB</option>
+            <option value="IRS">IRS</option>
+            <option value="VA">VA</option>
+            <option value="USDA">USDA</option>
+            <option value="DoD-Army">DoD-Army</option>
+            <option value="DoD-Navy">DoD-Navy</option>
+            <option value="DHS">DHS</option>
+            <option value="DOI">DOI</option>
+            <option value="Other">Other</option>
           </select>
         </div>
         
-        <button type="submit" class="federal-submit-btn">
-          Reserve My FREE Seat Now
-        </button>
+        <button type="submit" class="submit-btn">Reserve My Free Seat</button>
         
-        <input type="hidden" name="source" value="federal-benefits-workshop-april-9-2026">
-        <input type="hidden" name="workshop_date" value="2026-04-09">
+        <input type="hidden" name="source" value="federal-benefits-workshop">
         <input type="hidden" name="lead_type" value="federal-workshop-registration">
         <input type="hidden" name="utm_campaign" value="hill-afb-federal-workshop">
       </form>
-      
-      <div class="form-footer">
-        <div class="contact-info">
-          <p>Questions? Call <strong>(801) 210-2800</strong></p>
-          <p>Or text "FEDERAL" to <strong>(801) 210-2800</strong></p>
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
-{# Social Proof Section #}
-<section class="social-proof-section">
-  <div class="container">
-    <div class="social-stats">
-      <div class="stat-item">
-        <span class="stat-number">1,200+</span>
-        <div class="stat-label">Federal Employees Helped</div>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">$300M+</span>
-        <div class="stat-label">Federal Assets Managed</div>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">25+</span>
-        <div class="stat-label">Years Experience</div>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">5.0</span>
-        <div class="stat-label">Google Rating</div>
-      </div>
+<!-- Social Proof Section -->
+<section class="social-proof">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-number">1,200+</div>
+      <div class="stat-label">Federal Employees Helped</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">$300M+</div>
+      <div class="stat-label">Federal Assets Managed</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">25+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">5.0</div>
+      <div class="stat-label">Google Rating</div>
     </div>
   </div>
 </section>
 
-{# Value Proposition Section #}
-<section class="value-section">
-  <div class="container">
-    <div class="value-header">
-      <h2>What You'll Learn at This Exclusive Workshop</h2>
-      <p class="description">Our proven system to maximize every federal benefit for a secure, worry-free retirement.</p>
+<!-- What You'll Learn Section -->
+<section class="learn-section">
+  <div class="section-header">
+    <h2>What You'll Learn</h2>
+    <p>Our comprehensive workshop covers every aspect of federal benefits optimization, giving you the knowledge to maximize your retirement security.</p>
+  </div>
+  
+  <div class="cards-grid">
+    <div class="learn-card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M16 8l-4 4-4-4"/>
+      </svg>
+      <h3>FERS Pension Optimization</h3>
+      <p>Calculate your optimal retirement date and discover advanced strategies to maximize your FERS pension payments throughout retirement.</p>
     </div>
     
-    <div class="value-grid">
-      <div class="value-card">
-        <div class="value-icon">📈</div>
-        <h3>FERS Pension Optimization</h3>
-        <p>Calculate your optimal retirement date and discover advanced strategies to maximize your FERS pension payments throughout retirement.</p>
-      </div>
-      
-      <div class="value-card">
-        <div class="value-icon">💰</div>
-        <h3>TSP Maximization Strategies</h3>
-        <p>Learn optimal contribution amounts, investment allocation strategies, and withdrawal sequences to get the most from your TSP.</p>
-      </div>
-      
-      <div class="value-card">
-        <div class="value-icon">🏥</div>
-        <h3>Healthcare & Medicare Planning</h3>
-        <p>Navigate FEHB continuation, Medicare integration, and supplement insurance to ensure comprehensive coverage in retirement.</p>
-      </div>
-      
-      <div class="value-card">
-        <div class="value-icon">🛡️</div>
-        <h3>FEGLI Life Insurance Analysis</h3>
-        <p>Understand your life insurance options and make informed decisions about continuing coverage versus private alternatives.</p>
-      </div>
-      
-      <div class="value-card">
-        <div class="value-icon">📊</div>
-        <h3>Social Security Integration</h3>
-        <p>Coordinate Social Security benefits with your federal pension and TSP to maximize total retirement income streams.</p>
-      </div>
-      
-      <div class="value-card">
-        <div class="value-icon">📋</div>
-        <h3>Tax Minimization Strategies</h3>
-        <p>Strategic withdrawal sequencing from different account types to minimize taxes and maximize your retirement spending power.</p>
-      </div>
+    <div class="learn-card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      </svg>
+      <h3>TSP Maximization</h3>
+      <p>Learn optimal contribution amounts, investment allocation strategies, and withdrawal sequences to get the most from your TSP.</p>
+    </div>
+    
+    <div class="learn-card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+      </svg>
+      <h3>Healthcare & Medicare Planning</h3>
+      <p>Navigate FEHB continuation, Medicare integration, and supplement insurance to ensure comprehensive coverage in retirement.</p>
+    </div>
+    
+    <div class="learn-card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 12l2 2 4-4"/>
+        <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+        <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+      </svg>
+      <h3>FEGLI Analysis</h3>
+      <p>Understand your life insurance options and make informed decisions about continuing coverage versus private alternatives.</p>
+    </div>
+    
+    <div class="learn-card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="12" y1="1" x2="12" y2="23"/>
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+      </svg>
+      <h3>Social Security Integration</h3>
+      <p>Coordinate Social Security benefits with your federal pension and TSP to maximize total retirement income streams.</p>
+    </div>
+    
+    <div class="learn-card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="22" y1="3" x2="2" y2="21"/>
+        <path d="M16 8h3a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h3"/>
+        <circle cx="12" cy="8" r="5"/>
+      </svg>
+      <h3>Tax Minimization Strategies</h3>
+      <p>Strategic withdrawal sequencing from different account types to minimize taxes and maximize your retirement spending power.</p>
     </div>
   </div>
 </section>
 
-{# Host Section #}
+<!-- Free Retirement Analysis Section -->
+<section class="analysis-section">
+  <div class="analysis-content">
+    <div class="analysis-header">
+      <h2>Your Free Personalized Retirement Analysis</h2>
+      <div class="analysis-subtitle">Every workshop attendee receives a complimentary, personalized retirement analysis worth $500.</div>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-item">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="20" x2="18" y2="10"/>
+          <line x1="12" y1="20" x2="12" y2="4"/>
+          <line x1="6" y1="20" x2="6" y2="14"/>
+        </svg>
+        <h3>Custom Income Projection</h3>
+        <p>See exactly how your current savings and benefits will translate into monthly retirement income.</p>
+      </div>
+      
+      <div class="feature-item">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <h3>Tax Optimization Review</h3>
+        <p>Identify specific strategies to reduce your tax burden and keep more of your hard-earned money.</p>
+      </div>
+      
+      <div class="feature-item">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14.828 14.828a4 4 0 0 1-5.656 0"/>
+          <path d="M9 9a3 3 0 1 1 6 0c0 2-3 3-3 3"/>
+          <path d="M12 17h.01"/>
+        </svg>
+        <h3>Benefits Gap Analysis</h3>
+        <p>Discover potential blind spots in your current retirement plan and how to address them.</p>
+      </div>
+    </div>
+    
+    <div class="analysis-note">
+      <p><strong>Mike Stevens will personally review each analysis</strong> and provide specific recommendations tailored to your federal benefits and retirement goals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Meet Your Host Section -->
 <section class="host-section">
-  <div class="container">
-    <div class="host-content">
-      <div class="host-image">
-        <img src="/assets/images/photos/mike-tvheader.webp" alt="Mike Stevens, CFP® - Capital Wealth Advisors President" loading="lazy">
+  <div class="host-content">
+    <div class="host-image">
+      <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, President & Founder" loading="lazy">
+    </div>
+    
+    <div class="host-details">
+      <h3>Mike Stevens</h3>
+      <div class="host-title">President & Founder, Capital Wealth Advisors</div>
+      
+      <div class="credentials">
+        <div class="credential-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <span>25+ years specializing in federal benefits</span>
+        </div>
+        
+        <div class="credential-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <span>Host of Retire Right Radio (#1 in Utah)</span>
+        </div>
+        
+        <div class="credential-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <span>Author of Retire Right Retire Now</span>
+        </div>
+        
+        <div class="credential-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <span>1200+ federal employees helped</span>
+        </div>
+        
+        <div class="credential-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <span>$300M+ managed</span>
+        </div>
+        
+        <div class="credential-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <span>Series 66 IAR</span>
+        </div>
       </div>
       
-      <div class="host-details">
-        <p class="host-label">Workshop Host</p>
-        <h3>Mike Stevens, CFP®</h3>
-        <p class="host-title">President & Founder, Capital Wealth Advisors</p>
-        
-        <div class="credentials">
-          <div class="credential-item">
-            <span class="credential-check">✓</span>
-            <span>25+ years specializing in federal employee benefits</span>
-          </div>
-          <div class="credential-item">
-            <span class="credential-check">✓</span>
-            <span>Host of Utah's #1 retirement radio show "Retire Right Radio"</span>
-          </div>
-          <div class="credential-item">
-            <span class="credential-check">✓</span>
-            <span>Author of "Retire Right, Retire Now"</span>
-          </div>
-          <div class="credential-item">
-            <span class="credential-check">✓</span>
-            <span>Helped 1,200+ federal employees maximize their benefits</span>
-          </div>
-          <div class="credential-item">
-            <span class="credential-check">✓</span>
-            <span>Manages over $300M in federal retirement assets</span>
-          </div>
-          <div class="credential-item">
-            <span class="credential-check">✓</span>
-            <span>Series 66 Investment Adviser Representative</span>
-          </div>
-        </div>
-        
-        <div class="host-quote">
-          "Federal employees have incredible retirement benefits that most financial advisors simply don't understand. My mission is to help every federal employee maximize these benefits and retire with complete confidence. In 25 years, I've seen too many federal employees miss out on thousands in benefits simply because they didn't know the rules."
-        </div>
-      </div>
+      <blockquote class="host-quote">
+        "Federal employees have incredible retirement benefits that most financial advisors simply don't understand. My mission is to help every federal employee maximize these benefits and retire with complete confidence."
+      </blockquote>
     </div>
   </div>
 </section>
 
-{# Final Urgency CTA Section #}
-<section class="urgency-cta">
-  <div class="container">
-    <div class="urgency-content">
-      <h2>Don't Miss This Opportunity</h2>
-      <p class="urgency-text">This exclusive workshop is specifically designed for Hill AFB federal employees and is completely FREE. Seating is extremely limited.</p>
-      
-      <div class="urgency-details">
-        <h3>🎯 Limited Seating - Only 50 Spots Available</h3>
-        <div class="event-summary">
-          📅 <strong>Thursday, April 9, 2026</strong><br>
-          ⏰ <strong>9:00 AM - 11:00 AM (Light Breakfast Provided)</strong><br>
-          📍 <strong>Weber State University - Davis Campus</strong><br>
-          💡 <strong>Learn strategies that could add $50,000+ to your retirement</strong>
-        </div>
-      </div>
-      
-      <div class="cta-buttons">
-        <a href="#federal-workshop-form" class="cta-primary">Reserve My Seat - FREE</a>
-        <a href="tel:8012102800" class="cta-secondary">
-          📞 Call (801) 210-2800
-        </a>
+<!-- SF-182 Note Section -->
+<section class="sf182-section">
+  <div class="sf182-content">
+    <p>Federal employees may be eligible to attend this workshop through SF-182 training authorization. Registration is not required to qualify for this educational opportunity.</p>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="final-cta">
+  <div class="cta-content">
+    <h2>Don't Miss This Opportunity</h2>
+    <p class="cta-description">This exclusive workshop is designed specifically for Hill AFB federal employees. Seats are limited to ensure personalized attention and maximum value.</p>
+    
+    <div class="event-summary">
+      <h3>Workshop Details</h3>
+      <div class="event-summary-details">
+        April 9, 2026 • 9:00 AM - 11:00 AM<br>
+        Weber State Davis Campus<br>
+        Light breakfast provided<br>
+        <strong>Only 50 seats available</strong>
       </div>
     </div>
+    
+    <div class="cta-buttons">
+      <a href="#registration-form" class="btn-primary">Reserve My Seat — FREE</a>
+      <a href="tel:8012102800" class="btn-secondary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Call (801) 210-2800
+      </a>
+    </div>
+    
+    <div class="urgency-note">50 seats only</div>
   </div>
 </section>
