@@ -9089,3 +9089,74 @@ html { font-size: 18px; }
     font-size: 1.25rem;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   FEDERAL BENEFITS PAGE — Specific components
+   ═══════════════════════════════════════════════════════════ */
+
+/* --- Federal Stats in Overview Section --- */
+.fed-stats-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  height: 100%;
+}
+.fed-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+}
+.fed-stat-num {
+  font-family: 'Geist Mono', monospace;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+.fed-stat-label {
+  font-size: 0.85rem;
+  color: rgba(25,79,144,0.45);
+  font-weight: 500;
+}
+
+/* --- Federal Benefits Grid --- */
+.fed-benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.fed-benefit-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 2rem 1.75rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.25s ease;
+}
+.fed-benefit-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(25,79,144,0.08);
+  border-color: rgba(0,0,0,0.12);
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 768px) {
+  .fed-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .fed-stats-wrap {
+    gap: 1rem;
+  }
+  .fed-stat {
+    padding: 1.25rem;
+  }
+}
