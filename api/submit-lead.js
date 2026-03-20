@@ -88,6 +88,7 @@ export default async function handler(req, res) {
   try {
     const {
       name, email, phone, savings, retirementTimeline, questions,
+      firstName, lastName, agency, source, workshop_date, lead_type,
       utm_source, utm_medium, utm_campaign, utm_content, utm_term,
       referrer, landing_page, submitted_from, website
     } = req.body;
@@ -97,7 +98,10 @@ export default async function handler(req, res) {
       return res.status(200).json({ success: true, message: "Thank you!" });
     }
 
-    if (!name || !email || !phone) {
+    // Handle both combined name and separate firstName/lastName
+    const fullName = name || (firstName && lastName ? `${firstName} ${lastName}` : firstName || lastName || '');
+    
+    if (!fullName || !email || !phone) {
       return res.status(400).json({ error: 'Name, email, and phone are required.' });
     }
 
@@ -113,13 +117,18 @@ export default async function handler(req, res) {
     }
 
     const leadData = {
-      name: name.trim(),
+      name: fullName.trim(),
       email: email.trim().toLowerCase(),
       phone: phone.trim(),
+      first_name: firstName || fullName.split(' ')[0] || '',
+      last_name: lastName || fullName.split(' ').slice(1).join(' ') || '',
+      agency: agency || null,
       savings: savings || null,
       retirement_timeline: retirementTimeline || null,
       message: questions?.trim() || null,
-      source: 'capitalwealth.com',
+      source: source || 'capitalwealth.com',
+      lead_type: lead_type || 'general',
+      workshop_date: workshop_date || null,
       status: 'new',
       email_sent: false,
       created_at: new Date().toISOString(),
@@ -155,73 +164,171 @@ export default async function handler(req, res) {
     syncToSalesforce(leadData).catch(() => {});
 
     if (SENDGRID_API_KEY) {
-      // Send confirmation to the prospect
-      const confirmationHtml = `
-        <div style="font-family: 'Georgia', serif; max-width: 600px; margin: 0 auto;">
-          <div style="background: linear-gradient(135deg, #1a2332 0%, #2a3a4a 100%); padding: 30px; text-align: center;">
-            <h1 style="color: #c9a96e; margin: 0; font-size: 24px;">Thank You, ${name}</h1>
-            <p style="color: rgba(255,255,255,0.8); margin: 10px 0 0 0;">We've received your consultation request</p>
-          </div>
-          <div style="padding: 30px; background: #faf9f7;">
-            <p style="font-size: 16px; color: #333; line-height: 1.7;">Our team will contact you within one business day to schedule your complimentary consultation.</p>
-            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e5e5e5; margin: 20px 0;">
-              <p style="margin: 5px 0;"><strong>Savings Range:</strong> ${savings || 'Not specified'}</p>
-              <p style="margin: 5px 0;"><strong>Timeline:</strong> ${retirementTimeline || 'Not specified'}</p>
-              ${questions ? `<p style="margin: 5px 0;"><strong>Questions:</strong> ${questions}</p>` : ''}
+      // Federal Workshop specific email template
+      const isFederalWorkshop = lead_type === 'federal-workshop-registration';
+      
+      let confirmationHtml, emailSubject;
+      
+      if (isFederalWorkshop) {
+        emailSubject = 'Workshop Confirmed: April 9 Federal Benefits Workshop';
+        confirmationHtml = `
+          <div style="font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <div style="background: linear-gradient(135deg, #194F90 0%, #15437a 100%); padding: 30px; text-align: center; color: white;">
+              <h1 style="color: white; margin: 0; font-size: 28px; font-weight: 700;">You're Registered!</h1>
+              <p style="color: rgba(255,255,255,0.9); margin: 15px 0 0 0; font-size: 18px;">Federal Employee Benefits Workshop</p>
             </div>
-            <p style="font-size: 16px; color: #333;">In the meantime, feel free to call us at <strong>801.210.2800</strong> if you have any questions.</p>
+            <div style="padding: 30px; background: #ffffff;">
+              <div style="background: #f8fafc; padding: 25px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid #F09F54;">
+                <h2 style="color: #194F90; margin: 0 0 15px 0; font-size: 20px;">📅 Workshop Details</h2>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Date:</strong> Thursday, April 9, 2026</p>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Time:</strong> 9:00 AM - 11:00 AM</p>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Location:</strong> Weber State University - Davis Campus</p>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Address:</strong> 2750 University Park Blvd, Layton, UT 84041</p>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Arrival:</strong> Please arrive 10-15 minutes early</p>
+              </div>
+              
+              <h3 style="color: #194F90; margin: 25px 0 15px 0;">Before the Workshop</h3>
+              <div style="background: #f9fafb; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <p style="margin: 0 0 10px 0; color: #374151; font-weight: 600;">1. Request Official Time</p>
+                <p style="margin: 0 0 15px 0; color: #6b7280; font-size: 14px;">Download and submit your SF-182 form to attend this professional development workshop.</p>
+                
+                <p style="margin: 15px 0 10px 0; color: #374151; font-weight: 600;">2. Add to Calendar</p>
+                <p style="margin: 0 0 15px 0; color: #6b7280; font-size: 14px;">Block your calendar for April 9, 9:00-11:00 AM.</p>
+                
+                <p style="margin: 15px 0 10px 0; color: #374151; font-weight: 600;">3. Invite Colleagues</p>
+                <p style="margin: 0; color: #6b7280; font-size: 14px;">Share this opportunity with fellow federal employees.</p>
+              </div>
+              
+              <div style="background: #194F90; color: white; padding: 20px; border-radius: 8px; text-align: center; margin-top: 25px;">
+                <h4 style="margin: 0 0 10px 0; color: white;">Questions?</h4>
+                <p style="margin: 0; color: rgba(255,255,255,0.9);">Call us at <strong>(801) 210-2800</strong> or email info@capitalwealth.com</p>
+              </div>
+            </div>
+            <div style="background: #1f2937; padding: 20px; text-align: center;">
+              <p style="color: #9ca3af; margin: 0; font-size: 14px;">Capital Wealth Advisors • Lehi, UT • (801) 210-2800</p>
+            </div>
           </div>
-          <div style="background: #1a2332; padding: 20px; text-align: center;">
-            <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 14px;">Capital Wealth Advisors &bull; Lehi, UT &bull; 801.210.2800</p>
+        `;
+      } else {
+        emailSubject = 'Your Consultation Request — Capital Wealth Advisors';
+        confirmationHtml = `
+          <div style="font-family: 'Georgia', serif; max-width: 600px; margin: 0 auto;">
+            <div style="background: linear-gradient(135deg, #1a2332 0%, #2a3a4a 100%); padding: 30px; text-align: center;">
+              <h1 style="color: #c9a96e; margin: 0; font-size: 24px;">Thank You, ${fullName}</h1>
+              <p style="color: rgba(255,255,255,0.8); margin: 10px 0 0 0;">We've received your consultation request</p>
+            </div>
+            <div style="padding: 30px; background: #faf9f7;">
+              <p style="font-size: 16px; color: #333; line-height: 1.7;">Our team will contact you within one business day to schedule your complimentary consultation.</p>
+              <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e5e5e5; margin: 20px 0;">
+                <p style="margin: 5px 0;"><strong>Savings Range:</strong> ${savings || 'Not specified'}</p>
+                <p style="margin: 5px 0;"><strong>Timeline:</strong> ${retirementTimeline || 'Not specified'}</p>
+                ${questions ? `<p style="margin: 5px 0;"><strong>Questions:</strong> ${questions}</p>` : ''}
+              </div>
+              <p style="font-size: 16px; color: #333;">In the meantime, feel free to call us at <strong>801.210.2800</strong> if you have any questions.</p>
+            </div>
+            <div style="background: #1a2332; padding: 20px; text-align: center;">
+              <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 14px;">Capital Wealth Advisors &bull; Lehi, UT &bull; 801.210.2800</p>
+            </div>
           </div>
-        </div>
-      `;
+        `;
+      }
 
       await sendEmail({
         to: email,
         from: FROM_EMAIL,
-        subject: 'Your Consultation Request — Capital Wealth Advisors',
+        subject: emailSubject,
         html: confirmationHtml,
       });
 
       // Send notification to Mike / sales team
-      const notificationHtml = `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <div style="background: #1a2332; padding: 20px; text-align: center;">
-            <h1 style="color: #c9a96e; margin: 0;">New Consultation Request</h1>
-          </div>
-          <div style="padding: 30px; background: #f9f9f9;">
-            <table style="width: 100%; border-collapse: collapse;">
-              <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Name:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.name}</td></tr>
-              <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Email:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="mailto:${leadData.email}">${leadData.email}</a></td></tr>
-              <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="tel:${leadData.phone}">${leadData.phone}</a></td></tr>
-              <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Savings:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.savings || 'Not specified'}</td></tr>
-              <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Timeline:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.retirement_timeline || 'Not specified'}</td></tr>
-            </table>
-            ${leadData.message ? `<div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px; border: 1px solid #ddd;"><strong>Questions/Comments:</strong><br/><p style="margin: 10px 0 0 0;">${leadData.message}</p></div>` : ''}
-            <div style="margin-top: 20px; padding: 15px; background: #e8f4f8; border-radius: 8px; border: 1px solid #b3d9e6;">
-              <h3 style="margin: 0 0 10px 0; color: #1a2332;">Lead Source</h3>
+      let notificationSubject, notificationHtml;
+      
+      if (isFederalWorkshop) {
+        notificationSubject = `🎯 Federal Workshop Registration: ${leadData.name} — April 9, 2026`;
+        notificationHtml = `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <div style="background: #194F90; padding: 20px; text-align: center;">
+              <h1 style="color: white; margin: 0;">🎯 Federal Workshop Registration</h1>
+              <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0;">April 9, 2026 Workshop</p>
+            </div>
+            <div style="padding: 30px; background: #f9f9f9;">
+              <div style="background: #F09F54; color: white; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                <h2 style="margin: 0; font-size: 18px;">HIGH-VALUE FEDERAL EMPLOYEE LEAD</h2>
+              </div>
               <table style="width: 100%; border-collapse: collapse;">
-                ${leadData.utm_source ? `<tr><td style="padding: 5px;"><strong>UTM Source:</strong></td><td style="padding: 5px;">${leadData.utm_source}</td></tr>` : ''}
-                ${leadData.utm_medium ? `<tr><td style="padding: 5px;"><strong>UTM Medium:</strong></td><td style="padding: 5px;">${leadData.utm_medium}</td></tr>` : ''}
-                ${leadData.utm_campaign ? `<tr><td style="padding: 5px;"><strong>UTM Campaign:</strong></td><td style="padding: 5px;">${leadData.utm_campaign}</td></tr>` : ''}
-                ${leadData.referrer ? `<tr><td style="padding: 5px;"><strong>Referrer:</strong></td><td style="padding: 5px;">${leadData.referrer}</td></tr>` : ''}
-                ${leadData.landing_page ? `<tr><td style="padding: 5px;"><strong>Landing Page:</strong></td><td style="padding: 5px;"><a href="${leadData.landing_page}">${leadData.landing_page}</a></td></tr>` : ''}
-                ${leadData.submitted_from ? `<tr><td style="padding: 5px;"><strong>Submitted From:</strong></td><td style="padding: 5px;">${leadData.submitted_from}</td></tr>` : ''}
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Name:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.name}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Email:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="mailto:${leadData.email}">${leadData.email}</a></td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="tel:${leadData.phone}">${leadData.phone}</a></td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Agency:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.agency || 'Not specified'}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Workshop Date:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.workshop_date || 'April 9, 2026'}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Lead Type:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">Federal Workshop Registration</td></tr>
               </table>
+              
+              <div style="background: #e6f3ff; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #194F90;">
+                <h3 style="margin: 0 0 10px 0; color: #194F90;">👥 Workshop Action Items</h3>
+                <ul style="margin: 10px 0; padding-left: 20px; color: #374151;">
+                  <li>Add to workshop attendance list (max 50 people)</li>
+                  <li>Send SF-182 form for official time request</li>
+                  <li>Follow up with federal benefits consultation offer</li>
+                  <li>High conversion potential - federal employee with active interest</li>
+                </ul>
+              </div>
+              
+              <div style="margin-top: 20px; padding: 15px; background: #f0f9ff; border-radius: 8px; border: 1px solid #b3d9e6;">
+                <h3 style="margin: 0 0 10px 0; color: #1a2332;">Lead Source</h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                  <tr><td style="padding: 5px;"><strong>Source:</strong></td><td style="padding: 5px;">${leadData.source || 'Federal Workshop Landing Page'}</td></tr>
+                  ${leadData.submitted_from ? `<tr><td style="padding: 5px;"><strong>Page:</strong></td><td style="padding: 5px;">${leadData.submitted_from}</td></tr>` : ''}
+                  ${leadData.utm_source ? `<tr><td style="padding: 5px;"><strong>UTM Source:</strong></td><td style="padding: 5px;">${leadData.utm_source}</td></tr>` : ''}
+                  ${leadData.utm_campaign ? `<tr><td style="padding: 5px;"><strong>UTM Campaign:</strong></td><td style="padding: 5px;">${leadData.utm_campaign}</td></tr>` : ''}
+                </table>
+              </div>
+            </div>
+            <div style="background: #194F90; padding: 15px; text-align: center;">
+              <p style="color: rgba(255,255,255,0.7); margin: 0; font-size: 12px;">Federal Workshop Registration from capitalwealth.com</p>
             </div>
           </div>
-          <div style="background: #1a2332; padding: 15px; text-align: center;">
-            <p style="color: rgba(255,255,255,0.5); margin: 0; font-size: 12px;">Lead from capitalwealth.com</p>
+        `;
+      } else {
+        notificationSubject = `New Consultation: ${leadData.name} — ${leadData.savings || 'General Inquiry'}`;
+        notificationHtml = `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <div style="background: #1a2332; padding: 20px; text-align: center;">
+              <h1 style="color: #c9a96e; margin: 0;">New Consultation Request</h1>
+            </div>
+            <div style="padding: 30px; background: #f9f9f9;">
+              <table style="width: 100%; border-collapse: collapse;">
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Name:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.name}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Email:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="mailto:${leadData.email}">${leadData.email}</a></td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="tel:${leadData.phone}">${leadData.phone}</a></td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Savings:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.savings || 'Not specified'}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Timeline:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.retirement_timeline || 'Not specified'}</td></tr>
+              </table>
+              ${leadData.message ? `<div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px; border: 1px solid #ddd;"><strong>Questions/Comments:</strong><br/><p style="margin: 10px 0 0 0;">${leadData.message}</p></div>` : ''}
+              <div style="margin-top: 20px; padding: 15px; background: #e8f4f8; border-radius: 8px; border: 1px solid #b3d9e6;">
+                <h3 style="margin: 0 0 10px 0; color: #1a2332;">Lead Source</h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                  ${leadData.utm_source ? `<tr><td style="padding: 5px;"><strong>UTM Source:</strong></td><td style="padding: 5px;">${leadData.utm_source}</td></tr>` : ''}
+                  ${leadData.utm_medium ? `<tr><td style="padding: 5px;"><strong>UTM Medium:</strong></td><td style="padding: 5px;">${leadData.utm_medium}</td></tr>` : ''}
+                  ${leadData.utm_campaign ? `<tr><td style="padding: 5px;"><strong>UTM Campaign:</strong></td><td style="padding: 5px;">${leadData.utm_campaign}</td></tr>` : ''}
+                  ${leadData.referrer ? `<tr><td style="padding: 5px;"><strong>Referrer:</strong></td><td style="padding: 5px;">${leadData.referrer}</td></tr>` : ''}
+                  ${leadData.landing_page ? `<tr><td style="padding: 5px;"><strong>Landing Page:</strong></td><td style="padding: 5px;"><a href="${leadData.landing_page}">${leadData.landing_page}</a></td></tr>` : ''}
+                  ${leadData.submitted_from ? `<tr><td style="padding: 5px;"><strong>Submitted From:</strong></td><td style="padding: 5px;">${leadData.submitted_from}</td></tr>` : ''}
+                </table>
+              </div>
+            </div>
+            <div style="background: #1a2332; padding: 15px; text-align: center;">
+              <p style="color: rgba(255,255,255,0.5); margin: 0; font-size: 12px;">Lead from capitalwealth.com</p>
+            </div>
           </div>
-        </div>
-      `;
+        `;
+      }
 
       await sendEmail({
         to: SALES_EMAIL,
         from: FROM_EMAIL,
         fromName: `${leadData.name} via Capital Wealth`,
-        subject: `New Consultation: ${leadData.name} — ${leadData.savings || 'General Inquiry'}`,
+        subject: notificationSubject,
         html: notificationHtml,
         replyTo: leadData.email,
         cc: 'bryce@gullstack.com',

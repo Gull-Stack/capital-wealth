@@ -1,0 +1,512 @@
+/* Finpay-Inspired Capital Wealth Styles */
+:root {
+  /* Capital Wealth Brand Colors */
+  --cw-primary: #194F90; /* Main brand blue */
+  --cw-secondary: #14427A; /* Darker blue */
+  --cw-orange: #F09F54; /* Brand orange accent */
+  --cw-light: #F8F9FA;
+  --cw-dark: #1A1A1A;
+  
+  /* Grays */
+  --gray-50: #F9FAFB;
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-300: #D1D5DB;
+  --gray-400: #9CA3AF;
+  --gray-500: #6B7280;
+  --gray-600: #4B5563;
+  --gray-700: #374151;
+  --gray-800: #1F2937;
+  --gray-900: #111827;
+  
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  
+  /* Border Radius */
+  --radius: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  
+  /* Shadows */
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  
+  /* Colors */
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Finpay Header Styles */
+.finpay-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.finpay-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) 0;
+  position: relative;
+}
+
+.finpay-nav-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.finpay-nav-logo img {
+  height: 36px;
+  width: auto;
+}
+
+/* Desktop Navigation */
+.finpay-nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.finpay-nav-link {
+  color: var(--gray-700);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+  position: relative;
+  white-space: nowrap;
+}
+
+.finpay-nav-link:hover {
+  color: var(--cw-primary);
+}
+
+.finpay-nav-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.client-login {
+  color: var(--gray-600) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.client-login:hover {
+  color: var(--cw-primary) !important;
+}
+
+.finpay-nav-cta {
+  background: var(--cw-primary);
+  color: var(--white) !important;
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.finpay-nav-cta:hover {
+  background: var(--cw-secondary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+  border-radius: var(--radius);
+  transition: background-color 0.2s ease;
+  z-index: 10001;
+}
+
+.mobile-menu-button:hover {
+  background: var(--gray-100);
+}
+
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: var(--gray-700);
+  margin: 4px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.mobile-menu-button.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+  background: var(--cw-primary);
+}
+
+.mobile-menu-button.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-button.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+  background: var(--cw-primary);
+}
+
+/* Mobile Navigation Menu */
+.mobile-nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background: var(--white);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+  transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 10000;
+  overflow-y: auto;
+}
+
+.mobile-nav-menu.active {
+  right: 0;
+}
+
+.mobile-nav-content {
+  padding: var(--space-6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--gray-200);
+  margin-bottom: var(--space-6);
+}
+
+.mobile-menu-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+  color: var(--gray-600);
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+}
+
+.mobile-menu-close:hover {
+  background: var(--gray-100);
+  color: var(--gray-900);
+}
+
+.mobile-nav-links {
+  flex: 1;
+}
+
+.mobile-nav-section {
+  margin-bottom: var(--space-2);
+}
+
+.mobile-dropdown-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: var(--space-4) 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+}
+
+.mobile-dropdown-toggle:hover {
+  background: var(--gray-50);
+  color: var(--cw-primary);
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+  color: var(--gray-400);
+}
+
+.mobile-dropdown-toggle.active .dropdown-arrow {
+  transform: rotate(180deg);
+  color: var(--cw-primary);
+}
+
+.mobile-dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  padding-left: var(--space-4);
+  transition: max-height 0.3s ease;
+}
+
+.mobile-dropdown-menu.active {
+  max-height: 400px;
+  padding-bottom: var(--space-4);
+}
+
+.mobile-dropdown-menu a {
+  display: block;
+  padding: var(--space-3) 0;
+  color: var(--gray-600);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  margin-bottom: var(--space-1);
+}
+
+.mobile-dropdown-menu a:hover {
+  color: var(--cw-primary);
+  background: var(--gray-50);
+  padding-left: var(--space-3);
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: var(--space-4) 0;
+  color: var(--gray-700);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--gray-100);
+  transition: all 0.2s ease;
+  border-radius: var(--radius);
+}
+
+.mobile-nav-link:hover {
+  color: var(--cw-primary);
+  background: var(--gray-50);
+  padding-left: var(--space-3);
+  border-bottom-color: var(--cw-primary);
+}
+
+.mobile-nav-cta {
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--gray-200);
+  margin-top: auto;
+}
+
+.mobile-cta-btn {
+  display: block;
+  background: linear-gradient(135deg, var(--cw-primary), var(--cw-secondary));
+  color: var(--white) !important;
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.mobile-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Mobile Overlay */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .finpay-nav-links.desktop-nav {
+    display: none !important;
+  }
+
+  .mobile-menu-button {
+    display: block !important;
+  }
+
+  .finpay-nav-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .desktop-cta {
+    display: none !important;
+  }
+
+  .client-login {
+    font-size: 0.8rem !important;
+    padding: var(--space-2) var(--space-3) !important;
+    background: var(--gray-100);
+    border-radius: var(--radius);
+  }
+}
+
+@media (min-width: 1025px) {
+  .mobile-menu-button {
+    display: none !important;
+  }
+
+  .mobile-nav-menu {
+    display: none !important;
+  }
+
+  .mobile-nav-overlay {
+    display: none !important;
+  }
+
+  .finpay-nav-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+  }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 768px) {
+  .finpay-nav {
+    padding: var(--space-3) 0;
+  }
+
+  .finpay-nav-logo img {
+    height: 30px;
+  }
+
+  .client-login {
+    font-size: 0.75rem !important;
+    padding: var(--space-2) !important;
+  }
+
+  .mobile-nav-menu {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .mobile-nav-content {
+    padding: var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .finpay-nav-logo img {
+    height: 28px;
+  }
+
+  .client-login {
+    font-size: 0.7rem !important;
+    padding: var(--space-1) var(--space-2) !important;
+  }
+
+  .mobile-menu-button {
+    padding: var(--space-1);
+  }
+
+  .hamburger-line {
+    width: 20px;
+    height: 2px;
+    margin: 3px 0;
+  }
+}
+
+/* Ensure mobile nav works on all screen sizes */
+@media (max-width: 1024px) {
+  .finpay-nav-links:not(.mobile-nav-links) {
+    display: none !important;
+  }
+}
+
+/* Animation for smooth transitions */
+.mobile-nav-menu * {
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Focus states for accessibility */
+.mobile-menu-button:focus,
+.mobile-menu-close:focus,
+.mobile-dropdown-toggle:focus,
+.mobile-nav-link:focus,
+.mobile-cta-btn:focus {
+  outline: 2px solid var(--cw-primary);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .hamburger-line {
+    background: var(--black);
+  }
+  
+  .mobile-nav-menu {
+    border: 2px solid var(--black);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .mobile-nav-menu,
+  .hamburger-line,
+  .dropdown-arrow,
+  .mobile-dropdown-menu {
+    transition: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .finpay-header,
+  .mobile-menu-button,
+  .mobile-nav-menu {
+    display: none !important;
+  }
+}

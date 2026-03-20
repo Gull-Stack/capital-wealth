@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You&#39;re Registered! | Federal Retirement Workshop | Capital Wealth</title>
-    <meta name="description" content="You&#39;re confirmed for the April 9 Federal Employee Retirement Workshop at Weber State University. Download your SF-182 form and add the event to your calendar.">
+    <title>Registration Confirmed! | Federal Benefits Workshop April 9, 2026 | Capital Wealth</title>
+    <meta name="description" content="You&#39;re confirmed for the April 9 Federal Employee Benefits Workshop at Weber State University. Download your SF-182 form and add the event to your calendar.">
     <meta name="robots" content="noindex, nofollow">
     <link rel="canonical" href="https://www.capitalwealth.com/federal-workshop-confirmed/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="You&#39;re Registered! | Federal Retirement Workshop | Capital Wealth">
-    <meta property="og:description" content="You&#39;re confirmed for the April 9 Federal Employee Retirement Workshop at Weber State University. Download your SF-182 form and add the event to your calendar.">
+    <meta property="og:title" content="Registration Confirmed! | Federal Benefits Workshop April 9, 2026 | Capital Wealth">
+    <meta property="og:description" content="You&#39;re confirmed for the April 9 Federal Employee Benefits Workshop at Weber State University. Download your SF-182 form and add the event to your calendar.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/federal-workshop-confirmed/">
     
@@ -390,96 +390,590 @@
 
     <main style="padding-top: 100px;">
         
-<section class="titan-page-hero" style="padding-bottom: 1rem;">
-    <div class="titan-page-hero-inner">
-        <p class="titan-section-label" style="color: var(--accent-secondary);">YOU'RE REGISTERED</p>
-        <h1 class="titan-page-hero-h1">You're In. See You April 9th.</h1>
-        <p class="titan-page-hero-sub">Check your email for a confirmation with all the details. Here's what to do next.</p>
+<style>
+/* Confirmation Page Styling - Premium Capital Wealth Brand */
+.confirmation-page {
+  background: var(--gray-50);
+}
+
+/* Hero Confirmation Section */
+.confirmation-hero {
+  background: linear-gradient(135deg, var(--cw-primary), var(--cw-secondary));
+  color: var(--white);
+  padding: var(--space-20) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.confirmation-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/assets/images/photos/federal/capitalwealth-federal-us-capitol-dome.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+}
+
+.confirmation-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.success-badge {
+  background: var(--cw-orange);
+  color: var(--white);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  margin-bottom: var(--space-6);
+  box-shadow: var(--shadow-md);
+}
+
+.confirmation-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: var(--space-4);
+  line-height: 1.1;
+}
+
+.confirmation-hero .subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  font-weight: 400;
+  margin-bottom: var(--space-8);
+  line-height: 1.5;
+}
+
+.check-email-notice {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin: 0 auto;
+  max-width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.check-email-notice h3 {
+  color: var(--cw-orange);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+}
+
+/* Next Steps Section */
+.next-steps-section {
+  padding: var(--space-20) 0;
+  background: var(--white);
+}
+
+.steps-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-16);
+}
+
+.steps-header h2 {
+  font-size: 2.5rem;
+  color: var(--cw-primary);
+  margin-bottom: var(--space-4);
+  font-weight: 700;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-8);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  transition: all 0.3s ease;
+  position: relative;
+  border-left: 4px solid var(--cw-orange);
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  background: var(--white);
+}
+
+.step-number {
+  position: absolute;
+  top: -15px;
+  left: var(--space-6);
+  background: var(--cw-primary);
+  color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.step-card h3 {
+  color: var(--cw-primary);
+  font-size: 1.4rem;
+  margin-bottom: var(--space-4);
+  margin-top: var(--space-3);
+  font-weight: 600;
+}
+
+.step-card p {
+  color: var(--gray-700);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+}
+
+.step-action {
+  background: var(--cw-primary);
+  color: var(--white);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.step-action:hover {
+  background: var(--cw-secondary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Event Details Section */
+.event-details-section {
+  padding: var(--space-16) 0;
+  background: var(--gray-50);
+}
+
+.event-details-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.event-details-header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.event-details-header h2 {
+  font-size: 2.25rem;
+  color: var(--cw-primary);
+  margin-bottom: var(--space-4);
+  font-weight: 700;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-12);
+}
+
+.detail-item {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.detail-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-3);
+  color: var(--cw-orange);
+}
+
+.detail-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cw-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+.detail-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--gray-800);
+  line-height: 1.4;
+}
+
+/* What to Expect Section */
+.expect-section {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-12);
+  box-shadow: var(--shadow-md);
+}
+
+.expect-section h3 {
+  font-size: 1.75rem;
+  color: var(--cw-primary);
+  margin-bottom: var(--space-6);
+  font-weight: 600;
+}
+
+.expect-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .expect-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.expect-text p {
+  color: var(--gray-700);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+  font-size: 1.05rem;
+}
+
+.expect-highlights {
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  border-left: 4px solid var(--cw-orange);
+}
+
+.expect-highlights h4 {
+  color: var(--cw-primary);
+  font-size: 1.2rem;
+  margin-bottom: var(--space-4);
+  font-weight: 600;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: start;
+  margin-bottom: var(--space-3);
+  color: var(--gray-700);
+}
+
+.highlight-check {
+  color: var(--cw-orange);
+  font-weight: 700;
+  margin-right: var(--space-3);
+  margin-top: 2px;
+}
+
+/* Contact Section */
+.contact-section {
+  background: linear-gradient(135deg, var(--cw-primary), var(--cw-secondary));
+  color: var(--white);
+  padding: var(--space-12) 0;
+  text-align: center;
+  border-radius: var(--radius-xl);
+  margin-top: var(--space-8);
+}
+
+.contact-section h3 {
+  color: var(--white);
+  font-size: 1.75rem;
+  margin-bottom: var(--space-6);
+  font-weight: 600;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.contact-option {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-6);
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.contact-option:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .confirmation-hero {
+    padding: var(--space-16) 0;
+  }
+  
+  .confirmation-hero h1 {
+    font-size: 2.25rem;
+  }
+  
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-options {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+
+<section class="confirmation-hero">
+  <div class="container">
+    <div class="confirmation-content">
+      <div class="success-badge">✓ Registration Confirmed</div>
+      <h1>You're In! See You April 9th</h1>
+      <p class="subtitle">Your registration for the Federal Benefits Workshop is confirmed. We'll send a confirmation email shortly with all the details.</p>
+      
+      <div class="check-email-notice">
+        <h3>📧 Check Your Email</h3>
+        <p>A confirmation with the complete agenda and location details is on its way to your inbox.</p>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="service-process">
-    <div class="service-process-inner">
-        <div class="service-process-left">
-            <h2 class="service-process-h2">Before the Workshop</h2>
-            <p class="service-process-subtitle">Three things to do before April 9.</p>
+
+<section class="next-steps-section">
+  <div class="container">
+    <div class="steps-header">
+      <h2>Before the Workshop</h2>
+      <p style="font-size: 1.1rem; color: var(--gray-600); font-weight: 500;">Three important steps to prepare for April 9th</p>
+    </div>
+    
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Request Official Time</h3>
+        <p>Download and submit your SF-182 form to request official time from your supervisor to attend this professional development workshop.</p>
+        <a href="/assets/docs/sf-182-form.pdf" target="_blank" class="step-action">
+          📄 Download SF-182 Form
+        </a>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Add to Calendar</h3>
+        <p>Block your calendar and add the workshop details. Don't forget to arrive 10-15 minutes early for check-in and networking.</p>
+        <a href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Capital Wealth//Federal Workshop//EN
+BEGIN:VEVENT
+UID:federal-workshop-april-9-2026@capitalwealth.com
+DTSTART:20260409T150000Z
+DTEND:20260409T170000Z
+SUMMARY:Federal Benefits Workshop - Capital Wealth
+DESCRIPTION:Exclusive workshop to maximize your federal benefits: FERS, TSP, FEGLI, FEHB coordination
+LOCATION:Weber State University Davis Campus, 2750 University Park Blvd, Layton, UT 84041
+END:VEVENT
+END:VCALENDAR" download="federal-workshop-april-9.ics" class="step-action">
+          📅 Add to Calendar
+        </a>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Invite Colleagues</h3>
+        <p>Share this opportunity with fellow federal employees. This workshop is designed specifically for Hill AFB and Utah federal workers.</p>
+        <a href="/federal-benefits-seminar/" class="step-action">
+          👥 Share Registration Link
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="event-details-section">
+  <div class="container">
+    <div class="event-details-content">
+      <div class="event-details-header">
+        <h2>Workshop Details</h2>
+        <p style="color: var(--gray-600); font-size: 1.1rem;">Everything you need to know for April 9th</p>
+      </div>
+      
+      <div class="details-grid">
+        <div class="detail-item">
+          <div class="detail-icon">📅</div>
+          <div class="detail-label">Date</div>
+          <div class="detail-value">Thursday, April 9, 2026</div>
         </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step active">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">1) Download Your SF-182 Form</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Use this form to request official time from your supervisor to attend the workshop. <a href="/assets/docs/sf-182-form.pdf" target="_blank" style="color: var(--accent-secondary); font-weight: 600;">Download SF-182 →</a></p>
-                    </div>
-                </div>
-                <div class="service-process-step active">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">2) Add to Your Calendar</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p><strong>April 9, 2026 · 9:00–11:00 AM</strong><br>Weber State University — Davis Campus<br>2750 University Park Blvd, Layton, UT 84041</p>
-                    </div>
-                </div>
-                <div class="service-process-step active">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">3) Invite a Colleague</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Know a fellow federal employee who'd benefit? Share this page: <strong>capitalwealth.com/federal-workshop-april-9</strong></p>
-                    </div>
-                </div>
-            </div>
+        
+        <div class="detail-item">
+          <div class="detail-icon">⏰</div>
+          <div class="detail-label">Time</div>
+          <div class="detail-value">9:00 AM - 11:00 AM</div>
         </div>
-    </div>
-</section>
-
-<section class="key-facts">
-    <div class="key-facts-inner">
-        <h2 class="key-facts-heading">Event Details</h2>
-        <div class="key-facts-grid">
-            <div class="key-fact-item">
-                <p class="key-fact-label">Date</p>
-                <p class="key-fact-value">Wednesday, April 9, 2026</p>
-            </div>
-            <div class="key-fact-item">
-                <p class="key-fact-label">Time</p>
-                <p class="key-fact-value">9:00 AM – 11:00 AM</p>
-            </div>
-            <div class="key-fact-item">
-                <p class="key-fact-label">Location</p>
-                <p class="key-fact-value">Weber State University — Davis Campus</p>
-            </div>
-            <div class="key-fact-item">
-                <p class="key-fact-label">Address</p>
-                <p class="key-fact-value">2750 University Park Blvd, Layton, UT 84041</p>
-            </div>
-            <div class="key-fact-item">
-                <p class="key-fact-label">Arrive</p>
-                <p class="key-fact-value">10–15 min early for check-in</p>
-            </div>
-            <div class="key-fact-item">
-                <p class="key-fact-label">Dress</p>
-                <p class="key-fact-value">Business casual</p>
-            </div>
+        
+        <div class="detail-item">
+          <div class="detail-icon">📍</div>
+          <div class="detail-label">Location</div>
+          <div class="detail-value">Weber State University<br>Davis Campus</div>
         </div>
+        
+        <div class="detail-item">
+          <div class="detail-icon">🚗</div>
+          <div class="detail-label">Address</div>
+          <div class="detail-value">2750 University Park Blvd<br>Layton, UT 84041</div>
+        </div>
+        
+        <div class="detail-item">
+          <div class="detail-icon">👔</div>
+          <div class="detail-label">Dress Code</div>
+          <div class="detail-value">Business Casual</div>
+        </div>
+        
+        <div class="detail-item">
+          <div class="detail-icon">🎯</div>
+          <div class="detail-label">Arrival</div>
+          <div class="detail-value">10-15 minutes early<br>for check-in</div>
+        </div>
+      </div>
+      
+      <div class="expect-section">
+        <h3>What to Expect</h3>
+        <div class="expect-content">
+          <div class="expect-text">
+            <p>This is a comprehensive 2-hour educational workshop focused exclusively on federal employee benefits optimization — not a sales presentation.</p>
+            
+            <p>Mike Stevens will walk through proven strategies for maximizing your FERS pension, TSP contributions, FEGLI decisions, and healthcare coordination with real examples and actionable steps.</p>
+            
+            <p>Bring any questions about your specific situation. One-on-one consultations will be available after the workshop if you'd like personalized guidance.</p>
+          </div>
+          
+          <div class="expect-highlights">
+            <h4>Workshop Topics Include:</h4>
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <span>FERS pension maximization strategies</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <span>TSP contribution & withdrawal optimization</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <span>FEGLI life insurance analysis</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <span>FEHB & Medicare coordination</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <span>Social Security integration</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-check">✓</span>
+              <span>Tax minimization techniques</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-section">
+        <h3>Questions Before the Workshop?</h3>
+        <div class="contact-options">
+          <a href="tel:8012102800" class="contact-option">
+            📞 Call (801) 210-2800
+          </a>
+          <a href="mailto:info@capitalwealth.com" class="contact-option">
+            ✉️ Email Us
+          </a>
+          <a href="sms:8012102800&body=Hi, I have a question about the federal workshop on April 9" class="contact-option">
+            💬 Text Us
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="guide-article" style="padding: 3.4rem 2rem;">
-    <div class="guide-article-inner">
-        <h2>What to Expect</h2>
-        <p>This is a 2-hour educational workshop — not a sales presentation. Mike Stevens will walk through the key federal retirement topics (FERS, TSP, FEGLI, FEHB, Social Security) with real numbers and actionable strategies.</p>
-        <p>Bring any questions you have about your specific situation. After the workshop, one-on-one consultations are available if you'd like personalized guidance.</p>
-        <h3>Questions?</h3>
-        <p>Call us at <a href="tel:801-210-2800">801.210.2800</a> or email <a href="mailto:info@capitalwealth.com">info@capitalwealth.com</a>.</p>
-    </div>
-</section>
-
+<script>
+// Track confirmation page view for conversion analytics
+document.addEventListener('DOMContentLoaded', function() {
+  // Facebook Pixel conversion tracking
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'CompleteRegistration', {
+      content_name: 'Federal Benefits Workshop Registration Complete',
+      content_category: 'Workshop Confirmation',
+      content_ids: ['federal-workshop-april-9-2026'],
+      value: 750,
+      currency: 'USD'
+    });
+  }
+  
+  // Google Analytics conversion
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'conversion', {
+      send_to: 'G-XNE17HRDX8/federal_workshop_registration',
+      value: 750,
+      currency: 'USD',
+      transaction_id: Date.now().toString()
+    });
+  }
+  
+  // Track engagement with next steps
+  const stepActions = document.querySelectorAll('.step-action');
+  stepActions.forEach((action, index) => {
+    action.addEventListener('click', function() {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'next_step_engagement', {
+          event_category: 'post_registration',
+          event_label: `Step ${index + 1}`,
+          value: index + 1
+        });
+      }
+    });
+  });
+});
+</script>
     </main>
 
     
