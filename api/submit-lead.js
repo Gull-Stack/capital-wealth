@@ -35,8 +35,14 @@ async function syncToSalesforce(leadData) {
     params.append('email', leadData.email || '');
     params.append('phone', leadData.phone || '');
     params.append('lead_source', 'Website Form');
+    // Campaign association — standard Web-to-Lead field
     params.append('Campaign_ID', '701VS00000dB91aYAC');
+    // Also set as custom field in case Campaign__c is required on Lead object
+    params.append('Campaign__c', '701VS00000dB91aYAC');
     params.append('description', descParts.join('\n'));
+    // Debug: sends Salesforce error details to email (remove after verification)
+    params.append('debug', '1');
+    params.append('debugEmail', 'bryce@gullstack.com');
 
     const response = await fetch(
       'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
