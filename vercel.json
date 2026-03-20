@@ -2,7 +2,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": "_site",
   "cleanUrls": true,
-  "trailingSlash": true,
+  "trailingSlash": false,
   "redirects": [
     { "source": "/book", "destination": "https://www.retirerightbook.com/", "permanent": true },
     { "source": "/book/", "destination": "https://www.retirerightbook.com/", "permanent": true },
