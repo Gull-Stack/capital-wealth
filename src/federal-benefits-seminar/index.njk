@@ -1,0 +1,486 @@
+---
+layout: layouts/base.njk
+title: "Federal Employee Benefits Workshop - Capital Wealth Advisors | April 9, 2026"
+description: "Exclusive federal benefits workshop for Ogden & Hill AFB employees. Learn to maximize FERS, TSP, FEGLI & healthcare benefits. Free workshop April 9, 2026."
+bodyClass: "federal-workshop"
+---
+
+<style>
+:root {
+    --primary-purple: #6366f1;
+    --primary-cyan: #06b6d4;
+    --dark-purple: #4338ca;
+    --navy: #1e293b;
+    --warm-gray: #64748b;
+    --light-gray: #f8fafc;
+    --white: #ffffff;
+    --gradient: linear-gradient(135deg, var(--primary-purple), var(--primary-cyan));
+}
+
+.federal-hero {
+    background: var(--gradient);
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.federal-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="3" fill="rgba(255,255,255,0.05)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+    animation: float 20s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    100% { transform: translateY(-100px) rotate(360deg); }
+}
+
+.federal-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.federal-hero h1 {
+    font-family: 'Young Serif', serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.federal-hero .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.date-location {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.date-location h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-cyan);
+}
+
+.registration-card {
+    background: var(--white);
+    color: var(--navy);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.registration-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.3);
+}
+
+.registration-card h2 {
+    font-family: 'Young Serif', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-purple);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--navy);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-purple);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.federal-btn {
+    background: var(--gradient);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.federal-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+}
+
+.problem-section {
+    padding: 5rem 0;
+    background: var(--light-gray);
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.problem-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--primary-purple);
+}
+
+.solution-section {
+    padding: 5rem 0;
+    background: white;
+}
+
+.solution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.solution-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.solution-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.social-proof {
+    background: var(--navy);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-cyan);
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .federal-hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .federal-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+}
+</style>
+
+{# Federal Benefits Workshop Landing Page #}
+<section class="federal-hero">
+    <div class="container">
+        <div class="federal-hero-content">
+            <div class="hero-text">
+                <h1>Maximize Your Federal Benefits</h1>
+                <p class="subtitle">Exclusive workshop for Ogden & Hill AFB federal employees</p>
+                
+                <div class="date-location">
+                    <h3>📅 Event Details</h3>
+                    <p><strong>Date:</strong> Thursday, April 9, 2026</p>
+                    <p><strong>Time:</strong> 9:00 AM - 11:00 AM</p>
+                    <p><strong>Location:</strong> Weber State University - Davis Campus</p>
+                    <p><strong>Cost:</strong> FREE (Limited Seating)</p>
+                </div>
+                
+                <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255, 255, 255, 0.2);">
+                    <h3 style="color: var(--primary-cyan); margin-bottom: 1rem;">💡 What You'll Learn</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✓ Maximize your FERS pension</li>
+                        <li>✓ Optimize TSP contributions & withdrawals</li>
+                        <li>✓ Navigate FEGLI life insurance decisions</li>
+                        <li>✓ Plan FEHB healthcare in retirement</li>
+                        <li>✓ Coordinate with Social Security</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="registration-card">
+                <h2>Reserve Your Seat</h2>
+                <p style="margin-bottom: 2rem; color: var(--warm-gray);">Join fellow federal employees for this exclusive workshop. Limited to 50 attendees.</p>
+                
+                <form action="/contact/" method="post">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="agency">Agency/Department</label>
+                        <select id="agency" name="agency">
+                            <option value="">Select your agency</option>
+                            <option value="air-force">Air Force (Hill AFB)</option>
+                            <option value="irs">IRS</option>
+                            <option value="usda">USDA</option>
+                            <option value="va">Veterans Affairs</option>
+                            <option value="dod">Department of Defense</option>
+                            <option value="other">Other Federal Agency</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="federal-btn">
+                        Register Now - FREE
+                    </button>
+                    
+                    <input type="hidden" name="source" value="federal-benefits-workshop">
+                    <input type="hidden" name="workshop_date" value="2026-04-09">
+                </form>
+                
+                <div style="text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #e2e8f0;">
+                    <p style="font-size: 0.9rem; color: var(--warm-gray);">Questions? Call <strong>(801) 210-5500</strong></p>
+                    <p style="font-size: 0.8rem; color: var(--warm-gray);">Or text "FEDERAL" to (801) 210-5500</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Problem Section #}
+<section class="problem-section">
+    <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 style="font-family: 'Young Serif', serif; font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--navy);">Federal Retirement Is More Complex Than You Think</h2>
+            <p style="font-size: 1.2rem; color: var(--warm-gray);">Most federal employees make costly mistakes because they don't understand how all their benefits work together.</p>
+        </div>
+        
+        <div class="problem-grid">
+            <div class="problem-card">
+                <h3 style="color: var(--primary-purple); margin-bottom: 1rem;">❌ FERS Confusion</h3>
+                <p>Many don't know when they can actually retire with full benefits or how to maximize their pension calculations.</p>
+            </div>
+            
+            <div class="problem-card">
+                <h3 style="color: var(--primary-purple); margin-bottom: 1rem;">💸 TSP Mistakes</h3>
+                <p>Poor contribution strategies and withdrawal timing can cost you tens of thousands in retirement income.</p>
+            </div>
+            
+            <div class="problem-card">
+                <h3 style="color: var(--primary-purple); margin-bottom: 1rem;">🏥 Healthcare Gaps</h3>
+                <p>FEHB, Medicare, and supplement insurance coordination is critical but poorly understood by most federal retirees.</p>
+            </div>
+            
+            <div class="problem-card">
+                <h3 style="color: var(--primary-purple); margin-bottom: 1rem;">📊 No Coordination</h3>
+                <p>Without a comprehensive plan, your benefits work against each other instead of maximizing your retirement income.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Solution Section #}
+<section class="solution-section">
+    <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2 style="font-family: 'Young Serif', serif; font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--navy);">The Federal Benefits Optimization System</h2>
+            <p style="font-size: 1.2rem; color: var(--warm-gray);">Our proven 5-step framework helps federal employees maximize every benefit for a secure retirement.</p>
+        </div>
+        
+        <div class="solution-grid">
+            <div class="solution-item">
+                <div class="solution-icon">1</div>
+                <h3>FERS Analysis</h3>
+                <p>Calculate your optimal retirement date and pension maximization strategies.</p>
+            </div>
+            
+            <div class="solution-item">
+                <div class="solution-icon">2</div>
+                <h3>TSP Optimization</h3>
+                <p>Maximize contributions, minimize taxes, and plan strategic withdrawals.</p>
+            </div>
+            
+            <div class="solution-item">
+                <div class="solution-icon">3</div>
+                <h3>Insurance Planning</h3>
+                <p>Coordinate FEGLI, FEHB, and Medicare for comprehensive coverage.</p>
+            </div>
+            
+            <div class="solution-item">
+                <div class="solution-icon">4</div>
+                <h3>Social Security</h3>
+                <p>Integrate Social Security with federal benefits for maximum income.</p>
+            </div>
+            
+            <div class="solution-item">
+                <div class="solution-icon">5</div>
+                <h3>Tax Strategy</h3>
+                <p>Minimize retirement taxes through strategic benefit coordination.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Social Proof Section #}
+<section class="social-proof">
+    <div class="container">
+        <h2 style="font-family: 'Young Serif', serif; font-size: 2.5rem; margin-bottom: 1.5rem;">Trusted by Federal Employees Across Utah & Idaho</h2>
+        <p style="font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto;">Mike Stevens and Capital Wealth have helped hundreds of federal employees maximize their benefits and retire with confidence.</p>
+        
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span>Federal Employees Served</span>
+            </div>
+            
+            <div class="stat-item">
+                <span class="stat-number">#1</span>
+                <span>Retirement Radio Show in Utah</span>
+            </div>
+            
+            <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span>Years Federal Benefits Experience</span>
+            </div>
+            
+            <div class="stat-item">
+                <span class="stat-number">$200M+</span>
+                <span>In Federal Retirement Assets</span>
+            </div>
+        </div>
+        
+        <div style="margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <blockquote style="font-size: 1.2rem; font-style: italic; opacity: 0.9; text-align: center; margin-bottom: 1rem;">
+                "Mike helped us understand our FERS benefits in a way that no one else could. We're now on track to retire 2 years earlier than we thought possible."
+            </blockquote>
+            <cite style="opacity: 0.7;">- Sarah & Tom M., Hill AFB Employees (Retired 2025)</cite>
+        </div>
+    </div>
+</section>
+
+{# Host Section #}
+<section style="padding: 5rem 0; background: var(--light-gray);">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 300px 1fr; gap: 3rem; align-items: center; max-width: 1000px; margin: 0 auto;">
+            <div>
+                <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, CFP®" style="width: 100%; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+            </div>
+            
+            <div>
+                <p style="color: var(--primary-purple); font-weight: 600; margin-bottom: 1rem;">WORKSHOP HOST</p>
+                <h2 style="font-family: 'Young Serif', serif; font-size: 2.5rem; margin-bottom: 1rem; color: var(--navy);">Mike Stevens, CFP®</h2>
+                <p style="color: var(--warm-gray); margin-bottom: 1.5rem; font-size: 1.1rem;">Founder & President, Capital Wealth Advisors</p>
+                
+                <div style="margin-bottom: 2rem;">
+                    <p style="margin-bottom: 1rem;">✓ 25+ years specializing in federal employee benefits</p>
+                    <p style="margin-bottom: 1rem;">✓ Host of Utah's #1 retirement radio show</p>
+                    <p style="margin-bottom: 1rem;">✓ Author of "Retire Right, Retire Now"</p>
+                    <p style="margin-bottom: 1rem;">✓ Helped 500+ federal employees optimize their retirement</p>
+                </div>
+                
+                <blockquote style="font-style: italic; padding: 1.5rem; background: white; border-radius: 1rem; border-left: 4px solid var(--primary-purple);">
+                    "Federal employees have unique opportunities that most financial advisors don't understand. My mission is to help every federal employee maximize these incredible benefits."
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Final CTA Section #}
+<section style="padding: 4rem 0; background: var(--gradient); color: white; text-align: center;">
+    <div class="container">
+        <h2 style="font-family: 'Young Serif', serif; font-size: 2.5rem; margin-bottom: 1rem;">Don't Leave Money on the Table</h2>
+        <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Join us April 9th and discover how to maximize every federal benefit for a more secure retirement.</p>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+            <h3 style="margin-bottom: 1rem; color: var(--primary-cyan);">🎯 Limited Seating - 50 Attendees Only</h3>
+            <p style="margin-bottom: 1rem;">📅 Thursday, April 9, 2026</p>
+            <p style="margin-bottom: 1rem;">⏰ 9:00 AM - 11:00 AM</p>
+            <p>🏫 Weber State University - Davis Campus</p>
+        </div>
+        
+        <div style="display: flex; gap: 1rem; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <a href="#registration" style="background: white; color: var(--primary-purple); padding: 1rem 2rem; border-radius: 0.75rem; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">Reserve Your Seat - FREE</a>
+            <span style="opacity: 0.7;">or call (801) 210-5500</span>
+        </div>
+    </div>
+</section>
