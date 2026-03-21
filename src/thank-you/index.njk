@@ -1,0 +1,346 @@
+---
+layout: layouts/base.njk
+title: "Thank You | Schedule Your Consultation | Capital Wealth"
+description: "Thank you for reaching out to Capital Wealth. Schedule your complimentary retirement consultation and learn how to prepare for your first meeting."
+noindex: true
+---
+
+<style>
+.ty-hero {
+  background: linear-gradient(135deg, #194F90 0%, #0f2b4a 100%);
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.ty-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: url('/assets/images/logos/logo-icon-color.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.03;
+}
+.ty-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.ty-hero p {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  position: relative;
+}
+.ty-check {
+  width: 64px;
+  height: 64px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+.ty-check svg {
+  width: 32px;
+  height: 32px;
+  color: #22d3ee;
+}
+
+/* Steps Section */
+.ty-steps {
+  background: #f8f9fa;
+  padding: 3.5rem 2rem;
+}
+.ty-steps-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ty-steps h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--navy, #194F90);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.ty-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.ty-step-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.ty-step-num {
+  width: 40px;
+  height: 40px;
+  background: var(--navy, #194F90);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 auto 1rem;
+}
+.ty-step-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy, #194F90);
+  margin-bottom: 0.5rem;
+}
+.ty-step-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Scheduler Embed */
+.ty-scheduler {
+  padding: 3.5rem 2rem;
+  background: #fff;
+}
+.ty-scheduler-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.ty-scheduler h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--navy, #194F90);
+  margin-bottom: 0.75rem;
+}
+.ty-scheduler > .ty-scheduler-inner > p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+.ty-scheduler-embed {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 600px;
+  background: #fafafa;
+}
+.ty-scheduler-embed iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+.ty-scheduler-fallback {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #888;
+}
+.ty-scheduler-fallback a {
+  color: var(--navy, #194F90);
+  font-weight: 600;
+}
+
+/* Preparation Checklist */
+.ty-prepare {
+  padding: 3.5rem 2rem;
+  background: #f8f9fa;
+}
+.ty-prepare-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.ty-prepare-left h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--navy, #194F90);
+  margin-bottom: 0.5rem;
+}
+.ty-prepare-left > p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.ty-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ty-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.ty-checklist li:last-child {
+  border-bottom: none;
+}
+.ty-checklist-icon {
+  width: 22px;
+  height: 22px;
+  color: #22c55e;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.ty-prepare-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.ty-prepare-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy, #194F90);
+  margin-bottom: 1rem;
+}
+.ty-prepare-card p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+.ty-prepare-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact fallback */
+.ty-contact {
+  background: var(--navy, #194F90);
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+.ty-contact p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 0.5rem;
+}
+.ty-contact a {
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .ty-hero h1 { font-size: 2rem; }
+  .ty-steps-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .ty-prepare-inner { grid-template-columns: 1fr; }
+  .ty-scheduler-embed iframe { height: 600px; }
+}
+</style>
+
+{# ═══ HERO — Confirmation ═══ #}
+<section class="ty-hero">
+    <div class="ty-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+        </svg>
+    </div>
+    <h1>You're In. Here's What Happens Next.</h1>
+    <p>Thank you for reaching out to Capital Wealth. You've taken the first step toward a retirement plan that actually works. Now let's get your consultation on the calendar.</p>
+</section>
+
+{# ═══ THREE STEPS ═══ #}
+<section class="ty-steps">
+    <div class="ty-steps-inner">
+        <h2>Your Path to Clarity</h2>
+        <div class="ty-steps-grid">
+            <div class="ty-step-card">
+                <div class="ty-step-num">1</div>
+                <h3>Pick a Time</h3>
+                <p>Choose a date and time that works for you using the scheduler below. Virtual and in-person options available.</p>
+            </div>
+            <div class="ty-step-card">
+                <div class="ty-step-num">2</div>
+                <h3>Prepare</h3>
+                <p>Review the preparation checklist below so we can make the most of your 20-30 minute consultation.</p>
+            </div>
+            <div class="ty-step-card">
+                <div class="ty-step-num">3</div>
+                <h3>Meet Mike</h3>
+                <p>Get a clear, honest assessment of where you stand and what steps will make the biggest difference.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# ═══ ZOOM SCHEDULER EMBED ═══ #}
+<section class="ty-scheduler">
+    <div class="ty-scheduler-inner">
+        <h2>Schedule Your Free Consultation</h2>
+        <p style="color: #666; margin-bottom: 2rem;">Pick a time that works for you. Your consultation is complimentary and comes with zero obligation.</p>
+        <div class="ty-scheduler-embed">
+            <iframe src="https://scheduler.zoom.us/josh-cohen-ya3lrw" title="Schedule a consultation with Capital Wealth" loading="lazy" allow="clipboard-write"></iframe>
+        </div>
+        <p class="ty-scheduler-fallback">Having trouble? <a href="https://scheduler.zoom.us/josh-cohen-ya3lrw" target="_blank" rel="noopener">Open the scheduler in a new tab</a> or call us at <a href="tel:8012102800">801.210.2800</a></p>
+    </div>
+</section>
+
+{# ═══ PREPARATION CHECKLIST ═══ #}
+<section class="ty-prepare">
+    <div class="ty-prepare-inner">
+        <div class="ty-prepare-left">
+            <h2>How to Prepare for Your Meeting</h2>
+            <p>You don't need to bring anything to your first consultation. But if you'd like to get the most out of your time, here's what helps:</p>
+            <ul class="ty-checklist">
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Recent tax return</strong> — helps us identify tax-saving opportunities</span>
+                </li>
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Account balances</strong> — 401(k), IRA, TSP, savings, and any pensions</span>
+                </li>
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Target retirement date</strong> — even a rough idea helps us plan</span>
+                </li>
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Social Security statement</strong> — available at <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener" style="color: var(--navy, #194F90); font-weight: 600;">ssa.gov/myaccount</a></span>
+                </li>
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Bring your spouse</strong> — retirement decisions affect both of you</span>
+                </li>
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Your questions</strong> — write down anything you've been wondering about</span>
+                </li>
+            </ul>
+        </div>
+        <div class="ty-prepare-card">
+            <h3>What to Expect</h3>
+            <p>Your first meeting is a 20-30 minute conversation — not a sales pitch. Mike will listen to your goals, review your situation at a high level, and give you an honest assessment.</p>
+            <p>You'll leave with a clear understanding of where you stand and whether Capital Wealth is the right fit for your family.</p>
+            <p><strong>No pressure. No obligation. Just clarity.</strong></p>
+        </div>
+    </div>
+</section>
+
+{# ═══ CONTACT FALLBACK ═══ #}
+<section class="ty-contact">
+    <p>Prefer to schedule by phone? Call us at <a href="tel:8012102800">801.210.2800</a></p>
+    <p>Monday – Friday, 9am – 5pm MST</p>
+</section>
