@@ -238,11 +238,14 @@ breadcrumbs:
                     var data = await res.json();
                     if (res.ok) {
                         status.style.color = '#2d8a4e';
-                        status.textContent = 'Thank you! We\'ll reach out to your referral soon.';
+                        status.textContent = 'Thank you! Redirecting you to schedule a consultation...';
                         this.reset();
                         if (typeof gtag === 'function') {
                             gtag('event', 'generate_lead', { event_category: 'conversion', event_label: 'referral', value: 1 });
                         }
+                        setTimeout(function() {
+                            window.location.href = 'https://scheduler.zoom.us/josh-cohen-ya3lrw';
+                        }, 1500);
                     } else {
                         status.style.color = '#c0392b';
                         status.textContent = data.error || 'Something went wrong.';

@@ -171,8 +171,11 @@ breadcrumbs:
                     var data = await res.json();
                     if (res.ok) {
                       status.style.color = '#2d8a4e';
-                      status.textContent = data.message || "Thank you! We'll be in touch within one business day.";
+                      status.textContent = "Thank you! Redirecting you to schedule your consultation...";
                       this.reset();
+                      setTimeout(function() {
+                        window.location.href = 'https://scheduler.zoom.us/josh-cohen-ya3lrw';
+                      }, 1500);
                     } else {
                       status.style.color = '#c0392b';
                       status.textContent = data.error || 'Something went wrong. Please try again.';
