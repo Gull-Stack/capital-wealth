@@ -29,7 +29,7 @@ Ever feel stuck in the daily grind, fighting traffic, working all day, and longi
 
 **The harsh reality: If your retirement strategy only works when the world is calm, it's not much of a strategy at all.**
 
-As Mike Stevens explained in this crucial episode, geopolitical conflicts like the Iran situation represent the highest form of uncertainty that markets face. But here's what decades of experience have taught us: It's not the headlines that destroy retirement plans—it's the emotional reactions to them.
+As Mike Stevens explained in this crucial episode, geopolitical conflicts like the Iran situation represent the highest form of uncertainty that markets face. But here's what decades of experience have taught us: It's not the headlines that destroy retirement plansit's the emotional reactions to them.
 
 Whether you're planning for retirement or already living it, the strategies discussed in this episode could mean the difference between weathering the storm and watching your financial security wash away.
 
@@ -40,7 +40,7 @@ Whether you're planning for retirement or already living it, the strategies disc
 - **Markets Don't Like Uncertainty, But History Favors the Prepared:** International conflicts have historically had minimal impact on long-term investment returns, according to recent Fidelity studies
 - **Risk Capacity vs. Risk Tolerance:** Understanding the mathematical difference between what you can handle emotionally versus what your plan can actually absorb is critical for Utah retirees
 - **The Bucket Strategy:** Organizing assets by purpose (liquidity, income, growth) prevents forced selling during market downturns
-- **Utah Healthcare Advantage:** Moving between states during retirement requires careful Medicare and Medicaid planning—Utah's healthcare systems provide stability
+- **Utah Healthcare Advantage:** Moving between states during retirement requires careful Medicare and Medicaid planningUtah's healthcare systems provide stability
 - **Social Security Timing:** Full Retirement Age varies by birth year, and Utah's tax-friendly environment makes optimization strategies even more valuable
 - **Qualified Charitable Distributions:** Utah retirees can support local charities tax-free while satisfying RMD requirements
 
@@ -52,7 +52,7 @@ Whether you're planning for retirement or already living it, the strategies disc
 
 "Always first, it's on a human level," Mike Stevens emphasized as we discussed the Iran conflict. "My reaction is typically concerned. I feel like anytime there's conflict, there're real people and real families that get affected by Lou Ann, and it honestly reminds me that behind the headlines, they're human lives, and that really matters."
 
-This perspective isn't just about compassion—it's about understanding why markets react so violently to geopolitical events. Real uncertainty affects real people, which affects real economies.
+This perspective isn't just about compassionit's about understanding why markets react so violently to geopolitical events. Real uncertainty affects real people, which affects real economies.
 
 **But here's the crucial distinction:** Markets price in uncertainty quickly, often overreacting in the short term while maintaining long-term resilience.
 
@@ -62,7 +62,7 @@ For Utah retirees, the instinct to "do something" during crisis periods can be p
 
 **"The danger isn't the volatility itself. It's actually making permanent decisions based on temporary events."**
 
-Consider the March 2020 example Mike shared: The fastest market drop in US history—negative 34% in one month. Emergency rooms actually saw increased visits for chest pain and anxiety during this period. Imagine being retired and watching 40% of your portfolio "just melt away."
+Consider the March 2020 example Mike shared: The fastest market drop in US historynegative 34% in one month. Emergency rooms actually saw increased visits for chest pain and anxiety during this period. Imagine being retired and watching 40% of your portfolio "just melt away."
 
 **Utah-specific consideration:** With our state's emphasis on self-reliance and family security, the emotional impact of market volatility can be even more intense for Utah retirees who feel responsible for their family's financial stability.
 
@@ -72,7 +72,7 @@ Consider the March 2020 example Mike shared: The fastest market drop in US histo
 
 ### Understanding the Difference Could Save Your Retirement
 
-Most financial advice focuses on risk tolerance—how much volatility you believe you can handle psychologically. But Mike introduces a crucial concept that Utah retirees must understand: **risk capacity**.
+Most financial advice focuses on risk tolerancehow much volatility you believe you can handle psychologically. But Mike introduces a crucial concept that Utah retirees must understand: **risk capacity**.
 
 **Risk tolerance = Emotional**  
 How much volatility you think you can handle psychologically
@@ -84,7 +84,7 @@ How much volatility your plan can actually absorb without threatening your incom
 
 "Someone might say that they can tolerate market swings," Mike explains, "but if their income depends heavily on those assets that fluctuate daily, their plan actually might not have the capacity to handle those swings."
 
-**Real Utah example:** Consider Robert from Draper, who had multiple IRAs totaling $800,000 and a 401(k) worth $400,000. He thought he could handle market volatility, but when his required minimum distributions forced him to sell during the 2008 downturn, his "tolerance" meant nothing—his capacity was insufficient.
+**Real Utah example:** Consider Robert from Draper, who had multiple IRAs totaling $800,000 and a 401(k) worth $400,000. He thought he could handle market volatility, but when his required minimum distributions forced him to sell during the 2008 downturn, his "tolerance" meant nothinghis capacity was insufficient.
 
 **Warren Buffett's wisdom applies perfectly:** "Only when the tide goes out, do you see who's swimming naked."
 
@@ -92,7 +92,7 @@ For Utah retirees, this means building plans that anticipate volatility before i
 
 ---
 
-## The Retirement Money Map™: Your Blueprint for Uncertain Times
+## The Retirement Money Map�: Your Blueprint for Uncertain Times
 
 ### Why Portfolios Fail and Plans Succeed
 
@@ -279,7 +279,7 @@ Capital Wealth's approach goes far beyond typical financial planning:
 
 ### Mary from Ogden: Social Security Confusion
 
-**Situation:** Friend mentioned "full retirement age"—confused about Social Security timing
+**Situation:** Friend mentioned "full retirement age"confused about Social Security timing
 **Education needed:** Understanding FRA vs. maximum benefit age
 **Utah optimization:** Leveraging state tax advantages for Social Security planning
 
@@ -386,7 +386,7 @@ Capital Wealth's approach differs from traditional financial advisory relationsh
 
 **Mike's explanation:** "Like my dad was actually a custom home builder. You would never just go to a builder and say, 'Okay, build me a house' and they say, 'Cool, see you in three to four months when it's done.'"
 
-### The Retirement Money Map™ Advantage
+### The Retirement Money Map� Advantage
 
 **What makes it different:**
 - Comprehensive analysis typically requiring 5-10 hours of professional work
@@ -395,15 +395,15 @@ Capital Wealth's approach differs from traditional financial advisory relationsh
 - Risk management and sequence of return planning
 - Utah-specific advantage optimization
 
-**Current offer:** Complimentary Retirement Money Map™ analysis for next five callers
+**Current offer:** Complimentary Retirement Money Map� analysis for next five callers
 
 ---
 
 ## Conclusion: Sailing Through Uncertain Waters
 
-The Iran conflict, like all geopolitical crises, reminds us that uncertainty is the only certainty in life. But as Mike Stevens has demonstrated through multiple market cycles, the goal isn't to predict storms—it's to build vessels strong enough to sail through them.
+The Iran conflict, like all geopolitical crises, reminds us that uncertainty is the only certainty in life. But as Mike Stevens has demonstrated through multiple market cycles, the goal isn't to predict stormsit's to build vessels strong enough to sail through them.
 
-**The Utah advantage:** Our state provides an ideal foundation for retirement security—lower costs than coastal areas, excellent healthcare, no Social Security taxes, and strong community support. But these advantages only benefit retirees who plan properly.
+**The Utah advantage:** Our state provides an ideal foundation for retirement securitylower costs than coastal areas, excellent healthcare, no Social Security taxes, and strong community support. But these advantages only benefit retirees who plan properly.
 
 **Key principles for weathering geopolitical uncertainty:**
 
@@ -424,7 +424,7 @@ The Iran conflict, like all geopolitical crises, reminds us that uncertainty is 
 
 ### Special Utah Resident Opportunities
 
-**Complimentary Retirement Money Map™ Analysis**
+**Complimentary Retirement Money Map� Analysis**
 *Next five callers receive comprehensive analysis typically requiring 5-10 hours of professional work*
 
 **What's included:**
@@ -449,7 +449,7 @@ The Iran conflict, like all geopolitical crises, reminds us that uncertainty is 
 
 **Meeting options:** In-office or Zoom, whatever's convenient
 
-**Remember:** The strongest retirement plans aren't the most optimistic ones—they're the most prepared ones.
+**Remember:** The strongest retirement plans aren't the most optimistic onesthey're the most prepared ones.
 
 ---
 
@@ -459,7 +459,7 @@ The Iran conflict, like all geopolitical crises, reminds us that uncertainty is 
 **A:** Historically, international conflicts create short-term volatility but have minimal impact on long-term investment returns. The key is having a plan designed to handle volatility rather than reacting emotionally to headlines.
 
 ### Q: Should I move my retirement assets to cash during uncertain times?
-**A:** Market timing is extremely difficult to execute successfully. The challenge isn't just getting out—it's knowing when to get back in. Often the best market days occur close to the worst days, and missing them can significantly impact long-term returns.
+**A:** Market timing is extremely difficult to execute successfully. The challenge isn't just getting outit's knowing when to get back in. Often the best market days occur close to the worst days, and missing them can significantly impact long-term returns.
 
 ### Q: What makes Utah retirement planning different during global uncertainty?
 **A:** Utah's tax advantages (no Social Security tax), excellent healthcare systems, and lower costs provide stability during uncertain times. However, these advantages require proper planning to optimize, especially regarding healthcare transitions and Social Security timing.

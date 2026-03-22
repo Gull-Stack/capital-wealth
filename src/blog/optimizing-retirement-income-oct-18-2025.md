@@ -64,7 +64,7 @@ While Utah retirees worry about the cost of groceries and gasoline, medical infl
 
 ## Key Takeaways: Utah Healthcare Planning Essentials
 
-### 💡 **Critical Healthcare Planning Statistics**
+###  **Critical Healthcare Planning Statistics**
 - **$172,500** - Fidelity's estimate for basic Medicare costs (excluding long-term care)
 - **17%** - Percentage of retirees with NO healthcare cost preparation
 - **20%** - Haven't even factored healthcare into retirement plans
@@ -72,14 +72,14 @@ While Utah retirees worry about the cost of groceries and gasoline, medical infl
 - **2 years** - Medicare's look-back period for income-based premium adjustments (IRMAA)
 - **110,000+** - Average annual cost of Utah nursing home care
 
-### 🏔️ **Utah-Specific Healthcare Advantages**
+###  **Utah-Specific Healthcare Advantages**
 - **Intermountain Healthcare** - World-class integrated health system
 - **University of Utah Health** - Leading research and specialty care
 - **Lower overall healthcare costs** compared to coastal states
 - **Active lifestyle culture** supporting preventive health
 - **Strong family support networks** reducing care burdens
 
-### 🚨 **Warning Signs Your Plan Needs Healthcare Integration**
+###  **Warning Signs Your Plan Needs Healthcare Integration**
 - Assuming Medicare covers "everything"
 - No specific budget line for medical inflation
 - Relying on "I'm healthy now" as a strategy
@@ -350,11 +350,11 @@ For married couples, Social Security offers 567 different filing strategies. For
 
 ---
 
-## The Retirement Money Map™: Healthcare Integration
+## The Retirement Money Map�: Healthcare Integration
 
 ### How Healthcare Fits Into Comprehensive Utah Retirement Planning
 
-The Capital Wealth Retirement Money Map™ doesn't treat healthcare as a separate issue - it's woven throughout every aspect of your retirement income plan.
+The Capital Wealth Retirement Money Map� doesn't treat healthcare as a separate issue - it's woven throughout every aspect of your retirement income plan.
 
 **Income layer integration:**
 - **Social Security timing** optimized for healthcare premium management
@@ -374,7 +374,7 @@ The Capital Wealth Retirement Money Map™ doesn't treat healthcare as a separat
 - **Family coordination** leveraging Utah's supportive communities
 - **Provider network** optimization for Utah's excellent systems
 
-### Why Portfolio ≠ Plan for Healthcare
+### Why Portfolio  Plan for Healthcare
 
 Many Utah retirees make the critical mistake of thinking a healthy investment portfolio automatically covers healthcare costs. Here's why that's dangerous:
 
@@ -565,7 +565,7 @@ Utah retirees need healthcare-specific emergency reserves separate from general 
 
 ### Special Healthcare Planning Offer
 
-For Utah residents ready to take control of their healthcare retirement planning, Capital Wealth is offering comprehensive Healthcare-Integrated Retirement Money Map™ analysis.
+For Utah residents ready to take control of their healthcare retirement planning, Capital Wealth is offering comprehensive Healthcare-Integrated Retirement Money Map� analysis.
 
 **What's included in your healthcare assessment:**
 - **Medical cost projection** specific to Utah providers and facilities
@@ -589,7 +589,7 @@ The healthcare component of retirement planning has become too complex and too e
 
 ### Contact Capital Wealth
 
-**For the next five callers:** Complimentary Healthcare-Integrated Retirement Money Map™ - a comprehensive analysis typically requiring 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Healthcare-Integrated Retirement Money Map� - a comprehensive analysis typically requiring 5-10 hours of professional analysis.
 
 **What to expect:**
 - **No sales pressure** - pure educational consultation

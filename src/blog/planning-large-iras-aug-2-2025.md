@@ -23,7 +23,7 @@ tags:
 
 ## Introduction: The IRA Success Story That Becomes a Family Financial Nightmare
 
-You've done everything right. You've faithfully contributed to your 401(k) for decades. You've watched your IRA grow from thousands to hundreds of thousands—maybe even crossing the million-dollar mark. You should feel proud. You should feel secure.
+You've done everything right. You've faithfully contributed to your 401(k) for decades. You've watched your IRA grow from thousands to hundreds of thousandsmaybe even crossing the million-dollar mark. You should feel proud. You should feel secure.
 
 So why are so many Utah retirees with large IRAs discovering they've accidentally created a financial time bomb that threatens to devastate their families?
 
@@ -31,23 +31,23 @@ So why are so many Utah retirees with large IRAs discovering they've accidentall
 
 Whether you're still building your retirement nest egg or already managing a substantial IRA, this episode reveals critical strategies that could save your family from the "Secure Act 2.0 Tax Trap" while ensuring you actually get to enjoy the retirement you've worked so hard to build.
 
-As Mike Stevens explains, "It's not about how much you accumulate—it's about how much you actually get to keep and pass on to your loved ones."
+As Mike Stevens explains, "It's not about how much you accumulateit's about how much you actually get to keep and pass on to your loved ones."
 
 ---
 
 ## Key Takeaways: The Numbers Every Utah IRA Owner Must Know
 
-⚡ **Required Minimum Distributions Start at Age 73** – Miss them and face a devastating 25% penalty PLUS full taxation—the largest penalty in the tax code
+ **Required Minimum Distributions Start at Age 73**  Miss them and face a devastating 25% penalty PLUS full taxationthe largest penalty in the tax code
 
-⚡ **$1 Million IRA = $100,000+ Annual Tax Bill** – A typical million-dollar IRA forces your heirs into the highest tax brackets when combined with their regular income
+ **$1 Million IRA = $100,000+ Annual Tax Bill**  A typical million-dollar IRA forces your heirs into the highest tax brackets when combined with their regular income
 
-⚡ **10-Year Liquidation Rule** – Non-spouse beneficiaries (your children) must completely empty inherited IRAs within 10 years under Secure Act 2.0
+ **10-Year Liquidation Rule**  Non-spouse beneficiaries (your children) must completely empty inherited IRAs within 10 years under Secure Act 2.0
 
-⚡ **567 Social Security Filing Strategies** – Married couples filing jointly have over 567 different optimization combinations to maximize lifetime benefits
+ **567 Social Security Filing Strategies**  Married couples filing jointly have over 567 different optimization combinations to maximize lifetime benefits
 
-⚡ **Tax-Free Alternatives Available** – Properly structured life insurance policies allow unlimited contributions with no caps, creating tax-free generational wealth
+ **Tax-Free Alternatives Available**  Properly structured life insurance policies allow unlimited contributions with no caps, creating tax-free generational wealth
 
-⚡ **QCD Opportunity at 70½** – Qualified Charitable Distributions can begin 2½ years before RMDs are required, creating immediate tax savings for Utah's generous charitable community
+ **QCD Opportunity at 70½**  Qualified Charitable Distributions can begin 2½ years before RMDs are required, creating immediate tax savings for Utah's generous charitable community
 
 ---
 
@@ -70,7 +70,7 @@ Before the Secure Act 2.0, families could stretch inherited IRA distributions ac
 
 **The trap they didn't see coming:**
 
-When David passes away, Sarah inherits the IRA and can stretch distributions. But when Sarah passes away, their two children—Mark (a Utah County engineer making $180,000) and Lisa (a Salt Lake City teacher making $65,000)—must split the inheritance and liquidate within 10 years.
+When David passes away, Sarah inherits the IRA and can stretch distributions. But when Sarah passes away, their two childrenMark (a Utah County engineer making $180,000) and Lisa (a Salt Lake City teacher making $65,000)must split the inheritance and liquidate within 10 years.
 
 **The devastating math:**
 - **Each child inherits:** $600,000 IRA
@@ -86,7 +86,7 @@ When David passes away, Sarah inherits the IRA and can stretch distributions. Bu
 
 ### When the IRS Takes Control of Your Money
 
-Starting at age 73, the government doesn't ask whether you need money from your IRA—they **require** you to take it out.
+Starting at age 73, the government doesn't ask whether you need money from your IRAthey **require** you to take it out.
 
 **Mike Stevens explains:** "Required minimum distributions are the government's way of saying, 'Hey, you've had your money in a tax-deferred account long enough. You've got compound interest. You've not paid one cent in tax on that. So we're requiring you to take out a certain amount of money every single year.'"
 
@@ -105,9 +105,9 @@ Starting at age 73, the government doesn't ask whether you need money from your 
 
 ### The Medicare Premium Spike Trap
 
-Large RMDs don't just increase your tax bill—they trigger **Income-Related Monthly Adjustment Amounts (IRMAA)** that can dramatically increase Medicare premiums.
+Large RMDs don't just increase your tax billthey trigger **Income-Related Monthly Adjustment Amounts (IRMAA)** that can dramatically increase Medicare premiums.
 
-**Utah retiree example:** A Park City couple with combined RMDs pushing their income over $194,000 could pay an additional $2,000+ annually in Medicare premiums—a cost that persists for two years after the income spike.
+**Utah retiree example:** A Park City couple with combined RMDs pushing their income over $194,000 could pay an additional $2,000+ annually in Medicare premiumsa cost that persists for two years after the income spike.
 
 ---
 
@@ -133,10 +133,10 @@ Utah offers unique advantages for strategic Roth conversions:
 **Mike Stevens' approach:** "You eat an elephant one bite at a time. It should be very intentional how much you're paying to make sure that not only you're not moving into a higher tax bracket, which you don't want to do, but whatever you have for income this year... you don't want it to affect your Medicare premiums two years from now."
 
 **Strategic considerations:**
-1. **Stay within current tax bracket** – Don't pay 22% to avoid 24% later if the difference is minimal
-2. **Plan around Medicare thresholds** – Avoid IRMAA triggers that affect future premiums
-3. **Consider multi-year strategies** – Spread conversions to optimize lifetime tax burden
-4. **Coordinate with other income** – Time conversions during lower-income years
+1. **Stay within current tax bracket**  Don't pay 22% to avoid 24% later if the difference is minimal
+2. **Plan around Medicare thresholds**  Avoid IRMAA triggers that affect future premiums
+3. **Consider multi-year strategies**  Spread conversions to optimize lifetime tax burden
+4. **Coordinate with other income**  Time conversions during lower-income years
 
 ### Real Conversion Analysis: The Millers from Ogden
 
@@ -422,15 +422,15 @@ Using index annuities with systematic withdrawals:
 
 ---
 
-## The Capital Wealth Retirement Money Map™ Process
+## The Capital Wealth Retirement Money Map� Process
 
 ### Comprehensive Planning Beyond Product Sales
 
 **What makes Capital Wealth's approach different:**
 
-1. **Fiduciary standard** – Legally required to act in client's best interests
-2. **Proprietary planning process** – Not available for purchase, only for clients
-3. **Tax-focused strategies** – Unlike many advisors who ignore tax planning
+1. **Fiduciary standard**  Legally required to act in client's best interests
+2. **Proprietary planning process**  Not available for purchase, only for clients
+3. **Tax-focused strategies**  Unlike many advisors who ignore tax planning
 4. **Transparent, flexible plans** with contingencies
 5. **Multi-generational perspective** for Utah's family-centered culture
 
@@ -487,19 +487,19 @@ Using index annuities with systematic withdrawals:
 ### For IRA Balances Over $500,000
 
 **Critical strategies:**
-1. **Immediate Roth conversion analysis** – Time is running short before RMDs
-2. **Estate planning coordination** – Children need protection from tax bombs
-3. **Life insurance evaluation** – May provide better tax efficiency than Roth conversions
-4. **Multi-year tax planning** – Coordinate conversions with income timing
+1. **Immediate Roth conversion analysis**  Time is running short before RMDs
+2. **Estate planning coordination**  Children need protection from tax bombs
+3. **Life insurance evaluation**  May provide better tax efficiency than Roth conversions
+4. **Multi-year tax planning**  Coordinate conversions with income timing
 
 ### For IRA Balances Over $1 Million
 
 **Urgent priorities:**
-1. **Comprehensive estate planning** – Children face significant tax consequences
-2. **Advanced trust strategies** – Generation-skipping and asset protection
-3. **Charitable planning** – QCDs and remainder trusts
+1. **Comprehensive estate planning**  Children face significant tax consequences
+2. **Advanced trust strategies**  Generation-skipping and asset protection
+3. **Charitable planning**  QCDs and remainder trusts
 4. **Business succession coordination** if applicable
-5. **Professional team assembly** – CPA, estate attorney, financial advisor
+5. **Professional team assembly**  CPA, estate attorney, financial advisor
 
 ---
 
@@ -567,11 +567,11 @@ The brutal reality is that time is the most valuable asset in IRA planning, and 
 
 **Your three most critical action steps:**
 
-1. **Get a comprehensive tax analysis** – Don't assume your current plan is optimal under today's laws
-2. **Model the impact on your children** – Run scenarios showing what they'll actually inherit after taxes
-3. **Create a strategic timeline** – You have a limited window before RMDs eliminate your best options
+1. **Get a comprehensive tax analysis**  Don't assume your current plan is optimal under today's laws
+2. **Model the impact on your children**  Run scenarios showing what they'll actually inherit after taxes
+3. **Create a strategic timeline**  You have a limited window before RMDs eliminate your best options
 
-**Remember Mike Stevens' key insight:** "It's not about how much you accumulate—it's about how much you actually get to keep and pass on to your loved ones."
+**Remember Mike Stevens' key insight:** "It's not about how much you accumulateit's about how much you actually get to keep and pass on to your loved ones."
 
 The families who act now will look back in 20 years grateful they took control of their tax destiny. The families who wait will wonder how they let so much of their hard-earned wealth slip through their fingers to unnecessary taxation.
 
@@ -583,7 +583,7 @@ Your IRA doesn't have to become a tax time bomb. But the window to defuse it is 
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map™ analysis PLUS complimentary retirement tax analysis—a comprehensive review typically taking 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Map� analysis PLUS complimentary retirement tax analysisa comprehensive review typically taking 5-10 hours of professional analysis.
 
 **What's included:**
 - Complete IRA tax projection under current laws

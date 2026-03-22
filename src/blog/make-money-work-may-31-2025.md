@@ -279,11 +279,11 @@ Many HSA holders don't realize they can invest HSA funds beyond basic money mark
 
 ---
 
-## The Retirement Money Mapâ„¢: Comprehensive Tax Planning
+## The Retirement Money Map„: Comprehensive Tax Planning
 
 ### Beyond Portfolio Management
 
-Capital Wealth' proprietary Retirement Money Mapâ„¢ addresses the comprehensive nature of retirement tax planning. This isn't a product for sale but a planning process that addresses:
+Capital Wealth' proprietary Retirement Money Map„ addresses the comprehensive nature of retirement tax planning. This isn't a product for sale but a planning process that addresses:
 
 **Income planning:** Coordinating multiple income sources for tax efficiency
 **Tax strategy:** Federal and Utah-specific optimization
@@ -668,7 +668,7 @@ Medicare doesn't cover all healthcare expenses, leaving retirees responsible for
 - Utah's healthy lifestyle culture and excellent healthcare
 
 **Capital Wealth's approach:**
-- Retirement Money Mapâ„¢ plans extend to age 100
+- Retirement Money Map„ plans extend to age 100
 - Built-in flexibility for longevity adjustments
 - Regular plan reviews and updates
 - Coordination with medical advances
@@ -781,7 +781,7 @@ Remember: **The goal isn't to pay zero taxes - it's to pay your fair share and n
 
 ## Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Mapâ„¢ analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Map„ analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
 
 **What's included:**
 - Complete income and tax strategy analysis

@@ -120,7 +120,7 @@ The investment landscape has been revolutionized by technology in ways that dram
 **The evolution of trading:**
 - **1980s:** Required calling a stockbroker from your kitchen phone with the long coiled cord
 - **Today:** Instant trading from your smartphone anywhere in Utah's beautiful landscapes
-- **Speed progression:** Days â†’ hours â†’ seconds â†’ nanoseconds
+- **Speed progression:** Days  hours  seconds  nanoseconds
 
 ### Modern Trading Technologies
 
@@ -563,11 +563,11 @@ The most successful Utah retirees combine technological efficiency with personal
 
 ---
 
-## The Retirement Money Mapâ„¢ Advantage
+## The Retirement Money Map„ Advantage
 
-Capital Wealth has developed a proprietary process called the Retirement Money Mapâ„¢ that goes far beyond traditional portfolio management.
+Capital Wealth has developed a proprietary process called the Retirement Money Map„ that goes far beyond traditional portfolio management.
 
-### Components of the Retirement Money Mapâ„¢
+### Components of the Retirement Money Map„
 
 **Comprehensive analysis:**
 - Income needs assessment
@@ -644,7 +644,7 @@ Capital Wealth has developed a proprietary process called the Retirement Money M
 ### Professional Consultation Benefits
 
 **What to expect from a comprehensive review:**
-- Retirement Money Mapâ„¢ analysis
+- Retirement Money Map„ analysis
 - Fee and tax optimization review
 - Income planning coordination
 - Utah-specific advantage identification
@@ -680,7 +680,7 @@ Remember: **There's no award for being the wealthiest person in the cemetery.** 
 
 ## Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Mapâ„¢ analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Map„ analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
 
 **What's included:**
 - Comprehensive income and expense analysis

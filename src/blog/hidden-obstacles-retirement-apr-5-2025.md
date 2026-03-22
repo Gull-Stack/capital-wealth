@@ -30,7 +30,7 @@ As Mike Stevens, president and founder of Capital Wealth, explains: "What we fin
 
 ---
 
-## 🔑 Key Takeaways
+##  Key Takeaways
 
 > **Tax Strategy Impact:** Without proper tax planning, retirees could pay 25% penalties plus taxation on required minimum distribution mistakes - the largest penalty in the tax code
 > **Social Security Optimization:** Deferring Social Security to age 70 can provide up to 32% more guaranteed income for life compared to taking benefits early
@@ -274,11 +274,11 @@ The retirement money map process includes:
 - Income sequencing and withdrawal strategies
 - Regular strategic reviews and plan adjustments
 
-📞 **Call:** 801-210-5500
-📱 **Text "VISIT"** to 801-210-5500
-🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
+ **Call:** 801-210-5500
+� **Text "VISIT"** to 801-210-5500
+ **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth — helping Utah families retire right since 2012.*
+*Capital Wealth  helping Utah families retire right since 2012.*
 
 ---
 

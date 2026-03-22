@@ -35,17 +35,17 @@ For Utah retirees, this gap represents both a crisis and an opportunity. With ou
 
 ## Key Takeaways: The Numbers That Define Today's Retirement Challenge
 
-**🎯 Longevity Revolution:** **33% of healthy Utah women will live to age 95** - requiring 35-40 years of retirement income, not the traditional 20 years
+** Longevity Revolution:** **33% of healthy Utah women will live to age 95** - requiring 35-40 years of retirement income, not the traditional 20 years
 
-**💰 Pension Extinction:** **Only 15% of workers have pension access today** vs. 60% in the 1980s - shifting full responsibility to individual 401(k) management
+** Pension Extinction:** **Only 15% of workers have pension access today** vs. 60% in the 1980s - shifting full responsibility to individual 401(k) management
 
-**📈 Million-Dollar Gap:** **Average retirement need: $1+ million** while most Utahns have saved less than $100,000 - a 10x shortfall
+** Million-Dollar Gap:** **Average retirement need: $1+ million** while most Utahns have saved less than $100,000 - a 10x shortfall
 
-**🏥 Healthcare Cost Reality:** **Utah nursing care averages $8,000-$10,000 monthly** with assisted living at $4,000-$5,000 per month
+**� Healthcare Cost Reality:** **Utah nursing care averages $8,000-$10,000 monthly** with assisted living at $4,000-$5,000 per month
 
-**📊 Social Security Cliff:** **By 2035, benefits may drop to 83% of scheduled amounts** without Congressional intervention - affecting every Utah retiree
+** Social Security Cliff:** **By 2035, benefits may drop to 83% of scheduled amounts** without Congressional intervention - affecting every Utah retiree
 
-**⚡ Tax Time Bomb:** **National debt projected to hit $56 trillion by 2034** - making today's tax rates look like a clearance sale
+** Tax Time Bomb:** **National debt projected to hit $56 trillion by 2034** - making today's tax rates look like a clearance sale
 
 ---
 
@@ -131,7 +131,7 @@ The Social Security trustees' latest report delivers sobering news for Utah reti
 
 ---
 
-## The Retirement Money Map™: Utah-Specific Strategic Planning
+## The Retirement Money Map�: Utah-Specific Strategic Planning
 
 ### Building Your Income Foundation
 
@@ -706,7 +706,7 @@ President Trump's "Big Beautiful Bill" signed in July 2025 created several new o
 
 ### Special Offer for Utah Residents
 
-**Retirement Money Map™ Analysis - Complimentary for Next Five Callers**
+**Retirement Money Map� Analysis - Complimentary for Next Five Callers**
 
 **What's included in your comprehensive assessment:**
 - **Income gap analysis:** How much additional income needed beyond Social Security and pensions

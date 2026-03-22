@@ -10,7 +10,7 @@ readTime: 16
 
 ## Introduction: Why Estate Planning Matters for Every Utah Family
 
-**"My dad passed away unexpectedly at 49 years old. He had done really well financially, but when we lost him, we didn't know what to do financially — and his estate wasn't properly structured."**
+**"My dad passed away unexpectedly at 49 years old. He had done really well financially, but when we lost him, we didn't know what to do financially  and his estate wasn't properly structured."**
 
 This personal story from Mike Stevens, founder of Capital Wealth, illustrates why estate planning isn't just for wealthy families. It's essential protection for anyone who cares about their loved ones' future.
 
@@ -31,7 +31,7 @@ This personal story from Mike Stevens, founder of Capital Wealth, illustrates wh
 - **Family stress:** Legal battles during grief
 - **Lost time:** Years of court proceedings
 
-**Mike's perspective:** *"Probate sucks — really bad. It's super expensive, fighting happens, and it's completely avoidable with proper planning."*
+**Mike's perspective:** *"Probate sucks  really bad. It's super expensive, fighting happens, and it's completely avoidable with proper planning."*
 
 ### Utah Probate Reality
 
@@ -41,7 +41,7 @@ This personal story from Mike Stevens, founder of Capital Wealth, illustrates wh
 - **Time delay:** 6 months to 2+ years before resolution
 - **Public record:** Your family's private matters become public
 
-**Who pays:** Your beneficiaries — reducing what they actually inherit.
+**Who pays:** Your beneficiaries  reducing what they actually inherit.
 
 ---
 
@@ -95,7 +95,7 @@ This personal story from Mike Stevens, founder of Capital Wealth, illustrates wh
 **Without it:** Family can't access accounts or pay bills during emergencies
 
 ### 4. Medical Power of Attorney
-**Real-world scenario:** *"If someone's in a comatose state after a car accident, without medical power of attorney, doctors must keep them on life support — and somebody has to pay for it. It won't be the state."*
+**Real-world scenario:** *"If someone's in a comatose state after a car accident, without medical power of attorney, doctors must keep them on life support  and somebody has to pay for it. It won't be the state."*
 
 **What it covers:**
 - Medical treatment decisions
@@ -153,7 +153,7 @@ This personal story from Mike Stevens, founder of Capital Wealth, illustrates wh
 **Planning advantage:** More of your estate passes to beneficiaries vs. high-tax states
 
 ### Income Tax Considerations
-**Inherited assets:** Receive "stepped-up basis" — eliminates capital gains
+**Inherited assets:** Receive "stepped-up basis"  eliminates capital gains
 **Retirement accounts:** Subject to new 10-year distribution rules
 **Life insurance:** Death benefits generally tax-free to beneficiaries
 
@@ -288,7 +288,7 @@ This personal story from Mike Stevens, founder of Capital Wealth, illustrates wh
 **Pressure tactics:** Good estate planning takes thoughtful consideration
 **One-size-fits-all:** Each family's situation is unique
 **Extreme complexity:** Most families need straightforward planning
-**No ongoing relationship:** Laws and life change — relationships matter
+**No ongoing relationship:** Laws and life change  relationships matter
 
 ---
 
@@ -300,14 +300,14 @@ This personal story from Mike Stevens, founder of Capital Wealth, illustrates wh
 **No economic benefit:** Referrals based on client needs, not commissions
 **Ongoing support:** Help implement and maintain plans
 
-### The Retirement Money Map™ Integration
+### The Retirement Money Map� Integration
 **Estate planning component:** 
 - Current document review
 - Beneficiary designation analysis
 - Tax planning coordination
 - Legacy goal clarification
 
-**Next five callers:** Complimentary Retirement Money Map™ including estate planning review
+**Next five callers:** Complimentary Retirement Money Map� including estate planning review
 
 ---
 
@@ -391,9 +391,9 @@ This personal story from Mike Stevens, founder of Capital Wealth, illustrates wh
 ## Estate Planning Mistakes That Cost Utah Families
 
 ### Procrastination
-**"I'm too young"** — Mike's father was 49
-**"It's too complicated"** — Basic planning is straightforward
-**"I don't have enough assets"** — Everyone needs basic protection
+**"I'm too young"**  Mike's father was 49
+**"It's too complicated"**  Basic planning is straightforward
+**"I don't have enough assets"**  Everyone needs basic protection
 
 ### DIY Disasters
 **Online wills:** May not comply with Utah requirements
@@ -438,16 +438,16 @@ This personal story from Mike Stevens, founder of Capital Wealth, illustrates wh
 
 ## Conclusion: Protecting Your Utah Family Legacy
 
-Estate planning isn't about death — it's about life. It's about ensuring your family is protected, your wishes are honored, and your legacy continues exactly as you envision.
+Estate planning isn't about death  it's about life. It's about ensuring your family is protected, your wishes are honored, and your legacy continues exactly as you envision.
 
 **Key takeaways for Utah families:**
-1. **Start now** — You're never too young or have too little
-2. **Keep it simple** — Most families need basic, straightforward planning  
-3. **Update regularly** — Plans must evolve with life changes
-4. **Coordinate professionally** — Work with qualified Utah professionals
-5. **Communicate clearly** — Family should understand your intentions
+1. **Start now**  You're never too young or have too little
+2. **Keep it simple**  Most families need basic, straightforward planning  
+3. **Update regularly**  Plans must evolve with life changes
+4. **Coordinate professionally**  Work with qualified Utah professionals
+5. **Communicate clearly**  Family should understand your intentions
 
-**Mike's personal commitment:** *"Because of what happened with my mom and dad, I shout from the rooftops — it's never too late, and it's never too early. We're here to help you avoid what my family experienced."*
+**Mike's personal commitment:** *"Because of what happened with my mom and dad, I shout from the rooftops  it's never too late, and it's never too early. We're here to help you avoid what my family experienced."*
 
 ### Get Professional Help Today
 
@@ -462,7 +462,7 @@ Estate planning isn't about death — it's about life. It's about ensuring your 
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
 
-**Special offer:** Next five callers receive complimentary Retirement Money Map™ including estate planning analysis.
+**Special offer:** Next five callers receive complimentary Retirement Money Map� including estate planning analysis.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Personal Journey Through Retirement Money Map"
-description: "Mike Stevens shares his personal story and the five essential components of the Retirement Money Map — income, tax, inflation, legacy, and investment planning for Utah retirees."
+description: "Mike Stevens shares his personal story and the five essential components of the Retirement Money Map  income, tax, inflation, legacy, and investment planning for Utah retirees."
 date: 2025-08-16
 dateModified: 2026-03-19
 author: "Mike Stevens"
@@ -21,7 +21,7 @@ tags:
 ## Key Takeaways
 
 - **Personal tragedy led to professional purpose:** Mike Stevens switched from pre-med to finance after his father's unexpected death at 49 left his mother without an estate plan or financial guidance
-- **The Retirement Money Map™ has five critical components:** income planning, tax planning, inflation planning, legacy planning, and investment management
+- **The Retirement Money Map� has five critical components:** income planning, tax planning, inflation planning, legacy planning, and investment management
 - **Plan to age 100, not 85:** Most retirement plans underestimate longevity, potentially leaving retirees financially vulnerable in their later years
 - **Bucket strategy is essential:** Combine growth accounts (stocks) with protected accounts (fixed index annuities with 0% floor, ~10% cap) to weather market volatility
 - **Taxes are "on sale" now:** With federal deficit over **$36 trillion** and historic low tax rates, strategic tax planning today can save tens or hundreds of thousands in future tax costs
@@ -74,7 +74,7 @@ I quickly realized that most people were in this camp. Most people had a portfol
 
 You've heard the saying: necessity is the mother of invention. My mom really needed a plan. She had a portfolio from my dad, but that wasn't enough.
 
-### Creating the Retirement Money Map™
+### Creating the Retirement Money Map�
 
 That's when I put my head down and started figuring out: How do we create an income plan? A tax plan? A legacy plan? A healthcare plan? How do we optimize Social Security and navigate taxes strategically?
 
@@ -716,9 +716,9 @@ Your retirement should be a time of enjoyment, not anxiety. With proper planning
 
 If you're ready to create your own Retirement Money Map and want to see if we can add value to your retirement planning, here are three ways to connect with us:
 
-📞 **Call:** 801-210-5500  
-📱 **Text:** Send "VISIT" to 801-210-5500  
-🌐 **Web:** capitalwealth.com
+ **Call:** 801-210-5500  
+� **Text:** Send "VISIT" to 801-210-5500  
+ **Web:** capitalwealth.com
 
 We offer complimentary, no-obligation consultations where we can review your current situation and show you how our Retirement Money Map approach might benefit your specific circumstances.
 

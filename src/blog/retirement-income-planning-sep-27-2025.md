@@ -35,14 +35,14 @@ For Utah retirees, this income-focused approach becomes even more crucial when c
 
 ## Key Takeaways: Essential Numbers for Utah Retirement Income Planning
 
-**📊 Critical Data Points Every Utah Retiree Must Master:**
+** Critical Data Points Every Utah Retiree Must Master:**
 
-• **Average Retirement Spending: $5,000/month** - Bureau of Labor Statistics data, but Utah costs may vary significantly from national averages
-• **Social Security Gap: $3,000/month** - Average benefit around $2,000 monthly leaves substantial income shortfall for typical spending needs
-• **Million-Dollar Reality Check: $40,000/year** - A $1M portfolio using 4% withdrawal rule generates only $3,333/month before taxes
-• **Utah Healthcare Premium: $850-$1,200/month** - Average Medicare supplement and long-term care insurance costs in Utah
-• **Grandchildren Premium: $200-$500/month** - Utah's family-centered culture often includes significant grandparent financial support
-• **Guaranteed Income Target: 60-80%** - Percentage of retirement expenses that should come from predictable sources like Social Security, pensions, and annuities
+ **Average Retirement Spending: $5,000/month** - Bureau of Labor Statistics data, but Utah costs may vary significantly from national averages
+ **Social Security Gap: $3,000/month** - Average benefit around $2,000 monthly leaves substantial income shortfall for typical spending needs
+ **Million-Dollar Reality Check: $40,000/year** - A $1M portfolio using 4% withdrawal rule generates only $3,333/month before taxes
+ **Utah Healthcare Premium: $850-$1,200/month** - Average Medicare supplement and long-term care insurance costs in Utah
+ **Grandchildren Premium: $200-$500/month** - Utah's family-centered culture often includes significant grandparent financial support
+ **Guaranteed Income Target: 60-80%** - Percentage of retirement expenses that should come from predictable sources like Social Security, pensions, and annuities
 
 ---
 
@@ -53,7 +53,7 @@ For Utah retirees, this income-focused approach becomes even more crucial when c
 Mike Stevens references a major company's Super Bowl advertising claiming that a million dollars equals retirement readiness. This oversimplified message ignores critical retirement realities:
 
 **The Million-Dollar Math Problem:**
-- **4% Withdrawal Rule**: $1,000,000 × 4% = $40,000 annually
+- **4% Withdrawal Rule**: $1,000,000 � 4% = $40,000 annually
 - **Monthly Income**: $40,000 ÷ 12 = $3,333 per month
 - **After Taxes**: Approximately $2,500-$2,800 monthly net income
 - **Income Gap**: $2,200-$2,500 monthly shortfall from $5,000 average spending
@@ -105,7 +105,7 @@ Utah's lower cost of living might make $3,333 monthly stretch further, but other
 
 ### The "Grandkids Snack Budget" Reality
 
-Mike Stevens shares a client's humorous observation: "That's actually just my grandkids snack budget." This joke highlights a serious Utah reality—our family-centered culture creates unique retirement expenses:
+Mike Stevens shares a client's humorous observation: "That's actually just my grandkids snack budget." This joke highlights a serious Utah realityour family-centered culture creates unique retirement expenses:
 
 **Utah Family Premium Costs:**
 - **Mission Support**: Financial assistance for children and grandchildren serving LDS missions
@@ -116,7 +116,7 @@ Mike Stevens shares a client's humorous observation: "That's actually just my gr
 
 ---
 
-## The Retirement Money Map™: Utah's Guardrail Approach
+## The Retirement Money Map�: Utah's Guardrail Approach
 
 ### Beyond Traditional Budgeting: Creating Financial Guardrails
 
@@ -449,7 +449,7 @@ Mike Stevens' message is clear: "It's not about hitting some magical number. It'
 
 The myth of the million-dollar retirement needs to be replaced with the reality of income security. Whether your magic number is $500,000 or $5 million, what matters is how effectively you can convert those assets into the monthly paycheck that supports your Utah retirement dreams.
 
-Remember: There's no award for being the wealthiest person in the cemetery, but there is immense value in having the confidence that your money will last at least as long as you do—while supporting the family and community values that make Utah retirement special.
+Remember: There's no award for being the wealthiest person in the cemetery, but there is immense value in having the confidence that your money will last at least as long as you dowhile supporting the family and community values that make Utah retirement special.
 
 ---
 
@@ -457,7 +457,7 @@ Remember: There's no award for being the wealthiest person in the cemetery, but 
 
 ### Special Offer for Utah Retirees
 
-**For the next five callers:** Complimentary Retirement Money Map™ analysis - the comprehensive income planning review Mike Stevens mentioned.
+**For the next five callers:** Complimentary Retirement Money Map� analysis - the comprehensive income planning review Mike Stevens mentioned.
 
 **What's included:**
 - Current spending analysis and retirement income needs assessment
@@ -471,7 +471,7 @@ Remember: There's no award for being the wealthiest person in the cemetery, but 
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
 
-**Remember:** The best retirement plan isn't the one with the biggest number—it's the one that creates the most reliable monthly paycheck for your Utah lifestyle.
+**Remember:** The best retirement plan isn't the one with the biggest numberit's the one that creates the most reliable monthly paycheck for your Utah lifestyle.
 
 ---
 

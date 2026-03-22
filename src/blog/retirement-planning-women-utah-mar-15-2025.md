@@ -26,24 +26,24 @@ Picture this: You're 49 years old, living in Pleasant Grove with your husband an
 
 Then the unthinkable happens.
 
-This isn't a hypothetical scenario—it's the real story of Mike Stevens' mother, and it's playing out in households across Utah every day. When Stevens' father passed away unexpectedly at 49, his mother was left to figure out everything financial: "I don't know where my income is going to come from. I don't know what to do as far as taxation. I don't know what to do with the investments that we have."
+This isn't a hypothetical scenarioit's the real story of Mike Stevens' mother, and it's playing out in households across Utah every day. When Stevens' father passed away unexpectedly at 49, his mother was left to figure out everything financial: "I don't know where my income is going to come from. I don't know what to do as far as taxation. I don't know what to do with the investments that we have."
 
 But here's the devastating detail that makes this story even more tragic: his father had accidentally allowed their life insurance policy to lapse just three months before he died.
 
-From the Wasatch Front to Southern Utah, from Logan to St. George, Utah women face a perfect storm of retirement challenges that most people—including many financial advisors—don't fully understand. Women live longer, earn less over their lifetimes, take career breaks for family care, and often find themselves completely unprepared when death or divorce forces them into financial independence.
+From the Wasatch Front to Southern Utah, from Logan to St. George, Utah women face a perfect storm of retirement challenges that most peopleincluding many financial advisorsdon't fully understand. Women live longer, earn less over their lifetimes, take career breaks for family care, and often find themselves completely unprepared when death or divorce forces them into financial independence.
 
 Yet within these challenges lie tremendous opportunities. Utah women who understand and plan for their unique circumstances can build retirement security that surpasses what traditional planning might achieve. This comprehensive guide will show you exactly how.
 
 ---
 
-## 🔑 Key Takeaways for Utah Women
+##  Key Takeaways for Utah Women
 
-> **Longevity Advantage:** Utah women live 6 years longer than men on average—requiring 20-25% more retirement funds
+> **Longevity Advantage:** Utah women live 6 years longer than men on averagerequiring 20-25% more retirement funds
 > **Social Security Goldmine:** Divorced women married 10+ years can claim ex-spousal benefits without affecting their ex-husband's benefits  
-> **Spousal Benefit Surprise:** Homemakers can receive up to 50% of their spouse's Social Security—many don't know this exists
-> **Healthcare Cost Reality:** Healthcare inflation outpaces general inflation—women need 25-30% more for medical expenses
+> **Spousal Benefit Surprise:** Homemakers can receive up to 50% of their spouse's Social Securitymany don't know this exists
+> **Healthcare Cost Reality:** Healthcare inflation outpaces general inflationwomen need 25-30% more for medical expenses
 > **Long-term Care Crisis:** 70% of long-term care recipients are women; costs averaging $85,000-$120,000 annually in Utah
-> **The 567 Social Security Combinations:** Married couples have 567 different claiming strategies—optimization is crucial
+> **The 567 Social Security Combinations:** Married couples have 567 different claiming strategiesoptimization is crucial
 
 ---
 
@@ -227,7 +227,7 @@ Stevens provides detailed instructions: "Log into ssa.gov and create a free acco
 - Consider Medicare Advantage vs. Traditional Medicare
 - Coordinate with employer retiree health benefits
 
-Stevens clarifies the difference: "Once you turn 65, you need to go on Medicare. And Medicare is for everybody. Medicaid, think of the 'aid' – that means that you have no more money. So you have less than, no jokes, $2,000 to your name."
+Stevens clarifies the difference: "Once you turn 65, you need to go on Medicare. And Medicare is for everybody. Medicaid, think of the 'aid'  that means that you have no more money. So you have less than, no jokes, $2,000 to your name."
 
 **Tier 2: Long-term Care Planning**
 Rather than traditional long-term care insurance, Stevens advocates creative life insurance strategies:
@@ -406,7 +406,7 @@ Stevens' interpretation: "Ladies and gentlemen, if you try to time the market, c
 
 ### Q: "I'm getting divorced after 18 years of marriage. What happens to my retirement security?"
 
-**Stevens' Guidance:** "If you were married over 10 years, you're entitled to claim benefits on your ex-husband's record if it's higher than your own—and this doesn't affect his benefits. Plus, you may be entitled to a portion of his retirement accounts earned during marriage."
+**Stevens' Guidance:** "If you were married over 10 years, you're entitled to claim benefits on your ex-husband's record if it's higher than your ownand this doesn't affect his benefits. Plus, you may be entitled to a portion of his retirement accounts earned during marriage."
 
 ### Q: "I'm worried about being a financial burden on my children. How do I plan for long-term care?"
 
@@ -483,12 +483,12 @@ Utah women face unique retirement challenges, but with proper planning, these ch
 
 Whether you're a teacher in Murray planning for retirement on a pension, a tech worker in Lehi with substantial 401(k) assets, a homemaker in St. George who's never worked outside the home, or a divorced professional in Salt Lake City starting over, understanding and planning for your unique circumstances as a woman is critical to your financial security.
 
-📞 **Call:** 801-210-5500  
-📱 **Text "VISIT"** to 801-210-5500  
-🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)  
-📍 **Additional Resources:** [retireutah.com](https://retireutah.com)
+ **Call:** 801-210-5500  
+� **Text "VISIT"** to 801-210-5500  
+ **Visit:** [capitalwealth.com](https://capitalwealth.com)  
+ **Additional Resources:** [retireutah.com](https://retireutah.com)
 
-*Capital Wealth — helping Utah women build confident retirements since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
+*Capital Wealth  helping Utah women build confident retirements since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
 
 **Remember:** You worked hard your entire life, often putting family needs before your own financial planning. Now it's time to put yourself first and build the retirement security you deserve. Don't let lack of knowledge or confidence prevent you from living your best life in retirement.
 

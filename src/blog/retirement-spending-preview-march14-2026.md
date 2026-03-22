@@ -14,7 +14,7 @@ Ever feel stuck in the daily grind? Fighting traffic, working all day, longing f
 
 **Here's the reality: That conventional wisdom is completely wrong.**
 
-Mike Stevens, founder of Capital Wealth, has worked with hundreds of Utah retirees over the past 20 years. His conclusion? **"I've yet to meet one person who says, 'We don't need chicken for dinner anymore — rice and beans will do. Let's stretch our annual vacation to every three years.'"**
+Mike Stevens, founder of Capital Wealth, has worked with hundreds of Utah retirees over the past 20 years. His conclusion? **"I've yet to meet one person who says, 'We don't need chicken for dinner anymore  rice and beans will do. Let's stretch our annual vacation to every three years.'"**
 
 Retirement should be the best years of your life, not a time of financial restriction.
 
@@ -26,10 +26,10 @@ Retirement should be the best years of your life, not a time of financial restri
 **What to expect:** This is when Utah retirees are most active and often spend MORE than their working years.
 
 **Utah advantages during this phase:**
-- **Proximity to 5 National Parks** — Arches, Canyonlands, Capitol Reef, Bryce Canyon, Zion
-- **World-class skiing** — Alta, Snowbird, Park City, Deer Valley  
+- **Proximity to 5 National Parks**  Arches, Canyonlands, Capitol Reef, Bryce Canyon, Zion
+- **World-class skiing**  Alta, Snowbird, Park City, Deer Valley  
 - **Lower housing costs** than California neighbors who relocate here
-- **Excellent healthcare systems** — Intermountain Healthcare, University of Utah
+- **Excellent healthcare systems**  Intermountain Healthcare, University of Utah
 
 **Real spending patterns:**
 - Travel and adventure increase
@@ -41,10 +41,10 @@ Retirement should be the best years of your life, not a time of financial restri
 **Natural evolution:** Physical changes influence activity choices, but spending doesn't necessarily decrease.
 
 **Utah-specific considerations:**
-- **Shorter travel** — Maybe Yellowstone instead of Japan, but still meaningful trips
-- **Local recreation** — Utah's accessibility makes regional adventures possible
-- **Comfort upgrades** — First-class flights, better accommodations
-- **Community involvement** — Local causes and organizations
+- **Shorter travel**  Maybe Yellowstone instead of Japan, but still meaningful trips
+- **Local recreation**  Utah's accessibility makes regional adventures possible
+- **Comfort upgrades**  First-class flights, better accommodations
+- **Community involvement**  Local causes and organizations
 
 **Capital Wealth client example:** Recent client wanted to take family to Maui but worried about husband's difficulty with long flights. Solution? Upgrade to Delta One lie-flat seats. "You're either going to make memories with grandchildren or pass away and give them the money anyway. They'd rather spend it WITH grandma and grandpa."
 
@@ -65,10 +65,10 @@ Retirement should be the best years of your life, not a time of financial restri
 **"If you ever hear the 4% rule, just immediately know it doesn't work anymore,"** warns Stevens.
 
 **What's changed since the 1980s:**
-1. **Higher taxes** — Both federal and state tax implications
-2. **Persistent inflation** — After 30 years of low inflation, costs are rising
-3. **Longer lifespans** — 30+ year retirements require different strategies  
-4. **Unnecessary restrictions** — Arbitrary limits prevent optimal experiences
+1. **Higher taxes**  Both federal and state tax implications
+2. **Persistent inflation**  After 30 years of low inflation, costs are rising
+3. **Longer lifespans**  30+ year retirements require different strategies  
+4. **Unnecessary restrictions**  Arbitrary limits prevent optimal experiences
 
 ### Utah-Specific Tax Considerations
 **State tax advantages:**
@@ -102,7 +102,7 @@ Retirement should be the best years of your life, not a time of financial restri
 **Planning considerations:**
 - **Supplemental insurance** for Medicare gaps
 - **Long-term care insurance** vs. self-insurance strategies
-- **Proximity planning** — Being near quality care facilities
+- **Proximity planning**  Being near quality care facilities
 
 ---
 
@@ -169,7 +169,7 @@ Retirement should be the best years of your life, not a time of financial restri
 ### "I'm Worried About Spending Too Much" (Cindy from Salt Lake)
 **The retirement paradox:** "I finally have time to enjoy life, but I'm terrified of spending the money I saved to enjoy it."
 
-**Mike's response:** "It's like being handed keys to a Ferrari and worrying about wearing out the tires. You've worked for this — give yourself permission to live."
+**Mike's response:** "It's like being handed keys to a Ferrari and worrying about wearing out the tires. You've worked for this  give yourself permission to live."
 
 **Solution approach:**
 - Create a "guilt-free fun budget" (Capital Wealth calls it an "expense plan")
@@ -196,14 +196,14 @@ Retirement should be the best years of your life, not a time of financial restri
 
 ## Utah-Specific Retirement Income Planning
 
-### Capital Wealth's Retirement Money Map™
+### Capital Wealth's Retirement Money Map�
 
 **Comprehensive analysis includes:**
-- **Income gap calculations** — Social Security + pensions + investments
+- **Income gap calculations**  Social Security + pensions + investments
 - **Tax optimization** across all account types  
 - **Inflation planning** for 30+ year retirements
-- **Long-term care reserves** — Self-insurance vs. insurance products
-- **Legacy planning** — Utah estate law considerations
+- **Long-term care reserves**  Self-insurance vs. insurance products
+- **Legacy planning**  Utah estate law considerations
 
 ### Why Generic Financial Planning Fails
 
@@ -231,16 +231,16 @@ Retirement should be the best years of your life, not a time of financial restri
 - **Confidence to spend** appropriately during active years
 
 ### Special Offer for Utah Residents
-**For the next five callers:** Complimentary Retirement Money Map™ analysis
+**For the next five callers:** Complimentary Retirement Money Map� analysis
 - **Phone:** 801-210-5500  
 - **Text:** "VISIT" to 801-210-5500
-- **Completely complimentary** — no obligation or commitment required
+- **Completely complimentary**  no obligation or commitment required
 
 ---
 
 ## Conclusion: Retire Right in Utah
 
-The reality of retirement spending is far more nuanced than the old 70% rule. Utah retirees have unique advantages — lower costs than coastal areas, excellent healthcare, proximity to world-class recreation — but also specific planning considerations.
+The reality of retirement spending is far more nuanced than the old 70% rule. Utah retirees have unique advantages  lower costs than coastal areas, excellent healthcare, proximity to world-class recreation  but also specific planning considerations.
 
 **The key insight:** Retirement should be about living your best life, not restricting it. With proper planning, most Utah retirees can spend confidently during their go-go years, knowing they're prepared for future care needs.
 

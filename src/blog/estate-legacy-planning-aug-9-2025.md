@@ -23,7 +23,7 @@ tags:
 
 ## Introduction: The Calgary Tragedy That Changed Everything
 
-Picture this: A successful 49-year-old custom home builder in Calgary, Alberta. Two young children. A loving wife. A growing business. Life was good—until it wasn't.
+Picture this: A successful 49-year-old custom home builder in Calgary, Alberta. Two young children. A loving wife. A growing business. Life was gooduntil it wasn't.
 
 Mike Stevens' father passed away unexpectedly at 49, leaving behind a financial nightmare that would take his family nearly two years and tens of thousands of dollars to untangle. No estate plan. No will. No trust. Just chaos.
 
@@ -36,7 +36,7 @@ Mike Stevens' father passed away unexpectedly at 49, leaving behind a financial 
 
 **But here's the shocking truth: This tragedy happens to Utah families every single day.**
 
-Despite living in one of the most family-oriented states in America, **only 25% of Americans have taken steps to create an estate plan**. The other 75% are walking toward the same cliff that claimed Mike's father—and the families left behind pay the price.
+Despite living in one of the most family-oriented states in America, **only 25% of Americans have taken steps to create an estate plan**. The other 75% are walking toward the same cliff that claimed Mike's fatherand the families left behind pay the price.
 
 As Mike puts it: "I don't want anyone to go through what happened to my mom and dad. That's why I'm in this business."
 
@@ -44,17 +44,17 @@ As Mike puts it: "I don't want anyone to go through what happened to my mom and 
 
 ## Key Takeaways: The Numbers Every Utah Family Must Know
 
-⚡ **75% of Americans Have NO Estate Plan** – Three-quarters of families are completely unprepared for the inevitable, setting up their loved ones for financial and legal disasters
+ **75% of Americans Have NO Estate Plan**  Three-quarters of families are completely unprepared for the inevitable, setting up their loved ones for financial and legal disasters
 
-⚡ **$3,000-$5,000 Attorney Fees Are Optional** – Most Utah families don't need expensive estate planning attorneys; there are cost-effective alternatives that provide the same protection
+ **$3,000-$5,000 Attorney Fees Are Optional**  Most Utah families don't need expensive estate planning attorneys; there are cost-effective alternatives that provide the same protection
 
-⚡ **Single Filers Pay 40% More in Taxes** – When a spouse dies, the surviving spouse immediately jumps to the worst tax bracket in the IRS code, crushing retirement income
+ **Single Filers Pay 40% More in Taxes**  When a spouse dies, the surviving spouse immediately jumps to the worst tax bracket in the IRS code, crushing retirement income
 
-⚡ **10-Year Liquidation Rule in Effect** – Under Secure Act 2.0, non-spouse beneficiaries must empty inherited IRAs within 10 years or face a devastating 25% penalty PLUS full taxation
+ **10-Year Liquidation Rule in Effect**  Under Secure Act 2.0, non-spouse beneficiaries must empty inherited IRAs within 10 years or face a devastating 25% penalty PLUS full taxation
 
-⚡ **2 Years Average Probate Duration** – Families without proper estate planning face an average of 24 months in court while legal fees pile up and assets remain frozen
+ **2 Years Average Probate Duration**  Families without proper estate planning face an average of 24 months in court while legal fees pile up and assets remain frozen
 
-⚡ **30 Seconds to Update Beneficiaries** – The most critical estate planning task takes less than a minute but is forgotten by most Utah families until it's too late
+ **30 Seconds to Update Beneficiaries**  The most critical estate planning task takes less than a minute but is forgotten by most Utah families until it's too late
 
 ---
 
@@ -88,7 +88,7 @@ When Mike's father passed away in Calgary at 49, the family faced the brutal rea
 - Income stream immediately cut off
 
 **The hidden accounts discovery:**
-"We had a client who passed away recently, and their spouse called and said, 'Hey, did you know that so-and-so had this financial account?' They had never even mentioned that account to me. They found it randomly while throwing out stuff—saw a statement and were like, 'What the heck is this?'"
+"We had a client who passed away recently, and their spouse called and said, 'Hey, did you know that so-and-so had this financial account?' They had never even mentioned that account to me. They found it randomly while throwing out stuffsaw a statement and were like, 'What the heck is this?'"
 
 **The insurance tragedy:**
 Mike's father had a life insurance policy that lapsed just three months before he passed away. His mother never even knew it existed.
@@ -172,7 +172,7 @@ Mike shares his own potential family challenge:
 **The solution:** Clear, documented decisions made while the parents are alive:
 - Honest, open family conversations
 - Written documentation of who gets what
-- Avoiding the "kids are like yogurt—you don't know which one's going to turn and when" situation
+- Avoiding the "kids are like yogurtyou don't know which one's going to turn and when" situation
 
 ### The Semi-Annual Beneficiary Review Process
 
@@ -574,18 +574,18 @@ Mike shares his own potential family challenge:
 
 ### Immediate Action Items (Next 30 Days)
 
-**□ Schedule estate planning review**
+**� Schedule estate planning review**
 - Call Capital Wealth at 801-210-5500 for complimentary consultation
 - Gather existing documents for review
 - List all family members and intended beneficiaries
 
-**□ Audit all beneficiary designations**
+**� Audit all beneficiary designations**
 - Review all retirement accounts (401k, IRA, 403b)
 - Check life insurance policies
 - Verify bank and investment accounts
 - Update any outdated designations
 
-**□ Create basic document inventory**
+**� Create basic document inventory**
 - List location of important documents
 - Identify who has access to safety deposit boxes
 - Document account numbers and contact information
@@ -593,19 +593,19 @@ Mike shares his own potential family challenge:
 
 ### 30-90 Day Goals
 
-**□ Complete basic estate planning documents**
+**� Complete basic estate planning documents**
 - Will with current executor and beneficiaries
 - Durable power of attorney for finances
 - Advanced healthcare directive
 - Consider revocable living trust if appropriate
 
-**□ Review integration with retirement planning**
+**� Review integration with retirement planning**
 - Ensure estate planning supports overall financial strategy
 - Consider tax implications of inheritance planning
 - Evaluate need for life insurance or long-term care coverage
 - Plan for potential incapacity scenarios
 
-**□ Communicate with family**
+**� Communicate with family**
 - Discuss basic estate planning decisions with spouse
 - Consider appropriate level of disclosure to children
 - Address any special family circumstances
@@ -613,19 +613,19 @@ Mike shares his own potential family challenge:
 
 ### Long-term Strategies (90+ Days)
 
-**□ Optimize for Utah-specific opportunities**
+**� Optimize for Utah-specific opportunities**
 - Consider charitable giving strategies
 - Evaluate business succession needs if applicable
 - Plan for multi-generational wealth transfer
 - Review asset protection strategies
 
-**□ Integrate with comprehensive financial plan**
+**� Integrate with comprehensive financial plan**
 - Coordinate estate planning with tax strategies
 - Align with retirement income planning
 - Consider healthcare planning integration
 - Evaluate legacy goals and charitable intentions
 
-**□ Establish regular review process**
+**� Establish regular review process**
 - Schedule annual or semi-annual planning reviews
 - Create system for updating after life changes
 - Maintain relationships with professional team
@@ -657,7 +657,7 @@ Mike shares his own potential family challenge:
 
 ## Conclusion: Don't Let Your Family Become the Next Tragedy
 
-The brutal truth is that **life is unpredictable, but death is inevitable**. Mike Stevens' father thought he had time—he was only 49, successful, healthy. But time ran out, and the family paid the price.
+The brutal truth is that **life is unpredictable, but death is inevitable**. Mike Stevens' father thought he had timehe was only 49, successful, healthy. But time ran out, and the family paid the price.
 
 **Your family doesn't have to go through what Mike's family endured.**
 
@@ -665,7 +665,7 @@ The brutal truth is that **life is unpredictable, but death is inevitable**. Mik
 - **Option 1:** Continue procrastinating and hope nothing happens (75% of families choose this path)
 - **Option 2:** Take action now to protect your family and preserve your legacy
 
-**Remember Mike's insight:** "Kids are like yogurt—you don't know which one's going to turn and when." But with proper planning, even family challenges can be managed without destroying relationships or finances.
+**Remember Mike's insight:** "Kids are like yogurtyou don't know which one's going to turn and when." But with proper planning, even family challenges can be managed without destroying relationships or finances.
 
 **The Utah advantage is real:** We live in a state with favorable tax laws, strong family values, and a culture that supports planning and preparation. Take advantage of these benefits while you can.
 
@@ -675,9 +675,9 @@ The brutal truth is that **life is unpredictable, but death is inevitable**. Mik
 3. **Update your beneficiaries** today (takes 30 seconds)
 4. **Create your "Guarding Your Legacy"** document this weekend
 
-**For the first five callers:** Receive a complimentary Retirement Money Map™ that integrates estate planning with your complete financial strategy.
+**For the first five callers:** Receive a complimentary Retirement Money Map� that integrates estate planning with your complete financial strategy.
 
-Don't let your family's story become another preventable tragedy. The time to plan is now—while you're healthy, while you're here, and while you can still protect the people you love most.
+Don't let your family's story become another preventable tragedy. The time to plan is nowwhile you're healthy, while you're here, and while you can still protect the people you love most.
 
 ---
 
@@ -698,7 +698,7 @@ Don't let your family's story become another preventable tragedy. The time to pl
 - **Local expertise** with Utah laws and culture
 - **Ongoing support** through regular review meetings
 
-**Remember:** Estate planning isn't about dying—it's about living with confidence that your family will be protected no matter what happens.
+**Remember:** Estate planning isn't about dyingit's about living with confidence that your family will be protected no matter what happens.
 
 ---
 

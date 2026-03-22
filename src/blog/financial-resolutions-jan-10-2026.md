@@ -25,7 +25,7 @@ tags:
 
 ## Introduction: Why Most Financial Resolutions Fail (And How Utah Retirees Can Succeed)
 
-It's January 10th, 2026. How are your New Year's resolutions holding up? If you're like most Americans, they're already gathering dust alongside the exercise equipment and diet books. But when it comes to financial resolutions for retirement, failure isn't just disappointingâ€”it's expensive.
+It's January 10th, 2026. How are your New Year's resolutions holding up? If you're like most Americans, they're already gathering dust alongside the exercise equipment and diet books. But when it comes to financial resolutions for retirement, failure isn't just disappointingit's expensive.
 
 Mike Stevens of Capital Wealth has spent over 20 years watching retirees make the same resolution mistakes year after year. More importantly, he's developed a system that actually works, specifically designed for Utah retirees who want to maximize their retirement security and make the most of the Beehive State's unique advantages.
 
@@ -248,7 +248,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 
 **Quarter 1 (January-March):**
 - Establish advisor relationship and complete comprehensive analysis
-- Develop personalized Retirement Money Mapâ„¢
+- Develop personalized Retirement Money Map„
 - Implement immediate optimization opportunities
 - Create systematic monitoring and review process
 
@@ -605,7 +605,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 
 **For Utah residents committed to 2026 financial resolution success:**
 
-**Complimentary Retirement Money Mapâ„¢** for the next five callers to 801-210-5500, including:
+**Complimentary Retirement Money Map„** for the next five callers to 801-210-5500, including:
 - Comprehensive analysis of your resolution goals
 - Utah-specific optimization strategies
 - Systematic implementation plan

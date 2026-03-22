@@ -27,7 +27,7 @@ tags:
 
 Ever feel stuck in the daily grind, fighting traffic, working all day, and longing for a break? Or maybe you're already retired, seeking ways to make the most of your hard-earned freedom? As we look ahead at 2026, there's some serious disagreement about where the market could be headed.
 
-The average American seems cynical about their retirement prospects, but some analysts are predicting a big year for stocks—potentially 8% to 18% gains for the S&P 500. So who's right? And more importantly, how should Utah retirees navigate this uncertainty?
+The average American seems cynical about their retirement prospects, but some analysts are predicting a big year for stockspotentially 8% to 18% gains for the S&P 500. So who's right? And more importantly, how should Utah retirees navigate this uncertainty?
 
 Mike Stevens, founder and president of Capital Wealth, cuts through the noise to reveal what 2026 really means for your retirement security and how Utah's unique advantages can position you for success regardless of market direction.
 
@@ -47,7 +47,7 @@ Mike Stevens, founder and president of Capital Wealth, cuts through the noise to
 
 ### The Information Overload Problem
 
-Mike Stevens explains the root of market pessimism: "It comes down to noise. It comes from every single angle. You're on your phone, you get emails, you get tweets—I don't think it's even called tweets anymore. You get YouTube notifications. It just comes from everywhere."
+Mike Stevens explains the root of market pessimism: "It comes down to noise. It comes from every single angle. You're on your phone, you get emails, you get tweetsI don't think it's even called tweets anymore. You get YouTube notifications. It just comes from everywhere."
 
 **The Utah Context:**
 - Utahns are bombarded with national headlines that may not reflect local economic strength
@@ -131,7 +131,7 @@ Mike Stevens emphasizes: "Retirees are very focused on strategies that balance g
 
 ---
 
-## The Retirement Money Map™: Your 2026 Navigation System
+## The Retirement Money Map�: Your 2026 Navigation System
 
 ### How Capital Wealth's Proprietary Process Works
 
@@ -151,7 +151,7 @@ Mike Stevens emphasizes: "Retirees are very focused on strategies that balance g
 
 ### Special Offer for Utah Listeners
 
-For the next five callers to 801-210-5500: Complimentary Retirement Money Map analysis—typically a $2,500 value covering:
+For the next five callers to 801-210-5500: Complimentary Retirement Money Map analysistypically a $2,500 value covering:
 - Tax optimization strategies
 - Income planning analysis
 - Investment risk assessment
@@ -183,7 +183,7 @@ For the next five callers to 801-210-5500: Complimentary Retirement Money Map an
 
 ### Emotional Decision-Making: The Retirement Killer
 
-"Markets move in cycles. Short-term volatility doesn't automatically mean long-term trouble," Stevens emphasizes. "Retirees are best served by staying focused on a personalized plan and making adjustments only after careful review and thoughtful discussion—not knee-jerk reactions."
+"Markets move in cycles. Short-term volatility doesn't automatically mean long-term trouble," Stevens emphasizes. "Retirees are best served by staying focused on a personalized plan and making adjustments only after careful review and thoughtful discussionnot knee-jerk reactions."
 
 ---
 
@@ -346,7 +346,7 @@ Utah's moderate state income tax makes Roth conversions particularly attractive 
 
 ### The $10 Million Opportunity
 
-Section 1202 small business stock can allow up to $10 million in capital gains exclusion—not $1 million, but $10 million.
+Section 1202 small business stock can allow up to $10 million in capital gains exclusionnot $1 million, but $10 million.
 
 **Utah entrepreneurs benefit:** Local business owners selling their companies can potentially eliminate massive tax obligations through proper structure.
 
@@ -448,7 +448,7 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 
 **From a Utah listener:** "I just found out I will be receiving about $100,000 from a life insurance policy after my grandpa passed away. What should I consider doing with this money? And how can I create something similar for my own grandkids?"
 
-**Mike's response:** "First off, what a special gift. This isn't just about dollars—it's a legacy of love. Your grandpa worked his whole life so he could bless you one more time."
+**Mike's response:** "First off, what a special gift. This isn't just about dollarsit's a legacy of love. Your grandpa worked his whole life so he could bless you one more time."
 
 **Strategic approach:**
 1. **Pause and plan:** Don't rush decisions, let emotions settle
@@ -467,7 +467,7 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 
 **From James:** "We have good life insurance, about $800,000 in a 401(k), and long-term care policy already set up. Should we be okay for retirement?"
 
-**Mike's analysis:** "Great setup—sounds like you're ahead of the curve. But retirement planning isn't just about having pieces; it's about how they fit together."
+**Mike's analysis:** "Great setupsounds like you're ahead of the curve. But retirement planning isn't just about having pieces; it's about how they fit together."
 
 **Key coordination questions:**
 - When do you tap the 401(k) for income?
@@ -475,13 +475,13 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 - What happens to income if one spouse passes away?
 - Have you stress-tested for market drops, inflation, healthcare events?
 
-**The goal:** Don't guess if you'll be okay—know that you will be through proper coordination and planning.
+**The goal:** Don't guess if you'll be okayknow that you will be through proper coordination and planning.
 
 ### Question: Emergency Fund vs. Retirement Savings
 
 **From Bryce:** "I'm 56 and want $1 million saved before I retire. I'm doing great with my 401(k) but can't seem to save much cash. How do I build an emergency fund?"
 
-**Mike's advice:** "Your emergency fund is like a financial seatbelt—you hope you never need it, but when life slams on the brakes, it keeps you from flying through the windshield financially."
+**Mike's advice:** "Your emergency fund is like a financial seatbeltyou hope you never need it, but when life slams on the brakes, it keeps you from flying through the windshield financially."
 
 **Building strategy:**
 - **Automate it:** Treat emergency fund like a bill you owe yourself
@@ -493,7 +493,7 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 
 ### Question: Blended Family Estate Planning
 
-**From Joe:** "I'm getting remarried. I have two sons, my fiancé has four kids. I want my estate to go to my boys but don't want to hurt feelings. Should I get separate life insurance for her kids?"
+**From Joe:** "I'm getting remarried. I have two sons, my fianc� has four kids. I want my estate to go to my boys but don't want to hurt feelings. Should I get separate life insurance for her kids?"
 
 **Mike's guidance:** "This is such a real question for blended families becoming the new normal. Life insurance can be a beautiful solution."
 
@@ -517,7 +517,7 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 
 ### Special Opportunity for Utah Residents
 
-**Limited-time offer:** For the next five callers to 801-210-5500, Capital Wealth will provide a complimentary Retirement Money Map™ analysis—typically requiring 5-10 hours of professional analysis.
+**Limited-time offer:** For the next five callers to 801-210-5500, Capital Wealth will provide a complimentary Retirement Money Map� analysistypically requiring 5-10 hours of professional analysis.
 
 **Comprehensive review includes:**
 - Tax optimization strategies specific to Utah
@@ -536,7 +536,7 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 
 ## Conclusion: Navigating 2026 with Utah Confidence
 
-The 2026 retirement forecast contains both challenges and opportunities. Market predictions range from cautious optimism to enthusiastic growth projections, but for Utah retirees, the key isn't predicting the future—it's preparing for multiple scenarios while leveraging Utah's unique advantages.
+The 2026 retirement forecast contains both challenges and opportunities. Market predictions range from cautious optimism to enthusiastic growth projections, but for Utah retirees, the key isn't predicting the futureit's preparing for multiple scenarios while leveraging Utah's unique advantages.
 
 **Your 2026 retirement success depends on:**
 

@@ -35,17 +35,17 @@ Whether you're nearing retirement or already enjoying your golden years in Utah'
 
 ## Key Takeaways: Tax-Smart Retirement Planning for Utah Residents
 
-• **The 4% rule is broken** - Higher inflation, rising healthcare costs, and future tax increases make this outdated strategy dangerous for today's retirees
+ **The 4% rule is broken** - Higher inflation, rising healthcare costs, and future tax increases make this outdated strategy dangerous for today's retirees
 
-• **Tax diversification beats investment diversification** - Having money in tax-deferred, taxed, and tax-free accounts provides withdrawal flexibility as tax laws change
+ **Tax diversification beats investment diversification** - Having money in tax-deferred, taxed, and tax-free accounts provides withdrawal flexibility as tax laws change
 
-• **Utah's charitable tax advantages** - Qualified Charitable Distributions (QCDs) let you support local Utah charities while satisfying required minimum distributions tax-free
+ **Utah's charitable tax advantages** - Qualified Charitable Distributions (QCDs) let you support local Utah charities while satisfying required minimum distributions tax-free
 
-• **Medicare premium planning is critical** - What you do today affects your Medicare costs two years from now, making coordinated tax planning essential
+ **Medicare premium planning is critical** - What you do today affects your Medicare costs two years from now, making coordinated tax planning essential
 
-• **Strategic Roth conversions during low-tax years** - With national deficit exceeding $36 trillion, current tax rates may be the lowest you'll see in retirement
+ **Strategic Roth conversions during low-tax years** - With national deficit exceeding $36 trillion, current tax rates may be the lowest you'll see in retirement
 
-• **Professional coordination is essential** - Your CPA handles compliance; your advisor should handle proactive tax strategy planning
+ **Professional coordination is essential** - Your CPA handles compliance; your advisor should handle proactive tax strategy planning
 
 ---
 
@@ -170,9 +170,9 @@ This admission should shake every Utah retiree to their core. While advisors pro
 **The two-year look-back rule:** What you withdraw today affects Medicare premiums two years from now.
 
 **Real Utah impact:**
-- Higher RMDs → Higher Medicare Part B and D premiums
-- Large distributions → Social Security taxation
-- Poor timing → Compounding tax problems
+- Higher RMDs  Higher Medicare Part B and D premiums
+- Large distributions  Social Security taxation
+- Poor timing  Compounding tax problems
 
 ### Utah's Charitable Tax Solution: Qualified Charitable Distributions (QCDs)
 
@@ -568,7 +568,7 @@ The question isn't whether you can afford to implement these tax strategies - it
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map™ analysis - a comprehensive review typically requiring 20-40 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Map� analysis - a comprehensive review typically requiring 20-40 hours of professional analysis.
 
 **What's included:**
 - Complete tax return analysis for missed opportunities  

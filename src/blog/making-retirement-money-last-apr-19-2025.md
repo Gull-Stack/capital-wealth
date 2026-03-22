@@ -30,7 +30,7 @@ As Mike Stevens, president and founder of Capital Wealth, explains: "What I find
 
 ---
 
-## 🔑 Key Takeaways
+##  Key Takeaways
 
 > **Debt Elimination Priority:** Credit card debt averaging 24.2% interest must be tackled before retirement - no investment can reliably beat those rates
 > **Age-Appropriate Risk:** Use the "Rule of 100" - subtract your age from 100 to determine your maximum stock market exposure percentage
@@ -447,11 +447,11 @@ Capital Wealth has helped thousands of Utah families create retirement plans des
 
 **Your retirement money should work as hard as you did to earn it.** Let our experienced team help you create a plan that provides both security and growth throughout your retirement years.
 
-📞 **Call:** 801-210-5500
-📱 **Text "VISIT"** to 801-210-5500  
-🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
+ **Call:** 801-210-5500
+� **Text "VISIT"** to 801-210-5500  
+ **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth — helping Utah families retire right since 2012.*
+*Capital Wealth  helping Utah families retire right since 2012.*
 
 ---
 

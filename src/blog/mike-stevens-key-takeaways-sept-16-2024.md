@@ -8,12 +8,12 @@ tags: ["blog", "federal-employees", "retirement-tips", "key-takeaways", "FERS"]
 readTime: 8
 ---
 
-## 🚨 Social Security Reality Check
+##  Social Security Reality Check
 
 ### 1. **75% of Americans Worry About Social Security Running Out**
 - Nearly 3 in 4 adults fear the system will run out of funding in their lifetime
 - 1 in 4 believe they won't get any benefits they've earned
-- **Action Item:** Don't plan on fear — plan on strategy
+- **Action Item:** Don't plan on fear  plan on strategy
 
 ### 2. **Most People Don't Know How to Maximize Benefits**
 - Over half of Americans don't know optimization strategies
@@ -27,7 +27,7 @@ readTime: 8
 
 ---
 
-## 💰 Federal Employee Advantages
+##  Federal Employee Advantages
 
 ### 4. **You Have a Three-Pillar Retirement System**
 - FERS pension (guaranteed income)
@@ -48,7 +48,7 @@ readTime: 8
 
 ---
 
-## 📊 Investment Strategy Updates
+##  Investment Strategy Updates
 
 ### 7. **The 4% Withdrawal Rule is Dead**
 - Inflation and longevity have broken the old rule
@@ -62,7 +62,7 @@ readTime: 8
 
 ---
 
-## 🏦 Tax Planning Essentials
+##  Tax Planning Essentials
 
 ### 9. **Retirement Tax Surprise is Real**
 - Most people don't pay less in taxes during retirement
@@ -78,7 +78,7 @@ readTime: 8
 
 ---
 
-## 🔄 From Saving to Spending Psychology
+## � From Saving to Spending Psychology
 
 ### 11. **The Hardest Part: Flipping the Switch**
 - Going from decades of saving to spending is emotionally difficult
@@ -94,7 +94,7 @@ readTime: 8
 
 ---
 
-## 🏥 Long-Term Care & Estate Planning
+## � Long-Term Care & Estate Planning
 
 ### 13. **New Inherited IRA Rules Changed Everything**
 - Non-spouse beneficiaries must withdraw within 10 years
@@ -109,7 +109,7 @@ readTime: 8
 
 ---
 
-## 🎯 Professional Guidance
+##  Professional Guidance
 
 ### 15. **A Portfolio is Not a Plan**
 - Need comprehensive coordination of all moving parts
@@ -119,7 +119,7 @@ readTime: 8
 
 ---
 
-## ✅ Your Action Checklist
+##  Your Action Checklist
 
 ### This Week:
 - [ ] Request your Social Security statement
@@ -141,7 +141,7 @@ readTime: 8
 
 ---
 
-## 🔢 Key Numbers to Remember
+##  Key Numbers to Remember
 
 - **Social Security:** Up to $6,000+ annually left on the table without optimization
 - **TSP Match:** Up to $20,500 in free money (2024 match + contribution limits)  
@@ -151,7 +151,7 @@ readTime: 8
 
 ---
 
-## 📞 Next Steps
+##  Next Steps
 
 **Ready to implement these strategies?**
 
@@ -160,11 +160,11 @@ Contact Capital Wealth for a complimentary federal employee retirement analysis:
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
 
-*Federal employees face unique retirement challenges and opportunities. Don't leave money on the table — optimize your three-pillar retirement system with expert guidance.*
+*Federal employees face unique retirement challenges and opportunities. Don't leave money on the table  optimize your three-pillar retirement system with expert guidance.*
 
 ---
 
-## 💡 Quick Tips by Career Stage
+##  Quick Tips by Career Stage
 
 ### **Early Career (0-10 years service):**
 - Focus on TSP growth allocation

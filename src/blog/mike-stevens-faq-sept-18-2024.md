@@ -22,7 +22,7 @@ faqSchema: [
 ]
 ---
 
-## 💰 Social Security Questions
+##  Social Security Questions
 
 ### Q: "What exactly is spousal Social Security benefit?"
 
@@ -34,7 +34,7 @@ faqSchema: [
 - If your spouse has their own Social Security, they get the higher of the two amounts
 - Must be claimed strategically for maximum benefit
 
-**Real Example:** Recent client discovered his wife was eligible for an additional $491/month in spousal benefits — nearly $6,000 per year they were leaving unclaimed.
+**Real Example:** Recent client discovered his wife was eligible for an additional $491/month in spousal benefits  nearly $6,000 per year they were leaving unclaimed.
 
 **Action Step:** If you're married, get a Social Security optimization analysis before claiming benefits.
 
@@ -45,10 +45,10 @@ faqSchema: [
 **A:** The program won't disappear completely, but significant changes are coming to address funding shortfalls.
 
 **Expected Changes:**
-- **Full retirement age increases** — likely 70-73 for younger workers
-- **Benefit reductions** — 20-25% cuts possible without legislative action  
-- **Increased taxation** — more benefits becoming taxable
-- **Higher wage caps** — Social Security taxes on higher earners
+- **Full retirement age increases**  likely 70-73 for younger workers
+- **Benefit reductions**  20-25% cuts possible without legislative action  
+- **Increased taxation**  more benefits becoming taxable
+- **Higher wage caps**  Social Security taxes on higher earners
 
 **Planning Strategy:** Don't plan based on fear, but do factor potential reductions into your overall retirement strategy. Build other income sources to reduce Social Security dependence.
 
@@ -68,7 +68,7 @@ faqSchema: [
 
 ---
 
-## 🏛️ Federal Employee Specific Questions
+##  Federal Employee Specific Questions
 
 ### Q: "Should my son set up a Roth IRA for his first job?"
 
@@ -135,7 +135,7 @@ faqSchema: [
 
 ---
 
-## 💡 Investment & Planning Questions
+##  Investment & Planning Questions
 
 ### Q: "Should I downsize my home in retirement?"
 
@@ -193,7 +193,7 @@ faqSchema: [
 
 ---
 
-## 📊 Tax Planning Questions
+##  Tax Planning Questions
 
 ### Q: "Will I really pay less taxes in retirement?"
 
@@ -230,7 +230,7 @@ faqSchema: [
 
 ---
 
-## 🏥 Healthcare & Long-Term Care Questions
+## � Healthcare & Long-Term Care Questions
 
 ### Q: "Will Medicare cover my long-term care needs?"
 
@@ -265,7 +265,7 @@ faqSchema: [
 
 ---
 
-## 🔄 Withdrawal Strategy Questions
+## � Withdrawal Strategy Questions
 
 ### Q: "What's wrong with the 4% withdrawal rule?"
 
@@ -299,17 +299,17 @@ faqSchema: [
 
 ---
 
-## 🎯 Professional Guidance Questions
+##  Professional Guidance Questions
 
 ### Q: "How do I find the right financial advisor?"
 
 **A:** Look for specific qualifications and approach:
 
 **Essential Qualities:**
-- **Federal employee expertise** — understands FERS, TSP, federal benefits
-- **Education focus** — explains the "why" behind recommendations
-- **Comprehensive planning** — coordinates all aspects of retirement
-- **Spouse inclusion** — ensures both partners understand the plan
+- **Federal employee expertise**  understands FERS, TSP, federal benefits
+- **Education focus**  explains the "why" behind recommendations
+- **Comprehensive planning**  coordinates all aspects of retirement
+- **Spouse inclusion**  ensures both partners understand the plan
 
 **Red Flags:**
 - Pressure to make immediate decisions
@@ -339,7 +339,7 @@ faqSchema: [
 
 ---
 
-## 📞 Get Your Questions Answered
+##  Get Your Questions Answered
 
 Have questions not covered here? Capital Wealth specializes in federal employee retirement planning.
 
@@ -352,7 +352,7 @@ Have questions not covered here? Capital Wealth specializes in federal employee 
 
 ---
 
-## 📚 Additional Resources
+##  Additional Resources
 
 ### Government Resources:
 - **OPM Retirement Info:** opm.gov/retirement-services

@@ -21,46 +21,46 @@ tags:
 
 ---
 
-## Introduction: From Saving Champion to Spending Strategist—Your Biggest Retirement Challenge
+## Introduction: From Saving Champion to Spending StrategistYour Biggest Retirement Challenge
 
-Picture this: After decades of disciplined saving—watching your 401(k) grow, maximizing contributions, building that nest egg—you finally reach retirement. Then reality hits. **How do you transform your hard-earned savings into a reliable paycheck that lasts the rest of your life?**
+Picture this: After decades of disciplined savingwatching your 401(k) grow, maximizing contributions, building that nest eggyou finally reach retirement. Then reality hits. **How do you transform your hard-earned savings into a reliable paycheck that lasts the rest of your life?**
 
 Mike Stevens opened this game-changing episode with the psychological challenge every Utah retiree faces: "When you have been disciplined to save, save, save, it becomes very difficult to spend, spend, spend."
 
 It's like working out for decades, then being told to "just eat cake, eat cake, eat cake." Your brain screams, "This is wrong!"
 
-But here's the revolutionary insight from this episode: **Retirement should be like eating cake every day—no more 9-to-5, no more fighting traffic, no more getting up early. It's all about you, doing the things you want to do.**
+But here's the revolutionary insight from this episode: **Retirement should be like eating cake every dayno more 9-to-5, no more fighting traffic, no more getting up early. It's all about you, doing the things you want to do.**
 
 **The challenge:** Creating that reliable income stream in an era where stagflation fears dominate headlines, the 4% rule is obsolete, and traditional retirement planning fails Utah families.
 
-**The solution:** Mike's proprietary Retirement Money Map™—a comprehensive system that's helped Utah retirees for nearly two decades, transforming portfolio anxiety into confident spending.
+**The solution:** Mike's proprietary Retirement Money Map�a comprehensive system that's helped Utah retirees for nearly two decades, transforming portfolio anxiety into confident spending.
 
 ---
 
 ## Key Takeaways: Utah's Retirement Income Revolution
 
-### 💡 **Stagflation Reality Check for Utah Retirees**
+###  **Stagflation Reality Check for Utah Retirees**
 
 - **Media fear-mongering:** "I blame the media, the news, because they're saying stagflation... I'm not sure that I buy into it"
 - **Economic truth:** Job growth increasing, economy growing, prices of goods actually decreasing (eggs going down, not up)
 - **Utah advantage:** Strong local economy, diversified job market, lower living costs than coastal areas
 - **Smart strategy:** Plan for worst-case scenarios without making knee-jerk reactions
 
-### 💡 **The 4% Rule is Dead for Utah Retirees**
+###  **The 4% Rule is Dead for Utah Retirees**
 
 - **Why it's broken:** Healthcare costs rising faster than inflation, people retiring earlier, longer lifespans
 - **Real Utah example:** Clients asking "I'm 57, can I retire?" (Answer often: YES with proper planning)
 - **New reality:** Some Utah retirees have $1-2 million saved but only need $4,000-5,000 monthly
 - **Mike's prescription:** "You're not spending enough money... you should go take that Hawaiian trip... fly business class because you can afford it"
 
-### 💡 **Tax Shock Awaiting Utah Retirees**
+###  **Tax Shock Awaiting Utah Retirees**
 
 - **Standard deduction cuts in half** if Tax Cut and Jobs Act sunsets end of 2025
 - **85% of Social Security could be taxable** (even though you already paid into the system)
 - **100% of traditional IRA/401(k) subject to taxation** when withdrawn
 - **Utah advantage:** No state tax on Social Security, favorable retirement income tax structure
 
-### 💡 **Five Real Retiree Tips That Actually Work**
+###  **Five Real Retiree Tips That Actually Work**
 
 1. **Live below your means** (balance enjoyment with debt reduction)
 2. **Structure your savings** (forced savings through 401(k)/IRA, prefer Roth options)
@@ -115,7 +115,7 @@ But here's the revolutionary insight from this episode: **Retirement should be l
 - Use market dips to buy more quality stocks at discounted prices
 - Convert traditional IRA money to Roth during market lows (pay taxes on smaller amounts)
 
-**Key insight:** Proactive advisor communication prevented client panic—"We were the ones calling our clients saying 'hey, market's down... let's buy the dip. It's on sale.'"
+**Key insight:** Proactive advisor communication prevented client panic"We were the ones calling our clients saying 'hey, market's down... let's buy the dip. It's on sale.'"
 
 ---
 
@@ -246,7 +246,7 @@ Mike references "The Psychology of Money" by Morgan Housel, highlighting the psy
 
 ---
 
-## The Capital Wealth Retirement Money Map™: Utah's Income Solution
+## The Capital Wealth Retirement Money Map�: Utah's Income Solution
 
 ### 20 Years of Refinement for Utah Families
 
@@ -502,7 +502,7 @@ Mike references "The Psychology of Money" by Morgan Housel, highlighting the psy
 
 **Professional collaboration:** "A good dentist, when they know that there's something more that can be done, happily will say go and have the orthodontist have a look"
 
-**Capital Wealth specialization:** Distribution planning, tax strategies, legacy planning—not just accumulation
+**Capital Wealth specialization:** Distribution planning, tax strategies, legacy planningnot just accumulation
 
 ### Bi-Annual Strategic Review Process
 
@@ -582,7 +582,7 @@ Mike references "The Psychology of Money" by Morgan Housel, highlighting the psy
 ### 90-Day Goals
 
 **1. Professional consultation:**
-- Schedule complimentary Retirement Money Map™ analysis with Capital Wealth
+- Schedule complimentary Retirement Money Map� analysis with Capital Wealth
 - Review current plan with qualified Utah retirement specialist
 - Get second opinion on current advisor's approach
 
@@ -623,7 +623,7 @@ Mike references "The Psychology of Money" by Morgan Housel, highlighting the psy
 
 ---
 
-## Special Offer: Retirement Money Map™ for Utah Residents
+## Special Offer: Retirement Money Map� for Utah Residents
 
 ### Comprehensive Analysis Worth $2,000-3,000
 
@@ -795,7 +795,7 @@ Mike references "The Psychology of Money" by Morgan Housel, highlighting the psy
 
 The transformation from saver to spender represents one of the most challenging psychological shifts in retirement. But as Mike Stevens demonstrated throughout this comprehensive episode, with the right blueprint, Utah retirees can confidently make this transition.
 
-**The fundamental truth:** "Retirement should be like eating cake, eating cake, eating cake—no more 9-to-5, no more fighting traffic, no more getting up early. It's all about you, doing the things you want to do."
+**The fundamental truth:** "Retirement should be like eating cake, eating cake, eating cakeno more 9-to-5, no more fighting traffic, no more getting up early. It's all about you, doing the things you want to do."
 
 **Utah's unique advantages provide the foundation:**
 - No state tax on Social Security benefits
@@ -824,7 +824,7 @@ The transformation from saver to spender represents one of the most challenging 
 **Your next steps are clear:**
 
 1. **Assessment:** Evaluate your current retirement income plan against Utah-specific factors
-2. **Professional guidance:** Schedule your complimentary Retirement Money Map™ analysis
+2. **Professional guidance:** Schedule your complimentary Retirement Money Map� analysis
 3. **Implementation:** Begin transitioning from portfolio management to income planning
 4. **Confidence building:** Develop spending guardrails that provide security and freedom
 
@@ -837,7 +837,7 @@ The transformation from saver to spender represents one of the most challenging 
 
 Your Utah retirement should be the best years of your life. The income blueprint exists. The advantages are in place. The only question is: Will you take action today to transform your savings into the retirement lifestyle you've earned?
 
-**The strongest retirement income plans aren't the most optimistic—they're the most prepared.**
+**The strongest retirement income plans aren't the most optimisticthey're the most prepared.**
 
 ---
 

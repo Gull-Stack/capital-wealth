@@ -28,7 +28,7 @@ While you were saving diligently in your 401(k), contributing to your IRA, and b
 
 To put this in perspective: If you go back in a time machine one trillion seconds, "you're going back over 32,000 years ago." The national debt now represents approximately $107,000 per person or $274,000 per household.
 
-But here's the real crisis for Utah retirees: this astronomical debt will be paid down through tax collection, and the largest pool of untaxed money in America sits in traditional 401(k)s and IRAs—exactly where most Utah families have accumulated their retirement savings.
+But here's the real crisis for Utah retirees: this astronomical debt will be paid down through tax collection, and the largest pool of untaxed money in America sits in traditional 401(k)s and IRAsexactly where most Utah families have accumulated their retirement savings.
 
 From the tech corridors of Silicon Slopes to the farming communities of Cache Valley, Utah retirees face a perfect storm: they've saved money in accounts the government will eventually tax at potentially much higher rates while simultaneously losing many of their current tax deductions.
 
@@ -36,10 +36,10 @@ This comprehensive guide will show you how to transform this crisis into opportu
 
 ---
 
-## 🔑 Key Takeaways for Utah's Tax Environment
+##  Key Takeaways for Utah's Tax Environment
 
-> **The National Debt Reality:** $36 trillion debt equals $274,000 per household—to be paid through higher taxes on retirement accounts
-> **Historic Tax Low Warning:** Current tax rates are historically low since 1913—the pendulum will swing back
+> **The National Debt Reality:** $36 trillion debt equals $274,000 per householdto be paid through higher taxes on retirement accounts
+> **Historic Tax Low Warning:** Current tax rates are historically low since 1913the pendulum will swing back
 > **The RMD Tax Trap:** 25% penalty plus taxes for missing required minimum distributions starting at age 73
 > **Medicare Look-Back Bomb:** Roth conversions trigger Medicare premium increases two years later
 > **The Widow's Tax Penalty:** Single filers pay the highest tax rates when they lose spousal filing status
@@ -499,14 +499,14 @@ As Stevens notes, "There's no do-overs you got to get it right the first time."
 - "Glossy colorful easy to read" tax guides (not "onion thin legal jargon")
 - Comprehensive tax strategy visits
 
-**Remember:** The goal isn't just avoiding taxes—it's optimizing your lifetime tax burden so you can "disinherit the IRS from your life and shift from tax-deferred into tax-free."
+**Remember:** The goal isn't just avoiding taxesit's optimizing your lifetime tax burden so you can "disinherit the IRS from your life and shift from tax-deferred into tax-free."
 
-📞 **Call:** 801-210-5500  
-📱 **Text "VISIT"** to 801-210-5500  
-🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)  
-📍 **Tax Resources:** [retireutah.com](https://retireutah.com)
+ **Call:** 801-210-5500  
+� **Text "VISIT"** to 801-210-5500  
+ **Visit:** [capitalwealth.com](https://capitalwealth.com)  
+ **Tax Resources:** [retireutah.com](https://retireutah.com)
 
-*Capital Wealth — helping Utah families minimize lifetime tax burden and maximize retirement security since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
+*Capital Wealth  helping Utah families minimize lifetime tax burden and maximize retirement security since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
 
 **The ultimate message:** "Accumulation is just one step of the journey, but enjoying the retirement of your dreams, that's our goal."
 

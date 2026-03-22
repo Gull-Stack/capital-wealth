@@ -18,23 +18,23 @@ By Mike Stevens, Capital Wealth
 
 As we gather around Thanksgiving tables across Utah, from the bustling neighborhoods of Salt Lake City to the scenic valleys of Ogden and Provo, there's something beautifully familiar about the perfect balance of our holiday feast. Just like your grandmother's recipe for stuffing or the precise timing needed for that golden turkey, your retirement plan needs the same thoughtful balance of ingredients to create something truly satisfying.
 
-This Thanksgiving weekend, I want to share with you the "retirement planning plate" – a framework that's helped hundreds of Utah families build financial security as reliable as our mountain ranges and as enduring as our pioneer heritage.
+This Thanksgiving weekend, I want to share with you the "retirement planning plate"  a framework that's helped hundreds of Utah families build financial security as reliable as our mountain ranges and as enduring as our pioneer heritage.
 
 ## **Key Takeaways**
 
 Before we dive into the feast, here are the essential ingredients every Utah retiree needs on their financial plate:
 
-• **Turkey (Retirement Savings):** Target **$800,000-$1.5 million** for comfortable Utah retirement, accounting for our state's growing cost of living and healthcare needs
+ **Turkey (Retirement Savings):** Target **$800,000-$1.5 million** for comfortable Utah retirement, accounting for our state's growing cost of living and healthcare needs
 
-• **Stuffing (Social Security):** Utah couples have **567 different filing combinations** – proper timing can add **$50,000-$200,000** to lifetime benefits
+ **Stuffing (Social Security):** Utah couples have **567 different filing combinations**  proper timing can add **$50,000-$200,000** to lifetime benefits
 
-• **Cranberry Sauce (Emergency Fund):** **3-6 months of expenses** ($18,000-$45,000 for average Utah households) protects against Rocky Mountain economic volatility  
+ **Cranberry Sauce (Emergency Fund):** **3-6 months of expenses** ($18,000-$45,000 for average Utah households) protects against Rocky Mountain economic volatility  
 
-• **Mashed Potatoes (Healthcare Planning):** Utah Medicare premiums average **$165-$485 monthly** – comprehensive planning saves **20-40%** on lifetime healthcare costs
+ **Mashed Potatoes (Healthcare Planning):** Utah Medicare premiums average **$165-$485 monthly**  comprehensive planning saves **20-40%** on lifetime healthcare costs
 
-• **Dessert (Lifestyle Freedom):** Well-planned Utah retirements support **$65,000-$95,000 annual spending** for travel, grandchildren, and mountain recreation
+ **Dessert (Lifestyle Freedom):** Well-planned Utah retirements support **$65,000-$95,000 annual spending** for travel, grandchildren, and mountain recreation
 
-• **Special Recipe:** Utah's unique tax advantages – **no Social Security tax** and **favorable retirement account treatment** can save retirees **$15,000-$30,000 annually**
+ **Special Recipe:** Utah's unique tax advantages  **no Social Security tax** and **favorable retirement account treatment** can save retirees **$15,000-$30,000 annually**
 
 ---
 
@@ -42,7 +42,7 @@ Before we dive into the feast, here are the essential ingredients every Utah ret
 
 Just as the turkey anchors your Thanksgiving meal, your retirement savings form the foundation of your financial feast. Whether you're working for one of Utah's major employers like Intermountain Healthcare, the University of Utah, or thriving in our booming tech sector, your 401(k), IRA, and brokerage accounts represent years of disciplined saving.
 
-"Your savings are going to be your main source of retirement income," I explained to listeners during our Thanksgiving special. "But the key is to make sure it's cooked just right – meaning you're saving enough now and investing in a way that aligns with your goals, risk comfort, and time horizon."
+"Your savings are going to be your main source of retirement income," I explained to listeners during our Thanksgiving special. "But the key is to make sure it's cooked just right  meaning you're saving enough now and investing in a way that aligns with your goals, risk comfort, and time horizon."
 
 ### Utah's Retirement Savings Landscape
 
@@ -60,7 +60,7 @@ Take my clients, Robert and Susan Anderson from Bountiful. When they came to me 
 
 "We had the turkey," Robert joked during our initial meeting, "but we weren't sure if it would be enough to feed us through 30 years of retirement."
 
-After running their retirement money map, we discovered they were actually in excellent shape – better than they thought. Their combined savings of $925,000, when properly managed and coordinated with Social Security, would support their desired lifestyle throughout retirement. The key was understanding how all the pieces worked together.
+After running their retirement money map, we discovered they were actually in excellent shape  better than they thought. Their combined savings of $925,000, when properly managed and coordinated with Social Security, would support their desired lifestyle throughout retirement. The key was understanding how all the pieces worked together.
 
 ## The Essential Side: Social Security (Your Stuffing)
 
@@ -94,7 +94,7 @@ Consider this scenario common among Utah retirees:
 - Jennifer claims at full retirement age: $1,950/month ($23,400/year)  
 - Combined annual: $65,064
 
-The difference? **$25,164 more per year** – that's enough to cover their Park City property taxes, HOA fees, and still have money left for ski passes at Deer Valley.
+The difference? **$25,164 more per year**  that's enough to cover their Park City property taxes, HOA fees, and still have money left for ski passes at Deer Valley.
 
 ## Your Safety Net: Emergency Fund (The Cranberry Sauce)
 
@@ -120,11 +120,11 @@ During our Thanksgiving show, I shared the story of my grandfather, Bruno Zinni.
 
 "I have one of my biggest regrets in life," I told listeners, "is not asking my dad where Stevens came from. He passed at 49, and I was always a Stevens. I didn't know any different."
 
-This story illustrates why emergency planning matters. When my father passed unexpectedly at 49, our family faced not just emotional grief but financial uncertainty. Proper emergency planning – including life insurance and estate documents – could have prevented years of family stress during an already difficult time.
+This story illustrates why emergency planning matters. When my father passed unexpectedly at 49, our family faced not just emotional grief but financial uncertainty. Proper emergency planning  including life insurance and estate documents  could have prevented years of family stress during an already difficult time.
 
 ## Health and Comfort: Healthcare Planning (Your Mashed Potatoes)
 
-Nobody skips the mashed potatoes at Thanksgiving, and nobody should skip healthcare planning in retirement. These aren't just nice-to-have items – they're essential comfort foods that make your entire retirement experience more enjoyable.
+Nobody skips the mashed potatoes at Thanksgiving, and nobody should skip healthcare planning in retirement. These aren't just nice-to-have items  they're essential comfort foods that make your entire retirement experience more enjoyable.
 
 ### Utah's Healthcare Landscape for Retirees
 
@@ -166,7 +166,7 @@ Utah's unique geography creates specific long-term care considerations:
 
 ## The Sweet Reward: Your Retirement Lifestyle (Dessert)
 
-Finally, we reach the sweetest part – your retirement lifestyle. Just like dessert represents the moment when all your Thanksgiving preparation pays off, your retirement lifestyle embodies the freedom you've worked so hard to achieve.
+Finally, we reach the sweetest part  your retirement lifestyle. Just like dessert represents the moment when all your Thanksgiving preparation pays off, your retirement lifestyle embodies the freedom you've worked so hard to achieve.
 
 "Dessert in retirement should never feel like a guilty pleasure or something you hope you can afford," I explained to listeners. "It should be something you can enjoy confidently, knowing that the foundation underneath you is strong."
 
@@ -220,7 +220,7 @@ During our Thanksgiving special, we addressed a critical concern facing today's 
 
 ### The Challenge for Utah Savers
 
-Picture this scenario: You've finally reached retirement in beautiful Utah. You've got your bucket list ready – maybe a trip to Italy, more time with grandkids, or just golfing without worrying about Monday mornings. Here's the curveball: interest rates keep dropping.
+Picture this scenario: You've finally reached retirement in beautiful Utah. You've got your bucket list ready  maybe a trip to Italy, more time with grandkids, or just golfing without worrying about Monday mornings. Here's the curveball: interest rates keep dropping.
 
 Suddenly, those nice, safe CDs or savings accounts aren't providing the income you hoped for. You start asking yourself:
 - "If my savings are earning less, do I have enough income to fund all my dreams?"
@@ -255,7 +255,7 @@ This approach gives you flexibility as rates change while still capturing yield 
 
 ## Your Retirement Money Map: The Complete Recipe
 
-At Capital Wealth, we help Utah families create what we call a "retirement money map" – a comprehensive plan that coordinates all the ingredients of your financial feast.
+At Capital Wealth, we help Utah families create what we call a "retirement money map"  a comprehensive plan that coordinates all the ingredients of your financial feast.
 
 ### The Five-Step Utah Retirement Planning Process
 
@@ -295,7 +295,7 @@ Carlos and Maria Martinez, both 64, came to me concerned about their retirement 
 After running their retirement money map, we discovered they were in excellent financial shape. By optimizing their Social Security timing (Carlos waiting until age 70, Maria claiming at full retirement age) and implementing a systematic withdrawal strategy for their retirement accounts, we projected they could maintain their current lifestyle throughout retirement with money left over for their children and grandchildren.
 
 **The result:**
-"We went from losing sleep over money to sleeping peacefully," Carlos told me six months later. "Now we can focus on what really matters – time with our family and serving in our community."
+"We went from losing sleep over money to sleeping peacefully," Carlos told me six months later. "Now we can focus on what really matters  time with our family and serving in our community."
 
 ### The Thompson Story from Logan
 
@@ -426,7 +426,7 @@ As we finish our Thanksgiving feast and look ahead to the holiday season, now is
 
 ### The Thanksgiving Special Offer
 
-For our Retire Right Radio listeners, I'm extending a special Thanksgiving offer. For the next five callers who mention this blog post, we'll provide a complimentary retirement money map – a comprehensive analysis of your financial situation valued at $750.
+For our Retire Right Radio listeners, I'm extending a special Thanksgiving offer. For the next five callers who mention this blog post, we'll provide a complimentary retirement money map  a comprehensive analysis of your financial situation valued at $750.
 
 This retirement money map includes:
 - Analysis of all your income sources
@@ -459,11 +459,11 @@ Our offices are conveniently located to serve Utah families throughout the Wasat
 
 ## A Final Thanksgiving Reflection
 
-As I think about my grandfather, Bruno Zinni, and the legacy he tried to build for his family, I'm reminded that the best financial plans aren't just about numbers – they're about the values and traditions we pass down through generations.
+As I think about my grandfather, Bruno Zinni, and the legacy he tried to build for his family, I'm reminded that the best financial plans aren't just about numbers  they're about the values and traditions we pass down through generations.
 
 Just like the recipes that make our Thanksgiving meals special, your retirement plan should reflect your family's unique story, goals, and dreams. Whether you're looking forward to more time with grandchildren, pursuing travel adventures, or simply enjoying the peace of financial security, the right planning can make it all possible.
 
-This Thanksgiving, I'm grateful for the trust our clients place in us and for the opportunity to help Utah families retire with confidence and dignity. Your retirement should be a celebration of everything you've worked for – not a source of worry about whether your money will last.
+This Thanksgiving, I'm grateful for the trust our clients place in us and for the opportunity to help Utah families retire with confidence and dignity. Your retirement should be a celebration of everything you've worked for  not a source of worry about whether your money will last.
 
 Remember, the best time to plant a tree was 20 years ago. The second-best time is today. Whether you're 45 and just beginning to think seriously about retirement or 75 and wondering if your current plan is on track, it's never too early to start or too late to optimize.
 

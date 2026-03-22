@@ -27,7 +27,7 @@ Ever feel stuck in the daily grind, fighting traffic, working all day, and longi
 
 **The central question:** Are falling interest rates an opportunity or a threat to your retirement security?
 
-Mike Stevens recently shared insights from his visit to the World War II Museum in New Orleans, drawing parallels between how hope drove economic recovery during the Great Depression and today's anticipation of Federal Reserve rate cuts. Just as leadership during wartime instilled hope that turned the economy around, today's interest rate environment requires similar strategic thinking and hope—but tempered with practical planning.
+Mike Stevens recently shared insights from his visit to the World War II Museum in New Orleans, drawing parallels between how hope drove economic recovery during the Great Depression and today's anticipation of Federal Reserve rate cuts. Just as leadership during wartime instilled hope that turned the economy around, today's interest rate environment requires similar strategic thinking and hopebut tempered with practical planning.
 
 For Utah retirees, the stakes are particularly high. With the Federal Reserve expected to cut rates in the coming months, the impact on savings, investments, and retirement lifestyles will be profound. Whether you're living off fixed-income investments or managing a diversified portfolio, understanding these changes is crucial for protecting your financial future.
 
@@ -35,14 +35,14 @@ For Utah retirees, the stakes are particularly high. With the Federal Reserve ex
 
 ## Key Takeaways: Critical Numbers Every Utah Retiree Must Know
 
-**📊 Essential Data Points for Interest Rate Planning:**
+** Essential Data Points for Interest Rate Planning:**
 
-• **2% Inflation Target:** When inflation exceeds this threshold, fixed-income investments like CDs and bonds lose purchasing power—critical for Utah retirees dependent on "safe" investments
-• **Current Federal Funds Rate:** Expected cuts of 0.25-0.75% through 2025 could reduce CD and savings yields by $2,000-$6,000 annually for a $100,000 portfolio
-• **Average Utah Nursing Home Cost:** $110,000+ annually—rising costs that low-yield investments can't keep pace with
-• **Portfolio Volatility Risk:** Rate changes can cause 10-20% stock market swings, requiring proper diversification for Utah retirees
-• **Small Business Impact:** Higher borrowing costs can add $5,000-$15,000 annually in debt service for Utah entrepreneurs nearing retirement
-• **CD Ladder Strategy:** Staggered maturity dates can help Utah savers capture higher rates while maintaining liquidity—potentially adding 1-2% annual yield advantage
+ **2% Inflation Target:** When inflation exceeds this threshold, fixed-income investments like CDs and bonds lose purchasing powercritical for Utah retirees dependent on "safe" investments
+ **Current Federal Funds Rate:** Expected cuts of 0.25-0.75% through 2025 could reduce CD and savings yields by $2,000-$6,000 annually for a $100,000 portfolio
+ **Average Utah Nursing Home Cost:** $110,000+ annuallyrising costs that low-yield investments can't keep pace with
+ **Portfolio Volatility Risk:** Rate changes can cause 10-20% stock market swings, requiring proper diversification for Utah retirees
+ **Small Business Impact:** Higher borrowing costs can add $5,000-$15,000 annually in debt service for Utah entrepreneurs nearing retirement
+ **CD Ladder Strategy:** Staggered maturity dates can help Utah savers capture higher rates while maintaining liquiditypotentially adding 1-2% annual yield advantage
 
 ---
 
@@ -138,7 +138,7 @@ Mike Stevens emphasizes a critical point: "If inflation [goes] above 2%, it mean
 
 ---
 
-## Strategic Response: The Capital Wealth Retirement Money Map™ for Rate Changes
+## Strategic Response: The Capital Wealth Retirement Money Map� for Rate Changes
 
 ### Layer 1: Immediate Income Optimization
 
@@ -394,7 +394,7 @@ Mike Stevens' visit to the World War II Museum reminded him of a critical truth:
 
 **The bottom line:** Interest rates are just one factor in retirement planning. Utah retirees who maintain diversified strategies, stay informed about economic changes, and work with qualified professionals can navigate any rate environment successfully.
 
-Your retirement years should be the best of your life. Utah's combination of natural beauty, strong community, excellent healthcare, and favorable tax environment provides an ideal backdrop for retirement—regardless of interest rate cycles.
+Your retirement years should be the best of your life. Utah's combination of natural beauty, strong community, excellent healthcare, and favorable tax environment provides an ideal backdrop for retirementregardless of interest rate cycles.
 
 ---
 
@@ -416,7 +416,7 @@ Your retirement years should be the best of your life. Utah's combination of nat
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
 
-**Remember:** The best interest rate strategy isn't the most aggressive or the most conservative—it's the most appropriate for your specific Utah retirement goals.
+**Remember:** The best interest rate strategy isn't the most aggressive or the most conservativeit's the most appropriate for your specific Utah retirement goals.
 
 ---
 
@@ -432,7 +432,7 @@ Your retirement years should be the best of your life. Utah's combination of nat
 **A:** Nominal returns are the stated yield (like 4% on a CD). Real returns subtract inflation (if inflation is 3%, your real return is 1%). Utah retirees need to focus on real returns for lifestyle preservation.
 
 ### Q: Should Utah retirees consider moving to capture better interest rates?
-**A:** Utah's overall package—no Social Security tax, excellent healthcare, strong community, recreation opportunities—typically outweighs marginally higher rates available elsewhere.
+**A:** Utah's overall packageno Social Security tax, excellent healthcare, strong community, recreation opportunitiestypically outweighs marginally higher rates available elsewhere.
 
 ### Q: How often should I review my strategy during rate changes?
 **A:** Quarterly reviews during stable periods, monthly during periods of rapid change. However, avoid daily rate-watching which can lead to poor emotional decisions.

@@ -33,12 +33,12 @@ Whether you're approaching retirement or already living your golden years, the s
 
 ## **Key Takeaways: Critical Warning Signs**
 
-• **One-dimensional focus:** If your advisor only talks about investments and market returns, they're missing 80% of retirement planning
-• **Tax blindness:** Failing to coordinate withdrawals with tax brackets can cost Utah retirees $50,000+ annually in unnecessary taxes
-• **Social Security neglect:** Poor timing advice can mean a six-figure lifetime difference for married couples
-• **Healthcare planning gaps:** With Utah nursing homes averaging $110,000+ annually, ignoring long-term care is financial suicide
-• **Estate planning avoidance:** Improper beneficiary coordination and lack of legacy planning can devastate families during already difficult times
-• **Fee opacity:** Hidden costs and vague fee explanations are red flags - transparency builds trust, confusion destroys wealth
+ **One-dimensional focus:** If your advisor only talks about investments and market returns, they're missing 80% of retirement planning
+ **Tax blindness:** Failing to coordinate withdrawals with tax brackets can cost Utah retirees $50,000+ annually in unnecessary taxes
+ **Social Security neglect:** Poor timing advice can mean a six-figure lifetime difference for married couples
+ **Healthcare planning gaps:** With Utah nursing homes averaging $110,000+ annually, ignoring long-term care is financial suicide
+ **Estate planning avoidance:** Improper beneficiary coordination and lack of legacy planning can devastate families during already difficult times
+ **Fee opacity:** Hidden costs and vague fee explanations are red flags - transparency builds trust, confusion destroys wealth
 
 ---
 
@@ -199,7 +199,7 @@ Most Utah retirees have no idea what they're paying for financial advice. Mike S
 
 **Utah retirement reality:** Preservation and income matter more than aggressive growth once you stop working.
 
-**Capital Wealth's approach:** Using data and conversation to build personalized risk profiles through their Retirement Money Map™, which shows:
+**Capital Wealth's approach:** Using data and conversation to build personalized risk profiles through their Retirement Money Map�, which shows:
 - How much risk you think you're taking vs. actual risk
 - Morningstar analysis of portfolio composition
 - Balanced growth with protection strategies
@@ -402,7 +402,7 @@ Mike Stevens respects people who manage their own finances but notes: "Retiremen
 
 ## The Capital Wealth Difference: Why Utah Retirees Choose Professional Guidance
 
-### The Retirement Money Map™ Approach
+### The Retirement Money Map� Approach
 
 Capital Wealth's signature process addresses all critical retirement areas:
 
@@ -480,9 +480,9 @@ Your retirement should be the best years of your life. With Utah's unique advant
 
 ---
 
-## Special Offer: Complimentary Retirement Money Map™
+## Special Offer: Complimentary Retirement Money Map�
 
-**For the next five Utah retirees who call:** Complete Retirement Money Map™ analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
+**For the next five Utah retirees who call:** Complete Retirement Money Map� analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
 
 **What's included:**
 - Risk assessment using Morningstar data

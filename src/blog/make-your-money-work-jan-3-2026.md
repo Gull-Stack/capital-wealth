@@ -35,7 +35,7 @@ This episode offers an intimate look at Mike's journey from pre-med student to U
 
 ## Key Takeaways: Essential Financial Strategies for Utah Retirees
 
-**ðŸ’° The Retirement Planning Statistics That Matter:**
+** The Retirement Planning Statistics That Matter:**
 - **$4,000-$5,000 monthly:** Average assisted living costs in Utah
 - **$8,000-$10,000 monthly:** Utah nursing care costs (easily double assisted living)
 - **567 different combinations:** Social security filing strategies available to couples
@@ -43,7 +43,7 @@ This episode offers an intimate look at Mike's journey from pre-med student to U
 - **94% tax rate:** Historical peak income tax rate (1940s-60s) vs. today's historically low rates
 - **$36+ trillion:** Current federal deficit driving future tax increases
 
-**ðŸŽ¯ The Five Pillars of Utah Retirement Success:**
+** The Five Pillars of Utah Retirement Success:**
 1. **Written Income Plan:** Guaranteed monthly cash flow that lasts to age 100
 2. **Tax Optimization Strategy:** Taking advantage of today's "tax sale" environment  
 3. **Inflation Protection:** Maintaining purchasing power in Utah's growing economy
@@ -75,7 +75,7 @@ While dissecting cadavers in anatomy class, Mike realized his passion lay elsewh
 
 ---
 
-## The Retirement Money Mapâ„¢: Utah's Comprehensive Financial Strategy
+## The Retirement Money Map„: Utah's Comprehensive Financial Strategy
 
 ### Why Most Financial Advisors Fail Utah Retirees
 
@@ -516,8 +516,8 @@ While dissecting cadavers in anatomy class, Mike realized his passion lay elsewh
 ### Q: When should I start retirement distribution planning?
 **A:** The transition from accumulation to distribution planning typically begins in your late 50s to early 60s. However, tax planning and estate planning should start much earlier. The key is working with specialists who understand distribution, not just accumulation.
 
-### Q: What makes the Retirement Money Mapâ„¢ different?
-**A:** Unlike basic portfolio management, the Retirement Money Mapâ„¢ integrates five critical planning areas: income, taxes, inflation, healthcare, and legacy. It's designed specifically for distribution phase with stress-testing to age 100, giving Utah retirees confidence regardless of market conditions or longevity.
+### Q: What makes the Retirement Money Map„ different?
+**A:** Unlike basic portfolio management, the Retirement Money Map„ integrates five critical planning areas: income, taxes, inflation, healthcare, and legacy. It's designed specifically for distribution phase with stress-testing to age 100, giving Utah retirees confidence regardless of market conditions or longevity.
 
 ### Q: How do I know if my current advisor is right for retirement?
 **A:** Ask them about tax optimization, Social Security strategies, healthcare planning, and estate coordination. If their focus is primarily on investment returns rather than comprehensive distribution planning, you may need a retirement specialist.
@@ -555,7 +555,7 @@ Mike Stevens' journey from personal tragedy to Utah's most trusted retirement ad
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Mapâ„¢ analysis - a comprehensive review typically taking 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Map„ analysis - a comprehensive review typically taking 5-10 hours of professional analysis.
 
 **What's included:**
 - Complete income planning with stress-testing to age 100

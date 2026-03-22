@@ -16,7 +16,7 @@ tags:
 
 By Mike Stevens, Capital Wealth
 
-Every night across Utah, from the foothills of Park City to the growing communities of St. George, millions of Americans lie awake with the same terrifying thought: "What if I outlive my money?" This isn't just anxiety talking—it's the #1 retirement fear for 58% of Americans across all generations. And it's not an irrational fear when people are living well into their 90s and beyond, creating retirement spans of 30 years or more.
+Every night across Utah, from the foothills of Park City to the growing communities of St. George, millions of Americans lie awake with the same terrifying thought: "What if I outlive my money?" This isn't just anxiety talkingit's the #1 retirement fear for 58% of Americans across all generations. And it's not an irrational fear when people are living well into their 90s and beyond, creating retirement spans of 30 years or more.
 
 That's three decades of groceries, healthcare costs, and life to pay for without a regular paycheck. For Utah retirees, this challenge is magnified by our state's unique economic factors: rising housing costs, our active outdoor lifestyle that we want to maintain, and the reality that many of us want to travel and enjoy the adventure-rich retirement our beautiful state enables.
 
@@ -26,17 +26,17 @@ But here's what I want every Utah retiree to understand: the fear of running out
 
 Before diving into solutions, here are the essential facts every Utah retiree needs to know about modern retirement income planning:
 
-• **Longevity Reality:** A 65-year-old Utah couple has nearly a **50% chance** that one spouse will live to age 93 – that's almost a second adulthood requiring **30+ years** of financial planning
+ **Longevity Reality:** A 65-year-old Utah couple has nearly a **50% chance** that one spouse will live to age 93  that's almost a second adulthood requiring **30+ years** of financial planning
 
-• **Social Security Optimization:** Utah married couples have **567 different claiming combinations** – proper timing can add **$100,000-$300,000** to lifetime benefits while Utah's **no state tax on Social Security** saves additional thousands annually
+ **Social Security Optimization:** Utah married couples have **567 different claiming combinations**  proper timing can add **$100,000-$300,000** to lifetime benefits while Utah's **no state tax on Social Security** saves additional thousands annually
 
-• **Withdrawal Strategy:** The old **4% rule is obsolete** – modern retirees need dynamic strategies accounting for **go-go years** (higher spending), **slow-go years** (moderate spending), and **no-go years** (healthcare-focused spending)
+ **Withdrawal Strategy:** The old **4% rule is obsolete**  modern retirees need dynamic strategies accounting for **go-go years** (higher spending), **slow-go years** (moderate spending), and **no-go years** (healthcare-focused spending)
 
-• **Sequence Risk Protection:** **Early market losses + withdrawals** can devastate portfolios – Utah retirees need **protected growth accounts** to weather storms while maintaining lifestyle
+ **Sequence Risk Protection:** **Early market losses + withdrawals** can devastate portfolios  Utah retirees need **protected growth accounts** to weather storms while maintaining lifestyle
 
-• **Tax Efficiency:** With Utah's favorable retirement tax structure, strategic **Roth conversions** and **tax diversification** can save **$50,000-$200,000** over a 30-year retirement
+ **Tax Efficiency:** With Utah's favorable retirement tax structure, strategic **Roth conversions** and **tax diversification** can save **$50,000-$200,000** over a 30-year retirement
 
-• **Healthcare Planning:** **Medicare coordination** and **long-term care strategies** protect against the average **$165,000-$315,000** Utah couples spend on healthcare in retirement
+ **Healthcare Planning:** **Medicare coordination** and **long-term care strategies** protect against the average **$165,000-$315,000** Utah couples spend on healthcare in retirement
 
 ---
 
@@ -78,7 +78,7 @@ One of Utah's most significant but underutilized retirement advantages is our st
 
 ### The 567 Combinations Challenge
 
-"Here's a fun fact," I shared with listeners. "If you're married and filing jointly on your tax return, you now have literally 567 different Social Security claiming combinations." This isn't hyperbole—it's the mathematical reality of optimizing two people's benefits across various claiming ages, spousal benefits, and survivor benefit strategies.
+"Here's a fun fact," I shared with listeners. "If you're married and filing jointly on your tax return, you now have literally 567 different Social Security claiming combinations." This isn't hyperboleit's the mathematical reality of optimizing two people's benefits across various claiming ages, spousal benefits, and survivor benefit strategies.
 
 Consider this real-world Utah scenario:
 
@@ -96,7 +96,7 @@ Consider this real-world Utah scenario:
 - Jennifer claims at full retirement age: $2,100/month ($25,200/year)
 - Combined annual income: $72,816
 
-**The difference:** $28,296 more per year—that's enough to cover their Park City property taxes, HOA fees, utilities, and still have money left for season ski passes at Deer Valley.
+**The difference:** $28,296 more per yearthat's enough to cover their Park City property taxes, HOA fees, utilities, and still have money left for season ski passes at Deer Valley.
 
 ### Utah's Social Security Tax Advantage
 
@@ -129,7 +129,7 @@ After running their retirement money map analysis, we discovered that Carlos sho
 
 ## Beyond the 4% Rule: Modern Withdrawal Strategies
 
-For decades, the financial planning industry relied on the "4% rule"—withdraw 4% of your initial portfolio value in year one, then adjust for inflation annually. But as I explained to listeners, "That 4% rule was great back in the 1990s when interest rates were high and inflation was low. People weren't regularly living until 95, but today's retirement is completely different."
+For decades, the financial planning industry relied on the "4% rule"withdraw 4% of your initial portfolio value in year one, then adjust for inflation annually. But as I explained to listeners, "That 4% rule was great back in the 1990s when interest rates were high and inflation was low. People weren't regularly living until 95, but today's retirement is completely different."
 
 ### The Three Phases of Utah Retirement Spending
 
@@ -346,7 +346,7 @@ During our show, I revealed something that frustrates me about the Medicare insu
 **The solution:** At Capital Wealth, we partner with Medicare specialists who use national databases to identify the lowest-cost option for each client's specific location and needs.
 
 **Real example:** 
-Joan Williams from Murray was paying $347/month for Medicare Plan G. Using our Medicare analysis, we found an identical plan from a different carrier for $267/month—saving her $960 annually with no change in coverage.
+Joan Williams from Murray was paying $347/month for Medicare Plan G. Using our Medicare analysis, we found an identical plan from a different carrier for $267/monthsaving her $960 annually with no change in coverage.
 
 ### Long-Term Care Planning in Utah
 
@@ -382,17 +382,17 @@ Utah's geography creates unique long-term care considerations:
 
 ## The Psychology of Spending in Retirement
 
-One of the most challenging aspects of retirement planning isn't mathematical—it's psychological. After 40 years of accumulating wealth, suddenly flipping the switch to spending feels wrong.
+One of the most challenging aspects of retirement planning isn't mathematicalit's psychological. After 40 years of accumulating wealth, suddenly flipping the switch to spending feels wrong.
 
 ### The Mountain Climbing Analogy
 
-"I love this analogy," I shared with listeners. "Getting to the top requires one set of skills—strength, endurance, strategy. But the descent requires a completely different skill set. Here's the surprising part: more injuries happen on the descent than on the climb, and retirement is the same way."
+"I love this analogy," I shared with listeners. "Getting to the top requires one set of skillsstrength, endurance, strategy. But the descent requires a completely different skill set. Here's the surprising part: more injuries happen on the descent than on the climb, and retirement is the same way."
 
 People spend decades climbing the financial mountain but don't prepare for the safe descent. This is where mistakes happen, and money sits unused while retirees live more conservatively than necessary.
 
 ### The "Die with Zero" Philosophy (Utah Style)
 
-The concept of "dying with zero" doesn't mean literally hitting zero dollars—it means maximizing life experiences relative to your financial resources. For Utah retiires, this might mean:
+The concept of "dying with zero" doesn't mean literally hitting zero dollarsit means maximizing life experiences relative to your financial resources. For Utah retiires, this might mean:
 
 **Adventure-Based Spending:**
 - Taking that RV trip through all five Utah national parks
@@ -428,7 +428,7 @@ Within six months, Dr. Thompson was confidently spending $72,000 annually, takin
 
 ## Building Your Retirement Money Map: A Step-by-Step Approach
 
-At Capital Wealth, we help Utah families create what we call a "retirement money map"—a comprehensive blueprint that addresses every aspect of retirement income planning.
+At Capital Wealth, we help Utah families create what we call a "retirement money map"a comprehensive blueprint that addresses every aspect of retirement income planning.
 
 ### The Five-Phase Utah Retirement Planning Process
 
@@ -583,11 +583,11 @@ At Capital Wealth, we specialize in helping Utah families transition confidently
 - **Utah-specific expertise:** We understand the unique opportunities and challenges facing Utah retirees
 - **Comprehensive approach:** We address all aspects of retirement planning, not just investments
 - **Mathematical rigor:** Our strategies are based on detailed analysis, not rules of thumb
-- **Ongoing partnership:** Retirement planning doesn't end at retirement—we provide ongoing guidance through all phases
+- **Ongoing partnership:** Retirement planning doesn't end at retirementwe provide ongoing guidance through all phases
 
 ### Special Reader Offer
 
-For readers of this blog post, I'm extending a special offer. For the next five people who mention this article when calling, we'll provide a complimentary retirement money map analysis—a comprehensive review valued at $750.
+For readers of this blog post, I'm extending a special offer. For the next five people who mention this article when calling, we'll provide a complimentary retirement money map analysisa comprehensive review valued at $750.
 
 This analysis includes:
 - Social Security optimization strategy
@@ -650,7 +650,7 @@ Mark and Jennifer Wilson came to me three years into retirement, convinced they 
 
 ### The Chen Family from Draper
 
-David and Linda Chen represented a different challenge—high earners with substantial assets but complex tax situations requiring sophisticated planning.
+David and Linda Chen represented a different challengehigh earners with substantial assets but complex tax situations requiring sophisticated planning.
 
 **Their situation:**
 - Combined retirement assets: $2.3 million
@@ -678,7 +678,7 @@ Research shows that retirees with written financial plans report:
 - **78% better outcomes** in maintaining purchasing power over time
 - **85% greater satisfaction** with retirement experiences
 
-This isn't just correlation—proper planning creates measurable peace of mind.
+This isn't just correlationproper planning creates measurable peace of mind.
 
 ## A Personal Note: Why This Matters to Me
 
@@ -686,7 +686,7 @@ As someone who has guided hundreds of Utah families through retirement transitio
 
 My grandfather, Bruno Zinni, whose story I shared on our Thanksgiving special, understood something important: money is a tool to create security and happiness for the people we love. But it only works if we understand how to use it properly.
 
-In Utah, we have tremendous natural resources—our mountains, our national parks, our outdoor recreation opportunities. But our greatest resource is our people and the financial security that allows them to thrive in retirement.
+In Utah, we have tremendous natural resourcesour mountains, our national parks, our outdoor recreation opportunities. But our greatest resource is our people and the financial security that allows them to thrive in retirement.
 
 Don't let fear rob you of the retirement you've worked so hard to earn. The strategies exist to create unshakeable confidence in your financial future. The only question is whether you'll take action to implement them.
 

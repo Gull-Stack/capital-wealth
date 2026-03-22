@@ -27,7 +27,7 @@ Ever feel stuck in the daily grind, fighting traffic, working all day, and longi
 
 **The hard truth:** Most retirees fail not because they didn't save enough money, but because they built their retirement plans on unstable foundations.
 
-Mike Stevens shares the three essential pillars that determine whether your Utah retirement thrives or merely survives. These aren't just financial concepts—they're the difference between worrying about money every month and sleeping peacefully, knowing your future is secure.
+Mike Stevens shares the three essential pillars that determine whether your Utah retirement thrives or merely survives. These aren't just financial conceptsthey're the difference between worrying about money every month and sleeping peacefully, knowing your future is secure.
 
 Whether you're decades away from retirement or already living your golden years, understanding these three pillars could be the difference between running out of money and living your retirement dreams in Utah's exceptional environment.
 
@@ -60,11 +60,11 @@ The retirement landscape has transformed dramatically since our grandparents' er
 
 ## Key Takeaways: The Three Pillars Every Utah Retiree Must Master
 
-- **Tax-Efficient Strategies:** The most overlooked pillar—controlling how much money stays in your pocket versus going to the government
+- **Tax-Efficient Strategies:** The most overlooked pillarcontrolling how much money stays in your pocket versus going to the government
 - **Reliable Income Streams:** Creating a paycheck that lasts regardless of market conditions or longevity
 - **Strategic Investment Management:** Balancing growth and protection based on your life stage and goals
 - **The Utah Advantage:** Leveraging state-specific benefits while planning for rising healthcare costs ($315,000 average for couples)
-- **Written Planning:** Mental plans die with you—everything must be documented and revisited regularly
+- **Written Planning:** Mental plans die with youeverything must be documented and revisited regularly
 - **Coordination Strategy:** All three pillars must work in harmony; if one fails, the entire retirement plan is at risk
 
 ---
@@ -121,7 +121,7 @@ The retirement landscape has transformed dramatically since our grandparents' er
 
 **Modern reality:** Job-hopping culture means most Utah workers will never receive traditional pensions
 
-**If you have a pension:** Consider yourself lucky—you're part of a shrinking minority
+**If you have a pension:** Consider yourself luckyyou're part of a shrinking minority
 
 ### Building Multiple Income Sources in Utah
 
@@ -137,7 +137,7 @@ The retirement landscape has transformed dramatically since our grandparents' er
 - Bond ladders and CD strategies
 - Utah-focused real estate opportunities
 
-**The Capital Wealth Retirement Money Map™ Approach:**
+**The Capital Wealth Retirement Money Map� Approach:**
 
 **Layer 1: Essential Income (Must be guaranteed)**
 - Social Security
@@ -159,7 +159,7 @@ The retirement landscape has transformed dramatically since our grandparents' er
 
 ### Inflation Protection: The Hidden Retirement Killer
 
-**The 30-year problem:** Inflation has averaged 2.83% over the past decade, but healthcare costs rise 3.65% annually—significantly faster
+**The 30-year problem:** Inflation has averaged 2.83% over the past decade, but healthcare costs rise 3.65% annuallysignificantly faster
 
 **Utah healthcare planning:** 
 - Average Utah nursing home costs: $315,000+ for couples
@@ -252,7 +252,7 @@ Mike Stevens' father died unexpectedly at age 49. While he was an excellent plan
 
 **The problem:** When we ran a Morningstar analysis, both funds were essentially copies of each other, both tracking the S&P 500.
 
-**The risk:** If the S&P 500 declines, Carol's entire retirement drops proportionally—no diversification protection.
+**The risk:** If the S&P 500 declines, Carol's entire retirement drops proportionallyno diversification protection.
 
 **The solution:**
 - Diversify across asset classes
@@ -282,7 +282,7 @@ Mike Stevens' father died unexpectedly at age 49. While he was an excellent plan
 
 ### Mistake #3: Accessing Retirement Savings Too Early
 
-**Real example:** Neighbor at 47 cashing out 401(k) for home theater system—would face taxes plus 10% penalty
+**Real example:** Neighbor at 47 cashing out 401(k) for home theater systemwould face taxes plus 10% penalty
 
 **The Rule of 55 opportunity:** Leave money in 401(k) when retiring at 55+ to avoid 10% penalty
 
@@ -290,7 +290,7 @@ Mike Stevens' father died unexpectedly at age 49. While he was an excellent plan
 
 ### Mistake #2: Not Establishing Clear Retirement Budget (Expense Plan)
 
-**Mike's preference:** "Expense plan" instead of "budget"—sounds more positive
+**Mike's preference:** "Expense plan" instead of "budget"sounds more positive
 
 **The guardrail approach:**
 - Minimum needs: Essential monthly expenses that must be covered
@@ -338,7 +338,7 @@ Mike Stevens' father died unexpectedly at age 49. While he was an excellent plan
 
 **Utility costs:** Four-season climate requires heating and cooling planning
 
-**Recreation costs:** Utah's outdoor paradise isn't free—budget for activities
+**Recreation costs:** Utah's outdoor paradise isn't freebudget for activities
 
 ### Utah Estate Planning Considerations
 
@@ -382,7 +382,7 @@ Mike Stevens' father died unexpectedly at age 49. While he was an excellent plan
 
 ---
 
-## The Capital Wealth Retirement Money Map™: Your Utah Advantage
+## The Capital Wealth Retirement Money Map�: Your Utah Advantage
 
 ### What Makes This Planning Different
 
@@ -507,7 +507,7 @@ Mike Stevens' father died unexpectedly at age 49. While he was an excellent plan
 
 ## Conclusion: Your Utah Retirement Foundation
 
-The three pillars of retirement success—tax-efficient strategies, reliable income streams, and strategic investment management—work together like the foundation of your home. Miss one pillar, and the entire structure becomes unstable.
+The three pillars of retirement successtax-efficient strategies, reliable income streams, and strategic investment managementwork together like the foundation of your home. Miss one pillar, and the entire structure becomes unstable.
 
 **Utah provides unique advantages:** No Social Security tax, excellent healthcare, world-class recreation, and strong family communities. But these advantages only benefit retirees who plan properly to leverage them.
 
@@ -528,7 +528,7 @@ Your retirement should be the best years of your life. With Utah's advantages an
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map™ analysis—a comprehensive review typically taking 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Map� analysisa comprehensive review typically taking 5-10 hours of professional analysis.
 
 **What's included:**
 - Three-pillar stability assessment
@@ -543,7 +543,7 @@ Your retirement should be the best years of your life. With Utah's advantages an
 - **Text:** "VISIT" to 801-210-5500  
 - **Website:** capitalwealth.com
 
-**Remember:** The strongest retirement plans aren't built on hope—they're built on solid foundations.
+**Remember:** The strongest retirement plans aren't built on hopethey're built on solid foundations.
 
 ---
 
@@ -562,7 +562,7 @@ Your retirement should be the best years of your life. With Utah's advantages an
 **A:** Current estimates suggest $315,000 after taxes for the average couple. Utah's excellent healthcare systems provide great value, but costs continue rising faster than general inflation.
 
 ### Q: Is it too late to improve my retirement plan if I'm already retired?
-**A:** It's never too late! Many retirees can save thousands in taxes, optimize income streams, and improve their financial security through proper planning—even years into retirement.
+**A:** It's never too late! Many retirees can save thousands in taxes, optimize income streams, and improve their financial security through proper planningeven years into retirement.
 
 ### Q: How often should I review my three-pillar retirement plan?
 **A:** Twice yearly at minimum, with additional reviews triggered by major life changes, tax law changes, or significant market events. Your plan should evolve as you move through different retirement phases.

@@ -29,7 +29,7 @@ Ever feel stuck in the daily grind, battling traffic, working all day, and longi
 
 **Here's the reality:** With the right preparation, market corrections don't have to derail your financial future.
 
-As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until you get punched in the face"* — or as Mike Tyson might say. Once volatility shows up, it's already too late to start thinking clearly.
+As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until you get punched in the face"*  or as Mike Tyson might say. Once volatility shows up, it's already too late to start thinking clearly.
 
 ---
 
@@ -38,7 +38,7 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 - **March 2020 Reality Check:** The S&P 500 fell 34% in one month, then finished the year +16%
 - **Emergency Room Spike:** Medical visits actually increase during market downturns due to stress-related symptoms
 - **Social Security Complexity:** 567 different filing combinations exist for married couples
-- **Volatility Frequency:** Market corrections happen regularly — they're normal, not broken
+- **Volatility Frequency:** Market corrections happen regularly  they're normal, not broken
 - **Recovery Pattern:** Markets tend to recover quickly and unpredictably, often when fear is still high
 - **Utah Tax Advantage:** No state tax on Social Security benefits provides additional retirement security
 
@@ -55,11 +55,11 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 - **Healthcare Costs:** Intermountain Healthcare and University of Utah Hospital systems require strategic budgeting
 - **Recreation Expenses:** Utah's world-class skiing and national parks create unique lifestyle costs
 
-**The Solution:** A good withdrawal strategy acts like paycheck replacement — intentional, predictable, and tax-aware. When income is coordinated properly, your money lasts longer, stress levels decrease, and retirement becomes more enjoyable.
+**The Solution:** A good withdrawal strategy acts like paycheck replacement  intentional, predictable, and tax-aware. When income is coordinated properly, your money lasts longer, stress levels decrease, and retirement becomes more enjoyable.
 
 ### 2. Selling Investments During Market Downturns
 
-**The Emotional Trap:** Nobody likes seeing their account balance dip. During market corrections, many Utah retirees think, "2008 all over again — I can't afford to lose this much money."
+**The Emotional Trap:** Nobody likes seeing their account balance dip. During market corrections, many Utah retirees think, "2008 all over again  I can't afford to lose this much money."
 
 **Real-World Example:** In March 2020, when COVID first hit, the S&P 500 fell 34% in one month. Investors who panic-sold locked in massive losses. By year-end, the market had recovered to finish +16%.
 
@@ -68,13 +68,13 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 - **Protected Growth Accounts:** Use index annuities for market downturns
 - **Opportunity Mindset:** Understand that market drops create buying opportunities
 
-**Capital Wealth Approach:** "When the market goes down, we will do this" — having a predetermined response prevents emotional decision-making.
+**Capital Wealth Approach:** "When the market goes down, we will do this"  having a predetermined response prevents emotional decision-making.
 
 ### 3. Poor Social Security Timing Decisions
 
 **The Complexity:** With 567 different filing combinations for married couples, Social Security isn't just flipping a switch. Many Utah retirees file too early, permanently reducing monthly benefits.
 
-**Real Client Story:** Mike Stevens met with a 74-year-old Utah couple. The husband thought his non-working wife couldn't receive Social Security. **She was eligible for 50% of his benefit** — an additional $1,200-$1,300 monthly that transformed their quality of life, enabling travel to visit children and grandchildren.
+**Real Client Story:** Mike Stevens met with a 74-year-old Utah couple. The husband thought his non-working wife couldn't receive Social Security. **She was eligible for 50% of his benefit**  an additional $1,200-$1,300 monthly that transformed their quality of life, enabling travel to visit children and grandchildren.
 
 **Utah-Specific Advantages:**
 - **No State Tax:** Utah doesn't tax Social Security benefits
@@ -88,7 +88,7 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 
 ### 4. Medicare Plan Neglect
 
-**The Annual Challenge:** Medicare plans change every year — premiums, coverage details, and prescription drug lists all evolve. Many Utah retirees choose a plan once and never review it again.
+**The Annual Challenge:** Medicare plans change every year  premiums, coverage details, and prescription drug lists all evolve. Many Utah retirees choose a plan once and never review it again.
 
 **Utah Healthcare Landscape:**
 - **Intermountain Healthcare** dominance affects plan choices
@@ -121,7 +121,7 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 
 ### Layer 1: Core Stability Holdings
 
-**Foundation Assets:** These aren't meant to be exciting — they're meant to be dependable. Utah retirees need assets they won't panic about during bad market weeks.
+**Foundation Assets:** These aren't meant to be exciting  they're meant to be dependable. Utah retirees need assets they won't panic about during bad market weeks.
 
 **Utah-Appropriate Stability Options:**
 - **Municipal Bonds:** Utah municipal bonds provide tax advantages for residents
@@ -174,7 +174,7 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 
 **Preventing Self-Sabotage:** The written strategy helps avoid "renegotiating your plan with yourself at exactly the wrong moment."
 
-**Capital Wealth's Retirement Money Map:** Clients often call asking to "buy" a Retirement Money Map. They're not for sale — they're included with planning relationships or available complimentary for prospective clients.
+**Capital Wealth's Retirement Money Map:** Clients often call asking to "buy" a Retirement Money Map. They're not for sale  they're included with planning relationships or available complimentary for prospective clients.
 
 ---
 
@@ -215,7 +215,7 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 
 ### Estate Planning and Legacy Considerations
 
-**The Fruitcake Problem:** Estate plans have a lot in common with fruitcake — they don't age well sitting around. Laws change, family situations evolve, and account values grow.
+**The Fruitcake Problem:** Estate plans have a lot in common with fruitcake  they don't age well sitting around. Laws change, family situations evolve, and account values grow.
 
 **Year-End Review Checklist:**
 - **Beneficiary Updates:** Ensure accounts reflect current intentions
@@ -228,7 +228,7 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 - **Charitable Giving:** Qualified charitable distributions from IRAs
 - **Legacy Planning:** Family clarity prevents conflicts
 
-**Critical Penalties:** RMD mistakes carry a 25% penalty plus taxes owed — the largest rate in the tax code.
+**Critical Penalties:** RMD mistakes carry a 25% penalty plus taxes owed  the largest rate in the tax code.
 
 ---
 
@@ -417,7 +417,7 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 
 ### Q: How much volatility should I expect in retirement?
 
-**A:** Market corrections of 10% or more happen regularly — typically every 1-2 years. Larger corrections of 20%+ occur every 3-5 years on average. The key is having a plan that doesn't require selling during these periods.
+**A:** Market corrections of 10% or more happen regularly  typically every 1-2 years. Larger corrections of 20%+ occur every 3-5 years on average. The key is having a plan that doesn't require selling during these periods.
 
 ### Q: Is Utah a good state for retirement?
 
@@ -488,13 +488,13 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 
 ## Conclusion: Retiring Right in Utah
 
-Market volatility is inevitable, but being derailed by it is optional. Utah retirees have significant advantages — no Social Security taxation, excellent healthcare systems, lower cost of living than coastal areas, and a culture that values preparation and family support.
+Market volatility is inevitable, but being derailed by it is optional. Utah retirees have significant advantages  no Social Security taxation, excellent healthcare systems, lower cost of living than coastal areas, and a culture that values preparation and family support.
 
 **The key insight:** Preparation isn't about predicting the next market crash. It's about building a plan that doesn't fall apart when markets get choppy.
 
 **Remember Mike Tyson's wisdom:** Everyone has a plan until they get punched in the face. But with proper preparation, market volatility becomes something your plan was built to handle rather than something that destroys your retirement dreams.
 
-**Your Utah retirement should be the best years of your life.** Don't let fear of market volatility prevent you from enjoying the freedom you've worked decades to achieve. With the right preparation, you can weather any storm while still pursuing your dreams — whether that's skiing Park City powder, exploring Utah's National Parks, or simply enjoying time with family and grandchildren.
+**Your Utah retirement should be the best years of your life.** Don't let fear of market volatility prevent you from enjoying the freedom you've worked decades to achieve. With the right preparation, you can weather any storm while still pursuing your dreams  whether that's skiing Park City powder, exploring Utah's National Parks, or simply enjoying time with family and grandchildren.
 
 ---
 

@@ -14,7 +14,7 @@ You wake up, get ready for work, hop in your car, fight that traffic, and drive 
 
 **How long do you have to keep doing this? When can you retire?**
 
-If you're like most people, Social Security is going to be a very important part of your retirement. But how confident are you that Social Security is going to be there for you? A lot of Americans are pessimistic about it — and according to new research, they have good reason for concern.
+If you're like most people, Social Security is going to be a very important part of your retirement. But how confident are you that Social Security is going to be there for you? A lot of Americans are pessimistic about it  and according to new research, they have good reason for concern.
 
 At Capital Wealth, our goal is to prepare people for a great retirement. You worked hard for this moment. Let us give you confidence to enjoy your future.
 
@@ -22,11 +22,11 @@ At Capital Wealth, our goal is to prepare people for a great retirement. You wor
 
 ## The Social Security Reality Check: What New Research Reveals
 
-### Americans Are Worried — And Rightfully So
+### Americans Are Worried  And Rightfully So
 
 The Nationwide Retirement Institute recently surveyed Americans on retirement issues, specifically regarding Social Security. The findings are alarming:
 
-**📊 Key Survey Results:**
+** Key Survey Results:**
 - **Nearly 75% of adults** worry about the Social Security system running out of funding in their lifetime
 - **1 in 4 Americans believe** they will not get a dime of Social Security benefits they've earned
 - **More than half of respondents** don't know ways to help maximize their Social Security benefits
@@ -41,7 +41,7 @@ Here's the real problem: Most Americans have a lot to learn when it comes to Soc
 **Real-World Example:**
 Just recently, a gentleman came into our office telling me about his Social Security benefits and his wife's much lower benefits. When I asked about spousal benefits, he said, "What the heck is spousal benefit?"
 
-His wife was eligible for up to 50% of his primary insurance amount as a spousal benefit — an additional **$491 more per month** than she was already receiving. That's nearly $6,000 per year in "free money" they were leaving on the table.
+His wife was eligible for up to 50% of his primary insurance amount as a spousal benefit  an additional **$491 more per month** than she was already receiving. That's nearly $6,000 per year in "free money" they were leaving on the table.
 
 **The sobering truth:** Social Security won't call you to optimize your benefits. There are 567+ legitimate ways to file if you're married, and they won't tell you which one is best.
 
@@ -49,15 +49,15 @@ His wife was eligible for up to 50% of his primary insurance amount as a spousal
 
 ## Will Social Security Survive? A Professional Perspective
 
-### The Program Won't Disappear — But Changes Are Coming
+### The Program Won't Disappear  But Changes Are Coming
 
 Fear of the program going away completely is overblown. Social Security isn't going to disappear. However, modifications are absolutely necessary.
 
 **Expected Changes:**
-- **Retirement age increases** — Currently, full retirement age is 67 for most people. For younger workers, this will likely increase to 70-73
-- **Benefit reductions** — Without action, benefits may be reduced by 20-25%
-- **Increased taxation** — More Social Security benefits may become taxable
-- **Higher contribution limits** — The wage cap for Social Security taxes will likely increase
+- **Retirement age increases**  Currently, full retirement age is 67 for most people. For younger workers, this will likely increase to 70-73
+- **Benefit reductions**  Without action, benefits may be reduced by 20-25%
+- **Increased taxation**  More Social Security benefits may become taxable
+- **Higher contribution limits**  The wage cap for Social Security taxes will likely increase
 
 **Personal perspective:** I'm just shy of 45 years old, and my full retirement age is 67. I don't think that's sustainable. My generation will likely see full retirement age pushed to 70 or beyond.
 
@@ -65,7 +65,7 @@ Fear of the program going away completely is overblown. Social Security isn't go
 
 ## Social Security Optimization Strategies
 
-### Don't Plan on Fear — Plan on Strategy
+### Don't Plan on Fear  Plan on Strategy
 
 You've paid into the Social Security program, so it would be too valuable to ignore. When done right, Social Security can be an amazing tool that could put tens or even hundreds of thousands of dollars more back in your pocket over your lifetime.
 
@@ -94,9 +94,9 @@ You've paid into the Social Security program, so it would be too valuable to ign
 
 ### The Foundation: A Portfolio is Not a Plan
 
-Think about a jigsaw puzzle with a thousand pieces. That's what retirement planning feels like to most people — overwhelming. But when you have someone who's done that puzzle hundreds of times, they know what the picture looks like and can work alongside you.
+Think about a jigsaw puzzle with a thousand pieces. That's what retirement planning feels like to most people  overwhelming. But when you have someone who's done that puzzle hundreds of times, they know what the picture looks like and can work alongside you.
 
-### The Retirement Money Map™ Approach
+### The Retirement Money Map� Approach
 
 Our proprietary planning process starts at age 100 and reverse engineers your retirement:
 
@@ -130,7 +130,7 @@ For people who have been dedicated to saving for 20, 30, or 40 years, it's emoti
 - **Need:** $6,000/month
 - **Gap:** $1,000/month deficit
 
-That red deficit number causes panic. But it's 100% normal! Your employer isn't paying you anymore — **you're paying yourself** from your retirement savings.
+That red deficit number causes panic. But it's 100% normal! Your employer isn't paying you anymore  **you're paying yourself** from your retirement savings.
 
 ### Overcoming Retirement Anxiety
 
@@ -294,7 +294,7 @@ The old advice of "don't take out more than 4%" is dead. Inflation alone has bro
 
 ### Why Professional Guidance Matters
 
-**Personal Story:** My dad passed away unexpectedly at 49. He did all the investments, taxes, and insurance because he wanted to make it great for my family. But when he passed, my mom was in the dark about the finances. That's how I got thrown into this industry — I had to learn to take care of my mom.
+**Personal Story:** My dad passed away unexpectedly at 49. He did all the investments, taxes, and insurance because he wanted to make it great for my family. But when he passed, my mom was in the dark about the finances. That's how I got thrown into this industry  I had to learn to take care of my mom.
 
 ### What to Look for in an Advisor
 
@@ -449,7 +449,7 @@ Contact Capital Wealth for a complimentary consultation:
 - **Text:** Send "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
 
-*For the next five callers, we'll provide a complimentary Retirement Money Map™ analysis — our proprietary planning tool that shows you exactly where you stand and what your future could look like.*
+*For the next five callers, we'll provide a complimentary Retirement Money Map� analysis  our proprietary planning tool that shows you exactly where you stand and what your future could look like.*
 
 ---
 
@@ -471,7 +471,7 @@ A: This varies by age, risk tolerance, and time horizon. Generally, younger empl
 A: Consider your current tax bracket vs. expected retirement bracket, need for tax diversification, and legacy planning goals. Many federal employees benefit from a mix of both.
 
 **Q: How do I calculate my FERS pension?**
-A: FERS pension = Years of Service × High-3 Salary × Multiplier (usually 1% or 1.1%). The actual calculation has nuances based on your retirement age and service length.
+A: FERS pension = Years of Service � High-3 Salary � Multiplier (usually 1% or 1.1%). The actual calculation has nuances based on your retirement age and service length.
 
 **Q: What happens to my TSP when I retire?**
 A: You can leave it in TSP, roll it to an IRA, take distributions, or buy an annuity. Each option has different advantages depending on your situation.
@@ -480,6 +480,6 @@ A: You can leave it in TSP, roll it to an IRA, take distributions, or buy an ann
 
 *This content is based on the September 14, 2024 episode of Retire Right Radio. For personalized advice regarding your specific situation, please consult with a qualified financial advisor specializing in federal employee benefits.*
 
-**About the Author:** Mike Stevens is the founder and president of Capital Wealth, specializing in retirement planning for federal employees. He hosts Retire Right Radio every weekend on KAOX, KID, KNRS, and KSL. His expertise comes from both professional experience and personal necessity — after his father's unexpected death at 49, Mike stepped into the financial industry to help his mother navigate retirement planning.
+**About the Author:** Mike Stevens is the founder and president of Capital Wealth, specializing in retirement planning for federal employees. He hosts Retire Right Radio every weekend on KAOX, KID, KNRS, and KSL. His expertise comes from both professional experience and personal necessity  after his father's unexpected death at 49, Mike stepped into the financial industry to help his mother navigate retirement planning.
 
 **Advisory Services:** Advisory services offered through Capital Wealth LLC, a State of Utah Registered Investment Advisor. Investing involves risk, including the potential loss of principal. This article is for informational purposes only and should not be considered personalized investment advice.

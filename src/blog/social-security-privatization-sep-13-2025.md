@@ -27,7 +27,7 @@ Ever feel stuck in the daily grind, fighting traffic, working all day, and longi
 
 **The big question:** Could Social Security really be privatized, and what would that mean for Utah retirees who have built their retirement plans around the current system?
 
-Mike Stevens recently discussed the emerging "Trump accounts" that would allow Americans to direct a portion of their Social Security contributions into personal investment accounts. This represents a fundamental shift from government-controlled benefits to individual ownership—similar to how pensions evolved into 401(k)s decades ago.
+Mike Stevens recently discussed the emerging "Trump accounts" that would allow Americans to direct a portion of their Social Security contributions into personal investment accounts. This represents a fundamental shift from government-controlled benefits to individual ownershipsimilar to how pensions evolved into 401(k)s decades ago.
 
 For Utah retirees, this potential change carries unique implications. With our state's advantageous tax treatment of retirement income, strong family support networks, and conservative financial values, understanding how privatization might affect your retirement security is crucial for protecting your golden years.
 
@@ -35,14 +35,14 @@ For Utah retirees, this potential change carries unique implications. With our s
 
 ## Key Takeaways: Essential Data Points for Social Security Privatization Planning
 
-**📊 Critical Numbers Every Utah Retiree Must Understand:**
+** Critical Numbers Every Utah Retiree Must Understand:**
 
-• **2035 Trust Fund Insolvency:** Current Social Security reserves projected to be depleted, potentially reducing benefits by 20-25% without Congressional action
-• **Personal Account Potential:** New "Trump accounts" could allow 2-4% of wages to be invested individually instead of flowing to Social Security trust fund
-• **Utah Tax Advantage:** No state taxation of Social Security benefits saves couples $3,000-$5,000+ annually compared to surrounding states
-• **401(k) Participation Reality:** 40% of eligible workers don't contribute to employer plans—indicating potential challenges with mandated personal investment responsibility
-• **Average Social Security Benefit:** $1,907 monthly for Utah retirees (January 2025), representing 30-40% of pre-retirement income for most workers
-• **Professional Management Value:** Properly managed retirement accounts historically outperform by 1.5-3% annually compared to default or self-directed options
+ **2035 Trust Fund Insolvency:** Current Social Security reserves projected to be depleted, potentially reducing benefits by 20-25% without Congressional action
+ **Personal Account Potential:** New "Trump accounts" could allow 2-4% of wages to be invested individually instead of flowing to Social Security trust fund
+ **Utah Tax Advantage:** No state taxation of Social Security benefits saves couples $3,000-$5,000+ annually compared to surrounding states
+ **401(k) Participation Reality:** 40% of eligible workers don't contribute to employer plansindicating potential challenges with mandated personal investment responsibility
+ **Average Social Security Benefit:** $1,907 monthly for Utah retirees (January 2025), representing 30-40% of pre-retirement income for most workers
+ **Professional Management Value:** Properly managed retirement accounts historically outperform by 1.5-3% annually compared to default or self-directed options
 
 ---
 
@@ -439,11 +439,11 @@ The potential privatization of Social Security through personal investment accou
 4. **Plan for Integration**: Ensure personal accounts fit within comprehensive retirement strategies
 5. **Consider Family Impact**: Remember that personal accounts become inheritable family assets
 
-Mike Stevens' insight rings true: "The key is to make sure that those dollars fit into the larger retirement plan, alongside your IRAs, 401(k), etc." Personal investment accounts aren't a replacement for comprehensive retirement planning—they're an additional tool that requires thoughtful integration.
+Mike Stevens' insight rings true: "The key is to make sure that those dollars fit into the larger retirement plan, alongside your IRAs, 401(k), etc." Personal investment accounts aren't a replacement for comprehensive retirement planningthey're an additional tool that requires thoughtful integration.
 
 **The Utah Opportunity**: Our state's combination of conservative financial values, strong family networks, excellent healthcare systems, and favorable tax treatment creates an ideal environment for successfully managing personal investment accounts. With proper education, professional guidance, and careful coordination with existing retirement strategies, Utah retirees can benefit from increased personal ownership while maintaining the security that Social Security provides.
 
-The choice between government-controlled and personally-directed Social Security isn't about abandoning security—it's about adding ownership and control to your retirement foundation. For Utah families, this represents an opportunity to build multi-generational wealth while preserving the safety net that Social Security provides.
+The choice between government-controlled and personally-directed Social Security isn't about abandoning securityit's about adding ownership and control to your retirement foundation. For Utah families, this represents an opportunity to build multi-generational wealth while preserving the safety net that Social Security provides.
 
 ---
 
@@ -465,7 +465,7 @@ The choice between government-controlled and personally-directed Social Security
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
 
-**Remember:** The best Social Security strategy isn't the most aggressive or the most conservative—it's the one that fits your Utah retirement goals and family values.
+**Remember:** The best Social Security strategy isn't the most aggressive or the most conservativeit's the one that fits your Utah retirement goals and family values.
 
 ---
 
@@ -478,7 +478,7 @@ The choice between government-controlled and personally-directed Social Security
 **A:** Personal account withdrawals would be subject to Utah income tax, unlike current Social Security benefits which Utah doesn't tax. This requires careful tax planning coordination.
 
 ### Q: What happens to personal investment accounts if I die before retirement?
-**A:** Unlike Social Security benefits that generally end at death, personal accounts become inheritable assets that pass to your beneficiaries—a significant advantage for Utah families.
+**A:** Unlike Social Security benefits that generally end at death, personal accounts become inheritable assets that pass to your beneficiariesa significant advantage for Utah families.
 
 ### Q: How much investment knowledge do I need to manage personal accounts successfully?
 **A:** Basic understanding helps, but Mike Stevens emphasizes working with financial professionals: "That's why working with a financial professional, I believe, is really going to make the difference."

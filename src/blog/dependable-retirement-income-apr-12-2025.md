@@ -30,7 +30,7 @@ The challenge isn't just mathematical; it's emotional. As Mike Stevens, presiden
 
 ---
 
-## 🔑 Key Takeaways
+##  Key Takeaways
 
 > **Market Reality Check:** Healthy markets naturally cycle up and down - expecting continuous growth is unrealistic and dangerous for retirement planning
 > **Income Foundation:** Retirees need guaranteed income sources as the bedrock of their retirement strategy, not market-dependent portfolios alone
@@ -359,11 +359,11 @@ The retirement money map includes:
 
 **Don't let market volatility dictate your retirement lifestyle.** Create a plan that works regardless of market conditions.
 
-📞 **Call:** 801-210-5500
-📱 **Text "VISIT"** to 801-210-5500
-🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
+ **Call:** 801-210-5500
+� **Text "VISIT"** to 801-210-5500
+ **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth — helping Utah families retire right since 2012.*
+*Capital Wealth  helping Utah families retire right since 2012.*
 
 ---
 

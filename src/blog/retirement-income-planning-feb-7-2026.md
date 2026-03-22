@@ -25,7 +25,7 @@ tags:
 
 ## Introduction: When Dreams of Freedom Meet Financial Reality
 
-Imagine a life where you wake up when you want, travel whenever the mood strikes, and truly savor every single day on your own terms. For Utah retirees, this isn't just a dream—it can be reality with the right income planning strategy.
+Imagine a life where you wake up when you want, travel whenever the mood strikes, and truly savor every single day on your own terms. For Utah retirees, this isn't just a dreamit can be reality with the right income planning strategy.
 
 **But here's the sobering truth:** The traditional retirement model is dead.
 
@@ -41,9 +41,9 @@ This episode reveals how Utah retirees can create multiple income streams, stres
 
 ### What Is Your "Enough Number"?
 
-**The critical first step:** Most people spend their working life chasing a moving target—more income, bigger house, nicer car, better vacations. But if you're considering early retirement, you need to stop and ask: **"How much is actually enough for me to be happy?"**
+**The critical first step:** Most people spend their working life chasing a moving targetmore income, bigger house, nicer car, better vacations. But if you're considering early retirement, you need to stop and ask: **"How much is actually enough for me to be happy?"**
 
-**Capital Wealth's approach:** Help clients define their "enough number" clearly—not what neighbors need, not what social media says retirement should look like, but what YOU need to live meaningfully and comfortably.
+**Capital Wealth's approach:** Help clients define their "enough number" clearlynot what neighbors need, not what social media says retirement should look like, but what YOU need to live meaningfully and comfortably.
 
 ### The Practice Phase: Test-Driving Your Retirement
 
@@ -87,7 +87,7 @@ This episode reveals how Utah retirees can create multiple income streams, stres
 
 ### From Stable Stool to Dangerous Pogo Stick
 
-**Mike Stevens' analogy:** "Instead of a sturdy three-legged stool, most people are balancing retirement on two things—personal savings and Social Security. When savings are primarily in volatile stocks, that stool doesn't just wobble, it becomes a pogo stick with you on top."
+**Mike Stevens' analogy:** "Instead of a sturdy three-legged stool, most people are balancing retirement on two thingspersonal savings and Social Security. When savings are primarily in volatile stocks, that stool doesn't just wobble, it becomes a pogo stick with you on top."
 
 **The risk transfer:** Companies no longer promise lifetime income. YOU must:
 - Pick investments
@@ -97,7 +97,7 @@ This episode reveals how Utah retirees can create multiple income streams, stres
 - Worry about inflation
 - Manage withdrawal rates
 
-**The psychological impact:** Investing during accumulation is completely different from generating income during retirement. It's not just "grow-grow-grow"—it's "how do we smartly and intentionally take money out?"
+**The psychological impact:** Investing during accumulation is completely different from generating income during retirement. It's not just "grow-grow-grow"it's "how do we smartly and intentionally take money out?"
 
 ---
 
@@ -207,11 +207,11 @@ This episode reveals how Utah retirees can create multiple income streams, stres
 
 ### Strategic Tax Planning for Utah Retirees
 
-**The new reality:** Retirement planning is no longer just about investments—it's about when and how you take income.
+**The new reality:** Retirement planning is no longer just about investmentsit's about when and how you take income.
 
 **Tax planning benefits:** Paying less in taxes over your lifetime could dramatically increase how long your retirement money lasts.
 
-**Required approach:** Tax planning isn't optional anymore—it's required for sustainable retirement income.
+**Required approach:** Tax planning isn't optional anymoreit's required for sustainable retirement income.
 
 ---
 
@@ -235,7 +235,7 @@ This episode reveals how Utah retirees can create multiple income streams, stres
 - Healthcare cost integration
 - Stress-testing for various scenarios
 
-### Capital Wealth's Retirement Money Map™
+### Capital Wealth's Retirement Money Map�
 
 **Comprehensive approach:**
 - Income sources coordination
@@ -333,7 +333,7 @@ This episode reveals how Utah retirees can create multiple income streams, stres
 
 ### Beyond Just Tax Efficiency
 
-**The uncomfortable truth:** Even families who plan to spend all their money often leave something behind—sometimes causing confusion and stress for heirs.
+**The uncomfortable truth:** Even families who plan to spend all their money often leave something behindsometimes causing confusion and stress for heirs.
 
 **The alternative:** Families with moderate assets but clear instructions create gratitude rather than burden.
 
@@ -518,11 +518,11 @@ Remember: accumulation is just one step of your journey. The goal is enjoying th
 
 ---
 
-## Take Action: Complimentary Retirement Money Map™
+## Take Action: Complimentary Retirement Money Map�
 
 **For Utah residents ready to build a comprehensive retirement income plan:**
 
-Capital Wealth offers complimentary Retirement Money Map™ analysis for qualifying individuals. This comprehensive review typically takes 5-10 hours of professional analysis and includes:
+Capital Wealth offers complimentary Retirement Money Map� analysis for qualifying individuals. This comprehensive review typically takes 5-10 hours of professional analysis and includes:
 
 - Income source coordination and optimization
 - Tax-efficient withdrawal strategy development

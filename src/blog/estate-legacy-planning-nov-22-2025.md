@@ -33,12 +33,12 @@ This isn't just about money - it's about protecting your family when they need i
 
 ## **Key Takeaways: Estate Planning Essentials**
 
-• **Catastrophic mistake #1:** 74% of Americans have no estate plan - including many Utah families with substantial assets who think they "don't need it yet"
-• **Power of Attorney crisis:** Without medical power of attorney, families can't make life-or-death decisions, leaving loved ones financially responsible for indefinite life support costs
-• **Beneficiary disasters:** Ex-spouses, outdated designations, and forgotten accounts regularly hijack family legacies worth hundreds of thousands
-• **Tax time bomb:** Current estate tax exemptions of $12-13 million won't last forever - history shows these limits can drop to $2-3 million with 40% taxes above that threshold
-• **Professional advantage:** Families working with comprehensive financial advisors are twice as likely to complete estate planning within two years
-• **Utah benefits:** No state estate taxes and streamlined probate process give Utah families significant advantages - if planned properly
+ **Catastrophic mistake #1:** 74% of Americans have no estate plan - including many Utah families with substantial assets who think they "don't need it yet"
+ **Power of Attorney crisis:** Without medical power of attorney, families can't make life-or-death decisions, leaving loved ones financially responsible for indefinite life support costs
+ **Beneficiary disasters:** Ex-spouses, outdated designations, and forgotten accounts regularly hijack family legacies worth hundreds of thousands
+ **Tax time bomb:** Current estate tax exemptions of $12-13 million won't last forever - history shows these limits can drop to $2-3 million with 40% taxes above that threshold
+ **Professional advantage:** Families working with comprehensive financial advisors are twice as likely to complete estate planning within two years
+ **Utah benefits:** No state estate taxes and streamlined probate process give Utah families significant advantages - if planned properly
 
 ---
 
@@ -338,7 +338,7 @@ Mike references George Steinbrenner: "The joke among estate attorneys is that Ge
 
 ## The Capital Wealth Difference: Comprehensive Estate Integration
 
-### The Retirement Money Map™ Estate Component
+### The Retirement Money Map� Estate Component
 
 **Beyond basic planning:** Capital Wealth's proprietary process integrates estate planning with comprehensive retirement planning
 
@@ -524,9 +524,9 @@ The question isn't whether you can afford estate planning - it's whether your fa
 
 ---
 
-## Special Offer: Complimentary Retirement Money Map™
+## Special Offer: Complimentary Retirement Money Map�
 
-**For the next five Utah families who call:** Complete Retirement Money Map™ analysis including comprehensive estate planning coordination.
+**For the next five Utah families who call:** Complete Retirement Money Map� analysis including comprehensive estate planning coordination.
 
 **What's included:**
 - Complete asset and legacy analysis

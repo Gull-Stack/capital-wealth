@@ -30,7 +30,7 @@ But even this "lifeline" comes with tax implications that many Utah retirees nev
 
 ---
 
-## 🔑 Key Takeaways
+##  Key Takeaways
 
 > **Social Security Optimization:** With 567 different filing combinations for married couples, proper timing can add tens of thousands to lifetime benefits while coordinating with tax planning
 > **Tax Planning vs. Preparation:** Most tax professionals focus on rear-view mirror tax preparation rather than forward-looking tax planning that can save thousands annually
@@ -353,11 +353,11 @@ IUL policies are complex financial instruments that require professional analysi
 
 **Preserve more of your retirement for yourself and your family.**
 
-📞 **Call:** 801-210-5500
-📱 **Text "VISIT"** to 801-210-5500
-🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
+ **Call:** 801-210-5500
+� **Text "VISIT"** to 801-210-5500
+ **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth — helping Utah families retire right since 2012.*
+*Capital Wealth  helping Utah families retire right since 2012.*
 
 ---
 

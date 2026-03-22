@@ -25,11 +25,11 @@ tags:
 
 ## Introduction: The Question That Changes Everything
 
-How much money in your 401(k) or IRA is actually yours? Not what its current value is, but how much will end up in your pocket—not the government's?
+How much money in your 401(k) or IRA is actually yours? Not what its current value is, but how much will end up in your pocketnot the government's?
 
 As we kick off 2026, this question couldn't be more critical for Utah retirees. You might still owe taxes on that money, and how about tax efficiency? Are you overpaying? Or are you keeping every dollar you're entitled to?
 
-Most Americans between ages 50 and 75 scored pretty low marks on retirement literacy according to a quiz from the American College of Financial Services. But here's the thing: ignorance isn't bliss when it comes to retirement planning—it's expensive.
+Most Americans between ages 50 and 75 scored pretty low marks on retirement literacy according to a quiz from the American College of Financial Services. But here's the thing: ignorance isn't bliss when it comes to retirement planningit's expensive.
 
 Whether you're approaching retirement or already enjoying your golden years, the strategies discussed in this episode could mean the difference between financial stress and complete confidence in your retirement security.
 
@@ -58,7 +58,7 @@ Whether you're approaching retirement or already enjoying your golden years, the
 
 **Cost of Living:** Significantly lower than coastal areas while maintaining high quality of life
 **Healthcare Excellence:** Intermountain Healthcare and University of Utah provide world-class care
-**Recreation Paradise:** Five National Parks, world-class skiing, hiking—all within reach
+**Recreation Paradise:** Five National Parks, world-class skiing, hikingall within reach
 **Family Culture:** Utah's strong family values support aging in place and multi-generational planning
 
 ---
@@ -91,7 +91,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 
 ### Mistake #2: Misunderstanding Retirement Income Planning
 
-**The mindset shift:** Retirement planning isn't about accumulating the biggest account balance—it's about creating reliable income to pay your bills when you're no longer working.
+**The mindset shift:** Retirement planning isn't about accumulating the biggest account balanceit's about creating reliable income to pay your bills when you're no longer working.
 
 **Utah-specific considerations:**
 - How will Utah's no Social Security tax benefit affect your overall strategy?
@@ -110,7 +110,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 
 ### Financial Planning for Longevity
 
-**The 120-year assumption:** Capital Wealth plans assuming clients will live to 120—not because they will, but because it creates the safety margin needed for confidence.
+**The 120-year assumption:** Capital Wealth plans assuming clients will live to 120not because they will, but because it creates the safety margin needed for confidence.
 
 **Three-phase retirement approach:**
 1. **Go-go years (65-75):** Active travel, recreation, bucket list items
@@ -213,7 +213,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 
 ### The Capital Wealth Approach
 
-**Retirement Money Map™:** Proprietary planning process starting at age 100, working backward
+**Retirement Money Map�:** Proprietary planning process starting at age 100, working backward
 **Stress testing:** Planning for market volatility, inflation, healthcare costs
 **Regular reviews:** Quarterly check-ins to adjust for life changes
 
@@ -295,7 +295,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 
 ---
 
-## Retirement Money Map™: Your GPS to Financial Freedom
+## Retirement Money Map�: Your GPS to Financial Freedom
 
 ### What Makes This Planning Different
 
@@ -346,7 +346,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 **A:** Time is one of the most powerful allies in personal finance. Even if you have just months or a few years, strategic planning can make a significant difference. The key is taking action as soon as possible and maximizing the time available.
 
 ### Q: How do I know if I'm being too conservative or too aggressive with my investments?
-**A:** A well-balanced portfolio with the right mix of stocks, bonds, and alternative investments should manage volatility while supporting long-term growth. The key is balance—not swinging too far toward fear or chasing performance.
+**A:** A well-balanced portfolio with the right mix of stocks, bonds, and alternative investments should manage volatility while supporting long-term growth. The key is balancenot swinging too far toward fear or chasing performance.
 
 ### Q: Should I be worried about required minimum distributions?
 **A:** RMDs can trigger higher tax brackets, affect Medicare premiums, and impact Social Security taxation. Utah retirees should plan proactively with strategies like Roth conversions and charitable distributions rather than reacting when the IRS forces withdrawals.
@@ -363,7 +363,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map™ analysis—a comprehensive review typically taking 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Map� analysisa comprehensive review typically taking 5-10 hours of professional analysis.
 
 **What's included:**
 - Complete income and tax planning analysis
@@ -377,13 +377,13 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
 
-**Remember:** The strongest retirement plans aren't built on hope—they're built on knowledge, strategy, and Utah's unique advantages.
+**Remember:** The strongest retirement plans aren't built on hopethey're built on knowledge, strategy, and Utah's unique advantages.
 
 ---
 
 ## Conclusion: Making 2026 Your Best Retirement Year Yet
 
-The question we started with—how much of your retirement money is actually yours—has a different answer for every Utah retiree. But the process of finding that answer is the same: education, strategic planning, and taking advantage of Utah's unique benefits.
+The question we started withhow much of your retirement money is actually yourshas a different answer for every Utah retiree. But the process of finding that answer is the same: education, strategic planning, and taking advantage of Utah's unique benefits.
 
 **Your retirement optimism for 2026 should be based on:**
 
@@ -393,7 +393,7 @@ The question we started with—how much of your retirement money is actually you
 4. **Regular reviews** that adapt to changing circumstances
 5. **Peace of mind** that comes from comprehensive preparation
 
-Utah offers an ideal environment for retirement success—lower costs, excellent healthcare, beautiful recreation, and strong communities. But these advantages only benefit retirees who plan strategically and optimize their approach.
+Utah offers an ideal environment for retirement successlower costs, excellent healthcare, beautiful recreation, and strong communities. But these advantages only benefit retirees who plan strategically and optimize their approach.
 
 Don't let another year pass wondering if you're on the right track. Take action now to make 2026 the year you gain complete confidence in your retirement security.
 

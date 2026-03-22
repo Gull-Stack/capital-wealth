@@ -561,23 +561,21 @@ p {
 
 .finpay-card {
   background: var(--surface-container-lowest);
-  padding: var(--space-10) var(--space-8) var(--space-10) var(--space-10);
+  padding: var(--space-10) var(--space-8);
   transition: all 0.4s ease;
   position: relative;
   border: none;
+  border-bottom: 3px solid var(--primary);
   min-height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border-left: 3px solid var(--primary);
-  border-bottom: 3px solid var(--primary);
   box-shadow: 0 2px 30px rgba(25, 28, 30, 0.04);
 }
 
 .finpay-card:hover {
   box-shadow: 0 8px 40px rgba(0, 56, 112, 0.08);
   transform: translateY(-2px);
-  border-left-color: var(--secondary);
   border-bottom-color: var(--secondary);
 }
 

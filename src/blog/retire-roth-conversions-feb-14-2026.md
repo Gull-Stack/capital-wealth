@@ -29,7 +29,7 @@ Happy Valentine's Day! While most couples are planning romantic dinners and exch
 
 **The reality about retirement for married couples:** 62% of couples don't retire at the same time. This seemingly simple statistic reveals complex financial planning challenges that most Utah couples haven't considered.
 
-**The Valentine's connection:** Just like Mike learned that meaningful Valentine's Days don't require fancy reservations, successful retirement planning isn't about perfection—it's about intentional communication and being on the same page about what really matters.
+**The Valentine's connection:** Just like Mike learned that meaningful Valentine's Days don't require fancy reservations, successful retirement planning isn't about perfectionit's about intentional communication and being on the same page about what really matters.
 
 Whether you're newlyweds planning your future or seasoned couples approaching retirement, this episode reveals strategies that could save you tens of thousands in taxes while strengthening your financial partnership.
 
@@ -39,7 +39,7 @@ Whether you're newlyweds planning your future or seasoned couples approaching re
 
 ### The Surprising Statistics
 
-**62% of couples retire at different times**—and this creates unique challenges most financial advisors never address.
+**62% of couples retire at different times**and this creates unique challenges most financial advisors never address.
 
 **Common scenarios Capital Wealth sees:**
 - One spouse loves their career and wants to keep working
@@ -84,7 +84,7 @@ When one Utah spouse retires while the other continues working, several financia
 
 ### The Hidden Benefits Most Couples Miss
 
-**Spousal benefits can provide up to 50% of the higher-earning spouse's benefit**—even if one spouse never worked outside the home.
+**Spousal benefits can provide up to 50% of the higher-earning spouse's benefit**even if one spouse never worked outside the home.
 
 ### Real Client Success: Idaho Couple's Discovery
 
@@ -111,7 +111,7 @@ When one Utah spouse retires while the other continues working, several financia
 **Early claiming penalty:** Permanent reduction if claimed before full retirement age
 **Strategic waiting:** Can significantly increase lifetime income
 
-**Over 567 different filing strategies exist for married couples**—making professional guidance essential.
+**Over 567 different filing strategies exist for married couples**making professional guidance essential.
 
 ---
 
@@ -256,7 +256,7 @@ When one Utah spouse retires while the other continues working, several financia
 **Not too little:** Miss opportunities while rates are favorable
 **Just right:** Systematic approach based on comprehensive analysis
 
-### Capital Wealth's Retirement Money Map™ Process
+### Capital Wealth's Retirement Money Map� Process
 
 **Comprehensive analysis includes:**
 - Current and projected income sources
@@ -491,15 +491,15 @@ When one Utah spouse retires while the other continues working, several financia
 
 ## Conclusion: Your Valentine's Day Gift That Keeps Giving
 
-Mike Stevens closed this Valentine's Day episode with a powerful message: **"Give your spouse something that lasts far longer than flowers or chocolates—confidence in your financial future."**
+Mike Stevens closed this Valentine's Day episode with a powerful message: **"Give your spouse something that lasts far longer than flowers or chocolatesconfidence in your financial future."**
 
 **The key insights for Utah couples:**
 
-1. **62% of couples don't retire together**—plan for this likelihood
+1. **62% of couples don't retire together**plan for this likelihood
 2. **Social Security spousal benefits** provide significant "discovered income"
 3. **Roth conversions lock in today's favorable tax rates** before they increase
 4. **Utah's tax advantages** create unique optimization opportunities
-5. **Communication is everything**—approach retirement as teammates, not individuals
+5. **Communication is everything**approach retirement as teammates, not individuals
 
 **Utah's unique retirement advantages:**
 - No Social Security tax at state level
@@ -511,13 +511,13 @@ Mike Stevens closed this Valentine's Day episode with a powerful message: **"Giv
 
 **The urgency factor:** With massive government debt and spending obligations, tax rates will likely increase significantly. Today's rates are "on sale" and won't stay that way forever.
 
-**The relationship factor:** Money conversations are rarely just about money—they're about security, freedom, and shared values. Couples who communicate openly about retirement planning tend to approach it as teammates rather than individuals with separate agendas.
+**The relationship factor:** Money conversations are rarely just about moneythey're about security, freedom, and shared values. Couples who communicate openly about retirement planning tend to approach it as teammates rather than individuals with separate agendas.
 
 ---
 
 ## Take Action: Special Valentine's Day Offer
 
-### Complimentary Retirement Money Map™
+### Complimentary Retirement Money Map�
 
 **For Utah couples with $250,000 or more in retirement savings:**
 - Comprehensive analysis typically taking 5-10 hours
@@ -544,12 +544,12 @@ Mike Stevens closed this Valentine's Day episode with a powerful message: **"Giv
 ## Frequently Asked Questions
 
 ### Q: Should we convert all our traditional IRA money to Roth at once?
-**A:** No. The "Goldilocks principle" applies—not too much, not too little. Systematic multi-year conversions typically provide better tax outcomes than all-or-nothing approaches.
+**A:** No. The "Goldilocks principle" appliesnot too much, not too little. Systematic multi-year conversions typically provide better tax outcomes than all-or-nothing approaches.
 
 ### Q: How do Roth conversions affect our Social Security benefits?
 **A:** Conversions count as taxable income in the year performed, potentially affecting Social Security taxation. However, future Roth withdrawals don't count as income, potentially reducing Social Security taxation later.
 
-### Q: What if one of us dies—how does the widow's penalty affect our planning?
+### Q: What if one of us dieshow does the widow's penalty affect our planning?
 **A:** The widow's penalty can significantly increase taxes due to filing as single instead of married filing jointly. Roth conversions provide tax-free income that can help offset this challenge.
 
 ### Q: Are Roth conversions worth it if we think tax rates won't increase?

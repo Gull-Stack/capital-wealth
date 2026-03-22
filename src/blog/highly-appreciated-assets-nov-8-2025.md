@@ -27,7 +27,7 @@ Picture this: You've done everything right. Maxed out your 401(k), built a succe
 
 **Then reality hits: selling those assets could cost you 30-40% in taxes in a single year.**
 
-This episode of Retire Right Radio with Mike Stevens tackled one of the most overlooked wealth destroyers facing successful Utah families—the taxation of highly appreciated assets. Whether it's Utah real estate that's tripled in value, tech stock from Silicon Slopes companies, family businesses, or traditional retirement accounts that have grown into seven-figure tax time bombs, the strategies you implement TODAY will determine how much wealth actually transfers to your heirs.
+This episode of Retire Right Radio with Mike Stevens tackled one of the most overlooked wealth destroyers facing successful Utah familiesthe taxation of highly appreciated assets. Whether it's Utah real estate that's tripled in value, tech stock from Silicon Slopes companies, family businesses, or traditional retirement accounts that have grown into seven-figure tax time bombs, the strategies you implement TODAY will determine how much wealth actually transfers to your heirs.
 
 **The stakes couldn't be higher. Get it wrong, and the IRS becomes your family's biggest beneficiary.**
 
@@ -35,17 +35,17 @@ This episode of Retire Right Radio with Mike Stevens tackled one of the most ove
 
 ## Key Takeaways: The Shocking Reality of Appreciated Asset Taxation
 
-**💰 The 30-40% Tax Hit:** **Selling appreciated assets can trigger combined federal capital gains, state income tax, and net investment income tax** totaling 30-40% of your gain in a single year
+** The 30-40% Tax Hit:** **Selling appreciated assets can trigger combined federal capital gains, state income tax, and net investment income tax** totaling 30-40% of your gain in a single year
 
-**🏠 Utah Real Estate Reality:** **Lake cabin bought for $250,000, sold for $900,000** = $650,000 gain potentially creating $200,000+ tax bill without proper planning
+** Utah Real Estate Reality:** **Lake cabin bought for $250,000, sold for $900,000** = $650,000 gain potentially creating $200,000+ tax bill without proper planning
 
-**⚖️ Estate Tax Double Whammy:** **Large IRA balances face both income tax AND estate tax** on the same dollars—potentially reducing inheritance by 60-70%
+**� Estate Tax Double Whammy:** **Large IRA balances face both income tax AND estate tax** on the same dollarspotentially reducing inheritance by 60-70%
 
-**📊 The Secure Act Destruction:** **Most heirs must empty inherited IRAs within 10 years** or face 25% penalties—the highest in the tax code
+** The Secure Act Destruction:** **Most heirs must empty inherited IRAs within 10 years** or face 25% penaltiesthe highest in the tax code
 
-**🎯 Section 1202 Goldmine:** **Qualified Small Business Stock can exclude up to $10 million** in capital gains—but requires specific advance structuring
+** Section 1202 Goldmine:** **Qualified Small Business Stock can exclude up to $10 million** in capital gainsbut requires specific advance structuring
 
-**💡 Charitable Remainder Trust Magic:** **Transfer $500,000 appreciated stock, sell with zero immediate taxes**, receive lifetime income plus charitable deduction
+** Charitable Remainder Trust Magic:** **Transfer $500,000 appreciated stock, sell with zero immediate taxes**, receive lifetime income plus charitable deduction
 
 ---
 
@@ -153,7 +153,7 @@ The Setting Every Community Up for Retirement Enhancement (SECURE) Act fundament
 
 ### 1031 Like-Kind Exchanges: The Ultimate Tax Deferral
 
-For Utah real estate investors, 1031 exchanges provide the holy grail of tax deferral—the ability to continually upgrade property while deferring capital gains taxes indefinitely.
+For Utah real estate investors, 1031 exchanges provide the holy grail of tax deferralthe ability to continually upgrade property while deferring capital gains taxes indefinitely.
 
 **How 1031 Exchanges Work:**
 1. **Identify replacement property** within 45 days of sale
@@ -259,7 +259,7 @@ For Utah families with charitable intentions, Charitable Remainder Trusts (CRTs)
 
 ### Understanding the Estate Tax Landscape
 
-President Trump's "Big Beautiful Bill" made higher estate tax exemptions "permanent"—but in Washington, permanent means "until the next administration changes it." Current exemptions of $13.61 million per person ($27.22 million per couple) provide substantial protection, but history shows these numbers fluctuate dramatically.
+President Trump's "Big Beautiful Bill" made higher estate tax exemptions "permanent"but in Washington, permanent means "until the next administration changes it." Current exemptions of $13.61 million per person ($27.22 million per couple) provide substantial protection, but history shows these numbers fluctuate dramatically.
 
 **Historical Context:**
 - **2000:** $675,000 exemption
@@ -471,7 +471,7 @@ Utah's healthcare landscape creates unique planning opportunities:
 - **Insurance specialists** for risk management
 - **Family office services** for ongoing coordination
 
-**The Retirement Money Map™ Integration:**
+**The Retirement Money Map� Integration:**
 - **Income planning:** Coordinated withdrawal strategies
 - **Tax optimization:** Multi-year planning horizons
 - **Estate coordination:** Wealth transfer integration
@@ -638,7 +638,7 @@ Utah designated 46 Qualified Opportunity Zones, including several in high-growth
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500  
 - **Website:** capitalwealth.com
-- **Complimentary Consultation:** Retirement Money Map™ analysis for qualified Utah families
+- **Complimentary Consultation:** Retirement Money Map� analysis for qualified Utah families
 
 **Remember:** The best tax strategies must be implemented BEFORE you sell. Don't let poor timing cost your family hundreds of thousands in unnecessary taxes.
 

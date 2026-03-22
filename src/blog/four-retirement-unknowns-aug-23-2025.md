@@ -1,6 +1,6 @@
 ---
 title: "Four Retirement Unknowns: Golden Years Navigation"
-description: "Explore the four biggest retirement unknowns — market volatility, taxes, Social Security, and longevity — plus a fun Social Security trivia segment with Mike Stevens."
+description: "Explore the four biggest retirement unknowns  market volatility, taxes, Social Security, and longevity  plus a fun Social Security trivia segment with Mike Stevens."
 date: 2025-08-23
 dateModified: 2026-03-19
 author: "Mike Stevens"
@@ -21,7 +21,7 @@ By Mike Stevens, Capital Wealth
 
 Planning for retirement in Utah means preparing for the unexpected. Whether you're enjoying the slopes in Park City, exploring the red rocks near St. George, or settling into comfortable retirement communities in Salt Lake County, one truth remains constant: **retirement brings unknowns that can derail even the best-laid plans**.
 
-During a recent episode of Retire Right Radio, we explored the four biggest unknowns every Utah retiree faces and how to build a robust financial plan that can weather any storm. With markets swinging **2% in a single day** (something that was "unheard of" just 10 years ago), economic volatility from trade deals, and the recent Big Beautiful Bill (BBB) tax changes, today's retirement landscape demands more than just a portfolio—it requires a comprehensive plan.
+During a recent episode of Retire Right Radio, we explored the four biggest unknowns every Utah retiree faces and how to build a robust financial plan that can weather any storm. With markets swinging **2% in a single day** (something that was "unheard of" just 10 years ago), economic volatility from trade deals, and the recent Big Beautiful Bill (BBB) tax changes, today's retirement landscape demands more than just a portfolioit requires a comprehensive plan.
 
 ## Key Takeaways
 
@@ -38,7 +38,7 @@ During a recent episode of Retire Right Radio, we explored the four biggest unkn
 
 ## The Lane-Changing Traffic Analogy: Why Market Timing Fails
 
-"You know, everybody—and for those driving in your car right now, listening—if you're in traffic, this is what typically happens," explains Mike Stevens, founder and president of Capital Wealth. "Your lane is stopped. And then you look in your rearview mirror and you see the lane over to you. It's open. So you change lanes. You move over into that lane and you move forward like one or two cars. And then your lane stops. And then the lane that you were in starts to move."
+"You know, everybodyand for those driving in your car right now, listeningif you're in traffic, this is what typically happens," explains Mike Stevens, founder and president of Capital Wealth. "Your lane is stopped. And then you look in your rearview mirror and you see the lane over to you. It's open. So you change lanes. You move over into that lane and you move forward like one or two cars. And then your lane stops. And then the lane that you were in starts to move."
 
 Sound familiar? This everyday frustration perfectly illustrates why **emotional market timing destroys retirement wealth**. 
 
@@ -48,7 +48,7 @@ The **Dalbar Study** reveals the devastating impact of trying to time the market
 
 ## Unknown #1: Longevity - How Long Will Your Money Last?
 
-**Nobody knows how long they'll live**—and that's simultaneously terrifying and liberating for Utah retirees. With advances in AI diagnostics and medical technology, we're entering an era where **people are living longer than the Social Security system ever anticipated**.
+**Nobody knows how long they'll live**and that's simultaneously terrifying and liberating for Utah retirees. With advances in AI diagnostics and medical technology, we're entering an era where **people are living longer than the Social Security system ever anticipated**.
 
 When Social Security was passed in 1935, **life expectancy was 58 for men and 62 for women**. Today, average life expectancy has climbed to 82, creating a **20-30 year retirement funding gap** the system wasn't designed to handle.
 
@@ -70,7 +70,7 @@ This reverse-engineering approach helps Utah retirees understand that **you can'
 
 ## Unknown #2: Healthcare Costs - The $315,000 Shock
 
-**Fidelity estimates that the average couple retiring today will spend over $315,000 on healthcare costs during retirement—and this is after taxes**. More concerning: **these numbers don't include long-term care**.
+**Fidelity estimates that the average couple retiring today will spend over $315,000 on healthcare costs during retirementand this is after taxes**. More concerning: **these numbers don't include long-term care**.
 
 For Utah retirees, this presents unique challenges and opportunities:
 
@@ -197,7 +197,7 @@ These "Mom's Rules" translate perfectly to Utah retirement planning:
 
 ## The Social Security Reality Check: 567 Filing Combinations
 
-Most Utah retirees dramatically underestimate Social Security's complexity and importance. **For married couples filing jointly, there are 567 different filing combinations**—a complexity that demands professional guidance.
+Most Utah retirees dramatically underestimate Social Security's complexity and importance. **For married couples filing jointly, there are 567 different filing combinations**a complexity that demands professional guidance.
 
 ### Critical Social Security Facts:
 - **Social Security replaces approximately 30%** of your annual earnings on average
@@ -345,7 +345,7 @@ Stevens uses a powerful analogy to illustrate the value of professional retireme
 
 ## The Andy Rooney Legacy Lesson
 
-Stevens shares a sobering example: **"Andy Rooney left $2.4 million to the government instead of his heirs because of poor legacy planning."** This isn't about wealth—it's about intention.
+Stevens shares a sobering example: **"Andy Rooney left $2.4 million to the government instead of his heirs because of poor legacy planning."** This isn't about wealthit's about intention.
 
 For Utah families, legacy planning carries special significance due to the state's **strong family culture** and **multi-generational connections**. 
 
@@ -522,7 +522,7 @@ For Utah families, legacy planning carries special significance due to the state
 
 ## Take Action: Your Utah Retirement Money Map
 
-The four retirement unknowns—longevity, healthcare costs, market volatility, and tax increases—don't have to derail your Utah retirement dreams. With proper planning, you can enjoy Park City powder, southern Utah hiking, and family gatherings without financial stress.
+The four retirement unknownslongevity, healthcare costs, market volatility, and tax increasesdon't have to derail your Utah retirement dreams. With proper planning, you can enjoy Park City powder, southern Utah hiking, and family gatherings without financial stress.
 
 Stevens emphasizes the critical difference between having a portfolio and having a plan: **"You need to have an actual plan, not just a portfolio. The plan needs to be that you have to have safe money and you have to have market money."**
 
@@ -557,9 +557,9 @@ Utah retirees enjoy significant advantages:
 3. **Lifestyle planning**: Balance current enjoyment with future security
 4. **Legacy optimization**: Ensure your values and wealth transfer efficiently
 
-### The Retirement Money Map® Advantage
+### The Retirement Money Map� Advantage
 
-Capital Wealth' **trademarked Retirement Money Map®** addresses all four unknowns with Utah-specific strategies:
+Capital Wealth' **trademarked Retirement Money Map�** addresses all four unknowns with Utah-specific strategies:
 
 **Longevity planning**: Reverse engineering from age 100 to ensure money lasts
 **Healthcare preparation**: Factoring Utah's $315,000+ healthcare reality
@@ -574,13 +574,13 @@ Capital Wealth' **trademarked Retirement Money Map®** addresses all four unknow
 
 Ready to create your Utah retirement plan? The next step is simple.
 
-### 📞 **Call 801-210-5500**
-Speak directly with our Utah retirement planning team to schedule your complimentary Retirement Money Map® consultation.
+###  **Call 801-210-5500**
+Speak directly with our Utah retirement planning team to schedule your complimentary Retirement Money Map� consultation.
 
-### 📱 **Text "VISIT" to 801-210-5500**
+### � **Text "VISIT" to 801-210-5500**
 Quick and easy scheduling via text message for busy Utah professionals.
 
-### 🌐 **Visit capitalwealth.com**
+###  **Visit capitalwealth.com**
 Explore additional resources and learn more about our Utah-focused retirement planning approach.
 
 ### What to Expect During Your Visit
@@ -593,7 +593,7 @@ Your **complimentary 45-minute consultation** includes:
 - **Healthcare cost preparation**: Factoring Utah's unique medical landscape
 - **Legacy planning review**: Protecting your family's financial future
 
-**No pressure, no sales pitches, no obligation**—just experienced guidance from Utah retirement planning specialists who understand your unique needs.
+**No pressure, no sales pitches, no obligation**just experienced guidance from Utah retirement planning specialists who understand your unique needs.
 
 ### About Mike Stevens and Capital Wealth
 

@@ -26,13 +26,13 @@ On our recent Retire Right Radio broadcast, we explored how smart planning and s
 
 ## Key Takeaways
 
-• **Market volatility from global conflicts is inevitable** – but having a plan vs. just a portfolio makes all the difference
-• **Diversification between protected and growth money** is crucial for weathering storms without emotional decision-making
-• **Fixed index annuities with zero floors** can provide protection while still capturing upside potential (8-9% caps)
-• **Tax planning opportunities** emerge during market downturns, especially Roth conversions when account values are depressed
-• **The March 2020 COVID crash** demonstrated how quickly markets can fall (**-34% in one month**) and recover (**+16% by year-end**)
-• **Fiduciary advisors** are legally obligated to act in your best interests, unlike traditional brokers
-• **Utah's tax-friendly environment** makes strategic planning even more valuable for residents
+ **Market volatility from global conflicts is inevitable**  but having a plan vs. just a portfolio makes all the difference
+ **Diversification between protected and growth money** is crucial for weathering storms without emotional decision-making
+ **Fixed index annuities with zero floors** can provide protection while still capturing upside potential (8-9% caps)
+ **Tax planning opportunities** emerge during market downturns, especially Roth conversions when account values are depressed
+ **The March 2020 COVID crash** demonstrated how quickly markets can fall (**-34% in one month**) and recover (**+16% by year-end**)
+ **Fiduciary advisors** are legally obligated to act in your best interests, unlike traditional brokers
+ **Utah's tax-friendly environment** makes strategic planning even more valuable for residents
 
 ---
 
@@ -52,7 +52,7 @@ One of the biggest dangers during uncertain times is what we call "paralysis ana
 
 **"It's like tossing a coin,"** as we discussed on the show. **"50% you're right, 50% you're wrong. The market could go down and you're like, 'Whew, so glad I'm in cash,' or you could be sitting in cash and the market could continue to surge upward. And you're like, 'Oh, why did I do that?'"**
 
-This emotional response is completely natural – nobody has a crystal ball. But making major financial decisions based on fear rarely works out well. Utah retirees need a better strategy.
+This emotional response is completely natural  nobody has a crystal ball. But making major financial decisions based on fear rarely works out well. Utah retirees need a better strategy.
 
 ---
 
@@ -82,7 +82,7 @@ Let's say you own Apple stock, and it drops 15% due to global uncertainty. If al
 
 With a protected vs. growth strategy, you simply leave the Apple stock alone and draw income from your protected accounts instead. **"When the market goes down, you only have a loss if you sell when the market's down,"** as we emphasize to our clients.
 
-Even better, if you don't need that income immediately, you can use distributions from your protected accounts to **"buy the dip"** – purchasing more shares while they're "on sale."
+Even better, if you don't need that income immediately, you can use distributions from your protected accounts to **"buy the dip"**  purchasing more shares while they're "on sale."
 
 ---
 
@@ -112,7 +112,7 @@ The same principle applies to annuities:
 - Low to no annual fees
 - No direct market risk
 
-For Utah retirees concerned about sequence of returns risk – the danger of poor market performance early in retirement – quality fixed index annuities can provide the stability needed to avoid selling growth investments at the worst possible time.
+For Utah retirees concerned about sequence of returns risk  the danger of poor market performance early in retirement  quality fixed index annuities can provide the stability needed to avoid selling growth investments at the worst possible time.
 
 ---
 
@@ -120,21 +120,21 @@ For Utah retirees concerned about sequence of returns risk – the danger of poo
 
 ### The Fastest Decline in U.S. Stock Market History
 
-The COVID-19 pandemic provided a real-world stress test for retirement strategies. **In March 2020, the S&P 500 fell 34% in just one month – the fastest decline in U.S. stock market history. This happened in just 22 trading days**, creating widespread panic among investors.
+The COVID-19 pandemic provided a real-world stress test for retirement strategies. **In March 2020, the S&P 500 fell 34% in just one month  the fastest decline in U.S. stock market history. This happened in just 22 trading days**, creating widespread panic among investors.
 
 Many Utah retirees who lacked proper planning were forced to sell investments at massive losses to generate needed income. Others panicked and moved everything to cash, missing the subsequent recovery.
 
 ### The Remarkable V-Shaped Recovery
 
-Here's what makes this period so instructive: **Despite falling 34% in March, the S&P 500 finished 2020 with a positive return of 16%**. This V-shaped recovery demonstrates why having a plan – not just a portfolio – is so crucial.
+Here's what makes this period so instructive: **Despite falling 34% in March, the S&P 500 finished 2020 with a positive return of 16%**. This V-shaped recovery demonstrates why having a plan  not just a portfolio  is so crucial.
 
 Our clients who had implemented the protected vs. growth strategy didn't need to sell their market investments during the crash. Instead, they drew income from their protected accounts and watched their growth investments recover and flourish.
 
 ### Government Response and Unintended Consequences
 
-The government's response to the pandemic – injecting trillions of dollars into the economy – led to the inflationary pressures we're still dealing with today. **When there's too much money circulating in the economy, that creates inflation. To combat inflation, the government tightens monetary policy, which can lead to recession concerns.**
+The government's response to the pandemic  injecting trillions of dollars into the economy  led to the inflationary pressures we're still dealing with today. **When there's too much money circulating in the economy, that creates inflation. To combat inflation, the government tightens monetary policy, which can lead to recession concerns.**
 
-This cycle of stimulus → inflation → higher interest rates is something Utah retirees need to plan for. It's likely we'll see similar patterns in response to future crises.
+This cycle of stimulus  inflation  higher interest rates is something Utah retirees need to plan for. It's likely we'll see similar patterns in response to future crises.
 
 ---
 
@@ -150,7 +150,7 @@ Current tax brackets include:
 - **22%** (down from 25%)  
 - **24%** (down from 28%)
 
-**If the Tax Cuts and Jobs Act isn't extended, we'll see these brackets revert to higher levels.** The 12% bracket becomes 15%, 22% becomes 25%, and 24% becomes 28%. That's not just affecting "wealthy" taxpayers – these changes impact middle-class Utah retirees too.
+**If the Tax Cuts and Jobs Act isn't extended, we'll see these brackets revert to higher levels.** The 12% bracket becomes 15%, 22% becomes 25%, and 24% becomes 28%. That's not just affecting "wealthy" taxpayers  these changes impact middle-class Utah retirees too.
 
 ### The Roth Conversion Opportunity
 
@@ -163,7 +163,7 @@ Here's where market volatility creates a unique planning opportunity. Let's say 
 3. Move the money into a tax-free Roth IRA
 4. When the market recovers, enjoy 100% tax-free growth forever
 
-**"We can't control the stock market – that's the dirty secret every financial advisor knows. But we can control taxes with intentional planning."**
+**"We can't control the stock market  that's the dirty secret every financial advisor knows. But we can control taxes with intentional planning."**
 
 ### Utah-Specific Considerations
 
@@ -182,7 +182,7 @@ These benefits make Utah an excellent place to implement tax-efficient retiremen
 
 ### Why Most Retirees Only Have Portfolios
 
-One of the most important distinctions we make at Capital Wealth is between having a "plan" and having a "portfolio." Most Utah retirees we meet have portfolios – collections of investments chosen with the hope of generating good returns. Far fewer have actual plans.
+One of the most important distinctions we make at Capital Wealth is between having a "plan" and having a "portfolio." Most Utah retirees we meet have portfolios  collections of investments chosen with the hope of generating good returns. Far fewer have actual plans.
 
 **A portfolio answers the question:** "What investments do I own?"
 
@@ -214,7 +214,7 @@ For Utah retirees, this might include:
 
 Not all financial advisors are created equal, and the differences go far beyond experience or investment philosophy. The most important distinction is whether your advisor is a fiduciary.
 
-**Fiduciary advisors** like Capital Wealth are legally, morally, and ethically obligated to act in your best interests. This isn't just a nice-to-have – it's a legal requirement backed by regulatory oversight.
+**Fiduciary advisors** like Capital Wealth are legally, morally, and ethically obligated to act in your best interests. This isn't just a nice-to-have  it's a legal requirement backed by regulatory oversight.
 
 **Non-fiduciary advisors** operate under a "suitability" standard. They must recommend investments that are suitable for you, but they're not required to choose the absolute best option available. This can create conflicts of interest, especially around commission-based products.
 
@@ -232,7 +232,7 @@ This is especially important when considering products like annuities, where com
 
 **"The biggest mistake people make when investing on their own is emotion,"** as we've observed over two decades of working with Utah retirees. **"It's difficult to see the forest when you're standing in the trees."**
 
-When you're managing your own investments, every market movement feels personal. A 10% drop might mean delaying retirement by six months to get back to even. This emotional weight can lead to poor timing decisions – buying high during euphoric periods and selling low during panic phases.
+When you're managing your own investments, every market movement feels personal. A 10% drop might mean delaying retirement by six months to get back to even. This emotional weight can lead to poor timing decisions  buying high during euphoric periods and selling low during panic phases.
 
 ### The Day Trading Temptation
 
@@ -254,11 +254,11 @@ The stakes are simply too high. Unlike other areas where mistakes can be correct
 
 **Mike's Response:** Great question, Linda. Here are five warning signs that you might need a new advisor:
 
-1. **Your eye is already wandering** – if you're questioning the relationship, trust that instinct
-2. **They only call when they want to make trades** – this suggests they're generating commission income rather than focusing on your needs  
-3. **Your financial situation is changing, but the advice isn't** – a good advisor adapts strategies as you move from accumulation to distribution
-4. **They don't listen to you** – you're the boss, not the advisor
-5. **You're afraid to call them** – this should never be the case with your financial professional
+1. **Your eye is already wandering**  if you're questioning the relationship, trust that instinct
+2. **They only call when they want to make trades**  this suggests they're generating commission income rather than focusing on your needs  
+3. **Your financial situation is changing, but the advice isn't**  a good advisor adapts strategies as you move from accumulation to distribution
+4. **They don't listen to you**  you're the boss, not the advisor
+5. **You're afraid to call them**  this should never be the case with your financial professional
 
 At Capital Wealth, we believe in relationships, not transactions. You should feel comfortable reaching out with questions anytime.
 
@@ -306,14 +306,14 @@ In Utah, Social Security benefits aren't subject to state income tax, which make
 
 ### Michelle from St. George Asks: "My husband handles all our finances. What happens if something happens to him?"
 
-**Mike's Response:** Michelle, this is such an important question, and you're wise to think about it. We see this situation frequently – one spouse is the "financial spouse" while the other focuses on different areas.
+**Mike's Response:** Michelle, this is such an important question, and you're wise to think about it. We see this situation frequently  one spouse is the "financial spouse" while the other focuses on different areas.
 
 Here's what we recommend:
 
-1. **Both spouses should be involved in annual review meetings** – even if one takes the lead day-to-day
-2. **Create a written financial inventory** – account numbers, passwords, advisor contact information
-3. **Establish relationships with your advisory team** – so the surviving spouse isn't dealing with strangers during grief
-4. **Document the overall strategy** – not just what accounts you have, but why certain decisions were made
+1. **Both spouses should be involved in annual review meetings**  even if one takes the lead day-to-day
+2. **Create a written financial inventory**  account numbers, passwords, advisor contact information
+3. **Establish relationships with your advisory team**  so the surviving spouse isn't dealing with strangers during grief
+4. **Document the overall strategy**  not just what accounts you have, but why certain decisions were made
 
 At Capital Wealth, we always encourage both spouses to attend meetings, even if one is less interested in the details. We want to ensure both partners understand the overall plan and feel comfortable with the strategy.
 
@@ -342,7 +342,7 @@ These factors can significantly impact your retirement planning strategy and req
 
 ### Q: Should I be concerned about sequence of returns risk?
 
-**A:** Absolutely. Sequence of returns risk – the danger of poor market performance early in retirement – is one of the biggest threats to retirement security. This is where the protected vs. growth money strategy becomes crucial.
+**A:** Absolutely. Sequence of returns risk  the danger of poor market performance early in retirement  is one of the biggest threats to retirement security. This is where the protected vs. growth money strategy becomes crucial.
 
 If you retire at the beginning of a bear market and need to sell investments for income, you can permanently impair your portfolio's ability to recover. Having protected income sources allows you to ride out market volatility without forced selling.
 
@@ -362,7 +362,7 @@ If your current plan doesn't address these scenarios, it may be more of a portfo
 
 **A:** Local Utah advisors understand state-specific planning opportunities and challenges. They're familiar with Utah's tax laws, cost of living variations between different areas of the state, and local resources for retirees.
 
-National firms may offer more resources but might miss Utah-specific planning opportunities. The key is finding an advisor – local or national – who operates as a fiduciary and has expertise in retirement distribution planning.
+National firms may offer more resources but might miss Utah-specific planning opportunities. The key is finding an advisor  local or national  who operates as a fiduciary and has expertise in retirement distribution planning.
 
 ### Q: How often should I review my retirement plan?
 
@@ -379,13 +379,13 @@ However, major life events (health changes, family situations, tax law changes) 
 
 **A:** Key criteria include:
 
-- **Fiduciary obligation** – legal requirement to act in your best interests
-- **Retirement specialization** – distribution planning is different from accumulation
-- **Fee transparency** – you should understand exactly how they're compensated  
-- **Communication style** – regular contact and education, not just annual statements
-- **Planning focus** – emphasis on comprehensive planning, not just investment management
+- **Fiduciary obligation**  legal requirement to act in your best interests
+- **Retirement specialization**  distribution planning is different from accumulation
+- **Fee transparency**  you should understand exactly how they're compensated  
+- **Communication style**  regular contact and education, not just annual statements
+- **Planning focus**  emphasis on comprehensive planning, not just investment management
 
-Remember, you're not just hiring someone to pick investments – you're hiring someone to help navigate one of life's most important transitions.
+Remember, you're not just hiring someone to pick investments  you're hiring someone to help navigate one of life's most important transitions.
 
 ### Q: Is it too late to start retirement planning if I'm already retired?
 
@@ -405,22 +405,22 @@ Many retirees discover significant improvement opportunities even years into ret
 
 ### The Retirement Money Map Process
 
-At Capital Wealth, we've developed what we call the **Retirement Money Map** – a proprietary, comprehensive planning process that goes far beyond traditional portfolio management. This isn't a product we sell; it's a planning methodology we use to help Utah retirees build robust, flexible retirement strategies.
+At Capital Wealth, we've developed what we call the **Retirement Money Map**  a proprietary, comprehensive planning process that goes far beyond traditional portfolio management. This isn't a product we sell; it's a planning methodology we use to help Utah retirees build robust, flexible retirement strategies.
 
 The Retirement Money Map process includes:
 
-1. **Comprehensive financial inventory** – understanding exactly what you have
-2. **Cash flow analysis** – mapping income needs throughout retirement  
-3. **Tax optimization strategy** – minimizing lifetime tax burden
-4. **Risk assessment** – identifying and planning for potential challenges
-5. **Implementation roadmap** – step-by-step action plan
-6. **Ongoing monitoring** – regular reviews and adjustments
+1. **Comprehensive financial inventory**  understanding exactly what you have
+2. **Cash flow analysis**  mapping income needs throughout retirement  
+3. **Tax optimization strategy**  minimizing lifetime tax burden
+4. **Risk assessment**  identifying and planning for potential challenges
+5. **Implementation roadmap**  step-by-step action plan
+6. **Ongoing monitoring**  regular reviews and adjustments
 
 ### Why Now Is The Time To Act
 
 Global uncertainty isn't going away. Whether it's geopolitical conflicts, supply chain disruptions, inflation concerns, or the looming expiration of current tax laws, Utah retirees face a complex landscape that requires professional navigation.
 
-The good news is that uncertainty also creates opportunities – for tax planning, for strategic positioning, and for building more resilient retirement plans. But these opportunities don't wait for perfect timing or complete clarity about the future.
+The good news is that uncertainty also creates opportunities  for tax planning, for strategic positioning, and for building more resilient retirement plans. But these opportunities don't wait for perfect timing or complete clarity about the future.
 
 **"Markets go up and markets go down. A market doesn't just go up forever. So you want to have a plan and contingencies built into the plan."**
 
@@ -428,7 +428,7 @@ The good news is that uncertainty also creates opportunities – for tax plannin
 
 Every day you delay implementing a proper retirement plan is a day you're potentially missing tax-saving opportunities, optimization strategies, and risk management benefits. More importantly, it's a day you're carrying unnecessary stress about your financial future.
 
-The Utah retirees who weather market storms best aren't those who got lucky with their investment picks – they're those who built comprehensive plans before they needed them.
+The Utah retirees who weather market storms best aren't those who got lucky with their investment picks  they're those who built comprehensive plans before they needed them.
 
 ---
 
@@ -450,10 +450,10 @@ A proper retirement plan provides the confidence to:
 
 At Capital Wealth, we believe in **relationships, not transactions**. This philosophy shapes everything we do:
 
-- **We know our clients personally** – not just their account balances
-- **We're accessible** – our clients can reach us when they have questions
-- **We educate** – helping you understand not just what we're doing, but why
-- **We adapt** – adjusting strategies as your life and goals evolve
+- **We know our clients personally**  not just their account balances
+- **We're accessible**  our clients can reach us when they have questions
+- **We educate**  helping you understand not just what we're doing, but why
+- **We adapt**  adjusting strategies as your life and goals evolve
 
 When you call our office, you're not reaching a call center where you explain your situation to a different person each time. You're reaching a team that knows your goals, your concerns, and your family situation.
 
@@ -484,7 +484,7 @@ Your complimentary consultation will be approximately 45-60 minutes with Mike St
 - **Information about employer benefits** and Social Security projections
 - **Questions or concerns** about your retirement planning
 
-We'll analyze your situation and provide specific, actionable recommendations – regardless of whether you choose to work with us going forward.
+We'll analyze your situation and provide specific, actionable recommendations  regardless of whether you choose to work with us going forward.
 
 ---
 
@@ -494,17 +494,17 @@ We'll analyze your situation and provide specific, actionable recommendations �
 
 If you're tired of worrying about market volatility, wondering whether your current advisor is truly looking out for your best interests, or simply want a second opinion on your retirement strategy, we invite you to reach out.
 
-**📞 Call: 801-210-5500**  
-**📱 Text "VISIT" to: 801-210-5500**  
-**🌐 Visit: capitalwealth.com**
+** Call: 801-210-5500**  
+**� Text "VISIT" to: 801-210-5500**  
+** Visit: capitalwealth.com**
 
 Our team is standing by to answer your questions and help you determine if our approach might be a good fit for your situation.
 
 ### What Makes This Opportunity Different
 
-Unlike many financial firms, Capital Wealth specializes exclusively in retirement planning for people nearing or already in retirement. We're not trying to be everything to everyone – we focus on what we do best: helping Utah retirees navigate the transition from accumulation to distribution.
+Unlike many financial firms, Capital Wealth specializes exclusively in retirement planning for people nearing or already in retirement. We're not trying to be everything to everyone  we focus on what we do best: helping Utah retirees navigate the transition from accumulation to distribution.
 
-As fiduciaries, we're legally obligated to put your interests first. This isn't just a marketing slogan – it's a regulatory requirement that shapes every recommendation we make.
+As fiduciaries, we're legally obligated to put your interests first. This isn't just a marketing slogan  it's a regulatory requirement that shapes every recommendation we make.
 
 **Remember: You've worked too hard and saved too long to leave your retirement to chance.** Take the first step toward taking control of your financial future.
 
@@ -514,13 +514,13 @@ As fiduciaries, we're legally obligated to put your interests first. This isn't 
 
 The global uncertainties that dominate today's headlines don't have to derail your retirement dreams. While you can't control geopolitical events, market volatility, or government policy changes, you can control how well-prepared you are to handle these challenges.
 
-The Utah retirees who thrive in uncertain times aren't those who got lucky – they're those who planned ahead, built robust strategies, and worked with professionals who understand the unique challenges of retirement planning.
+The Utah retirees who thrive in uncertain times aren't those who got lucky  they're those who planned ahead, built robust strategies, and worked with professionals who understand the unique challenges of retirement planning.
 
 **The difference between a comfortable retirement and a stressful one often comes down to having a plan, not just a portfolio.**
 
 Whether you're dealing with the recent market volatility, concerned about future tax increases, or simply want the peace of mind that comes from knowing you're properly prepared, professional retirement planning can make all the difference.
 
-Your retirement should be a time of fulfillment, family, and freedom – not financial worry. With proper planning, it absolutely can be.
+Your retirement should be a time of fulfillment, family, and freedom  not financial worry. With proper planning, it absolutely can be.
 
 Take the first step today. Your future self will thank you.
 

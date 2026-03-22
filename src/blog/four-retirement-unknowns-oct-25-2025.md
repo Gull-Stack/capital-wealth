@@ -1,6 +1,6 @@
 ---
 title: "Utah's Four Biggest Retirement Unknowns Guide"
-description: "Longevity, healthcare costs, market performance, and taxes — the four retirement unknowns every Utah retiree must plan for. Comprehensive strategies from Capital Wealth."
+description: "Longevity, healthcare costs, market performance, and taxes  the four retirement unknowns every Utah retiree must plan for. Comprehensive strategies from Capital Wealth."
 date: 2025-10-25
 dateModified: 2026-03-19
 author: "Mike Stevens"
@@ -22,16 +22,16 @@ tags:
 
 ## Key Takeaways
 
-✅ **The Four Major Retirement Unknowns** are longevity, healthcare costs, market performance, and future tax rates  
-✅ **Plan to age 100** - AI and medical advances are extending life expectancy beyond traditional projections  
-✅ **Healthcare costs** will average **$315,000+** for couples in retirement, according to Fidelity studies - and this doesn't include long-term care  
-✅ **Market volatility** requires a bucket strategy with protected accounts and market-based investments  
-✅ **Taxes are "on sale" now** - Former U.S. Comptroller General David Walker predicts they will "more than double"  
-✅ **The Rule of 100** helps determine proper asset allocation for your age  
-✅ **Fixed index annuities** offer 0% floor protection with up to 10% earning potential  
-✅ **Strategic planning** beats emotional decision-making in volatile markets  
-✅ **Utah retirees** face unique advantages and challenges compared to other states  
-✅ **Professional guidance** can help navigate the complex 567 Social Security filing combinations available to married couples  
+ **The Four Major Retirement Unknowns** are longevity, healthcare costs, market performance, and future tax rates  
+ **Plan to age 100** - AI and medical advances are extending life expectancy beyond traditional projections  
+ **Healthcare costs** will average **$315,000+** for couples in retirement, according to Fidelity studies - and this doesn't include long-term care  
+ **Market volatility** requires a bucket strategy with protected accounts and market-based investments  
+ **Taxes are "on sale" now** - Former U.S. Comptroller General David Walker predicts they will "more than double"  
+ **The Rule of 100** helps determine proper asset allocation for your age  
+ **Fixed index annuities** offer 0% floor protection with up to 10% earning potential  
+ **Strategic planning** beats emotional decision-making in volatile markets  
+ **Utah retirees** face unique advantages and challenges compared to other states  
+ **Professional guidance** can help navigate the complex 567 Social Security filing combinations available to married couples  
 
 ---
 
@@ -1018,11 +1018,11 @@ Whether you're 45 and just starting to think seriously about retirement, 55 and 
 
 ## Ready to Take Control of Your Utah Retirement Future?
 
-At Capital Wealth, we've helped thousands of Utah families navigate these retirement unknowns. Our **Retirement Money Map™** process provides the comprehensive planning that turns unknowns into manageable variables, specifically designed for Utah retirees and their unique circumstances.
+At Capital Wealth, we've helped thousands of Utah families navigate these retirement unknowns. Our **Retirement Money Map�** process provides the comprehensive planning that turns unknowns into manageable variables, specifically designed for Utah retirees and their unique circumstances.
 
 ### Your Next Step: Get Your Personalized Utah Retirement Analysis
 
-We're offering our **complimentary Retirement Money Map™** to Utah residents ready to take control of their retirement future. This comprehensive analysis typically takes several hours and includes:
+We're offering our **complimentary Retirement Money Map�** to Utah residents ready to take control of their retirement future. This comprehensive analysis typically takes several hours and includes:
 
 - **Complete risk assessment** of your current portfolio with Utah-specific considerations
 - **Tax-efficient distribution strategies** optimized for Utah's tax environment
@@ -1056,11 +1056,11 @@ We're offering our **complimentary Retirement Money Map™** to Utah residents r
 
 ### How to Get Started
 
-**📞 Call us at 801-210-5500** to schedule your complimentary Utah-focused consultation
+** Call us at 801-210-5500** to schedule your complimentary Utah-focused consultation
 
-**📱 Text "VISIT" to 801-210-5500** for quick scheduling with our Utah retirement specialists
+**� Text "VISIT" to 801-210-5500** for quick scheduling with our Utah retirement specialists
 
-**🌐 Visit us online at capitalwealth.com** for Utah retirement resources and planning tools
+** Visit us online at capitalwealth.com** for Utah retirement resources and planning tools
 
 **Don't let the four retirement unknowns keep you awake at night.** With proper planning that accounts for Utah's unique retirement landscape, you can retire with confidence, knowing you're prepared for whatever the future holds.
 
