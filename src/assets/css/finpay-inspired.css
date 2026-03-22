@@ -626,7 +626,7 @@ p {
 /* Meet Mike Section */
 .meet-mike-section {
   background: var(--surface);
-  padding: var(--space-20) 0;
+  padding: 0;
 }
 
 .meet-mike-content {
@@ -1887,4 +1887,192 @@ p {
   .mobile-nav { 
     display: none !important; 
   }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FULL-BLEED HERO — Image background with overlaid text
+   ═══════════════════════════════════════════════════════════ */
+.hero-fullbleed {
+  position: relative;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  margin: 0 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.hero-fullbleed-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-fullbleed-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.hero-fullbleed-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 20, 45, 0.65) 0%,
+    rgba(0, 20, 45, 0.4) 45%,
+    rgba(0, 20, 45, 0.05) 75%,
+    transparent 100%
+  );
+}
+
+.hero-fullbleed-content {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  padding: 4rem 4rem 5rem;
+}
+
+.hero-fullbleed-eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.hero-fullbleed-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: #ffffff;
+  margin: 0 0 1.5rem;
+}
+
+.hero-fullbleed-title em {
+  font-style: italic;
+}
+
+.hero-fullbleed-desc {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 2rem;
+  max-width: 480px;
+  font-weight: 300;
+}
+
+.hero-fullbleed-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-fullbleed-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2rem;
+  background: white;
+  color: var(--primary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  border-radius: 0.125rem;
+  transition: all 0.3s ease;
+}
+
+.hero-fullbleed-btn-primary:hover {
+  background: var(--secondary);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.hero-fullbleed-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2rem;
+  background: transparent;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0.125rem;
+  transition: all 0.3s ease;
+}
+
+.hero-fullbleed-btn-secondary:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+/* "SCROLL TO EXPLORE" at bottom-right */
+.hero-fullbleed-scroll {
+  position: absolute;
+  bottom: 2rem;
+  right: 2.5rem;
+  z-index: 2;
+}
+
+.hero-fullbleed-scroll span {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.5);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Mobile hero adjustments */
+@media (max-width: 768px) {
+  .hero-fullbleed {
+    min-height: 85vh;
+    margin: 0 0.75rem;
+    align-items: flex-end;
+  }
+  
+  .hero-fullbleed-content {
+    padding: 2rem 1.5rem 3.5rem;
+  }
+  
+  .hero-fullbleed-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-fullbleed-desc {
+    font-size: 0.95rem;
+  }
+  
+  .hero-fullbleed-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .hero-fullbleed-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0, 20, 45, 0.75) 0%,
+      rgba(0, 20, 45, 0.4) 50%,
+      rgba(0, 20, 45, 0.1) 100%
+    );
+  }
+  
+  .hero-fullbleed-scroll { display: none; }
 }

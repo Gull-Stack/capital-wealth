@@ -86,136 +86,111 @@ layout: layouts/base.njk
 </script>
 
 {# Reading progress bar #}
-<div class="reading-progress-bar"></div>
+<div class="bp-progress-bar"></div>
 
-{# Editorial blog layout - 12 column grid #}
-<section class="editorial-blog-layout">
-    <div class="editorial-container">
-        <div class="editorial-grid">
-            
-            {# Left Sidebar (3 cols) #}
-            <aside class="editorial-sidebar editorial-sidebar-left">
-                {# Sticky author block #}
-                <div class="editorial-author-block">
-                    <div class="editorial-author-photo">
-                        <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens" width="80" height="80" loading="lazy">
-                    </div>
-                    <div class="editorial-author-info">
-                        <h4 class="editorial-author-name">{{ author or 'Mike Stevens' }}</h4>
-                        <p class="editorial-author-role">Capital Wealth</p>
-                    </div>
+{# ═══ FULL-WIDTH HEADER — centered above grid ═══ #}
+<section class="bp-header-section">
+    <div class="bp-header-inner">
+        <div class="bp-category">
+            <span class="bp-category-line"></span>
+            <span class="bp-category-label">BLOG</span>
+            <span class="bp-category-line"></span>
+        </div>
+        <h1 class="bp-title">{{ title }}</h1>
+        <p class="bp-description">{{ description }}</p>
+        <div class="bp-meta">
+            {% if readTime %}<span class="bp-meta-item">{{ readTime }} MIN READ</span>{% endif %}
+            <span class="bp-meta-item">{{ date | date }}</span>
+        </div>
+    </div>
+</section>
+
+{# ═══ 3-COLUMN BODY: Author/TOC | Article | Related ═══ #}
+<section class="bp-body-section">
+    <div class="bp-grid">
+
+        {# LEFT SIDEBAR — no backgrounds #}
+        <aside class="bp-sidebar-left">
+            <div class="bp-sidebar-left-sticky">
+                {# Author #}
+                <div class="bp-author">
+                    <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens" width="72" height="72" loading="lazy" class="bp-author-photo">
+                    <h4 class="bp-author-name">{{ author or 'Mike Stevens' }}</h4>
+                    <p class="bp-author-role">Capital Wealth</p>
                 </div>
 
-                {# Share links #}
-                <div class="editorial-share-block">
-                    <h5 class="editorial-share-title">SHARE</h5>
-                    <div class="editorial-share-links">
-                        <button class="editorial-share-btn" data-share="copy">
-                            <span class="editorial-share-icon">🔗</span>
-                            Copy Link
-                        </button>
-                        <button class="editorial-share-btn" data-share="email">
-                            <span class="editorial-share-icon">✉️</span>
-                            Email
-                        </button>
-                    </div>
+                {# TOC #}
+                <div class="bp-toc">
+                    <h5 class="bp-toc-title">IN THIS ARTICLE</h5>
+                    <nav class="bp-toc-nav" id="blogToc"></nav>
                 </div>
 
-                {# Reading progress #}
-                <div class="editorial-reading-progress">
-                    <div class="editorial-progress-label">READING PROGRESS</div>
-                    <div class="editorial-progress-circle">
-                        <svg width="60" height="60" viewBox="0 0 60 60">
-                            <circle cx="30" cy="30" r="25" stroke="#edeef0" stroke-width="4" fill="none"/>
-                            <circle class="editorial-progress-circle-fill" cx="30" cy="30" r="25" stroke="#F09F54" stroke-width="4" fill="none" stroke-dasharray="157" stroke-dashoffset="157"/>
-                        </svg>
-                        <span class="editorial-progress-percentage">0%</span>
-                    </div>
+                {# Share #}
+                <div class="bp-share">
+                    <h5 class="bp-share-title">SHARE</h5>
+                    <button class="bp-share-btn" data-share="copy">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        Copy Link
+                    </button>
+                    <button class="bp-share-btn" data-share="email">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                        Email
+                    </button>
                 </div>
-            </aside>
+            </div>
+        </aside>
 
-            {# Main Content (6 cols) #}
-            <main class="editorial-main-content">
-                <header class="editorial-blog-header">
-                    <div class="editorial-category">
-                        <span class="editorial-category-line"></span>
-                        <span class="editorial-category-label">BLOG</span>
-                        <span class="editorial-category-line"></span>
-                    </div>
-                    <h1 class="editorial-blog-title">{{ title }}</h1>
-                    <p class="editorial-blog-description">{{ description }}</p>
-                    
-                    {# Author byline with photo (mobile/tablet) #}
-                    <div class="editorial-mobile-author">
-                        <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens" class="editorial-mobile-author-img" width="40" height="40" loading="lazy">
-                        <div class="editorial-mobile-author-info">
-                            <span class="editorial-mobile-author-name">{{ author or 'Mike Stevens' }}</span>
-                            <span class="editorial-mobile-author-role">Capital Wealth</span>
-                        </div>
-                    </div>
+        {# MAIN ARTICLE #}
+        <main class="bp-article" id="blogBody">
+            <p class="bp-attribution"><em>Originally aired on KAOX, KID, KNRS, and KSL</em></p>
+            {{ content | safe }}
+        </main>
 
-                    <div class="editorial-blog-meta">
-                        {% if readTime %}<span class="editorial-meta-item">{{ readTime }} MIN READ</span>{% endif %}
-                        <span class="editorial-meta-item">{{ date | date }}</span>
-                    </div>
-                </header>
-
-                <div class="editorial-blog-body">
-                    <p class="editorial-attribution"><em>Originally aired on KAOX, KID, KNRS, and KSL</em></p>
-                    {{ content | safe }}
-                </div>
-            </main>
-
-            {# Right Sidebar (3 cols) #}
-            <aside class="editorial-sidebar editorial-sidebar-right">
+        {# RIGHT SIDEBAR #}
+        <aside class="bp-sidebar-right">
+            <div class="bp-sidebar-right-sticky">
                 {# Related Reading #}
-                <div class="editorial-related-block">
-                    <h3 class="editorial-sidebar-title">Related Reading</h3>
-                    {% set relatedPosts = [] %}
-                    {% for post in collections.blog %}
-                        {% if post.url != page.url %}
-                            {% set relatedPosts = (relatedPosts.push(post), relatedPosts) %}
-                        {% endif %}
-                    {% endfor %}
-                    {% set relatedPosts = relatedPosts | reverse | slice(0, 3) %}
-                    
-                    <div class="editorial-related-posts">
-                        {% for post in relatedPosts %}
-                        <a href="{{ post.url }}" class="editorial-related-post">
+                <div class="bp-related">
+                    <h3 class="bp-related-title">Related Reading</h3>
+                    {% set count = 0 %}
+                    {% for post in collections.blog | reverse %}
+                        {% if post.url != page.url and count < 3 %}
+                        <a href="{{ post.url }}" class="bp-related-link">
                             <h4>{{ post.data.title }}</h4>
                             <time>{{ post.data.date | date }}</time>
                         </a>
-                        {% endfor %}
-                    </div>
+                        {% set count = count + 1 %}
+                        {% endif %}
+                    {% endfor %}
                 </div>
 
-                {# Newsletter/Consultation CTA #}
-                <div class="editorial-cta-block">
-                    <h3 class="editorial-cta-title">Ready to Plan?</h3>
-                    <p class="editorial-cta-text">Get personalized retirement guidance from Mike Stevens.</p>
-                    <a href="/contact/" class="editorial-cta-btn">Schedule Consultation</a>
+                {# CTA #}
+                <div class="bp-cta">
+                    <h3 class="bp-cta-heading">Ready to Plan?</h3>
+                    <p>Get personalized retirement guidance from Mike Stevens.</p>
+                    <a href="/contact/" class="bp-cta-btn">Schedule Consultation</a>
                 </div>
 
-                {# Topic Tags #}
+                {# Tags #}
                 {% if tags %}
-                <div class="editorial-tags-block">
-                    <h3 class="editorial-sidebar-title">Topics</h3>
-                    <div class="editorial-topic-tags">
+                <div class="bp-tags">
+                    <h5 class="bp-tags-title">TOPICS</h5>
+                    <div class="bp-tags-list">
                         {% for tag in tags %}
                             {% if tag != 'blog' %}
-                            <span class="editorial-topic-tag">{{ tag }}</span>
+                            <span class="bp-tag">{{ tag }}</span>
                             {% endif %}
                         {% endfor %}
                     </div>
                 </div>
                 {% endif %}
-            </aside>
+            </div>
+        </aside>
 
-        </div>
     </div>
 </section>
 
-{# Bottom CTA - preserved from original #}
+{# Bottom CTA #}
 <section class="blog-bottom-cta">
     <div class="blog-bottom-cta-inner">
         <h2>Ready for Your Retirement Money Map?</h2>
@@ -225,463 +200,498 @@ layout: layouts/base.njk
 </section>
 
 <style>
-/* Editorial Blog Design System */
+/* ═══ BLOG POST — Editorial 3-Column ═══ */
 :root {
-    --editorial-primary: #003870;
-    --editorial-accent: #F09F54;
-    --editorial-surface-base: #f8f9fb;
-    --editorial-surface-section: #f3f4f6;
-    --editorial-surface-container: #edeef0;
-    --editorial-text-primary: #1a1a1a;
-    --editorial-text-secondary: #525252;
-    --editorial-text-meta: #737373;
-    --editorial-shadow-color: rgba(0,56,112,0.08);
+    --bp-primary: #003870;
+    --bp-accent: #F09F54;
+    --bp-surface: #f8f9fb;
+    --bp-surface-low: #f3f4f6;
+    --bp-text: #191c1e;
+    --bp-text-sec: #525252;
+    --bp-text-meta: #737373;
 }
 
-/* Reading Progress Bar */
-.reading-progress-bar {
+/* Progress bar */
+.bp-progress-bar {
     position: fixed;
     top: 0;
     left: 0;
     width: 0%;
     height: 3px;
-    background: var(--editorial-accent);
+    background: var(--bp-accent);
     z-index: 1000;
-    transition: width 0.2s ease;
+    transition: width 0.15s ease;
 }
 
-/* Editorial Layout */
-.editorial-blog-layout {
-    background: var(--editorial-surface-base);
-    min-height: 100vh;
-    padding: 2rem 0;
+/* ═══ HEADER — full-width centered ═══ */
+.bp-header-section {
+    background: white;
+    padding: 2.5rem 1.5rem 2rem;
+    text-align: center;
 }
 
-.editorial-container {
-    max-width: 1200px;
+.bp-header-inner {
+    max-width: 720px;
     margin: 0 auto;
-    padding: 0 1.5rem;
 }
 
-.editorial-grid {
-    display: grid;
-    grid-template-columns: 3fr 6fr 3fr;
-    gap: 3rem;
-    align-items: start;
-}
-
-/* Left Sidebar */
-.editorial-sidebar-left {
-    position: sticky;
-    top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.editorial-author-block {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.125rem;
-    box-shadow: 0 30px 60px var(--editorial-shadow-color);
-    text-align: center;
-}
-
-.editorial-author-photo img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-    margin-bottom: 1rem;
-}
-
-.editorial-author-photo img:hover {
-    filter: grayscale(0%);
-}
-
-.editorial-author-name {
-    font-family: "Cormorant Garamond", serif;
-    font-style: italic;
-    font-size: 1.25rem;
-    color: var(--editorial-primary);
-    margin: 0 0 0.25rem;
-    font-weight: 300;
-}
-
-.editorial-author-role {
-    font-family: "Geist Mono", monospace;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--editorial-text-meta);
-    margin: 0;
-}
-
-.editorial-share-block {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.125rem;
-    box-shadow: 0 30px 60px var(--editorial-shadow-color);
-}
-
-.editorial-share-title {
-    font-family: "Geist Mono", monospace;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--editorial-text-meta);
-    margin: 0 0 1rem;
-    text-align: center;
-}
-
-.editorial-share-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.editorial-share-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem;
-    background: var(--editorial-surface-section);
-    border: none;
-    border-radius: 0.125rem;
-    font-family: "Manrope", sans-serif;
-    font-size: 0.875rem;
-    color: var(--editorial-text-secondary);
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.editorial-share-btn:hover {
-    background: var(--editorial-accent);
-    color: white;
-    transform: translateY(-1px);
-}
-
-.editorial-reading-progress {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.125rem;
-    box-shadow: 0 30px 60px var(--editorial-shadow-color);
-    text-align: center;
-}
-
-.editorial-progress-label {
-    font-family: "Geist Mono", monospace;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--editorial-text-meta);
-    margin-bottom: 1rem;
-}
-
-.editorial-progress-circle {
-    position: relative;
-    display: inline-block;
-}
-
-.editorial-progress-circle svg {
-    transform: rotate(-90deg);
-}
-
-.editorial-progress-percentage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Geist Mono", monospace;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--editorial-accent);
-}
-
-/* Main Content */
-.editorial-main-content {
-    background: white;
-    padding: 3rem;
-    border-radius: 0.125rem;
-    box-shadow: 0 30px 60px var(--editorial-shadow-color);
-}
-
-.editorial-blog-header {
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.editorial-category {
+.bp-category {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.editorial-category-line {
-    width: 60px;
-    height: 1px;
-    background: var(--editorial-accent);
-}
-
-.editorial-category-label {
-    font-family: "Geist Mono", monospace;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--editorial-accent);
-    font-weight: 600;
-}
-
-.editorial-blog-title {
-    font-family: "Cormorant Garamond", serif;
-    font-style: italic;
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-weight: 300;
-    color: var(--editorial-primary);
-    line-height: 1.2;
-    margin: 0 0 1.5rem;
-}
-
-.editorial-blog-description {
-    font-family: "Cormorant Garamond", serif;
-    font-style: italic;
-    font-size: 1.25rem;
-    color: var(--editorial-text-secondary);
-    line-height: 1.5;
-    margin: 0 0 2rem;
-}
-
-.editorial-mobile-author {
-    display: none; /* Hidden by default, shown on mobile */
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
     margin-bottom: 1.5rem;
 }
 
-.editorial-mobile-author-img {
-    border-radius: 50%;
-    object-fit: cover;
+.bp-category-line {
+    width: 50px;
+    height: 1px;
+    background: var(--bp-accent);
 }
 
-.editorial-mobile-author-name {
+.bp-category-label {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--bp-accent);
+    font-weight: 600;
+}
+
+.bp-title {
     font-family: "Cormorant Garamond", serif;
     font-style: italic;
-    font-size: 1rem;
-    color: var(--editorial-primary);
-    display: block;
+    font-size: clamp(2.2rem, 4.5vw, 3.1rem);
+    font-weight: 300;
+    color: var(--bp-primary);
+    line-height: 1.12;
+    margin: 0 0 1rem;
 }
 
-.editorial-mobile-author-role {
-    font-family: "Geist Mono", monospace;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--editorial-text-meta);
-    display: block;
+.bp-description {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--bp-text-sec);
+    line-height: 1.55;
+    margin: 0 0 1.25rem;
 }
 
-.editorial-blog-meta {
+.bp-meta {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
 }
 
-.editorial-meta-item {
+.bp-meta-item {
     font-family: "Geist Mono", monospace;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--editorial-text-meta);
+    letter-spacing: 0.08em;
+    color: var(--bp-text-meta);
 }
 
-/* Blog Body Styling */
-.editorial-blog-body {
-    font-family: "Manrope", sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--editorial-text-primary);
+/* ═══ BODY — 3-column grid ═══ */
+.bp-body-section {
+    background: white;
+    padding: 0 1.5rem 3rem;
 }
 
-.editorial-attribution {
-    font-style: italic;
-    color: var(--editorial-text-meta);
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 0.9rem;
+.bp-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr 240px;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
 }
 
-/* Editorial Drop Cap */
-.editorial-blog-body p:first-of-type:first-letter {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: 1;
-    float: left;
-    margin: 0.1rem 0.5rem 0 0;
-    color: var(--editorial-primary);
-}
-
-/* Pull Quotes */
-.editorial-blog-body blockquote {
-    font-family: "Cormorant Garamond", serif;
-    font-style: italic;
-    font-size: 1.5rem;
-    line-height: 1.4;
-    margin: 2.5rem 0;
-    padding-left: 2rem;
-    border-left: 4px solid var(--editorial-accent);
-    color: var(--editorial-primary);
-}
-
-/* Right Sidebar */
-.editorial-sidebar-right {
+/* ═══ LEFT SIDEBAR — no backgrounds ═══ */
+.bp-sidebar-left-sticky {
     position: sticky;
-    top: 2rem;
+    top: 120px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.editorial-related-block,
-.editorial-cta-block,
-.editorial-tags-block {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.125rem;
-    box-shadow: 0 30px 60px var(--editorial-shadow-color);
+/* Author — square photo, left-aligned */
+.bp-author {
+    text-align: left;
 }
 
-.editorial-sidebar-title {
+.bp-author-photo {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 2px;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.bp-author-photo:hover {
+    filter: grayscale(0%);
+}
+
+.bp-author-name {
     font-family: "Cormorant Garamond", serif;
     font-style: italic;
-    font-size: 1.25rem;
-    color: var(--editorial-primary);
-    margin: 0 0 1rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    color: var(--bp-primary);
+    margin: 0 0 0.15rem;
+    font-weight: 400;
 }
 
-.editorial-related-posts {
+.bp-author-role {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--bp-text-meta);
+    margin: 0;
+}
+
+/* TOC */
+.bp-toc {
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(194,198,210,0.2);
+}
+
+.bp-toc-title {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--bp-text-meta);
+    margin: 0 0 0.75rem;
+    font-weight: 500;
+}
+
+.bp-toc-nav {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
-.editorial-related-post {
+.bp-toc-link {
     display: block;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    color: var(--bp-text-sec);
     text-decoration: none;
-    padding: 1rem;
-    background: var(--editorial-surface-section);
-    border-radius: 0.125rem;
+    padding: 0.35rem 0 0.35rem 0.75rem;
+    border-left: 2px solid transparent;
     transition: all 0.2s ease;
 }
 
-.editorial-related-post:hover {
-    background: var(--editorial-accent);
-    color: white;
-    transform: translateY(-2px);
+.bp-toc-link:hover {
+    color: var(--bp-primary);
+    border-left-color: var(--bp-accent);
 }
 
-.editorial-related-post h4 {
-    font-family: "Manrope", sans-serif;
-    font-size: 0.9rem;
+.bp-toc-link.active {
+    color: var(--bp-primary);
     font-weight: 600;
-    line-height: 1.4;
-    margin: 0 0 0.5rem;
-    color: inherit;
+    border-left-color: var(--bp-primary);
 }
 
-.editorial-related-post time {
+/* Share */
+.bp-share {
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(194,198,210,0.2);
+}
+
+.bp-share-title {
     font-family: "Geist Mono", monospace;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    opacity: 0.7;
+    letter-spacing: 0.12em;
+    color: var(--bp-text-meta);
+    margin: 0 0 0.75rem;
+    font-weight: 500;
 }
 
-/* CTA Block */
-.editorial-cta-title {
+.bp-share-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: none;
+    border: none;
+    padding: 0.4rem 0;
+    font-family: "Geist Mono", monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--bp-text-sec);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.bp-share-btn:hover {
+    color: var(--bp-primary);
+}
+
+.bp-share-btn svg {
+    flex-shrink: 0;
+}
+
+/* ═══ MAIN ARTICLE ═══ */
+.bp-article {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--bp-text);
+    min-width: 0;
+    border-left: 1px solid rgba(194,198,210,0.2);
+    border-right: 1px solid rgba(194,198,210,0.2);
+    padding: 0 2.5rem;
+}
+
+.bp-attribution {
+    font-family: "Geist Mono", monospace !important;
+    font-size: 0.72rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--bp-text-meta) !important;
+    text-align: center;
+    margin-bottom: 2rem !important;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(194,198,210,0.15);
+}
+
+.bp-article h1 { display: none; }
+
+.bp-article h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.55rem;
+    font-weight: 400;
+    color: var(--bp-primary);
+    margin: 2.5rem 0 0.85rem;
+    scroll-margin-top: 120px;
+}
+
+.bp-article h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--bp-primary);
+    margin: 1.75rem 0 0.6rem;
+}
+
+.bp-article p { margin: 0 0 1.1rem; }
+
+.bp-article ul, .bp-article ol {
+    padding-left: 1.35rem;
+    margin: 0 0 1.25rem;
+}
+
+.bp-article li {
+    margin-bottom: 0.4rem;
+    line-height: 1.65;
+}
+
+.bp-article strong {
+    color: var(--bp-primary);
+    font-weight: 600;
+}
+
+.bp-article a {
+    color: var(--bp-primary);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,56,112,0.2);
+    transition: border-color 0.2s;
+}
+
+.bp-article a:hover {
+    border-bottom-color: var(--bp-accent);
+    color: var(--bp-accent);
+}
+
+.bp-article blockquote {
+    border-left: 4px solid var(--bp-accent);
+    margin: 2rem 0;
+    padding: 1.25rem 1.75rem;
+    background: transparent;
+}
+
+.bp-article blockquote p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--bp-primary);
+    line-height: 1.45;
+}
+
+.bp-article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+}
+
+.bp-article th {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    color: var(--bp-primary);
+    font-weight: 600;
+}
+
+.bp-article td {
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.bp-article .card {
+    background: var(--bp-surface-low);
+    border: none;
+    border-radius: 2px;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+}
+
+/* ═══ RIGHT SIDEBAR ═══ */
+.bp-sidebar-right-sticky {
+    position: sticky;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Related Reading */
+.bp-related {
+    background: var(--bp-surface-low);
+    padding: 1.5rem;
+    border-radius: 2px;
+}
+
+.bp-related-title {
     font-family: "Cormorant Garamond", serif;
     font-style: italic;
-    font-size: 1.25rem;
-    color: var(--editorial-primary);
+    font-size: 1.2rem;
+    color: var(--bp-primary);
     margin: 0 0 1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
-.editorial-cta-text {
+.bp-related-link {
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-left: 3px solid var(--bp-accent);
+    margin-bottom: 0.75rem;
+    transition: all 0.2s;
+}
+
+.bp-related-link:hover {
+    background: rgba(0,56,112,0.04);
+}
+
+.bp-related-link h4 {
     font-family: "Manrope", sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: var(--editorial-text-secondary);
-    margin: 0 0 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--bp-primary);
+    line-height: 1.4;
+    margin: 0 0 0.35rem;
 }
 
-.editorial-cta-btn {
+.bp-related-link time {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.65rem;
+    color: var(--bp-text-meta);
+}
+
+/* CTA */
+.bp-cta {
+    background: var(--bp-surface-low);
+    padding: 1.5rem;
+    border-radius: 2px;
+}
+
+.bp-cta-heading {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--bp-primary);
+    margin: 0 0 0.5rem;
+    font-weight: 400;
+}
+
+.bp-cta p {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.85rem;
+    color: var(--bp-text-sec);
+    line-height: 1.5;
+    margin: 0 0 1rem;
+}
+
+.bp-cta-btn {
     display: block;
     text-align: center;
-    padding: 1rem 1.5rem;
-    background: var(--editorial-primary);
+    padding: 0.75rem 1.25rem;
+    background: var(--bp-primary);
     color: white;
     text-decoration: none;
-    border-radius: 0.125rem;
+    border-radius: 2px;
     font-family: "Manrope", sans-serif;
     font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
+    font-size: 0.85rem;
+    transition: background 0.2s;
 }
 
-.editorial-cta-btn:hover {
-    background: var(--editorial-accent);
-    transform: translateY(-2px);
+.bp-cta-btn:hover {
+    background: var(--bp-accent);
 }
 
-/* Topic Tags */
-.editorial-topic-tags {
+/* Tags */
+.bp-tags {
+    padding-top: 0.5rem;
+}
+
+.bp-tags-title {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--bp-text-meta);
+    margin: 0 0 0.75rem;
+    font-weight: 500;
+}
+
+.bp-tags-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
-.editorial-topic-tag {
-    padding: 0.5rem 0.75rem;
-    background: var(--editorial-surface-section);
-    color: var(--editorial-text-secondary);
+.bp-tag {
+    padding: 0.3rem 0.6rem;
+    background: var(--bp-surface-low);
     font-family: "Geist Mono", monospace;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    border-radius: 0.125rem;
-    transition: all 0.2s ease;
+    color: var(--bp-text-sec);
+    border-radius: 2px;
 }
 
-.editorial-topic-tag:hover {
-    background: var(--editorial-accent);
-    color: white;
-}
-
-/* Bottom CTA - Original styles preserved */
+/* ═══ BOTTOM CTA ═══ */
 .blog-bottom-cta {
     background: linear-gradient(135deg, #0f2b4a 0%, #194F90 100%);
     padding: 4rem 2rem;
     text-align: center;
-    margin-top: 3rem;
 }
-.blog-bottom-cta-inner {
-    max-width: 640px;
-    margin: 0 auto;
-}
+.blog-bottom-cta-inner { max-width: 640px; margin: 0 auto; }
 .blog-bottom-cta h2 {
     color: white;
     font-size: clamp(1.6rem, 3vw, 2.2rem);
     font-weight: 600;
     margin: 0 0 1rem;
-    letter-spacing: -0.02em;
 }
 .blog-bottom-cta p {
     color: rgba(255,255,255,0.8);
@@ -706,155 +716,113 @@ layout: layouts/base.njk
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
-/* Mobile Responsive Design */
-@media (max-width: 768px) {
-    .editorial-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .editorial-sidebar-left,
-    .editorial-sidebar-right {
-        display: none;
-    }
-    
-    .editorial-mobile-author {
-        display: flex;
-    }
-    
-    .editorial-main-content {
-        padding: 2rem 1.5rem;
-    }
-    
-    .editorial-blog-title {
-        font-size: 2.5rem;
-    }
-    
-    .editorial-category-line {
-        width: 40px;
-    }
-    
-    /* Mobile author stack */
-    .editorial-mobile-author {
-        padding: 1.5rem;
-        background: var(--editorial-surface-section);
-        border-radius: 0.125rem;
-        margin-bottom: 2rem;
-    }
-    
-    .editorial-mobile-author-info {
-        text-align: left;
-    }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-    .editorial-grid {
-        grid-template-columns: 1fr 2fr 1fr;
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 1024px) {
+    .bp-grid {
+        grid-template-columns: 180px 1fr 200px;
         gap: 2rem;
     }
-    
-    .editorial-main-content {
-        padding: 2.5rem;
+    .bp-article { padding: 0 2rem; }
+}
+
+@media (max-width: 900px) {
+    .bp-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
     
-    .editorial-sidebar-left .editorial-author-block,
-    .editorial-sidebar-left .editorial-share-block,
-    .editorial-sidebar-left .editorial-reading-progress {
-        padding: 1.25rem;
+    .bp-sidebar-left { display: none; }
+    .bp-sidebar-right { display: none; }
+    
+    .bp-article {
+        border: none;
+        padding: 0;
     }
+    
+    .bp-header-section { padding: 2rem 1.25rem 1.5rem; }
+    .bp-body-section { padding: 0 1.25rem 2rem; }
+    .bp-title { font-size: 2.2rem; }
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Reading Progress Bar and Circle
-    const progressBar = document.querySelector('.reading-progress-bar');
-    const progressCircle = document.querySelector('.editorial-progress-circle-fill');
-    const progressPercentage = document.querySelector('.editorial-progress-percentage');
-    const mainContent = document.querySelector('.editorial-main-content');
+    // ═══ BUILD TOC FROM H2s ═══
+    var blogBody = document.getElementById('blogBody');
+    var tocNav = document.getElementById('blogToc');
+    
+    if (blogBody && tocNav) {
+        var headings = blogBody.querySelectorAll('h2');
+        
+        headings.forEach(function(h2, index) {
+            if (!h2.id) h2.id = 'section-' + index;
+            
+            var link = document.createElement('a');
+            link.href = '#' + h2.id;
+            link.className = 'bp-toc-link';
+            link.textContent = h2.textContent;
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                h2.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+            tocNav.appendChild(link);
+        });
+        
+        // Active tracking
+        var tocLinks = tocNav.querySelectorAll('.bp-toc-link');
+        
+        function updateActiveToc() {
+            var scrollPos = window.scrollY + 140;
+            var activeIndex = -1;
+            
+            headings.forEach(function(h2, i) {
+                if (h2.offsetTop <= scrollPos) activeIndex = i;
+            });
+            
+            tocLinks.forEach(function(link, i) {
+                link.classList.toggle('active', i === activeIndex);
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveToc);
+        updateActiveToc();
+    }
+    
+    // ═══ READING PROGRESS ═══
+    var progressBar = document.querySelector('.bp-progress-bar');
+    var mainContent = document.querySelector('.bp-article');
     
     function updateProgress() {
         if (!mainContent) return;
+        var contentTop = mainContent.offsetTop;
+        var contentHeight = mainContent.scrollHeight;
+        var scrollTop = window.scrollY;
+        var windowHeight = window.innerHeight;
         
-        const contentHeight = mainContent.scrollHeight;
-        const windowHeight = window.innerHeight;
-        const scrollTop = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight;
-        
-        // Calculate progress based on main content area
-        const contentTop = mainContent.offsetTop;
-        const contentBottom = contentTop + contentHeight;
-        
-        let progress = 0;
+        var progress = 0;
         if (scrollTop > contentTop) {
-            const scrollInContent = Math.min(scrollTop - contentTop, contentHeight);
-            progress = (scrollInContent / contentHeight) * 100;
+            progress = ((scrollTop - contentTop) / (contentHeight - windowHeight)) * 100;
         }
-        
         progress = Math.min(100, Math.max(0, progress));
-        
-        // Update progress bar
-        if (progressBar) {
-            progressBar.style.width = progress + '%';
-        }
-        
-        // Update progress circle
-        if (progressCircle && progressPercentage) {
-            const circumference = 157; // 2 * π * 25
-            const offset = circumference - (progress / 100) * circumference;
-            progressCircle.style.strokeDashoffset = offset;
-            progressPercentage.textContent = Math.round(progress) + '%';
-        }
+        if (progressBar) progressBar.style.width = progress + '%';
     }
     
     window.addEventListener('scroll', updateProgress);
-    updateProgress(); // Initial call
+    updateProgress();
     
-    // Share functionality
-    const shareButtons = document.querySelectorAll('.editorial-share-btn');
-    shareButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const shareType = this.dataset.share;
-            const url = window.location.href;
-            const title = document.title;
-            
-            if (shareType === 'copy') {
-                navigator.clipboard.writeText(url).then(() => {
-                    this.innerHTML = '<span class="editorial-share-icon">✓</span>Copied!';
-                    setTimeout(() => {
-                        this.innerHTML = '<span class="editorial-share-icon">🔗</span>Copy Link';
-                    }, 2000);
-                }).catch(() => {
-                    // Fallback for older browsers
-                    const textArea = document.createElement('textarea');
-                    textArea.value = url;
-                    document.body.appendChild(textArea);
-                    textArea.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(textArea);
-                    this.innerHTML = '<span class="editorial-share-icon">✓</span>Copied!';
-                    setTimeout(() => {
-                        this.innerHTML = '<span class="editorial-share-icon">🔗</span>Copy Link';
-                    }, 2000);
+    // ═══ SHARE BUTTONS ═══
+    document.querySelectorAll('.bp-share-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var type = this.dataset.share;
+            if (type === 'copy') {
+                navigator.clipboard.writeText(window.location.href).then(function() {
+                    btn.querySelector('svg').style.display = 'none';
+                    var orig = btn.textContent;
+                    btn.textContent = '✓ Copied';
+                    setTimeout(function() { location.reload(); }, 1500);
                 });
-            } else if (shareType === 'email') {
-                const subject = encodeURIComponent(title);
-                const body = encodeURIComponent(`I thought you might find this article interesting: ${url}`);
-                window.open(`mailto:?subject=${subject}&body=${body}`);
-            }
-        });
-    });
-    
-    // Smooth anchor scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            } else if (type === 'email') {
+                window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' + encodeURIComponent(window.location.href));
             }
         });
     });

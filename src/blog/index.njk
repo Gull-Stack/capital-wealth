@@ -1,5 +1,5 @@
 ---
-layout: layouts/base-finpay.njk
+layout: layouts/base.njk
 title: "Retirement Planning Blog | Capital Wealth"
 description: "Expert retirement planning articles covering Social Security, tax strategies, estate planning, and income optimization from Capital Wealth in Lehi, Utah."
 permalink: /blog/
@@ -9,885 +9,670 @@ breadcrumbs:
   - { name: "Blog", url: "/blog/" }
 ---
 
-{# ═══════════════════════════════════════════════════════════
-   HERO SECTION — Editorial Design
-   ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-blog-hero">
-    <div class="container">
-        <div class="finpay-blog-hero-content">
-            <div class="editorial-hero-category">
-                <span class="editorial-hero-line"></span>
-                <span class="editorial-hero-label">INSIGHTS</span>
-                <span class="editorial-hero-line"></span>
-            </div>
-            <h1>Expert Insights for Your Retirement</h1>
-            <p class="finpay-blog-hero-subtitle">Tax strategies, planning guides, and financial wisdom from Capital Wealth's retirement specialists.</p>
+{# ═══ FEATURED STORY — Full-bleed hero image ═══ #}
+{% set featuredPost = collections.blog | reverse | first %}
+<section class="blog-idx-featured">
+    <a href="{{ featuredPost.url }}" class="blog-idx-featured-link">
+        <div class="blog-idx-featured-bg">
+            <img src="/assets/images/photos/blog-featured-couple-dock.jpg" alt="Couple enjoying retirement by mountain lake" class="blog-idx-featured-img" loading="eager">
+            <div class="blog-idx-featured-overlay"></div>
         </div>
-    </div>
+        <div class="blog-idx-featured-content">
+            <span class="blog-idx-featured-eyebrow">Latest Article</span>
+            <h1 class="blog-idx-featured-title">{{ featuredPost.data.title }}</h1>
+            <p class="blog-idx-featured-desc">{{ featuredPost.data.description }}</p>
+            <span class="blog-idx-featured-cta">Read Article <span>→</span></span>
+        </div>
+    </a>
 </section>
 
-{# ═══════════════════════════════════════════════════════════
-   FEATURED SECTION — Clean card-based layout
-   ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-blog-featured">
-    <div class="container">
-        <h2>Featured Articles</h2>
-        
-        {# Featured Post Grid #}
-        <div class="finpay-blog-featured-grid">
-            {% set featuredPost = collections.blog | reverse | first %}
-            {% for post in collections.blog %}
-                {% if post.data.featured %}
-                    {% set featuredPost = post %}
+{# ═══ MAIN LAYOUT: Sidebar + Article Grid ═══ #}
+<div class="blog-idx-layout">
+
+    {# LEFT SIDEBAR — Topics + CTA #}
+    <aside class="blog-idx-sidebar">
+        <div class="blog-idx-sidebar-sticky">
+            <div class="blog-idx-topics">
+                <h3 class="blog-idx-sidebar-title">Topics</h3>
+                <nav class="blog-idx-topic-list" id="blogTopicList">
+                    {# JS will populate from tags #}
+                </nav>
+            </div>
+
+            <div class="blog-idx-sidebar-cta">
+                <span class="blog-idx-sidebar-cta-label">The Desk</span>
+                <p>Need help with your retirement plan?</p>
+                <a href="/contact/">Schedule Consultation →</a>
+            </div>
+        </div>
+    </aside>
+
+    {# MAIN — Article Grid #}
+    <div class="blog-idx-main">
+
+        {# Search bar #}
+        <div class="blog-idx-search-row">
+            <input type="text" id="blogSearch" placeholder="Search articles..." class="blog-idx-search-input">
+        </div>
+
+        {# Article grid — square cards, text only #}
+        <div class="blog-idx-grid" id="blogArticlesList">
+            {% set postIndex = [0] %}
+            {% for post in collections.blog | reverse %}
+                {% if post.url != featuredPost.url %}
+                {% set _ = postIndex.push(postIndex.length) %}
+                <article class="blog-idx-card" data-title="{{ post.data.title | lower }}" data-description="{{ (post.data.description or '') | lower }}" data-tags="{{ post.data.tags | join(',') | lower }}">
+                    <a href="{{ post.url }}" class="blog-idx-card-link">
+                        <div class="blog-idx-card-top">
+                            <span class="blog-idx-card-number">{{ loop.index }}</span>
+                            <span class="blog-idx-card-tag">
+                                {% for tag in post.data.tags %}{% if tag != 'blog' %}{{ tag }}{% if not loop.last %} · {% endif %}{% endif %}{% endfor %}
+                            </span>
+                        </div>
+                        <h2 class="blog-idx-card-title">{{ post.data.title }}</h2>
+                        <div class="blog-idx-card-bottom">
+                            <time>{{ post.data.date | date }}</time>
+                            <span class="blog-idx-card-arrow">→</span>
+                        </div>
+                    </a>
+                </article>
                 {% endif %}
             {% endfor %}
-            
-            {# Main Featured Post #}
-            <div class="finpay-blog-featured-main">
-                <a href="{{ featuredPost.url }}" class="finpay-blog-featured-card">
-                    <div class="finpay-blog-featured-content">
-                        <span class="finpay-blog-featured-label">Featured</span>
-                        <h3>{{ featuredPost.data.title }}</h3>
-                        <p>{{ featuredPost.data.description or featuredPost.templateContent | striptags | truncate(150) }}</p>
-                        <div class="finpay-blog-featured-meta">
-                            <time>{{ featuredPost.data.date | date }}</time>
-                            <span>→</span>
-                        </div>
-                    </div>
-                </a>
+        </div>
+
+        {# Pagination #}
+        <div class="blog-idx-pagination" id="blogPagination"></div>
+
+        {# Newsletter CTA #}
+        <section class="blog-idx-newsletter">
+            <div class="blog-idx-newsletter-inner">
+                <h2>Stay Informed About Retirement Planning</h2>
+                <p>Get our latest insights and strategies delivered to your inbox.</p>
+                <a href="/contact/" class="blog-idx-newsletter-btn">Schedule a Consultation</a>
             </div>
+        </section>
 
-            {# Recent Articles Sidebar #}
-            <div class="finpay-blog-featured-sidebar">
-                <h4>Latest Articles</h4>
-                {% for post in collections.blog | reverse | slice(1, 4) %}
-                <a href="{{ post.url }}" class="finpay-blog-recent-article">
-                    <h5>{{ post.data.title }}</h5>
-                    <time>{{ post.data.date | date }}</time>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
     </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   SEARCH & FILTERS — Clean Finpay-inspired interface
-   ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-blog-search">
-    <div class="container">
-        <div class="finpay-blog-search-bar">
-            <input type="text" id="blogSearch" placeholder="Search articles..." class="finpay-search-input">
-        </div>
-        <div class="finpay-blog-filters" id="blogTagFilters">
-            <!-- Tags will be generated by JavaScript -->
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   ARTICLES LIST — 2/3 content + 1/3 sidebar layout
-   ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-blog-articles">
-    <div class="container">
-        <div class="blog-layout-wrapper">
-            <!-- Main Content Area (2/3) -->
-            <div class="blog-main-content">
-                <div class="finpay-blog-articles-grid" id="blogArticlesList">
-                    {% for post in collections.blog | reverse %}
-                    <article class="finpay-blog-article-card" data-title="{{ post.data.title | lower }}" data-description="{{ post.data.description | lower }}" data-tags="{{ post.data.tags | join(',') | lower }}">
-                        <a href="{{ post.url }}" class="finpay-blog-article-link">
-                            <div class="finpay-blog-article-content">
-                                <h3>{{ post.data.title }}</h3>
-                                <p>{{ post.data.description or post.templateContent | striptags | truncate(120) }}</p>
-                                <div class="finpay-blog-article-meta">
-                                    <time>{{ post.data.date | date }}</time>
-                                    <span class="finpay-blog-article-arrow">→</span>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    {% endfor %}
-                </div>
-                
-                <div class="finpay-blog-pagination" id="blogPagination">
-                    <!-- Pagination will be generated by JavaScript -->
-                </div>
-            </div>
-
-            <!-- Sidebar (1/3) -->
-            <aside class="blog-sidebar">
-                <!-- Search Widget -->
-                <div class="sidebar-widget">
-                    <h3 class="sidebar-widget-title">Search Articles</h3>
-                    <div class="sidebar-search">
-                        <input type="text" id="sidebarSearch" placeholder="Search..." class="sidebar-search-input">
-                        <button class="sidebar-search-btn">🔍</button>
-                    </div>
-                </div>
-
-                <!-- Popular Posts -->
-                <div class="sidebar-widget">
-                    <h3 class="sidebar-widget-title">Popular Articles</h3>
-                    <div class="sidebar-popular-posts">
-                        {% for post in collections.blog | reverse | slice(0, 5) %}
-                        <a href="{{ post.url }}" class="sidebar-popular-post">
-                            <h4>{{ post.data.title }}</h4>
-                            <time>{{ post.data.date | date }}</time>
-                        </a>
-                        {% endfor %}
-                    </div>
-                </div>
-
-                <!-- Categories/Tags (Simplified) -->
-                <div class="sidebar-widget">
-                    <h3 class="sidebar-widget-title">Topics</h3>
-                    <div class="sidebar-tags" id="sidebarTopics">
-                        <!-- Will be populated by JavaScript with simplified tag list -->
-                    </div>
-                </div>
-
-                <!-- Newsletter Signup -->
-                <div class="sidebar-widget">
-                    <h3 class="sidebar-widget-title">Stay Updated</h3>
-                    <p class="sidebar-newsletter-desc">Get retirement planning insights delivered monthly.</p>
-                    <a href="/contact/" class="sidebar-cta-btn">Schedule Consultation</a>
-                </div>
-            </aside>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   NEWSLETTER SIGNUP — Clean CTA section
-   ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-blog-newsletter">
-    <div class="container">
-        <div class="finpay-newsletter-content">
-            <h2>Stay informed about retirement planning</h2>
-            <p>Get our latest insights delivered to your inbox monthly.</p>
-            <a href="/contact/" class="finpay-btn-primary">Schedule a Consultation</a>
-        </div>
-    </div>
-</section>
+</div>
 
 <style>
-/* Editorial Blog Styles */
-.finpay-blog-hero {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-    padding: 4rem 0;
-    margin-bottom: 4rem;
+/* ═══ BLOG INDEX — Editorial Design ═══ */
+:root {
+    --bi-primary: #003870;
+    --bi-accent: #F09F54;
+    --bi-surface: #f8f9fb;
+    --bi-surface-low: #f3f4f6;
+    --bi-text: #191c1e;
+    --bi-text-sec: #525252;
+    --bi-text-meta: #737373;
 }
 
-.finpay-blog-hero-content {
-    text-align: center;
-    max-width: 600px;
+/* ═══ FEATURED HERO ═══ */
+.blog-idx-featured {
+    margin: 0 1.5rem 3rem;
+}
+
+.blog-idx-featured-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.blog-idx-featured-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.blog-idx-featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.7s ease;
+}
+
+.blog-idx-featured-link:hover .blog-idx-featured-img {
+    transform: scale(1.03);
+}
+
+.blog-idx-featured-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 30, 60, 0.8) 0%,
+        rgba(0, 30, 60, 0.3) 50%,
+        transparent 100%
+    );
+}
+
+.blog-idx-featured-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3rem;
+    max-width: 700px;
+    z-index: 2;
+}
+
+.blog-idx-featured-eyebrow {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--bi-accent);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.blog-idx-featured-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    font-weight: 300;
+    color: white;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+}
+
+.blog-idx-featured-desc {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.55;
+    margin: 0 0 1.5rem;
+    max-width: 520px;
+}
+
+.blog-idx-featured-cta {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 0.25rem;
+    transition: border-color 0.2s;
+}
+
+.blog-idx-featured-link:hover .blog-idx-featured-cta {
+    border-color: white;
+}
+
+/* ═══ LAYOUT: Sidebar + Main ═══ */
+.blog-idx-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 3rem;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+    align-items: start;
 }
 
-.editorial-hero-category {
+/* ═══ SIDEBAR ═══ */
+.blog-idx-sidebar-sticky {
+    position: sticky;
+    top: 120px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.blog-idx-sidebar-title {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--bi-primary);
+    margin: 0 0 1rem;
+    font-weight: 400;
+}
+
+.blog-idx-topic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.blog-idx-topic-btn {
+    display: block;
+    text-align: left;
+    background: none;
+    border: none;
+    border-left: 3px solid transparent;
+    padding: 0.4rem 0 0.4rem 0.75rem;
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--bi-text-sec);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.blog-idx-topic-btn:hover {
+    color: var(--bi-primary);
+    border-left-color: var(--bi-accent);
+}
+
+.blog-idx-topic-btn.active {
+    color: var(--bi-primary);
+    font-weight: 600;
+    border-left-color: var(--bi-primary);
+}
+
+/* Sidebar CTA */
+.blog-idx-sidebar-cta {
+    background: var(--bi-surface-low);
+    padding: 1.5rem;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-idx-sidebar-cta-label {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--bi-primary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.blog-idx-sidebar-cta p {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--bi-primary);
+    line-height: 1.4;
+    margin: 0 0 0.75rem;
+}
+
+.blog-idx-sidebar-cta a {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--bi-accent);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--bi-accent);
+    padding-bottom: 2px;
+}
+
+/* ═══ MAIN ═══ */
+
+/* Search */
+.blog-idx-search-row {
     margin-bottom: 2rem;
 }
 
-.editorial-hero-line {
-    width: 60px;
-    height: 1px;
-    background: #F09F54;
+.blog-idx-search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.65rem 1rem;
+    border: 1px solid rgba(194,198,210,0.3);
+    border-radius: 2px;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    background: white;
+    transition: border-color 0.2s;
 }
 
-.editorial-hero-label {
+.blog-idx-search-input:focus {
+    outline: none;
+    border-color: var(--bi-primary);
+}
+
+/* ═══ ARTICLE GRID — Square editorial cards ═══ */
+.blog-idx-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(194,198,210,0.25);
+    border: 1px solid rgba(194,198,210,0.25);
+    margin-bottom: 2rem;
+}
+
+.blog-idx-card {
+    background: white;
+}
+
+.blog-idx-card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.75rem;
+    text-decoration: none;
+    min-height: 240px;
+    height: 100%;
+    transition: background 0.2s;
+}
+
+.blog-idx-card-link:hover {
+    background: var(--bi-surface);
+}
+
+.blog-idx-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.blog-idx-card-number {
     font-family: "Geist Mono", monospace;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
+    color: var(--bi-accent);
+    letter-spacing: 0.05em;
+}
+
+.blog-idx-card-tag {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.55rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #F09F54;
-    font-weight: 600;
-}
-
-.finpay-blog-hero h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-style: italic;
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-weight: 300;
-    color: #003870;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-}
-
-.finpay-blog-hero-subtitle {
-    font-family: "Cormorant Garamond", serif;
-    font-style: italic;
-    font-size: 1.25rem;
-    color: #525252;
-    margin: 0;
-    line-height: 1.5;
-}
-
-/* Featured Section */
-.finpay-blog-featured {
-    margin-bottom: 4rem;
-}
-
-.finpay-blog-featured h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #194F90;
-    margin-bottom: 2rem;
-}
-
-.finpay-blog-featured-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-}
-
-.finpay-blog-featured-card {
-    display: block;
-    text-decoration: none;
-    background: white;
-    border-radius: 12px;
-    padding: 2rem;
-    border: 1px solid #e5e7eb;
-    transition: all 0.2s ease;
-    height: fit-content;
-}
-
-.finpay-blog-featured-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #194F90;
-}
-
-.finpay-blog-featured-label {
-    background: #F09F54;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    display: inline-block;
-}
-
-.finpay-blog-featured-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #194F90;
-    margin-bottom: 1rem;
-    line-height: 1.3;
-}
-
-.finpay-blog-featured-card p {
-    color: #525252;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.finpay-blog-featured-meta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #737373;
-    font-size: 0.875rem;
-}
-
-.finpay-blog-featured-meta span {
-    color: #F09F54;
-    font-weight: 600;
-}
-
-/* Featured Sidebar */
-.finpay-blog-featured-sidebar h4 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #194F90;
-    margin-bottom: 1.5rem;
-}
-
-.finpay-blog-recent-article {
-    display: block;
-    text-decoration: none;
-    padding: 1rem 0;
-    border-bottom: 1px solid #e5e7eb;
-    transition: all 0.2s ease;
-}
-
-.finpay-blog-recent-article:hover {
-    background: #f8fafc;
-    padding-left: 0.5rem;
-}
-
-.finpay-blog-recent-article h5 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #404040;
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
-}
-
-.finpay-blog-recent-article time {
-    color: #737373;
-    font-size: 0.875rem;
-}
-
-/* Search Section */
-.finpay-blog-search {
-    background: #f8fafc;
-    padding: 2rem 0;
-    margin-bottom: 3rem;
-}
-
-.finpay-search-input {
-    width: 100%;
-    max-width: 500px;
-    padding: 0.75rem 1rem;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-    transition: border-color 0.2s ease;
-}
-
-.finpay-search-input:focus {
-    outline: none;
-    border-color: #194F90;
-    box-shadow: 0 0 0 3px rgba(25, 79, 144, 0.1);
-}
-
-.finpay-blog-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.blog-tag-pill {
-    padding: 0.5rem 1rem;
-    background: white;
-    border: 1px solid #d1d5db;
-    border-radius: 20px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.blog-tag-pill:hover,
-.blog-tag-pill.active {
-    background: #194F90;
-    color: white;
-    border-color: #194F90;
-}
-
-/* Blog Layout Wrapper */
-.blog-layout-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-    margin-bottom: 2rem;
-}
-
-.blog-main-content {
-    min-width: 0; /* Prevents grid blowout */
-}
-
-/* Articles Grid */
-.finpay-blog-articles-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.finpay-blog-article-card {
-    background: #f9fafb;
-    border-radius: 12px;
-    border: 1px solid #d1d5db;
+    color: var(--bi-text-meta);
+    max-width: 60%;
+    text-align: right;
     overflow: hidden;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.finpay-blog-article-card:hover {
-    transform: translateY(-2px);
-    background: white;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #194F90;
+.blog-idx-card-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--bi-primary);
+    line-height: 1.3;
+    margin: 0;
+    flex-grow: 1;
 }
 
-.finpay-blog-article-link {
-    display: block;
-    text-decoration: none;
-    padding: 1.5rem;
-}
-
-.finpay-blog-article-content h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #194F90;
-    margin-bottom: 0.75rem;
-    line-height: 1.4;
-}
-
-.finpay-blog-article-content p {
-    color: #525252;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.finpay-blog-article-meta {
+.blog-idx-card-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #737373;
-    font-size: 0.875rem;
+    margin-top: 1rem;
 }
 
-.finpay-blog-article-arrow {
-    color: #F09F54;
-    font-weight: 600;
-    transition: transform 0.2s ease;
+.blog-idx-card-bottom time {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.6rem;
+    color: var(--bi-text-meta);
+    letter-spacing: 0.05em;
 }
 
-.finpay-blog-article-card:hover .finpay-blog-article-arrow {
-    transform: translateX(4px);
+.blog-idx-card-arrow {
+    font-size: 1rem;
+    color: var(--bi-primary);
+    transition: transform 0.2s;
 }
 
-/* Newsletter Section */
-.finpay-blog-newsletter {
-    background: linear-gradient(135deg, #194F90 0%, #15437a 100%);
-    color: white;
-    padding: 3rem 0;
-    text-align: center;
-    margin-top: 4rem;
+.blog-idx-card-link:hover .blog-idx-card-arrow {
+    transform: translateX(3px);
 }
 
-.finpay-newsletter-content h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.finpay-newsletter-content p {
-    font-size: 1.125rem;
-    opacity: 0.9;
-    margin-bottom: 2rem;
-}
-
-/* Pagination */
-.finpay-blog-pagination {
+/* ═══ PAGINATION ═══ */
+.blog-idx-pagination {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    margin-top: 3rem;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(194,198,210,0.2);
 }
 
-.blog-pagination-btn,
-.blog-pagination-num {
-    padding: 0.5rem 0.75rem;
-    border: 1px solid #d1d5db;
-    background: white;
-    color: #525252;
-    border-radius: 6px;
-    font-size: 0.875rem;
+.blog-idx-page-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Geist Mono", monospace;
+    font-size: 0.8rem;
+    color: var(--bi-text-meta);
+    background: none;
+    border: 1px solid transparent;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.2s;
 }
 
-.blog-pagination-btn:hover:not(.disabled),
-.blog-pagination-num:hover {
-    background: #194F90;
+.blog-idx-page-btn:hover {
+    color: var(--bi-primary);
+}
+
+.blog-idx-page-btn.active {
+    color: var(--bi-primary);
+    border-color: var(--bi-primary);
+    font-weight: 600;
+}
+
+.blog-idx-page-nav {
+    padding: 0.5rem 1.25rem;
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     color: white;
-    border-color: #194F90;
+    background: var(--bi-primary);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
-.blog-pagination-num.active {
-    background: #194F90;
-    color: white;
-    border-color: #194F90;
+.blog-idx-page-nav:hover {
+    background: var(--bi-accent);
 }
 
-.blog-pagination-btn.disabled {
-    opacity: 0.5;
+.blog-idx-page-nav:disabled {
+    opacity: 0.4;
     cursor: not-allowed;
 }
 
-.blog-pagination-dots {
-    color: #737373;
-    padding: 0 0.5rem;
-}
-
-/* Sidebar Styles */
-.blog-sidebar {
-    position: sticky;
-    top: 2rem;
-    height: fit-content;
-}
-
-.sidebar-widget {
-    background: #f8fafc;
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #e5e7eb;
-}
-
-.sidebar-widget-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #194F90;
-    margin-bottom: 1rem;
-}
-
-/* Sidebar Search */
-.sidebar-search {
-    position: relative;
-    display: flex;
-}
-
-.sidebar-search-input {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border: 1px solid #d1d5db;
-    border-radius: 8px 0 0 8px;
-    font-size: 0.9rem;
-}
-
-.sidebar-search-btn {
-    padding: 0.75rem 1rem;
-    background: #194F90;
-    color: white;
-    border: 1px solid #194F90;
-    border-radius: 0 8px 8px 0;
-    cursor: pointer;
-    transition: background 0.2s ease;
-}
-
-.sidebar-search-btn:hover {
-    background: #15437a;
-}
-
-/* Sidebar Popular Posts */
-.sidebar-popular-post {
-    display: block;
-    text-decoration: none;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid #e5e7eb;
-    transition: all 0.2s ease;
-}
-
-.sidebar-popular-post:last-child {
-    border-bottom: none;
-}
-
-.sidebar-popular-post:hover {
-    padding-left: 0.5rem;
-    background: rgba(25, 79, 144, 0.05);
-    border-radius: 6px;
-}
-
-.sidebar-popular-post h4 {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #404040;
-    margin-bottom: 0.25rem;
-    line-height: 1.3;
-}
-
-.sidebar-popular-post time {
-    font-size: 0.8rem;
-    color: #737373;
-}
-
-/* Sidebar Tags */
-.sidebar-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.sidebar-tag {
-    padding: 0.4rem 0.8rem;
-    background: white;
-    border: 1px solid #d1d5db;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #525252;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    text-decoration: none;
-}
-
-.sidebar-tag:hover,
-.sidebar-tag.active {
-    background: #194F90;
-    color: white;
-    border-color: #194F90;
-}
-
-/* Newsletter */
-.sidebar-newsletter-desc {
-    font-size: 0.9rem;
-    color: #525252;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-}
-
-.sidebar-cta-btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: #194F90;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: background 0.2s ease;
+/* ═══ NEWSLETTER ═══ */
+.blog-idx-newsletter {
+    background: var(--bi-surface-low);
+    padding: 3rem;
+    margin-top: 3rem;
     text-align: center;
-    width: 100%;
 }
 
-.sidebar-cta-btn:hover {
-    background: #15437a;
+.blog-idx-newsletter h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--bi-primary);
+    margin: 0 0 0.75rem;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .finpay-blog-hero h1 {
-        font-size: 2rem;
+.blog-idx-newsletter p {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.95rem;
+    color: var(--bi-text-sec);
+    margin: 0 0 1.5rem;
+}
+
+.blog-idx-newsletter-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--bi-accent);
+    color: white;
+    text-decoration: none;
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.blog-idx-newsletter-btn:hover {
+    background: var(--bi-primary);
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 1024px) {
+    .blog-idx-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    .finpay-blog-featured-grid {
+}
+
+@media (max-width: 900px) {
+    .blog-idx-layout {
         grid-template-columns: 1fr;
     }
     
-    .blog-layout-wrapper {
+    .blog-idx-sidebar { display: none; }
+    
+    .blog-idx-featured-link { height: 420px; }
+    
+    .blog-idx-featured-content { padding: 2rem; }
+    
+    .blog-idx-featured-title { font-size: 2rem; }
+}
+
+@media (max-width: 600px) {
+    .blog-idx-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
     }
     
-    .blog-sidebar {
-        order: -1; /* Show sidebar above content on mobile */
-        position: static;
-    }
+    .blog-idx-featured { margin: 0 0.75rem 2rem; }
     
-    .finpay-blog-filters {
-        justify-content: center;
-    }
+    .blog-idx-featured-link { height: 380px; }
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('blogSearch');
-    const tagFiltersContainer = document.getElementById('blogTagFilters');
-    const articlesContainer = document.getElementById('blogArticlesList');
-    const paginationContainer = document.getElementById('blogPagination');
+    var allCards = Array.from(document.querySelectorAll('.blog-idx-card'));
+    var searchInput = document.getElementById('blogSearch');
+    var topicList = document.getElementById('blogTopicList');
+    var pagination = document.getElementById('blogPagination');
     
-    const allArticles = Array.from(document.querySelectorAll('.finpay-blog-article-card'));
-    let filteredArticles = [...allArticles];
-    let currentPage = 1;
-    const articlesPerPage = 9;
-    let activeTagFilter = null;
+    var filteredCards = allCards.slice();
+    var currentPage = 1;
+    var perPage = 12;
+    var activeTag = null;
     
-    // Generate tag filters (simplified set)
-    const allTags = new Set();
-    allArticles.forEach(article => {
-        const tags = article.dataset.tags.split(',').filter(tag => tag.trim() && tag !== 'blog');
-        tags.forEach(tag => allTags.add(tag.trim()));
+    // ═══ BUILD TOPIC LIST ═══
+    var tagCounts = {};
+    allCards.forEach(function(card) {
+        var tags = card.dataset.tags.split(',').filter(function(t) { return t.trim() && t !== 'blog'; });
+        tags.forEach(function(t) {
+            t = t.trim();
+            tagCounts[t] = (tagCounts[t] || 0) + 1;
+        });
     });
     
-    // Primary tag filters for main search area
-    if (allTags.size > 0) {
-        const allButton = document.createElement('button');
-        allButton.textContent = 'All';
-        allButton.className = 'blog-tag-pill active';
-        allButton.addEventListener('click', () => filterByTag(null));
-        tagFiltersContainer.appendChild(allButton);
-        
-        // Show 10-15 most relevant tags for better balance
-        const priorityTags = ['retirement', 'federal', 'taxes', 'social-security', 'investment', 'medicare', 'estate-planning', 'roth-conversion', 'irmaa', 'tax-planning', 'income-planning', 'legacy-planning', 'portfolio-management', 'inflation', 'healthcare'];
-        const relevantTags = priorityTags.filter(tag => allTags.has(tag)).slice(0, 12);
-        
-        relevantTags.forEach(tag => {
-            const button = document.createElement('button');
-            button.textContent = tag.charAt(0).toUpperCase() + tag.slice(1).replace('-', ' ');
-            button.className = 'blog-tag-pill';
-            button.dataset.tag = tag;
-            button.addEventListener('click', () => filterByTag(tag));
-            tagFiltersContainer.appendChild(button);
-        });
-    }
-
-    // Generate sidebar topics (balanced selection)
-    const sidebarTopics = document.getElementById('sidebarTopics');
-    if (sidebarTopics && allTags.size > 0) {
-        const topicOrder = ['retirement', 'federal', 'taxes', 'social-security', 'investment', 'medicare', 'estate-planning', 'roth-conversion', 'irmaa', 'tax-planning', 'income-planning', 'legacy-planning'];
-        const sidebarTags = topicOrder.filter(tag => allTags.has(tag)).slice(0, 10);
-        
-        sidebarTags.forEach(tag => {
-            const tagLink = document.createElement('button');
-            tagLink.textContent = tag.charAt(0).toUpperCase() + tag.slice(1).replace('-', ' ');
-            tagLink.className = 'sidebar-tag';
-            tagLink.addEventListener('click', () => filterByTag(tag));
-            sidebarTopics.appendChild(tagLink);
-        });
-    }
+    // Sort by count, take top 10
+    var sortedTags = Object.keys(tagCounts).sort(function(a, b) { return tagCounts[b] - tagCounts[a]; }).slice(0, 10);
     
-    // Search functionality
-    function searchArticles(query) {
-        if (!query.trim()) {
-            return allArticles;
-        }
-        
-        const searchTerms = query.toLowerCase().split(' ').filter(term => term.length > 0);
-        
-        return allArticles.filter(article => {
-            const title = article.dataset.title;
-            const description = article.dataset.description;
-            const tags = article.dataset.tags;
-            const searchContent = `${title} ${description} ${tags}`;
-            
-            return searchTerms.every(term => searchContent.includes(term));
-        });
-    }
+    // "All" button
+    var allBtn = document.createElement('button');
+    allBtn.textContent = 'All Articles';
+    allBtn.className = 'blog-idx-topic-btn active';
+    allBtn.addEventListener('click', function() { filterTag(null); });
+    topicList.appendChild(allBtn);
     
-    // Tag filtering
-    function filterByTag(tag) {
-        activeTagFilter = tag;
-        
-        document.querySelectorAll('.blog-tag-pill').forEach(btn => {
-            btn.classList.remove('active');
-        });
+    sortedTags.forEach(function(tag) {
+        var btn = document.createElement('button');
+        btn.textContent = tag.charAt(0).toUpperCase() + tag.slice(1).replace(/-/g, ' ');
+        btn.className = 'blog-idx-topic-btn';
+        btn.dataset.tag = tag;
+        btn.addEventListener('click', function() { filterTag(tag); });
+        topicList.appendChild(btn);
+    });
+    
+    function filterTag(tag) {
+        activeTag = tag;
+        topicList.querySelectorAll('.blog-idx-topic-btn').forEach(function(b) { b.classList.remove('active'); });
         
         if (tag) {
-            document.querySelector(`[data-tag="${tag}"]`).classList.add('active');
-            filteredArticles = allArticles.filter(article => 
-                article.dataset.tags.includes(tag)
-            );
+            topicList.querySelector('[data-tag="' + tag + '"]').classList.add('active');
+            filteredCards = allCards.filter(function(c) { return c.dataset.tags.includes(tag); });
         } else {
-            document.querySelector('.blog-tag-pill').classList.add('active');
-            filteredArticles = [...allArticles];
+            topicList.querySelector('.blog-idx-topic-btn').classList.add('active');
+            filteredCards = allCards.slice();
         }
         
-        const searchQuery = searchInput.value.trim();
-        if (searchQuery) {
-            filteredArticles = searchArticles(searchQuery).filter(article => 
-                activeTagFilter ? article.dataset.tags.includes(activeTagFilter) : true
-            );
-        }
-        
-        currentPage = 1;
-        updateDisplay();
+        applySearch();
     }
     
-    // Search input handler
-    function handleSearch(query) {
+    // ═══ SEARCH ═══
+    searchInput.addEventListener('input', function() { applySearch(); });
+    
+    function applySearch() {
+        var query = searchInput.value.toLowerCase().trim();
+        var base = activeTag ? allCards.filter(function(c) { return c.dataset.tags.includes(activeTag); }) : allCards.slice();
+        
         if (query) {
-            let searchResults = searchArticles(query);
-            if (activeTagFilter) {
-                searchResults = searchResults.filter(article => 
-                    article.dataset.tags.includes(activeTagFilter)
-                );
-            }
-            filteredArticles = searchResults;
+            var terms = query.split(' ').filter(function(t) { return t.length > 0; });
+            filteredCards = base.filter(function(c) {
+                var text = c.dataset.title + ' ' + c.dataset.description + ' ' + c.dataset.tags;
+                return terms.every(function(t) { return text.includes(t); });
+            });
         } else {
-            filteredArticles = activeTagFilter 
-                ? allArticles.filter(article => article.dataset.tags.includes(activeTagFilter))
-                : [...allArticles];
+            filteredCards = base;
         }
         
         currentPage = 1;
-        updateDisplay();
-    }
-
-    searchInput.addEventListener('input', function() {
-        handleSearch(this.value.trim());
-    });
-
-    // Sidebar search handler
-    const sidebarSearch = document.getElementById('sidebarSearch');
-    if (sidebarSearch) {
-        sidebarSearch.addEventListener('input', function() {
-            const query = this.value.trim();
-            searchInput.value = query; // Sync main search
-            handleSearch(query);
-        });
+        render();
     }
     
-    // Update display with pagination
-    function updateDisplay() {
-        allArticles.forEach(article => {
-            article.style.display = 'none';
-        });
+    // ═══ RENDER + PAGINATION ═══
+    function render() {
+        allCards.forEach(function(c) { c.style.display = 'none'; });
         
-        const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
-        const startIndex = (currentPage - 1) * articlesPerPage;
-        const endIndex = startIndex + articlesPerPage;
-        const pageArticles = filteredArticles.slice(startIndex, endIndex);
+        var totalPages = Math.ceil(filteredCards.length / perPage);
+        var start = (currentPage - 1) * perPage;
+        var pageCards = filteredCards.slice(start, start + perPage);
         
-        pageArticles.forEach(article => {
-            article.style.display = 'block';
-        });
+        pageCards.forEach(function(c) { c.style.display = ''; });
         
-        updatePagination(totalPages);
-    }
-    
-    // Update pagination controls
-    function updatePagination(totalPages) {
-        paginationContainer.innerHTML = '';
-        
+        // Pagination
+        pagination.innerHTML = '';
         if (totalPages <= 1) return;
         
-        const prevButton = document.createElement('button');
-        prevButton.textContent = '← Previous';
-        prevButton.className = 'blog-pagination-btn' + (currentPage === 1 ? ' disabled' : '');
-        prevButton.disabled = currentPage === 1;
-        prevButton.addEventListener('click', () => {
-            if (currentPage > 1) {
-                currentPage--;
-                updateDisplay();
-            }
-        });
-        paginationContainer.appendChild(prevButton);
+        // Prev
+        var prev = document.createElement('button');
+        prev.textContent = '← Prev';
+        prev.className = 'blog-idx-page-nav';
+        prev.disabled = currentPage === 1;
+        prev.addEventListener('click', function() { currentPage--; render(); });
+        pagination.appendChild(prev);
         
-        for (let i = 1; i <= totalPages; i++) {
+        for (var i = 1; i <= totalPages; i++) {
             if (i === 1 || i === totalPages || Math.abs(i - currentPage) <= 1) {
-                const pageButton = document.createElement('button');
-                pageButton.textContent = i;
-                pageButton.className = 'blog-pagination-num' + (i === currentPage ? ' active' : '');
-                pageButton.addEventListener('click', () => {
-                    currentPage = i;
-                    updateDisplay();
-                });
-                paginationContainer.appendChild(pageButton);
+                var btn = document.createElement('button');
+                btn.textContent = i;
+                btn.className = 'blog-idx-page-btn' + (i === currentPage ? ' active' : '');
+                (function(page) {
+                    btn.addEventListener('click', function() { currentPage = page; render(); });
+                })(i);
+                pagination.appendChild(btn);
             } else if (Math.abs(i - currentPage) === 2) {
-                const dots = document.createElement('span');
+                var dots = document.createElement('span');
                 dots.textContent = '...';
-                dots.className = 'blog-pagination-dots';
-                paginationContainer.appendChild(dots);
+                dots.style.cssText = 'color:#737373;padding:0 0.25rem;font-size:0.8rem;';
+                pagination.appendChild(dots);
             }
         }
         
-        const nextButton = document.createElement('button');
-        nextButton.textContent = 'Next →';
-        nextButton.className = 'blog-pagination-btn' + (currentPage === totalPages ? ' disabled' : '');
-        nextButton.disabled = currentPage === totalPages;
-        nextButton.addEventListener('click', () => {
-            if (currentPage < totalPages) {
-                currentPage++;
-                updateDisplay();
-            }
-        });
-        paginationContainer.appendChild(nextButton);
+        // Next
+        var next = document.createElement('button');
+        next.textContent = 'Next →';
+        next.className = 'blog-idx-page-nav';
+        next.disabled = currentPage === totalPages;
+        next.addEventListener('click', function() { currentPage++; render(); });
+        pagination.appendChild(next);
     }
     
-    // Initial display
-    updateDisplay();
+    render();
 });
 </script>
