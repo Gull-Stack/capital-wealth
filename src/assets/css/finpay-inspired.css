@@ -203,15 +203,15 @@ p {
 }
 
 .finpay-header .container {
-  max-width: 100%;
-  padding: 0;
+  max-width: 100% !important;
+  padding: 0 !important;
 }
 
 .finpay-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-3) var(--space-8);
+  padding: 0.75rem 2rem !important;
 }
 
 .finpay-nav-logo img {

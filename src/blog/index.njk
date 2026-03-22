@@ -10,7 +10,7 @@ breadcrumbs:
 ---
 
 {# ═══ FEATURED STORY — Full-bleed hero image ═══ #}
-{% set featuredPost = collections.blog | reverse | first %}
+{% set featuredPost = collections.blog | first %}
 <section class="blog-idx-featured">
     <a href="{{ featuredPost.url }}" class="blog-idx-featured-link">
         <div class="blog-idx-featured-bg">
@@ -58,7 +58,7 @@ breadcrumbs:
         {# Article grid — square cards, text only #}
         <div class="blog-idx-grid" id="blogArticlesList">
             {% set postIndex = [0] %}
-            {% for post in collections.blog | reverse %}
+            {% for post in collections.blog %}
                 {% if post.url != featuredPost.url %}
                 {% set _ = postIndex.push(postIndex.length) %}
                 <article class="blog-idx-card" data-title="{{ post.data.title | lower }}" data-description="{{ (post.data.description or '') | lower }}" data-tags="{{ post.data.tags | join(',') | lower }}">

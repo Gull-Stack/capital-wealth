@@ -153,7 +153,7 @@ layout: layouts/base.njk
                 <div class="bp-related">
                     <h3 class="bp-related-title">Related Reading</h3>
                     {% set count = 0 %}
-                    {% for post in collections.blog | reverse %}
+                    {% for post in collections.blog %}
                         {% if post.url != page.url and count < 3 %}
                         <a href="{{ post.url }}" class="bp-related-link">
                             <h4>{{ post.data.title }}</h4>

@@ -7,190 +7,642 @@ breadcrumbs:
   - { name: "Contact", url: "/contact/" }
 ---
 
-{# Combined hero + form section with warm background #}
+<style>
+/* Editorial contact page styles */
+.contact-hero-section {
+  background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%);
+  padding: 4rem 0 6rem;
+  position: relative;
+}
+
+.contact-hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact-hero-text {
+  padding-top: 2rem;
+}
+
+.contact-eyebrow {
+  font-family: "Geist Mono", monospace;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+}
+
+.contact-hero-title {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: #003870;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.contact-hero-subtitle {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #64748b;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.advisory-team {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-photos {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.team-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 8px 32px rgba(0, 56, 112, 0.08);
+}
+
+.team-photo.placeholder {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 1.5rem;
+}
+
+.team-label {
+  font-family: "Geist Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+/* Glass-style form card */
+.contact-form-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  padding: 2.5rem;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 32px 64px rgba(0, 56, 112, 0.06);
+  position: sticky;
+  top: 2rem;
+}
+
+.contact-form-title {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 1.875rem;
+  color: #003870;
+  margin-bottom: 0.75rem;
+}
+
+.contact-form-subtitle {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.95rem;
+  color: #64748b;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.contact-form-field {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form-field.full-width {
+  grid-column: span 2;
+}
+
+.contact-form-label {
+  font-family: "Geist Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #003870;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-input,
+.contact-form-select,
+.contact-form-textarea {
+  width: 100%;
+  padding: 1rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  background: #f8f9fb;
+  border: none;
+  border-radius: 12px;
+  color: #003870;
+  transition: all 0.2s ease;
+}
+
+.contact-form-input:focus,
+.contact-form-select:focus,
+.contact-form-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 56, 112, 0.1);
+  background: #ffffff;
+}
+
+.contact-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form-submit {
+  width: 100%;
+  padding: 1.25rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #003870 0%, #0052a3 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.contact-form-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 32px rgba(0, 56, 112, 0.2);
+}
+
+.contact-form-submit:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.contact-form-disclaimer {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  line-height: 1.4;
+  margin-top: 1rem;
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Contact details section */
+.contact-details-section {
+  padding: 5rem 0;
+  background: #ffffff;
+}
+
+.contact-details-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.direct-channels h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: #003870;
+  margin-bottom: 2rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.contact-info-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  color: #F09F54;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.contact-info-content h3 {
+  font-family: "Geist Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-content p {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.1rem;
+  color: #003870;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.contact-info-content a {
+  color: #003870;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-info-content a:hover {
+  color: #F09F54;
+}
+
+.editorial-quote {
+  padding: 2rem;
+  background: #f8f9fb;
+  border-radius: 16px;
+}
+
+.editorial-quote blockquote {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #003870;
+  margin-bottom: 1.5rem;
+}
+
+.editorial-quote cite {
+  font-family: "Geist Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #64748b;
+  font-style: normal;
+}
+
+.office-note {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.office-note p {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Bottom CTA banner */
+.contact-cta-banner {
+  background: linear-gradient(135deg, #003870 0%, #0052a3 100%);
+  padding: 4rem 0;
+  color: white;
+  text-align: center;
+}
+
+.contact-cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-cta-banner h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.contact-cta-banner p {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-cta-button {
+  display: inline-block;
+  padding: 1.25rem 2.5rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #F09F54;
+  color: #003870;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.contact-cta-button:hover {
+  background: #e88d41;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 32px rgba(240, 159, 84, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-hero-container,
+  .contact-details-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .contact-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .contact-form-field.full-width {
+    grid-column: span 1;
+  }
+  
+  .contact-hero-section {
+    padding: 2rem 0 3rem;
+  }
+  
+  .contact-details-section {
+    padding: 3rem 0;
+  }
+  
+  .contact-cta-banner {
+    padding: 3rem 0;
+  }
+  
+  .contact-cta-banner h2 {
+    font-size: 2rem;
+  }
+}
+</style>
+
+{# Hero section with editorial layout #}
 <section class="contact-hero-section">
-    <div class="contact-hero-inner">
-        <div class="contact-hero-text">
-            <h1 class="titan-hero-h1">Let's Talk About Your Retirement</h1>
-            <p class="titan-hero-body">No pressure. No pitch. Just a conversation about your goals and whether we're the right fit. Initial consultations are complimentary for qualified families.</p>
-
-            <div class="contact-info-cards">
-                <div class="contact-info-item">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                    <div>
-                        <p class="contact-info-label">Address</p>
-                        <p class="contact-info-value">1850 W Ashton Blvd, Suite 175<br>Lehi, UT 84043</p>
-                    </div>
-                </div>
-                <div class="contact-info-item">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <div>
-                        <p class="contact-info-label">Phone</p>
-                        <p class="contact-info-value"><a href="tel:8012102800">801.210.2800</a></p>
-                    </div>
-                </div>
-                <div class="contact-info-item">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    <div>
-                        <p class="contact-info-label">Email</p>
-                        <p class="contact-info-value"><a href="mailto:info@capitalwealth.com">info@capitalwealth.com</a></p>
-                    </div>
-                </div>
-                <div class="contact-info-item">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    <div>
-                        <p class="contact-info-label">Hours</p>
-                        <p class="contact-info-value">Monday - Friday: 9am - 5pm<br>Virtual meetings available nationwide</p>
-                    </div>
-                </div>
-            </div>
-
-            <p class="contact-trust-line">Confidential. No obligation. 20-30 minutes.</p>
+  <div class="contact-hero-container">
+    <div class="contact-hero-text">
+      <div class="contact-eyebrow">PRIVATE CONSULTATION</div>
+      <h1 class="contact-hero-title">Start a Conversation About Your Retirement</h1>
+      <p class="contact-hero-subtitle">No pressure. No pitch. Just a conversation about your goals and whether we're the right fit. Initial consultations are complimentary for qualified families.</p>
+      
+      <div class="advisory-team">
+        <div class="team-photos">
+          <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Capital Wealth Advisor" class="team-photo">
+          <div class="team-photo placeholder">+</div>
         </div>
-
-        <div class="contact-form-wrap">
-            <div class="contact-form-card">
-                <h2 class="contact-form-title">Request a Consultation</h2>
-                <p class="contact-form-subtitle">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
-
-                <form id="contact-form">
-                    <div class="contact-form-grid">
-                        <div style="margin-bottom: 1.25rem;">
-                            <label for="first_name" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">First Name *</label>
-                            <input type="text" id="first_name" name="first_name" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.35); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
-                        </div>
-
-                        <div style="margin-bottom: 1.25rem;">
-                            <label for="last_name" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Last Name *</label>
-                            <input type="text" id="last_name" name="last_name" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.35); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
-                        </div>
-                    </div>
-
-                    <div class="contact-form-grid">
-                        <div style="margin-bottom: 1.25rem;">
-                            <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Email Address *</label>
-                            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.35); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
-                        </div>
-
-                        <div style="margin-bottom: 1.25rem;">
-                            <label for="phone" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.35); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
-                        </div>
-                    </div>
-
-                    <div class="contact-form-grid">
-                        <div style="margin-bottom: 1.25rem;">
-                            <label for="savings" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Savings Amount</label>
-                            <select id="savings" name="savings" style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.35); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
-                                <option value="">Please select</option>
-                                <option value="$250K - $500K">$250K - $500K</option>
-                                <option value="$500K - $1M">$500K - $1M</option>
-                                <option value="$1M - $2M">$1M - $2M</option>
-                                <option value="$2M+">$2M+</option>
-                            </select>
-                        </div>
-
-                        <div style="margin-bottom: 1.25rem;">
-                            <label for="retirement-timeline" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Retirement Timeline</label>
-                            <select id="retirement-timeline" name="retirement-timeline" style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.35); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; font-family: var(--font-family);">
-                                <option value="">Please select</option>
-                                <option value="Already retired">Already retired</option>
-                                <option value="1-2 years">1-2 years</option>
-                                <option value="3-5 years">3-5 years</option>
-                                <option value="5-10 years">5-10 years</option>
-                                <option value="10+ years">10+ years</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div style="margin-bottom: 1.75rem;">
-                        <label for="questions" style="display: block; margin-bottom: 0.5rem; color: var(--navy); font-weight: 500; font-size: 0.95rem;">Questions or Comments</label>
-                        <textarea id="questions" name="questions" rows="4" placeholder="Tell us about your retirement planning goals or any specific questions you have..." style="width: 100%; padding: 0.85rem; border: 1px solid rgba(0,0,0,0.35); border-radius: 8px; background: #fff; color: var(--navy); font-size: 1rem; resize: vertical; font-family: var(--font-family);"></textarea>
-                    </div>
-
-                    <!-- Honeypot -->
-                    <div style="position:absolute;left:-9999px;"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
-
-                    <button type="submit" id="submit-btn" class="titan-hero-btn-primary" style="width: 100%; justify-content: center;">REQUEST CONSULTATION <span>→</span></button>
-                    <div id="form-status" style="margin-top: 12px; text-align: center; font-weight: 500;"></div>
-                </form>
-
-                <script>
-                document.getElementById('contact-form').addEventListener('submit', async function(e) {
-                  e.preventDefault();
-                  var btn = document.getElementById('submit-btn');
-                  var status = document.getElementById('form-status');
-
-                  // Honeypot check
-                  if (this.querySelector('[name="website"]').value) return;
-
-                  btn.disabled = true;
-                  btn.innerHTML = 'SENDING...';
-                  status.textContent = '';
-
-                  // Get first-touch tracking data from cookie
-                  function getCookie(name) {
-                    var value = '; ' + document.cookie;
-                    var parts = value.split('; ' + name + '=');
-                    if (parts.length === 2) return parts.pop().split(';').shift();
-                    return null;
-                  }
-
-                  var trackingData = {};
-                  try {
-                    var cookieData = getCookie('cw_first_touch');
-                    if (cookieData) {
-                      trackingData = JSON.parse(cookieData);
-                    }
-                  } catch (e) {}
-
-                  // Combine first and last name
-                  var fullName = document.getElementById('first_name').value + ' ' + document.getElementById('last_name').value;
-
-                  try {
-                    var res = await fetch('/api/submit-lead', {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify({
-                        name: fullName,
-                        email: document.getElementById('email').value,
-                        phone: document.getElementById('phone').value,
-                        savings: document.getElementById('savings').value,
-                        retirementTimeline: document.getElementById('retirement-timeline').value,
-                        questions: document.getElementById('questions').value,
-                        utm_source: trackingData.utm_source || '',
-                        utm_medium: trackingData.utm_medium || '',
-                        utm_campaign: trackingData.utm_campaign || '',
-                        utm_content: trackingData.utm_content || '',
-                        utm_term: trackingData.utm_term || '',
-                        referrer: trackingData.referrer || '',
-                        landing_page: trackingData.landing_page || '',
-                        submitted_from: window.location.pathname
-                      })
-                    });
-                    var data = await res.json();
-                    if (res.ok) {
-                      status.style.color = '#2d8a4e';
-                      status.textContent = "Thank you! Redirecting you to schedule your consultation...";
-                      this.reset();
-                      setTimeout(function() {
-                        window.location.href = '/thank-you/';
-                      }, 1500);
-                    } else {
-                      status.style.color = '#c0392b';
-                      status.textContent = data.error || 'Something went wrong. Please try again.';
-                    }
-                  } catch (err) {
-                    status.style.color = '#c0392b';
-                    status.textContent = 'Network error. Please try again or call us at 801.210.2800.';
-                  }
-                  btn.disabled = false;
-                  btn.innerHTML = 'REQUEST CONSULTATION <span>→</span>';
-                });
-                </script>
-
-                <p class="contact-form-disclaimer">By submitting this form, you agree to be contacted by Capital Wealth regarding your retirement planning needs. We respect your privacy and will never share your information.</p>
-            </div>
-        </div>
+        <div class="team-label">Dedicated Advisory Team</div>
+      </div>
     </div>
+    
+    <div class="contact-form-card">
+      <h2 class="contact-form-title">Request a Consultation</h2>
+      <p class="contact-form-subtitle">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
+      
+      <form id="contact-form">
+        <div class="contact-form-grid">
+          <div class="contact-form-field">
+            <label for="first_name" class="contact-form-label">First Name *</label>
+            <input type="text" id="first_name" name="first_name" required class="contact-form-input">
+          </div>
+          
+          <div class="contact-form-field">
+            <label for="last_name" class="contact-form-label">Last Name *</label>
+            <input type="text" id="last_name" name="last_name" required class="contact-form-input">
+          </div>
+          
+          <div class="contact-form-field">
+            <label for="email" class="contact-form-label">Email Address *</label>
+            <input type="email" id="email" name="email" required class="contact-form-input">
+          </div>
+          
+          <div class="contact-form-field">
+            <label for="phone" class="contact-form-label">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required class="contact-form-input">
+          </div>
+          
+          <div class="contact-form-field">
+            <label for="savings" class="contact-form-label">Savings Amount</label>
+            <select id="savings" name="savings" class="contact-form-select">
+              <option value="">Please select</option>
+              <option value="$250K - $500K">$250K - $500K</option>
+              <option value="$500K - $1M">$500K - $1M</option>
+              <option value="$1M - $2M">$1M - $2M</option>
+              <option value="$2M+">$2M+</option>
+            </select>
+          </div>
+          
+          <div class="contact-form-field">
+            <label for="retirement-timeline" class="contact-form-label">Retirement Timeline</label>
+            <select id="retirement-timeline" name="retirement-timeline" class="contact-form-select">
+              <option value="">Please select</option>
+              <option value="Already retired">Already retired</option>
+              <option value="1-2 years">1-2 years</option>
+              <option value="3-5 years">3-5 years</option>
+              <option value="5-10 years">5-10 years</option>
+              <option value="10+ years">10+ years</option>
+            </select>
+          </div>
+          
+          <div class="contact-form-field full-width">
+            <label for="questions" class="contact-form-label">Questions or Comments</label>
+            <textarea id="questions" name="questions" rows="4" placeholder="Tell us about your retirement planning goals or any specific questions you have..." class="contact-form-textarea"></textarea>
+          </div>
+        </div>
+        
+        <!-- Honeypot -->
+        <div class="honeypot"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+        
+        <button type="submit" id="submit-btn" class="contact-form-submit">REQUEST CONSULTATION →</button>
+        <div id="form-status" style="margin-top: 12px; text-align: center; font-weight: 500;"></div>
+      </form>
+      
+      <script>
+      document.getElementById('contact-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        var btn = document.getElementById('submit-btn');
+        var status = document.getElementById('form-status');
+
+        // Honeypot check
+        if (this.querySelector('[name="website"]').value) return;
+
+        btn.disabled = true;
+        btn.innerHTML = 'SENDING...';
+        status.textContent = '';
+
+        // Get first-touch tracking data from cookie
+        function getCookie(name) {
+          var value = '; ' + document.cookie;
+          var parts = value.split('; ' + name + '=');
+          if (parts.length === 2) return parts.pop().split(';').shift();
+          return null;
+        }
+
+        var trackingData = {};
+        try {
+          var cookieData = getCookie('cw_first_touch');
+          if (cookieData) {
+            trackingData = JSON.parse(cookieData);
+          }
+        } catch (e) {}
+
+        // Combine first and last name
+        var fullName = document.getElementById('first_name').value + ' ' + document.getElementById('last_name').value;
+
+        try {
+          var res = await fetch('/api/submit-lead', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              name: fullName,
+              email: document.getElementById('email').value,
+              phone: document.getElementById('phone').value,
+              savings: document.getElementById('savings').value,
+              retirementTimeline: document.getElementById('retirement-timeline').value,
+              questions: document.getElementById('questions').value,
+              utm_source: trackingData.utm_source || '',
+              utm_medium: trackingData.utm_medium || '',
+              utm_campaign: trackingData.utm_campaign || '',
+              utm_content: trackingData.utm_content || '',
+              utm_term: trackingData.utm_term || '',
+              referrer: trackingData.referrer || '',
+              landing_page: trackingData.landing_page || '',
+              submitted_from: window.location.pathname
+            })
+          });
+          var data = await res.json();
+          if (res.ok) {
+            status.style.color = '#2d8a4e';
+            status.textContent = "Thank you! Redirecting you to schedule your consultation...";
+            this.reset();
+            setTimeout(function() {
+              window.location.href = '/thank-you/';
+            }, 1500);
+          } else {
+            status.style.color = '#c0392b';
+            status.textContent = data.error || 'Something went wrong. Please try again.';
+          }
+        } catch (err) {
+          status.style.color = '#c0392b';
+          status.textContent = 'Network error. Please try again or call us at 801.210.2800.';
+        }
+        btn.disabled = false;
+        btn.innerHTML = 'REQUEST CONSULTATION →';
+      });
+      </script>
+      
+      <p class="contact-form-disclaimer">By submitting this form, you agree to be contacted by Capital Wealth regarding your retirement planning needs. We respect your privacy and will never share your information.</p>
+    </div>
+  </div>
+</section>
+
+{# Contact details section #}
+<section class="contact-details-section">
+  <div class="contact-details-container">
+    <div class="direct-channels">
+      <h2>Direct Channels</h2>
+      
+      <div class="contact-info-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <div class="contact-info-content">
+          <h3>Phone</h3>
+          <p><a href="tel:8012102800">801.210.2800</a></p>
+        </div>
+      </div>
+      
+      <div class="contact-info-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        <div class="contact-info-content">
+          <h3>Email</h3>
+          <p><a href="mailto:info@capitalwealth.com">info@capitalwealth.com</a></p>
+        </div>
+      </div>
+      
+      <div class="contact-info-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <div class="contact-info-content">
+          <h3>Address</h3>
+          <p>1850 W Ashton Blvd, Suite 175<br>Lehi, UT 84043</p>
+        </div>
+      </div>
+      
+      <div class="contact-info-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+        <div class="contact-info-content">
+          <h3>Hours</h3>
+          <p>Monday-Friday 9am-5pm<br>Virtual meetings available nationwide</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="editorial-content">
+      <div class="editorial-quote">
+        <blockquote>"The most important financial decision isn't which investment to choose—it's choosing the right advisor to guide you through retirement's complexities."</blockquote>
+        <cite>— Capital Wealth Philosophy</cite>
+      </div>
+      
+      <div class="office-note">
+        <p>Our Lehi office serves clients throughout Utah and across the nation through secure virtual meetings. Whether you prefer meeting in person or from the comfort of your home, we're equipped to provide the same high-quality, personalized service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Bottom CTA banner #}
+<section class="contact-cta-banner">
+  <div class="contact-cta-container">
+    <h2>Ready to Take the Next Step?</h2>
+    <p>Join hundreds of families who've found peace of mind with a comprehensive retirement strategy. Your complimentary consultation is just a phone call away.</p>
+    <a href="tel:8012102800" class="contact-cta-button">Call 801.210.2800</a>
+  </div>
 </section>
