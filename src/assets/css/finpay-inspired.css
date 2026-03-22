@@ -1219,7 +1219,7 @@ p {
 /* Editorial Comparison Grid */
 .editorial-comparison-grid {
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-12);
   max-width: 1000px;
   margin: 0 auto;
