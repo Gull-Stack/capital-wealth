@@ -527,12 +527,13 @@ p {
   margin: 0 auto;
 }
 
-/* Service Cards Grid — 3 on top, 2 on bottom */
-/* Services Grid — Editorial Card Layout */
+/* Service Cards Grid — flush with 1px dividers */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.25);
+  border-bottom: 3px solid var(--primary);
 }
 
 /* Last 2 cards center on second row */
@@ -565,18 +566,14 @@ p {
   transition: all 0.4s ease;
   position: relative;
   border: none;
-  border-bottom: 3px solid var(--primary);
   min-height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  box-shadow: 0 2px 30px rgba(25, 28, 30, 0.04);
 }
 
 .finpay-card:hover {
-  box-shadow: 0 8px 40px rgba(0, 56, 112, 0.08);
-  transform: translateY(-2px);
-  border-bottom-color: var(--secondary);
+  background: var(--surface);
 }
 
 .finpay-card:hover .card-icon {
@@ -1586,13 +1583,11 @@ p {
 
 .finpay-card {
   transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.4s ease,
-              box-shadow 0.4s ease;
+              background-color 0.3s ease;
 }
 
 .finpay-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 40px rgba(0, 56, 112, 0.08);
+  background: var(--surface);
 }
 
 /* Accent line hidden — left border used instead */
