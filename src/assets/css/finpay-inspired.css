@@ -180,20 +180,36 @@ p {
 /* Glassmorphic Navigation */
 .finpay-header {
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1280px;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 50px -12px rgba(0, 56, 112, 0.08);
   transition: all 0.3s ease;
+}
+
+.finpay-header.scrolled {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 30px -8px rgba(0, 56, 112, 0.12);
+}
+
+.finpay-header .container {
+  max-width: 100%;
+  padding: 0;
 }
 
 .finpay-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-3) 0;
+  padding: var(--space-3) var(--space-8);
 }
 
 .finpay-nav-logo img {
@@ -227,7 +243,7 @@ p {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
   color: var(--surface-container-lowest);
   padding: var(--space-3) var(--space-6);
-  border-radius: var(--radius-lg);
+  border-radius: 8px;
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.875rem;
@@ -552,12 +568,15 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   border-left: 3px solid var(--primary);
+  border-bottom: 3px solid var(--primary);
   box-shadow: 0 2px 30px rgba(25, 28, 30, 0.04);
 }
 
 .finpay-card:hover {
   box-shadow: 0 8px 40px rgba(0, 56, 112, 0.08);
   transform: translateY(-2px);
+  border-left-color: var(--secondary);
+  border-bottom-color: var(--secondary);
 }
 
 .finpay-card:hover .card-icon {
@@ -1894,12 +1913,12 @@ p {
    ═══════════════════════════════════════════════════════════ */
 .hero-fullbleed {
   position: relative;
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  margin: 0 1.5rem;
-  border-radius: 0.25rem;
+  margin: -100px 0 0 0;
+  border-radius: 0;
 }
 
 .hero-fullbleed-bg {
@@ -1920,9 +1939,9 @@ p {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(0, 20, 45, 0.65) 0%,
-    rgba(0, 20, 45, 0.4) 45%,
-    rgba(0, 20, 45, 0.05) 75%,
+    rgba(0, 20, 45, 0.55) 0%,
+    rgba(0, 20, 45, 0.35) 40%,
+    rgba(0, 20, 45, 0.05) 70%,
     transparent 100%
   );
 }
@@ -1930,7 +1949,7 @@ p {
 .hero-fullbleed-content {
   position: relative;
   z-index: 2;
-  max-width: 620px;
+  max-width: 50%;
   padding: 4rem 4rem 5rem;
 }
 
@@ -1982,11 +2001,9 @@ p {
   padding: 0.9rem 2rem;
   background: white;
   color: var(--primary);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
   text-decoration: none;
   border-radius: 0.125rem;
   transition: all 0.3s ease;
@@ -2005,11 +2022,9 @@ p {
   padding: 0.9rem 2rem;
   background: transparent;
   color: white;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 0.125rem;
@@ -2043,12 +2058,13 @@ p {
 /* Mobile hero adjustments */
 @media (max-width: 768px) {
   .hero-fullbleed {
-    min-height: 85vh;
-    margin: 0 0.75rem;
+    min-height: 100vh;
+    margin: -100px 0 0 0;
     align-items: flex-end;
   }
   
   .hero-fullbleed-content {
+    max-width: 100%;
     padding: 2rem 1.5rem 3.5rem;
   }
   
