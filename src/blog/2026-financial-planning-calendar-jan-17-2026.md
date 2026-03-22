@@ -16,10 +16,10 @@ tags:
 
 **Published:** January 17, 2026  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, January 17, 2026
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 17, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 17, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -27,7 +27,7 @@ tags:
 
 Planning for retirement isn't just about having enough money—it's about having the right strategies at the right times throughout the year. For Utah retirees and pre-retirees, 2026 presents unique opportunities to optimize your financial position, reduce tax burdens, and secure your retirement dreams.
 
-Mike Stevens of Capital Wealth Advisors has created a month-by-month financial planning calendar specifically designed for Utah residents. This isn't generic national advice—it's tailored to Utah's tax advantages, cost structure, and unique lifestyle opportunities.
+Mike Stevens of Capital Wealth has created a month-by-month financial planning calendar specifically designed for Utah residents. This isn't generic national advice—it's tailored to Utah's tax advantages, cost structure, and unique lifestyle opportunities.
 
 Whether you're five years from retirement or already enjoying your golden years, this calendar provides actionable steps you can take each month to maximize your retirement security and make the most of Utah's advantages.
 
@@ -560,7 +560,7 @@ Robert from Ogden saved $3,800 annually by switching from a Medicare Supplement 
 
 ## Get Professional Guidance for Your 2026 Financial Calendar
 
-### Capital Wealth Advisors' Year-Round Support
+### Capital Wealth' Year-Round Support
 
 **Quarterly Reviews:** Comprehensive plan assessments every three months
 **Tax Planning:** Strategic coordination throughout the year
@@ -624,7 +624,7 @@ Your future self will thank you for the planning you do today.
 **A:** Every month has important elements, but October (Medicare enrollment), November (year-end tax planning), and December (RMD completion) are particularly critical for avoiding costly mistakes.
 
 ### Q: How do I coordinate all these different planning elements?
-**A:** Professional advisors like Capital Wealth Advisors specialize in coordinating all aspects of retirement planning to ensure optimal outcomes and avoid conflicting strategies.
+**A:** Professional advisors like Capital Wealth specialize in coordinating all aspects of retirement planning to ensure optimal outcomes and avoid conflicting strategies.
 
 ---
 
@@ -633,7 +633,7 @@ Your future self will thank you for the planning you do today.
 - Utah Retirement Planning
 - Monthly Retirement Strategy
 - Tax Planning Calendar
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Retirement Income Planning
@@ -644,4 +644,4 @@ Your future self will thank you for the planning you do today.
 
 ---
 
-*This content is based on the January 17, 2026 episode of Retire Right Radio. For personalized guidance on implementing your 2026 Financial Planning Calendar, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the January 17, 2026 episode of Retire Right Radio. For personalized guidance on implementing your 2026 Financial Planning Calendar, contact Capital Wealth for a complimentary consultation.*

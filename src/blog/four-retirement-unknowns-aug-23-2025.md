@@ -15,7 +15,7 @@ tags:
 
 *Originally aired August 23, 2025 on KAOX, KID, KNRS, and KSL*
 
-By Mike Stevens, Capital Wealth Advisors
+By Mike Stevens, Capital Wealth
 
 ---
 
@@ -38,7 +38,7 @@ During a recent episode of Retire Right Radio, we explored the four biggest unkn
 
 ## The Lane-Changing Traffic Analogy: Why Market Timing Fails
 
-"You know, everybody—and for those driving in your car right now, listening—if you're in traffic, this is what typically happens," explains Mike Stevens, founder and president of Capital Wealth Advisors. "Your lane is stopped. And then you look in your rearview mirror and you see the lane over to you. It's open. So you change lanes. You move over into that lane and you move forward like one or two cars. And then your lane stops. And then the lane that you were in starts to move."
+"You know, everybody—and for those driving in your car right now, listening—if you're in traffic, this is what typically happens," explains Mike Stevens, founder and president of Capital Wealth. "Your lane is stopped. And then you look in your rearview mirror and you see the lane over to you. It's open. So you change lanes. You move over into that lane and you move forward like one or two cars. And then your lane stops. And then the lane that you were in starts to move."
 
 Sound familiar? This everyday frustration perfectly illustrates why **emotional market timing destroys retirement wealth**. 
 
@@ -58,7 +58,7 @@ Consider **Ida May Fuller**, the first Social Security recipient. She paid **jus
 
 ### Planning for 100 in Utah
 
-At Capital Wealth Advisors, "we say, what if you live till 100? What does 100 look like for you? And then we just reverse engineer those things," Stevens explains. This approach is particularly relevant for Utah retirees who often enjoy active lifestyles in the state's outdoor paradise.
+At Capital Wealth, "we say, what if you live till 100? What does 100 look like for you? And then we just reverse engineer those things," Stevens explains. This approach is particularly relevant for Utah retirees who often enjoy active lifestyles in the state's outdoor paradise.
 
 **For a Utah couple retiring in 2025:**
 - **Annual living expenses**: $75,000 (moderate Utah cost of living)
@@ -244,7 +244,7 @@ Stevens uses a powerful analogy to illustrate the value of professional retireme
 **Fiduciary vs. Suitability Standard:**
 - **Fiduciary**: Must act in your best interest, fee transparency required
 - **Suitability**: Only needs "suitable" recommendations, commissions often hidden
-- **Capital Wealth Advisors**: Independent fiduciary firm
+- **Capital Wealth**: Independent fiduciary firm
 
 ## Q&A: Real Questions from Real Utah Retirees
 
@@ -559,7 +559,7 @@ Utah retirees enjoy significant advantages:
 
 ### The Retirement Money Map® Advantage
 
-Capital Wealth Advisors' **trademarked Retirement Money Map®** addresses all four unknowns with Utah-specific strategies:
+Capital Wealth' **trademarked Retirement Money Map®** addresses all four unknowns with Utah-specific strategies:
 
 **Longevity planning**: Reverse engineering from age 100 to ensure money lasts
 **Healthcare preparation**: Factoring Utah's $315,000+ healthcare reality
@@ -570,7 +570,7 @@ Capital Wealth Advisors' **trademarked Retirement Money Map®** addresses all fo
 
 ---
 
-## Contact Capital Wealth Advisors
+## Contact Capital Wealth
 
 Ready to create your Utah retirement plan? The next step is simple.
 
@@ -595,9 +595,9 @@ Your **complimentary 45-minute consultation** includes:
 
 **No pressure, no sales pitches, no obligation**—just experienced guidance from Utah retirement planning specialists who understand your unique needs.
 
-### About Mike Stevens and Capital Wealth Advisors
+### About Mike Stevens and Capital Wealth
 
-Mike Stevens brings over **20 years of retirement planning experience** specifically focused on Utah retirees. As founder and president of Capital Wealth Advisors, he's helped hundreds of Utah families navigate the complexities of retirement planning.
+Mike Stevens brings over **20 years of retirement planning experience** specifically focused on Utah retirees. As founder and president of Capital Wealth, he's helped hundreds of Utah families navigate the complexities of retirement planning.
 
 **Credentials and approach:**
 - **Independent fiduciary firm**: Always acting in your best interest
@@ -605,7 +605,7 @@ Mike Stevens brings over **20 years of retirement planning experience** specific
 - **Comprehensive planning**: Income, investment, tax, and legacy planning integrated
 - **Client-focused**: Building long-term relationships, not selling products
 
-Capital Wealth Advisors is an independent financial services firm utilizing a variety of investment and insurance products. Independent advisory services offered through Capital Wealth Advisors LLC, a state of Utah registered investment advisor.
+Capital Wealth is an independent financial services firm utilizing a variety of investment and insurance products. Independent advisory services offered through Capital Wealth LLC, a state of Utah registered investment advisor.
 
 ---
 
@@ -613,4 +613,4 @@ Capital Wealth Advisors is an independent financial services firm utilizing a va
 
 #UtahRetirement #RetirementPlanning #SocialSecurityOptimization #TaxPlanning #RothConversions #HealthcareCosts #EstatePlanning #FinancialAdvisor #RetireRightRadio #CapitalWealthAdvisors #MikeStevens #SaltLakeCity #Utah401k #RetirementIncome #LongTermCare #FixedIndexAnnuities #FiduciaryAdvisor #RetirementMoneyMap #UtahTaxes #ParkCityRetirement #StGeorgeRetirement #LoganRetirement #ProvoRetirement #OgdenRetirement #DalbarStudy #SurvivorBenefits #RetirementUnknowns
 
-*This radio show is intended for informational purposes only. It is not intended to be used as the sole basis for financial decisions, nor should it be construed as advice designed to meet the particular needs of an individual situation. Capital Wealth Advisors is not permitted to offer and no statement made during this show shall constitute tax or legal advice.*
+*This radio show is intended for informational purposes only. It is not intended to be used as the sole basis for financial decisions, nor should it be construed as advice designed to meet the particular needs of an individual situation. Capital Wealth is not permitted to offer and no statement made during this show shall constitute tax or legal advice.*

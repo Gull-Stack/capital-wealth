@@ -14,10 +14,10 @@ tags:
 
 **Published:** October 18, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, October 18, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the October 18, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the October 18, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -565,7 +565,7 @@ Utah retirees need healthcare-specific emergency reserves separate from general 
 
 ### Special Healthcare Planning Offer
 
-For Utah residents ready to take control of their healthcare retirement planning, Capital Wealth Advisors is offering comprehensive Healthcare-Integrated Retirement Money Map™ analysis.
+For Utah residents ready to take control of their healthcare retirement planning, Capital Wealth is offering comprehensive Healthcare-Integrated Retirement Money Map™ analysis.
 
 **What's included in your healthcare assessment:**
 - **Medical cost projection** specific to Utah providers and facilities
@@ -587,7 +587,7 @@ For Utah residents ready to take control of their healthcare retirement planning
 **Professional planning consultation:**
 The healthcare component of retirement planning has become too complex and too expensive to handle with hope and prayer. Utah retirees deserve strategies that leverage our state's advantages while protecting against healthcare cost inflation.
 
-### Contact Capital Wealth Advisors
+### Contact Capital Wealth
 
 **For the next five callers:** Complimentary Healthcare-Integrated Retirement Money Map™ - a comprehensive analysis typically requiring 5-10 hours of professional analysis.
 
@@ -631,13 +631,13 @@ Your retirement should be the best years of your life. With Utah's advantages an
 
 ---
 
-*This content is based on the October 18, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah healthcare and retirement situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the October 18, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah healthcare and retirement situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Healthcare Retirement Planning
 - Medicare Optimization Utah
 - Healthcare Costs Retirement
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Medicare Planning

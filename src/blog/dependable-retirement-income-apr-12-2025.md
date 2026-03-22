@@ -13,10 +13,10 @@ tags:
 # Creating Dependable Retirement Income: Why Utah Retirees Need More Than a Portfolio
 
 **Published:** April 12, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, April 12, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the April 12, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the April 12, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -26,7 +26,7 @@ For decades, Utahns have built their careers along the Wasatch Front, from the t
 
 But retirement changes everything. That reliable paycheck disappears, replaced by the daunting task of creating income from accumulated savings. For many Utah retirees, this transition feels like trading a steady mountain stream for an unpredictable weather pattern - you never know if you'll have enough water or if a drought might leave you dry.
 
-The challenge isn't just mathematical; it's emotional. As Mike Stevens, president and founder of Capital Wealth Advisors, explains: "What happens for most retirees is that you go into retirement. Life is great. It's, you know, you're having fun, you're golfing, you're traveling, you're doing whatever it is in retirement you want to do. And then maybe you see like a friend to get ill and or you have like a parent that you've dealt with like medical problems and you're watching and you're saying, well, hang on a second. Could I be spending down too quickly?"
+The challenge isn't just mathematical; it's emotional. As Mike Stevens, president and founder of Capital Wealth, explains: "What happens for most retirees is that you go into retirement. Life is great. It's, you know, you're having fun, you're golfing, you're traveling, you're doing whatever it is in retirement you want to do. And then maybe you see like a friend to get ill and or you have like a parent that you've dealt with like medical problems and you're watching and you're saying, well, hang on a second. Could I be spending down too quickly?"
 
 ---
 
@@ -118,7 +118,7 @@ Every Utah retirement plan should start with an analysis of guaranteed income so
 
 ### Step 2: Calculate Your Essential Expense Floor
 
-The expense planning process requires detailed analysis of current and projected retirement expenses. Capital Wealth Advisors uses a comprehensive approach that goes far beyond simple budgeting.
+The expense planning process requires detailed analysis of current and projected retirement expenses. Capital Wealth uses a comprehensive approach that goes far beyond simple budgeting.
 
 "We want to just make sure that when you're figuring out like how much you actually need on a monthly basis, we have that expense plan that I talk about frequently where it almost looks like a budget sheet, but it's not. We've just taken it, categorized it really nicely to be almost like a memory jogger," Stevens explains.
 
@@ -347,7 +347,7 @@ The solution involves comprehensive planning that addresses these specific risks
 
 ## Your Next Step
 
-**Don't navigate Utah retirement income planning alone.** Capital Wealth Advisors has helped thousands of Utah families create dependable retirement income strategies that provide both security and flexibility. Our comprehensive retirement money map process addresses all aspects of income planning, from Social Security optimization to tax-efficient withdrawal strategies.
+**Don't navigate Utah retirement income planning alone.** Capital Wealth has helped thousands of Utah families create dependable retirement income strategies that provide both security and flexibility. Our comprehensive retirement money map process addresses all aspects of income planning, from Social Security optimization to tax-efficient withdrawal strategies.
 
 The retirement money map includes:
 - Detailed expense planning with inflation projections
@@ -363,7 +363,7 @@ The retirement money map includes:
 📱 **Text "VISIT"** to 801-210-5500
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors — helping Utah families retire right since 2012.*
+*Capital Wealth — helping Utah families retire right since 2012.*
 
 ---
 

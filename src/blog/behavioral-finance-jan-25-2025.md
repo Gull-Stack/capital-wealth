@@ -13,16 +13,16 @@ tags:
 # Behavioral Finance and You: Understanding the Psychology Behind Smart Retirement Decisions
 
 **Published:** January 25, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, January 25, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 25, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 25, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
 Money decisions aren't made in spreadsheets – they're made in the complex theater of human emotion, psychology, and behavior. Even the smartest, most successful professionals regularly make financial choices that would seem irrational to an outside observer. Understanding why we make these decisions, and more importantly, how to recognize and overcome them, can mean the difference between financial security and regret in retirement.
 
-Mike Stevens of Capital Wealth Advisors confronts this reality daily in his practice. When asked which is harder – managing people's money or helping them manage their emotions about money – his answer is immediate: "Holy smokes, hands down, manage their emotions about money."
+Mike Stevens of Capital Wealth confronts this reality daily in his practice. When asked which is harder – managing people's money or helping them manage their emotions about money – his answer is immediate: "Holy smokes, hands down, manage their emotions about money."
 
 This isn't a weakness or character flaw. It's simply human nature. Our brains evolved to make quick survival decisions based on incomplete information, not to optimize long-term investment portfolios or navigate complex tax implications. The same mental shortcuts that kept our ancestors alive can sabotage our retirement plans if we don't understand and account for them.
 
@@ -522,7 +522,7 @@ The intersection of psychology and money doesn't have to be your weakness – wi
 📱 **Text "VISIT"** to 801-210-5500
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors – helping Utah families navigate the psychology of money and build lasting retirement security since 2008.*
+*Capital Wealth – helping Utah families navigate the psychology of money and build lasting retirement security since 2008.*
 
 ---
 

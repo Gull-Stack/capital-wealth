@@ -14,10 +14,10 @@ tags:
 
 **Published:** July 26, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, July 26, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the July 26, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the July 26, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -630,7 +630,7 @@ The families who successfully navigate retirement spending don't just preserve t
 - Income coordination to support realistic spending patterns
 - Completely complimentary with no obligation
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500  
 - **Website:** capitalwealth.com
@@ -639,7 +639,7 @@ The families who successfully navigate retirement spending don't just preserve t
 
 ---
 
-*This content is based on the July 26, 2025 episode of Retire Right Radio. For personalized advice regarding your specific retirement spending situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the July 26, 2025 episode of Retire Right Radio. For personalized advice regarding your specific retirement spending situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Retirement Spending
@@ -648,7 +648,7 @@ The families who successfully navigate retirement spending don't just preserve t
 - Retirement Lifestyle Planning
 - Utah Recreation Costs
 - Family Financial Support
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Retirement Phases

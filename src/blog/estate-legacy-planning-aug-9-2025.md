@@ -14,10 +14,10 @@ tags:
 
 **Published:** August 9, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, August 9, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the August 9, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the August 9, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -683,7 +683,7 @@ Don't let your family's story become another preventable tragedy. The time to pl
 
 ## Take Action: Your Utah Estate Planning Assessment
 
-### Contact Capital Wealth Advisors
+### Contact Capital Wealth
 
 **Phone:** 801-210-5500  
 **Text:** "VISIT" to 801-210-5500  
@@ -702,7 +702,7 @@ Don't let your family's story become another preventable tragedy. The time to pl
 
 ---
 
-*This content is based on the August 9, 2025 episode of Retire Right Radio. For personalized estate planning guidance for your specific Utah family situation, contact Capital Wealth Advisors for a complimentary consultation. Mike Stevens and his team are ready to help you protect your family's future.*
+*This content is based on the August 9, 2025 episode of Retire Right Radio. For personalized estate planning guidance for your specific Utah family situation, contact Capital Wealth for a complimentary consultation. Mike Stevens and his team are ready to help you protect your family's future.*
 
 ## Tags
 - Utah Estate Planning
@@ -710,7 +710,7 @@ Don't let your family's story become another preventable tragedy. The time to pl
 - Probate Avoidance
 - Estate Planning Mistakes
 - Beneficiary Designations
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Will and Trust

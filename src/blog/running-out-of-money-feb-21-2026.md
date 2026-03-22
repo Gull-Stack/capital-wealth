@@ -16,10 +16,10 @@ tags:
 
 **Published:** February 21, 2026  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, February 21, 2026
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 21, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 21, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -379,7 +379,7 @@ Your retirement should be the best years of your life. With Utah's advantages an
 - Utah-specific advantages optimization
 - Completely complimentary with no obligation
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -407,13 +407,13 @@ Your retirement should be the best years of your life. With Utah's advantages an
 
 ---
 
-*This content is based on the February 21, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the February 21, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Retirement Planning
 - Olympic Financial Lessons
 - Required Minimum Distributions
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Retirees

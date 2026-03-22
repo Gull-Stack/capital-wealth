@@ -451,7 +451,7 @@ Retiring at 62 with $500,000 is challenging but not impossible. Success depends 
 
 
 
-{{ site.founder.name }} at Capital Wealth Advisors provides honest, realistic retirement planning analysis. We'll help you understand whether early retirement with $500K is feasible for your situation and develop strategies to improve your odds of success.
+{{ site.founder.name }} at Capital Wealth provides honest, realistic retirement planning analysis. We'll help you understand whether early retirement with $500K is feasible for your situation and develop strategies to improve your odds of success.
 
 Our early retirement analysis includes:
 - Comprehensive expense analysis and projections

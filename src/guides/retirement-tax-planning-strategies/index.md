@@ -414,7 +414,7 @@ Effective retirement tax planning can save thousands of dollars annually and hel
 
 
 
-{{ site.founder.name }} at Capital Wealth Advisors specializes in tax-efficient retirement planning for Utah residents. As a fiduciary advisor, we coordinate your investment strategy with comprehensive tax planning to minimize your lifetime tax burden.
+{{ site.founder.name }} at Capital Wealth specializes in tax-efficient retirement planning for Utah residents. As a fiduciary advisor, we coordinate your investment strategy with comprehensive tax planning to minimize your lifetime tax burden.
 
 Our retirement tax planning services include:
 - Roth conversion analysis and implementation

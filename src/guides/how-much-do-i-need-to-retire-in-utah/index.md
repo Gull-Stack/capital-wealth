@@ -215,7 +215,7 @@ Determining how much you need to retire in Utah depends on your specific situati
 
 
 
-{{ site.founder.name }} and the team at Capital Wealth Advisors have helped hundreds of Utah families create successful retirement plans. As a fiduciary financial advisor, we're committed to putting your interests first and helping you achieve the retirement you've worked so hard to earn.
+{{ site.founder.name }} and the team at Capital Wealth have helped hundreds of Utah families create successful retirement plans. As a fiduciary financial advisor, we're committed to putting your interests first and helping you achieve the retirement you've worked so hard to earn.
 
 Our comprehensive approach considers all aspects of your financial situation, from Social Security optimization to tax-efficient withdrawal strategies, ensuring you're prepared for a comfortable retirement in Utah.
 

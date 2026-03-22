@@ -260,11 +260,11 @@ Whole life insurance might be sold as an investment when term life plus separate
 - Investment policy statement
 - Form ADV Part 2
 
-## Why Capital Wealth Advisors is Fiduciary
+## Why Capital Wealth is Fiduciary
 
 ### Our Fiduciary Commitment
 
-At Capital Wealth Advisors, we operate under the fiduciary standard at all times. Here's what this means for you:
+At Capital Wealth, we operate under the fiduciary standard at all times. Here's what this means for you:
 
 **Fee-Only Structure:**
 - We're compensated only by our clients
@@ -359,7 +359,7 @@ Choosing between a fiduciary and commission-based advisor isn't just about fees�
 
 
 
-{{ site.founder.name }} and the team at Capital Wealth Advisors are proud to serve as fiduciary advisors for our Utah clients. We believe transparency, honesty, and putting your interests first aren't just good business practices—they're ethical obligations.
+{{ site.founder.name }} and the team at Capital Wealth are proud to serve as fiduciary advisors for our Utah clients. We believe transparency, honesty, and putting your interests first aren't just good business practices—they're ethical obligations.
 
 Our fiduciary commitment includes:
 - Fee-only compensation structure

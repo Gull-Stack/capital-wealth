@@ -1,8 +1,8 @@
-# Capital Wealth Advisors
+# Capital Wealth
 
 > Fiduciary retirement planning for Utah families since 2009.
 
-Capital Wealth Advisors is a fee-only, fiduciary financial advisory firm in Lehi, Utah founded by Michael Stevens, IAR. We specialize exclusively in retirement income planning, tax optimization, and federal employee benefits.
+Capital Wealth is a fee-only, fiduciary financial advisory firm in Lehi, Utah founded by Michael Stevens, IAR. We specialize exclusively in retirement income planning, tax optimization, and federal employee benefits.
 
 ## Services
 - Retirement Money Map (proprietary planning tool)

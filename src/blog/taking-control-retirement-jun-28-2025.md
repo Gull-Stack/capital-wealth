@@ -1,6 +1,6 @@
 ---
 title: "Taking Control: Retirement Market Volatility"
-description: "Learn how to protect your retirement savings during global conflicts and market volatility with proven strategies from Capital Wealth Advisors in Lehi, Utah."
+description: "Learn how to protect your retirement savings during global conflicts and market volatility with proven strategies from Capital Wealth in Lehi, Utah."
 date: 2025-06-28
 dateModified: 2026-03-19
 author: "Mike Stevens"
@@ -14,7 +14,7 @@ tags:
 # Taking Control of Your Retirement: Navigating Market Volatility and Global Uncertainty
 
 *Originally aired June 28, 2025 on KAOX, KID, KNRS, and KSL*  
-**By Mike Stevens, Capital Wealth Advisors**
+**By Mike Stevens, Capital Wealth**
 
 ---
 
@@ -526,7 +526,7 @@ Take the first step today. Your future self will thank you.
 
 ---
 
-*Capital Wealth Advisors is an independent financial services firm that utilizes a variety of investment and insurance products. Investment advisory services offered through Capital Wealth Advisors LLC, a state of Utah registered investment advisor. Insurance services offered through CWA Insurance Services LLC. Investing involves risk, including the potential loss of principal. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims-paying abilities of the issuing carrier.*
+*Capital Wealth is an independent financial services firm that utilizes a variety of investment and insurance products. Investment advisory services offered through Capital Wealth LLC, a state of Utah registered investment advisor. Insurance services offered through CWA Insurance Services LLC. Investing involves risk, including the potential loss of principal. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims-paying abilities of the issuing carrier.*
 
 ---
 

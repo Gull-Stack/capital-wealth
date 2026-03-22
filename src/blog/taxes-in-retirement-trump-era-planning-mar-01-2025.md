@@ -13,10 +13,10 @@ tags:
 # How the New Trump Administration Could Impact Your Retirement Taxes: Essential Utah Planning Strategies for 2025
 
 **Published:** March 1, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, March 1, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 1, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 1, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -515,7 +515,7 @@ Stevens points out the fundamental unfairness: "Back when you started your very 
 
 **Don't let shifting tax policies derail your Utah retirement dreams.** Whether you're enjoying the slopes at Deer Valley, exploring the national parks in southern Utah, or planning to spend more time with grandchildren in Provo, you need a tax strategy that adapts to changing political and economic realities.
 
-Capital Wealth Advisors has helped thousands of Utah families navigate the complex intersection of taxes, retirement income, and estate planning. From the tech corridors of Silicon Slopes to the agricultural communities of northern Utah, we understand the unique challenges facing Utah retirees.
+Capital Wealth has helped thousands of Utah families navigate the complex intersection of taxes, retirement income, and estate planning. From the tech corridors of Silicon Slopes to the agricultural communities of northern Utah, we understand the unique challenges facing Utah retirees.
 
 **The cost of waiting is measured in tens of thousands of dollars.** Every year you delay implementing a comprehensive tax strategy is a year of missed opportunities for Roth conversions at today's rates, missed HSA contributions, and missed estate planning strategies.
 
@@ -531,7 +531,7 @@ Capital Wealth Advisors has helped thousands of Utah families navigate the compl
 📱 **Text "VISIT"** to 801-210-5500
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors — helping Utah families retire right since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
+*Capital Wealth — helping Utah families retire right since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
 
 ---
 

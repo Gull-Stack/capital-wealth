@@ -14,7 +14,7 @@ Ever feel stuck in the daily grind? Fighting traffic, working all day, longing f
 
 **Here's the reality: That conventional wisdom is completely wrong.**
 
-Mike Stevens, founder of Capital Wealth Advisors, has worked with hundreds of Utah retirees over the past 20 years. His conclusion? **"I've yet to meet one person who says, 'We don't need chicken for dinner anymore — rice and beans will do. Let's stretch our annual vacation to every three years.'"**
+Mike Stevens, founder of Capital Wealth, has worked with hundreds of Utah retirees over the past 20 years. His conclusion? **"I've yet to meet one person who says, 'We don't need chicken for dinner anymore — rice and beans will do. Let's stretch our annual vacation to every three years.'"**
 
 Retirement should be the best years of your life, not a time of financial restriction.
 
@@ -248,13 +248,13 @@ The reality of retirement spending is far more nuanced than the old 70% rule. Ut
 
 ---
 
-*This content is based on the March 14, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the March 14, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Retirement Planning
 - Retirement Spending Reality  
 - Tax Planning Utah
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Retirees

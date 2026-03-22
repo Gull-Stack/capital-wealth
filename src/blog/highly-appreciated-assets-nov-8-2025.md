@@ -14,7 +14,7 @@ tags:
 
 **Published:** November 8, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, November 8, 2025
 
 *Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide explores advanced strategies for managing highly appreciated assets while minimizing devastating tax consequences for Utah families.*
@@ -629,9 +629,9 @@ Utah designated 46 Qualified Opportunity Zones, including several in high-growth
 
 ---
 
-*This content is based on the November 8, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah situation involving highly appreciated assets, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the November 8, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah situation involving highly appreciated assets, contact Capital Wealth for a complimentary consultation.*
 
-## Contact Capital Wealth Advisors
+## Contact Capital Wealth
 
 **Ready to optimize your appreciated assets and minimize tax consequences?**
 

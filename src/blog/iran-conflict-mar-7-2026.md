@@ -16,10 +16,10 @@ tags:
 
 **Published:** March 7, 2026  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, March 7, 2026
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 7, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 7, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -441,7 +441,7 @@ The Iran conflict, like all geopolitical crises, reminds us that uncertainty is 
 - **Social Security Analysis:** Timing and claiming strategy optimization
 - **Risk Assessment:** Using Morningstar Risk Alyze tool for behavioral risk questions
 
-### Contact Capital Wealth Advisors
+### Contact Capital Wealth
 
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
@@ -475,13 +475,13 @@ The Iran conflict, like all geopolitical crises, reminds us that uncertainty is 
 
 ---
 
-*This content is based on the March 7, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation during uncertain times, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the March 7, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation during uncertain times, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Iran Conflict Retirement Planning
 - Utah Geopolitical Risk
 - Retirement Money Map
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Retirement Security

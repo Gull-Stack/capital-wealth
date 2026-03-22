@@ -13,10 +13,10 @@ tags:
 # Preserving and Optimizing Your 401(k): The Complete Utah Retiree's Guide to Maximum Retirement Security
 
 **Published:** January 18, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, January 18, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 18, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 18, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -24,7 +24,7 @@ Your 401(k) represents more than just a retirement account – it's the cornerst
 
 This transformation carries profound implications for Utah residents, particularly given our state's diverse economy spanning technology, healthcare, government, and traditional industries. Each sector presents unique retirement planning challenges and opportunities, making 401(k) optimization crucial for achieving retirement security in the Beehive State.
 
-Mike Stevens of Capital Wealth Advisors understands this shift intimately. His journey into financial planning began tragically when his father, Len Stevens, passed unexpectedly at age 49. "My mom was quite hands-off on it," Stevens recalls about the family's financial planning. "She said, hey, listen, a few things that you should know. One, you know, dad didn't have the estate properly in order because honestly, what 49 year old does estate planning?"
+Mike Stevens of Capital Wealth understands this shift intimately. His journey into financial planning began tragically when his father, Len Stevens, passed unexpectedly at age 49. "My mom was quite hands-off on it," Stevens recalls about the family's financial planning. "She said, hey, listen, a few things that you should know. One, you know, dad didn't have the estate properly in order because honestly, what 49 year old does estate planning?"
 
 This personal experience illuminated the critical gap between having a portfolio and having a comprehensive retirement plan – a distinction that became the foundation of Stevens' approach to helping Utah families optimize their retirement savings and create what he calls a "retirement money map."
 
@@ -613,7 +613,7 @@ The sooner you take action, the more time compound growth has to work in your fa
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 💻 **401(k) Resources:** [capitalwealth401k.com](https://capitalwealth401k.com)
 
-*Capital Wealth Advisors – helping Utah families optimize their 401(k) accounts and build comprehensive retirement security since 2008.*
+*Capital Wealth – helping Utah families optimize their 401(k) accounts and build comprehensive retirement security since 2008.*
 
 ---
 

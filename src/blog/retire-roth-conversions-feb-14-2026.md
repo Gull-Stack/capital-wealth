@@ -16,10 +16,10 @@ tags:
 
 **Published:** February 14, 2026  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, February 14, 2026
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 14, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 14, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -528,7 +528,7 @@ Mike Stevens closed this Valentine's Day episode with a powerful message: **"Giv
 
 **Special Valentine's Day offer:** First five callers receive this analysis completely complimentary.
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -560,14 +560,14 @@ Mike Stevens closed this Valentine's Day episode with a powerful message: **"Giv
 
 ---
 
-*This content is based on the February 14, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the February 14, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Retirement Planning
 - Roth Conversions
 - Social Security Spousal Benefits
 - Couples Retirement Planning
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Tax Planning

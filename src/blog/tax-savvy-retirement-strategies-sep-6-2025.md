@@ -14,10 +14,10 @@ tags:
 
 **Published:** September 6, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, September 6, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the September 6, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the September 6, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -447,7 +447,7 @@ Remember Mike Stevens' fundamental truth: "A portfolio will create fear, but a p
 - Utah-specific opportunity identification
 - Coordination with existing professional team
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -475,14 +475,14 @@ Remember Mike Stevens' fundamental truth: "A portfolio will create fear, but a p
 
 ---
 
-*This content is based on the September 6, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement and tax planning needs, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the September 6, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement and tax planning needs, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Tax-Savvy Retirement Strategies
 - Required Minimum Distributions
 - Utah Healthcare Planning
 - Retirement Money Map
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Retirees

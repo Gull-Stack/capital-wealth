@@ -13,10 +13,10 @@ tags:
 # Protecting Your Utah Retirement from Hidden Financial Obstacles: The Truth About What Could Derail Your Golden Years
 
 **Published:** April 5, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, April 5, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the April 5, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the April 5, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -26,7 +26,7 @@ Utah's stunning mountain vistas and strong economy make it an attractive retirem
 
 Just as a beautiful house needs a strong foundation to withstand Utah's occasional earthquakes and mountain storms, your retirement plan needs proper structuring to preserve against the challenges ahead. The difference between a portfolio and a plan could mean the difference between financial freedom and financial stress during what should be the best years of your life.
 
-As Mike Stevens, president and founder of Capital Wealth Advisors, explains: "What we find is that creating reliable lifetime income streams is key. So that is the fundamental of our retirement money map. We go through an expense plan exercise where we say, how much money do you need on a monthly basis to meet your obligations?"
+As Mike Stevens, president and founder of Capital Wealth, explains: "What we find is that creating reliable lifetime income streams is key. So that is the fundamental of our retirement money map. We go through an expense plan exercise where we say, how much money do you need on a monthly basis to meet your obligations?"
 
 ---
 
@@ -164,7 +164,7 @@ Utah's extreme weather conditions create unique maintenance challenges for retir
 
 ## The Bucket Strategy: Building Earthquake-Resistant Retirement Income
 
-To protect against these hidden obstacles, Capital Wealth Advisors employs a bucket strategy that creates multiple layers of financial protection. This approach recognizes that retirement planning requires more than just accumulating assets - it requires structuring those assets to withstand various financial earthquakes.
+To protect against these hidden obstacles, Capital Wealth employs a bucket strategy that creates multiple layers of financial protection. This approach recognizes that retirement planning requires more than just accumulating assets - it requires structuring those assets to withstand various financial earthquakes.
 
 ### The Safe Money Bucket
 
@@ -264,7 +264,7 @@ Life events that trigger beneficiary reviews include:
 
 ## Your Next Step
 
-**Don't let hidden obstacles derail your Utah retirement.** Capital Wealth Advisors has helped thousands of Utah families navigate these challenges and create retirement plans that provide both security and growth potential. Whether you're in Salt Lake City, Provo, Ogden, or anywhere along the Wasatch Front, our team understands the unique challenges facing Utah retirees.
+**Don't let hidden obstacles derail your Utah retirement.** Capital Wealth has helped thousands of Utah families navigate these challenges and create retirement plans that provide both security and growth potential. Whether you're in Salt Lake City, Provo, Ogden, or anywhere along the Wasatch Front, our team understands the unique challenges facing Utah retirees.
 
 The retirement money map process includes:
 - Comprehensive expense planning with inflation adjustments
@@ -278,7 +278,7 @@ The retirement money map process includes:
 📱 **Text "VISIT"** to 801-210-5500
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors — helping Utah families retire right since 2012.*
+*Capital Wealth — helping Utah families retire right since 2012.*
 
 ---
 

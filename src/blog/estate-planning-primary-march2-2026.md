@@ -12,7 +12,7 @@ readTime: 16
 
 **"My dad passed away unexpectedly at 49 years old. He had done really well financially, but when we lost him, we didn't know what to do financially — and his estate wasn't properly structured."**
 
-This personal story from Mike Stevens, founder of Capital Wealth Advisors, illustrates why estate planning isn't just for wealthy families. It's essential protection for anyone who cares about their loved ones' future.
+This personal story from Mike Stevens, founder of Capital Wealth, illustrates why estate planning isn't just for wealthy families. It's essential protection for anyone who cares about their loved ones' future.
 
 **The harsh reality:** Without proper planning, your family faces probate court, expensive legal fees, family fighting, and uncertainty during their most difficult time.
 
@@ -451,7 +451,7 @@ Estate planning isn't about death — it's about life. It's about ensuring your 
 
 ### Get Professional Help Today
 
-**Capital Wealth Advisors offers:**
+**Capital Wealth offers:**
 - Complimentary estate planning reviews
 - Coordination with qualified Utah estate attorneys
 - Integration with comprehensive retirement planning
@@ -466,7 +466,7 @@ Estate planning isn't about death — it's about life. It's about ensuring your 
 
 ---
 
-*This content is based on the March 2, 2026 episode of Retire Right Radio. For personalized estate planning advice, consult with qualified Utah legal professionals. Advisory services offered through Capital Wealth Advisors LLC, a State of Utah Registered Investment Advisor.*
+*This content is based on the March 2, 2026 episode of Retire Right Radio. For personalized estate planning advice, consult with qualified Utah legal professionals. Advisory services offered through Capital Wealth LLC, a State of Utah Registered Investment Advisor.*
 
 ## Tags
 - Utah Estate Planning
@@ -477,5 +477,5 @@ Estate planning isn't about death — it's about life. It's about ensuring your 
 - Power of Attorney Utah
 - Beneficiary Designations
 - Utah Family Protection
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens

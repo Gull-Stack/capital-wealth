@@ -16,10 +16,10 @@ tags:
 
 **Published:** January 2, 2026  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, January 2, 2026
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 2, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 2, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -29,7 +29,7 @@ Ever feel stuck in the daily grind, battling traffic, working all day, and longi
 
 **Here's the reality:** With the right preparation, market corrections don't have to derail your financial future.
 
-As Mike Stevens, founder of Capital Wealth Advisors, puts it: *"Everyone has a plan until you get punched in the face"* — or as Mike Tyson might say. Once volatility shows up, it's already too late to start thinking clearly.
+As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until you get punched in the face"* — or as Mike Tyson might say. Once volatility shows up, it's already too late to start thinking clearly.
 
 ---
 
@@ -498,14 +498,14 @@ Market volatility is inevitable, but being derailed by it is optional. Utah reti
 
 ---
 
-*This content is based on the January 2, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the January 2, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Retirement Planning
 - Market Volatility Defense
 - Retire Right Radio
 - Mike Stevens
-- Capital Wealth Advisors
+- Capital Wealth
 - Social Security Optimization
 - Tax Planning Utah
 - Medicare Planning

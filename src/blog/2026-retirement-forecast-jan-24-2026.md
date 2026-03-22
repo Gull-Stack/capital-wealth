@@ -16,10 +16,10 @@ tags:
 
 **Published:** January 24, 2026  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, January 24, 2026
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 24, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 24, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -29,7 +29,7 @@ Ever feel stuck in the daily grind, fighting traffic, working all day, and longi
 
 The average American seems cynical about their retirement prospects, but some analysts are predicting a big year for stocks—potentially 8% to 18% gains for the S&P 500. So who's right? And more importantly, how should Utah retirees navigate this uncertainty?
 
-Mike Stevens, founder and president of Capital Wealth Advisors, cuts through the noise to reveal what 2026 really means for your retirement security and how Utah's unique advantages can position you for success regardless of market direction.
+Mike Stevens, founder and president of Capital Wealth, cuts through the noise to reveal what 2026 really means for your retirement security and how Utah's unique advantages can position you for success regardless of market direction.
 
 ---
 
@@ -527,7 +527,7 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 - Estate planning coordination
 - Completely complimentary with no obligation
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -563,7 +563,7 @@ Don't spend 2026 wondering if you're prepared. Take action now to ensure your re
 - 2026 Retirement Forecast
 - Utah Retirement Planning
 - Market Predictions 2026
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Investment Strategies Utah
@@ -575,4 +575,4 @@ Don't spend 2026 wondering if you're prepared. Take action now to ensure your re
 
 ---
 
-*This content is based on the January 24, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation and 2026 market positioning, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the January 24, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation and 2026 market positioning, contact Capital Wealth for a complimentary consultation.*

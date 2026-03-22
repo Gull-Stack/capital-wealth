@@ -13,10 +13,10 @@ tags:
 # Protected Income: The Secret Weapon Utah Retirees Need to Sleep Soundly Through Market Storms
 
 **Published:** February 8, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, February 8, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 8, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 8, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -50,7 +50,7 @@ Today, we're going to explore the biggest regrets retirees face, why traditional
 
 ### Regret #1: "I Didn't Save Enough for Retirement"
 
-This is the most common regret we hear at Capital Wealth Advisors, but here's the surprising truth: it's often not about the actual dollar amount. The regret stems from not having a clear plan that shows exactly how much is "enough."
+This is the most common regret we hear at Capital Wealth, but here's the surprising truth: it's often not about the actual dollar amount. The regret stems from not having a clear plan that shows exactly how much is "enough."
 
 **The Comparison Trap**
 
@@ -181,7 +181,7 @@ Each serves different purposes and has different characteristics. Similarly, ann
 
 **Fixed Index Annuities: Our Preferred Tool**
 
-At Capital Wealth Advisors, we primarily use fixed index annuities for our protected income bucket because they offer:
+At Capital Wealth, we primarily use fixed index annuities for our protected income bucket because they offer:
 
 **Zero Market Risk:** If the S&P 500 drops 20%, your account doesn't lose a penny
 **Growth Potential:** Your gains are typically linked to market index performance (with caps)
@@ -254,7 +254,7 @@ This bucket contains diversified stock portfolios with companies Utah residents 
 
 Here's the surprising truth: many people are much closer to financial independence than they realize. We've had clients come in feeling burnt out and financially stressed, only to discover they could have retired two years earlier with proper planning.
 
-**Our goal at Capital Wealth Advisors is to help people retire two to three years sooner than they thought possible.** This happens because:
+**Our goal at Capital Wealth is to help people retire two to three years sooner than they thought possible.** This happens because:
 
 1. **Portfolio vs. Plan Confusion:** Most people have portfolios but lack comprehensive retirement income plans
 2. **Conservative Assumptions:** Many underestimate their financial position due to market fear
@@ -396,7 +396,7 @@ The financial services industry has trained people to focus on accumulation – 
 - Generic age-based asset allocation models
 - Little consideration for withdrawal strategies
 
-**Capital Wealth Advisors Focus:**
+**Capital Wealth Focus:**
 - Optimize retirement income streams
 - Minimize taxes over lifetime
 - Create sustainable withdrawal strategies
@@ -574,7 +574,7 @@ The statistic is startling: only 25% of Americans have a written retirement inco
 
 **Don't join the ranks of retirees lying awake at night worried about their financial future.** The peace of mind that comes from having protected income as part of your retirement strategy is invaluable – and it's achievable with the right planning.
 
-Whether you're dealing with debt that's derailing your retirement dreams, confused about Social Security timing, or simply want to ensure your nest egg lasts throughout retirement, Capital Wealth Advisors has helped thousands of Utah families navigate these challenges successfully.
+Whether you're dealing with debt that's derailing your retirement dreams, confused about Social Security timing, or simply want to ensure your nest egg lasts throughout retirement, Capital Wealth has helped thousands of Utah families navigate these challenges successfully.
 
 Remember, 75% of Americans don't have a written retirement income plan. Don't be in that vulnerable majority when market storms hit or economic conditions change. The time to plan is now, while you still have options and opportunities.
 
@@ -584,7 +584,7 @@ Remember, 75% of Americans don't have a written retirement income plan. Don't be
 📱 **Text "VISIT"** to 801-210-5500  
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors — helping Utah families retire right since 2010.*
+*Capital Wealth — helping Utah families retire right since 2010.*
 
 **Special Offer:** The next five callers who mention this article will receive a complimentary Retirement Money Map – our comprehensive analysis that shows exactly how protected income fits into your specific retirement strategy and helps you avoid the regrets that keep other retirees awake at night.
 

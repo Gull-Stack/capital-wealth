@@ -13,10 +13,10 @@ tags:
 # The $274,000 Tax Bomb: How Utah Retirees Can Protect Their Income From Rising Tax Rates
 
 **Published:** March 29, 2025  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, March 29, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 29, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 29, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -506,7 +506,7 @@ As Stevens notes, "There's no do-overs you got to get it right the first time."
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)  
 📍 **Tax Resources:** [retireutah.com](https://retireutah.com)
 
-*Capital Wealth Advisors — helping Utah families minimize lifetime tax burden and maximize retirement security since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
+*Capital Wealth — helping Utah families minimize lifetime tax burden and maximize retirement security since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
 
 **The ultimate message:** "Accumulation is just one step of the journey, but enjoying the retirement of your dreams, that's our goal."
 

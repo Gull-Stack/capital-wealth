@@ -14,10 +14,10 @@ tags:
 
 **Published:** May 17, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, May 17, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the May 17, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the May 17, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -582,7 +582,7 @@ Mike references "The Psychology of Money" by Morgan Housel, highlighting the psy
 ### 90-Day Goals
 
 **1. Professional consultation:**
-- Schedule complimentary Retirement Money Map™ analysis with Capital Wealth Advisors
+- Schedule complimentary Retirement Money Map™ analysis with Capital Wealth
 - Review current plan with qualified Utah retirement specialist
 - Get second opinion on current advisor's approach
 
@@ -828,7 +828,7 @@ The transformation from saver to spender represents one of the most challenging 
 3. **Implementation:** Begin transitioning from portfolio management to income planning
 4. **Confidence building:** Develop spending guardrails that provide security and freedom
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to get started
 - **Website:** capitalwealth.com
@@ -863,12 +863,12 @@ Your Utah retirement should be the best years of your life. The income blueprint
 
 ---
 
-*This content is based on the May 17, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement income planning situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the May 17, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement income planning situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Retirement Income Planning
 - Retirement Money Map
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Tax Planning

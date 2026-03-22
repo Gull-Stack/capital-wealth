@@ -1,7 +1,7 @@
 ---
 layout: layouts/base-finpay.njk
-title: "Retirement Planning Blog | Capital Wealth Advisors"
-description: "Expert retirement planning articles covering Social Security, tax strategies, estate planning, and income optimization from Capital Wealth Advisors in Lehi, Utah."
+title: "Retirement Planning Blog | Capital Wealth"
+description: "Expert retirement planning articles covering Social Security, tax strategies, estate planning, and income optimization from Capital Wealth in Lehi, Utah."
 permalink: /blog/
 eleventyExcludeFromCollections: true
 breadcrumbs:
@@ -10,13 +10,18 @@ breadcrumbs:
 ---
 
 {# ═══════════════════════════════════════════════════════════
-   HERO SECTION — Finpay-inspired clean design
+   HERO SECTION — Editorial Design
    ═══════════════════════════════════════════════════════════ #}
 <section class="finpay-blog-hero">
     <div class="container">
         <div class="finpay-blog-hero-content">
-            <h1>Expert insights for your retirement</h1>
-            <p class="finpay-blog-hero-subtitle">Tax strategies, planning guides, and financial wisdom from Utah's retirement specialists.</p>
+            <div class="editorial-hero-category">
+                <span class="editorial-hero-line"></span>
+                <span class="editorial-hero-label">INSIGHTS</span>
+                <span class="editorial-hero-line"></span>
+            </div>
+            <h1>Expert Insights for Your Retirement</h1>
+            <p class="finpay-blog-hero-subtitle">Tax strategies, planning guides, and financial wisdom from Capital Wealth's retirement specialists.</p>
         </div>
     </div>
 </section>
@@ -167,7 +172,7 @@ breadcrumbs:
 </section>
 
 <style>
-/* Finpay-inspired Blog Styles */
+/* Editorial Blog Styles */
 .finpay-blog-hero {
     background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
     padding: 4rem 0;
@@ -180,15 +185,42 @@ breadcrumbs:
     margin: 0 auto;
 }
 
+.editorial-hero-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.editorial-hero-line {
+    width: 60px;
+    height: 1px;
+    background: #F09F54;
+}
+
+.editorial-hero-label {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #F09F54;
+    font-weight: 600;
+}
+
 .finpay-blog-hero h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #194F90;
-    margin-bottom: 1rem;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 300;
+    color: #003870;
+    margin-bottom: 1.5rem;
     line-height: 1.2;
 }
 
 .finpay-blog-hero-subtitle {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
     font-size: 1.25rem;
     color: #525252;
     margin: 0;

@@ -14,7 +14,7 @@ tags:
 
 **Published:** October 11, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, October 11, 2025
 
 *Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide explores Roth conversion strategies specifically tailored for Utah retirees, based on the October 11, 2025 episode of Retire Right Radio with Mike Stevens.*
@@ -851,7 +851,7 @@ Don't let another tax year pass without understanding your opportunities. Whethe
 - Professional team coordination
 - Completely complimentary with no obligation
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -880,12 +880,12 @@ Don't let another tax year pass without understanding your opportunities. Whethe
 
 ---
 
-*This content is based on the October 11, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah Roth conversion situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the October 11, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah Roth conversion situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Roth Conversions
 - Utah Tax Planning
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Retirees

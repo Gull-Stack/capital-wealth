@@ -14,10 +14,10 @@ tags:
 
 **Published:** May 25, 2025  
 **Last Updated:** May 25, 2025  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, May 25, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the May 25, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the May 25, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -41,7 +41,7 @@ We're living in unprecedented times where traditional economic indicators seem d
 
 **How do we make sense of this apparent contradiction?**
 
-Mike Stevens from Capital Wealth Advisors puts it bluntly: "We don't. It's craziness. You try to make sense of it and you're like, I can't make sense of it. This is crazy."
+Mike Stevens from Capital Wealth puts it bluntly: "We don't. It's craziness. You try to make sense of it and you're like, I can't make sense of it. This is crazy."
 
 This honest assessment leads to a fundamental principle for Utah retirees: **plan for the worst, hope for the best**. Rather than trying to time the market or predict economic outcomes, successful retirement planning requires building flexibility and protection into your strategy.
 
@@ -287,7 +287,7 @@ Rather than putting all retirement funds in the stock market or keeping everythi
 
 ### Strategic Review Meetings: Beyond Rate of Return
 
-Capital Wealth Advisors conducts strategic review meetings with clients at least twice yearly, focusing on opportunities rather than just performance reporting.
+Capital Wealth conducts strategic review meetings with clients at least twice yearly, focusing on opportunities rather than just performance reporting.
 
 **What strategic reviews accomplish:**
 - Identify tax loss harvesting opportunities
@@ -565,7 +565,7 @@ The most successful Utah retirees combine technological efficiency with personal
 
 ## The Retirement Money Map™ Advantage
 
-Capital Wealth Advisors has developed a proprietary process called the Retirement Money Map™ that goes far beyond traditional portfolio management.
+Capital Wealth has developed a proprietary process called the Retirement Money Map™ that goes far beyond traditional portfolio management.
 
 ### Components of the Retirement Money Map™
 
@@ -689,7 +689,7 @@ Remember: **There's no award for being the wealthiest person in the cemetery.** 
 - Investment strategy coordination
 - Completely complimentary with no obligation
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -698,13 +698,13 @@ Remember: **There's no award for being the wealthiest person in the cemetery.** 
 
 ---
 
-*This content is based on the May 25, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement and investment situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the May 25, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement and investment situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Active vs Passive Investing
 - Utah Retirement Planning
 - Investment Strategy
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Retirees

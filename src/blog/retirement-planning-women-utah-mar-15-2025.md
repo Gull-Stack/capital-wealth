@@ -13,10 +13,10 @@ tags:
 # Why Utah Women Face Unique Retirement Challenges (And How to Turn Them Into Advantages)
 
 **Published:** March 15, 2025  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, March 15, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 15, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 15, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -488,7 +488,7 @@ Whether you're a teacher in Murray planning for retirement on a pension, a tech 
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)  
 📍 **Additional Resources:** [retireutah.com](https://retireutah.com)
 
-*Capital Wealth Advisors — helping Utah women build confident retirements since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
+*Capital Wealth — helping Utah women build confident retirements since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
 
 **Remember:** You worked hard your entire life, often putting family needs before your own financial planning. Now it's time to put yourself first and build the retirement security you deserve. Don't let lack of knowledge or confidence prevent you from living your best life in retirement.
 

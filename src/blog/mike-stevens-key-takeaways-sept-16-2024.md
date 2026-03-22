@@ -155,7 +155,7 @@ readTime: 8
 
 **Ready to implement these strategies?**
 
-Contact Capital Wealth Advisors for a complimentary federal employee retirement analysis:
+Contact Capital Wealth for a complimentary federal employee retirement analysis:
 - **Phone:** 801-210-5500  
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com

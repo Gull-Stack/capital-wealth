@@ -16,10 +16,10 @@ tags:
 
 **Published:** February 7, 2026  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, February 7, 2026
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 7, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 7, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -522,7 +522,7 @@ Remember: accumulation is just one step of your journey. The goal is enjoying th
 
 **For Utah residents ready to build a comprehensive retirement income plan:**
 
-Capital Wealth Advisors offers complimentary Retirement Money Map™ analysis for qualifying individuals. This comprehensive review typically takes 5-10 hours of professional analysis and includes:
+Capital Wealth offers complimentary Retirement Money Map™ analysis for qualifying individuals. This comprehensive review typically takes 5-10 hours of professional analysis and includes:
 
 - Income source coordination and optimization
 - Tax-efficient withdrawal strategy development
@@ -544,7 +544,7 @@ Visit retireutah.com for downloadable guides including:
 
 ---
 
-*This content is based on the February 7, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the February 7, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Retirement Income Planning
@@ -552,7 +552,7 @@ Visit retireutah.com for downloadable guides including:
 - Retirement Income Streams
 - Social Security Optimization
 - Utah Tax Planning
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Retirement Money Map

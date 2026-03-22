@@ -318,7 +318,7 @@ If you have several old 401(k) accounts:
 
 
 
-{{ site.founder.name }} at Capital Wealth Advisors specializes in helping clients navigate complex 401(k) rollover decisions. As a fiduciary advisor, we ensure your rollover strategy aligns with your overall retirement goals while minimizing fees and taxes.
+{{ site.founder.name }} at Capital Wealth specializes in helping clients navigate complex 401(k) rollover decisions. As a fiduciary advisor, we ensure your rollover strategy aligns with your overall retirement goals while minimizing fees and taxes.
 
 Our comprehensive approach includes:
 - Rollover strategy analysis

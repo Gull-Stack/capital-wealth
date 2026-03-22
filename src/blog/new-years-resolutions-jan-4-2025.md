@@ -13,10 +13,10 @@ tags:
 # Making Financial New Year's Resolutions That Actually Stick: Your 2025 Retirement Roadmap
 
 **Published:** January 4, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, January 4, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 4, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 4, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -48,7 +48,7 @@ The key to successful financial goal-setting isn't about making dramatic changes
 
 Every January, gyms fill up with hopeful exercisers, and financial advisors' phones ring with calls from people ready to "get serious" about retirement planning. But just as those gym memberships go unused by February, financial resolutions often fall by the wayside when faced with the reality of sustained effort.
 
-Mike Stevens has observed this pattern for years in his practice at Capital Wealth Advisors. "I think it's crazy to have like a goal if you're just saying, hey, this is some crazy lofty goal. And if I buy Bitcoin and it works out and all of a sudden, I'm going to be a multi millionaire," Stevens notes. "Probably not a good goal to go for. It's a little lofty."
+Mike Stevens has observed this pattern for years in his practice at Capital Wealth. "I think it's crazy to have like a goal if you're just saying, hey, this is some crazy lofty goal. And if I buy Bitcoin and it works out and all of a sudden, I'm going to be a multi millionaire," Stevens notes. "Probably not a good goal to go for. It's a little lofty."
 
 The problem with most financial resolutions isn't the intention – it's the execution. People set vague goals like "save more money" or "invest better" without creating the specific, measurable milestones that make progress trackable. In Utah's competitive economy, where the median household income has grown significantly but so has the cost of living, residents need particularly strategic approaches to building wealth.
 
@@ -594,7 +594,7 @@ Automate all possible bills to avoid late fees and free up mental energy for mor
 
 Don't let 2025 become another year of financial resolutions that fade by February. The difference between financial success and struggle often comes down to having a clear plan, professional guidance, and the accountability to stick with it through inevitable challenges.
 
-Capital Wealth Advisors has helped thousands of Utah families transform their financial futures through systematic, goal-oriented planning. Mike Stevens and his team understand the unique opportunities and challenges facing Utah residents, from navigating stock options in our growing tech sector to optimizing pension benefits for government employees.
+Capital Wealth has helped thousands of Utah families transform their financial futures through systematic, goal-oriented planning. Mike Stevens and his team understand the unique opportunities and challenges facing Utah residents, from navigating stock options in our growing tech sector to optimizing pension benefits for government employees.
 
 Your complimentary retirement money map consultation will provide:
 
@@ -612,7 +612,7 @@ The sooner you start, the more time your money has to compound and grow. Whether
 📱 **Text "VISIT"** to 801-210-5500
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors – helping Utah families build wealth and retire with confidence since 2008.*
+*Capital Wealth – helping Utah families build wealth and retire with confidence since 2008.*
 
 ---
 

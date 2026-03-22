@@ -13,10 +13,10 @@ tags:
 # Make Your Money Work for You: From Portfolio to Paycheck in Utah Retirement
 
 **Published:** February 22, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, February 22, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 22, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 22, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -309,7 +309,7 @@ Beware of advisors who only focus on investment returns. A good retirement advis
 - Long-term care planning
 - Legacy planning
 
-**At Capital Wealth Advisors:**
+**At Capital Wealth:**
 - We specialize in retirement income planning
 - We have a $250,000 investment minimum
 - We focus on education rather than sales
@@ -529,7 +529,7 @@ If you can't answer all of these questions clearly, you have a portfolio but not
 
 **Don't let your life's work sit idle in retirement.** After decades of working hard for your money, it's time to make your money work hard for you – providing reliable income, tax efficiency, and peace of mind throughout your golden years.
 
-The strategies we've discussed today aren't just theoretical concepts – they're practical solutions that thousands of Utah families are using right now to create more secure, more enjoyable retirements. Whether you're feeling paralyzed by investment decisions, confused about tax strategies, or simply want to ensure your nest egg becomes a reliable paycheck, Capital Wealth Advisors has the expertise and experience to guide you.
+The strategies we've discussed today aren't just theoretical concepts – they're practical solutions that thousands of Utah families are using right now to create more secure, more enjoyable retirements. Whether you're feeling paralyzed by investment decisions, confused about tax strategies, or simply want to ensure your nest egg becomes a reliable paycheck, Capital Wealth has the expertise and experience to guide you.
 
 Remember the key insights from today's show:
 - You can control your tax strategy even if you can't control market returns
@@ -543,7 +543,7 @@ Remember the key insights from today's show:
 📱 **Text "VISIT"** to 801-210-5500  
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors — helping Utah families retire right since 2010.*
+*Capital Wealth — helping Utah families retire right since 2010.*
 
 **Special Offer:** The next five callers who mention this article will receive a complimentary Retirement Money Map – our comprehensive analysis that shows exactly how to turn your portfolio into a reliable paycheck, optimize your tax strategies, and make your money work harder for you throughout retirement.
 

@@ -13,10 +13,10 @@ tags:
 # Tackling the Twin Threats: How Rising Taxes and Inflation Could Devastate Your Utah Retirement (And What to Do About It)
 
 **Published:** February 1, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, February 1, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 1, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 1, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -92,7 +92,7 @@ This is why having a comprehensive retirement strategy is crucial. You need to b
 
 ## The Capital Wealth Approach: Two-Bucket Strategy for Utah Retirees
 
-At Capital Wealth Advisors, we don't believe in putting all your eggs in one basket – even when those eggs cost $9 per carton! Our two-bucket approach helps Utah retirees weather both tax increases and inflation while maintaining their desired lifestyle.
+At Capital Wealth, we don't believe in putting all your eggs in one basket – even when those eggs cost $9 per carton! Our two-bucket approach helps Utah retirees weather both tax increases and inflation while maintaining their desired lifestyle.
 
 ### Bucket #1: The Safe Bucket
 
@@ -420,7 +420,7 @@ Our retirement money map creates specific guidelines:
 
 ## Your Next Step: Don't Let Taxes and Inflation Derail Your Dreams
 
-**Don't let the twin threats of rising taxes and inflation destroy the retirement you've worked decades to achieve.** Capital Wealth Advisors has helped thousands of Utah families navigate these challenges and create retirement strategies that provide both security and growth potential.
+**Don't let the twin threats of rising taxes and inflation destroy the retirement you've worked decades to achieve.** Capital Wealth has helped thousands of Utah families navigate these challenges and create retirement strategies that provide both security and growth potential.
 
 Every day you wait to address these issues is another day that taxes and inflation are potentially working against your retirement dreams. Whether you're concerned about your current strategy, confused by conflicting advice, or simply want a second opinion, we're here to help.
 
@@ -432,7 +432,7 @@ Our comprehensive retirement planning process addresses every aspect of your fin
 📱 **Text "VISIT"** to 801-210-5500  
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors — helping Utah families retire right since 2010.*
+*Capital Wealth — helping Utah families retire right since 2010.*
 
 **Special Offer:** The next five callers who mention this article will receive a complimentary Retirement Money Map – a comprehensive analysis that shows exactly how taxes and inflation could impact your specific situation and what you can do about it.
 

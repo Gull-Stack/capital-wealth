@@ -13,10 +13,10 @@ tags:
 # Making Your Retirement Money Last: A Utah Retiree's Complete Guide to Financial Longevity
 
 **Published:** April 19, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, April 19, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the April 19, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the April 19, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -26,7 +26,7 @@ Utah's mountain peaks represent permanence and endurance, but retirement plannin
 
 The traditional approach of accumulating assets and hoping for the best no longer works in today's environment. Rising inflation, potential tax increases, extended life expectancy, and the disappearance of traditional pensions have created a perfect storm of challenges that require sophisticated planning and strategic thinking.
 
-As Mike Stevens, president and founder of Capital Wealth Advisors, explains: "What I find is that because of how instant gratification of the society we've become, it just means that a lot of people are just buy, throw away, buy, throw away, and a lot of times people will get into wants more than needs." This consumer mindset, combined with the complexities of modern retirement planning, creates significant risks for Utah retirees who need their savings to last potentially 30 years or more.
+As Mike Stevens, president and founder of Capital Wealth, explains: "What I find is that because of how instant gratification of the society we've become, it just means that a lot of people are just buy, throw away, buy, throw away, and a lot of times people will get into wants more than needs." This consumer mindset, combined with the complexities of modern retirement planning, creates significant risks for Utah retirees who need their savings to last potentially 30 years or more.
 
 ---
 
@@ -253,7 +253,7 @@ Rather than relying primarily on portfolio withdrawals, successful Utah retirees
 
 ### The Guardrail Strategy
 
-Capital Wealth Advisors implements a "guardrail" approach that provides spending flexibility while ensuring basic needs are met:
+Capital Wealth implements a "guardrail" approach that provides spending flexibility while ensuring basic needs are met:
 
 **Minimum Guardrail:** Essential expenses covered by guaranteed income sources
 **Maximum Guardrail:** Comfortable spending level sustainable under conservative assumptions
@@ -361,7 +361,7 @@ Patty's Medicare confusion illustrates a common problem - the overwhelming amoun
 
 **Pricing Tricks:** "You can have one insurance company, and they offer that plan that you're looking at, and the insurance company offers three different prices for that exact same plan." This practice takes advantage of consumers who assume higher prices mean better coverage.
 
-Capital Wealth Advisors provides Medicare guidance to help Utah retirees avoid these common traps and select optimal coverage at the lowest available cost.
+Capital Wealth provides Medicare guidance to help Utah retirees avoid these common traps and select optimal coverage at the lowest available cost.
 
 ### "Q: My husband and I have been serious about saving for retirement for a long time. But we're just realizing now we need to get serious about planning for retirement. We think it might make sense to get a financial professional to help us. What would be some basic questions we should ask when we meet with someone?" - Lori from Park City
 
@@ -436,7 +436,7 @@ Ken's question illustrates a common retirement challenge - couples with differen
 
 **Don't leave your retirement to chance.** Making your money last requires more than hope and good intentions - it requires comprehensive planning that addresses market volatility, inflation, taxes, healthcare costs, and longevity risks.
 
-Capital Wealth Advisors has helped thousands of Utah families create retirement plans designed to last throughout their golden years. Our comprehensive retirement money map process includes:
+Capital Wealth has helped thousands of Utah families create retirement plans designed to last throughout their golden years. Our comprehensive retirement money map process includes:
 
 - Age-appropriate risk management and asset allocation
 - Strategic tax planning and Roth conversion analysis  
@@ -451,7 +451,7 @@ Capital Wealth Advisors has helped thousands of Utah families create retirement 
 📱 **Text "VISIT"** to 801-210-5500  
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors — helping Utah families retire right since 2012.*
+*Capital Wealth — helping Utah families retire right since 2012.*
 
 ---
 

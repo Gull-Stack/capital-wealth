@@ -14,10 +14,10 @@ tags:
 
 **Published:** May 31, 2025  
 **Last Updated:** May 31, 2025  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, May 31, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the May 31, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the May 31, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -283,7 +283,7 @@ Many HSA holders don't realize they can invest HSA funds beyond basic money mark
 
 ### Beyond Portfolio Management
 
-Capital Wealth Advisors' proprietary Retirement Money Map™ addresses the comprehensive nature of retirement tax planning. This isn't a product for sale but a planning process that addresses:
+Capital Wealth' proprietary Retirement Money Map™ addresses the comprehensive nature of retirement tax planning. This isn't a product for sale but a planning process that addresses:
 
 **Income planning:** Coordinating multiple income sources for tax efficiency
 **Tax strategy:** Federal and Utah-specific optimization
@@ -791,7 +791,7 @@ Remember: **The goal isn't to pay zero taxes - it's to pay your fair share and n
 - Legacy and estate planning integration
 - Completely complimentary with no obligation
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -800,13 +800,13 @@ Remember: **The goal isn't to pay zero taxes - it's to pay your fair share and n
 
 ---
 
-*This content is based on the May 31, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement tax situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the May 31, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement tax situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Tax Planning
 - Retirement Tax Strategy
 - Social Security Taxation
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Retirees

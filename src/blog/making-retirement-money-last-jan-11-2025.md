@@ -13,10 +13,10 @@ tags:
 # Making Your Retirement Money Last: A Survival Guide for Utah's Unexpected Early Retirees
 
 **Published:** January 11, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, January 11, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 11, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 11, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -24,7 +24,7 @@ The dream of early retirement has transformed from fantasy to necessity for many
 
 For Utah residents, this trend carries particular significance. Our state's robust economy and growing tech sector have created wealth-building opportunities, but they've also fostered a culture where many professionals plan to work well into their 60s or beyond. When circumstances force an earlier exit from the workforce, the financial impact can be devastating without proper preparation.
 
-Mike Stevens of Capital Wealth Advisors has witnessed this phenomenon firsthand. "One of the most common questions that I get from people is, is there any way that we could just shave off some time and get me to retirement sooner?" Stevens explains. "And I go, you know, with great planning, there is." However, the key distinction lies between choosing early retirement and being forced into it – a difference that can mean the difference between financial security and hardship.
+Mike Stevens of Capital Wealth has witnessed this phenomenon firsthand. "One of the most common questions that I get from people is, is there any way that we could just shave off some time and get me to retirement sooner?" Stevens explains. "And I go, you know, with great planning, there is." However, the key distinction lies between choosing early retirement and being forced into it – a difference that can mean the difference between financial security and hardship.
 
 ---
 
@@ -597,7 +597,7 @@ Whether you're facing potential forced retirement, considering voluntary early r
 📱 **Text "VISIT"** to 801-210-5500
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors – helping Utah families navigate unexpected retirement transitions and build lasting financial security since 2008.*
+*Capital Wealth – helping Utah families navigate unexpected retirement transitions and build lasting financial security since 2008.*
 
 ---
 

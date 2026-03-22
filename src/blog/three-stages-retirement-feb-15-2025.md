@@ -13,10 +13,10 @@ tags:
 # The Three Stages of Retirement: Your Complete Guide to Planning Go-Go, Slow-Go, and No-Go Years in Utah
 
 **Published:** February 15, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, February 15, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 15, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the February 15, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -553,7 +553,7 @@ Some Utah retirees become "snowbirds," maintaining Utah residency for tax purpos
 
 The difference between retirees who thrive throughout all three stages and those who struggle isn't usually the amount they've saved – it's whether they've created adaptive plans that account for the go-go, slow-go, and no-go realities of retirement.
 
-Whether you're concerned about front-loading your go-go years without running out of money, worried about healthcare costs during your slow-go years, or want to ensure dignity and quality care during your no-go years, Capital Wealth Advisors has helped thousands of Utah families create comprehensive three-stage retirement strategies.
+Whether you're concerned about front-loading your go-go years without running out of money, worried about healthcare costs during your slow-go years, or want to ensure dignity and quality care during your no-go years, Capital Wealth has helped thousands of Utah families create comprehensive three-stage retirement strategies.
 
 **Ready to create your three-stage retirement plan?**
 
@@ -561,7 +561,7 @@ Whether you're concerned about front-loading your go-go years without running ou
 📱 **Text "VISIT"** to 801-210-5500  
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors — helping Utah families retire right since 2010.*
+*Capital Wealth — helping Utah families retire right since 2010.*
 
 **Special Offer:** The next five callers who mention this article will receive a complimentary Retirement Money Map – our comprehensive three-stage analysis that shows exactly how to plan for go-go, slow-go, and no-go years based on your specific situation, goals, and Utah advantages.
 

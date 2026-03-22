@@ -13,7 +13,7 @@ tags:
 ---
 # Make Your Money Work for You: A Personal Journey Through Financial Planning and the Retirement Money Map
 
-*By Mike Stevens, Capital Wealth Advisors*  
+*By Mike Stevens, Capital Wealth*  
 *Originally aired on KAOX, KID, KNRS, and KSL on August 16, 2025*
 
 ---
@@ -679,7 +679,7 @@ The best plan in the world is useless if it sits in a drawer. Make sure you:
 
 ### Ready to Get Started?
 
-At Capital Wealth Advisors, we've been helping Utah families navigate retirement planning for almost **20 years**. We've created our trademarked Retirement Money Map for hundreds of families, and we've seen firsthand how proper planning can transform retirement from a time of worry into a time of confidence and enjoyment.
+At Capital Wealth, we've been helping Utah families navigate retirement planning for almost **20 years**. We've created our trademarked Retirement Money Map for hundreds of families, and we've seen firsthand how proper planning can transform retirement from a time of worry into a time of confidence and enjoyment.
 
 Our approach is different because we:
 - Focus on comprehensive planning, not just investment returns
@@ -712,7 +712,7 @@ Your retirement should be a time of enjoyment, not anxiety. With proper planning
 
 ---
 
-## Connect with Capital Wealth Advisors
+## Connect with Capital Wealth
 
 If you're ready to create your own Retirement Money Map and want to see if we can add value to your retirement planning, here are three ways to connect with us:
 

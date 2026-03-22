@@ -16,16 +16,16 @@ tags:
 
 **Published:** January 3, 2026  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, January 3, 2026
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 3, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 3, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
 ## Introduction: The Personal Story Behind Utah's Most Trusted Financial Advisor
 
-Ever feel stuck in the daily grind, fighting traffic, working all day, and longing for retirement freedom? This New Year's episode revealed the deeply personal story behind Mike Stevens and Capital Wealth Advisors - a tragedy that became the foundation for helping thousands of Utah retirees secure their financial future.
+Ever feel stuck in the daily grind, fighting traffic, working all day, and longing for retirement freedom? This New Year's episode revealed the deeply personal story behind Mike Stevens and Capital Wealth - a tragedy that became the foundation for helping thousands of Utah retirees secure their financial future.
 
 When Mike's father Len passed away unexpectedly at just 49 years old, it exposed critical gaps in estate planning that cost his family dearly. No 49-year-old expects to die, but the lack of proper planning led to expensive legal fees, probate nightmares, and even a lapsed life insurance policy just three months before his father's death.
 
@@ -449,7 +449,7 @@ While dissecting cadavers in anatomy class, Mike realized his passion lay elsewh
 - What's my healthcare cost plan?
 - How do we avoid estate planning disasters?
 
-**If they can't answer:** You may need a distribution specialist like Capital Wealth Advisors.
+**If they can't answer:** You may need a distribution specialist like Capital Wealth.
 
 ---
 
@@ -565,7 +565,7 @@ Mike Stevens' journey from personal tragedy to Utah's most trusted retirement ad
 - Estate planning review to avoid probate disasters
 - Completely complimentary with no obligation
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -578,12 +578,12 @@ Mike Stevens' journey from personal tragedy to Utah's most trusted retirement ad
 
 ---
 
-*This content is based on the January 3, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the January 3, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Retirement Planning  
 - Make Your Money Work
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens  
 - Retire Right Radio
 - Utah Retirees

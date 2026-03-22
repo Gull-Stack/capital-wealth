@@ -341,7 +341,7 @@ faqSchema: [
 
 ## 📞 Get Your Questions Answered
 
-Have questions not covered here? Capital Wealth Advisors specializes in federal employee retirement planning.
+Have questions not covered here? Capital Wealth specializes in federal employee retirement planning.
 
 **Contact Information:**
 - **Phone:** 801-210-5500

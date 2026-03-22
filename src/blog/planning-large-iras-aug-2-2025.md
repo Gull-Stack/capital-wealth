@@ -14,10 +14,10 @@ tags:
 
 **Published:** August 2, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, August 2, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the August 2, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the August 2, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -593,7 +593,7 @@ Your IRA doesn't have to become a tax time bomb. But the window to defuse it is 
 - Utah-specific advantages maximization
 - Completely complimentary with no obligation
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -624,7 +624,7 @@ Your IRA doesn't have to become a tax time bomb. But the window to defuse it is 
 
 ---
 
-*This content is based on the August 2, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah IRA situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the August 2, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah IRA situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah IRA Planning
@@ -632,7 +632,7 @@ Your IRA doesn't have to become a tax time bomb. But the window to defuse it is 
 - Roth Conversion Planning
 - Required Minimum Distributions
 - Secure Act 2.0
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Tax Planning

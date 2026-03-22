@@ -14,7 +14,7 @@ tags:
 
 *Originally aired on KAOX, KID, KNRS, and KSL*
 
-By Mike Stevens, Capital Wealth Advisors
+By Mike Stevens, Capital Wealth
 
 Every night across Utah, from the foothills of Park City to the growing communities of St. George, millions of Americans lie awake with the same terrifying thought: "What if I outlive my money?" This isn't just anxiety talking—it's the #1 retirement fear for 58% of Americans across all generations. And it's not an irrational fear when people are living well into their 90s and beyond, creating retirement spans of 30 years or more.
 
@@ -428,7 +428,7 @@ Within six months, Dr. Thompson was confidently spending $72,000 annually, takin
 
 ## Building Your Retirement Money Map: A Step-by-Step Approach
 
-At Capital Wealth Advisors, we help Utah families create what we call a "retirement money map"—a comprehensive blueprint that addresses every aspect of retirement income planning.
+At Capital Wealth, we help Utah families create what we call a "retirement money map"—a comprehensive blueprint that addresses every aspect of retirement income planning.
 
 ### The Five-Phase Utah Retirement Planning Process
 
@@ -577,7 +577,7 @@ If you recognize yourself in the scenarios we've discussed, now is the time to t
 
 ### The Capital Wealth Advantage
 
-At Capital Wealth Advisors, we specialize in helping Utah families transition confidently from accumulation to distribution. Our retirement money map process has guided hundreds of Utah retirees through this critical transition.
+At Capital Wealth, we specialize in helping Utah families transition confidently from accumulation to distribution. Our retirement money map process has guided hundreds of Utah retirees through this critical transition.
 
 **What makes us different:**
 - **Utah-specific expertise:** We understand the unique opportunities and challenges facing Utah retirees
@@ -619,7 +619,7 @@ To maximize the value of your consultation, please gather:
 
 ### Contact Information
 
-Ready to conquer your fear of running out of money? Contact Capital Wealth Advisors today:
+Ready to conquer your fear of running out of money? Contact Capital Wealth today:
 
 **Phone:** 801-210-5500  
 **Text:** "VISIT" to 801-210-5500  
@@ -692,10 +692,10 @@ Don't let fear rob you of the retirement you've worked so hard to earn. The stra
 
 ---
 
-*Mike Stevens is the founder and president of Capital Wealth Advisors, a Utah-based firm specializing in retirement income planning. Mike hosts "Retire Right Radio," which airs weekly on KAOX, KID, KNRS, and KSL. He and his team have helped hundreds of Utah families transition from accumulation to confident retirement spending. When not helping clients, Mike enjoys Utah's outdoor recreation opportunities with his wife and family.*
+*Mike Stevens is the founder and president of Capital Wealth, a Utah-based firm specializing in retirement income planning. Mike hosts "Retire Right Radio," which airs weekly on KAOX, KID, KNRS, and KSL. He and his team have helped hundreds of Utah families transition from accumulation to confident retirement spending. When not helping clients, Mike enjoys Utah's outdoor recreation opportunities with his wife and family.*
 
-**Investment Advisory Services offered through Capital Wealth Advisors LLC, a state of Utah registered investment advisor. Insurance Services offered through CWA Insurance Services LLC. Investing involves risk, including the potential loss of principal. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims paying abilities of the issuing carrier.**
+**Investment Advisory Services offered through Capital Wealth LLC, a state of Utah registered investment advisor. Insurance Services offered through CWA Insurance Services LLC. Investing involves risk, including the potential loss of principal. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims paying abilities of the issuing carrier.**
 
 ---
 
-**Tags:** Utah retirement planning, running out of money retirement, Social Security optimization Utah, sequence of returns risk, retirement income strategies, Medicare planning Utah, withdrawal strategies retirement, retirement tax planning, Utah retirees, Capital Wealth Advisors, Mike Stevens, Retire Right Radio, longevity planning, healthcare costs retirement, protected growth strategy
+**Tags:** Utah retirement planning, running out of money retirement, Social Security optimization Utah, sequence of returns risk, retirement income strategies, Medicare planning Utah, withdrawal strategies retirement, retirement tax planning, Utah retirees, Capital Wealth, Mike Stevens, Retire Right Radio, longevity planning, healthcare costs retirement, protected growth strategy

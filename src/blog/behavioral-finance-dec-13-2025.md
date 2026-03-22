@@ -14,10 +14,10 @@ tags:
 
 **Published:** December 13, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, December 13, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the December 13, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the December 13, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -98,7 +98,7 @@ Whether you're approaching retirement or already enjoying your golden years, und
 
 **Real client example:** A Draper couple with $1.2 million in retirement savings living on social security alone because spending their investments "felt irresponsible."
 
-**The solution:** Create what Capital Wealth Advisors calls "expense plans" rather than rigid budgets, with designated categories that give psychological permission to spend.
+**The solution:** Create what Capital Wealth calls "expense plans" rather than rigid budgets, with designated categories that give psychological permission to spend.
 
 ### Loss Aversion: The Paralysis of "Analysis Paralysis"
 
@@ -535,7 +535,7 @@ Whether you're approaching retirement or already enjoying your golden years, und
 
 ---
 
-## Working with Capital Wealth Advisors: Behavioral Finance Experts
+## Working with Capital Wealth: Behavioral Finance Experts
 
 ### The Fiduciary Advantage in Behavioral Finance
 
@@ -626,7 +626,7 @@ Whether you're approaching retirement or already enjoying your golden years, und
 - Whether your current plan accounts for behavioral factors
 - Specific steps to improve your financial decision-making
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -649,7 +649,7 @@ Whether you're worried about spending too much in retirement (like Cindy), confu
 
 The answers will guide you toward a retirement plan that's not just mathematically sound, but psychologically sustainable. Because in the end, the best financial plan is the one you can actually stick with.
 
-*This content is based on the December 13, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation and behavioral finance assessment, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the December 13, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation and behavioral finance assessment, contact Capital Wealth for a complimentary consultation.*
 
 ---
 
@@ -657,7 +657,7 @@ The answers will guide you toward a retirement plan that's not just mathematical
 - Utah Retirement Planning
 - Behavioral Finance
 - IRS Dirty Dozen Scams
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Mental Accounting

@@ -344,7 +344,7 @@ Your Social Security claiming decision is irreversible in most cases and can imp
 
 
 
-{{ site.founder.name }} at Capital Wealth Advisors specializes in Social Security optimization for Utah retirees. As a fiduciary advisor, we provide unbiased analysis to help you make the claiming decision that maximizes your lifetime benefits.
+{{ site.founder.name }} at Capital Wealth specializes in Social Security optimization for Utah retirees. As a fiduciary advisor, we provide unbiased analysis to help you make the claiming decision that maximizes your lifetime benefits.
 
 Our Social Security optimization service includes:
 - Personalized break-even analysis

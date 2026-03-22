@@ -14,10 +14,10 @@ tags:
 
 **Published:** August 30, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, August 30, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the August 30, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the August 30, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -359,7 +359,7 @@ Mike Stevens notes: "If you're a small business owner, high interest rates incre
 - Utah real estate market trend reports
 
 **Professional resources:**
-- Capital Wealth Advisors complimentary consultations
+- Capital Wealth complimentary consultations
 - Utah retirement planning workshops and seminars
 - Local investment club participation
 - Community financial literacy programs
@@ -411,7 +411,7 @@ Your retirement years should be the best of your life. Utah's combination of nat
 - Utah-specific opportunity identification
 - Tax-efficient income planning coordination
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -439,14 +439,14 @@ Your retirement years should be the best of your life. Utah's combination of nat
 
 ---
 
-*This content is based on the August 30, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement and interest rate planning needs, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the August 30, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement and interest rate planning needs, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Falling Interest Rates
 - Utah Retirement Planning
 - Federal Reserve Policy
 - Interest Rate Impact
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Retirees

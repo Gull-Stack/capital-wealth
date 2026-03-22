@@ -16,7 +16,7 @@ You wake up, get ready for work, hop in your car, fight that traffic, and drive 
 
 If you're like most people, Social Security is going to be a very important part of your retirement. But how confident are you that Social Security is going to be there for you? A lot of Americans are pessimistic about it — and according to new research, they have good reason for concern.
 
-At Capital Wealth Advisors, our goal is to prepare people for a great retirement. You worked hard for this moment. Let us give you confidence to enjoy your future.
+At Capital Wealth, our goal is to prepare people for a great retirement. You worked hard for this moment. Let us give you confidence to enjoy your future.
 
 ---
 
@@ -444,7 +444,7 @@ Remember: You don't have to figure this out alone. Professional advisors who spe
 
 **Ready to optimize your retirement strategy?**
 
-Contact Capital Wealth Advisors for a complimentary consultation:
+Contact Capital Wealth for a complimentary consultation:
 - **Phone:** 801-210-5500
 - **Text:** Send "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -480,6 +480,6 @@ A: You can leave it in TSP, roll it to an IRA, take distributions, or buy an ann
 
 *This content is based on the September 14, 2024 episode of Retire Right Radio. For personalized advice regarding your specific situation, please consult with a qualified financial advisor specializing in federal employee benefits.*
 
-**About the Author:** Mike Stevens is the founder and president of Capital Wealth Advisors, specializing in retirement planning for federal employees. He hosts Retire Right Radio every weekend on KAOX, KID, KNRS, and KSL. His expertise comes from both professional experience and personal necessity — after his father's unexpected death at 49, Mike stepped into the financial industry to help his mother navigate retirement planning.
+**About the Author:** Mike Stevens is the founder and president of Capital Wealth, specializing in retirement planning for federal employees. He hosts Retire Right Radio every weekend on KAOX, KID, KNRS, and KSL. His expertise comes from both professional experience and personal necessity — after his father's unexpected death at 49, Mike stepped into the financial industry to help his mother navigate retirement planning.
 
-**Advisory Services:** Advisory services offered through Capital Wealth Advisors LLC, a State of Utah Registered Investment Advisor. Investing involves risk, including the potential loss of principal. This article is for informational purposes only and should not be considered personalized investment advice.
+**Advisory Services:** Advisory services offered through Capital Wealth LLC, a State of Utah Registered Investment Advisor. Investing involves risk, including the potential loss of principal. This article is for informational purposes only and should not be considered personalized investment advice.

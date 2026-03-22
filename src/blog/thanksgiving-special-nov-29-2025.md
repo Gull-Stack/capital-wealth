@@ -14,7 +14,7 @@ tags:
 
 *Originally aired on KAOX, KID, KNRS, and KSL*
 
-By Mike Stevens, Capital Wealth Advisors
+By Mike Stevens, Capital Wealth
 
 As we gather around Thanksgiving tables across Utah, from the bustling neighborhoods of Salt Lake City to the scenic valleys of Ogden and Provo, there's something beautifully familiar about the perfect balance of our holiday feast. Just like your grandmother's recipe for stuffing or the precise timing needed for that golden turkey, your retirement plan needs the same thoughtful balance of ingredients to create something truly satisfying.
 
@@ -255,7 +255,7 @@ This approach gives you flexibility as rates change while still capturing yield 
 
 ## Your Retirement Money Map: The Complete Recipe
 
-At Capital Wealth Advisors, we help Utah families create what we call a "retirement money map" – a comprehensive plan that coordinates all the ingredients of your financial feast.
+At Capital Wealth, we help Utah families create what we call a "retirement money map" – a comprehensive plan that coordinates all the ingredients of your financial feast.
 
 ### The Five-Step Utah Retirement Planning Process
 
@@ -449,7 +449,7 @@ To make the most of your complimentary consultation, gather:
 
 ### Contact Information
 
-Ready to create your perfect retirement planning feast? Contact Capital Wealth Advisors today:
+Ready to create your perfect retirement planning feast? Contact Capital Wealth today:
 
 **Phone:** 801-210-5500  
 **Text:** "VISIT" to 801-210-5500  
@@ -467,14 +467,14 @@ This Thanksgiving, I'm grateful for the trust our clients place in us and for th
 
 Remember, the best time to plant a tree was 20 years ago. The second-best time is today. Whether you're 45 and just beginning to think seriously about retirement or 75 and wondering if your current plan is on track, it's never too early to start or too late to optimize.
 
-From all of us at Capital Wealth Advisors, we wish you and your family a wonderful Thanksgiving season filled with gratitude, good food, and great company. Here's to building retirement plans as satisfying and well-balanced as the perfect Thanksgiving feast.
+From all of us at Capital Wealth, we wish you and your family a wonderful Thanksgiving season filled with gratitude, good food, and great company. Here's to building retirement plans as satisfying and well-balanced as the perfect Thanksgiving feast.
 
 ---
 
-*Mike Stevens is the founder and president of Capital Wealth Advisors, a Utah-based firm specializing in retirement income planning. Mike hosts "Retire Right Radio," which airs weekly on KAOX, KID, KNRS, and KSL. He and his team have helped hundreds of Utah families create comprehensive retirement strategies. When not helping clients, Mike enjoys Utah's outdoor recreation opportunities with his wife and family.*
+*Mike Stevens is the founder and president of Capital Wealth, a Utah-based firm specializing in retirement income planning. Mike hosts "Retire Right Radio," which airs weekly on KAOX, KID, KNRS, and KSL. He and his team have helped hundreds of Utah families create comprehensive retirement strategies. When not helping clients, Mike enjoys Utah's outdoor recreation opportunities with his wife and family.*
 
-**Investment Advisory Services offered through Capital Wealth Advisors LLC, a state of Utah registered investment advisor. Insurance Services offered through CWA Insurance Services LLC. Investing involves risk, including the potential loss of principal. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims paying abilities of the issuing carrier.**
+**Investment Advisory Services offered through Capital Wealth LLC, a state of Utah registered investment advisor. Insurance Services offered through CWA Insurance Services LLC. Investing involves risk, including the potential loss of principal. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims paying abilities of the issuing carrier.**
 
 ---
 
-**Tags:** Utah retirement planning, Social Security optimization, Medicare planning Utah, retirement income strategies, Utah tax advantages, estate planning Utah, retirement money map, Capital Wealth Advisors, Mike Stevens, Retire Right Radio, Utah retirees, Thanksgiving financial planning, Utah healthcare costs, retirement lifestyle Utah
+**Tags:** Utah retirement planning, Social Security optimization, Medicare planning Utah, retirement income strategies, Utah tax advantages, estate planning Utah, retirement money map, Capital Wealth, Mike Stevens, Retire Right Radio, Utah retirees, Thanksgiving financial planning, Utah healthcare costs, retirement lifestyle Utah

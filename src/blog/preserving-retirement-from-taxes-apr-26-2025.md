@@ -13,10 +13,10 @@ tags:
 # Preserving Your Utah Retirement from Taxes: The Ultimate Tax Planning Guide
 
 **Published:** April 26, 2025
-**Author:** Mike Stevens, Capital Wealth Advisors
+**Author:** Mike Stevens, Capital Wealth
 **Episode:** Retire Right Radio, April 26, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the April 26, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the April 26, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -24,7 +24,7 @@ tags:
 
 Utah's stunning landscapes change with the seasons, but one constant remains: the mountains endure. Your retirement savings face a different kind of weather system - a perfect tax storm that could erode your financial mountains over time. With market volatility making headlines and economic uncertainty swirling, Utah retirees are discovering that one of the most reliable aspects of their financial plan might also be one of the most overlooked: tax planning.
 
-As Mike Stevens, president and founder of Capital Wealth Advisors, explains: "Social security, it can be like a lifeline for retirees. Just because when the market goes down and if people are anticipating taking money out of a stock portfolio, for example, you're like, ah, don't really want to sell when the market's down, but I do need income."
+As Mike Stevens, president and founder of Capital Wealth, explains: "Social security, it can be like a lifeline for retirees. Just because when the market goes down and if people are anticipating taking money out of a stock portfolio, for example, you're like, ah, don't really want to sell when the market's down, but I do need income."
 
 But even this "lifeline" comes with tax implications that many Utah retirees never fully understand. Combined with the ticking time bomb of tax-deferred retirement accounts and the looming specter of higher future tax rates, today's retirees need sophisticated tax preservation strategies more than ever before.
 
@@ -331,7 +331,7 @@ IUL policies are complex financial instruments that require professional analysi
 
 ## Your Next Step: Five Tips for a Happy (and Tax-Efficient) Retirement
 
-**Don't let taxes derail your Utah retirement dreams.** Comprehensive tax planning protects your hard-earned savings while providing peace of mind about your financial future. Capital Wealth Advisors helps Utah families implement sophisticated tax preservation strategies including:
+**Don't let taxes derail your Utah retirement dreams.** Comprehensive tax planning protects your hard-earned savings while providing peace of mind about your financial future. Capital Wealth helps Utah families implement sophisticated tax preservation strategies including:
 
 **Tip #5 - Focus on Your Health:** Healthy retirees enjoy retirement more and face lower healthcare costs, improving both quality of life and tax efficiency through reduced medical expenses.
 
@@ -357,7 +357,7 @@ IUL policies are complex financial instruments that require professional analysi
 📱 **Text "VISIT"** to 801-210-5500
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
-*Capital Wealth Advisors — helping Utah families retire right since 2012.*
+*Capital Wealth — helping Utah families retire right since 2012.*
 
 ---
 

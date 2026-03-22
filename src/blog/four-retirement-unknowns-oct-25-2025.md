@@ -1,6 +1,6 @@
 ---
 title: "Utah's Four Biggest Retirement Unknowns Guide"
-description: "Longevity, healthcare costs, market performance, and taxes — the four retirement unknowns every Utah retiree must plan for. Comprehensive strategies from Capital Wealth Advisors."
+description: "Longevity, healthcare costs, market performance, and taxes — the four retirement unknowns every Utah retiree must plan for. Comprehensive strategies from Capital Wealth."
 date: 2025-10-25
 dateModified: 2026-03-19
 author: "Mike Stevens"
@@ -15,7 +15,7 @@ tags:
 
 *Originally aired on KAOX, KID, KNRS, and KSL*
 
-**By Mike Stevens, Capital Wealth Advisors**  
+**By Mike Stevens, Capital Wealth**  
 *Air Date: October 25, 2025*
 
 ---
@@ -39,7 +39,7 @@ tags:
 
 Retirement should be the reward for decades of hard work, not a constant source of anxiety about whether your money will last. Yet for Utah retirees from the bustling Wasatch Front to the red rock communities of Southern Utah, from the agricultural valleys of Cache County to the tech corridors of Silicon Slopes, the uncertainty surrounding retirement planning can feel overwhelming.
 
-As founder and president of Capital Wealth Advisors, I've spent over 20 years helping Utah families navigate these treacherous financial waters. After working with thousands of retirees across our beautiful state - from Park City ski instructors to Provo educators, from Salt Lake City healthcare workers to St. George realtors - I've identified four major "unknowns" that keep people awake at night, and more importantly, how to plan for each one.
+As founder and president of Capital Wealth, I've spent over 20 years helping Utah families navigate these treacherous financial waters. After working with thousands of retirees across our beautiful state - from Park City ski instructors to Provo educators, from Salt Lake City healthcare workers to St. George realtors - I've identified four major "unknowns" that keep people awake at night, and more importantly, how to plan for each one.
 
 ### Why Utah Retirement Planning is Unique
 
@@ -1018,7 +1018,7 @@ Whether you're 45 and just starting to think seriously about retirement, 55 and 
 
 ## Ready to Take Control of Your Utah Retirement Future?
 
-At Capital Wealth Advisors, we've helped thousands of Utah families navigate these retirement unknowns. Our **Retirement Money Map™** process provides the comprehensive planning that turns unknowns into manageable variables, specifically designed for Utah retirees and their unique circumstances.
+At Capital Wealth, we've helped thousands of Utah families navigate these retirement unknowns. Our **Retirement Money Map™** process provides the comprehensive planning that turns unknowns into manageable variables, specifically designed for Utah retirees and their unique circumstances.
 
 ### Your Next Step: Get Your Personalized Utah Retirement Analysis
 
@@ -1076,11 +1076,11 @@ Call 801-210-5500 now and take the first step toward the confident, secure Utah 
 
 ---
 
-*Capital Wealth Advisors is an independent financial services firm that utilizes a variety of investment and insurance products. Investment Advisory Services offered through Capital Wealth Advisors LLC, a state of Utah registered investment advisor. Insurance Services offered through CWA Insurance Services LLC.*
+*Capital Wealth is an independent financial services firm that utilizes a variety of investment and insurance products. Investment Advisory Services offered through Capital Wealth LLC, a state of Utah registered investment advisor. Insurance Services offered through CWA Insurance Services LLC.*
 
 *Investing involves risk, including the potential loss of principle. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims paying abilities of the issuing carrier.*
 
-*This content is intended for informational purposes only. It is not intended to be used as the sole basis for financial decisions, nor should it be construed as advice designed to meet the particular needs of an individual situation. Capital Wealth Advisors is not permitted to offer tax or legal advice.*
+*This content is intended for informational purposes only. It is not intended to be used as the sole basis for financial decisions, nor should it be construed as advice designed to meet the particular needs of an individual situation. Capital Wealth is not permitted to offer tax or legal advice.*
 
 *Utah-specific information is based on current state law and regulations, which may change. Consult with qualified tax and legal professionals for advice specific to your situation.*
 

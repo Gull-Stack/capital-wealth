@@ -14,10 +14,10 @@ tags:
 
 **Published:** May 10, 2025  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, May 10, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the May 10, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the May 10, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -535,7 +535,7 @@ Utah's health-conscious culture, combined with medical advances, means many Utah
 
 ---
 
-## Working with Capital Wealth Advisors: Utah's Legacy Planning Specialists
+## Working with Capital Wealth: Utah's Legacy Planning Specialists
 
 ### Why Distribution Planning Differs from Accumulation
 
@@ -577,7 +577,7 @@ Utah's health-conscious culture, combined with medical advances, means many Utah
 - Utah-specific optimization opportunities
 - Completely complimentary with no obligation
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -780,7 +780,7 @@ Mike Stevens' father never intended to leave his family in financial chaos. At 4
 
 **The strongest legacy plans aren't the most optimistic—they're the most prepared.**
 
-Your family is counting on you. Utah gives you the tools. Capital Wealth Advisors provides the expertise. The only question is: Will you take action today?
+Your family is counting on you. Utah gives you the tools. Capital Wealth provides the expertise. The only question is: Will you take action today?
 
 ---
 
@@ -806,12 +806,12 @@ Your family is counting on you. Utah gives you the tools. Capital Wealth Advisor
 
 ---
 
-*This content is based on the May 10, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah legacy planning situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the May 10, 2025 episode of Retire Right Radio. For personalized advice regarding your specific Utah legacy planning situation, contact Capital Wealth for a complimentary consultation.*
 
 ## Tags
 - Utah Legacy Planning
 - Estate Planning Utah
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Retirement Planning

@@ -13,10 +13,10 @@ tags:
 # How Falling Interest Rates Could Revolutionize Your Utah Retirement Strategy
 
 **Published:** March 22, 2025  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, March 22, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 22, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 22, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -461,7 +461,7 @@ As Stevens notes, "No financial advisor can control the stock market... But the 
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)  
 📍 **Additional Resources:** [retireutah.com](https://retireutah.com)
 
-*Capital Wealth Advisors — helping Utah families build resilient retirement plans that thrive in any interest rate environment since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
+*Capital Wealth — helping Utah families build resilient retirement plans that thrive in any interest rate environment since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
 
 **Remember:** The goal isn't just accumulating assets—it's enjoying the retirement of your dreams. As Stevens puts it, "Accumulating assets, it's really one step of our journey, but enjoying the retirement of your dreams, that's the goal."
 

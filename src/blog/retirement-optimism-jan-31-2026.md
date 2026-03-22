@@ -16,10 +16,10 @@ tags:
 
 **Published:** January 31, 2026  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, January 31, 2026
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 31, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 31, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -110,7 +110,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 
 ### Financial Planning for Longevity
 
-**The 120-year assumption:** Capital Wealth Advisors plans assuming clients will live to 120—not because they will, but because it creates the safety margin needed for confidence.
+**The 120-year assumption:** Capital Wealth plans assuming clients will live to 120—not because they will, but because it creates the safety margin needed for confidence.
 
 **Three-phase retirement approach:**
 1. **Go-go years (65-75):** Active travel, recreation, bucket list items
@@ -372,7 +372,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 - Utah-specific advantages optimization
 - Completely complimentary with no obligation
 
-**Contact Capital Wealth Advisors:**
+**Contact Capital Wealth:**
 - **Phone:** 801-210-5500
 - **Text:** "VISIT" to 801-210-5500
 - **Website:** capitalwealth.com
@@ -404,7 +404,7 @@ Don't let another year pass wondering if you're on the right track. Take action 
 - Retirement Optimism 2026
 - Financial Literacy
 - Social Security Optimization
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Utah Tax Planning
@@ -414,4 +414,4 @@ Don't let another year pass wondering if you're on the right track. Take action 
 
 ---
 
-*This content is based on the January 31, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the January 31, 2026 episode of Retire Right Radio. For personalized advice regarding your specific Utah retirement situation, contact Capital Wealth for a complimentary consultation.*

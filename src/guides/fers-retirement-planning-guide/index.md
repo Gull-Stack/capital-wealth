@@ -401,7 +401,7 @@ FERS provides an excellent foundation for retirement, but optimizing your benefi
 
 
 
-{{ site.founder.name }} at Capital Wealth Advisors has extensive experience helping federal employees optimize their FERS benefits. As a fiduciary advisor, we provide unbiased guidance to help you make the most of your federal retirement benefits.
+{{ site.founder.name }} at Capital Wealth has extensive experience helping federal employees optimize their FERS benefits. As a fiduciary advisor, we provide unbiased guidance to help you make the most of your federal retirement benefits.
 
 Our FERS planning services include:
 - Comprehensive benefit analysis and projections

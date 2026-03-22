@@ -13,10 +13,10 @@ tags:
 # From Fear to Financial Freedom: The Ultimate Utah Guide to Maximizing Your Retirement Income in 2025
 
 **Published:** March 8, 2025  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, March 8, 2025
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 8, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the March 8, 2025 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -26,7 +26,7 @@ Picture this: You've worked 40 years, faithfully contributed to your 401(k), wat
 
 In Utah, from the tech corridors of Silicon Slopes to the mining communities of Carbon County, hardworking families are discovering that accumulation is only half the retirement equation. The other half—the distribution phase—is where dreams either come true or turn into nightmares.
 
-Mike Stevens, founder of Capital Wealth Advisors, puts it perfectly: "It's like climbing a mountain. More people get hurt on the way down than on the way up. You're tired, maybe there's a sense of excitement that you just hit your goal, and you're kind of speeding to get down and just celebrate. And you take a misstep and gravity works against you."
+Mike Stevens, founder of Capital Wealth, puts it perfectly: "It's like climbing a mountain. More people get hurt on the way down than on the way up. You're tired, maybe there's a sense of excitement that you just hit your goal, and you're kind of speeding to get down and just celebrate. And you take a misstep and gravity works against you."
 
 This comprehensive guide will show you how to navigate the treacherous descent from accumulation to distribution, ensuring your retirement income lasts as long as you do—whether you're planning to spend your golden years skiing Park City, exploring Utah's national parks, or simply enjoying time with grandchildren in your hometown.
 
@@ -616,7 +616,7 @@ Whether you're a teacher in Murray planning to retire on a pension, a tech worke
 🌐 **Visit:** [capitalwealth.com](https://capitalwealth.com)  
 📍 **Website Resources:** [retireutah.com](https://retireutah.com)
 
-*Capital Wealth Advisors — helping Utah families transition from accumulation to distribution since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
+*Capital Wealth — helping Utah families transition from accumulation to distribution since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*
 
 **Remember:** The accumulation stage is just one step of the journey. Enjoying your retirement—having the best retirement possible—that's the goal. Don't let poor distribution planning derail the dreams you've worked decades to achieve.
 

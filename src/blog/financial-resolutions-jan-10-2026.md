@@ -16,10 +16,10 @@ tags:
 
 **Published:** January 10, 2026  
 **Last Updated:** March 18, 2026  
-**Author:** Mike Stevens, Capital Wealth Advisors  
+**Author:** Mike Stevens, Capital Wealth  
 **Episode:** Retire Right Radio, January 10, 2026
 
-*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 10, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth Advisors.*
+*Originally aired on KAOX, KID, KNRS, and KSL. This comprehensive guide is based on the January 10, 2026 episode of Retire Right Radio with Mike Stevens, founder and president of Capital Wealth.*
 
 ---
 
@@ -27,7 +27,7 @@ tags:
 
 It's January 10th, 2026. How are your New Year's resolutions holding up? If you're like most Americans, they're already gathering dust alongside the exercise equipment and diet books. But when it comes to financial resolutions for retirement, failure isn't just disappointing—it's expensive.
 
-Mike Stevens of Capital Wealth Advisors has spent over 20 years watching retirees make the same resolution mistakes year after year. More importantly, he's developed a system that actually works, specifically designed for Utah retirees who want to maximize their retirement security and make the most of the Beehive State's unique advantages.
+Mike Stevens of Capital Wealth has spent over 20 years watching retirees make the same resolution mistakes year after year. More importantly, he's developed a system that actually works, specifically designed for Utah retirees who want to maximize their retirement security and make the most of the Beehive State's unique advantages.
 
 This isn't about generic financial advice or pie-in-the-sky promises. These are proven strategies that real Utah retirees have used to increase their retirement income, reduce their tax burden, and gain the confidence that comes from knowing their financial future is secure.
 
@@ -601,7 +601,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 
 ## Special Offer: Professional Partnership for Resolution Success
 
-### Capital Wealth Advisors' Resolution Support Program
+### Capital Wealth' Resolution Support Program
 
 **For Utah residents committed to 2026 financial resolution success:**
 
@@ -675,7 +675,7 @@ Your future self will thank you for the changes you make today.
 - Financial Resolutions 2026
 - Utah Retirement Planning
 - New Year Financial Goals
-- Capital Wealth Advisors
+- Capital Wealth
 - Mike Stevens
 - Retire Right Radio
 - Retirement Planning Utah
@@ -687,4 +687,4 @@ Your future self will thank you for the changes you make today.
 
 ---
 
-*This content is based on the January 10, 2026 episode of Retire Right Radio. For personalized guidance on implementing your 2026 financial resolutions with professional support, contact Capital Wealth Advisors for a complimentary consultation.*
+*This content is based on the January 10, 2026 episode of Retire Right Radio. For personalized guidance on implementing your 2026 financial resolutions with professional support, contact Capital Wealth for a complimentary consultation.*
