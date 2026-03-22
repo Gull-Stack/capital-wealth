@@ -21,6 +21,7 @@
     <!-- Finpay-inspired Helvetica fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Manrope:wght@300;400;500;600;700&family=Geist+Mono:wght@100..900&display=swap');
         /* Fallback to system fonts for Helvetica-like appearance */
         :root {
             --font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1689,5 +1690,409 @@ Tom and Linda from Ogden faced this decision. Tom's full retirement age benefit:
         });
     })();
     </script>
+
+    <!-- ═══ WINCHESTER CHAT WIDGET ═══ -->
+<style>
+.cw-chat-bubble {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  background: var(--navy, #194F90);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  z-index: 9998;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cw-chat-bubble:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+}
+.cw-chat-bubble svg { width: 28px; height: 28px; color: #fff; }
+.cw-chat-bubble .cw-close { display: none; }
+.cw-chat-bubble.open .cw-open { display: none; }
+.cw-chat-bubble.open .cw-close { display: block; }
+
+.cw-chat-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  background: #F09F54;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: none;
+}
+.cw-chat-badge.show { display: block; }
+
+.cw-chat-window {
+  position: fixed;
+  bottom: 96px;
+  right: 24px;
+  width: 380px;
+  max-height: 520px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+.cw-chat-window.open { display: flex; }
+
+.cw-chat-header {
+  background: var(--navy, #194F90);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+.cw-chat-avatar {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.cw-chat-header-name { font-weight: 600; font-size: 0.95rem; }
+.cw-chat-header-status {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cw-chat-header-status::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #22c55e;
+  border-radius: 50%;
+}
+
+.cw-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  max-height: 340px;
+  min-height: 200px;
+  background: #fafbfc;
+}
+.cw-msg {
+  margin-bottom: 12px;
+  max-width: 85%;
+  animation: cwMsgIn 0.25s ease;
+}
+@keyframes cwMsgIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.cw-msg-bot {
+  background: #f0f4fa;
+  border: 1px solid rgba(25,79,144,0.1);
+  border-radius: 12px 12px 12px 4px;
+  padding: 12px 16px;
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.cw-msg-user {
+  background: var(--navy, #194F90);
+  color: #fff;
+  border-radius: 12px 12px 4px 12px;
+  padding: 12px 16px;
+  margin-left: auto;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.cw-msg-typing {
+  color: #999;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+.cw-chat-scheduler {
+  padding: 12px 16px;
+  background: #f0fdf4;
+  border-top: 1px solid #bbf7d0;
+  text-align: center;
+  display: none;
+}
+.cw-chat-scheduler.show { display: block; }
+.cw-chat-scheduler a {
+  display: inline-block;
+  background: var(--navy, #194F90);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.cw-chat-scheduler a:hover { background: #0f3a6d; }
+.cw-chat-scheduler p {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 8px 0 0;
+}
+
+.cw-chat-resources {
+  padding: 12px 16px;
+  background: #fef9ee;
+  border-top: 1px solid #fde68a;
+  text-align: center;
+  display: none;
+}
+.cw-chat-resources.show { display: block; }
+.cw-chat-resources a {
+  display: inline-block;
+  color: var(--navy, #194F90);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin: 4px 8px;
+}
+
+.cw-chat-input-wrap {
+  display: flex;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+}
+.cw-chat-input {
+  flex: 1;
+  border: none;
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  color: #333;
+}
+.cw-chat-input::placeholder { color: #aaa; }
+.cw-chat-send {
+  background: none;
+  border: none;
+  padding: 14px 16px;
+  cursor: pointer;
+  color: var(--navy, #194F90);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+.cw-chat-send:hover { opacity: 0.7; }
+
+@media (max-width: 480px) {
+  .cw-chat-window {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100vh;
+    border-radius: 16px 16px 0 0;
+  }
+  .cw-chat-messages { max-height: 50vh; }
+}
+</style>
+
+<div class="cw-chat-bubble" id="cwChatBubble" onclick="cwChat.toggle()">
+  <svg class="cw-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  <svg class="cw-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  <div class="cw-chat-badge" id="cwChatBadge"></div>
+</div>
+
+<div class="cw-chat-window" id="cwChatWindow">
+  <div class="cw-chat-header">
+    <div class="cw-chat-avatar">CW</div>
+    <div>
+      <div class="cw-chat-header-name">Capital Wealth</div>
+      <div class="cw-chat-header-status">Online now</div>
+    </div>
+  </div>
+  <div class="cw-chat-messages" id="cwChatMessages"></div>
+  <div class="cw-chat-scheduler" id="cwScheduler">
+    <a href="/thank-you/" target="_blank">Schedule Your Free Consultation</a>
+    <p>20-30 minutes. No obligation.</p>
+  </div>
+  <div class="cw-chat-resources" id="cwResources">
+    <p style="font-size:0.85rem;color:#666;margin:0 0 6px;">Explore our free resources:</p>
+    <a href="/book/">Free Book Chapter</a>
+    <a href="/resources/">Retirement Guides</a>
+  </div>
+  <div class="cw-chat-input-wrap">
+    <input type="text" class="cw-chat-input" id="cwChatInput" placeholder="Type a message..." autocomplete="off">
+    <button class="cw-chat-send" id="cwChatSend">Send</button>
+  </div>
+</div>
+
+<script>
+(function() {
+  var STORAGE_KEY = 'cw_chat_session';
+  var cwChat = {
+    open: false,
+    history: [],
+    sending: false,
+    greeted: false,
+
+    toggle: function() {
+      this.open = !this.open;
+      document.getElementById('cwChatBubble').classList.toggle('open', this.open);
+      document.getElementById('cwChatWindow').classList.toggle('open', this.open);
+      document.getElementById('cwChatBadge').classList.remove('show');
+      if (this.open && !this.greeted) {
+        this.greeted = true;
+        this.addBot("Welcome to Capital Wealth! Are you exploring retirement planning, or do you have a specific question I can help with?");
+        this.saveState();
+      }
+      if (this.open) {
+        setTimeout(function() { document.getElementById('cwChatInput').focus(); }, 100);
+      }
+    },
+
+    addBot: function(text) {
+      var msgs = document.getElementById('cwChatMessages');
+      var div = document.createElement('div');
+      div.className = 'cw-msg';
+      var cleanText = text.replace('[SHOW_SCHEDULER]', '').replace('[SHOW_RESOURCES]', '').trim();
+      div.innerHTML = '<div class="cw-msg-bot">' + cleanText + '</div>';
+      msgs.appendChild(div);
+      msgs.scrollTop = msgs.scrollHeight;
+      this.history.push({ role: 'assistant', content: cleanText });
+
+      if (text.indexOf('[SHOW_SCHEDULER]') !== -1) {
+        document.getElementById('cwScheduler').classList.add('show');
+      }
+      if (text.indexOf('[SHOW_RESOURCES]') !== -1) {
+        document.getElementById('cwResources').classList.add('show');
+      }
+    },
+
+    addUser: function(text) {
+      var msgs = document.getElementById('cwChatMessages');
+      var div = document.createElement('div');
+      div.className = 'cw-msg';
+      div.innerHTML = '<div class="cw-msg-user">' + this.escapeHtml(text) + '</div>';
+      msgs.appendChild(div);
+      msgs.scrollTop = msgs.scrollHeight;
+      this.history.push({ role: 'user', content: text });
+    },
+
+    showTyping: function() {
+      var msgs = document.getElementById('cwChatMessages');
+      var div = document.createElement('div');
+      div.className = 'cw-msg';
+      div.id = 'cwTyping';
+      div.innerHTML = '<div class="cw-msg-bot cw-msg-typing">Typing...</div>';
+      msgs.appendChild(div);
+      msgs.scrollTop = msgs.scrollHeight;
+    },
+
+    removeTyping: function() {
+      var el = document.getElementById('cwTyping');
+      if (el) el.remove();
+    },
+
+    send: async function() {
+      var input = document.getElementById('cwChatInput');
+      var val = input.value.trim();
+      if (!val || this.sending) return;
+
+      this.addUser(val);
+      input.value = '';
+      this.sending = true;
+      this.showTyping();
+
+      try {
+        var resp = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: this.history.map(function(m) { return { role: m.role, content: m.content }; }) })
+        });
+        var data = await resp.json();
+        this.removeTyping();
+        this.addBot(data.reply || "Could you tell me more about your retirement planning goals?");
+      } catch (e) {
+        this.removeTyping();
+        this.addBot("I'm having a small technical issue. You can always call us at <a href='tel:8012102800' style='color:#194F90;font-weight:600;'>801.210.2800</a>.");
+      }
+      this.sending = false;
+      this.saveState();
+    },
+
+    saveState: function() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+          history: this.history,
+          greeted: this.greeted,
+          scheduler: document.getElementById('cwScheduler').classList.contains('show'),
+          resources: document.getElementById('cwResources').classList.contains('show')
+        }));
+      } catch(e) {}
+    },
+
+    loadState: function() {
+      try {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (!stored) return;
+        var state = JSON.parse(stored);
+        if (state.history && state.history.length > 0) {
+          this.greeted = true;
+          var msgs = document.getElementById('cwChatMessages');
+          state.history.forEach(function(m) {
+            var div = document.createElement('div');
+            div.className = 'cw-msg';
+            if (m.role === 'assistant') {
+              div.innerHTML = '<div class="cw-msg-bot">' + m.content + '</div>';
+            } else {
+              div.innerHTML = '<div class="cw-msg-user">' + m.content + '</div>';
+            }
+            msgs.appendChild(div);
+          });
+          this.history = state.history;
+          msgs.scrollTop = msgs.scrollHeight;
+          if (state.scheduler) document.getElementById('cwScheduler').classList.add('show');
+          if (state.resources) document.getElementById('cwResources').classList.add('show');
+        }
+      } catch(e) {}
+    },
+
+    escapeHtml: function(s) {
+      var d = document.createElement('div');
+      d.textContent = s;
+      return d.innerHTML;
+    }
+  };
+
+  window.cwChat = cwChat;
+  cwChat.loadState();
+
+  document.getElementById('cwChatSend').addEventListener('click', function() { cwChat.send(); });
+  document.getElementById('cwChatInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') { e.preventDefault(); cwChat.send(); }
+  });
+
+  if (!localStorage.getItem(STORAGE_KEY)) {
+    setTimeout(function() {
+      if (!cwChat.open) {
+        document.getElementById('cwChatBadge').classList.add('show');
+      }
+    }, 30000);
+  }
+})();
+</script>
+
+
 </body>
 </html>

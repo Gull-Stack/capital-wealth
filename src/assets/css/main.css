@@ -4260,83 +4260,157 @@ a:hover {
 }
 
 /* ═══ GUIDE BLOG LAYOUT (Titan blog style) ═══ */
+/* ═══════════════════════════════════════════════════════════
+   BLOG — Editorial Sophistication Treatment
+   ═══════════════════════════════════════════════════════════ */
 .guide-blog {
-  background: #fff;
-  padding-top: 80px;
+  background: #f8f9fb;
+  padding-top: 40px;
 }
 .guide-blog-inner {
-  max-width: 800px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 3rem 2rem 0;
+  padding: 2.5rem 2rem 0;
 }
 .guide-blog-header {
   padding-bottom: 2.5rem;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
   margin-bottom: 2.5rem;
+  text-align: center;
+  position: relative;
+}
+.guide-blog-header::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #F09F54;
+  margin: 2rem auto 0;
 }
 .guide-blog-category {
   display: inline-block;
+  font-family: "Geist Mono", monospace;
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--accent-secondary);
+  letter-spacing: 0.15em;
+  color: #F09F54;
   text-decoration: none;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   transition: opacity 0.2s;
 }
 .guide-blog-category:hover { opacity: 0.7; }
 .guide-blog-title {
-  font-family: var(--font-family);
-  font-size: clamp(2.2rem, 4vw, 3rem);
-  font-weight: 600;
-  color: var(--navy);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  font-weight: 400;
+  font-style: italic;
+  color: #003870;
   margin: 0 0 1rem;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   line-height: 1.15;
 }
 .guide-blog-desc {
-  font-size: 1.05rem;
-  color: rgba(25,79,144,0.5);
+  font-family: "Manrope", sans-serif;
+  font-size: 1.1rem;
+  color: #424750;
   line-height: 1.7;
   margin: 0 0 1.5rem;
+  font-weight: 300;
+  font-style: italic;
 }
 .guide-blog-meta {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
 }
 .guide-blog-meta-item {
-  font-size: 0.72rem;
+  font-family: "Geist Mono", monospace;
+  font-size: 0.7rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: rgba(25,79,144,0.4);
+  letter-spacing: 0.1em;
+  color: #424750;
 }
+
+/* Author Byline */
+.blog-author-byline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.blog-author-img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.blog-author-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.blog-author-name {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #003870;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.blog-author-role {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #424750;
+}
+
+/* Blog Tags */
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.blog-tag {
+  font-family: "Geist Mono", monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #424750;
+  background: #edeef0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2px;
+}
+
+/* Blog Body — Editorial Typography */
 .guide-blog-body {
   padding-bottom: 3rem;
+  font-family: "Manrope", sans-serif;
 }
 .guide-blog-body h1 {
   display: none;
 }
 .guide-blog-body h2 {
-  font-family: var(--font-family);
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--navy);
-  margin: 2.5rem 0 1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #003870;
+  margin: 3rem 0 1rem;
   letter-spacing: -0.01em;
 }
 .guide-blog-body h3 {
-  font-family: var(--font-family);
+  font-family: "Manrope", sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
-  color: var(--navy);
+  color: #003870;
   margin: 2rem 0 0.75rem;
 }
 .guide-blog-body p {
+  font-family: "Manrope", sans-serif;
   font-size: 1.05rem;
-  color: rgba(25,79,144,0.6);
+  color: #191c1e;
   line-height: 1.85;
   margin: 0 0 1.25rem;
 }
@@ -4345,42 +4419,47 @@ a:hover {
   margin: 0 0 1.5rem;
 }
 .guide-blog-body li {
+  font-family: "Manrope", sans-serif;
   font-size: 1rem;
-  color: rgba(25,79,144,0.6);
+  color: #191c1e;
   line-height: 1.75;
   margin-bottom: 0.5rem;
 }
 .guide-blog-body strong {
-  color: var(--navy);
+  color: #003870;
   font-weight: 600;
 }
 .guide-blog-body a {
-  color: var(--accent-secondary);
+  color: #003870;
   text-decoration: none;
-  border-bottom: 1px solid rgba(232,135,58,0.3);
+  border-bottom: 1px solid rgba(0, 56, 112, 0.2);
   transition: border-color 0.2s;
 }
 .guide-blog-body a:hover {
-  border-bottom-color: var(--accent-secondary);
+  border-bottom-color: #F09F54;
+  color: #F09F54;
 }
 .guide-blog-body .card {
-  background: #f8f9fa;
-  border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 10px;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 2px;
   padding: 1.5rem 2rem;
   margin: 1.5rem 0;
 }
 .guide-blog-body .card h3 { margin-top: 0; }
 .guide-blog-body blockquote {
-  border-left: 3px solid var(--accent-secondary);
-  margin: 1.5rem 0;
-  padding: 0.75rem 1.5rem;
-  background: rgba(232,135,58,0.04);
-  border-radius: 0 8px 8px 0;
+  border-left: 4px solid #F09F54;
+  margin: 2.5rem 0;
+  padding: 1.5rem 2rem;
+  background: transparent;
+  border-radius: 0;
 }
 .guide-blog-body blockquote p {
-  color: var(--navy);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
   font-style: italic;
+  color: #003870;
+  line-height: 1.5;
 }
 .guide-blog-body table {
   width: 100%;
@@ -4400,10 +4479,24 @@ a:hover {
   border-bottom: 1px solid rgba(0,0,0,0.06);
   color: rgba(25,79,144,0.6);
 }
+/* Blog Attribution */
+.blog-attribution {
+  font-family: "Geist Mono", monospace !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #424750 !important;
+  text-align: center;
+  margin-bottom: 2rem !important;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.3);
+}
+
 @media (max-width: 768px) {
-  .guide-blog-inner { padding: 2rem 1.25rem 0; }
-  .guide-blog-title { font-size: 1.8rem; }
+  .guide-blog-inner { padding: 1.5rem 1.25rem 0; }
+  .guide-blog-title { font-size: 2rem; }
   .guide-blog-meta { flex-wrap: wrap; gap: 0.75rem; }
+  .blog-author-byline { justify-content: center; }
 }
 
 /* ═══ GUIDE ARTICLE LAYOUT ═══ */

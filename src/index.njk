@@ -5,26 +5,48 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 ---
 
 {# ═══════════════════════════════════════════════════════════
-   HERO SECTION - Finpay-inspired clean design with mountain logo watermark
+   HERO SECTION - Editorial Sophistication: Asymmetric layout with overlapping quote card
    ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-hero mountain-bg hero-with-watermark">
+<section class="finpay-hero hero-with-watermark">
     <div class="hero-mountain-watermark">
         <img src="/assets/images/logos/logo-icon-color.png" alt="" aria-hidden="true" class="mountain-logo-bg">
     </div>
     <div class="container">
         <div class="finpay-hero-content">
             <div class="finpay-hero-left">
-                <h1 class="hero-title-large hero-animate">Retire with confidence.<br>Not confusion.</h1>
+                <span class="eyebrow-label hero-animate">WEALTH MANAGEMENT & FINANCIAL PLANNING</span>
+                <h1 class="hero-title-large hero-animate">Retire with confidence.<br>Not <em>confusion</em>.</h1>
                 <p class="subtitle hero-animate">A Portfolio Is Not a Plan.</p>
                 <p class="description hero-animate">You've spent decades building your savings. Now it's time to turn them into a retirement you can actually enjoy — with reliable income, lower taxes, and a plan that works even when markets don't.</p>
-                <div class="finpay-hero-buttons hero-buttons-stacked hero-animate">
+                <div class="finpay-hero-buttons hero-animate">
                     <a href="/contact/" class="finpay-btn-primary">Get Your Free Assessment <span>→</span></a>
-                    <a href="/book/" class="finpay-btn-orange">Free Book Chapter</a>
+                    <a href="/book/" class="finpay-btn-primary" style="background: var(--secondary);">Free Book Chapter</a>
                 </div>
             </div>
             <div class="finpay-hero-right">
-                <div class="finpay-hero-image">
+                <div class="finpay-hero-image hero-animate">
                     <img src="/assets/images/photos/CWA-Mountain-Couple-home-header.webp" alt="Couple enjoying retirement in the Utah mountains">
+                </div>
+                <div class="hero-quote-card" style="
+                    position: absolute;
+                    bottom: 1.5rem;
+                    left: 1.5rem;
+                    background: rgba(0, 56, 112, 0.88);
+                    backdrop-filter: blur(12px);
+                    -webkit-backdrop-filter: blur(12px);
+                    padding: 1.75rem 2rem;
+                    max-width: 280px;
+                    border-radius: var(--radius-lg);
+                    z-index: 10;
+                ">
+                    <blockquote style="
+                        font-family: var(--font-serif-display);
+                        font-style: italic;
+                        font-size: 1.05rem;
+                        color: #ffffff;
+                        line-height: 1.4;
+                        margin: 0;
+                    ">"True wealth is the freedom to focus on what matters most."</blockquote>
                 </div>
             </div>
         </div>
@@ -32,138 +54,139 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   STATS SECTION - Clean like Finpay's "3k+ businesses" approach
+   STATS SECTION - Clean editorial approach
    ═══════════════════════════════════════════════════════════ #}
 <section class="finpay-stats">
     <div class="container">
         <div class="finpay-stats-grid">
             <div class="finpay-stat">
-                <span class="finpay-stat-number" style="color: #194F90;">1,000+</span>
+                <span class="finpay-stat-number">1,000+</span>
                 <span class="finpay-stat-label">Families Served</span>
             </div>
             <div class="finpay-stat">
-                <span class="finpay-stat-number" style="color: #194F90;">25+</span>
+                <span class="finpay-stat-number">25+</span>
                 <span class="finpay-stat-label">Years Experience</span>
             </div>
             <div class="finpay-stat">
-                <span class="finpay-stat-number" style="color: #194F90;">#1</span>
+                <span class="finpay-stat-number">#1</span>
                 <span class="finpay-stat-label">Radio Show in Utah</span>
             </div>
         </div>
     </div>
 </section>
 
-
-
 {# ═══════════════════════════════════════════════════════════
-   SERVICES SECTION - Professional card-based approach
+   SERVICES SECTION - Editorial cards with numbered pillars and hover effects
    ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-services">
+<section class="finpay-services no-borders" style="position: relative; overflow: hidden;">
+    <div class="floating-accent floating-accent-1"></div>
+    <div class="floating-accent floating-accent-2"></div>
     <div class="container">
         <div class="finpay-services-header">
-            <p class="finpay-services-label" style="color: #F09F54;">The Retirement Money Map™</p>
+            <span class="finpay-services-label eyebrow-label">PRECISION SERVICES</span>
             <h2>Five Pillars. One Plan. Zero Guesswork.</h2>
+            <div style="height: 1px; background: var(--outline-variant); opacity: 0.2; margin: 2rem auto; max-width: 200px;"></div>
             <p>A comprehensive framework that turns your savings into reliable retirement income — with tax efficiency, market protection, and healthcare planning all coordinated.</p>
         </div>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1024px; margin: 2rem auto 0;">
+        <div class="services-grid">
             <div class="finpay-card">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                    <div style="background: rgba(25, 79, 144, 0.1); padding: 0.75rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#194F90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                        </svg>
-                    </div>
-                    <h3 style="color: #194F90; font-size: 1.25rem; font-weight: 600; margin: 0;">Income That Lasts</h3>
+                <span class="eyebrow-label">PILLAR 01</span>
+                <div class="card-icon" style="margin-bottom: 2rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
                 </div>
-                <p style="color: #525252; line-height: 1.6; margin-bottom: 1rem;">Turn your savings into reliable income streams that last your entire lifetime — not just the good years.</p>
-                <a href="/services/retirement-money-map/" style="color: #194F90; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <h3>Income That Lasts</h3>
+                <p>Turn your savings into reliable income streams that last your entire lifetime — not just the good years.</p>
+                <a href="/services/retirement-money-map/">
                     Learn more <span style="transition: transform 0.2s ease;">→</span>
                 </a>
+                <div class="card-accent-line"></div>
             </div>
             
             <div class="finpay-card">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                    <div style="background: rgba(25, 79, 144, 0.1); padding: 0.75rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#194F90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
-                    </div>
-                    <h3 style="color: #194F90; font-size: 1.25rem; font-weight: 600; margin: 0;">Tax-Smart Withdrawals</h3>
+                <span class="eyebrow-label">PILLAR 02</span>
+                <div class="card-icon" style="margin-bottom: 2rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
                 </div>
-                <p style="color: #525252; line-height: 1.6; margin-bottom: 1rem;">Strategic withdrawal planning that could save you thousands in unnecessary taxes every single year.</p>
-                <a href="/services/tax-planning/" style="color: #194F90; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <h3>Tax-Smart Withdrawals</h3>
+                <p>Strategic withdrawal planning that could save you thousands in unnecessary taxes every single year.</p>
+                <a href="/services/tax-planning/">
                     Learn more <span style="transition: transform 0.2s ease;">→</span>
                 </a>
+                <div class="card-accent-line"></div>
             </div>
             
             <div class="finpay-card">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                    <div style="background: rgba(25, 79, 144, 0.1); padding: 0.75rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#194F90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                    </div>
-                    <h3 style="color: #194F90; font-size: 1.25rem; font-weight: 600; margin: 0;">Market Protection</h3>
+                <span class="eyebrow-label">PILLAR 03</span>
+                <div class="card-icon" style="margin-bottom: 2rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
                 </div>
-                <p style="color: #525252; line-height: 1.6; margin-bottom: 1rem;">Protect your portfolio during downturns without sacrificing the growth you need to stay ahead of inflation.</p>
-                <a href="/services/portfolio-management/" style="color: #194F90; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <h3>Market Protection</h3>
+                <p>Protect your portfolio during downturns without sacrificing the growth you need to stay ahead of inflation.</p>
+                <a href="/services/portfolio-management/">
                     Learn more <span style="transition: transform 0.2s ease;">→</span>
                 </a>
+                <div class="card-accent-line"></div>
             </div>
             
             <div class="finpay-card">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                    <div style="background: rgba(25, 79, 144, 0.1); padding: 0.75rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#194F90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/>
-                        </svg>
-                    </div>
-                    <h3 style="color: #194F90; font-size: 1.25rem; font-weight: 600; margin: 0;">Healthcare Planning</h3>
+                <span class="eyebrow-label">PILLAR 04</span>
+                <div class="card-icon" style="margin-bottom: 2rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/>
+                    </svg>
                 </div>
-                <p style="color: #525252; line-height: 1.6; margin-bottom: 1rem;">The blind spot most retirement plans miss. A clear framework for the costs that catch retirees off guard.</p>
-                <a href="/services/medicare-irmaa/" style="color: #194F90; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <h3>Healthcare Planning</h3>
+                <p>The blind spot most retirement plans miss. A clear framework for the costs that catch retirees off guard.</p>
+                <a href="/services/medicare-irmaa/">
                     Learn more <span style="transition: transform 0.2s ease;">→</span>
                 </a>
+                <div class="card-accent-line"></div>
             </div>
             
             <div class="finpay-card">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                    <div style="background: rgba(25, 79, 144, 0.1); padding: 0.75rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#194F90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                    </div>
-                    <h3 style="color: #194F90; font-size: 1.25rem; font-weight: 600; margin: 0;">Estate & Legacy</h3>
+                <span class="eyebrow-label">PILLAR 05</span>
+                <div class="card-icon" style="margin-bottom: 2rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
                 </div>
-                <p style="color: #525252; line-height: 1.6; margin-bottom: 1rem;">Go beyond a basic will. Protect your family's future and leave the legacy you've earned.</p>
-                <a href="/services/estate-planning/" style="color: #194F90; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <h3>Estate & Legacy</h3>
+                <p>Go beyond a basic will. Protect your family's future and leave the legacy you've earned.</p>
+                <a href="/services/estate-planning/">
                     Learn more <span style="transition: transform 0.2s ease;">→</span>
                 </a>
+                <div class="card-accent-line"></div>
             </div>
-
         </div>
     </div>
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   MEET MIKE SECTION - Introduction to Mike Stevens (Moved below Five Pillars)
+   MEET MIKE SECTION - Asymmetric with photo + overlapping navy info card
    ═══════════════════════════════════════════════════════════ #}
 <section class="meet-mike-section">
     <div class="container">
         <div class="meet-mike-content">
             <div class="meet-mike-left">
-                <div class="meet-mike-photo">
+                <div class="meet-mike-photo meet-mike-photo">
                     <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Founder of Capital Wealth">
                 </div>
+                <!-- Navy overlay removed — let Mike's natural beauty shine -->
             </div>
-            <div class="meet-mike-right">
-                <p class="finpay-services-label" style="color: #F09F54;">FOUNDER & PRESIDENT</p>
+            <div class="meet-mike-right meet-mike-details">
+                <span class="eyebrow-label">FOUNDER & PRESIDENT</span>
                 <h2 class="meet-mike-title">Meet Mike Stevens</h2>
                 <p class="meet-mike-subtitle">Investment Adviser Representative</p>
                 <div class="meet-mike-credentials">
@@ -176,7 +199,7 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
                 <blockquote class="meet-mike-quote">"I'm passionate about helping people bring all the pieces of their financial lives together with clarity and purpose."</blockquote>
                 <div class="meet-mike-buttons">
                     <a href="/contact/" class="finpay-btn-primary">Meet with Mike <span>→</span></a>
-                    <a href="/about/" class="finpay-btn-secondary">Learn More</a>
+                    <a href="/about/" class="finpay-btn-secondary" style="border-color: var(--primary); color: var(--primary);">Learn More</a>
                 </div>
             </div>
         </div>
@@ -204,11 +227,11 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
             </video>
         </div>
         <div class="media-text">
-            <p class="finpay-services-label">IN THE MEDIA</p>
-            <h2 style="font-size: 2.2rem; font-weight: 800; color: var(--navy); margin-bottom: 1rem;">Capital Wealth Radio</h2>
+            <span class="eyebrow-label">IN THE MEDIA</span>
+            <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; font-weight: 400; color: var(--primary); margin-bottom: 1rem;">Capital Wealth Radio</h2>
             <p><strong>Straight talk from experts with real guidance you can use.</strong></p>
             <p>Whether you tune in to Capital Wealth Radio on KSL, KNRS, or Newstalk, you'll access practical retirement advice to help you make smarter financial decisions — from tax strategies to Social Security timing.</p>
-            <a href="/resources/" class="finpay-hero-btn" style="display: inline-block; margin-top: 1rem;">Access Media Library <span>→</span></a>
+            <a href="/resources/" class="finpay-btn-primary" style="display: inline-block; margin-top: 1rem;">Access Media Library <span>→</span></a>
         </div>
     </div>
 </section>
@@ -219,77 +242,77 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 <section class="federal-benefits-section">
     <div class="container">
         <div class="federal-benefits-header">
-            <p class="finpay-services-label" style="color: #F09F54;">FEDERAL EMPLOYEE SPECIALISTS</p>
+            <span class="eyebrow-label">FEDERAL EMPLOYEE SPECIALISTS</span>
             <h2 class="federal-benefits-title">Your Service Deserves a Secure Retirement</h2>
             <p class="federal-benefits-subtitle">Federal employees have one of the best benefits packages in the country — but maximizing FERS, TSP, FEGLI, and FEHB requires specialized expertise most advisors don't have.</p>
             
             <!-- Hero Image for Federal Section -->
             <div class="federal-hero-image" style="margin: 2rem auto; text-align: center;">
-                <img src="https://www.capitalwealth.com/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg" alt="Retired couple enjoying their federal retirement benefits on the beach" style="max-width: 100%; height: 400px; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <img src="https://www.capitalwealth.com/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg" alt="Retired couple enjoying their federal retirement benefits on the beach" style="max-width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-editorial);">
             </div>
         </div>
         
         <div class="federal-benefits-grid">
-            <div class="finpay-card federal-benefit-card">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                    <div style="background: rgba(240, 159, 84, 0.1); padding: 0.75rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F09F54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                            <polyline points="9,22 9,12 15,12 15,22"/>
-                        </svg>
-                    </div>
-                    <h3 style="color: #194F90; font-size: 1.25rem; font-weight: 600; margin: 0;">FERS Optimization</h3>
+            <div class="finpay-card federal-benefit-card" >
+                <span class="eyebrow-label">SERVICE 01</span>
+                <div class="card-icon" style="margin-bottom: 2rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
                 </div>
-                <p style="color: #525252; line-height: 1.6; margin-bottom: 1rem;">Pension calculations, survivor benefits, retirement date optimization, and FERS supplement bridge planning.</p>
-                <a href="/services/federal-benefits/fers-retirement/" style="color: #194F90; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <h3>FERS Optimization</h3>
+                <p>Pension calculations, survivor benefits, retirement date optimization, and FERS supplement bridge planning.</p>
+                <a href="/services/federal-benefits/fers-retirement/">
                     Learn more <span style="transition: transform 0.2s ease;">→</span>
                 </a>
+                <div class="card-accent-line"></div>
             </div>
             
-            <div class="finpay-card federal-benefit-card">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                    <div style="background: rgba(240, 159, 84, 0.1); padding: 0.75rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F09F54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="12" y1="1" x2="12" y2="23"/>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                        </svg>
-                    </div>
-                    <h3 style="color: #194F90; font-size: 1.25rem; font-weight: 600; margin: 0;">TSP Management</h3>
+            <div class="finpay-card federal-benefit-card" >
+                <span class="eyebrow-label">SERVICE 02</span>
+                <div class="card-icon" style="margin-bottom: 2rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"/>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
                 </div>
-                <p style="color: #525252; line-height: 1.6; margin-bottom: 1rem;">Fund allocation strategies, traditional vs. Roth analysis, withdrawal planning, and rollover decisions.</p>
-                <a href="/services/federal-benefits/tsp-planning/" style="color: #194F90; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <h3>TSP Management</h3>
+                <p>Fund allocation strategies, traditional vs. Roth analysis, withdrawal planning, and rollover decisions.</p>
+                <a href="/services/federal-benefits/tsp-planning/">
                     Learn more <span style="transition: transform 0.2s ease;">→</span>
                 </a>
+                <div class="card-accent-line"></div>
             </div>
             
-            <div class="finpay-card federal-benefit-card">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                    <div style="background: rgba(240, 159, 84, 0.1); padding: 0.75rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F09F54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                    </div>
-                    <h3 style="color: #194F90; font-size: 1.25rem; font-weight: 600; margin: 0;">FEGLI Analysis</h3>
+            <div class="finpay-card federal-benefit-card" >
+                <span class="eyebrow-label">SERVICE 03</span>
+                <div class="card-icon" style="margin-bottom: 2rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
                 </div>
-                <p style="color: #525252; line-height: 1.6; margin-bottom: 1rem;">Coverage review, post-retirement cost projections, and comparison with private alternatives to save thousands.</p>
-                <a href="/services/federal-benefits/fegli/" style="color: #194F90; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <h3>FEGLI Analysis</h3>
+                <p>Coverage review, post-retirement cost projections, and comparison with private alternatives to save thousands.</p>
+                <a href="/services/federal-benefits/fegli/">
                     Learn more <span style="transition: transform 0.2s ease;">→</span>
                 </a>
+                <div class="card-accent-line"></div>
             </div>
             
-            <div class="finpay-card federal-benefit-card">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                    <div style="background: rgba(240, 159, 84, 0.1); padding: 0.75rem; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F09F54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/>
-                        </svg>
-                    </div>
-                    <h3 style="color: #194F90; font-size: 1.25rem; font-weight: 600; margin: 0;">FEHB Coordination</h3>
+            <div class="finpay-card federal-benefit-card" >
+                <span class="eyebrow-label">SERVICE 04</span>
+                <div class="card-icon" style="margin-bottom: 2rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/>
+                    </svg>
                 </div>
-                <p style="color: #525252; line-height: 1.6; margin-bottom: 1rem;">Keeping FEHB into retirement, Medicare coordination, and optimizing your healthcare strategy.</p>
-                <a href="/services/federal-benefits/fehb-retirement/" style="color: #194F90; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <h3>FEHB Coordination</h3>
+                <p>Keeping FEHB into retirement, Medicare coordination, and optimizing your healthcare strategy.</p>
+                <a href="/services/federal-benefits/fehb-retirement/">
                     Learn more <span style="transition: transform 0.2s ease;">→</span>
                 </a>
+                <div class="card-accent-line"></div>
             </div>
         </div>
         
@@ -378,13 +401,13 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 <section class="book-promotion-section">
     <div class="container">
         <div class="book-content">
-            <div class="book-left">
+            <div class="book-left book-left">
                 <div class="book-cover-container">
                     <img src="/assets/images/book-cover.png" alt="Retire Right, Retire Now book cover" class="book-cover-img">
                 </div>
             </div>
-            <div class="book-right">
-                <p class="finpay-services-label" style="color: #F09F54;">FREE BOOK CHAPTER</p>
+            <div class="book-right book-right">
+                <span class="eyebrow-label" style="color: var(--secondary);">FREE BOOK CHAPTER</span>
                 <h2 class="book-title">Retire Right, Retire Now</h2>
                 <p class="book-subtitle">The Ultimate Guide to Retirement Income Planning</p>
                 <p class="book-description">After helping 1,000+ families retire with confidence, Mike Stevens reveals the proven strategies that turn your savings into reliable retirement income. Download the first chapter free and discover:</p>
@@ -396,8 +419,8 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
                     <li>The biggest mistakes people make with their retirement</li>
                 </ul>
                 <div class="book-buttons">
-                    <a href="/book/" class="finpay-btn-primary">Download Free Chapter <span>→</span></a>
-                    <a href="/contact/" class="finpay-btn-secondary" style="border-color: rgba(255,255,255,0.5); color: rgba(255,255,255,0.9);">Discuss Your Situation</a>
+                    <a href="/book/" class="finpay-btn-primary" style="background: var(--surface-container-lowest); color: var(--primary);">Download Free Chapter <span>→</span></a>
+                    <a href="/contact/" class="finpay-btn-secondary">Discuss Your Situation</a>
                 </div>
                 <p class="book-note">No email required. Instant download.</p>
             </div>
@@ -406,14 +429,14 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   TESTIMONIALS - Enhanced rotating carousel with 9 testimonials
+   TESTIMONIALS - Editorial Pull Quote with large serif italic and orange left bar
    ═══════════════════════════════════════════════════════════ #}
 <section class="testimonials-section">
     <div class="container">
         <div class="testimonials-header">
-            <p class="finpay-services-label">Client Success Stories</p>
+            <span class="eyebrow-label">CLIENT SUCCESS STORIES</span>
             <h2>Real Results from Real Families</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 3rem;">See what our clients say about their experience with Capital Wealth</p>
+            <p style="text-align: center; color: var(--on-surface-variant); margin-bottom: 3rem;">See what our clients say about their experience with Capital Wealth</p>
         </div>
         
         <!-- Testimonials Carousel -->
@@ -491,631 +514,20 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   CTA SECTION - Clean conversion focused
+   CTA SECTION - Navy gradient background with serif headline and two buttons
    ═══════════════════════════════════════════════════════════ #}
 <section class="finpay-cta">
     <div class="container">
         <h2>Ready to retire with confidence?</h2>
         <p>Schedule a complimentary consultation to see how our Retirement Money Map can work for your family.</p>
-        <a href="/contact/" class="finpay-btn-primary">Schedule Your Free Consultation</a>
+        <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; max-width: 500px; margin: 0 auto;">
+            <a href="/contact/" class="finpay-btn-primary" style="background: var(--surface-container-lowest); color: var(--primary); padding: 1rem 2rem;">Request a Private Briefing</a>
+            <a href="/about/" class="finpay-btn-secondary">Explore Our Legacy</a>
+        </div>
     </div>
 </section>
 
-
-
-<style>
-/* Additional hover effects for cards */
-.finpay-card:hover a span {
-    transform: translateX(4px);
-}
-
-/* Hero Section Enhancements */
-.hero-with-watermark {
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-mountain-watermark {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    pointer-events: none;
-}
-
-.mountain-logo-bg {
-    width: 800px;
-    height: 800px;
-    opacity: 0.02;
-    object-fit: contain;
-    z-index: 1;
-}
-
-.finpay-hero-content {
-    position: relative;
-    z-index: 10;
-}
-
-/* Increase hero title font size */
-.hero-title-large {
-    font-size: 3.5rem !important;
-    line-height: 1.1 !important;
-    font-weight: 700 !important;
-}
-
-/* Stack hero buttons vertically while keeping them side-by-side */
-.hero-buttons-stacked {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
-}
-
-.hero-buttons-stacked a {
-    width: auto;
-    min-width: 240px;
-}
-
-/* Meet Mike Section */
-.meet-mike-section {
-    background: #fff;
-    padding: 5rem 2rem;
-}
-
-.meet-mike-content {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 3rem;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.meet-mike-photo {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.meet-mike-photo img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-
-.meet-mike-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #194F90;
-    margin: 0.5rem 0 1rem 0;
-}
-
-.meet-mike-subtitle {
-    color: #666;
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-}
-
-.meet-mike-credentials {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.meet-mike-credentials span {
-    background: #f8f9fa;
-    color: #194F90;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.meet-mike-desc {
-    color: #525252;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.meet-mike-quote {
-    background: #f8f9fa;
-    border-left: 4px solid #F09F54;
-    padding: 1.5rem;
-    margin: 2rem 0;
-    font-style: italic;
-    color: #194F90;
-    font-size: 1.1rem;
-}
-
-.meet-mike-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.finpay-btn-secondary {
-    background: transparent;
-    border: 2px solid #194F90;
-    color: #194F90;
-    padding: 0.875rem 2rem;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.finpay-btn-secondary:hover {
-    background: #194F90;
-    color: white;
-}
-
-/* Federal Benefits Section */
-.federal-benefits-section {
-    background: #f8f9fa;
-    padding: 5rem 2rem;
-}
-
-.federal-benefits-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.federal-benefits-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #194F90;
-    margin: 1rem 0;
-}
-
-.federal-benefits-subtitle {
-    color: #525252;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.federal-benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin: 3rem auto;
-    max-width: 1200px;
-}
-
-.federal-benefit-card {
-    border-left: 4px solid #F09F54;
-}
-
-.federal-benefits-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 800px;
-    margin: 3rem auto;
-    text-align: center;
-}
-
-.federal-stat {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.federal-stat-number {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #194F90;
-    margin-bottom: 0.5rem;
-}
-
-.federal-stat-label {
-    color: #666;
-    font-weight: 600;
-}
-
-.federal-benefits-cta {
-    text-align: center;
-    margin-top: 3rem;
-}
-
-/* Book Section */
-.book-promotion-section {
-    background: linear-gradient(135deg, #194F90 0%, #0F3A6F 100%);
-    padding: 5rem 2rem;
-    color: white;
-    position: relative;
-    overflow: hidden;
-}
-
-.book-promotion-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.1);
-    z-index: 1;
-}
-
-.book-content {
-    position: relative;
-    z-index: 2;
-}
-
-.book-content {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 4rem;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.book-cover-container {
-    text-align: center;
-}
-
-.book-cover-img {
-    width: 350px;
-    height: auto;
-    border-radius: 12px;
-}
-
-.book-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 1rem 0;
-    color: #FFFFFF;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.book-subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
-    color: #F09F54;
-    font-weight: 600;
-}
-
-.book-description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: rgba(255,255,255,0.95);
-}
-
-.book-benefits {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
-}
-
-.book-benefits li {
-    padding: 0.5rem 0;
-    padding-left: 2rem;
-    position: relative;
-    line-height: 1.5;
-    color: rgba(255,255,255,0.95);
-    font-size: 1.05rem;
-}
-
-.book-benefits li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #F09F54;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.book-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-}
-
-.book-note {
-    color: rgba(255,255,255,0.7);
-    font-style: italic;
-    font-size: 0.9rem;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .finpay-hero-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        text-align: center;
-    }
-    
-    .hero-title-large {
-        font-size: 2.5rem !important;
-    }
-    
-    .mountain-logo-bg {
-        width: 400px;
-        height: 400px;
-    }
-    
-    .meet-mike-content,
-    .book-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        text-align: center;
-    }
-    
-    .hero-buttons-stacked {
-        align-items: center;
-    }
-    
-    .finpay-hero-buttons {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .finpay-stats-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .federal-benefits-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .federal-benefits-stats {
-        grid-template-columns: 1fr;
-    }
-    
-    .finpay-comparison-table {
-        font-size: 0.875rem;
-    }
-    
-    .finpay-comp-row {
-        padding: 1rem 0.75rem;
-    }
-    
-    .finpay-footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
-
-/* Enhanced Testimonials Section */
-.testimonials-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 5rem 2rem;
-    position: relative;
-}
-
-.testimonials-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.testimonials-header h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #194F90;
-    margin: 1rem 0;
-}
-
-.testimonials-carousel {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.testimonials-track {
-    position: relative;
-    height: 300px;
-    overflow: hidden;
-}
-
-.testimonial-card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    border-radius: 20px;
-    padding: 3rem 2.5rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    opacity: 0;
-    transform: translateY(30px) scale(0.95);
-    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    border: 1px solid #e9ecef;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.testimonial-card.active {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-}
-
-.testimonial-text {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #333;
-    margin: 0 0 1.5rem 0;
-    font-style: italic;
-    font-weight: 400;
-}
-
-.testimonial-author {
-    font-weight: 600;
-    color: #194F90;
-    font-size: 1rem;
-}
-
-.testimonials-dots {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: none;
-    background: rgba(25, 79, 144, 0.3);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.dot.active,
-.dot:hover {
-    background: #194F90;
-    transform: scale(1.2);
-}
-
-/* Ensure proper loading animations */
-.finpay-card,
-.finpay-stat,
-.federal-stat {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.finpay-card.visible,
-.finpay-stat.visible,
-.federal-stat.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-    .testimonial-card {
-        padding: 2rem 1.5rem;
-        height: auto;
-        min-height: 250px;
-    }
-    
-    .testimonial-text {
-        font-size: 1.1rem;
-    }
-    
-    .testimonials-track {
-        height: 280px;
-    }
-}
-
-/* ═══════════════════════════════════════════
-   SCROLL-TRIGGERED ANIMATIONS
-   ═══════════════════════════════════════════ */
-
-/* Hero text fade-up */
-.hero-animate {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.hero-animate.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Stats fly in from right */
-.finpay-stat {
-    opacity: 0;
-    transform: translateX(80px);
-    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.finpay-stat.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* Service cards fade up staggered */
-.finpay-card,
-.finpay-service-card {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.finpay-card.visible,
-.finpay-service-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Federal cards slide in from left */
-.federal-card {
-    opacity: 0;
-    transform: translateX(-60px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.federal-card.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* Meet Mike section */
-.meet-mike-photo,
-.meet-mike-details {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.meet-mike-photo.visible,
-.meet-mike-details.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Book section */
-.book-left,
-.book-right {
-    opacity: 0;
-    transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.book-left {
-    transform: translateX(-40px);
-}
-.book-right {
-    transform: translateX(40px);
-}
-.book-left.visible,
-.book-right.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* Hero image scale-in */
-.finpay-hero-image {
-    opacity: 0;
-    transform: scale(0.95);
-    transition: opacity 1s ease, transform 1s ease;
-}
-.finpay-hero-image.visible {
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Comparison table rows */
-.finpay-comparison-content {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.finpay-comparison-content.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-</style>
-
+<!-- Keep all existing JavaScript functionality -->
 <script>
 // Intersection Observer for reveal animations
 const observerOptions = {
@@ -1188,7 +600,118 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transitionDelay = `${index * 0.08}s`;
         observer.observe(el);
     });
+
+    // Comparison table rows stagger
+    const compRows = document.querySelectorAll('.finpay-comp-row:not(.finpay-comp-header)');
+    compRows.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.06}s`;
+        observer.observe(el);
+    });
+
+    // Any editorial-reveal elements
+    const editorialReveals = document.querySelectorAll('.editorial-reveal, .reveal-from-left, .reveal-from-right, .reveal-scale');
+    editorialReveals.forEach((el, index) => {
+        observer.observe(el);
+    });
 });
+
+// ═══════════════════════════════════════════════════════════
+// PARALLAX SCROLL ENGINE
+// Smooth depth-based movement on scroll
+// ═══════════════════════════════════════════════════════════
+(function() {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
+    let ticking = false;
+
+    // Hero parallax: image moves slower than scroll, quote card slightly different
+    function updateParallax() {
+        const scrollTop = window.pageYOffset;
+        const heroSection = document.querySelector('.finpay-hero');
+        
+        if (heroSection) {
+            const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+            if (scrollTop < heroBottom) {
+                const heroImage = heroSection.querySelector('.finpay-hero-image');
+                const quoteCard = heroSection.querySelector('.hero-quote-card');
+                const watermark = heroSection.querySelector('.mountain-logo-bg');
+
+                if (heroImage) {
+                    heroImage.style.transform = `translateY(${scrollTop * 0.08}px)`;
+                }
+                if (quoteCard) {
+                    // Float the quote card with parallax offset
+                    const baseFloat = Math.sin(Date.now() / 1000) * 6;
+                    quoteCard.style.transform = `translateY(${(scrollTop * -0.12) + baseFloat}px)`;
+                }
+                if (watermark) {
+                    watermark.style.transform = `translate(-50%, -50%) scale(${1 + scrollTop * 0.0003})`;
+                }
+            }
+        }
+
+        // Subtle parallax on section decorative elements
+        const floatingAccents = document.querySelectorAll('.floating-accent');
+        floatingAccents.forEach((el, i) => {
+            const speed = 0.03 + (i * 0.02);
+            el.style.transform = `translateY(${scrollTop * speed}px)`;
+        });
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(updateParallax);
+            ticking = true;
+        }
+    }, { passive: true });
+})();
+
+// ═══════════════════════════════════════════════════════════
+// SMOOTH COUNTER ANIMATION
+// Animate stat numbers from 0 on scroll-in
+// ═══════════════════════════════════════════════════════════
+(function() {
+    const statNumbers = document.querySelectorAll('.finpay-stat-number');
+    const animated = new Set();
+    
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !animated.has(entry.target)) {
+                animated.add(entry.target);
+                const el = entry.target;
+                const finalText = el.textContent;
+                const numMatch = finalText.match(/[\d,]+/);
+                if (!numMatch) return;
+                
+                const numStr = numMatch[0].replace(/,/g, '');
+                const target = parseInt(numStr);
+                const prefix = finalText.substring(0, finalText.indexOf(numMatch[0]));
+                const suffix = finalText.substring(finalText.indexOf(numMatch[0]) + numMatch[0].length);
+                const hasComma = numMatch[0].includes(',');
+                const duration = 1800;
+                const start = performance.now();
+                
+                function step(now) {
+                    const elapsed = now - start;
+                    const progress = Math.min(elapsed / duration, 1);
+                    // Ease out cubic
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.floor(target * eased);
+                    const formatted = hasComma ? current.toLocaleString() : current.toString();
+                    el.textContent = prefix + formatted + suffix;
+                    if (progress < 1) requestAnimationFrame(step);
+                    else el.textContent = finalText; // Restore exact original
+                }
+                requestAnimationFrame(step);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    statNumbers.forEach(el => counterObserver.observe(el));
+})();
 
 // Enhanced Testimonials Carousel
 let currentTestimonialIndex = 0;
@@ -1327,128 +850,3 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     </div>
 </div>
-
-<style>
-.premium-floating-cta {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    left: 20px;
-    max-width: 700px;
-    margin: 0 auto;
-    background: linear-gradient(135deg, #194F90 0%, #0F3A6F 100%);
-    color: white;
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(25, 79, 144, 0.3), 0 10px 20px rgba(0,0,0,0.1);
-    transform: translateY(120%);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-.floating-cta-content {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1rem 2rem;
-}
-
-.cta-icon {
-    background: rgba(240, 159, 84, 0.2);
-    color: #F09F54;
-    padding: 12px;
-    border-radius: 12px;
-    flex-shrink: 0;
-}
-
-.cta-text {
-    flex: 1;
-}
-
-.cta-text h4 {
-    margin: 0 0 0.25rem 0;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #FFFFFF;
-}
-
-.cta-text p {
-    margin: 0;
-    font-size: 0.875rem;
-    color: rgba(255,255,255,0.8);
-}
-
-.cta-actions {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-shrink: 0;
-}
-
-.cta-primary-btn {
-    background: #F09F54;
-    color: white;
-    padding: 0.875rem 1.5rem;
-    border-radius: 10px;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 0.875rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.2s ease;
-    box-shadow: 0 4px 12px rgba(240, 159, 84, 0.3);
-    white-space: nowrap;
-}
-
-.cta-primary-btn:hover {
-    background: #e8904a;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(240, 159, 84, 0.4);
-}
-
-.cta-close-btn {
-    background: rgba(255,255,255,0.1);
-    border: none;
-    color: rgba(255,255,255,0.7);
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cta-close-btn:hover {
-    background: rgba(255,255,255,0.2);
-    color: white;
-}
-
-@media (max-width: 640px) {
-    .premium-floating-cta {
-        bottom: 10px;
-        right: 10px;
-        left: 10px;
-    }
-    
-    .floating-cta-content {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.25rem;
-        gap: 1rem;
-    }
-    
-    .cta-actions {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .cta-primary-btn {
-        flex: 1;
-        justify-content: center;
-    }
-}
-</style>

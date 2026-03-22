@@ -1,9 +1,12 @@
 /* ═══════════════════════════════════════════════════════════
-   FINPAY-INSPIRED DESIGN FOR CAPITAL WEALTH
-   Clean, professional financial services approach
+   EDITORIAL SOPHISTICATION DESIGN SYSTEM
+   Capital Wealth - High-End Editorial Publication Aesthetic
    ═══════════════════════════════════════════════════════════ */
 
-/* Reset and Base Styles with Finpay approach */
+/* Google Fonts import - moved from base layout */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Manrope:wght@300;400;500;600;700&family=Geist+Mono:wght@100..900&display=swap');
+
+/* Reset and Base */
 * {
   margin: 0;
   padding: 0;
@@ -11,43 +14,35 @@
 }
 
 :root {
-  /* Capital Wealth brand colors (kept) */
-  --cw-primary: #194F90;
-  --cw-secondary: #15437a;
-  --cw-light-blue: #2b7bb9;
-  --cw-orange: #F09F54; /* Capital Wealth orange accent */
+  /* Editorial Color Tokens */
+  --primary: #003870;
+  --primary-container: #194f90;
+  --secondary: #F09F54;
+  --surface: #f8f9fb;
+  --surface-container-low: #f3f4f6;
+  --surface-container-lowest: #ffffff;
+  --surface-container: #edeef0;
+  --surface-container-high: #e7e8ea;
+  --surface-container-highest: #e1e2e4;
+  --on-surface: #191c1e;
+  --on-surface-variant: #424750;
+  --outline-variant: #c2c6d2;
+  --tertiary-fixed: #d9e4eb;
   
-  /* Finpay-inspired neutrals */
-  --white: #ffffff;
-  --gray-50: #fafafa;
-  --gray-100: #f5f5f5;
-  --gray-200: #e5e5e5;
-  --gray-300: #d4d4d4;
-  --gray-400: #a3a3a3;
-  --gray-500: #737373;
-  --gray-600: #525252;
-  --gray-700: #404040;
-  --gray-800: #262626;
-  --gray-900: #171717;
+  /* Typography Stack */
+  --font-serif-display: "Cormorant Garamond", serif;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "Geist Mono", monospace;
   
-  /* Finpay-style shadows (subtle depth) */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  
-  /* Helvetica typography hierarchy (Finpay approach) */
-  --font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: var(--font-family); /* Using Helvetica for everything like Finpay */
-  
-  /* Finpay-style spacing (generous whitespace) */
+  /* Editorial Spacing Scale */
   --space-1: 0.25rem;  /* 4px */
   --space-2: 0.5rem;   /* 8px */
   --space-3: 0.75rem;  /* 12px */
   --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
   --space-6: 1.5rem;   /* 24px */
   --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
   --space-12: 3rem;    /* 48px */
   --space-16: 4rem;    /* 64px */
   --space-20: 5rem;    /* 80px */
@@ -55,152 +50,140 @@
   --space-32: 8rem;    /* 128px */
   
   /* Container widths */
-  --container-sm: 640px;
-  --container-md: 768px;
   --container-lg: 1024px;
   --container-xl: 1280px;
+  --container-2xl: 1536px;
   
-  /* Border radius (soft corners like Finpay) */
-  --radius-sm: 0.375rem;  /* 6px */
-  --radius: 0.5rem;       /* 8px */
-  --radius-md: 0.75rem;   /* 12px */
-  --radius-lg: 1rem;      /* 16px */
-  --radius-xl: 1.5rem;    /* 24px */
+  /* Low radius approach */
+  --radius-default: 0.125rem;  /* 2px */
+  --radius-lg: 0.25rem;       /* 4px */
+  --radius-xl: 0.5rem;        /* 8px */
+  
+  /* Minimal shadows */
+  --shadow-soft: 0 0 30px rgba(25, 79, 144, 0.08);
+  --shadow-editorial: 0 0 40px rgba(0, 0, 0, 0.05);
 }
 
-/* Base Typography - Helvetica hierarchy like Finpay */
+/* Base Typography */
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--gray-900);
-  background-color: var(--white);
+  color: var(--on-surface);
+  background-color: var(--surface);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  max-width: var(--container-xl);
+  max-width: var(--container-2xl);
   margin: 0 auto;
-  padding: 0 var(--space-6);
+  padding: 0 var(--space-12);
 }
 
-@media (min-width: 640px) {
+@media (max-width: 768px) {
   .container {
-    padding: 0 var(--space-8);
+    padding: 0 var(--space-6);
   }
 }
 
-/* Typography - Clean Helvetica hierarchy */
+/* Editorial Typography Hierarchy */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family);
-  color: var(--gray-900);
-  line-height: 1.1;
-  letter-spacing: -0.025em;
+  font-family: var(--font-serif-display);
+  color: var(--primary);
+  line-height: 1.2;
+  font-weight: 300;
   margin-bottom: var(--space-6);
 }
 
 h1 { 
-  font-size: 3rem; 
-  font-weight: 700; /* Bold */
-  line-height: 1.05;
+  font-size: 4rem; 
+  font-weight: 300;
+  line-height: 1.1;
 }
 
 h2 { 
-  font-size: 2.25rem; 
-  font-weight: 600; /* SemiBold */
+  font-size: 3rem; 
+  font-weight: 400;
+  line-height: 1.1;
 }
 
 h3 { 
-  font-size: 1.875rem; 
-  font-weight: 600; /* SemiBold */
-}
-
-h4 { 
   font-size: 1.5rem; 
-  font-weight: 500; /* Medium */
+  font-weight: 600;
 }
 
-h5 { 
-  font-size: 1.25rem; 
-  font-weight: 500; /* Medium */
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
 }
 
-h6 { 
-  font-size: 1.125rem; 
-  font-weight: 400; /* Regular */
+/* Eyebrow Labels */
+.eyebrow-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  color: var(--secondary);
+  margin-bottom: var(--space-4);
+  display: block;
 }
 
-@media (min-width: 768px) {
-  h1 { font-size: 4rem; }
-  h2 { font-size: 3rem; }
-  h3 { font-size: 2.25rem; }
-}
-
+/* Body text */
 p {
   margin-bottom: var(--space-4);
-  color: var(--gray-600);
+  color: var(--on-surface-variant);
   line-height: 1.6;
+  font-weight: 400;
 }
 
-/* Remove all borders/lines everywhere */
-* {
+/* No borders rule - use background shifts */
+.no-borders * {
   border: none !important;
 }
 
-/* Finpay-style cards with subtle shadows */
-.finpay-card {
-  background: var(--white);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  padding: var(--space-8);
-  transition: all 0.2s ease;
-}
-
-.finpay-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
-}
-
-.finpay-card-lg {
+/* Editorial Cards - no borders, tonal layering */
+.editorial-card {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-default);
   padding: var(--space-12);
-  box-shadow: var(--shadow);
-}
-
-.finpay-card-xl {
-  padding: var(--space-16);
-  box-shadow: var(--shadow-lg);
-}
-
-/* Mountain logo background element */
-.mountain-bg {
+  transition: all 0.5s ease;
   position: relative;
   overflow: hidden;
 }
 
-.mountain-bg::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('/assets/images/logos/logo-icon-color.png');
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: 200px auto;
-  opacity: 0.02;
-  z-index: -1;
-  pointer-events: none;
+.editorial-card:hover {
+  background: var(--primary);
+  color: var(--surface-container-lowest);
+  transform: translateY(-2px);
 }
 
-/* Header - Clean Finpay approach */
+.editorial-card:hover .card-accent-line {
+  width: 100%;
+}
+
+.editorial-card:hover .eyebrow-label {
+  color: var(--secondary);
+}
+
+.card-accent-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 3rem;
+  background: var(--secondary);
+  transition: width 0.5s ease;
+}
+
+/* Glassmorphic Navigation */
 .finpay-header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   transition: all 0.3s ease;
@@ -210,7 +193,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-4) 0;
+  padding: var(--space-3) 0;
 }
 
 .finpay-nav-logo img {
@@ -221,714 +204,1689 @@ p {
 .finpay-nav-links {
   display: flex;
   align-items: center;
-  gap: var(--space-8);
+  gap: var(--space-12);
   margin: 0 auto;
 }
 
 .finpay-nav-link {
+  font-family: var(--font-body);
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--gray-700);
+  color: var(--on-surface-variant);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .finpay-nav-link:hover {
-  color: var(--cw-primary);
+  color: var(--primary);
+  opacity: 0.8;
 }
 
-.finpay-nav-cta {
-  background: var(--cw-primary);
-  color: var(--white);
+/* Gradient Buttons */
+.finpay-nav-cta, .finpay-btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+  color: var(--surface-container-lowest);
   padding: var(--space-3) var(--space-6);
   border-radius: var(--radius-lg);
+  font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.875rem;
   text-decoration: none;
   transition: all 0.2s ease;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-soft);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
 }
 
-.finpay-nav-cta:hover {
-  background: var(--cw-secondary);
-  box-shadow: var(--shadow);
+.finpay-nav-cta:hover, .finpay-btn-primary:hover {
+  opacity: 0.9;
+  transform: scale(0.95);
 }
 
-.client-login-cta {
+.finpay-btn-secondary {
   background: transparent;
-  color: var(--gray-800);
-  border: 1.5px solid var(--gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--surface-container-lowest);
   padding: var(--space-3) var(--space-6);
   border-radius: var(--radius-lg);
+  font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.875rem;
   text-decoration: none;
   transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.finpay-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Nav Right Container */
+.finpay-nav-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+/* Client Login CTA */
+.client-login-cta {
+  color: var(--on-surface-variant);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  margin-right: var(--space-4);
 }
 
 .client-login-cta:hover {
-  background: var(--gray-800);
-  color: var(--white);
+  color: var(--primary);
 }
 
-/* Hero Section - Finpay style with reduced spacing */
+/* Hero Section - Asymmetric Layout */
 .finpay-hero {
-  padding: var(--space-20) 0 var(--space-12); /* Reduced from 32/24 to 20/12 */
-  background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+  background: var(--surface);
+  padding: var(--space-2) 0 var(--space-4);
+  display: flex;
+  align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .finpay-hero-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-8); /* Reduced from 16 to 8 */
+  grid-template-columns: 3fr 2fr;
+  gap: var(--space-16);
   align-items: center;
-  max-width: var(--container-lg);
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .finpay-hero-content {
     grid-template-columns: 1fr;
-    gap: var(--space-4); /* Further reduced gap for mobile to bring image closer */
+    gap: var(--space-8);
     text-align: center;
   }
 }
 
-.finpay-hero-left h1 {
-  margin-bottom: var(--space-6);
-  color: var(--gray-900);
-}
-
-.finpay-hero-left .subtitle {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--cw-primary);
+.hero-title-large {
+  font-family: var(--font-serif-display);
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-weight: 300;
+  color: var(--primary);
   margin-bottom: var(--space-4);
 }
 
-.finpay-hero-left .description {
+.hero-title-large em {
+  font-style: italic;
+}
+
+.subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--primary-container);
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+}
+
+.description {
   font-size: 1.125rem;
-  color: var(--gray-600);
-  margin-bottom: var(--space-8);
   line-height: 1.6;
+  color: var(--on-surface-variant);
+  margin-bottom: var(--space-6);
+  max-width: 520px;
+  font-weight: 300;
 }
 
 .finpay-hero-buttons {
   display: flex;
-  flex-direction: column; /* Stack buttons vertically */
-  gap: var(--space-3); /* Reduced gap */
-  align-items: stretch; /* Full width buttons */
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: flex-start;
 }
 
-/* Desktop: keep buttons side by side for larger screens */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .finpay-hero {
+    padding: var(--space-4) 0 var(--space-4);
+  }
+  
+  .hero-title-large {
+    font-size: 2.75rem;
+  }
+  
   .finpay-hero-buttons {
-    flex-direction: row;
     align-items: center;
-    max-width: fit-content;
+  }
+  
+  .description {
+    max-width: 100%;
+    padding: 0 var(--space-2);
   }
 }
 
-.finpay-btn-primary {
-  background: var(--cw-primary);
-  color: var(--white);
-  padding: var(--space-4) var(--space-8);
-  border-radius: var(--radius-lg);
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  box-shadow: var(--shadow);
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
+/* Hero Image — extends to right edge of screen */
+.finpay-hero-right {
+  position: relative;
+  margin-right: calc(-1 * ((100vw - var(--container-xl)) / 2 + 3rem));
 }
 
-.finpay-btn-primary:hover {
-  background: var(--cw-secondary);
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-1px);
+@media (max-width: 1280px) {
+  .finpay-hero-right {
+    margin-right: -3rem;
+  }
 }
 
-.finpay-btn-secondary {
-  background: var(--white);
-  color: var(--cw-primary);
-  padding: var(--space-4) var(--space-8);
-  border-radius: var(--radius-lg);
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  box-shadow: var(--shadow);
-}
-
-.finpay-btn-secondary:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
-}
-
-.finpay-btn-orange {
-  background: var(--cw-orange);
-  color: var(--white);
-  padding: var(--space-4) var(--space-8);
-  border-radius: var(--radius-lg);
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  box-shadow: var(--shadow);
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-}
-
-.finpay-btn-orange:hover {
-  background: #e8904a; /* Slightly darker orange on hover */
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-1px);
+@media (max-width: 1024px) {
+  .finpay-hero-right {
+    margin-right: 0;
+  }
 }
 
 .finpay-hero-image {
-  border-radius: var(--radius-xl);
+  aspect-ratio: 4/5;
+  border-radius: var(--radius-default) 0 0 var(--radius-default);
   overflow: hidden;
-  box-shadow: var(--shadow-xl);
-  height: 650px; /* Increased from 600px to better show the couple */
-  position: relative;
+  box-shadow: var(--shadow-editorial);
 }
 
 .finpay-hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Cover the container */
-  object-position: right center; /* Show the couple on the right side of the image */
-  display: block;
+  object-fit: cover;
+  object-position: right center;
+  transition: transform 1s ease;
 }
 
-/* Allow image to overflow on larger screens */
-@media (min-width: 1024px) {
-  .finpay-hero-image {
-    height: 750px; /* Increased from 700px */
-    width: 150%; /* Extend further to screen edge */
-    margin-left: -5%; /* Shifted left (was 10%) to better show couple */
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  
-  .finpay-hero-content {
-    overflow: visible; /* Allow overflow to show image extending */
+.finpay-hero-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Mountain Logo Watermark */
+.hero-mountain-watermark {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.mountain-logo-bg {
+  width: 800px;
+  height: 800px;
+  opacity: 0.01;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .mountain-logo-bg {
+    width: 400px;
+    height: 400px;
   }
 }
 
-@media (min-width: 1280px) {
-  .finpay-hero-image {
-    height: 850px; /* Increased from 800px */
-    width: 160%;
-    margin-left: 0%; /* Shifted left (was 15%) to better show couple */
-  }
-}
-
-/* Stats Section - Clean like Finpay's "3k+ businesses" with reduced spacing */
+/* Stats Section */
 .finpay-stats {
-  background: var(--white);
-  padding: var(--space-8) 0; /* Reduced from 16 to 8 */
+  background: var(--surface-container-low);
+  padding: var(--space-20) 0;
 }
 
 .finpay-stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-6); /* Reduced from 12 to 6 */
-  max-width: var(--container-lg);
-  margin: 0 auto;
-}
-
-.finpay-stat {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-8);
   text-align: center;
-  padding: var(--space-4); /* Reduced from 8 to 4 */
 }
 
 .finpay-stat-number {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--cw-primary);
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--primary);
   display: block;
-  margin-bottom: var(--space-2);
   line-height: 1;
+  margin-bottom: var(--space-2);
 }
 
 .finpay-stat-label {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--gray-600);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
+  color: var(--on-surface-variant);
+  font-weight: 500;
 }
 
-/* Services Section - Professional card-based approach with reduced spacing */
+/* Services Section - Five Pillars */
 .finpay-services {
-  background: var(--gray-50);
-  padding: var(--space-16) 0; /* Reduced from 24 to 16 */
-  position: relative;
-}
-
-.finpay-services.alt {
-  background: var(--white);
+  background: var(--surface-container-low);
+  padding: var(--space-20) 0;
 }
 
 .finpay-services-header {
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto var(--space-16);
+  margin-bottom: var(--space-20);
 }
 
 .finpay-services-label {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--cw-primary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
+  color: var(--secondary);
   margin-bottom: var(--space-4);
+  font-weight: 500;
 }
 
-.finpay-services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-6);
-  max-width: var(--container-lg);
+.finpay-services-header h2 {
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: var(--space-6);
+  line-height: 1.1;
+}
+
+.finpay-services-header p {
+  font-size: 1.125rem;
+  color: var(--on-surface-variant);
+  max-width: 600px;
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  .finpay-services-grid {
+/* Service Cards Grid — 3 on top, 2 on bottom */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  background: rgba(194, 198, 210, 0.1);
+}
+
+/* Last 2 cards center on second row */
+.services-grid .finpay-card:nth-child(4) {
+  grid-column: 1 / 2;
+}
+.services-grid .finpay-card:nth-child(5) {
+  grid-column: 2 / 3;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-grid .finpay-card:nth-child(4),
+  .services-grid .finpay-card:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.finpay-card {
+  background: var(--surface-container-lowest);
+  padding: var(--space-12);
+  transition: all 0.5s ease;
+  position: relative;
+  border: none;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.finpay-card:hover {
+  background: var(--primary);
+  color: var(--surface-container-lowest);
+}
+
+.finpay-card:hover .card-icon {
+  color: var(--surface-container-lowest);
+}
+
+.finpay-card:hover .eyebrow-label {
+  color: var(--secondary);
+}
+
+.finpay-card:hover h3 {
+  color: var(--surface-container-lowest);
+}
+
+.finpay-card:hover p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card-icon {
+  color: var(--primary);
+  margin-bottom: var(--space-8);
+  transition: color 0.5s ease;
+}
+
+.finpay-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: var(--space-4);
+  transition: color 0.5s ease;
+}
+
+.finpay-card p {
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: var(--space-8);
+  flex-grow: 1;
+  transition: color 0.5s ease;
+}
+
+.finpay-card a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.875rem;
+  transition: color 0.5s ease;
+}
+
+.finpay-card:hover a {
+  color: var(--surface-container-lowest);
+}
+
+.card-accent-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 3rem;
+  background: var(--secondary);
+  transition: width 0.5s ease;
+}
+
+.finpay-card:hover .card-accent-line {
+  width: 100%;
+}
+
+/* Meet Mike Section */
+.meet-mike-section {
+  background: var(--surface);
+  padding: var(--space-20) 0;
+}
+
+.meet-mike-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-20);
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .meet-mike-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    text-align: center;
+  }
+}
+
+.meet-mike-left {
+  position: relative;
+}
+
+.meet-mike-photo {
+  border-radius: var(--radius-default);
+  overflow: hidden;
+  box-shadow: var(--shadow-editorial);
+}
+
+.meet-mike-photo img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.meet-mike-title {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin: var(--space-2) 0 var(--space-4) 0;
+}
+
+.meet-mike-subtitle {
+  color: var(--on-surface-variant);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-6);
+  font-weight: 400;
+}
+
+.meet-mike-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+}
+
+.meet-mike-credentials span {
+  background: var(--tertiary-fixed);
+  color: var(--primary);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-xl);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+}
+
+.meet-mike-desc {
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: var(--space-6);
+  font-size: 1rem;
+}
+
+.meet-mike-quote {
+  background: var(--surface-container-low);
+  border-left: 4px solid var(--secondary);
+  padding: var(--space-6);
+  margin: var(--space-8) 0;
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  color: var(--primary);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.meet-mike-buttons {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* Testimonials - Editorial Pull Quote */
+.testimonials-section {
+  padding: var(--space-20) 0;
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Removed split background - was creating broken two-tone look */
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: var(--space-20);
+}
+
+.testimonials-header h2 {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin: var(--space-4) 0;
+}
+
+.testimonials-carousel {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials-track {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--space-16);
+}
+
+.testimonial-card.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--secondary);
+}
+
+.testimonial-text {
+  font-family: var(--font-serif-display);
+  font-size: 2.25rem;
+  line-height: 1.3;
+  color: var(--primary);
+  margin: 0 0 var(--space-12) 0;
+  font-style: italic;
+  font-weight: 400;
+  padding-left: var(--space-16);
+}
+
+.testimonial-author {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--primary);
+  font-weight: 500;
+  padding-left: var(--space-16);
+}
+
+.testimonials-dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-top: var(--space-12);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(25, 79, 144, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background: var(--primary);
+  transform: scale(1.2);
+}
+
+/* Federal Benefits Section */
+.federal-benefits-section {
+  background: var(--surface-container-low);
+  padding: var(--space-20) 0;
+}
+
+.federal-benefits-header {
+  text-align: center;
+  margin-bottom: var(--space-20);
+}
+
+.federal-benefits-title {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin: var(--space-4) 0;
+}
+
+.federal-benefits-subtitle {
+  color: var(--on-surface-variant);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto var(--space-8);
+}
+
+.federal-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: var(--space-12) 0;
+  background: rgba(194, 198, 210, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .federal-benefits-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
-  .finpay-services-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 640px) {
+  .federal-benefits-grid {
+    grid-template-columns: 1fr;
   }
 }
 
-.finpay-service-card {
-  background: var(--white);
-  border-radius: var(--radius-lg);
-  padding: var(--space-8);
-  box-shadow: var(--shadow-sm);
-  transition: all 0.2s ease;
-  text-decoration: none;
-  display: block;
+/* Federal cards — match Five Pillars editorial style */
+.federal-benefit-card {
+  border-left: none;
+}
+.federal-benefit-card .eyebrow-label {
+  color: var(--on-surface-variant);
+}
+.federal-benefit-card .card-accent-line {
+  background: var(--outline-variant);
 }
 
-.finpay-service-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
-}
-
-.finpay-service-card h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--gray-900);
-  margin-bottom: var(--space-4);
-  line-height: 1.3;
-}
-
-.finpay-service-card p {
-  color: var(--gray-600);
-  margin-bottom: 0;
-  line-height: 1.6;
-}
-
-.finpay-service-card .arrow {
-  color: var(--cw-primary);
-  font-weight: 600;
-  margin-left: var(--space-2);
-  transition: transform 0.2s ease;
-}
-
-.finpay-service-card:hover .arrow {
-  transform: translateX(4px);
-}
-
-/* Comparison Section - Clean table approach with reduced spacing */
-.finpay-comparison {
-  background: var(--white);
-  padding: var(--space-16) 0; /* Reduced from 24 to 16 */
-}
-
-.finpay-comparison-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.finpay-comparison-header {
-  text-align: center;
-  margin-bottom: var(--space-16);
-}
-
-.finpay-comparison-table {
-  background: var(--white);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-}
-
-.finpay-comp-row {
+.federal-benefits-stats {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  align-items: center;
-  padding: var(--space-6) var(--space-8);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-8);
+  margin: var(--space-20) 0;
+  text-align: center;
 }
 
-.finpay-comp-row:nth-child(even) {
-  background: var(--gray-50);
+.federal-stat {
+  background: var(--surface-container-lowest);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-editorial);
 }
 
-.finpay-comp-header {
-  background: var(--cw-primary);
-  color: var(--white);
+.federal-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
   font-weight: 600;
+  color: var(--primary);
+  display: block;
+  margin-bottom: var(--space-2);
 }
 
-.finpay-comp-header .finpay-comp-feature,
-.finpay-comp-header .finpay-comp-us,
-.finpay-comp-header .finpay-comp-them {
-  color: var(--white) !important; /* Ensure all header text is white */
-}
-
-.finpay-comp-feature {
+.federal-stat-label {
+  font-family: var(--font-mono);
+  color: var(--on-surface-variant);
   font-weight: 500;
-  color: var(--gray-800);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-.finpay-comp-us {
+.federal-benefits-cta {
   text-align: center;
-  font-weight: 600;
-  color: var(--cw-primary);
+  margin-top: var(--space-16);
 }
 
-.finpay-comp-them {
-  text-align: center;
-  color: var(--gray-500);
-}
-
-/* CTA Section with reduced spacing */
+/* CTA Section - Navy gradient background */
 .finpay-cta {
-  background: linear-gradient(135deg, var(--cw-primary) 0%, var(--cw-secondary) 100%);
-  padding: var(--space-16) 0; /* Reduced from 24 to 16 */
-  color: var(--white);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+  padding: var(--space-20) 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.finpay-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.1) 100%);
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .finpay-cta h2 {
-  color: var(--white);
-  margin-bottom: var(--space-6);
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--surface-container-lowest);
+  margin-bottom: var(--space-8);
 }
 
 .finpay-cta p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.125rem;
-  margin-bottom: var(--space-8);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: var(--space-12);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.finpay-cta .finpay-btn-primary {
-  background: var(--white);
-  color: var(--cw-primary);
+/* Book Section */
+.book-promotion-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+  padding: var(--space-20) 0;
+  color: var(--surface-container-lowest);
+  position: relative;
+  overflow: hidden;
 }
 
-.finpay-cta .finpay-btn-primary:hover {
-  background: var(--gray-100);
+.book-promotion-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.1);
+  z-index: 1;
 }
 
-/* Footer - Clean and minimal */
+.book-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .book-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    text-align: center;
+  }
+}
+
+.book-cover-img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-editorial);
+}
+
+.book-title {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: var(--space-4) 0;
+  color: var(--surface-container-lowest);
+}
+
+.book-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-6);
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.book-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-6);
+  color: rgba(255,255,255,0.95);
+}
+
+.book-benefits {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-8) 0;
+}
+
+.book-benefits li {
+  padding: var(--space-2) 0;
+  padding-left: var(--space-8);
+  position: relative;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.95);
+  font-size: 1rem;
+}
+
+.book-benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.book-buttons {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin: var(--space-8) 0;
+}
+
+.book-note {
+  color: rgba(255,255,255,0.7);
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+/* Media Section */
+.media-section {
+  background: var(--surface);
+  padding: var(--space-20) 0;
+}
+
+.media-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .media-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .media-text {
+    padding: 0 var(--space-6);
+  }
+}
+
+.media-photo video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius-default);
+}
+
+/* As Seen Banner */
+.as-seen-banner {
+  background: var(--surface-container-low);
+  padding: var(--space-6) 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.as-seen-text {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--on-surface-variant);
+  font-weight: 500;
+}
+
+.as-seen-text em {
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.as-seen-banner img {
+  height: 24px;
+  width: auto;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.as-seen-banner img:hover {
+  opacity: 1;
+}
+
+/* Comparison Section */
+.finpay-comparison {
+  background: var(--surface);
+  padding: var(--space-20) 0;
+}
+
+.finpay-comparison-header {
+  text-align: center;
+  margin-bottom: var(--space-20);
+}
+
+.finpay-comparison-header h2 {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin: var(--space-4) 0;
+}
+
+.finpay-comparison-table {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-editorial);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.finpay-comp-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: var(--space-6);
+  align-items: center;
+  border-bottom: 1px solid var(--surface-container);
+}
+
+.finpay-comp-row:last-child {
+  border-bottom: none;
+}
+
+.finpay-comp-header {
+  background: var(--surface-container);
+  font-weight: 600;
+  color: var(--primary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.finpay-comp-feature {
+  color: var(--on-surface);
+  font-weight: 500;
+}
+
+.finpay-comp-us {
+  color: var(--primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.finpay-comp-them {
+  color: var(--on-surface-variant);
+  text-align: center;
+}
+
+/* Floating CTA */
+.premium-floating-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+  color: var(--surface-container-lowest);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px rgba(25, 79, 144, 0.3), 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(120%);
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.floating-cta-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-4) var(--space-8);
+}
+
+.cta-text h4 {
+  margin: 0 0 var(--space-1) 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--surface-container-lowest);
+  font-family: var(--font-body);
+}
+
+.cta-text p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.cta-primary-btn {
+  background: var(--secondary);
+  color: var(--surface-container-lowest);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(240, 159, 84, 0.3);
+  white-space: nowrap;
+}
+
+.cta-primary-btn:hover {
+  background: #e8904a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(240, 159, 84, 0.4);
+}
+
+.cta-close-btn {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: rgba(255,255,255,0.7);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-default);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-close-btn:hover {
+  background: rgba(255,255,255,0.2);
+  color: var(--surface-container-lowest);
+}
+
+/* Mobile Navigation */
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  z-index: 10002;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--on-surface);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn.active span:nth-child(1) { 
+  transform: rotate(45deg) translate(5px, 5px); 
+}
+.mobile-menu-btn.active span:nth-child(2) { 
+  opacity: 0; 
+}
+.mobile-menu-btn.active span:nth-child(3) { 
+  transform: rotate(-45deg) translate(5px, -5px); 
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background: rgba(255,255,255,0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 10001;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  overflow-y: auto;
+  padding: 80px 24px;
+}
+
+.mobile-nav.active { 
+  display: flex; 
+}
+
+.mobile-nav-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--on-surface);
+  cursor: pointer;
+  padding: 8px;
+  z-index: 10003;
+}
+
+.mobile-nav-close:hover { 
+  color: var(--primary); 
+}
+
+.mobile-nav a {
+  color: var(--on-surface);
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.mobile-nav a:hover { 
+  color: var(--primary); 
+}
+
+.mobile-nav .btn-primary {
+  margin-top: 16px;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  background: var(--primary);
+  color: var(--surface-container-lowest);
+  border-radius: var(--radius-default);
+  font-weight: 600;
+}
+
+.mobile-nav .client-login-mobile {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 12px 24px;
+  border-radius: var(--radius-default);
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.mobile-nav-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-nav-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(0,0,0,0.4);
+  margin-bottom: 4px;
+  font-family: var(--font-mono);
+}
+
+.mobile-nav-group a { 
+  font-size: 1.1rem !important; 
+}
+
+/* ═══════════════════════════════════════════════════════════
+   MOTION & DEPTH SYSTEM
+   Parallax, keyframe animations, scroll-driven reveals
+   ═══════════════════════════════════════════════════════════ */
+
+/* --- Keyframe Definitions --- */
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-8px) rotate(0.5deg); }
+  66% { transform: translateY(4px) rotate(-0.3deg); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideLeft {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeSlideRight {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(240, 159, 84, 0); }
+  50% { box-shadow: 0 0 30px 4px rgba(240, 159, 84, 0.15); }
+}
+
+@keyframes accentLineExpand {
+  from { width: 0; }
+  to { width: 3rem; }
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.03; transform: scale(1.05); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- Hero Motion --- */
+
+/* Mountain watermark breathing animation */
+.mountain-logo-bg {
+  animation: breathe 8s ease-in-out infinite;
+}
+
+/* Hero quote card float */
+.hero-quote-card {
+  animation: floatGentle 6s ease-in-out infinite;
+}
+
+/* Hero image subtle zoom on load */
+.finpay-hero-image img {
+  transition: transform 12s ease-out;
+}
+.finpay-hero-image.visible img {
+  transform: scale(1.04);
+}
+
+/* Removed decorative rectangle — was overlapping hero image awkwardly */
+
+/* --- Scroll-Triggered Reveal Animations --- */
+
+.hero-animate,
+.finpay-card,
+.finpay-stat,
+.federal-card,
+.meet-mike-photo,
+.meet-mike-details,
+.book-left,
+.book-right,
+.finpay-comparison-content,
+.editorial-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), 
+              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-animate.visible,
+.finpay-card.visible,
+.finpay-stat.visible,
+.federal-card.visible,
+.meet-mike-photo.visible,
+.meet-mike-details.visible,
+.book-left.visible,
+.book-right.visible,
+.finpay-comparison-content.visible,
+.editorial-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide from left/right variants */
+.reveal-from-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-from-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-from-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-from-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale reveal for images */
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* --- Card Depth & Hover Motion --- */
+
+.finpay-card {
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              background-color 0.5s ease,
+              box-shadow 0.5s ease;
+}
+
+.finpay-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0, 56, 112, 0.08);
+}
+
+/* Accent line animation on card hover */
+.finpay-card .card-accent-line {
+  height: 2px;
+  width: 3rem;
+  background: var(--secondary);
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.finpay-card:hover .card-accent-line {
+  width: 100%;
+}
+
+/* --- Stats Counter Animation --- */
+.finpay-stat-number {
+  transition: transform 0.4s ease;
+}
+.finpay-stat:hover .finpay-stat-number {
+  transform: scale(1.08);
+}
+
+/* --- Testimonial Motion --- */
+.testimonial-card {
+  transition: all 0.7s cubic-bezier(0.68, -0.15, 0.265, 1.15);
+}
+.testimonial-card.active {
+  animation: fadeSlideUp 0.6s ease forwards;
+}
+
+/* Quote accent bar pulse on active */
+.testimonial-card.active::before {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* --- Section Background Depth Layers --- */
+
+/* Parallax-ready sections */
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 140%;
+  z-index: -1;
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* Subtle gradient animation on CTA section */
+.finpay-cta {
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* --- Floating Decorative Elements --- */
+.floating-accent {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--tertiary-fixed);
+  opacity: 0.3;
+  pointer-events: none;
+  animation: floatSlow 10s ease-in-out infinite;
+}
+
+.floating-accent-1 {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  right: -5%;
+  animation-delay: 0s;
+}
+
+.floating-accent-2 {
+  width: 120px;
+  height: 120px;
+  bottom: 15%;
+  left: -3%;
+  animation-delay: -3s;
+}
+
+/* --- Button Motion --- */
+.finpay-btn-primary {
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.finpay-btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.finpay-btn-primary:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.finpay-btn-primary:active {
+  transform: scale(0.97);
+}
+
+/* --- Image Hover Depth --- */
+.meet-mike-photo img,
+.federal-hero-image img {
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s ease;
+}
+
+.meet-mike-photo:hover img,
+.federal-hero-image:hover img {
+  transform: scale(1.03);
+}
+
+/* Overlapping navy info card float */
+.meet-mike-overlay-card {
+  animation: floatGentle 7s ease-in-out infinite;
+  animation-delay: -2s;
+}
+
+/* --- Book Cover Tilt --- */
+.book-cover-img {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.book-cover-container:hover .book-cover-img {
+  transform: perspective(600px) rotateY(-5deg) scale(1.02);
+}
+
+/* --- Comparison Table Row Stagger --- */
+.finpay-comp-row {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.finpay-comp-row:hover {
+  transform: translateX(4px);
+  background: var(--surface-container-low);
+}
+
+/* --- Mobile: Reduce motion for performance --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-accent { display: none; }
+  .hero-quote-card { animation: none; }
+  .meet-mike-overlay-card { animation: none; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FOOTER — Editorial Treatment
+   ═══════════════════════════════════════════════════════════ */
 .finpay-footer {
-  background: var(--gray-900);
-  color: var(--white);
-  padding: var(--space-16) 0 var(--space-8);
+  background: var(--primary);
+  color: rgba(255, 255, 255, 0.8);
+  padding: var(--space-20) 0 0;
+  font-family: var(--font-body);
 }
 
 .finpay-footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: var(--space-12);
-  margin-bottom: var(--space-12);
+  padding-bottom: var(--space-16);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .finpay-footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 640px) {
   .finpay-footer-content {
     grid-template-columns: 1fr;
     gap: var(--space-8);
   }
 }
 
-.finpay-footer-brand h3 {
-  color: var(--white);
-  margin-bottom: var(--space-4);
+.finpay-footer-brand p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
-.finpay-footer-brand p {
-  color: var(--gray-400);
-  margin-bottom: var(--space-6);
+.finpay-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
 
 .finpay-footer-links h4 {
-  color: var(--white);
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: var(--space-4);
+  font-weight: 600;
 }
 
 .finpay-footer-links a {
-  color: var(--gray-400);
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
-  display: block;
-  margin-bottom: var(--space-3);
-  transition: color 0.2s ease;
+  font-size: 0.875rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
 }
 
 .finpay-footer-links a:hover {
-  color: var(--white);
+  color: var(--secondary);
+  transform: translateX(3px);
 }
 
 .finpay-footer-bottom {
-  padding-top: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-6) 0;
   text-align: center;
-  color: var(--gray-400);
-  font-size: 0.875rem;
 }
 
-/* Utilities for generous whitespace */
-.space-y-4 > * + * { margin-top: var(--space-4); }
-.space-y-6 > * + * { margin-top: var(--space-6); }
-.space-y-8 > * + * { margin-top: var(--space-8); }
-.space-y-12 > * + * { margin-top: var(--space-12); }
-.space-y-16 > * + * { margin-top: var(--space-16); }
+.finpay-footer-bottom p {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.6;
+}
 
-.py-16 { padding-top: var(--space-16); padding-bottom: var(--space-16); }
-.py-24 { padding-top: var(--space-24); padding-bottom: var(--space-24); }
-.px-8 { padding-left: var(--space-8); padding-right: var(--space-8); }
-.px-12 { padding-left: var(--space-12); padding-right: var(--space-12); }
+.finpay-footer-bottom a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
 
-/* Professional trustworthy styling */
-.professional-accent {
-  color: var(--cw-primary);
+.finpay-footer-bottom a:hover {
+  color: var(--secondary);
 }
 
 .trust-badge {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: var(--space-4);
-  box-shadow: var(--shadow-sm);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  font-size: 0.8rem;
   text-align: center;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--gray-700);
 }
 
-/* Enhanced Mobile Navigation Responsive Design */
-@media (max-width: 1024px) {
-  .finpay-nav-links {
-    display: none;
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .finpay-nav-links.desktop-nav { 
+    display: none !important; 
+  }
+  .mobile-menu-btn { 
+    display: flex !important; 
+  }
+  .desktop-cta { 
+    display: none !important; 
   }
   
   .finpay-nav-right {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--space-4);
   }
   
-  .finpay-nav-cta {
-    display: none;
-  }
-  
-  .client-login {
-    font-size: 0.875rem !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .finpay-header {
-    padding: 0;
-  }
-  
-  .finpay-nav {
-    padding: var(--space-3) 0;
-  }
-  
-  .finpay-nav-logo img {
-    height: 32px;
-  }
-  
-  .client-login {
-    font-size: 0.8rem !important;
-    padding: 0.5rem 0.75rem !important;
-  }
-  
-  .finpay-hero {
-    padding: var(--space-8) 0 var(--space-4); /* Further reduced spacing on mobile to bring image up */
-  }
-  
-  .finpay-hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
-    gap: var(--space-3);
-  }
-  
-  .finpay-services-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .finpay-stats-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-4); /* Reduced mobile gap */
-  }
-  
-  .finpay-hero-image {
-    height: 350px !important; /* Reduced height to fit better above the fold while still showing the walking couple */
-    width: 100% !important;
-    margin-left: 0 !important;
-  }
-  
-  .finpay-hero-image img {
-    object-position: center 30% !important; /* Adjusted position for mobile to show walking couple */
-  }
-  
-  /* Enhanced mobile sticky CTA */
   .premium-floating-cta {
-    bottom: 10px !important;
-    right: 10px !important;
-    left: 10px !important;
-    max-width: none !important;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
   }
   
   .floating-cta-content {
-    flex-direction: column !important;
-    padding: 1.25rem !important;
-    gap: 1rem !important;
+    flex-direction: column;
     text-align: center;
-  }
-  
-  .cta-text h4 {
-    font-size: 1rem !important;
-  }
-  
-  .cta-text p {
-    font-size: 0.8rem !important;
+    padding: var(--space-5);
+    gap: var(--space-4);
   }
   
   .cta-actions {
-    width: 100% !important;
-    justify-content: center !important;
+    width: 100%;
+    justify-content: center;
   }
   
   .cta-primary-btn {
-    flex: 1 !important;
-    justify-content: center !important;
-    font-size: 0.85rem !important;
-    padding: 0.75rem 1.25rem !important;
-  }
-}
-
-/* Tablet adjustments */
-@media (max-width: 1024px) and (min-width: 769px) {
-  .finpay-nav {
-    padding: var(--space-4) 0;
+    flex: 1;
+    justify-content: center;
   }
   
-  .client-login {
-    margin-right: var(--space-2);
+  .testimonial-text {
+    font-size: 1.5rem;
+    padding-left: var(--space-8);
+  }
+  
+  .testimonial-author {
+    padding-left: var(--space-8);
   }
 }
 
-/* ═══ AS SEEN ON BANNER ═══ */
-.as-seen-banner {
-  background: var(--navy, #194F90);
-  padding: 1.25rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.as-seen-banner .as-seen-text {
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-}
-.as-seen-banner .as-seen-text em {
-  font-style: italic;
-  font-weight: 400;
-  text-transform: lowercase;
-}
-.as-seen-banner img {
-  height: 28px;
-  filter: brightness(10);
-  opacity: 0.95;
-}
-
-/* ═══ IN THE MEDIA SECTION ═══ */
-.media-section {
-  padding: 5rem 2rem;
-  background: #fff;
-  overflow: hidden;
-}
-.media-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 0;
-  align-items: center;
-}
-.media-inner--flipped {
-  grid-template-columns: 1.5fr 1fr;
-}
-.media-photo {
-  border-radius: 0;
-  overflow: hidden;
-}
-.media-photo--large {
-  min-height: 420px;
-}
-.media-photo img,
-.media-photo video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.media-text {
-  padding: 3rem;
-  color: #1a1a1a;
-}
-.media-text p {
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-}
-.media-text strong {
-  color: #1a1a1a;
-}
-
-@media (max-width: 768px) {
-  .as-seen-banner {
-    gap: 1.25rem;
-    padding: 1rem 1.5rem;
+@media (min-width: 769px) {
+  .mobile-menu-btn { 
+    display: none; 
   }
-  .as-seen-banner img {
-    height: 20px;
-  }
-  .media-inner,
-  .media-inner--flipped {
-    grid-template-columns: 1fr;
-  }
-  .media-photo--large {
-    min-height: 280px;
-  }
-  .media-text {
-    padding: 2rem 1.5rem;
+  .mobile-nav { 
+    display: none !important; 
   }
 }
