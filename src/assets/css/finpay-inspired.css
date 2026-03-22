@@ -186,18 +186,20 @@ p {
   width: 95%;
   max-width: 1280px;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 50px -12px rgba(0, 56, 112, 0.08);
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px) saturate(1.4);
+  -webkit-backdrop-filter: blur(30px) saturate(1.4);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 20px 50px -12px rgba(0, 56, 112, 0.06),
+              inset 0 1px 0 rgba(255, 255, 255, 0.4);
   transition: all 0.3s ease;
 }
 
 .finpay-header.scrolled {
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 8px 30px -8px rgba(0, 56, 112, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 30px -8px rgba(0, 56, 112, 0.1);
 }
 
 .finpay-header .container {
@@ -243,7 +245,7 @@ p {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
   color: var(--surface-container-lowest);
   padding: var(--space-3) var(--space-6);
-  border-radius: 8px;
+  border-radius: 12px;
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.875rem;
@@ -895,13 +897,13 @@ p {
 
 /* Federal cards — match Five Pillars editorial style */
 .federal-benefit-card {
-  border-left: none;
+  /* Inherits L-shape from .finpay-card */
 }
 .federal-benefit-card .eyebrow-label {
   color: var(--on-surface-variant);
 }
 .federal-benefit-card .card-accent-line {
-  background: var(--outline-variant);
+  display: none;
 }
 
 .federal-benefits-stats {
@@ -2005,7 +2007,7 @@ p {
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 0.125rem;
+  border-radius: 12px;
   transition: all 0.3s ease;
 }
 
@@ -2027,7 +2029,7 @@ p {
   font-weight: 500;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0.125rem;
+  border-radius: 12px;
   transition: all 0.3s ease;
 }
 
