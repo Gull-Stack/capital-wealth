@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retirement Planning | Fiduciary Advisor Lehi, UT | Capital Wealth</title>
-    <meta name="description" content="Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capital Wealth have helped 1,000+ families retire with confidence. Retirement income, tax strategies, 401(k) rollovers &amp; Social Security optimization.">
+    <meta name="description" content="Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capital Wealth have helped 650+ clients retire with confidence. Retirement income, tax strategies, 401(k) rollovers &amp; Social Security optimization.">
     
     <link rel="canonical" href="https://www.capitalwealth.com/index-finpay/">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Retirement Planning | Fiduciary Advisor Lehi, UT | Capital Wealth">
-    <meta property="og:description" content="Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capital Wealth have helped 1,000+ families retire with confidence. Retirement income, tax strategies, 401(k) rollovers &amp; Social Security optimization.">
+    <meta property="og:description" content="Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capital Wealth have helped 650+ clients retire with confidence. Retirement income, tax strategies, 401(k) rollovers &amp; Social Security optimization.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/index-finpay/">
+    <meta property="og:image" content="https://www.capitalwealth.com/assets/images/photos/CWA-Mountain-Couple-home-header.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.capitalwealth.com/assets/images/photos/CWA-Mountain-Couple-home-header.webp">
     
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,6 +57,8 @@
       gtag('config', 'G-LD4VE3SQNT');
     </script>
 
+    <!-- Main styles (service subpages, federal benefits, etc.) -->
+    <link rel="stylesheet" href="/assets/css/main.css">
     <!-- Finpay-inspired styles -->
     <link rel="stylesheet" href="/assets/css/finpay-inspired.css">
     
@@ -199,7 +206,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Capital Wealth Advisors",
+        "name": "Capital Wealth",
         "url": "https://www.capitalwealth.com",
         "aggregateRating": {
             "@type": "AggregateRating",
@@ -463,8 +470,8 @@
     <div class="container">
         <div class="finpay-stats-grid">
             <div class="finpay-stat">
-                <span class="finpay-stat-number">1,000+</span>
-                <span class="finpay-stat-label">Families Served</span>
+                <span class="finpay-stat-number">650+</span>
+                <span class="finpay-stat-label">Clients Served</span>
             </div>
             <div class="finpay-stat">
                 <span class="finpay-stat-number">25+</span>
@@ -811,7 +818,7 @@
         display: block;
         width: 100%;
         height: 2px;
-        background: var(--gray-700);
+        background: #003870;
         border-radius: 2px;
         transition: all 0.3s ease;
     }
@@ -849,7 +856,7 @@
         padding: 8px;
         z-index: 10003;
     }
-    .mobile-nav-close:hover { color: var(--cw-primary); }
+    .mobile-nav-close:hover { color: #003870; }
     .mobile-nav a {
         color: var(--gray-700);
         font-size: 1.3rem;
@@ -857,20 +864,20 @@
         transition: color 0.2s;
         text-decoration: none;
     }
-    .mobile-nav a:hover { color: var(--cw-primary); }
+    .mobile-nav a:hover { color: #003870; }
     .mobile-nav .btn-primary {
         margin-top: 16px;
         padding: 16px 32px;
         font-size: 1.1rem;
-        background: var(--cw-primary);
+        background: #003870;
         color: white;
         border-radius: 8px;
         font-weight: 600;
     }
     .mobile-nav .client-login-mobile {
         background: transparent;
-        color: var(--cw-primary);
-        border: 2px solid var(--cw-primary);
+        color: #003870;
+        border: 2px solid #003870;
         padding: 12px 24px;
         border-radius: 8px;
         font-size: 1rem;
@@ -961,12 +968,10 @@
         window.addEventListener('scroll', function() {
             var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             
-            if (scrollTop > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)';
+            if (scrollTop > 80) {
+                header.classList.add('scrolled');
             } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = 'none';
+                header.classList.remove('scrolled');
             }
             
             lastScrollTop = scrollTop;

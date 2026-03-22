@@ -6612,8 +6612,9 @@ html { font-size: 18px; }
 
 /* --- Section 3: Core Services Grid --- */
 .svc-core {
-  background: #fff;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8edf2 50%, #f5f7fa 100%);
   padding: 0 2rem 5rem;
+  position: relative;
 }
 .svc-core-inner {
   max-width: 1200px;
@@ -6832,13 +6833,32 @@ html { font-size: 18px; }
   gap: 1.5rem;
 }
 .svc-specialized-card {
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 20px;
   padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  box-shadow: 0 4px 24px rgba(27, 58, 92, 0.06), inset 0 1px 0 rgba(255,255,255,0.8);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+.svc-specialized-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent);
+}
+.svc-specialized-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(27, 58, 92, 0.1), inset 0 1px 0 rgba(255,255,255,0.9);
 }
 .svc-specialized-tags {
   display: flex;
@@ -6905,17 +6925,20 @@ html { font-size: 18px; }
   gap: 1rem;
 }
 .svc-audience-card {
-  background: #f0f1f3;
-  border-radius: 12px;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
   padding: 2rem 1.75rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  border: 1px solid transparent;
-  transition: all 0.25s ease;
+  border: 1px solid rgba(255,255,255,0.5);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(27, 58, 92, 0.05), inset 0 1px 0 rgba(255,255,255,0.7);
 }
 .svc-audience-card:hover {
-  background: #ede6df;
+  background: rgba(255,255,255,0.6);
   border-color: rgba(0,0,0,0.06);
   transform: translateY(-2px);
 }
@@ -9224,20 +9247,35 @@ html { font-size: 18px; }
   gap: 1rem;
 }
 .fed-benefit-card {
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 20px;
   padding: 2rem 1.75rem;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  transition: all 0.25s ease;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 24px rgba(27, 58, 92, 0.06), inset 0 1px 0 rgba(255,255,255,0.8);
+  position: relative;
+  overflow: hidden;
+}
+.fed-benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent);
 }
 .fed-benefit-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(25,79,144,0.08);
-  border-color: rgba(0,0,0,0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(27, 58, 92, 0.12), inset 0 1px 0 rgba(255,255,255,0.9);
+  border-color: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.6);
 }
 
 /* --- Mobile Adjustments --- */
