@@ -35,9 +35,40 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
   z-index: 2;
 }
 
-/* Sunray effect removed */
+/* Animated sun rays — anchored to sun position in photo (upper-left) */
 .hero-sunrays {
-  display: none;
+  position: absolute;
+  top: -5%;
+  left: 8%;
+  width: 500px;
+  height: 500px;
+  z-index: 2;
+  pointer-events: none;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    transparent 0deg,
+    rgba(255, 210, 120, 0.08) 8deg,
+    transparent 16deg,
+    rgba(255, 195, 100, 0.06) 30deg,
+    transparent 38deg,
+    rgba(255, 220, 140, 0.07) 52deg,
+    transparent 60deg,
+    rgba(255, 200, 110, 0.05) 75deg,
+    transparent 83deg,
+    rgba(255, 215, 130, 0.06) 98deg,
+    transparent 106deg,
+    rgba(255, 205, 115, 0.04) 120deg,
+    transparent 128deg,
+    transparent 360deg
+  );
+  filter: blur(8px);
+  animation: sunPulse 6s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes sunPulse {
+  0%, 100% { opacity: 0.6; transform: rotate(0deg) scale(1); }
+  50% { opacity: 1; transform: rotate(3deg) scale(1.08); }
 }
 
 .hero-content {
@@ -87,19 +118,8 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
   font-weight: 300;
   color: #ffffff;
   line-height: 1.08;
-  margin-bottom: 0;
-  max-width: 600px;
-}
-
-.hero-glass-panel {
-  background: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  border: none;
-  border-radius: 0;
-  padding: 0;
   margin-bottom: 1.25rem;
-  max-width: 620px;
+  max-width: 600px;
 }
 
 .hero-subtitle {
@@ -1125,11 +1145,6 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
     padding: 0 1.25rem;
   }
 
-  .hero-glass-panel {
-    padding: 0;
-    max-width: 100%;
-  }
-
   .hero-title {
     font-size: 1.85rem;
     line-height: 1.15;
@@ -1238,9 +1253,7 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 
     <div class="hero-content">
         <span class="hero-eyebrow">WEALTH MANAGEMENT & FINANCIAL PLANNING</span>
-        <div class="hero-glass-panel">
-            <h1 class="hero-title">Retire with confidence.<br>Not <em>confusion.</em></h1>
-        </div>
+        <h1 class="hero-title">Retire with confidence.<br>Not <em>confusion.</em></h1>
         <p class="hero-subtitle">You've spent decades building your savings. Now it's time to turn them into a retirement you can actually enjoy — with reliable income, lower taxes, and a plan that works even when markets don't.</p>
         <div class="hero-cta">
             <a href="/contact/" class="hero-btn">Schedule a Consultation</a>
