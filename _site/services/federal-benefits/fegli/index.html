@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEGLI Life Insurance Review | Federal Employee Insurance Planning | Lehi, UT | Capital Wealth</title>
+    <title>FEGLI Life Insurance Review | Capital Wealth</title>
     <meta name="description" content="Understand your FEGLI options and costs. Expert analysis of Basic, Option A, B, and C coverage, retirement implications, and private insurance alternatives for federal employees.">
     
     <link rel="canonical" href="https://www.capitalwealth.com/services/federal-benefits/fegli/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="FEGLI Life Insurance Review | Federal Employee Insurance Planning | Lehi, UT">
+    <meta property="og:title" content="FEGLI Life Insurance Review | Capital Wealth">
     <meta property="og:description" content="Understand your FEGLI options and costs. Expert analysis of Basic, Option A, B, and C coverage, retirement implications, and private insurance alternatives for federal employees.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/services/federal-benefits/fegli/">
@@ -421,12 +421,12 @@
                     <a href="/services/federal-benefits/" class="finpay-nav-link">Federal</a>
                     <a href="/blog/" class="finpay-nav-link">Blog</a>
                     <a href="/about/" class="finpay-nav-link">Our Team</a>
-                    <a href="https://www.retirerightbook.com/" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
+                    <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
                 </div>
                 
                 <div class="finpay-nav-right">
                     <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="client-login-cta desktop-cta">Client Login</a>
-                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Call</a>
+                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Visit</a>
                     
                     <!-- Mobile Menu Button (GullStack Pattern) -->
                     <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
@@ -454,19 +454,467 @@
         <a href="/services/federal-benefits/" onclick="closeMobileMenu()">Federal</a>
         <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
         <a href="/about/" onclick="closeMobileMenu()">Our Team</a>
-        <a href="https://www.retirerightbook.com/" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
-        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Call</a>
+        <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
+        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Visit</a>
         <a href="https://login.orionadvisor.com/login.html" onclick="closeMobileMenu()" target="_blank" rel="noopener" class="client-login-mobile">Client Login</a>
     </div>
 
     <main style="padding-top: 64px;">
         
+<style>
+/* Service Subpage specific styles - using global CSS variables */
+/* Do NOT override :root variables - they're already correct in finpay-inspired.css */
+
+/* Service Subpage Layout Styles */
+.service-header {
+  background: var(--surface);
+  padding: 3rem 0 4rem;
+  text-align: center;
+}
+
+.service-header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.service-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Content area */
+.service-content {
+  /* Content is injected here via 
 
 <section class="titan-subhero">
     <div class="titan-subhero-inner">
         <div class="titan-subhero-content">
             <p class="titan-section-label">FEGLI PLANNING</p>
-            <h1 >FEGLI Life Insurance: What Federal Employees Need to Know</h1>
+            <h2 >FEGLI Life Insurance: What Federal Employees Need to Know</h2>
+            <p class="titan-subhero-body">The Federal Employees Group Life Insurance program is the largest group life insurance program in the world — but many federal employees are over-insured during working years and face skyrocketing premiums in retirement. Understanding your options can save you thousands.</p>
+            <div class="titan-hero-buttons">
+                <a href="/contact/" class="titan-hero-btn-primary">REVIEW MY FEGLI COVERAGE <span>→</span></a>
+            </div>
+        </div>
+        <img src="/assets/images/services/federal-benefits.jpg" alt="Federal employee reviewing life insurance coverage options" class="titan-subhero-img">
+    </div>
+</section>
+
+
+<section class="quote-bar">
+    <div class="quote-bar-inner">
+        <p class="quote-bar-text">"FEGLI gets expensive in retirement. Most feds should reduce or drop it — but not everyone."</p>
+        <p class="quote-bar-attribution">— Mike Stevens, IAR</p>
+    </div>
+</section>
+
+
+<section class="key-facts">
+    <div class="key-facts-inner">
+        <div class="key-fact">
+            <h3 class="key-fact-label">Coverage Types</h3>
+            <p class="key-fact-value">Basic, Option A, B, C</p>
+        </div>
+        <div class="key-fact">
+            <h3 class="key-fact-label">Analysis</h3>
+            <p class="key-fact-value">Cost vs. need in retirement</p>
+        </div>
+        <div class="key-fact">
+            <h3 class="key-fact-label">Alternatives</h3>
+            <p class="key-fact-value">Private insurance comparison</p>
+        </div>
+        <div class="key-fact">
+            <h3 class="key-fact-label">Reduction Options</h3>
+            <p class="key-fact-value">75% or 50% reduction</p>
+        </div>
+        <div class="key-fact">
+            <h3 class="key-fact-label">Cost</h3>
+            <p class="key-fact-value">Included</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-problem">
+    <div class="service-problem-inner">
+        <p class="titan-section-label">THE PROBLEM</p>
+        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
+        <div class="service-problem-grid">
+            <div class="service-problem-card">
+                <h3>You were automatically enrolled and never reviewed it</h3>
+                <p>Basic FEGLI coverage is automatic for most federal employees — but you may have elected optional coverages years ago without understanding the long-term cost implications.</p>
+            </div>
+            <div class="service-problem-card">
+                <h3>Your FEGLI premiums skyrocket in retirement</h3>
+                <p>Basic coverage reduces by 75% but remains free in retirement. Optional coverages (A, B, and C) continue at full value — but premiums increase dramatically with age, potentially costing hundreds per month.</p>
+            </div>
+            <div class="service-problem-card">
+                <h3>You don't know if you're over-insured</h3>
+                <p>Option B can provide up to 5 times your annual salary in coverage. That might make sense while raising kids with a mortgage, but do you still need it at age 65 with a paid-off house and grown children?</p>
+            </div>
+            <div class="service-problem-card">
+                <h3>You've never compared FEGLI to private insurance</h3>
+                <p>FEGLI was established in 1954 and offers guaranteed coverage without medical underwriting — but if you're healthy, private term life insurance can often provide better coverage at lower cost, especially as you approach retirement.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-solution">
+    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
+    <div class="service-solution-inner">
+        <p class="titan-section-label">THE SOLUTION</p>
+        <h2 class="service-solution-h2">How We Help</h2>
+        <div class="service-solution-content">
+            <div class="service-solution-left">
+                <h3>FEGLI Analysis & Insurance Optimization</h3>
+                <p>We analyze your FEGLI coverage — Basic, Option A, Option B, and Option C — to determine if you have the right amount of coverage for your current life stage, and project what your premiums will cost in retirement.</p>
+                <p>According to OPM.gov, FEGLI covers more than 4 million federal employees and retirees. While FEGLI offers convenience and guaranteed issue, the cost structure changes significantly in retirement. We compare your FEGLI coverage to private alternatives and help you make informed decisions about what to keep, reduce, or replace.</p>
+            </div>
+            <div class="service-solution-right">
+                <h4>Our FEGLI Planning Includes:</h4>
+                <ul class="service-solution-list">
+                    <li>Complete FEGLI coverage review (Basic, A, B, C)</li>
+                    <li>Lifetime premium projection into retirement</li>
+                    <li>Coverage needs analysis based on your debts, dependents, and goals</li>
+                    <li>Private term life insurance comparison and quotes</li>
+                    <li>Option B reduction strategies (phased reduction vs full cancellation)</li>
+                    <li>Post-retirement cost analysis and optimization</li>
+                    <li>Beneficiary designation review</li>
+                    <li>Estate planning coordination for life insurance proceeds</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-process">
+    <div class="service-process-inner">
+                <div class="service-process-left">
+            <h2 class="service-process-h2">How it Works</h2>
+            <p class="service-process-subtitle">It's just three steps</p>
+            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
+        </div>
+        <div class="service-process-right">
+            <div class="service-process-steps">
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 1) Coverage Review</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>Analyze your current FEGLI elections, calculate what you’re paying now, and project costs through retirement.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 2) Needs Analysis</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>Determine how much life insurance you actually need based on your debts, income replacement needs, and family situation.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 3) Optimize Coverage</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>Compare FEGLI to private insurance options, model different coverage scenarios, and recommend the most cost-effective strategy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="faq-section">
+    <div class="faq-inner">
+        <div class="faq-left">
+            <p class="titan-section-label">COMMON QUESTIONS</p>
+            <h2 class="faq-heading">FEGLI Planning FAQ</h2>
+            <p class="faq-sub">Everything you need to know about FEGLI life insurance and your options.</p>
+            <a href="/contact/" class="resources-cta">Schedule FEGLI Review</a>
+        </div>
+        <div class="faq-right">
+            <div class="faq-accordion">
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How much does FEGLI cost in retirement?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Basic FEGLI reduces by 75% in retirement but remains free (no premium). Optional coverages are where costs can become problematic. Option A continues at $10,000 of coverage, and premiums increase with age. Option B (1-5 times salary) continues at full value, but premiums increase dramatically — often several hundred dollars per month for older retirees. Option C (family coverage) also continues with age-based premium increases. The key issue: while coverage continues, you're paying much higher rates in retirement when you may no longer need the same coverage level you had during your working years.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Should I keep FEGLI or get private insurance?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">It depends on your health, age, and coverage needs. FEGLI's advantages: no medical underwriting, guaranteed issue, and convenience. Private insurance advantages: often lower premiums (especially for healthy individuals), fixed-term coverage that ends when you no longer need it, and potentially larger death benefits. Many federal employees benefit from keeping Basic FEGLI (it's free in retirement anyway) while replacing expensive Option B coverage with a lower-cost private term policy. We recommend getting a private insurance quote to compare — if you're healthy, you may be paying far more than necessary.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What is Option B and why is it expensive?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Option B is additional life insurance coverage equal to 1, 2, 3, 4, or 5 times your annual salary. During your working years, it's relatively affordable. The problem arises in retirement: Option B continues at full value (based on your salary at retirement), but premiums are based on your age and increase every 5 years. For a 70-year-old retiree with high Option B coverage, premiums can exceed $500-800 per month. By that age, many retirees no longer have the same coverage needs (mortgage paid off, kids financially independent), making these premiums difficult to justify.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Can I get private life insurance instead of FEGLI?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Yes. You're not required to keep FEGLI, and you can cancel optional coverages at any time (though you may not be able to re-enroll later without a life event). Many federal employees choose to keep Basic FEGLI since it's free in retirement, but replace costly Option B with a private term life insurance policy that ends when coverage is no longer needed. Private insurance requires medical underwriting, so your health, age, and lifestyle affect eligibility and pricing. We can help you compare options and determine if private coverage makes sense for your situation.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">When should I review my FEGLI coverage?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">You should review FEGLI at major life events: marriage, divorce, birth of children, home purchase, mortgage payoff, and as you approach retirement (ideally 5-10 years before). Many federal employees elect Option B early in their career when they have young children and a mortgage, then never revisit the decision. By retirement, circumstances have changed dramatically — kids are grown, the house is paid off, and the need for large life insurance coverage has diminished. Reviewing coverage every few years ensures you're not over-insured and overpaying for protection you no longer need.</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-related">
+    <div class="service-related-inner">
+        <p class="titan-section-label">RELATED SERVICES</p>
+        <h2 class="related-services-h2">More Federal Employee Services</h2>
+        <div class="service-related-grid">
+            <a href="/services/estate-planning/" class="service-related-link">
+                <span class="service-related-name">Estate Planning</span>
+                <span class="service-related-arrow">→</span>
+            </a>
+            <a href="/services/federal-benefits/fers/" class="service-related-link">
+                <span class="service-related-name">FERS Retirement Planning</span>
+                <span class="service-related-arrow">→</span>
+            </a>
+            <a href="/services/federal-benefits/" class="service-related-link">
+                <span class="service-related-name">Federal Employee Benefits</span>
+                <span class="service-related-arrow">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+ */
+}
+
+/* Related Blog Posts */
+.related-posts {
+  background: var(--surface-container-low);
+  padding: 4rem 0 5rem;
+  margin-top: 4rem;
+}
+
+.related-posts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.related-posts-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.related-posts-header h2 {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.related-posts-subtitle {
+  font-family: var(--font-body);
+  color: var(--on-surface-variant);
+  font-size: 1.125rem;
+}
+
+.related-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1px;
+  background: var(--outline-variant);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.related-post-card {
+  background: white;
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+  border-bottom: 3px solid transparent;
+}
+
+.related-post-card:hover {
+  border-bottom-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.related-post-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.75rem;
+}
+
+.related-post-title {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--on-surface);
+  margin-bottom: 0.75rem;
+}
+
+.related-post-link {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Navy CTA Section */
+.service-cta {
+  background: var(--primary);
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+}
+
+.service-cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-cta h2 {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.service-cta p {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.service-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--primary);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.service-cta-button:hover {
+  background: var(--surface-container-low);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-header {
+    padding: 2rem 0 3rem;
+  }
+  
+  .service-title {
+    font-size: 2.5rem;
+  }
+  
+  .service-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .related-posts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .related-posts {
+    padding: 3rem 0 4rem;
+  }
+  
+  .service-cta {
+    padding: 3rem 0;
+  }
+  
+  .service-cta h2 {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<!-- Service Header -->
+<section class="service-header">
+  <div class="service-header-inner">
+    
+      <p class="service-eyebrow">FEGLI ANALYSIS</p>
+    
+    
+    
+      <h1 class="service-title">Federal Life Insurance Planning</h1>
+    
+    
+    
+      <p class="service-subtitle">FEGLI premiums skyrocket in retirement. Most federal employees can get better coverage at lower cost through private insurance. We analyze your needs and compare options.</p>
+    
+  </div>
+</section>
+
+<!-- Service Content -->
+<div class="service-content">
+  
+
+<section class="titan-subhero">
+    <div class="titan-subhero-inner">
+        <div class="titan-subhero-content">
+            <p class="titan-section-label">FEGLI PLANNING</p>
+            <h2 >FEGLI Life Insurance: What Federal Employees Need to Know</h2>
             <p class="titan-subhero-body">The Federal Employees Group Life Insurance program is the largest group life insurance program in the world — but many federal employees are over-insured during working years and face skyrocketing premiums in retirement. Understanding your options can save you thousands.</p>
             <div class="titan-hero-buttons">
                 <a href="/contact/" class="titan-hero-btn-primary">REVIEW MY FEGLI COVERAGE <span>→</span></a>
@@ -670,6 +1118,454 @@
     </div>
 </section>
 
+</div>
+
+<!-- Related Blog Posts -->
+
+  
+  
+    
+    
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+    
+  
+  
+  <!-- If no tag matches, get 3 recent blog posts -->
+  
+    
+  
+  
+  
+    <section class="related-posts">
+      <div class="related-posts-inner">
+        <div class="related-posts-header">
+          <h2>Related Reading</h2>
+          <p class="related-posts-subtitle">Dive deeper into this topic</p>
+        </div>
+        
+        <div class="related-posts-grid">
+          
+            <a href="/blog/mike-stevens-full-blog-sept-14-2024/" class="related-post-card">
+              <div class="related-post-date">9/13/2024</div>
+              <h3 class="related-post-title">Complete Federal Employee Retirement Guide</h3>
+              <div class="related-post-link">Read More →</div>
+            </a>
+          
+            <a href="/blog/mike-stevens-key-takeaways-sept-16-2024/" class="related-post-card">
+              <div class="related-post-date">9/15/2024</div>
+              <h3 class="related-post-title">Federal Retirement: 15 Key Takeaways</h3>
+              <div class="related-post-link">Read More →</div>
+            </a>
+          
+            <a href="/blog/mike-stevens-faq-sept-18-2024/" class="related-post-card">
+              <div class="related-post-date">9/17/2024</div>
+              <h3 class="related-post-title">Federal Employee Retirement FAQ with Mike Stevens</h3>
+              <div class="related-post-link">Read More →</div>
+            </a>
+          
+        </div>
+      </div>
+    </section>
+  
+
+
+<!-- Navy CTA (skip on contact page) -->
+
+  <section class="service-cta">
+    <div class="service-cta-inner">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>Schedule a complimentary consultation to discuss your financial goals and see how we can help you achieve them.</p>
+      <a href="/contact/" class="service-cta-button">
+        Schedule Your Visit
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+
     </main>
 
     
@@ -727,7 +1623,7 @@
                 <a href="/case-studies/">Case Studies</a>
                 <a href="/blog/">Blog</a>
                 <a href="/book/">Free Book Chapter</a>
-                <a href="https://www.retirerightbook.com/" target="_blank" rel="noopener">Full Book</a>
+                <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" target="_blank" rel="noopener">Full Book</a>
                 <a href="/federal-benefits-seminar/">Federal Seminar</a>
             </div>
             
@@ -735,7 +1631,7 @@
                 <h4>Company</h4>
                 <a href="/about/">About Mike Stevens</a>
                 <a href="/reviews/">Client Reviews</a>
-                <a href="/contact/">Schedule a Call</a>
+                <a href="/contact/">Schedule a Visit</a>
                 <a href="/disclosures/">Important Disclosures</a>
                 <a href="/brand-facts/">Brand Facts</a>
                 <a href="/press/">Press & Media</a>
@@ -1160,7 +2056,7 @@
   </div>
   <div class="cw-chat-messages" id="cwChatMessages"></div>
   <div class="cw-chat-scheduler" id="cwScheduler">
-    <a href="/thank-you/" target="_blank">Schedule Your Free Consultation</a>
+    <a href="/thank-you/" target="_blank">Schedule Your Free Visit</a>
     <p>20-30 minutes. No obligation.</p>
   </div>
   <div class="cw-chat-resources" id="cwResources">

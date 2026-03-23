@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#8e4f04",
+              "surface-container-highest": "#e1e2e4",
+              "background": "#f8f9fb",
+              "inverse-surface": "#2e3132",
+              "tertiary-container": "#465156",
+              "secondary-container": "#ffac60",
+              "on-secondary": "#ffffff",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#a8c8ff",
+              "outline": "#737781",
+              "on-tertiary-container": "#b8c3ca",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed-variant": "#6c3a00",
+              "on-error-container": "#93000a",
+              "primary-fixed": "#d5e3ff",
+              "on-tertiary-fixed-variant": "#3e484e",
+              "primary-container": "#194f90",
+              "surface-tint": "#2e5fa0",
+              "on-tertiary-fixed": "#131d22",
+              "surface-container-low": "#f3f4f6",
+              "surface": "#f8f9fb",
+              "primary-fixed-dim": "#a8c8ff",
+              "surface-variant": "#e1e2e4",
+              "on-secondary-fixed": "#2e1500",
+              "error": "#ba1a1a",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#191c1e",
+              "tertiary-fixed": "#d9e4eb",
+              "surface-container": "#edeef0",
+              "secondary-fixed": "#ffdcc1",
+              "primary": "#003870",
+              "on-secondary-container": "#753f00",
+              "outline-variant": "#c2c6d2",
+              "on-surface": "#191c1e",
+              "on-surface-variant": "#424750",
+              "on-error": "#ffffff",
+              "surface-bright": "#f8f9fb",
+              "surface-container-high": "#e7e8ea",
+              "surface-dim": "#d9dadc",
+              "tertiary-fixed-dim": "#bdc8cf",
+              "tertiary": "#2f3a3f",
+              "secondary-fixed-dim": "#ffb779",
+              "on-primary-container": "#9fc2ff",
+              "inverse-on-surface": "#f0f1f3",
+              "on-primary-fixed-variant": "#094687",
+              "on-primary": "#ffffff",
+              "on-primary-fixed": "#001b3c"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+      }
+      .font-serif-italic { font-family: 'Noto Serif', serif; font-style: italic; }
+      .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary/20">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-headline tracking-tight text-primary">Heritage &amp; Co.</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-slate-600 font-medium hover:text-primary transition-opacity duration-300" href="#">Portfolio</a>
+<a class="text-slate-600 font-medium hover:text-primary transition-opacity duration-300" href="#">Insights</a>
+<a class="text-slate-600 font-medium hover:text-primary transition-opacity duration-300" href="#">Legacy</a>
+<a class="text-primary border-b-2 border-secondary pb-1 transition-opacity duration-300" href="#">Concierge</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-lg text-sm font-semibold tracking-wide hover:opacity-90 active:scale-95 transition-all duration-300">
+                Private Access
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-12 max-w-screen-2xl mx-auto">
+<header class="mb-20">
+<p class="font-label text-secondary uppercase tracking-[0.2em] text-xs mb-4">Bespoke Assistance</p>
+<h1 class="font-headline text-6xl md:text-7xl text-primary leading-tight max-w-3xl">Start a Private <br/><span class="font-serif-italic italic font-normal">Conversation</span></h1>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-20 items-start">
+<!-- Left Side: Contact Details & Locations -->
+<div class="lg:col-span-5 space-y-24">
+<!-- Direct Channels -->
+<section>
+<h2 class="font-label text-primary uppercase tracking-widest text-xs mb-8">Direct Channels</h2>
+<div class="space-y-12">
+<div class="group">
+<p class="font-label text-slate-400 uppercase text-[10px] tracking-widest mb-2">Telephone</p>
+<a class="font-headline text-2xl text-on-background group-hover:text-secondary transition-colors duration-300" href="tel:+18005550192">+1 (800) 555-0192</a>
+</div>
+<div class="group">
+<p class="font-label text-slate-400 uppercase text-[10px] tracking-widest mb-2">Secure Correspondence</p>
+<a class="font-headline text-2xl text-on-background group-hover:text-secondary transition-colors duration-300" href="mailto:concierge@heritage.wealth">concierge@heritage.wealth</a>
+</div>
+</div>
+</section>
+<!-- Global Offices -->
+<section class="space-y-12">
+<h2 class="font-label text-primary uppercase tracking-widest text-xs mb-8">Primary Enclaves</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+<div class="space-y-3">
+<p class="font-headline text-lg italic text-secondary">Mayfair</p>
+<p class="text-sm leading-relaxed text-slate-600">
+                                42 Berkeley Square<br/>
+                                London, W1J 5AW<br/>
+                                United Kingdom
+                            </p>
+</div>
+<div class="space-y-3">
+<p class="font-headline text-lg italic text-secondary">Manhattan</p>
+<p class="text-sm leading-relaxed text-slate-600">
+                                75 Rockefeller Plaza<br/>
+                                New York, NY 10019<br/>
+                                United States
+                            </p>
+</div>
+<div class="space-y-3">
+<p class="font-headline text-lg italic text-secondary">Geneva</p>
+<p class="text-sm leading-relaxed text-slate-600">
+                                Quai du Mont-Blanc 7<br/>
+                                1201 Genève<br/>
+                                Switzerland
+                            </p>
+</div>
+<div class="space-y-3">
+<p class="font-headline text-lg italic text-secondary">Singapore</p>
+<p class="text-sm leading-relaxed text-slate-600">
+                                10 Marina Boulevard<br/>
+                                Marina Bay Financial Centre<br/>
+                                Singapore 018983
+                            </p>
+</div>
+</div>
+</section>
+<!-- Editorial Pull Quote -->
+<div class="relative pt-12">
+<div class="absolute left-0 top-0 w-1 h-24 bg-secondary"></div>
+<blockquote class="pl-8">
+<p class="font-headline text-2xl text-primary leading-snug">
+                            "Wealth is more than capital; it is a legacy of values, time, and the freedom to pursue what matters most."
+                        </p>
+<cite class="block mt-4 font-label text-[10px] uppercase tracking-widest text-slate-400">— Alistair Thorne, Chief Strategist</cite>
+</blockquote>
+</div>
+</div>
+<!-- Right Side: Contact Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-12 md:p-16 shadow-[0_40px_100px_-20px_rgba(0,56,112,0.05)] rounded-sm relative overflow-hidden">
+<!-- Subtle background texture decoration -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-tertiary-fixed/20 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="relative z-10">
+<h3 class="font-headline text-3xl text-primary mb-2">Request an Introduction</h3>
+<p class="text-slate-500 mb-12 max-w-md">Our partners handle all inquiries with the utmost discretion and personal attention.</p>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-slate-400">Full Name</label>
+<input class="w-full border-0 border-b border-outline-variant/30 bg-transparent py-3 focus:ring-0 focus:border-secondary transition-colors font-body text-lg placeholder:text-slate-300" placeholder="e.g. Julian Sterling" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-slate-400">Organization (Optional)</label>
+<input class="w-full border-0 border-b border-outline-variant/30 bg-transparent py-3 focus:ring-0 focus:border-secondary transition-colors font-body text-lg placeholder:text-slate-300" placeholder="Family Office or Entity" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-slate-400">Primary Area of Interest</label>
+<select class="w-full border-0 border-b border-outline-variant/30 bg-transparent py-3 focus:ring-0 focus:border-secondary transition-colors font-body text-lg appearance-none cursor-pointer">
+<option>Wealth Preservation &amp; Strategy</option>
+<option>Intergenerational Legacy Planning</option>
+<option>Philanthropic Advisory</option>
+<option>Private Equity &amp; Alternative Assets</option>
+<option>Institutional Mandates</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-slate-400">Preferred Method of Engagement</label>
+<div class="flex flex-wrap gap-6 pt-2">
+<label class="flex items-center space-x-3 cursor-pointer group">
+<input class="w-4 h-4 text-secondary border-outline-variant focus:ring-secondary/20" name="contact" type="radio"/>
+<span class="text-sm font-body text-slate-600 group-hover:text-primary transition-colors">Personal Meeting</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer group">
+<input class="w-4 h-4 text-secondary border-outline-variant focus:ring-secondary/20" name="contact" type="radio"/>
+<span class="text-sm font-body text-slate-600 group-hover:text-primary transition-colors">Video Conference</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer group">
+<input class="w-4 h-4 text-secondary border-outline-variant focus:ring-secondary/20" name="contact" type="radio"/>
+<span class="text-sm font-body text-slate-600 group-hover:text-primary transition-colors">Secure Digital Briefing</span>
+</label>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-slate-400">Additional Context</label>
+<textarea class="w-full border-0 border-b border-outline-variant/30 bg-transparent py-3 focus:ring-0 focus:border-secondary transition-colors font-body text-lg placeholder:text-slate-300 resize-none" placeholder="Briefly describe your objectives..." rows="3"></textarea>
+</div>
+<div class="pt-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+<p class="text-[10px] font-label text-slate-400 uppercase leading-relaxed max-w-xs">
+                                    By submitting this inquiry, you agree to our terms of engagement and privacy protocols.
+                                </p>
+<button class="bg-primary text-on-primary px-12 py-5 rounded-sm font-label uppercase tracking-widest text-xs hover:bg-primary-container transition-all duration-300 shadow-xl shadow-primary/10" type="submit">
+                                    Request Access
+                                </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Featured Image / Location Context -->
+<div class="mt-12 grid grid-cols-3 gap-4">
+<div class="aspect-[4/5] bg-surface-container relative overflow-hidden group">
+<img class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Sophisticated private meeting room with wood paneling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpUWGBHoGTuy7fuo5FaVLOUPq9HbTqvjvh6buR3X0FK9ezmIiNfAujjG8NK4c4rVXhiMU1NBBmgbZOni5XBqknO84jg1JZUO8LhInEu3I-jT3RjCtJKGgrS6zSzjqSUuS-7ZRA6lKNVIZ4qr_p4Qf4Itc99ComnoDX9l4UFyrthtzmVduHPBf_w2P1pTCZZGDumfJwWA5wkMbnfl9S5CTRn0NZ0h46ya9ffwbQrdqV-QprrDSYl87KiFJhnlROJuGN4EMi7gcbBzk"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-700"></div>
+</div>
+<div class="aspect-[4/5] bg-surface-container relative overflow-hidden group mt-8">
+<img class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Modern architectural lines of a financial district" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDij5Lih0dJkPH1Ami3DBU0WQmDVoxcDKn1O8uT1tk9Tw-X6xTnHYvzwLrFlOwhErhcMZdBw9Bqs5fagFqhATA9YZpuxQVNh7Y4g1Y1ginm2JfLOTvIZkRB2f0gPqKzz5o1dzZNdRCeTA6mszPonxjj39FeKdeMJhsEQ1Qw_YQwttcGz-blTWpLXescfhBInCDJIohzRPI9rOFFyLL_Q-uWjO4jY8U3ofZ6gjbwxUEGUrZRl98Hz7vFsY2LEkCm_PkrF8oW-Cpg9IU"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-700"></div>
+</div>
+<div class="aspect-[4/5] bg-surface-container relative overflow-hidden group">
+<img class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Luxury timepiece and fountain pen on desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaLOufnnvdMrvUb1DuqfcOf5LniBf5cB3-T1hIHgZc5_fBJQepZW93KXmLX7RjXSoqx5LDG_AapIcn_uDYoKcssgCbs8WcrarMAMeVkWdquCbzE5HOEFCT0WOTmTlD7CBQrQ5w4_RINrsFGKfPPxk0CLHdyEMMI5nefsOFs_Z48j6C1MM0BN9_0pbFand4nQZ7zwB49nL06XrlyYKIbxcF1PR__ZqPmQJjkxQT_3GFr-afWVNLpFaVvRrgNKtTU1gGs-p6kc050c4"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-700"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/20 bg-surface-container-low">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-headline italic text-primary">Heritage Wealth Management</div>
+<p class="text-slate-500 text-sm leading-relaxed max-w-xs">Stewarding excellence across generations with surgical precision and timeless wisdom.</p>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary mb-8">Navigation</p>
+<ul class="space-y-4">
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-colors" href="#">Asset Management</a></li>
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-colors" href="#">Legacy Continuity</a></li>
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-colors" href="#">Global Insights</a></li>
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-colors" href="#">Partner Network</a></li>
+</ul>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary mb-8">Governance</p>
+<ul class="space-y-4">
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-colors" href="#">SEC Disclosures</a></li>
+<li><a class="text-slate-500 text-sm hover:text-secondary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary mb-8">Newsletter</p>
+<p class="text-slate-500 text-sm mb-6">Receive our quarterly 'Sentinel' briefing on global wealth trends.</p>
+<div class="flex border-b border-outline-variant/30 pb-2">
+<input class="bg-transparent border-0 text-sm w-full focus:ring-0 placeholder:text-slate-400" placeholder="Email address" type="email"/>
+<button class="material-symbols-outlined text-secondary">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-slate-200/20 text-center md:text-left">
+<p class="text-slate-400 text-[10px] font-label uppercase tracking-widest">© 2024 Heritage Wealth Management. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

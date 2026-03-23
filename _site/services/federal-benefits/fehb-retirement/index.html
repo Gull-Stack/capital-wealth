@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEHB in Retirement | Federal Health Insurance Planning | Lehi, UT | Capital Wealth</title>
+    <title>FEHB in Retirement | Capital Wealth</title>
     <meta name="description" content="Keep your FEHB health insurance in retirement. Expert guidance on the 5-year rule, Medicare coordination, PSHB changes, and avoiding costly eligibility mistakes.">
     
     <link rel="canonical" href="https://www.capitalwealth.com/services/federal-benefits/fehb-retirement/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="FEHB in Retirement | Federal Health Insurance Planning | Lehi, UT">
+    <meta property="og:title" content="FEHB in Retirement | Capital Wealth">
     <meta property="og:description" content="Keep your FEHB health insurance in retirement. Expert guidance on the 5-year rule, Medicare coordination, PSHB changes, and avoiding costly eligibility mistakes.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/services/federal-benefits/fehb-retirement/">
@@ -421,12 +421,12 @@
                     <a href="/services/federal-benefits/" class="finpay-nav-link">Federal</a>
                     <a href="/blog/" class="finpay-nav-link">Blog</a>
                     <a href="/about/" class="finpay-nav-link">Our Team</a>
-                    <a href="https://www.retirerightbook.com/" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
+                    <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
                 </div>
                 
                 <div class="finpay-nav-right">
                     <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="client-login-cta desktop-cta">Client Login</a>
-                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Call</a>
+                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Visit</a>
                     
                     <!-- Mobile Menu Button (GullStack Pattern) -->
                     <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
@@ -454,19 +454,466 @@
         <a href="/services/federal-benefits/" onclick="closeMobileMenu()">Federal</a>
         <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
         <a href="/about/" onclick="closeMobileMenu()">Our Team</a>
-        <a href="https://www.retirerightbook.com/" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
-        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Call</a>
+        <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
+        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Visit</a>
         <a href="https://login.orionadvisor.com/login.html" onclick="closeMobileMenu()" target="_blank" rel="noopener" class="client-login-mobile">Client Login</a>
     </div>
 
     <main style="padding-top: 64px;">
         
+<style>
+/* Service Subpage specific styles - using global CSS variables */
+/* Do NOT override :root variables - they're already correct in finpay-inspired.css */
+
+/* Service Subpage Layout Styles */
+.service-header {
+  background: var(--surface);
+  padding: 3rem 0 4rem;
+  text-align: center;
+}
+
+.service-header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.service-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Content area */
+.service-content {
+  /* Content is injected here via 
 
 <section class="titan-subhero">
     <div class="titan-subhero-inner">
         <div class="titan-subhero-content">
             <p class="titan-section-label">FEHB PLANNING</p>
-            <h1 >FEHB Health Insurance in Retirement</h1>
+            <h2 >FEHB Health Insurance in Retirement</h2>
+            <p class="titan-subhero-body">The Federal Employees Health Benefits Program is one of the most valuable benefits you can carry into retirement — but you must meet specific eligibility requirements, and coordinating FEHB with Medicare requires careful planning to avoid gaps in coverage.</p>
+            <div class="titan-hero-buttons">
+                <a href="/contact/" class="titan-hero-btn-primary">REVIEW MY FEHB ELIGIBILITY <span>→</span></a>
+            </div>
+        </div>
+        <img src="/assets/images/services/federal-benefits.jpg" alt="Federal retiree reviewing health insurance options" class="titan-subhero-img">
+    </div>
+</section>
+
+
+<section class="quote-bar">
+    <div class="quote-bar-inner">
+        <p class="quote-bar-text">"FEHB in retirement is one of the best healthcare benefits you can get. Make sure you're eligible."</p>
+        <p class="quote-bar-attribution">— Mike Stevens, IAR</p>
+    </div>
+</section>
+
+
+<section class="key-facts">
+    <div class="key-facts-inner">
+        <div class="key-fact">
+            <h3 class="key-fact-label">Eligibility</h3>
+            <p class="key-fact-value">5-year rule verification</p>
+        </div>
+        <div class="key-fact">
+            <h3 class="key-fact-label">Medicare Coordination</h3>
+            <p class="key-fact-value">Part B timing</p>
+        </div>
+        <div class="key-fact">
+            <h3 class="key-fact-label">Plan Selection</h3>
+            <p class="key-fact-value">FEHB vs Medicare Advantage</p>
+        </div>
+        <div class="key-fact">
+            <h3 class="key-fact-label">Premiums</h3>
+            <p class="key-fact-value">Pre-tax in retirement</p>
+        </div>
+        <div class="key-fact">
+            <h3 class="key-fact-label">Cost</h3>
+            <p class="key-fact-value">Included</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-problem">
+    <div class="service-problem-inner">
+        <p class="titan-section-label">THE PROBLEM</p>
+        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
+        <div class="service-problem-grid">
+            <div class="service-problem-card">
+                <h3>You don't know about the 5-year enrollment rule</h3>
+                <p>To carry FEHB into retirement, you must be enrolled for the 5 years immediately before you retire. Miss this requirement and you lose FEHB eligibility permanently.</p>
+            </div>
+            <div class="service-problem-card">
+                <h3>You're confused about FEHB and Medicare coordination</h3>
+                <p>When you turn 65, Medicare becomes your primary coverage and FEHB becomes secondary. Understanding how they coordinate can save you thousands in premiums and out-of-pocket costs.</p>
+            </div>
+            <div class="service-problem-card">
+                <h3>You're worried about rising FEHB premiums</h3>
+                <p>FEHB premiums increase annually, and the government continues to pay approximately 72% of the weighted average premium — but your portion can still grow significantly over a 20-30 year retirement.</p>
+            </div>
+            <div class="service-problem-card">
+                <h3>You're a postal employee confused about PSHB</h3>
+                <p>The Postal Service Health Benefits program launched in 2025-2026, creating a separate system for postal employees and retirees. Understanding how this affects your coverage is critical.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-solution">
+    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
+    <div class="service-solution-inner">
+        <p class="titan-section-label">THE SOLUTION</p>
+        <h2 class="service-solution-h2">How We Help</h2>
+        <div class="service-solution-content">
+            <div class="service-solution-left">
+                <h3>FEHB Eligibility & Medicare Coordination Planning</h3>
+                <p>We verify your FEHB eligibility, help you select the right plan for retirement, and create a strategy for coordinating with Medicare to maximize coverage while minimizing costs.</p>
+                <p>The government continues to contribute approximately 72% of the weighted average premium in retirement, making FEHB one of the most cost-effective health insurance options available. We ensure you don't accidentally forfeit this valuable benefit and help you navigate the transition to Medicare when the time comes.</p>
+            </div>
+            <div class="service-solution-right">
+                <h4>Our FEHB Planning Includes:</h4>
+                <ul class="service-solution-list">
+                    <li>5-year enrollment rule verification and compliance tracking</li>
+                    <li>FEHB plan selection for retirement (HDHP, PPO, HMO comparison)</li>
+                    <li>Medicare Part A and Part B enrollment coordination</li>
+                    <li>Medicare Supplement (Medigap) vs FEHB analysis</li>
+                    <li>Medicare Part D prescription drug coverage evaluation</li>
+                    <li>Long-term premium projection and budgeting</li>
+                    <li>PSHB transition planning for postal employees</li>
+                    <li>Annual Open Season review and plan optimization</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-process">
+    <div class="service-process-inner">
+                <div class="service-process-left">
+            <h2 class="service-process-h2">How it Works</h2>
+            <p class="service-process-subtitle">It's just three steps</p>
+            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
+        </div>
+        <div class="service-process-right">
+            <div class="service-process-steps">
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 1) Eligibility Check</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>Review your FEHB enrollment history to confirm you meet the 5-year rule and identify any potential gaps or issues.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 2) Plan Selection</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>Compare FEHB plans for retirement based on your healthcare needs, preferred providers, and budget — including Medicare coordination.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 3) Medicare Strategy</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>Build a comprehensive plan for enrolling in Medicare at 65, coordinating with FEHB, and optimizing your coverage and costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="faq-section">
+    <div class="faq-inner">
+        <div class="faq-left">
+            <p class="titan-section-label">COMMON QUESTIONS</p>
+            <h2 class="faq-heading">FEHB Planning FAQ</h2>
+            <p class="faq-sub">Everything you need to know about keeping FEHB in retirement and coordinating with Medicare.</p>
+            <a href="/contact/" class="resources-cta">Schedule FEHB Review</a>
+        </div>
+        <div class="faq-right">
+            <div class="faq-accordion">
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Can I keep FEHB in retirement?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Yes, but you must meet two requirements: (1) You must retire on an immediate annuity (not a deferred retirement), and (2) You must be enrolled in FEHB for the 5 years immediately before retirement. There are limited exceptions to the 5-year rule for certain circumstances like returning from active military duty. If you meet these requirements, you can keep FEHB for life, and the government continues to pay approximately 72% of the weighted average premium just as they did while you were working.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Do I need Medicare if I have FEHB?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Most federal retirees should enroll in Medicare Part A (which is premium-free if you have 40 quarters of Medicare-covered employment) and Part B when they turn 65. Medicare becomes your primary insurance and FEHB becomes secondary, which can significantly reduce your out-of-pocket costs. Some FEHB plans waive deductibles and copays for Medicare-enrolled members. Delaying Medicare Part B enrollment can result in permanent late-enrollment penalties. We recommend reviewing your specific FEHB plan's Medicare coordination benefits before deciding.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What is the 5-year rule?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">The 5-year rule requires continuous FEHB enrollment for the 5 years immediately preceding your retirement to carry FEHB into retirement. This means 5 consecutive years — not 5 total years. If you weren't enrolled in FEHB, were covered under a spouse's plan, or had a lapse in coverage during those last 5 years, you may not be eligible to continue FEHB. Limited exceptions exist for employees who return from active military service or lose coverage under a spouse's FEHB enrollment. It's critical to verify your eligibility well before your planned retirement date.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How does FEHB coordinate with Medicare?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Once you enroll in Medicare, it becomes your primary payer and FEHB becomes secondary. This means Medicare pays first, then your FEHB plan pays some or all of what Medicare doesn't cover, depending on your specific plan's coordination rules. Many FEHB plans offer enhanced benefits for Medicare enrollees, such as waived deductibles or reduced copays. You continue paying your FEHB premium, but your combined coverage (Medicare + FEHB) is typically better than either alone. Most federal retirees find this combination provides excellent coverage without needing a Medicare Supplement (Medigap) policy.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What changed with PSHB for postal employees?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">The Postal Service Health Benefits (PSHB) program was created as a separate health insurance program for postal employees and retirees, distinct from FEHB. Starting in 2025-2026, postal employees and annuitants were transitioned from FEHB to PSHB. PSHB plans are similar to FEHB but are specifically designed for the postal workforce. Postal retirees in PSHB must enroll in Medicare Part A and Part B when eligible. If you're a postal employee approaching retirement, understanding the PSHB enrollment requirements and plan options is essential — the rules differ from traditional FEHB in important ways.</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-related">
+    <div class="service-related-inner">
+        <h2 class="related-services-h2">Related Services</h2>
+        <div class="service-related-grid">
+            <a href="/services/federal-benefits/medicare-irmaa/" class="service-related-link">
+                <span class="service-related-name">Medicare IRMAA</span>
+                <span class="service-related-arrow">→</span>
+            </a>
+            <a href="/services/federal-benefits/fers-retirement/" class="service-related-link">
+                <span class="service-related-name">FERS Retirement</span>
+                <span class="service-related-arrow">→</span>
+            </a>
+            <a href="/services/federal-benefits/" class="service-related-link">
+                <span class="service-related-name">Federal Benefits</span>
+                <span class="service-related-arrow">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+ */
+}
+
+/* Related Blog Posts */
+.related-posts {
+  background: var(--surface-container-low);
+  padding: 4rem 0 5rem;
+  margin-top: 4rem;
+}
+
+.related-posts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.related-posts-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.related-posts-header h2 {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.related-posts-subtitle {
+  font-family: var(--font-body);
+  color: var(--on-surface-variant);
+  font-size: 1.125rem;
+}
+
+.related-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1px;
+  background: var(--outline-variant);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.related-post-card {
+  background: white;
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+  border-bottom: 3px solid transparent;
+}
+
+.related-post-card:hover {
+  border-bottom-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.related-post-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.75rem;
+}
+
+.related-post-title {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--on-surface);
+  margin-bottom: 0.75rem;
+}
+
+.related-post-link {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Navy CTA Section */
+.service-cta {
+  background: var(--primary);
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+}
+
+.service-cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-cta h2 {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.service-cta p {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.service-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--primary);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.service-cta-button:hover {
+  background: var(--surface-container-low);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-header {
+    padding: 2rem 0 3rem;
+  }
+  
+  .service-title {
+    font-size: 2.5rem;
+  }
+  
+  .service-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .related-posts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .related-posts {
+    padding: 3rem 0 4rem;
+  }
+  
+  .service-cta {
+    padding: 3rem 0;
+  }
+  
+  .service-cta h2 {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<!-- Service Header -->
+<section class="service-header">
+  <div class="service-header-inner">
+    
+      <p class="service-eyebrow">FEHB RETIREMENT</p>
+    
+    
+    
+      <h1 class="service-title">Federal Health Benefits in Retirement</h1>
+    
+    
+    
+      <p class="service-subtitle">FEHB is one of the best benefits you can take into retirement. We help you understand your options, coordinate with Medicare, and optimize your healthcare strategy.</p>
+    
+  </div>
+</section>
+
+<!-- Service Content -->
+<div class="service-content">
+  
+
+<section class="titan-subhero">
+    <div class="titan-subhero-inner">
+        <div class="titan-subhero-content">
+            <p class="titan-section-label">FEHB PLANNING</p>
+            <h2 >FEHB Health Insurance in Retirement</h2>
             <p class="titan-subhero-body">The Federal Employees Health Benefits Program is one of the most valuable benefits you can carry into retirement — but you must meet specific eligibility requirements, and coordinating FEHB with Medicare requires careful planning to avoid gaps in coverage.</p>
             <div class="titan-hero-buttons">
                 <a href="/contact/" class="titan-hero-btn-primary">REVIEW MY FEHB ELIGIBILITY <span>→</span></a>
@@ -669,6 +1116,454 @@
     </div>
 </section>
 
+</div>
+
+<!-- Related Blog Posts -->
+
+  
+  
+    
+    
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+    
+  
+  
+  <!-- If no tag matches, get 3 recent blog posts -->
+  
+    
+  
+  
+  
+    <section class="related-posts">
+      <div class="related-posts-inner">
+        <div class="related-posts-header">
+          <h2>Related Reading</h2>
+          <p class="related-posts-subtitle">Dive deeper into this topic</p>
+        </div>
+        
+        <div class="related-posts-grid">
+          
+            <a href="/blog/mike-stevens-full-blog-sept-14-2024/" class="related-post-card">
+              <div class="related-post-date">9/13/2024</div>
+              <h3 class="related-post-title">Complete Federal Employee Retirement Guide</h3>
+              <div class="related-post-link">Read More →</div>
+            </a>
+          
+            <a href="/blog/mike-stevens-key-takeaways-sept-16-2024/" class="related-post-card">
+              <div class="related-post-date">9/15/2024</div>
+              <h3 class="related-post-title">Federal Retirement: 15 Key Takeaways</h3>
+              <div class="related-post-link">Read More →</div>
+            </a>
+          
+            <a href="/blog/mike-stevens-faq-sept-18-2024/" class="related-post-card">
+              <div class="related-post-date">9/17/2024</div>
+              <h3 class="related-post-title">Federal Employee Retirement FAQ with Mike Stevens</h3>
+              <div class="related-post-link">Read More →</div>
+            </a>
+          
+        </div>
+      </div>
+    </section>
+  
+
+
+<!-- Navy CTA (skip on contact page) -->
+
+  <section class="service-cta">
+    <div class="service-cta-inner">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>Schedule a complimentary consultation to discuss your financial goals and see how we can help you achieve them.</p>
+      <a href="/contact/" class="service-cta-button">
+        Schedule Your Visit
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+
     </main>
 
     
@@ -726,7 +1621,7 @@
                 <a href="/case-studies/">Case Studies</a>
                 <a href="/blog/">Blog</a>
                 <a href="/book/">Free Book Chapter</a>
-                <a href="https://www.retirerightbook.com/" target="_blank" rel="noopener">Full Book</a>
+                <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" target="_blank" rel="noopener">Full Book</a>
                 <a href="/federal-benefits-seminar/">Federal Seminar</a>
             </div>
             
@@ -734,7 +1629,7 @@
                 <h4>Company</h4>
                 <a href="/about/">About Mike Stevens</a>
                 <a href="/reviews/">Client Reviews</a>
-                <a href="/contact/">Schedule a Call</a>
+                <a href="/contact/">Schedule a Visit</a>
                 <a href="/disclosures/">Important Disclosures</a>
                 <a href="/brand-facts/">Brand Facts</a>
                 <a href="/press/">Press & Media</a>
@@ -1159,7 +2054,7 @@
   </div>
   <div class="cw-chat-messages" id="cwChatMessages"></div>
   <div class="cw-chat-scheduler" id="cwScheduler">
-    <a href="/thank-you/" target="_blank">Schedule Your Free Consultation</a>
+    <a href="/thank-you/" target="_blank">Schedule Your Free Visit</a>
     <p>20-30 minutes. No obligation.</p>
   </div>
   <div class="cw-chat-resources" id="cwResources">

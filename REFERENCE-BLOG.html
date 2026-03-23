@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#e7e8ea",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-secondary-container": "#753f00",
+              "primary-container": "#194f90",
+              "surface-container": "#edeef0",
+              "on-primary-fixed-variant": "#094687",
+              "on-tertiary-fixed": "#131d22",
+              "tertiary-fixed": "#d9e4eb",
+              "surface-container-highest": "#e1e2e4",
+              "surface-container-low": "#f3f4f6",
+              "tertiary": "#2f3a3f",
+              "on-primary-fixed": "#001b3c",
+              "inverse-surface": "#2e3132",
+              "on-secondary-fixed-variant": "#6c3a00",
+              "primary-fixed-dim": "#a8c8ff",
+              "tertiary-container": "#465156",
+              "background": "#f8f9fb",
+              "inverse-primary": "#a8c8ff",
+              "secondary-fixed": "#ffdcc1",
+              "surface-tint": "#2e5fa0",
+              "surface-container-lowest": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-background": "#191c1e",
+              "primary-fixed": "#d5e3ff",
+              "inverse-on-surface": "#f0f1f3",
+              "on-surface": "#191c1e",
+              "on-error": "#ffffff",
+              "surface-variant": "#e1e2e4",
+              "surface-dim": "#d9dadc",
+              "on-primary-container": "#9fc2ff",
+              "secondary-fixed-dim": "#ffb779",
+              "on-surface-variant": "#424750",
+              "surface-bright": "#f8f9fb",
+              "on-tertiary-fixed-variant": "#3e484e",
+              "on-secondary-fixed": "#2e1500",
+              "surface": "#f8f9fb",
+              "secondary": "#8e4f04",
+              "primary": "#003870",
+              "outline-variant": "#c2c6d2",
+              "tertiary-fixed-dim": "#bdc8cf",
+              "outline": "#737781",
+              "on-tertiary-container": "#b8c3ca",
+              "error": "#ba1a1a",
+              "secondary-container": "#ffac60"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"],
+              "serif": ["Cormorant Garamond"],
+              "mono": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-dropcap::first-letter {
+            float: left;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5.5rem;
+            line-height: 0.8;
+            padding-right: 0.75rem;
+            color: #003870;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto left-0 right-0">
+<div class="font-serif text-2xl tracking-tighter font-light text-blue-900 dark:text-blue-100">LUX LEGACY</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="font-mono uppercase tracking-widest text-xs text-slate-500 dark:text-slate-400 hover:text-blue-800 transition-colors" href="#">Insights</a>
+<a class="font-mono uppercase tracking-widest text-xs text-slate-500 dark:text-slate-400 hover:text-blue-800 transition-colors" href="#">Portfolios</a>
+<a class="font-mono uppercase tracking-widest text-xs text-blue-900 dark:text-white border-b border-blue-900/20 pb-1" href="#">Heritage</a>
+<a class="font-mono uppercase tracking-widest text-xs text-slate-500 dark:text-slate-400 hover:text-blue-800 transition-colors" href="#">Advisory</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="search">search</span>
+<button class="bg-primary text-on-primary px-5 py-2 text-xs font-label uppercase tracking-widest hover:opacity-90 transition-opacity">Client Access</button>
+</div>
+</nav>
+<main class="pt-40 pb-24 px-6 md:px-12 lg:px-24 max-w-screen-2xl mx-auto">
+<!-- Editorial Header Section -->
+<header class="max-w-4xl mx-auto text-center mb-24">
+<div class="flex items-center justify-center space-x-4 mb-8">
+<span class="h-[1px] w-12 bg-outline-variant/30"></span>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary">Heritage Perspective</span>
+<span class="h-[1px] w-12 bg-outline-variant/30"></span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl leading-tight text-primary mb-8 font-light italic">
+                The New Architecture of <br/>Generational Wealth
+            </h1>
+<p class="font-serif text-xl md:text-2xl text-on-surface-variant italic max-w-2xl mx-auto leading-relaxed">
+                Exploring the shift in portfolio design for the modern family office.
+            </p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 max-w-7xl mx-auto">
+<!-- Left Sidebar: Author & Share -->
+<aside class="lg:col-span-3">
+<div class="sticky top-40 space-y-12">
+<!-- Author Block -->
+<div class="group">
+<div class="mb-6 relative w-20 h-20 overflow-hidden rounded-full">
+<img alt="Alistair Thorne portrait" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of a middle-aged male executive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUzaEhPpHYdkoTMK9X1JI0KWosb1byH3mQ_arqO95BXiWZmnVlw6FW3SNpH2-UOKEOy7pJtK_1ve-LUpAAr3rdMTykkP0EOy3JIwgKvaPIIi355xE7YtmI1zMiyNOzXLY3rA9Eb0DQDwLUKAuuPTYyOHOAzwgHHy8Iutc5nNwgF0Stc_aLsGV3tJ_UB0YjAZYBY85GWquORkUBlbhMzT9AhbwtbVzwBvjOcEOCwp1UUSy4DpYjBdhGSsWlKhO1xteAoc5M95zXTVQ"/>
+</div>
+<h4 class="font-label text-xs uppercase tracking-widest text-primary mb-1">Alistair Thorne</h4>
+<p class="font-serif text-sm text-on-surface-variant leading-snug">Chief Strategist,<br/>Heritage &amp; Co.</p>
+</div>
+<!-- Share Section -->
+<div class="pt-8 border-t border-outline-variant/10">
+<span class="font-label text-[10px] uppercase tracking-widest text-outline mb-6 block">Distribute</span>
+<div class="flex flex-col space-y-4">
+<button class="flex items-center group text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm mr-3" data-icon="share">share</span>
+<span class="font-label text-[10px] uppercase tracking-widest">Copy Link</span>
+</button>
+<button class="flex items-center group text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm mr-3" data-icon="mail">mail</span>
+<span class="font-label text-[10px] uppercase tracking-widest">Email</span>
+</button>
+<button class="flex items-center group text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm mr-3" data-icon="description">description</span>
+<span class="font-label text-[10px] uppercase tracking-widest">PDF View</span>
+</button>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<article class="lg:col-span-6 space-y-12">
+<div class="font-headline text-xl leading-[1.8] text-on-surface-variant editorial-dropcap">
+                    As we navigate the third decade of the twenty-first century, the traditional pillars of wealth preservation are being systematically deconstructed and rebuilt. The landscape that once favored static asset allocation and passive stewardship has given way to a more dynamic, "living" architecture of capital. For the modern family office, this transition is not merely about adjusting risk parameters; it is about redefining the very essence of what a legacy represents in an interconnected global economy.
+                </div>
+<div class="font-headline text-xl leading-[1.8] text-on-surface-variant">
+                    Modern generational wealth is increasingly characterized by fluidity. We are seeing a marked departure from the siloed approach to investments. Instead, portfolios are being structured as integrated ecosystems where philanthropic ventures, private equity, and traditional securities exist in a symbiotic state, each informing the trajectory of the other.
+                </div>
+<!-- Pull Quote Component -->
+<div class="py-12 px-8 my-16 bg-surface-container-low relative group">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary"></div>
+<blockquote class="font-headline text-3xl md:text-4xl italic text-primary leading-tight">
+                        "True wealth is not merely the accumulation of assets, but the freedom to define one's own narrative across time."
+                    </blockquote>
+<cite class="block mt-6 font-label text-xs uppercase tracking-widest text-secondary">— The Heritage Manifesto</cite>
+</div>
+<div class="font-headline text-xl leading-[1.8] text-on-surface-variant">
+                    Sustainability, once a marginal consideration, has become the foundational stone of this new architecture. It is no longer sufficient for wealth to simply persist; it must possess a generative quality that contributes to the broader stability of the environments it inhabits. This shift reflects a deepening understanding that private prosperity cannot exist in isolation from public progress.
+                </div>
+<div class="font-headline text-xl leading-[1.8] text-on-surface-variant">
+                    Furthermore, the technological integration within these family structures has matured. We are observing the rise of the "Digital Heritage," where data integrity and sovereign digital identity are treated with the same reverence as physical property. The stewardship of these assets requires a new class of advisory—one that marries the historical wisdom of private banking with the surgical precision of modern technology.
+                </div>
+</article>
+<!-- Right Sidebar: Registry & Reading -->
+<aside class="lg:col-span-3">
+<div class="space-y-16">
+<!-- Insights Registry -->
+<section class="bg-surface-container-low p-8">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-4">The Registry</span>
+<h3 class="font-headline text-xl text-primary mb-4 italic">Insights for the Sovereign Class</h3>
+<p class="font-serif text-sm text-on-surface-variant mb-6 leading-relaxed">
+                            A weekly briefing on the intersection of culture, capital, and legacy.
+                        </p>
+<form class="space-y-4">
+<input class="w-full bg-white border-none text-sm font-label focus:ring-1 focus:ring-primary/20 p-3 placeholder:text-outline/50" placeholder="Professional Email" type="email"/>
+<button class="w-full bg-primary text-on-primary py-3 font-label text-[10px] uppercase tracking-widest hover:bg-primary-container transition-colors">Register Interest</button>
+</form>
+</section>
+<!-- Related Reading -->
+<section>
+<span class="font-label text-[10px] uppercase tracking-widest text-outline block mb-8">Related Reading</span>
+<div class="space-y-10">
+<a class="group block" href="#">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Advisory</span>
+<h4 class="font-headline text-lg text-primary leading-snug group-hover:text-secondary transition-colors italic">The Liquidity Paradox in Private Equity</h4>
+<span class="block mt-4 h-[1px] w-full bg-outline-variant/10"></span>
+</a>
+<a class="group block" href="#">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Heritage</span>
+<h4 class="font-headline text-lg text-primary leading-snug group-hover:text-secondary transition-colors italic">Sovereign Identity and the Global Citizen</h4>
+<span class="block mt-4 h-[1px] w-full bg-outline-variant/10"></span>
+</a>
+<a class="group block" href="#">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Portfolios</span>
+<h4 class="font-headline text-lg text-primary leading-snug group-hover:text-secondary transition-colors italic">Allocating for the Anthropocene</h4>
+<span class="block mt-4 h-[1px] w-full bg-outline-variant/10"></span>
+</a>
+</div>
+</section>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-slate-100 dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="font-serif text-xl font-medium text-blue-900 dark:text-white">LUX LEGACY</div>
+<p class="font-serif text-sm text-slate-500 leading-relaxed">
+                    Excellence in private wealth management, dedicated to the preservation and growth of generational legacies across the globe.
+                </p>
+</div>
+<div class="space-y-4">
+<h5 class="font-label text-[10px] uppercase tracking-widest text-primary">Intelligence</h5>
+<ul class="space-y-2">
+<li><a class="font-serif text-sm text-slate-500 hover:text-blue-900 transition-colors" href="#">Market Quarterly</a></li>
+<li><a class="font-serif text-sm text-slate-500 hover:text-blue-900 transition-colors" href="#">Heritage Reports</a></li>
+<li><a class="font-serif text-sm text-slate-500 hover:text-blue-900 transition-colors" href="#">White Papers</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label text-[10px] uppercase tracking-widest text-primary">Governance</h5>
+<ul class="space-y-2 font-serif text-sm text-slate-500">
+<li><a class="hover:text-blue-900 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-blue-900 transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-blue-900 transition-colors" href="#">SEC Filings</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label text-[10px] uppercase tracking-widest text-primary">Locations</h5>
+<ul class="space-y-2 font-serif text-sm text-slate-500">
+<li>London, UK</li>
+<li>Zurich, CH</li>
+<li>New York, US</li>
+<li>Singapore, SG</li>
+</ul>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-slate-200/50 max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-mono text-[10px] uppercase tracking-wider text-slate-400">© 2024 Lux Legacy Private Wealth Management. All rights reserved.</span>
+<div class="flex space-x-6">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="language">language</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="shield">shield</span>
+</div>
+</div>
+</footer>
+</body></html>

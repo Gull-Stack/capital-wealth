@@ -414,12 +414,12 @@
                     <a href="/services/federal-benefits/" class="finpay-nav-link">Federal</a>
                     <a href="/blog/" class="finpay-nav-link">Blog</a>
                     <a href="/about/" class="finpay-nav-link">Our Team</a>
-                    <a href="https://www.retirerightbook.com/" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
+                    <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
                 </div>
                 
                 <div class="finpay-nav-right">
                     <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="client-login-cta desktop-cta">Client Login</a>
-                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Call</a>
+                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Visit</a>
                     
                     <!-- Mobile Menu Button (GullStack Pattern) -->
                     <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
@@ -447,224 +447,1143 @@
         <a href="/services/federal-benefits/" onclick="closeMobileMenu()">Federal</a>
         <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
         <a href="/about/" onclick="closeMobileMenu()">Our Team</a>
-        <a href="https://www.retirerightbook.com/" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
-        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Call</a>
+        <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
+        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Visit</a>
         <a href="https://login.orionadvisor.com/login.html" onclick="closeMobileMenu()" target="_blank" rel="noopener" class="client-login-mobile">Client Login</a>
     </div>
 
     <main style="padding-top: 64px;">
         
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">401(K) & IRA ROLLOVERS</p>
-            <h1 >Consolidate. Optimize. Take Control.</h1>
-            <p class="titan-subhero-body">Rolling over your 401(k) or IRA isn't just paperwork — it's a strategic decision that affects your fees, investment options, tax flexibility, and retirement income for decades.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">GET ROLLOVER GUIDANCE <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/hero-wildflowers.jpg" alt="Taking control of your retirement savings" class="titan-subhero-img">
+<style>
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — 401k & IRA Rollover
+   ═══════════════════════════════════════════ */
+
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons — match homepage hero-btn / hero-btn-secondary */
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Key Facts Row */
+.ep-facts {
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.2);
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-facts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ep-fact {
+  flex: 1;
+}
+
+.ep-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.4rem;
+}
+
+.ep-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.ep-framework-desc {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.2);
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
+  background: white;
+  transition: all 0.2s ease;
+  border-top: 3px solid transparent;
+}
+
+.ep-framework-card:hover {
+  background: var(--surface-container-low);
+  border-top-color: var(--secondary);
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Stats & Solution */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
+}
+
+.ep-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ep-dark-header {
+  margin-bottom: 4rem;
+}
+
+.ep-dark-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
+}
+
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.ep-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-glass-card:last-child {
+  margin-top: 0;
+}
+
+.ep-glass-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ep-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ep-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.ep-stat-number small {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-left: 0.25rem;
+}
+
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.ep-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ep-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+}
+
+.ep-check-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Asymmetric Image + Text */
+.ep-transfer {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-transfer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ep-transfer-image-wrap {
+  flex: 0 0 45%;
+  position: relative;
+}
+
+.ep-transfer-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-transfer-image-accent {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 120px;
+  height: 120px;
+  background: var(--tertiary-fixed, #d9e4eb);
+  z-index: -1;
+}
+
+.ep-transfer-text {
+  flex: 1;
+}
+
+.ep-transfer-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.ep-transfer-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2.5rem;
+}
+
+.ep-sub-feature {
+  margin-bottom: 1.5rem;
+  cursor: default;
+}
+
+.ep-sub-feature h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.ep-sub-feature:hover h4 {
+  color: var(--secondary);
+}
+
+.ep-sub-feature p {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* Process — liquid glass cards with image */
+.ep-process {
+  padding: 6rem 2rem;
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-process-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.ep-process-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-process-sub {
+  font-size: 1rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-process-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.ep-step-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.ep-step-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
+}
+
+.ep-step-number {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.ep-step-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+  margin-bottom: 0.75rem;
+}
+
+.ep-step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 300px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* Related Services */
+.ep-related {
+  padding: 4rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.15);
+}
+
+.ep-related-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 2rem;
+}
+
+.ep-related-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  background: var(--surface-container-low);
+  transition: all 0.2s ease;
+}
+
+.ep-related-link:hover {
+  background: white;
+}
+
+.ep-related-link:not(:last-child) {
+  border-right: 1px solid rgba(194, 198, 210, 0.15);
+}
+
+.ep-related-name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-related-arrow {
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
+
+/* CTA — matches homepage final-cta */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-facts-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .ep-fact {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .ep-framework-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-framework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-glass-card:last-child {
+    margin-top: 0;
+  }
+
+  .ep-transfer {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-transfer-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ep-transfer-image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .ep-transfer-image {
+    height: 350px;
+  }
+
+  .ep-transfer-image-accent {
+    display: none;
+  }
+
+  .ep-process {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-process-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-process-image {
+    height: 220px;
+  }
+
+  .ep-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-related-link:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(194, 198, 210, 0.15);
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
+  }
+}
+</style>
+
+
+<section class="ep-hero">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">401(k) & IRA Rollover</span>
+      <h1 class="ep-hero-title">Consolidate.<br>Optimize.</h1>
+      <span class="ep-hero-title-italic">Take Control.</span>
+      <p class="ep-hero-body">Rolling over your 401(k) or IRA isn't just paperwork — it's a strategic decision that affects your fees, investment options, tax flexibility, and retirement income for decades.</p>
+      <a href="/contact/" class="ep-btn-primary">Get Rollover Guidance</a>
     </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg"
+           alt="Couple planning their retirement rollover strategy"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"A rollover isn't just moving money. It's choosing the right home for your life savings."</p>
+        <cite>Mike Stevens, IAR</cite>
+      </div>
+    </div>
+  </div>
 </section>
 
-<div class="service-quote-bar">
-    <div class="service-quote-bar-inner">
-        <span>"A rollover isn't just moving money. It's choosing the right home for your life savings."</span> — Mike Stevens, IAR
-    </div>
-</div>
 
-<section class="service-keyfacts">
-    <div class="service-keyfacts-inner">
-        <h2 class="service-keyfacts-h2">Key Facts</h2>
-        <div class="service-keyfacts-list">
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">1</span>
-                <span class="service-keyfact-label">Process</span>
-                <span class="service-keyfact-value">Full rollover analysis</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">2</span>
-                <span class="service-keyfact-label">Timeline</span>
-                <span class="service-keyfact-value">Typically 2-4 weeks</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">3</span>
-                <span class="service-keyfact-label">Tax Impact</span>
-                <span class="service-keyfact-value">Analyzed before rollover</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">4</span>
-                <span class="service-keyfact-label">Minimum</span>
-                <span class="service-keyfact-value">$500K combined</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">5</span>
-                <span class="service-keyfact-label">Cost</span>
-                <span class="service-keyfact-value">Included in advisory fee</span>
-            </div>
-        </div>
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact">
+      <div class="ep-fact-label">Process</div>
+      <div class="ep-fact-value">Full rollover analysis</div>
     </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Timeline</div>
+      <div class="ep-fact-value">Typically 2-4 weeks</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Tax Impact</div>
+      <div class="ep-fact-value">Analyzed before rollover</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Minimum</div>
+      <div class="ep-fact-value">$500K combined</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Cost</div>
+      <div class="ep-fact-value">Included in advisory fee</div>
+    </div>
+  </div>
 </section>
 
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>Your 401(k)s are scattered everywhere</h3>
-                <p>Three jobs, three 401(k)s, all with different logins, statements, and investment menus. It's impossible to see the big picture.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're stuck with expensive funds</h3>
-                <p>Your old 401(k) has limited options, high fees, and mediocre performance. But you're not sure if rolling it over is the right move.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're afraid of making a mistake</h3>
-                <p>You've heard horror stories about missed rollovers, unexpected taxes, and IRS penalties. So you do… nothing.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>No one has explained your options</h3>
-                <p>Should you roll to an IRA? A Roth? Leave it in the plan? Every option has pros and cons — and no one has walked you through them.</p>
-            </div>
-        </div>
+
+<section class="ep-framework">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">Does This Sound Familiar?</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">The most common rollover challenges we see with 401(k)s and IRAs scattered across multiple employers.</p>
     </div>
+    <div class="ep-framework-grid">
+      <div class="ep-framework-card">
+        <h4>Your 401(k)s are scattered everywhere</h4>
+        <p>Three jobs, three 401(k)s, all with different logins, statements, and investment menus. It's impossible to see the big picture.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>You're stuck with expensive funds</h4>
+        <p>Your old 401(k) has limited options, high fees, and mediocre performance. But you're not sure if rolling it over is the right move.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>You're afraid of making a mistake</h4>
+        <p>You've heard horror stories about missed rollovers, unexpected taxes, and IRS penalties. So you do… nothing.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>No one has explained your options</h4>
+        <p>Should you roll to an IRA? A Roth? Leave it in the plan? Every option has pros and cons — and no one has walked you through them.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">Strategic Rollover Planning</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Done Right, With Zero Tax Surprises</h3>
-                <p>We handle the entire rollover process from start to finish — paperwork, transfers, and compliance — so you avoid costly mistakes. More importantly, we help you decide if a rollover makes sense in the first place.</p>
-                <p>Not every 401(k) should be rolled over. We analyze your specific situation (fees, investment options, special rules) and recommend the strategy that serves your best interest.</p>
-                <div class="service-solution-stat">
-                    <span class="service-solution-stat-num">Fiduciary</span>
-                    <span class="service-solution-stat-label">Unbiased advice with no hidden sales agenda</span>
-                </div>
-            </div>
-            <div class="service-solution-right">
-                <h4>What We Help With:</h4>
-                <ul class="service-solution-list">
-                    <li>401(k) to IRA rollovers (traditional and Roth)</li>
-                    <li>403(b) and 457 plan rollovers</li>
-                    <li>TSP rollovers for federal employees</li>
-                    <li>Pension lump-sum rollover analysis</li>
-                    <li>Inherited IRA transfers and RMD planning</li>
-                    <li>Roth conversion strategies (when and how much)</li>
-                    <li>Fee comparison and cost-benefit analysis</li>
-                    <li>Direct rollover execution (no tax withholding)</li>
-                </ul>
-            </div>
-        </div>
+
+<section class="ep-dark">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">The Solution</span>
+      <h2 class="ep-dark-title">Strategic Rollover Planning.<br><em>Zero Tax Surprises.</em></h2>
     </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Rollover Metrics</span>
+        <h3>Fiduciary Process</h3>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Timeline</span>
+          <span class="ep-stat-number">2-4<small>weeks</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Tax Planning</span>
+          <span class="ep-stat-number">Included</span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Direct Transfer</span>
+          <span class="ep-stat-number">100%</span>
+        </div>
+      </div>
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">What We Handle</span>
+        <h3>Complete Rollover Management</h3>
+        <p class="ep-glass-body">We handle the entire rollover process from start to finish — paperwork, transfers, and compliance — so you avoid costly mistakes. More importantly, we help you decide if a rollover makes sense in the first place.</p>
+        <ul class="ep-check-list">
+          <li>401(k) to IRA rollovers (traditional and Roth)</li>
+          <li>403(b) and 457 plan rollovers</li>
+          <li>TSP rollovers for federal employees</li>
+          <li>Pension lump-sum rollover analysis</li>
+          <li>Inherited IRA transfers and RMD planning</li>
+          <li>Roth conversion strategies (when and how much)</li>
+          <li>Fee comparison and cost-benefit analysis</li>
+          <li>Direct rollover execution (no tax withholding)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Analyze</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Review your accounts, fees, investment options, and tax situation to determine if a rollover makes sense.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Execute</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Handle all paperwork and coordinate the direct transfer to avoid taxes, penalties, or compliance issues.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Invest</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Deploy the funds into a diversified, low-cost portfolio aligned with your retirement timeline and goals.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+<section class="ep-transfer">
+  <div class="ep-transfer-inner">
+    <div class="ep-transfer-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-cooking.jpg"
+           alt="Couple enjoying retirement together"
+           class="ep-transfer-image">
+      <div class="ep-transfer-image-accent"></div>
     </div>
+    <div class="ep-transfer-text">
+      <span class="ep-chapter-label">Strategic Analysis</span>
+      <h2 class="ep-transfer-title">Done Right, With<br>Zero Tax Surprises</h2>
+      <p class="ep-transfer-body">Not every 401(k) should be rolled over. We analyze your specific situation — fees, investment options, special rules — and recommend the strategy that serves your best interest as a fiduciary financial advisor.</p>
+      <div class="ep-sub-feature">
+        <h4>Traditional vs. Roth Conversion</h4>
+        <p>We model both scenarios to show you the long-term tax impact and help you decide if a Roth conversion makes sense for your situation.</p>
+      </div>
+      <div class="ep-sub-feature">
+        <h4>Fee Comparison Analysis</h4>
+        <p>Compare your plan's fees and fund options against what's available in an IRA to ensure you're making the most cost-effective decision.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">Rollover FAQ</h2>
-            <p class="faq-sub">Get answers to common 401(k) and IRA rollover questions.</p>
-            <a href="/contact/" class="resources-cta">Ask About Rollovers</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Will I pay taxes on a rollover?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">A direct rollover from a traditional 401(k) to a traditional IRA is tax-free. A Roth conversion creates a taxable event in the year you convert. We model both scenarios to show you the long-term impact and help you decide if a Roth conversion makes sense.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Should I roll over my 401(k) or leave it?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">It depends. Some 401(k) plans have low fees and great investment options — in which case leaving it might make sense. We compare your plan's fees and fund options against what's available in an IRA and recommend the best path forward.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How long does a rollover take?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Most direct rollovers take 2-4 weeks from start to finish. We handle all the paperwork and coordination with your old plan administrator to ensure a smooth, tax-free transfer.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is a direct rollover vs indirect rollover?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">A direct rollover transfers funds directly between custodians with no taxes withheld. An indirect rollover sends you a check, and you have 60 days to deposit it into an IRA or face taxes and penalties. We only do direct rollovers to avoid complications.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Can I roll my 401(k) into a Roth IRA?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Yes, but it creates a taxable event. We analyze whether the long-term tax-free growth in a Roth IRA outweighs the upfront tax cost based on your income, timeline, and retirement goals.</div>
-                </button>
-            </div>
-        </div>
+
+<section class="ep-process">
+  <div class="ep-process-inner">
+    <div class="ep-process-header">
+      <div>
+        <span class="ep-chapter-label">How It Works</span>
+        <h2 class="ep-process-title">Three Steps to<br>Rollover Success</h2>
+        <p class="ep-process-sub">It's just three simple steps.</p>
+        <a href="/contact/" class="ep-btn-primary">Become a Client</a>
+      </div>
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-planning-tablet.jpg" alt="Couple planning their rollover strategy" class="ep-process-image">
     </div>
+    <div class="ep-steps-grid">
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 01</span>
+        <h3>Analyze</h3>
+        <p>Review your accounts, fees, investment options, and tax situation to determine if a rollover makes sense.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 02</span>
+        <h3>Execute</h3>
+        <p>Handle all paperwork and coordinate the direct transfer to avoid taxes, penalties, or compliance issues.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 03</span>
+        <h3>Invest</h3>
+        <p>Deploy the funds into a diversified, low-cost portfolio aligned with your retirement timeline and goals.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <div class="service-related-grid">
-            <a href="/services/portfolio-management/" class="service-related-link">
-                <span class="service-related-name">Portfolio Management</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/tax-planning/" class="service-related-link">
-                <span class="service-related-name">Tax Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/retirement-money-map/" class="service-related-link">
-                <span class="service-related-name">Retirement Money Map</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
+
+<section class="ep-faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">Rollover FAQ</h2>
+      <p class="ep-faq-sub">Get answers to common 401(k) and IRA rollover questions.</p>
+      <a href="/contact/" class="ep-btn-ghost">Ask About Rollovers</a>
     </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Will I pay taxes on a rollover? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>A direct rollover from a traditional 401(k) to a traditional IRA is tax-free. A Roth conversion creates a taxable event in the year you convert. We model both scenarios to show you the long-term impact and help you decide if a Roth conversion makes sense.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should I roll over my 401(k) or leave it? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>It depends. Some 401(k) plans have low fees and great investment options — in which case leaving it might make sense. We compare your plan's fees and fund options against what's available in an IRA and recommend the best path forward.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How long does a rollover take? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Most direct rollovers take 2-4 weeks from start to finish. We handle all the paperwork and coordination with your old plan administrator to ensure a smooth, tax-free transfer.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is a direct rollover vs indirect rollover? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>A direct rollover transfers funds directly between custodians with no taxes withheld. An indirect rollover sends you a check, and you have 60 days to deposit it into an IRA or face taxes and penalties. We only do direct rollovers to avoid complications.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Can I roll my 401(k) into a Roth IRA? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Yes, but it creates a taxable event. We analyze whether the long-term tax-free growth in a Roth IRA outweighs the upfront tax cost based on your income, timeline, and retirement goals.</p></div>
+      </button>
+    </div>
+  </div>
 </section>
 
+
+<section class="ep-related">
+  <div class="ep-related-inner">
+    <span class="ep-chapter-label">Related Services</span>
+    <h2 class="ep-framework-title" style="margin-bottom: 0;">Complete Your Financial Plan</h2>
+    <div class="ep-related-grid">
+      <a href="/services/portfolio-management/" class="ep-related-link">
+        <span class="ep-related-name">Portfolio Management</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+      <a href="/services/tax-planning/" class="ep-related-link">
+        <span class="ep-related-name">Tax Planning</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+      <a href="/services/retirement-money-map/" class="ep-related-link">
+        <span class="ep-related-name">Retirement Money Map</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Ready to consolidate your retirement accounts?</h2>
+      <p class="ep-cta-body">Every rollover situation is unique. Schedule a complimentary visit to analyze your 401(k) options and see if a rollover makes sense for your retirement strategy.</p>
+      <a href="/contact/" class="ep-btn-primary">Schedule Your Visit</a>
+      <p class="ep-cta-promise">A Fiduciary Promise</p>
+    </div>
+    <img src="/assets/images/photos/couple-boat.jpg" alt="Retired couple enjoying life on a boat" class="ep-cta-image">
+  </div>
+</section>
     </main>
 
     
@@ -722,7 +1641,7 @@
                 <a href="/case-studies/">Case Studies</a>
                 <a href="/blog/">Blog</a>
                 <a href="/book/">Free Book Chapter</a>
-                <a href="https://www.retirerightbook.com/" target="_blank" rel="noopener">Full Book</a>
+                <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" target="_blank" rel="noopener">Full Book</a>
                 <a href="/federal-benefits-seminar/">Federal Seminar</a>
             </div>
             
@@ -730,7 +1649,7 @@
                 <h4>Company</h4>
                 <a href="/about/">About Mike Stevens</a>
                 <a href="/reviews/">Client Reviews</a>
-                <a href="/contact/">Schedule a Call</a>
+                <a href="/contact/">Schedule a Visit</a>
                 <a href="/disclosures/">Important Disclosures</a>
                 <a href="/brand-facts/">Brand Facts</a>
                 <a href="/press/">Press & Media</a>
@@ -1155,7 +2074,7 @@
   </div>
   <div class="cw-chat-messages" id="cwChatMessages"></div>
   <div class="cw-chat-scheduler" id="cwScheduler">
-    <a href="/thank-you/" target="_blank">Schedule Your Free Consultation</a>
+    <a href="/thank-you/" target="_blank">Schedule Your Free Visit</a>
     <p>20-30 minutes. No obligation.</p>
   </div>
   <div class="cw-chat-resources" id="cwResources">

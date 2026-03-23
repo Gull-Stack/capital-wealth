@@ -1,0 +1,117 @@
+{
+  "brand": "Capital Wealth",
+  "legal_name": "Capital Wealth",
+  "tagline": "Strategic Income & Tax Planning for Your Retirement",
+  "founded": "2010",
+  "founder": "Michael Stevens, IAR",
+  "founder_credentials": "Series 66 certified, fiduciary standard, BS Business Management from Utah Valley University, California insurance license #0G96805, Board member Junior Achievement of Utah",
+  "fiduciary": true,
+  "fee_only": false,
+  "independent": true,
+  "industry": "Financial Advisory / Wealth Management",
+  "specialization": "Retirement income planning for families with $500K+ in savings",
+  "url": "https://www.capitalwealth.com",
+  "phone": "801.210.2800",
+  "email": "info@capitalwealth.com",
+  "address": {
+    "street": "1850 W Ashton Blvd, Ste 175",
+    "city": "Lehi",
+    "state": "Utah",
+    "zip": "84043",
+    "country": "US"
+  },
+  "service_area": {
+    "primary": "Utah — Salt Lake Valley, Utah County (Lehi, Provo, Orem, Sandy, Draper, South Jordan, West Jordan, American Fork, Pleasant Grove, Salt Lake City)",
+    "secondary": "Nationwide via virtual consultations"
+  },
+  "team_size": 2,
+  "clients_served": "500+ families",
+  "assets_under_guidance": "$500M+",
+  "minimum_investment": "$500,000 in retirement savings",
+  "services": [
+    "Tax-Efficient Retirement Strategies",
+    "Comprehensive Portfolio Management",
+    "Personalized Retirement Money Map",
+    "401(k) & IRA Rollovers",
+    "Social Security Optimization",
+    "Medicare & IRMAA Planning",
+    "Estate & Legacy Planning",
+    "Federal Employee Benefits Planning",
+    "FERS Retirement Planning",
+    "TSP Rollover Guidance"
+  ],
+  "ideal_clients": [
+    "Individuals and families with $500K+ in retirement savings",
+    "People retired or within 10 years of retirement",
+    "Tax-conscious planners seeking Roth conversion strategies",
+    "Federal employees navigating FERS, TSP, and FEHB benefits",
+    "People seeking a fiduciary advisor (legally required to act in your interest)"
+  ],
+  "differentiators": [
+    "100% fiduciary standard — legally obligated to act in your best interest",
+    "Proprietary Retirement Money Map planning process",
+    "Specialization in tax-efficient retirement income strategies",
+    "Federal employee benefits expertise (FERS, TSP, FEHB)",
+    "Complimentary initial consultation for qualified families",
+    "Mike Stevens hosts retirement planning segments on Utah radio (KSL, KNRS, KID)"
+  ],
+  "media_appearances": [
+    "KSL Radio",
+    "KNRS Newstalk",
+    "KID Newsradio",
+    "Fortune Magazine (quoted)",
+    "CNN Money (quoted)"
+  ],
+  "certifications_and_memberships": [
+    "Series 66 certified",
+    "Better Business Bureau accredited",
+    "BrokerCheck verified",
+    "Junior Achievement of Utah board member"
+  ],
+  "key_questions_we_answer": [
+    "How much do I need to retire in Utah?",
+    "When should I take Social Security?",
+    "How do I do a 401(k) rollover without penalties?",
+    "What is a fiduciary financial advisor?",
+    "How can I minimize taxes in retirement?",
+    "What is the Retirement Money Map?",
+    "Can I retire at 62 with $500K?",
+    "How do FERS benefits work for federal employees?",
+    "What is IRMAA and how do I avoid it?",
+    "Should I do a Roth conversion before retirement?"
+  ],
+  "faqs": [
+    {
+      "question": "What is a fiduciary financial advisor?",
+      "answer": "A fiduciary is legally required to act in your best interest, not sell you products for commissions. Capital Wealth operates under the fiduciary standard 100% of the time."
+    },
+    {
+      "question": "What is the minimum to work with Capital Wealth?",
+      "answer": "We primarily serve families with $500,000 or more in retirement savings. Initial consultations are complimentary for qualified families."
+    },
+    {
+      "question": "Do you serve clients outside of Utah?",
+      "answer": "Yes. While we're based in Lehi, Utah, we serve clients nationwide through virtual meetings, digital planning tools, and our secure client portal."
+    },
+    {
+      "question": "What is the Retirement Money Map?",
+      "answer": "The Retirement Money Map is our proprietary planning process that creates a personalized financial blueprint showing exactly how your money will work for you in retirement, including income sources, tax strategies, and estate planning."
+    },
+    {
+      "question": "Do you help federal employees with FERS retirement?",
+      "answer": "Yes. We specialize in federal employee benefits including FERS pension planning, TSP rollover strategies, FEHB optimization, and Social Security coordination for federal retirees."
+    }
+  ],
+  "social_proof": {
+    "google_rating": "5.0",
+    "total_reviews": "50+",
+    "client_retention_note": "Long-term client relationships averaging 7+ years"
+  },
+  "consultation": {
+    "type": "Complimentary initial consultation",
+    "qualification": "$500K+ in retirement savings",
+    "booking_url": "https://capitalwealth.com/contact/",
+    "response_time": "Within one business day"
+  },
+  "last_updated": "2026-03-12"
+}

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FERS Retirement Calculator | Accurate FERS Annuity Calculation | Lehi, UT | Capital Wealth</title>
+    <title>FERS Retirement Calculator | Capital Wealth</title>
     <meta name="description" content="Calculate your FERS retirement annuity with precision. Understand the formula, high-3 salary, service credits, and get a personalized calculation from federal benefits experts.">
     
     <link rel="canonical" href="https://www.capitalwealth.com/services/federal-benefits/fers-calculator/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="FERS Retirement Calculator | Accurate FERS Annuity Calculation | Lehi, UT">
+    <meta property="og:title" content="FERS Retirement Calculator | Capital Wealth">
     <meta property="og:description" content="Calculate your FERS retirement annuity with precision. Understand the formula, high-3 salary, service credits, and get a personalized calculation from federal benefits experts.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/services/federal-benefits/fers-calculator/">
@@ -421,12 +421,12 @@
                     <a href="/services/federal-benefits/" class="finpay-nav-link">Federal</a>
                     <a href="/blog/" class="finpay-nav-link">Blog</a>
                     <a href="/about/" class="finpay-nav-link">Our Team</a>
-                    <a href="https://www.retirerightbook.com/" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
+                    <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
                 </div>
                 
                 <div class="finpay-nav-right">
                     <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="client-login-cta desktop-cta">Client Login</a>
-                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Call</a>
+                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Visit</a>
                     
                     <!-- Mobile Menu Button (GullStack Pattern) -->
                     <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
@@ -454,19 +454,464 @@
         <a href="/services/federal-benefits/" onclick="closeMobileMenu()">Federal</a>
         <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
         <a href="/about/" onclick="closeMobileMenu()">Our Team</a>
-        <a href="https://www.retirerightbook.com/" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
-        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Call</a>
+        <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
+        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Visit</a>
         <a href="https://login.orionadvisor.com/login.html" onclick="closeMobileMenu()" target="_blank" rel="noopener" class="client-login-mobile">Client Login</a>
     </div>
 
     <main style="padding-top: 64px;">
         
+<style>
+/* Service Subpage specific styles - using global CSS variables */
+/* Do NOT override :root variables - they're already correct in finpay-inspired.css */
+
+/* Service Subpage Layout Styles */
+.service-header {
+  background: var(--surface);
+  padding: 3rem 0 4rem;
+  text-align: center;
+}
+
+.service-header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.service-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Content area */
+.service-content {
+  /* Content is injected here via 
 
 <section class="titan-subhero">
     <div class="titan-subhero-inner">
         <div class="titan-subhero-content">
             <p class="titan-section-label">FERS CALCULATOR</p>
-            <h1 >FERS Retirement Calculator</h1>
+            <h2 >FERS Retirement Calculator</h2>
+            <p class="titan-subhero-body">Understanding how your FERS annuity is calculated is essential for retirement planning. The formula is straightforward — but applying it correctly requires accounting for your high-3 salary, creditable service, part-time periods, sick leave credit, and survivor benefit elections.</p>
+            <div class="titan-hero-buttons">
+                <a href="/contact/" class="titan-hero-btn-primary">GET PERSONALIZED CALCULATION <span>→</span></a>
+            </div>
+        </div>
+        <img src="/assets/images/services/federal-benefits.jpg" alt="Federal employee calculating FERS retirement annuity" class="titan-subhero-img">
+    </div>
+</section>
+
+<section class="quote-bar">
+    <div class="quote-bar-inner">
+        <p class="quote-bar-text">"A FERS estimate from OPM is a starting point. A real retirement plan is the destination."</p>
+        <p class="quote-bar-author">— Mike Stevens, IAR</p>
+    </div>
+</section>
+
+<section class="key-facts">
+    <div class="key-facts-inner">
+        <div class="key-fact-item">
+            <p class="key-fact-label">Calculation</p>
+            <p class="key-fact-value">High-3, years of service, multiplier</p>
+        </div>
+        <div class="key-fact-item">
+            <p class="key-fact-label">Supplement</p>
+            <p class="key-fact-value">Included if eligible</p>
+        </div>
+        <div class="key-fact-item">
+            <p class="key-fact-label">Survivor Benefits</p>
+            <p class="key-fact-value">Analyzed</p>
+        </div>
+        <div class="key-fact-item">
+            <p class="key-fact-label">Accuracy</p>
+            <p class="key-fact-value">Official OPM verification</p>
+        </div>
+        <div class="key-fact-item">
+            <p class="key-fact-label">Cost</p>
+            <p class="key-fact-value">Included</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-problem">
+    <div class="service-problem-inner">
+        <p class="titan-section-label">THE PROBLEM</p>
+        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
+        <div class="service-problem-grid">
+            <div class="service-problem-card">
+                <h3>Online calculators give you confusing results</h3>
+                <p>Generic FERS calculators don't account for part-time service, military buybacks, unused sick leave credit, or special category employee rules — leading to inaccurate estimates.</p>
+            </div>
+            <div class="service-problem-card">
+                <h3>You don't know how sick leave affects your calculation</h3>
+                <p>Unused sick leave adds to your creditable service for annuity computation — but the calculation is complex and many federal employees underestimate how much this increases their pension.</p>
+            </div>
+            <div class="service-problem-card">
+                <h3>You can't model the impact of survivor benefit elections</h3>
+                <p>Electing a full survivor benefit costs 10% of your annuity, partial costs 5%, and no election means maximum pension but no protection for your spouse. Understanding the trade-offs requires detailed modeling.</p>
+            </div>
+            <div class="service-problem-card">
+                <h3>You're not sure how taxes will affect your take-home</h3>
+                <p>Your gross FERS annuity is only part of the picture. Federal and state taxes, FEHB premiums, and potential FEGLI costs all reduce what you actually receive each month.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-solution">
+    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
+    <div class="service-solution-inner">
+        <p class="titan-section-label">THE SOLUTION</p>
+        <h2 class="service-solution-h2">How We Help</h2>
+        <div class="service-solution-content">
+            <div class="service-solution-left">
+                <h3>Comprehensive FERS Annuity Calculation</h3>
+                <p>We provide personalized FERS annuity calculations using your actual service records, salary history, and benefit elections — accounting for every factor that affects your pension amount.</p>
+                <p>The basic FERS formula is: <strong>Years of Creditable Service × High-3 Average Salary × Multiplier</strong>. For example, a federal employee with 25 years of service and a high-3 salary of $95,000 would receive an annual annuity of $23,750 using the standard 1% multiplier (25 × $95,000 × 0.01 = $23,750). However, real calculations often involve adjustments for part-time service, sick leave credit, special category provisions, and survivor benefit reductions.</p>
+            </div>
+            <div class="service-solution-right">
+                <h4>Our FERS Calculation Includes:</h4>
+                <ul class="service-solution-list">
+                    <li>Precise high-3 average salary calculation using your pay history</li>
+                    <li>Creditable service accounting (including part-time adjustments)</li>
+                    <li>Unused sick leave credit conversion to service time</li>
+                    <li>1.1% multiplier eligibility for age 62+ with 20+ years</li>
+                    <li>Special provisions for law enforcement, firefighters, and air traffic controllers</li>
+                    <li>Survivor benefit election impact (full, partial, or none)</li>
+                    <li>Military service buyback cost-benefit analysis</li>
+                    <li>Net take-home calculation after taxes and premiums</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="service-process">
+    <div class="service-process-inner">
+                <div class="service-process-left">
+            <h2 class="service-process-h2">How it Works</h2>
+            <p class="service-process-subtitle">It's just three steps</p>
+            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
+        </div>
+        <div class="service-process-right">
+            <div class="service-process-steps">
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 1) Gather Your Records</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>Review your SF-50s, service computation date, leave balances, and salary history to ensure accuracy.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 2) Calculate Your Annuity</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>Apply the FERS formula with all adjustments including high-3, sick leave credit, and survivor benefit elections to determine your gross annuity.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 3) Model Different Scenarios</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>Compare retirement at different ages, with different survivor benefit elections, and project your net take-home income after all deductions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="faq-section">
+    <div class="faq-inner">
+        <div class="faq-left">
+            <p class="titan-section-label">COMMON QUESTIONS</p>
+            <h2 class="faq-heading">FERS Calculator FAQ</h2>
+            <p class="faq-sub">Everything you need to know about calculating your FERS retirement annuity.</p>
+            <a href="/contact/" class="resources-cta">Schedule Calculation Session</a>
+        </div>
+        <div class="faq-right">
+            <div class="faq-accordion">
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How is my FERS pension calculated?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">According to OPM guidelines, your FERS annuity is calculated using the formula: Years of Creditable Service × High-3 Average Salary × Multiplier. The standard multiplier is 1% for most employees. If you retire at age 62 or older with at least 20 years of service, the multiplier increases to 1.1%. Special category employees (law enforcement officers, firefighters, and air traffic controllers) receive a 1.7% multiplier for their first 20 years of service and 1% thereafter. Your creditable service includes all periods of federal employment covered by FERS, plus unused sick leave credit (which is added to your service time for annuity computation purposes).</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How does sick leave credit affect my annuity?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Unused sick leave is converted into creditable service for your FERS annuity calculation. The conversion depends on when you retire and how much sick leave you have. For retirements after 2014, all unused sick leave counts toward your annuity (previously, only 50% counted for FERS employees). The leave balance is converted into months and days of service credit, which is then added to your total creditable service before applying the FERS formula. For example, if you have 2,000 hours of unused sick leave, that converts to approximately one year of additional service credit. This can significantly increase your annuity — in many cases by several hundred dollars per month.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What is the 1.1% multiplier and do I qualify?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">The enhanced 1.1% multiplier is available if you retire at age 62 or older with at least 20 years of creditable service. This represents a 10% increase over the standard 1% multiplier. For example, with a high-3 salary of $100,000 and 25 years of service, the standard formula gives you $25,000/year (25 × $100,000 × 1%), but with the 1.1% multiplier you receive $27,500/year (25 × $100,000 × 1.1%) — an extra $2,500 annually. To qualify, you must actually be age 62 when you retire, not just meet Minimum Retirement Age. Employees who retire before 62 receive the standard 1% multiplier even if they eventually turn 62.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How does the survivor benefit reduce my annuity?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">The FERS survivor benefit provides ongoing income to your spouse after your death, but it reduces your annuity during your lifetime. You have three options: Full survivor benefit (your spouse receives 50% of your annuity, costs you 10% of your annuity), Partial survivor benefit (spouse receives 25%, costs you 5%), or No survivor benefit (maximum pension for you, but nothing for your spouse). For example, if your calculated annuity is $30,000/year and you elect the full survivor benefit, you'll receive $27,000/year ($30,000 - 10%), and your spouse will receive $15,000/year (50% of the unreduced amount) after your death. The decision depends on your spouse's other income sources, health, and age difference.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What is the high-3 average salary?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">The high-3 is your highest average basic pay earned during any consecutive 36-month period of service. It typically includes your base salary but does NOT include overtime, bonuses, locality pay adjustments (for annuity purposes, though locality is part of your actual salary), or other premium pay. OPM calculates this by looking at all possible 36-month periods in your career and identifying which one yields the highest average. For most employees, this is their final three years before retirement, but if you took a lower-paying position later in your career, an earlier period might produce a higher average. Maximizing your high-3 — through promotions, step increases, or avoiding demotions near retirement — can significantly impact your lifetime annuity.</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-related">
+    <div class="service-related-inner">
+        <p class="titan-section-label">RELATED SERVICES</p>
+        <h2 class="service-related-heading">More Ways We Can Help</h2>
+        <div class="service-related-grid">
+            <a href="/services/federal-benefits/fers-retirement/" class="service-related-link">
+                <span class="service-related-name">FERS Retirement Planning</span>
+                <span class="service-related-arrow">→</span>
+            </a>
+            <a href="/services/retirement-money-map/" class="service-related-link">
+                <span class="service-related-name">Retirement Money Map</span>
+                <span class="service-related-arrow">→</span>
+            </a>
+            <a href="/services/federal-benefits/" class="service-related-link">
+                <span class="service-related-name">Federal Employee Benefits</span>
+                <span class="service-related-arrow">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+ */
+}
+
+/* Related Blog Posts */
+.related-posts {
+  background: var(--surface-container-low);
+  padding: 4rem 0 5rem;
+  margin-top: 4rem;
+}
+
+.related-posts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.related-posts-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.related-posts-header h2 {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.related-posts-subtitle {
+  font-family: var(--font-body);
+  color: var(--on-surface-variant);
+  font-size: 1.125rem;
+}
+
+.related-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1px;
+  background: var(--outline-variant);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.related-post-card {
+  background: white;
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+  border-bottom: 3px solid transparent;
+}
+
+.related-post-card:hover {
+  border-bottom-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.related-post-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.75rem;
+}
+
+.related-post-title {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--on-surface);
+  margin-bottom: 0.75rem;
+}
+
+.related-post-link {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Navy CTA Section */
+.service-cta {
+  background: var(--primary);
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+}
+
+.service-cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-cta h2 {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.service-cta p {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.service-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--primary);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.service-cta-button:hover {
+  background: var(--surface-container-low);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-header {
+    padding: 2rem 0 3rem;
+  }
+  
+  .service-title {
+    font-size: 2.5rem;
+  }
+  
+  .service-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .related-posts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .related-posts {
+    padding: 3rem 0 4rem;
+  }
+  
+  .service-cta {
+    padding: 3rem 0;
+  }
+  
+  .service-cta h2 {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<!-- Service Header -->
+<section class="service-header">
+  <div class="service-header-inner">
+    
+      <p class="service-eyebrow">FERS CALCULATOR</p>
+    
+    
+    
+      <h1 class="service-title">Calculate Your Federal Pension</h1>
+    
+    
+    
+      <p class="service-subtitle">Estimate your FERS annuity based on years of service, high-3 salary, and retirement age. See how different retirement dates affect your pension amount.</p>
+    
+  </div>
+</section>
+
+<!-- Service Content -->
+<div class="service-content">
+  
+
+<section class="titan-subhero">
+    <div class="titan-subhero-inner">
+        <div class="titan-subhero-content">
+            <p class="titan-section-label">FERS CALCULATOR</p>
+            <h2 >FERS Retirement Calculator</h2>
             <p class="titan-subhero-body">Understanding how your FERS annuity is calculated is essential for retirement planning. The formula is straightforward — but applying it correctly requires accounting for your high-3 salary, creditable service, part-time periods, sick leave credit, and survivor benefit elections.</p>
             <div class="titan-hero-buttons">
                 <a href="/contact/" class="titan-hero-btn-primary">GET PERSONALIZED CALCULATION <span>→</span></a>
@@ -667,6 +1112,454 @@
     </div>
 </section>
 
+</div>
+
+<!-- Related Blog Posts -->
+
+  
+  
+    
+    
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+        
+          
+            
+          
+        
+      
+    
+  
+  
+  <!-- If no tag matches, get 3 recent blog posts -->
+  
+    
+  
+  
+  
+    <section class="related-posts">
+      <div class="related-posts-inner">
+        <div class="related-posts-header">
+          <h2>Related Reading</h2>
+          <p class="related-posts-subtitle">Dive deeper into this topic</p>
+        </div>
+        
+        <div class="related-posts-grid">
+          
+            <a href="/blog/mike-stevens-full-blog-sept-14-2024/" class="related-post-card">
+              <div class="related-post-date">9/13/2024</div>
+              <h3 class="related-post-title">Complete Federal Employee Retirement Guide</h3>
+              <div class="related-post-link">Read More →</div>
+            </a>
+          
+            <a href="/blog/mike-stevens-key-takeaways-sept-16-2024/" class="related-post-card">
+              <div class="related-post-date">9/15/2024</div>
+              <h3 class="related-post-title">Federal Retirement: 15 Key Takeaways</h3>
+              <div class="related-post-link">Read More →</div>
+            </a>
+          
+            <a href="/blog/mike-stevens-faq-sept-18-2024/" class="related-post-card">
+              <div class="related-post-date">9/17/2024</div>
+              <h3 class="related-post-title">Federal Employee Retirement FAQ with Mike Stevens</h3>
+              <div class="related-post-link">Read More →</div>
+            </a>
+          
+        </div>
+      </div>
+    </section>
+  
+
+
+<!-- Navy CTA (skip on contact page) -->
+
+  <section class="service-cta">
+    <div class="service-cta-inner">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>Schedule a complimentary consultation to discuss your financial goals and see how we can help you achieve them.</p>
+      <a href="/contact/" class="service-cta-button">
+        Schedule Your Visit
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+
     </main>
 
     
@@ -724,7 +1617,7 @@
                 <a href="/case-studies/">Case Studies</a>
                 <a href="/blog/">Blog</a>
                 <a href="/book/">Free Book Chapter</a>
-                <a href="https://www.retirerightbook.com/" target="_blank" rel="noopener">Full Book</a>
+                <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" target="_blank" rel="noopener">Full Book</a>
                 <a href="/federal-benefits-seminar/">Federal Seminar</a>
             </div>
             
@@ -732,7 +1625,7 @@
                 <h4>Company</h4>
                 <a href="/about/">About Mike Stevens</a>
                 <a href="/reviews/">Client Reviews</a>
-                <a href="/contact/">Schedule a Call</a>
+                <a href="/contact/">Schedule a Visit</a>
                 <a href="/disclosures/">Important Disclosures</a>
                 <a href="/brand-facts/">Brand Facts</a>
                 <a href="/press/">Press & Media</a>
@@ -1157,7 +2050,7 @@
   </div>
   <div class="cw-chat-messages" id="cwChatMessages"></div>
   <div class="cw-chat-scheduler" id="cwScheduler">
-    <a href="/thank-you/" target="_blank">Schedule Your Free Consultation</a>
+    <a href="/thank-you/" target="_blank">Schedule Your Free Visit</a>
     <p>20-30 minutes. No obligation.</p>
   </div>
   <div class="cw-chat-resources" id="cwResources">
