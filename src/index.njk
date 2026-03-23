@@ -4,431 +4,1147 @@ title: "Retirement Planning | Fiduciary Advisor Lehi, UT | Capital Wealth"
 description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capital Wealth have helped 650+ clients retire with confidence. Retirement income, tax strategies, 401(k) rollovers & Social Security optimization."
 ---
 
+<style>
+/* Hero Section */
+.hero-fullbleed {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5rem;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, var(--surface) 0%, transparent 60%);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 50%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.hero-content.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease 0.2s;
+}
+
+.hero-title {
+  font-family: var(--font-serif-display);
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease 0.4s;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--on-surface);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease 0.6s;
+}
+
+.hero-cta {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease 0.8s;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+.hero-stats {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease 1s;
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat-number {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: block;
+}
+
+.hero-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Five Pillars Section */
+.five-pillars {
+  padding: 8rem 2rem;
+  background: var(--surface);
+}
+
+.pillars-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+.pillars-title {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.pillars-subtitle {
+  font-size: 1.1rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.pillars-accent {
+  height: 1px;
+  background: var(--outline-variant);
+  max-width: 200px;
+  margin: 0 auto 2rem;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pillar-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.pillar-card:nth-child(3) {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, rgba(25,79,144,0.05), rgba(240,159,84,0.05));
+  border: 1px solid rgba(25,79,144,0.1);
+}
+
+.pillar-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pillar-card:nth-child(3).animate {
+  transform: scale(1.05) translateY(0);
+}
+
+.pillar-card:hover {
+  transform: translateY(-8px);
+}
+
+.pillar-card:nth-child(3):hover {
+  transform: scale(1.05) translateY(-8px);
+}
+
+.pillar-icon {
+  margin-bottom: 1.5rem;
+}
+
+.pillar-icon svg {
+  stroke: var(--primary);
+}
+
+.pillar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.pillar-desc {
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: auto;
+}
+
+.pillar-link {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+/* Meet Mike Section */
+.meet-mike {
+  padding: 8rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.mike-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.mike-photo-container {
+  position: relative;
+}
+
+.mike-photo {
+  width: 100%;
+  border-radius: 20px;
+  filter: grayscale(0.2);
+}
+
+.mike-quote-card {
+  position: absolute;
+  bottom: -2rem;
+  right: -2rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.2);
+  max-width: 300px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.mike-details {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.8s ease;
+}
+
+.mike-details.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mike-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.mike-title {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.mike-subtitle {
+  font-size: 1.1rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.mike-credentials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.credential-item {
+  font-size: 0.9rem;
+  color: var(--on-surface-variant);
+}
+
+.mike-desc {
+  line-height: 1.7;
+  color: var(--on-surface);
+  margin-bottom: 2rem;
+}
+
+/* As Seen On Section */
+.as-seen-on {
+  padding: 4rem 2rem;
+  background: var(--surface);
+  text-align: center;
+}
+
+.logos-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.logos-grid img {
+  height: 40px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.logos-grid img:hover {
+  opacity: 1;
+}
+
+/* Media Section */
+.media-section {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.media-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.media-video {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.media-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Federal Benefits Section */
+.federal-benefits {
+  padding: 8rem 2rem;
+  background: var(--primary);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.federal-benefits::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M0 0h40v40H0V0zm20 20v20h20V20H20z'/%3E%3C/g%3E%3C/svg%3E") repeat;
+  z-index: 1;
+}
+
+.federal-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.federal-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.federal-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 1rem;
+}
+
+.federal-title {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  font-style: italic;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.federal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.federal-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.federal-card-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 1rem;
+}
+
+.federal-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.federal-stat-number {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  display: block;
+}
+
+.federal-stat-label {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* SDBA Section */
+.sdba-section {
+  padding: 8rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.sdba-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.sdba-title {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.sdba-stats-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.sdba-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Comparison Section */
+.comparison-section {
+  padding: 8rem 2rem;
+  background: var(--surface);
+}
+
+.comparison-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.feature-item svg {
+  flex-shrink: 0;
+}
+
+/* Book Section */
+.book-section {
+  padding: 8rem 2rem;
+  background: rgba(var(--tertiary-rgb), 0.3);
+}
+
+.book-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.book-cover {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 8rem 2rem;
+  background: var(--surface);
+}
+
+.testimonials-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  border-top: 4px solid var(--primary);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.testimonial-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial-quote {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--on-surface);
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--on-surface-variant);
+}
+
+/* Final CTA Section */
+.final-cta {
+  padding: 8rem 2rem;
+  background: var(--surface-container-low);
+  text-align: center;
+}
+
+.final-cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.final-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.final-cta-btn {
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  transition: all 0.3s ease;
+}
+
+.final-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.fiduciary-promise {
+  font-size: 0.9rem;
+  color: var(--on-surface-variant);
+  font-style: italic;
+}
+
+/* Animation Classes */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .pillar-card:nth-child(3) {
+    transform: none;
+  }
+  
+  .federal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    width: 90%;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-stats {
+    position: static;
+    margin-top: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .mike-content,
+  .media-content,
+  .sdba-content,
+  .comparison-grid,
+  .book-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .federal-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .federal-stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+</style>
+
 {# ═══════════════════════════════════════════════════════════
-   HERO SECTION — Full-bleed image with overlaid text
+   1. HERO SECTION — Full-bleed image with text overlaid at bottom
    ═══════════════════════════════════════════════════════════ #}
 <section class="hero-fullbleed">
-    <div class="hero-fullbleed-bg">
-        <img src="/assets/images/photos/CWA-Mountain-Couple-home-header.webp" alt="Couple enjoying retirement in the Utah mountains" class="hero-fullbleed-img">
-        <div class="hero-fullbleed-overlay"></div>
-    </div>
-    <div class="hero-fullbleed-content">
-        <span class="hero-fullbleed-eyebrow hero-animate">WEALTH MANAGEMENT & FINANCIAL PLANNING</span>
-        <h1 class="hero-fullbleed-title hero-animate">Retire with<br>confidence. Not<br><em>confusion.</em></h1>
-        <p class="hero-fullbleed-desc hero-animate">You've spent decades building your savings. Now it's time to turn them into a retirement you can actually enjoy — with reliable income, lower taxes, and a plan that works even when markets don't.</p>
-        <div class="hero-fullbleed-buttons hero-animate">
-            <a href="/contact/" class="hero-fullbleed-btn-primary">Get Your Free Assessment</a>
-            <a href="/book/" class="hero-fullbleed-btn-secondary">Free Book Chapter</a>
+    <img src="/assets/images/photos/CWA-Mountain-Couple-home-header.webp" 
+         alt="Couple enjoying retirement in the Utah mountains" 
+         class="hero-bg">
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+        <span class="hero-eyebrow">WEALTH MANAGEMENT & FINANCIAL PLANNING</span>
+        <h1 class="hero-title">Retire with confidence. Not confusion.</h1>
+        <p class="hero-subtitle">You've spent decades building your savings. Now it's time to turn them into a retirement you can actually enjoy — with reliable income, lower taxes, and a plan that works even when markets don't.</p>
+        <div class="hero-cta">
+            <a href="/contact/" class="hero-btn">Schedule a Consultation</a>
         </div>
     </div>
-    <div class="hero-fullbleed-scroll">
-        <span>SCROLL TO EXPLORE</span>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   STATS SECTION - Clean editorial approach
-   ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-stats">
-    <div class="container">
-        <div class="finpay-stats-grid">
-            <div class="finpay-stat">
-                <span class="finpay-stat-number">650+</span>
-                <span class="finpay-stat-label">Clients Served</span>
-            </div>
-            <div class="finpay-stat">
-                <span class="finpay-stat-number">25+</span>
-                <span class="finpay-stat-label">Years Experience</span>
-            </div>
-            <div class="finpay-stat">
-                <span class="finpay-stat-number">#1</span>
-                <span class="finpay-stat-label">Radio Show in Utah</span>
-            </div>
+    
+    <div class="hero-stats">
+        <div class="hero-stat">
+            <span class="hero-stat-number">650+</span>
+            <span class="hero-stat-label">Clients Served</span>
+        </div>
+        <div class="hero-stat">
+            <span class="hero-stat-number">25+</span>
+            <span class="hero-stat-label">Years Experience</span>
+        </div>
+        <div class="hero-stat">
+            <span class="hero-stat-number">#1</span>
+            <span class="hero-stat-label">Radio Show in Utah</span>
         </div>
     </div>
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   SERVICES SECTION - Editorial cards with numbered pillars and hover effects
+   2. FIVE PILLARS SECTION — Clean 5-column card grid
    ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-services no-borders" style="position: relative; overflow: hidden;">
-    <div class="floating-accent floating-accent-1"></div>
-    <div class="floating-accent floating-accent-2"></div>
-    <div class="container">
-        <div class="finpay-services-header">
-            <span class="finpay-services-label eyebrow-label">PRECISION SERVICES</span>
-            <h2>Five Pillars. One Plan. Zero Guesswork.</h2>
-            <div style="height: 1px; background: var(--outline-variant); opacity: 0.2; margin: 2rem auto; max-width: 200px;"></div>
-            <p>A comprehensive framework that turns your savings into reliable retirement income — with tax efficiency, market protection, and healthcare planning all coordinated.</p>
+<section class="five-pillars">
+    <div class="pillars-header">
+        <h2 class="pillars-title">The Five Pillars of Retirement</h2>
+        <p class="pillars-subtitle">A comprehensive framework that turns your savings into reliable retirement income — with tax efficiency, market protection, and healthcare planning all coordinated.</p>
+        <div class="pillars-accent"></div>
+    </div>
+    
+    <div class="pillars-grid">
+        <div class="pillar-card reveal-on-scroll">
+            <div class="pillar-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+            </div>
+            <h3 class="pillar-title">Income That Lasts</h3>
+            <p class="pillar-desc">Turn your savings into reliable income streams that last your entire lifetime — not just the good years.</p>
+            <a href="/services/retirement-money-map/" class="pillar-link">Read More →</a>
         </div>
         
-        <div class="services-grid">
-            <div class="finpay-card">
-                <span class="eyebrow-label">PILLAR 01</span>
-                <div class="card-icon" style="margin-bottom: 2rem;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                    </svg>
-                </div>
-                <h3>Income That Lasts</h3>
-                <p>Turn your savings into reliable income streams that last your entire lifetime — not just the good years.</p>
-                <a href="/services/retirement-money-map/">
-                    Learn more <span style="transition: transform 0.2s ease;">→</span>
-                </a>
-                <div class="card-accent-line"></div>
+        <div class="pillar-card reveal-on-scroll">
+            <div class="pillar-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
             </div>
-            
-            <div class="finpay-card">
-                <span class="eyebrow-label">PILLAR 02</span>
-                <div class="card-icon" style="margin-bottom: 2rem;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                        <line x1="8" y1="21" x2="16" y2="21"/>
-                        <line x1="12" y1="17" x2="12" y2="21"/>
-                    </svg>
-                </div>
-                <h3>Tax-Smart Withdrawals</h3>
-                <p>Strategic withdrawal planning that could save you thousands in unnecessary taxes every single year.</p>
-                <a href="/services/tax-planning/">
-                    Learn more <span style="transition: transform 0.2s ease;">→</span>
-                </a>
-                <div class="card-accent-line"></div>
+            <h3 class="pillar-title">Tax-Smart Withdrawals</h3>
+            <p class="pillar-desc">Strategic withdrawal planning that could save you thousands in unnecessary taxes every single year.</p>
+            <a href="/services/tax-planning/" class="pillar-link">Read More →</a>
+        </div>
+        
+        <div class="pillar-card reveal-on-scroll">
+            <div class="pillar-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
             </div>
-            
-            <div class="finpay-card">
-                <span class="eyebrow-label">PILLAR 03</span>
-                <div class="card-icon" style="margin-bottom: 2rem;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    </svg>
-                </div>
-                <h3>Market Protection</h3>
-                <p>Protect your portfolio during downturns without sacrificing the growth you need to stay ahead of inflation.</p>
-                <a href="/services/portfolio-management/">
-                    Learn more <span style="transition: transform 0.2s ease;">→</span>
-                </a>
-                <div class="card-accent-line"></div>
+            <h3 class="pillar-title">Market Protection</h3>
+            <p class="pillar-desc">Protect your portfolio during downturns without sacrificing the growth you need to stay ahead of inflation.</p>
+            <a href="/services/portfolio-management/" class="pillar-link">Read More →</a>
+        </div>
+        
+        <div class="pillar-card reveal-on-scroll">
+            <div class="pillar-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/>
+                </svg>
             </div>
-            
-            <div class="finpay-card">
-                <span class="eyebrow-label">PILLAR 04</span>
-                <div class="card-icon" style="margin-bottom: 2rem;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/>
-                    </svg>
-                </div>
-                <h3>Healthcare Planning</h3>
-                <p>The blind spot most retirement plans miss. A clear framework for the costs that catch retirees off guard.</p>
-                <a href="/services/medicare-irmaa/">
-                    Learn more <span style="transition: transform 0.2s ease;">→</span>
-                </a>
-                <div class="card-accent-line"></div>
+            <h3 class="pillar-title">Healthcare Planning</h3>
+            <p class="pillar-desc">The blind spot most retirement plans miss. A clear framework for the costs that catch retirees off guard.</p>
+            <a href="/services/medicare-irmaa/" class="pillar-link">Read More →</a>
+        </div>
+        
+        <div class="pillar-card reveal-on-scroll">
+            <div class="pillar-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
             </div>
-            
-            <div class="finpay-card">
-                <span class="eyebrow-label">PILLAR 05</span>
-                <div class="card-icon" style="margin-bottom: 2rem;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                    </svg>
-                </div>
-                <h3>Estate & Legacy</h3>
-                <p>Go beyond a basic will. Protect your family's future and leave the legacy you've earned.</p>
-                <a href="/services/estate-planning/">
-                    Learn more <span style="transition: transform 0.2s ease;">→</span>
-                </a>
-                <div class="card-accent-line"></div>
-            </div>
+            <h3 class="pillar-title">Estate & Legacy</h3>
+            <p class="pillar-desc">Go beyond a basic will. Protect your family's future and leave the legacy you've earned.</p>
+            <a href="/services/estate-planning/" class="pillar-link">Read More →</a>
         </div>
     </div>
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   MEET MIKE SECTION - Asymmetric with photo + overlapping navy info card
+   3. MEET MIKE SECTION — Split layout with image and text
    ═══════════════════════════════════════════════════════════ #}
-<section class="meet-mike-section">
-    <div class="container">
-        <div class="meet-mike-content">
-            <div class="meet-mike-left">
-                <div class="meet-mike-photo meet-mike-photo">
-                    <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Founder of Capital Wealth">
-                </div>
-                <!-- Navy overlay removed — let Mike's natural beauty shine -->
+<section class="meet-mike">
+    <div class="mike-content">
+        <div class="mike-photo-container reveal-on-scroll">
+            <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Founder of Capital Wealth" class="mike-photo">
+            <div class="mike-quote-card">
+                <p style="font-family: var(--font-serif-display); font-style: italic; margin: 0; color: var(--primary);">"I'm passionate about helping people bring all the pieces of their financial lives together with clarity and purpose."</p>
             </div>
-            <div class="meet-mike-right meet-mike-details">
-                <span class="eyebrow-label">FOUNDER & PRESIDENT</span>
-                <h2 class="meet-mike-title">Meet Mike Stevens</h2>
-                <p class="meet-mike-subtitle">Investment Adviser Representative</p>
-                <div class="meet-mike-credentials">
-                    <span>25+ years fiduciary advisory</span>
-                    <span>Host, Retire Right Radio</span>
-                    <span>Author, <em>Retire Right, Retire Now</em></span>
-                    <span>650+ clients served</span>
-                </div>
-                <p class="meet-mike-desc">Michael founded Capital Wealth in 2009 with a mission: help families retire with clarity, confidence, and a plan that actually works. Over 650 clients and $500M+ in assets later, he's built a practice focused entirely on retirement income planning, tax optimization, and fiduciary advice.</p>
-                <blockquote class="meet-mike-quote">"I'm passionate about helping people bring all the pieces of their financial lives together with clarity and purpose."</blockquote>
-                <div class="meet-mike-buttons">
-                    <a href="/contact/" class="finpay-btn-primary">Meet with Mike <span>→</span></a>
-                    <a href="/about/" class="finpay-btn-secondary" style="border-color: var(--primary); color: var(--primary);">Learn More</a>
-                </div>
+        </div>
+        
+        <div class="mike-details reveal-on-scroll">
+            <span class="mike-eyebrow">OUR FOUNDER</span>
+            <h2 class="mike-title">Meet Mike Stevens</h2>
+            <p class="mike-subtitle">Investment Adviser Representative</p>
+            
+            <div class="mike-credentials">
+                <div class="credential-item">25+ years fiduciary advisory</div>
+                <div class="credential-item">Host, Retire Right Radio</div>
+                <div class="credential-item">Author, <em>Retire Right, Retire Now</em></div>
+                <div class="credential-item">650+ clients served</div>
             </div>
+            
+            <p class="mike-desc">Michael founded Capital Wealth in 2009 with a mission: help families retire with clarity, confidence, and a plan that actually works. Over 650 clients and $500M+ in assets later, he's built a practice focused entirely on retirement income planning, tax optimization, and fiduciary advice.</p>
         </div>
     </div>
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   IN THE MEDIA - As Seen On logos + radio/video feature
+   4. AS SEEN ON + MEDIA SECTIONS — Logo bar + radio section
    ═══════════════════════════════════════════════════════════ #}
-<div class="as-seen-banner">
-    <span class="as-seen-text">As Seen <em>and</em> Heard On:</span>
-    <img src="/assets/images/media/ksl.png" alt="KSL" loading="lazy">
-    <img src="/assets/images/media/fortune.png" alt="Fortune" loading="lazy">
-    <img src="/assets/images/media/cnn-money.png" alt="CNN Money" loading="lazy">
-    <img src="/assets/images/media/knrs-2.png" alt="KNRS" loading="lazy">
-    <img src="/assets/images/media/newstalk.png" alt="Newstalk" loading="lazy">
-    <img src="/assets/images/media/KIDLogo-small.png" alt="KID" loading="lazy">
-</div>
+<section class="as-seen-on">
+    <p style="font-size: 0.9rem; color: var(--on-surface-variant); margin-bottom: 2rem;">As Seen <em>and</em> Heard On:</p>
+    <div class="logos-grid">
+        <img src="/assets/images/media/ksl.png" alt="KSL" loading="lazy">
+        <img src="/assets/images/media/fortune.png" alt="Fortune" loading="lazy">
+        <img src="/assets/images/media/cnn-money.png" alt="CNN Money" loading="lazy">
+        <img src="/assets/images/media/knrs-2.png" alt="KNRS" loading="lazy">
+        <img src="/assets/images/media/newstalk.png" alt="Newstalk" loading="lazy">
+        <img src="/assets/images/media/KIDLogo-small.png" alt="KID" loading="lazy">
+    </div>
+</section>
 
 <section class="media-section">
-    <div class="media-inner media-inner--flipped">
-        <div class="media-photo media-photo--large">
+    <div class="media-content">
+        <div class="media-video">
             <video autoplay muted loop playsinline>
                 <source src="/assets/images/photos/hero-video.mp4" type="video/mp4">
             </video>
         </div>
         <div class="media-text">
-            <span class="eyebrow-label">IN THE MEDIA</span>
+            <span class="eyebrow-label" style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--secondary);">IN THE MEDIA</span>
             <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; font-weight: 400; color: var(--primary); margin-bottom: 1rem;">Capital Wealth Radio</h2>
             <p><strong>Straight talk from experts with real guidance you can use.</strong></p>
             <p>Whether you tune in to Capital Wealth Radio on KSL, KNRS, or Newstalk, you'll access practical retirement advice to help you make smarter financial decisions — from tax strategies to Social Security timing.</p>
-            <a href="/resources/" class="finpay-btn-primary" style="display: inline-block; margin-top: 1rem;">Access Media Library <span>→</span></a>
+            <a href="/resources/" class="hero-btn" style="display: inline-block; margin-top: 1rem;">Access Media Library <span>→</span></a>
         </div>
     </div>
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   FEDERAL BENEFITS SECTION - Dedicated federal employee content
+   5. FEDERAL BENEFITS SECTION — Dark navy background section
    ═══════════════════════════════════════════════════════════ #}
-<section class="federal-benefits-section">
-    <div class="container">
-        <div class="federal-benefits-header">
-            <span class="eyebrow-label">FEDERAL EMPLOYEE SPECIALISTS</span>
-            <h2 class="federal-benefits-title">Your Service Deserves a Secure Retirement</h2>
-            <p class="federal-benefits-subtitle">Federal employees have one of the best benefits packages in the country — but maximizing FERS, TSP, FEGLI, and FEHB requires specialized expertise most advisors don't have.</p>
-            
-
+<section class="federal-benefits">
+    <div class="federal-content">
+        <div class="federal-header">
+            <span class="federal-eyebrow">SPECIALIZED ADVISORY</span>
+            <h2 class="federal-title">Serving Those Who Serve Our Nation</h2>
+            <p style="font-size: 1.1rem; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">Federal employees have one of the best benefits packages in the country — but maximizing FERS, TSP, FEGLI, and FEHB requires specialized expertise most advisors don't have.</p>
         </div>
         
-        <div class="federal-benefits-grid">
-            <div class="finpay-card federal-benefit-card" >
-                <span class="eyebrow-label">SERVICE 01</span>
-                <div class="card-icon" style="margin-bottom: 2rem;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <div class="federal-grid">
+            <div class="federal-card reveal-on-scroll">
+                <div class="federal-card-eyebrow">Strategy 01</div>
+                <div style="margin-bottom: 1rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                         <polyline points="9,22 9,12 15,12 15,22"/>
                     </svg>
                 </div>
-                <h3>FERS Optimization</h3>
-                <p>Pension calculations, survivor benefits, retirement date optimization, and FERS supplement bridge planning.</p>
-                <a href="/services/federal-benefits/fers-retirement/">
-                    Learn more <span style="transition: transform 0.2s ease;">→</span>
-                </a>
-                <div class="card-accent-line"></div>
+                <h3 style="color: white; margin-bottom: 1rem;">FERS</h3>
+                <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">Pension calculations, survivor benefits, retirement date optimization, and FERS supplement bridge planning.</p>
             </div>
             
-            <div class="finpay-card federal-benefit-card" >
-                <span class="eyebrow-label">SERVICE 02</span>
-                <div class="card-icon" style="margin-bottom: 2rem;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <div class="federal-card reveal-on-scroll">
+                <div class="federal-card-eyebrow">Strategy 02</div>
+                <div style="margin-bottom: 1rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="12" y1="1" x2="12" y2="23"/>
                         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
                     </svg>
                 </div>
-                <h3>TSP Management</h3>
-                <p>Fund allocation strategies, traditional vs. Roth analysis, withdrawal planning, and rollover decisions.</p>
-                <a href="/services/federal-benefits/tsp-planning/">
-                    Learn more <span style="transition: transform 0.2s ease;">→</span>
-                </a>
-                <div class="card-accent-line"></div>
+                <h3 style="color: white; margin-bottom: 1rem;">TSP</h3>
+                <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">Fund allocation strategies, traditional vs. Roth analysis, withdrawal planning, and rollover decisions.</p>
             </div>
             
-            <div class="finpay-card federal-benefit-card" >
-                <span class="eyebrow-label">SERVICE 03</span>
-                <div class="card-icon" style="margin-bottom: 2rem;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <div class="federal-card reveal-on-scroll">
+                <div class="federal-card-eyebrow">Strategy 03</div>
+                <div style="margin-bottom: 1rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                     </svg>
                 </div>
-                <h3>FEGLI Analysis</h3>
-                <p>Coverage review, post-retirement cost projections, and comparison with private alternatives to save thousands.</p>
-                <a href="/services/federal-benefits/fegli/">
-                    Learn more <span style="transition: transform 0.2s ease;">→</span>
-                </a>
-                <div class="card-accent-line"></div>
+                <h3 style="color: white; margin-bottom: 1rem;">FEGLI</h3>
+                <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">Coverage review, post-retirement cost projections, and comparison with private alternatives to save thousands.</p>
             </div>
             
-            <div class="finpay-card federal-benefit-card" >
-                <span class="eyebrow-label">SERVICE 04</span>
-                <div class="card-icon" style="margin-bottom: 2rem;">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <div class="federal-card reveal-on-scroll">
+                <div class="federal-card-eyebrow">Strategy 04</div>
+                <div style="margin-bottom: 1rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/>
                     </svg>
                 </div>
-                <h3>FEHB Coordination</h3>
-                <p>Keeping FEHB into retirement, Medicare coordination, and optimizing your healthcare strategy.</p>
-                <a href="/services/federal-benefits/fehb-retirement/">
-                    Learn more <span style="transition: transform 0.2s ease;">→</span>
-                </a>
-                <div class="card-accent-line"></div>
+                <h3 style="color: white; margin-bottom: 1rem;">FEHB</h3>
+                <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">Keeping FEHB into retirement, Medicare coordination, and optimizing your healthcare strategy.</p>
             </div>
         </div>
         
-        <div class="federal-benefits-stats">
+        <div class="federal-stats">
             <div class="federal-stat">
                 <span class="federal-stat-number">500+</span>
                 <span class="federal-stat-label">Federal Employees Served</span>
             </div>
             <div class="federal-stat">
                 <span class="federal-stat-number">$3,200</span>
-                <span class="federal-stat-label">Avg. FEGLI Savings per Year</span>
+                <span class="federal-stat-label">Avg FEGLI Savings</span>
             </div>
             <div class="federal-stat">
                 <span class="federal-stat-number">$780K</span>
-                <span class="federal-stat-label">Average TSP at Retirement</span>
+                <span class="federal-stat-label">Average TSP</span>
             </div>
         </div>
         
-        <div class="federal-benefits-cta">
-            <a href="/services/federal-benefits/" class="finpay-btn-primary">Explore Federal Benefits <span>→</span></a>
+        <div style="text-align: center;">
+            <a href="/services/federal-benefits/" class="hero-btn" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">Explore Federal Benefits <span>→</span></a>
         </div>
     </div>
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   COMPARISON SECTION - Editorial 2-column grid
+   6. NEW: SDBA / TSP MUTUAL FUND WINDOW SECTION — Split layout
    ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-comparison">
-    <div class="container">
-        <div class="finpay-comparison-content">
-            <div class="finpay-comparison-header">
-                <h2>The Capital Wealth Difference</h2>
-                <p>Why professional retirement planning matters for your financial future.</p>
+<section class="sdba-section">
+    <div class="sdba-content">
+        <div class="reveal-on-scroll">
+            <h2 class="sdba-title">Unlock Your TSP's Full Potential</h2>
+            <p style="font-size: 1.1rem; color: var(--on-surface-variant); margin-bottom: 2rem;">The TSP Mutual Fund Window (formerly SDBA) opens access to thousands of investment options beyond the standard TSP funds. For federal employees with $40K+ in their TSP, this could be the key to enhanced diversification and professional portfolio management.</p>
+            
+            <div style="margin-bottom: 2rem;">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">Key Benefits:</h3>
+                <ul style="line-height: 1.8; color: var(--on-surface);">
+                    <li><strong>Enhanced Diversification:</strong> Access to sector-specific funds, international markets, and alternative investments</li>
+                    <li><strong>Professional Management:</strong> Work with Capital Wealth to optimize your expanded investment options</li>
+                    <li><strong>Risk Mitigation:</strong> Reduce concentration risk beyond the five core TSP funds</li>
+                    <li><strong>Tax Efficiency:</strong> Maintain tax-deferred growth while expanding your investment universe</li>
+                </ul>
             </div>
             
-            <div class="editorial-comparison-grid">
-                <div class="comparison-left">
-                    <h3>Capital Wealth</h3>
-                    <div class="comparison-features">
-                        <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="20,6 9,17 4,12"/>
-                            </svg>
-                            <span>Fiduciary (legally required to act in YOUR interest)</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="20,6 9,17 4,12"/>
-                            </svg>
-                            <span>Retirement Income Planning</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="20,6 9,17 4,12"/>
-                            </svg>
-                            <span>Tax Planning & Preparation</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="20,6 9,17 4,12"/>
-                            </svg>
-                            <span>Estate & Legacy Planning</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="20,6 9,17 4,12"/>
-                            </svg>
-                            <span>Healthcare Cost Planning</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="20,6 9,17 4,12"/>
-                            </svg>
-                            <span>25+ Years Experience</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="comparison-right">
-                    <h4>Why It Matters</h4>
-                    <p>Most retirement plans fail because they're built around products, not people. Capital Wealth takes a comprehensive approach that coordinates all aspects of your financial life.</p>
-                    <p>As fiduciaries, we're legally required to put your interests first — not sell you products that benefit us. Our integrated planning covers the critical areas other advisors often miss or charge extra for.</p>
-                    <p>The result? A retirement plan that actually works, backed by 25+ years of experience helping families like yours navigate their golden years with confidence.</p>
-                </div>
+            <div style="margin-bottom: 2rem;">
+                <a href="/contact/" class="hero-btn">Schedule SDBA Review <span>→</span></a>
             </div>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   BOOK SECTION - "Retire Right, Retire Now" book promotion
-   ═══════════════════════════════════════════════════════════ #}
-<section class="book-promotion-section">
-    <div class="container">
-        <div class="book-content">
-            <div class="book-left book-left">
-                <div class="book-cover-container">
-                    <img src="/assets/images/book-cover.png" alt="Retire Right, Retire Now book cover" class="book-cover-img">
-                </div>
-            </div>
-            <div class="book-right book-right">
-                <span class="eyebrow-label" style="color: var(--secondary);">FREE BOOK CHAPTER</span>
-                <h2 class="book-title">Retire Right, Retire Now</h2>
-                <p class="book-subtitle">The Ultimate Guide to Retirement Income Planning</p>
-                <p class="book-description">After helping 650+ clients retire with confidence, Mike Stevens reveals the proven strategies that turn your savings into reliable retirement income. Download the first chapter free and discover:</p>
-                <ul class="book-benefits">
-                    <li>Why a portfolio is not a plan (and what is)</li>
-                    <li>The 5 pillars of successful retirement income</li>
-                    <li>How to protect your savings from market volatility</li>
-                    <li>Tax strategies that could save you thousands</li>
-                    <li>The biggest mistakes people make with their retirement</li>
-                </ul>
-                <div class="book-buttons">
-                    <a href="/book/" class="finpay-btn-primary" style="background: var(--surface-container-lowest); color: var(--primary);">Download Free Chapter <span>→</span></a>
-                    <a href="/contact/" class="finpay-btn-secondary">Discuss Your Situation</a>
-                </div>
-                <p class="book-note">No email required. Instant download.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   TESTIMONIALS - Editorial pull-quote cards in 3-column grid
-   ═══════════════════════════════════════════════════════════ #}
-<section class="testimonials-section">
-    <div class="container">
-        <div class="testimonials-header">
-            <span class="eyebrow-label">CLIENT SUCCESS STORIES</span>
-            <h2>Real Results from Real Families</h2>
-            <p style="text-align: center; color: var(--on-surface-variant); margin-bottom: 3rem;">See what our clients say about their experience with Capital Wealth</p>
         </div>
         
-        <!-- Testimonials Grid -->
+        <div class="reveal-on-scroll">
+            <div class="sdba-stats-card">
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem;">TSP Mutual Fund Window</h3>
+                <div style="display: grid; gap: 1.5rem;">
+                    <div>
+                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 600; color: var(--primary);">5,000+</div>
+                        <div style="font-size: 0.9rem; color: var(--on-surface-variant);">Mutual funds available</div>
+                    </div>
+                    <div>
+                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 600; color: var(--primary);">$28.75</div>
+                        <div style="font-size: 0.9rem; color: var(--on-surface-variant);">Annual administrative cost</div>
+                    </div>
+                    <div>
+                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 600; color: var(--primary);">$40K+</div>
+                        <div style="font-size: 0.9rem; color: var(--on-surface-variant);">Minimum TSP balance required</div>
+                    </div>
+                </div>
+            </div>
+            <img src="/assets/images/photos/sdba/sdba-financial-advisor.jpg" alt="SDBA Financial Advisor Consultation" class="sdba-image" style="margin-top: 2rem;">
+        </div>
+    </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   7. COMPARISON SECTION — "Why Capital Wealth" editorial grid
+   ═══════════════════════════════════════════════════════════ #}
+<section class="comparison-section">
+    <div class="comparison-content">
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">The Capital Wealth Difference</h2>
+            <p style="color: var(--on-surface-variant);">Why professional retirement planning matters for your financial future.</p>
+        </div>
+        
+        <div class="comparison-grid">
+            <div class="reveal-on-scroll">
+                <h3 style="color: var(--primary); margin-bottom: 2rem;">Capital Wealth</h3>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div class="feature-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20,6 9,17 4,12"/>
+                        </svg>
+                        <span>Fiduciary (legally required to act in YOUR interest)</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20,6 9,17 4,12"/>
+                        </svg>
+                        <span>Retirement Income Planning</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20,6 9,17 4,12"/>
+                        </svg>
+                        <span>Tax Planning & Preparation</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20,6 9,17 4,12"/>
+                        </svg>
+                        <span>Estate & Legacy Planning</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20,6 9,17 4,12"/>
+                        </svg>
+                        <span>Healthcare Cost Planning</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20,6 9,17 4,12"/>
+                        </svg>
+                        <span>25+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reveal-on-scroll">
+                <h4 style="color: var(--primary); margin-bottom: 1.5rem;">Why It Matters</h4>
+                <p style="line-height: 1.7; margin-bottom: 1.5rem;">Most retirement plans fail because they're built around products, not people. Capital Wealth takes a comprehensive approach that coordinates all aspects of your financial life.</p>
+                <p style="line-height: 1.7; margin-bottom: 1.5rem;">As fiduciaries, we're legally required to put your interests first — not sell you products that benefit us. Our integrated planning covers the critical areas other advisors often miss or charge extra for.</p>
+                <p style="line-height: 1.7;">The result? A retirement plan that actually works, backed by 25+ years of experience helping families like yours navigate their golden years with confidence.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   8. BOOK SECTION — Lead magnet section
+   ═══════════════════════════════════════════════════════════ #}
+<section class="book-section">
+    <div class="book-content">
+        <div class="reveal-on-scroll">
+            <img src="/assets/images/book-cover.png" alt="Retire Right, Retire Now book cover" class="book-cover">
+        </div>
+        
+        <div class="reveal-on-scroll">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--secondary); margin-bottom: 1rem; display: block;">FREE BOOK CHAPTER</span>
+            <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem;">Retire Right, Retire Now</h2>
+            <p style="font-size: 1.1rem; color: var(--on-surface-variant); margin-bottom: 1.5rem;">The Ultimate Guide to Retirement Income Planning</p>
+            <p style="line-height: 1.7; margin-bottom: 1.5rem;">After helping 650+ clients retire with confidence, Mike Stevens reveals the proven strategies that turn your savings into reliable retirement income. Download the first chapter free and discover:</p>
+            
+            <ul style="line-height: 1.8; margin-bottom: 2rem;">
+                <li>Why a portfolio is not a plan (and what is)</li>
+                <li>The 5 pillars of successful retirement income</li>
+                <li>How to protect your savings from market volatility</li>
+                <li>Tax strategies that could save you thousands</li>
+                <li>The biggest mistakes people make with their retirement</li>
+            </ul>
+            
+            <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                <a href="/book/" class="hero-btn" style="background: var(--surface-container-lowest); color: var(--primary);">Download Free Chapter <span>→</span></a>
+                <a href="/contact/" style="text-decoration: none; color: var(--primary); border: 1px solid var(--primary); padding: 1rem 2rem; border-radius: 10px;">Discuss Your Situation</a>
+            </div>
+            
+            <p style="font-size: 0.9rem; color: var(--on-surface-variant); font-style: italic;">No email required. Instant download.</p>
+        </div>
+    </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   9. TESTIMONIALS SECTION — 3-column editorial cards
+   ═══════════════════════════════════════════════════════════ #}
+<section class="testimonials-section">
+    <div class="testimonials-content">
+        <div class="testimonials-header">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--secondary); margin-bottom: 1rem; display: block;">CLIENT SUCCESS STORIES</span>
+            <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">Real Results from Real Families</h2>
+            <p style="color: var(--on-surface-variant);">See what our clients say about their experience with Capital Wealth</p>
+        </div>
+        
         <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <blockquote class="testimonial-text">"Mike and his team are the best! We previously were with two other financial planners whose fees were too high and their investment ability had no comparison to Mike. He was also the only one who addressed taxes. Mike got our retirement finances completely organized."</blockquote>
+            <div class="testimonial-card reveal-on-scroll">
+                <blockquote class="testimonial-quote">"Mike and his team are the best! We previously were with two other financial planners whose fees were too high and their investment ability had no comparison to Mike. He was also the only one who addressed taxes. Mike got our retirement finances completely organized."</blockquote>
                 <div class="testimonial-author">Collette D.</div>
             </div>
             
-            <div class="testimonial-card">
-                <blockquote class="testimonial-text">"I was nervous to find a financial advisor because I feel like all the ones we've used just cared about how they could make money off us. After reading reviews of Capital Wealth, I gave them a try. Mike has been above and beyond helpful year after year."</blockquote>
+            <div class="testimonial-card reveal-on-scroll">
+                <blockquote class="testimonial-quote">"I was nervous to find a financial advisor because I feel like all the ones we've used just cared about how they could make money off us. After reading reviews of Capital Wealth, I gave them a try. Mike has been above and beyond helpful year after year."</blockquote>
                 <div class="testimonial-author">Christina L.</div>
             </div>
             
-            <div class="testimonial-card">
-                <blockquote class="testimonial-text">"Mike and his team at Capital Wealth are fantastic. They really take the time to understand your situation and build a plan that makes sense. I feel confident about my retirement for the first time."</blockquote>
+            <div class="testimonial-card reveal-on-scroll">
+                <blockquote class="testimonial-quote">"Mike and his team at Capital Wealth are fantastic. They really take the time to understand your situation and build a plan that makes sense. I feel confident about my retirement for the first time."</blockquote>
                 <div class="testimonial-author">Ordinaryguy40</div>
             </div>
         </div>
@@ -436,293 +1152,117 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 </section>
 
 {# ═══════════════════════════════════════════════════════════
-   IMAGE BREAK - Full-width couple boat image
+   10. FINAL CTA SECTION — Clean centered section
    ═══════════════════════════════════════════════════════════ #}
-<section class="image-break">
-    <img src="/assets/images/photos/couple-boat.jpg" alt="Couple enjoying retirement on their boat" style="max-height: 400px; object-fit: cover; width: 100%; display: block;">
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   CTA SECTION - Navy gradient background with serif headline and two buttons
-   ═══════════════════════════════════════════════════════════ #}
-<section class="finpay-cta">
-    <div class="container">
-        <h2>Ready to retire with confidence?</h2>
-        <p>Schedule a complimentary consultation to see how our Retirement Money Map can work for your family.</p>
-        <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; max-width: 500px; margin: 0 auto;">
-            <a href="/contact/" class="finpay-btn-primary" style="background: var(--surface-container-lowest); color: var(--primary); padding: 1rem 2rem;">Request a Private Briefing</a>
-            <a href="/about/" class="finpay-btn-secondary">Meet Our Team</a>
-        </div>
+<section class="final-cta">
+    <div class="final-cta-content">
+        <h2 class="final-cta-title">Ready to retire with confidence?</h2>
+        <p style="font-size: 1.1rem; color: var(--on-surface-variant); margin-bottom: 1rem;">Schedule a complimentary consultation to see how our Retirement Money Map can work for your family.</p>
+        <a href="/contact/" class="final-cta-btn">Request a Private Briefing</a>
+        <p class="fiduciary-promise">A Fiduciary Promise</p>
     </div>
 </section>
 
-<!-- Keep all existing JavaScript functionality -->
 <script>
-// Intersection Observer for reveal animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, observerOptions);
-
-// Apply reveal animation to all animated elements
-document.addEventListener('DOMContentLoaded', () => {
-    // Hero elements - stagger from top
-    const heroElements = document.querySelectorAll('.hero-animate');
-    heroElements.forEach((el, index) => {
-        el.style.transitionDelay = `${0.2 + index * 0.15}s`;
-        observer.observe(el);
-    });
-
-    // Hero image
-    const heroImage = document.querySelector('.finpay-hero-image');
-    if (heroImage) {
-        heroImage.style.transitionDelay = '0.4s';
-        observer.observe(heroImage);
-    }
-
-    // Stats fly in from right with stagger
-    const stats = document.querySelectorAll('.finpay-stat');
-    stats.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.15}s`;
-        observer.observe(el);
-    });
-
-    // Service cards
-    const cards = document.querySelectorAll('.finpay-card, .finpay-service-card');
-    cards.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.1}s`;
-        observer.observe(el);
-    });
-
-    // Federal cards
-    const federalCards = document.querySelectorAll('.federal-card');
-    federalCards.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.12}s`;
-        observer.observe(el);
-    });
-
-    // Meet Mike
-    const mikeElements = document.querySelectorAll('.meet-mike-photo, .meet-mike-details');
-    mikeElements.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.2}s`;
-        observer.observe(el);
-    });
-
-    // Book section
-    const bookElements = document.querySelectorAll('.book-left, .book-right');
-    bookElements.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.2}s`;
-        observer.observe(el);
-    });
-
-    // Comparison table
-    const compElements = document.querySelectorAll('.finpay-comparison-content');
-    compElements.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.08}s`;
-        observer.observe(el);
-    });
-
-    // Comparison table rows stagger
-    const compRows = document.querySelectorAll('.finpay-comp-row:not(.finpay-comp-header)');
-    compRows.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.06}s`;
-        observer.observe(el);
-    });
-
-    // Any editorial-reveal elements
-    const editorialReveals = document.querySelectorAll('.editorial-reveal, .reveal-from-left, .reveal-from-right, .reveal-scale');
-    editorialReveals.forEach((el, index) => {
-        observer.observe(el);
-    });
-});
-
-// ═══════════════════════════════════════════════════════════
-// PARALLAX SCROLL ENGINE
-// Smooth depth-based movement on scroll
-// ═══════════════════════════════════════════════════════════
-(function() {
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReducedMotion) return;
-
-    let ticking = false;
-
-    // Hero parallax: image moves slower than scroll, quote card slightly different
-    function updateParallax() {
-        const scrollTop = window.pageYOffset;
-        const heroSection = document.querySelector('.finpay-hero');
-        
-        if (heroSection) {
-            const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-            if (scrollTop < heroBottom) {
-                const heroImage = heroSection.querySelector('.finpay-hero-image');
-                const quoteCard = heroSection.querySelector('.hero-quote-card');
-                const watermark = heroSection.querySelector('.mountain-logo-bg');
-
-                if (heroImage) {
-                    heroImage.style.transform = `translateY(${scrollTop * 0.08}px)`;
-                }
-                if (quoteCard) {
-                    // Float the quote card with parallax offset
-                    const baseFloat = Math.sin(Date.now() / 1000) * 6;
-                    quoteCard.style.transform = `translateY(${(scrollTop * -0.12) + baseFloat}px)`;
-                }
-                if (watermark) {
-                    watermark.style.transform = `translate(-50%, -50%) scale(${1 + scrollTop * 0.0003})`;
-                }
-            }
-        }
-
-        // Subtle parallax on section decorative elements
-        const floatingAccents = document.querySelectorAll('.floating-accent');
-        floatingAccents.forEach((el, i) => {
-            const speed = 0.03 + (i * 0.02);
-            el.style.transform = `translateY(${scrollTop * speed}px)`;
-        });
-
-        ticking = false;
-    }
-
-    window.addEventListener('scroll', () => {
-        if (!ticking) {
-            requestAnimationFrame(updateParallax);
-            ticking = true;
-        }
-    }, { passive: true });
-})();
-
-// ═══════════════════════════════════════════════════════════
-// SMOOTH COUNTER ANIMATION
-// Animate stat numbers from 0 on scroll-in
-// ═══════════════════════════════════════════════════════════
-(function() {
-    const statNumbers = document.querySelectorAll('.finpay-stat-number');
-    const animated = new Set();
+// Animation Controller
+document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
     
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, observerOptions);
+    
+    // Hero animations - staggered load
+    setTimeout(() => {
+        const heroContent = document.querySelector('.hero-content');
+        const heroStats = document.querySelector('.hero-stats');
+        const heroElements = document.querySelectorAll('.hero-eyebrow, .hero-title, .hero-subtitle, .hero-cta');
+        
+        if (heroContent) heroContent.classList.add('animate');
+        if (heroStats) heroStats.classList.add('animate');
+        
+        heroElements.forEach((el, index) => {
+            setTimeout(() => {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            }, index * 200);
+        });
+    }, 100);
+    
+    // Five Pillars cards - staggered animation
+    const pillarCards = document.querySelectorAll('.pillar-card');
+    pillarCards.forEach((card, index) => {
+        card.style.transitionDelay = `${index * 0.1}s`;
+        observer.observe(card);
+    });
+    
+    // Federal cards - staggered animation  
+    const federalCards = document.querySelectorAll('.federal-card');
+    federalCards.forEach((card, index) => {
+        card.style.transitionDelay = `${index * 0.1}s`;
+        observer.observe(card);
+    });
+    
+    // Testimonial cards - staggered animation
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    testimonialCards.forEach((card, index) => {
+        card.style.transitionDelay = `${index * 0.15}s`;
+        observer.observe(card);
+    });
+    
+    // General reveal elements
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    revealElements.forEach((el, index) => {
+        observer.observe(el);
+    });
+    
+    // Stats counter animation
+    const statNumbers = document.querySelectorAll('.hero-stat-number, .federal-stat-number');
     const counterObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting && !animated.has(entry.target)) {
-                animated.add(entry.target);
+            if (entry.isIntersecting) {
                 const el = entry.target;
                 const finalText = el.textContent;
                 const numMatch = finalText.match(/[\d,]+/);
-                if (!numMatch) return;
                 
-                const numStr = numMatch[0].replace(/,/g, '');
-                const target = parseInt(numStr);
-                const prefix = finalText.substring(0, finalText.indexOf(numMatch[0]));
-                const suffix = finalText.substring(finalText.indexOf(numMatch[0]) + numMatch[0].length);
-                const hasComma = numMatch[0].includes(',');
-                const duration = 1800;
-                const start = performance.now();
-                
-                function step(now) {
-                    const elapsed = now - start;
-                    const progress = Math.min(elapsed / duration, 1);
-                    // Ease out cubic
-                    const eased = 1 - Math.pow(1 - progress, 3);
-                    const current = Math.floor(target * eased);
-                    const formatted = hasComma ? current.toLocaleString() : current.toString();
-                    el.textContent = prefix + formatted + suffix;
-                    if (progress < 1) requestAnimationFrame(step);
-                    else el.textContent = finalText; // Restore exact original
+                if (numMatch) {
+                    const numStr = numMatch[0].replace(/,/g, '');
+                    const target = parseInt(numStr);
+                    const prefix = finalText.substring(0, finalText.indexOf(numMatch[0]));
+                    const suffix = finalText.substring(finalText.indexOf(numMatch[0]) + numMatch[0].length);
+                    const duration = 1500;
+                    const start = performance.now();
+                    
+                    function step(now) {
+                        const elapsed = now - start;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        const current = Math.floor(target * eased);
+                        const formatted = current.toLocaleString();
+                        el.textContent = prefix + formatted + suffix;
+                        
+                        if (progress < 1) {
+                            requestAnimationFrame(step);
+                        } else {
+                            el.textContent = finalText;
+                        }
+                    }
+                    
+                    requestAnimationFrame(step);
+                    counterObserver.unobserve(el);
                 }
-                requestAnimationFrame(step);
             }
         });
     }, { threshold: 0.5 });
     
     statNumbers.forEach(el => counterObserver.observe(el));
-})();
-
-
-
-// Enhanced Sticky CTA functionality with proper session persistence
-document.addEventListener('DOMContentLoaded', () => {
-    let stickyShown = false;
-    let ctaDismissed = sessionStorage.getItem('cwa-cta-dismissed') === 'true';
-    const stickyCta = document.getElementById('sticky-cta');
-    
-    if (!stickyCta) return;
-    
-    function showStickyCta() {
-        if (!stickyShown && !ctaDismissed && stickyCta) {
-            stickyCta.style.transform = 'translateY(0)';
-            stickyShown = true;
-        }
-    }
-    
-    function hideStickyCta(temporary = false) {
-        if (stickyCta) {
-            stickyCta.style.transform = 'translateY(120%)';
-            stickyShown = false;
-            
-            // If not temporarily hiding, mark as dismissed for session
-            if (!temporary) {
-                ctaDismissed = true;
-                sessionStorage.setItem('cwa-cta-dismissed', 'true');
-            }
-        }
-    }
-    
-    // Show/hide based on scroll position - only if not dismissed
-    window.addEventListener('scroll', () => {
-        if (ctaDismissed) return;
-        
-        const heroHeight = document.querySelector('.finpay-hero')?.offsetHeight || 600;
-        const footerTop = document.querySelector('.finpay-footer')?.offsetTop || 9999;
-        const scrollTop = window.pageYOffset;
-        const windowHeight = window.innerHeight;
-        
-        if (scrollTop > heroHeight && (scrollTop + windowHeight) < footerTop - 200) {
-            showStickyCta();
-        } else {
-            hideStickyCta(true); // Temporarily hide, don't mark as dismissed
-        }
-    });
-    
-    // Close button functionality - permanently dismiss for session
-    document.getElementById('close-sticky-cta')?.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        hideStickyCta(false); // Permanently dismiss
-    });
-    
-    // Initialize - hide if already dismissed
-    if (ctaDismissed) {
-        stickyCta.style.transform = 'translateY(120%)';
-    }
 });
 </script>
-
-<!-- Premium Floating CTA -->
-<div id="sticky-cta" class="premium-floating-cta">
-    <div class="floating-cta-content">
-        <div class="cta-text">
-            <h4>Ready to Retire with Confidence?</h4>
-            <p>Get your complimentary retirement assessment</p>
-        </div>
-        <div class="cta-actions">
-            <a href="/contact/" class="cta-primary-btn">
-                Schedule Free Call
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                    <path d="M7 17L17 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M7 7H17V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </a>
-            <button id="close-sticky-cta" class="cta-close-btn">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                    <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-</div>
