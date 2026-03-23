@@ -4,8 +4,8 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/book", "destination": "https://www.retirerightbook.com/", "permanent": true },
-    { "source": "/book/", "destination": "https://www.retirerightbook.com/", "permanent": true },
+    { "source": "/book", "destination": "https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book", "permanent": false },
+    { "source": "/book/", "destination": "https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book", "permanent": false },
     { "source": "/federal", "destination": "/services/federal-benefits/", "permanent": true },
     { "source": "/federal/", "destination": "/services/federal-benefits/", "permanent": true },
     { "source": "/refer", "destination": "/refer-a-friend/", "permanent": true },

@@ -1,11 +1,7 @@
 ---
-layout: layouts/service-subpage.njk
+layout: layouts/base-finpay.njk
 title: "Estate & Legacy Planning | Wealth Transfer Strategies | Capital Wealth"
 description: "Protect and transfer your wealth to future generations efficiently. Estate planning coordination, trust strategies, and tax-efficient legacy planning in Lehi, Utah."
-serviceLabel: "ESTATE & LEGACY PLANNING"
-serviceTitle: "Protect What You've Built"
-serviceSubtitle: "A lifetime of work deserves a thoughtful legacy plan. We coordinate with your estate attorney to ensure your wealth transfers efficiently to the people and causes you care about."
-serviceTag: "estate-planning"
 breadcrumbs:
   - { name: "Home", url: "/" }
   - { name: "Services", url: "/services/" }
@@ -23,207 +19,1107 @@ faqSchema:
     answer: "Without an estate plan, state law decides who gets your assets, courts appoint guardians for minor children, and your family may face lengthy probate processes and unnecessary taxes. Proper planning ensures your wishes are honored and your loved ones are protected."
 ---
 
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">ESTATE & LEGACY</p>
-            <h2 >Protect What You've Built</h2>
-            <p class="titan-subhero-body">Estate planning isn't about how much you have — it's about making sure your assets go where you want, when you want, with minimal taxes and zero family conflict.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">START ESTATE PLAN <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/retired-couple-dock.jpg" alt="Couple planning their legacy and estate" class="titan-subhero-img">
+<style>
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — Estate Planning
+   ═══════════════════════════════════════════ */
+
+/* Hero */
+.ep-hero {
+  padding: 6rem 2rem 5rem;
+  background: var(--surface-container-low);
+  overflow: hidden;
+}
+
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+.ep-btn-primary {
+  display: inline-block;
+  padding: 1rem 2.25rem;
+  background: linear-gradient(135deg, var(--primary), #194f90);
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.2);
+}
+
+.ep-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.3);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 1rem 2.25rem;
+  background: transparent;
+  color: var(--primary);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  border: 1px solid rgba(194, 198, 210, 0.4);
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+
+.ep-btn-ghost:hover {
+  background: var(--surface-container-low);
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: white;
+  padding: 2rem;
+  max-width: 320px;
+  border-left: 4px solid var(--secondary);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Key Facts Row */
+.ep-facts {
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.2);
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-facts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ep-fact {
+  flex: 1;
+}
+
+.ep-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.4rem;
+}
+
+.ep-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.ep-framework-desc {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
+  background: var(--surface-container-low);
+  transition: background 0.2s ease;
+}
+
+.ep-framework-card:hover {
+  background: white;
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Stats & Solution */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
+}
+
+.ep-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ep-dark-header {
+  margin-bottom: 4rem;
+}
+
+.ep-dark-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
+}
+
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.ep-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-glass-card:last-child {
+  margin-top: 3rem;
+}
+
+.ep-glass-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ep-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ep-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.ep-stat-number small {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-left: 0.25rem;
+}
+
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.ep-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ep-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+}
+
+.ep-check-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Asymmetric Image + Text */
+.ep-transfer {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-transfer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ep-transfer-image-wrap {
+  flex: 0 0 45%;
+  position: relative;
+}
+
+.ep-transfer-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-transfer-image-accent {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 120px;
+  height: 120px;
+  background: var(--tertiary-fixed, #d9e4eb);
+  z-index: -1;
+}
+
+.ep-transfer-text {
+  flex: 1;
+}
+
+.ep-transfer-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.ep-transfer-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2.5rem;
+}
+
+.ep-sub-feature {
+  margin-bottom: 1.5rem;
+  cursor: default;
+}
+
+.ep-sub-feature h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.ep-sub-feature:hover h4 {
+  color: var(--secondary);
+}
+
+.ep-sub-feature p {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* Process */
+.ep-process {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.ep-process-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-process-sub {
+  font-size: 1rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-step {
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ep-step-title {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-step-chevron {
+  font-size: 1.25rem;
+  color: var(--on-surface-variant);
+  transition: transform 0.2s ease;
+}
+
+.ep-step.active .ep-step-chevron {
+  transform: rotate(180deg);
+}
+
+.ep-step-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-step.active .ep-step-body {
+  max-height: 200px;
+}
+
+.ep-step-body p {
+  padding: 0 0 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 300px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* Related Services */
+.ep-related {
+  padding: 4rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.15);
+}
+
+.ep-related-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 2rem;
+}
+
+.ep-related-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  background: var(--surface-container-low);
+  transition: all 0.2s ease;
+}
+
+.ep-related-link:hover {
+  background: white;
+}
+
+.ep-related-link:not(:last-child) {
+  border-right: 1px solid rgba(194, 198, 210, 0.15);
+}
+
+.ep-related-name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-related-arrow {
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
+
+/* CTA */
+.ep-cta {
+  padding: 7rem 2rem;
+  background: white;
+  text-align: center;
+}
+
+.ep-cta-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2.5rem;
+}
+
+.ep-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-facts-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .ep-fact {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .ep-framework-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-framework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-glass-card:last-child {
+    margin-top: 0;
+  }
+
+  .ep-transfer {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-transfer-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ep-transfer-image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .ep-transfer-image {
+    height: 350px;
+  }
+
+  .ep-transfer-image-accent {
+    display: none;
+  }
+
+  .ep-process-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-process {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-related-link:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(194, 198, 210, 0.15);
+  }
+
+  .ep-cta {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
+  }
+}
+</style>
+
+{# ═══════════════════════════════════════════════════════════
+   1. HERO — Asymmetric editorial layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-hero">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">Estate & Legacy Planning</span>
+      <h1 class="ep-hero-title">Protect What<br>You've Built.</h1>
+      <span class="ep-hero-title-italic">The Architecture of Legacy.</span>
+      <p class="ep-hero-body">Estate planning isn't about how much you have — it's about making sure your assets go where you want, when you want, with minimal taxes and zero family conflict. We coordinate every piece so nothing falls through the cracks.</p>
+      <a href="/contact/" class="ep-btn-primary">Start Your Estate Plan</a>
     </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-autumn-walk.jpg"
+           alt="Couple walking together planning their legacy"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"Estate planning isn't about death. It's about protecting the people you love while you're alive."</p>
+        <cite>Mike Stevens, IAR</cite>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="titan-quote-bar">
-    <div class="titan-quote-bar-inner">
-        <p class="titan-quote-bar-text">"Estate planning isn't about death. It's about protecting the people you love while you're alive."</p>
-        <p class="titan-quote-bar-attr">— Mike Stevens, IAR</p>
+{# ═══════════════════════════════════════════════════════════
+   2. KEY FACTS — Technical precision row
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact">
+      <div class="ep-fact-label">Scope</div>
+      <div class="ep-fact-value">Trusts, wills, beneficiaries, legacy</div>
     </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Coordination</div>
+      <div class="ep-fact-value">With your estate attorney</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Review</div>
+      <div class="ep-fact-value">Annual</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Beneficiary Audit</div>
+      <div class="ep-fact-value">Included</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Cost</div>
+      <div class="ep-fact-value">Included</div>
+    </div>
+  </div>
 </section>
 
-<section class="titan-key-facts">
-    <div class="titan-key-facts-inner">
-        <div class="titan-key-fact">
-            <div class="titan-key-fact-label">Scope</div>
-            <div class="titan-key-fact-value">Trusts, wills, beneficiaries, legacy</div>
-        </div>
-        <div class="titan-key-fact">
-            <div class="titan-key-fact-label">Coordination</div>
-            <div class="titan-key-fact-value">With your estate attorney</div>
-        </div>
-        <div class="titan-key-fact">
-            <div class="titan-key-fact-label">Review</div>
-            <div class="titan-key-fact-value">Annual</div>
-        </div>
-        <div class="titan-key-fact">
-            <div class="titan-key-fact-label">Beneficiary Audit</div>
-            <div class="titan-key-fact-value">Included</div>
-        </div>
-        <div class="titan-key-fact">
-            <div class="titan-key-fact-label">Cost</div>
-            <div class="titan-key-fact-value">Included</div>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   3. THE PROBLEM — Framework grid
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-framework">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">Does This Sound Familiar?</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">The most common estate planning gaps we see with families approaching or already in retirement.</p>
     </div>
+    <div class="ep-framework-grid">
+      <div class="ep-framework-card">
+        <h4>Your will was drafted 20 years ago</h4>
+        <p>Life has changed. Your family has grown. Your assets have shifted. But your estate plan hasn't been updated since 2005.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Your beneficiaries don't match</h4>
+        <p>Your will says one thing, but your IRA beneficiary form says another. And beneficiary designations override your will — every time.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>You don't have a plan at all</h4>
+        <p>You know you need a will, power of attorney, and healthcare directive. But you haven't gotten around to it, and your family is at risk.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Your heirs will lose 40% to taxes</h4>
+        <p>Inherited IRAs are a tax bomb. Without proper planning, your kids could lose nearly half of what you leave them to income taxes.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>Your will was drafted 20 years ago</h3>
-                <p>Life has changed. Your family has grown. Your assets have shifted. But your estate plan hasn't been updated since 2005.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>Your beneficiaries don't match your plan</h3>
-                <p>Your will says one thing, but your IRA beneficiary form says another. And beneficiary designations override your will — every time.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't have a plan at all</h3>
-                <p>You know you need a will, power of attorney, and healthcare directive. But you haven't gotten around to it, and your family is at risk.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>Your heirs will lose 40% to taxes</h3>
-                <p>Inherited IRAs are a tax bomb. Without proper planning, your kids could lose nearly half of what you leave them to income taxes.</p>
-            </div>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   4. DARK SECTION — Solution metrics + checklist
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-dark">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">The Solution</span>
+      <h2 class="ep-dark-title">Comprehensive Coordination.<br><em>Transparent Results.</em></h2>
     </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Estate Metrics</span>
+        <h3>Protection Efficiency</h3>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Wealth Preserved vs. No Planning</span>
+          <span class="ep-stat-number">40%<small>more</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Review Frequency</span>
+          <span class="ep-stat-number">Annual</span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Beneficiary Audit</span>
+          <span class="ep-stat-number">Included</span>
+        </div>
+      </div>
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">What We Coordinate</span>
+        <h3>Complete Estate Alignment</h3>
+        <p class="ep-glass-body">We don't draft legal documents — that's what estate attorneys do. But we coordinate the entire process, ensuring your financial plan aligns with your legal documents and your beneficiary designations match your intentions.</p>
+        <ul class="ep-check-list">
+          <li>Will and trust review with attorney referrals</li>
+          <li>Beneficiary designation audit and updates</li>
+          <li>Roth conversion strategies for tax-free inheritance</li>
+          <li>Inherited IRA distribution planning for heirs</li>
+          <li>Annual gifting strategies ($18,000/year per person)</li>
+          <li>Charitable giving (QCDs, donor-advised funds)</li>
+          <li>Life insurance as a wealth transfer tool</li>
+          <li>Power of attorney and healthcare directive coordination</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">Comprehensive Estate Coordination</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>More Than Just Documents</h3>
-                <p>We don't draft legal documents — that's what estate attorneys do. But we coordinate the entire process, ensuring your financial plan aligns with your legal documents and your beneficiary designations match your intentions.</p>
-                <p>We work with your attorney to implement tax-efficient wealth transfer strategies, including Roth conversions for heirs, strategic gifting, and charitable planning.</p>
-                <div class="service-solution-stat">
-                    <span class="service-solution-stat-num">40%</span>
-                    <span class="service-solution-stat-label">More wealth preserved with proper estate planning vs. no planning</span>
-                </div>
-            </div>
-            <div class="service-solution-right">
-                <h4>What We Coordinate:</h4>
-                <ul class="service-solution-list">
-                    <li>Will and trust review and attorney referrals</li>
-                    <li>Beneficiary designation audit and updates</li>
-                    <li>Power of attorney and healthcare directive coordination</li>
-                    <li>Roth conversion strategies for tax-free inheritance</li>
-                    <li>Inherited IRA distribution planning for heirs</li>
-                    <li>Annual gifting strategies ($18,000/year per person)</li>
-                    <li>Charitable giving (QCDs, donor-advised funds, trusts)</li>
-                    <li>Life insurance as a wealth transfer tool</li>
-                </ul>
-            </div>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   5. ASYMMETRIC — Image + wealth transfer text
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-transfer">
+  <div class="ep-transfer-inner">
+    <div class="ep-transfer-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-planning-tablet.jpg"
+           alt="Couple reviewing their estate plan together"
+           class="ep-transfer-image">
+      <div class="ep-transfer-image-accent"></div>
     </div>
+    <div class="ep-transfer-text">
+      <span class="ep-chapter-label">Wealth Transfer</span>
+      <h2 class="ep-transfer-title">More Than Just<br>Documents</h2>
+      <p class="ep-transfer-body">We work with your attorney to implement tax-efficient wealth transfer strategies, including Roth conversions for heirs, strategic gifting, and charitable planning. The goal is simple: maximize what your family keeps.</p>
+      <div class="ep-sub-feature">
+        <h4>Succession Planning</h4>
+        <p>Designating beneficiaries, updating designations, and aligning your financial accounts with your legal documents.</p>
+      </div>
+      <div class="ep-sub-feature">
+        <h4>Charitable & Philanthropic Giving</h4>
+        <p>QCDs, donor-advised funds, and charitable trusts that reduce your tax burden while supporting causes you care about.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Review & Audit</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Review existing documents, beneficiary designations, and account titling to identify gaps and risks.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Coordinate with Attorney</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Work with your estate attorney (or refer you to one) to create or update your legal documents.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Implement Tax Strategies</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Execute wealth transfer strategies (Roth conversions, gifting, charitable planning) to minimize taxes for heirs.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   6. PROCESS — Accordion steps
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-process">
+  <div class="ep-process-inner">
+    <div>
+      <span class="ep-chapter-label">How It Works</span>
+      <h2 class="ep-process-title">Three Steps to<br>Legacy Clarity</h2>
+      <p class="ep-process-sub">It's simpler than you think.</p>
+      <a href="/contact/" class="ep-btn-primary">Become a Client</a>
     </div>
+    <div>
+      <div class="ep-step" onclick="this.classList.toggle('active')">
+        <div class="ep-step-header">
+          <span class="ep-step-title">Step 1 — Review & Audit</span>
+          <span class="ep-step-chevron">&#9662;</span>
+        </div>
+        <div class="ep-step-body">
+          <p>Review existing documents, beneficiary designations, and account titling to identify gaps and risks.</p>
+        </div>
+      </div>
+      <div class="ep-step" onclick="this.classList.toggle('active')">
+        <div class="ep-step-header">
+          <span class="ep-step-title">Step 2 — Coordinate with Attorney</span>
+          <span class="ep-step-chevron">&#9662;</span>
+        </div>
+        <div class="ep-step-body">
+          <p>Work with your estate attorney (or refer you to one) to create or update your legal documents.</p>
+        </div>
+      </div>
+      <div class="ep-step" onclick="this.classList.toggle('active')">
+        <div class="ep-step-header">
+          <span class="ep-step-title">Step 3 — Implement Tax Strategies</span>
+          <span class="ep-step-chevron">&#9662;</span>
+        </div>
+        <div class="ep-step-body">
+          <p>Execute wealth transfer strategies (Roth conversions, gifting, charitable planning) to minimize taxes for heirs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">Estate Planning FAQ</h2>
-            <p class="faq-sub">Learn how to protect your legacy and minimize taxes for your heirs.</p>
-            <a href="/contact/" class="resources-cta">Ask About Estate Planning</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Do you draft wills and trusts?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">No, we don't practice law. We coordinate with estate planning attorneys to ensure your legal documents align with your financial strategy. We'll refer you to a qualified attorney and work with them to implement the plan.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Should I convert my IRA to a Roth for my heirs?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Often, yes. Inherited traditional IRAs are now subject to the 10-year rule, which can push heirs into high tax brackets. Converting to a Roth during your lifetime (when you control the timing and tax impact) can save your heirs tens of thousands in taxes. We model this scenario as part of your estate plan.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What's a Qualified Charitable Distribution (QCD)?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">A QCD allows you to donate up to $105,000 per year directly from your IRA to charity (after age 70½). The distribution counts toward your RMD but doesn't increase your taxable income — a powerful strategy for reducing taxes and supporting causes you care about.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">When should I update my estate plan?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Review your estate plan annually and update it after major life events like marriage, divorce, births, deaths, significant asset changes, or moves to a different state. We conduct an annual beneficiary audit for all clients to ensure your designations still match your intentions.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What happens to my beneficiaries if I don't have an estate plan?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Without an estate plan, state law decides who gets your assets, courts appoint guardians for minor children, and your family may face lengthy probate processes and unnecessary taxes. Proper planning ensures your wishes are honored and your loved ones are protected.</div>
-                </button>
-            </div>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   7. FAQ — Editorial accordion
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">Estate Planning FAQ</h2>
+      <p class="ep-faq-sub">Learn how to protect your legacy and minimize taxes for your heirs.</p>
+      <a href="/contact/" class="ep-btn-ghost">Ask About Estate Planning</a>
     </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Do you draft wills and trusts? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>No, we don't practice law. We coordinate with estate planning attorneys to ensure your legal documents align with your financial strategy. We'll refer you to a qualified attorney and work with them to implement the plan.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should I convert my IRA to a Roth for my heirs? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Often, yes. Inherited traditional IRAs are now subject to the 10-year rule, which can push heirs into high tax brackets. Converting to a Roth during your lifetime (when you control the timing and tax impact) can save your heirs tens of thousands in taxes. We model this scenario as part of your estate plan.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What's a Qualified Charitable Distribution (QCD)? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>A QCD allows you to donate up to $105,000 per year directly from your IRA to charity (after age 70½). The distribution counts toward your RMD but doesn't increase your taxable income — a powerful strategy for reducing taxes and supporting causes you care about.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">When should I update my estate plan? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Review your estate plan annually and update it after major life events like marriage, divorce, births, deaths, significant asset changes, or moves to a different state. We conduct an annual beneficiary audit for all clients to ensure your designations still match your intentions.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What happens without an estate plan? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Without an estate plan, state law decides who gets your assets, courts appoint guardians for minor children, and your family may face lengthy probate processes and unnecessary taxes. Proper planning ensures your wishes are honored and your loved ones are protected.</p></div>
+      </button>
+    </div>
+  </div>
 </section>
 
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <h2 class="related-services-h2">Complete Your Financial Plan</h2>
-        <div class="service-related-grid">
-            <a href="/services/tax-planning/" class="service-related-link">
-                <span class="service-related-name">Tax Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/" class="service-related-link">
-                <span class="service-related-name">Federal Benefits</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/retirement-money-map/" class="service-related-link">
-                <span class="service-related-name">Retirement Money Map</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   8. RELATED SERVICES
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-related">
+  <div class="ep-related-inner">
+    <span class="ep-chapter-label">Related Services</span>
+    <h2 class="ep-framework-title" style="margin-bottom: 0;">Complete Your Financial Plan</h2>
+    <div class="ep-related-grid">
+      <a href="/services/tax-planning/" class="ep-related-link">
+        <span class="ep-related-name">Tax Planning</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+      <a href="/services/federal-benefits/" class="ep-related-link">
+        <span class="ep-related-name">Federal Benefits</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+      <a href="/services/retirement-money-map/" class="ep-related-link">
+        <span class="ep-related-name">Retirement Money Map</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
     </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   9. CTA — Centered editorial
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <span class="ep-chapter-label">Confidential Consultation</span>
+    <h2 class="ep-cta-title">Ready to Protect Your Legacy?</h2>
+    <p class="ep-cta-body">Every family's story is different. Schedule a complimentary consultation to discuss your estate planning goals and see how we coordinate every piece — taxes, beneficiaries, documents, and strategy.</p>
+    <div class="ep-cta-buttons">
+      <a href="/contact/" class="ep-btn-primary">Schedule Consultation</a>
+      <a href="/book/" class="ep-btn-ghost">Free Book Chapter</a>
+    </div>
+  </div>
 </section>
