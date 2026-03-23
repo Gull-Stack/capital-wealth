@@ -4710,6 +4710,158 @@ a:hover {
   .res-offerings { padding: 3rem 1.25rem; }
 }
 
+/* ═══ 2026 FEDERAL BENEFITS NUMBERS ═══ */
+.fed-numbers {
+  background: var(--navy, #194F90);
+  padding: 5rem 2rem;
+  color: #fff;
+}
+.fed-numbers-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.fed-numbers .titan-section-label {
+  color: var(--accent-secondary, #F09F54);
+}
+.fed-numbers-h2 {
+  font-family: var(--font-family);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 500;
+  color: #fff;
+  margin: 0.5rem 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+.fed-numbers-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 0 3rem;
+}
+.fed-numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.fed-numbers-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+.fed-numbers-card:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.2);
+}
+.fed-numbers-card-title {
+  font-family: var(--font-family);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-secondary, #F09F54);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.fed-numbers-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.fed-numbers-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.fed-numbers-row:last-child {
+  border-bottom: none;
+}
+.fed-numbers-label {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.65);
+  font-weight: 400;
+}
+.fed-numbers-value {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+.fed-numbers-value.highlight {
+  color: var(--accent-secondary, #F09F54);
+  font-size: 1.05rem;
+}
+.fed-numbers-note {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  margin: 1rem 0 0;
+  font-style: italic;
+}
+.fed-numbers-cta {
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  margin: 1rem 0 2rem;
+}
+.fed-numbers-cta-title {
+  font-family: var(--font-family);
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 1rem;
+  line-height: 1.3;
+}
+.fed-numbers-cta-desc {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 1.75rem;
+}
+.fed-numbers-cta-phone {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  margin: 1rem 0 0;
+}
+.fed-numbers-cta-phone a {
+  color: var(--accent-secondary, #F09F54);
+  text-decoration: none;
+  font-weight: 600;
+}
+.fed-numbers-cta-phone a:hover {
+  text-decoration: underline;
+}
+.fed-numbers-updated {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.35);
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+}
+@media (max-width: 1024px) {
+  .fed-numbers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .fed-numbers { padding: 3.5rem 1.25rem; }
+  .fed-numbers-grid {
+    grid-template-columns: 1fr;
+  }
+  .fed-numbers-cta {
+    padding: 2rem 1.25rem;
+  }
+}
+
 /* ═══ GUIDES HUB ═══ */
 .guides-hub {
   background: #fff;
