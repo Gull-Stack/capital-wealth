@@ -1,323 +1,121 @@
 ---
-layout: layouts/service-subpage.njk
-title: "Tax-Efficient Retirement Strategies | Capital Wealth Lehi, UT"
-description: "Minimize taxes in retirement with strategic planning. Roth conversions, withdrawal strategies, tax-loss harvesting, and IRMAA avoidance. Expert tax planning in Utah."
-serviceLabel: "TAX PLANNING"
-serviceTitle: "Keep More of What You Earn"
-serviceSubtitle: "Taxes can be one of the largest expenses in retirement. Strategic tax planning helps you minimize what you owe — legally and ethically — so you keep more for the life you've worked hard to build."
-serviceTag: "tax-planning"
+layout: layouts/base-finpay.njk
+title: "Retirement Tax Planning | Reduce Lifetime Taxes | Capital Wealth"
+description: "Strategic tax planning for retirement including Roth conversions, withdrawal sequencing, and IRMAA management. Minimize taxes with fiduciary guidance."
 breadcrumbs:
   - { name: "Home", url: "/" }
   - { name: "Services", url: "/services/" }
-  - { name: "Tax-Efficient Retirement Strategies", url: "/services/tax-planning/" }
+  - { name: "Retirement Money Map", url: "/services/retirement-money-map/" }
 faqSchema:
-  - question: "Do you prepare tax returns?"
-    answer: "We focus on tax strategy and planning, not tax preparation. We work closely with your CPA to develop and implement strategies, then they handle the actual return filing. Think of it as: we build the plan, they execute the paperwork."
-  - question: "When should I do a Roth conversion?"
-    answer: "The best time is typically during low-income years before RMDs start (ages 60-72), or after retirement but before Social Security begins. We model your specific situation to identify the optimal years and amounts to convert."
-  - question: "What is IRMAA and how do I avoid it?"
-    answer: "IRMAA (Income-Related Monthly Adjustment Amount) is a Medicare surcharge for higher earners. We help you manage your income to stay below the thresholds through strategic withdrawal timing, Roth conversions in low-income years, and charitable giving strategies."
-  - question: "How much can I save with tax planning?"
-    answer: "The average client with proper multi-year tax planning saves $200,000+ over their lifetime compared to reactive, year-by-year tax preparation. The exact amount depends on your income sources, account types, and time horizon."
-  - question: "What's the difference between tax planning and tax preparation?"
-    answer: "Tax preparation looks backward and files last year's return. Tax planning looks forward and builds multi-year strategies to minimize your lifetime tax liability. We do planning; your CPA does preparation."
+  - question: "What is the Retirement Money Map?"
+    answer: "The Retirement Money Map is our proprietary three-phase planning process that transforms your scattered accounts and goals into a coordinated retirement strategy with year-by-year cash flow projections."
+  - question: "How long does the retirement planning process take?"
+    answer: "Phase 1 (Discovery) is one meeting. Phase 2 (Execution) typically takes 1-3 months to implement all strategies. Phase 3 (Your Future) is lifetime ongoing support and plan adjustments."
+  - question: "What is the 3 Bucket Strategy?"
+    answer: "The 3 Bucket Strategy organizes your investments by purpose: Cash bucket for immediate needs, Income bucket for steady returns, and Growth bucket for long-term wealth building. This creates a balanced approach to retirement income."
+  - question: "Do you manage TSP accounts?"
+    answer: "Yes, we provide TSP management and rollover guidance for federal employees. We help optimize your TSP allocation and coordinate it with your other retirement accounts for a unified strategy."
+  - question: "What custodians do you work with?"
+    answer: "We work with major custodians including Fidelity and Charles Schwab. This gives you institutional-level service while keeping your assets with trusted, established firms."
+  - question: "How often do you review my plan?"
+    answer: "We conduct formal reviews at least annually, with ongoing monitoring throughout the year. Your Money Map is updated whenever there are market changes, tax law updates, or changes in your personal situation."
+  - question: "What does a fiduciary retirement advisor do?"
+    answer: "As a fiduciary, we're legally required to put your interests first. This means transparent fees, unbiased advice, and recommendations based solely on what's best for your retirement, not what benefits us."
+  - question: "Is there a fee for the discovery meeting?"
+    answer: "No, the initial discovery meeting is complimentary. This allows us to understand your situation and explain how we can help before you make any commitment."
 ---
 
-
-
 <style>
-.editorial-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.chapter-header {
-  display: flex;
-  align-items: center;
-  margin: 4rem 0 2rem;
-  gap: 2rem;
-}
-
-.chapter-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--secondary);
-  white-space: nowrap;
-}
-
-.chapter-line {
-  flex: 1;
-  height: 1px;
-  background: var(--outline-variant);
-}
-
-.pull-quote {
-  margin: 3rem 0;
-  padding: 0 0 0 2rem;
-  border-left: 4px solid var(--secondary);
-  font-family: var(--font-serif-display);
-  font-style: italic;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  color: var(--on-surface);
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--outline-variant);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  margin: 2rem 0;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1px;
-  background: var(--outline-variant);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  margin: 2rem 0;
-}
-
-.stat-item {
-  background: white;
-  padding: 2rem 1.5rem;
-  text-align: center;
-}
-
-.stat-number {
-  font-family: var(--font-serif-display);
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: var(--primary);
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.stat-label {
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: var(--on-surface-variant);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.editorial-h2 {
-  font-family: var(--font-serif-display);
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.3;
-  color: var(--on-surface);
-  margin: 2rem 0 1rem;
-}
-
-.editorial-p {
-  font-family: var(--font-body);
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: var(--on-surface);
-  margin: 1.5rem 0;
-}
-
-.feature-image {
-  width: 100%;
-  max-width: 600px;
-  margin: 3rem auto;
-  display: block;
-  border-radius: var(--radius-lg);
-  filter: grayscale(20%);
-  transition: filter 0.3s ease;
-}
-
-.feature-image:hover {
-  filter: grayscale(0%);
-}
-
-@media (max-width: 768px) {
-  .chapter-header {
-    margin: 3rem 0 1.5rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .editorial-section {
-    padding: 0 1rem;
-  }
-}
+/* Copy the full CSS from estate-planning - using same editorial styles */
+.ep-hero { padding: 2rem 2rem 5rem; background: var(--surface-container-low); overflow: hidden; margin-top: -1rem; }
+.ep-hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr; gap: 4rem; align-items: center; }
+.ep-chapter-label { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--secondary); margin-bottom: 1.5rem; display: block; }
+.ep-hero-title { font-family: var(--font-serif-display); font-size: clamp(2.8rem, 5vw, 4rem); font-weight: 700; color: var(--primary); line-height: 1.08; margin-bottom: 0.5rem; }
+.ep-hero-title-italic { font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 400; font-style: italic; color: var(--on-surface-variant); line-height: 1.15; margin-bottom: 2rem; display: block; }
+.ep-hero-body { font-size: 1.1rem; line-height: 1.7; color: var(--on-surface-variant); max-width: 540px; margin-bottom: 2.5rem; }
+.ep-btn-primary { display: inline-block; padding: 0.85rem 2rem; border-radius: 16px; text-decoration: none; font-family: var(--font-body); font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; background: rgba(0, 56, 112, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(0, 56, 112, 0.3); color: white; }
+.ep-btn-primary:hover { background: rgba(0, 56, 112, 0.95); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15); }
+.ep-btn-ghost { display: inline-block; padding: 0.85rem 2rem; border-radius: 16px; text-decoration: none; font-family: var(--font-body); font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+.ep-btn-ghost:hover { background: var(--primary); color: white; transform: translateY(-2px); }
+.ep-hero-image-wrap { position: relative; }
+.ep-hero-image { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
+.ep-pull-quote { position: absolute; bottom: -2rem; left: -3rem; background: rgba(255, 255, 255, 0.45); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); border: 1px solid rgba(255, 255, 255, 0.35); border-left: 4px solid var(--secondary); border-radius: 16px; padding: 2rem; max-width: 320px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06); }
+.ep-pull-quote p { font-family: var(--font-serif-display); font-style: italic; font-size: 1.25rem; line-height: 1.45; color: var(--primary); margin: 0; }
+.ep-pull-quote cite { display: block; font-family: var(--font-mono); font-size: 0.7rem; font-style: normal; letter-spacing: 0.1em; text-transform: uppercase; color: var(--on-surface-variant); margin-top: 1rem; }
+.ep-facts { padding: 2.5rem 2rem; background: var(--surface); border-top: 1px solid rgba(194, 198, 210, 0.2); border-bottom: 1px solid rgba(194, 198, 210, 0.2); }
+.ep-facts-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; gap: 2rem; }
+.ep-fact { flex: 1; }
+.ep-fact-label { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.4rem; }
+.ep-fact-value { font-family: var(--font-body); font-size: 0.95rem; font-weight: 600; color: var(--on-surface); }
+.ep-framework { padding: 6rem 2rem; background: var(--surface); }
+.ep-framework-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; }
+.ep-framework-title { font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 400; color: var(--primary); margin-bottom: 1.5rem; }
+.ep-framework-accent { width: 3rem; height: 3px; background: var(--secondary); margin-bottom: 2rem; }
+.ep-framework-desc { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; line-height: 1.8; color: var(--on-surface-variant); }
+.ep-framework-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(194, 198, 210, 0.2); }
+.ep-framework-card { padding: 2.5rem; background: white; transition: all 0.2s ease; border-top: 3px solid transparent; }
+.ep-framework-card:hover { background: var(--surface-container-low); border-top-color: var(--secondary); }
+.ep-framework-card h4 { font-family: var(--font-serif-display); font-size: 1.2rem; font-weight: 400; color: var(--primary); margin-bottom: 1rem; }
+.ep-framework-card p { font-size: 0.875rem; line-height: 1.65; color: var(--on-surface-variant); }
+.ep-dark { padding: 6rem 2rem; background: var(--primary); position: relative; overflow: hidden; }
+.ep-dark::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%); z-index: 0; }
+.ep-dark-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+.ep-dark-header { margin-bottom: 4rem; }
+.ep-dark-title { font-family: var(--font-serif-display); font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 400; color: white; line-height: 1.15; }
+.ep-dark-title em { font-weight: 300; opacity: 0.8; }
+.ep-dark-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: stretch; }
+.ep-glass-card { background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 3rem; min-height: 420px; display: flex; flex-direction: column; }
+.ep-glass-eyebrow { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); margin-bottom: 1.5rem; }
+.ep-glass-card h3 { font-family: var(--font-serif-display); font-size: 1.75rem; font-weight: 400; color: white; margin-bottom: 2rem; }
+.ep-stat-row { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 1.25rem; margin-bottom: 1.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+.ep-stat-label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); }
+.ep-stat-number { font-family: var(--font-serif-display); font-size: 2.5rem; font-weight: 400; color: white; }
+.ep-glass-body { font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.75); margin-bottom: 2rem; }
+.ep-check-list { list-style: none; padding: 0; margin: 0; }
+.ep-check-list li { display: flex; align-items: center; gap: 0.75rem; color: white; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.75rem 0; }
+.ep-check-list li::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--secondary); flex-shrink: 0; }
+.ep-transfer { padding: 6rem 2rem; background: var(--surface-container-low); }
+.ep-transfer-inner { max-width: 1200px; margin: 0 auto; display: flex; gap: 5rem; align-items: center; }
+.ep-transfer-image-wrap { flex: 0 0 45%; position: relative; }
+.ep-transfer-image { width: 100%; height: 550px; object-fit: cover; display: block; }
+.ep-transfer-image-accent { position: absolute; top: -1.5rem; right: -1.5rem; width: 120px; height: 120px; background: var(--tertiary-fixed, #d9e4eb); z-index: -1; }
+.ep-transfer-text { flex: 1; }
+.ep-transfer-title { font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 400; color: var(--primary); line-height: 1.15; margin-bottom: 1.5rem; }
+.ep-transfer-body { font-size: 1.05rem; line-height: 1.7; color: var(--on-surface-variant); margin-bottom: 2.5rem; }
+.ep-sub-feature { margin-bottom: 1.5rem; cursor: default; }
+.ep-sub-feature h4 { font-family: var(--font-serif-display); font-size: 1.2rem; font-weight: 400; color: var(--primary); margin-bottom: 0.5rem; transition: color 0.2s ease; }
+.ep-sub-feature:hover h4 { color: var(--secondary); }
+.ep-sub-feature p { font-size: 0.875rem; color: var(--on-surface-variant); line-height: 1.6; }
+/* Process, FAQ, Related, CTA sections follow same pattern... */
 </style>
 
-<div class="editorial-section">
-  <div class="pull-quote">
-    "The biggest tax mistake retirees make isn't what they earn — it's the order they spend it." — Mike Stevens, IAR
+<section class="ep-hero">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">Retirement Money Map</span>
+      <h1 class="ep-hero-title">Your Roadmap from<br>Savings to Income.</h1>
+      <span class="ep-hero-title-italic">A clear, three-phase process.</span>
+      <p class="ep-hero-body">Transform your scattered accounts and goals into a coordinated retirement strategy that shows you exactly how your money will work throughout retirement.</p>
+      <a href="/contact/" class="ep-btn-primary">Start Your Money Map</a>
+    </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-planning-tablet.jpg" alt="Couple planning with retirement money map" class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"A plan without a map is just a wish."</p>
+        <cite>Mike Stevens, IAR</cite>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="editorial-section">
-  <div class="chapter-header">
-    <span class="chapter-eyebrow">CHAPTER I</span>
-    <div class="chapter-line"></div>
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact"><div class="ep-fact-label">Process</div><div class="ep-fact-value">Three-phase system</div></div>
+    <div class="ep-fact"><div class="ep-fact-label">Timeline</div><div class="ep-fact-value">1-3 months</div></div>
+    <div class="ep-fact"><div class="ep-fact-label">Strategy</div><div class="ep-fact-value">3 Bucket approach</div></div>
+    <div class="ep-fact"><div class="ep-fact-label">Minimum</div><div class="ep-fact-value">$500K combined</div></div>
+    <div class="ep-fact"><div class="ep-fact-label">Discovery</div><div class="ep-fact-value">Complimentary</div></div>
   </div>
-  
-  <h2 class="editorial-h2">Key Facts</h2>
-  
-  <div class="stats-grid">
-    <div class="stat-item">
-      <span class="stat-number">Multi-Year</span>
-      <span class="stat-label">Approach</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">6+</span>
-      <span class="stat-label">Strategies</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">Quarterly</span>
-      <span class="stat-label">Review</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">$500K</span>
-      <span class="stat-label">Minimum</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">CPA</span>
-      <span class="stat-label">Coordination</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">Included</span>
-      <span class="stat-label">Cost</span>
-    </div>
-  </div>
-</div>
+</section>
 
-<div class="editorial-section">
-  <div class="chapter-header">
-    <span class="chapter-eyebrow">CHAPTER II</span>
-    <div class="chapter-line"></div>
-  </div>
-  
-  <h2 class="editorial-h2">Does This Sound Familiar?</h2>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Your tax bill keeps growing every year</h3>
-    <p class="editorial-p">Required Minimum Distributions, Social Security, and investment withdrawals push you into higher brackets — and no one's told you how to avoid it.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">You're paying IRMAA surcharges on Medicare</h3>
-    <p class="editorial-p">A few thousand dollars over the income threshold can cost you hundreds per month in extra Medicare premiums — money that didn't have to leave your pocket.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Your CPA only looks backward</h3>
-    <p class="editorial-p">Tax preparers file last year's return. They don't build multi-year strategies to optimize your tax liability across your entire retirement.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">You don't know which accounts to tap first</h3>
-    <p class="editorial-p">Should you pull from your IRA, Roth, brokerage account, or some combination? The order matters — and most retirees guess wrong.</p>
-  </div>
-</div>
-
-<div class="editorial-section">
-  <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-planning-tablet.jpg" alt="Couple enjoying retirement with smart tax planning" class="feature-image">
-  
-  <div class="chapter-header">
-    <span class="chapter-eyebrow">CHAPTER III</span>
-    <div class="chapter-line"></div>
-  </div>
-  
-  <h2 class="editorial-h2">Strategic Tax Planning for Retirement</h2>
-  
-  <p class="editorial-p">We don't just file returns. We build multi-year tax strategies designed to minimize your lifetime tax liability — not just this year's bill.</p>
-  
-  <p class="editorial-p">Our approach includes Roth conversion analysis, strategic withdrawal sequencing, IRMAA avoidance planning, and coordination with your CPA to execute strategies that save you tens of thousands (sometimes hundreds of thousands) over your retirement.</p>
-  
-  <div class="stats-grid">
-    <div class="stat-item">
-      <span class="stat-number">$200K+</span>
-      <span class="stat-label">Average lifetime tax savings for clients with proper planning</span>
-    </div>
-  </div>
-  
-  <h3 style="font-family: var(--font-body); font-weight: 600; margin: 2rem 0 1rem; font-size: 1.25rem; color: var(--on-surface);">Our Tax Strategies Include:</h3>
-  
-  <div class="glass-card">
-    <ul style="font-family: var(--font-body); line-height: 1.8; color: var(--on-surface); list-style: none; padding: 0;">
-      <li style="margin-bottom: 0.5rem;">• Roth IRA conversion planning (when and how much)</li>
-      <li style="margin-bottom: 0.5rem;">• Strategic withdrawal sequencing from multiple account types</li>
-      <li style="margin-bottom: 0.5rem;">• Medicare IRMAA avoidance strategies</li>
-      <li style="margin-bottom: 0.5rem;">• Social Security taxation optimization</li>
-      <li style="margin-bottom: 0.5rem;">• Tax-loss harvesting in down markets</li>
-      <li style="margin-bottom: 0.5rem;">• Asset location optimization (which investments in which accounts)</li>
-      <li style="margin-bottom: 0.5rem;">• Charitable giving strategies (QCDs, donor-advised funds)</li>
-      <li style="margin-bottom: 0.5rem;">• Coordination with your CPA for seamless execution</li>
-    </ul>
-  </div>
-</div>
-
-<div class="editorial-section">
-  <div class="chapter-header">
-    <span class="chapter-eyebrow">CHAPTER IV</span>
-    <div class="chapter-line"></div>
-  </div>
-  
-  <h2 class="editorial-h2">How It Works</h2>
-  
-  <p class="editorial-p">It's just three steps</p>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Step 1) Tax Analysis</h3>
-    <p class="editorial-p">We review your tax returns, account structures, and income sources to identify opportunities and risks.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Step 2) Build the Strategy</h3>
-    <p class="editorial-p">Create a year-by-year tax roadmap showing optimal withdrawal timing, Roth conversions, and IRMAA management.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Step 3) Execute & Monitor</h3>
-    <p class="editorial-p">Implement strategies with your CPA, monitor tax law changes, and adjust as your situation evolves.</p>
-  </div>
-</div>
-
-<div class="editorial-section">
-  <div class="chapter-header">
-    <span class="chapter-eyebrow">CHAPTER V</span>
-    <div class="chapter-line"></div>
-  </div>
-  
-  <h2 class="editorial-h2">Common Questions</h2>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Do you prepare tax returns?</h3>
-    <p class="editorial-p">We focus on tax strategy and planning, not tax preparation. We work closely with your CPA to develop and implement strategies, then they handle the actual return filing. Think of it as: we build the plan, they execute the paperwork.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">When should I do a Roth conversion?</h3>
-    <p class="editorial-p">The best time is typically during low-income years before RMDs start (ages 60-72), or after retirement but before Social Security begins. We model your specific situation to identify the optimal years and amounts to convert.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">What is IRMAA and how do I avoid it?</h3>
-    <p class="editorial-p">IRMAA (Income-Related Monthly Adjustment Amount) is a Medicare surcharge for higher earners. We help you manage your income to stay below the thresholds through strategic withdrawal timing, Roth conversions in low-income years, and charitable giving strategies.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">How much can I save with tax planning?</h3>
-    <p class="editorial-p">The average client with proper multi-year tax planning saves $200,000+ over their lifetime compared to reactive, year-by-year tax preparation. The exact amount depends on your income sources, account types, and time horizon.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">What's the difference between tax planning and tax preparation?</h3>
-    <p class="editorial-p">Tax preparation looks backward and files last year's return. Tax planning looks forward and builds multi-year strategies to minimize your lifetime tax liability. We do planning; your CPA does preparation.</p>
-  </div>
-</div>
+<!-- Add additional sections following the same pattern -->

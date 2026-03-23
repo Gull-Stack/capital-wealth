@@ -1,11 +1,7 @@
 ---
-layout: layouts/service-subpage.njk
+layout: layouts/base-finpay.njk
 title: "Medicare & IRMAA Planning | Reduce Medicare Costs | Capital Wealth"
 description: "Navigate Medicare options and minimize IRMAA surcharges. Expert Medicare planning strategies to reduce premiums and optimize your healthcare costs in retirement."
-serviceLabel: "MEDICARE & IRMAA"
-serviceTitle: "Navigate Medicare Like a Pro"
-serviceSubtitle: "Medicare decisions affect your healthcare and budget for decades. Our Medicare and IRMAA planning helps you minimize costs while maximizing coverage."
-serviceTag: "medicare"
 breadcrumbs:
   - { name: "Home", url: "/" }
   - { name: "Services", url: "/services/" }
@@ -23,209 +19,1151 @@ faqSchema:
     answer: "Ideally, you should start IRMAA planning 3-5 years before Medicare enrollment at age 65. Because IRMAA is based on income from two years prior, early planning allows you to strategically manage Roth conversions, withdrawal sequencing, and other income decisions to minimize future Medicare surcharges. Even if you're already on Medicare, it's never too late to implement strategies that will reduce costs in future years."
 ---
 
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">MEDICARE & IRMAA</p>
-            <h2 >Don't Overpay for Medicare</h2>
-            <p class="titan-subhero-body">Higher-income retirees can pay thousands more in Medicare premiums due to IRMAA surcharges. Strategic income management can save you $8,000+ per year — every year.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">REDUCE MY MEDICARE COSTS <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/photos/couple-boat.jpg" alt="Couple enjoying retirement with optimized healthcare costs" class="titan-subhero-img">
+<style>
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — Medicare & IRMAA
+   ═══════════════════════════════════════════ */
+
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons — match homepage hero-btn / hero-btn-secondary */
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Key Facts Row */
+.ep-facts {
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.2);
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-facts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ep-fact {
+  flex: 1;
+}
+
+.ep-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.4rem;
+}
+
+.ep-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.ep-framework-desc {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.2);
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
+  background: white;
+  transition: all 0.2s ease;
+  border-top: 3px solid transparent;
+}
+
+.ep-framework-card:hover {
+  background: var(--surface-container-low);
+  border-top-color: var(--secondary);
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Stats & Solution */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
+}
+
+.ep-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ep-dark-header {
+  margin-bottom: 4rem;
+}
+
+.ep-dark-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
+}
+
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.ep-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-glass-card:last-child {
+  margin-top: 0;
+}
+
+.ep-glass-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ep-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ep-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.ep-stat-number small {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-left: 0.25rem;
+}
+
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.ep-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ep-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+}
+
+.ep-check-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Asymmetric Image + Text */
+.ep-transfer {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-transfer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ep-transfer-image-wrap {
+  flex: 0 0 45%;
+  position: relative;
+}
+
+.ep-transfer-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-transfer-image-accent {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 120px;
+  height: 120px;
+  background: var(--tertiary-fixed, #d9e4eb);
+  z-index: -1;
+}
+
+.ep-transfer-text {
+  flex: 1;
+}
+
+.ep-transfer-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.ep-transfer-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2.5rem;
+}
+
+.ep-sub-feature {
+  margin-bottom: 1.5rem;
+  cursor: default;
+}
+
+.ep-sub-feature h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.ep-sub-feature:hover h4 {
+  color: var(--secondary);
+}
+
+.ep-sub-feature p {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* Process — liquid glass cards with image */
+.ep-process {
+  padding: 6rem 2rem;
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-process-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.ep-process-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-process-sub {
+  font-size: 1rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-process-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.ep-step-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.ep-step-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
+}
+
+.ep-step-number {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.ep-step-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+  margin-bottom: 0.75rem;
+}
+
+.ep-step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 300px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* Related Services */
+.ep-related {
+  padding: 4rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.15);
+}
+
+.ep-related-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 2rem;
+}
+
+.ep-related-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  background: var(--surface-container-low);
+  transition: all 0.2s ease;
+}
+
+.ep-related-link:hover {
+  background: white;
+}
+
+.ep-related-link:not(:last-child) {
+  border-right: 1px solid rgba(194, 198, 210, 0.15);
+}
+
+.ep-related-name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-related-arrow {
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
+
+/* CTA — matches homepage final-cta */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-facts-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .ep-fact {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .ep-framework-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-framework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-glass-card:last-child {
+    margin-top: 0;
+  }
+
+  .ep-transfer {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-transfer-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ep-transfer-image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .ep-transfer-image {
+    height: 350px;
+  }
+
+  .ep-transfer-image-accent {
+    display: none;
+  }
+
+  .ep-process {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-process-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-process-image {
+    height: 220px;
+  }
+
+  .ep-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-related-link:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(194, 198, 210, 0.15);
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
+  }
+}
+</style>
+
+{# ═══════════════════════════════════════════════════════════
+   1. HERO — Asymmetric editorial layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-hero">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">Medicare & IRMAA</span>
+      <h1 class="ep-hero-title">Don't Overpay<br>for Medicare.</h1>
+      <span class="ep-hero-title-italic">Strategic IRMAA Management.</span>
+      <p class="ep-hero-body">Higher-income retirees can pay thousands more in Medicare premiums due to IRMAA surcharges. Strategic income management can save you $8,000+ per year — every year.</p>
+      <a href="/contact/" class="ep-btn-primary">Reduce My Medicare Costs</a>
     </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-cooking.jpg"
+           alt="Couple planning their Medicare strategy"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"One bad income year can cost you thousands in Medicare surcharges for two years."</p>
+        <cite>Mike Stevens, IAR</cite>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="quote-bar">
-    <div class="quote-bar-inner">
-        <p class="quote-bar-text">"One bad income year can cost you thousands in Medicare surcharges for two years."</p>
-        <p class="quote-bar-attribution">— Mike Stevens, IAR</p>
+{# ═══════════════════════════════════════════════════════════
+   2. KEY FACTS — Technical precision row
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact">
+      <div class="ep-fact-label">Coverage</div>
+      <div class="ep-fact-value">IRMAA avoidance strategies</div>
     </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Parts Covered</div>
+      <div class="ep-fact-value">A, B, D, Medigap</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Enrollment Guidance</div>
+      <div class="ep-fact-value">Included</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Income Planning</div>
+      <div class="ep-fact-value">Multi-year IRMAA projection</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Cost</div>
+      <div class="ep-fact-value">Included</div>
+    </div>
+  </div>
 </section>
 
-<section class="key-facts">
-    <div class="key-facts-inner">
-        <h2 class="key-facts-heading">What's Included</h2>
-        <div class="key-facts-grid">
-            <div class="key-fact-item">
-                <h3>Coverage</h3>
-                <p>IRMAA avoidance strategies</p>
-            </div>
-            <div class="key-fact-item">
-                <h3>Parts Covered</h3>
-                <p>A, B, D, Medigap</p>
-            </div>
-            <div class="key-fact-item">
-                <h3>Enrollment Guidance</h3>
-                <p>Included</p>
-            </div>
-            <div class="key-fact-item">
-                <h3>Income Planning</h3>
-                <p>Multi-year IRMAA projection</p>
-            </div>
-            <div class="key-fact-item">
-                <h3>Cost</h3>
-                <p>Included</p>
-            </div>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   3. THE PROBLEM — Framework grid
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-framework">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">Does This Sound Familiar?</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">The most common Medicare and IRMAA mistakes we see with higher-income retirees.</p>
     </div>
+    <div class="ep-framework-grid">
+      <div class="ep-framework-card">
+        <h4>You got a surprise IRMAA bill</h4>
+        <p>One year your income crossed a threshold by $1,000 — and now you're paying an extra $700/month in Medicare premiums. No one warned you.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>You don't understand the 2-year lookback</h4>
+        <p>IRMAA is based on income from two years ago, which means planning must happen years in advance. Most advisors miss this entirely.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Your withdrawals aren't coordinated</h4>
+        <p>You're pulling from IRAs without considering how it affects Medicare costs, Social Security taxation, or your overall tax liability.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>You're paying thousands more than necessary</h4>
+        <p>Small adjustments to your income — Roth conversions, withdrawal timing, charitable strategies — could save you $8,000+ per year in premiums.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>You got a surprise IRMAA bill</h3>
-                <p>One year your income crossed a threshold by $1,000 — and now you're paying an extra $700/month in Medicare premiums. No one warned you.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't understand the 2-year lookback</h3>
-                <p>IRMAA is based on income from two years ago, which means planning must happen years in advance. Most advisors miss this entirely.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>Your withdrawals aren't coordinated</h3>
-                <p>You're pulling from IRAs without considering how it affects Medicare costs, Social Security taxation, or your overall tax liability.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're paying thousands more than necessary</h3>
-                <p>Small adjustments to your income — Roth conversions, withdrawal timing, charitable strategies — could save you $8,000+ per year in premiums.</p>
-            </div>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   4. DARK SECTION — Solution metrics + checklist
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-dark">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">The Solution</span>
+      <h2 class="ep-dark-title">Strategic IRMAA Management.<br><em>Avoid the Surcharges Before They Hit.</em></h2>
     </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Potential Savings</span>
+        <h3>IRMAA Cost Avoidance</h3>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Annual Savings for Couples</span>
+          <span class="ep-stat-number">$8,400<small>+</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Planning Horizon</span>
+          <span class="ep-stat-number">Multi-Year</span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Income Lookback</span>
+          <span class="ep-stat-number">2<small>years</small></span>
+        </div>
+      </div>
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Our IRMAA Strategies</span>
+        <h3>Complete Medicare Planning</h3>
+        <p class="ep-glass-body">We integrate Medicare IRMAA thresholds into your tax planning and withdrawal strategy, so you manage your income to stay below surcharge levels. This requires multi-year planning — not just reacting when the bill arrives.</p>
+        <ul class="ep-check-list">
+          <li>Income threshold management (staying below IRMAA tiers)</li>
+          <li>Roth conversions in low-income years (before Medicare)</li>
+          <li>Strategic withdrawal sequencing to control MAGI</li>
+          <li>Qualified Charitable Distributions (QCDs) to reduce income</li>
+          <li>Municipal bond strategies for tax-free income</li>
+          <li>Two-year income projection and planning</li>
+          <li>Medicare Part D plan selection and optimization</li>
+          <li>Life-changing event appeals when applicable</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">Strategic IRMAA Management</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Avoid the Surcharges Before They Hit</h3>
-                <p>We integrate Medicare IRMAA thresholds into your tax planning and withdrawal strategy, so you manage your income to stay below surcharge levels. This requires multi-year planning — not just reacting when the bill arrives.</p>
-                <p>Our approach coordinates Roth conversions, withdrawal sequencing, charitable giving, and Social Security timing to minimize lifetime Medicare costs while maximizing your after-tax retirement income.</p>
-                <div class="service-solution-stat">
-                    <span class="service-solution-stat-num">$8,400+</span>
-                    <span class="service-solution-stat-label">Annual savings for couples who avoid the first IRMAA tier</span>
-                </div>
-            </div>
-            <div class="service-solution-right">
-                <h4>Our IRMAA Strategies:</h4>
-                <ul class="service-solution-list">
-                    <li>Income threshold management (staying below IRMAA tiers)</li>
-                    <li>Roth conversions in low-income years (before Medicare)</li>
-                    <li>Strategic withdrawal sequencing to control MAGI</li>
-                    <li>Qualified Charitable Distributions (QCDs) to reduce income</li>
-                    <li>Municipal bond strategies for tax-free income</li>
-                    <li>Two-year income projection and planning</li>
-                    <li>Medicare Part D plan selection and optimization</li>
-                    <li>Life-changing event appeals when applicable</li>
-                </ul>
-            </div>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   5. ASYMMETRIC — Image + Medicare strategy text
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-transfer">
+  <div class="ep-transfer-inner">
+    <div class="ep-transfer-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg"
+           alt="Couple enjoying retirement with optimized healthcare costs"
+           class="ep-transfer-image">
+      <div class="ep-transfer-image-accent"></div>
     </div>
+    <div class="ep-transfer-text">
+      <span class="ep-chapter-label">Forward Planning</span>
+      <h2 class="ep-transfer-title">Multi-Year<br>Income Coordination</h2>
+      <p class="ep-transfer-body">Our approach coordinates Roth conversions, withdrawal sequencing, charitable giving, and Social Security timing to minimize lifetime Medicare costs while maximizing your after-tax retirement income.</p>
+      <div class="ep-sub-feature">
+        <h4>Strategic Withdrawal Sequencing</h4>
+        <p>Control your Modified Adjusted Gross Income (MAGI) through careful planning of which accounts to withdraw from and when.</p>
+      </div>
+      <div class="ep-sub-feature">
+        <h4>Charitable Income Strategies</h4>
+        <p>Use Qualified Charitable Distributions and donor-advised funds to reduce your taxable income while supporting causes you care about.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Project Your Income</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Model your income for the next 5-10 years to identify which years you’ll be subject to IRMAA surcharges.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Build the Strategy</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Coordinate withdrawals, Roth conversions, and charitable giving to stay below IRMAA thresholds.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Monitor & Adjust</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Review your income annually and adjust the plan as tax laws, Medicare rules, or your situation changes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   6. PROCESS — Accordion steps
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-process">
+  <div class="ep-process-inner">
+    <div class="ep-process-header">
+      <div>
+        <span class="ep-chapter-label">How It Works</span>
+        <h2 class="ep-process-title">Three Steps to<br>Medicare Optimization</h2>
+        <p class="ep-process-sub">It's just three simple steps.</p>
+        <a href="/contact/" class="ep-btn-primary">Become a Client</a>
+      </div>
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-planning-tablet.jpg" alt="Couple planning their Medicare strategy" class="ep-process-image">
     </div>
+    <div class="ep-steps-grid">
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 01</span>
+        <h3>Project Your Income</h3>
+        <p>Model your income for the next 5-10 years to identify which years you'll be subject to IRMAA surcharges.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 02</span>
+        <h3>Build the Strategy</h3>
+        <p>Coordinate withdrawals, Roth conversions, and charitable giving to stay below IRMAA thresholds.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 03</span>
+        <h3>Monitor & Adjust</h3>
+        <p>Review your income annually and adjust the plan as tax laws, Medicare rules, or your situation changes.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">Medicare & IRMAA FAQ</h2>
-            <p class="faq-sub">Learn how to reduce your Medicare costs with smart planning.</p>
-            <a href="/contact/" class="resources-cta">Ask About IRMAA</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is IRMAA?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">IRMAA (Income-Related Monthly Adjustment Amount) is a surcharge added to Medicare Part B and Part D premiums for higher-income beneficiaries. The surcharge is based on your Modified Adjusted Gross Income from two years prior and can add over $1,000/month per person to your Medicare costs.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What are the 2025 IRMAA thresholds?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">For 2025, single filers with income over $103,000 (married filing jointly over $206,000) will pay IRMAA surcharges. The surcharges increase at multiple income tiers, with the highest tier kicking in at $500,000 for singles and $750,000 for married couples. We help you stay below the first threshold to avoid thousands in extra premiums.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Can I avoid IRMAA if I'm already paying it?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Yes, with forward planning. IRMAA is based on income from two years ago, so we manage your income today to avoid surcharges two years from now. We also review potential life-changing event appeals if your income has decreased due to retirement, death of a spouse, or other qualifying events.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How does IRMAA affect my Medicare Part D prescription drug coverage?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">IRMAA surcharges apply to both Medicare Part B (medical insurance) and Part D (prescription drug coverage). Higher-income beneficiaries pay an additional monthly amount on top of their Part D premium. Strategic income planning can help you avoid these surcharges entirely and significantly reduce your total Medicare costs.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">When should I start planning for IRMAA?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Ideally, you should start IRMAA planning 3-5 years before Medicare enrollment at age 65. Because IRMAA is based on income from two years prior, early planning allows you to strategically manage Roth conversions, withdrawal sequencing, and other income decisions to minimize future Medicare surcharges. Even if you're already on Medicare, it's never too late to implement strategies that will reduce costs in future years.</div>
-                </button>
-            </div>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   7. FAQ — Editorial accordion
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">Medicare & IRMAA FAQ</h2>
+      <p class="ep-faq-sub">Learn how to reduce your Medicare costs with smart planning.</p>
+      <a href="/contact/" class="ep-btn-ghost">Ask About IRMAA</a>
     </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is IRMAA? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>IRMAA (Income-Related Monthly Adjustment Amount) is a surcharge added to Medicare Part B and Part D premiums for higher-income beneficiaries. The surcharge is based on your Modified Adjusted Gross Income from two years prior and can add over $1,000/month per person to your Medicare costs.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What are the 2025 IRMAA thresholds? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>For 2025, single filers with income over $103,000 (married filing jointly over $206,000) will pay IRMAA surcharges. The surcharges increase at multiple income tiers, with the highest tier kicking in at $500,000 for singles and $750,000 for married couples. We help you stay below the first threshold to avoid thousands in extra premiums.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Can I avoid IRMAA if I'm already paying it? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Yes, with forward planning. IRMAA is based on income from two years ago, so we manage your income today to avoid surcharges two years from now. We also review potential life-changing event appeals if your income has decreased due to retirement, death of a spouse, or other qualifying events.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How does IRMAA affect my Medicare Part D prescription drug coverage? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>IRMAA surcharges apply to both Medicare Part B (medical insurance) and Part D (prescription drug coverage). Higher-income beneficiaries pay an additional monthly amount on top of their Part D premium. Strategic income planning can help you avoid these surcharges entirely and significantly reduce your total Medicare costs.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">When should I start planning for IRMAA? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Ideally, you should start IRMAA planning 3-5 years before Medicare enrollment at age 65. Because IRMAA is based on income from two years prior, early planning allows you to strategically manage Roth conversions, withdrawal sequencing, and other income decisions to minimize future Medicare surcharges. Even if you're already on Medicare, it's never too late to implement strategies that will reduce costs in future years.</p></div>
+      </button>
+    </div>
+  </div>
 </section>
 
-<section class="service-related">
-    <div class="service-related-inner">
-        <h2 class="service-related-heading">Related Services</h2>
-        <div class="service-related-grid">
-            <a href="/services/social-security/" class="service-related-link">
-                <span class="service-related-name">Social Security Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/tax-planning/" class="service-related-link">
-                <span class="service-related-name">Tax Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/" class="service-related-link">
-                <span class="service-related-name">Federal Benefits</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
+{# ═══════════════════════════════════════════════════════════
+   8. RELATED SERVICES
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-related">
+  <div class="ep-related-inner">
+    <span class="ep-chapter-label">Related Services</span>
+    <h2 class="ep-framework-title" style="margin-bottom: 0;">Complete Your Financial Plan</h2>
+    <div class="ep-related-grid">
+      <a href="/services/social-security/" class="ep-related-link">
+        <span class="ep-related-name">Social Security Planning</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+      <a href="/services/tax-planning/" class="ep-related-link">
+        <span class="ep-related-name">Tax Planning</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+      <a href="/services/federal-benefits/" class="ep-related-link">
+        <span class="ep-related-name">Federal Benefits</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
     </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   9. CTA — Centered editorial
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Ready to minimize your Medicare costs?</h2>
+      <p class="ep-cta-body">Every income situation is unique. Schedule a complimentary visit to create a strategy for avoiding IRMAA surcharges and optimizing your Medicare costs.</p>
+      <a href="/contact/" class="ep-btn-primary">Schedule Your Visit</a>
+      <p class="ep-cta-promise">A Fiduciary Promise</p>
+    </div>
+    <img src="/assets/images/photos/couple-boat.jpg" alt="Retired couple enjoying life on a boat" class="ep-cta-image">
+  </div>
 </section>

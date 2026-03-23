@@ -1,11 +1,7 @@
 ---
-layout: layouts/service-subpage.njk
+layout: layouts/base-finpay.njk
 title: "Retirement Portfolio Management | Capital Wealth Lehi, UT"
 description: "Active portfolio management designed for retirement income and long-term growth. Diversified strategies, risk management, and tax-efficient investing."
-serviceLabel: "PORTFOLIO MANAGEMENT"
-serviceTitle: "Invested for Income, Not Just Growth"
-serviceSubtitle: "Retirement portfolios have different goals than accumulation portfolios. Yours should be designed to generate reliable income, manage volatility, and preserve your purchasing power for decades."
-serviceTag: "portfolio-management"
 breadcrumbs:
   - { name: "Home", url: "/" }
   - { name: "Services", url: "/services/" }
@@ -24,298 +20,1154 @@ faqSchema:
 ---
 
 <style>
-.editorial-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — Portfolio Management
+   ═══════════════════════════════════════════ */
 
-.chapter-header {
-  display: flex;
-  align-items: center;
-  margin: 4rem 0 2rem;
-  gap: 2rem;
-}
-
-.chapter-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--accent);
-  white-space: nowrap;
-}
-
-.chapter-line {
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-}
-
-.pull-quote {
-  margin: 3rem 0;
-  padding: 0 0 0 2rem;
-  border-left: 4px solid var(--accent);
-  font-family: var(--font-serif-display);
-  font-style: italic;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  color: var(--text-primary);
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  margin: 2rem 0;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1px;
-  background: var(--border);
-  border-radius: var(--radius-lg);
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
   overflow: hidden;
-  margin: 2rem 0;
+  margin-top: -1rem;
 }
 
-.stat-item {
-  background: white;
-  padding: 2rem 1.5rem;
-  text-align: center;
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
 }
 
-.stat-number {
-  font-family: var(--font-serif-display);
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: var(--primary);
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
   display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
   margin-bottom: 0.5rem;
 }
 
-.stat-label {
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.editorial-h2 {
+.ep-hero-title-italic {
   font-family: var(--font-serif-display);
-  font-size: 2rem;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: 400;
-  line-height: 1.3;
-  color: var(--text-primary);
-  margin: 2rem 0 1rem;
-}
-
-.editorial-p {
-  font-family: var(--font-body);
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: var(--text-primary);
-  margin: 1.5rem 0;
-}
-
-.feature-image {
-  width: 100%;
-  max-width: 600px;
-  margin: 3rem auto;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
   display: block;
-  border-radius: var(--radius-lg);
-  filter: grayscale(20%);
-  transition: filter 0.3s ease;
 }
 
-.feature-image:hover {
-  filter: grayscale(0%);
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
 }
 
+/* Buttons — match homepage hero-btn / hero-btn-secondary */
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Key Facts Row */
+.ep-facts {
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.2);
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-facts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ep-fact {
+  flex: 1;
+}
+
+.ep-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.4rem;
+}
+
+.ep-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.ep-framework-desc {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.2);
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
+  background: white;
+  transition: all 0.2s ease;
+  border-top: 3px solid transparent;
+}
+
+.ep-framework-card:hover {
+  background: var(--surface-container-low);
+  border-top-color: var(--secondary);
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Stats & Solution */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
+}
+
+.ep-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ep-dark-header {
+  margin-bottom: 4rem;
+}
+
+.ep-dark-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
+}
+
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.ep-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-glass-card:last-child {
+  margin-top: 0;
+}
+
+.ep-glass-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ep-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ep-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.ep-stat-number small {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-left: 0.25rem;
+}
+
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.ep-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ep-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+}
+
+.ep-check-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Asymmetric Image + Text */
+.ep-transfer {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-transfer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ep-transfer-image-wrap {
+  flex: 0 0 45%;
+  position: relative;
+}
+
+.ep-transfer-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-transfer-image-accent {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 120px;
+  height: 120px;
+  background: var(--tertiary-fixed, #d9e4eb);
+  z-index: -1;
+}
+
+.ep-transfer-text {
+  flex: 1;
+}
+
+.ep-transfer-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.ep-transfer-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2.5rem;
+}
+
+.ep-sub-feature {
+  margin-bottom: 1.5rem;
+  cursor: default;
+}
+
+.ep-sub-feature h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.ep-sub-feature:hover h4 {
+  color: var(--secondary);
+}
+
+.ep-sub-feature p {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* Process — liquid glass cards with image */
+.ep-process {
+  padding: 6rem 2rem;
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-process-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.ep-process-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-process-sub {
+  font-size: 1rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-process-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.ep-step-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.ep-step-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
+}
+
+.ep-step-number {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.ep-step-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+  margin-bottom: 0.75rem;
+}
+
+.ep-step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 300px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* Related Services */
+.ep-related {
+  padding: 4rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.15);
+}
+
+.ep-related-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 2rem;
+}
+
+.ep-related-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  background: var(--surface-container-low);
+  transition: all 0.2s ease;
+}
+
+.ep-related-link:hover {
+  background: white;
+}
+
+.ep-related-link:not(:last-child) {
+  border-right: 1px solid rgba(194, 198, 210, 0.15);
+}
+
+.ep-related-name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-related-arrow {
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
+
+/* CTA — matches homepage final-cta */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .chapter-header {
-    margin: 3rem 0 1.5rem;
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
-  
-  .stats-grid {
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-facts-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .ep-fact {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .ep-framework-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-framework-grid {
     grid-template-columns: 1fr;
   }
-  
-  .editorial-section {
-    padding: 0 1rem;
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-glass-card:last-child {
+    margin-top: 0;
+  }
+
+  .ep-transfer {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-transfer-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ep-transfer-image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .ep-transfer-image {
+    height: 350px;
+  }
+
+  .ep-transfer-image-accent {
+    display: none;
+  }
+
+  .ep-process {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-process-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-process-image {
+    height: 220px;
+  }
+
+  .ep-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-related-link:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(194, 198, 210, 0.15);
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
   }
 }
 </style>
 
-<div class="editorial-section">
-  <div class="pull-quote">
-    "A portfolio without a purpose is just a collection of accounts." — Mike Stevens, IAR
+{# ═══════════════════════════════════════════════════════════
+   1. HERO — Asymmetric editorial layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-hero">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">Portfolio Management</span>
+      <h1 class="ep-hero-title">Invested for Income,<br>Not Just Growth.</h1>
+      <span class="ep-hero-title-italic">Strategic Wealth Management.</span>
+      <p class="ep-hero-body">Retirement portfolios have different goals than accumulation portfolios. Yours should be designed to generate reliable income, manage volatility, and preserve your purchasing power for decades.</p>
+      <a href="/contact/" class="ep-btn-primary">Start Your Portfolio Review</a>
+    </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg"
+           alt="Couple enjoying retirement at the beach"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"A portfolio without a purpose is just a collection of accounts."</p>
+        <cite>Mike Stevens, IAR</cite>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="editorial-section">
-  <div class="chapter-header">
-    <span class="chapter-eyebrow">CHAPTER I</span>
-    <div class="chapter-line"></div>
-  </div>
-  
-  <h2 class="editorial-h2">Key Facts</h2>
-  
-  <div class="stats-grid">
-    <div class="stat-item">
-      <span class="stat-number">Active</span>
-      <span class="stat-label">Strategy</span>
+{# ═══════════════════════════════════════════════════════════
+   2. KEY FACTS — Technical precision row
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact">
+      <div class="ep-fact-label">Strategy</div>
+      <div class="ep-fact-value">Active management</div>
     </div>
-    <div class="stat-item">
-      <span class="stat-number">Goals-Based</span>
-      <span class="stat-label">Approach</span>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Approach</div>
+      <div class="ep-fact-value">Goals-based</div>
     </div>
-    <div class="stat-item">
-      <span class="stat-number">Quarterly</span>
-      <span class="stat-label">Review</span>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Review</div>
+      <div class="ep-fact-value">Quarterly</div>
     </div>
-    <div class="stat-item">
-      <span class="stat-number">Ongoing</span>
-      <span class="stat-label">Rebalancing</span>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Rebalancing</div>
+      <div class="ep-fact-value">Ongoing</div>
     </div>
-    <div class="stat-item">
-      <span class="stat-number">$500K</span>
-      <span class="stat-label">Minimum</span>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Minimum</div>
+      <div class="ep-fact-value">$500K</div>
     </div>
-    <div class="stat-item">
-      <span class="stat-number">Included</span>
-      <span class="stat-label">Cost</span>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Cost</div>
+      <div class="ep-fact-value">Included</div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="editorial-section">
-  <div class="chapter-header">
-    <span class="chapter-eyebrow">CHAPTER II</span>
-    <div class="chapter-line"></div>
-  </div>
-  
-  <h2 class="editorial-h2">Does This Sound Familiar?</h2>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Your portfolio is still in "growth mode"</h3>
-    <p class="editorial-p">You're retiring in 5 years (or already retired), but your investments are allocated like you're 35. No one adjusted the strategy.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">You panic when markets drop</h3>
-    <p class="editorial-p">Every market correction feels like a crisis because you don't have a strategy to manage volatility — you're just hoping it goes back up.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Your "advisor" is a salesperson</h3>
-    <p class="editorial-p">They sold you a bunch of funds, maybe rebalance once a year, and disappear until it's time to sell you something else.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">You have no idea what you're paying</h3>
-    <p class="editorial-p">Hidden fees, expense ratios, trading costs — they're all quietly eroding your returns, and no one's explained exactly what you're paying for.</p>
-  </div>
-</div>
-
-<div class="editorial-section">
-  <img src="/assets/images/photos/portfolio-dashboard.jpg" alt="Portfolio performance dashboard" class="feature-image">
-  
-  <div class="chapter-header">
-    <span class="chapter-eyebrow">CHAPTER III</span>
-    <div class="chapter-line"></div>
-  </div>
-  
-  <h2 class="editorial-h2">Active, Fiduciary Portfolio Management</h2>
-  
-  <p class="editorial-p">We manage portfolios designed specifically for retirees and pre-retirees — balancing income generation, growth, and downside protection. Every investment decision is made with your best interest as the legal priority (that's what fiduciary means).</p>
-  
-  <p class="editorial-p">Your portfolio is actively monitored, rebalanced strategically, and adjusted as markets change and your timeline evolves. No set-it-and-forget-it. No conflicts of interest. Just professional management aligned with your goals.</p>
-  
-  <div class="stats-grid">
-    <div class="stat-item">
-      <span class="stat-number">Fiduciary</span>
-      <span class="stat-label">Legally obligated to act in your best interest — always</span>
+{# ═══════════════════════════════════════════════════════════
+   3. THE PROBLEM — Framework grid
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-framework">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">Does This Sound Familiar?</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">The most common portfolio problems we see with retirees and pre-retirees who lack professional management.</p>
+    </div>
+    <div class="ep-framework-grid">
+      <div class="ep-framework-card">
+        <h4>Your portfolio is still in "growth mode"</h4>
+        <p>You're retiring in 5 years (or already retired), but your investments are allocated like you're 35. No one adjusted the strategy.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>You panic when markets drop</h4>
+        <p>Every market correction feels like a crisis because you don't have a strategy to manage volatility — you're just hoping it goes back up.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Your "advisor" is a salesperson</h4>
+        <p>They sold you a bunch of funds, maybe rebalance once a year, and disappear until it's time to sell you something else.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>You have no idea what you're paying</h4>
+        <p>Hidden fees, expense ratios, trading costs — they're all quietly eroding your returns, and no one's explained exactly what you're paying for.</p>
+      </div>
     </div>
   </div>
-  
-  <h3 style="font-family: var(--font-body); font-weight: 600; margin: 2rem 0 1rem; font-size: 1.25rem;">Our Portfolio Approach:</h3>
-  
-  <div class="glass-card">
-    <ul style="font-family: var(--font-body); line-height: 1.8; color: var(--text-primary); list-style: none; padding: 0;">
-      <li style="margin-bottom: 0.5rem;">• Age-appropriate asset allocation (not one-size-fits-all)</li>
-      <li style="margin-bottom: 0.5rem;">• Diversification across asset classes and sectors</li>
-      <li style="margin-bottom: 0.5rem;">• Active risk management and downside protection</li>
-      <li style="margin-bottom: 0.5rem;">• Tax-efficient fund selection and placement</li>
-      <li style="margin-bottom: 0.5rem;">• Regular rebalancing to maintain target allocations</li>
-      <li style="margin-bottom: 0.5rem;">• Low-cost, institutional-class investments</li>
-      <li style="margin-bottom: 0.5rem;">• Transparent fee structure (no hidden costs)</li>
-      <li style="margin-bottom: 0.5rem;">• Quarterly reviews and ongoing monitoring</li>
-    </ul>
-  </div>
-</div>
+</section>
 
-<div class="editorial-section">
-  <div class="chapter-header">
-    <span class="chapter-eyebrow">CHAPTER IV</span>
-    <div class="chapter-line"></div>
+{# ═══════════════════════════════════════════════════════════
+   4. DARK SECTION — Solution metrics + checklist
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-dark">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">The Solution</span>
+      <h2 class="ep-dark-title">Active, Fiduciary Management.<br><em>Transparent Results.</em></h2>
+    </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Portfolio Metrics</span>
+        <h3>Professional Management</h3>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Fiduciary Standard</span>
+          <span class="ep-stat-number">Always</span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Monitoring</span>
+          <span class="ep-stat-number">Daily</span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Rebalancing</span>
+          <span class="ep-stat-number">Strategic</span>
+        </div>
+      </div>
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Portfolio Approach</span>
+        <h3>Active Risk Management</h3>
+        <p class="ep-glass-body">We manage portfolios designed specifically for retirees and pre-retirees — balancing income generation, growth, and downside protection. Every investment decision is made with your best interest as the legal priority.</p>
+        <ul class="ep-check-list">
+          <li>Age-appropriate asset allocation (not one-size-fits-all)</li>
+          <li>Diversification across asset classes and sectors</li>
+          <li>Active risk management and downside protection</li>
+          <li>Tax-efficient fund selection and placement</li>
+          <li>Regular rebalancing to maintain target allocations</li>
+          <li>Low-cost, institutional-class investments</li>
+          <li>Transparent fee structure (no hidden costs)</li>
+          <li>Quarterly reviews and ongoing monitoring</li>
+        </ul>
+      </div>
+    </div>
   </div>
-  
-  <h2 class="editorial-h2">How It Works</h2>
-  
-  <p class="editorial-p">It's just three steps</p>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 1) Assess & Analyze</h3>
-    <p class="editorial-p">Review your current portfolio, risk tolerance, timeline, and income needs to design the right allocation.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 2) Build & Implement</h3>
-    <p class="editorial-p">Construct a diversified portfolio aligned with your retirement goals and tax situation, then execute the strategy.</p>
-  </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 3) Monitor & Adjust</h3>
-    <p class="editorial-p">Actively manage your portfolio with ongoing monitoring, strategic rebalancing, and adjustments as needed.</p>
-  </div>
-</div>
+</section>
 
-<div class="editorial-section">
-  <div class="chapter-header">
-    <span class="chapter-eyebrow">CHAPTER V</span>
-    <div class="chapter-line"></div>
+{# ═══════════════════════════════════════════════════════════
+   5. ASYMMETRIC — Image + portfolio strategy text
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-transfer">
+  <div class="ep-transfer-inner">
+    <div class="ep-transfer-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-cooking.jpg"
+           alt="Retired couple cooking together, financial security"
+           class="ep-transfer-image">
+      <div class="ep-transfer-image-accent"></div>
+    </div>
+    <div class="ep-transfer-text">
+      <span class="ep-chapter-label">Investment Strategy</span>
+      <h2 class="ep-transfer-title">Professional Management<br>Built for Retirement</h2>
+      <p class="ep-transfer-body">Your portfolio is actively monitored, rebalanced strategically, and adjusted as markets change and your timeline evolves. No set-it-and-forget-it. No conflicts of interest. Just professional management aligned with your goals.</p>
+      <div class="ep-sub-feature">
+        <h4>Diversification & Risk Management</h4>
+        <p>Strategic allocation across asset classes, sectors, and geographic regions with active downside protection strategies.</p>
+      </div>
+      <div class="ep-sub-feature">
+        <h4>Tax-Efficient Implementation</h4>
+        <p>Smart fund placement, tax-loss harvesting, and coordination with your overall tax strategy to maximize after-tax returns.</p>
+      </div>
+    </div>
   </div>
-  
-  <h2 class="editorial-h2">Common Questions</h2>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Are you a fiduciary?</h3>
-    <p class="editorial-p">Yes, always. We are legally and ethically obligated to act in your best interest at all times. We don't earn commissions from product sales, and we don't have hidden incentives to recommend one investment over another.</p>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   6. PROCESS — Accordion steps
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-process">
+  <div class="ep-process-inner">
+    <div class="ep-process-header">
+      <div>
+        <span class="ep-chapter-label">How It Works</span>
+        <h2 class="ep-process-title">Three Steps to<br>Professional Management</h2>
+        <p class="ep-process-sub">It's simpler than you think.</p>
+        <a href="/contact/" class="ep-btn-primary">Become a Client</a>
+      </div>
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-planning-tablet.jpg" alt="Retired couple reviewing their portfolio together" class="ep-process-image">
+    </div>
+    <div class="ep-steps-grid">
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 01</span>
+        <h3>Assess & Analyze</h3>
+        <p>Review your current portfolio, risk tolerance, timeline, and income needs to design the right allocation.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 02</span>
+        <h3>Build & Implement</h3>
+        <p>Construct a diversified portfolio aligned with your retirement goals and tax situation, then execute the strategy.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 03</span>
+        <h3>Monitor & Adjust</h3>
+        <p>Actively manage your portfolio with ongoing monitoring, strategic rebalancing, and adjustments as needed.</p>
+      </div>
+    </div>
   </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">How do you charge for portfolio management?</h3>
-    <p class="editorial-p">We charge a transparent percentage of assets under management. The fee is disclosed upfront, charged quarterly, and decreases as your assets grow. No hidden costs, no commissions, no surprises.</p>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   7. FAQ — Editorial accordion
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">Portfolio Management FAQ</h2>
+      <p class="ep-faq-sub">Learn about our professional investment management approach for retirement portfolios.</p>
+      <a href="/contact/" class="ep-btn-ghost">Ask About Portfolio Management</a>
+    </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Are you a fiduciary? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Yes, always. We are legally and ethically obligated to act in your best interest at all times. We don't earn commissions from product sales, and we don't have hidden incentives to recommend one investment over another.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How do you charge for portfolio management? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>We charge a transparent percentage of assets under management. The fee is disclosed upfront, charged quarterly, and decreases as your assets grow. No hidden costs, no commissions, no surprises.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Can I keep my current investments? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>It depends. We'll review what you own and determine if it fits within an appropriate retirement portfolio. Some holdings may be fine; others might need to be replaced with better, lower-cost, or more tax-efficient options.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is your investment philosophy? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>We believe in diversification, low-cost investments, tax efficiency, and active risk management. We don't chase returns or try to time the market. We build portfolios designed to support your retirement income needs while protecting against major downside risk.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How often will you rebalance my portfolio? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>We monitor portfolios continuously and rebalance strategically based on market conditions and allocation drift. This is typically quarterly, but can be more frequent during volatile markets or when tax-loss harvesting opportunities arise.</p></div>
+      </button>
+    </div>
   </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Can I keep my current investments?</h3>
-    <p class="editorial-p">It depends. We'll review what you own and determine if it fits within an appropriate retirement portfolio. Some holdings may be fine; others might need to be replaced with better, lower-cost, or more tax-efficient options.</p>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   8. RELATED SERVICES
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-related">
+  <div class="ep-related-inner">
+    <span class="ep-chapter-label">Related Services</span>
+    <h2 class="ep-framework-title" style="margin-bottom: 0;">Complete Your Financial Plan</h2>
+    <div class="ep-related-grid">
+      <a href="/services/retirement-income/" class="ep-related-link">
+        <span class="ep-related-name">Retirement Income</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+      <a href="/services/tax-planning/" class="ep-related-link">
+        <span class="ep-related-name">Tax Planning</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+      <a href="/services/estate-planning/" class="ep-related-link">
+        <span class="ep-related-name">Estate Planning</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+    </div>
   </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">What is your investment philosophy?</h3>
-    <p class="editorial-p">We believe in diversification, low-cost investments, tax efficiency, and active risk management. We don't chase returns or try to time the market. We build portfolios designed to support your retirement income needs while protecting against major downside risk.</p>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   9. CTA — Centered editorial
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Ready for professional management?</h2>
+      <p class="ep-cta-body">Every retirement portfolio is different. Schedule a complimentary visit to discuss your investment goals and see how our fiduciary financial advisor approach can help protect and grow your wealth.</p>
+      <a href="/contact/" class="ep-btn-primary">Schedule Your Visit</a>
+      <p class="ep-cta-promise">A Fiduciary Promise</p>
+    </div>
+    <img src="/assets/images/photos/couple-boat.jpg" alt="Retired couple enjoying life on a boat" class="ep-cta-image">
   </div>
-  
-  <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">How often will you rebalance my portfolio?</h3>
-    <p class="editorial-p">We monitor portfolios continuously and rebalance strategically based on market conditions and allocation drift. This is typically quarterly, but can be more frequent during volatile markets or when tax-loss harvesting opportunities arise.</p>
-  </div>
-</div>
+</section>

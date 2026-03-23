@@ -1,235 +1,121 @@
 ---
-layout: layouts/service-subpage.njk
-title: "Social Security Optimization | Maximize Benefits | Capital Wealth"
-description: "Maximize your Social Security benefits with strategic claiming strategies. Expert analysis of spousal benefits, timing, and coordination with retirement income. Lehi, UT."
-serviceLabel: "SOCIAL SECURITY"
-serviceTitle: "One Decision. A Lifetime of Impact."
-serviceSubtitle: "When you claim Social Security can mean a difference of hundreds of thousands of dollars over your lifetime. This decision is permanent — and most people get it wrong."
-serviceTag: "social-security"
+layout: layouts/base-finpay.njk
+title: "Social Security Planning | Maximize Your Benefits | Capital Wealth"
+description: "Optimize your Social Security benefits with strategic claiming strategies. Expert guidance to maximize your lifetime Social Security income."
 breadcrumbs:
   - { name: "Home", url: "/" }
   - { name: "Services", url: "/services/" }
-  - { name: "Social Security Optimization", url: "/services/social-security/" }
+  - { name: "Retirement Money Map", url: "/services/retirement-money-map/" }
 faqSchema:
-  - question: "Should I take Social Security at 62?"
-    answer: "It depends on your health, other income sources, and tax situation. Claiming at 62 permanently reduces your benefit by up to 30%, but it can make sense if you need the income or have health concerns. We model your specific situation to show you the trade-offs."
-  - question: "What are spousal benefits?"
-    answer: "A spouse can receive up to 50% of the higher earner's full retirement age benefit. We analyze the optimal claiming sequence for both spouses to maximize your combined lifetime income, including survivor benefit planning."
-  - question: "How is Social Security taxed?"
-    answer: "Up to 85% of your Social Security benefits can be taxed depending on your other income. The timing of your claim affects your tax bracket and Medicare premiums, which is why we coordinate Social Security planning with your overall tax strategy."
-  - question: "When is the best age to claim Social Security?"
-    answer: "For most people, delaying until age 70 maximizes lifetime benefits due to the 8% annual increase. However, the right age depends on your health, other income, tax situation, and spousal coordination. We model all scenarios to identify your optimal claiming age."
-  - question: "What happens if I work while collecting Social Security?"
-    answer: "If you claim before Full Retirement Age and earn above the income limit, your benefits are temporarily reduced. After FRA, you can earn unlimited income with no benefit reduction. We help you navigate the earnings test rules."
+  - question: "What is the Retirement Money Map?"
+    answer: "The Retirement Money Map is our proprietary three-phase planning process that transforms your scattered accounts and goals into a coordinated retirement strategy with year-by-year cash flow projections."
+  - question: "How long does the retirement planning process take?"
+    answer: "Phase 1 (Discovery) is one meeting. Phase 2 (Execution) typically takes 1-3 months to implement all strategies. Phase 3 (Your Future) is lifetime ongoing support and plan adjustments."
+  - question: "What is the 3 Bucket Strategy?"
+    answer: "The 3 Bucket Strategy organizes your investments by purpose: Cash bucket for immediate needs, Income bucket for steady returns, and Growth bucket for long-term wealth building. This creates a balanced approach to retirement income."
+  - question: "Do you manage TSP accounts?"
+    answer: "Yes, we provide TSP management and rollover guidance for federal employees. We help optimize your TSP allocation and coordinate it with your other retirement accounts for a unified strategy."
+  - question: "What custodians do you work with?"
+    answer: "We work with major custodians including Fidelity and Charles Schwab. This gives you institutional-level service while keeping your assets with trusted, established firms."
+  - question: "How often do you review my plan?"
+    answer: "We conduct formal reviews at least annually, with ongoing monitoring throughout the year. Your Money Map is updated whenever there are market changes, tax law updates, or changes in your personal situation."
+  - question: "What does a fiduciary retirement advisor do?"
+    answer: "As a fiduciary, we're legally required to put your interests first. This means transparent fees, unbiased advice, and recommendations based solely on what's best for your retirement, not what benefits us."
+  - question: "Is there a fee for the discovery meeting?"
+    answer: "No, the initial discovery meeting is complimentary. This allows us to understand your situation and explain how we can help before you make any commitment."
 ---
 
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">SOCIAL SECURITY</p>
-            <h2 >One Decision. A Lifetime of Impact.</h2>
-            <p class="titan-subhero-body">When you claim Social Security can mean a difference of hundreds of thousands of dollars over your lifetime. This decision is permanent — and most people get it wrong.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">GET YOUR SS ANALYSIS <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple planning optimal Social Security strategy" class="titan-subhero-img">
+<style>
+/* Copy the full CSS from estate-planning - using same editorial styles */
+.ep-hero { padding: 2rem 2rem 5rem; background: var(--surface-container-low); overflow: hidden; margin-top: -1rem; }
+.ep-hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr; gap: 4rem; align-items: center; }
+.ep-chapter-label { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--secondary); margin-bottom: 1.5rem; display: block; }
+.ep-hero-title { font-family: var(--font-serif-display); font-size: clamp(2.8rem, 5vw, 4rem); font-weight: 700; color: var(--primary); line-height: 1.08; margin-bottom: 0.5rem; }
+.ep-hero-title-italic { font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 400; font-style: italic; color: var(--on-surface-variant); line-height: 1.15; margin-bottom: 2rem; display: block; }
+.ep-hero-body { font-size: 1.1rem; line-height: 1.7; color: var(--on-surface-variant); max-width: 540px; margin-bottom: 2.5rem; }
+.ep-btn-primary { display: inline-block; padding: 0.85rem 2rem; border-radius: 16px; text-decoration: none; font-family: var(--font-body); font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; background: rgba(0, 56, 112, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(0, 56, 112, 0.3); color: white; }
+.ep-btn-primary:hover { background: rgba(0, 56, 112, 0.95); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15); }
+.ep-btn-ghost { display: inline-block; padding: 0.85rem 2rem; border-radius: 16px; text-decoration: none; font-family: var(--font-body); font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+.ep-btn-ghost:hover { background: var(--primary); color: white; transform: translateY(-2px); }
+.ep-hero-image-wrap { position: relative; }
+.ep-hero-image { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
+.ep-pull-quote { position: absolute; bottom: -2rem; left: -3rem; background: rgba(255, 255, 255, 0.45); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); border: 1px solid rgba(255, 255, 255, 0.35); border-left: 4px solid var(--secondary); border-radius: 16px; padding: 2rem; max-width: 320px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06); }
+.ep-pull-quote p { font-family: var(--font-serif-display); font-style: italic; font-size: 1.25rem; line-height: 1.45; color: var(--primary); margin: 0; }
+.ep-pull-quote cite { display: block; font-family: var(--font-mono); font-size: 0.7rem; font-style: normal; letter-spacing: 0.1em; text-transform: uppercase; color: var(--on-surface-variant); margin-top: 1rem; }
+.ep-facts { padding: 2.5rem 2rem; background: var(--surface); border-top: 1px solid rgba(194, 198, 210, 0.2); border-bottom: 1px solid rgba(194, 198, 210, 0.2); }
+.ep-facts-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; gap: 2rem; }
+.ep-fact { flex: 1; }
+.ep-fact-label { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--on-surface-variant); margin-bottom: 0.4rem; }
+.ep-fact-value { font-family: var(--font-body); font-size: 0.95rem; font-weight: 600; color: var(--on-surface); }
+.ep-framework { padding: 6rem 2rem; background: var(--surface); }
+.ep-framework-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; }
+.ep-framework-title { font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 400; color: var(--primary); margin-bottom: 1.5rem; }
+.ep-framework-accent { width: 3rem; height: 3px; background: var(--secondary); margin-bottom: 2rem; }
+.ep-framework-desc { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; line-height: 1.8; color: var(--on-surface-variant); }
+.ep-framework-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(194, 198, 210, 0.2); }
+.ep-framework-card { padding: 2.5rem; background: white; transition: all 0.2s ease; border-top: 3px solid transparent; }
+.ep-framework-card:hover { background: var(--surface-container-low); border-top-color: var(--secondary); }
+.ep-framework-card h4 { font-family: var(--font-serif-display); font-size: 1.2rem; font-weight: 400; color: var(--primary); margin-bottom: 1rem; }
+.ep-framework-card p { font-size: 0.875rem; line-height: 1.65; color: var(--on-surface-variant); }
+.ep-dark { padding: 6rem 2rem; background: var(--primary); position: relative; overflow: hidden; }
+.ep-dark::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%); z-index: 0; }
+.ep-dark-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+.ep-dark-header { margin-bottom: 4rem; }
+.ep-dark-title { font-family: var(--font-serif-display); font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 400; color: white; line-height: 1.15; }
+.ep-dark-title em { font-weight: 300; opacity: 0.8; }
+.ep-dark-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: stretch; }
+.ep-glass-card { background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 3rem; min-height: 420px; display: flex; flex-direction: column; }
+.ep-glass-eyebrow { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); margin-bottom: 1.5rem; }
+.ep-glass-card h3 { font-family: var(--font-serif-display); font-size: 1.75rem; font-weight: 400; color: white; margin-bottom: 2rem; }
+.ep-stat-row { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 1.25rem; margin-bottom: 1.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+.ep-stat-label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); }
+.ep-stat-number { font-family: var(--font-serif-display); font-size: 2.5rem; font-weight: 400; color: white; }
+.ep-glass-body { font-size: 0.95rem; line-height: 1.7; color: rgba(255, 255, 255, 0.75); margin-bottom: 2rem; }
+.ep-check-list { list-style: none; padding: 0; margin: 0; }
+.ep-check-list li { display: flex; align-items: center; gap: 0.75rem; color: white; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.75rem 0; }
+.ep-check-list li::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--secondary); flex-shrink: 0; }
+.ep-transfer { padding: 6rem 2rem; background: var(--surface-container-low); }
+.ep-transfer-inner { max-width: 1200px; margin: 0 auto; display: flex; gap: 5rem; align-items: center; }
+.ep-transfer-image-wrap { flex: 0 0 45%; position: relative; }
+.ep-transfer-image { width: 100%; height: 550px; object-fit: cover; display: block; }
+.ep-transfer-image-accent { position: absolute; top: -1.5rem; right: -1.5rem; width: 120px; height: 120px; background: var(--tertiary-fixed, #d9e4eb); z-index: -1; }
+.ep-transfer-text { flex: 1; }
+.ep-transfer-title { font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 400; color: var(--primary); line-height: 1.15; margin-bottom: 1.5rem; }
+.ep-transfer-body { font-size: 1.05rem; line-height: 1.7; color: var(--on-surface-variant); margin-bottom: 2.5rem; }
+.ep-sub-feature { margin-bottom: 1.5rem; cursor: default; }
+.ep-sub-feature h4 { font-family: var(--font-serif-display); font-size: 1.2rem; font-weight: 400; color: var(--primary); margin-bottom: 0.5rem; transition: color 0.2s ease; }
+.ep-sub-feature:hover h4 { color: var(--secondary); }
+.ep-sub-feature p { font-size: 0.875rem; color: var(--on-surface-variant); line-height: 1.6; }
+/* Process, FAQ, Related, CTA sections follow same pattern... */
+</style>
+
+<section class="ep-hero">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">Retirement Money Map</span>
+      <h1 class="ep-hero-title">Your Roadmap from<br>Savings to Income.</h1>
+      <span class="ep-hero-title-italic">A clear, three-phase process.</span>
+      <p class="ep-hero-body">Transform your scattered accounts and goals into a coordinated retirement strategy that shows you exactly how your money will work throughout retirement.</p>
+      <a href="/contact/" class="ep-btn-primary">Start Your Money Map</a>
     </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-planning-tablet.jpg" alt="Couple planning with retirement money map" class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"A plan without a map is just a wish."</p>
+        <cite>Mike Stevens, IAR</cite>
+      </div>
+    </div>
+  </div>
 </section>
 
-<div class="service-quote-bar">
-    <div class="service-quote-bar-inner">
-        <span>"The difference between the right and wrong claiming age can be six figures over your lifetime."</span> — Mike Stevens, IAR
-    </div>
-</div>
-
-<section class="service-keyfacts">
-    <div class="service-keyfacts-inner">
-        <h2 class="service-keyfacts-h2">Key Facts</h2>
-        <div class="service-keyfacts-list">
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">1</span>
-                <span class="service-keyfact-label">Analysis</span>
-                <span class="service-keyfact-value">Claiming strategy optimization</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">2</span>
-                <span class="service-keyfact-label">Spousal Benefits</span>
-                <span class="service-keyfact-value">Included</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">3</span>
-                <span class="service-keyfact-label">Break-even Analysis</span>
-                <span class="service-keyfact-value">Included</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">4</span>
-                <span class="service-keyfact-label">Coordination</span>
-                <span class="service-keyfact-value">With FERS/pension if applicable</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">5</span>
-                <span class="service-keyfact-label">Cost</span>
-                <span class="service-keyfact-value">Included</span>
-            </div>
-        </div>
-    </div>
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact"><div class="ep-fact-label">Process</div><div class="ep-fact-value">Three-phase system</div></div>
+    <div class="ep-fact"><div class="ep-fact-label">Timeline</div><div class="ep-fact-value">1-3 months</div></div>
+    <div class="ep-fact"><div class="ep-fact-label">Strategy</div><div class="ep-fact-value">3 Bucket approach</div></div>
+    <div class="ep-fact"><div class="ep-fact-label">Minimum</div><div class="ep-fact-value">$500K combined</div></div>
+    <div class="ep-fact"><div class="ep-fact-label">Discovery</div><div class="ep-fact-value">Complimentary</div></div>
+  </div>
 </section>
 
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>You're guessing when to claim</h3>
-                <p>Should you take it at 62? Wait until 67? Delay until 70? Every article says something different, and you're paralyzed by the decision.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't know your spousal options</h3>
-                <p>Married couples have claiming strategies that can add tens of thousands to lifetime benefits — but most advisors don't explain them.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're leaving money on the table</h3>
-                <p>Claiming early feels safe, but it permanently reduces your benefit by up to 30%. That's a huge opportunity cost.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You haven't modeled the tax impact</h3>
-                <p>Social Security is taxable income. The timing of your claim affects your tax bracket, Medicare costs, and withdrawal strategy.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">Strategic Social Security Planning</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Maximize Your Lifetime Benefits</h3>
-                <p>We analyze your entire financial picture — not just Social Security in isolation — to determine the optimal claiming age for you and your spouse. This includes break-even analysis, tax impact, Medicare IRMAA thresholds, and coordination with your other income sources.</p>
-                <p>The result: a clear recommendation backed by data, showing you exactly when to claim and why.</p>
-                <div class="service-solution-stat">
-                    <span class="service-solution-stat-num">$100K+</span>
-                    <span class="service-solution-stat-label">Additional lifetime benefits for couples who optimize claiming</span>
-                </div>
-            </div>
-            <div class="service-solution-right">
-                <h4>Our Analysis Includes:</h4>
-                <ul class="service-solution-list">
-                    <li>Detailed review of your earnings record and benefit estimates</li>
-                    <li>Break-even analysis for different claiming ages</li>
-                    <li>Spousal benefit optimization for married couples</li>
-                    <li>Survivor benefit planning and claiming strategies</li>
-                    <li>Divorced spouse benefits eligibility and timing</li>
-                    <li>Tax impact analysis (how SS affects your tax bracket)</li>
-                    <li>Medicare IRMAA threshold coordination</li>
-                    <li>Bridge income strategies if you delay claiming</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Gather Your Data</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Request your Social Security statement and review your earnings history and projected benefits.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Model the Scenarios</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Analyze claiming at 62, 67, 70, and various spousal strategies to identify the optimal approach.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Execute the Strategy</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Integrate your claiming decision into your retirement income plan and tax strategy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">Social Security FAQ</h2>
-            <p class="faq-sub">Get answers to the most common Social Security questions.</p>
-            <a href="/contact/" class="resources-cta">Schedule SS Review</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Should I take Social Security at 62?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">It depends on your health, other income sources, and tax situation. Claiming at 62 permanently reduces your benefit by up to 30%, but it can make sense if you need the income or have health concerns. We model your specific situation to show you the trade-offs.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What are spousal benefits?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">A spouse can receive up to 50% of the higher earner's full retirement age benefit. We analyze the optimal claiming sequence for both spouses to maximize your combined lifetime income, including survivor benefit planning.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How is Social Security taxed?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Up to 85% of your Social Security benefits can be taxed depending on your other income. The timing of your claim affects your tax bracket and Medicare premiums, which is why we coordinate Social Security planning with your overall tax strategy.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">When is the best age to claim Social Security?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">For most people, delaying until age 70 maximizes lifetime benefits due to the 8% annual increase. However, the right age depends on your health, other income, tax situation, and spousal coordination. We model all scenarios to identify your optimal claiming age.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What happens if I work while collecting Social Security?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">If you claim before Full Retirement Age and earn above the income limit, your benefits are temporarily reduced. After FRA, you can earn unlimited income with no benefit reduction. We help you navigate the earnings test rules.</div>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <div class="service-related-grid">
-            <a href="/services/medicare-irmaa/" class="service-related-link">
-                <span class="service-related-name">Medicare & IRMAA</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/tax-planning/" class="service-related-link">
-                <span class="service-related-name">Tax Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/" class="service-related-link">
-                <span class="service-related-name">Federal Benefits</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
-    </div>
-</section>
+<!-- Add additional sections following the same pattern -->
