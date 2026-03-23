@@ -1137,8 +1137,16 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 
 @media (max-width: 768px) {
   .hero-fullbleed {
-    align-items: center;
+    align-items: flex-end;
     padding-bottom: 2rem;
+  }
+
+  .hero-bg {
+    object-position: 65% center;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(0deg, rgba(248,249,251,0.55) 0%, transparent 40%);
   }
 
   .hero-content {
@@ -1147,18 +1155,23 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
   }
 
   .hero-glass-panel {
-    padding: 1.25rem 1.5rem;
-    max-width: 100%;
+    padding: 1rem 1.25rem;
+    max-width: 85%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   .hero-title {
-    font-size: 2.2rem;
-    line-height: 1.1;
+    font-size: 1.85rem;
+    line-height: 1.15;
   }
 
   .hero-subtitle {
-    font-size: 0.95rem;
-    max-width: 100%;
+    font-size: 0.9rem;
+    max-width: 90%;
+    text-shadow: 0 1px 12px rgba(248, 249, 251, 0.6);
   }
 
   .hero-cta {
