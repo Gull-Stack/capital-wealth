@@ -1,7 +1,11 @@
 ---
-layout: layouts/base-finpay.njk
+layout: layouts/service-subpage.njk
 title: "Retirement Portfolio Management | Capital Wealth Lehi, UT"
 description: "Active portfolio management designed for retirement income and long-term growth. Diversified strategies, risk management, and tax-efficient investing."
+serviceLabel: "PORTFOLIO MANAGEMENT"
+serviceTitle: "Invested for Income, Not Just Growth"
+serviceSubtitle: "Retirement portfolios have different goals than accumulation portfolios. Yours should be designed to generate reliable income, manage volatility, and preserve your purchasing power for decades."
+serviceTag: "portfolio-management"
 breadcrumbs:
   - { name: "Home", url: "/" }
   - { name: "Services", url: "/services/" }
@@ -19,218 +23,299 @@ faqSchema:
     answer: "We monitor portfolios continuously and rebalance strategically based on market conditions and allocation drift. This is typically quarterly, but can be more frequent during volatile markets or when tax-loss harvesting opportunities arise."
 ---
 
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">PORTFOLIO MANAGEMENT</p>
-            <h1 >Invested for Income, Not Just Growth</h1>
-            <p class="titan-subhero-body">Retirement portfolios have different goals than accumulation portfolios. Yours should be designed to generate reliable income, manage volatility, and preserve your purchasing power for decades.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">REVIEW MY PORTFOLIO <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/photos/portfolio-dashboard.jpg" alt="Portfolio performance dashboard showing growth and returns" class="titan-subhero-img">
-    </div>
-</section>
+<style>
+.editorial-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
 
-<div class="service-quote-bar">
-    <div class="service-quote-bar-inner">
-        <span>"A portfolio without a purpose is just a collection of accounts."</span> — Mike Stevens, IAR
-    </div>
+.chapter-header {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0 2rem;
+  gap: 2rem;
+}
+
+.chapter-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.chapter-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.pull-quote {
+  margin: 3rem 0;
+  padding: 0 0 0 2rem;
+  border-left: 4px solid var(--accent);
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  background: white;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.editorial-h2 {
+  font-family: var(--font-serif-display);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin: 2rem 0 1rem;
+}
+
+.editorial-p {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  margin: 1.5rem 0;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 3rem auto;
+  display: block;
+  border-radius: var(--radius-lg);
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.feature-image:hover {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+  .chapter-header {
+    margin: 3rem 0 1.5rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .editorial-section {
+    padding: 0 1rem;
+  }
+}
+</style>
+
+<div class="editorial-section">
+  <div class="pull-quote">
+    "A portfolio without a purpose is just a collection of accounts." — Mike Stevens, IAR
+  </div>
 </div>
 
-<section class="service-keyfacts">
-    <div class="service-keyfacts-inner">
-        <h2 class="service-keyfacts-h2">Key Facts</h2>
-        <div class="service-keyfacts-list">
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">1</span>
-                <span class="service-keyfact-label">Strategy</span>
-                <span class="service-keyfact-value">Actively managed</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">2</span>
-                <span class="service-keyfact-label">Approach</span>
-                <span class="service-keyfact-value">Goals-based allocation</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">3</span>
-                <span class="service-keyfact-label">Review</span>
-                <span class="service-keyfact-value">Quarterly</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">4</span>
-                <span class="service-keyfact-label">Rebalancing</span>
-                <span class="service-keyfact-value">Ongoing</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">5</span>
-                <span class="service-keyfact-label">Minimum</span>
-                <span class="service-keyfact-value">$500K</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">6</span>
-                <span class="service-keyfact-label">Cost</span>
-                <span class="service-keyfact-value">Included in advisory fee</span>
-            </div>
-        </div>
+<div class="editorial-section">
+  <div class="chapter-header">
+    <span class="chapter-eyebrow">CHAPTER I</span>
+    <div class="chapter-line"></div>
+  </div>
+  
+  <h2 class="editorial-h2">Key Facts</h2>
+  
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="stat-number">Active</span>
+      <span class="stat-label">Strategy</span>
     </div>
-</section>
+    <div class="stat-item">
+      <span class="stat-number">Goals-Based</span>
+      <span class="stat-label">Approach</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">Quarterly</span>
+      <span class="stat-label">Review</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">Ongoing</span>
+      <span class="stat-label">Rebalancing</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">$500K</span>
+      <span class="stat-label">Minimum</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">Included</span>
+      <span class="stat-label">Cost</span>
+    </div>
+  </div>
+</div>
 
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>Your portfolio is still in "growth mode"</h3>
-                <p>You're retiring in 5 years (or already retired), but your investments are allocated like you're 35. No one adjusted the strategy.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You panic when markets drop</h3>
-                <p>Every market correction feels like a crisis because you don't have a strategy to manage volatility — you're just hoping it goes back up.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>Your "advisor" is a salesperson</h3>
-                <p>They sold you a bunch of funds, maybe rebalance once a year, and disappear until it's time to sell you something else.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You have no idea what you're paying</h3>
-                <p>Hidden fees, expense ratios, trading costs — they're all quietly eroding your returns, and no one's explained exactly what you're paying for.</p>
-            </div>
-        </div>
-    </div>
-</section>
+<div class="editorial-section">
+  <div class="chapter-header">
+    <span class="chapter-eyebrow">CHAPTER II</span>
+    <div class="chapter-line"></div>
+  </div>
+  
+  <h2 class="editorial-h2">Does This Sound Familiar?</h2>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Your portfolio is still in "growth mode"</h3>
+    <p class="editorial-p">You're retiring in 5 years (or already retired), but your investments are allocated like you're 35. No one adjusted the strategy.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">You panic when markets drop</h3>
+    <p class="editorial-p">Every market correction feels like a crisis because you don't have a strategy to manage volatility — you're just hoping it goes back up.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Your "advisor" is a salesperson</h3>
+    <p class="editorial-p">They sold you a bunch of funds, maybe rebalance once a year, and disappear until it's time to sell you something else.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">You have no idea what you're paying</h3>
+    <p class="editorial-p">Hidden fees, expense ratios, trading costs — they're all quietly eroding your returns, and no one's explained exactly what you're paying for.</p>
+  </div>
+</div>
 
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">Active, Fiduciary Portfolio Management</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Built for Retirement, Not Accumulation</h3>
-                <p>We manage portfolios designed specifically for retirees and pre-retirees — balancing income generation, growth, and downside protection. Every investment decision is made with your best interest as the legal priority (that's what fiduciary means).</p>
-                <p>Your portfolio is actively monitored, rebalanced strategically, and adjusted as markets change and your timeline evolves. No set-it-and-forget-it. No conflicts of interest. Just professional management aligned with your goals.</p>
-                <div class="service-solution-stat">
-                    <span class="service-solution-stat-num">Fiduciary</span>
-                    <span class="service-solution-stat-label">Legally obligated to act in your best interest — always</span>
-                </div>
-            </div>
-            <div class="service-solution-right">
-                <h4>Our Portfolio Approach:</h4>
-                <ul class="service-solution-list">
-                    <li>Age-appropriate asset allocation (not one-size-fits-all)</li>
-                    <li>Diversification across asset classes and sectors</li>
-                    <li>Active risk management and downside protection</li>
-                    <li>Tax-efficient fund selection and placement</li>
-                    <li>Regular rebalancing to maintain target allocations</li>
-                    <li>Low-cost, institutional-class investments</li>
-                    <li>Transparent fee structure (no hidden costs)</li>
-                    <li>Quarterly reviews and ongoing monitoring</li>
-                </ul>
-            </div>
-        </div>
+<div class="editorial-section">
+  <img src="/assets/images/photos/portfolio-dashboard.jpg" alt="Portfolio performance dashboard" class="feature-image">
+  
+  <div class="chapter-header">
+    <span class="chapter-eyebrow">CHAPTER III</span>
+    <div class="chapter-line"></div>
+  </div>
+  
+  <h2 class="editorial-h2">Active, Fiduciary Portfolio Management</h2>
+  
+  <p class="editorial-p">We manage portfolios designed specifically for retirees and pre-retirees — balancing income generation, growth, and downside protection. Every investment decision is made with your best interest as the legal priority (that's what fiduciary means).</p>
+  
+  <p class="editorial-p">Your portfolio is actively monitored, rebalanced strategically, and adjusted as markets change and your timeline evolves. No set-it-and-forget-it. No conflicts of interest. Just professional management aligned with your goals.</p>
+  
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="stat-number">Fiduciary</span>
+      <span class="stat-label">Legally obligated to act in your best interest — always</span>
     </div>
-</section>
+  </div>
+  
+  <h3 style="font-family: var(--font-body); font-weight: 600; margin: 2rem 0 1rem; font-size: 1.25rem;">Our Portfolio Approach:</h3>
+  
+  <div class="glass-card">
+    <ul style="font-family: var(--font-body); line-height: 1.8; color: var(--text-primary); list-style: none; padding: 0;">
+      <li style="margin-bottom: 0.5rem;">• Age-appropriate asset allocation (not one-size-fits-all)</li>
+      <li style="margin-bottom: 0.5rem;">• Diversification across asset classes and sectors</li>
+      <li style="margin-bottom: 0.5rem;">• Active risk management and downside protection</li>
+      <li style="margin-bottom: 0.5rem;">• Tax-efficient fund selection and placement</li>
+      <li style="margin-bottom: 0.5rem;">• Regular rebalancing to maintain target allocations</li>
+      <li style="margin-bottom: 0.5rem;">• Low-cost, institutional-class investments</li>
+      <li style="margin-bottom: 0.5rem;">• Transparent fee structure (no hidden costs)</li>
+      <li style="margin-bottom: 0.5rem;">• Quarterly reviews and ongoing monitoring</li>
+    </ul>
+  </div>
+</div>
 
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Assess & Analyze</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Review your current portfolio, risk tolerance, timeline, and income needs to design the right allocation.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Build & Implement</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Construct a diversified portfolio aligned with your retirement goals and tax situation, then execute the strategy.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Monitor & Adjust</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Actively manage your portfolio with ongoing monitoring, strategic rebalancing, and adjustments as needed.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<div class="editorial-section">
+  <div class="chapter-header">
+    <span class="chapter-eyebrow">CHAPTER IV</span>
+    <div class="chapter-line"></div>
+  </div>
+  
+  <h2 class="editorial-h2">How It Works</h2>
+  
+  <p class="editorial-p">It's just three steps</p>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 1) Assess & Analyze</h3>
+    <p class="editorial-p">Review your current portfolio, risk tolerance, timeline, and income needs to design the right allocation.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 2) Build & Implement</h3>
+    <p class="editorial-p">Construct a diversified portfolio aligned with your retirement goals and tax situation, then execute the strategy.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 3) Monitor & Adjust</h3>
+    <p class="editorial-p">Actively manage your portfolio with ongoing monitoring, strategic rebalancing, and adjustments as needed.</p>
+  </div>
+</div>
 
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">Portfolio FAQ</h2>
-            <p class="faq-sub">Learn about our investment philosophy and approach.</p>
-            <a href="/contact/" class="resources-cta">Schedule Portfolio Review</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Are you a fiduciary?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Yes, always. We are legally and ethically obligated to act in your best interest at all times. We don't earn commissions from product sales, and we don't have hidden incentives to recommend one investment over another.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How do you charge for portfolio management?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">We charge a transparent percentage of assets under management. The fee is disclosed upfront, charged quarterly, and decreases as your assets grow. No hidden costs, no commissions, no surprises.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Can I keep my current investments?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">It depends. We'll review what you own and determine if it fits within an appropriate retirement portfolio. Some holdings may be fine; others might need to be replaced with better, lower-cost, or more tax-efficient options.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is your investment philosophy?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">We believe in diversification, low-cost investments, tax efficiency, and active risk management. We don't chase returns or try to time the market. We build portfolios designed to support your retirement income needs while protecting against major downside risk.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How often will you rebalance my portfolio?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">We monitor portfolios continuously and rebalance strategically based on market conditions and allocation drift. This is typically quarterly, but can be more frequent during volatile markets or when tax-loss harvesting opportunities arise.</div>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <div class="service-related-grid">
-            <a href="/services/tax-planning/" class="service-related-link">
-                <span class="service-related-name">Tax Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/401k-ira-rollover/" class="service-related-link">
-                <span class="service-related-name">401k/IRA Rollover</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/retirement-money-map/" class="service-related-link">
-                <span class="service-related-name">Retirement Money Map</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
-    </div>
-</section>
+<div class="editorial-section">
+  <div class="chapter-header">
+    <span class="chapter-eyebrow">CHAPTER V</span>
+    <div class="chapter-line"></div>
+  </div>
+  
+  <h2 class="editorial-h2">Common Questions</h2>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Are you a fiduciary?</h3>
+    <p class="editorial-p">Yes, always. We are legally and ethically obligated to act in your best interest at all times. We don't earn commissions from product sales, and we don't have hidden incentives to recommend one investment over another.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">How do you charge for portfolio management?</h3>
+    <p class="editorial-p">We charge a transparent percentage of assets under management. The fee is disclosed upfront, charged quarterly, and decreases as your assets grow. No hidden costs, no commissions, no surprises.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Can I keep my current investments?</h3>
+    <p class="editorial-p">It depends. We'll review what you own and determine if it fits within an appropriate retirement portfolio. Some holdings may be fine; others might need to be replaced with better, lower-cost, or more tax-efficient options.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">What is your investment philosophy?</h3>
+    <p class="editorial-p">We believe in diversification, low-cost investments, tax efficiency, and active risk management. We don't chase returns or try to time the market. We build portfolios designed to support your retirement income needs while protecting against major downside risk.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">How often will you rebalance my portfolio?</h3>
+    <p class="editorial-p">We monitor portfolios continuously and rebalance strategically based on market conditions and allocation drift. This is typically quarterly, but can be more frequent during volatile markets or when tax-loss harvesting opportunities arise.</p>
+  </div>
+</div>

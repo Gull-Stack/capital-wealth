@@ -1,7 +1,11 @@
 ---
-layout: layouts/base-finpay.njk
+layout: layouts/service-subpage.njk
 title: "Tax-Efficient Retirement Strategies | Capital Wealth Lehi, UT"
 description: "Minimize taxes in retirement with strategic planning. Roth conversions, withdrawal strategies, tax-loss harvesting, and IRMAA avoidance. Expert tax planning in Utah."
+serviceLabel: "TAX PLANNING"
+serviceTitle: "Keep More of What You Earn"
+serviceSubtitle: "Taxes can be one of the largest expenses in retirement. Strategic tax planning helps you minimize what you owe — legally and ethically — so you keep more for the life you've worked hard to build."
+serviceTag: "tax-planning"
 breadcrumbs:
   - { name: "Home", url: "/" }
   - { name: "Services", url: "/services/" }
@@ -19,242 +23,301 @@ faqSchema:
     answer: "Tax preparation looks backward and files last year's return. Tax planning looks forward and builds multi-year strategies to minimize your lifetime tax liability. We do planning; your CPA does preparation."
 ---
 
-{# ═══════════════════════════════════════════════════════════
-   HERO — Titan-style (headline left, image right)
-   ═══════════════════════════════════════════════════════════ #}
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">TAX PLANNING</p>
-            <h1 >Keep More of What You Earn</h1>
-            <p class="titan-subhero-body">Taxes can be one of the largest expenses in retirement. Strategic tax planning helps you minimize what you owe — legally and ethically — so you keep more for the life you've worked hard to build.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">SCHEDULE TAX REVIEW <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg" alt="Couple enjoying retirement with smart tax planning" class="titan-subhero-img">
-    </div>
-</section>
 
-{# ═══════════════════════════════════════════════════════════
-   QUOTE BAR — Mike Stevens Quote
-   ═══════════════════════════════════════════════════════════ #}
-<div class="service-quote-bar">
-    <div class="service-quote-bar-inner">
-        <span>"The biggest tax mistake retirees make isn't what they earn — it's the order they spend it."</span> — Mike Stevens, IAR
-    </div>
+
+<style>
+.editorial-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.chapter-header {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0 2rem;
+  gap: 2rem;
+}
+
+.chapter-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.chapter-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.pull-quote {
+  margin: 3rem 0;
+  padding: 0 0 0 2rem;
+  border-left: 4px solid var(--accent);
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  background: white;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.editorial-h2 {
+  font-family: var(--font-serif-display);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin: 2rem 0 1rem;
+}
+
+.editorial-p {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  margin: 1.5rem 0;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 3rem auto;
+  display: block;
+  border-radius: var(--radius-lg);
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.feature-image:hover {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+  .chapter-header {
+    margin: 3rem 0 1.5rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .editorial-section {
+    padding: 0 1rem;
+  }
+}
+</style>
+
+<div class="editorial-section">
+  <div class="pull-quote">
+    "The biggest tax mistake retirees make isn't what they earn — it's the order they spend it." — Mike Stevens, IAR
+  </div>
 </div>
 
-{# ═══════════════════════════════════════════════════════════
-   KEY FACTS — Titan-style numbered list
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-keyfacts">
-    <div class="service-keyfacts-inner">
-        <h2 class="service-keyfacts-h2">Key Facts</h2>
-        <div class="service-keyfacts-list">
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">1</span>
-                <span class="service-keyfact-label">Approach</span>
-                <span class="service-keyfact-value">Multi-year projection</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">2</span>
-                <span class="service-keyfact-label">Strategies</span>
-                <span class="service-keyfact-value">6+ included</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">3</span>
-                <span class="service-keyfact-label">Coordination</span>
-                <span class="service-keyfact-value">Works with your CPA</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">4</span>
-                <span class="service-keyfact-label">Review</span>
-                <span class="service-keyfact-value">Quarterly</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">5</span>
-                <span class="service-keyfact-label">Minimum</span>
-                <span class="service-keyfact-value">$500K savings</span>
-            </div>
-            <div class="service-keyfact-item">
-                <span class="service-keyfact-num">6</span>
-                <span class="service-keyfact-label">Cost</span>
-                <span class="service-keyfact-value">Included in advisory fee</span>
-            </div>
-        </div>
+<div class="editorial-section">
+  <div class="chapter-header">
+    <span class="chapter-eyebrow">CHAPTER I</span>
+    <div class="chapter-line"></div>
+  </div>
+  
+  <h2 class="editorial-h2">Key Facts</h2>
+  
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="stat-number">Multi-Year</span>
+      <span class="stat-label">Approach</span>
     </div>
-</section>
+    <div class="stat-item">
+      <span class="stat-number">6+</span>
+      <span class="stat-label">Strategies</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">Quarterly</span>
+      <span class="stat-label">Review</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">$500K</span>
+      <span class="stat-label">Minimum</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">CPA</span>
+      <span class="stat-label">Coordination</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">Included</span>
+      <span class="stat-label">Cost</span>
+    </div>
+  </div>
+</div>
 
-{# ═══════════════════════════════════════════════════════════
-   PROBLEM — "Does this sound familiar?"
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>Your tax bill keeps growing every year</h3>
-                <p>Required Minimum Distributions, Social Security, and investment withdrawals push you into higher brackets — and no one's told you how to avoid it.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're paying IRMAA surcharges on Medicare</h3>
-                <p>A few thousand dollars over the income threshold can cost you hundreds per month in extra Medicare premiums — money that didn't have to leave your pocket.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>Your CPA only looks backward</h3>
-                <p>Tax preparers file last year's return. They don't build multi-year strategies to optimize your tax liability across your entire retirement.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't know which accounts to tap first</h3>
-                <p>Should you pull from your IRA, Roth, brokerage account, or some combination? The order matters — and most retirees guess wrong.</p>
-            </div>
-        </div>
-    </div>
-</section>
+<div class="editorial-section">
+  <div class="chapter-header">
+    <span class="chapter-eyebrow">CHAPTER II</span>
+    <div class="chapter-line"></div>
+  </div>
+  
+  <h2 class="editorial-h2">Does This Sound Familiar?</h2>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Your tax bill keeps growing every year</h3>
+    <p class="editorial-p">Required Minimum Distributions, Social Security, and investment withdrawals push you into higher brackets — and no one's told you how to avoid it.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">You're paying IRMAA surcharges on Medicare</h3>
+    <p class="editorial-p">A few thousand dollars over the income threshold can cost you hundreds per month in extra Medicare premiums — money that didn't have to leave your pocket.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Your CPA only looks backward</h3>
+    <p class="editorial-p">Tax preparers file last year's return. They don't build multi-year strategies to optimize your tax liability across your entire retirement.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">You don't know which accounts to tap first</h3>
+    <p class="editorial-p">Should you pull from your IRA, Roth, brokerage account, or some combination? The order matters — and most retirees guess wrong.</p>
+  </div>
+</div>
 
-{# ═══════════════════════════════════════════════════════════
-   SOLUTION — How We Help
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">How We Help</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Strategic Tax Planning for Retirement</h3>
-                <p>We don't just file returns. We build multi-year tax strategies designed to minimize your lifetime tax liability — not just this year's bill.</p>
-                <p>Our approach includes Roth conversion analysis, strategic withdrawal sequencing, IRMAA avoidance planning, and coordination with your CPA to execute strategies that save you tens of thousands (sometimes hundreds of thousands) over your retirement.</p>
-                <div class="service-solution-stat">
-                    <span class="service-solution-stat-num">$200K+</span>
-                    <span class="service-solution-stat-label">Average lifetime tax savings for clients with proper planning</span>
-                </div>
-            </div>
-            <div class="service-solution-right">
-                <h4>Our Tax Strategies Include:</h4>
-                <ul class="service-solution-list">
-                    <li>Roth IRA conversion planning (when and how much)</li>
-                    <li>Strategic withdrawal sequencing from multiple account types</li>
-                    <li>Medicare IRMAA avoidance strategies</li>
-                    <li>Social Security taxation optimization</li>
-                    <li>Tax-loss harvesting in down markets</li>
-                    <li>Asset location optimization (which investments in which accounts)</li>
-                    <li>Charitable giving strategies (QCDs, donor-advised funds)</li>
-                    <li>Coordination with your CPA for seamless execution</li>
-                </ul>
-            </div>
-        </div>
+<div class="editorial-section">
+  <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-planning-tablet.jpg" alt="Couple enjoying retirement with smart tax planning" class="feature-image">
+  
+  <div class="chapter-header">
+    <span class="chapter-eyebrow">CHAPTER III</span>
+    <div class="chapter-line"></div>
+  </div>
+  
+  <h2 class="editorial-h2">Strategic Tax Planning for Retirement</h2>
+  
+  <p class="editorial-p">We don't just file returns. We build multi-year tax strategies designed to minimize your lifetime tax liability — not just this year's bill.</p>
+  
+  <p class="editorial-p">Our approach includes Roth conversion analysis, strategic withdrawal sequencing, IRMAA avoidance planning, and coordination with your CPA to execute strategies that save you tens of thousands (sometimes hundreds of thousands) over your retirement.</p>
+  
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="stat-number">$200K+</span>
+      <span class="stat-label">Average lifetime tax savings for clients with proper planning</span>
     </div>
-</section>
+  </div>
+  
+  <h3 style="font-family: var(--font-body); font-weight: 600; margin: 2rem 0 1rem; font-size: 1.25rem;">Our Tax Strategies Include:</h3>
+  
+  <div class="glass-card">
+    <ul style="font-family: var(--font-body); line-height: 1.8; color: var(--text-primary); list-style: none; padding: 0;">
+      <li style="margin-bottom: 0.5rem;">• Roth IRA conversion planning (when and how much)</li>
+      <li style="margin-bottom: 0.5rem;">• Strategic withdrawal sequencing from multiple account types</li>
+      <li style="margin-bottom: 0.5rem;">• Medicare IRMAA avoidance strategies</li>
+      <li style="margin-bottom: 0.5rem;">• Social Security taxation optimization</li>
+      <li style="margin-bottom: 0.5rem;">• Tax-loss harvesting in down markets</li>
+      <li style="margin-bottom: 0.5rem;">• Asset location optimization (which investments in which accounts)</li>
+      <li style="margin-bottom: 0.5rem;">• Charitable giving strategies (QCDs, donor-advised funds)</li>
+      <li style="margin-bottom: 0.5rem;">• Coordination with your CPA for seamless execution</li>
+    </ul>
+  </div>
+</div>
 
-{# ═══════════════════════════════════════════════════════════
-   PROCESS — 3-step flow
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Tax Analysis</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>We review your tax returns, account structures, and income sources to identify opportunities and risks.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Build the Strategy</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Create a year-by-year tax roadmap showing optimal withdrawal timing, Roth conversions, and IRMAA management.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Execute & Monitor</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Implement strategies with your CPA, monitor tax law changes, and adjust as your situation evolves.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<div class="editorial-section">
+  <div class="chapter-header">
+    <span class="chapter-eyebrow">CHAPTER IV</span>
+    <div class="chapter-line"></div>
+  </div>
+  
+  <h2 class="editorial-h2">How It Works</h2>
+  
+  <p class="editorial-p">It's just three steps</p>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 1) Tax Analysis</h3>
+    <p class="editorial-p">We review your tax returns, account structures, and income sources to identify opportunities and risks.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 2) Build the Strategy</h3>
+    <p class="editorial-p">Create a year-by-year tax roadmap showing optimal withdrawal timing, Roth conversions, and IRMAA management.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 3) Execute & Monitor</h3>
+    <p class="editorial-p">Implement strategies with your CPA, monitor tax law changes, and adjust as your situation evolves.</p>
+  </div>
+</div>
 
-{# ═══════════════════════════════════════════════════════════
-   FAQ — Service-specific questions
-   ═══════════════════════════════════════════════════════════ #}
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">Tax Planning FAQ</h2>
-            <p class="faq-sub">Everything you need to know about tax-efficient retirement strategies.</p>
-            <a href="/contact/" class="resources-cta">Talk to a Tax Advisor</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Do you prepare tax returns?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">We focus on tax strategy and planning, not tax preparation. We work closely with your CPA to develop and implement strategies, then they handle the actual return filing. Think of it as: we build the plan, they execute the paperwork.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">When should I do a Roth conversion?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The best time is typically during low-income years before RMDs start (ages 60-72), or after retirement but before Social Security begins. We model your specific situation to identify the optimal years and amounts to convert.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is IRMAA and how do I avoid it?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">IRMAA (Income-Related Monthly Adjustment Amount) is a Medicare surcharge for higher earners. We help you manage your income to stay below the thresholds through strategic withdrawal timing, Roth conversions in low-income years, and charitable giving strategies.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How much can I save with tax planning?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The average client with proper multi-year tax planning saves $200,000+ over their lifetime compared to reactive, year-by-year tax preparation. The exact amount depends on your income sources, account types, and time horizon.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What's the difference between tax planning and tax preparation?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Tax preparation looks backward and files last year's return. Tax planning looks forward and builds multi-year strategies to minimize your lifetime tax liability. We do planning; your CPA does preparation.</div>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   RELATED SERVICES — Links to related pages
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <div class="service-related-grid">
-            <a href="/services/portfolio-management/" class="service-related-link">
-                <span class="service-related-name">Portfolio Management</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/social-security/" class="service-related-link">
-                <span class="service-related-name">Social Security Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/retirement-money-map/" class="service-related-link">
-                <span class="service-related-name">Retirement Money Map</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
-    </div>
-</section>
+<div class="editorial-section">
+  <div class="chapter-header">
+    <span class="chapter-eyebrow">CHAPTER V</span>
+    <div class="chapter-line"></div>
+  </div>
+  
+  <h2 class="editorial-h2">Common Questions</h2>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Do you prepare tax returns?</h3>
+    <p class="editorial-p">We focus on tax strategy and planning, not tax preparation. We work closely with your CPA to develop and implement strategies, then they handle the actual return filing. Think of it as: we build the plan, they execute the paperwork.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">When should I do a Roth conversion?</h3>
+    <p class="editorial-p">The best time is typically during low-income years before RMDs start (ages 60-72), or after retirement but before Social Security begins. We model your specific situation to identify the optimal years and amounts to convert.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">What is IRMAA and how do I avoid it?</h3>
+    <p class="editorial-p">IRMAA (Income-Related Monthly Adjustment Amount) is a Medicare surcharge for higher earners. We help you manage your income to stay below the thresholds through strategic withdrawal timing, Roth conversions in low-income years, and charitable giving strategies.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">How much can I save with tax planning?</h3>
+    <p class="editorial-p">The average client with proper multi-year tax planning saves $200,000+ over their lifetime compared to reactive, year-by-year tax preparation. The exact amount depends on your income sources, account types, and time horizon.</p>
+  </div>
+  
+  <div class="glass-card">
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">What's the difference between tax planning and tax preparation?</h3>
+    <p class="editorial-p">Tax preparation looks backward and files last year's return. Tax planning looks forward and builds multi-year strategies to minimize your lifetime tax liability. We do planning; your CPA does preparation.</p>
+  </div>
+</div>
