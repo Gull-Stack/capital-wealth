@@ -1852,8 +1852,8 @@ p {
 
 .finpay-footer-content {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: var(--space-12);
+  grid-template-columns: 1.5fr 1fr 1fr 0.8fr 0.8fr 0.8fr;
+  gap: var(--space-8);
   padding-bottom: var(--space-16);
 }
 

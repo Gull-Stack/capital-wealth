@@ -1,0 +1,962 @@
+---
+layout: layouts/base-finpay.njk
+title: "401(k) Self-Directed Brokerage Account Management | SDBA Advisor"
+description: "Professional management of your 401(k) SDBA / brokerage window. Access thousands of investments with fiduciary guidance. Capital Wealth, Lehi, UT."
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Services", url: "/services/" }
+  - { name: "SDBA", url: "/services/sdba/" }
+  - { name: "401(k) Brokerage Window", url: "/services/sdba/401k-brokerage-window/" }
+faqSchema:
+  - question: "How do I know if my plan has an SDBA?"
+    answer: "Check your plan website or call your plan administrator. Look for terms like 'brokerage window,' 'BrokerageLink,' 'PCRA,' or 'self-directed option.' If you're not sure, we can help you find out."
+  - question: "What's the difference between SDBA and rolling over to an IRA?"
+    answer: "With an SDBA, your money stays in your employer plan. You keep potential benefits like creditor protection, plan loan access, and often lower institutional share class pricing. A rollover moves money out entirely — which may be better in some cases. We help you compare both."
+  - question: "Can Capital Wealth manage my 401(k) directly?"
+    answer: "Through the SDBA, yes. The brokerage window creates a channel for us to build and manage a professional portfolio inside your plan. Without the SDBA, most advisors can't touch your employer plan."
+  - question: "Are there extra fees?"
+    answer: "SDBA accounts typically charge an annual maintenance fee ($25-$50/year), plus the expense ratios of the funds selected. We analyze all fees to ensure they're justified by the improved investment strategy."
+---
+
+<style>
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — 401(k) Brokerage Window
+   ═══════════════════════════════════════════ */
+
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons — match homepage hero-btn / hero-btn-secondary */
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.ep-framework-desc {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.2);
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
+  background: white;
+  transition: all 0.2s ease;
+  border-top: 3px solid transparent;
+}
+
+.ep-framework-card:hover {
+  background: var(--surface-container-low);
+  border-top-color: var(--secondary);
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Provider info and checklist */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
+}
+
+.ep-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ep-dark-header {
+  margin-bottom: 4rem;
+}
+
+.ep-dark-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
+}
+
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.ep-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-glass-card:last-child {
+  margin-top: 0;
+}
+
+.ep-glass-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-provider-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ep-provider {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.ep-provider-name {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.ep-provider-desc {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.5rem;
+}
+
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.ep-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ep-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+}
+
+.ep-check-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Process — liquid glass cards with image */
+.ep-process {
+  padding: 6rem 2rem;
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-process-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.ep-process-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-process-sub {
+  font-size: 1rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-process-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.ep-step-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.ep-step-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
+}
+
+.ep-step-number {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.ep-step-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+  margin-bottom: 0.75rem;
+}
+
+.ep-step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 300px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* Related Services */
+.ep-related {
+  padding: 4rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.15);
+}
+
+.ep-related-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 2rem;
+}
+
+.ep-related-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  background: var(--surface-container-low);
+  transition: all 0.2s ease;
+}
+
+.ep-related-link:hover {
+  background: white;
+}
+
+.ep-related-link:not(:last-child) {
+  border-right: 1px solid rgba(194, 198, 210, 0.15);
+}
+
+.ep-related-name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-related-arrow {
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
+
+/* CTA — matches homepage final-cta */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-framework-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-framework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-provider-list {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .ep-glass-card:last-child {
+    margin-top: 0;
+  }
+
+  .ep-process {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-process-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-process-image {
+    height: 220px;
+  }
+
+  .ep-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-related-link:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(194, 198, 210, 0.15);
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
+  }
+}
+</style>
+
+{# ═══════════════════════════════════════════════════════════
+   1. HERO — Asymmetric editorial layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-hero">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">401(k) Brokerage Window</span>
+      <h1 class="ep-hero-title">Your 401(k) Has a Hidden Feature Most Employees Miss</h1>
+      <span class="ep-hero-title-italic">Professional Brokerage Window Management.</span>
+      <p class="ep-hero-body">Many employer 401(k), 403(b), and 457 plans include a Self-Directed Brokerage Account option — a brokerage window that unlocks thousands of investment choices beyond the standard fund menu. Most employees never open it. Those who do rarely optimize it.</p>
+      <a href="/contact/" class="ep-btn-primary">Schedule a Free Plan Review</a>
+    </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg"
+           alt="Couple reviewing their 401k brokerage window options"
+           class="ep-hero-image">
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   2. THE PROBLEM — Framework grid
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-framework">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">Why Employees Miss the Opportunity</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">The common reasons employees don't know about or use their plan's brokerage window option.</p>
+    </div>
+    <div class="ep-framework-grid">
+      <div class="ep-framework-card">
+        <h4>You didn't know this option existed</h4>
+        <p>Plan administrators rarely promote brokerage windows.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>The options are overwhelming</h4>
+        <p>5,000+ choices vs. 20 core funds is paralyzing.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>You don't have a strategy</h4>
+        <p>You opened it but aren't sure what to buy.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Your advisor can't access your 401(k)</h4>
+        <p>Most advisors only manage IRAs, not employer plans.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   3. DARK SECTION — Provider info and checklist
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-dark">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">Major Providers</span>
+      <h2 class="ep-dark-title">Professional Management Across All Platforms.</h2>
+    </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">SDBA Providers</span>
+        <h3>Platform Expertise</h3>
+        <div class="ep-provider-list">
+          <div class="ep-provider">
+            <div class="ep-provider-name">Fidelity</div>
+            <div class="ep-provider-desc">BrokerageLink</div>
+          </div>
+          <div class="ep-provider">
+            <div class="ep-provider-name">Schwab</div>
+            <div class="ep-provider-desc">PCRA</div>
+          </div>
+          <div class="ep-provider">
+            <div class="ep-provider-name">Vanguard</div>
+            <div class="ep-provider-desc">Brokerage Option</div>
+          </div>
+        </div>
+        <p class="ep-glass-body">We manage SDBAs across all major plan providers, understanding each platform's unique features, fees, and fund availability.</p>
+      </div>
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">What We Provide</span>
+        <h3>Complete SDBA Management</h3>
+        <p class="ep-glass-body">From discovery to ongoing optimization, we handle every aspect of your 401(k) brokerage window — including coordination with your core plan allocation.</p>
+        <ul class="ep-check-list">
+          <li>SDBA enrollment and setup</li>
+          <li>Custom portfolio construction</li>
+          <li>Coordination with core plan funds</li>
+          <li>Fee analysis across all options</li>
+          <li>Ongoing rebalancing and monitoring</li>
+          <li>Integration with IRA and overall plan</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   4. PROCESS — Steps with image
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-process">
+  <div class="ep-process-inner">
+    <div class="ep-process-header">
+      <div>
+        <span class="ep-chapter-label">How It Works</span>
+        <h2 class="ep-process-title">Three Steps to Unlock Your Plan</h2>
+        <p class="ep-process-sub">Discovery, strategy, then professional management.</p>
+        <a href="/contact/" class="ep-btn-primary">Schedule Your Visit</a>
+      </div>
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-planning-tablet.jpg" alt="Couple reviewing their 401k options" class="ep-process-image">
+    </div>
+    <div class="ep-steps-grid">
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 1</span>
+        <h3>Discover</h3>
+        <p>Find out if your plan has a brokerage window option.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 2</span>
+        <h3>Build</h3>
+        <p>Custom portfolio based on goals and timeline.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 3</span>
+        <h3>Manage</h3>
+        <p>Professional oversight, rebalancing, fee optimization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   5. FAQ — Editorial accordion
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">401(k) Window FAQ</h2>
+      <p class="ep-faq-sub">The most common questions employees have about brokerage windows in their workplace retirement plans.</p>
+      <a href="/contact/" class="ep-btn-ghost">Ask About Your Plan</a>
+    </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How do I know if my plan has an SDBA? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Check your plan website or call your plan administrator. Look for terms like "brokerage window," "BrokerageLink," "PCRA," or "self-directed option." If you're not sure, we can help you find out.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What's the difference between SDBA and rolling over to an IRA? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>With an SDBA, your money stays in your employer plan. You keep potential benefits like creditor protection, plan loan access, and often lower institutional share class pricing. A rollover moves money out entirely — which may be better in some cases. We help you compare both.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Can Capital Wealth manage my 401(k) directly? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Through the SDBA, yes. The brokerage window creates a channel for us to build and manage a professional portfolio inside your plan. Without the SDBA, most advisors can't touch your employer plan.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Are there extra fees? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>SDBA accounts typically charge an annual maintenance fee ($25-$50/year), plus the expense ratios of the funds selected. We analyze all fees to ensure they're justified by the improved investment strategy.</p></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   6. RELATED SERVICES
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-related">
+  <div class="ep-related-inner">
+    <span class="ep-chapter-label">Related Services</span>
+    <h2 class="ep-framework-title" style="margin-bottom: 0;">Optimize Your Complete Retirement Strategy</h2>
+    <div class="ep-related-grid">
+      <a href="/services/sdba/" class="ep-related-link">
+        <span class="ep-related-name">SDBA Overview</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+      <a href="/services/sdba/tsp-mutual-fund-window/" class="ep-related-link">
+        <span class="ep-related-name">TSP Mutual Fund Window</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+      <a href="/services/401k-ira-rollover/" class="ep-related-link">
+        <span class="ep-related-name">401(k) & IRA Rollover</span>
+        <span class="ep-related-arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   7. CTA — Centered editorial
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Want to Know If Your Plan Has a Brokerage Window?</h2>
+      <p class="ep-cta-body">Most employees have no idea whether their plan offers an SDBA option. Schedule a complimentary visit to analyze your 401(k), discover your options, and see how professional management can optimize your workplace retirement strategy.</p>
+      <a href="/contact/" class="ep-btn-primary">Schedule Your Visit</a>
+      <p class="ep-cta-promise">A Fiduciary Promise</p>
+    </div>
+    <img src="/assets/images/photos/couple-boat.jpg" alt="Couple enjoying retirement after optimizing their 401k" class="ep-cta-image">
+  </div>
+</section>
