@@ -111,15 +111,14 @@ faqSchema:
   font-weight: 600;
   font-size: 0.9rem;
   transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  border: 2px solid var(--primary);
   color: var(--primary);
 }
 
 .ep-btn-ghost:hover {
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--primary);
+  color: white;
   transform: translateY(-2px);
 }
 
@@ -500,19 +499,25 @@ faqSchema:
   line-height: 1.6;
 }
 
-/* Process */
+/* Process — liquid glass cards with image */
 .ep-process {
   padding: 6rem 2rem;
   background: var(--surface);
+  position: relative;
+  overflow: hidden;
 }
 
 .ep-process-inner {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.ep-process-header {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: start;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .ep-process-title {
@@ -529,50 +534,56 @@ faqSchema:
   margin-bottom: 2rem;
 }
 
-.ep-step {
-  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+.ep-process-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
-.ep-step-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 0;
-  cursor: pointer;
-  user-select: none;
+.ep-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-.ep-step-title {
+.ep-step-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.ep-step-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
+}
+
+.ep-step-number {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.ep-step-card h3 {
   font-family: var(--font-body);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--on-surface);
+  margin-bottom: 0.75rem;
 }
 
-.ep-step-chevron {
-  font-size: 1.25rem;
-  color: var(--on-surface-variant);
-  transition: transform 0.2s ease;
-}
-
-.ep-step.active .ep-step-chevron {
-  transform: rotate(180deg);
-}
-
-.ep-step-body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.ep-step.active .ep-step-body {
-  max-height: 200px;
-}
-
-.ep-step-body p {
-  padding: 0 0 1.5rem;
-  font-size: 0.95rem;
-  line-height: 1.65;
+.ep-step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
   color: var(--on-surface-variant);
 }
 
@@ -837,13 +848,22 @@ faqSchema:
     display: none;
   }
 
-  .ep-process-inner {
+  .ep-process {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-process-header {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .ep-process {
-    padding: 4rem 1.5rem;
+  .ep-process-image {
+    height: 220px;
+  }
+
+  .ep-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .ep-faq-inner {
@@ -1043,39 +1063,30 @@ faqSchema:
    ═══════════════════════════════════════════════════════════ #}
 <section class="ep-process">
   <div class="ep-process-inner">
-    <div>
-      <span class="ep-chapter-label">How It Works</span>
-      <h2 class="ep-process-title">Three Steps to<br>Legacy Clarity</h2>
-      <p class="ep-process-sub">It's simpler than you think.</p>
-      <a href="/contact/" class="ep-btn-primary">Become a Client</a>
+    <div class="ep-process-header">
+      <div>
+        <span class="ep-chapter-label">How It Works</span>
+        <h2 class="ep-process-title">Three Steps to<br>Legacy Clarity</h2>
+        <p class="ep-process-sub">It's simpler than you think.</p>
+        <a href="/contact/" class="ep-btn-primary">Become a Client</a>
+      </div>
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-cooking.jpg" alt="Retired couple enjoying time together" class="ep-process-image">
     </div>
-    <div>
-      <div class="ep-step" onclick="this.classList.toggle('active')">
-        <div class="ep-step-header">
-          <span class="ep-step-title">Step 1 — Review & Audit</span>
-          <span class="ep-step-chevron">&#9662;</span>
-        </div>
-        <div class="ep-step-body">
-          <p>Review existing documents, beneficiary designations, and account titling to identify gaps and risks.</p>
-        </div>
+    <div class="ep-steps-grid">
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 01</span>
+        <h3>Review & Audit</h3>
+        <p>Review existing documents, beneficiary designations, and account titling to identify gaps and risks.</p>
       </div>
-      <div class="ep-step" onclick="this.classList.toggle('active')">
-        <div class="ep-step-header">
-          <span class="ep-step-title">Step 2 — Coordinate with Attorney</span>
-          <span class="ep-step-chevron">&#9662;</span>
-        </div>
-        <div class="ep-step-body">
-          <p>Work with your estate attorney (or refer you to one) to create or update your legal documents.</p>
-        </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 02</span>
+        <h3>Coordinate with Attorney</h3>
+        <p>Work with your estate attorney (or refer you to one) to create or update your legal documents.</p>
       </div>
-      <div class="ep-step" onclick="this.classList.toggle('active')">
-        <div class="ep-step-header">
-          <span class="ep-step-title">Step 3 — Implement Tax Strategies</span>
-          <span class="ep-step-chevron">&#9662;</span>
-        </div>
-        <div class="ep-step-body">
-          <p>Execute wealth transfer strategies (Roth conversions, gifting, charitable planning) to minimize taxes for heirs.</p>
-        </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 03</span>
+        <h3>Implement Tax Strategies</h3>
+        <p>Execute wealth transfer strategies (Roth conversions, gifting, charitable planning) to minimize taxes for heirs.</p>
       </div>
     </div>
   </div>
@@ -1152,6 +1163,6 @@ faqSchema:
       <a href="/contact/" class="ep-btn-primary">Schedule Your Visit</a>
       <p class="ep-cta-promise">A Fiduciary Promise</p>
     </div>
-    <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg" alt="Couple enjoying retirement together" class="ep-cta-image">
+    <img src="/assets/images/photos/couple-boat.jpg" alt="Retired couple enjoying life on a boat" class="ep-cta-image">
   </div>
 </section>
