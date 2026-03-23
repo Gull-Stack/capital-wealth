@@ -2,5 +2,5 @@
   "layout": "layouts/blog-post.njk",
   "tags": "blog",
   "permalink": "/blog/{{ page.fileSlug }}/",
-  "brandSuffix": " | CW Blog"
+  "brandSuffix": " | Capital Wealth"
 }
