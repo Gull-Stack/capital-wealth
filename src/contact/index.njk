@@ -437,21 +437,33 @@ breadcrumbs:
           </div>
         </div>
         
-        <!-- Honeypot -->
+        <!-- Honeypot fields — invisible to humans, irresistible to bots -->
         <div class="honeypot"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="honeypot"><input type="text" name="company_url" tabindex="-1" autocomplete="off"></div>
         
-        <button type="submit" id="submit-btn" class="contact-form-submit">REQUEST CONSULTATION →</button>
+        <button type="submit" id="submit-btn" class="contact-form-submit">SCHEDULE YOUR VISIT →</button>
         <div id="form-status" style="margin-top: 12px; text-align: center; font-weight: 500;"></div>
       </form>
       
       <script>
+      // Track when the page loaded for time-based spam check
+      var formLoadTime = Date.now();
+
       document.getElementById('contact-form').addEventListener('submit', async function(e) {
         e.preventDefault();
         var btn = document.getElementById('submit-btn');
         var status = document.getElementById('form-status');
 
-        // Honeypot check
-        if (this.querySelector('[name="website"]').value) return;
+        // Honeypot check — bots auto-fill hidden fields
+        if (this.querySelector('[name="website"]').value || this.querySelector('[name="company_url"]').value) return;
+
+        // Time-based check — reject if submitted in under 3 seconds (bots are instant)
+        var timeSinceLoad = (Date.now() - formLoadTime) / 1000;
+        if (timeSinceLoad < 3) {
+          status.textContent = 'Please take a moment to fill out the form.';
+          status.style.color = '#ba1a1a';
+          return;
+        }
 
         btn.disabled = true;
         btn.innerHTML = 'SENDING...';
