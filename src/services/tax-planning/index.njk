@@ -45,31 +45,31 @@ faqSchema:
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--accent);
+  color: var(--secondary);
   white-space: nowrap;
 }
 
 .chapter-line {
   flex: 1;
   height: 1px;
-  background: var(--border);
+  background: var(--outline-variant);
 }
 
 .pull-quote {
   margin: 3rem 0;
   padding: 0 0 0 2rem;
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid var(--secondary);
   font-family: var(--font-serif-display);
   font-style: italic;
   font-size: 1.25rem;
   line-height: 1.5;
-  color: var(--text-primary);
+  color: var(--on-surface);
 }
 
 .glass-card {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--border);
+  border: 1px solid var(--outline-variant);
   border-radius: var(--radius-lg);
   padding: 2rem;
   margin: 2rem 0;
@@ -79,7 +79,7 @@ faqSchema:
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1px;
-  background: var(--border);
+  background: var(--outline-variant);
   border-radius: var(--radius-lg);
   overflow: hidden;
   margin: 2rem 0;
@@ -103,7 +103,7 @@ faqSchema:
 .stat-label {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: var(--text-secondary);
+  color: var(--on-surface-variant);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -113,7 +113,7 @@ faqSchema:
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.3;
-  color: var(--text-primary);
+  color: var(--on-surface);
   margin: 2rem 0 1rem;
 }
 
@@ -121,7 +121,7 @@ faqSchema:
   font-family: var(--font-body);
   font-size: 1.125rem;
   line-height: 1.7;
-  color: var(--text-primary);
+  color: var(--on-surface);
   margin: 1.5rem 0;
 }
 
@@ -205,22 +205,22 @@ faqSchema:
   <h2 class="editorial-h2">Does This Sound Familiar?</h2>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Your tax bill keeps growing every year</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Your tax bill keeps growing every year</h3>
     <p class="editorial-p">Required Minimum Distributions, Social Security, and investment withdrawals push you into higher brackets — and no one's told you how to avoid it.</p>
   </div>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">You're paying IRMAA surcharges on Medicare</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">You're paying IRMAA surcharges on Medicare</h3>
     <p class="editorial-p">A few thousand dollars over the income threshold can cost you hundreds per month in extra Medicare premiums — money that didn't have to leave your pocket.</p>
   </div>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Your CPA only looks backward</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Your CPA only looks backward</h3>
     <p class="editorial-p">Tax preparers file last year's return. They don't build multi-year strategies to optimize your tax liability across your entire retirement.</p>
   </div>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">You don't know which accounts to tap first</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">You don't know which accounts to tap first</h3>
     <p class="editorial-p">Should you pull from your IRA, Roth, brokerage account, or some combination? The order matters — and most retirees guess wrong.</p>
   </div>
 </div>
@@ -246,10 +246,10 @@ faqSchema:
     </div>
   </div>
   
-  <h3 style="font-family: var(--font-body); font-weight: 600; margin: 2rem 0 1rem; font-size: 1.25rem;">Our Tax Strategies Include:</h3>
+  <h3 style="font-family: var(--font-body); font-weight: 600; margin: 2rem 0 1rem; font-size: 1.25rem; color: var(--on-surface);">Our Tax Strategies Include:</h3>
   
   <div class="glass-card">
-    <ul style="font-family: var(--font-body); line-height: 1.8; color: var(--text-primary); list-style: none; padding: 0;">
+    <ul style="font-family: var(--font-body); line-height: 1.8; color: var(--on-surface); list-style: none; padding: 0;">
       <li style="margin-bottom: 0.5rem;">• Roth IRA conversion planning (when and how much)</li>
       <li style="margin-bottom: 0.5rem;">• Strategic withdrawal sequencing from multiple account types</li>
       <li style="margin-bottom: 0.5rem;">• Medicare IRMAA avoidance strategies</li>
@@ -273,17 +273,17 @@ faqSchema:
   <p class="editorial-p">It's just three steps</p>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 1) Tax Analysis</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Step 1) Tax Analysis</h3>
     <p class="editorial-p">We review your tax returns, account structures, and income sources to identify opportunities and risks.</p>
   </div>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 2) Build the Strategy</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Step 2) Build the Strategy</h3>
     <p class="editorial-p">Create a year-by-year tax roadmap showing optimal withdrawal timing, Roth conversions, and IRMAA management.</p>
   </div>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Step 3) Execute & Monitor</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Step 3) Execute & Monitor</h3>
     <p class="editorial-p">Implement strategies with your CPA, monitor tax law changes, and adjust as your situation evolves.</p>
   </div>
 </div>
@@ -297,27 +297,27 @@ faqSchema:
   <h2 class="editorial-h2">Common Questions</h2>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">Do you prepare tax returns?</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">Do you prepare tax returns?</h3>
     <p class="editorial-p">We focus on tax strategy and planning, not tax preparation. We work closely with your CPA to develop and implement strategies, then they handle the actual return filing. Think of it as: we build the plan, they execute the paperwork.</p>
   </div>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">When should I do a Roth conversion?</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">When should I do a Roth conversion?</h3>
     <p class="editorial-p">The best time is typically during low-income years before RMDs start (ages 60-72), or after retirement but before Social Security begins. We model your specific situation to identify the optimal years and amounts to convert.</p>
   </div>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">What is IRMAA and how do I avoid it?</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">What is IRMAA and how do I avoid it?</h3>
     <p class="editorial-p">IRMAA (Income-Related Monthly Adjustment Amount) is a Medicare surcharge for higher earners. We help you manage your income to stay below the thresholds through strategic withdrawal timing, Roth conversions in low-income years, and charitable giving strategies.</p>
   </div>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">How much can I save with tax planning?</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">How much can I save with tax planning?</h3>
     <p class="editorial-p">The average client with proper multi-year tax planning saves $200,000+ over their lifetime compared to reactive, year-by-year tax preparation. The exact amount depends on your income sources, account types, and time horizon.</p>
   </div>
   
   <div class="glass-card">
-    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem;">What's the difference between tax planning and tax preparation?</h3>
+    <h3 style="font-family: var(--font-body); font-weight: 600; margin-bottom: 1rem; color: var(--on-surface);">What's the difference between tax planning and tax preparation?</h3>
     <p class="editorial-p">Tax preparation looks backward and files last year's return. Tax planning looks forward and builds multi-year strategies to minimize your lifetime tax liability. We do planning; your CPA does preparation.</p>
   </div>
 </div>
