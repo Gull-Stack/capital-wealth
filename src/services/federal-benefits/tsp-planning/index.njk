@@ -1,11 +1,8 @@
 ---
 layout: layouts/service-subpage.njk
-serviceLabel: "TSP PLANNING"
-serviceTitle: "Optimize Your Thrift Savings Plan"
-serviceSubtitle: "The TSP is one of the best retirement plans available, but most federal employees don't maximize its potential. We help you allocate funds, manage contributions, and plan withdrawal strategies."
-serviceTag: "federal"
 title: "TSP Planning & Management | Capital Wealth"
 description: "Optimize your Thrift Savings Plan. Expert guidance on TSP allocation, Roth vs traditional, contribution maximization, and tax-efficient withdrawal strategies for federal employees."
+serviceTag: "federal"
 breadcrumbs:
   - { name: "Home", url: "/" }
   - { name: "Services", url: "/services/" }
@@ -25,893 +22,999 @@ faqSchema:
 ---
 
 <style>
-/* TSP Editorial Styles */
-.fed-ed-tsp-hero {
-  background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%);
-  padding: 8rem 0;
-  position: relative;
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — TSP Planning
+   ═══════════════════════════════════════════ */
+
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
   overflow: hidden;
+  margin-top: -1rem;
 }
 
-.fed-ed-tsp-hero-inner {
+.ep-hero-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
   align-items: center;
 }
 
-.fed-ed-tsp-hero-content {
-  max-width: 500px;
-}
-
-.fed-ed-chapter-label {
+.ep-chapter-label {
   font-family: var(--font-mono);
-  font-size: 0.875rem;
-  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #F09F54;
+  color: var(--secondary);
   margin-bottom: 1.5rem;
   display: block;
 }
 
-.fed-ed-tsp-headline {
+.ep-hero-title {
   font-family: var(--font-serif-display);
-  font-size: 3.5rem;
-  line-height: 1.1;
-  color: #003870;
-  margin-bottom: 1.5rem;
-}
-
-.fed-ed-tsp-headline em {
-  font-style: italic;
-  color: #F09F54;
-}
-
-.fed-ed-tsp-desc {
-  font-family: var(--font-body);
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: #64748b;
-  margin-bottom: 2rem;
-}
-
-.fed-ed-btn-primary {
-  display: inline-block;
-  background: #003870;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-family: var(--font-body);
-  font-weight: 600;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.fed-ed-btn-primary:hover {
-  background: #194F90;
-  transform: translateY(-2px);
-}
-
-.fed-ed-tsp-hero-image-container {
-  position: relative;
-}
-
-.fed-ed-tsp-hero-image {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
-}
-
-.fed-ed-pullquote {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  right: 2rem;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(24px);
-  padding: 2rem;
-  border-radius: 12px;
-  border-left: 4px solid #F09F54;
-}
-
-.fed-ed-pullquote-text {
-  font-family: var(--font-serif-display);
-  font-style: italic;
-  font-size: 1.125rem;
-  line-height: 1.4;
-  color: #003870;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
   margin-bottom: 0.5rem;
 }
 
-.fed-ed-pullquote-author {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: #64748b;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
 }
 
-.fed-ed-tsp-nav {
-  position: sticky;
-  top: 2rem;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(24px);
-  border-radius: 12px;
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons — match homepage hero-btn / hero-btn-secondary */
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
   padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Key Facts Row */
+.ep-facts {
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.2);
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-facts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ep-fact {
+  flex: 1;
+}
+
+.ep-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.4rem;
+}
+
+.ep-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
   margin-bottom: 2rem;
 }
 
-.fed-ed-tsp-nav-title {
+.ep-framework-desc {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #64748b;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.2);
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
+  background: white;
+  transition: all 0.2s ease;
+  border-top: 3px solid transparent;
+}
+
+.ep-framework-card:hover {
+  background: var(--surface-container-low);
+  border-top-color: var(--secondary);
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
   margin-bottom: 1rem;
 }
 
-.fed-ed-tsp-nav-links {
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Stats & Solution */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
+}
+
+.ep-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ep-dark-header {
+  margin-bottom: 4rem;
+}
+
+.ep-dark-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
+}
+
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.ep-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-glass-card:last-child {
+  margin-top: 0;
+}
+
+.ep-glass-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ep-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ep-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.ep-stat-number small {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-left: 0.25rem;
+}
+
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.ep-check-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.fed-ed-tsp-nav-links li {
-  margin-bottom: 0.5rem;
+.ep-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
 }
 
-.fed-ed-tsp-nav-links a {
-  font-family: var(--font-body);
-  color: #003870;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
+.ep-check-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
 }
 
-.fed-ed-tsp-nav-links a:hover {
-  color: #F09F54;
+/* Asymmetric Image + Text */
+.ep-transfer {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
 }
 
-.fed-ed-tsp-content {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 4rem;
+.ep-transfer-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
 }
 
-.fed-ed-tsp-main {
-  padding: 4rem 0;
+.ep-transfer-image-wrap {
+  flex: 0 0 45%;
+  position: relative;
 }
 
-.fed-ed-tsp-section {
-  margin-bottom: 6rem;
+.ep-transfer-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
 }
 
-.fed-ed-tsp-section-title {
+.ep-transfer-image-accent {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 120px;
+  height: 120px;
+  background: var(--tertiary-fixed, #d9e4eb);
+  z-index: -1;
+}
+
+.ep-transfer-text {
+  flex: 1;
+}
+
+.ep-transfer-title {
   font-family: var(--font-serif-display);
-  font-size: 2.5rem;
-  color: #003870;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.15;
   margin-bottom: 1.5rem;
-  line-height: 1.2;
 }
 
-.fed-ed-tsp-section-title em {
-  font-style: italic;
-  color: #F09F54;
-}
-
-.fed-ed-tsp-body {
-  font-family: var(--font-body);
-  font-size: 1.1rem;
+.ep-transfer-body {
+  font-size: 1.05rem;
   line-height: 1.7;
-  color: #64748b;
+  color: var(--on-surface-variant);
+  margin-bottom: 2.5rem;
+}
+
+.ep-sub-feature {
+  margin-bottom: 1.5rem;
+  cursor: default;
+}
+
+.ep-sub-feature h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.ep-sub-feature:hover h4 {
+  color: var(--secondary);
+}
+
+.ep-sub-feature p {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 300px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* CTA — matches homepage final-cta */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
   margin-bottom: 1.5rem;
 }
 
-.fed-ed-glass-card {
-  background: rgba(255,255,255,0.45);
-  backdrop-filter: blur(24px);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 2rem 0;
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
 }
 
-.fed-ed-fund-grid {
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Fund Grid - Custom for TSP */
+.ep-fund-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin: 2rem 0;
 }
 
-.fed-ed-fund-card {
+.ep-fund-card {
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0,56,112,0.08);
+  transition: all 0.2s ease;
 }
 
-.fed-ed-fund-letter {
+.ep-fund-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,56,112,0.12);
+}
+
+.ep-fund-letter {
   font-family: var(--font-serif-display);
   font-size: 2.5rem;
   font-weight: 600;
-  color: #003870;
+  color: var(--primary);
   margin-bottom: 0.5rem;
 }
 
-.fed-ed-fund-name {
+.ep-fund-name {
   font-family: var(--font-body);
   font-weight: 600;
-  color: #003870;
+  color: var(--primary);
   margin-bottom: 0.5rem;
 }
 
-.fed-ed-fund-desc {
+.ep-fund-desc {
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: #64748b;
+  color: var(--on-surface-variant);
   line-height: 1.4;
 }
 
-.fed-ed-stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
-.fed-ed-stat {
-  text-align: center;
-  padding: 2rem;
-  background: #f8f9fb;
-  border-radius: 12px;
-}
-
-.fed-ed-stat-number {
-  font-family: var(--font-serif-display);
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #003870;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.fed-ed-stat-label {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #64748b;
-}
-
-.fed-ed-comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
-}
-
-.fed-ed-comparison-table th {
-  background: #003870;
-  color: white;
-  padding: 1rem;
-  font-family: var(--font-body);
-  font-weight: 600;
-  text-align: left;
-}
-
-.fed-ed-comparison-table td {
-  padding: 1rem;
-  border-bottom: 1px solid #f3f4f6;
-  font-family: var(--font-body);
-  color: #64748b;
-}
-
-.fed-ed-comparison-table tr:nth-child(even) {
-  background: #f8f9fb;
-}
-
-.fed-ed-comparison-table .highlight {
-  background: #F09F54 !important;
-  color: white;
-}
-
-.fed-ed-faq {
-  padding: 6rem 0;
-  background: #f8f9fb;
-}
-
-.fed-ed-faq-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 4rem;
-}
-
-.fed-ed-faq-accordion {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
-}
-
-.fed-ed-faq-item {
-  border-bottom: 1px solid #f3f4f6;
-}
-
-.fed-ed-faq-item:last-child {
-  border-bottom: none;
-}
-
-.fed-ed-faq-trigger {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 2rem;
-  text-align: left;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background 0.3s ease;
-}
-
-.fed-ed-faq-trigger:hover {
-  background: #f8f9fb;
-}
-
-.fed-ed-faq-question {
-  font-family: var(--font-body);
-  font-weight: 600;
-  color: #003870;
-  font-size: 1.1rem;
-}
-
-.fed-ed-faq-icon {
-  color: #F09F54;
-  font-size: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-.fed-ed-faq-item.active .fed-ed-faq-icon {
-  transform: rotate(45deg);
-}
-
-.fed-ed-faq-panel {
-  padding: 0 2rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.fed-ed-faq-item.active .fed-ed-faq-panel {
-  max-height: 400px;
-  padding: 0 2rem 2rem;
-}
-
-.fed-ed-faq-answer {
-  font-family: var(--font-body);
-  line-height: 1.6;
-  color: #64748b;
-}
-
-@media (max-width: 1024px) {
-  .fed-ed-tsp-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .fed-ed-tsp-nav {
-    position: relative;
-    order: 2;
-  }
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-  .fed-ed-tsp-hero-inner {
+  .ep-hero-inner {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
-  
-  .fed-ed-tsp-headline {
-    font-size: 2.5rem;
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
   }
-  
-  .fed-ed-faq-inner {
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-facts-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .ep-fact {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .ep-framework-inner {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
-  .fed-ed-fund-grid {
+
+  .ep-framework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-glass-card:last-child {
+    margin-top: 0;
+  }
+
+  .ep-transfer {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-transfer-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ep-transfer-image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .ep-transfer-image {
+    height: 350px;
+  }
+
+  .ep-transfer-image-accent {
+    display: none;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
+  }
+
+  .ep-fund-grid {
     grid-template-columns: 1fr;
   }
 }
 </style>
 
-<!-- HERO SECTION -->
-<section class="fed-ed-tsp-hero">
-  <div class="fed-ed-tsp-hero-inner">
-    <div class="fed-ed-tsp-hero-content">
-      <span class="fed-ed-chapter-label">CHAPTER I: TSP FUNDAMENTALS</span>
-      <h1 class="fed-ed-tsp-headline">Your TSP <em>Advantage</em></h1>
-      <p class="fed-ed-tsp-desc">The Thrift Savings Plan is one of the best retirement savings vehicles available — but most federal employees leave money on the table by not maximizing contributions, choosing suboptimal allocations, or withdrawing funds inefficiently.</p>
-      
-      <div style="margin-top: 2rem;">
-        <a href="/contact/" class="fed-ed-btn-primary">Optimize My TSP</a>
-      </div>
+{# ═══════════════════════════════════════════════════════════
+   1. HERO — Asymmetric editorial layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-hero">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">TSP Planning</span>
+      <h1 class="ep-hero-title">Strategic</h1>
+      <span class="ep-hero-title-italic">TSP</span>
+      <span class="ep-hero-title">Management</span>
+      <p class="ep-hero-body">The Thrift Savings Plan is one of America's best retirement savings vehicles, but most federal employees don't maximize its potential. Strategic fund allocation, contribution optimization, and withdrawal planning can add hundreds of thousands to your retirement security.</p>
+      <a href="/contact/" class="ep-btn-primary">Optimize My TSP</a>
     </div>
-    
-    <div class="fed-ed-tsp-hero-image-container">
-      <img src="/assets/images/photos/federal/capitalwealth-federal-financial-district-office.jpg" alt="Financial district representing TSP investment growth" class="fed-ed-tsp-hero-image">
-      <div class="fed-ed-pullquote">
-        <p class="fed-ed-pullquote-text">"Your TSP is a phenomenal savings vehicle. Don't ruin it with the wrong withdrawal strategy."</p>
-        <p class="fed-ed-pullquote-author">— Mike Stevens, IAR</p>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-financial-district-office.jpg"
+           alt="Financial district office representing TSP investment growth"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"The TSP is the most powerful tax-advantaged savings vehicle available to federal employees."</p>
+        <cite>Mike Stevens, IAR</cite>
       </div>
     </div>
   </div>
 </section>
 
-<!-- MAIN CONTENT WITH SIDE NAV -->
-<section class="fed-ed-tsp-content">
-  <aside class="fed-ed-tsp-nav">
-    <h3 class="fed-ed-tsp-nav-title">On This Page</h3>
-    <ul class="fed-ed-tsp-nav-links">
-      <li><a href="#contributions">Contribution Strategy</a></li>
-      <li><a href="#funds">Fund Allocation</a></li>
-      <li><a href="#roth-traditional">Roth vs Traditional</a></li>
-      <li><a href="#withdrawals">Withdrawal Planning</a></li>
-      <li><a href="#rollover">Rollover Decisions</a></li>
-      <li><a href="#optimization">Advanced Strategies</a></li>
-    </ul>
-  </aside>
-  
-  <main class="fed-ed-tsp-main">
-    <!-- CONTRIBUTION STRATEGY -->
-    <section id="contributions" class="fed-ed-tsp-section">
-      <span class="fed-ed-chapter-label">CHAPTER II: CONTRIBUTIONS</span>
-      <h2 class="fed-ed-tsp-section-title">Maximizing Your <em>Contributions</em></h2>
-      
-      <p class="fed-ed-tsp-body">The TSP offers one of the most generous matching formulas in the retirement industry. Understanding the contribution limits and matching structure is essential for maximizing your federal benefits.</p>
-      
-      <div class="fed-ed-glass-card">
-        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">TSP Contribution Limits (2026)</h3>
+{# ═══════════════════════════════════════════════════════════
+   2. KEY FACTS — Technical precision row
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact">
+      <div class="ep-fact-label">2026 Contribution Limit</div>
+      <div class="ep-fact-value">$24,500 (+ $8K catch-up)</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Super Catch-Up (60-63)</div>
+      <div class="ep-fact-value">+$11,250 additional</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Agency Match Maximum</div>
+      <div class="ep-fact-value">5% of salary</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">TSP Expense Ratio</div>
+      <div class="ep-fact-value">0.057% (extremely low)</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Average TSP Balance</div>
+      <div class="ep-fact-value">$780,000 at retirement</div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   3. FRAMEWORK — TSP Fund Options
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-framework">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">Six Core TSP Funds</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">The TSP offers remarkably low-cost access to six professionally managed funds covering the full spectrum of investment options from guaranteed safety to international growth.</p>
+    </div>
+    <div>
+      <div class="ep-fund-grid">
+        <div class="ep-fund-card">
+          <div class="ep-fund-letter">G</div>
+          <div class="ep-fund-name">Government Securities</div>
+          <p class="ep-fund-desc">Guaranteed principal and interest. Risk-free but low returns.</p>
+        </div>
         
-        <div class="fed-ed-stats-grid">
-          <div class="fed-ed-stat">
-            <span class="fed-ed-stat-number">$24,500</span>
-            <span class="fed-ed-stat-label">Annual Contribution Limit</span>
-          </div>
-          <div class="fed-ed-stat">
-            <span class="fed-ed-stat-number">$8,000</span>
-            <span class="fed-ed-stat-label">Catch-Up (Age 50+)</span>
-          </div>
-          <div class="fed-ed-stat">
-            <span class="fed-ed-stat-number">$11,250</span>
-            <span class="fed-ed-stat-label">Super Catch-Up (Age 60-63)</span>
-          </div>
-          <div class="fed-ed-stat">
-            <span class="fed-ed-stat-number">5%</span>
-            <span class="fed-ed-stat-label">For Full Agency Match</span>
-          </div>
+        <div class="ep-fund-card">
+          <div class="ep-fund-letter">F</div>
+          <div class="ep-fund-name">Fixed Income Index</div>
+          <p class="ep-fund-desc">Tracks US bond market. Moderate risk, income focus.</p>
+        </div>
+        
+        <div class="ep-fund-card">
+          <div class="ep-fund-letter">C</div>
+          <div class="ep-fund-name">Common Stock Index</div>
+          <p class="ep-fund-desc">Tracks S&P 500. Core US stock exposure.</p>
+        </div>
+        
+        <div class="ep-fund-card">
+          <div class="ep-fund-letter">S</div>
+          <div class="ep-fund-name">Small Cap Stock Index</div>
+          <p class="ep-fund-desc">Small and mid-cap US stocks. Higher growth potential.</p>
+        </div>
+        
+        <div class="ep-fund-card">
+          <div class="ep-fund-letter">I</div>
+          <div class="ep-fund-name">International Stock Index</div>
+          <p class="ep-fund-desc">International developed markets. Geographic diversification.</p>
+        </div>
+        
+        <div class="ep-fund-card" style="background: var(--secondary); color: white;">
+          <div class="ep-fund-letter" style="color: white;">L</div>
+          <div class="ep-fund-name" style="color: white;">Lifecycle Funds</div>
+          <p class="ep-fund-desc" style="color: white;">Target-date funds that adjust allocation automatically.</p>
         </div>
       </div>
-      
-      <p class="fed-ed-tsp-body">From Mike's book: "James Patterson was contributing only 3% to his TSP and missing out on free government money. Increasing to 5% added $2,400 in annual matching funds — a 100% return on investment."</p>
-      
-      <div class="fed-ed-glass-card">
-        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">TSP Matching Formula</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li style="padding: 0.75rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b; display: flex; justify-content: space-between;">
-            <span><strong style="color: #003870;">Automatic Contribution:</strong> Government contributes regardless of your contribution</span>
-            <span style="color: #F09F54; font-weight: 600;">1%</span>
-          </li>
-          <li style="padding: 0.75rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b; display: flex; justify-content: space-between;">
-            <span><strong style="color: #003870;">First 3% you contribute:</strong> Dollar-for-dollar match</span>
-            <span style="color: #F09F54; font-weight: 600;">100%</span>
-          </li>
-          <li style="padding: 0.75rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b; display: flex; justify-content: space-between;">
-            <span><strong style="color: #003870;">Next 2% you contribute:</strong> 50 cents on the dollar</span>
-            <span style="color: #F09F54; font-weight: 600;">50%</span>
-          </li>
-          <li style="padding: 0.75rem 0; font-family: var(--font-body); color: #64748b; display: flex; justify-content: space-between;">
-            <span><strong style="color: #003870;">Total maximum match:</strong> When you contribute 5% or more</span>
-            <span style="color: #F09F54; font-weight: 600;">5%</span>
-          </li>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   4. DARK SECTION — TSP Value
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-dark">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">The Advantage</span>
+      <h2 class="ep-dark-title">TSP <em>Superiority.</em></h2>
+    </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Cost Advantage</span>
+        <h3>Unbeatable Fees</h3>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">TSP Expense Ratio</span>
+          <span class="ep-stat-number">0.057<small>%</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Average 401(k) Fees</span>
+          <span class="ep-stat-number">1.20<small>%</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Annual Savings on $500K</span>
+          <span class="ep-stat-number">$5,715<small>/year</small></span>
+        </div>
+        <p class="ep-glass-body">The TSP's incredibly low fees mean more of your money stays invested and compounds over time. On a $500,000 balance, you save over $5,700 annually compared to typical 401(k) plans.</p>
+      </div>
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Strategic Benefits</span>
+        <h3>Unique Advantages</h3>
+        <p class="ep-glass-body">The TSP offers benefits unavailable in private sector 401(k) plans, making it one of the most valuable employee benefits in America.</p>
+        <ul class="ep-check-list">
+          <li>Unique G Fund guaranteed returns</li>
+          <li>Age 55 penalty-free access</li>
+          <li>Generous agency matching formula</li>
+          <li>Both traditional and Roth options</li>
+          <li>Institutional-quality fund management</li>
+          <li>Strong fraud protection measures</li>
+          <li>Super catch-up for ages 60-63</li>
+          <li>Lifetime income annuity options</li>
         </ul>
       </div>
-      
-      <p class="fed-ed-tsp-body">The new super catch-up provision for ages 60-63 allows an additional $11,250 in contributions beyond the regular catch-up amount. This creates opportunities for federal employees approaching retirement to significantly boost their TSP balances in their final years of service.</p>
-    </section>
-    
-    <!-- FUND ALLOCATION -->
-    <section id="funds" class="fed-ed-tsp-section">
-      <span class="fed-ed-chapter-label">CHAPTER III: ALLOCATION</span>
-      <h2 class="fed-ed-tsp-section-title">TSP <em>Fund</em> Strategy</h2>
-      
-      <p class="fed-ed-tsp-body">The TSP offers six core funds plus lifecycle (L) funds. Understanding each fund's purpose and risk profile is essential for building an allocation that matches your time horizon and risk tolerance.</p>
-      
-      <div class="fed-ed-fund-grid">
-        <div class="fed-ed-fund-card">
-          <div class="fed-ed-fund-letter">G</div>
-          <div class="fed-ed-fund-name">Government Securities</div>
-          <p class="fed-ed-fund-desc">Guaranteed principal and interest. Risk-free but low returns.</p>
-        </div>
-        
-        <div class="fed-ed-fund-card">
-          <div class="fed-ed-fund-letter">F</div>
-          <div class="fed-ed-fund-name">Fixed Income Index</div>
-          <p class="fed-ed-fund-desc">Tracks US bond market. Moderate risk, income focus.</p>
-        </div>
-        
-        <div class="fed-ed-fund-card">
-          <div class="fed-ed-fund-letter">C</div>
-          <div class="fed-ed-fund-name">Common Stock Index</div>
-          <p class="fed-ed-fund-desc">Tracks S&P 500. Core US stock exposure.</p>
-        </div>
-        
-        <div class="fed-ed-fund-card">
-          <div class="fed-ed-fund-letter">S</div>
-          <div class="fed-ed-fund-name">Small Cap Stock Index</div>
-          <p class="fed-ed-fund-desc">Small and mid-cap US stocks. Higher growth potential.</p>
-        </div>
-        
-        <div class="fed-ed-fund-card">
-          <div class="fed-ed-fund-letter">I</div>
-          <div class="fed-ed-fund-name">International Stock Index</div>
-          <p class="fed-ed-fund-desc">International developed markets. Geographic diversification.</p>
-        </div>
-        
-        <div class="fed-ed-fund-card" style="background: #F09F54; color: white;">
-          <div class="fed-ed-fund-letter" style="color: white;">L</div>
-          <div class="fed-ed-fund-name" style="color: white;">Lifecycle Funds</div>
-          <p class="fed-ed-fund-desc" style="color: white;">Target-date funds that adjust allocation automatically.</p>
-        </div>
-      </div>
-      
-      <div class="fed-ed-glass-card">
-        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Sample Allocation Strategies</h3>
-        
-        <table class="fed-ed-comparison-table">
-          <thead>
-            <tr>
-              <th>Strategy</th>
-              <th>G Fund</th>
-              <th>F Fund</th>
-              <th>C Fund</th>
-              <th>S Fund</th>
-              <th>I Fund</th>
-              <th>Best For</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Conservative</strong></td>
-              <td>40%</td>
-              <td>30%</td>
-              <td>20%</td>
-              <td>5%</td>
-              <td>5%</td>
-              <td>5+ years to retirement</td>
-            </tr>
-            <tr class="highlight">
-              <td><strong>Balanced</strong></td>
-              <td>20%</td>
-              <td>20%</td>
-              <td>40%</td>
-              <td>10%</td>
-              <td>10%</td>
-              <td>10+ years to retirement</td>
-            </tr>
-            <tr>
-              <td><strong>Aggressive</strong></td>
-              <td>5%</td>
-              <td>5%</td>
-              <td>60%</td>
-              <td>15%</td>
-              <td>15%</td>
-              <td>20+ years to retirement</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-      <p class="fed-ed-tsp-body">The unique G Fund offers government-guaranteed returns with no risk of principal loss — something not available in private 401(k)s. This makes the TSP particularly valuable for conservative investors and those approaching retirement.</p>
-    </section>
-    
-    <!-- ROTH VS TRADITIONAL -->
-    <section id="roth-traditional" class="fed-ed-tsp-section">
-      <span class="fed-ed-chapter-label">CHAPTER IV: TAX STRATEGY</span>
-      <h2 class="fed-ed-tsp-section-title">Roth vs <em>Traditional</em> TSP</h2>
-      
-      <p class="fed-ed-tsp-body">The choice between Roth and traditional TSP contributions is one of the most important decisions federal employees face. The right choice depends on your current tax bracket, expected retirement income, and overall tax strategy.</p>
-      
-      <div class="fed-ed-glass-card">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
-          <div>
-            <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Traditional TSP</h3>
-            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; list-style: none; padding: 0;">
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Contributions reduce current taxable income</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Growth is tax-deferred</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">× Withdrawals are fully taxable</li>
-              <li style="padding: 0.5rem 0;">× Required minimum distributions at age 73</li>
-            </ul>
-            <p style="font-family: var(--font-body); color: #64748b; margin-top: 1rem; font-style: italic;">Best for: High current income, expect lower tax bracket in retirement</p>
-          </div>
-          
-          <div>
-            <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Roth TSP</h3>
-            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; list-style: none; padding: 0;">
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">× Contributions made with after-tax dollars</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Growth is completely tax-free</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Withdrawals are tax-free in retirement</li>
-              <li style="padding: 0.5rem 0;">✓ No required minimum distributions</li>
-            </ul>
-            <p style="font-family: var(--font-body); color: #64748b; margin-top: 1rem; font-style: italic;">Best for: Early career, expect higher tax bracket in retirement</p>
-          </div>
-        </div>
-      </div>
-      
-      <p class="fed-ed-tsp-body">Many financial advisors recommend a "tax diversification" approach — contributing to both Roth and traditional accounts to give you flexibility in retirement. This is especially valuable for federal employees who have predictable FERS pension income and can strategically withdraw from different account types based on their tax situation each year.</p>
-      
-      <div class="fed-ed-stats-grid">
-        <div class="fed-ed-stat">
-          <span class="fed-ed-stat-number">22%</span>
-          <span class="fed-ed-stat-label">Current Fed Tax Bracket</span>
-        </div>
-        <div class="fed-ed-stat">
-          <span class="fed-ed-stat-number">12%</span>
-          <span class="fed-ed-stat-label">Typical Retirement Bracket</span>
-        </div>
-        <div class="fed-ed-stat">
-          <span class="fed-ed-stat-number">$30,000</span>
-          <span class="fed-ed-stat-label">Tax-Free Roth Growth (20 yrs)</span>
-        </div>
-      </div>
-    </section>
-    
-    <!-- WITHDRAWAL PLANNING -->
-    <section id="withdrawals" class="fed-ed-tsp-section">
-      <span class="fed-ed-chapter-label">CHAPTER V: WITHDRAWALS</span>
-      <h2 class="fed-ed-tsp-section-title">Retirement <em>Withdrawal</em> Strategy</h2>
-      
-      <p class="fed-ed-tsp-body">How you withdraw from your TSP in retirement is just as important as how you invested during your career. The TSP offers four withdrawal options, each with different implications for taxes, flexibility, and estate planning.</p>
-      
-      <div class="fed-ed-glass-card">
-        <table class="fed-ed-comparison-table">
-          <thead>
-            <tr>
-              <th>Withdrawal Option</th>
-              <th>Flexibility</th>
-              <th>Income Guarantee</th>
-              <th>Estate Benefits</th>
-              <th>Best For</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Monthly Installments</strong></td>
-              <td>High</td>
-              <td>None</td>
-              <td>Remaining balance</td>
-              <td>Most retirees</td>
-            </tr>
-            <tr>
-              <td><strong>TSP Annuity</strong></td>
-              <td>None</td>
-              <td>Lifetime</td>
-              <td>Limited</td>
-              <td>Income certainty priority</td>
-            </tr>
-            <tr>
-              <td><strong>Single Payment</strong></td>
-              <td>Maximum</td>
-              <td>None</td>
-              <td>Full control</td>
-              <td>Rolling to IRA</td>
-            </tr>
-            <tr class="highlight">
-              <td><strong>Combination</strong></td>
-              <td>Medium</td>
-              <td>Partial</td>
-              <td>Partial</td>
-              <td>Balanced approach</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-      <p class="fed-ed-tsp-body">Federal employees who separate from service in the year they turn 55 or older can access their TSP without the 10% early withdrawal penalty. This is a valuable benefit not available in most private sector 401(k) plans.</p>
-      
-      <p class="fed-ed-tsp-body">The key is coordinating your TSP withdrawals with your FERS annuity, Social Security, and any other retirement income to minimize taxes and maximize cash flow throughout retirement.</p>
-    </section>
-    
-    <!-- ROLLOVER DECISIONS -->
-    <section id="rollover" class="fed-ed-tsp-section">
-      <span class="fed-ed-chapter-label">CHAPTER VI: ROLLOVER ANALYSIS</span>
-      <h2 class="fed-ed-tsp-section-title">Keep TSP or <em>Roll</em> to IRA?</h2>
-      
-      <p class="fed-ed-tsp-body">One of the biggest decisions facing federal retirees is whether to keep their TSP or roll it to an IRA. Both options have compelling advantages, and the right choice depends on your specific situation and priorities.</p>
-      
-      <div class="fed-ed-glass-card">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
-          <div>
-            <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Keep TSP</h3>
-            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; list-style: none; padding: 0;">
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Extremely low expense ratios (0.057%)</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Unique G Fund access</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Age 55 penalty-free access</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Strong fraud protection</li>
-              <li style="padding: 0.5rem 0;">× Limited investment options</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Roll to IRA</h3>
-            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; list-style: none; padding: 0;">
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Unlimited investment options</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Greater withdrawal flexibility</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Better estate planning features</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Roth conversion opportunities</li>
-              <li style="padding: 0.5rem 0;">× Higher fees and complexity</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <p class="fed-ed-tsp-body">There's no requirement to choose one or the other. Many federal retirees benefit from a partial rollover strategy — keeping some money in the TSP for its unique benefits while rolling a portion to an IRA for greater investment flexibility and estate planning advantages.</p>
-    </section>
-    
-    <!-- OPTIMIZATION STRATEGIES -->
-    <section id="optimization" class="fed-ed-tsp-section">
-      <span class="fed-ed-chapter-label">CHAPTER VII: OPTIMIZATION</span>
-      <h2 class="fed-ed-tsp-section-title">Advanced TSP <em>Strategies</em></h2>
-      
-      <p class="fed-ed-tsp-body">Beyond the basics of contribution limits and fund allocation, there are advanced strategies that can significantly enhance your TSP's value over time. These techniques require careful planning but can add thousands to your retirement security.</p>
-      
-      <div class="fed-ed-glass-card">
-        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Advanced Optimization Techniques</h3>
-        
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-          <div>
-            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Contribution Timing</h4>
-            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">
-              <li>Front-load contributions for maximum growth time</li>
-              <li>Coordinate with FERS pension timing</li>
-              <li>Maximize catch-up and super catch-up contributions</li>
-              <li>Strategic Roth/traditional mixing</li>
-            </ul>
-          </div>
-          <div>
-            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Withdrawal Sequencing</h4>
-            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">
-              <li>Coordinate with FERS and Social Security</li>
-              <li>Tax-efficient withdrawal ordering</li>
-              <li>Roth conversion ladders</li>
-              <li>Asset location optimization</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <p class="fed-ed-tsp-body">The TSP's low fees make it an excellent accumulation vehicle, but its withdrawal options are more limited than IRAs. Many federal employees benefit from a hybrid approach — maximizing TSP contributions during their career, then strategically rolling portions to IRAs for more flexible retirement income planning.</p>
-      
-      <p class="fed-ed-tsp-body">With the average federal employee having $780,000 in their TSP at retirement, proper withdrawal strategy can mean the difference between running out of money and leaving a significant legacy.</p>
-    </section>
-  </main>
+    </div>
+  </div>
 </section>
 
-<!-- FAQ SECTION -->
-<section class="fed-ed-faq">
-  <div class="fed-ed-faq-inner">
-    <div>
-      <span class="fed-ed-chapter-label">CHAPTER VIII: COMMON QUESTIONS</span>
-      <h2 class="fed-ed-tsp-section-title">TSP Planning <em>FAQ</em></h2>
-      <p class="fed-ed-tsp-body">Everything you need to know about maximizing your Thrift Savings Plan.</p>
-      <div style="margin-top: 2rem;">
-        <a href="/contact/" class="fed-ed-btn-primary">Optimize My TSP</a>
-      </div>
+{# ═══════════════════════════════════════════════════════════
+   5. ASYMMETRIC — Strategy Details
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-transfer">
+  <div class="ep-transfer-inner">
+    <div class="ep-transfer-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-treasury-building.jpg"
+           alt="Federal Treasury building representing TSP fund management"
+           class="ep-transfer-image">
+      <div class="ep-transfer-image-accent"></div>
     </div>
-    
-    <div class="fed-ed-faq-accordion">
-      <div class="fed-ed-faq-item">
-        <button class="fed-ed-faq-trigger">
-          <span class="fed-ed-faq-question">Should I max out my TSP contributions?</span>
-          <span class="fed-ed-faq-icon">+</span>
-        </button>
-        <div class="fed-ed-faq-panel">
-          <p class="fed-ed-faq-answer">At minimum, you should contribute at least 5% of your salary to capture the full agency match — the government's automatic 1% plus dollar-for-dollar matching on the next 3% of your salary, and 50 cents on the dollar for the next 1%. Beyond that, maxing out your TSP (up to $24,500 in 2026, or $32,000 if age 50+) depends on your overall financial situation, other savings goals, and whether you have high-interest debt. The TSP offers extremely low fees and excellent tax benefits, making it one of the best places to save for retirement.</p>
-        </div>
+    <div class="ep-transfer-text">
+      <span class="ep-chapter-label">Strategic Coordination</span>
+      <h2 class="ep-transfer-title">Beyond Fund<br>Selection</h2>
+      <p class="ep-transfer-body">Smart TSP management goes beyond picking funds. It requires coordinating contribution strategies, tax decisions, withdrawal planning, and rollover analysis to maximize lifetime value alongside your FERS pension and Social Security.</p>
+      <div class="ep-sub-feature">
+        <h4>Roth vs Traditional Strategy</h4>
+        <p>Federal employees have unique considerations for Roth versus traditional contributions. We model your current and projected retirement tax brackets to optimize your contribution mix.</p>
       </div>
-      
-      <div class="fed-ed-faq-item">
-        <button class="fed-ed-faq-trigger">
-          <span class="fed-ed-faq-question">Should I contribute to Roth or traditional TSP?</span>
-          <span class="fed-ed-faq-icon">+</span>
-        </button>
-        <div class="fed-ed-faq-panel">
-          <p class="fed-ed-faq-answer">Traditional TSP contributions reduce your taxable income now but are taxed when withdrawn. Roth TSP contributions are made with after-tax dollars but grow and can be withdrawn tax-free in retirement. Generally, Roth makes more sense if you expect to be in a higher tax bracket in retirement, or if you're early in your career with lower current income. Traditional makes sense if you're in a high tax bracket now and expect lower income in retirement. Many federal employees benefit from a mix of both — we can model your specific situation to determine the optimal split.</p>
-        </div>
-      </div>
-      
-      <div class="fed-ed-faq-item">
-        <button class="fed-ed-faq-trigger">
-          <span class="fed-ed-faq-question">Should I roll my TSP to an IRA when I retire?</span>
-          <span class="fed-ed-faq-icon">+</span>
-        </button>
-        <div class="fed-ed-faq-panel">
-          <p class="fed-ed-faq-answer">The TSP has incredibly low expense ratios and offers unique benefits like the G Fund. However, an IRA rollover provides more investment options, greater withdrawal flexibility, and potentially better estate planning features. If you separate from service in the year you turn 55 or older, the TSP also allows penalty-free withdrawals before age 59½. Whether to keep your TSP or roll it to an IRA depends on your investment preferences, withdrawal needs, and overall estate planning goals. There's no one-size-fits-all answer — we evaluate your specific situation to make the right recommendation.</p>
-        </div>
-      </div>
-      
-      <div class="fed-ed-faq-item">
-        <button class="fed-ed-faq-trigger">
-          <span class="fed-ed-faq-question">What are my TSP withdrawal options?</span>
-          <span class="fed-ed-faq-icon">+</span>
-        </button>
-        <div class="fed-ed-faq-panel">
-          <p class="fed-ed-faq-answer">TSP offers four main withdrawal options: (1) Single payment of your entire balance, (2) Monthly installments based on your choice of amount or life expectancy, (3) Purchase of a TSP life annuity for guaranteed monthly income, or (4) A combination of these options. Each has different tax and income implications. Monthly installments offer flexibility but no income guarantee. Life annuities provide guaranteed income but no access to principal. Most retirees benefit from a strategic combination, often keeping some TSP funds for growth while taking systematic withdrawals coordinated with FERS and Social Security.</p>
-        </div>
-      </div>
-      
-      <div class="fed-ed-faq-item">
-        <button class="fed-ed-faq-trigger">
-          <span class="fed-ed-faq-question">How do L Funds work and should I use them?</span>
-          <span class="fed-ed-faq-icon">+</span>
-        </button>
-        <div class="fed-ed-faq-panel">
-          <p class="fed-ed-faq-answer">L Funds (Lifecycle Funds) are professionally managed portfolios that automatically adjust their allocation to become more conservative as you approach retirement. Each L Fund has a target retirement year (like L 2030, L 2040, etc.) and rebalances quarterly. They're designed as a simple, set-it-and-forget-it option. L Funds work well for hands-off investors who want automatic rebalancing, but they may not account for your specific situation — like whether you have a FERS pension, other savings, or a risk tolerance that differs from the average. We can evaluate whether an L Fund suits your needs or if a custom allocation makes more sense.</p>
-        </div>
+      <div class="ep-sub-feature">
+        <h4>Withdrawal Sequencing</h4>
+        <p>The order you withdraw from different accounts in retirement dramatically affects your tax burden. Coordinate TSP, FERS, and Social Security for optimal tax efficiency.</p>
       </div>
     </div>
   </div>
 </section>
 
-<script>
-(function() {
-  document.querySelectorAll('.fed-ed-faq-trigger').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var item = this.closest('.fed-ed-faq-item');
-      var isOpen = item.classList.contains('active');
-      
-      // Close all items
-      document.querySelectorAll('.fed-ed-faq-item').forEach(function(el) {
-        el.classList.remove('active');
-      });
-      
-      // Open clicked item if it wasn't already open
-      if (!isOpen) {
-        item.classList.add('active');
-      }
-    });
-  });
-  
-  // Smooth scroll for navigation links
-  document.querySelectorAll('.fed-ed-tsp-nav a').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-})();
-</script>
+{# ═══════════════════════════════════════════════════════════
+   6. FAQ — Editorial accordion
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">TSP Planning FAQ</h2>
+      <p class="ep-faq-sub">Essential information about maximizing your Thrift Savings Plan and strategic TSP management for federal employees.</p>
+      <a href="/contact/" class="ep-btn-ghost">Optimize My TSP</a>
+    </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should I max out my TSP contributions? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>At minimum, you should contribute at least 5% of your salary to capture the full agency match — the government's automatic 1% plus dollar-for-dollar matching on the next 3% of your salary, and 50 cents on the dollar for the next 1%. Beyond that, maxing out your TSP (up to $24,500 in 2026, or $32,000 if age 50+) depends on your overall financial situation, other savings goals, and whether you have high-interest debt. The TSP offers extremely low fees and excellent tax benefits, making it one of the best places to save for retirement.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should I contribute to Roth or traditional TSP? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Traditional TSP contributions reduce your taxable income now but are taxed when withdrawn. Roth TSP contributions are made with after-tax dollars but grow and can be withdrawn tax-free in retirement. Generally, Roth makes more sense if you expect to be in a higher tax bracket in retirement, or if you're early in your career with lower current income. Traditional makes sense if you're in a high tax bracket now and expect lower income in retirement. Many federal employees benefit from a mix of both — we can model your specific situation to determine the optimal split.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should I roll my TSP to an IRA when I retire? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The TSP has incredibly low expense ratios and offers unique benefits like the G Fund. However, an IRA rollover provides more investment options, greater withdrawal flexibility, and potentially better estate planning features. If you separate from service in the year you turn 55 or older, the TSP also allows penalty-free withdrawals before age 59½. Whether to keep your TSP or roll it to an IRA depends on your investment preferences, withdrawal needs, and overall estate planning goals. There's no one-size-fits-all answer — we evaluate your specific situation to make the right recommendation.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What are my TSP withdrawal options? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>TSP offers four main withdrawal options: (1) Single payment of your entire balance, (2) Monthly installments based on your choice of amount or life expectancy, (3) Purchase of a TSP life annuity for guaranteed monthly income, or (4) A combination of these options. Each has different tax and income implications. Monthly installments offer flexibility but no income guarantee. Life annuities provide guaranteed income but no access to principal. Most retirees benefit from a strategic combination, often keeping some TSP funds for growth while taking systematic withdrawals coordinated with FERS and Social Security.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How do L Funds work and should I use them? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>L Funds (Lifecycle Funds) are professionally managed portfolios that automatically adjust their allocation to become more conservative as you approach retirement. Each L Fund has a target retirement year (like L 2030, L 2040, etc.) and rebalances quarterly. They're designed as a simple, set-it-and-forget-it option. L Funds work well for hands-off investors who want automatic rebalancing, but they may not account for your specific situation — like whether you have a FERS pension, other savings, or a risk tolerance that differs from the average. We can evaluate whether an L Fund suits your needs or if a custom allocation makes more sense.</p></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   7. CTA — Centered editorial
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Ready to maximize your TSP potential?</h2>
+      <p class="ep-cta-body">Your TSP is one of America's best retirement savings vehicles. Schedule a comprehensive analysis to ensure you're maximizing contributions, optimizing fund allocation, and planning strategic withdrawals.</p>
+      <a href="/contact/" class="ep-btn-primary">Optimize My TSP</a>
+      <p class="ep-cta-promise">Federal Employee Specialists</p>
+    </div>
+    <img src="/assets/images/photos/federal/capitalwealth-federal-treasury-building.jpg" alt="Federal Treasury building representing TSP expertise" class="ep-cta-image">
+  </div>
+</section>

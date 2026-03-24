@@ -684,15 +684,13 @@
 <section class="service-header">
   <div class="service-header-inner">
     
-      <p class="service-eyebrow">FEHB RETIREMENT</p>
+    
+    
+      <h1 class="service-title">FEHB in Retirement | Capital Wealth</h1>
     
     
     
-      <h1 class="service-title">Federal Health Benefits in Retirement</h1>
-    
-    
-    
-      <p class="service-subtitle">FEHB is one of the best benefits you can take into retirement. We help you understand your options, coordinate with Medicare, and optimize your healthcare strategy.</p>
+      <p class="service-subtitle">Keep your FEHB health insurance in retirement. Expert guidance on the 5-year rule, Medicare coordination, PSHB changes, and avoiding costly eligibility mistakes.</p>
     
   </div>
 </section>
@@ -701,956 +699,919 @@
 <div class="service-content">
   
 <style>
-/* FEHB Editorial Styles */
-.fed-ed-fehb-hero {
-  background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%);
-  padding: 8rem 0;
-  position: relative;
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — FEHB Retirement
+   ═══════════════════════════════════════════ */
+
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
   overflow: hidden;
+  margin-top: -1rem;
 }
 
-.fed-ed-fehb-hero-inner {
+.ep-hero-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
   align-items: center;
 }
 
-.fed-ed-fehb-hero-content {
-  max-width: 500px;
-}
-
-.fed-ed-chapter-label {
+.ep-chapter-label {
   font-family: var(--font-mono);
-  font-size: 0.875rem;
-  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #F09F54;
+  color: var(--secondary);
   margin-bottom: 1.5rem;
   display: block;
 }
 
-.fed-ed-fehb-headline {
+.ep-hero-title {
   font-family: var(--font-serif-display);
-  font-size: 3.5rem;
-  line-height: 1.1;
-  color: #003870;
-  margin-bottom: 1.5rem;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
 }
 
-.fed-ed-fehb-headline em {
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
   font-style: italic;
-  color: #F09F54;
-}
-
-.fed-ed-fehb-desc {
-  font-family: var(--font-body);
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: #64748b;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
   margin-bottom: 2rem;
+  display: block;
 }
 
-.fed-ed-btn-primary {
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons — match homepage hero-btn / hero-btn-secondary */
+.ep-btn-primary {
   display: inline-block;
-  background: #003870;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
   text-decoration: none;
   font-family: var(--font-body);
   font-weight: 600;
+  font-size: 0.9rem;
   transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
 }
 
-.fed-ed-btn-primary:hover {
-  background: #194F90;
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
   transform: translateY(-2px);
 }
 
-.fed-ed-fehb-hero-image-container {
+.ep-hero-image-wrap {
   position: relative;
 }
 
-.fed-ed-fehb-hero-image {
+.ep-hero-image {
   width: 100%;
-  height: 500px;
+  aspect-ratio: 4/5;
   object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
+  display: block;
 }
 
-.fed-ed-pullquote {
+.ep-pull-quote {
   position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  right: 2rem;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(24px);
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
   padding: 2rem;
-  border-radius: 12px;
-  border-left: 4px solid #F09F54;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
 }
 
-.fed-ed-pullquote-text {
+.ep-pull-quote p {
   font-family: var(--font-serif-display);
   font-style: italic;
-  font-size: 1.125rem;
-  line-height: 1.4;
-  color: #003870;
-  margin-bottom: 0.5rem;
-}
-
-.fed-ed-pullquote-author {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: #64748b;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.fed-ed-fehb-nav {
-  position: sticky;
-  top: 2rem;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(24px);
-  border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-
-.fed-ed-fehb-nav-title {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #64748b;
-  margin-bottom: 1rem;
-}
-
-.fed-ed-fehb-nav-links {
-  list-style: none;
-  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
   margin: 0;
 }
 
-.fed-ed-fehb-nav-links li {
-  margin-bottom: 0.5rem;
-}
-
-.fed-ed-fehb-nav-links a {
-  font-family: var(--font-body);
-  color: #003870;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
-}
-
-.fed-ed-fehb-nav-links a:hover {
-  color: #F09F54;
-}
-
-.fed-ed-fehb-content {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 4rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.fed-ed-fehb-main {
-  padding: 4rem 0;
-}
-
-.fed-ed-fehb-section {
-  margin-bottom: 6rem;
-}
-
-.fed-ed-fehb-section-title {
-  font-family: var(--font-serif-display);
-  font-size: 2.5rem;
-  color: #003870;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-}
-
-.fed-ed-fehb-section-title em {
-  font-style: italic;
-  color: #F09F54;
-}
-
-.fed-ed-fehb-body {
-  font-family: var(--font-body);
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #64748b;
-  margin-bottom: 1.5rem;
-}
-
-.fed-ed-glass-card {
-  background: rgba(255,255,255,0.45);
-  backdrop-filter: blur(24px);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 2rem 0;
-}
-
-.fed-ed-requirement-card {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
-  border-left: 4px solid #F09F54;
-  margin: 1rem 0;
-}
-
-.fed-ed-requirement-title {
-  font-family: var(--font-serif-display);
-  color: #003870;
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
-
-.fed-ed-requirement-desc {
-  font-family: var(--font-body);
-  color: #64748b;
-  line-height: 1.6;
-}
-
-.fed-ed-stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
-.fed-ed-stat {
-  text-align: center;
-  padding: 2rem;
-  background: #f8f9fb;
-  border-radius: 12px;
-}
-
-.fed-ed-stat-number {
-  font-family: var(--font-serif-display);
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #003870;
+.ep-pull-quote cite {
   display: block;
-  margin-bottom: 0.5rem;
-}
-
-.fed-ed-stat-label {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  font-style: normal;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #64748b;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
 }
 
-.fed-ed-comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
+/* Key Facts Row */
+.ep-facts {
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.2);
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
 }
 
-.fed-ed-comparison-table th {
-  background: #003870;
-  color: white;
-  padding: 1rem;
-  font-family: var(--font-body);
-  font-weight: 600;
-  text-align: left;
-}
-
-.fed-ed-comparison-table td {
-  padding: 1rem;
-  border-bottom: 1px solid #f3f4f6;
-  font-family: var(--font-body);
-  color: #64748b;
-}
-
-.fed-ed-comparison-table tr:nth-child(even) {
-  background: #f8f9fb;
-}
-
-.fed-ed-comparison-table .highlight {
-  background: #F09F54 !important;
-  color: white;
-}
-
-.fed-ed-warning-card {
-  background: linear-gradient(135deg, #FFF3E6, #FFEDE6);
-  border: 1px solid #F09F54;
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 2rem 0;
-}
-
-.fed-ed-warning-title {
-  font-family: var(--font-serif-display);
-  color: #003870;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.fed-ed-warning-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 1rem;
-  color: #F09F54;
-}
-
-.fed-ed-medicare-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.fed-ed-medicare-part {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
-  text-align: center;
-}
-
-.fed-ed-medicare-letter {
-  font-family: var(--font-serif-display);
-  font-size: 3rem;
-  color: #003870;
-  margin-bottom: 1rem;
-}
-
-.fed-ed-medicare-name {
-  font-family: var(--font-body);
-  font-weight: 600;
-  color: #003870;
-  margin-bottom: 1rem;
-}
-
-.fed-ed-medicare-desc {
-  font-family: var(--font-body);
-  color: #64748b;
-  line-height: 1.5;
-  font-size: 0.9rem;
-}
-
-.fed-ed-faq {
-  padding: 6rem 0;
-  background: #f8f9fb;
-}
-
-.fed-ed-faq-inner {
+.ep-facts-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ep-fact {
+  flex: 1;
+}
+
+.ep-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.4rem;
+}
+
+.ep-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 4rem;
 }
 
-.fed-ed-faq-accordion {
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.ep-framework-desc {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.2);
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
   background: white;
-  border-radius: 16px;
+  transition: all 0.2s ease;
+  border-top: 3px solid transparent;
+}
+
+.ep-framework-card:hover {
+  background: var(--surface-container-low);
+  border-top-color: var(--secondary);
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Stats & Solution */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
 }
 
-.fed-ed-faq-item {
-  border-bottom: 1px solid #f3f4f6;
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
 }
 
-.fed-ed-faq-item:last-child {
-  border-bottom: none;
+.ep-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
-.fed-ed-faq-trigger {
+.ep-dark-header {
+  margin-bottom: 4rem;
+}
+
+.ep-dark-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
+}
+
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.ep-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-glass-card:last-child {
+  margin-top: 0;
+}
+
+.ep-glass-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ep-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ep-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.ep-stat-number small {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-left: 0.25rem;
+}
+
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.ep-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ep-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+}
+
+.ep-check-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Asymmetric Image + Text */
+.ep-transfer {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-transfer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ep-transfer-image-wrap {
+  flex: 0 0 45%;
+  position: relative;
+}
+
+.ep-transfer-image {
   width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-transfer-image-accent {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 120px;
+  height: 120px;
+  background: var(--tertiary-fixed, #d9e4eb);
+  z-index: -1;
+}
+
+.ep-transfer-text {
+  flex: 1;
+}
+
+.ep-transfer-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.ep-transfer-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2.5rem;
+}
+
+.ep-sub-feature {
+  margin-bottom: 1.5rem;
+  cursor: default;
+}
+
+.ep-sub-feature h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.ep-sub-feature:hover h4 {
+  color: var(--secondary);
+}
+
+.ep-sub-feature p {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
   background: none;
   border: none;
-  padding: 2rem;
-  text-align: left;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
   cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background 0.3s ease;
-}
-
-.fed-ed-faq-trigger:hover {
-  background: #f8f9fb;
-}
-
-.fed-ed-faq-question {
+  padding: 1.25rem 0;
   font-family: var(--font-body);
+  font-size: 1rem;
   font-weight: 600;
-  color: #003870;
-  font-size: 1.1rem;
+  color: var(--on-surface);
 }
 
-.fed-ed-faq-icon {
-  color: #F09F54;
+.ep-faq-icon {
   font-size: 1.5rem;
-  transition: transform 0.3s ease;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
 }
 
-.fed-ed-faq-item.active .fed-ed-faq-icon {
+.ep-faq-item.active .ep-faq-icon {
   transform: rotate(45deg);
 }
 
-.fed-ed-faq-panel {
-  padding: 0 2rem;
+.ep-faq-a {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: max-height 0.3s ease;
 }
 
-.fed-ed-faq-item.active .fed-ed-faq-panel {
-  max-height: 400px;
-  padding: 0 2rem 2rem;
+.ep-faq-item.active .ep-faq-a {
+  max-height: 300px;
 }
 
-.fed-ed-faq-answer {
-  font-family: var(--font-body);
-  line-height: 1.6;
-  color: #64748b;
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
 }
 
-@media (max-width: 1024px) {
-  .fed-ed-fehb-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .fed-ed-fehb-nav {
-    position: relative;
-    order: 2;
-  }
+/* CTA — matches homepage final-cta */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
 }
 
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .fed-ed-fehb-hero-inner {
+  .ep-hero-inner {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
-  
-  .fed-ed-fehb-headline {
-    font-size: 2.5rem;
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
   }
-  
-  .fed-ed-faq-inner {
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-facts-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .ep-fact {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .ep-framework-inner {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
-  .fed-ed-medicare-grid {
+
+  .ep-framework-grid {
     grid-template-columns: 1fr;
+  }
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-glass-card:last-child {
+    margin-top: 0;
+  }
+
+  .ep-transfer {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-transfer-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ep-transfer-image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .ep-transfer-image {
+    height: 350px;
+  }
+
+  .ep-transfer-image-accent {
+    display: none;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
   }
 }
 </style>
 
-<!-- HERO SECTION -->
-<section class="fed-ed-fehb-hero">
-  <div class="fed-ed-fehb-hero-inner">
-    <div class="fed-ed-fehb-hero-content">
-      <span class="fed-ed-chapter-label">CHAPTER I: FEHB FUNDAMENTALS</span>
-      <h1 class="fed-ed-fehb-headline">Your Health Benefits <em>Bridge</em> to Retirement</h1>
-      <p class="fed-ed-fehb-desc">FEHB is one of the best benefits you can take into retirement — but only if you understand the rules, meet the requirements, and coordinate properly with Medicare. One mistake can cost you this valuable coverage forever.</p>
-      
-      <div style="margin-top: 2rem;">
-        <a href="/contact/" class="fed-ed-btn-primary">Plan My FEHB Strategy</a>
-      </div>
-    </div>
-    
-    <div class="fed-ed-fehb-hero-image-container">
-      <img src="/assets/images/photos/federal/capitalwealth-federal-department-building-flag.jpg" alt="Federal department building representing FEHB health benefits continuity" class="fed-ed-fehb-hero-image">
-      <div class="fed-ed-pullquote">
-        <p class="fed-ed-pullquote-text">"FEHB plus Medicare gives you better coverage than most private retirees can buy."</p>
-        <p class="fed-ed-pullquote-author">— Mike Stevens, IAR</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- MAIN CONTENT WITH SIDE NAV -->
-<section class="fed-ed-fehb-content">
-  <aside class="fed-ed-fehb-nav">
-    <h3 class="fed-ed-fehb-nav-title">On This Page</h3>
-    <ul class="fed-ed-fehb-nav-links">
-      <li><a href="#eligibility">Eligibility Requirements</a></li>
-      <li><a href="#five-year-rule">5-Year Rule</a></li>
-      <li><a href="#medicare-coordination">Medicare Coordination</a></li>
-      <li><a href="#plan-selection">Plan Selection</a></li>
-      <li><a href="#pshb-changes">PSHB Changes</a></li>
-      <li><a href="#optimization">Optimization Strategy</a></li>
-    </ul>
-  </aside>
-  
-  <main class="fed-ed-fehb-main">
-    <!-- ELIGIBILITY REQUIREMENTS -->
-    <section id="eligibility" class="fed-ed-fehb-section">
-      <span class="fed-ed-chapter-label">CHAPTER II: ELIGIBILITY</span>
-      <h2 class="fed-ed-fehb-section-title">Qualifying for <em>FEHB</em> in Retirement</h2>
-      
-      <p class="fed-ed-fehb-body">Taking FEHB into retirement isn't automatic — you must meet specific requirements that many federal employees don't fully understand until it's too late. These rules are strictly enforced, and there are limited exceptions.</p>
-      
-      <div class="fed-ed-glass-card">
-        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 2rem;">Two Critical Requirements</h3>
-        
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
-          <div class="fed-ed-requirement-card">
-            <h4 class="fed-ed-requirement-title">Immediate Annuity Retirement</h4>
-            <p class="fed-ed-requirement-desc">You must retire on an immediate annuity — not deferred retirement. This means meeting one of FERS's immediate retirement eligibilities: MRA+30, age 60+20, or age 62+5.</p>
-          </div>
-          
-          <div class="fed-ed-requirement-card">
-            <h4 class="fed-ed-requirement-title">5 Years Continuous Enrollment</h4>
-            <p class="fed-ed-requirement-desc">You must be enrolled in FEHB for the 5 years immediately before retirement. This is 5 consecutive years — any gap in coverage can disqualify you.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="fed-ed-stats-grid">
-        <div class="fed-ed-stat">
-          <span class="fed-ed-stat-number">72%</span>
-          <span class="fed-ed-stat-label">Gov't Premium Contribution</span>
-        </div>
-        <div class="fed-ed-stat">
-          <span class="fed-ed-stat-number">5</span>
-          <span class="fed-ed-stat-label">Years Required Coverage</span>
-        </div>
-        <div class="fed-ed-stat">
-          <span class="fed-ed-stat-number">90%</span>
-          <span class="fed-ed-stat-label">Fed Retirees Keep FEHB</span>
-        </div>
-      </div>
-      
-      <p class="fed-ed-fehb-body">If you meet these requirements, you can keep FEHB for life. The government continues to pay their share of the premium (approximately 72% of the weighted average), and you pay the same premium as active employees. This is an enormous benefit — private retirees often pay $1,500-$2,500 monthly for comparable coverage.</p>
-    </section>
-    
-    <!-- 5-YEAR RULE -->
-    <section id="five-year-rule" class="fed-ed-fehb-section">
-      <span class="fed-ed-chapter-label">CHAPTER III: THE CRITICAL RULE</span>
-      <h2 class="fed-ed-fehb-section-title">Understanding the <em>5-Year</em> Rule</h2>
-      
-      <p class="fed-ed-fehb-body">The 5-year rule is the most misunderstood and potentially costly FEHB requirement. It's not 5 total years of federal employment or 5 years of any health coverage — it's 5 consecutive years of FEHB enrollment immediately before retirement.</p>
-      
-      <div class="fed-ed-glass-card">
-        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">5-Year Rule Scenarios</h3>
-        
-        <table class="fed-ed-comparison-table">
-          <thead>
-            <tr>
-              <th>Scenario</th>
-              <th>FEHB Eligible?</th>
-              <th>Explanation</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="highlight">
-              <td><strong>Enrolled 5 straight years before retirement</strong></td>
-              <td>Yes</td>
-              <td>Meets the requirement</td>
-            </tr>
-            <tr>
-              <td><strong>Enrolled 8 years total, but gap in last 3 years</strong></td>
-              <td>No</td>
-              <td>Must be continuous and immediate</td>
-            </tr>
-            <tr>
-              <td><strong>Covered under spouse's FEHB for 2 years</strong></td>
-              <td>No</td>
-              <td>Must be enrolled in your own name</td>
-            </tr>
-            <tr>
-              <td><strong>Military deployment, returned to FEHB</strong></td>
-              <td>Maybe</td>
-              <td>Limited exception may apply</td>
-            </tr>
-            <tr>
-              <td><strong>Spouse loses federal job, you re-enroll</strong></td>
-              <td>Maybe</td>
-              <td>Qualifying event may restart clock</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-      <div class="fed-ed-warning-card">
-        <h3 class="fed-ed-warning-title">
-          <svg class="fed-ed-warning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-            <line x1="12" y1="9" x2="12" y2="13"/>
-            <line x1="12" y1="17" x2="12.01" y2="17"/>
-          </svg>
-          Common 5-Year Rule Mistakes
-        </h3>
-        <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; margin: 1rem 0;">
-          <li>Dropping FEHB to be covered under spouse's plan</li>
-          <li>Not re-enrolling immediately after military deployment</li>
-          <li>Assuming total years of federal service count</li>
-          <li>Not verifying enrollment status before retirement</li>
-        </ul>
-        <p style="font-family: var(--font-body); color: #64748b; margin-top: 1rem; font-style: italic;">Verify your FEHB enrollment history with HR at least 2 years before planned retirement to ensure compliance.</p>
-      </div>
-      
-      <p class="fed-ed-fehb-body">Limited exceptions exist for certain military service, but these are narrow and specific. The safest approach is to ensure you're enrolled in FEHB in your own name for the full 5 years before retirement — no gaps, no exceptions, no assumptions.</p>
-    </section>
-    
-    <!-- MEDICARE COORDINATION -->
-    <section id="medicare-coordination" class="fed-ed-fehb-section">
-      <span class="fed-ed-chapter-label">CHAPTER IV: MEDICARE INTEGRATION</span>
-      <h2 class="fed-ed-fehb-section-title">FEHB + Medicare = <em>Optimal</em> Coverage</h2>
-      
-      <p class="fed-ed-fehb-body">When you turn 65, enrolling in Medicare Parts A and B while keeping FEHB creates the gold standard of retiree health coverage. Medicare becomes primary, FEHB becomes secondary, and your combined coverage often exceeds what either provides alone.</p>
-      
-      <div class="fed-ed-medicare-grid">
-        <div class="fed-ed-medicare-part">
-          <div class="fed-ed-medicare-letter">A</div>
-          <h4 class="fed-ed-medicare-name">Hospital Insurance</h4>
-          <p class="fed-ed-medicare-desc">Premium-free for most federal retirees. Covers inpatient hospital care, skilled nursing, and hospice services.</p>
-        </div>
-        
-        <div class="fed-ed-medicare-part">
-          <div class="fed-ed-medicare-letter">B</div>
-          <h4 class="fed-ed-medicare-name">Medical Insurance</h4>
-          <p class="fed-ed-medicare-desc">Monthly premium required. Covers doctor visits, outpatient care, and medical supplies. Essential to avoid penalties.</p>
-        </div>
-        
-        <div class="fed-ed-medicare-part">
-          <div class="fed-ed-medicare-letter">D</div>
-          <h4 class="fed-ed-medicare-name">Prescription Drug</h4>
-          <p class="fed-ed-medicare-desc">Usually not needed if your FEHB plan has creditable drug coverage, which most do.</p>
-        </div>
-        
-        <div class="fed-ed-medicare-part" style="background: #F09F54; color: white;">
-          <div class="fed-ed-medicare-letter" style="color: white;">+</div>
-          <h4 class="fed-ed-medicare-name" style="color: white;">FEHB Secondary</h4>
-          <p class="fed-ed-medicare-desc" style="color: white;">Covers what Medicare doesn't, often eliminating deductibles and reducing copays significantly.</p>
-        </div>
-      </div>
-      
-      <div class="fed-ed-glass-card">
-        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Coordination Benefits</h3>
-        
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
-          <div>
-            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">With Medicare + FEHB</h4>
-            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; list-style: none; padding: 0;">
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Minimal out-of-pocket costs</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ No deductibles on many plans</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">✓ Comprehensive prescription coverage</li>
-              <li style="padding: 0.5rem 0;">✓ Nationwide provider network</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Without Medicare Coordination</h4>
-            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; list-style: none; padding: 0;">
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">× Higher FEHB deductibles</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">× Larger copays and coinsurance</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">× Medicare late enrollment penalties</li>
-              <li style="padding: 0.5rem 0;">× Reduced coverage options</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <p class="fed-ed-fehb-body">Most FEHB plans offer enhanced benefits for Medicare enrollees. For example, many plans waive deductibles and reduce copays when Medicare pays first. The combination typically provides better coverage than Medicare plus a private Medigap policy, and often at lower total cost.</p>
-      
-      <p class="fed-ed-fehb-body">Critical timing: You have a 7-month initial enrollment period around your 65th birthday for Medicare Part B. Missing this window results in permanent late-enrollment penalties that increase your Part B premium for life.</p>
-    </section>
-    
-    <!-- PLAN SELECTION -->
-    <section id="plan-selection" class="fed-ed-fehb-section">
-      <span class="fed-ed-chapter-label">CHAPTER V: PLAN OPTIMIZATION</span>
-      <h2 class="fed-ed-fehb-section-title">Choosing the <em>Right</em> FEHB Plan</h2>
-      
-      <p class="fed-ed-fehb-body">FEHB offers over 200 plan options, and your needs in retirement may differ significantly from your working years. Plans vary dramatically in their Medicare coordination benefits, provider networks, and out-of-pocket costs.</p>
-      
-      <div class="fed-ed-glass-card">
-        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Retirement Plan Considerations</h3>
-        
-        <table class="fed-ed-comparison-table">
-          <thead>
-            <tr>
-              <th>Factor</th>
-              <th>Working Years</th>
-              <th>Retirement Years</th>
-              <th>Impact</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Doctor Visits</strong></td>
-              <td>Occasional</td>
-              <td>More frequent</td>
-              <td>Copay amounts matter more</td>
-            </tr>
-            <tr>
-              <td><strong>Prescription Drugs</strong></td>
-              <td>Minimal</td>
-              <td>Likely increase</td>
-              <td>Drug formularies critical</td>
-            </tr>
-            <tr class="highlight">
-              <td><strong>Medicare Coordination</strong></td>
-              <td>Not applicable</td>
-              <td>Essential</td>
-              <td>Plan-specific benefits</td>
-            </tr>
-            <tr>
-              <td><strong>Provider Network</strong></td>
-              <td>Work location focused</td>
-              <td>Home/retirement location</td>
-              <td>May need to switch plans</td>
-            </tr>
-            <tr>
-              <td><strong>Catastrophic Coverage</strong></td>
-              <td>Important</td>
-              <td>Critical</td>
-              <td>Out-of-pocket maximums</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-      <p class="fed-ed-fehb-body">Many federal retirees benefit from switching to a plan with stronger Medicare coordination benefits, even if it means changing providers. The potential savings from enhanced coordination often outweigh the inconvenience of network changes.</p>
-      
-      <div class="fed-ed-stats-grid">
-        <div class="fed-ed-stat">
-          <span class="fed-ed-stat-number">200+</span>
-          <span class="fed-ed-stat-label">FEHB Plan Options</span>
-        </div>
-        <div class="fed-ed-stat">
-          <span class="fed-ed-stat-number">$2,400</span>
-          <span class="fed-ed-stat-label">Avg Annual Premium Savings</span>
-        </div>
-        <div class="fed-ed-stat">
-          <span class="fed-ed-stat-number">45</span>
-          <span class="fed-ed-stat-label">Days to Switch Plans</span>
-        </div>
-      </div>
-    </section>
-    
-    <!-- PSHB CHANGES -->
-    <section id="pshb-changes" class="fed-ed-fehb-section">
-      <span class="fed-ed-chapter-label">CHAPTER VI: POSTAL CHANGES</span>
-      <h2 class="fed-ed-fehb-section-title">PSHB Program for <em>Postal</em> Employees</h2>
-      
-      <p class="fed-ed-fehb-body">Starting in 2025-2026, postal employees and retirees were transitioned from FEHB to the new Postal Service Health Benefits (PSHB) program. This creates different rules and requirements for postal workers approaching retirement.</p>
-      
-      <div class="fed-ed-glass-card">
-        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Key PSHB Differences</h3>
-        
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
-          <div>
-            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">FEHB (Non-Postal)</h4>
-            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; list-style: none; padding: 0;">
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">5-year enrollment rule</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">Medicare enrollment recommended</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">Over 200 plan options</li>
-              <li style="padding: 0.5rem 0;">Government contributes ~72%</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">PSHB (Postal Only)</h4>
-            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; list-style: none; padding: 0;">
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">5-year enrollment rule applies</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">Medicare enrollment required</li>
-              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">Fewer plan options, postal-specific</li>
-              <li style="padding: 0.5rem 0;">Postal Service contributes</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="fed-ed-warning-card">
-        <h3 class="fed-ed-warning-title">
-          <svg class="fed-ed-warning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="12" y1="8" x2="12" y2="12"/>
-            <line x1="12" y1="16" x2="12.01" y2="16"/>
-          </svg>
-          Important for Postal Employees
-        </h3>
-        <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">If you're a postal employee or postal retiree, you're now in PSHB, not FEHB. The rules are similar but not identical. Medicare enrollment is required, not just recommended. Make sure you understand PSHB-specific requirements before retirement.</p>
-      </div>
-      
-      <p class="fed-ed-fehb-body">Postal employees who were eligible for FEHB in retirement were automatically transitioned to PSHB with similar benefits. However, new postal retirees must meet PSHB's requirements, which include mandatory Medicare enrollment when eligible.</p>
-    </section>
-    
-    <!-- OPTIMIZATION STRATEGIES -->
-    <section id="optimization" class="fed-ed-fehb-section">
-      <span class="fed-ed-chapter-label">CHAPTER VII: OPTIMIZATION</span>
-      <h2 class="fed-ed-fehb-section-title">FEHB Retirement <em>Strategy</em></h2>
-      
-      <p class="fed-ed-fehb-body">Maximizing your FEHB benefits in retirement requires strategic planning that begins years before you retire. Small decisions made early can save thousands in healthcare costs over your retirement.</p>
-      
-      <div class="fed-ed-glass-card">
-        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">5-Year Retirement Timeline</h3>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-          <div style="text-align: center; padding: 1rem;">
-            <div style="font-family: var(--font-serif-display); font-size: 1.5rem; color: #003870; margin-bottom: 1rem;">5 Years Out</div>
-            <ul style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b; list-style: none; padding: 0;">
-              <li>Verify FEHB enrollment status</li>
-              <li>Understand 5-year rule</li>
-              <li>Plan for no coverage gaps</li>
-            </ul>
-          </div>
-          
-          <div style="text-align: center; padding: 1rem;">
-            <div style="font-family: var(--font-serif-display); font-size: 1.5rem; color: #003870; margin-bottom: 1rem;">3 Years Out</div>
-            <ul style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b; list-style: none; padding: 0;">
-              <li>Research Medicare basics</li>
-              <li>Compare FEHB plans</li>
-              <li>Consider geographic moves</li>
-            </ul>
-          </div>
-          
-          <div style="text-align: center; padding: 1rem;">
-            <div style="font-family: var(--font-serif-display); font-size: 1.5rem; color: #003870; margin-bottom: 1rem;">1 Year Out</div>
-            <ul style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b; list-style: none; padding: 0;">
-              <li>Finalize FEHB plan choice</li>
-              <li>Schedule retirement planning</li>
-              <li>Prepare for Medicare decisions</li>
-            </ul>
-          </div>
-          
-          <div style="text-align: center; padding: 1rem;">
-            <div style="font-family: var(--font-serif-display); font-size: 1.5rem; color: #003870; margin-bottom: 1rem;">Age 65</div>
-            <ul style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b; list-style: none; padding: 0;">
-              <li>Enroll in Medicare A & B</li>
-              <li>Optimize plan coordination</li>
-              <li>Enjoy enhanced benefits</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <p class="fed-ed-fehb-body">The most successful federal retirees treat FEHB planning as seriously as their TSP strategy. This benefit can provide $100,000+ in value over a 20-year retirement, making it worth careful planning and optimization.</p>
-      
-      <p class="fed-ed-fehb-body">Key insight: FEHB in retirement isn't just about keeping your health insurance — it's about creating a healthcare strategy that coordinates multiple programs (FEHB, Medicare, FSAs) to minimize costs and maximize coverage throughout your retirement years.</p>
-    </section>
-  </main>
-</section>
-
-<!-- FAQ SECTION -->
-<section class="fed-ed-faq">
-  <div class="fed-ed-faq-inner">
+<section class="ep-hero">
+  <div class="ep-hero-inner">
     <div>
-      <span class="fed-ed-chapter-label">CHAPTER VIII: COMMON QUESTIONS</span>
-      <h2 class="fed-ed-fehb-section-title">FEHB Planning <em>FAQ</em></h2>
-      <p class="fed-ed-fehb-body">Everything you need to know about taking your federal health benefits into retirement.</p>
-      <div style="margin-top: 2rem;">
-        <a href="/contact/" class="fed-ed-btn-primary">Plan My FEHB Strategy</a>
-      </div>
+      <span class="ep-chapter-label">FEHB Retirement</span>
+      <h1 class="ep-hero-title">FEHB</h1>
+      <span class="ep-hero-title-italic">Continuity</span>
+      <span class="ep-hero-title">Planning</span>
+      <p class="ep-hero-body">FEHB is one of the most valuable benefits you can take into retirement, but you must meet specific requirements to keep it. The 5-year rule and Medicare coordination require careful planning to avoid costly mistakes.</p>
+      <a href="/contact/" class="ep-btn-primary">Plan My FEHB Strategy</a>
     </div>
-    
-    <div class="fed-ed-faq-accordion">
-      <div class="fed-ed-faq-item">
-        <button class="fed-ed-faq-trigger">
-          <span class="fed-ed-faq-question">Can I keep FEHB in retirement?</span>
-          <span class="fed-ed-faq-icon">+</span>
-        </button>
-        <div class="fed-ed-faq-panel">
-          <p class="fed-ed-faq-answer">Yes, but you must meet two requirements: (1) You must retire on an immediate annuity (not a deferred retirement), and (2) You must be enrolled in FEHB for the 5 years immediately before retirement. There are limited exceptions to the 5-year rule for certain circumstances like returning from active military duty. If you meet these requirements, you can keep FEHB for life, and the government continues to pay approximately 72% of the weighted average premium just as they did while you were working.</p>
-        </div>
-      </div>
-      
-      <div class="fed-ed-faq-item">
-        <button class="fed-ed-faq-trigger">
-          <span class="fed-ed-faq-question">Do I need Medicare if I have FEHB?</span>
-          <span class="fed-ed-faq-icon">+</span>
-        </button>
-        <div class="fed-ed-faq-panel">
-          <p class="fed-ed-faq-answer">Most federal retirees should enroll in Medicare Part A (which is premium-free if you have 40 quarters of Medicare-covered employment) and Part B when they turn 65. Medicare becomes your primary insurance and FEHB becomes secondary, which can significantly reduce your out-of-pocket costs. Some FEHB plans waive deductibles and copays for Medicare-enrolled members. Delaying Medicare Part B enrollment can result in permanent late-enrollment penalties. We recommend reviewing your specific FEHB plan's Medicare coordination benefits before deciding.</p>
-        </div>
-      </div>
-      
-      <div class="fed-ed-faq-item">
-        <button class="fed-ed-faq-trigger">
-          <span class="fed-ed-faq-question">What is the 5-year rule?</span>
-          <span class="fed-ed-faq-icon">+</span>
-        </button>
-        <div class="fed-ed-faq-panel">
-          <p class="fed-ed-faq-answer">The 5-year rule requires continuous FEHB enrollment for the 5 years immediately preceding your retirement to carry FEHB into retirement. This means 5 consecutive years — not 5 total years. If you weren't enrolled in FEHB, were covered under a spouse's plan, or had a lapse in coverage during those last 5 years, you may not be eligible to continue FEHB. Limited exceptions exist for employees who return from active military service or lose coverage under a spouse's FEHB enrollment. It's critical to verify your eligibility well before your planned retirement date.</p>
-        </div>
-      </div>
-      
-      <div class="fed-ed-faq-item">
-        <button class="fed-ed-faq-trigger">
-          <span class="fed-ed-faq-question">How does FEHB coordinate with Medicare?</span>
-          <span class="fed-ed-faq-icon">+</span>
-        </button>
-        <div class="fed-ed-faq-panel">
-          <p class="fed-ed-faq-answer">Once you enroll in Medicare, it becomes your primary payer and FEHB becomes secondary. This means Medicare pays first, then your FEHB plan pays some or all of what Medicare doesn't cover, depending on your specific plan's coordination rules. Many FEHB plans offer enhanced benefits for Medicare enrollees, such as waived deductibles or reduced copays. You continue paying your FEHB premium, but your combined coverage (Medicare + FEHB) is typically better than either alone. Most federal retirees find this combination provides excellent coverage without needing a Medicare Supplement (Medigap) policy.</p>
-        </div>
-      </div>
-      
-      <div class="fed-ed-faq-item">
-        <button class="fed-ed-faq-trigger">
-          <span class="fed-ed-faq-question">What changed with PSHB for postal employees?</span>
-          <span class="fed-ed-faq-icon">+</span>
-        </button>
-        <div class="fed-ed-faq-panel">
-          <p class="fed-ed-faq-answer">The Postal Service Health Benefits (PSHB) program was created as a separate health insurance program for postal employees and retirees, distinct from FEHB. Starting in 2025-2026, postal employees and annuitants were transitioned from FEHB to PSHB. PSHB plans are similar to FEHB but are specifically designed for the postal workforce. Postal retirees in PSHB must enroll in Medicare Part A and Part B when eligible. If you're a postal employee approaching retirement, understanding the PSHB enrollment requirements and plan options is essential — the rules differ from traditional FEHB in important ways.</p>
-        </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-government-building-flag.jpg"
+           alt="Federal government building representing FEHB health benefits continuity"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"The 5-year rule is the most overlooked requirement in federal retirement planning."</p>
+        <cite>Mike Stevens, IAR</cite>
       </div>
     </div>
   </div>
 </section>
 
-<script>
-(function() {
-  document.querySelectorAll('.fed-ed-faq-trigger').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var item = this.closest('.fed-ed-faq-item');
-      var isOpen = item.classList.contains('active');
-      
-      // Close all items
-      document.querySelectorAll('.fed-ed-faq-item').forEach(function(el) {
-        el.classList.remove('active');
-      });
-      
-      // Open clicked item if it wasn't already open
-      if (!isOpen) {
-        item.classList.add('active');
-      }
-    });
-  });
-  
-  // Smooth scroll for navigation links
-  document.querySelectorAll('.fed-ed-fehb-nav a').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-})();
-</script>
+
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact">
+      <div class="ep-fact-label">5-Year Rule</div>
+      <div class="ep-fact-value">Continuous enrollment required</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Government Contribution</div>
+      <div class="ep-fact-value">72% of weighted average</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Medicare Coordination</div>
+      <div class="ep-fact-value">Enhanced benefits at 65</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">PSHB Transition</div>
+      <div class="ep-fact-value">Postal employees 2025-2026</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Immediate Retirement</div>
+      <div class="ep-fact-value">Required for continuation</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-framework">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">FEHB Continuation Requirements</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">Keeping your Federal Employees Health Benefits in retirement requires meeting specific eligibility criteria and understanding coordination rules with Medicare.</p>
+    </div>
+    <div class="ep-framework-grid">
+      <div class="ep-framework-card">
+        <h4>The 5-Year Rule</h4>
+        <p>You must be continuously enrolled in FEHB for 5 consecutive years immediately before retirement. This means no gaps in coverage, including periods covered under spouse's plans.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Immediate Retirement</h4>
+        <p>You must retire on an immediate annuity (not deferred retirement) to continue FEHB. Postponed or deferred retirements don't qualify for health benefits continuation.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Plan Selection</h4>
+        <p>Choose your retirement FEHB plan carefully during Open Season before retirement. You can change plans annually, but some restrictions apply for new enrollments.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Medicare Coordination</h4>
+        <p>At age 65, Medicare becomes primary and FEHB secondary. Many plans offer enhanced benefits for Medicare enrollees, including waived deductibles and reduced copays.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-dark">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">The Value</span>
+      <h2 class="ep-dark-title">FEHB <em>Advantage.</em></h2>
+    </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Retirement Coverage</span>
+        <h3>Lifetime Benefits</h3>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Government Contribution</span>
+          <span class="ep-stat-number">72<small>%</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Annual Premium Savings</span>
+          <span class="ep-stat-number">$8,400<small>/year</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">FEHB Plans Available</span>
+          <span class="ep-stat-number">200+<small>options</small></span>
+        </div>
+        <p class="ep-glass-body">FEHB provides excellent value in retirement with continued government premium support and comprehensive coverage options nationwide.</p>
+      </div>
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Strategic Benefits</span>
+        <h3>Unique Advantages</h3>
+        <p class="ep-glass-body">FEHB offers benefits unavailable in individual Medicare plans or employer retiree coverage from other organizations.</p>
+        <ul class="ep-check-list">
+          <li>Continued government premium support</li>
+          <li>No medical underwriting ever</li>
+          <li>Nationwide provider networks</li>
+          <li>Enhanced Medicare coordination</li>
+          <li>Prescription drug coverage</li>
+          <li>Dental and vision options</li>
+          <li>Annual Open Season flexibility</li>
+          <li>Spouse continuation options</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-transfer">
+  <div class="ep-transfer-inner">
+    <div class="ep-transfer-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-health-building.jpg"
+           alt="Federal health services building representing FEHB coordination"
+           class="ep-transfer-image">
+      <div class="ep-transfer-image-accent"></div>
+    </div>
+    <div class="ep-transfer-text">
+      <span class="ep-chapter-label">Strategic Coordination</span>
+      <h2 class="ep-transfer-title">Medicare Plus<br>FEHB Excellence</h2>
+      <p class="ep-transfer-body">The combination of Medicare and FEHB often provides better coverage than either alone. Strategic coordination ensures you maximize benefits while minimizing costs through proper enrollment timing and plan selection.</p>
+      <div class="ep-sub-feature">
+        <h4>Medicare Enrollment Timing</h4>
+        <p>Enroll in Medicare Part A (free) and Part B at age 65 to avoid permanent late-enrollment penalties. Medicare becomes primary, with FEHB providing secondary coverage.</p>
+      </div>
+      <div class="ep-sub-feature">
+        <h4>Enhanced Plan Benefits</h4>
+        <p>Many FEHB plans offer special benefits for Medicare enrollees, including waived deductibles, reduced copays, and enhanced prescription drug coverage coordination.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">FEHB Planning FAQ</h2>
+      <p class="ep-faq-sub">Essential information about keeping your Federal Employee Health Benefits in retirement and coordinating with Medicare.</p>
+      <a href="/contact/" class="ep-btn-ghost">Plan My FEHB Strategy</a>
+    </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Can I keep FEHB in retirement? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Yes, but you must meet two requirements: (1) You must retire on an immediate annuity (not a deferred retirement), and (2) You must be enrolled in FEHB for the 5 years immediately before retirement. There are limited exceptions to the 5-year rule for certain circumstances like returning from active military duty. If you meet these requirements, you can keep FEHB for life, and the government continues to pay approximately 72% of the weighted average premium just as they did while you were working.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Do I need Medicare if I have FEHB? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Most federal retirees should enroll in Medicare Part A (which is premium-free if you have 40 quarters of Medicare-covered employment) and Part B when they turn 65. Medicare becomes your primary insurance and FEHB becomes secondary, which can significantly reduce your out-of-pocket costs. Some FEHB plans waive deductibles and copays for Medicare-enrolled members. Delaying Medicare Part B enrollment can result in permanent late-enrollment penalties. We recommend reviewing your specific FEHB plan's Medicare coordination benefits before deciding.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is the 5-year rule? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The 5-year rule requires continuous FEHB enrollment for the 5 years immediately preceding your retirement to carry FEHB into retirement. This means 5 consecutive years — not 5 total years. If you weren't enrolled in FEHB, were covered under a spouse's plan, or had a lapse in coverage during those last 5 years, you may not be eligible to continue FEHB. Limited exceptions exist for employees who return from active military service or lose coverage under a spouse's FEHB enrollment. It's critical to verify your eligibility well before your planned retirement date.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How does FEHB coordinate with Medicare? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Once you enroll in Medicare, it becomes your primary payer and FEHB becomes secondary. This means Medicare pays first, then your FEHB plan pays some or all of what Medicare doesn't cover, depending on your specific plan's coordination rules. Many FEHB plans offer enhanced benefits for Medicare enrollees, such as waived deductibles or reduced copays. You continue paying your FEHB premium, but your combined coverage (Medicare + FEHB) is typically better than either alone. Most federal retirees find this combination provides excellent coverage without needing a Medicare Supplement (Medigap) policy.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What changed with PSHB for postal employees? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The Postal Service Health Benefits (PSHB) program was created as a separate health insurance program for postal employees and retirees, distinct from FEHB. Starting in 2025-2026, postal employees and annuitants were transitioned from FEHB to PSHB. PSHB plans are similar to FEHB but are specifically designed for the postal workforce. Postal retirees in PSHB must enroll in Medicare Part A and Part B when eligible. If you're a postal employee approaching retirement, understanding the PSHB enrollment requirements and plan options is essential — the rules differ from traditional FEHB in important ways.</p></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Ready to secure your FEHB continuation?</h2>
+      <p class="ep-cta-body">Don't risk losing this valuable benefit due to eligibility mistakes. Schedule a comprehensive FEHB review to ensure you meet requirements and optimize your health coverage strategy for retirement.</p>
+      <a href="/contact/" class="ep-btn-primary">Plan My FEHB Strategy</a>
+      <p class="ep-cta-promise">Federal Employee Specialists</p>
+    </div>
+    <img src="/assets/images/photos/federal/capitalwealth-federal-health-building.jpg" alt="Federal health building representing FEHB expertise" class="ep-cta-image">
+  </div>
+</section>
 </div>
 
 <!-- Related Blog Posts -->
