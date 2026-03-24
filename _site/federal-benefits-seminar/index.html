@@ -388,19 +388,32 @@
 }
 
 /* Hide entire site header/nav on landing page */
-.landing-page .finpay-header,
-.landing-page header,
-.landing-page .finpay-nav-wrapper,
-.landing-page .finpay-nav,
-.landing-page nav:not(.sem-nav),
-.landing-page .site-header,
-.landing-page [class*="nav-"] {
+.landing-page .finpay-header {
   display: none !important;
   height: 0 !important;
   min-height: 0 !important;
+  max-height: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
   overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
+
+.landing-page .finpay-header *,
+.landing-page header *,
+.landing-page .finpay-nav-wrapper,
+.landing-page .finpay-nav,
+.landing-page .finpay-nav-links,
+.landing-page .finpay-nav-right,
+.landing-page .finpay-nav-logo,
+.landing-page .desktop-cta,
+.landing-page .client-login-cta,
+.landing-page .mobile-menu-btn {
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* Glass effect utility */
