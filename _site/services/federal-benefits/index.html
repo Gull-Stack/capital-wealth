@@ -694,598 +694,898 @@
 <div class="service-content">
   
 <style>
-.fed-ed-hero {
-  background: #f8f9fb;
-  padding: 6rem 0 8rem;
-  text-align: center;
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — Federal Benefits
+   ═══════════════════════════════════════════ */
+
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons — match homepage hero-btn / hero-btn-secondary */
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+  margin-right: 1rem;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Key Facts Row */
+.ep-facts {
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.2);
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-facts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ep-fact {
+  flex: 1;
+}
+
+.ep-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.4rem;
+}
+
+.ep-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.ep-framework-desc {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.2);
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
+  background: white;
+  transition: all 0.2s ease;
+  border-top: 3px solid transparent;
+}
+
+.ep-framework-card:hover {
+  background: var(--surface-container-low);
+  border-top-color: var(--secondary);
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Stats & Solution */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
   position: relative;
   overflow: hidden;
 }
 
-.fed-ed-hero-inner {
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
+}
+
+.ep-dark-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-.fed-ed-chapter-label {
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #F09F54;
-  margin-bottom: 1.5rem;
-  display: block;
+.ep-dark-header {
+  margin-bottom: 4rem;
 }
 
-.fed-ed-hero-headline {
+.ep-dark-title {
   font-family: var(--font-serif-display);
-  font-size: 4rem;
-  line-height: 1.1;
-  color: #003870;
-  margin-bottom: 1.5rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
 }
 
-.fed-ed-hero-headline em {
-  font-style: italic;
-  color: #F09F54;
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
 }
 
-.fed-ed-hero-body {
-  font-family: var(--font-body);
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #64748b;
-  max-width: 700px;
-  margin: 0 auto 3rem;
-}
-
-.fed-ed-hero-stats {
+.ep-dark-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 3rem;
-  margin-top: 5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
 }
 
-.fed-ed-stat {
-  text-align: center;
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
 }
 
-.fed-ed-stat-number {
-  font-family: var(--font-serif-display);
-  font-size: 3rem;
-  font-weight: 600;
-  color: #003870;
-  display: block;
-  margin-bottom: 0.5rem;
+.ep-glass-card:last-child {
+  margin-top: 0;
 }
 
-.fed-ed-stat-label {
+.ep-glass-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ep-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.fed-ed-hero-image {
-  margin-top: 5rem;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+.ep-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
 }
 
-.fed-ed-hero-image img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
+.ep-stat-number small {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-left: 0.25rem;
 }
 
-.fed-ed-modules {
-  padding: 8rem 0;
-  background: white;
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+  flex: 1;
 }
 
-.fed-ed-modules-inner {
+.ep-glass-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.ep-glass-link:hover {
+  opacity: 0.8;
+}
+
+/* More Modules Section */
+.ep-modules {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-modules-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
-.fed-ed-modules-intro {
+.ep-modules-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 3rem;
   text-align: center;
-  margin-bottom: 6rem;
 }
 
-.fed-ed-modules-grid {
+.ep-modules-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
-.fed-ed-module {
-  background: rgba(255,255,255,0.45);
-  backdrop-filter: blur(24px);
-  border: 1px solid rgba(255,255,255,0.2);
+.ep-module-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 16px;
-  padding: 3rem;
-  text-decoration: none;
+  padding: 2.5rem;
   transition: all 0.3s ease;
+  text-decoration: none;
+  display: block;
 }
 
-.fed-ed-module:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,56,112,0.1);
+.ep-module-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
 }
 
-.fed-ed-module-icon {
-  width: 48px;
-  height: 48px;
-  background: #F09F54;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.ep-module-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-module-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
   margin-bottom: 1.5rem;
 }
 
-.fed-ed-module-number {
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
-  color: #F09F54;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.1em;
-}
-
-.fed-ed-module-title {
-  font-family: var(--font-serif-display);
-  font-size: 1.5rem;
-  color: #003870;
-  margin-bottom: 1rem;
-}
-
-.fed-ed-module-desc {
-  font-family: var(--font-body);
-  color: #64748b;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-
-.fed-ed-module-features {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
-.fed-ed-module-features li {
-  font-family: var(--font-body);
+.ep-module-arrow {
+  color: var(--secondary);
+  font-weight: 600;
   font-size: 0.9rem;
-  color: #64748b;
-  padding-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  position: relative;
 }
 
-.fed-ed-module-features li:before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #F09F54;
-  font-weight: 600;
+/* Pull Quote Section */
+.ep-gap-quote {
+  padding: 6rem 2rem;
+  background: var(--surface);
 }
 
-.fed-ed-module-link {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: #003870;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.fed-ed-dark-section {
-  background: #003870;
-  padding: 8rem 0;
-  color: white;
-}
-
-.fed-ed-dark-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  text-align: center;
-}
-
-.fed-ed-gap-section {
-  padding: 8rem 0;
-  background: #f3f4f6;
-}
-
-.fed-ed-gap-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.fed-ed-gap-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  align-items: center;
-}
-
-.fed-ed-pullquote {
-  font-family: var(--font-serif-display);
-  font-style: italic;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  color: #003870;
-  padding-left: 2rem;
-  border-left: 4px solid #F09F54;
-  margin: 3rem 0;
-}
-
-.fed-ed-process {
-  padding: 8rem 0;
-  background: white;
-}
-
-.fed-ed-process-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.fed-ed-process-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
-  margin-top: 4rem;
-}
-
-.fed-ed-step {
-  text-align: center;
-  padding: 2rem;
-}
-
-.fed-ed-step-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  background: #F09F54;
-  color: white;
-  font-family: var(--font-mono);
-  font-weight: 600;
-  border-radius: 50%;
-  margin-bottom: 2rem;
-  font-size: 1.125rem;
-}
-
-.fed-ed-step-title {
-  font-family: var(--font-serif-display);
-  font-size: 1.5rem;
-  color: #003870;
-  margin-bottom: 1rem;
-}
-
-.fed-ed-step-desc {
-  font-family: var(--font-body);
-  color: #64748b;
-  line-height: 1.6;
-}
-
-.fed-ed-cta {
-  padding: 8rem 0;
-  background: #f8f9fb;
-  text-align: center;
-}
-
-.fed-ed-cta-inner {
+.ep-gap-inner {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 2rem;
+  text-align: center;
 }
 
-.fed-ed-btn-primary {
-  display: inline-block;
-  background: #003870;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-family: var(--font-body);
-  font-weight: 600;
+.ep-gap-pullquote {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.4;
+  color: var(--primary);
+  padding-left: 2rem;
+  border-left: 4px solid var(--secondary);
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.ep-gap-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-top: 2rem;
+}
+
+/* Process Section */
+.ep-process {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-process-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.ep-process-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-process-sub {
   font-size: 1rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.ep-step-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 2rem;
   transition: all 0.3s ease;
+  text-align: center;
+}
+
+.ep-step-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
+}
+
+.ep-step-number {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  color: var(--secondary);
+  margin-bottom: 1rem;
 }
 
-.fed-ed-btn-primary:hover {
-  background: #194F90;
-  transform: translateY(-2px);
+.ep-step-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+  margin-bottom: 0.75rem;
 }
 
+.ep-step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* CTA — matches homepage final-cta */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .fed-ed-hero-headline {
-    font-size: 2.5rem;
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
-  
-  .fed-ed-hero-stats {
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-facts-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .ep-fact {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .ep-framework-inner {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
-  .fed-ed-modules-grid {
+
+  .ep-framework-grid {
     grid-template-columns: 1fr;
   }
-  
-  .fed-ed-gap-content {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
   }
-  
-  .fed-ed-process-steps {
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
     grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-modules {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-modules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-gap-quote {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-process {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    display: block;
   }
 }
 </style>
 
-<!-- HERO SECTION -->
-<section class="fed-ed-hero">
-  <div class="fed-ed-hero-inner">
-    <span class="fed-ed-chapter-label">FEDERAL EMPLOYEE SPECIALISTS</span>
-    <h1 class="fed-ed-hero-headline">The Federal <em>Architecture</em> of Retirement</h1>
-    <p class="fed-ed-hero-body">Your decades of service have earned you one of the most comprehensive benefits packages in America. Our expertise ensures you maximize every dollar of FERS, TSP, FEGLI, and FEHB in coordination.</p>
-    
-    <div class="fed-ed-hero-stats">
-      <div class="fed-ed-stat">
-        <span class="fed-ed-stat-number">500+</span>
-        <span class="fed-ed-stat-label">Federal Employees Served</span>
-      </div>
-      <div class="fed-ed-stat">
-        <span class="fed-ed-stat-number">$3,200</span>
-        <span class="fed-ed-stat-label">Avg FEGLI Savings/Year</span>
-      </div>
-      <div class="fed-ed-stat">
-        <span class="fed-ed-stat-number">95%</span>
-        <span class="fed-ed-stat-label">Client Satisfaction</span>
-      </div>
-    </div>
-    
-    <div class="fed-ed-hero-image">
-      <img src="/assets/images/photos/federal/capitalwealth-federal-capitol-golden-hour.jpg" alt="US Capitol building at golden hour representing federal employee retirement planning">
-    </div>
-  </div>
-</section>
 
-<!-- FEDERAL BENEFITS MODULES -->
-<section class="fed-ed-modules">
-  <div class="fed-ed-modules-inner">
-    <div class="fed-ed-modules-intro">
-      <span class="fed-ed-chapter-label">CHAPTER I: EXPLORE FEDERAL BENEFITS</span>
-      <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">Seven Pillars of <em>Federal</em> Retirement</h2>
-      <p class="fed-ed-hero-body">Each benefit requires specialized expertise. Click any module for in-depth guidance, calculators, and optimization strategies.</p>
+<section class="ep-hero">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">FEDERAL EMPLOYEE SPECIALISTS</span>
+      <h1 class="ep-hero-title">Your Service Deserves<br>a Secure</h1>
+      <span class="ep-hero-title-italic">Retirement.</span>
+      <p class="ep-hero-body">Federal employees have one of the most comprehensive benefits packages in America — but maximizing FERS, TSP, FEGLI, and FEHB requires specialized expertise most advisors don't have. We speak your language.</p>
+      <a href="/contact/" class="ep-btn-primary">Begin Your Federal Review</a>
+      <a href="/services/federal-benefits/fers-retirement/" class="ep-btn-ghost">Explore Benefits</a>
     </div>
-    
-    <div class="fed-ed-modules-grid">
-      <a href="/services/federal-benefits/fers-retirement/" class="fed-ed-module">
-        <div class="fed-ed-module-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M12 2L2 7v10c0 5.55 3.84 9 9 12 5.16-3 9-6.45 9-12V7l-10-5z"/>
-          </svg>
-        </div>
-        <div class="fed-ed-module-number">MODULE 01</div>
-        <h3 class="fed-ed-module-title">FERS Retirement</h3>
-        <p class="fed-ed-module-desc">The foundation of your federal retirement. Pension calculations, optimal retirement dates, and FERS supplement bridge planning.</p>
-        <ul class="fed-ed-module-features">
-          <li>Precise annuity calculations</li>
-          <li>MRA optimization</li>
-          <li>Survivor benefit analysis</li>
-          <li>Military buyback evaluation</li>
-        </ul>
-        <span class="fed-ed-module-link">Explore FERS →</span>
-      </a>
-      
-      <a href="/services/federal-benefits/tsp-planning/" class="fed-ed-module">
-        <div class="fed-ed-module-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-          </svg>
-        </div>
-        <div class="fed-ed-module-number">MODULE 02</div>
-        <h3 class="fed-ed-module-title">TSP Planning</h3>
-        <p class="fed-ed-module-desc">Maximize your Thrift Savings Plan with optimal allocation, contribution strategies, and tax-efficient withdrawals.</p>
-        <ul class="fed-ed-module-features">
-          <li>Fund allocation strategy</li>
-          <li>Roth vs traditional analysis</li>
-          <li>Withdrawal optimization</li>
-          <li>Rollover decisions</li>
-        </ul>
-        <span class="fed-ed-module-link">Optimize TSP →</span>
-      </a>
-      
-      <a href="/services/federal-benefits/fegli/" class="fed-ed-module">
-        <div class="fed-ed-module-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M9 12l2 2 4-4"/>
-            <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1"/>
-          </svg>
-        </div>
-        <div class="fed-ed-module-number">MODULE 03</div>
-        <h3 class="fed-ed-module-title">FEGLI Analysis</h3>
-        <p class="fed-ed-module-desc">Most federal employees are over-insured. We analyze your life insurance needs and compare FEGLI with private alternatives.</p>
-        <ul class="fed-ed-module-features">
-          <li>Coverage needs analysis</li>
-          <li>Cost comparison studies</li>
-          <li>Private insurance quotes</li>
-          <li>Beneficiary optimization</li>
-        </ul>
-        <span class="fed-ed-module-link">Analyze FEGLI →</span>
-      </a>
-      
-      <a href="/services/federal-benefits/fehb-retirement/" class="fed-ed-module">
-        <div class="fed-ed-module-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-          </svg>
-        </div>
-        <div class="fed-ed-module-number">MODULE 04</div>
-        <h3 class="fed-ed-module-title">FEHB Coordination</h3>
-        <p class="fed-ed-module-desc">Navigate health benefits into retirement, Medicare coordination, and plan selection optimization.</p>
-        <ul class="fed-ed-module-features">
-          <li>Medicare coordination</li>
-          <li>Plan selection guidance</li>
-          <li>5-year rule compliance</li>
-          <li>FSA strategies</li>
-        </ul>
-        <span class="fed-ed-module-link">Plan FEHB →</span>
-      </a>
-      
-      <a href="/services/federal-benefits/social-security-federal/" class="fed-ed-module">
-        <div class="fed-ed-module-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-          </svg>
-        </div>
-        <div class="fed-ed-module-number">MODULE 05</div>
-        <h3 class="fed-ed-module-title">Social Security</h3>
-        <p class="fed-ed-module-desc">Coordinate Social Security with your FERS pension and bridge the gap with FERS supplement planning.</p>
-        <ul class="fed-ed-module-features">
-          <li>FERS supplement bridge</li>
-          <li>WEP/GPO eliminated benefits</li>
-          <li>Optimal claiming strategy</li>
-          <li>Spousal coordination</li>
-        </ul>
-        <span class="fed-ed-module-link">Optimize SS →</span>
-      </a>
-      
-      <a href="/services/federal-benefits/fers-calculator/" class="fed-ed-module">
-        <div class="fed-ed-module-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <rect x="4" y="4" width="16" height="16" rx="2"/>
-            <path d="M9 9h6v6H9z"/>
-            <path d="M9 1v6M15 1v6M9 17v6M15 17v6M1 9h6M17 9h6M1 15h6M17 15h6"/>
-          </svg>
-        </div>
-        <div class="fed-ed-module-number">MODULE 06</div>
-        <h3 class="fed-ed-module-title">FERS Calculator</h3>
-        <p class="fed-ed-module-desc">Calculate your FERS annuity based on years of service, high-3 salary, and retirement date scenarios.</p>
-        <ul class="fed-ed-module-features">
-          <li>Instant annuity estimates</li>
-          <li>Retirement date comparison</li>
-          <li>Supplement projections</li>
-          <li>Survivor benefit impact</li>
-        </ul>
-        <span class="fed-ed-module-link">Calculate Now →</span>
-      </a>
-      
-      <a href="/services/federal-benefits/federal-retirement-checklist/" class="fed-ed-module">
-        <div class="fed-ed-module-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14,2 14,8 20,8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-            <polyline points="10,9 9,10 7,8"/>
-          </svg>
-        </div>
-        <div class="fed-ed-module-number">MODULE 07</div>
-        <h3 class="fed-ed-module-title">Retirement Checklist</h3>
-        <p class="fed-ed-module-desc">A comprehensive timeline from 5 years out to your last day. Don't leave anything on the table.</p>
-        <ul class="fed-ed-module-features">
-          <li>5-year preparation timeline</li>
-          <li>Application deadlines</li>
-          <li>Document requirements</li>
-          <li>Final day procedures</li>
-        </ul>
-        <span class="fed-ed-module-link">Get Checklist →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- INTERACTIVE CALCULATOR TEASER -->
-<section class="fed-ed-dark-section">
-  <div class="fed-ed-dark-inner">
-    <span class="fed-ed-chapter-label" style="color: #F09F54;">CHAPTER II: CALCULATE YOUR FUTURE</span>
-    <h2 class="fed-ed-hero-headline" style="color: white; font-size: 3rem;">Know Your <em>Numbers</em></h2>
-    <p class="fed-ed-hero-body" style="color: rgba(255,255,255,0.8);">Your FERS annuity calculation is complex — years of service, high-3 salary, special provisions, and retirement date all matter. Get your personalized estimate.</p>
-    <div style="margin-top: 3rem;">
-      <a href="/services/federal-benefits/fers-calculator/" class="fed-ed-btn-primary" style="background: #F09F54; color: #003870;">Calculate My FERS Annuity →</a>
-    </div>
-  </div>
-</section>
-
-<!-- THE GAP SECTION -->
-<section class="fed-ed-gap-section">
-  <div class="fed-ed-gap-inner">
-    <span class="fed-ed-chapter-label">CHAPTER III: THE GAP</span>
-    <div class="fed-ed-gap-content">
-      <div>
-        <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">Why Federal Employees Need <em>Specialized</em> Help</h2>
-        <p class="fed-ed-hero-body" style="color: #64748b;">Most financial advisors have never worked with a federal employee. They don't understand FERS calculations, TSP withdrawal strategies, or how to coordinate your benefits package. This knowledge gap costs federal retirees thousands.</p>
-        
-        <div class="fed-ed-pullquote">
-          "HR can help you understand your benefits, but they can't advise you on financial strategy. Most advisors understand investing, but they've never seen a FERS annuity calculation. We bridge that gap."
-        </div>
-        
-        <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">From Mike's book "Retire Right, Retire Now" — the stories of Linda, David, and Rachel show how costly mistakes happen when federal employees work with generalist advisors who don't understand the unique complexity of federal benefits.</p>
-      </div>
-      <div>
-        <img src="/assets/images/photos/federal/capitalwealth-federal-government-building-flag.jpg" alt="Federal government building representing the specialized nature of federal benefits" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,56,112,0.15);">
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-capitol-golden-hour.jpg"
+           alt="US Capitol building representing federal employee retirement planning"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"Precision in planning is the ultimate luxury."</p>
+        <cite>Mike Stevens, IAR</cite>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS STEPS -->
-<section class="fed-ed-process">
-  <div class="fed-ed-process-inner">
-    <div style="text-align: center; margin-bottom: 4rem;">
-      <span class="fed-ed-chapter-label">CHAPTER IV: OUR PROCESS</span>
-      <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">How We Work with <em>Federal</em> Employees</h2>
-      <p class="fed-ed-hero-body">A specialized approach that coordinates every piece of your federal benefits package.</p>
+
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact">
+      <div class="ep-fact-label">Federal Employees Served</div>
+      <div class="ep-fact-value">500+</div>
     </div>
-    
-    <div class="fed-ed-process-steps">
-      <div class="fed-ed-step">
-        <div class="fed-ed-step-badge">01</div>
-        <h3 class="fed-ed-step-title">Benefits Analysis</h3>
-        <p class="fed-ed-step-desc">We review your SF-50, TSP statement, FEGLI coverage, and FEHB options to understand your complete federal benefits package and retirement eligibility.</p>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Avg. FEGLI Savings/Year</div>
+      <div class="ep-fact-value">$3,200</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Average TSP at Retirement</div>
+      <div class="ep-fact-value">$780K</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-framework">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">The Federal Benefits Framework</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">Four specialized areas of federal employee retirement planning that require deep expertise beyond general financial advisory services.</p>
+    </div>
+    <div class="ep-framework-grid">
+      <div class="ep-framework-card">
+        <a href="/services/federal-benefits/fers-retirement/" style="text-decoration: none; color: inherit;">
+          <h4>FERS Masterclass</h4>
+          <p>Complete FERS pension optimization including annuity calculations, survivor benefits, and military buyback analysis. Master your retirement eligibility and timing.</p>
+        </a>
       </div>
-      
-      <div class="fed-ed-step">
-        <div class="fed-ed-step-badge">02</div>
-        <h3 class="fed-ed-step-title">Retirement Modeling</h3>
-        <p class="fed-ed-step-desc">Project your FERS annuity, Social Security, TSP withdrawals, and taxes under different retirement scenarios to identify your optimal retirement date.</p>
+      <div class="ep-framework-card">
+        <a href="/services/federal-benefits/tsp-planning/" style="text-decoration: none; color: inherit;">
+          <h4>TSP Allocation Strategy</h4>
+          <p>Strategic Thrift Savings Plan management with fund allocation, contribution optimization, withdrawal sequencing, and rollover decision analysis.</p>
+        </a>
       </div>
-      
-      <div class="fed-ed-step">
-        <div class="fed-ed-step-badge">03</div>
-        <h3 class="fed-ed-step-title">Integrated Strategy</h3>
-        <p class="fed-ed-step-desc">Coordinate all federal benefits with your outside assets into a comprehensive retirement income and tax optimization plan.</p>
+      <div class="ep-framework-card">
+        <a href="/services/federal-benefits/fegli/" style="text-decoration: none; color: inherit;">
+          <h4>FEGLI Efficiency Review</h4>
+          <p>Comprehensive life insurance analysis comparing FEGLI post-retirement costs with private alternatives. Most federal employees can save thousands annually.</p>
+        </a>
+      </div>
+      <div class="ep-framework-card">
+        <a href="/services/federal-benefits/fehb-retirement/" style="text-decoration: none; color: inherit;">
+          <h4>FEHB Continuity</h4>
+          <p>Health benefits coordination into retirement including Medicare integration, plan selection optimization, and 5-year rule compliance strategies.</p>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="fed-ed-cta">
-  <div class="fed-ed-cta-inner">
-    <span class="fed-ed-chapter-label">CHAPTER V: GETTING STARTED</span>
-    <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">Your Service Deserves <em>Expertise</em></h2>
-    <p class="fed-ed-hero-body">You've dedicated your career to public service. Let us dedicate our expertise to maximizing your federal retirement benefits.</p>
-    <div style="margin-top: 3rem;">
-      <a href="/contact/" class="fed-ed-btn-primary">Schedule Your Federal Benefits Review →</a>
+
+<section class="ep-dark">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">INTERACTIVE INTELLIGENCE</span>
+      <h2 class="ep-dark-title">Quantify Your <em>Federal Future.</em></h2>
     </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">FERS Calculator</span>
+        <h3>Know Your Numbers</h3>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Sample Monthly Annuity</span>
+          <span class="ep-stat-number">$8,450<small>/mo</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Years of Service</span>
+          <span class="ep-stat-number">30<small>years</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">TSP Return Rate</span>
+          <span class="ep-stat-number">4.2%<small>annual</small></span>
+        </div>
+        <p class="ep-glass-body">Get precise FERS annuity calculations based on your years of service, high-3 salary, and retirement date scenarios. Plan with confidence.</p>
+        <a href="/services/federal-benefits/fers-calculator/" class="ep-glass-link">Calculate Your FERS Annuity →</a>
+      </div>
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Social Security Coordination</span>
+        <h3>Bridge the Gap</h3>
+        <p class="ep-glass-body">Federal employees have unique Social Security considerations including the FERS supplement bridge, WEP/GPO elimination benefits, and optimal claiming strategies that coordinate with your pension.</p>
+        <p class="ep-glass-body">Our specialized planning ensures you maximize both your FERS annuity and Social Security benefits through strategic timing and coordination.</p>
+        <a href="/services/federal-benefits/social-security-federal/" class="ep-glass-link">Optimize Social Security →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-modules">
+  <div class="ep-modules-inner">
+    <span class="ep-chapter-label">Additional Resources</span>
+    <h2 class="ep-modules-title">Complete Your Federal Plan</h2>
+    <div class="ep-modules-grid">
+      <a href="/services/federal-benefits/federal-retirement-checklist/" class="ep-module-card">
+        <h3>Federal Retirement Checklist</h3>
+        <p>Comprehensive timeline from 5 years out to your last day. Don't leave benefits on the table with our step-by-step retirement preparation guide.</p>
+        <span class="ep-module-arrow">Get Your Checklist →</span>
+      </a>
+      <a href="/contact/" class="ep-module-card">
+        <h3>Federal Benefits Seminar</h3>
+        <p>Join our monthly workshop covering FERS, TSP, FEGLI, and FEHB optimization. Learn alongside other federal employees planning their retirement.</p>
+        <span class="ep-module-arrow">Register for Workshop →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-gap-quote">
+  <div class="ep-gap-inner">
+    <span class="ep-chapter-label">The Gap</span>
+    <div class="ep-gap-pullquote">
+      "HR can help you understand your benefits, but they can't advise you on financial strategy. Most advisors understand investing, but they've never seen a FERS annuity calculation. We bridge that gap."
+    </div>
+    <p class="ep-gap-body">Federal employees need specialized advisors who understand the unique complexity of coordinating FERS pensions, TSP accounts, FEGLI insurance, FEHB health benefits, and Social Security. The knowledge gap between generalist advisors and federal-specific expertise costs retirees thousands in missed opportunities and suboptimal decisions.</p>
+  </div>
+</section>
+
+
+<section class="ep-process">
+  <div class="ep-process-inner">
+    <div class="ep-process-header">
+      <span class="ep-chapter-label">How We Work</span>
+      <h2 class="ep-process-title">Federal Benefits Strategy</h2>
+      <p class="ep-process-sub">Three specialized steps to maximize your federal retirement benefits.</p>
+    </div>
+    <div class="ep-steps-grid">
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 01</span>
+        <h3>Benefits Analysis</h3>
+        <p>Comprehensive review of your SF-50, TSP statement, FEGLI coverage, and FEHB options to understand your complete federal benefits package and retirement eligibility.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 02</span>
+        <h3>Retirement Projections</h3>
+        <p>Model your FERS annuity, Social Security, TSP withdrawals, and taxes under different retirement scenarios to identify your optimal retirement date and strategy.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 03</span>
+        <h3>Coordination Strategy</h3>
+        <p>Integrate all federal benefits with your outside assets into a comprehensive retirement income plan that maximizes your lifetime benefits and minimizes taxes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Schedule Your Federal Benefits Review</h2>
+      <p class="ep-cta-body">Your decades of service have earned you exceptional benefits. Let our specialized expertise ensure you maximize every dollar of your federal retirement package.</p>
+      <a href="/contact/" class="ep-btn-primary">Begin Your Review</a>
+      <p class="ep-cta-promise">Federal Employee Specialists</p>
+    </div>
+    <img src="/assets/images/photos/federal/capitalwealth-federal-government-building-flag.jpg" alt="Federal government building representing specialized federal benefits expertise" class="ep-cta-image">
   </div>
 </section>
 </div>
