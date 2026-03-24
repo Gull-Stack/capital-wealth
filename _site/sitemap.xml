@@ -616,12 +616,22 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/services/sdba/401k-brokerage-window/</loc>
+    <loc>https://www.capitalwealth.com/dedication-preview/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/terms/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.capitalwealth.com/guides/sdba-complete-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/sdba/401k-brokerage-window/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

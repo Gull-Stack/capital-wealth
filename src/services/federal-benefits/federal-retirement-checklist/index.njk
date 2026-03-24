@@ -24,216 +24,393 @@ faqSchema:
     answer: "Many federal retirees work as contractors, and this generally does not affect your FERS annuity. As a contractor, you're employed by a private company (not the federal government), so the reemployment offset rules don't apply. You continue receiving your full annuity while earning contractor income. However, if you're receiving the FERS supplement and you're under age 62, contractor income counts as earned income and may reduce your supplement if you exceed the annual earnings limit. Consulting your HR office or a financial advisor before accepting contractor work can help you understand the impact on your specific situation, particularly regarding the FERS supplement and any agency-specific policies."
 ---
 
-{# ═══════════════════════════════════════════════════════════
-   HERO — Titan-style (headline left, image right)
-   ═══════════════════════════════════════════════════════════ #}
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">RETIREMENT CHECKLIST</p>
-            <h2 >Federal Retirement Checklist: Everything You Need Before You Retire</h2>
-            <p class="titan-subhero-body">Retiring from federal service involves dozens of decisions and deadlines. Missing a single requirement can delay your annuity payments or cost you thousands in lost benefits. This comprehensive checklist ensures nothing falls through the cracks.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">GET YOUR PERSONALIZED CHECKLIST <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/services/federal-benefits.jpg" alt="Federal employee reviewing retirement checklist and paperwork" class="titan-subhero-img">
+<style>
+.fed-ed-checklist-hero {
+  background: linear-gradient(135deg, #003870, #194F90);
+  padding: 8rem 0;
+  color: white;
+  text-align: center;
+}
+
+.fed-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-checklist-headline {
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-checklist-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-checklist-desc {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.fed-ed-timeline {
+  padding: 8rem 0;
+  background: white;
+}
+
+.fed-ed-timeline-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-timeline-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.fed-ed-timeline-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.fed-ed-timeline-marker {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fb;
+  border-radius: 16px;
+  border-left: 4px solid #F09F54;
+}
+
+.fed-ed-timeline-time {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  color: #003870;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-timeline-phase {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #F09F54;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.fed-ed-timeline-content {
+  padding-top: 1rem;
+}
+
+.fed-ed-timeline-title {
+  font-family: var(--font-serif-display);
+  font-size: 2rem;
+  color: #003870;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-checklist-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.fed-ed-checklist-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: flex-start;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.fed-ed-checklist-list li:last-child {
+  border-bottom: none;
+}
+
+.fed-ed-checklist-list li::before {
+  content: "✓";
+  color: #10B981;
+  font-weight: 600;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.fed-ed-critical-box {
+  background: linear-gradient(135deg, #FFF3E6, #FFEDE6);
+  border: 1px solid #F09F54;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.fed-ed-critical-title {
+  font-family: var(--font-serif-display);
+  color: #003870;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.fed-ed-critical-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  color: #F09F54;
+}
+
+.fed-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fed-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .fed-ed-checklist-headline {
+    font-size: 2.5rem;
+  }
+  
+  .fed-ed-timeline-item {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .fed-ed-timeline-marker {
+    order: -1;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="fed-ed-checklist-hero">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+    <span class="fed-ed-chapter-label">CHAPTER I: YOUR RETIREMENT ROADMAP</span>
+    <h1 class="fed-ed-checklist-headline">Federal Retirement <em>Checklist</em></h1>
+    <p class="fed-ed-checklist-desc">Your comprehensive guide through every step of federal retirement — from 5 years out to your final day. Follow this timeline to ensure you don't miss critical deadlines or leave benefits on the table.</p>
+    
+    <div style="margin-top: 3rem;">
+      <a href="/contact/" class="fed-ed-btn-primary">Get Personalized Checklist</a>
     </div>
+  </div>
 </section>
 
-<section class="quote-bar">
-    <div class="quote-bar-inner">
-        <p class="quote-bar-text">"Retire with confidence, not questions. The checklist ensures you didn't miss anything critical."</p>
-        <p class="quote-bar-author">— Mike Stevens, IAR</p>
+<!-- TIMELINE CHECKLIST -->
+<section class="fed-ed-timeline">
+  <div class="fed-ed-timeline-inner">
+    
+    <!-- 5 YEARS BEFORE -->
+    <div class="fed-ed-timeline-item">
+      <div class="fed-ed-timeline-marker">
+        <div class="fed-ed-timeline-time">5 Years</div>
+        <div class="fed-ed-timeline-phase">Before Retirement</div>
+      </div>
+      <div class="fed-ed-timeline-content">
+        <h2 class="fed-ed-timeline-title">Foundation Phase</h2>
+        <p style="font-family: var(--font-body); color: #64748b; margin-bottom: 2rem;">The foundation phase is critical for meeting eligibility requirements and beginning strategic planning for your federal retirement.</p>
+        
+        <ul class="fed-ed-checklist-list">
+          <li>Verify FEHB enrollment status — ensure continuous coverage for 5-year rule</li>
+          <li>Review current FERS service computation date and projected retirement eligibility</li>
+          <li>Assess FEGLI coverage needs and costs in retirement</li>
+          <li>Maximize TSP contributions and evaluate fund allocation strategy</li>
+          <li>Consider military service buyback if applicable (3% of base military pay)</li>
+          <li>Begin high-3 salary optimization through promotions or step increases</li>
+          <li>Create retirement income projection to determine target date</li>
+        </ul>
+        
+        <div class="fed-ed-critical-box">
+          <h4 class="fed-ed-critical-title">
+            <svg class="fed-ed-critical-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+              <line x1="12" y1="9" x2="12" y2="13"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+            Critical: FEHB 5-Year Rule
+          </h4>
+          <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6; margin: 0;">You must be enrolled in FEHB for the 5 consecutive years immediately before retirement to carry coverage into retirement. Any gap in coverage can disqualify you permanently.</p>
+        </div>
+      </div>
     </div>
+    
+    <!-- 3 YEARS BEFORE -->
+    <div class="fed-ed-timeline-item">
+      <div class="fed-ed-timeline-marker">
+        <div class="fed-ed-timeline-time">3 Years</div>
+        <div class="fed-ed-timeline-phase">Before Retirement</div>
+      </div>
+      <div class="fed-ed-timeline-content">
+        <h2 class="fed-ed-timeline-title">Planning Phase</h2>
+        <p style="font-family: var(--font-body); color: #64748b; margin-bottom: 2rem;">Refine your strategy and begin detailed preparation for the transition to retirement.</p>
+        
+        <ul class="fed-ed-checklist-list">
+          <li>Attend agency retirement planning seminars and workshops</li>
+          <li>Review and optimize FEHB plan selection for retirement needs</li>
+          <li>Evaluate TSP withdrawal strategy options (installments vs. annuity)</li>
+          <li>Consider private life insurance quotes to compare with FEGLI</li>
+          <li>Maximize unused sick leave accumulation (converts to service credit)</li>
+          <li>Plan geographic relocation if desired (affects state taxes, FEHB networks)</li>
+          <li>Begin Social Security benefit estimation and claiming strategy</li>
+          <li>Review estate planning documents and beneficiary designations</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- 1 YEAR BEFORE -->
+    <div class="fed-ed-timeline-item">
+      <div class="fed-ed-timeline-marker">
+        <div class="fed-ed-timeline-time">1 Year</div>
+        <div class="fed-ed-timeline-phase">Before Retirement</div>
+      </div>
+      <div class="fed-ed-timeline-content">
+        <h2 class="fed-ed-timeline-title">Preparation Phase</h2>
+        <p style="font-family: var(--font-body); color: #64748b; margin-bottom: 2rem;">Final year preparations and documentation gathering for your retirement application.</p>
+        
+        <ul class="fed-ed-checklist-list">
+          <li>Meet with HR to discuss retirement timeline and required paperwork</li>
+          <li>Gather all SF-50s and verify service computation dates</li>
+          <li>Finalize survivor benefit election decision (full, partial, or none)</li>
+          <li>Complete TSP withdrawal election and beneficiary updates</li>
+          <li>Make final FEGLI coverage decisions for retirement</li>
+          <li>Confirm FEHB plan for retirement (consider Medicare coordination)</li>
+          <li>Plan use of remaining annual leave before retirement date</li>
+          <li>Begin networking for post-retirement employment if desired</li>
+        </ul>
+        
+        <div class="fed-ed-critical-box">
+          <h4 class="fed-ed-critical-title">
+            <svg class="fed-ed-critical-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            Survivor Benefits Decision
+          </h4>
+          <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6; margin: 0;">Your survivor benefit election is irrevocable. Full survivor benefit costs 10% of your annuity but provides 50% to your spouse. Consider your spouse's other income sources and life expectancy.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 3-6 MONTHS BEFORE -->
+    <div class="fed-ed-timeline-item">
+      <div class="fed-ed-timeline-marker">
+        <div class="fed-ed-timeline-time">3-6 Months</div>
+        <div class="fed-ed-timeline-phase">Before Retirement</div>
+      </div>
+      <div class="fed-ed-timeline-content">
+        <h2 class="fed-ed-timeline-title">Application Phase</h2>
+        <p style="font-family: var(--font-body); color: #64748b; margin-bottom: 2rem;">Submit your retirement application and finalize all benefit elections and paperwork.</p>
+        
+        <ul class="fed-ed-checklist-list">
+          <li>Submit SF-3107 (Application for Immediate Retirement) to HR</li>
+          <li>Complete SF-2823 (Designation of Beneficiary for FERS)</li>
+          <li>File SF-3102 (Designation of Beneficiary for CSRS/FERS)</li>
+          <li>Submit military service documentation if claiming buyback credit</li>
+          <li>Confirm FEHB continuation election and plan selection</li>
+          <li>Complete FEGLI continuation paperwork if keeping coverage</li>
+          <li>Update all TSP forms including withdrawal elections</li>
+          <li>Provide any additional documentation requested by HR or OPM</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- FINAL MONTH -->
+    <div class="fed-ed-timeline-item">
+      <div class="fed-ed-timeline-marker">
+        <div class="fed-ed-timeline-time">Final Month</div>
+        <div class="fed-ed-timeline-phase">Before Retirement</div>
+      </div>
+      <div class="fed-ed-timeline-content">
+        <h2 class="fed-ed-timeline-title">Transition Phase</h2>
+        <p style="font-family: var(--font-body); color: #64748b; margin-bottom: 2rem;">Complete your transition and ensure all final details are handled properly.</p>
+        
+        <ul class="fed-ed-checklist-list">
+          <li>Use remaining annual leave (you'll be paid for unused leave)</li>
+          <li>Complete any required training or certification transfers</li>
+          <li>Return all government property (ID cards, equipment, keys)</li>
+          <li>Confirm final pay dates and interim annuity start date</li>
+          <li>Set up direct deposit for annuity payments</li>
+          <li>Obtain copies of all retirement paperwork for your records</li>
+          <li>Schedule exit interview if required by your agency</li>
+          <li>Plan celebration — you've earned it!</li>
+        </ul>
+        
+        <div class="fed-ed-critical-box">
+          <h4 class="fed-ed-critical-title">
+            <svg class="fed-ed-critical-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22,4 12,14.01 9,11.01"/>
+            </svg>
+            Interim Annuity Period
+          </h4>
+          <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6; margin: 0;">You'll receive interim annuity payments while OPM processes your full application. This interim amount is often lower than your final annuity. Once processed, you'll receive retroactive payments for any difference.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- AFTER RETIREMENT -->
+    <div class="fed-ed-timeline-item">
+      <div class="fed-ed-timeline-marker">
+        <div class="fed-ed-timeline-time">After</div>
+        <div class="fed-ed-timeline-phase">Retirement Date</div>
+      </div>
+      <div class="fed-ed-timeline-content">
+        <h2 class="fed-ed-timeline-title">Post-Retirement Phase</h2>
+        <p style="font-family: var(--font-body); color: #64748b; margin-bottom: 2rem;">Important steps to take after your retirement becomes official.</p>
+        
+        <ul class="fed-ed-checklist-list">
+          <li>Monitor for final annuity determination letter from OPM</li>
+          <li>Verify all annuity payments and deductions are correct</li>
+          <li>Begin Medicare enrollment planning (3 months before age 65)</li>
+          <li>Review and adjust tax withholdings as needed</li>
+          <li>Update address and contact information with OPM and TSP</li>
+          <li>Consider Social Security claiming strategy coordination</li>
+          <li>Plan annual reviews of FEHB plan during open enrollment</li>
+          <li>Maintain contact with HR for any benefit questions</li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
 </section>
 
-<section class="key-facts">
-    <div class="key-facts-inner">
-        <div class="key-fact-item">
-            <p class="key-fact-label">Checklist Items</p>
-            <p class="key-fact-value">30+ action items</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Timeline</p>
-            <p class="key-fact-value">12 months before retirement</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Forms</p>
-            <p class="key-fact-value">SF-3107, SF-2823, etc.</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Review</p>
-            <p class="key-fact-value">Personalized to your situation</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Cost</p>
-            <p class="key-fact-value">Included</p>
-        </div>
+<!-- CTA SECTION -->
+<section style="background: #f8f9fb; padding: 6rem 0; text-align: center;">
+  <div style="max-width: 800px; margin: 0 auto; padding: 0 2rem;">
+    <span class="fed-ed-chapter-label">CHAPTER II: PROFESSIONAL GUIDANCE</span>
+    <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; color: #003870; margin-bottom: 1.5rem;">Don't Navigate This <em>Alone</em></h2>
+    <p style="font-family: var(--font-body); color: #64748b; font-size: 1.125rem; line-height: 1.6; margin-bottom: 3rem;">Federal retirement involves complex decisions with permanent consequences. Our specialized team helps ensure you optimize every benefit and avoid costly mistakes.</p>
+    
+    <div style="margin-bottom: 3rem;">
+      <a href="/contact/" class="fed-ed-btn-primary">Schedule Federal Retirement Review</a>
     </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   PROBLEM — "Does this sound familiar?"
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>You don't know what to do 5 years before retirement</h3>
-                <p>The 5-year FEHB enrollment requirement, maximizing your high-3 salary, and understanding your FERS calculation all require action years before your planned retirement date.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're overwhelmed by all the forms and deadlines</h3>
-                <p>SF-3107, SF-2823, TSP-70, TSP-U-1, beneficiary designations, FEHB continuation — the paperwork is extensive and errors can delay your annuity for months.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're afraid of missing critical deadlines</h3>
-                <p>Open Season elections, TSP withdrawal decisions, Medicare enrollment, and retirement application submission all have specific windows. Missing one can have permanent consequences.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't know how long OPM takes to process</h3>
-                <p>According to OPM, processing times can vary significantly. Planning for potential delays in receiving your full annuity is essential for avoiding financial stress.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   SOLUTION — How We Help
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">How We Help</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Personalized Federal Retirement Timeline</h3>
-                <p>We create a customized retirement checklist and timeline specific to your situation — mapping out exactly what you need to do at 5 years, 1 year, 6 months, 3 months, and 30 days before your planned retirement date.</p>
-                <p>Federal retirement involves coordinating FERS annuity applications, TSP withdrawal elections, FEHB continuation, FEGLI decisions, Social Security planning, and Medicare enrollment. Each has its own requirements, forms, and deadlines. We ensure you complete every step correctly and on time so your transition to retirement is smooth and your benefits start without delay.</p>
-            </div>
-            <div class="service-solution-right">
-                <h4>Your Retirement Checklist Includes:</h4>
-                <ul class="service-solution-list">
-                    <li><strong>5 Years Before:</strong> Verify FEHB enrollment, maximize high-3 salary, review FEGLI coverage</li>
-                    <li><strong>1 Year Before:</strong> Attend retirement planning sessions, verify service credits, update beneficiaries</li>
-                    <li><strong>6 Months Before:</strong> Decide survivor benefit election, plan TSP withdrawals, coordinate Social Security</li>
-                    <li><strong>3 Months Before:</strong> Submit retirement application (SF-3107), finalize FEHB plan selection</li>
-                    <li><strong>30 Days Before:</strong> Complete final certifications, arrange interim annuity, verify direct deposit</li>
-                    <li><strong>At Retirement:</strong> Enroll in Medicare (if eligible), file TSP withdrawal election, track OPM processing</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   PROCESS — 3-step flow
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Build Your Timeline</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Create a personalized retirement timeline based on your planned retirement date, mapping out every action item and deadline.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Complete the Checklist</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Work through each phase systematically — verifying eligibility, making benefit elections, and completing required paperwork.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Monitor & Adjust</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Track your retirement application with OPM, coordinate benefit start dates, and adjust plans as needed based on processing timelines.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   FAQ — Service-specific questions
-   ═══════════════════════════════════════════════════════════ #}
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">Retirement Checklist FAQ</h2>
-            <p class="faq-sub">Everything you need to know about preparing for federal retirement.</p>
-            <a href="/contact/" class="resources-cta">Get Your Checklist</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">When should I start planning for retirement?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Ideally, you should start planning at least 5 years before your target retirement date. This is critical because of the FEHB 5-year enrollment requirement — you must be enrolled in FEHB for the 5 consecutive years immediately before retirement to carry it into retirement. The 5-year window is also important for maximizing your high-3 average salary (seeking promotions or step increases), reviewing FEGLI coverage, and making strategic TSP contribution decisions. Even if retirement is further away, reviewing your benefits every few years ensures you're on track and haven't overlooked important elections or opportunities.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What paperwork do I need to file to retire?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The primary retirement application is Standard Form 3107 (Application for Immediate Retirement), which you typically submit 60 days before your retirement date (but check with your agency's specific requirements). You'll also need to complete SF-2823 for survivor benefit elections, SF-3102 for beneficiary designations, and ensure all your TSP beneficiary forms are current. If you're keeping FEGLI, you'll need to complete the appropriate continuation forms. Your HR office will provide a retirement packet with all required forms. Having your documentation organized in advance — SF-50s, leave balances, military service records — speeds up the process significantly.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How long does OPM take to process my retirement?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">OPM processing times vary based on application volume, complexity of your case, and whether all documentation is complete and accurate. During the interim period (while OPM processes your full annuity), you typically receive an interim annuity payment that's often lower than your final amount. Once OPM completes processing, you'll receive your full annuity plus any retroactive payments owed. To minimize delays, ensure your retirement application is complete, accurate, and submitted with all required documentation. Work closely with your HR office to verify everything is in order before submission.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Can I work after I retire from federal service?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Yes, but there are important considerations. If you receive the FERS supplement (available if you retire at MRA with 30 years, or age 60 with 20 years), it's subject to an earnings test similar to Social Security — if you earn above the annual limit, your supplement may be reduced or eliminated. The supplement ends at age 62 regardless. Your FERS annuity itself is not affected by post-retirement employment income. If you return to work for the federal government, different rules apply — you may have your annuity offset by your new salary, and you generally cannot earn additional retirement credit. Private sector employment or self-employment has no impact on your FERS annuity.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What if I want to come back as a federal contractor after retirement?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Many federal retirees work as contractors, and this generally does not affect your FERS annuity. As a contractor, you're employed by a private company (not the federal government), so the reemployment offset rules don't apply. You continue receiving your full annuity while earning contractor income. However, if you're receiving the FERS supplement and you're under age 62, contractor income counts as earned income and may reduce your supplement if you exceed the annual earnings limit. Consulting your HR office or a financial advisor before accepting contractor work can help you understand the impact on your specific situation, particularly regarding the FERS supplement and any agency-specific policies.</div>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <h2 class="service-related-heading">More Ways We Can Help</h2>
-        <div class="service-related-grid">
-            <a href="/services/federal-benefits/fers-retirement/" class="service-related-link">
-                <span class="service-related-name">FERS Retirement Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/" class="service-related-link">
-                <span class="service-related-name">Federal Employee Benefits</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/retirement-money-map/" class="service-related-link">
-                <span class="service-related-name">Retirement Money Map</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
-    </div>
+    
+    <p style="font-family: var(--font-body); color: #64748b; font-size: 0.9rem; line-height: 1.5;">We've guided over 500 federal employees through retirement. Let our expertise work for you.</p>
+  </div>
 </section>

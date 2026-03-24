@@ -510,215 +510,784 @@
 /* Content area */
 .service-content {
   /* Content is injected here via 
+<style>
+/* Editorial FERS Deep-dive Styles */
+.fed-ed-fers-hero {
+  background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%);
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
 
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">FERS RETIREMENT</p>
-            <h2 >Federal Employee Retirement Planning</h2>
-            <p class="titan-subhero-body">The Federal Employees Retirement System (FERS) is the foundation of your federal retirement — but understanding when you can retire, how your annuity is calculated, and how to optimize your benefits requires expertise most federal employees don't have.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">SCHEDULE FERS ANALYSIS <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/photos/federal/capitalwealth-federal-us-capitol-dome.jpg" alt="Federal employee retirement planning with Capitol dome" class="titan-subhero-img">
+.fed-ed-fers-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.fed-ed-fers-hero-content {
+  max-width: 500px;
+}
+
+.fed-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.fed-ed-fers-headline {
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: #003870;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-fers-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-fers-desc {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.fed-ed-fers-ctas {
+  display: flex;
+  gap: 1rem;
+}
+
+.fed-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fed-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+.fed-ed-fers-hero-image-container {
+  position: relative;
+}
+
+.fed-ed-fers-hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
+}
+
+.fed-ed-pullquote {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(24px);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #F09F54;
+}
+
+.fed-ed-pullquote-text {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #003870;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-pullquote-author {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.fed-ed-fers-nav {
+  position: sticky;
+  top: 2rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fed-ed-fers-nav-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-fers-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fed-ed-fers-nav-links li {
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-fers-nav-links a {
+  font-family: var(--font-body);
+  color: #003870;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.fed-ed-fers-nav-links a:hover {
+  color: #F09F54;
+}
+
+.fed-ed-fers-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-fers-main {
+  padding: 4rem 0;
+}
+
+.fed-ed-fers-section {
+  margin-bottom: 6rem;
+}
+
+.fed-ed-fers-section-title {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  color: #003870;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.fed-ed-fers-section-title em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-fers-body {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-glass-card {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.fed-ed-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.fed-ed-stat {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fb;
+  border-radius: 12px;
+}
+
+.fed-ed-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #003870;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.fed-ed-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
+}
+
+.fed-ed-comparison-table th {
+  background: #003870;
+  color: white;
+  padding: 1rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-align: left;
+}
+
+.fed-ed-comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-family: var(--font-body);
+  color: #64748b;
+}
+
+.fed-ed-comparison-table tr:nth-child(even) {
+  background: #f8f9fb;
+}
+
+.fed-ed-comparison-table .highlight {
+  background: #F09F54 !important;
+  color: white;
+}
+
+.fed-ed-faq {
+  padding: 6rem 0;
+  background: #f8f9fb;
+}
+
+.fed-ed-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.fed-ed-faq-accordion {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
+}
+
+.fed-ed-faq-item {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.fed-ed-faq-item:last-child {
+  border-bottom: none;
+}
+
+.fed-ed-faq-trigger {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 2rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.fed-ed-faq-trigger:hover {
+  background: #f8f9fb;
+}
+
+.fed-ed-faq-question {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #003870;
+  font-size: 1.1rem;
+}
+
+.fed-ed-faq-icon {
+  color: #F09F54;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.fed-ed-faq-item.active .fed-ed-faq-icon {
+  transform: rotate(45deg);
+}
+
+.fed-ed-faq-panel {
+  padding: 0 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.fed-ed-faq-item.active .fed-ed-faq-panel {
+  max-height: 400px;
+  padding: 0 2rem 2rem;
+}
+
+.fed-ed-faq-answer {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: #64748b;
+}
+
+@media (max-width: 1024px) {
+  .fed-ed-fers-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .fed-ed-fers-nav {
+    position: relative;
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .fed-ed-fers-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .fed-ed-fers-headline {
+    font-size: 2.5rem;
+  }
+  
+  .fed-ed-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .fed-ed-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="fed-ed-fers-hero">
+  <div class="fed-ed-fers-hero-inner">
+    <div class="fed-ed-fers-hero-content">
+      <span class="fed-ed-chapter-label">CHAPTER I: FERS FUNDAMENTALS</span>
+      <h1 class="fed-ed-fers-headline">Your <em>Foundation</em> for Retirement</h1>
+      <p class="fed-ed-fers-desc">The Federal Employees Retirement System forms the cornerstone of your federal retirement. Understanding when you can retire, how your annuity is calculated, and how to optimize your benefits requires specialized expertise.</p>
+      
+      <div class="fed-ed-fers-ctas">
+        <a href="/contact/" class="fed-ed-btn-primary">Schedule FERS Analysis</a>
+      </div>
     </div>
+    
+    <div class="fed-ed-fers-hero-image-container">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-capitol-dome.jpg" alt="US Capitol dome representing FERS retirement foundation" class="fed-ed-fers-hero-image">
+      <div class="fed-ed-pullquote">
+        <p class="fed-ed-pullquote-text">"Your FERS annuity is the foundation. Everything else builds on top of it."</p>
+        <p class="fed-ed-pullquote-author">— Mike Stevens, IAR</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<section class="quote-bar">
-    <div class="quote-bar-inner">
-        <p class="quote-bar-text">"Your FERS annuity is the foundation. Everything else builds on top of it."</p>
-        <p class="quote-bar-author">— Mike Stevens, IAR</p>
-    </div>
+<!-- MAIN CONTENT WITH SIDE NAV -->
+<section class="fed-ed-fers-content">
+  <aside class="fed-ed-fers-nav">
+    <h3 class="fed-ed-fers-nav-title">On This Page</h3>
+    <ul class="fed-ed-fers-nav-links">
+      <li><a href="#eligibility">Retirement Eligibility</a></li>
+      <li><a href="#calculation">Annuity Calculation</a></li>
+      <li><a href="#supplement">FERS Supplement</a></li>
+      <li><a href="#survivor">Survivor Benefits</a></li>
+      <li><a href="#military">Military Buyback</a></li>
+      <li><a href="#optimization">Optimization Strategies</a></li>
+    </ul>
+  </aside>
+  
+  <main class="fed-ed-fers-main">
+    <!-- RETIREMENT ELIGIBILITY -->
+    <section id="eligibility" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER II: ELIGIBILITY</span>
+      <h2 class="fed-ed-fers-section-title">When Can You <em>Retire</em>?</h2>
+      
+      <p class="fed-ed-fers-body">FERS offers multiple retirement pathways, each with different requirements and benefit calculations. Understanding your options is crucial for optimizing your retirement date and maximizing lifetime benefits.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Immediate Retirement Options</h3>
+        
+        <table class="fed-ed-comparison-table">
+          <thead>
+            <tr>
+              <th>Option</th>
+              <th>Age Requirement</th>
+              <th>Service Requirement</th>
+              <th>Pension Reduction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Age 62 + 5 years</strong></td>
+              <td>62</td>
+              <td>5 years</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td><strong>Age 60 + 20 years</strong></td>
+              <td>60</td>
+              <td>20 years</td>
+              <td>None</td>
+            </tr>
+            <tr class="highlight">
+              <td><strong>MRA + 30 years</strong></td>
+              <td>Your MRA</td>
+              <td>30 years</td>
+              <td>None + FERS Supplement</td>
+            </tr>
+            <tr>
+              <td><strong>MRA + 10 years</strong></td>
+              <td>Your MRA</td>
+              <td>10-29 years</td>
+              <td>5% per year under 62</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <p class="fed-ed-fers-body">Your Minimum Retirement Age (MRA) depends on your birth year, ranging from 56 to 57. For federal employees born between 1953-1964, the MRA is 56. For those born in 1970 or later, it's 57.</p>
+      
+      <div class="fed-ed-stats-grid">
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">30</span>
+          <span class="fed-ed-stat-label">Years for Full Benefits</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">$1,800</span>
+          <span class="fed-ed-stat-label">Avg Monthly FERS Supplement</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">62</span>
+          <span class="fed-ed-stat-label">Age When Supplement Ends</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ANNUITY CALCULATION -->
+    <section id="calculation" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER III: CALCULATION</span>
+      <h2 class="fed-ed-fers-section-title">The <em>Formula</em> Behind Your Pension</h2>
+      
+      <p class="fed-ed-fers-body">Your FERS annuity calculation follows a specific formula, but the details matter significantly. Small changes in timing, service credit, or salary can impact your lifetime benefits by thousands.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1.5rem; text-align: center;">FERS Annuity Formula</h3>
+        <div style="text-align: center; font-family: var(--font-serif-display); font-size: 1.5rem; color: #003870; margin: 2rem 0;">
+          <strong>Years of Service × High-3 Salary × Multiplier</strong>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;">
+          <div style="text-align: center;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 0.5rem;">Standard Multiplier</h4>
+            <p style="font-family: var(--font-serif-display); font-size: 2rem; color: #003870; margin-bottom: 0.5rem;">1.0%</p>
+            <p style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b;">Most employees</p>
+          </div>
+          <div style="text-align: center;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 0.5rem;">Enhanced Multiplier</h4>
+            <p style="font-family: var(--font-serif-display); font-size: 2rem; color: #003870; margin-bottom: 0.5rem;">1.1%</p>
+            <p style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b;">Age 62+ with 20+ years</p>
+          </div>
+          <div style="text-align: center;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 0.5rem;">Special Category</h4>
+            <p style="font-family: var(--font-serif-display); font-size: 2rem; color: #003870; margin-bottom: 0.5rem;">1.7%</p>
+            <p style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b;">LEO/ATC/Fire (first 20 yrs)</p>
+          </div>
+        </div>
+      </div>
+      
+      <p class="fed-ed-fers-body">Your high-3 average salary is calculated using your highest average basic pay during any 3 consecutive years of federal service. This includes locality pay but excludes overtime, bonuses, and other premium payments.</p>
+      
+      <p class="fed-ed-fers-body">From Mike's book: "Tom Merrick learned the hard way that his final promotion pushed him into a higher tax bracket without significantly increasing his high-3 — the timing cost him thousands in net retirement income."</p>
+    </section>
+    
+    <!-- FERS SUPPLEMENT -->
+    <section id="supplement" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER IV: THE BRIDGE</span>
+      <h2 class="fed-ed-fers-section-title">FERS <em>Supplement</em> Strategy</h2>
+      
+      <p class="fed-ed-fers-body">The FERS supplement bridges the income gap from retirement until you're eligible for Social Security at age 62. This benefit can provide $1,200-$2,000 per month, but it comes with specific eligibility requirements and income limitations.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">FERS Supplement Eligibility</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">MRA + 30 years:</strong> Full supplement with no reduction
+          </li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Age 60 + 20 years:</strong> Full supplement with no reduction
+          </li>
+          <li style="padding: 0.5rem 0; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Annual Earnings Test:</strong> $1 reduction for every $2 over $23,400 (2025)
+          </li>
+        </ul>
+      </div>
+      
+      <p class="fed-ed-fers-body">The supplement is subject to the Social Security earnings test — if you work after retirement and earn more than the annual limit, your supplement is reduced. This makes post-retirement employment planning crucial for supplement recipients.</p>
+      
+      <p class="fed-ed-fers-body">Important: The FERS supplement automatically ends when you turn 62, regardless of when you actually claim Social Security. This creates a potential income gap that must be planned for in advance.</p>
+    </section>
+    
+    <!-- SURVIVOR BENEFITS -->
+    <section id="survivor" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER V: PROTECTION</span>
+      <h2 class="fed-ed-fers-section-title">Survivor <em>Benefits</em> Strategy</h2>
+      
+      <p class="fed-ed-fers-body">Your FERS survivor benefit election is irrevocable and significantly impacts both your retirement income and your spouse's financial security. This decision requires careful analysis of your specific situation.</p>
+      
+      <div class="fed-ed-glass-card">
+        <table class="fed-ed-comparison-table">
+          <thead>
+            <tr>
+              <th>Survivor Benefit Option</th>
+              <th>Cost to Retiree</th>
+              <th>Survivor Receives</th>
+              <th>Best For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Full Survivor Benefit</strong></td>
+              <td>10% reduction</td>
+              <td>50% of annuity</td>
+              <td>Spouse depends on pension income</td>
+            </tr>
+            <tr>
+              <td><strong>Partial Survivor Benefit</strong></td>
+              <td>5% reduction</td>
+              <td>25% of annuity</td>
+              <td>Some spouse protection needed</td>
+            </tr>
+            <tr class="highlight">
+              <td><strong>No Survivor Benefit</strong></td>
+              <td>No reduction</td>
+              <td>Nothing</td>
+              <td>Spouse has independent retirement</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <p class="fed-ed-fers-body">Many federal employees automatically choose the full survivor benefit without analyzing alternatives. Life insurance, spousal benefits, and other assets may provide better value than reducing your pension by 10% for life.</p>
+    </section>
+    
+    <!-- MILITARY BUYBACK -->
+    <section id="military" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER VI: SERVICE CREDIT</span>
+      <h2 class="fed-ed-fers-section-title">Military <em>Buyback</em> Analysis</h2>
+      
+      <p class="fed-ed-fers-body">Buying back military service credit can significantly increase your FERS annuity by adding years to your creditable service calculation. The decision requires a detailed cost-benefit analysis based on your specific situation.</p>
+      
+      <div class="fed-ed-stats-grid">
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">3%</span>
+          <span class="fed-ed-stat-label">Base Military Pay Cost</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">$8,000</span>
+          <span class="fed-ed-stat-label">Example Buyback Cost</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">$140,000</span>
+          <span class="fed-ed-stat-label">Lifetime Pension Increase</span>
+        </div>
+      </div>
+      
+      <p class="fed-ed-fers-body">From Mike's book: The military buyback example shows a federal employee who paid $8,000 to buy back 4 years of military service, which increased their annual pension by $2,400 and provided over $140,000 in additional lifetime benefits.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Key Considerations</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Payback Period:</strong> How long to recover the deposit cost
+          </li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Life Expectancy:</strong> Total lifetime value of increased benefits
+          </li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Interest Timing:</strong> Deposit within 3 years avoids interest charges
+          </li>
+          <li style="padding: 0.5rem 0; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Survivor Impact:</strong> Increased benefits for spouse if elected
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- OPTIMIZATION -->
+    <section id="optimization" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER VII: OPTIMIZATION</span>
+      <h2 class="fed-ed-fers-section-title">Maximizing Your <em>FERS</em> Benefits</h2>
+      
+      <p class="fed-ed-fers-body">Optimizing your FERS benefits requires coordinating multiple moving pieces: retirement timing, high-3 salary management, sick leave conversion, and benefit elections. Small optimizations can result in significant lifetime value.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Optimization Strategies</h3>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div>
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Timing Strategies</h4>
+            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">
+              <li>Retirement date optimization</li>
+              <li>High-3 salary timing</li>
+              <li>Sick leave maximization</li>
+              <li>Promotional timing analysis</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Benefit Coordination</h4>
+            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">
+              <li>TSP withdrawal sequencing</li>
+              <li>Social Security timing</li>
+              <li>Tax minimization strategies</li>
+              <li>Healthcare continuation planning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <p class="fed-ed-fers-body">Your FERS pension includes Cost of Living Adjustments (COLAs) that protect against inflation. The COLA formula provides full adjustments when inflation is 2% or less, caps adjustments at 2% when inflation is 2.1-3%, and provides inflation minus 1% when inflation exceeds 3%.</p>
+    </section>
+  </main>
 </section>
 
-
-<section class="key-facts">
-    <div class="key-facts-inner">
-        <div class="key-facts-item">
-            <h3>Analysis</h3>
-            <p>Full FERS pension calculation</p>
-        </div>
-        <div class="key-facts-item">
-            <h3>Supplement</h3>
-            <p>Included in analysis</p>
-        </div>
-        <div class="key-facts-item">
-            <h3>MRA Options</h3>
-            <p>Evaluated</p>
-        </div>
-        <div class="key-facts-item">
-            <h3>Spousal Benefits</h3>
-            <p>Survivor annuity planning</p>
-        </div>
-        <div class="key-facts-item">
-            <h3>Cost</h3>
-            <p>Included</p>
-        </div>
+<!-- FAQ SECTION -->
+<section class="fed-ed-faq">
+  <div class="fed-ed-faq-inner">
+    <div>
+      <span class="fed-ed-chapter-label">CHAPTER VIII: COMMON QUESTIONS</span>
+      <h2 class="fed-ed-fers-section-title">FERS Planning <em>FAQ</em></h2>
+      <p class="fed-ed-fers-body">Everything you need to know about FERS retirement and your federal pension planning.</p>
+      <div style="margin-top: 2rem;">
+        <a href="/contact/" class="fed-ed-btn-primary">Schedule FERS Review</a>
+      </div>
     </div>
+    
+    <div class="fed-ed-faq-accordion">
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">How is my FERS annuity calculated?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">Your FERS annuity is calculated using the formula: years of creditable service × high-3 average salary × multiplier. The standard multiplier is 1% for most employees. If you retire at age 62 or older with at least 20 years of service, the multiplier increases to 1.1%. Special category employees (law enforcement, firefighters, air traffic controllers) receive 1.7% for the first 20 years and 1% thereafter. Your high-3 is your highest average basic pay during any 3 consecutive years of service.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">What is the FERS supplement?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">The FERS supplement is a special benefit that approximates the Social Security benefit you earned while employed under FERS. It's designed to bridge the income gap from retirement until you're eligible for Social Security at age 62. You only receive the supplement if you retire at your Minimum Retirement Age (MRA) with 30 years of service, or at age 60 with 20 years. The supplement ends when you turn 62, regardless of when you claim Social Security.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">When can I retire under FERS?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">FERS offers several retirement options depending on your age and service. Immediate retirement is available at age 62 with 5 years of service, age 60 with 20 years, or at your MRA with 30 years. You can also retire at your MRA with 10-29 years, but you'll face a 5% per year reduction for each year under age 62. Your MRA depends on your birth year — it's age 56 for those born 1953-1964, and gradually increases to age 57 for those born 1970 or later.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">Should I buy back my military time?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">Buying back military service credit can increase your FERS annuity by adding years to your creditable service calculation. The cost is typically 3% of your military base pay, plus interest if you make the deposit after your first three years of federal civilian service. Whether it makes financial sense depends on your specific situation — how much service time you'd add, how close you are to retirement, and your life expectancy. We can calculate the exact payback period and lifetime value for your situation.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">What happens to my pension if I leave early?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">If you leave federal service before meeting immediate retirement eligibility, you have options depending on your years of service. With at least 5 years of FERS coverage, you can leave your contributions in the system and receive a deferred retirement benefit starting at age 62. With 10 or more years, you can begin receiving benefits at your MRA, though with a reduction if you're under 62. Alternatively, you can request a refund of your FERS contributions, but this means forfeiting your future annuity and the government's contributions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>You're confused about when you can actually retire</h3>
-                <p>MRA, immediate retirement, postponed retirement, FERS supplement eligibility — the rules are complex and making the wrong decision could cost you thousands.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't know what your FERS annuity will be</h3>
-                <p>The high-3 average, creditable service, sick leave credit, part-time service adjustments — you need an accurate calculation to plan your retirement income.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're not sure if you should buy back military time</h3>
-                <p>Should you make a military service deposit? Does it make financial sense? How much will it cost and how much will it increase your annuity?</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're worried about the FERS supplement ending at 62</h3>
-                <p>The FERS supplement bridges the gap to Social Security — but it stops at age 62, potentially creating an income cliff you're not prepared for.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">How We Help</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Personalized FERS Retirement Planning</h3>
-                <p>We analyze your specific FERS benefits to determine your optimal retirement date and model your exact annuity based on your service history, salary, and personal goals.</p>
-                <p>According to OPM guidelines, your FERS annuity is calculated using a formula based on your years of creditable service and your high-3 average salary. We ensure every factor is accounted for — including sick leave credit, part-time service adjustments, and special provisions for law enforcement officers, firefighters, and air traffic controllers.</p>
-            </div>
-            <div class="service-solution-right">
-                <h4>Our FERS Planning Includes:</h4>
-                <ul class="service-solution-list">
-                    <li>Eligibility analysis for immediate, early, and deferred retirement</li>
-                    <li>Precise annuity calculation including all service credits</li>
-                    <li>High-3 salary projection and optimization strategies</li>
-                    <li>MRA determination and retirement date optimization</li>
-                    <li>FERS supplement calculation and income bridge planning</li>
-                    <li>Survivor benefit election analysis (full, partial, or none)</li>
-                    <li>Military buyback cost-benefit analysis</li>
-                    <li>Coordination with TSP, Social Security, and FEHB planning</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Benefits Review</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>We gather your SF-50s, leave balances, and service history to understand your complete FERS profile and eligibility.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Calculate & Model</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Model your FERS annuity under different retirement scenarios, factor in the supplement, and identify your optimal retirement date.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Retirement Strategy</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Build your complete federal retirement plan integrating FERS, TSP, Social Security, and FEHB for maximum lifetime income.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">FERS Planning FAQ</h2>
-            <p class="faq-sub">Everything you need to know about FERS retirement and your federal pension.</p>
-            <a href="/contact/" class="resources-cta">Schedule FERS Review</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How is my FERS annuity calculated?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Your FERS annuity is calculated using the formula: years of creditable service × high-3 average salary × multiplier. The standard multiplier is 1% for most employees. If you retire at age 62 or older with at least 20 years of service, the multiplier increases to 1.1%. Special category employees (law enforcement, firefighters, air traffic controllers) receive 1.7% for the first 20 years and 1% thereafter. Your high-3 is your highest average basic pay during any 3 consecutive years of service.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is the FERS supplement?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The FERS supplement is a special benefit that approximates the Social Security benefit you earned while employed under FERS. It's designed to bridge the income gap from retirement until you're eligible for Social Security at age 62. You only receive the supplement if you retire at your Minimum Retirement Age (MRA) with 30 years of service, or at age 60 with 20 years. The supplement ends when you turn 62, regardless of when you claim Social Security.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">When can I retire under FERS?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">FERS offers several retirement options depending on your age and service. Immediate retirement is available at age 62 with 5 years of service, age 60 with 20 years, or at your MRA with 30 years. You can also retire at your MRA with 10-29 years, but you'll face a 5% per year reduction for each year under age 62. Your MRA depends on your birth year — it's age 56 for those born 1953-1964, and gradually increases to age 57 for those born 1970 or later.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Should I buy back my military time?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Buying back military service credit can increase your FERS annuity by adding years to your creditable service calculation. The cost is typically 3% of your military base pay, plus interest if you make the deposit after your first three years of federal civilian service. Whether it makes financial sense depends on your specific situation — how much service time you'd add, how close you are to retirement, and your life expectancy. We can calculate the exact payback period and lifetime value for your situation.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What happens to my pension if I leave early?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">If you leave federal service before meeting immediate retirement eligibility, you have options depending on your years of service. With at least 5 years of FERS coverage, you can leave your contributions in the system and receive a deferred retirement benefit starting at age 62. With 10 or more years, you can begin receiving benefits at your MRA, though with a reduction if you're under 62. Alternatively, you can request a refund of your FERS contributions, but this means forfeiting your future annuity and the government's contributions.</div>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <h2 class="related-services-h2">Complete Your Federal Retirement Plan</h2>
-        <div class="service-related-grid">
-            <a href="/services/federal-benefits/tsp-planning/" class="service-related-link">
-                <span class="service-related-name">TSP Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/fehb-retirement/" class="service-related-link">
-                <span class="service-related-name">FEHB in Retirement</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/" class="service-related-link">
-                <span class="service-related-name">All Federal Benefits</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
-    </div>
-</section>
- */
+<script>
+(function() {
+  document.querySelectorAll('.fed-ed-faq-trigger').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.fed-ed-faq-item');
+      var isOpen = item.classList.contains('active');
+      
+      // Close all items
+      document.querySelectorAll('.fed-ed-faq-item').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      
+      // Open clicked item if it wasn't already open
+      if (!isOpen) {
+        item.classList.add('active');
+      }
+    });
+  });
+  
+  // Smooth scroll for navigation links
+  document.querySelectorAll('.fed-ed-fers-nav a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+})();
+</script> */
 }
 
 /* Related Blog Posts */
@@ -909,215 +1478,784 @@
 <!-- Service Content -->
 <div class="service-content">
   
+<style>
+/* Editorial FERS Deep-dive Styles */
+.fed-ed-fers-hero {
+  background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%);
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
 
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">FERS RETIREMENT</p>
-            <h2 >Federal Employee Retirement Planning</h2>
-            <p class="titan-subhero-body">The Federal Employees Retirement System (FERS) is the foundation of your federal retirement — but understanding when you can retire, how your annuity is calculated, and how to optimize your benefits requires expertise most federal employees don't have.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">SCHEDULE FERS ANALYSIS <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/photos/federal/capitalwealth-federal-us-capitol-dome.jpg" alt="Federal employee retirement planning with Capitol dome" class="titan-subhero-img">
+.fed-ed-fers-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.fed-ed-fers-hero-content {
+  max-width: 500px;
+}
+
+.fed-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.fed-ed-fers-headline {
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: #003870;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-fers-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-fers-desc {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.fed-ed-fers-ctas {
+  display: flex;
+  gap: 1rem;
+}
+
+.fed-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fed-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+.fed-ed-fers-hero-image-container {
+  position: relative;
+}
+
+.fed-ed-fers-hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
+}
+
+.fed-ed-pullquote {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(24px);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #F09F54;
+}
+
+.fed-ed-pullquote-text {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #003870;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-pullquote-author {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.fed-ed-fers-nav {
+  position: sticky;
+  top: 2rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fed-ed-fers-nav-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-fers-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fed-ed-fers-nav-links li {
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-fers-nav-links a {
+  font-family: var(--font-body);
+  color: #003870;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.fed-ed-fers-nav-links a:hover {
+  color: #F09F54;
+}
+
+.fed-ed-fers-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-fers-main {
+  padding: 4rem 0;
+}
+
+.fed-ed-fers-section {
+  margin-bottom: 6rem;
+}
+
+.fed-ed-fers-section-title {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  color: #003870;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.fed-ed-fers-section-title em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-fers-body {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-glass-card {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.fed-ed-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.fed-ed-stat {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fb;
+  border-radius: 12px;
+}
+
+.fed-ed-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #003870;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.fed-ed-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
+}
+
+.fed-ed-comparison-table th {
+  background: #003870;
+  color: white;
+  padding: 1rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-align: left;
+}
+
+.fed-ed-comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-family: var(--font-body);
+  color: #64748b;
+}
+
+.fed-ed-comparison-table tr:nth-child(even) {
+  background: #f8f9fb;
+}
+
+.fed-ed-comparison-table .highlight {
+  background: #F09F54 !important;
+  color: white;
+}
+
+.fed-ed-faq {
+  padding: 6rem 0;
+  background: #f8f9fb;
+}
+
+.fed-ed-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.fed-ed-faq-accordion {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
+}
+
+.fed-ed-faq-item {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.fed-ed-faq-item:last-child {
+  border-bottom: none;
+}
+
+.fed-ed-faq-trigger {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 2rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.fed-ed-faq-trigger:hover {
+  background: #f8f9fb;
+}
+
+.fed-ed-faq-question {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #003870;
+  font-size: 1.1rem;
+}
+
+.fed-ed-faq-icon {
+  color: #F09F54;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.fed-ed-faq-item.active .fed-ed-faq-icon {
+  transform: rotate(45deg);
+}
+
+.fed-ed-faq-panel {
+  padding: 0 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.fed-ed-faq-item.active .fed-ed-faq-panel {
+  max-height: 400px;
+  padding: 0 2rem 2rem;
+}
+
+.fed-ed-faq-answer {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: #64748b;
+}
+
+@media (max-width: 1024px) {
+  .fed-ed-fers-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .fed-ed-fers-nav {
+    position: relative;
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .fed-ed-fers-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .fed-ed-fers-headline {
+    font-size: 2.5rem;
+  }
+  
+  .fed-ed-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .fed-ed-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="fed-ed-fers-hero">
+  <div class="fed-ed-fers-hero-inner">
+    <div class="fed-ed-fers-hero-content">
+      <span class="fed-ed-chapter-label">CHAPTER I: FERS FUNDAMENTALS</span>
+      <h1 class="fed-ed-fers-headline">Your <em>Foundation</em> for Retirement</h1>
+      <p class="fed-ed-fers-desc">The Federal Employees Retirement System forms the cornerstone of your federal retirement. Understanding when you can retire, how your annuity is calculated, and how to optimize your benefits requires specialized expertise.</p>
+      
+      <div class="fed-ed-fers-ctas">
+        <a href="/contact/" class="fed-ed-btn-primary">Schedule FERS Analysis</a>
+      </div>
     </div>
+    
+    <div class="fed-ed-fers-hero-image-container">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-capitol-dome.jpg" alt="US Capitol dome representing FERS retirement foundation" class="fed-ed-fers-hero-image">
+      <div class="fed-ed-pullquote">
+        <p class="fed-ed-pullquote-text">"Your FERS annuity is the foundation. Everything else builds on top of it."</p>
+        <p class="fed-ed-pullquote-author">— Mike Stevens, IAR</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<section class="quote-bar">
-    <div class="quote-bar-inner">
-        <p class="quote-bar-text">"Your FERS annuity is the foundation. Everything else builds on top of it."</p>
-        <p class="quote-bar-author">— Mike Stevens, IAR</p>
-    </div>
+<!-- MAIN CONTENT WITH SIDE NAV -->
+<section class="fed-ed-fers-content">
+  <aside class="fed-ed-fers-nav">
+    <h3 class="fed-ed-fers-nav-title">On This Page</h3>
+    <ul class="fed-ed-fers-nav-links">
+      <li><a href="#eligibility">Retirement Eligibility</a></li>
+      <li><a href="#calculation">Annuity Calculation</a></li>
+      <li><a href="#supplement">FERS Supplement</a></li>
+      <li><a href="#survivor">Survivor Benefits</a></li>
+      <li><a href="#military">Military Buyback</a></li>
+      <li><a href="#optimization">Optimization Strategies</a></li>
+    </ul>
+  </aside>
+  
+  <main class="fed-ed-fers-main">
+    <!-- RETIREMENT ELIGIBILITY -->
+    <section id="eligibility" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER II: ELIGIBILITY</span>
+      <h2 class="fed-ed-fers-section-title">When Can You <em>Retire</em>?</h2>
+      
+      <p class="fed-ed-fers-body">FERS offers multiple retirement pathways, each with different requirements and benefit calculations. Understanding your options is crucial for optimizing your retirement date and maximizing lifetime benefits.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Immediate Retirement Options</h3>
+        
+        <table class="fed-ed-comparison-table">
+          <thead>
+            <tr>
+              <th>Option</th>
+              <th>Age Requirement</th>
+              <th>Service Requirement</th>
+              <th>Pension Reduction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Age 62 + 5 years</strong></td>
+              <td>62</td>
+              <td>5 years</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td><strong>Age 60 + 20 years</strong></td>
+              <td>60</td>
+              <td>20 years</td>
+              <td>None</td>
+            </tr>
+            <tr class="highlight">
+              <td><strong>MRA + 30 years</strong></td>
+              <td>Your MRA</td>
+              <td>30 years</td>
+              <td>None + FERS Supplement</td>
+            </tr>
+            <tr>
+              <td><strong>MRA + 10 years</strong></td>
+              <td>Your MRA</td>
+              <td>10-29 years</td>
+              <td>5% per year under 62</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <p class="fed-ed-fers-body">Your Minimum Retirement Age (MRA) depends on your birth year, ranging from 56 to 57. For federal employees born between 1953-1964, the MRA is 56. For those born in 1970 or later, it's 57.</p>
+      
+      <div class="fed-ed-stats-grid">
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">30</span>
+          <span class="fed-ed-stat-label">Years for Full Benefits</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">$1,800</span>
+          <span class="fed-ed-stat-label">Avg Monthly FERS Supplement</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">62</span>
+          <span class="fed-ed-stat-label">Age When Supplement Ends</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ANNUITY CALCULATION -->
+    <section id="calculation" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER III: CALCULATION</span>
+      <h2 class="fed-ed-fers-section-title">The <em>Formula</em> Behind Your Pension</h2>
+      
+      <p class="fed-ed-fers-body">Your FERS annuity calculation follows a specific formula, but the details matter significantly. Small changes in timing, service credit, or salary can impact your lifetime benefits by thousands.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1.5rem; text-align: center;">FERS Annuity Formula</h3>
+        <div style="text-align: center; font-family: var(--font-serif-display); font-size: 1.5rem; color: #003870; margin: 2rem 0;">
+          <strong>Years of Service × High-3 Salary × Multiplier</strong>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;">
+          <div style="text-align: center;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 0.5rem;">Standard Multiplier</h4>
+            <p style="font-family: var(--font-serif-display); font-size: 2rem; color: #003870; margin-bottom: 0.5rem;">1.0%</p>
+            <p style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b;">Most employees</p>
+          </div>
+          <div style="text-align: center;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 0.5rem;">Enhanced Multiplier</h4>
+            <p style="font-family: var(--font-serif-display); font-size: 2rem; color: #003870; margin-bottom: 0.5rem;">1.1%</p>
+            <p style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b;">Age 62+ with 20+ years</p>
+          </div>
+          <div style="text-align: center;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 0.5rem;">Special Category</h4>
+            <p style="font-family: var(--font-serif-display); font-size: 2rem; color: #003870; margin-bottom: 0.5rem;">1.7%</p>
+            <p style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b;">LEO/ATC/Fire (first 20 yrs)</p>
+          </div>
+        </div>
+      </div>
+      
+      <p class="fed-ed-fers-body">Your high-3 average salary is calculated using your highest average basic pay during any 3 consecutive years of federal service. This includes locality pay but excludes overtime, bonuses, and other premium payments.</p>
+      
+      <p class="fed-ed-fers-body">From Mike's book: "Tom Merrick learned the hard way that his final promotion pushed him into a higher tax bracket without significantly increasing his high-3 — the timing cost him thousands in net retirement income."</p>
+    </section>
+    
+    <!-- FERS SUPPLEMENT -->
+    <section id="supplement" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER IV: THE BRIDGE</span>
+      <h2 class="fed-ed-fers-section-title">FERS <em>Supplement</em> Strategy</h2>
+      
+      <p class="fed-ed-fers-body">The FERS supplement bridges the income gap from retirement until you're eligible for Social Security at age 62. This benefit can provide $1,200-$2,000 per month, but it comes with specific eligibility requirements and income limitations.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">FERS Supplement Eligibility</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">MRA + 30 years:</strong> Full supplement with no reduction
+          </li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Age 60 + 20 years:</strong> Full supplement with no reduction
+          </li>
+          <li style="padding: 0.5rem 0; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Annual Earnings Test:</strong> $1 reduction for every $2 over $23,400 (2025)
+          </li>
+        </ul>
+      </div>
+      
+      <p class="fed-ed-fers-body">The supplement is subject to the Social Security earnings test — if you work after retirement and earn more than the annual limit, your supplement is reduced. This makes post-retirement employment planning crucial for supplement recipients.</p>
+      
+      <p class="fed-ed-fers-body">Important: The FERS supplement automatically ends when you turn 62, regardless of when you actually claim Social Security. This creates a potential income gap that must be planned for in advance.</p>
+    </section>
+    
+    <!-- SURVIVOR BENEFITS -->
+    <section id="survivor" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER V: PROTECTION</span>
+      <h2 class="fed-ed-fers-section-title">Survivor <em>Benefits</em> Strategy</h2>
+      
+      <p class="fed-ed-fers-body">Your FERS survivor benefit election is irrevocable and significantly impacts both your retirement income and your spouse's financial security. This decision requires careful analysis of your specific situation.</p>
+      
+      <div class="fed-ed-glass-card">
+        <table class="fed-ed-comparison-table">
+          <thead>
+            <tr>
+              <th>Survivor Benefit Option</th>
+              <th>Cost to Retiree</th>
+              <th>Survivor Receives</th>
+              <th>Best For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Full Survivor Benefit</strong></td>
+              <td>10% reduction</td>
+              <td>50% of annuity</td>
+              <td>Spouse depends on pension income</td>
+            </tr>
+            <tr>
+              <td><strong>Partial Survivor Benefit</strong></td>
+              <td>5% reduction</td>
+              <td>25% of annuity</td>
+              <td>Some spouse protection needed</td>
+            </tr>
+            <tr class="highlight">
+              <td><strong>No Survivor Benefit</strong></td>
+              <td>No reduction</td>
+              <td>Nothing</td>
+              <td>Spouse has independent retirement</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <p class="fed-ed-fers-body">Many federal employees automatically choose the full survivor benefit without analyzing alternatives. Life insurance, spousal benefits, and other assets may provide better value than reducing your pension by 10% for life.</p>
+    </section>
+    
+    <!-- MILITARY BUYBACK -->
+    <section id="military" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER VI: SERVICE CREDIT</span>
+      <h2 class="fed-ed-fers-section-title">Military <em>Buyback</em> Analysis</h2>
+      
+      <p class="fed-ed-fers-body">Buying back military service credit can significantly increase your FERS annuity by adding years to your creditable service calculation. The decision requires a detailed cost-benefit analysis based on your specific situation.</p>
+      
+      <div class="fed-ed-stats-grid">
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">3%</span>
+          <span class="fed-ed-stat-label">Base Military Pay Cost</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">$8,000</span>
+          <span class="fed-ed-stat-label">Example Buyback Cost</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">$140,000</span>
+          <span class="fed-ed-stat-label">Lifetime Pension Increase</span>
+        </div>
+      </div>
+      
+      <p class="fed-ed-fers-body">From Mike's book: The military buyback example shows a federal employee who paid $8,000 to buy back 4 years of military service, which increased their annual pension by $2,400 and provided over $140,000 in additional lifetime benefits.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Key Considerations</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Payback Period:</strong> How long to recover the deposit cost
+          </li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Life Expectancy:</strong> Total lifetime value of increased benefits
+          </li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Interest Timing:</strong> Deposit within 3 years avoids interest charges
+          </li>
+          <li style="padding: 0.5rem 0; font-family: var(--font-body); color: #64748b;">
+            <strong style="color: #003870;">Survivor Impact:</strong> Increased benefits for spouse if elected
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- OPTIMIZATION -->
+    <section id="optimization" class="fed-ed-fers-section">
+      <span class="fed-ed-chapter-label">CHAPTER VII: OPTIMIZATION</span>
+      <h2 class="fed-ed-fers-section-title">Maximizing Your <em>FERS</em> Benefits</h2>
+      
+      <p class="fed-ed-fers-body">Optimizing your FERS benefits requires coordinating multiple moving pieces: retirement timing, high-3 salary management, sick leave conversion, and benefit elections. Small optimizations can result in significant lifetime value.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Optimization Strategies</h3>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div>
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Timing Strategies</h4>
+            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">
+              <li>Retirement date optimization</li>
+              <li>High-3 salary timing</li>
+              <li>Sick leave maximization</li>
+              <li>Promotional timing analysis</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Benefit Coordination</h4>
+            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">
+              <li>TSP withdrawal sequencing</li>
+              <li>Social Security timing</li>
+              <li>Tax minimization strategies</li>
+              <li>Healthcare continuation planning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <p class="fed-ed-fers-body">Your FERS pension includes Cost of Living Adjustments (COLAs) that protect against inflation. The COLA formula provides full adjustments when inflation is 2% or less, caps adjustments at 2% when inflation is 2.1-3%, and provides inflation minus 1% when inflation exceeds 3%.</p>
+    </section>
+  </main>
 </section>
 
-
-<section class="key-facts">
-    <div class="key-facts-inner">
-        <div class="key-facts-item">
-            <h3>Analysis</h3>
-            <p>Full FERS pension calculation</p>
-        </div>
-        <div class="key-facts-item">
-            <h3>Supplement</h3>
-            <p>Included in analysis</p>
-        </div>
-        <div class="key-facts-item">
-            <h3>MRA Options</h3>
-            <p>Evaluated</p>
-        </div>
-        <div class="key-facts-item">
-            <h3>Spousal Benefits</h3>
-            <p>Survivor annuity planning</p>
-        </div>
-        <div class="key-facts-item">
-            <h3>Cost</h3>
-            <p>Included</p>
-        </div>
+<!-- FAQ SECTION -->
+<section class="fed-ed-faq">
+  <div class="fed-ed-faq-inner">
+    <div>
+      <span class="fed-ed-chapter-label">CHAPTER VIII: COMMON QUESTIONS</span>
+      <h2 class="fed-ed-fers-section-title">FERS Planning <em>FAQ</em></h2>
+      <p class="fed-ed-fers-body">Everything you need to know about FERS retirement and your federal pension planning.</p>
+      <div style="margin-top: 2rem;">
+        <a href="/contact/" class="fed-ed-btn-primary">Schedule FERS Review</a>
+      </div>
     </div>
+    
+    <div class="fed-ed-faq-accordion">
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">How is my FERS annuity calculated?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">Your FERS annuity is calculated using the formula: years of creditable service × high-3 average salary × multiplier. The standard multiplier is 1% for most employees. If you retire at age 62 or older with at least 20 years of service, the multiplier increases to 1.1%. Special category employees (law enforcement, firefighters, air traffic controllers) receive 1.7% for the first 20 years and 1% thereafter. Your high-3 is your highest average basic pay during any 3 consecutive years of service.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">What is the FERS supplement?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">The FERS supplement is a special benefit that approximates the Social Security benefit you earned while employed under FERS. It's designed to bridge the income gap from retirement until you're eligible for Social Security at age 62. You only receive the supplement if you retire at your Minimum Retirement Age (MRA) with 30 years of service, or at age 60 with 20 years. The supplement ends when you turn 62, regardless of when you claim Social Security.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">When can I retire under FERS?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">FERS offers several retirement options depending on your age and service. Immediate retirement is available at age 62 with 5 years of service, age 60 with 20 years, or at your MRA with 30 years. You can also retire at your MRA with 10-29 years, but you'll face a 5% per year reduction for each year under age 62. Your MRA depends on your birth year — it's age 56 for those born 1953-1964, and gradually increases to age 57 for those born 1970 or later.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">Should I buy back my military time?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">Buying back military service credit can increase your FERS annuity by adding years to your creditable service calculation. The cost is typically 3% of your military base pay, plus interest if you make the deposit after your first three years of federal civilian service. Whether it makes financial sense depends on your specific situation — how much service time you'd add, how close you are to retirement, and your life expectancy. We can calculate the exact payback period and lifetime value for your situation.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">What happens to my pension if I leave early?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">If you leave federal service before meeting immediate retirement eligibility, you have options depending on your years of service. With at least 5 years of FERS coverage, you can leave your contributions in the system and receive a deferred retirement benefit starting at age 62. With 10 or more years, you can begin receiving benefits at your MRA, though with a reduction if you're under 62. Alternatively, you can request a refund of your FERS contributions, but this means forfeiting your future annuity and the government's contributions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>You're confused about when you can actually retire</h3>
-                <p>MRA, immediate retirement, postponed retirement, FERS supplement eligibility — the rules are complex and making the wrong decision could cost you thousands.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't know what your FERS annuity will be</h3>
-                <p>The high-3 average, creditable service, sick leave credit, part-time service adjustments — you need an accurate calculation to plan your retirement income.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're not sure if you should buy back military time</h3>
-                <p>Should you make a military service deposit? Does it make financial sense? How much will it cost and how much will it increase your annuity?</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're worried about the FERS supplement ending at 62</h3>
-                <p>The FERS supplement bridges the gap to Social Security — but it stops at age 62, potentially creating an income cliff you're not prepared for.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">How We Help</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Personalized FERS Retirement Planning</h3>
-                <p>We analyze your specific FERS benefits to determine your optimal retirement date and model your exact annuity based on your service history, salary, and personal goals.</p>
-                <p>According to OPM guidelines, your FERS annuity is calculated using a formula based on your years of creditable service and your high-3 average salary. We ensure every factor is accounted for — including sick leave credit, part-time service adjustments, and special provisions for law enforcement officers, firefighters, and air traffic controllers.</p>
-            </div>
-            <div class="service-solution-right">
-                <h4>Our FERS Planning Includes:</h4>
-                <ul class="service-solution-list">
-                    <li>Eligibility analysis for immediate, early, and deferred retirement</li>
-                    <li>Precise annuity calculation including all service credits</li>
-                    <li>High-3 salary projection and optimization strategies</li>
-                    <li>MRA determination and retirement date optimization</li>
-                    <li>FERS supplement calculation and income bridge planning</li>
-                    <li>Survivor benefit election analysis (full, partial, or none)</li>
-                    <li>Military buyback cost-benefit analysis</li>
-                    <li>Coordination with TSP, Social Security, and FEHB planning</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Benefits Review</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>We gather your SF-50s, leave balances, and service history to understand your complete FERS profile and eligibility.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Calculate & Model</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Model your FERS annuity under different retirement scenarios, factor in the supplement, and identify your optimal retirement date.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Retirement Strategy</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Build your complete federal retirement plan integrating FERS, TSP, Social Security, and FEHB for maximum lifetime income.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">FERS Planning FAQ</h2>
-            <p class="faq-sub">Everything you need to know about FERS retirement and your federal pension.</p>
-            <a href="/contact/" class="resources-cta">Schedule FERS Review</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How is my FERS annuity calculated?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Your FERS annuity is calculated using the formula: years of creditable service × high-3 average salary × multiplier. The standard multiplier is 1% for most employees. If you retire at age 62 or older with at least 20 years of service, the multiplier increases to 1.1%. Special category employees (law enforcement, firefighters, air traffic controllers) receive 1.7% for the first 20 years and 1% thereafter. Your high-3 is your highest average basic pay during any 3 consecutive years of service.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is the FERS supplement?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The FERS supplement is a special benefit that approximates the Social Security benefit you earned while employed under FERS. It's designed to bridge the income gap from retirement until you're eligible for Social Security at age 62. You only receive the supplement if you retire at your Minimum Retirement Age (MRA) with 30 years of service, or at age 60 with 20 years. The supplement ends when you turn 62, regardless of when you claim Social Security.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">When can I retire under FERS?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">FERS offers several retirement options depending on your age and service. Immediate retirement is available at age 62 with 5 years of service, age 60 with 20 years, or at your MRA with 30 years. You can also retire at your MRA with 10-29 years, but you'll face a 5% per year reduction for each year under age 62. Your MRA depends on your birth year — it's age 56 for those born 1953-1964, and gradually increases to age 57 for those born 1970 or later.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Should I buy back my military time?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Buying back military service credit can increase your FERS annuity by adding years to your creditable service calculation. The cost is typically 3% of your military base pay, plus interest if you make the deposit after your first three years of federal civilian service. Whether it makes financial sense depends on your specific situation — how much service time you'd add, how close you are to retirement, and your life expectancy. We can calculate the exact payback period and lifetime value for your situation.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What happens to my pension if I leave early?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">If you leave federal service before meeting immediate retirement eligibility, you have options depending on your years of service. With at least 5 years of FERS coverage, you can leave your contributions in the system and receive a deferred retirement benefit starting at age 62. With 10 or more years, you can begin receiving benefits at your MRA, though with a reduction if you're under 62. Alternatively, you can request a refund of your FERS contributions, but this means forfeiting your future annuity and the government's contributions.</div>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <h2 class="related-services-h2">Complete Your Federal Retirement Plan</h2>
-        <div class="service-related-grid">
-            <a href="/services/federal-benefits/tsp-planning/" class="service-related-link">
-                <span class="service-related-name">TSP Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/fehb-retirement/" class="service-related-link">
-                <span class="service-related-name">FEHB in Retirement</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/" class="service-related-link">
-                <span class="service-related-name">All Federal Benefits</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
-    </div>
-</section>
-
+<script>
+(function() {
+  document.querySelectorAll('.fed-ed-faq-trigger').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.fed-ed-faq-item');
+      var isOpen = item.classList.contains('active');
+      
+      // Close all items
+      document.querySelectorAll('.fed-ed-faq-item').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      
+      // Open clicked item if it wasn't already open
+      if (!isOpen) {
+        item.classList.add('active');
+      }
+    });
+  });
+  
+  // Smooth scroll for navigation links
+  document.querySelectorAll('.fed-ed-fers-nav a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+})();
+</script>
 </div>
 
 <!-- Related Blog Posts -->

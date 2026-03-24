@@ -503,304 +503,601 @@
 /* Content area */
 .service-content {
   /* Content is injected here via 
+<style>
+.fed-ed-hero {
+  background: #f8f9fb;
+  padding: 6rem 0 8rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
 
-<section class="svc-hero">
-    <div class="svc-hero-inner">
-        <p class="titan-section-label">FEDERAL EMPLOYEE SPECIALISTS</p>
-        <h2 class="svc-hero-h1">Your Service Deserves a Secure Retirement</h2>
-        <p class="svc-hero-sub">Federal employees have one of the best benefits packages in the country — but maximizing FERS, TSP, FEGLI, and FEHB requires specialized expertise most advisors don't have. We speak your language.</p>
+.fed-ed-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.fed-ed-hero-headline {
+  font-family: var(--font-serif-display);
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #003870;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fed-ed-hero-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-hero-body {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.fed-ed-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.fed-ed-stat {
+  text-align: center;
+}
+
+.fed-ed-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  font-weight: 600;
+  color: #003870;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.fed-ed-hero-image {
+  margin-top: 5rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fed-ed-hero-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
+}
+
+.fed-ed-modules {
+  padding: 8rem 0;
+  background: white;
+}
+
+.fed-ed-modules-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-modules-intro {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.fed-ed-modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+}
+
+.fed-ed-module {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.fed-ed-module:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,56,112,0.1);
+}
+
+.fed-ed-module-icon {
+  width: 48px;
+  height: 48px;
+  background: #F09F54;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-module-number {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: #F09F54;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.fed-ed-module-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  color: #003870;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-module-desc {
+  font-family: var(--font-body);
+  color: #64748b;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.fed-ed-module-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.fed-ed-module-features li {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #64748b;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.fed-ed-module-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #F09F54;
+  font-weight: 600;
+}
+
+.fed-ed-module-link {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #003870;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fed-ed-dark-section {
+  background: #003870;
+  padding: 8rem 0;
+  color: white;
+}
+
+.fed-ed-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.fed-ed-gap-section {
+  padding: 8rem 0;
+  background: #f3f4f6;
+}
+
+.fed-ed-gap-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-gap-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.fed-ed-pullquote {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #003870;
+  padding-left: 2rem;
+  border-left: 4px solid #F09F54;
+  margin: 3rem 0;
+}
+
+.fed-ed-process {
+  padding: 8rem 0;
+  background: white;
+}
+
+.fed-ed-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.fed-ed-step {
+  text-align: center;
+  padding: 2rem;
+}
+
+.fed-ed-step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #F09F54;
+  color: white;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+.fed-ed-step-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  color: #003870;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-step-desc {
+  font-family: var(--font-body);
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.fed-ed-cta {
+  padding: 8rem 0;
+  background: #f8f9fb;
+  text-align: center;
+}
+
+.fed-ed-cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fed-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .fed-ed-hero-headline {
+    font-size: 2.5rem;
+  }
+  
+  .fed-ed-hero-stats {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .fed-ed-modules-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .fed-ed-gap-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .fed-ed-process-steps {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="fed-ed-hero">
+  <div class="fed-ed-hero-inner">
+    <span class="fed-ed-chapter-label">FEDERAL EMPLOYEE SPECIALISTS</span>
+    <h1 class="fed-ed-hero-headline">The Federal <em>Architecture</em> of Retirement</h1>
+    <p class="fed-ed-hero-body">Your decades of service have earned you one of the most comprehensive benefits packages in America. Our expertise ensures you maximize every dollar of FERS, TSP, FEGLI, and FEHB in coordination.</p>
+    
+    <div class="fed-ed-hero-stats">
+      <div class="fed-ed-stat">
+        <span class="fed-ed-stat-number">500+</span>
+        <span class="fed-ed-stat-label">Federal Employees Served</span>
+      </div>
+      <div class="fed-ed-stat">
+        <span class="fed-ed-stat-number">$3,200</span>
+        <span class="fed-ed-stat-label">Avg FEGLI Savings/Year</span>
+      </div>
+      <div class="fed-ed-stat">
+        <span class="fed-ed-stat-number">95%</span>
+        <span class="fed-ed-stat-label">Client Satisfaction</span>
+      </div>
+    </div>
+    
+    <div class="fed-ed-hero-image">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-capitol-golden-hour.jpg" alt="US Capitol building at golden hour representing federal employee retirement planning">
+    </div>
+  </div>
+</section>
+
+<!-- FEDERAL BENEFITS MODULES -->
+<section class="fed-ed-modules">
+  <div class="fed-ed-modules-inner">
+    <div class="fed-ed-modules-intro">
+      <span class="fed-ed-chapter-label">CHAPTER I: EXPLORE FEDERAL BENEFITS</span>
+      <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">Seven Pillars of <em>Federal</em> Retirement</h2>
+      <p class="fed-ed-hero-body">Each benefit requires specialized expertise. Click any module for in-depth guidance, calculators, and optimization strategies.</p>
+    </div>
+    
+    <div class="fed-ed-modules-grid">
+      <a href="/services/federal-benefits/fers-retirement/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M12 2L2 7v10c0 5.55 3.84 9 9 12 5.16-3 9-6.45 9-12V7l-10-5z"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 01</div>
+        <h3 class="fed-ed-module-title">FERS Retirement</h3>
+        <p class="fed-ed-module-desc">The foundation of your federal retirement. Pension calculations, optimal retirement dates, and FERS supplement bridge planning.</p>
+        <ul class="fed-ed-module-features">
+          <li>Precise annuity calculations</li>
+          <li>MRA optimization</li>
+          <li>Survivor benefit analysis</li>
+          <li>Military buyback evaluation</li>
+        </ul>
+        <span class="fed-ed-module-link">Explore FERS →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/tsp-planning/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 02</div>
+        <h3 class="fed-ed-module-title">TSP Planning</h3>
+        <p class="fed-ed-module-desc">Maximize your Thrift Savings Plan with optimal allocation, contribution strategies, and tax-efficient withdrawals.</p>
+        <ul class="fed-ed-module-features">
+          <li>Fund allocation strategy</li>
+          <li>Roth vs traditional analysis</li>
+          <li>Withdrawal optimization</li>
+          <li>Rollover decisions</li>
+        </ul>
+        <span class="fed-ed-module-link">Optimize TSP →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/fegli/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+            <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 03</div>
+        <h3 class="fed-ed-module-title">FEGLI Analysis</h3>
+        <p class="fed-ed-module-desc">Most federal employees are over-insured. We analyze your life insurance needs and compare FEGLI with private alternatives.</p>
+        <ul class="fed-ed-module-features">
+          <li>Coverage needs analysis</li>
+          <li>Cost comparison studies</li>
+          <li>Private insurance quotes</li>
+          <li>Beneficiary optimization</li>
+        </ul>
+        <span class="fed-ed-module-link">Analyze FEGLI →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/fehb-retirement/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 04</div>
+        <h3 class="fed-ed-module-title">FEHB Coordination</h3>
+        <p class="fed-ed-module-desc">Navigate health benefits into retirement, Medicare coordination, and plan selection optimization.</p>
+        <ul class="fed-ed-module-features">
+          <li>Medicare coordination</li>
+          <li>Plan selection guidance</li>
+          <li>5-year rule compliance</li>
+          <li>FSA strategies</li>
+        </ul>
+        <span class="fed-ed-module-link">Plan FEHB →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/social-security-federal/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 05</div>
+        <h3 class="fed-ed-module-title">Social Security</h3>
+        <p class="fed-ed-module-desc">Coordinate Social Security with your FERS pension and bridge the gap with FERS supplement planning.</p>
+        <ul class="fed-ed-module-features">
+          <li>FERS supplement bridge</li>
+          <li>WEP/GPO eliminated benefits</li>
+          <li>Optimal claiming strategy</li>
+          <li>Spousal coordination</li>
+        </ul>
+        <span class="fed-ed-module-link">Optimize SS →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/fers-calculator/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <rect x="4" y="4" width="16" height="16" rx="2"/>
+            <path d="M9 9h6v6H9z"/>
+            <path d="M9 1v6M15 1v6M9 17v6M15 17v6M1 9h6M17 9h6M1 15h6M17 15h6"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 06</div>
+        <h3 class="fed-ed-module-title">FERS Calculator</h3>
+        <p class="fed-ed-module-desc">Calculate your FERS annuity based on years of service, high-3 salary, and retirement date scenarios.</p>
+        <ul class="fed-ed-module-features">
+          <li>Instant annuity estimates</li>
+          <li>Retirement date comparison</li>
+          <li>Supplement projections</li>
+          <li>Survivor benefit impact</li>
+        </ul>
+        <span class="fed-ed-module-link">Calculate Now →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/federal-retirement-checklist/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14,2 14,8 20,8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10,9 9,10 7,8"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 07</div>
+        <h3 class="fed-ed-module-title">Retirement Checklist</h3>
+        <p class="fed-ed-module-desc">A comprehensive timeline from 5 years out to your last day. Don't leave anything on the table.</p>
+        <ul class="fed-ed-module-features">
+          <li>5-year preparation timeline</li>
+          <li>Application deadlines</li>
+          <li>Document requirements</li>
+          <li>Final day procedures</li>
+        </ul>
+        <span class="fed-ed-module-link">Get Checklist →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE CALCULATOR TEASER -->
+<section class="fed-ed-dark-section">
+  <div class="fed-ed-dark-inner">
+    <span class="fed-ed-chapter-label" style="color: #F09F54;">CHAPTER II: CALCULATE YOUR FUTURE</span>
+    <h2 class="fed-ed-hero-headline" style="color: white; font-size: 3rem;">Know Your <em>Numbers</em></h2>
+    <p class="fed-ed-hero-body" style="color: rgba(255,255,255,0.8);">Your FERS annuity calculation is complex — years of service, high-3 salary, special provisions, and retirement date all matter. Get your personalized estimate.</p>
+    <div style="margin-top: 3rem;">
+      <a href="/services/federal-benefits/fers-calculator/" class="fed-ed-btn-primary" style="background: #F09F54; color: #003870;">Calculate My FERS Annuity →</a>
+    </div>
+  </div>
+</section>
+
+<!-- THE GAP SECTION -->
+<section class="fed-ed-gap-section">
+  <div class="fed-ed-gap-inner">
+    <span class="fed-ed-chapter-label">CHAPTER III: THE GAP</span>
+    <div class="fed-ed-gap-content">
+      <div>
+        <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">Why Federal Employees Need <em>Specialized</em> Help</h2>
+        <p class="fed-ed-hero-body" style="color: #64748b;">Most financial advisors have never worked with a federal employee. They don't understand FERS calculations, TSP withdrawal strategies, or how to coordinate your benefits package. This knowledge gap costs federal retirees thousands.</p>
         
-        <!-- Federal Employee Hero Image -->
-        <div style="margin: 3rem auto 0; max-width: 800px; text-align: center;">
-            <img src="/assets/images/photos/federal/capitalwealth-federal-capitol-golden-hour.jpg" alt="Federal employees planning their retirement with Capitol at golden hour" style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        <div class="fed-ed-pullquote">
+          "HR can help you understand your benefits, but they can't advise you on financial strategy. Most advisors understand investing, but they've never seen a FERS annuity calculation. We bridge that gap."
         </div>
+        
+        <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">From Mike's book "Retire Right, Retire Now" — the stories of Linda, David, and Rachel show how costly mistakes happen when federal employees work with generalist advisors who don't understand the unique complexity of federal benefits.</p>
+      </div>
+      <div>
+        <img src="/assets/images/photos/federal/capitalwealth-federal-government-building-flag.jpg" alt="Federal government building representing the specialized nature of federal benefits" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,56,112,0.15);">
+      </div>
     </div>
+  </div>
 </section>
 
-
-<section class="svc-overview">
-    <div class="svc-overview-inner">
-        <div class="svc-overview-left">
-            <h2 class="svc-overview-h2">Specialized Federal Expertise</h2>
-            <p class="svc-overview-text">Capital Wealth specializes in federal retirement — coordinating FERS, TSP, FEGLI, FEHB, and Social Security into one tax-efficient plan so you keep more of what you've earned.</p>
-            <p class="svc-overview-text">Most financial advisors don't understand federal benefits. We've helped over 500 federal employees optimize their retirement strategy, from pension timing to TSP allocation to FEGLI replacement.</p>
-            <p class="svc-overview-text">Your decades of public service have earned you valuable benefits. <em>Our job is to make sure you maximize every dollar.</em></p>
-        </div>
-        <div class="svc-overview-right">
-            <div class="fed-stats-wrap">
-                <div class="fed-stat">
-                    <span class="fed-stat-num">500+</span>
-                    <span class="fed-stat-label">Federal Employees Served</span>
-                </div>
-                <div class="fed-stat">
-                    <span class="fed-stat-num">$3,200</span>
-                    <span class="fed-stat-label">Avg. FEGLI Savings per Year</span>
-                </div>
-                <div class="fed-stat">
-                    <span class="fed-stat-num">$780K</span>
-                    <span class="fed-stat-label">Average TSP at Retirement</span>
-                </div>
-            </div>
-        </div>
+<!-- PROCESS STEPS -->
+<section class="fed-ed-process">
+  <div class="fed-ed-process-inner">
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <span class="fed-ed-chapter-label">CHAPTER IV: OUR PROCESS</span>
+      <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">How We Work with <em>Federal</em> Employees</h2>
+      <p class="fed-ed-hero-body">A specialized approach that coordinates every piece of your federal benefits package.</p>
     </div>
+    
+    <div class="fed-ed-process-steps">
+      <div class="fed-ed-step">
+        <div class="fed-ed-step-badge">01</div>
+        <h3 class="fed-ed-step-title">Benefits Analysis</h3>
+        <p class="fed-ed-step-desc">We review your SF-50, TSP statement, FEGLI coverage, and FEHB options to understand your complete federal benefits package and retirement eligibility.</p>
+      </div>
+      
+      <div class="fed-ed-step">
+        <div class="fed-ed-step-badge">02</div>
+        <h3 class="fed-ed-step-title">Retirement Modeling</h3>
+        <p class="fed-ed-step-desc">Project your FERS annuity, Social Security, TSP withdrawals, and taxes under different retirement scenarios to identify your optimal retirement date.</p>
+      </div>
+      
+      <div class="fed-ed-step">
+        <div class="fed-ed-step-badge">03</div>
+        <h3 class="fed-ed-step-title">Integrated Strategy</h3>
+        <p class="fed-ed-step-desc">Coordinate all federal benefits with your outside assets into a comprehensive retirement income and tax optimization plan.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<section class="svc-core">
-    <div class="svc-core-inner">
-        <p class="titan-section-label">EXPLORE FEDERAL BENEFITS</p>
-        <h2 class="svc-core-h2">Every Benefit. One Clear Strategy.</h2>
-        <p class="svc-core-sub">Click any benefit area below for in-depth guidance, calculators, and planning resources.</p>
-        <div class="fed-benefits-grid">
-            <a href="/services/federal-benefits/fers-retirement/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">FERS Retirement</h3>
-                <p class="svc-core-card-desc">Pension calculations, survivor benefits, retirement date optimization, FERS supplement, and special provisions for LEO/ATC/firefighters.</p>
-                <span class="svc-core-card-link">Learn More <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/tsp-planning/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">TSP Planning</h3>
-                <p class="svc-core-card-desc">Fund allocation across C, S, I, F, G, and L funds. Traditional vs. Roth TSP analysis, withdrawal strategies, and rollover decisions.</p>
-                <span class="svc-core-card-link">Learn More <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/fegli/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">FEGLI Life Insurance</h3>
-                <p class="svc-core-card-desc">Coverage analysis, post-retirement cost projections, and comparison with private alternatives. Most federal retirees are over-insured.</p>
-                <span class="svc-core-card-link">Learn More <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/fehb-retirement/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">FEHB Health Benefits</h3>
-                <p class="svc-core-card-desc">Keeping FEHB into retirement, Medicare coordination, plan selection, dental and vision options, and FSA strategies.</p>
-                <span class="svc-core-card-link">Learn More <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/social-security-federal/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">Social Security Coordination</h3>
-                <p class="svc-core-card-desc">FERS supplement bridge planning, WEP/GPO analysis, spousal benefit coordination, and optimal claiming strategies.</p>
-                <span class="svc-core-card-link">Learn More <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/fers-calculator/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">FERS Calculator</h3>
-                <p class="svc-core-card-desc">Estimate your FERS annuity based on years of service, high-3 salary, and retirement age. See the impact of different retirement dates.</p>
-                <span class="svc-core-card-link">Calculate Now <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/federal-retirement-checklist/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">Retirement Checklist</h3>
-                <p class="svc-core-card-desc">A comprehensive checklist covering every step from 5 years out to your last day. Don't leave anything on the table.</p>
-                <span class="svc-core-card-link">Get the Checklist <span>→</span></span>
-            </a>
-        </div>
+<!-- FINAL CTA -->
+<section class="fed-ed-cta">
+  <div class="fed-ed-cta-inner">
+    <span class="fed-ed-chapter-label">CHAPTER V: GETTING STARTED</span>
+    <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">Your Service Deserves <em>Expertise</em></h2>
+    <p class="fed-ed-hero-body">You've dedicated your career to public service. Let us dedicate our expertise to maximizing your federal retirement benefits.</p>
+    <div style="margin-top: 3rem;">
+      <a href="/contact/" class="fed-ed-btn-primary">Schedule Your Federal Benefits Review →</a>
     </div>
-</section>
-
-
-<section class="svc-process">
-    <div class="svc-process-inner">
-        <div class="svc-process-left">
-            <!-- Federal Challenges Image -->
-            <div style="margin-bottom: 2rem; text-align: center;">
-                <img src="/assets/images/photos/thinking-about-retirement.webp" alt="Federal employee thinking about retirement planning challenges" style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
-            </div>
-            
-            <p class="titan-section-label">THE CHALLENGES</p>
-            <h2 class="svc-process-h2">Does This Sound Familiar?</h2>
-            <p class="svc-process-sub">Common problems we solve for federal employees every day.</p>
-        </div>
-        <div class="svc-process-right">
-            <div class="svc-accordion">
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">01</span>
-                        <span class="svc-accordion-title">Most advisors don't understand FERS</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>They've never worked with federal employees. They don't know what a FERS supplement is, how SCD dates affect your pension, or how to coordinate TSP with your annuity.</p>
-                    </div>
-                </div>
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">02</span>
-                        <span class="svc-accordion-title">You're drowning in acronyms</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>FERS, TSP, FEGLI, FEHB, VERA, VSIP, WEP, GPO — your benefits package is complex, and nobody has explained how it all works together.</p>
-                    </div>
-                </div>
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">03</span>
-                        <span class="svc-accordion-title">You don't know when to retire</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>MRA, MRA+10, age 60, age 62 — which retirement eligibility applies to you? And when is it financially optimal to actually pull the trigger?</p>
-                    </div>
-                </div>
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">04</span>
-                        <span class="svc-accordion-title">You're paying for FEGLI you don't need</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>FEGLI premiums skyrocket in retirement. Most federal employees are over-insured and don't realize private coverage could save them thousands.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="svc-specialized">
-    <div class="svc-specialized-inner">
-        <p class="titan-section-label">OUR APPROACH</p>
-        <h2 class="svc-specialized-h2">We Speak Federal</h2>
-        <div class="svc-specialized-grid">
-            <div class="svc-specialized-card">
-                <div class="svc-specialized-tags">
-                    <span class="svc-tag">FERS Planning</span>
-                    <span class="svc-tag">Pension Optimization</span>
-                    <span class="svc-tag">Survivor Benefits</span>
-                </div>
-                <h3 class="svc-specialized-card-title">Federal Retirement Expertise</h3>
-                <p class="svc-specialized-card-desc">Federal retirement isn't just a specialty — it's a core part of our practice. We understand FERS inside and out, from pension calculations to survivor benefit elections to the FERS supplement bridge. We coordinate every piece of your benefits package into a clear, tax-efficient retirement strategy.</p>
-                <a href="/contact/" class="titan-hero-btn-primary">Schedule Federal Review <span>→</span></a>
-            </div>
-            <div class="svc-specialized-card">
-                <div class="svc-specialized-tags">
-                    <span class="svc-tag">TSP Management</span>
-                    <span class="svc-tag">FEGLI Analysis</span>
-                    <span class="svc-tag">FEHB Coordination</span>
-                </div>
-                <h3 class="svc-specialized-card-title">Complete Benefits Coordination</h3>
-                <p class="svc-specialized-card-desc">FERS pension calculations, TSP allocation strategies, FEGLI cost analysis, FEHB Medicare coordination, FERS supplement bridge planning, Social Security optimization, and special provisions for LEO/ATC/firefighter retirement. Your federal benefits are complex, but they're also valuable.</p>
-                <a href="/services/federal-benefits/federal-retirement-checklist/" class="titan-hero-btn-primary">Get the Retirement Checklist <span>→</span></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="svc-process">
-    <div class="svc-process-inner">
-        <div class="svc-process-left">
-            <p class="titan-section-label">OUR PROCESS</p>
-            <h2 class="svc-process-h2">Federal Planning Process</h2>
-            <p class="svc-process-sub">A specialized approach that coordinates every piece of your federal benefits package.</p>
-        </div>
-        <div class="svc-process-right">
-            <div class="svc-accordion">
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">01</span>
-                        <span class="svc-accordion-title">Benefits Analysis</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>Review your SF-50, TSP statement, FEGLI coverage, and FEHB options to understand your full benefits package. We analyze years of service, high-3 salary, and retirement eligibility scenarios.</p>
-                    </div>
-                </div>
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">02</span>
-                        <span class="svc-accordion-title">Retirement Projections</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>Model your FERS annuity, Social Security, TSP withdrawals, and taxes to determine your optimal retirement date. We project different scenarios to show the financial impact of early vs. delayed retirement.</p>
-                    </div>
-                </div>
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">03</span>
-                        <span class="svc-accordion-title">Coordination Strategy</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>Integrate all federal benefits with your outside assets into a comprehensive retirement income and tax plan. Every piece coordinated, nothing left to chance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="svc-audience">
-    <div class="svc-audience-inner">
-        <p class="titan-section-label">YOUR TIMELINE</p>
-        <h2 class="svc-audience-h2">Federal Retirement Planning Timeline</h2>
-        <div class="svc-audience-grid">
-            <div class="svc-audience-card">
-                <h3 class="svc-audience-card-title">5 Years Before</h3>
-                <p class="svc-audience-card-desc">Review high-3 salary calculations, maximize TSP contributions, evaluate FEGLI options, and start building your withdrawal strategy.</p>
-            </div>
-            <div class="svc-audience-card">
-                <h3 class="svc-audience-card-title">2 Years Before</h3>
-                <p class="svc-audience-card-desc">Confirm service computation dates, plan TSP withdrawal strategy, analyze survivor benefit options, and project your annuity.</p>
-            </div>
-            <div class="svc-audience-card">
-                <h3 class="svc-audience-card-title">6 Months Before</h3>
-                <p class="svc-audience-card-desc">Submit retirement application, coordinate FEHB continuation, finalize income plan, and prepare for the transition.</p>
-            </div>
-        </div>
-        <div class="svc-audience-note">
-            <span class="svc-audience-note-num">25+</span>
-            <span class="svc-audience-note-text">Years of experience helping federal employees navigate FERS, TSP, and the complex transition from government service to retirement.</span>
-        </div>
-    </div>
-</section>
-
-
-<section class="svc-start">
-    <div class="svc-start-inner">
-        <p class="titan-section-label">GET STARTED</p>
-        <h2 class="svc-start-h2">Three Steps to Federal Planning</h2>
-        <div class="svc-start-steps">
-            <div class="svc-start-step">
-                <div class="svc-start-num">1</div>
-                <h3 class="svc-start-step-title">Schedule</h3>
-                <p class="svc-start-step-desc">Call 801.210.2800 or use our online form to schedule your complimentary federal benefits review.</p>
-            </div>
-            <div class="svc-start-step">
-                <div class="svc-start-num">2</div>
-                <h3 class="svc-start-step-title">Analyze</h3>
-                <p class="svc-start-step-desc">We'll review your FERS, TSP, FEGLI, and FEHB benefits to identify optimization opportunities and coordinate with your other assets.</p>
-            </div>
-            <div class="svc-start-step">
-                <div class="svc-start-num">3</div>
-                <h3 class="svc-start-step-title">Plan</h3>
-                <p class="svc-start-step-desc">If we're a good fit, we'll create your personalized federal retirement strategy that maximizes every benefit you've earned.</p>
-            </div>
-        </div>
-        <div class="svc-start-cta">
-            <a href="/contact/" class="titan-hero-btn-primary">Schedule Your Federal Review <span>→</span></a>
-        </div>
-    </div>
-</section>
-
-<script>
-(function() {
-  document.querySelectorAll('.svc-accordion-trigger').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var item = this.closest('.svc-accordion-item');
-      var isOpen = item.classList.contains('active');
-      // Close all
-      document.querySelectorAll('.svc-accordion-item').forEach(function(el) {
-        el.classList.remove('active');
-        el.querySelector('.svc-accordion-trigger').setAttribute('aria-expanded', 'false');
-      });
-      // Toggle clicked
-      if (!isOpen) {
-        item.classList.add('active');
-        this.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
-})();
-</script>
- */
+  </div>
+</section> */
 }
 
 /* Related Blog Posts */
@@ -991,304 +1288,601 @@
 <!-- Service Content -->
 <div class="service-content">
   
+<style>
+.fed-ed-hero {
+  background: #f8f9fb;
+  padding: 6rem 0 8rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
 
-<section class="svc-hero">
-    <div class="svc-hero-inner">
-        <p class="titan-section-label">FEDERAL EMPLOYEE SPECIALISTS</p>
-        <h2 class="svc-hero-h1">Your Service Deserves a Secure Retirement</h2>
-        <p class="svc-hero-sub">Federal employees have one of the best benefits packages in the country — but maximizing FERS, TSP, FEGLI, and FEHB requires specialized expertise most advisors don't have. We speak your language.</p>
+.fed-ed-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.fed-ed-hero-headline {
+  font-family: var(--font-serif-display);
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #003870;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fed-ed-hero-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-hero-body {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.fed-ed-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.fed-ed-stat {
+  text-align: center;
+}
+
+.fed-ed-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  font-weight: 600;
+  color: #003870;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.fed-ed-hero-image {
+  margin-top: 5rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fed-ed-hero-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
+}
+
+.fed-ed-modules {
+  padding: 8rem 0;
+  background: white;
+}
+
+.fed-ed-modules-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-modules-intro {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.fed-ed-modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+}
+
+.fed-ed-module {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.fed-ed-module:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,56,112,0.1);
+}
+
+.fed-ed-module-icon {
+  width: 48px;
+  height: 48px;
+  background: #F09F54;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-module-number {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: #F09F54;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.fed-ed-module-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  color: #003870;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-module-desc {
+  font-family: var(--font-body);
+  color: #64748b;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.fed-ed-module-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.fed-ed-module-features li {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #64748b;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.fed-ed-module-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #F09F54;
+  font-weight: 600;
+}
+
+.fed-ed-module-link {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #003870;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fed-ed-dark-section {
+  background: #003870;
+  padding: 8rem 0;
+  color: white;
+}
+
+.fed-ed-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.fed-ed-gap-section {
+  padding: 8rem 0;
+  background: #f3f4f6;
+}
+
+.fed-ed-gap-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-gap-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.fed-ed-pullquote {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #003870;
+  padding-left: 2rem;
+  border-left: 4px solid #F09F54;
+  margin: 3rem 0;
+}
+
+.fed-ed-process {
+  padding: 8rem 0;
+  background: white;
+}
+
+.fed-ed-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.fed-ed-step {
+  text-align: center;
+  padding: 2rem;
+}
+
+.fed-ed-step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #F09F54;
+  color: white;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+.fed-ed-step-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  color: #003870;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-step-desc {
+  font-family: var(--font-body);
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.fed-ed-cta {
+  padding: 8rem 0;
+  background: #f8f9fb;
+  text-align: center;
+}
+
+.fed-ed-cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fed-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .fed-ed-hero-headline {
+    font-size: 2.5rem;
+  }
+  
+  .fed-ed-hero-stats {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .fed-ed-modules-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .fed-ed-gap-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .fed-ed-process-steps {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="fed-ed-hero">
+  <div class="fed-ed-hero-inner">
+    <span class="fed-ed-chapter-label">FEDERAL EMPLOYEE SPECIALISTS</span>
+    <h1 class="fed-ed-hero-headline">The Federal <em>Architecture</em> of Retirement</h1>
+    <p class="fed-ed-hero-body">Your decades of service have earned you one of the most comprehensive benefits packages in America. Our expertise ensures you maximize every dollar of FERS, TSP, FEGLI, and FEHB in coordination.</p>
+    
+    <div class="fed-ed-hero-stats">
+      <div class="fed-ed-stat">
+        <span class="fed-ed-stat-number">500+</span>
+        <span class="fed-ed-stat-label">Federal Employees Served</span>
+      </div>
+      <div class="fed-ed-stat">
+        <span class="fed-ed-stat-number">$3,200</span>
+        <span class="fed-ed-stat-label">Avg FEGLI Savings/Year</span>
+      </div>
+      <div class="fed-ed-stat">
+        <span class="fed-ed-stat-number">95%</span>
+        <span class="fed-ed-stat-label">Client Satisfaction</span>
+      </div>
+    </div>
+    
+    <div class="fed-ed-hero-image">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-capitol-golden-hour.jpg" alt="US Capitol building at golden hour representing federal employee retirement planning">
+    </div>
+  </div>
+</section>
+
+<!-- FEDERAL BENEFITS MODULES -->
+<section class="fed-ed-modules">
+  <div class="fed-ed-modules-inner">
+    <div class="fed-ed-modules-intro">
+      <span class="fed-ed-chapter-label">CHAPTER I: EXPLORE FEDERAL BENEFITS</span>
+      <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">Seven Pillars of <em>Federal</em> Retirement</h2>
+      <p class="fed-ed-hero-body">Each benefit requires specialized expertise. Click any module for in-depth guidance, calculators, and optimization strategies.</p>
+    </div>
+    
+    <div class="fed-ed-modules-grid">
+      <a href="/services/federal-benefits/fers-retirement/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M12 2L2 7v10c0 5.55 3.84 9 9 12 5.16-3 9-6.45 9-12V7l-10-5z"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 01</div>
+        <h3 class="fed-ed-module-title">FERS Retirement</h3>
+        <p class="fed-ed-module-desc">The foundation of your federal retirement. Pension calculations, optimal retirement dates, and FERS supplement bridge planning.</p>
+        <ul class="fed-ed-module-features">
+          <li>Precise annuity calculations</li>
+          <li>MRA optimization</li>
+          <li>Survivor benefit analysis</li>
+          <li>Military buyback evaluation</li>
+        </ul>
+        <span class="fed-ed-module-link">Explore FERS →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/tsp-planning/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 02</div>
+        <h3 class="fed-ed-module-title">TSP Planning</h3>
+        <p class="fed-ed-module-desc">Maximize your Thrift Savings Plan with optimal allocation, contribution strategies, and tax-efficient withdrawals.</p>
+        <ul class="fed-ed-module-features">
+          <li>Fund allocation strategy</li>
+          <li>Roth vs traditional analysis</li>
+          <li>Withdrawal optimization</li>
+          <li>Rollover decisions</li>
+        </ul>
+        <span class="fed-ed-module-link">Optimize TSP →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/fegli/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+            <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 03</div>
+        <h3 class="fed-ed-module-title">FEGLI Analysis</h3>
+        <p class="fed-ed-module-desc">Most federal employees are over-insured. We analyze your life insurance needs and compare FEGLI with private alternatives.</p>
+        <ul class="fed-ed-module-features">
+          <li>Coverage needs analysis</li>
+          <li>Cost comparison studies</li>
+          <li>Private insurance quotes</li>
+          <li>Beneficiary optimization</li>
+        </ul>
+        <span class="fed-ed-module-link">Analyze FEGLI →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/fehb-retirement/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 04</div>
+        <h3 class="fed-ed-module-title">FEHB Coordination</h3>
+        <p class="fed-ed-module-desc">Navigate health benefits into retirement, Medicare coordination, and plan selection optimization.</p>
+        <ul class="fed-ed-module-features">
+          <li>Medicare coordination</li>
+          <li>Plan selection guidance</li>
+          <li>5-year rule compliance</li>
+          <li>FSA strategies</li>
+        </ul>
+        <span class="fed-ed-module-link">Plan FEHB →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/social-security-federal/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 05</div>
+        <h3 class="fed-ed-module-title">Social Security</h3>
+        <p class="fed-ed-module-desc">Coordinate Social Security with your FERS pension and bridge the gap with FERS supplement planning.</p>
+        <ul class="fed-ed-module-features">
+          <li>FERS supplement bridge</li>
+          <li>WEP/GPO eliminated benefits</li>
+          <li>Optimal claiming strategy</li>
+          <li>Spousal coordination</li>
+        </ul>
+        <span class="fed-ed-module-link">Optimize SS →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/fers-calculator/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <rect x="4" y="4" width="16" height="16" rx="2"/>
+            <path d="M9 9h6v6H9z"/>
+            <path d="M9 1v6M15 1v6M9 17v6M15 17v6M1 9h6M17 9h6M1 15h6M17 15h6"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 06</div>
+        <h3 class="fed-ed-module-title">FERS Calculator</h3>
+        <p class="fed-ed-module-desc">Calculate your FERS annuity based on years of service, high-3 salary, and retirement date scenarios.</p>
+        <ul class="fed-ed-module-features">
+          <li>Instant annuity estimates</li>
+          <li>Retirement date comparison</li>
+          <li>Supplement projections</li>
+          <li>Survivor benefit impact</li>
+        </ul>
+        <span class="fed-ed-module-link">Calculate Now →</span>
+      </a>
+      
+      <a href="/services/federal-benefits/federal-retirement-checklist/" class="fed-ed-module">
+        <div class="fed-ed-module-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14,2 14,8 20,8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10,9 9,10 7,8"/>
+          </svg>
+        </div>
+        <div class="fed-ed-module-number">MODULE 07</div>
+        <h3 class="fed-ed-module-title">Retirement Checklist</h3>
+        <p class="fed-ed-module-desc">A comprehensive timeline from 5 years out to your last day. Don't leave anything on the table.</p>
+        <ul class="fed-ed-module-features">
+          <li>5-year preparation timeline</li>
+          <li>Application deadlines</li>
+          <li>Document requirements</li>
+          <li>Final day procedures</li>
+        </ul>
+        <span class="fed-ed-module-link">Get Checklist →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE CALCULATOR TEASER -->
+<section class="fed-ed-dark-section">
+  <div class="fed-ed-dark-inner">
+    <span class="fed-ed-chapter-label" style="color: #F09F54;">CHAPTER II: CALCULATE YOUR FUTURE</span>
+    <h2 class="fed-ed-hero-headline" style="color: white; font-size: 3rem;">Know Your <em>Numbers</em></h2>
+    <p class="fed-ed-hero-body" style="color: rgba(255,255,255,0.8);">Your FERS annuity calculation is complex — years of service, high-3 salary, special provisions, and retirement date all matter. Get your personalized estimate.</p>
+    <div style="margin-top: 3rem;">
+      <a href="/services/federal-benefits/fers-calculator/" class="fed-ed-btn-primary" style="background: #F09F54; color: #003870;">Calculate My FERS Annuity →</a>
+    </div>
+  </div>
+</section>
+
+<!-- THE GAP SECTION -->
+<section class="fed-ed-gap-section">
+  <div class="fed-ed-gap-inner">
+    <span class="fed-ed-chapter-label">CHAPTER III: THE GAP</span>
+    <div class="fed-ed-gap-content">
+      <div>
+        <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">Why Federal Employees Need <em>Specialized</em> Help</h2>
+        <p class="fed-ed-hero-body" style="color: #64748b;">Most financial advisors have never worked with a federal employee. They don't understand FERS calculations, TSP withdrawal strategies, or how to coordinate your benefits package. This knowledge gap costs federal retirees thousands.</p>
         
-        <!-- Federal Employee Hero Image -->
-        <div style="margin: 3rem auto 0; max-width: 800px; text-align: center;">
-            <img src="/assets/images/photos/federal/capitalwealth-federal-capitol-golden-hour.jpg" alt="Federal employees planning their retirement with Capitol at golden hour" style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        <div class="fed-ed-pullquote">
+          "HR can help you understand your benefits, but they can't advise you on financial strategy. Most advisors understand investing, but they've never seen a FERS annuity calculation. We bridge that gap."
         </div>
+        
+        <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">From Mike's book "Retire Right, Retire Now" — the stories of Linda, David, and Rachel show how costly mistakes happen when federal employees work with generalist advisors who don't understand the unique complexity of federal benefits.</p>
+      </div>
+      <div>
+        <img src="/assets/images/photos/federal/capitalwealth-federal-government-building-flag.jpg" alt="Federal government building representing the specialized nature of federal benefits" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,56,112,0.15);">
+      </div>
     </div>
+  </div>
 </section>
 
-
-<section class="svc-overview">
-    <div class="svc-overview-inner">
-        <div class="svc-overview-left">
-            <h2 class="svc-overview-h2">Specialized Federal Expertise</h2>
-            <p class="svc-overview-text">Capital Wealth specializes in federal retirement — coordinating FERS, TSP, FEGLI, FEHB, and Social Security into one tax-efficient plan so you keep more of what you've earned.</p>
-            <p class="svc-overview-text">Most financial advisors don't understand federal benefits. We've helped over 500 federal employees optimize their retirement strategy, from pension timing to TSP allocation to FEGLI replacement.</p>
-            <p class="svc-overview-text">Your decades of public service have earned you valuable benefits. <em>Our job is to make sure you maximize every dollar.</em></p>
-        </div>
-        <div class="svc-overview-right">
-            <div class="fed-stats-wrap">
-                <div class="fed-stat">
-                    <span class="fed-stat-num">500+</span>
-                    <span class="fed-stat-label">Federal Employees Served</span>
-                </div>
-                <div class="fed-stat">
-                    <span class="fed-stat-num">$3,200</span>
-                    <span class="fed-stat-label">Avg. FEGLI Savings per Year</span>
-                </div>
-                <div class="fed-stat">
-                    <span class="fed-stat-num">$780K</span>
-                    <span class="fed-stat-label">Average TSP at Retirement</span>
-                </div>
-            </div>
-        </div>
+<!-- PROCESS STEPS -->
+<section class="fed-ed-process">
+  <div class="fed-ed-process-inner">
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <span class="fed-ed-chapter-label">CHAPTER IV: OUR PROCESS</span>
+      <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">How We Work with <em>Federal</em> Employees</h2>
+      <p class="fed-ed-hero-body">A specialized approach that coordinates every piece of your federal benefits package.</p>
     </div>
+    
+    <div class="fed-ed-process-steps">
+      <div class="fed-ed-step">
+        <div class="fed-ed-step-badge">01</div>
+        <h3 class="fed-ed-step-title">Benefits Analysis</h3>
+        <p class="fed-ed-step-desc">We review your SF-50, TSP statement, FEGLI coverage, and FEHB options to understand your complete federal benefits package and retirement eligibility.</p>
+      </div>
+      
+      <div class="fed-ed-step">
+        <div class="fed-ed-step-badge">02</div>
+        <h3 class="fed-ed-step-title">Retirement Modeling</h3>
+        <p class="fed-ed-step-desc">Project your FERS annuity, Social Security, TSP withdrawals, and taxes under different retirement scenarios to identify your optimal retirement date.</p>
+      </div>
+      
+      <div class="fed-ed-step">
+        <div class="fed-ed-step-badge">03</div>
+        <h3 class="fed-ed-step-title">Integrated Strategy</h3>
+        <p class="fed-ed-step-desc">Coordinate all federal benefits with your outside assets into a comprehensive retirement income and tax optimization plan.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<section class="svc-core">
-    <div class="svc-core-inner">
-        <p class="titan-section-label">EXPLORE FEDERAL BENEFITS</p>
-        <h2 class="svc-core-h2">Every Benefit. One Clear Strategy.</h2>
-        <p class="svc-core-sub">Click any benefit area below for in-depth guidance, calculators, and planning resources.</p>
-        <div class="fed-benefits-grid">
-            <a href="/services/federal-benefits/fers-retirement/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">FERS Retirement</h3>
-                <p class="svc-core-card-desc">Pension calculations, survivor benefits, retirement date optimization, FERS supplement, and special provisions for LEO/ATC/firefighters.</p>
-                <span class="svc-core-card-link">Learn More <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/tsp-planning/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">TSP Planning</h3>
-                <p class="svc-core-card-desc">Fund allocation across C, S, I, F, G, and L funds. Traditional vs. Roth TSP analysis, withdrawal strategies, and rollover decisions.</p>
-                <span class="svc-core-card-link">Learn More <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/fegli/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">FEGLI Life Insurance</h3>
-                <p class="svc-core-card-desc">Coverage analysis, post-retirement cost projections, and comparison with private alternatives. Most federal retirees are over-insured.</p>
-                <span class="svc-core-card-link">Learn More <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/fehb-retirement/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">FEHB Health Benefits</h3>
-                <p class="svc-core-card-desc">Keeping FEHB into retirement, Medicare coordination, plan selection, dental and vision options, and FSA strategies.</p>
-                <span class="svc-core-card-link">Learn More <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/social-security-federal/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">Social Security Coordination</h3>
-                <p class="svc-core-card-desc">FERS supplement bridge planning, WEP/GPO analysis, spousal benefit coordination, and optimal claiming strategies.</p>
-                <span class="svc-core-card-link">Learn More <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/fers-calculator/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">FERS Calculator</h3>
-                <p class="svc-core-card-desc">Estimate your FERS annuity based on years of service, high-3 salary, and retirement age. See the impact of different retirement dates.</p>
-                <span class="svc-core-card-link">Calculate Now <span>→</span></span>
-            </a>
-            <a href="/services/federal-benefits/federal-retirement-checklist/" class="fed-benefit-card">
-                <h3 class="svc-core-card-title">Retirement Checklist</h3>
-                <p class="svc-core-card-desc">A comprehensive checklist covering every step from 5 years out to your last day. Don't leave anything on the table.</p>
-                <span class="svc-core-card-link">Get the Checklist <span>→</span></span>
-            </a>
-        </div>
+<!-- FINAL CTA -->
+<section class="fed-ed-cta">
+  <div class="fed-ed-cta-inner">
+    <span class="fed-ed-chapter-label">CHAPTER V: GETTING STARTED</span>
+    <h2 class="fed-ed-hero-headline" style="font-size: 3rem;">Your Service Deserves <em>Expertise</em></h2>
+    <p class="fed-ed-hero-body">You've dedicated your career to public service. Let us dedicate our expertise to maximizing your federal retirement benefits.</p>
+    <div style="margin-top: 3rem;">
+      <a href="/contact/" class="fed-ed-btn-primary">Schedule Your Federal Benefits Review →</a>
     </div>
+  </div>
 </section>
-
-
-<section class="svc-process">
-    <div class="svc-process-inner">
-        <div class="svc-process-left">
-            <!-- Federal Challenges Image -->
-            <div style="margin-bottom: 2rem; text-align: center;">
-                <img src="/assets/images/photos/thinking-about-retirement.webp" alt="Federal employee thinking about retirement planning challenges" style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
-            </div>
-            
-            <p class="titan-section-label">THE CHALLENGES</p>
-            <h2 class="svc-process-h2">Does This Sound Familiar?</h2>
-            <p class="svc-process-sub">Common problems we solve for federal employees every day.</p>
-        </div>
-        <div class="svc-process-right">
-            <div class="svc-accordion">
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">01</span>
-                        <span class="svc-accordion-title">Most advisors don't understand FERS</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>They've never worked with federal employees. They don't know what a FERS supplement is, how SCD dates affect your pension, or how to coordinate TSP with your annuity.</p>
-                    </div>
-                </div>
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">02</span>
-                        <span class="svc-accordion-title">You're drowning in acronyms</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>FERS, TSP, FEGLI, FEHB, VERA, VSIP, WEP, GPO — your benefits package is complex, and nobody has explained how it all works together.</p>
-                    </div>
-                </div>
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">03</span>
-                        <span class="svc-accordion-title">You don't know when to retire</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>MRA, MRA+10, age 60, age 62 — which retirement eligibility applies to you? And when is it financially optimal to actually pull the trigger?</p>
-                    </div>
-                </div>
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">04</span>
-                        <span class="svc-accordion-title">You're paying for FEGLI you don't need</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>FEGLI premiums skyrocket in retirement. Most federal employees are over-insured and don't realize private coverage could save them thousands.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="svc-specialized">
-    <div class="svc-specialized-inner">
-        <p class="titan-section-label">OUR APPROACH</p>
-        <h2 class="svc-specialized-h2">We Speak Federal</h2>
-        <div class="svc-specialized-grid">
-            <div class="svc-specialized-card">
-                <div class="svc-specialized-tags">
-                    <span class="svc-tag">FERS Planning</span>
-                    <span class="svc-tag">Pension Optimization</span>
-                    <span class="svc-tag">Survivor Benefits</span>
-                </div>
-                <h3 class="svc-specialized-card-title">Federal Retirement Expertise</h3>
-                <p class="svc-specialized-card-desc">Federal retirement isn't just a specialty — it's a core part of our practice. We understand FERS inside and out, from pension calculations to survivor benefit elections to the FERS supplement bridge. We coordinate every piece of your benefits package into a clear, tax-efficient retirement strategy.</p>
-                <a href="/contact/" class="titan-hero-btn-primary">Schedule Federal Review <span>→</span></a>
-            </div>
-            <div class="svc-specialized-card">
-                <div class="svc-specialized-tags">
-                    <span class="svc-tag">TSP Management</span>
-                    <span class="svc-tag">FEGLI Analysis</span>
-                    <span class="svc-tag">FEHB Coordination</span>
-                </div>
-                <h3 class="svc-specialized-card-title">Complete Benefits Coordination</h3>
-                <p class="svc-specialized-card-desc">FERS pension calculations, TSP allocation strategies, FEGLI cost analysis, FEHB Medicare coordination, FERS supplement bridge planning, Social Security optimization, and special provisions for LEO/ATC/firefighter retirement. Your federal benefits are complex, but they're also valuable.</p>
-                <a href="/services/federal-benefits/federal-retirement-checklist/" class="titan-hero-btn-primary">Get the Retirement Checklist <span>→</span></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="svc-process">
-    <div class="svc-process-inner">
-        <div class="svc-process-left">
-            <p class="titan-section-label">OUR PROCESS</p>
-            <h2 class="svc-process-h2">Federal Planning Process</h2>
-            <p class="svc-process-sub">A specialized approach that coordinates every piece of your federal benefits package.</p>
-        </div>
-        <div class="svc-process-right">
-            <div class="svc-accordion">
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">01</span>
-                        <span class="svc-accordion-title">Benefits Analysis</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>Review your SF-50, TSP statement, FEGLI coverage, and FEHB options to understand your full benefits package. We analyze years of service, high-3 salary, and retirement eligibility scenarios.</p>
-                    </div>
-                </div>
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">02</span>
-                        <span class="svc-accordion-title">Retirement Projections</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>Model your FERS annuity, Social Security, TSP withdrawals, and taxes to determine your optimal retirement date. We project different scenarios to show the financial impact of early vs. delayed retirement.</p>
-                    </div>
-                </div>
-                <div class="svc-accordion-item">
-                    <button class="svc-accordion-trigger" aria-expanded="false">
-                        <span class="svc-accordion-num">03</span>
-                        <span class="svc-accordion-title">Coordination Strategy</span>
-                        <span class="svc-accordion-icon">+</span>
-                    </button>
-                    <div class="svc-accordion-panel">
-                        <p>Integrate all federal benefits with your outside assets into a comprehensive retirement income and tax plan. Every piece coordinated, nothing left to chance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="svc-audience">
-    <div class="svc-audience-inner">
-        <p class="titan-section-label">YOUR TIMELINE</p>
-        <h2 class="svc-audience-h2">Federal Retirement Planning Timeline</h2>
-        <div class="svc-audience-grid">
-            <div class="svc-audience-card">
-                <h3 class="svc-audience-card-title">5 Years Before</h3>
-                <p class="svc-audience-card-desc">Review high-3 salary calculations, maximize TSP contributions, evaluate FEGLI options, and start building your withdrawal strategy.</p>
-            </div>
-            <div class="svc-audience-card">
-                <h3 class="svc-audience-card-title">2 Years Before</h3>
-                <p class="svc-audience-card-desc">Confirm service computation dates, plan TSP withdrawal strategy, analyze survivor benefit options, and project your annuity.</p>
-            </div>
-            <div class="svc-audience-card">
-                <h3 class="svc-audience-card-title">6 Months Before</h3>
-                <p class="svc-audience-card-desc">Submit retirement application, coordinate FEHB continuation, finalize income plan, and prepare for the transition.</p>
-            </div>
-        </div>
-        <div class="svc-audience-note">
-            <span class="svc-audience-note-num">25+</span>
-            <span class="svc-audience-note-text">Years of experience helping federal employees navigate FERS, TSP, and the complex transition from government service to retirement.</span>
-        </div>
-    </div>
-</section>
-
-
-<section class="svc-start">
-    <div class="svc-start-inner">
-        <p class="titan-section-label">GET STARTED</p>
-        <h2 class="svc-start-h2">Three Steps to Federal Planning</h2>
-        <div class="svc-start-steps">
-            <div class="svc-start-step">
-                <div class="svc-start-num">1</div>
-                <h3 class="svc-start-step-title">Schedule</h3>
-                <p class="svc-start-step-desc">Call 801.210.2800 or use our online form to schedule your complimentary federal benefits review.</p>
-            </div>
-            <div class="svc-start-step">
-                <div class="svc-start-num">2</div>
-                <h3 class="svc-start-step-title">Analyze</h3>
-                <p class="svc-start-step-desc">We'll review your FERS, TSP, FEGLI, and FEHB benefits to identify optimization opportunities and coordinate with your other assets.</p>
-            </div>
-            <div class="svc-start-step">
-                <div class="svc-start-num">3</div>
-                <h3 class="svc-start-step-title">Plan</h3>
-                <p class="svc-start-step-desc">If we're a good fit, we'll create your personalized federal retirement strategy that maximizes every benefit you've earned.</p>
-            </div>
-        </div>
-        <div class="svc-start-cta">
-            <a href="/contact/" class="titan-hero-btn-primary">Schedule Your Federal Review <span>→</span></a>
-        </div>
-    </div>
-</section>
-
-<script>
-(function() {
-  document.querySelectorAll('.svc-accordion-trigger').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var item = this.closest('.svc-accordion-item');
-      var isOpen = item.classList.contains('active');
-      // Close all
-      document.querySelectorAll('.svc-accordion-item').forEach(function(el) {
-        el.classList.remove('active');
-        el.querySelector('.svc-accordion-trigger').setAttribute('aria-expanded', 'false');
-      });
-      // Toggle clicked
-      if (!isOpen) {
-        item.classList.add('active');
-        this.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
-})();
-</script>
-
 </div>
 
 <!-- Related Blog Posts -->

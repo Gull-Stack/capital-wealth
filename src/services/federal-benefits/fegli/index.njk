@@ -24,227 +24,916 @@ faqSchema:
     answer: "You should review FEGLI at major life events: marriage, divorce, birth of children, home purchase, mortgage payoff, and as you approach retirement (ideally 5-10 years before). Many federal employees elect Option B early in their career when they have young children and a mortgage, then never revisit the decision. By retirement, circumstances have changed dramatically — kids are grown, the house is paid off, and the need for large life insurance coverage has diminished. Reviewing coverage every few years ensures you're not over-insured and overpaying for protection you no longer need."
 ---
 
-{# ═══════════════════════════════════════════════════════════
-   HERO — Titan-style (headline left, image right)
-   ═══════════════════════════════════════════════════════════ #}
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">FEGLI PLANNING</p>
-            <h2 >FEGLI Life Insurance: What Federal Employees Need to Know</h2>
-            <p class="titan-subhero-body">The Federal Employees Group Life Insurance program is the largest group life insurance program in the world — but many federal employees are over-insured during working years and face skyrocketing premiums in retirement. Understanding your options can save you thousands.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">REVIEW MY FEGLI COVERAGE <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/services/federal-benefits.jpg" alt="Federal employee reviewing life insurance coverage options" class="titan-subhero-img">
+<style>
+/* FEGLI Editorial Styles */
+.fed-ed-fegli-hero {
+  background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%);
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.fed-ed-fegli-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.fed-ed-fegli-hero-content {
+  max-width: 500px;
+}
+
+.fed-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.fed-ed-fegli-headline {
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: #003870;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-fegli-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-fegli-desc {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.fed-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fed-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+.fed-ed-fegli-hero-image-container {
+  position: relative;
+}
+
+.fed-ed-fegli-hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
+}
+
+.fed-ed-pullquote {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(24px);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #F09F54;
+}
+
+.fed-ed-pullquote-text {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #003870;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-pullquote-author {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.fed-ed-fegli-nav {
+  position: sticky;
+  top: 2rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fed-ed-fegli-nav-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-fegli-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fed-ed-fegli-nav-links li {
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-fegli-nav-links a {
+  font-family: var(--font-body);
+  color: #003870;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.fed-ed-fegli-nav-links a:hover {
+  color: #F09F54;
+}
+
+.fed-ed-fegli-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-fegli-main {
+  padding: 4rem 0;
+}
+
+.fed-ed-fegli-section {
+  margin-bottom: 6rem;
+}
+
+.fed-ed-fegli-section-title {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  color: #003870;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.fed-ed-fegli-section-title em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-fegli-body {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-glass-card {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.fed-ed-fegli-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.fed-ed-fegli-option {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
+  transition: transform 0.3s ease;
+}
+
+.fed-ed-fegli-option:hover {
+  transform: translateY(-4px);
+}
+
+.fed-ed-fegli-option-name {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  color: #003870;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-fegli-option-coverage {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: #F09F54;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-fegli-option-desc {
+  font-family: var(--font-body);
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.fed-ed-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.fed-ed-stat {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fb;
+  border-radius: 12px;
+}
+
+.fed-ed-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #003870;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.fed-ed-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
+}
+
+.fed-ed-comparison-table th {
+  background: #003870;
+  color: white;
+  padding: 1rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-align: left;
+}
+
+.fed-ed-comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-family: var(--font-body);
+  color: #64748b;
+}
+
+.fed-ed-comparison-table tr:nth-child(even) {
+  background: #f8f9fb;
+}
+
+.fed-ed-comparison-table .highlight {
+  background: #F09F54 !important;
+  color: white;
+}
+
+.fed-ed-warning-card {
+  background: linear-gradient(135deg, #FFF3E6, #FFEDE6);
+  border: 1px solid #F09F54;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.fed-ed-warning-title {
+  font-family: var(--font-serif-display);
+  color: #003870;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.fed-ed-warning-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+  color: #F09F54;
+}
+
+.fed-ed-faq {
+  padding: 6rem 0;
+  background: #f8f9fb;
+}
+
+.fed-ed-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.fed-ed-faq-accordion {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,56,112,0.08);
+}
+
+.fed-ed-faq-item {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.fed-ed-faq-item:last-child {
+  border-bottom: none;
+}
+
+.fed-ed-faq-trigger {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 2rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.fed-ed-faq-trigger:hover {
+  background: #f8f9fb;
+}
+
+.fed-ed-faq-question {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #003870;
+  font-size: 1.1rem;
+}
+
+.fed-ed-faq-icon {
+  color: #F09F54;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.fed-ed-faq-item.active .fed-ed-faq-icon {
+  transform: rotate(45deg);
+}
+
+.fed-ed-faq-panel {
+  padding: 0 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.fed-ed-faq-item.active .fed-ed-faq-panel {
+  max-height: 400px;
+  padding: 0 2rem 2rem;
+}
+
+.fed-ed-faq-answer {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: #64748b;
+}
+
+@media (max-width: 1024px) {
+  .fed-ed-fegli-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .fed-ed-fegli-nav {
+    position: relative;
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .fed-ed-fegli-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .fed-ed-fegli-headline {
+    font-size: 2.5rem;
+  }
+  
+  .fed-ed-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .fed-ed-fegli-options {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="fed-ed-fegli-hero">
+  <div class="fed-ed-fegli-hero-inner">
+    <div class="fed-ed-fegli-hero-content">
+      <span class="fed-ed-chapter-label">CHAPTER I: FEGLI FUNDAMENTALS</span>
+      <h1 class="fed-ed-fegli-headline">Federal Life Insurance <em>Reality</em> Check</h1>
+      <p class="fed-ed-fegli-desc">FEGLI premiums skyrocket in retirement while your coverage needs typically decrease. Most federal employees are over-insured and don't realize private coverage could save them thousands annually.</p>
+      
+      <div style="margin-top: 2rem;">
+        <a href="/contact/" class="fed-ed-btn-primary">Analyze My FEGLI</a>
+      </div>
     </div>
+    
+    <div class="fed-ed-fegli-hero-image-container">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-sec-headquarters.jpg" alt="Federal building representing FEGLI life insurance planning" class="fed-ed-fegli-hero-image">
+      <div class="fed-ed-pullquote">
+        <p class="fed-ed-pullquote-text">"Most federal employees are paying for life insurance they no longer need."</p>
+        <p class="fed-ed-pullquote-author">— Mike Stevens, IAR</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-{# ═══════════════════════════════════════════════════════════
-   QUOTE BAR
-   ═══════════════════════════════════════════════════════════ #}
-<section class="quote-bar">
-    <div class="quote-bar-inner">
-        <p class="quote-bar-text">"FEGLI gets expensive in retirement. Most feds should reduce or drop it — but not everyone."</p>
-        <p class="quote-bar-attribution">— Mike Stevens, IAR</p>
-    </div>
+<!-- MAIN CONTENT WITH SIDE NAV -->
+<section class="fed-ed-fegli-content">
+  <aside class="fed-ed-fegli-nav">
+    <h3 class="fed-ed-fegli-nav-title">On This Page</h3>
+    <ul class="fed-ed-fegli-nav-links">
+      <li><a href="#coverage-options">Coverage Options</a></li>
+      <li><a href="#retirement-costs">Retirement Costs</a></li>
+      <li><a href="#option-b-problem">Option B Problem</a></li>
+      <li><a href="#private-alternatives">Private Alternatives</a></li>
+      <li><a href="#coverage-needs">Coverage Analysis</a></li>
+      <li><a href="#optimization">Optimization Strategy</a></li>
+    </ul>
+  </aside>
+  
+  <main class="fed-ed-fegli-main">
+    <!-- COVERAGE OPTIONS -->
+    <section id="coverage-options" class="fed-ed-fegli-section">
+      <span class="fed-ed-chapter-label">CHAPTER II: COVERAGE OPTIONS</span>
+      <h2 class="fed-ed-fegli-section-title">Understanding Your <em>FEGLI</em> Options</h2>
+      
+      <p class="fed-ed-fegli-body">FEGLI offers four different types of coverage, each with different costs, benefits, and implications for retirement. Understanding each option is essential for making informed decisions about your life insurance strategy.</p>
+      
+      <div class="fed-ed-fegli-options">
+        <div class="fed-ed-fegli-option">
+          <h3 class="fed-ed-fegli-option-name">Basic FEGLI</h3>
+          <p class="fed-ed-fegli-option-coverage">Annual Salary + $2,000</p>
+          <p class="fed-ed-fegli-option-desc">Automatic coverage for all federal employees. Reduces by 75% in retirement but premiums end. The foundation of federal life insurance.</p>
+        </div>
+        
+        <div class="fed-ed-fegli-option">
+          <h3 class="fed-ed-fegli-option-name">Option A</h3>
+          <p class="fed-ed-fegli-option-coverage">$10,000 Fixed Coverage</p>
+          <p class="fed-ed-fegli-option-desc">Standard additional coverage. Relatively affordable throughout career and retirement. Premiums increase with age but coverage stays level.</p>
+        </div>
+        
+        <div class="fed-ed-fegli-option" style="border: 2px solid #F09F54;">
+          <h3 class="fed-ed-fegli-option-name">Option B</h3>
+          <p class="fed-ed-fegli-option-coverage">1-5x Annual Salary</p>
+          <p class="fed-ed-fegli-option-desc">The expensive one. Affordable during career but premiums can exceed $500-800/month in retirement. This is where most savings opportunities exist.</p>
+        </div>
+        
+        <div class="fed-ed-fegli-option">
+          <h3 class="fed-ed-fegli-option-name">Option C</h3>
+          <p class="fed-ed-fegli-option-coverage">Family Coverage</p>
+          <p class="fed-ed-fegli-option-desc">Coverage for spouse and children. Affordable for young families but becomes expensive as you age. Consider term life on family members instead.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-stats-grid">
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">$3,200</span>
+          <span class="fed-ed-stat-label">Average Annual FEGLI Savings</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">75%</span>
+          <span class="fed-ed-stat-label">Basic FEGLI Reduction in Retirement</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">$800</span>
+          <span class="fed-ed-stat-label">Max Monthly Option B Premium</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- RETIREMENT COSTS -->
+    <section id="retirement-costs" class="fed-ed-fegli-section">
+      <span class="fed-ed-chapter-label">CHAPTER III: RETIREMENT IMPACT</span>
+      <h2 class="fed-ed-fegli-section-title">The Retirement <em>Cost</em> Explosion</h2>
+      
+      <p class="fed-ed-fegli-body">FEGLI premiums increase dramatically in retirement because they're based on your age, not your federal employment status. While your income drops in retirement, your insurance costs can skyrocket — creating a dangerous squeeze on your budget.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Option B Premium Progression (5x Salary Coverage)</h3>
+        
+        <table class="fed-ed-comparison-table">
+          <thead>
+            <tr>
+              <th>Age</th>
+              <th>Monthly Premium</th>
+              <th>Annual Cost</th>
+              <th>Coverage Amount</th>
+              <th>Cost per $1,000</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Age 45</strong></td>
+              <td>$45</td>
+              <td>$540</td>
+              <td>$500,000</td>
+              <td>$1.08</td>
+            </tr>
+            <tr>
+              <td><strong>Age 55</strong></td>
+              <td>$112</td>
+              <td>$1,344</td>
+              <td>$500,000</td>
+              <td>$2.69</td>
+            </tr>
+            <tr>
+              <td><strong>Age 65</strong></td>
+              <td>$280</td>
+              <td>$3,360</td>
+              <td>$500,000</td>
+              <td>$6.72</td>
+            </tr>
+            <tr class="highlight">
+              <td><strong>Age 70</strong></td>
+              <td>$520</td>
+              <td>$6,240</td>
+              <td>$500,000</td>
+              <td>$12.48</td>
+            </tr>
+            <tr>
+              <td><strong>Age 75</strong></td>
+              <td>$720</td>
+              <td>$8,640</td>
+              <td>$500,000</td>
+              <td>$17.28</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="fed-ed-warning-card">
+        <h3 class="fed-ed-warning-title">
+          <svg class="fed-ed-warning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+          The Retirement Squeeze
+        </h3>
+        <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">By age 70, a federal retiree with 5x Option B coverage could pay over $6,000 annually for life insurance — when their income has dropped significantly and their coverage needs have likely decreased. This is when most retirees have paid off their mortgage and their children are financially independent.</p>
+      </div>
+      
+      <p class="fed-ed-fegli-body">The irony: when you most needed life insurance (young family, mortgage, limited savings), FEGLI was affordable. When you least need it (retirement, paid-off house, grown children), it becomes prohibitively expensive.</p>
+    </section>
+    
+    <!-- OPTION B PROBLEM -->
+    <section id="option-b-problem" class="fed-ed-fegli-section">
+      <span class="fed-ed-chapter-label">CHAPTER IV: THE OPTION B TRAP</span>
+      <h2 class="fed-ed-fegli-section-title">Why Option B Becomes a <em>Problem</em></h2>
+      
+      <p class="fed-ed-fegli-body">Option B (1-5 times salary) is where most federal employees get trapped. It's reasonably priced during your career but becomes outrageously expensive in retirement — precisely when your coverage needs have typically diminished.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">The Option B Lifecycle</h3>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;">
+          <div style="text-align: center; padding: 1rem;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Early Career</h4>
+            <div style="font-family: var(--font-serif-display); font-size: 2rem; color: #003870; margin-bottom: 0.5rem;">✓</div>
+            <p style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b;">Young family, mortgage, affordable premiums. Option B makes sense.</p>
+          </div>
+          
+          <div style="text-align: center; padding: 1rem;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Mid-Career</h4>
+            <div style="font-family: var(--font-serif-display); font-size: 2rem; color: #F09F54; margin-bottom: 0.5rem;">?</div>
+            <p style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b;">Premiums rising, but coverage still needed. Time to evaluate alternatives.</p>
+          </div>
+          
+          <div style="text-align: center; padding: 1rem;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Retirement</h4>
+            <div style="font-family: var(--font-serif-display); font-size: 2rem; color: #003870; margin-bottom: 0.5rem;">✗</div>
+            <p style="font-family: var(--font-body); font-size: 0.9rem; color: #64748b;">Kids grown, house paid off, high premiums. Usually time to reduce or drop.</p>
+          </div>
+        </div>
+      </div>
+      
+      <p class="fed-ed-fegli-body">The trap occurs because many federal employees elect high Option B coverage early in their career and never revisit the decision. They get comfortable with automatic payroll deductions and don't realize how expensive the coverage becomes in retirement.</p>
+      
+      <p class="fed-ed-fegli-body">From the book examples: Federal employees who kept Option B into retirement often spent $50,000-$100,000 more on life insurance over their retirement years than necessary, money that could have enhanced their retirement lifestyle or been left to their heirs.</p>
+    </section>
+    
+    <!-- PRIVATE ALTERNATIVES -->
+    <section id="private-alternatives" class="fed-ed-fegli-section">
+      <span class="fed-ed-chapter-label">CHAPTER V: ALTERNATIVES</span>
+      <h2 class="fed-ed-fegli-section-title">Private Insurance <em>Comparison</em></h2>
+      
+      <p class="fed-ed-fegli-body">Private life insurance offers several advantages over FEGLI, especially for healthy federal employees. The key is getting coverage while you're still young and healthy, before health issues make you uninsurable.</p>
+      
+      <div class="fed-ed-glass-card">
+        <table class="fed-ed-comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>FEGLI</th>
+              <th>Private Term Life</th>
+              <th>Winner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Medical Underwriting</strong></td>
+              <td>None required</td>
+              <td>Required</td>
+              <td>FEGLI</td>
+            </tr>
+            <tr>
+              <td><strong>Premiums (Healthy 40-year-old)</strong></td>
+              <td>$45/month</td>
+              <td>$25/month</td>
+              <td>Private</td>
+            </tr>
+            <tr>
+              <td><strong>Premiums (70-year-old)</strong></td>
+              <td>$520/month</td>
+              <td>Policy expires</td>
+              <td>Private</td>
+            </tr>
+            <tr class="highlight">
+              <td><strong>Coverage Flexibility</strong></td>
+              <td>Limited options</td>
+              <td>Customizable</td>
+              <td>Private</td>
+            </tr>
+            <tr>
+              <td><strong>Portability</strong></td>
+              <td>Tied to federal employment</td>
+              <td>Fully portable</td>
+              <td>Private</td>
+            </tr>
+            <tr>
+              <td><strong>Conversion Options</strong></td>
+              <td>Limited</td>
+              <td>Good</td>
+              <td>Private</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <p class="fed-ed-fegli-body">The optimal strategy for many federal employees: Keep Basic FEGLI (it's free in retirement), replace expensive Option B with level-premium term life insurance that expires when coverage is no longer needed (typically age 65-70).</p>
+      
+      <div class="fed-ed-stats-grid">
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">50%</span>
+          <span class="fed-ed-stat-label">Potential Savings with Private Insurance</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">20</span>
+          <span class="fed-ed-stat-label">Years Typical Term Length</span>
+        </div>
+        <div class="fed-ed-stat">
+          <span class="fed-ed-stat-number">$500k</span>
+          <span class="fed-ed-stat-label">Common Coverage Amount</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- COVERAGE NEEDS ANALYSIS -->
+    <section id="coverage-needs" class="fed-ed-fegli-section">
+      <span class="fed-ed-chapter-label">CHAPTER VI: NEEDS ANALYSIS</span>
+      <h2 class="fed-ed-fegli-section-title">How Much Coverage Do You <em>Actually</em> Need?</h2>
+      
+      <p class="fed-ed-fegli-body">Most federal employees elect life insurance based on what's available rather than what they actually need. A proper needs analysis considers your family situation, debts, income replacement needs, and existing assets.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Coverage Needs Calculation</h3>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+          <div>
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Financial Obligations</h4>
+            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; list-style: none; padding: 0;">
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">+ Mortgage balance</li>
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">+ Other debts</li>
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">+ Children's education costs</li>
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">+ Income replacement (5-10 years)</li>
+              <li style="padding: 0.5rem 0;">+ Final expenses</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Existing Assets</h4>
+            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; list-style: none; padding: 0;">
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">- Emergency savings</li>
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">- TSP account</li>
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">- Other investments</li>
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6;">- Spouse's income/benefits</li>
+              <li style="padding: 0.5rem 0;">- FERS survivor annuity</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 2px solid #F09F54;">
+          <p style="font-family: var(--font-serif-display); font-size: 1.5rem; color: #003870;">Coverage Needed = Obligations - Assets</p>
+        </div>
+      </div>
+      
+      <p class="fed-ed-fegli-body">As you approach retirement, this equation typically shifts dramatically. Your mortgage gets paid down, your children become financially independent, your TSP grows, and your spouse may qualify for your FERS survivor annuity — all reducing your life insurance needs.</p>
+    </section>
+    
+    <!-- OPTIMIZATION STRATEGIES -->
+    <section id="optimization" class="fed-ed-fegli-section">
+      <span class="fed-ed-chapter-label">CHAPTER VII: OPTIMIZATION</span>
+      <h2 class="fed-ed-fegli-section-title">FEGLI Optimization <em>Strategy</em></h2>
+      
+      <p class="fed-ed-fegli-body">The optimal FEGLI strategy evolves throughout your career. What makes sense at age 30 with young children may be completely inappropriate at age 60 approaching retirement. Regular review and adjustment are essential.</p>
+      
+      <div class="fed-ed-glass-card">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Recommended Strategy by Life Stage</h3>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;">
+          <div style="border-right: 1px solid #f3f4f6; padding-right: 2rem;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Early Career (20s-30s)</h4>
+            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; font-size: 0.9rem;">
+              <li>Keep Basic FEGLI</li>
+              <li>Consider moderate Option B</li>
+              <li>Compare with private term life</li>
+              <li>Option C for family coverage</li>
+            </ul>
+          </div>
+          
+          <div style="border-right: 1px solid #f3f4f6; padding-right: 2rem;">
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Mid-Career (40s-50s)</h4>
+            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; font-size: 0.9rem;">
+              <li>Review Option B costs vs. needs</li>
+              <li>Consider private insurance while healthy</li>
+              <li>Plan reduction strategy for retirement</li>
+              <li>Evaluate spousal coverage needs</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 style="font-family: var(--font-body); color: #F09F54; margin-bottom: 1rem;">Pre-Retirement (55+)</h4>
+            <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; font-size: 0.9rem;">
+              <li>Significantly reduce Option B</li>
+              <li>Keep Basic FEGLI (free in retirement)</li>
+              <li>Consider final expenses coverage only</li>
+              <li>Plan for survivor benefit coordination</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <p class="fed-ed-fegli-body">The key insight: FEGLI is designed for convenience, not optimization. Most federal employees benefit from a hybrid approach — using FEGLI strategically while supplementing with private coverage when appropriate.</p>
+      
+      <p class="fed-ed-fegli-body">Our analysis typically finds federal employees can save $2,000-$5,000 annually by optimizing their life insurance strategy, while often maintaining better coverage for their actual needs.</p>
+    </section>
+  </main>
 </section>
 
-{# ═══════════════════════════════════════════════════════════
-   KEY FACTS
-   ═══════════════════════════════════════════════════════════ #}
-<section class="key-facts">
-    <div class="key-facts-inner">
-        <div class="key-fact">
-            <h3 class="key-fact-label">Coverage Types</h3>
-            <p class="key-fact-value">Basic, Option A, B, C</p>
-        </div>
-        <div class="key-fact">
-            <h3 class="key-fact-label">Analysis</h3>
-            <p class="key-fact-value">Cost vs. need in retirement</p>
-        </div>
-        <div class="key-fact">
-            <h3 class="key-fact-label">Alternatives</h3>
-            <p class="key-fact-value">Private insurance comparison</p>
-        </div>
-        <div class="key-fact">
-            <h3 class="key-fact-label">Reduction Options</h3>
-            <p class="key-fact-value">75% or 50% reduction</p>
-        </div>
-        <div class="key-fact">
-            <h3 class="key-fact-label">Cost</h3>
-            <p class="key-fact-value">Included</p>
-        </div>
+<!-- FAQ SECTION -->
+<section class="fed-ed-faq">
+  <div class="fed-ed-faq-inner">
+    <div>
+      <span class="fed-ed-chapter-label">CHAPTER VIII: COMMON QUESTIONS</span>
+      <h2 class="fed-ed-fegli-section-title">FEGLI Planning <em>FAQ</em></h2>
+      <p class="fed-ed-fegli-body">Everything you need to know about federal life insurance and private alternatives.</p>
+      <div style="margin-top: 2rem;">
+        <a href="/contact/" class="fed-ed-btn-primary">Analyze My Coverage</a>
+      </div>
     </div>
+    
+    <div class="fed-ed-faq-accordion">
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">How much does FEGLI cost in retirement?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">Basic FEGLI reduces by 75% in retirement but remains free (no premium). Optional coverages are where costs can become problematic. Option A continues at $10,000 of coverage, and premiums increase with age. Option B (1-5 times salary) continues at full value, but premiums increase dramatically — often several hundred dollars per month for older retirees. Option C (family coverage) also continues with age-based premium increases. The key issue: while coverage continues, you're paying much higher rates in retirement when you may no longer need the same coverage level you had during your working years.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">Should I keep FEGLI or get private insurance?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">It depends on your health, age, and coverage needs. FEGLI's advantages: no medical underwriting, guaranteed issue, and convenience. Private insurance advantages: often lower premiums (especially for healthy individuals), fixed-term coverage that ends when you no longer need it, and potentially larger death benefits. Many federal employees benefit from keeping Basic FEGLI (it's free in retirement anyway) while replacing expensive Option B coverage with a lower-cost private term policy. We recommend getting a private insurance quote to compare — if you're healthy, you may be paying far more than necessary.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">What is Option B and why is it expensive?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">Option B is additional life insurance coverage equal to 1, 2, 3, 4, or 5 times your annual salary. During your working years, it's relatively affordable. The problem arises in retirement: Option B continues at full value (based on your salary at retirement), but premiums are based on your age and increase every 5 years. For a 70-year-old retiree with high Option B coverage, premiums can exceed $500-800 per month. By that age, many retirees no longer have the same coverage needs (mortgage paid off, kids financially independent), making these premiums difficult to justify.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">Can I get private life insurance instead of FEGLI?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">Yes. You're not required to keep FEGLI, and you can cancel optional coverages at any time (though you may not be able to re-enroll later without a life event). Many federal employees choose to keep Basic FEGLI since it's free in retirement, but replace costly Option B with a private term life insurance policy that ends when coverage is no longer needed. Private insurance requires medical underwriting, so your health, age, and lifestyle affect eligibility and pricing. We can help you compare options and determine if private coverage makes sense for your situation.</p>
+        </div>
+      </div>
+      
+      <div class="fed-ed-faq-item">
+        <button class="fed-ed-faq-trigger">
+          <span class="fed-ed-faq-question">When should I review my FEGLI coverage?</span>
+          <span class="fed-ed-faq-icon">+</span>
+        </button>
+        <div class="fed-ed-faq-panel">
+          <p class="fed-ed-faq-answer">You should review FEGLI at major life events: marriage, divorce, birth of children, home purchase, mortgage payoff, and as you approach retirement (ideally 5-10 years before). Many federal employees elect Option B early in their career when they have young children and a mortgage, then never revisit the decision. By retirement, circumstances have changed dramatically — kids are grown, the house is paid off, and the need for large life insurance coverage has diminished. Reviewing coverage every few years ensures you're not over-insured and overpaying for protection you no longer need.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-{# ═══════════════════════════════════════════════════════════
-   PROBLEM — "Does this sound familiar?"
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>You were automatically enrolled and never reviewed it</h3>
-                <p>Basic FEGLI coverage is automatic for most federal employees — but you may have elected optional coverages years ago without understanding the long-term cost implications.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>Your FEGLI premiums skyrocket in retirement</h3>
-                <p>Basic coverage reduces by 75% but remains free in retirement. Optional coverages (A, B, and C) continue at full value — but premiums increase dramatically with age, potentially costing hundreds per month.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't know if you're over-insured</h3>
-                <p>Option B can provide up to 5 times your annual salary in coverage. That might make sense while raising kids with a mortgage, but do you still need it at age 65 with a paid-off house and grown children?</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You've never compared FEGLI to private insurance</h3>
-                <p>FEGLI was established in 1954 and offers guaranteed coverage without medical underwriting — but if you're healthy, private term life insurance can often provide better coverage at lower cost, especially as you approach retirement.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   SOLUTION — How We Help
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">How We Help</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>FEGLI Analysis & Insurance Optimization</h3>
-                <p>We analyze your FEGLI coverage — Basic, Option A, Option B, and Option C — to determine if you have the right amount of coverage for your current life stage, and project what your premiums will cost in retirement.</p>
-                <p>According to OPM.gov, FEGLI covers more than 4 million federal employees and retirees. While FEGLI offers convenience and guaranteed issue, the cost structure changes significantly in retirement. We compare your FEGLI coverage to private alternatives and help you make informed decisions about what to keep, reduce, or replace.</p>
-            </div>
-            <div class="service-solution-right">
-                <h4>Our FEGLI Planning Includes:</h4>
-                <ul class="service-solution-list">
-                    <li>Complete FEGLI coverage review (Basic, A, B, C)</li>
-                    <li>Lifetime premium projection into retirement</li>
-                    <li>Coverage needs analysis based on your debts, dependents, and goals</li>
-                    <li>Private term life insurance comparison and quotes</li>
-                    <li>Option B reduction strategies (phased reduction vs full cancellation)</li>
-                    <li>Post-retirement cost analysis and optimization</li>
-                    <li>Beneficiary designation review</li>
-                    <li>Estate planning coordination for life insurance proceeds</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   PROCESS — 3-step flow
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Coverage Review</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Analyze your current FEGLI elections, calculate what you’re paying now, and project costs through retirement.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Needs Analysis</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Determine how much life insurance you actually need based on your debts, income replacement needs, and family situation.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Optimize Coverage</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Compare FEGLI to private insurance options, model different coverage scenarios, and recommend the most cost-effective strategy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   FAQ — Service-specific questions
-   ═══════════════════════════════════════════════════════════ #}
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">FEGLI Planning FAQ</h2>
-            <p class="faq-sub">Everything you need to know about FEGLI life insurance and your options.</p>
-            <a href="/contact/" class="resources-cta">Schedule FEGLI Review</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How much does FEGLI cost in retirement?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Basic FEGLI reduces by 75% in retirement but remains free (no premium). Optional coverages are where costs can become problematic. Option A continues at $10,000 of coverage, and premiums increase with age. Option B (1-5 times salary) continues at full value, but premiums increase dramatically — often several hundred dollars per month for older retirees. Option C (family coverage) also continues with age-based premium increases. The key issue: while coverage continues, you're paying much higher rates in retirement when you may no longer need the same coverage level you had during your working years.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Should I keep FEGLI or get private insurance?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">It depends on your health, age, and coverage needs. FEGLI's advantages: no medical underwriting, guaranteed issue, and convenience. Private insurance advantages: often lower premiums (especially for healthy individuals), fixed-term coverage that ends when you no longer need it, and potentially larger death benefits. Many federal employees benefit from keeping Basic FEGLI (it's free in retirement anyway) while replacing expensive Option B coverage with a lower-cost private term policy. We recommend getting a private insurance quote to compare — if you're healthy, you may be paying far more than necessary.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is Option B and why is it expensive?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Option B is additional life insurance coverage equal to 1, 2, 3, 4, or 5 times your annual salary. During your working years, it's relatively affordable. The problem arises in retirement: Option B continues at full value (based on your salary at retirement), but premiums are based on your age and increase every 5 years. For a 70-year-old retiree with high Option B coverage, premiums can exceed $500-800 per month. By that age, many retirees no longer have the same coverage needs (mortgage paid off, kids financially independent), making these premiums difficult to justify.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Can I get private life insurance instead of FEGLI?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Yes. You're not required to keep FEGLI, and you can cancel optional coverages at any time (though you may not be able to re-enroll later without a life event). Many federal employees choose to keep Basic FEGLI since it's free in retirement, but replace costly Option B with a private term life insurance policy that ends when coverage is no longer needed. Private insurance requires medical underwriting, so your health, age, and lifestyle affect eligibility and pricing. We can help you compare options and determine if private coverage makes sense for your situation.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">When should I review my FEGLI coverage?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">You should review FEGLI at major life events: marriage, divorce, birth of children, home purchase, mortgage payoff, and as you approach retirement (ideally 5-10 years before). Many federal employees elect Option B early in their career when they have young children and a mortgage, then never revisit the decision. By retirement, circumstances have changed dramatically — kids are grown, the house is paid off, and the need for large life insurance coverage has diminished. Reviewing coverage every few years ensures you're not over-insured and overpaying for protection you no longer need.</div>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   RELATED SERVICES
-   ═══════════════════════════════════════════════════════════ #}
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <h2 class="related-services-h2">More Federal Employee Services</h2>
-        <div class="service-related-grid">
-            <a href="/services/estate-planning/" class="service-related-link">
-                <span class="service-related-name">Estate Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/fers/" class="service-related-link">
-                <span class="service-related-name">FERS Retirement Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/" class="service-related-link">
-                <span class="service-related-name">Federal Employee Benefits</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
-    </div>
-</section>
+<script>
+(function() {
+  document.querySelectorAll('.fed-ed-faq-trigger').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.fed-ed-faq-item');
+      var isOpen = item.classList.contains('active');
+      
+      // Close all items
+      document.querySelectorAll('.fed-ed-faq-item').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      
+      // Open clicked item if it wasn't already open
+      if (!isOpen) {
+        item.classList.add('active');
+      }
+    });
+  });
+  
+  // Smooth scroll for navigation links
+  document.querySelectorAll('.fed-ed-fegli-nav a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+})();
+</script>

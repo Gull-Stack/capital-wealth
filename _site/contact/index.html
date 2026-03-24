@@ -822,21 +822,41 @@
           </div>
         </div>
         
-        <!-- Honeypot -->
-        <div class="honeypot"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+        <!-- SMS opt-in -->
+        <div class="contact-form-field full-width" style="margin-top: 0.5rem;">
+          <label class="sms-opt-in-label">
+            <input type="checkbox" id="sms_opt_in" name="sms_opt_in" value="yes" style="width: auto; margin-right: 0.5rem; accent-color: #003870;">
+            <span style="font-family: var(--font-body); font-size: 0.8rem; color: #64748b; line-height: 1.4;">By checking this box and signing up for texts, you consent to receive appointment reminders, account notifications, and text messages from Capital Wealth at the number provided. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply STOP to opt out or HELP for help. <a href="/disclosures/" style="color: #003870; text-decoration: underline;">Privacy Policy</a> and <a href="/terms/" style="color: #003870; text-decoration: underline;">Terms</a>.</span>
+          </label>
+        </div>
         
-        <button type="submit" id="submit-btn" class="contact-form-submit">REQUEST CONSULTATION →</button>
+        <!-- Honeypot fields — invisible to humans, irresistible to bots -->
+        <div class="honeypot"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="honeypot"><input type="text" name="company_url" tabindex="-1" autocomplete="off"></div>
+        
+        <button type="submit" id="submit-btn" class="contact-form-submit">SCHEDULE YOUR VISIT →</button>
         <div id="form-status" style="margin-top: 12px; text-align: center; font-weight: 500;"></div>
       </form>
       
       <script>
+      // Track when the page loaded for time-based spam check
+      var formLoadTime = Date.now();
+
       document.getElementById('contact-form').addEventListener('submit', async function(e) {
         e.preventDefault();
         var btn = document.getElementById('submit-btn');
         var status = document.getElementById('form-status');
 
-        // Honeypot check
-        if (this.querySelector('[name="website"]').value) return;
+        // Honeypot check — bots auto-fill hidden fields
+        if (this.querySelector('[name="website"]').value || this.querySelector('[name="company_url"]').value) return;
+
+        // Time-based check — reject if submitted in under 3 seconds (bots are instant)
+        var timeSinceLoad = (Date.now() - formLoadTime) / 1000;
+        if (timeSinceLoad < 3) {
+          status.textContent = 'Please take a moment to fill out the form.';
+          status.style.color = '#ba1a1a';
+          return;
+        }
 
         btn.disabled = true;
         btn.innerHTML = 'SENDING...';

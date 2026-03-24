@@ -510,212 +510,329 @@
 /* Content area */
 .service-content {
   /* Content is injected here via 
+<style>
+.fed-ed-calc-hero {
+  background: #003870;
+  padding: 8rem 0;
+  color: white;
+  text-align: center;
+}
 
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">FERS CALCULATOR</p>
-            <h2 >FERS Retirement Calculator</h2>
-            <p class="titan-subhero-body">Understanding how your FERS annuity is calculated is essential for retirement planning. The formula is straightforward — but applying it correctly requires accounting for your high-3 salary, creditable service, part-time periods, sick leave credit, and survivor benefit elections.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">GET PERSONALIZED CALCULATION <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/services/federal-benefits.jpg" alt="Federal employee calculating FERS retirement annuity" class="titan-subhero-img">
-    </div>
+.fed-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-calc-headline {
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-calc-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-calc-desc {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.fed-ed-calculator {
+  background: white;
+  padding: 6rem 0;
+}
+
+.fed-ed-calculator-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-calc-form {
+  background: #f8f9fb;
+  padding: 3rem;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+}
+
+.fed-ed-calc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fed-ed-calc-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.fed-ed-calc-label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #003870;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-calc-input {
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.fed-ed-calc-button {
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fed-ed-calc-button:hover {
+  background: #194F90;
+}
+
+.fed-ed-calc-results {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(0,56,112,0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  display: none;
+}
+
+.fed-ed-calc-result-amount {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  color: #003870;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-calc-result-label {
+  font-family: var(--font-mono);
+  color: #F09F54;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-calc-disclaimer {
+  font-family: var(--font-body);
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.fed-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fed-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .fed-ed-calc-headline {
+    font-size: 2.5rem;
+  }
+  
+  .fed-ed-calc-form {
+    padding: 2rem;
+  }
+  
+  .fed-ed-calc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="fed-ed-calc-hero">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+    <span class="fed-ed-chapter-label">CHAPTER I: CALCULATE YOUR FUTURE</span>
+    <h1 class="fed-ed-calc-headline">Your FERS <em>Calculator</em></h1>
+    <p class="fed-ed-calc-desc">Estimate your FERS annuity using the official OPM formula. This calculator provides a baseline estimate — for a comprehensive analysis with all variables, schedule a consultation.</p>
+  </div>
 </section>
 
-<section class="quote-bar">
-    <div class="quote-bar-inner">
-        <p class="quote-bar-text">"A FERS estimate from OPM is a starting point. A real retirement plan is the destination."</p>
-        <p class="quote-bar-author">— Mike Stevens, IAR</p>
+<!-- CALCULATOR SECTION -->
+<section class="fed-ed-calculator">
+  <div class="fed-ed-calculator-inner">
+    <div class="fed-ed-calc-form">
+      <h2 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 2rem; text-align: center;">FERS Annuity Estimator</h2>
+      
+      <div class="fed-ed-calc-grid">
+        <div class="fed-ed-calc-field">
+          <label class="fed-ed-calc-label" for="yearsService">Years of Creditable Service</label>
+          <input type="number" id="yearsService" class="fed-ed-calc-input" placeholder="25" min="0" max="50" step="0.25">
+        </div>
+        
+        <div class="fed-ed-calc-field">
+          <label class="fed-ed-calc-label" for="high3Salary">High-3 Average Salary</label>
+          <input type="number" id="high3Salary" class="fed-ed-calc-input" placeholder="85000" min="0" max="200000">
+        </div>
+        
+        <div class="fed-ed-calc-field">
+          <label class="fed-ed-calc-label" for="retirementAge">Age at Retirement</label>
+          <input type="number" id="retirementAge" class="fed-ed-calc-input" placeholder="62" min="50" max="70">
+        </div>
+        
+        <div class="fed-ed-calc-field">
+          <label class="fed-ed-calc-label" for="survivorBenefit">Survivor Benefit</label>
+          <select id="survivorBenefit" class="fed-ed-calc-input">
+            <option value="none">No Survivor Benefit</option>
+            <option value="partial">Partial (5% reduction)</option>
+            <option value="full">Full (10% reduction)</option>
+          </select>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <button onclick="calculateFERS()" class="fed-ed-calc-button">Calculate My FERS Annuity</button>
+      </div>
     </div>
+    
+    <div id="calculatorResults" class="fed-ed-calc-results">
+      <div class="fed-ed-calc-result-amount" id="annualAmount">$0</div>
+      <div class="fed-ed-calc-result-label">Estimated Annual FERS Annuity</div>
+      <div class="fed-ed-calc-result-amount" style="font-size: 1.5rem; margin-top: 1rem;" id="monthlyAmount">$0</div>
+      <div class="fed-ed-calc-result-label">Estimated Monthly Amount</div>
+      
+      <div class="fed-ed-calc-disclaimer">
+        <strong>Important Disclaimer:</strong> This is a basic estimate using the standard FERS formula. Your actual annuity may differ due to part-time service adjustments, unused sick leave credit, military service buybacks, special category employee provisions, or other factors. For a comprehensive calculation, <a href="/contact/" style="color: #003870;">schedule a consultation</a> where we'll review your actual service records and provide a detailed analysis.
+      </div>
+      
+      <div style="margin-top: 2rem;">
+        <a href="/contact/" class="fed-ed-btn-primary">Get Personalized Analysis</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="key-facts">
-    <div class="key-facts-inner">
-        <div class="key-fact-item">
-            <p class="key-fact-label">Calculation</p>
-            <p class="key-fact-value">High-3, years of service, multiplier</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Supplement</p>
-            <p class="key-fact-value">Included if eligible</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Survivor Benefits</p>
-            <p class="key-fact-value">Analyzed</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Accuracy</p>
-            <p class="key-fact-value">Official OPM verification</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Cost</p>
-            <p class="key-fact-value">Included</p>
-        </div>
+<!-- EDUCATION SECTION -->
+<section style="padding: 6rem 0; background: #f8f9fb;">
+  <div style="max-width: 1000px; margin: 0 auto; padding: 0 2rem;">
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <span class="fed-ed-chapter-label">CHAPTER II: UNDERSTANDING THE FORMULA</span>
+      <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; color: #003870;">How FERS <em>Calculations</em> Work</h2>
     </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,56,112,0.08);">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Years of Service</h3>
+        <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">All creditable federal service under FERS, including unused sick leave credit (converted to additional service time for annuity purposes).</p>
+      </div>
+      
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,56,112,0.08);">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">High-3 Salary</h3>
+        <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">Your highest average basic pay during any consecutive 36-month period. Usually your final three years before retirement.</p>
+      </div>
+      
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,56,112,0.08); border-left: 4px solid #F09F54;">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Multiplier</h3>
+        <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; margin: 0; padding-left: 1.2rem;">
+          <li>1.0% - Standard multiplier</li>
+          <li>1.1% - Age 62+ with 20+ years</li>
+          <li>1.7% - Special category (first 20 years)</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="/contact/" class="fed-ed-btn-primary">Schedule Professional Calculation</a>
+    </div>
+  </div>
 </section>
 
+<script>
+function calculateFERS() {
+  const yearsService = parseFloat(document.getElementById('yearsService').value) || 0;
+  const high3Salary = parseFloat(document.getElementById('high3Salary').value) || 0;
+  const retirementAge = parseInt(document.getElementById('retirementAge').value) || 0;
+  const survivorBenefit = document.getElementById('survivorBenefit').value;
+  
+  if (yearsService === 0 || high3Salary === 0 || retirementAge === 0) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+  
+  // Determine multiplier
+  let multiplier = 0.01; // Standard 1%
+  
+  // Enhanced 1.1% multiplier for age 62+ with 20+ years
+  if (retirementAge >= 62 && yearsService >= 20) {
+    multiplier = 0.011;
+  }
+  
+  // Calculate base annuity
+  let annualAnnuity = yearsService * high3Salary * multiplier;
+  
+  // Apply survivor benefit reduction
+  let survReduction = 0;
+  if (survivorBenefit === 'partial') {
+    survReduction = 0.05;
+  } else if (survivorBenefit === 'full') {
+    survReduction = 0.10;
+  }
+  
+  annualAnnuity = annualAnnuity * (1 - survReduction);
+  
+  const monthlyAnnuity = annualAnnuity / 12;
+  
+  // Display results
+  document.getElementById('annualAmount').textContent = '$' + Math.round(annualAnnuity).toLocaleString();
+  document.getElementById('monthlyAmount').textContent = '$' + Math.round(monthlyAnnuity).toLocaleString();
+  document.getElementById('calculatorResults').style.display = 'block';
+  
+  // Scroll to results
+  document.getElementById('calculatorResults').scrollIntoView({ behavior: 'smooth' });
+}
 
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>Online calculators give you confusing results</h3>
-                <p>Generic FERS calculators don't account for part-time service, military buybacks, unused sick leave credit, or special category employee rules — leading to inaccurate estimates.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't know how sick leave affects your calculation</h3>
-                <p>Unused sick leave adds to your creditable service for annuity computation — but the calculation is complex and many federal employees underestimate how much this increases their pension.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You can't model the impact of survivor benefit elections</h3>
-                <p>Electing a full survivor benefit costs 10% of your annuity, partial costs 5%, and no election means maximum pension but no protection for your spouse. Understanding the trade-offs requires detailed modeling.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're not sure how taxes will affect your take-home</h3>
-                <p>Your gross FERS annuity is only part of the picture. Federal and state taxes, FEHB premiums, and potential FEGLI costs all reduce what you actually receive each month.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">How We Help</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Comprehensive FERS Annuity Calculation</h3>
-                <p>We provide personalized FERS annuity calculations using your actual service records, salary history, and benefit elections — accounting for every factor that affects your pension amount.</p>
-                <p>The basic FERS formula is: <strong>Years of Creditable Service × High-3 Average Salary × Multiplier</strong>. For example, a federal employee with 25 years of service and a high-3 salary of $95,000 would receive an annual annuity of $23,750 using the standard 1% multiplier (25 × $95,000 × 0.01 = $23,750). However, real calculations often involve adjustments for part-time service, sick leave credit, special category provisions, and survivor benefit reductions.</p>
-            </div>
-            <div class="service-solution-right">
-                <h4>Our FERS Calculation Includes:</h4>
-                <ul class="service-solution-list">
-                    <li>Precise high-3 average salary calculation using your pay history</li>
-                    <li>Creditable service accounting (including part-time adjustments)</li>
-                    <li>Unused sick leave credit conversion to service time</li>
-                    <li>1.1% multiplier eligibility for age 62+ with 20+ years</li>
-                    <li>Special provisions for law enforcement, firefighters, and air traffic controllers</li>
-                    <li>Survivor benefit election impact (full, partial, or none)</li>
-                    <li>Military service buyback cost-benefit analysis</li>
-                    <li>Net take-home calculation after taxes and premiums</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Gather Your Records</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Review your SF-50s, service computation date, leave balances, and salary history to ensure accuracy.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Calculate Your Annuity</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Apply the FERS formula with all adjustments including high-3, sick leave credit, and survivor benefit elections to determine your gross annuity.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Model Different Scenarios</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Compare retirement at different ages, with different survivor benefit elections, and project your net take-home income after all deductions.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">FERS Calculator FAQ</h2>
-            <p class="faq-sub">Everything you need to know about calculating your FERS retirement annuity.</p>
-            <a href="/contact/" class="resources-cta">Schedule Calculation Session</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How is my FERS pension calculated?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">According to OPM guidelines, your FERS annuity is calculated using the formula: Years of Creditable Service × High-3 Average Salary × Multiplier. The standard multiplier is 1% for most employees. If you retire at age 62 or older with at least 20 years of service, the multiplier increases to 1.1%. Special category employees (law enforcement officers, firefighters, and air traffic controllers) receive a 1.7% multiplier for their first 20 years of service and 1% thereafter. Your creditable service includes all periods of federal employment covered by FERS, plus unused sick leave credit (which is added to your service time for annuity computation purposes).</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How does sick leave credit affect my annuity?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Unused sick leave is converted into creditable service for your FERS annuity calculation. The conversion depends on when you retire and how much sick leave you have. For retirements after 2014, all unused sick leave counts toward your annuity (previously, only 50% counted for FERS employees). The leave balance is converted into months and days of service credit, which is then added to your total creditable service before applying the FERS formula. For example, if you have 2,000 hours of unused sick leave, that converts to approximately one year of additional service credit. This can significantly increase your annuity — in many cases by several hundred dollars per month.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is the 1.1% multiplier and do I qualify?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The enhanced 1.1% multiplier is available if you retire at age 62 or older with at least 20 years of creditable service. This represents a 10% increase over the standard 1% multiplier. For example, with a high-3 salary of $100,000 and 25 years of service, the standard formula gives you $25,000/year (25 × $100,000 × 1%), but with the 1.1% multiplier you receive $27,500/year (25 × $100,000 × 1.1%) — an extra $2,500 annually. To qualify, you must actually be age 62 when you retire, not just meet Minimum Retirement Age. Employees who retire before 62 receive the standard 1% multiplier even if they eventually turn 62.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How does the survivor benefit reduce my annuity?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The FERS survivor benefit provides ongoing income to your spouse after your death, but it reduces your annuity during your lifetime. You have three options: Full survivor benefit (your spouse receives 50% of your annuity, costs you 10% of your annuity), Partial survivor benefit (spouse receives 25%, costs you 5%), or No survivor benefit (maximum pension for you, but nothing for your spouse). For example, if your calculated annuity is $30,000/year and you elect the full survivor benefit, you'll receive $27,000/year ($30,000 - 10%), and your spouse will receive $15,000/year (50% of the unreduced amount) after your death. The decision depends on your spouse's other income sources, health, and age difference.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is the high-3 average salary?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The high-3 is your highest average basic pay earned during any consecutive 36-month period of service. It typically includes your base salary but does NOT include overtime, bonuses, locality pay adjustments (for annuity purposes, though locality is part of your actual salary), or other premium pay. OPM calculates this by looking at all possible 36-month periods in your career and identifying which one yields the highest average. For most employees, this is their final three years before retirement, but if you took a lower-paying position later in your career, an earlier period might produce a higher average. Maximizing your high-3 — through promotions, step increases, or avoiding demotions near retirement — can significantly impact your lifetime annuity.</div>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <h2 class="service-related-heading">More Ways We Can Help</h2>
-        <div class="service-related-grid">
-            <a href="/services/federal-benefits/fers-retirement/" class="service-related-link">
-                <span class="service-related-name">FERS Retirement Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/retirement-money-map/" class="service-related-link">
-                <span class="service-related-name">Retirement Money Map</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/" class="service-related-link">
-                <span class="service-related-name">Federal Employee Benefits</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
-    </div>
-</section>
- */
+// Allow Enter key to trigger calculation
+document.addEventListener('DOMContentLoaded', function() {
+  const inputs = document.querySelectorAll('.fed-ed-calc-input');
+  inputs.forEach(input => {
+    input.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        calculateFERS();
+      }
+    });
+  });
+});
+</script> */
 }
 
 /* Related Blog Posts */
@@ -906,212 +1023,329 @@
 <!-- Service Content -->
 <div class="service-content">
   
+<style>
+.fed-ed-calc-hero {
+  background: #003870;
+  padding: 8rem 0;
+  color: white;
+  text-align: center;
+}
 
-<section class="titan-subhero">
-    <div class="titan-subhero-inner">
-        <div class="titan-subhero-content">
-            <p class="titan-section-label">FERS CALCULATOR</p>
-            <h2 >FERS Retirement Calculator</h2>
-            <p class="titan-subhero-body">Understanding how your FERS annuity is calculated is essential for retirement planning. The formula is straightforward — but applying it correctly requires accounting for your high-3 salary, creditable service, part-time periods, sick leave credit, and survivor benefit elections.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">GET PERSONALIZED CALCULATION <span>→</span></a>
-            </div>
-        </div>
-        <img src="/assets/images/services/federal-benefits.jpg" alt="Federal employee calculating FERS retirement annuity" class="titan-subhero-img">
-    </div>
+.fed-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-calc-headline {
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.fed-ed-calc-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.fed-ed-calc-desc {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.fed-ed-calculator {
+  background: white;
+  padding: 6rem 0;
+}
+
+.fed-ed-calculator-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fed-ed-calc-form {
+  background: #f8f9fb;
+  padding: 3rem;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+}
+
+.fed-ed-calc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fed-ed-calc-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.fed-ed-calc-label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #003870;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-calc-input {
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.fed-ed-calc-button {
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fed-ed-calc-button:hover {
+  background: #194F90;
+}
+
+.fed-ed-calc-results {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(0,56,112,0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  display: none;
+}
+
+.fed-ed-calc-result-amount {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  color: #003870;
+  margin-bottom: 0.5rem;
+}
+
+.fed-ed-calc-result-label {
+  font-family: var(--font-mono);
+  color: #F09F54;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.fed-ed-calc-disclaimer {
+  font-family: var(--font-body);
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.fed-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fed-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .fed-ed-calc-headline {
+    font-size: 2.5rem;
+  }
+  
+  .fed-ed-calc-form {
+    padding: 2rem;
+  }
+  
+  .fed-ed-calc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="fed-ed-calc-hero">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+    <span class="fed-ed-chapter-label">CHAPTER I: CALCULATE YOUR FUTURE</span>
+    <h1 class="fed-ed-calc-headline">Your FERS <em>Calculator</em></h1>
+    <p class="fed-ed-calc-desc">Estimate your FERS annuity using the official OPM formula. This calculator provides a baseline estimate — for a comprehensive analysis with all variables, schedule a consultation.</p>
+  </div>
 </section>
 
-<section class="quote-bar">
-    <div class="quote-bar-inner">
-        <p class="quote-bar-text">"A FERS estimate from OPM is a starting point. A real retirement plan is the destination."</p>
-        <p class="quote-bar-author">— Mike Stevens, IAR</p>
+<!-- CALCULATOR SECTION -->
+<section class="fed-ed-calculator">
+  <div class="fed-ed-calculator-inner">
+    <div class="fed-ed-calc-form">
+      <h2 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 2rem; text-align: center;">FERS Annuity Estimator</h2>
+      
+      <div class="fed-ed-calc-grid">
+        <div class="fed-ed-calc-field">
+          <label class="fed-ed-calc-label" for="yearsService">Years of Creditable Service</label>
+          <input type="number" id="yearsService" class="fed-ed-calc-input" placeholder="25" min="0" max="50" step="0.25">
+        </div>
+        
+        <div class="fed-ed-calc-field">
+          <label class="fed-ed-calc-label" for="high3Salary">High-3 Average Salary</label>
+          <input type="number" id="high3Salary" class="fed-ed-calc-input" placeholder="85000" min="0" max="200000">
+        </div>
+        
+        <div class="fed-ed-calc-field">
+          <label class="fed-ed-calc-label" for="retirementAge">Age at Retirement</label>
+          <input type="number" id="retirementAge" class="fed-ed-calc-input" placeholder="62" min="50" max="70">
+        </div>
+        
+        <div class="fed-ed-calc-field">
+          <label class="fed-ed-calc-label" for="survivorBenefit">Survivor Benefit</label>
+          <select id="survivorBenefit" class="fed-ed-calc-input">
+            <option value="none">No Survivor Benefit</option>
+            <option value="partial">Partial (5% reduction)</option>
+            <option value="full">Full (10% reduction)</option>
+          </select>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <button onclick="calculateFERS()" class="fed-ed-calc-button">Calculate My FERS Annuity</button>
+      </div>
     </div>
+    
+    <div id="calculatorResults" class="fed-ed-calc-results">
+      <div class="fed-ed-calc-result-amount" id="annualAmount">$0</div>
+      <div class="fed-ed-calc-result-label">Estimated Annual FERS Annuity</div>
+      <div class="fed-ed-calc-result-amount" style="font-size: 1.5rem; margin-top: 1rem;" id="monthlyAmount">$0</div>
+      <div class="fed-ed-calc-result-label">Estimated Monthly Amount</div>
+      
+      <div class="fed-ed-calc-disclaimer">
+        <strong>Important Disclaimer:</strong> This is a basic estimate using the standard FERS formula. Your actual annuity may differ due to part-time service adjustments, unused sick leave credit, military service buybacks, special category employee provisions, or other factors. For a comprehensive calculation, <a href="/contact/" style="color: #003870;">schedule a consultation</a> where we'll review your actual service records and provide a detailed analysis.
+      </div>
+      
+      <div style="margin-top: 2rem;">
+        <a href="/contact/" class="fed-ed-btn-primary">Get Personalized Analysis</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="key-facts">
-    <div class="key-facts-inner">
-        <div class="key-fact-item">
-            <p class="key-fact-label">Calculation</p>
-            <p class="key-fact-value">High-3, years of service, multiplier</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Supplement</p>
-            <p class="key-fact-value">Included if eligible</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Survivor Benefits</p>
-            <p class="key-fact-value">Analyzed</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Accuracy</p>
-            <p class="key-fact-value">Official OPM verification</p>
-        </div>
-        <div class="key-fact-item">
-            <p class="key-fact-label">Cost</p>
-            <p class="key-fact-value">Included</p>
-        </div>
+<!-- EDUCATION SECTION -->
+<section style="padding: 6rem 0; background: #f8f9fb;">
+  <div style="max-width: 1000px; margin: 0 auto; padding: 0 2rem;">
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <span class="fed-ed-chapter-label">CHAPTER II: UNDERSTANDING THE FORMULA</span>
+      <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; color: #003870;">How FERS <em>Calculations</em> Work</h2>
     </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,56,112,0.08);">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Years of Service</h3>
+        <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">All creditable federal service under FERS, including unused sick leave credit (converted to additional service time for annuity purposes).</p>
+      </div>
+      
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,56,112,0.08);">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">High-3 Salary</h3>
+        <p style="font-family: var(--font-body); color: #64748b; line-height: 1.6;">Your highest average basic pay during any consecutive 36-month period. Usually your final three years before retirement.</p>
+      </div>
+      
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,56,112,0.08); border-left: 4px solid #F09F54;">
+        <h3 style="font-family: var(--font-serif-display); color: #003870; margin-bottom: 1rem;">Multiplier</h3>
+        <ul style="font-family: var(--font-body); color: #64748b; line-height: 1.6; margin: 0; padding-left: 1.2rem;">
+          <li>1.0% - Standard multiplier</li>
+          <li>1.1% - Age 62+ with 20+ years</li>
+          <li>1.7% - Special category (first 20 years)</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="/contact/" class="fed-ed-btn-primary">Schedule Professional Calculation</a>
+    </div>
+  </div>
 </section>
 
+<script>
+function calculateFERS() {
+  const yearsService = parseFloat(document.getElementById('yearsService').value) || 0;
+  const high3Salary = parseFloat(document.getElementById('high3Salary').value) || 0;
+  const retirementAge = parseInt(document.getElementById('retirementAge').value) || 0;
+  const survivorBenefit = document.getElementById('survivorBenefit').value;
+  
+  if (yearsService === 0 || high3Salary === 0 || retirementAge === 0) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+  
+  // Determine multiplier
+  let multiplier = 0.01; // Standard 1%
+  
+  // Enhanced 1.1% multiplier for age 62+ with 20+ years
+  if (retirementAge >= 62 && yearsService >= 20) {
+    multiplier = 0.011;
+  }
+  
+  // Calculate base annuity
+  let annualAnnuity = yearsService * high3Salary * multiplier;
+  
+  // Apply survivor benefit reduction
+  let survReduction = 0;
+  if (survivorBenefit === 'partial') {
+    survReduction = 0.05;
+  } else if (survivorBenefit === 'full') {
+    survReduction = 0.10;
+  }
+  
+  annualAnnuity = annualAnnuity * (1 - survReduction);
+  
+  const monthlyAnnuity = annualAnnuity / 12;
+  
+  // Display results
+  document.getElementById('annualAmount').textContent = '$' + Math.round(annualAnnuity).toLocaleString();
+  document.getElementById('monthlyAmount').textContent = '$' + Math.round(monthlyAnnuity).toLocaleString();
+  document.getElementById('calculatorResults').style.display = 'block';
+  
+  // Scroll to results
+  document.getElementById('calculatorResults').scrollIntoView({ behavior: 'smooth' });
+}
 
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>Online calculators give you confusing results</h3>
-                <p>Generic FERS calculators don't account for part-time service, military buybacks, unused sick leave credit, or special category employee rules — leading to inaccurate estimates.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't know how sick leave affects your calculation</h3>
-                <p>Unused sick leave adds to your creditable service for annuity computation — but the calculation is complex and many federal employees underestimate how much this increases their pension.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You can't model the impact of survivor benefit elections</h3>
-                <p>Electing a full survivor benefit costs 10% of your annuity, partial costs 5%, and no election means maximum pension but no protection for your spouse. Understanding the trade-offs requires detailed modeling.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're not sure how taxes will affect your take-home</h3>
-                <p>Your gross FERS annuity is only part of the picture. Federal and state taxes, FEHB premiums, and potential FEGLI costs all reduce what you actually receive each month.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="service-solution">
-    <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="Couple enjoying retirement" class="service-solution-img">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">How We Help</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Comprehensive FERS Annuity Calculation</h3>
-                <p>We provide personalized FERS annuity calculations using your actual service records, salary history, and benefit elections — accounting for every factor that affects your pension amount.</p>
-                <p>The basic FERS formula is: <strong>Years of Creditable Service × High-3 Average Salary × Multiplier</strong>. For example, a federal employee with 25 years of service and a high-3 salary of $95,000 would receive an annual annuity of $23,750 using the standard 1% multiplier (25 × $95,000 × 0.01 = $23,750). However, real calculations often involve adjustments for part-time service, sick leave credit, special category provisions, and survivor benefit reductions.</p>
-            </div>
-            <div class="service-solution-right">
-                <h4>Our FERS Calculation Includes:</h4>
-                <ul class="service-solution-list">
-                    <li>Precise high-3 average salary calculation using your pay history</li>
-                    <li>Creditable service accounting (including part-time adjustments)</li>
-                    <li>Unused sick leave credit conversion to service time</li>
-                    <li>1.1% multiplier eligibility for age 62+ with 20+ years</li>
-                    <li>Special provisions for law enforcement, firefighters, and air traffic controllers</li>
-                    <li>Survivor benefit election impact (full, partial, or none)</li>
-                    <li>Military service buyback cost-benefit analysis</li>
-                    <li>Net take-home calculation after taxes and premiums</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="service-process">
-    <div class="service-process-inner">
-                <div class="service-process-left">
-            <h2 class="service-process-h2">How it Works</h2>
-            <p class="service-process-subtitle">It's just three steps</p>
-            <a href="/contact/" class="service-process-cta">BECOME A CLIENT</a>
-        </div>
-        <div class="service-process-right">
-            <div class="service-process-steps">
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 1) Gather Your Records</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Review your SF-50s, service computation date, leave balances, and salary history to ensure accuracy.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 2) Calculate Your Annuity</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Apply the FERS formula with all adjustments including high-3, sick leave credit, and survivor benefit elections to determine your gross annuity.</p>
-                    </div>
-                </div>
-                <div class="service-process-step">
-                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
-                        <span class="service-process-step-title">Step 3) Model Different Scenarios</span>
-                        <span class="service-process-chevron">▾</span>
-                    </div>
-                    <div class="service-process-step-body">
-                        <p>Compare retirement at different ages, with different survivor benefit elections, and project your net take-home income after all deductions.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">FERS Calculator FAQ</h2>
-            <p class="faq-sub">Everything you need to know about calculating your FERS retirement annuity.</p>
-            <a href="/contact/" class="resources-cta">Schedule Calculation Session</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How is my FERS pension calculated?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">According to OPM guidelines, your FERS annuity is calculated using the formula: Years of Creditable Service × High-3 Average Salary × Multiplier. The standard multiplier is 1% for most employees. If you retire at age 62 or older with at least 20 years of service, the multiplier increases to 1.1%. Special category employees (law enforcement officers, firefighters, and air traffic controllers) receive a 1.7% multiplier for their first 20 years of service and 1% thereafter. Your creditable service includes all periods of federal employment covered by FERS, plus unused sick leave credit (which is added to your service time for annuity computation purposes).</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How does sick leave credit affect my annuity?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Unused sick leave is converted into creditable service for your FERS annuity calculation. The conversion depends on when you retire and how much sick leave you have. For retirements after 2014, all unused sick leave counts toward your annuity (previously, only 50% counted for FERS employees). The leave balance is converted into months and days of service credit, which is then added to your total creditable service before applying the FERS formula. For example, if you have 2,000 hours of unused sick leave, that converts to approximately one year of additional service credit. This can significantly increase your annuity — in many cases by several hundred dollars per month.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is the 1.1% multiplier and do I qualify?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The enhanced 1.1% multiplier is available if you retire at age 62 or older with at least 20 years of creditable service. This represents a 10% increase over the standard 1% multiplier. For example, with a high-3 salary of $100,000 and 25 years of service, the standard formula gives you $25,000/year (25 × $100,000 × 1%), but with the 1.1% multiplier you receive $27,500/year (25 × $100,000 × 1.1%) — an extra $2,500 annually. To qualify, you must actually be age 62 when you retire, not just meet Minimum Retirement Age. Employees who retire before 62 receive the standard 1% multiplier even if they eventually turn 62.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How does the survivor benefit reduce my annuity?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The FERS survivor benefit provides ongoing income to your spouse after your death, but it reduces your annuity during your lifetime. You have three options: Full survivor benefit (your spouse receives 50% of your annuity, costs you 10% of your annuity), Partial survivor benefit (spouse receives 25%, costs you 5%), or No survivor benefit (maximum pension for you, but nothing for your spouse). For example, if your calculated annuity is $30,000/year and you elect the full survivor benefit, you'll receive $27,000/year ($30,000 - 10%), and your spouse will receive $15,000/year (50% of the unreduced amount) after your death. The decision depends on your spouse's other income sources, health, and age difference.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is the high-3 average salary?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">The high-3 is your highest average basic pay earned during any consecutive 36-month period of service. It typically includes your base salary but does NOT include overtime, bonuses, locality pay adjustments (for annuity purposes, though locality is part of your actual salary), or other premium pay. OPM calculates this by looking at all possible 36-month periods in your career and identifying which one yields the highest average. For most employees, this is their final three years before retirement, but if you took a lower-paying position later in your career, an earlier period might produce a higher average. Maximizing your high-3 — through promotions, step increases, or avoiding demotions near retirement — can significantly impact your lifetime annuity.</div>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="service-related">
-    <div class="service-related-inner">
-        <p class="titan-section-label">RELATED SERVICES</p>
-        <h2 class="service-related-heading">More Ways We Can Help</h2>
-        <div class="service-related-grid">
-            <a href="/services/federal-benefits/fers-retirement/" class="service-related-link">
-                <span class="service-related-name">FERS Retirement Planning</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/retirement-money-map/" class="service-related-link">
-                <span class="service-related-name">Retirement Money Map</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-            <a href="/services/federal-benefits/" class="service-related-link">
-                <span class="service-related-name">Federal Employee Benefits</span>
-                <span class="service-related-arrow">→</span>
-            </a>
-        </div>
-    </div>
-</section>
-
+// Allow Enter key to trigger calculation
+document.addEventListener('DOMContentLoaded', function() {
+  const inputs = document.querySelectorAll('.fed-ed-calc-input');
+  inputs.forEach(input => {
+    input.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        calculateFERS();
+      }
+    });
+  });
+});
+</script>
 </div>
 
 <!-- Related Blog Posts -->
