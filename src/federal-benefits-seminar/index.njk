@@ -24,21 +24,12 @@ bodyClass: "landing-page"
   font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Hide nav elements for landing page */
-.landing-page .finpay-nav-links,
-.landing-page .finpay-nav-right,
-.landing-page .desktop-cta,
-.landing-page .client-login-cta,
-.landing-page .mobile-menu-btn {
+/* Hide entire site header on landing page */
+.landing-page .finpay-header,
+.landing-page header,
+.landing-page .finpay-nav-wrapper,
+.landing-page nav {
   display: none !important;
-}
-
-.landing-page .finpay-nav {
-  justify-content: center;
-}
-
-.landing-page .finpay-nav-logo {
-  margin: 0;
 }
 
 /* Glass effect utility */
@@ -741,6 +732,7 @@ bodyClass: "landing-page"
   <div class="sem-hero-content">
     <!-- Hero Content -->
     <div class="sem-hero-left">
+      <img src="/assets/images/logos/logo-horizontal-white.png" alt="Capital Wealth" style="height: 40px; width: auto; margin-bottom: 2rem; display: block;">
       <span class="sem-eyebrow">Official Educational Briefing</span>
       <h1 class="sem-hero-title">
         Federal Benefits <br> Masterclass: <br>
