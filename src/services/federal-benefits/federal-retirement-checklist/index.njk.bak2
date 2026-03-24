@@ -1,0 +1,978 @@
+---
+layout: layouts/service-subpage.njk
+title: "Federal Retirement Checklist | Capital Wealth"
+description: "Complete federal retirement preparation checklist. Timeline from 5 years out to retirement day covering FERS, TSP, FEHB, FEGLI, and all essential federal employee retirement steps."
+serviceTag: "federal"
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Services", url: "/services/" }
+  - { name: "Federal Employee Benefits", url: "/services/federal-benefits/" }
+  - { name: "Federal Retirement Checklist", url: "/services/federal-benefits/federal-retirement-checklist/" }
+faqSchema:
+  - question: "When should I start planning my federal retirement?"
+    answer: "Start planning your federal retirement at least 5 years before your intended retirement date. This gives you time to optimize your FERS pension calculation, maximize TSP contributions, ensure FEHB eligibility, review FEGLI needs, plan Social Security coordination, and make any necessary adjustments to your federal benefits. Early planning allows you to take advantage of strategies like military buyback, sick leave maximization, and high-3 salary optimization that require time to implement properly."
+  - question: "What forms do I need to submit for federal retirement?"
+    answer: "The primary form is SF-3107 (Application for Immediate Retirement - FERS) or SF-2801 for CSRS employees. You'll also need SF-3102 (Designation of Beneficiary - FERS), health insurance enrollment forms if making changes, TSP withdrawal forms, and potentially survivor benefit elections. Submit your retirement application to your HR office at least 60 days before your intended retirement date (90 days is recommended). Each agency may have additional forms or requirements, so check with your HR department early in the process."
+  - question: "How do I ensure I meet the 5-year FEHB rule?"
+    answer: "To carry FEHB into retirement, you must be enrolled for 5 consecutive years immediately before retirement. Check your personnel records to verify continuous enrollment. If you have any gaps (such as periods covered under a spouse's plan), you may not be eligible. Limited exceptions exist for military service or involuntary loss of spousal coverage. If you're close to but don't meet the 5-year requirement, consider extending your retirement date to qualify, as FEHB is extremely valuable in retirement."
+  - question: "Should I take a lump sum TSP withdrawal or monthly payments?"
+    answer: "This depends on your overall financial situation, other retirement income sources, investment knowledge, and estate planning goals. TSP offers four withdrawal options: lump sum, monthly installments, TSP annuity, or a combination. Consider factors like investment management capability, need for guaranteed income, tax implications, and estate planning. Many retirees benefit from keeping some money in the low-cost TSP while taking systematic withdrawals. Federal employees who separate at age 55+ can access TSP without the 10% early withdrawal penalty."
+  - question: "When should I claim Social Security as a federal retiree?"
+    answer: "Federal employees have unique considerations for Social Security timing. Key factors include: (1) The FERS supplement ends at age 62, potentially creating an income gap if you delay Social Security, (2) Your FERS pension provides some income security, allowing flexibility in timing, (3) Delayed retirement credits (8% per year from full retirement age to 70), and (4) Tax implications of combined FERS and Social Security income. With WEP/GPO now eliminated, many federal retirees benefit from claiming at full retirement age (66-67) to bridge the gap when the FERS supplement ends, but individual situations vary significantly."
+---
+
+<style>
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — Federal Retirement Checklist
+   ═══════════════════════════════════════════ */
+
+/* Page Layout with Sidebar */
+.ep-page-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ep-sidebar {
+  position: sticky;
+  top: 6rem;
+  height: fit-content;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+}
+
+.ep-sidebar-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.5rem;
+}
+
+.ep-sidebar-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.ep-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ep-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.ep-sidebar-link:hover {
+  color: var(--primary);
+  background: var(--surface-container-low);
+}
+
+.ep-sidebar-link.active {
+  color: var(--primary);
+  font-weight: 600;
+  border-left-color: var(--secondary);
+  background: var(--surface-container-low);
+}
+
+@media (max-width: 1024px) {
+  .ep-page-layout {
+    grid-template-columns: 1fr;
+  }
+  .ep-sidebar {
+    display: none;
+  }
+}
+
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Timeline Section */
+.ep-timeline {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-timeline-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-timeline-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.ep-timeline-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-timeline-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ep-timeline-period {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  border: 1px solid rgba(194, 198, 210, 0.2);
+  height: fit-content;
+}
+
+.ep-timeline-period-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.ep-timeline-period-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+}
+
+.ep-timeline-content {
+  padding-top: 1rem;
+}
+
+.ep-timeline-content h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ep-checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  border-left: 3px solid var(--secondary);
+  transition: all 0.2s ease;
+}
+
+.ep-checklist-item:hover {
+  background: var(--surface-container-low);
+  transform: translateX(4px);
+}
+
+.ep-checklist-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ep-checklist-text {
+  flex: 1;
+}
+
+.ep-checklist-text strong {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.ep-checklist-text span {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--on-surface-variant);
+  line-height: 1.5;
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 400px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* CTA */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-timeline {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-timeline-item {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ep-timeline-period {
+    padding: 1.5rem;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+}
+</style>
+
+<div class="ep-page-layout">
+  <nav class="ep-sidebar">
+    <div class="ep-sidebar-label">Navigation</div>
+    <h3 class="ep-sidebar-title">Retirement Checklist</h3>
+    <div class="ep-sidebar-nav">
+      <a href="#overview" class="ep-sidebar-link">Overview</a>
+      <a href="#timeline" class="ep-sidebar-link">Timeline</a>
+      <a href="#checklist" class="ep-sidebar-link">Checklist</a>
+      <a href="#faq" class="ep-sidebar-link">FAQ</a>
+    </div>
+  </nav>
+  
+  <main class="ep-main-content">
+{# ═══════════════════════════════════════════════════════════
+   1. HERO — Asymmetric editorial layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-hero" id="overview">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">Federal Retirement Checklist</span>
+      <h1 class="ep-hero-title">Your Federal Retirement</h1>
+      <span class="ep-hero-title-italic">Checklist.</span>
+      <p class="ep-hero-body">Federal retirement involves complex coordination of FERS, TSP, FEHB, FEGLI, and Social Security. This comprehensive timeline ensures you don't miss critical steps or deadlines that could cost you thousands in benefits.</p>
+      <a href="#timeline" class="ep-btn-primary">View Complete Checklist</a>
+    </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-sec-headquarters.jpg"
+           alt="SEC headquarters representing federal retirement preparation"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"The difference between a good retirement and a great one is preparation."</p>
+        <cite>Mike Stevens, IAR</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   2. TIMELINE — Complete retirement preparation checklist
+   ═══════════════════════════════════════════════════════════ #}
+<section id="timeline" class="ep-timeline">
+  <div class="ep-timeline-inner">
+    <span class="ep-chapter-label" style="display: block; text-align: center; margin-bottom: 1rem;">Complete Timeline</span>
+    <h2 class="ep-timeline-title">Federal Retirement Preparation Timeline</h2>
+    
+    <div class="ep-timeline-item">
+      <div class="ep-timeline-period">
+        <h3 class="ep-timeline-period-title">5 Years Before</h3>
+        <p class="ep-timeline-period-subtitle">Strategic Planning Phase</p>
+      </div>
+      <div class="ep-timeline-content">
+        <h3>Foundation & Strategy</h3>
+        <ul class="ep-checklist">
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Calculate Your FERS Projection</strong>
+              <span>Use our calculator or get professional analysis to understand your pension amount and identify optimization opportunities.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Verify FEHB Eligibility</strong>
+              <span>Ensure continuous enrollment for 5 years before retirement. This is critical — you cannot get FEHB back if you don't meet the requirement.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Review Military Buyback Options</strong>
+              <span>If you have military service, analyze whether buying back time makes financial sense. This requires a 3% deposit plus interest if past 3 years of service.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Maximize TSP Contributions</strong>
+              <span>Ensure you're at least getting full agency match (5%). Consider increasing contributions, especially if you're behind on retirement savings.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Analyze FEGLI Coverage</strong>
+              <span>Review your life insurance needs and costs. Option B can become extremely expensive in retirement — explore private alternatives now.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ep-timeline-item">
+      <div class="ep-timeline-period">
+        <h3 class="ep-timeline-period-title">2 Years Before</h3>
+        <p class="ep-timeline-period-subtitle">Optimization Phase</p>
+      </div>
+      <div class="ep-timeline-content">
+        <h3>Benefit Optimization</h3>
+        <ul class="ep-checklist">
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Optimize Your High-3 Salary</strong>
+              <span>Work toward promotions or step increases to maximize your highest 3-year average. Every dollar increase adds $10-11 annually to your pension.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Plan Social Security Strategy</strong>
+              <span>Understand how FERS supplement coordinates with Social Security. Plan claiming strategy considering WEP/GPO elimination benefits.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Review TSP Allocation</strong>
+              <span>Adjust investment strategy for your changing time horizon. Consider if you want to keep TSP after retirement or roll to IRA.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Estate Planning Update</strong>
+              <span>Review beneficiaries on all accounts, update wills, consider survivor benefit elections. Coordinate FERS survivor benefits with other assets.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Healthcare Transition Planning</strong>
+              <span>Research FEHB plans for retirees, understand Medicare coordination at 65, plan for any needed medical care before retirement.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ep-timeline-item">
+      <div class="ep-timeline-period">
+        <h3 class="ep-timeline-period-title">1 Year Before</h3>
+        <p class="ep-timeline-period-subtitle">Implementation Phase</p>
+      </div>
+      <div class="ep-timeline-content">
+        <h3>Final Preparations</h3>
+        <ul class="ep-checklist">
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Attend Retirement Seminar</strong>
+              <span>Participate in your agency's retirement workshop or attend our federal benefits seminar for latest updates and procedures.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Accumulate Sick Leave</strong>
+              <span>Minimize sick leave usage to maximize service credit. All unused sick leave adds to your service time for annuity calculation.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Final FEGLI Decision</strong>
+              <span>Make final decision on life insurance continuation. If switching to private insurance, secure coverage before canceling FEGLI.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Tax Planning</strong>
+              <span>Consider Roth conversions in lower-income years, plan for required minimum distributions, understand tax impact of retirement income sources.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Budget for Retirement</strong>
+              <span>Create detailed retirement budget including all income sources (FERS, TSP, Social Security) and expenses including healthcare costs.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ep-timeline-item">
+      <div class="ep-timeline-period">
+        <h3 class="ep-timeline-period-title">6 Months Before</h3>
+        <p class="ep-timeline-period-subtitle">Application Phase</p>
+      </div>
+      <div class="ep-timeline-content">
+        <h3>Formal Application Process</h3>
+        <ul class="ep-checklist">
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Submit Retirement Application</strong>
+              <span>File SF-3107 (FERS) or SF-2801 (CSRS) with your HR office. 90 days advance notice is recommended, 60 days minimum.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Complete Beneficiary Forms</strong>
+              <span>Submit SF-3102 (FERS) designation of beneficiary and update TSP beneficiaries. Ensure all forms are current and accurate.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Plan TSP Withdrawal</strong>
+              <span>Decide on TSP withdrawal strategy: monthly payments, partial lump sum, annuity, or combination. Submit appropriate forms.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>FEHB Election</strong>
+              <span>Confirm FEHB plan selection for retirement. You can change plans during open season but cannot re-enroll if you drop coverage.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Survivor Benefit Decision</strong>
+              <span>Make final decision on FERS survivor benefit election. This is irrevocable — choose full, partial, or no survivor benefit carefully.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ep-timeline-item">
+      <div class="ep-timeline-period">
+        <h3 class="ep-timeline-period-title">Final Month</h3>
+        <p class="ep-timeline-period-subtitle">Transition Phase</p>
+      </div>
+      <div class="ep-timeline-content">
+        <h3>Final Steps & Coordination</h3>
+        <ul class="ep-checklist">
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Verify All Applications</strong>
+              <span>Confirm HR received all retirement paperwork, verify effective date, ensure no missing forms or signatures.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Coordinate Direct Deposit</strong>
+              <span>Set up or verify banking information for retirement annuity payments, TSP distributions, and Social Security (if applicable).</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Plan Gap Coverage</strong>
+              <span>Understand there may be a gap between final paycheck and first retirement payment. Plan cash flow accordingly.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Healthcare Transition</strong>
+              <span>Understand when FEHB coverage transitions, get necessary prescriptions filled, schedule any needed medical appointments.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Update Address & Contact Info</strong>
+              <span>Ensure OPM has current address for retirement communications, update contact info with TSP and Social Security Administration.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ep-timeline-item">
+      <div class="ep-timeline-period">
+        <h3 class="ep-timeline-period-title">Retirement Day</h3>
+        <p class="ep-timeline-period-subtitle">Celebration & Next Steps</p>
+      </div>
+      <div class="ep-timeline-content">
+        <h3>Welcome to Retirement!</h3>
+        <ul class="ep-checklist">
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Monitor First Payments</strong>
+              <span>Watch for interim payments from OPM (may take 30-60 days for first full payment). TSP distributions should begin as scheduled.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Review Annual Statements</strong>
+              <span>Verify all retirement benefit amounts are correct on first statements. Contact appropriate agencies immediately if you find errors.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Plan Social Security Timing</strong>
+              <span>If eligible for FERS supplement, it should begin automatically. Plan Social Security claiming strategy for age 62+ based on your situation.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Annual Benefit Reviews</strong>
+              <span>Schedule annual review of retirement income, tax situation, healthcare needs, and investment performance to stay on track.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Enjoy Your Retirement!</strong>
+              <span>You've earned it through years of federal service. Take time to enjoy the security and benefits of your well-planned retirement.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   3. FAQ — Editorial accordion
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-faq" id="faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">Retirement Planning FAQ</h2>
+      <p class="ep-faq-sub">Essential information about federal retirement preparation, timing, and procedures for a smooth transition.</p>
+      <a href="/contact/" class="ep-btn-ghost">Get Personal Guidance</a>
+    </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">When should I start planning my federal retirement? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Start planning your federal retirement at least 5 years before your intended retirement date. This gives you time to optimize your FERS pension calculation, maximize TSP contributions, ensure FEHB eligibility, review FEGLI needs, plan Social Security coordination, and make any necessary adjustments to your federal benefits. Early planning allows you to take advantage of strategies like military buyback, sick leave maximization, and high-3 salary optimization that require time to implement properly.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What forms do I need to submit for federal retirement? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The primary form is SF-3107 (Application for Immediate Retirement - FERS) or SF-2801 for CSRS employees. You'll also need SF-3102 (Designation of Beneficiary - FERS), health insurance enrollment forms if making changes, TSP withdrawal forms, and potentially survivor benefit elections. Submit your retirement application to your HR office at least 60 days before your intended retirement date (90 days is recommended). Each agency may have additional forms or requirements, so check with your HR department early in the process.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How do I ensure I meet the 5-year FEHB rule? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>To carry FEHB into retirement, you must be enrolled for 5 consecutive years immediately before retirement. Check your personnel records to verify continuous enrollment. If you have any gaps (such as periods covered under a spouse's plan), you may not be eligible. Limited exceptions exist for military service or involuntary loss of spousal coverage. If you're close to but don't meet the 5-year requirement, consider extending your retirement date to qualify, as FEHB is extremely valuable in retirement.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should I take a lump sum TSP withdrawal or monthly payments? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>This depends on your overall financial situation, other retirement income sources, investment knowledge, and estate planning goals. TSP offers four withdrawal options: lump sum, monthly installments, TSP annuity, or a combination. Consider factors like investment management capability, need for guaranteed income, tax implications, and estate planning. Many retirees benefit from keeping some money in the low-cost TSP while taking systematic withdrawals. Federal employees who separate at age 55+ can access TSP without the 10% early withdrawal penalty.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">When should I claim Social Security as a federal retiree? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Federal employees have unique considerations for Social Security timing. Key factors include: (1) The FERS supplement ends at age 62, potentially creating an income gap if you delay Social Security, (2) Your FERS pension provides some income security, allowing flexibility in timing, (3) Delayed retirement credits (8% per year from full retirement age to 70), and (4) Tax implications of combined FERS and Social Security income. With WEP/GPO now eliminated, many federal retirees benefit from claiming at full retirement age (66-67) to bridge the gap when the FERS supplement ends, but individual situations vary significantly.</p></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   4. CTA — Centered editorial
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Ready to plan your federal retirement?</h2>
+      <p class="ep-cta-body">This checklist covers the essentials, but every federal employee's situation is unique. Schedule a comprehensive review to create your personalized federal retirement strategy and ensure you don't miss any opportunities.</p>
+      <a href="/contact/" class="ep-btn-primary">Get Personal Guidance</a>
+      <p class="ep-cta-promise">Federal Employee Specialists</p>
+    </div>
+    <img src="/assets/images/photos/federal/capitalwealth-federal-retirement-planning.jpg" alt="Federal retirement planning consultation representing personalized guidance" class="ep-cta-image">
+  </div>
+</section>
+  </main>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('.ep-sidebar-link');
+  const sections = [];
+  links.forEach(link => {
+    const id = link.getAttribute('href').replace('#', '');
+    const section = document.getElementById(id);
+    if (section) sections.push({ id, el: section, link });
+  });
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector('.ep-sidebar-link[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+  
+  sections.forEach(s => observer.observe(s.el));
+});
+
+// FAQ functionality
+document.querySelectorAll('.ep-faq-item').forEach(function(item) {
+  item.addEventListener('click', function() {
+    const isActive = this.classList.contains('active');
+    
+    // Close all items
+    document.querySelectorAll('.ep-faq-item').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    
+    // Open clicked item if it wasn't already open
+    if (!isActive) {
+      this.classList.add('active');
+    }
+  });
+});
+</script>

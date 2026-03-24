@@ -1,0 +1,266 @@
+---
+layout: layouts/base-finpay.njk
+title: "GullStack × Capital Wealth — Project Summary"
+description: "Internal project summary for Capital Wealth."
+noindex: true
+excludeFromSitemap: true
+---
+
+<style>
+.fly-stats { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 2.5rem 1.5rem; background: var(--navy); }
+.fly-stat { text-align: center; min-width: 100px; }
+.fly-stat-num { display: block; font-family: var(--font-family); font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 700; color: #fff; }
+.fly-stat-label { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.4); margin-top: 0.25rem; }
+.fly-wrap { max-width: 960px; margin: 0 auto; padding: 3rem 2rem; }
+.fly-card { background: #fff; border-radius: 12px; padding: 2rem 2.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.04); margin-bottom: 2rem; }
+.fly-card h2 { font-family: var(--font-family); font-size: 1.25rem; font-weight: 600; color: var(--navy); margin-bottom: 1.25rem; }
+.fly-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.fly-table th { text-align: left; padding: 0.6rem 0.5rem; color: var(--navy); font-weight: 600; border-bottom: 2px solid rgba(25,79,144,0.1); }
+.fly-table th.c { text-align: center; }
+.fly-table td { padding: 0.55rem 0.5rem; color: var(--navy); border-bottom: 1px solid rgba(0,0,0,0.04); }
+.fly-table td.c { text-align: center; }
+.fly-table td.muted { color: rgba(25,79,144,0.4); text-align: center; }
+.fly-table td.green { color: #2d8a4e; font-weight: 600; text-align: center; }
+.fly-table td.red { color: #c0392b; text-align: center; }
+.fly-date { color: rgba(25,79,144,0.35); font-weight: 500; white-space: nowrap; font-size: 0.82rem; }
+.fly-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+.fly-tag-page { background: rgba(45,138,78,0.1); color: #2d8a4e; }
+.fly-tag-design { background: rgba(59,130,196,0.1); color: #3b82c4; }
+.fly-tag-infra { background: rgba(232,135,58,0.1); color: #e8873a; }
+.fly-tag-fix { background: rgba(192,57,43,0.1); color: #c0392b; }
+.fly-tag-seo { background: rgba(128,90,213,0.1); color: #805ad5; }
+@media (max-width: 640px) {
+  .fly-stats { gap: 1rem; padding: 2rem 1rem; }
+  .fly-stat { min-width: 80px; }
+  .fly-card { padding: 1.5rem; }
+  .fly-table { font-size: 0.82rem; }
+  .fly-table th, .fly-table td { padding: 0.45rem 0.25rem; }
+}
+</style>
+
+{# ═══ STAT COUNTERS BAR ═══ #}
+<div class="fly-stats">
+    <div class="fly-stat">
+        <span class="fly-stat-num">149</span>
+        <span class="fly-stat-label">Commits</span>
+    </div>
+    <div class="fly-stat">
+        <span class="fly-stat-num">46</span>
+        <span class="fly-stat-label">Live Pages</span>
+    </div>
+    <div class="fly-stat">
+        <span class="fly-stat-num">8</span>
+        <span class="fly-stat-label">Days</span>
+    </div>
+    <div class="fly-stat">
+        <span class="fly-stat-num">42</span>
+        <span class="fly-stat-label">Schema Instances</span>
+    </div>
+    <div class="fly-stat">
+        <span class="fly-stat-num">479K+</span>
+        <span class="fly-stat-label">Monthly Search Volume Targeted</span>
+    </div>
+</div>
+
+<div class="fly-wrap">
+
+    <div style="margin-bottom: 2.5rem;">
+        <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="height: 40px; margin-bottom: 0.75rem;">
+        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(25,79,144,0.35); font-weight: 500; margin-bottom: 0.5rem;">GullStack Project Summary — Updated March 16, 2026</p>
+        <h1 style="font-family: var(--font-family); font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 600; color: var(--navy); line-height: 1.15;">What We Built Together</h1>
+    </div>
+
+    {# ═══ BEFORE VS AFTER ═══ #}
+    <div class="fly-card">
+        <h2>Before vs. After</h2>
+        <table class="fly-table">
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th class="c">Before</th>
+                    <th class="c">After</th>
+                    <th class="c">Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Live pages</td><td class="muted">18</td><td class="c" style="font-weight:600;">46</td><td class="green">+156%</td></tr>
+                <tr><td>Custom CSS (lines)</td><td class="muted">1,673</td><td class="c" style="font-weight:600;">5,135</td><td class="green">+207%</td></tr>
+                <tr><td>Schema markup instances</td><td class="muted">3</td><td class="c" style="font-weight:600;">42</td><td class="green">+1,300%</td></tr>
+                <tr><td>FAQPage schemas</td><td class="muted">1</td><td class="c" style="font-weight:600;">8</td><td class="green">+700%</td></tr>
+                <tr><td>Breadcrumb schemas</td><td class="muted">0</td><td class="c" style="font-weight:600;">40</td><td class="green">+40</td></tr>
+                <tr><td>Guide / content pages</td><td class="muted">1</td><td class="c" style="font-weight:600;">9</td><td class="green">+800%</td></tr>
+                <tr><td>Federal benefits subpages</td><td class="muted">0</td><td class="c" style="font-weight:600;">7</td><td class="green">New</td></tr>
+                <tr><td>SEO landing pages</td><td class="muted">0</td><td class="c" style="font-weight:600;">5</td><td class="green">New</td></tr>
+                <tr><td>API endpoints (lead capture)</td><td class="muted">0</td><td class="c" style="font-weight:600;">2</td><td class="green">New</td></tr>
+                <tr><td>Google Analytics</td><td class="muted">None</td><td class="c" style="font-weight:600;">2 properties</td><td class="green">New</td></tr>
+                <tr><td>UTM / source tracking</td><td class="muted">None</td><td class="c" style="font-weight:600;">Full first-touch</td><td class="green">New</td></tr>
+                <tr><td>Contact form</td><td class="red">action="#"</td><td class="c" style="font-weight:600;">SendGrid + Supabase</td><td class="green">Fixed</td></tr>
+                <tr><td>Spam protection</td><td class="muted">None</td><td class="c" style="font-weight:600;">Server-side honeypot</td><td class="green">New</td></tr>
+                <tr><td>Leads dashboard</td><td class="muted">None</td><td class="c" style="font-weight:600;">Password-protected /leads/</td><td class="green">New</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    {# ═══ PROJECT CHANGELOG ═══ #}
+    <div class="fly-card">
+        <h2>Project Changelog</h2>
+        <table class="fly-table">
+            <thead>
+                <tr>
+                    <th style="width: 90px;">Date</th>
+                    <th>What Changed</th>
+                    <th style="width: 70px;">Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="fly-date">Mar 16</td><td>Business name corrected site-wide: "Capital Wealth" → "Capital Wealth" (98 occurrences, 35 files)</td><td><span class="fly-tag fly-tag-fix">Fix</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>Federal Benefits page rebuilt — services grid, retirement timeline, federal employee testimonials</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>Navy footer CTA removed site-wide (chat widget coming)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>Real Results stats bar ($142K, $180K, 8 Years) moved above FAQ, Titan Geist Mono style</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>All 16 service pages → Titan "How it Works" accordion (replaced card grid)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>Service subpages restored: Key Facts tables, quote bars, expanded FAQs, related services links</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>About page: stats bar moved under hero, Titan-style team grid (3-col, name+title+photo)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>Resources CTA → outline button (solid blue reserved for schedule calls only)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>Services index page rebuilt — Titan editorial style (7 sections, white bg, Geist font)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>Hero image fixed — couple walking now visible (object-position: center 70%)</td><td><span class="fly-tag fly-tag-fix">Fix</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>Mobile hero — taller aspect ratio (3:4), couple visible on phone</td><td><span class="fly-tag fly-tag-fix">Fix</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>H1 line-height tightened (1.12 → 0.98)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 16</td><td>Portfolio Management hero → dashboard screenshot (per Josh)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>CWA color logo added above comparison table</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Retirement Income Planning page (bucket strategy, withdrawal planning)</td><td><span class="fly-tag fly-tag-page">+1 Page</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Retirement Tax Strategies page (Roth conversions, IRMAA, QCDs)</td><td><span class="fly-tag fly-tag-page">+1 Page</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Retirement Planning anchor page (targets 301K monthly searches)</td><td><span class="fly-tag fly-tag-page">+1 Page</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Financial Advisor Idaho landing page (local SEO, Boise/Meridian/etc.)</td><td><span class="fly-tag fly-tag-page">+1 Page</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Financial Advisor Utah landing page (local SEO, all major cities)</td><td><span class="fly-tag fly-tag-page">+1 Page</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Annuities service page built (fiduciary-focused, honest analysis)</td><td><span class="fly-tag fly-tag-page">+1 Page</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>BBB + BrokerCheck trust badges added to footer</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>SVG icons added to "This Is For You If..." qualifier section</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Contact page redesigned (Titan-style, form on right, warm gradient)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Photo-based testimonial slider (5 client photos)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Resources section added to homepage with 4 guide cards</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>7 Federal Benefits subpages built (FERS, TSP, FEHB, FEGLI, SS, Calculator, Checklist)</td><td><span class="fly-tag fly-tag-page">+7 Pages</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Client Login added permanently to mobile header</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Mobile menu links not tappable (pointer-events inheritance fix)</td><td><span class="fly-tag fly-tag-fix">Fix</span></td></tr>
+                <tr><td class="fly-date">Mar 15</td><td>Double hamburger menu bug fixed (duplicate button in HTML)</td><td><span class="fly-tag fly-tag-fix">Fix</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Hero image optimized (812KB → 290KB, 64% smaller)</td><td><span class="fly-tag fly-tag-seo">Perf</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Mike feedback applied: 20% bigger fonts, warmer backgrounds, larger hero/stats</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>All 11 subpages rebuilt in Titan.com editorial style</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>FAQ redesigned: two-column, heading + CTA left, accordions right</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>"This Is For You If..." qualifier section</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>9 real Google reviews with star ratings in Titan carousel</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Comparison table: Capital Wealth vs Other Advisors (8 feature rows)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Mike Stevens bio card with credentials, quote, LinkedIn link</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Book section (Retire Right, Retire Now) + Podcast section (Retire Right Radio)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Brand kit page created (/brand/) with logos, PDFs, color palette</td><td><span class="fly-tag fly-tag-page">Page</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Brand colors locked: primary blue #194F90, grey #7b868C, orange #F09F54</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Horizontal logos (white + color + icon) integrated across nav + footer</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Complete homepage rebuild: 10 new sections per Titan + BOSS strategy spec</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Full Titan.com redesign pivot: white backgrounds, Geist font, editorial layout</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Resources section: 4 downloadable guide cards with icons + orange CTAs</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Agent Canvas-style services section (vertical tabs, progress bars, rotating images)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Aurora-animated CTA + footer (JS-driven random movement)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>DoorDash-style testimonials with 5 real client photos + rotating carousel</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Five Fundamentals section (Cash, Income, Growth, Taxes, Legacy)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Server-side honeypot + spam pattern blocking on contact form</td><td><span class="fly-tag fly-tag-infra">Infra</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Password-protected leads dashboard at /leads/</td><td><span class="fly-tag fly-tag-infra">Infra</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Lead source tracking (UTM params, referrer, landing page via first-touch cookie)</td><td><span class="fly-tag fly-tag-infra">Infra</span></td></tr>
+                <tr><td class="fly-date">Mar 14</td><td>Services accordion double-toggle fix + dark glass mobile menu</td><td><span class="fly-tag fly-tag-fix">Fix</span></td></tr>
+                <tr><td class="fly-date">Mar 13</td><td>Full-screen mobile menu (Giga-style with organized sections)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 13</td><td>Floating glass pill navigation with Services dropdown</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 13</td><td>4 hero image iterations (mountain bg → autumn → aspens → alpenglow peaks)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 13</td><td>Full Giga.ai-inspired redesign: serif headlines, frosted glass nav, cinematic hero</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 13</td><td>Google Analytics #2 installed (G-LD4VE3SQNT)</td><td><span class="fly-tag fly-tag-infra">Infra</span></td></tr>
+                <tr><td class="fly-date">Mar 13</td><td>About page completely rebuilt (editorial layout, stats bar, 3 pillars)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 13</td><td>Mike Stevens headshot + bio added to About page</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 13</td><td>Mobile menu redesigned (slide-in panel, brand navy, overlay backdrop)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 13</td><td>Client Login added to nav (Orion Advisor portal)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 12</td><td>Google Analytics installed (G-DDDW501PMV)</td><td><span class="fly-tag fly-tag-infra">Infra</span></td></tr>
+                <tr><td class="fly-date">Mar 12</td><td>Contact form wired to SendGrid + Supabase (was submitting to nowhere)</td><td><span class="fly-tag fly-tag-infra">Infra</span></td></tr>
+                <tr><td class="fly-date">Mar 12</td><td>Guides hub, Reviews page, Press page added</td><td><span class="fly-tag fly-tag-page">+3 Pages</span></td></tr>
+                <tr><td class="fly-date">Mar 12</td><td>Canonical URLs on all pages, meta descriptions optimized</td><td><span class="fly-tag fly-tag-seo">SEO</span></td></tr>
+                <tr><td class="fly-date">Mar 12</td><td>AEO Layer 2: 7 Answer Hub guide pages (retirement, 401k, SS, FERS, fiduciary, tax, retire at 62)</td><td><span class="fly-tag fly-tag-page">+7 Pages</span></td></tr>
+                <tr><td class="fly-date">Mar 12</td><td>AEO Layer 4: brand-facts.json for LLM crawlers</td><td><span class="fly-tag fly-tag-seo">SEO</span></td></tr>
+                <tr><td class="fly-date">Mar 12</td><td>Header CTA buttons added (orange Contact + blue Phone)</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 12</td><td>Mobile hamburger menu fixed (display:none was overriding active state)</td><td><span class="fly-tag fly-tag-fix">Fix</span></td></tr>
+                <tr><td class="fly-date">Mar 12</td><td>Federal Benefits page rebuilt with B.O.S.S. editorial design</td><td><span class="fly-tag fly-tag-design">Design</span></td></tr>
+                <tr><td class="fly-date">Mar 11</td><td>Federal Benefits page expanded with testimonials + career scenarios</td><td><span class="fly-tag fly-tag-page">Page</span></td></tr>
+                <tr><td class="fly-date">Mar 8</td><td>Fixed nested src/src directory structure</td><td><span class="fly-tag fly-tag-fix">Fix</span></td></tr>
+                <tr><td class="fly-date">Mar 6</td><td>Site recovered from Vercel, 11ty templating set up, initial 18 pages</td><td><span class="fly-tag fly-tag-infra">Infra</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    {# ═══ KEYWORD TARGETS ═══ #}
+    <div class="fly-card">
+        <h2>New Pages Targeting High-Volume Keywords</h2>
+        <table class="fly-table">
+            <thead>
+                <tr>
+                    <th>Page</th>
+                    <th class="c">Est. Monthly Searches</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>/retirement-planning/</td><td class="c" style="font-weight:600;">301,000</td></tr>
+                <tr><td>7 Federal Benefits subpages (combined)</td><td class="c" style="font-weight:600;">150,000+</td></tr>
+                <tr><td>/services/annuities/</td><td class="c" style="font-weight:600;">14,800+</td></tr>
+                <tr><td>/financial-advisor-utah/</td><td class="c" style="font-weight:600;">5,000+</td></tr>
+                <tr><td>/retirement-income-planning/</td><td class="c" style="font-weight:600;">3,600</td></tr>
+                <tr><td>/retirement-tax-strategies/</td><td class="c" style="font-weight:600;">3,000+</td></tr>
+                <tr><td>/financial-advisor-idaho/</td><td class="c" style="font-weight:600;">2,000+</td></tr>
+            </tbody>
+            <tfoot>
+                <tr style="border-top: 2px solid rgba(25,79,144,0.15);">
+                    <td style="font-weight: 700;">Total addressable search volume</td>
+                    <td class="green" style="font-size: 1.05rem;">479,400+/mo</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    {# ═══ COMPETITIVE POSITIONING ═══ #}
+    <div class="fly-card">
+        <h2>Competitive Positioning</h2>
+        <table class="fly-table">
+            <thead>
+                <tr>
+                    <th>Content Area</th>
+                    <th class="c">CWA</th>
+                    <th class="c">B.O.S.S.</th>
+                    <th class="c">MDRN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Federal benefits subpages</td><td class="green">7</td><td class="red">0</td><td class="red">0</td></tr>
+                <tr><td>Location-specific SEO pages</td><td class="green">2</td><td class="red">0</td><td class="red">0</td></tr>
+                <tr><td>Annuity content</td><td class="green">1 page</td><td class="red">0</td><td class="muted">Mentioned</td></tr>
+                <tr><td>Long-form guides</td><td class="green">9</td><td class="muted">Blog only</td><td class="muted">Blog only</td></tr>
+                <tr><td>Schema markup</td><td class="green">42</td><td class="muted">Basic</td><td class="muted">Basic</td></tr>
+                <tr><td>Lead source tracking</td><td class="green">Full UTM</td><td class="muted">Unknown</td><td class="muted">Unknown</td></tr>
+                <tr><td>Local radio / author</td><td class="green">KSL, KNRS + book</td><td class="muted">TV/Radio</td><td class="muted">Forbes Council</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    {# ═══ TIMELINE ═══ #}
+    <div class="fly-card" style="background: var(--navy); color: #fff;">
+        <h2 style="color: #fff;">Timeline</h2>
+        <p style="color: rgba(255,255,255,0.5); margin-bottom: 1.5rem; font-size: 0.9rem;">Engagement: March 6 - 15, 2026 (8 days)</p>
+        <div style="display: grid; grid-template-columns: auto 1fr; gap: 0.4rem 1.25rem; font-size: 0.88rem;">
+            <span style="color: rgba(255,255,255,0.35); font-weight: 500;">Mar 5</span>
+            <span style="color: rgba(255,255,255,0.75);">Discovery, asset collection, competitor analysis</span>
+            <span style="color: rgba(255,255,255,0.35); font-weight: 500;">Mar 6</span>
+            <span style="color: rgba(255,255,255,0.75);">Initial build: 18 pages, B.O.S.S. editorial design, AEO layer 2+4</span>
+            <span style="color: rgba(255,255,255,0.35); font-weight: 500;">Mar 12</span>
+            <span style="color: rgba(255,255,255,0.75);">Contact form backend (SendGrid + Supabase), lead tracking, 7 Answer Hub guides</span>
+            <span style="color: rgba(255,255,255,0.35); font-weight: 500;">Mar 13</span>
+            <span style="color: rgba(255,255,255,0.75);">Mike's photo + bio, Google Analytics, Giga.ai redesign, mobile fixes</span>
+            <span style="color: rgba(255,255,255,0.35); font-weight: 500;">Mar 14</span>
+            <span style="color: rgba(255,255,255,0.75);">Full Titan.com redesign, 10 homepage sections, testimonial photos, book/podcast, comparison table, services canvas, 9 Google reviews, Mike feedback applied</span>
+            <span style="color: rgba(255,255,255,0.35); font-weight: 500;">Mar 15</span>
+            <span style="color: rgba(255,255,255,0.75);">7 federal subpages, 6 competitive SEO pages, 8 UI improvements, contact redesign, footer badges, mobile nav fixes</span>
+        </div>
+    </div>
+
+    <p style="text-align: center; margin-top: 2rem; font-size: 0.75rem; color: rgba(25,79,144,0.25);">Built by <a href="https://gullstack.com" style="color: rgba(25,79,144,0.35);">GullStack</a>. Every number verified from git log, grep, and wc -l.</p>
+</div>

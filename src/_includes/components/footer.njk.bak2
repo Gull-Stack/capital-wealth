@@ -1,0 +1,98 @@
+{# ═══════════════════════════════════════════════════════════
+   FOOTER - Clean and professional
+   ═══════════════════════════════════════════════════════════ #}
+<footer class="finpay-footer">
+    <div class="container">
+        <div class="finpay-footer-content">
+            <div class="finpay-footer-brand">
+                <img src="/assets/images/logos/logo-horizontal-white.png" alt="Capital Wealth" style="height: 36px; width: auto; margin-bottom: 1rem;">
+                <p style="font-size: 1.1rem; font-weight: 600; color: #F09F54; margin-bottom: 0.5rem;">Fiduciary. Always.</p>
+                <p>Strategic Income & Tax Planning for Your Retirement</p>
+                <div style="display: flex; gap: 1rem; margin: 1.5rem 0;">
+                    <div class="trust-badge" style="background: rgba(255,255,255,0.1); color: white;">
+                        <strong>Fiduciary</strong><br>
+                        <span style="font-size: 0.75rem;">Always</span>
+                    </div>
+                    <div class="trust-badge" style="background: rgba(255,255,255,0.1); color: white;">
+                        <strong>25+ Years</strong><br>
+                        <span style="font-size: 0.75rem;">Experience</span>
+                    </div>
+                </div>
+                
+                <!-- Contact Info with Real Lehi Address -->
+                <p style="color: #a3a3a3; font-size: 0.875rem; margin-bottom: 1rem;">
+                    <a href="tel:8012102800" style="color: white; text-decoration: none; font-weight: 600;">(801) 210-2800</a><br>
+                    <a href="mailto:info@capitalwealth.com" style="color: white; text-decoration: none;">info@capitalwealth.com</a><br>
+                    <span>1850 W Ashton Blvd, Ste 175, Lehi, UT 84043</span>
+                </p>
+                
+                <!-- Trust Badges -->
+                <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1rem;">
+                    <a href="https://www.bbb.org/us/ut/lehi/profile/financial-planning-consultants/capital-wealth-advisors-1166-90025236" target="_blank" rel="noopener" style="display: block;">
+                        <img src="/assets/images/badges/bbb2.png" alt="Better Business Bureau A+ Rating" style="height: 40px; width: auto;">
+                    </a>
+                    <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener" style="display: block;">
+                        <img src="/assets/images/badges/brokercheck.png" alt="FINRA BrokerCheck" style="height: 40px; width: auto;">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="finpay-footer-links">
+                <h4>Retirement Planning</h4>
+                <a href="/services/retirement-money-map/">Retirement Money Map</a>
+                <a href="/services/tax-planning/">Tax Planning</a>
+                <a href="/services/portfolio-management/">Portfolio Management</a>
+                <a href="/services/social-security/">Social Security</a>
+                <a href="/services/medicare-irmaa/">Medicare & IRMAA</a>
+                <a href="/services/estate-planning/">Estate Planning</a>
+                <a href="/services/401k-ira-rollover/">401(k) & IRA Rollover</a>
+                <a href="/services/roth-conversions/">Roth Conversions</a>
+                <a href="/services/annuities/">Annuities</a>
+            </div>
+
+            <div class="finpay-footer-links">
+                <h4>Federal Benefits</h4>
+                <a href="/services/federal-benefits/">Federal Overview</a>
+                <a href="/services/federal-benefits/fers-retirement/">FERS Retirement</a>
+                <a href="/services/federal-benefits/tsp-planning/">TSP Planning</a>
+                <a href="/services/federal-benefits/fegli/">FEGLI Analysis</a>
+                <a href="/services/federal-benefits/fehb-retirement/">FEHB Coordination</a>
+                <a href="/services/federal-benefits/social-security-federal/">SS + Federal</a>
+                <a href="/services/federal-benefits/fers-calculator/">FERS Calculator</a>
+                <a href="/services/federal-benefits/federal-retirement-checklist/">Retirement Checklist</a>
+            </div>
+
+            <div class="finpay-footer-links">
+                <h4>SDBA</h4>
+                <a href="/services/sdba/">SDBA Overview</a>
+                <a href="/services/sdba/tsp-mutual-fund-window/">TSP Mutual Fund Window</a>
+                <a href="/services/sdba/401k-brokerage-window/">401(k) Brokerage Window</a>
+                <a href="/guides/sdba-complete-guide/">SDBA Complete Guide</a>
+            </div>
+
+            <div class="finpay-footer-links">
+                <h4>Resources</h4>
+                <a href="/guides/">Planning Guides</a>
+                <a href="/blog/">Blog</a>
+                <a href="/faq/">FAQ</a>
+                <a href="/case-studies/">Case Studies</a>
+                <a href="/reviews/">Client Reviews</a>
+                <a href="/book/">Free Book Chapter</a>
+            </div>
+
+            <div class="finpay-footer-links">
+                <h4>Company</h4>
+                <a href="/about/">Our Team</a>
+                <a href="/contact/">Schedule a Visit</a>
+                <a href="/disclosures/">Disclosures</a>
+                <a href="/brand-facts/">Brand Facts</a>
+                <a href="/press/">Press & Media</a>
+                <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener">Client Login</a>
+            </div>
+        </div>
+        
+        <div class="finpay-footer-bottom">
+            <p>&copy; {{ "now" | date("%Y") }} Capital Wealth. All rights reserved. | Investment advisory services offered through Capital Wealth. Michael Stevens, IAR. | <a href="/disclosures/" style="color: #737373;">Important Disclosures</a></p>
+        </div>
+    </div>
+</footer>

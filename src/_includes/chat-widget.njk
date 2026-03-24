@@ -6,7 +6,7 @@
   right: 24px;
   width: 60px;
   height: 60px;
-  background: var(--navy, #194F90);
+  background: var(--navy, #16253C);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@
   right: -2px;
   width: 18px;
   height: 18px;
-  background: #F09F54;
+  background: #FDD25E;
   border-radius: 50%;
   border: 2px solid #fff;
   display: none;
@@ -56,7 +56,7 @@
 .cw-chat-window.open { display: flex; }
 
 .cw-chat-header {
-  background: var(--navy, #194F90);
+  background: var(--navy, #16253C);
   padding: 16px 20px;
   display: flex;
   align-items: center;
@@ -117,7 +117,7 @@
   line-height: 1.55;
 }
 .cw-msg-user {
-  background: var(--navy, #194F90);
+  background: var(--navy, #16253C);
   color: #fff;
   border-radius: 12px 12px 4px 12px;
   padding: 12px 16px;
@@ -141,7 +141,7 @@
 .cw-chat-scheduler.show { display: block; }
 .cw-chat-scheduler a {
   display: inline-block;
-  background: var(--navy, #194F90);
+  background: var(--navy, #16253C);
   color: #fff;
   padding: 10px 24px;
   border-radius: 8px;
@@ -167,7 +167,7 @@
 .cw-chat-resources.show { display: block; }
 .cw-chat-resources a {
   display: inline-block;
-  color: var(--navy, #194F90);
+  color: var(--navy, #16253C);
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
@@ -194,7 +194,7 @@
   border: none;
   padding: 14px 16px;
   cursor: pointer;
-  color: var(--navy, #194F90);
+  color: var(--navy, #16253C);
   font-weight: 700;
   font-size: 0.9rem;
   transition: opacity 0.2s;
@@ -332,7 +332,7 @@
         this.addBot(data.reply || "Could you tell me more about your retirement planning goals?");
       } catch (e) {
         this.removeTyping();
-        this.addBot("I'm having a small technical issue. You can always call us at <a href='tel:8012102800' style='color:#194F90;font-weight:600;'>801.210.2800</a>.");
+        this.addBot("I'm having a small technical issue. You can always call us at <a href='tel:8012102800' style='color:#16253C;font-weight:600;'>801.210.2800</a>.");
       }
       this.sending = false;
       this.saveState();

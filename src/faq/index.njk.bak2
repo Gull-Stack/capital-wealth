@@ -1,0 +1,288 @@
+---
+layout: layouts/base-finpay.njk
+title: "Frequently Asked Questions | Capital Wealth FAQ | Lehi, UT"
+description: "Get answers to common retirement planning questions. Learn about our services, fees, process, and how we help Utah families with retirement income planning."
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+faqSchema:
+  - question: "What is the minimum to work with Capital Wealth?"
+    answer: "We work with families who have saved $500,000 or more for retirement."
+  - question: "How do you charge for your services?"
+    answer: "We are fee-only advisors. Our compensation comes directly from our clients through transparent advisory fees based on assets under management."
+  - question: "What makes Capital Wealth different from other advisors?"
+    answer: "We specialize exclusively in retirement income planning and tax optimization. Our proprietary Retirement Money Map process and fiduciary commitment ensures your interests always come first."
+  - question: "Do you work with clients outside of Utah?"
+    answer: "Yes, we serve clients nationwide through virtual meetings and digital planning tools."
+  - question: "How often will we meet to review my plan?"
+    answer: "We typically meet quarterly for formal reviews, with additional meetings as needed."
+  - question: "What is the Retirement Money Map?"
+    answer: "Our proprietary planning tool that creates a visual, year-by-year roadmap of your entire financial future."
+  - question: "Do you provide tax preparation services?"
+    answer: "We don't prepare tax returns, but we coordinate closely with your CPA to implement tax-efficient strategies."
+  - question: "How do you handle market volatility?"
+    answer: "We use diversified portfolios, stress testing, and scenario planning. Our withdrawal strategies are designed to weather downturns."
+  - question: "How long does the initial planning process take?"
+    answer: "The initial planning process typically takes 4-6 weeks from your first meeting to a completed Retirement Money Map."
+  - question: "What is a fiduciary and why does it matter?"
+    answer: "A fiduciary is legally required to act in your best interest at all times."
+  - question: "What happens during our regular review meetings?"
+    answer: "Quarterly meetings cover portfolio performance, progress toward goals, life changes, tax planning opportunities, and updates to your Money Map."
+  - question: "What is your investment philosophy?"
+    answer: "We believe in low-cost, diversified portfolios aligned with your retirement income needs."
+  - question: "Can you help with Required Minimum Distributions (RMDs)?"
+    answer: "Yes, we calculate RMDs, coordinate timing with tax strategy, and look for opportunities to reduce future RMDs through Roth conversions."
+  - question: "Do you offer virtual or in-person meetings?"
+    answer: "We offer both in-person meetings at our Lehi, Utah office and secure video conferences for virtual clients."
+---
+
+<section class="titan-page-hero">
+    <div class="titan-page-hero-inner">
+        <p class="titan-section-label">FAQ</p>
+        <h1 class="titan-page-hero-h1">Frequently Asked Questions</h1>
+        <p class="titan-page-hero-sub">Get answers to common retirement planning questions and learn more about our services.</p>
+    </div>
+</section>
+
+{# Getting Started #}
+<section class="faq-section">
+    <div class="faq-inner">
+        <div class="faq-left">
+            <p class="titan-section-label">GETTING STARTED</p>
+            <h2 class="faq-heading">Working With Us</h2>
+            <p class="faq-sub">Common questions about our process, minimums, and getting started.</p>
+        </div>
+        <div class="faq-right">
+            <div class="faq-accordion">
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What is the minimum to work with Capital Wealth?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">We work with families who have saved $500,000 or more for retirement. This allows us to provide the comprehensive planning and personal attention our clients deserve.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How do I know if I'm ready for retirement planning?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">If you're within 10 years of retirement, already retired, or have accumulated significant retirement savings, you can benefit from professional planning. Key signs include: multiple retirement accounts, facing RMDs, considering Roth conversions, optimizing Social Security, or planning for Medicare.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What should I bring to my initial consultation?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Bring recent statements for all retirement accounts (401k, IRA, pensions), Social Security statements, recent tax returns, insurance policies, and a list of monthly expenses. Don't worry if you don't have everything — we'll help you gather what's needed.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Do you work with clients outside of Utah?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Yes, we serve clients nationwide through virtual meetings and digital planning tools. We use secure video conferencing, digital document sharing, and online portfolio access to provide comprehensive service regardless of location.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How long does the initial planning process take?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Typically 4–6 weeks from your first meeting to a completed Retirement Money Map. This includes data gathering, analysis, plan creation, and a comprehensive review meeting.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Can I start even if I'm not retiring for several years?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Absolutely. Starting 5–10 years before retirement gives us more time to implement tax-efficient strategies like Roth conversions and optimize your Social Security claiming strategy. The earlier we start, the more options we have.</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Fees & Services #}
+<section class="faq-section" style="background: #f8f9fa;">
+    <div class="faq-inner">
+        <div class="faq-left">
+            <p class="titan-section-label">FEES & SERVICES</p>
+            <h2 class="faq-heading">How We Charge</h2>
+            <p class="faq-sub">Transparent pricing and what's included.</p>
+        </div>
+        <div class="faq-right">
+            <div class="faq-accordion">
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How do you charge for your services?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">We are fee-only advisors — no commissions from product sales. Our compensation comes through transparent advisory fees based on assets under management. Our interests are aligned with yours.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What is included in your advisory fee?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Comprehensive retirement planning, investment management, tax planning strategies, ongoing portfolio monitoring, regular review meetings, unlimited phone/email support, coordination with your CPA and attorney, and updates to your Retirement Money Map.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Are there any hidden fees?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">No. The only additional costs are internal expense ratios of investment funds (typically 0.05%–0.25%), disclosed in advance. No transaction fees, account fees, or surprise charges.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Do you sell insurance or investment products?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">No. We don't sell products or earn commissions. If insurance or specific products are needed, we make recommendations and help you work with appropriate specialists.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What is a fiduciary and why does it matter?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">A fiduciary is legally required to act in your best interest at all times. This is different from a "suitability" standard where advisors only need to recommend products that are suitable — even if better options exist.</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Process & Approach #}
+<section class="faq-section">
+    <div class="faq-inner">
+        <div class="faq-left">
+            <p class="titan-section-label">OUR PROCESS</p>
+            <h2 class="faq-heading">How We Work</h2>
+            <p class="faq-sub">Our approach to retirement planning.</p>
+        </div>
+        <div class="faq-right">
+            <div class="faq-accordion">
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What makes Capital Wealth different from other advisors?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">We specialize exclusively in retirement income planning and tax optimization. Our proprietary Retirement Money Map process, fiduciary commitment, and focus on Utah families sets us apart from generalist advisors.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What is the Retirement Money Map?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Our proprietary planning tool that creates a visual, year-by-year roadmap of your financial future — cash flow, tax projections, withdrawal strategies, and account balances throughout retirement. Not a spreadsheet — a comprehensive visual plan.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How often will we meet to review my plan?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Quarterly formal reviews, with additional meetings as needed for life changes or market events. Between meetings, you have unlimited access to our team.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How do you help with tax planning?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">We develop tax-efficient strategies including Roth conversions, withdrawal sequencing, asset location optimization, and IRMAA avoidance. We coordinate closely with your CPA year-round.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Do you help with 401(k) rollovers?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Yes — analysis, paperwork, coordination with your old plan administrator, and ensuring the transfer is completed correctly to avoid taxes or penalties.</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Investment Management #}
+<section class="faq-section" style="background: #f8f9fa;">
+    <div class="faq-inner">
+        <div class="faq-left">
+            <p class="titan-section-label">INVESTMENTS</p>
+            <h2 class="faq-heading">Investment Management</h2>
+            <p class="faq-sub">Our philosophy and approach to managing your portfolio.</p>
+        </div>
+        <div class="faq-right">
+            <div class="faq-accordion">
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How do you handle market volatility?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Diversified portfolios, stress testing, scenario planning, appropriate cash reserves, and bond laddering to reduce sequence of returns risk. Our withdrawal strategies are designed to weather downturns.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What types of investments do you use?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Primarily low-cost index funds and ETFs. We may also use individual bonds, municipal bonds, and TIPS when appropriate. We avoid high-cost products, complex derivatives, and investments with unnecessary fees.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What is your investment philosophy?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Low-cost, diversified portfolios aligned with your retirement income needs. We focus on what you can control: fees, taxes, asset allocation, and withdrawal strategy. We don't try to time the market.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How do you protect my information and accounts?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Accounts are held at major custodians (Schwab, Fidelity) with SIPC protection. Bank-level encryption for all communications. We never have the ability to withdraw funds from your accounts.</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Retirement Specifics #}
+<section class="faq-section">
+    <div class="faq-inner">
+        <div class="faq-left">
+            <p class="titan-section-label">RETIREMENT PLANNING</p>
+            <h2 class="faq-heading">Specific Strategies</h2>
+            <p class="faq-sub">Social Security, Medicare, estate planning, and more.</p>
+            <a href="/contact/" class="resources-cta">Ask a Question</a>
+        </div>
+        <div class="faq-right">
+            <div class="faq-accordion">
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">How do you optimize Social Security?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">We analyze your statement and run optimization scenarios — spousal benefits, divorced spouse benefits, timing strategies, and how Social Security fits with your overall income plan.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">What about Medicare planning?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">We develop strategies to avoid IRMAA surcharges that can add thousands to your Medicare costs. We coordinate income management to keep you below thresholds and plan for Medicare's budget impact.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Do you help with estate planning?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">We coordinate with estate planning attorneys for beneficiary designations, trust funding, and tax-efficient wealth transfer strategies. We don't draft legal documents but work closely with attorneys who do.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Can you help with RMDs?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Yes — we calculate RMDs, coordinate timing with tax strategy, handle distributions, and look for opportunities to reduce future RMDs through strategic Roth conversions.</div>
+                </button>
+                <button class="faq-acc-item">
+                    <span class="faq-acc-q">Do you offer virtual or in-person meetings?</span>
+                    <span class="faq-acc-icon">+</span>
+                    <div class="faq-acc-a">Both. Our Lehi office for in-person, plus secure video conferences for virtual clients. Many clients use a combination — initial meetings in-person, quarterly reviews via video.</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# CTA #}
+<section class="service-process">
+    <div class="service-process-inner">
+        <div class="service-process-left">
+            <h2 class="service-process-h2">Still Have Questions?</h2>
+            <p class="service-process-subtitle">We're here to help. No sales pitch.</p>
+            <a href="/contact/" class="service-process-cta">SCHEDULE YOUR VISIT</a>
+        </div>
+        <div class="service-process-right">
+            <div class="service-process-steps">
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 1) Free Consultation</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>30 minutes with Mike Stevens. No cost. No obligation.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 2) Comprehensive Analysis</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>We model your full financial picture with real numbers.</p>
+                    </div>
+                </div>
+                <div class="service-process-step">
+                    <div class="service-process-step-header" onclick="this.parentElement.classList.toggle('active')">
+                        <span class="service-process-step-title">Step 3) Your Retirement Money Map</span>
+                        <span class="service-process-chevron">▾</span>
+                    </div>
+                    <div class="service-process-step-body">
+                        <p>A clear plan for reliable, tax-efficient retirement income.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

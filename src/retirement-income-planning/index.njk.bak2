@@ -1,0 +1,1196 @@
+---
+layout: layouts/base-finpay.njk
+title: "Retirement Income Planning | Create Reliable Income Streams | Capital Wealth"
+description: "Turn your retirement savings into reliable income that lasts. Strategic income planning for Social Security, pensions, 401(k) withdrawals, annuities, and investment portfolios. Lehi, UT."
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Retirement Income Planning", url: "/retirement-income-planning/" }
+faqSchema:
+  - question: "How much retirement income do I need?"
+    answer: "Most retirees need 70-90% of their pre-retirement income, but this varies based on lifestyle, healthcare costs, travel plans, and whether your mortgage is paid off. We analyze your actual expenses and goals to determine your specific income need, then build a plan to meet it sustainably."
+  - question: "What is the 4% rule?"
+    answer: "The 4% rule suggests withdrawing 4% of your portfolio in year one, then adjusting for inflation annually. While it's a useful starting point, it's not perfect — it doesn't account for your specific situation, changing markets, or tax efficiency. We customize withdrawal rates based on your age, risk tolerance, income sources, and market conditions."
+  - question: "How do I create guaranteed retirement income?"
+    answer: "Guaranteed income typically comes from Social Security, pensions, and annuities. Social Security provides a base (we optimize when you claim), pensions offer payments if you have one, and annuities can fill gaps if you need more guaranteed income. The key is building a guaranteed income floor that covers your essential expenses, then using investments for discretionary spending."
+  - question: "Should I take Social Security early?"
+    answer: "It depends on your health, other income sources, and need for cash flow. Claiming at 62 permanently reduces benefits by up to 30%, but makes sense if you need the income or have health concerns. Delaying to 70 increases benefits by 8% per year after full retirement age. We model your specific scenario to identify the optimal claiming strategy."
+  - question: "What is sequence of returns risk?"
+    answer: "Sequence of returns risk is the danger of experiencing market losses early in retirement when you're withdrawing money. If your portfolio drops 30% in year one and you're taking withdrawals, you're selling low and locking in losses — making it harder to recover. We mitigate this risk through bucket strategies, guaranteed income floors, dynamic withdrawal adjustments, and proper asset allocation."
+---
+
+<style>
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — Retirement Income Planning
+   ═══════════════════════════════════════════ */
+
+/* Page Layout with Sidebar */
+.ep-page-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ep-sidebar {
+  position: sticky;
+  top: 6rem;
+  height: fit-content;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+}
+
+.ep-sidebar-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.5rem;
+}
+
+.ep-sidebar-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.ep-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ep-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.ep-sidebar-link:hover {
+  color: var(--primary);
+  background: var(--surface-container-low);
+}
+
+.ep-sidebar-link.active {
+  color: var(--primary);
+  font-weight: 600;
+  border-left-color: var(--secondary);
+  background: var(--surface-container-low);
+}
+
+@media (max-width: 1024px) {
+  .ep-page-layout {
+    grid-template-columns: 1fr;
+  }
+  .ep-sidebar {
+    display: none;
+  }
+}
+
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons — match homepage hero-btn / hero-btn-secondary */
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Key Facts Row */
+.ep-facts {
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.2);
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-facts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ep-fact {
+  flex: 1;
+}
+
+.ep-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.4rem;
+}
+
+.ep-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.ep-framework-desc {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.2);
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
+  background: white;
+  transition: all 0.2s ease;
+  border-top: 3px solid transparent;
+}
+
+.ep-framework-card:hover {
+  background: var(--surface-container-low);
+  border-top-color: var(--secondary);
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Stats & Solution */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
+}
+
+.ep-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ep-dark-header {
+  margin-bottom: 4rem;
+}
+
+.ep-dark-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
+}
+
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.ep-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-glass-card:last-child {
+  margin-top: 0;
+}
+
+.ep-glass-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ep-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ep-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.ep-stat-number small {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-left: 0.25rem;
+}
+
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.ep-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ep-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+}
+
+.ep-check-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Asymmetric Image + Text */
+.ep-transfer {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-transfer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ep-transfer-image-wrap {
+  flex: 0 0 45%;
+  position: relative;
+}
+
+.ep-transfer-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-transfer-image-accent {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 120px;
+  height: 120px;
+  background: var(--tertiary-fixed, #d9e4eb);
+  z-index: -1;
+}
+
+.ep-transfer-text {
+  flex: 1;
+}
+
+.ep-transfer-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.ep-transfer-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2.5rem;
+}
+
+.ep-sub-feature {
+  margin-bottom: 1.5rem;
+  cursor: default;
+}
+
+.ep-sub-feature h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.ep-sub-feature:hover h4 {
+  color: var(--secondary);
+}
+
+.ep-sub-feature p {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* Process — liquid glass cards with image */
+.ep-process {
+  padding: 6rem 2rem;
+  background: var(--surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-process-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.ep-process-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-process-sub {
+  font-size: 1rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-process-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.ep-step-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.ep-step-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
+}
+
+.ep-step-number {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.ep-step-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+  margin-bottom: 0.75rem;
+}
+
+.ep-step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 300px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* CTA — matches homepage final-cta */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-facts-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .ep-fact {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .ep-framework-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-framework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-glass-card:last-child {
+    margin-top: 0;
+  }
+
+  .ep-transfer {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-transfer-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ep-transfer-image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .ep-transfer-image {
+    height: 350px;
+  }
+
+  .ep-transfer-image-accent {
+    display: none;
+  }
+
+  .ep-process {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-process-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-process-image {
+    height: 220px;
+  }
+
+  .ep-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
+  }
+}
+</style>
+
+<div class="ep-page-layout">
+  <nav class="ep-sidebar">
+    <div class="ep-sidebar-label">Navigation</div>
+    <h3 class="ep-sidebar-title">Income Planning</h3>
+    <div class="ep-sidebar-nav">
+      <a href="#overview" class="ep-sidebar-link">Overview</a>
+      <a href="#income-sources" class="ep-sidebar-link">Income Sources</a>
+      <a href="#withdrawal-strategy" class="ep-sidebar-link">Withdrawal Strategy</a>
+      <a href="#social-security" class="ep-sidebar-link">Social Security</a>
+      <a href="#faq" class="ep-sidebar-link">FAQ</a>
+    </div>
+  </nav>
+  
+  <main class="ep-main-content">
+{# ═══════════════════════════════════════════════════════════
+   1. HERO — Asymmetric editorial layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-hero" id="overview">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">Income Planning</span>
+      <h1 class="ep-hero-title">Reliable Retirement</h1>
+      <span class="ep-hero-title-italic">Income.</span>
+      <p class="ep-hero-body">The hardest part of retirement isn't saving money — it's figuring out how to turn those savings into reliable income that lasts as long as you do. We help you make that transition with confidence.</p>
+      <a href="/contact/" class="ep-btn-primary">Build Your Income Plan</a>
+    </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/blog-featured-couple-dock.jpg"
+           alt="Retirement income planning services"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"The shift from saving to spending is the hardest transition in retirement."</p>
+        <cite>Mike Stevens, IAR</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   2. KEY FACTS — Technical precision row
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact">
+      <div class="ep-fact-label">Income Replacement</div>
+      <div class="ep-fact-value">70-90% of pre-retirement</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Withdrawal Rule</div>
+      <div class="ep-fact-value">4% (but customized)</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Income Duration</div>
+      <div class="ep-fact-value">30+ years to last</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Income Sources</div>
+      <div class="ep-fact-value">Multiple streams coordinated</div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   3. THE PROBLEM — Framework grid
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-framework" id="income-sources">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">The Income Transition</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">For 30+ years you received a regular paycheck. Now you're retired and that's gone. How do you create predictable monthly income from a collection of retirement accounts?</p>
+    </div>
+    <div class="ep-framework-grid">
+      <div class="ep-framework-card">
+        <h4>Creating predictable income from variable investments</h4>
+        <p>Stock and bond portfolios fluctuate daily, but you need consistent monthly income to pay your bills and maintain your lifestyle throughout retirement.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Finding the right withdrawal rate</h4>
+        <p>Withdraw too much and you'll run out of money. Withdraw too little and you're unnecessarily restricting your lifestyle when you could afford more.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Protecting against sequence of returns risk</h4>
+        <p>Market losses early in retirement when you're withdrawing money can permanently damage your portfolio's ability to provide long-term income.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Ensuring income keeps pace with inflation</h4>
+        <p>Your expenses will rise over 20-30 years of retirement. Your income strategy must grow to maintain your purchasing power throughout retirement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   4. DARK SECTION — Solution metrics + checklist
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-dark" id="withdrawal-strategy">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">The Solution</span>
+      <h2 class="ep-dark-title">Customized Income Strategy.<br><em>Reliable Monthly Paychecks.</em></h2>
+    </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Income Foundation</span>
+        <h3>Multiple Income Sources</h3>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Social Security</span>
+          <span class="ep-stat-number">$3,200<small>/mo</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">401(k) Withdrawals</span>
+          <span class="ep-stat-number">$2,500<small>/mo</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Investment Income</span>
+          <span class="ep-stat-number">$1,800<small>/mo</small></span>
+        </div>
+      </div>
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Complete Strategy</span>
+        <h3>Coordinated Income Planning</h3>
+        <p class="ep-glass-body">We create a month-by-month income plan that coordinates all your sources — Social Security, pensions, 401(k)/IRA withdrawals, investment dividends, and annuities — to deliver reliable cash flow.</p>
+        <ul class="ep-check-list">
+          <li>Income source analysis & coordination</li>
+          <li>Withdrawal strategy design</li>
+          <li>Social Security timing optimization</li>
+          <li>Pension decision analysis</li>
+          <li>Guaranteed income floor planning</li>
+          <li>Tax-efficient distribution sequencing</li>
+          <li>Inflation protection strategies</li>
+          <li>Contingency planning for volatility</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   5. ASYMMETRIC — Image + income planning text
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-transfer" id="social-security">
+  <div class="ep-transfer-inner">
+    <div class="ep-transfer-image-wrap">
+      <img src="/assets/images/services/portfolio.jpg"
+           alt="Retirement income coordination and planning"
+           class="ep-transfer-image">
+      <div class="ep-transfer-image-accent"></div>
+    </div>
+    <div class="ep-transfer-text">
+      <span class="ep-chapter-label">Strategic Coordination</span>
+      <h2 class="ep-transfer-title">Turn Savings Into<br>Reliable Paychecks</h2>
+      <p class="ep-transfer-body">Our approach includes stress-testing your income plan against market downturns, inflation scenarios, and unexpected healthcare costs. You'll know exactly where your income is coming from and how sustainable it is.</p>
+      <div class="ep-sub-feature">
+        <h4>Social Security Optimization</h4>
+        <p>Strategic claiming decisions that can add $50,000-$100,000+ to your lifetime Social Security income through proper timing and spousal coordination.</p>
+      </div>
+      <div class="ep-sub-feature">
+        <h4>Withdrawal Sequencing</h4>
+        <p>Tax-efficient withdrawal strategies that coordinate your taxable accounts, tax-deferred accounts, and tax-free accounts to minimize lifetime taxes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   6. PROCESS — Our income planning process
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-process">
+  <div class="ep-process-inner">
+    <div class="ep-process-header">
+      <div>
+        <span class="ep-chapter-label">Our Process</span>
+        <h2 class="ep-process-title">Three Steps to<br>Reliable Income</h2>
+        <p class="ep-process-sub">Our proven income planning methodology.</p>
+        <a href="/contact/" class="ep-btn-primary">Start Income Planning</a>
+      </div>
+      <img src="/assets/images/services/social-security.jpg" alt="Retirement income planning process" class="ep-process-image">
+    </div>
+    <div class="ep-steps-grid">
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 01</span>
+        <h3>Identify Income Sources</h3>
+        <p>Catalog all your retirement income sources and assets — Social Security, pensions, IRAs, 401(k)s, Roth accounts, taxable investments, rental income, and annuities.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 02</span>
+        <h3>Design the Income Strategy</h3>
+        <p>Build a customized withdrawal plan that coordinates all sources, optimizes taxes, protects against sequence risk, and ensures sustainable income throughout retirement.</p>
+      </div>
+      <div class="ep-step-card">
+        <span class="ep-step-number">Step 03</span>
+        <h3>Monitor & Adjust</h3>
+        <p>Review your income plan regularly, adjust for market performance, rebalance as needed, and adapt to changes in spending, healthcare needs, or life circumstances.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   7. FAQ — Editorial accordion
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-faq" id="faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">Income Planning FAQ</h2>
+      <p class="ep-faq-sub">Get answers to the most common questions about creating retirement income that lasts throughout your retirement years.</p>
+      <a href="/contact/" class="ep-btn-ghost">Schedule Income Review</a>
+    </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How much retirement income do I need? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Most retirees need 70-90% of their pre-retirement income, but this varies based on lifestyle, healthcare costs, travel plans, and whether your mortgage is paid off. We analyze your actual expenses and goals to determine your specific income need, then build a plan to meet it sustainably.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is the 4% rule? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The 4% rule suggests withdrawing 4% of your portfolio in year one, then adjusting for inflation annually. While it's a useful starting point, it's not perfect — it doesn't account for your specific situation, changing markets, or tax efficiency. We customize withdrawal rates based on your age, risk tolerance, income sources, and market conditions.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How do I create guaranteed retirement income? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Guaranteed income typically comes from Social Security, pensions, and annuities. Social Security provides a base (we optimize when you claim), pensions offer payments if you have one, and annuities can fill gaps if you need more guaranteed income. The key is building a guaranteed income floor that covers your essential expenses, then using investments for discretionary spending.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should I take Social Security early? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>It depends on your health, other income sources, and need for cash flow. Claiming at 62 permanently reduces benefits by up to 30%, but makes sense if you need the income or have health concerns. Delaying to 70 increases benefits by 8% per year after full retirement age. We model your specific scenario to identify the optimal claiming strategy.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is sequence of returns risk? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Sequence of returns risk is the danger of experiencing market losses early in retirement when you're withdrawing money. If your portfolio drops 30% in year one and you're taking withdrawals, you're selling low and locking in losses — making it harder to recover. We mitigate this risk through bucket strategies, guaranteed income floors, dynamic withdrawal adjustments, and proper asset allocation.</p></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   8. CTA — Centered editorial
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Ready to create your income plan?</h2>
+      <p class="ep-cta-body">Stop worrying about whether your savings will last. Let's build a reliable income strategy that gives you confidence for the decades ahead.</p>
+      <a href="/contact/" class="ep-btn-primary">Schedule Your Income Review</a>
+      <p class="ep-cta-promise">A Fiduciary Promise</p>
+    </div>
+    <img src="/assets/images/services/money-map.jpg" alt="Reliable retirement income planning" class="ep-cta-image">
+  </div>
+</section>
+  </main>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('.ep-sidebar-link');
+  const sections = [];
+  links.forEach(link => {
+    const id = link.getAttribute('href').replace('#', '');
+    const section = document.getElementById(id);
+    if (section) sections.push({ id, el: section, link });
+  });
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector('.ep-sidebar-link[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+  
+  sections.forEach(s => observer.observe(s.el));
+});
+</script>

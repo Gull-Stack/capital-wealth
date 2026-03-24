@@ -1,0 +1,1065 @@
+---
+layout: layouts/service-subpage.njk
+title: "FEGLI Life Insurance Review | Capital Wealth"
+description: "Understand your FEGLI options and costs. Expert analysis of Basic, Option A, B, and C coverage, retirement implications, and private insurance alternatives for federal employees."
+serviceTag: "federal"
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Services", url: "/services/" }
+  - { name: "Federal Employee Benefits", url: "/services/federal-benefits/" }
+  - { name: "FEGLI Life Insurance", url: "/services/federal-benefits/fegli/" }
+faqSchema:
+  - question: "How much does FEGLI cost in retirement?"
+    answer: "Basic FEGLI reduces by 75% in retirement but remains free (no premium). Optional coverages are where costs can become problematic. Option A continues at $10,000 of coverage, and premiums increase with age. Option B (1-5 times salary) continues at full value, but premiums increase dramatically — often several hundred dollars per month for older retirees. Option C (family coverage) also continues with age-based premium increases. The key issue: while coverage continues, you're paying much higher rates in retirement when you may no longer need the same coverage level you had during your working years."
+  - question: "Should I keep FEGLI or get private insurance?"
+    answer: "It depends on your health, age, and coverage needs. FEGLI's advantages: no medical underwriting, guaranteed issue, and convenience. Private insurance advantages: often lower premiums (especially for healthy individuals), fixed-term coverage that ends when you no longer need it, and potentially larger death benefits. Many federal employees benefit from keeping Basic FEGLI (it's free in retirement anyway) while replacing expensive Option B coverage with a lower-cost private term policy. We recommend getting a private insurance quote to compare — if you're healthy, you may be paying far more than necessary."
+  - question: "What is Option B and why is it expensive?"
+    answer: "Option B is additional life insurance coverage equal to 1, 2, 3, 4, or 5 times your annual salary. During your working years, it's relatively affordable. The problem arises in retirement: Option B continues at full value (based on your salary at retirement), but premiums are based on your age and increase every 5 years. For a 70-year-old retiree with high Option B coverage, premiums can exceed $500-800 per month. By that age, many retirees no longer have the same coverage needs (mortgage paid off, kids financially independent), making these premiums difficult to justify."
+  - question: "Can I get private life insurance instead of FEGLI?"
+    answer: "Yes. You're not required to keep FEGLI, and you can cancel optional coverages at any time (though you may not be able to re-enroll later without a life event). Many federal employees choose to keep Basic FEGLI since it's free in retirement, but replace costly Option B with a private term life insurance policy that ends when coverage is no longer needed. Private insurance requires medical underwriting, so your health, age, and lifestyle affect eligibility and pricing. We can help you compare options and determine if private coverage makes sense for your situation."
+  - question: "When should I review my FEGLI coverage?"
+    answer: "You should review FEGLI at major life events: marriage, divorce, birth of children, home purchase, mortgage payoff, and as you approach retirement (ideally 5-10 years before). Many federal employees elect Option B early in their career when they have young children and a mortgage, then never revisit the decision. By retirement, circumstances have changed dramatically — kids are grown, the house is paid off, and the need for large life insurance coverage has diminished. Reviewing coverage every few years ensures you're not over-insured and overpaying for protection you no longer need."
+---
+
+<style>
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — FEGLI Analysis
+   ═══════════════════════════════════════════ */
+
+/* Page Layout with Sidebar */
+.ep-page-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ep-sidebar {
+  position: sticky;
+  top: 6rem;
+  height: fit-content;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+}
+
+.ep-sidebar-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.5rem;
+}
+
+.ep-sidebar-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.ep-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ep-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.ep-sidebar-link:hover {
+  color: var(--primary);
+  background: var(--surface-container-low);
+}
+
+.ep-sidebar-link.active {
+  color: var(--primary);
+  font-weight: 600;
+  border-left-color: var(--secondary);
+  background: var(--surface-container-low);
+}
+
+@media (max-width: 1024px) {
+  .ep-page-layout {
+    grid-template-columns: 1fr;
+  }
+  .ep-sidebar {
+    display: none;
+  }
+}
+
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons — match homepage hero-btn / hero-btn-secondary */
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Key Facts Row */
+.ep-facts {
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.2);
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-facts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ep-fact {
+  flex: 1;
+}
+
+.ep-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.4rem;
+}
+
+.ep-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.ep-framework-desc {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.2);
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
+  background: white;
+  transition: all 0.2s ease;
+  border-top: 3px solid transparent;
+}
+
+.ep-framework-card:hover {
+  background: var(--surface-container-low);
+  border-top-color: var(--secondary);
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Stats & Solution */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
+}
+
+.ep-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ep-dark-header {
+  margin-bottom: 4rem;
+}
+
+.ep-dark-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
+}
+
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.ep-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-glass-card:last-child {
+  margin-top: 0;
+}
+
+.ep-glass-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ep-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ep-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.ep-stat-number small {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-left: 0.25rem;
+}
+
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.ep-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ep-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+}
+
+.ep-check-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Asymmetric Image + Text */
+.ep-transfer {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-transfer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ep-transfer-image-wrap {
+  flex: 0 0 45%;
+  position: relative;
+}
+
+.ep-transfer-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-transfer-image-accent {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 120px;
+  height: 120px;
+  background: var(--tertiary-fixed, #d9e4eb);
+  z-index: -1;
+}
+
+.ep-transfer-text {
+  flex: 1;
+}
+
+.ep-transfer-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.ep-transfer-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2.5rem;
+}
+
+.ep-sub-feature {
+  margin-bottom: 1.5rem;
+  cursor: default;
+}
+
+.ep-sub-feature h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.ep-sub-feature:hover h4 {
+  color: var(--secondary);
+}
+
+.ep-sub-feature p {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 300px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* CTA — matches homepage final-cta */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-facts-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .ep-fact {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .ep-framework-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-framework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-glass-card:last-child {
+    margin-top: 0;
+  }
+
+  .ep-transfer {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-transfer-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ep-transfer-image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .ep-transfer-image {
+    height: 350px;
+  }
+
+  .ep-transfer-image-accent {
+    display: none;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
+  }
+}
+</style>
+
+<div class="ep-page-layout">
+  <nav class="ep-sidebar">
+    <div class="ep-sidebar-label">Navigation</div>
+    <h3 class="ep-sidebar-title">FEGLI Analysis</h3>
+    <div class="ep-sidebar-nav">
+      <a href="#overview" class="ep-sidebar-link">Overview</a>
+      <a href="#coverage" class="ep-sidebar-link">Coverage Options</a>
+      <a href="#costs" class="ep-sidebar-link">Cost Reality</a>
+      <a href="#analysis" class="ep-sidebar-link">Analysis Process</a>
+      <a href="#faq" class="ep-sidebar-link">FAQ</a>
+    </div>
+  </nav>
+  
+  <main class="ep-main-content">
+{# ═══════════════════════════════════════════════════════════
+   1. HERO — Asymmetric editorial layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-hero" id="overview">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">FEGLI Analysis</span>
+      <h1 class="ep-hero-title">The FEGLI</h1>
+      <span class="ep-hero-title-italic">Efficiency</span>
+      <span class="ep-hero-title">Audit</span>
+      <p class="ep-hero-body">FEGLI premiums skyrocket in retirement while your coverage needs typically decline. Most federal retirees are over-insured and overpaying — often by thousands per year. Strategic analysis can dramatically reduce your life insurance costs.</p>
+      <a href="/contact/" class="ep-btn-primary">Analyze My FEGLI</a>
+    </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-department-building-flag.jpg"
+           alt="Federal department building representing FEGLI life insurance review"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"Most federal retirees are over-insured and overpaying — often by thousands per year."</p>
+        <cite>Mike Stevens, IAR</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   2. KEY FACTS — Technical precision row
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact">
+      <div class="ep-fact-label">Basic FEGLI in Retirement</div>
+      <div class="ep-fact-value">75% reduction, no premium</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Option B Premium at 70</div>
+      <div class="ep-fact-value">$500-800/month</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Average Annual Savings</div>
+      <div class="ep-fact-value">$3,200 switching to private</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Option A Coverage</div>
+      <div class="ep-fact-value">Fixed $10,000</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Private Insurance</div>
+      <div class="ep-fact-value">Medical underwriting required</div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   3. FRAMEWORK — FEGLI Coverage Options
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-framework" id="coverage">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">FEGLI Coverage Options</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">Federal Employee Group Life Insurance offers four coverage types with dramatically different cost structures in retirement. Understanding each option is crucial for optimization.</p>
+    </div>
+    <div class="ep-framework-grid">
+      <div class="ep-framework-card">
+        <h4>Basic Life Insurance</h4>
+        <p>Automatic coverage equal to your annual salary plus $2,000. Reduces by 75% in retirement but becomes premium-free. Generally worth keeping since it costs nothing after retirement.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Option A (Standard)</h4>
+        <p>Additional $10,000 of coverage. Premiums increase with age but coverage amount stays fixed. Relatively modest cost increases make this option often worth keeping.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Option B (Additional)</h4>
+        <p>1-5 times annual salary. Maintains full value in retirement but premiums become extremely expensive with age. This is where most savings opportunities exist.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Option C (Family)</h4>
+        <p>Coverage for spouse and children. Spouse coverage continues in retirement with age-based premium increases. Often replaceable with lower-cost private coverage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   4. DARK SECTION — FEGLI Cost Reality
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-dark" id="costs">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">The Reality</span>
+      <h2 class="ep-dark-title">FEGLI Cost <em>Explosion.</em></h2>
+    </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Retirement Premium Shock</span>
+        <h3>Option B Cost Reality</h3>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Age 55 Monthly Premium</span>
+          <span class="ep-stat-number">$89<small>/mo</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Age 65 Monthly Premium</span>
+          <span class="ep-stat-number">$284<small>/mo</small></span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Age 70 Monthly Premium</span>
+          <span class="ep-stat-number">$629<small>/mo</small></span>
+        </div>
+        <p class="ep-glass-body">Based on 3x salary Option B coverage ($150,000). Premiums increase every 5 years and can become unaffordable just when you need insurance most.</p>
+      </div>
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Coverage Need Analysis</span>
+        <h3>Why Needs Decrease</h3>
+        <p class="ep-glass-body">Life insurance needs typically decline in retirement as financial obligations decrease and assets accumulate. Most retirees are paying for protection they no longer need.</p>
+        <ul class="ep-check-list">
+          <li>Mortgage typically paid off</li>
+          <li>Children financially independent</li>
+          <li>Retirement assets accumulated</li>
+          <li>Spouse may have own benefits</li>
+          <li>Estate planning strategies mature</li>
+          <li>Income replacement less critical</li>
+          <li>Tax situation often improved</li>
+          <li>Health care costs predictable</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   5. ASYMMETRIC — Analysis Process
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-transfer" id="analysis">
+  <div class="ep-transfer-inner">
+    <div class="ep-transfer-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-office-analysis.jpg"
+           alt="Federal office analysis representing FEGLI review process"
+           class="ep-transfer-image">
+      <div class="ep-transfer-image-accent"></div>
+    </div>
+    <div class="ep-transfer-text">
+      <span class="ep-chapter-label">Strategic Analysis</span>
+      <h2 class="ep-transfer-title">Beyond Premium<br>Comparison</h2>
+      <p class="ep-transfer-body">FEGLI analysis requires more than comparing premiums. We evaluate your complete financial picture, family situation, health status, and estate planning goals to determine optimal coverage strategies.</p>
+      <div class="ep-sub-feature">
+        <h4>Coverage Need Assessment</h4>
+        <p>Analyze your actual insurance needs based on current financial obligations, spouse's situation, dependent status, and retirement income adequacy.</p>
+      </div>
+      <div class="ep-sub-feature">
+        <h4>Private Market Comparison</h4>
+        <p>If you qualify medically, private term life insurance often provides better value than expensive FEGLI Option B coverage, especially for non-smokers in good health.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   6. FAQ — Editorial accordion
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-faq" id="faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">FEGLI Planning FAQ</h2>
+      <p class="ep-faq-sub">Essential information about Federal Employee Group Life Insurance costs, coverage options, and retirement implications.</p>
+      <a href="/contact/" class="ep-btn-ghost">Analyze My FEGLI</a>
+    </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How much does FEGLI cost in retirement? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Basic FEGLI reduces by 75% in retirement but remains free (no premium). Optional coverages are where costs can become problematic. Option A continues at $10,000 of coverage, and premiums increase with age. Option B (1-5 times salary) continues at full value, but premiums increase dramatically — often several hundred dollars per month for older retirees. Option C (family coverage) also continues with age-based premium increases. The key issue: while coverage continues, you're paying much higher rates in retirement when you may no longer need the same coverage level you had during your working years.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should I keep FEGLI or get private insurance? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>It depends on your health, age, and coverage needs. FEGLI's advantages: no medical underwriting, guaranteed issue, and convenience. Private insurance advantages: often lower premiums (especially for healthy individuals), fixed-term coverage that ends when you no longer need it, and potentially larger death benefits. Many federal employees benefit from keeping Basic FEGLI (it's free in retirement anyway) while replacing expensive Option B coverage with a lower-cost private term policy. We recommend getting a private insurance quote to compare — if you're healthy, you may be paying far more than necessary.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is Option B and why is it expensive? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Option B is additional life insurance coverage equal to 1, 2, 3, 4, or 5 times your annual salary. During your working years, it's relatively affordable. The problem arises in retirement: Option B continues at full value (based on your salary at retirement), but premiums are based on your age and increase every 5 years. For a 70-year-old retiree with high Option B coverage, premiums can exceed $500-800 per month. By that age, many retirees no longer have the same coverage needs (mortgage paid off, kids financially independent), making these premiums difficult to justify.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Can I get private life insurance instead of FEGLI? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Yes. You're not required to keep FEGLI, and you can cancel optional coverages at any time (though you may not be able to re-enroll later without a life event). Many federal employees choose to keep Basic FEGLI since it's free in retirement, but replace costly Option B with a private term life insurance policy that ends when coverage is no longer needed. Private insurance requires medical underwriting, so your health, age, and lifestyle affect eligibility and pricing. We can help you compare options and determine if private coverage makes sense for your situation.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">When should I review my FEGLI coverage? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>You should review FEGLI at major life events: marriage, divorce, birth of children, home purchase, mortgage payoff, and as you approach retirement (ideally 5-10 years before). Many federal employees elect Option B early in their career when they have young children and a mortgage, then never revisit the decision. By retirement, circumstances have changed dramatically — kids are grown, the house is paid off, and the need for large life insurance coverage has diminished. Reviewing coverage every few years ensures you're not over-insured and overpaying for protection you no longer need.</p></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   7. CTA — Centered editorial
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Ready to audit your FEGLI costs?</h2>
+      <p class="ep-cta-body">Don't overpay for life insurance you may not need. Schedule a comprehensive FEGLI analysis to determine if you're over-insured and explore lower-cost alternatives that better match your retirement situation.</p>
+      <a href="/contact/" class="ep-btn-primary">Analyze My FEGLI</a>
+      <p class="ep-cta-promise">Federal Employee Specialists</p>
+    </div>
+    <img src="/assets/images/photos/federal/capitalwealth-federal-department-building.jpg" alt="Federal building representing FEGLI expertise" class="ep-cta-image">
+  </div>
+</section>
+  </main>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('.ep-sidebar-link');
+  const sections = [];
+  links.forEach(link => {
+    const id = link.getAttribute('href').replace('#', '');
+    const section = document.getElementById(id);
+    if (section) sections.push({ id, el: section, link });
+  });
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector('.ep-sidebar-link[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+  
+  sections.forEach(s => observer.observe(s.el));
+});
+</script>

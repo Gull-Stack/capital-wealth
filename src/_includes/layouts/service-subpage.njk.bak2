@@ -1,0 +1,303 @@
+---
+layout: layouts/base-finpay.njk
+---
+
+<style>
+/* Service Subpage specific styles - using global CSS variables */
+/* Do NOT override :root variables - they're already correct in finpay-inspired.css */
+
+/* Service Subpage Layout Styles */
+.service-header {
+  background: var(--surface);
+  padding: 3rem 0 4rem;
+  text-align: center;
+}
+
+.service-header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.service-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Content area */
+.service-content {
+  /* Main page content goes here */
+}
+
+/* Related Blog Posts */
+.related-posts {
+  background: var(--surface-container-low);
+  padding: 4rem 0 5rem;
+  margin-top: 4rem;
+}
+
+.related-posts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.related-posts-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.related-posts-header h2 {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.related-posts-subtitle {
+  font-family: var(--font-body);
+  color: var(--on-surface-variant);
+  font-size: 1.125rem;
+}
+
+.related-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1px;
+  background: var(--outline-variant);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.related-post-card {
+  background: white;
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+  border-bottom: 3px solid transparent;
+}
+
+.related-post-card:hover {
+  border-bottom-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.related-post-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.75rem;
+}
+
+.related-post-title {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--on-surface);
+  margin-bottom: 0.75rem;
+}
+
+.related-post-link {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Navy CTA Section */
+.service-cta {
+  background: var(--primary);
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+}
+
+.service-cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-cta h2 {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.service-cta p {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.service-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--primary);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.service-cta-button:hover {
+  background: var(--surface-container-low);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-header {
+    padding: 2rem 0 3rem;
+  }
+  
+  .service-title {
+    font-size: 2.5rem;
+  }
+  
+  .service-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .related-posts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .related-posts {
+    padding: 3rem 0 4rem;
+  }
+  
+  .service-cta {
+    padding: 3rem 0;
+  }
+  
+  .service-cta h2 {
+    font-size: 2rem;
+  }
+}
+</style>
+
+<!-- Service Header (only if serviceTitle is explicitly set) -->
+{% if serviceTitle %}
+<section class="service-header">
+  <div class="service-header-inner">
+    {% if serviceLabel %}
+      <p class="service-eyebrow">{{ serviceLabel }}</p>
+    {% endif %}
+    
+    <h1 class="service-title">{{ serviceTitle }}</h1>
+    
+    {% if serviceSubtitle %}
+      <p class="service-subtitle">{{ serviceSubtitle }}</p>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+<!-- Service Content -->
+<div class="service-content">
+  {{ content | safe }}
+</div>
+
+<!-- Related Blog Posts -->
+{% if collections.blog and collections.blog.length > 0 %}
+  {% set relatedPosts = [] %}
+  {% if serviceTag or tags %}
+    {% set searchTags = [serviceTag] if serviceTag else tags %}
+    {% if searchTags %}
+      {% for post in collections.blog %}
+        {% if post.data.tags %}
+          {% for tag in searchTags %}
+            {% if tag in post.data.tags and post.url != page.url %}
+              {% set relatedPosts = (relatedPosts.push(post), relatedPosts) %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+  
+  <!-- If no tag matches, get 3 recent blog posts -->
+  {% if relatedPosts.length == 0 %}
+    {% set relatedPosts = collections.blog | reverse | slice(0, 3) %}
+  {% endif %}
+  
+  {% if relatedPosts.length > 0 %}
+    <section class="related-posts">
+      <div class="related-posts-inner">
+        <div class="related-posts-header">
+          <h2>Related Reading</h2>
+          <p class="related-posts-subtitle">Dive deeper into this topic</p>
+        </div>
+        
+        <div class="related-posts-grid">
+          {% for post in relatedPosts.slice(0, 3) %}
+            <a href="{{ post.url }}" class="related-post-card">
+              <div class="related-post-date">{{ post.date | date("MMMM DD, YYYY") }}</div>
+              <h3 class="related-post-title">{{ post.data.title }}</h3>
+              <div class="related-post-link">Read More →</div>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endif %}
+
+<!-- Navy CTA (skip on contact page and pages with their own ep-cta) -->
+{% if page.url and '/contact/' not in page.url and serviceTitle %}
+  <section class="service-cta">
+    <div class="service-cta-inner">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>Schedule a complimentary consultation to discuss your financial goals and see how we can help you achieve them.</p>
+      <a href="/contact/" class="service-cta-button">
+        Schedule Your Visit
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+{% endif %}

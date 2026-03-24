@@ -1,0 +1,695 @@
+---
+layout: layouts/base-finpay.njk
+title: "Retirement Planning Blog | Capital Wealth"
+description: "Expert retirement planning articles covering Social Security, tax strategies, estate planning, and income optimization from Capital Wealth in Lehi, Utah."
+permalink: /blog/
+eleventyExcludeFromCollections: true
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Blog", url: "/blog/" }
+---
+
+{# ═══ FEATURED STORY — Full-bleed hero image ═══ #}
+{% set featuredPost = collections.blog | first %}
+<section class="blog-idx-featured">
+    <a href="{{ featuredPost.url }}" class="blog-idx-featured-link">
+        <div class="blog-idx-featured-bg">
+            <img src="/assets/images/photos/blog-featured-couple-dock.jpg" alt="Couple enjoying retirement by mountain lake" class="blog-idx-featured-img" loading="eager">
+            <div class="blog-idx-featured-overlay"></div>
+        </div>
+        <div class="blog-idx-featured-content">
+            <span class="blog-idx-featured-eyebrow">Latest Article</span>
+            <h1 class="blog-idx-featured-title">{{ featuredPost.data.title }}</h1>
+            <p class="blog-idx-featured-desc">{{ featuredPost.data.description }}</p>
+            <span class="blog-idx-featured-cta">Read Article <span>→</span></span>
+        </div>
+    </a>
+</section>
+
+{# ═══ MAIN LAYOUT: Sidebar + Article Grid ═══ #}
+<div class="blog-idx-layout">
+
+    {# LEFT SIDEBAR — Topics + CTA #}
+    <aside class="blog-idx-sidebar">
+        <div class="blog-idx-sidebar-sticky">
+            <div class="blog-idx-topics">
+                <h3 class="blog-idx-sidebar-title">Topics</h3>
+                <nav class="blog-idx-topic-list" id="blogTopicList">
+                    {# JS will populate from tags #}
+                </nav>
+            </div>
+
+            <div class="blog-idx-sidebar-cta">
+                <span class="blog-idx-sidebar-cta-label">The Desk</span>
+                <p>Need help with your retirement plan?</p>
+                <a href="/contact/">Schedule Your Visit →</a>
+            </div>
+        </div>
+    </aside>
+
+    {# MAIN — Article Grid #}
+    <div class="blog-idx-main">
+
+        {# Search bar #}
+        <div class="blog-idx-search-row">
+            <input type="text" id="blogSearch" placeholder="Search articles..." class="blog-idx-search-input">
+        </div>
+
+        {# Article grid — square cards, text only #}
+        <div class="blog-idx-grid" id="blogArticlesList">
+            {% set postIndex = [0] %}
+            {% for post in collections.blog %}
+                {% if post.url != featuredPost.url %}
+                {% set _ = postIndex.push(postIndex.length) %}
+                <article class="blog-idx-card" data-title="{{ post.data.title | lower }}" data-description="{{ (post.data.description or '') | lower }}" data-tags="{{ post.data.tags | join(',') | lower }}">
+                    <a href="{{ post.url }}" class="blog-idx-card-link">
+                        <div class="blog-idx-card-top">
+                            <span class="blog-idx-card-number">{{ loop.index }}</span>
+                            <span class="blog-idx-card-tag">
+                                {% for tag in post.data.tags %}{% if tag != 'blog' %}{{ tag }}{% if not loop.last %} · {% endif %}{% endif %}{% endfor %}
+                            </span>
+                        </div>
+                        <h2 class="blog-idx-card-title">{{ post.data.title }}</h2>
+                        <div class="blog-idx-card-bottom">
+                            <time>{{ post.data.date | date }}</time>
+                            <span class="blog-idx-card-arrow">→</span>
+                        </div>
+                    </a>
+                </article>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        {# Pagination #}
+        <div class="blog-idx-pagination" id="blogPagination"></div>
+
+        {# Newsletter CTA #}
+        <section class="blog-idx-newsletter">
+            <div class="blog-idx-newsletter-inner">
+                <h2>Stay Informed About Retirement Planning</h2>
+                <p>Get our latest insights and strategies delivered to your inbox.</p>
+                <a href="/contact/" class="blog-idx-newsletter-btn">Schedule Your Visit</a>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<style>
+/* ═══ BLOG INDEX — Editorial Design ═══ */
+:root {
+    --bi-primary: #003870;
+    --bi-accent: #F09F54;
+    --bi-surface: #f8f9fb;
+    --bi-surface-low: #f3f4f6;
+    --bi-text: #191c1e;
+    --bi-text-sec: #525252;
+    --bi-text-meta: #737373;
+}
+
+/* ═══ FEATURED HERO ═══ */
+.blog-idx-featured {
+    margin: -100px 0 3rem 0;
+}
+
+.blog-idx-featured-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    min-height: 550px;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 0;
+}
+
+.blog-idx-featured-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.blog-idx-featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.7s ease;
+}
+
+.blog-idx-featured-link:hover .blog-idx-featured-img {
+    transform: scale(1.03);
+}
+
+.blog-idx-featured-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 30, 60, 0.8) 0%,
+        rgba(0, 30, 60, 0.3) 50%,
+        transparent 100%
+    );
+}
+
+.blog-idx-featured-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3rem 3rem 4rem;
+    max-width: 700px;
+    z-index: 2;
+}
+
+.blog-idx-featured-eyebrow {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: white;
+    background: rgba(240, 159, 84, 0.85);
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+}
+
+.blog-idx-featured-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    font-weight: 300;
+    color: white;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+}
+
+.blog-idx-featured-desc {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.55;
+    margin: 0 0 1.5rem;
+    max-width: 520px;
+}
+
+.blog-idx-featured-cta {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 0.25rem;
+    transition: border-color 0.2s;
+}
+
+.blog-idx-featured-link:hover .blog-idx-featured-cta {
+    border-color: white;
+}
+
+/* ═══ LAYOUT: Sidebar + Main ═══ */
+.blog-idx-layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+    align-items: start;
+    overflow: hidden;
+}
+
+/* ═══ SIDEBAR ═══ */
+.blog-idx-sidebar-sticky {
+    position: sticky;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.blog-idx-sidebar-title {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--bi-primary);
+    margin: 0 0 1rem;
+    font-weight: 400;
+}
+
+.blog-idx-topic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.blog-idx-topic-btn {
+    display: block;
+    text-align: left;
+    background: none;
+    border: none;
+    border-left: 3px solid transparent;
+    padding: 0.4rem 0 0.4rem 0.75rem;
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--bi-text-sec);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.blog-idx-topic-btn:hover {
+    color: var(--bi-primary);
+    border-left-color: var(--bi-accent);
+}
+
+.blog-idx-topic-btn.active {
+    color: var(--bi-primary);
+    font-weight: 600;
+    border-left-color: var(--bi-primary);
+}
+
+/* Sidebar CTA */
+.blog-idx-sidebar-cta {
+    background: var(--bi-surface-low);
+    padding: 1.5rem;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-idx-sidebar-cta-label {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--bi-primary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.blog-idx-sidebar-cta p {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--bi-primary);
+    line-height: 1.4;
+    margin: 0 0 0.75rem;
+}
+
+.blog-idx-sidebar-cta a {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--bi-accent);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--bi-accent);
+    padding-bottom: 2px;
+}
+
+/* ═══ MAIN ═══ */
+.blog-idx-main {
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* Search */
+.blog-idx-search-row {
+    margin-bottom: 2rem;
+}
+
+.blog-idx-search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.65rem 1rem;
+    border: 1px solid rgba(194,198,210,0.3);
+    border-radius: 2px;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    background: white;
+    transition: border-color 0.2s;
+}
+
+.blog-idx-search-input:focus {
+    outline: none;
+    border-color: var(--bi-primary);
+}
+
+/* ═══ ARTICLE GRID — Square editorial cards ═══ */
+.blog-idx-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    min-width: 0;
+}
+
+.blog-idx-card {
+    background: white;
+    border-bottom: 3px solid var(--bi-primary);
+    transition: all 0.3s ease;
+    min-width: 0;
+}
+
+.blog-idx-card:hover {
+    border-bottom-color: var(--bi-accent);
+    box-shadow: 0 6px 25px rgba(0, 56, 112, 0.06);
+    transform: translateY(-2px);
+}
+
+.blog-idx-card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    text-decoration: none;
+    min-height: 220px;
+    height: 100%;
+    transition: background 0.2s;
+}
+
+.blog-idx-card-link:hover {
+    background: var(--bi-surface);
+}
+
+.blog-idx-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.blog-idx-card-number {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.65rem;
+    color: var(--bi-accent);
+    letter-spacing: 0.05em;
+}
+
+.blog-idx-card-tag {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--bi-text-meta);
+    max-width: 55%;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.blog-idx-card-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--bi-primary);
+    line-height: 1.3;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.blog-idx-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.blog-idx-card-bottom time {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.6rem;
+    color: var(--bi-text-meta);
+    letter-spacing: 0.05em;
+}
+
+.blog-idx-card-arrow {
+    font-size: 1rem;
+    color: var(--bi-primary);
+    transition: transform 0.2s;
+}
+
+.blog-idx-card-link:hover .blog-idx-card-arrow {
+    transform: translateX(3px);
+}
+
+/* ═══ PAGINATION ═══ */
+.blog-idx-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(194,198,210,0.2);
+}
+
+.blog-idx-page-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Geist Mono", monospace;
+    font-size: 0.8rem;
+    color: var(--bi-text-meta);
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.blog-idx-page-btn:hover {
+    color: var(--bi-primary);
+}
+
+.blog-idx-page-btn.active {
+    color: var(--bi-primary);
+    border-color: var(--bi-primary);
+    font-weight: 600;
+}
+
+.blog-idx-page-nav {
+    padding: 0.5rem 1.25rem;
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    background: var(--bi-primary);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.blog-idx-page-nav:hover {
+    background: var(--bi-accent);
+}
+
+.blog-idx-page-nav:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* ═══ NEWSLETTER ═══ */
+.blog-idx-newsletter {
+    background: var(--bi-surface-low);
+    padding: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.blog-idx-newsletter h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--bi-primary);
+    margin: 0 0 0.75rem;
+}
+
+.blog-idx-newsletter p {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.95rem;
+    color: var(--bi-text-sec);
+    margin: 0 0 1.5rem;
+}
+
+.blog-idx-newsletter-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--bi-accent);
+    color: white;
+    text-decoration: none;
+    font-family: "Geist Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.blog-idx-newsletter-btn:hover {
+    background: var(--bi-primary);
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 1024px) {
+    .blog-idx-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .blog-idx-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-idx-sidebar { display: none; }
+    
+    .blog-idx-featured-link { height: 75vh; min-height: 400px; }
+    
+    .blog-idx-featured-content { padding: 2rem; }
+    
+    .blog-idx-featured-title { font-size: 2rem; }
+}
+
+@media (max-width: 600px) {
+    .blog-idx-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-idx-featured { margin: -100px 0 2rem 0; }
+    
+    .blog-idx-featured-link { height: 70vh; min-height: 380px; }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var allCards = Array.from(document.querySelectorAll('.blog-idx-card'));
+    var searchInput = document.getElementById('blogSearch');
+    var topicList = document.getElementById('blogTopicList');
+    var pagination = document.getElementById('blogPagination');
+    
+    var filteredCards = allCards.slice();
+    var currentPage = 1;
+    var perPage = 12;
+    var activeTag = null;
+    
+    // ═══ BUILD TOPIC LIST ═══
+    var tagCounts = {};
+    allCards.forEach(function(card) {
+        var tags = card.dataset.tags.split(',').filter(function(t) { return t.trim() && t !== 'blog'; });
+        tags.forEach(function(t) {
+            t = t.trim();
+            tagCounts[t] = (tagCounts[t] || 0) + 1;
+        });
+    });
+    
+    // Sort by count, take top 10
+    var sortedTags = Object.keys(tagCounts).sort(function(a, b) { return tagCounts[b] - tagCounts[a]; }).slice(0, 10);
+    
+    // "All" button
+    var allBtn = document.createElement('button');
+    allBtn.textContent = 'All Articles';
+    allBtn.className = 'blog-idx-topic-btn active';
+    allBtn.addEventListener('click', function() { filterTag(null); });
+    topicList.appendChild(allBtn);
+    
+    sortedTags.forEach(function(tag) {
+        var btn = document.createElement('button');
+        btn.textContent = tag.charAt(0).toUpperCase() + tag.slice(1).replace(/-/g, ' ');
+        btn.className = 'blog-idx-topic-btn';
+        btn.dataset.tag = tag;
+        btn.addEventListener('click', function() { filterTag(tag); });
+        topicList.appendChild(btn);
+    });
+    
+    function filterTag(tag) {
+        activeTag = tag;
+        topicList.querySelectorAll('.blog-idx-topic-btn').forEach(function(b) { b.classList.remove('active'); });
+        
+        if (tag) {
+            topicList.querySelector('[data-tag="' + tag + '"]').classList.add('active');
+            filteredCards = allCards.filter(function(c) { return c.dataset.tags.includes(tag); });
+        } else {
+            topicList.querySelector('.blog-idx-topic-btn').classList.add('active');
+            filteredCards = allCards.slice();
+        }
+        
+        applySearch();
+    }
+    
+    // ═══ SEARCH ═══
+    searchInput.addEventListener('input', function() { applySearch(); });
+    
+    function applySearch() {
+        var query = searchInput.value.toLowerCase().trim();
+        var base = activeTag ? allCards.filter(function(c) { return c.dataset.tags.includes(activeTag); }) : allCards.slice();
+        
+        if (query) {
+            var terms = query.split(' ').filter(function(t) { return t.length > 0; });
+            filteredCards = base.filter(function(c) {
+                var text = c.dataset.title + ' ' + c.dataset.description + ' ' + c.dataset.tags;
+                return terms.every(function(t) { return text.includes(t); });
+            });
+        } else {
+            filteredCards = base;
+        }
+        
+        currentPage = 1;
+        render();
+    }
+    
+    // ═══ RENDER + PAGINATION ═══
+    function render() {
+        allCards.forEach(function(c) { c.style.display = 'none'; });
+        
+        var totalPages = Math.ceil(filteredCards.length / perPage);
+        var start = (currentPage - 1) * perPage;
+        var pageCards = filteredCards.slice(start, start + perPage);
+        
+        pageCards.forEach(function(c) { c.style.display = ''; });
+        
+        // Pagination
+        pagination.innerHTML = '';
+        if (totalPages <= 1) return;
+        
+        // Prev
+        var prev = document.createElement('button');
+        prev.textContent = '← Prev';
+        prev.className = 'blog-idx-page-nav';
+        prev.disabled = currentPage === 1;
+        prev.addEventListener('click', function() { currentPage--; render(); });
+        pagination.appendChild(prev);
+        
+        for (var i = 1; i <= totalPages; i++) {
+            if (i === 1 || i === totalPages || Math.abs(i - currentPage) <= 1) {
+                var btn = document.createElement('button');
+                btn.textContent = i;
+                btn.className = 'blog-idx-page-btn' + (i === currentPage ? ' active' : '');
+                (function(page) {
+                    btn.addEventListener('click', function() { currentPage = page; render(); });
+                })(i);
+                pagination.appendChild(btn);
+            } else if (Math.abs(i - currentPage) === 2) {
+                var dots = document.createElement('span');
+                dots.textContent = '...';
+                dots.style.cssText = 'color:#737373;padding:0 0.25rem;font-size:0.8rem;';
+                pagination.appendChild(dots);
+            }
+        }
+        
+        // Next
+        var next = document.createElement('button');
+        next.textContent = 'Next →';
+        next.className = 'blog-idx-page-nav';
+        next.disabled = currentPage === totalPages;
+        next.addEventListener('click', function() { currentPage++; render(); });
+        pagination.appendChild(next);
+    }
+    
+    render();
+});
+</script>

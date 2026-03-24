@@ -1,0 +1,796 @@
+---
+layout: layouts/service-subpage.njk
+title: "FERS Retirement Calculator | Capital Wealth"
+description: "Calculate your FERS retirement annuity with precision. Understand the formula, high-3 salary, service credits, and get a personalized calculation from federal benefits experts."
+serviceTag: "federal"
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Services", url: "/services/" }
+  - { name: "Federal Employee Benefits", url: "/services/federal-benefits/" }
+  - { name: "FERS Calculator", url: "/services/federal-benefits/fers-calculator/" }
+faqSchema:
+  - question: "How is my FERS pension calculated?"
+    answer: "According to OPM guidelines, your FERS annuity is calculated using the formula: Years of Creditable Service × High-3 Average Salary × Multiplier. The standard multiplier is 1% for most employees. If you retire at age 62 or older with at least 20 years of service, the multiplier increases to 1.1%. Special category employees (law enforcement officers, firefighters, and air traffic controllers) receive a 1.7% multiplier for their first 20 years of service and 1% thereafter. Your creditable service includes all periods of federal employment covered by FERS, plus unused sick leave credit (which is added to your service time for annuity computation purposes)."
+  - question: "How does sick leave credit affect my annuity?"
+    answer: "Unused sick leave is converted into creditable service for your FERS annuity calculation. The conversion depends on when you retire and how much sick leave you have. For retirements after 2014, all unused sick leave counts toward your annuity (previously, only 50% counted for FERS employees). The leave balance is converted into months and days of service credit, which is then added to your total creditable service before applying the FERS formula. For example, if you have 2,000 hours of unused sick leave, that converts to approximately one year of additional service credit. This can significantly increase your annuity — in many cases by several hundred dollars per month."
+  - question: "What is the 1.1% multiplier and do I qualify?"
+    answer: "The enhanced 1.1% multiplier is available if you retire at age 62 or older with at least 20 years of creditable service. This represents a 10% increase over the standard 1% multiplier. For example, with a high-3 salary of $100,000 and 25 years of service, the standard formula gives you $25,000/year (25 × $100,000 × 1%), but with the 1.1% multiplier you receive $27,500/year (25 × $100,000 × 1.1%) — an extra $2,500 annually. To qualify, you must actually be age 62 when you retire, not just meet Minimum Retirement Age. Employees who retire before 62 receive the standard 1% multiplier even if they eventually turn 62."
+  - question: "How does the survivor benefit reduce my annuity?"
+    answer: "The FERS survivor benefit provides ongoing income to your spouse after your death, but it reduces your annuity during your lifetime. You have three options: Full survivor benefit (your spouse receives 50% of your annuity, costs you 10% of your annuity), Partial survivor benefit (spouse receives 25%, costs you 5%), or No survivor benefit (maximum pension for you, but nothing for your spouse). For example, if your calculated annuity is $30,000/year and you elect the full survivor benefit, you'll receive $27,000/year ($30,000 - 10%), and your spouse will receive $15,000/year (50% of the unreduced amount) after your death. The decision depends on your spouse's other income sources, health, and age difference."
+  - question: "What is the high-3 average salary?"
+    answer: "The high-3 is your highest average basic pay earned during any consecutive 36-month period of service. It typically includes your base salary but does NOT include overtime, bonuses, locality pay adjustments (for annuity purposes, though locality is part of your actual salary), or other premium pay. OPM calculates this by looking at all possible 36-month periods in your career and identifying which one yields the highest average. For most employees, this is their final three years before retirement, but if you took a lower-paying position later in your career, an earlier period might produce a higher average. Maximizing your high-3 — through promotions, step increases, or avoiding demotions near retirement — can significantly impact your lifetime annuity."
+---
+
+<style>
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — FERS Calculator
+   ═══════════════════════════════════════════ */
+
+/* Page Layout with Sidebar */
+.ep-page-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ep-sidebar {
+  position: sticky;
+  top: 6rem;
+  height: fit-content;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+}
+
+.ep-sidebar-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.5rem;
+}
+
+.ep-sidebar-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.ep-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ep-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.ep-sidebar-link:hover {
+  color: var(--primary);
+  background: var(--surface-container-low);
+}
+
+.ep-sidebar-link.active {
+  color: var(--primary);
+  font-weight: 600;
+  border-left-color: var(--secondary);
+  background: var(--surface-container-low);
+}
+
+@media (max-width: 1024px) {
+  .ep-page-layout {
+    grid-template-columns: 1fr;
+  }
+  .ep-sidebar {
+    display: none;
+  }
+}
+
+/* Standard ep- styles for consistency */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Calculator Section */
+.ep-calculator {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-calculator-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-calculator-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ep-calc-form {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 3rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.ep-calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ep-calc-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-calc-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.5rem;
+}
+
+.ep-calc-input {
+  padding: 0.75rem;
+  border: 2px solid rgba(194, 198, 210, 0.3);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.ep-calc-input:focus {
+  outline: none;
+  border-color: var(--secondary);
+}
+
+.ep-calc-button {
+  padding: 1rem 2rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.ep-calc-button:hover {
+  background: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.ep-calc-results {
+  background: var(--primary);
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.ep-calc-results h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ep-calc-result-value {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ep-calc-result-label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+/* FAQ styles - keep consistent with other pages */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 400px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* CTA styles */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-calc-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .ep-calculator {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-calc-form {
+    padding: 2rem;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+}
+</style>
+
+<div class="ep-page-layout">
+  <nav class="ep-sidebar">
+    <div class="ep-sidebar-label">Navigation</div>
+    <h3 class="ep-sidebar-title">FERS Calculator</h3>
+    <div class="ep-sidebar-nav">
+      <a href="#overview" class="ep-sidebar-link">Overview</a>
+      <a href="#calculator" class="ep-sidebar-link">Calculator</a>
+      <a href="#formula" class="ep-sidebar-link">Formula</a>
+      <a href="#faq" class="ep-sidebar-link">FAQ</a>
+    </div>
+  </nav>
+  
+  <main class="ep-main-content">
+{# ═══════════════════════════════════════════════════════════
+   1. HERO — Asymmetric editorial layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-hero" id="overview">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">FERS Calculator</span>
+      <h1 class="ep-hero-title">Calculate Your Federal</h1>
+      <span class="ep-hero-title-italic">Future.</span>
+      <p class="ep-hero-body">Use our FERS calculator to estimate your federal pension based on years of service, high-3 salary, and retirement date. Understanding your numbers is the first step to optimizing your federal retirement strategy.</p>
+      <a href="#calculator" class="ep-btn-primary">Calculate My FERS</a>
+    </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-state-capitol.jpg"
+           alt="State capitol building representing FERS calculation precision"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"Understanding your numbers is the first step to closing the gap."</p>
+        <cite>Mike Stevens, IAR</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   2. CALCULATOR — Interactive FERS calculation tool
+   ═══════════════════════════════════════════════════════════ #}
+<section id="calculator" class="ep-calculator">
+  <div class="ep-calculator-inner">
+    <span class="ep-chapter-label" style="display: block; text-align: center; margin-bottom: 1rem;">Interactive Tool</span>
+    <h2 class="ep-calculator-title">FERS Pension Calculator</h2>
+    
+    <form class="ep-calc-form" id="fers-calculator">
+      <div class="ep-calc-grid">
+        <div class="ep-calc-field">
+          <label class="ep-calc-label" for="high3">High-3 Average Salary</label>
+          <input class="ep-calc-input" type="number" id="high3" placeholder="$85,000" min="0" step="1000">
+        </div>
+        
+        <div class="ep-calc-field">
+          <label class="ep-calc-label" for="years">Years of Service</label>
+          <input class="ep-calc-input" type="number" id="years" placeholder="25" min="0" max="50" step="0.25">
+        </div>
+        
+        <div class="ep-calc-field">
+          <label class="ep-calc-label" for="age">Retirement Age</label>
+          <input class="ep-calc-input" type="number" id="age" placeholder="62" min="50" max="70">
+        </div>
+        
+        <div class="ep-calc-field">
+          <label class="ep-calc-label" for="sick-leave">Unused Sick Leave Hours</label>
+          <input class="ep-calc-input" type="number" id="sick-leave" placeholder="1800" min="0" max="5000">
+        </div>
+      </div>
+      
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <input type="checkbox" id="military" style="margin: 0;">
+        <label for="military" style="font-family: var(--font-body); color: var(--on-surface);">I have military buyback service credit</label>
+      </div>
+      
+      <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1rem;">
+        <input type="checkbox" id="law-enforcement" style="margin: 0;">
+        <label for="law-enforcement" style="font-family: var(--font-body); color: var(--on-surface);">I am a special category employee (LEO/ATC/Fire)</label>
+      </div>
+      
+      <button type="button" class="ep-calc-button" onclick="calculateFERS()">Calculate My FERS Annuity</button>
+      
+      <div id="results" class="ep-calc-results" style="display: none;">
+        <h3>Your Estimated FERS Annuity</h3>
+        <div class="ep-calc-result-value" id="annual-amount">$0</div>
+        <div class="ep-calc-result-label">Per Year</div>
+        <div style="margin-top: 1rem;">
+          <div style="font-size: 1.2rem;" id="monthly-amount">$0 per month</div>
+          <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;" id="supplement-note"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   3. FAQ — Editorial accordion
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-faq" id="faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">FERS Calculator FAQ</h2>
+      <p class="ep-faq-sub">Essential information about FERS pension calculations, multipliers, and service credit for accurate retirement planning.</p>
+      <a href="/contact/" class="ep-btn-ghost">Get Professional Analysis</a>
+    </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How is my FERS pension calculated? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>According to OPM guidelines, your FERS annuity is calculated using the formula: Years of Creditable Service × High-3 Average Salary × Multiplier. The standard multiplier is 1% for most employees. If you retire at age 62 or older with at least 20 years of service, the multiplier increases to 1.1%. Special category employees (law enforcement officers, firefighters, and air traffic controllers) receive a 1.7% multiplier for their first 20 years of service and 1% thereafter. Your creditable service includes all periods of federal employment covered by FERS, plus unused sick leave credit (which is added to your service time for annuity computation purposes).</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How does sick leave credit affect my annuity? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Unused sick leave is converted into creditable service for your FERS annuity calculation. The conversion depends on when you retire and how much sick leave you have. For retirements after 2014, all unused sick leave counts toward your annuity (previously, only 50% counted for FERS employees). The leave balance is converted into months and days of service credit, which is then added to your total creditable service before applying the FERS formula. For example, if you have 2,000 hours of unused sick leave, that converts to approximately one year of additional service credit. This can significantly increase your annuity — in many cases by several hundred dollars per month.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is the 1.1% multiplier and do I qualify? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The enhanced 1.1% multiplier is available if you retire at age 62 or older with at least 20 years of creditable service. This represents a 10% increase over the standard 1% multiplier. For example, with a high-3 salary of $100,000 and 25 years of service, the standard formula gives you $25,000/year (25 × $100,000 × 1%), but with the 1.1% multiplier you receive $27,500/year (25 × $100,000 × 1.1%) — an extra $2,500 annually. To qualify, you must actually be age 62 when you retire, not just meet Minimum Retirement Age. Employees who retire before 62 receive the standard 1% multiplier even if they eventually turn 62.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How does the survivor benefit reduce my annuity? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The FERS survivor benefit provides ongoing income to your spouse after your death, but it reduces your annuity during your lifetime. You have three options: Full survivor benefit (your spouse receives 50% of your annuity, costs you 10% of your annuity), Partial survivor benefit (spouse receives 25%, costs you 5%), or No survivor benefit (maximum pension for you, but nothing for your spouse). For example, if your calculated annuity is $30,000/year and you elect the full survivor benefit, you'll receive $27,000/year ($30,000 - 10%), and your spouse will receive $15,000/year (50% of the unreduced amount) after your death. The decision depends on your spouse's other income sources, health, and age difference.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is the high-3 average salary? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The high-3 is your highest average basic pay earned during any consecutive 36-month period of service. It typically includes your base salary but does NOT include overtime, bonuses, locality pay adjustments (for annuity purposes, though locality is part of your actual salary), or other premium pay. OPM calculates this by looking at all possible 36-month periods in your career and identifying which one yields the highest average. For most employees, this is their final three years before retirement, but if you took a lower-paying position later in your career, an earlier period might produce a higher average. Maximizing your high-3 — through promotions, step increases, or avoiding demotions near retirement — can significantly impact your lifetime annuity.</p></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   4. CTA — Centered editorial
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Ready for a professional FERS analysis?</h2>
+      <p class="ep-cta-body">Our calculator provides estimates, but your actual FERS calculation involves many nuances. Schedule a comprehensive review to ensure accuracy and explore optimization strategies for your specific situation.</p>
+      <a href="/contact/" class="ep-btn-primary">Get Professional Analysis</a>
+      <p class="ep-cta-promise">Federal Employee Specialists</p>
+    </div>
+    <img src="/assets/images/photos/federal/capitalwealth-federal-calculator-analysis.jpg" alt="Federal retirement analysis representing FERS calculation expertise" class="ep-cta-image">
+  </div>
+</section>
+  </main>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('.ep-sidebar-link');
+  const sections = [];
+  links.forEach(link => {
+    const id = link.getAttribute('href').replace('#', '');
+    const section = document.getElementById(id);
+    if (section) sections.push({ id, el: section, link });
+  });
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector('.ep-sidebar-link[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+  
+  sections.forEach(s => observer.observe(s.el));
+});
+
+function calculateFERS() {
+  // Get input values
+  const high3 = parseFloat(document.getElementById('high3').value) || 0;
+  const years = parseFloat(document.getElementById('years').value) || 0;
+  const age = parseInt(document.getElementById('age').value) || 0;
+  const sickLeave = parseFloat(document.getElementById('sick-leave').value) || 0;
+  const hasMilitary = document.getElementById('military').checked;
+  const isLawEnforcement = document.getElementById('law-enforcement').checked;
+  
+  if (high3 <= 0 || years <= 0 || age <= 0) {
+    alert('Please enter valid values for High-3 salary, years of service, and retirement age.');
+    return;
+  }
+  
+  // Convert sick leave hours to years (2087 hours = 1 year)
+  const sickLeaveYears = sickLeave / 2087;
+  let totalYears = years + sickLeaveYears;
+  
+  // Add estimated military buyback time if checked (user should provide actual)
+  if (hasMilitary) {
+    totalYears += 4; // Estimate - actual calculation needs specific military service
+  }
+  
+  // Determine multiplier
+  let multiplier = 0.01; // Standard 1%
+  
+  if (isLawEnforcement) {
+    // Special category: 1.7% for first 20 years, 1% thereafter
+    const specialYears = Math.min(totalYears, 20);
+    const regularYears = Math.max(0, totalYears - 20);
+    multiplier = (specialYears * 0.017 + regularYears * 0.01) / totalYears;
+  } else if (age >= 62 && totalYears >= 20) {
+    multiplier = 0.011; // Enhanced 1.1%
+  }
+  
+  // Calculate annual annuity
+  const annualAmount = Math.round(totalYears * high3 * multiplier);
+  const monthlyAmount = Math.round(annualAmount / 12);
+  
+  // Display results
+  document.getElementById('annual-amount').textContent = '$' + annualAmount.toLocaleString();
+  document.getElementById('monthly-amount').textContent = '$' + monthlyAmount.toLocaleString() + ' per month';
+  
+  // FERS supplement note
+  let supplementNote = '';
+  if (age < 62 && totalYears >= 30 && age >= 56) {
+    supplementNote = 'You may be eligible for the FERS supplement until age 62.';
+  } else if (age < 62 && totalYears >= 20 && age >= 60) {
+    supplementNote = 'You may be eligible for the FERS supplement until age 62.';
+  }
+  document.getElementById('supplement-note').textContent = supplementNote;
+  
+  // Show results
+  document.getElementById('results').style.display = 'block';
+  
+  // Scroll to results
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// FAQ functionality
+document.querySelectorAll('.ep-faq-item').forEach(function(item) {
+  item.addEventListener('click', function() {
+    const isActive = this.classList.contains('active');
+    
+    // Close all items
+    document.querySelectorAll('.ep-faq-item').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    
+    // Open clicked item if it wasn't already open
+    if (!isActive) {
+      this.classList.add('active');
+    }
+  });
+});
+</script>

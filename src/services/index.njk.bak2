@@ -1,0 +1,948 @@
+---
+layout: layouts/base-finpay.njk
+title: "Financial Advisory Services | Retirement Planning | Capital Wealth"
+description: "Comprehensive retirement planning services including tax-efficient strategies, portfolio management, Social Security optimization, Medicare planning, and estate planning. Serving Utah families since 2010."
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Services", url: "/services/" }
+---
+
+<style>
+/* ═══════════════════════════════════════════════════════════
+   SERVICES PAGE - EDITORIAL SOPHISTICATION DESIGN
+   ═══════════════════════════════════════════════════════════ */
+
+/* COMPACT EDITORIAL HEADER */
+.svc-page-header {
+  background: var(--surface);
+  padding: var(--space-8) 0 var(--space-4);
+  text-align: center;
+}
+
+.svc-page-header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 var(--space-12);
+}
+
+.svc-page-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--secondary);
+  margin-bottom: var(--space-4);
+}
+
+.svc-page-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.12;
+  color: var(--primary);
+  margin: 0 0 var(--space-4);
+}
+
+.svc-page-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.hero-cta {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+  border: none;
+  border-radius: 12px;
+  padding: var(--space-4) var(--space-8);
+  color: var(--surface-container-lowest);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  transition: all 0.3s ease;
+}
+
+.hero-cta:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Chapter Navigation */
+.chapter-nav {
+  position: relative;
+  z-index: 3;
+  background: var(--surface);
+  padding: var(--space-4) 0;
+}
+
+.chapter-nav-inner {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: 0 var(--space-12);
+  display: flex;
+  gap: var(--space-8);
+  border-bottom: 1px solid var(--outline-variant);
+}
+
+.chapter-tab {
+  padding: var(--space-4) 0;
+  border-bottom: 2px solid transparent;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.chapter-tab.active {
+  color: var(--primary);
+  border-bottom-color: var(--secondary);
+}
+
+.chapter-tab:hover {
+  color: var(--primary);
+}
+
+/* CHAPTER I CONTENT - Your Retirement, Planned */
+.chapter-i {
+  padding: var(--space-8) 0 var(--space-12);
+  background: var(--surface);
+}
+
+.chapter-i-inner {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: 0 var(--space-12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.chapter-i-left {
+  position: relative;
+}
+
+.chapter-i-image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.quote-card {
+  position: absolute;
+  bottom: -2rem;
+  right: -2rem;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  padding: var(--space-8);
+  max-width: 300px;
+}
+
+.quote-text {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.125rem;
+  color: var(--primary);
+  margin-bottom: var(--space-4);
+}
+
+.quote-author {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--on-surface-variant);
+}
+
+.chapter-i-right h2 {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: var(--space-8);
+}
+
+.chapter-i-text {
+  color: var(--on-surface-variant);
+  line-height: 1.7;
+  margin-bottom: var(--space-6);
+}
+
+.chapter-i-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+
+.service-mini-card {
+  background: var(--surface-container-low);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-mini-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--secondary);
+  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.service-mini-card:hover {
+  background: var(--surface-container-lowest);
+  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
+  transform: translateY(-4px);
+}
+
+.service-mini-card:hover::after {
+  width: 100%;
+}
+
+.service-mini-card:hover .mini-card-icon {
+  stroke: var(--primary);
+  transform: scale(1.1);
+}
+
+.service-mini-card:hover .mini-card-title {
+  color: var(--secondary);
+}
+
+.mini-card-icon {
+  width: 32px;
+  height: 32px;
+  stroke: var(--secondary);
+  margin-bottom: var(--space-4);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mini-card-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: var(--space-3);
+  transition: color 0.3s ease;
+}
+
+.mini-card-desc {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* CHAPTER II - PROTECTION & GROWTH BENTO */
+.chapter-ii {
+  padding: var(--space-8) 0 var(--space-12);
+  background: var(--surface-container-low);
+}
+
+.chapter-ii-inner {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: 0 var(--space-12);
+}
+
+.chapter-ii-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.chapter-ii-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--secondary);
+  margin-bottom: var(--space-4);
+}
+
+.chapter-ii h2 {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: var(--space-6);
+}
+
+.bento-large {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background: linear-gradient(135deg, 
+    rgba(0, 56, 112, 0.8) 0%, 
+    rgba(25, 79, 144, 0.6) 100%),
+    url('/assets/images/photos/wide-services-capital-wealth.jpg') center/cover;
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  color: var(--surface-container-lowest);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 380px;
+}
+
+.bento-large h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--surface-container-lowest);
+  margin-bottom: var(--space-6);
+}
+
+.bento-large p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-8);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bento-cta {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  padding: var(--space-4) var(--space-6);
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  align-self: flex-start;
+}
+
+.bento-side {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+}
+
+.bento-side h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: var(--space-4);
+}
+
+.bento-side-icon {
+  width: 40px;
+  height: 40px;
+  stroke: var(--secondary);
+  margin-bottom: var(--space-6);
+}
+
+.bento-dark {
+  background: var(--primary);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bento-dark h3 {
+  color: var(--surface-container-lowest);
+}
+
+.bento-dark .bento-side-icon {
+  stroke: var(--secondary);
+}
+
+.bento-dark p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bento-dark a {
+  color: var(--secondary);
+}
+
+.bento-stats {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-lg);
+  padding: var(--space-10);
+  grid-column: 1 / -1;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* CHAPTER III - LEGACY & ESTATE */
+.chapter-iii {
+  padding: var(--space-8) 0 var(--space-12);
+  background: var(--surface);
+}
+
+.chapter-iii-inner {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: 0 var(--space-12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+  align-items: stretch;
+}
+
+.chapter-iii-left {
+  padding-right: var(--space-8);
+}
+
+.chapter-iii-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--secondary);
+  margin-bottom: var(--space-4);
+}
+
+.chapter-iii h2 {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: var(--space-6);
+}
+
+.legacy-list {
+  list-style: none;
+  padding: 0;
+}
+
+.legacy-item {
+  display: flex;
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--outline-variant);
+}
+
+.legacy-item:last-child {
+  border-bottom: none;
+}
+
+.legacy-number {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--secondary);
+  min-width: 60px;
+}
+
+.legacy-content h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: var(--space-4);
+}
+
+.legacy-content p {
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+.chapter-iii-right {
+  position: relative;
+}
+
+.chapter-iii-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.chapter-iii-image:hover {
+  filter: grayscale(0%);
+}
+
+.stat-bubble {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bubble-number {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.bubble-label {
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* PULL QUOTE SECTION */
+.pull-quote-section {
+  padding: var(--space-12) 0;
+  background: var(--primary);
+  color: var(--surface-container-lowest);
+}
+
+.pull-quote-inner {
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: 0 var(--space-12);
+  text-align: center;
+}
+
+.pull-quote {
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: var(--space-6);
+  color: white;
+}
+
+.pull-quote-author {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--secondary);
+}
+
+/* FINAL CTA */
+.final-cta {
+  padding: var(--space-20) 0;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+  color: var(--surface-container-lowest);
+  text-align: center;
+}
+
+.final-cta-inner {
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: 0 var(--space-12);
+}
+
+.final-cta h2 {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  color: var(--surface-container-lowest);
+  margin-bottom: var(--space-8);
+}
+
+.final-cta p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-12);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .chapter-i-inner,
+  .chapter-iii-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-16);
+  }
+  
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .chapter-i-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  
+  .chapter-nav-inner {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  
+  .quote-card,
+  .stat-bubble {
+    position: static;
+    margin-top: var(--space-8);
+  }
+}
+</style>
+
+{# ═══════════════════════════════════════════════════════════
+   CHAPTER I - HERO & WEALTH PRESERVATION
+   ═══════════════════════════════════════════════════════════ #}
+
+
+{# ═══════════════════════════════════════════════════════════
+   CHAPTER I CONTENT - Your Retirement, Planned
+   ═══════════════════════════════════════════════════════════ #}
+<section id="chapter-i" class="chapter-i">
+  <div class="chapter-i-inner">
+    <div class="chapter-i-left">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-autumn-walk.jpg" alt="Couple planning retirement together" class="chapter-i-image">
+      <div class="quote-card">
+        <p class="quote-text">"Will your money last as long as you do?"</p>
+        <div class="quote-author">Our job is to make sure the answer is yes</div>
+      </div>
+    </div>
+    <div class="chapter-i-right">
+      <h2>Your Retirement, Planned.</h2>
+      <p class="chapter-i-text">Most financial advisors stop at portfolio management. We start there. Capital Wealth builds comprehensive retirement plans that coordinate your income, taxes, healthcare, estate, and investments into a single strategy.</p>
+      <p class="chapter-i-text">We specialize in the transition from saving to spending — the most complex financial shift most families will ever face. With 25+ years of experience and over 650 clients served, our approach is built on real outcomes, not theoretical models.</p>
+      <p class="chapter-i-text">Every plan we build starts with the same question: <em>Will your money last as long as you do?</em> Our job is to make sure the answer is yes.</p>
+      
+      <div class="chapter-i-grid">
+        <a href="/services/retirement-money-map/" class="service-mini-card">
+          <svg class="mini-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9 17H7A5 5 0 0 1 7 7h2m3 10h4a5 5 0 0 0 0-10h-4m-4 5h10"/>
+          </svg>
+          <h3 class="mini-card-title">Retirement Money Map</h3>
+          <p class="mini-card-desc">Visual roadmap showing exactly how your money will work throughout retirement</p>
+        </a>
+        <a href="/services/tax-planning/" class="service-mini-card">
+          <svg class="mini-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          <h3 class="mini-card-title">Tax-Efficient Withdrawal Strategies</h3>
+          <p class="mini-card-desc">Coordinate your income sources to minimize lifetime tax burden</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   CHAPTER II - PROTECTION & GROWTH BENTO GRID
+   ═══════════════════════════════════════════════════════════ #}
+<section id="chapter-ii" class="chapter-ii">
+  <div class="chapter-ii-inner">
+    <div class="chapter-ii-header">
+      <div class="chapter-ii-eyebrow">WHAT WE DO</div>
+      <h2>Core Services</h2>
+    </div>
+    
+    <div class="bento-grid">
+      <div class="bento-large">
+        <h3>Specialized Services</h3>
+        <p>We specialize in retirement income planning and tax optimization for families with $500K+ in retirement savings.</p>
+        <a href="/services/" class="bento-cta">
+          View All Services
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="bento-side">
+        <svg class="bento-side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2v6m6.4-7L17 12l5.4 1M8 21l4-7-4-7M2 12h6"/>
+        </svg>
+        <h3>Portfolio Management</h3>
+        <p>Professional investment management coordinated with your retirement income strategy for optimal outcomes.</p>
+        <a href="/services/portfolio-management/">Learn More →</a>
+      </div>
+      
+      <div class="bento-side bento-dark">
+        <svg class="bento-side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M12.5 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/>
+        </svg>
+        <h3>Social Security Optimization</h3>
+        <p>Maximize your lifetime Social Security benefits with strategic claiming timing and coordination with other income sources.</p>
+        <a href="/services/social-security/" style="color: var(--secondary);">Optimize Benefits →</a>
+      </div>
+      
+      <div class="bento-stats">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">650+</span>
+            <span class="stat-label">Clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">25+</span>
+            <span class="stat-label">Years</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Fiduciary</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Full</span>
+            <span class="stat-label">Service</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   CHAPTER III - LEGACY & ESTATE
+   ═══════════════════════════════════════════════════════════ #}
+<section id="chapter-iii" class="chapter-iii">
+  <div class="chapter-iii-inner">
+    <div class="chapter-iii-left">
+      <div class="chapter-iii-eyebrow">HOW IT WORKS</div>
+      <h2>Our Planning Process</h2>
+      <ul class="legacy-list">
+        <li class="legacy-item">
+          <div class="legacy-number">01</div>
+          <div class="legacy-content">
+            <h3>Discovery & Analysis</h3>
+            <p>We gather all your financial information and analyze your current situation, goals, and risk tolerance. This includes reviewing your accounts, income sources, tax situation, insurance, and estate documents to build a complete picture.</p>
+          </div>
+        </li>
+        <li class="legacy-item">
+          <div class="legacy-number">02</div>
+          <div class="legacy-content">
+            <h3>Strategy Development</h3>
+            <p>We create a personalized retirement plan with tax-efficient withdrawal strategies, income optimization, Social Security timing, and healthcare cost projections — all coordinated into a single, actionable strategy.</p>
+          </div>
+        </li>
+        <li class="legacy-item">
+          <div class="legacy-number">03</div>
+          <div class="legacy-content">
+            <h3>Implementation</h3>
+            <p>We execute your plan with proper account structures, investment allocations, beneficiary designations, and legal documentation. Every piece is coordinated so nothing falls through the cracks.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="chapter-iii-right">
+      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg" alt="Couple enjoying retirement at the beach" class="chapter-iii-image">
+      <div class="stat-bubble">
+        <div class="bubble-number">$500K+</div>
+        <div class="bubble-label">Minimum</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   WHO WE SERVE & SPECIALIZED SERVICES (Combined)
+   ═══════════════════════════════════════════════════════════ #}
+<section class="chapter-ii" style="background: var(--surface-container-lowest);">
+  <div class="chapter-ii-inner">
+    <div class="chapter-ii-header">
+      <div class="chapter-ii-eyebrow">WHO WE SERVE</div>
+      <h2>Built for Families Approaching — or Already In — Retirement</h2>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(194,198,210,0.2); border-bottom: 3px solid var(--primary); margin-bottom: var(--space-12);">
+      {% for client in site.whoWeServe %}
+      <div style="background: var(--surface-container-lowest); padding: var(--space-8); display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: background 0.3s ease;">
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">{{ loop.index }}</span>
+          <h3 style="font-family: var(--font-serif-display); font-size: 1.2rem; color: var(--primary); margin-bottom: var(--space-3);">{{ client.title }}</h3>
+          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">{{ client.description }}</p>
+        </div>
+        <a href="/who-we-serve/" style="color: var(--secondary); font-weight: 600; text-decoration: none; font-size: 0.85rem; margin-top: var(--space-4);">Learn More →</a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="chapter-ii-header">
+      <div class="chapter-ii-eyebrow">SPECIALIZED PLANNING</div>
+      <h2>Specialized Services</h2>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8);">
+      <div style="background: var(--surface-container-low); border-radius: var(--radius-lg); padding: var(--space-8);">
+        <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-6);">
+          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">FERS Planning</span>
+          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">TSP Optimization</span>
+          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">FEGLI Analysis</span>
+        </div>
+        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; color: var(--primary); margin-bottom: var(--space-4);">Federal Employee Benefits</h3>
+        <p style="color: var(--on-surface-variant); line-height: 1.6; margin-bottom: var(--space-8);">Specialized strategies for federal employees including FERS optimization, TSP management, FEGLI analysis, and coordination with other federal benefits. We're one of the few firms that specialize in federal retirement.</p>
+        <a href="/services/federal-benefits/" class="hero-cta" style="display: inline-flex;">Federal Benefits Planning →</a>
+      </div>
+      
+      <div style="background: var(--surface-container-low); border-radius: var(--radius-lg); padding: var(--space-8);">
+        <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-6);">
+          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">Visual Planning</span>
+          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">Cash Flow Analysis</span>
+          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">Scenario Planning</span>
+        </div>
+        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; color: var(--primary); margin-bottom: var(--space-4);">Retirement Money Map</h3>
+        <p style="color: var(--on-surface-variant); line-height: 1.6; margin-bottom: var(--space-8);">Our signature planning tool that creates a visual roadmap of your financial future, showing exactly how your money will work throughout retirement. A clear plan for every dollar — income, expenses, taxes, and healthcare, all coordinated.</p>
+        <a href="/services/retirement-money-map/" class="hero-cta" style="display: inline-flex;">See the Money Map →</a>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   CORE SERVICES GRID
+   ═══════════════════════════════════════════════════════════ #}
+<section class="chapter-ii">
+  <div class="chapter-ii-inner">
+    <div class="chapter-ii-header">
+      <div class="chapter-ii-eyebrow">ALL SERVICES</div>
+      <h2>Complete Service Portfolio</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(194,198,210,0.2); border-bottom: 3px solid var(--primary);">
+      {% for service in site.services %}
+      <a href="/services/{{ service.slug }}/" style="background: var(--surface-container-lowest); padding: var(--space-8); text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='var(--surface-container-lowest)'">
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">{{ loop.index }}</span>
+          <h3 style="font-family: var(--font-serif-display); font-size: 1.15rem; color: var(--primary); margin-bottom: var(--space-3); font-weight: 400;">{{ service.name }}</h3>
+          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">{{ service.description }}</p>
+        </div>
+        <span style="display: inline-flex; align-items: center; gap: 0.4rem; margin-top: var(--space-4); padding: 0.4rem 1rem; background: rgba(255,255,255,0.45); backdrop-filter: blur(12px); border: 1px solid rgba(194,198,210,0.3); border-radius: 10px; color: var(--primary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; width: fit-content;">Learn More →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   PULL QUOTE SECTION
+   ═══════════════════════════════════════════════════════════ #}
+<section class="pull-quote-section">
+  <div class="pull-quote-inner">
+    <p class="pull-quote">A proven framework that turns complexity into clarity.</p>
+    <div class="pull-quote-author">Capital Wealth Planning Process</div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   GETTING STARTED SECTION
+   ═══════════════════════════════════════════════════════════ #}
+<section class="chapter-ii" style="background: var(--surface-container-lowest);">
+  <div class="chapter-ii-inner">
+    <div class="chapter-ii-header">
+      <div class="chapter-ii-eyebrow">GET STARTED</div>
+      <h2>Three Steps to a Better Retirement</h2>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-12); margin-bottom: var(--space-10);">
+      <div style="text-align: center;">
+        <div style="background: var(--secondary); color: white; width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif-display); font-size: 1.5rem; font-weight: 600; margin: 0 auto var(--space-6) auto;">1</div>
+        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; color: var(--primary); margin-bottom: var(--space-4);">Schedule</h3>
+        <p style="color: var(--on-surface-variant); line-height: 1.6;">Call {{ site.phone }} or use our online form to schedule your complimentary initial assessment.</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="background: var(--secondary); color: white; width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif-display); font-size: 1.5rem; font-weight: 600; margin: 0 auto var(--space-6) auto;">2</div>
+        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; color: var(--primary); margin-bottom: var(--space-4);">Meet</h3>
+        <p style="color: var(--on-surface-variant); line-height: 1.6;">We'll discuss your goals, review your current situation, and explore how we can help optimize your retirement plan.</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="background: var(--secondary); color: white; width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif-display); font-size: 1.5rem; font-weight: 600; margin: 0 auto var(--space-6) auto;">3</div>
+        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; color: var(--primary); margin-bottom: var(--space-4);">Plan</h3>
+        <p style="color: var(--on-surface-variant); line-height: 1.6;">If we're a good fit, we'll create your personalized retirement strategy using our comprehensive planning process.</p>
+      </div>
+    </div>
+    
+    <div style="text-align: center;">
+      <a href="/contact/" class="hero-cta" style="display: inline-flex;">Schedule Your Free Assessment →</a>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+(function() {
+  // Smooth scrolling for chapter navigation
+  document.querySelectorAll('.chapter-tab').forEach(function(tab) {
+    tab.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+        
+        // Update active tab
+        document.querySelectorAll('.chapter-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      }
+    });
+  });
+
+  // Update active tab on scroll
+  const sections = ['chapter-i', 'chapter-ii', 'chapter-iii'];
+  window.addEventListener('scroll', function() {
+    let current = '';
+    sections.forEach(function(section) {
+      const element = document.getElementById(section);
+      if (element && element.getBoundingClientRect().top < 200) {
+        current = section;
+      }
+    });
+    
+    if (current) {
+      document.querySelectorAll('.chapter-tab').forEach(function(tab) {
+        tab.classList.remove('active');
+        if (tab.getAttribute('href') === '#' + current) {
+          tab.classList.add('active');
+        }
+      });
+    }
+  });
+})();
+</script>

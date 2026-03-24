@@ -7,14 +7,14 @@
 
 :root {
   /* Capital Wealth brand colors */
-  --bg-primary: #194F90;
+  --bg-primary: #16253C;
   --bg-secondary: #15437a;
   --bg-card: #1e3350;
   --bg-light: #264060;
   
   /* Brand blue + orange accents */
   --accent-primary: #2b7bb9;
-  --accent-secondary: #f09f54;
+  --accent-secondary: #FDD25E;
   --accent-hover: #02528a;
   
   /* Text colors */
@@ -25,7 +25,7 @@
   /* Typography */
   --font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: 'Cormorant Garamond', Georgia, serif;
-  --navy: #194F90;
+  --navy: #16253C;
   --brand-grey: #7b868C;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -4281,7 +4281,7 @@ a:hover {
   display: block;
   width: 60px;
   height: 2px;
-  background: #F09F54;
+  background: #FDD25E;
   margin: 2rem auto 0;
 }
 .guide-blog-category {
@@ -4291,7 +4291,7 @@ a:hover {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: #F09F54;
+  color: #FDD25E;
   text-decoration: none;
   margin-bottom: 1.25rem;
   transition: opacity 0.2s;
@@ -4302,7 +4302,7 @@ a:hover {
   font-size: clamp(2.4rem, 5vw, 3.2rem);
   font-weight: 400;
   font-style: italic;
-  color: #003870;
+  color: #16253C;
   margin: 0 0 1rem;
   letter-spacing: -0.01em;
   line-height: 1.15;
@@ -4352,7 +4352,7 @@ a:hover {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 0.85rem;
-  color: #003870;
+  color: #16253C;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -4394,7 +4394,7 @@ a:hover {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.75rem;
   font-weight: 400;
-  color: #003870;
+  color: #16253C;
   margin: 3rem 0 1rem;
   letter-spacing: -0.01em;
 }
@@ -4402,7 +4402,7 @@ a:hover {
   font-family: "Manrope", sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
-  color: #003870;
+  color: #16253C;
   margin: 2rem 0 0.75rem;
 }
 .guide-blog-body p {
@@ -4424,18 +4424,18 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 .guide-blog-body strong {
-  color: #003870;
+  color: #16253C;
   font-weight: 600;
 }
 .guide-blog-body a {
-  color: #003870;
+  color: #16253C;
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 56, 112, 0.2);
   transition: border-color 0.2s;
 }
 .guide-blog-body a:hover {
-  border-bottom-color: #F09F54;
-  color: #F09F54;
+  border-bottom-color: #FDD25E;
+  color: #FDD25E;
 }
 .guide-blog-body .card {
   background: #f3f4f6;
@@ -4446,7 +4446,7 @@ a:hover {
 }
 .guide-blog-body .card h3 { margin-top: 0; }
 .guide-blog-body blockquote {
-  border-left: 4px solid #F09F54;
+  border-left: 4px solid #FDD25E;
   margin: 2.5rem 0;
   padding: 1.5rem 2rem;
   background: transparent;
@@ -4456,7 +4456,7 @@ a:hover {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.4rem;
   font-style: italic;
-  color: #003870;
+  color: #16253C;
   line-height: 1.5;
 }
 .guide-blog-body table {
@@ -4710,7 +4710,7 @@ a:hover {
 
 /* ═══ 2026 FEDERAL BENEFITS NUMBERS ═══ */
 .fed-numbers {
-  background: var(--navy, #194F90);
+  background: var(--navy, #16253C);
   padding: 5rem 2rem;
   color: #fff;
 }
@@ -4719,7 +4719,7 @@ a:hover {
   margin: 0 auto;
 }
 .fed-numbers .titan-section-label {
-  color: var(--accent-secondary, #F09F54);
+  color: var(--accent-secondary, #FDD25E);
 }
 .fed-numbers-h2 {
   font-family: var(--font-family);
@@ -4757,7 +4757,7 @@ a:hover {
   font-family: var(--font-family);
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--accent-secondary, #F09F54);
+  color: var(--accent-secondary, #FDD25E);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: 0 0 1.25rem;
@@ -4792,7 +4792,7 @@ a:hover {
   letter-spacing: 0.02em;
 }
 .fed-numbers-value.highlight {
-  color: var(--accent-secondary, #F09F54);
+  color: var(--accent-secondary, #FDD25E);
   font-size: 1.05rem;
 }
 .fed-numbers-note {
@@ -4831,7 +4831,7 @@ a:hover {
   margin: 1rem 0 0;
 }
 .fed-numbers-cta-phone a {
-  color: var(--accent-secondary, #F09F54);
+  color: var(--accent-secondary, #FDD25E);
   text-decoration: none;
   font-weight: 600;
 }
@@ -6239,7 +6239,7 @@ html { font-size: 18px; }
   content: '→';
   position: absolute;
   left: 0;
-  color: #F09F54;
+  color: #FDD25E;
   font-weight: 600;
 }
 
@@ -7375,7 +7375,7 @@ html { font-size: 18px; }
   display: block;
 }
 .team-photo--placeholder {
-  background: linear-gradient(145deg, #194F90 0%, #0d1b2a 100%);
+  background: linear-gradient(145deg, #16253C 0%, #0d1b2a 100%);
   display: flex;
   align-items: center;
   justify-content: center;
