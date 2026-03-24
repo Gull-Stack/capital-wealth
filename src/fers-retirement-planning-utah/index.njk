@@ -7,6 +7,382 @@ breadcrumbs:
   - { name: "FERS Retirement Planning Utah", url: "/fers-retirement-planning-utah/" }
 ---
 
+<style>
+.seo-ed-hero {
+  background: #f8f9fb;
+  padding: 6rem 0 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.seo-ed-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.seo-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.seo-ed-hero-headline {
+  font-family: var(--font-serif-display);
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #003870;
+  margin-bottom: 1.5rem;
+}
+
+.seo-ed-hero-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.seo-ed-hero-body {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 3rem;
+}
+
+.seo-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.seo-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+.seo-ed-hero-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
+}
+
+.seo-ed-stats-bento {
+  padding: 8rem 0;
+  background: white;
+}
+
+.seo-ed-stats-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.seo-ed-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.seo-ed-stat-card {
+  background: #f8f9fb;
+  padding: 3rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.seo-ed-stat-card.dark {
+  background: #003870;
+  color: white;
+}
+
+.seo-ed-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #003870;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.seo-ed-stat-card.dark .seo-ed-stat-number {
+  color: white;
+}
+
+.seo-ed-stat-label {
+  font-family: var(--font-body);
+  color: #64748b;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.seo-ed-stat-card.dark .seo-ed-stat-label {
+  color: rgba(255,255,255,0.8);
+}
+
+.seo-ed-chapter {
+  padding: 8rem 0;
+}
+
+.seo-ed-chapter:nth-child(even) {
+  background: #f3f4f6;
+}
+
+.seo-ed-chapter-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.seo-ed-chapter-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.seo-ed-chapter-text h2 {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #003870;
+  margin-bottom: 2rem;
+}
+
+.seo-ed-chapter-text h2 em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.seo-ed-chapter-text p {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.seo-ed-chapter-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.seo-ed-chapter-features li {
+  font-family: var(--font-body);
+  color: #64748b;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.seo-ed-chapter-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #F09F54;
+  font-weight: 600;
+}
+
+.seo-ed-cta {
+  padding: 8rem 0;
+  background: #003870;
+  color: white;
+  text-align: center;
+}
+
+.seo-ed-cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.seo-ed-cta h2 {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.seo-ed-cta h2 em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.seo-ed-cta p {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 3rem;
+}
+
+.seo-ed-cta .seo-ed-btn-primary {
+  background: #F09F54;
+  color: #003870;
+}
+
+.seo-ed-cta .seo-ed-btn-primary:hover {
+  background: #e89440;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .seo-ed-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .seo-ed-hero-headline {
+    font-size: 2.5rem;
+  }
+  
+  .seo-ed-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .seo-ed-chapter-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="seo-ed-hero">
+  <div class="seo-ed-hero-inner">
+    <div>
+      <span class="seo-ed-chapter-label">FERS RETIREMENT PLANNING UTAH</span>
+      <h1 class="seo-ed-hero-headline">Utah Federal Employees: Maximize Your <em>FERS</em> Benefits</h1>
+      <p class="seo-ed-hero-body">Working at Hill AFB, IRS Ogden, or VA Salt Lake City? Your FERS retirement has moving parts that most advisors don't understand. We specialize in federal retirement planning and help you optimize all three components of your federal pension.</p>
+      <a href="/contact/" class="seo-ed-btn-primary">Get Your FERS Analysis</a>
+    </div>
+    <div class="seo-ed-hero-image">
+      <img src="/assets/images/photos/wide-services-capital-wealth.jpg" alt="FERS retirement planning for Utah federal employees">
+    </div>
+  </div>
+</section>
+
+<!-- STATS BENTO -->
+<section class="seo-ed-stats-bento">
+  <div class="seo-ed-stats-inner">
+    <div class="seo-ed-stats-grid">
+      <div class="seo-ed-stat-card">
+        <span class="seo-ed-stat-number">$2,100</span>
+        <div class="seo-ed-stat-label">Average monthly income increase with proper FERS optimization</div>
+      </div>
+      <div class="seo-ed-stat-card dark">
+        <span class="seo-ed-stat-number">3 Parts</span>
+        <div class="seo-ed-stat-label">FERS Pension, TSP, Social Security — all need coordination</div>
+      </div>
+      <div class="seo-ed-stat-card">
+        <span class="seo-ed-stat-number">Hill AFB</span>
+        <div class="seo-ed-stat-label">Major Utah federal installation we serve</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER I: UTAH FEDERAL EMPLOYEES -->
+<section class="seo-ed-chapter">
+  <div class="seo-ed-chapter-inner">
+    <span class="seo-ed-chapter-label">CHAPTER I: UTAH FEDERAL EMPLOYEES</span>
+    <div class="seo-ed-chapter-content">
+      <div class="seo-ed-chapter-text">
+        <h2>Your <em>FERS</em> Has Three Moving Parts</h2>
+        <p>Utah is home to major federal installations like Hill Air Force Base, IRS Ogden, VA Salt Lake City, and numerous DoD facilities. If you're a Utah federal employee, your retirement has three components that most advisors don't understand how to coordinate.</p>
+        <p>We specialize in FERS retirement planning and help you optimize your pension, TSP, and Social Security benefits while accounting for Utah's favorable tax treatment of retirement income.</p>
+        <ul class="seo-ed-chapter-features">
+          <li>FERS pension calculation and timing optimization</li>
+          <li>TSP withdrawal strategies and rollovers</li>
+          <li>Social Security coordination with federal benefits</li>
+          <li>Utah tax advantages for retirees</li>
+          <li>FEGLI life insurance analysis</li>
+          <li>FEHB to Medicare transition planning</li>
+        </ul>
+      </div>
+      <div>
+        <img src="/assets/images/services/federal-benefits.jpg" alt="Utah FERS planning" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER II: THE COORDINATION CHALLENGE -->
+<section class="seo-ed-chapter">
+  <div class="seo-ed-chapter-inner">
+    <span class="seo-ed-chapter-label">CHAPTER II: THE COORDINATION CHALLENGE</span>
+    <div class="seo-ed-chapter-content">
+      <div>
+        <img src="/assets/images/services/tsp-management.jpg" alt="FERS coordination" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px;">
+      </div>
+      <div class="seo-ed-chapter-text">
+        <h2>Most Advisors Don't <em>Understand</em> FERS</h2>
+        <p>Your FERS pension, TSP account, and Social Security benefits don't operate in isolation — they need to be coordinated for maximum income and minimum taxes. The wrong TSP withdrawal strategy can push you into higher tax brackets and trigger Medicare surcharges.</p>
+        <p>We understand how federal retirement benefits interact with Utah state taxes, when to start your pension, how to manage TSP withdrawals, and when to claim Social Security for maximum lifetime income.</p>
+        <ul class="seo-ed-chapter-features">
+          <li>Integrated planning for all three FERS components</li>
+          <li>Tax-efficient TSP distribution strategies</li>
+          <li>Coordination with Utah's retirement-friendly tax laws</li>
+          <li>Medicare and FEHB transition planning</li>
+          <li>IRMAA avoidance strategies</li>
+          <li>Legacy planning for federal survivors benefits</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER III: UTAH ADVANTAGE -->
+<section class="seo-ed-chapter">
+  <div class="seo-ed-chapter-inner">
+    <span class="seo-ed-chapter-label">CHAPTER III: THE UTAH ADVANTAGE</span>
+    <div class="seo-ed-chapter-content">
+      <div class="seo-ed-chapter-text">
+        <h2>Utah's <em>Retirement-Friendly</em> Tax Laws</h2>
+        <p>Utah offers significant tax advantages for retirees that can boost your after-tax FERS income. We help you take advantage of Utah's retirement income deduction, coordinate with federal tax strategies, and plan for a tax-efficient retirement.</p>
+        <ul class="seo-ed-chapter-features">
+          <li>Utah retirement credit up to $900 annually</li>
+          <li>4.85% flat tax rate (predictable planning)</li>
+          <li>Favorable treatment of retirement income</li>
+          <li>No inheritance tax</li>
+          <li>Reasonable property taxes</li>
+          <li>Strategic Roth conversion opportunities</li>
+        </ul>
+      </div>
+      <div>
+        <img src="/assets/images/services/401k-ira-rollover.jpg" alt="Utah tax advantages" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="seo-ed-cta">
+  <div class="seo-ed-cta-inner">
+    <h2>Optimize Your <em>FERS</em> Retirement</h2>
+    <p>Don't leave money on the table. Utah federal employees deserve specialized planning that coordinates all aspects of your FERS benefits while maximizing your state tax advantages.</p>
+    <a href="/contact/" class="seo-ed-btn-primary">Schedule Your FERS Analysis</a>
+  </div>
+</section>
+
 <section class="titan-subhero">
     <div class="titan-subhero-inner">
         <div class="titan-subhero-content">

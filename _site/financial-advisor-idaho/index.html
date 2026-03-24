@@ -392,6 +392,395 @@
 
     <main style="padding-top: 64px;">
         
+<style>
+.seo-ed-hero {
+  background: #f8f9fb;
+  padding: 6rem 0 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.seo-ed-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.seo-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.seo-ed-hero-headline {
+  font-family: var(--font-serif-display);
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #003870;
+  margin-bottom: 1.5rem;
+}
+
+.seo-ed-hero-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.seo-ed-hero-body {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 3rem;
+}
+
+.seo-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.seo-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+.seo-ed-hero-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
+}
+
+.seo-ed-stats-bento {
+  padding: 8rem 0;
+  background: white;
+}
+
+.seo-ed-stats-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.seo-ed-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.seo-ed-stat-card {
+  background: #f8f9fb;
+  padding: 3rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.seo-ed-stat-card.dark {
+  background: #003870;
+  color: white;
+}
+
+.seo-ed-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #003870;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.seo-ed-stat-card.dark .seo-ed-stat-number {
+  color: white;
+}
+
+.seo-ed-stat-label {
+  font-family: var(--font-body);
+  color: #64748b;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.seo-ed-stat-card.dark .seo-ed-stat-label {
+  color: rgba(255,255,255,0.8);
+}
+
+.seo-ed-chapter {
+  padding: 8rem 0;
+}
+
+.seo-ed-chapter:nth-child(even) {
+  background: #f3f4f6;
+}
+
+.seo-ed-chapter-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.seo-ed-chapter-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.seo-ed-chapter-text h2 {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #003870;
+  margin-bottom: 2rem;
+}
+
+.seo-ed-chapter-text h2 em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.seo-ed-chapter-text p {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.seo-ed-chapter-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.seo-ed-chapter-features li {
+  font-family: var(--font-body);
+  color: #64748b;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.seo-ed-chapter-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #F09F54;
+  font-weight: 600;
+}
+
+.seo-ed-pullquote {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #003870;
+  padding: 2rem 0 2rem 2rem;
+  border-left: 4px solid #F09F54;
+  margin: 3rem 0;
+  background: rgba(240,159,84,0.05);
+  border-radius: 0 8px 8px 0;
+}
+
+.seo-ed-cta {
+  padding: 8rem 0;
+  background: #003870;
+  color: white;
+  text-align: center;
+}
+
+.seo-ed-cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.seo-ed-cta h2 {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.seo-ed-cta h2 em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.seo-ed-cta p {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 3rem;
+}
+
+.seo-ed-cta .seo-ed-btn-primary {
+  background: #F09F54;
+  color: #003870;
+}
+
+.seo-ed-cta .seo-ed-btn-primary:hover {
+  background: #e89440;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .seo-ed-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .seo-ed-hero-headline {
+    font-size: 2.5rem;
+  }
+  
+  .seo-ed-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .seo-ed-chapter-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="seo-ed-hero">
+  <div class="seo-ed-hero-inner">
+    <div>
+      <span class="seo-ed-chapter-label">IDAHO FINANCIAL ADVISOR</span>
+      <h1 class="seo-ed-hero-headline">Idaho Retirement Planning with a Trusted <em>Fiduciary</em> Advisor</h1>
+      <p class="seo-ed-hero-body">Capital Wealth serves Idaho families with comprehensive retirement planning. As fiduciaries, we put your interests first — no product sales, no hidden commissions, just honest advice tailored to Idaho's unique tax and retirement landscape.</p>
+      <a href="/contact/" class="seo-ed-btn-primary">Schedule Your Visit</a>
+    </div>
+    <div class="seo-ed-hero-image">
+      <img src="/assets/images/services/portfolio.jpg" alt="Financial advisor serving Idaho families">
+    </div>
+  </div>
+</section>
+
+<!-- STATS BENTO -->
+<section class="seo-ed-stats-bento">
+  <div class="seo-ed-stats-inner">
+    <div class="seo-ed-stats-grid">
+      <div class="seo-ed-stat-card">
+        <span class="seo-ed-stat-number">No Tax</span>
+        <div class="seo-ed-stat-label">Idaho doesn't tax Social Security benefits</div>
+      </div>
+      <div class="seo-ed-stat-card dark">
+        <span class="seo-ed-stat-number">6.925%</span>
+        <div class="seo-ed-stat-label">Idaho's top marginal income tax rate</div>
+      </div>
+      <div class="seo-ed-stat-card">
+        <span class="seo-ed-stat-number">$500K+</span>
+        <div class="seo-ed-stat-label">Minimum for our comprehensive planning</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER I: IDAHO TAX ADVANTAGES -->
+<section class="seo-ed-chapter">
+  <div class="seo-ed-chapter-inner">
+    <span class="seo-ed-chapter-label">CHAPTER I: IDAHO ADVANTAGES</span>
+    <div class="seo-ed-chapter-content">
+      <div class="seo-ed-chapter-text">
+        <h2>Idaho Has Great <em>Tax</em> Benefits</h2>
+        <p>Idaho is one of the most tax-friendly states for retirees. Social Security benefits aren't taxed, there's a retirement income deduction for residents 65+, and property taxes are reasonable. We help you maximize these advantages.</p>
+        <p>We understand Idaho's unique opportunities and work with families from Boise to Coeur d'Alene. Whether you're a government retiree, corporate executive, or business owner, we tailor strategies to Idaho's tax code.</p>
+        <ul class="seo-ed-chapter-features">
+          <li>No Idaho tax on Social Security benefits</li>
+          <li>Retirement income deduction up to $75,600 for 65+</li>
+          <li>Reasonable property taxes compared to other states</li>
+          <li>No inheritance tax</li>
+          <li>Coordination with federal tax strategies</li>
+        </ul>
+      </div>
+      <div>
+        <img src="/assets/images/photos/couple-sunset.jpg" alt="Idaho retirement planning" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER II: FIDUCIARY COMMITMENT -->
+<section class="seo-ed-chapter">
+  <div class="seo-ed-chapter-inner">
+    <span class="seo-ed-chapter-label">CHAPTER II: FIDUCIARY COMMITMENT</span>
+    <div class="seo-ed-chapter-content">
+      <div>
+        <img src="/assets/images/services/financial-planning.jpg" alt="Fiduciary financial advisor" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px;">
+      </div>
+      <div class="seo-ed-chapter-text">
+        <h2>Your Interests Come <em>First</em></h2>
+        <p>As fee-only fiduciaries, we're legally and ethically bound to put your interests ahead of our own. We don't sell products for commissions or earn kickbacks from mutual funds. Our only compensation comes directly from you for advice and planning.</p>
+        <div class="seo-ed-pullquote">
+          "A true fiduciary relationship means transparency, trust, and putting your financial success ahead of everything else."
+        </div>
+        <ul class="seo-ed-chapter-features">
+          <li>Fee-only compensation structure</li>
+          <li>Written fiduciary commitment</li>
+          <li>No commissions or product sales</li>
+          <li>Independent advice (no parent company)</li>
+          <li>Complete transparency in fees and conflicts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER III: COMPREHENSIVE PLANNING -->
+<section class="seo-ed-chapter">
+  <div class="seo-ed-chapter-inner">
+    <span class="seo-ed-chapter-label">CHAPTER III: COMPREHENSIVE PLANNING</span>
+    <div class="seo-ed-chapter-content">
+      <div class="seo-ed-chapter-text">
+        <h2>Beyond <em>Investments</em></h2>
+        <p>We don't just manage portfolios. We create comprehensive retirement plans that coordinate income, taxes, Social Security, Medicare, estate planning, and legacy goals. Everything works together to maximize your retirement security.</p>
+        <ul class="seo-ed-chapter-features">
+          <li>Idaho-specific tax planning and strategies</li>
+          <li>Social Security timing optimization</li>
+          <li>Retirement income and withdrawal planning</li>
+          <li>Medicare coordination and IRMAA management</li>
+          <li>Estate planning and legacy strategies</li>
+          <li>Investment management and rebalancing</li>
+        </ul>
+      </div>
+      <div>
+        <img src="/assets/images/services/retirement-planning.jpg" alt="Comprehensive retirement planning Idaho" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="seo-ed-cta">
+  <div class="seo-ed-cta-inner">
+    <h2>Ready for <em>Honest</em> Advice?</h2>
+    <p>Idaho families deserve a financial advisor who puts their interests first. Let's discuss how our fiduciary approach can help you make the most of Idaho's retirement advantages.</p>
+    <a href="/contact/" class="seo-ed-btn-primary">Schedule Your Idaho Consultation</a>
+  </div>
+</section>
+
 <section class="titan-hero">
     <div class="titan-hero-inner">
         <div class="titan-hero-left">
