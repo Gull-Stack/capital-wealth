@@ -288,8 +288,8 @@ layout: layouts/base-finpay.njk
   {% endif %}
 {% endif %}
 
-<!-- Navy CTA (skip on contact page) -->
-{% if page.url and '/contact/' not in page.url %}
+<!-- Navy CTA (skip on contact page and pages with their own ep-cta) -->
+{% if page.url and '/contact/' not in page.url and serviceTitle %}
   <section class="service-cta">
     <div class="service-cta-inner">
       <h2>Ready to Take the Next Step?</h2>
