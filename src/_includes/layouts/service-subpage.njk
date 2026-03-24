@@ -221,26 +221,22 @@ layout: layouts/base-finpay.njk
 }
 </style>
 
-<!-- Service Header -->
+<!-- Service Header (only if serviceTitle is explicitly set) -->
+{% if serviceTitle %}
 <section class="service-header">
   <div class="service-header-inner">
     {% if serviceLabel %}
       <p class="service-eyebrow">{{ serviceLabel }}</p>
     {% endif %}
     
-    {% if serviceTitle %}
-      <h1 class="service-title">{{ serviceTitle }}</h1>
-    {% else %}
-      <h1 class="service-title">{{ title }}</h1>
-    {% endif %}
+    <h1 class="service-title">{{ serviceTitle }}</h1>
     
     {% if serviceSubtitle %}
       <p class="service-subtitle">{{ serviceSubtitle }}</p>
-    {% elif description %}
-      <p class="service-subtitle">{{ description }}</p>
     {% endif %}
   </div>
 </section>
+{% endif %}
 
 <!-- Service Content -->
 <div class="service-content">
