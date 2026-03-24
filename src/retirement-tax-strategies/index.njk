@@ -7,138 +7,702 @@ breadcrumbs:
   - { name: "Retirement Tax Strategies", url: "/retirement-tax-strategies/" }
 ---
 
-<section class="titan-hero">
-    <div class="titan-hero-inner">
-        <div class="titan-hero-left">
-            <p class="titan-section-label">TAX STRATEGIES</p>
-            <h1 class="titan-hero-h1">Retirement Tax Strategies That Could Save You Thousands</h1>
-            <p class="titan-hero-body">Taxes are one of the biggest expenses in retirement — and most retirees overpay. Strategic tax planning can save you tens of thousands (sometimes hundreds of thousands) over your lifetime.</p>
-            <div class="titan-hero-buttons">
-                <a href="/contact/" class="titan-hero-btn-primary">GET TAX ANALYSIS <span>→</span></a>
-            </div>
-        </div>
-        <div class="titan-hero-right">
-            <img src="/assets/images/services/tax-planning.jpg" alt="Retirement tax planning strategies" class="titan-hero-img">
-        </div>
+<style>
+.seo-ed-hero {
+  background: #f8f9fb;
+  padding: 6rem 0 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.seo-ed-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.seo-ed-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F09F54;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.seo-ed-hero-headline {
+  font-family: var(--font-serif-display);
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #003870;
+  margin-bottom: 1.5rem;
+}
+
+.seo-ed-hero-headline em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.seo-ed-hero-body {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 3rem;
+}
+
+.seo-ed-hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.seo-ed-btn-primary {
+  display: inline-block;
+  background: #003870;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.seo-ed-btn-primary:hover {
+  background: #194F90;
+  transform: translateY(-2px);
+}
+
+.seo-ed-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: #003870;
+  padding: 1rem 2rem;
+  border: 2px solid #003870;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.seo-ed-btn-secondary:hover {
+  background: #003870;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.seo-ed-hero-image {
+  position: relative;
+}
+
+.seo-ed-hero-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0,56,112,0.15);
+}
+
+.seo-ed-hero-overlay {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(24px);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,56,112,0.1);
+}
+
+.seo-ed-overlay-stat {
+  font-family: var(--font-serif-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: #003870;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.seo-ed-overlay-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.seo-ed-stats-bento {
+  padding: 8rem 0;
+  background: white;
+}
+
+.seo-ed-stats-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.seo-ed-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.seo-ed-stat-card {
+  background: #f8f9fb;
+  padding: 3rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.seo-ed-stat-card.dark {
+  background: #003870;
+  color: white;
+}
+
+.seo-ed-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #003870;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.seo-ed-stat-card.dark .seo-ed-stat-number {
+  color: white;
+}
+
+.seo-ed-stat-label {
+  font-family: var(--font-body);
+  color: #64748b;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.seo-ed-stat-card.dark .seo-ed-stat-label {
+  color: rgba(255,255,255,0.8);
+}
+
+.seo-ed-chapter {
+  padding: 8rem 0;
+}
+
+.seo-ed-chapter:nth-child(even) {
+  background: #f3f4f6;
+}
+
+.seo-ed-chapter-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.seo-ed-chapter-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.seo-ed-chapter-text h2 {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #003870;
+  margin-bottom: 2rem;
+}
+
+.seo-ed-chapter-text h2 em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.seo-ed-chapter-text p {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.seo-ed-chapter-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.seo-ed-chapter-features li {
+  font-family: var(--font-body);
+  color: #64748b;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.seo-ed-chapter-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #F09F54;
+  font-weight: 600;
+}
+
+.seo-ed-tax-table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,56,112,0.1);
+}
+
+.seo-ed-table-header {
+  background: #003870;
+  color: white;
+  padding: 1.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-align: center;
+}
+
+.seo-ed-table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
+}
+
+.seo-ed-table-row:nth-child(even) {
+  background: #f8f9fb;
+}
+
+.seo-ed-table-row.highlighted {
+  background: rgba(240,159,84,0.1);
+  border-left: 4px solid #F09F54;
+}
+
+.seo-ed-table-bracket {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #003870;
+}
+
+.seo-ed-table-rate {
+  font-family: var(--font-serif-display);
+  font-size: 1.25rem;
+  color: #003870;
+  text-align: center;
+}
+
+.seo-ed-table-irmaa {
+  font-family: var(--font-body);
+  color: #64748b;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.seo-ed-pullquote {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #003870;
+  padding: 2rem 0 2rem 2rem;
+  border-left: 4px solid #F09F54;
+  margin: 3rem 0;
+  background: rgba(240,159,84,0.05);
+  border-radius: 0 8px 8px 0;
+}
+
+.seo-ed-process {
+  padding: 8rem 0;
+  background: white;
+}
+
+.seo-ed-process-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.seo-ed-process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.seo-ed-step {
+  text-align: center;
+  padding: 2rem;
+}
+
+.seo-ed-step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #F09F54;
+  color: white;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+.seo-ed-step-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.5rem;
+  color: #003870;
+  margin-bottom: 1rem;
+}
+
+.seo-ed-step-desc {
+  font-family: var(--font-body);
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.seo-ed-faq {
+  padding: 8rem 0;
+  background: #f8f9fb;
+}
+
+.seo-ed-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.seo-ed-faq-intro h2 {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  color: #003870;
+  margin-bottom: 1rem;
+}
+
+.seo-ed-faq-intro p {
+  font-family: var(--font-body);
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.seo-ed-faq-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.seo-ed-faq-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,56,112,0.05);
+}
+
+.seo-ed-faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 1.5rem 2rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #003870;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seo-ed-faq-answer {
+  padding: 0 2rem 1.5rem;
+  font-family: var(--font-body);
+  color: #64748b;
+  line-height: 1.6;
+  display: none;
+}
+
+.seo-ed-cta {
+  padding: 8rem 0;
+  background: #003870;
+  color: white;
+  text-align: center;
+}
+
+.seo-ed-cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.seo-ed-cta h2 {
+  font-family: var(--font-serif-display);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.seo-ed-cta h2 em {
+  font-style: italic;
+  color: #F09F54;
+}
+
+.seo-ed-cta p {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 3rem;
+}
+
+.seo-ed-cta .seo-ed-btn-primary {
+  background: #F09F54;
+  color: #003870;
+}
+
+.seo-ed-cta .seo-ed-btn-primary:hover {
+  background: #e89440;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .seo-ed-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .seo-ed-hero-headline {
+    font-size: 2.5rem;
+  }
+  
+  .seo-ed-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .seo-ed-chapter-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .seo-ed-process-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .seo-ed-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .seo-ed-table-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
+</style>
+
+<!-- HERO SECTION -->
+<section class="seo-ed-hero">
+  <div class="seo-ed-hero-inner">
+    <div>
+      <span class="seo-ed-chapter-label">TAX STRATEGIES</span>
+      <h1 class="seo-ed-hero-headline">Retirement Tax Strategies That Save <em>Thousands</em></h1>
+      <p class="seo-ed-hero-body">Taxes are one of the biggest expenses in retirement — and most retirees overpay. Strategic tax planning can save you tens of thousands (sometimes hundreds of thousands) over your lifetime.</p>
+      <div class="seo-ed-hero-buttons">
+        <a href="/contact/" class="seo-ed-btn-primary">Get Tax Analysis</a>
+        <a href="/retirement-planning/" class="seo-ed-btn-secondary">Learn More</a>
+      </div>
     </div>
+    <div class="seo-ed-hero-image">
+      <img src="/assets/images/services/tax-planning.jpg" alt="Retirement tax planning strategies">
+      <div class="seo-ed-hero-overlay">
+        <span class="seo-ed-overlay-stat">$200K+</span>
+        <span class="seo-ed-overlay-label">Potential Savings</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="service-problem">
-    <div class="service-problem-inner">
-        <p class="titan-section-label">THE PROBLEM</p>
-        <h2 class="service-problem-h2">Does This Sound Familiar?</h2>
-        <div class="service-problem-grid">
-            <div class="service-problem-card">
-                <h3>Nobody's coordinating your tax strategy</h3>
-                <p>Your CPA files last year's return. Your investment advisor manages your portfolio. But no one is building a multi-year tax strategy to minimize your lifetime tax burden.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>RMDs are pushing you into higher brackets</h3>
-                <p>Required Minimum Distributions from your IRA force you to take taxable income whether you need it or not — and the tax bill keeps growing every year.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You're paying Medicare IRMAA surcharges</h3>
-                <p>Your income crosses an IRMAA threshold by just a few dollars, and suddenly you're paying hundreds more per month in Medicare premiums. These surcharges are avoidable with proper planning.</p>
-            </div>
-            <div class="service-problem-card">
-                <h3>You don't know which accounts to tap first</h3>
-                <p>Should you withdraw from your IRA, Roth IRA, or taxable brokerage account? The sequence matters — and most retirees get it wrong, costing them thousands in unnecessary taxes.</p>
-            </div>
-        </div>
+<!-- STATS BENTO -->
+<section class="seo-ed-stats-bento">
+  <div class="seo-ed-stats-inner">
+    <div class="seo-ed-stats-grid">
+      <div class="seo-ed-stat-card">
+        <span class="seo-ed-stat-number">85%</span>
+        <div class="seo-ed-stat-label">Of Social Security can be taxable at higher income levels</div>
+      </div>
+      <div class="seo-ed-stat-card dark">
+        <span class="seo-ed-stat-number">$106K</span>
+        <div class="seo-ed-stat-label">2025 IRMAA threshold where Medicare surcharges begin</div>
+      </div>
+      <div class="seo-ed-stat-card">
+        <span class="seo-ed-stat-number">Age 73</span>
+        <div class="seo-ed-stat-label">When Required Minimum Distributions start (for most retirees)</div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="service-solution">
-    <div class="service-solution-inner">
-        <p class="titan-section-label">THE SOLUTION</p>
-        <h2 class="service-solution-h2">Strategic Tax Planning for Retirement</h2>
-        <div class="service-solution-content">
-            <div class="service-solution-left">
-                <h3>Minimize Your Lifetime Tax Liability</h3>
-                <p>We don't just look at this year's tax return. We build a year-by-year tax roadmap for your entire retirement, identifying opportunities to reduce taxes through strategic Roth conversions, withdrawal sequencing, IRMAA management, and coordination with Social Security.</p>
-                <p>Our tax strategies are designed to work with your CPA — we identify the opportunities, model the scenarios, and coordinate implementation. The result: you keep more of your hard-earned money and pay less to the IRS.</p>
-                <div class="service-solution-stat">
-                    <span class="service-solution-stat-num">$50K-$200K+</span>
-                    <span class="service-solution-stat-label">Potential lifetime tax savings with proper planning</span>
-                </div>
-            </div>
-            <div class="service-solution-right">
-                <h4>Our Tax Strategies Include:</h4>
-                <ul class="service-solution-list">
-                    <li>Roth IRA conversion planning (optimal timing and amounts)</li>
-                    <li>Tax-efficient withdrawal sequencing from multiple account types</li>
-                    <li>Medicare IRMAA avoidance and income threshold management</li>
-                    <li>Social Security taxation minimization strategies</li>
-                    <li>Tax bracket management and multi-year tax projections</li>
-                    <li>Capital gains tax harvesting in down markets</li>
-                    <li>Asset location optimization (which assets in which accounts)</li>
-                    <li>Charitable giving strategies (QCDs, donor-advised funds)</li>
-                </ul>
-            </div>
+<!-- CHAPTER I: THE PROBLEM -->
+<section class="seo-ed-chapter">
+  <div class="seo-ed-chapter-inner">
+    <span class="seo-ed-chapter-label">CHAPTER I: THE TAX TRAP</span>
+    <div class="seo-ed-chapter-content">
+      <div class="seo-ed-chapter-text">
+        <h2>Nobody's Coordinating Your <em>Tax</em> Strategy</h2>
+        <p>Your CPA files last year's return. Your investment advisor manages your portfolio. But no one is building a multi-year tax strategy to minimize your lifetime tax burden. Four critical gaps cost retirees thousands:</p>
+        <ul class="seo-ed-chapter-features">
+          <li>No coordination between tax planning and investment strategy</li>
+          <li>RMDs pushing you into higher tax brackets unnecessarily</li>
+          <li>Medicare IRMAA surcharges triggered by poor income management</li>
+          <li>Wrong withdrawal sequencing costing thousands in taxes</li>
+        </ul>
+        <div class="seo-ed-pullquote">
+          "The wrong withdrawal sequence can cost you $50,000+ over retirement. Most retirees are doing it backwards."
         </div>
+      </div>
+      <div>
+        <div class="seo-ed-tax-table">
+          <div class="seo-ed-table-header">2025 Tax Brackets & IRMAA Thresholds</div>
+          <div class="seo-ed-table-row">
+            <div class="seo-ed-table-bracket">$22,200 - $89,450</div>
+            <div class="seo-ed-table-rate">12%</div>
+            <div class="seo-ed-table-irmaa">No IRMAA</div>
+          </div>
+          <div class="seo-ed-table-row">
+            <div class="seo-ed-table-bracket">$89,450 - $106,000</div>
+            <div class="seo-ed-table-rate">22%</div>
+            <div class="seo-ed-table-irmaa">No IRMAA</div>
+          </div>
+          <div class="seo-ed-table-row highlighted">
+            <div class="seo-ed-table-bracket">$106,000 - $190,750</div>
+            <div class="seo-ed-table-rate">22%</div>
+            <div class="seo-ed-table-irmaa">IRMAA Tier 1</div>
+          </div>
+          <div class="seo-ed-table-row">
+            <div class="seo-ed-table-bracket">$190,750+</div>
+            <div class="seo-ed-table-rate">24%+</div>
+            <div class="seo-ed-table-irmaa">Higher IRMAA</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="service-process">
-    <div class="service-process-inner">
-        <p class="titan-section-label">HOW IT WORKS</p>
-        <h2 class="service-process-h2">Our Tax Planning Process</h2>
-        <div class="service-process-steps">
-            <div class="service-process-step">
-                <div class="service-process-num">1</div>
-                <h3>Tax Analysis</h3>
-                <p>Review your tax returns, account structures, income sources, and current tax situation to identify opportunities and potential tax traps.</p>
-            </div>
-            <div class="service-process-step">
-                <div class="service-process-num">2</div>
-                <h3>Build the Strategy</h3>
-                <p>Create a multi-year tax roadmap showing optimal withdrawal timing, Roth conversion opportunities, IRMAA management, and tax bracket optimization.</p>
-            </div>
-            <div class="service-process-step">
-                <div class="service-process-num">3</div>
-                <h3>Execute & Monitor</h3>
-                <p>Coordinate with your CPA to implement strategies, monitor for tax law changes, and adjust the plan as your income and tax situation evolves.</p>
-            </div>
-        </div>
+<!-- CHAPTER II: THE SOLUTION -->
+<section class="seo-ed-chapter">
+  <div class="seo-ed-chapter-inner">
+    <span class="seo-ed-chapter-label">CHAPTER II: STRATEGIC TAX PLANNING</span>
+    <div class="seo-ed-chapter-content">
+      <div>
+        <img src="/assets/images/services/medicare-irmaa.jpg" alt="Retirement tax strategy coordination" style="width: 100%; height: 400px; object-fit: cover; border-radius: 16px;">
+      </div>
+      <div class="seo-ed-chapter-text">
+        <h2>Minimize Your Lifetime <em>Tax</em> Liability</h2>
+        <p>We don't just look at this year's tax return. We build a year-by-year tax roadmap for your entire retirement, identifying opportunities to reduce taxes through strategic Roth conversions, withdrawal sequencing, IRMAA management, and coordination with Social Security.</p>
+        <p>Our tax strategies are designed to work with your CPA — we identify the opportunities, model the scenarios, and coordinate implementation. The result: you keep more of your hard-earned money and pay less to the IRS.</p>
+        <ul class="seo-ed-chapter-features">
+          <li>Roth IRA conversion planning (optimal timing and amounts)</li>
+          <li>Tax-efficient withdrawal sequencing from multiple account types</li>
+          <li>Medicare IRMAA avoidance and income threshold management</li>
+          <li>Social Security taxation minimization strategies</li>
+          <li>Tax bracket management and multi-year tax projections</li>
+          <li>Capital gains tax harvesting in down markets</li>
+          <li>Asset location optimization (which assets in which accounts)</li>
+          <li>Charitable giving strategies (QCDs, donor-advised funds)</li>
+        </ul>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="faq-section">
-    <div class="faq-inner">
-        <div class="faq-left">
-            <p class="titan-section-label">COMMON QUESTIONS</p>
-            <h2 class="faq-heading">Retirement Tax FAQ</h2>
-            <p class="faq-sub">Everything you need to know about reducing taxes in retirement.</p>
-            <a href="/contact/" class="resources-cta">Get Tax Strategy Review</a>
-        </div>
-        <div class="faq-right">
-            <div class="faq-accordion">
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">Are Roth conversions worth it?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">It depends on your current tax bracket, future tax bracket, and time horizon. Roth conversions work best during low-income years (after retirement but before Social Security starts) or when you're in lower tax brackets than you expect to be later. We model your specific situation to determine if and when Roth conversions make sense. Consult with a tax professional for advice specific to your circumstances.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How is Social Security taxed?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Up to 85% of your Social Security benefits can be taxed at the federal level depending on your combined income (adjusted gross income + tax-exempt interest + 50% of Social Security). The more other income you have, the more of your Social Security gets taxed. Strategic withdrawal planning and Roth conversions can help minimize Social Security taxation.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">What is IRMAA?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">IRMAA (Income-Related Monthly Adjustment Amount) is a Medicare surcharge for higher earners. If your modified adjusted gross income exceeds certain thresholds (starting at $106,000 for individuals, $212,000 for couples in 2025), you pay extra for Medicare Part B and Part D. These surcharges can add $500-$6,000+ per year. We help you manage income to avoid or minimize IRMAA.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">When do RMDs start?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Required Minimum Distributions (RMDs) from traditional IRAs and 401(k)s start at age 73 (for those born 1951-1959) or age 75 (for those born 1960 or later) under current law. RMDs are taxable income whether you need the money or not. Roth IRAs do not have RMDs during the owner's lifetime, which is one reason Roth conversions can be valuable.</div>
-                </button>
-                <button class="faq-acc-item">
-                    <span class="faq-acc-q">How can I reduce taxes on my 401(k) withdrawals?</span>
-                    <span class="faq-acc-icon">+</span>
-                    <div class="faq-acc-a">Several strategies can help: withdraw strategically to stay within lower tax brackets, do Roth conversions during low-income years, coordinate withdrawals with Social Security timing to minimize taxation of benefits, consider Qualified Charitable Distributions (QCDs) if you're charitably inclined, and optimize the order you tap different account types (taxable, tax-deferred, Roth). We build a customized withdrawal strategy based on your specific situation. Strategies may vary based on individual circumstances — consult with a tax professional.</div>
-                </button>
-            </div>
-        </div>
+<!-- PROCESS SECTION -->
+<section class="seo-ed-process">
+  <div class="seo-ed-process-inner">
+    <span class="seo-ed-chapter-label">CHAPTER III: OUR PROCESS</span>
+    <h2 class="seo-ed-hero-headline" style="font-size: 3rem;">Our Tax <em>Planning</em> Process</h2>
+    <div class="seo-ed-process-steps">
+      <div class="seo-ed-step">
+        <div class="seo-ed-step-badge">01</div>
+        <h3 class="seo-ed-step-title">Tax Analysis</h3>
+        <p class="seo-ed-step-desc">Review your tax returns, account structures, income sources, and current tax situation to identify opportunities and potential tax traps.</p>
+      </div>
+      <div class="seo-ed-step">
+        <div class="seo-ed-step-badge">02</div>
+        <h3 class="seo-ed-step-title">Build the Strategy</h3>
+        <p class="seo-ed-step-desc">Create a multi-year tax roadmap showing optimal withdrawal timing, Roth conversion opportunities, IRMAA management, and tax bracket optimization.</p>
+      </div>
+      <div class="seo-ed-step">
+        <div class="seo-ed-step-badge">03</div>
+        <h3 class="seo-ed-step-title">Execute & Monitor</h3>
+        <p class="seo-ed-step-desc">Coordinate with your CPA to implement strategies, monitor for tax law changes, and adjust the plan as your income and tax situation evolves.</p>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="seo-ed-faq">
+  <div class="seo-ed-faq-inner">
+    <div class="seo-ed-faq-intro">
+      <span class="seo-ed-chapter-label">COMMON QUESTIONS</span>
+      <h2>Retirement Tax FAQ</h2>
+      <p>Everything you need to know about reducing taxes in retirement.</p>
+      <a href="/contact/" class="seo-ed-btn-primary">Get Tax Strategy Review</a>
+    </div>
+    <div class="seo-ed-faq-items">
+      <div class="seo-ed-faq-item">
+        <button class="seo-ed-faq-question">Are Roth conversions worth it? <span>+</span></button>
+        <div class="seo-ed-faq-answer">It depends on your current tax bracket, future tax bracket, and time horizon. Roth conversions work best during low-income years (after retirement but before Social Security starts) or when you're in lower tax brackets than you expect to be later. We model your specific situation to determine if and when Roth conversions make sense. Consult with a tax professional for advice specific to your circumstances.</div>
+      </div>
+      <div class="seo-ed-faq-item">
+        <button class="seo-ed-faq-question">How is Social Security taxed? <span>+</span></button>
+        <div class="seo-ed-faq-answer">Up to 85% of your Social Security benefits can be taxed at the federal level depending on your combined income (adjusted gross income + tax-exempt interest + 50% of Social Security). The more other income you have, the more of your Social Security gets taxed. Strategic withdrawal planning and Roth conversions can help minimize Social Security taxation.</div>
+      </div>
+      <div class="seo-ed-faq-item">
+        <button class="seo-ed-faq-question">What is IRMAA? <span>+</span></button>
+        <div class="seo-ed-faq-answer">IRMAA (Income-Related Monthly Adjustment Amount) is a Medicare surcharge for higher earners. If your modified adjusted gross income exceeds certain thresholds (starting at $106,000 for individuals, $212,000 for couples in 2025), you pay extra for Medicare Part B and Part D. These surcharges can add $500-$6,000+ per year. We help you manage income to avoid or minimize IRMAA.</div>
+      </div>
+      <div class="seo-ed-faq-item">
+        <button class="seo-ed-faq-question">When do RMDs start? <span>+</span></button>
+        <div class="seo-ed-faq-answer">Required Minimum Distributions (RMDs) from traditional IRAs and 401(k)s start at age 73 (for those born 1951-1959) or age 75 (for those born 1960 or later) under current law. RMDs are taxable income whether you need the money or not. Roth IRAs do not have RMDs during the owner's lifetime, which is one reason Roth conversions can be valuable.</div>
+      </div>
+      <div class="seo-ed-faq-item">
+        <button class="seo-ed-faq-question">How can I reduce taxes on my 401(k) withdrawals? <span>+</span></button>
+        <div class="seo-ed-faq-answer">Several strategies can help: withdraw strategically to stay within lower tax brackets, do Roth conversions during low-income years, coordinate withdrawals with Social Security timing to minimize taxation of benefits, consider Qualified Charitable Distributions (QCDs) if you're charitably inclined, and optimize the order you tap different account types (taxable, tax-deferred, Roth). We build a customized withdrawal strategy based on your specific situation. Strategies may vary based on individual circumstances — consult with a tax professional.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="seo-ed-cta">
+  <div class="seo-ed-cta-inner">
+    <h2>Stop Overpaying <em>Taxes</em> in Retirement</h2>
+    <p>Every year you wait is money left on the table. Let's build a tax strategy that keeps more money in your pocket where it belongs.</p>
+    <a href="/contact/" class="seo-ed-btn-primary">Schedule Your Tax Strategy Review</a>
+  </div>
 </section>
