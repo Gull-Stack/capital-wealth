@@ -386,22 +386,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/fers-retirement-planning-utah/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/retirement-tax-strategies/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/disclosures/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/fers-retirement-planning-idaho/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -427,26 +412,6 @@
   </url>
   <url>
     <loc>https://www.capitalwealth.com/federal-resources/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/retirement-planning-lehi-utah/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/financial-advisor-utah/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/retirement-income-planning/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/roth-conversion-strategies-utah/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -581,17 +546,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/financial-advisor-idaho/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/case-studies/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/retirement-planning/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -632,6 +587,51 @@
   </url>
   <url>
     <loc>https://www.capitalwealth.com/services/federal-benefits/fers-retirement/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/retirement-planning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/retirement-income-planning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/retirement-tax-strategies/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/roth-conversion-strategies-utah/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/financial-advisor-utah/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/financial-advisor-idaho/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/fers-retirement-planning-utah/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/fers-retirement-planning-idaho/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/retirement-planning-lehi-utah/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
