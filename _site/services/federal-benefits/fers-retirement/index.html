@@ -703,6 +703,80 @@
    EDITORIAL SERVICE PAGE — FERS Retirement
    ═══════════════════════════════════════════ */
 
+/* Page Layout with Sidebar */
+.ep-page-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ep-sidebar {
+  position: sticky;
+  top: 6rem;
+  height: fit-content;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+}
+
+.ep-sidebar-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.5rem;
+}
+
+.ep-sidebar-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.ep-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ep-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.ep-sidebar-link:hover {
+  color: var(--primary);
+  background: var(--surface-container-low);
+}
+
+.ep-sidebar-link.active {
+  color: var(--primary);
+  font-weight: 600;
+  border-left-color: var(--secondary);
+  background: var(--surface-container-low);
+}
+
+@media (max-width: 1024px) {
+  .ep-page-layout {
+    grid-template-columns: 1fr;
+  }
+  .ep-sidebar {
+    display: none;
+  }
+}
+
 /* Hero */
 .ep-hero {
   padding: 2rem 2rem 5rem;
@@ -1419,8 +1493,23 @@
 }
 </style>
 
+<div class="ep-page-layout">
+  <nav class="ep-sidebar">
+    <div class="ep-sidebar-label">Navigation</div>
+    <h3 class="ep-sidebar-title">FERS Retirement</h3>
+    <div class="ep-sidebar-nav">
+      <a href="#overview" class="ep-sidebar-link">Overview</a>
+      <a href="#foundation" class="ep-sidebar-link">The Formula</a>
+      <a href="#eligibility" class="ep-sidebar-link">Eligibility</a>
+      <a href="#supplement" class="ep-sidebar-link">FERS Supplement</a>
+      <a href="#military-buyback" class="ep-sidebar-link">Military Buyback</a>
+      <a href="#faq" class="ep-sidebar-link">FAQ</a>
+    </div>
+  </nav>
+  
+  <main class="ep-main-content">
 
-<section class="ep-hero">
+<section class="ep-hero" id="overview">
   <div class="ep-hero-inner">
     <div>
       <span class="ep-chapter-label">FERS Retirement</span>
@@ -1468,7 +1557,7 @@
 </section>
 
 
-<section class="ep-framework">
+<section class="ep-framework" id="foundation">
   <div class="ep-framework-inner">
     <div>
       <h2 class="ep-framework-title">FERS Foundation Components</h2>
@@ -1481,11 +1570,11 @@
         <p>Master the formula: years of service × high-3 salary × multiplier. Understand when you qualify for the enhanced 1.1% multiplier and how special category employees get 1.7%.</p>
       </div>
       <div class="ep-framework-card">
-        <h4>Retirement Eligibility</h4>
+        <h4 id="eligibility">Retirement Eligibility</h4>
         <p>Multiple pathways to retirement with different requirements and benefits. Know your MRA, understand immediate versus deferred retirement, and optimize your timing.</p>
       </div>
       <div class="ep-framework-card">
-        <h4>FERS Supplement</h4>
+        <h4 id="supplement">FERS Supplement</h4>
         <p>Bridge benefit from retirement until Social Security eligibility at 62. Understand who qualifies, earnings test limits, and coordination strategies.</p>
       </div>
       <div class="ep-framework-card">
@@ -1554,7 +1643,7 @@
       <h2 class="ep-transfer-title">Beyond the<br>Basic Formula</h2>
       <p class="ep-transfer-body">While the FERS annuity formula appears simple, optimizing your benefits requires understanding eligibility nuances, timing strategies, and coordination with other federal benefits and outside assets.</p>
       <div class="ep-sub-feature">
-        <h4>Military Service Credit</h4>
+        <h4 id="military-buyback">Military Service Credit</h4>
         <p>Buying back military time can add years to your service calculation. We analyze the cost versus lifetime benefit to determine if the 3% deposit makes financial sense for your situation.</p>
       </div>
       <div class="ep-sub-feature">
@@ -1566,7 +1655,7 @@
 </section>
 
 
-<section class="ep-faq">
+<section class="ep-faq" id="faq">
   <div class="ep-faq-inner">
     <div>
       <span class="ep-chapter-label">Common Questions</span>
@@ -1611,6 +1700,32 @@
     <img src="/assets/images/photos/federal/capitalwealth-federal-government-building.jpg" alt="Federal building representing FERS expertise" class="ep-cta-image">
   </div>
 </section>
+  </main>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('.ep-sidebar-link');
+  const sections = [];
+  links.forEach(link => {
+    const id = link.getAttribute('href').replace('#', '');
+    const section = document.getElementById(id);
+    if (section) sections.push({ id, el: section, link });
+  });
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector('.ep-sidebar-link[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+  
+  sections.forEach(s => observer.observe(s.el));
+});
+</script>
 </div>
 
 <!-- Related Blog Posts -->
