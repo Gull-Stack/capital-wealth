@@ -7,7 +7,7 @@ bodyClass: "landing-page"
 
 <!-- Landing page header override styles -->
 <style>
-/* Override header for landing page only */
+/* Override header for landing page only - Keep logo only centered */
 .landing-page .finpay-nav-links,
 .landing-page .finpay-nav-right,
 .landing-page .desktop-cta,
@@ -43,14 +43,12 @@ bodyClass: "landing-page"
 .hero-section::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 800px;
-  background: url('/assets/images/logos/logo-icon-color.png') no-repeat center;
-  background-size: contain;
-  opacity: 0.03;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/assets/images/photos/federal/capitalwealth-federal-capitol-golden-hour.jpg') center/cover;
+  opacity: 0.1;
   z-index: 1;
 }
 
@@ -90,35 +88,6 @@ bodyClass: "landing-page"
   margin-bottom: 32px;
 }
 
-.campus-preview {
-  margin-top: 24px;
-  position: relative;
-  display: inline-block;
-}
-
-.campus-img {
-  width: 280px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid rgba(255,255,255,0.2);
-}
-
-.campus-badge {
-  position: absolute;
-  bottom: -12px;
-  right: -12px;
-  background: white;
-  border-radius: 8px;
-  padding: 6px 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-.wsu-logo {
-  height: 32px;
-  width: auto;
-}
-
 .event-details {
   display: flex;
   flex-direction: column;
@@ -141,7 +110,7 @@ bodyClass: "landing-page"
   color: var(--cw-orange);
 }
 
-/* Registration Form */
+/* Registration Form - Redesigned to match template */
 .registration-form {
   background: white;
   border-radius: 16px;
@@ -169,43 +138,83 @@ bodyClass: "landing-page"
 
 .form-group {
   margin-bottom: 24px;
+  position: relative;
 }
 
 .form-group label {
   display: block;
   font-weight: 700;
-  color: var(--cw-primary);
+  color: black;
   margin-bottom: 8px;
   font-size: 1rem;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 
-.form-group input,
-.form-group select {
+.form-input {
+  position: relative;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
   width: 100%;
-  padding: 16px;
+  padding: 16px 50px 16px 16px;
   border: 1.5px solid #d1d5db;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 1rem;
   font-family: var(--font-family);
   transition: all 0.2s ease;
-  background: #f9fafb;
+  background: white;
   color: #333;
+  height: 50px;
+  box-sizing: border-box;
 }
 
 .form-group input::placeholder {
   color: #9ca3af;
 }
 
-.form-group input:focus,
-.form-group select:focus {
+.form-group input:focus {
   outline: none;
   border-color: var(--cw-primary);
   box-shadow: 0 0 0 4px rgba(25, 79, 144, 0.1);
 }
 
+.input-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #9ca3af;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  accent-color: var(--cw-primary);
+}
+
+.checkbox-label {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
 .submit-btn {
   width: 100%;
-  background: #194F90;
+  background: #1a8cd8;
   color: white;
   padding: 18px;
   border: none;
@@ -216,10 +225,11 @@ bodyClass: "landing-page"
   transition: all 0.2s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
 .submit-btn:hover {
-  background: #0f3a6d;
+  background: #1578c4;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
@@ -227,6 +237,23 @@ bodyClass: "landing-page"
   opacity: 0.7;
   cursor: not-allowed;
   transform: none;
+}
+
+.form-disclaimer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.form-disclaimer a {
+  color: var(--cw-primary);
+  text-decoration: none;
+}
+
+.form-disclaimer a:hover {
+  text-decoration: underline;
 }
 
 /* Social Proof Section */
@@ -333,84 +360,9 @@ bodyClass: "landing-page"
   margin: 0;
 }
 
-/* Free Analysis Section */
-.analysis-section {
-  background: #f0f1f3;
-  padding: 64px 0;
-}
-
-.analysis-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.analysis-header {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.analysis-header h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--cw-primary);
-  margin-bottom: 24px;
-}
-
-.analysis-subtitle {
-  font-size: 1.25rem;
-  color: var(--gray-600);
-  margin-bottom: 32px;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 48px;
-  margin-bottom: 48px;
-}
-
-.feature-item {
-  text-align: center;
-}
-
-.feature-icon {
-  width: 64px;
-  height: 64px;
-  color: var(--cw-primary);
-  margin: 0 auto 24px;
-}
-
-.feature-item h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--cw-primary);
-  margin-bottom: 16px;
-}
-
-.feature-item p {
-  color: var(--gray-600);
-  line-height: 1.6;
-}
-
-.analysis-note {
-  background: white;
-  border-radius: 16px;
-  padding: 32px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-.analysis-note p {
-  font-size: 1.125rem;
-  color: var(--gray-700);
-  font-weight: 500;
-  margin: 0;
-}
-
 /* Meet Your Host Section */
 .host-section {
-  background: white;
+  background: #f0f1f3;
   padding: 64px 0;
 }
 
@@ -473,7 +425,7 @@ bodyClass: "landing-page"
 }
 
 .host-quote {
-  background: #f9fafb;
+  background: white;
   padding: 32px;
   border-radius: 16px;
   border-left: 6px solid var(--cw-orange);
@@ -483,24 +435,89 @@ bodyClass: "landing-page"
   font-size: 1.125rem;
 }
 
-/* SF-182 Section */
-.sf182-section {
-  background: #f8f9fa;
+/* Testimonials Section */
+.testimonials-section {
+  background: white;
   padding: 64px 0;
 }
 
-.sf182-content {
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.testimonial {
+  background: #f9fafb;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+.testimonial-text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #374151;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.testimonial-author {
+  font-weight: 700;
+  color: var(--cw-primary);
+}
+
+/* FAQ Section */
+.faq-section {
+  background: #f0f1f3;
+  padding: 64px 0;
+}
+
+.faq-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
-  text-align: center;
 }
 
-.sf182-content p {
+.faq-item {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 24px;
+  text-align: left;
   font-size: 1.125rem;
-  color: var(--gray-600);
+  font-weight: 600;
+  color: var(--cw-primary);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  padding: 0 24px 24px;
+  color: #374151;
   line-height: 1.6;
-  margin: 0;
+}
+
+.faq-plus {
+  font-size: 1.5rem;
+  color: var(--cw-orange);
+  transition: transform 0.2s ease;
+}
+
+.faq-item.active .faq-plus {
+  transform: rotate(45deg);
 }
 
 /* Final CTA Section */
@@ -650,6 +667,10 @@ bodyClass: "landing-page"
     max-width: 350px;
     margin: 0 auto;
   }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -663,17 +684,11 @@ bodyClass: "landing-page"
     gap: 24px;
   }
   
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-  
   .hero-left h1 {
     font-size: 2.5rem;
   }
   
   .section-header h2,
-  .analysis-header h2,
   .cta-content h2 {
     font-size: 2.25rem;
   }
@@ -681,8 +696,9 @@ bodyClass: "landing-page"
   .hero-content,
   .social-proof,
   .learn-section,
-  .analysis-section,
   .host-section,
+  .testimonials-section,
+  .faq-section,
   .final-cta {
     padding: 48px 0;
   }
@@ -709,7 +725,6 @@ bodyClass: "landing-page"
   }
   
   .section-header h2,
-  .analysis-header h2,
   .cta-content h2 {
     font-size: 1.875rem;
   }
@@ -735,6 +750,13 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       
+      // Get form data
+      const formData = new FormData(form);
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+      
       // Validate form
       if (validateForm()) {
         trackRegistration();
@@ -743,22 +765,42 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.textContent = 'Securing Your Spot...';
         submitBtn.disabled = true;
         
-        // Simulate API call
-        setTimeout(() => {
-          window.location.href = '/thank-you/';
-        }, 2000);
+        // Submit to API
+        fetch('/api/submit-lead', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+          if (result.success) {
+            window.location.href = '/thank-you/';
+          } else {
+            submitBtn.textContent = 'REGISTER';
+            submitBtn.disabled = false;
+            alert('There was an error submitting your registration. Please try again.');
+          }
+        })
+        .catch(error => {
+          submitBtn.textContent = 'REGISTER';
+          submitBtn.disabled = false;
+          console.error('Error:', error);
+          alert('There was an error submitting your registration. Please try again.');
+        });
       }
     });
     
     // Real-time validation
-    const inputs = form.querySelectorAll('input[required], select[required]');
+    const inputs = form.querySelectorAll('input[required]');
     inputs.forEach(input => {
       input.addEventListener('blur', () => validateField(input));
     });
   }
   
   function validateForm() {
-    const requiredFields = form.querySelectorAll('input[required], select[required]');
+    const requiredFields = form.querySelectorAll('input[required]');
     let isValid = true;
     
     requiredFields.forEach(field => {
@@ -843,6 +885,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   
+  // FAQ Toggle
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', function() {
+      const faqItem = this.parentNode;
+      const answer = faqItem.querySelector('.faq-answer');
+      
+      faqItem.classList.toggle('active');
+      
+      if (faqItem.classList.contains('active')) {
+        answer.style.display = 'block';
+      } else {
+        answer.style.display = 'none';
+      }
+    });
+  });
+  
   // Scroll depth tracking
   function trackScrollDepth() {
     const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
@@ -921,14 +980,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <circle cx="12" cy="12" r="10"/>
             <path d="9,12 l2,2 4,-4"/>
           </svg>
-          <span>FREE for Federal Employees</span>
-        </div>
-      </div>
-      
-      <div class="campus-preview">
-        <img src="/assets/images/photos/weber-state-davis-campus.jpg" alt="Weber State University Davis Campus" class="campus-img">
-        <div class="campus-badge">
-          <img src="/assets/images/logos/weber-state-logo.png" alt="Weber State University" class="wsu-logo">
+          <span>FREE & Complimentary</span>
         </div>
       </div>
     </div>
@@ -936,47 +988,63 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="registration-form">
       <div class="form-header">
         <h2>Reserve Your Free Seat</h2>
-        <div class="form-subtitle">Limited to 50 Hill AFB employees only</div>
+        <div class="form-subtitle">Limited to 50 federal employees only</div>
       </div>
       
-      <form id="registration-form" action="/api/submit-lead" method="post">
+      <form id="registration-form">
         <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+          <label for="firstName">FIRST NAME</label>
+          <div class="form-input">
+            <input type="text" id="firstName" name="firstName" required placeholder="Enter Your First Name...">
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
         </div>
         
         <div class="form-group">
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" required placeholder="Your last name">
+          <label for="lastName">LAST NAME</label>
+          <div class="form-input">
+            <input type="text" id="lastName" name="lastName" required placeholder="Enter Your Last Name...">
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
         </div>
         
         <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required placeholder="your.email@domain.com">
+          <label for="email">EMAIL</label>
+          <div class="form-input">
+            <input type="email" id="email" name="email" required placeholder="Enter Your Email Address...">
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M22,6 12,13 2,6"/>
+            </svg>
+          </div>
         </div>
         
         <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+          <label for="phone">PHONE NUMBER</label>
+          <div class="form-input">
+            <input type="tel" id="phone" name="phone" required placeholder="Enter Your Phone Number...">
+            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
         </div>
         
-        <div class="form-group">
-          <label for="agency">Your Agency</label>
-          <select id="agency" name="agency">
-            <option value="">Select your agency</option>
-            <option value="Hill AFB">Hill AFB</option>
-            <option value="IRS">IRS</option>
-            <option value="VA">VA</option>
-            <option value="USDA">USDA</option>
-            <option value="DoD-Army">DoD-Army</option>
-            <option value="DoD-Navy">DoD-Navy</option>
-            <option value="DHS">DHS</option>
-            <option value="DOI">DOI</option>
-            <option value="Other">Other</option>
-          </select>
+        <div class="checkbox-group">
+          <input type="checkbox" id="spouse" name="spouse" value="yes">
+          <label for="spouse" class="checkbox-label">Are you bringing your spouse or a guest? (if yes, check the box)</label>
         </div>
         
-        <button type="submit" class="submit-btn">Reserve My Free Seat</button>
+        <button type="submit" class="submit-btn">REGISTER</button>
+        
+        <div class="form-disclaimer">
+          This is an educational workshop. You will not be sold any financial products. By registering, you consent to receive educational materials from Capital Wealth. View our <a href="/disclosures/">privacy policy</a>. You may opt out at any time by calling (801) 210-2800.
+        </div>
         
         <input type="hidden" name="source" value="federal-benefits-workshop">
         <input type="hidden" name="lead_type" value="federal-workshop-registration">
@@ -990,12 +1058,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <section class="social-proof">
   <div class="stats-grid">
     <div class="stat-item">
-      <div class="stat-number">1,200+</div>
-      <div class="stat-label">Federal Employees Helped</div>
+      <div class="stat-number">500+</div>
+      <div class="stat-label">Federal Employees Served</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">$300M+</div>
-      <div class="stat-label">Federal Assets Managed</div>
+      <div class="stat-number">$500M+</div>
+      <div class="stat-label">Assets Under Guidance</div>
     </div>
     <div class="stat-item">
       <div class="stat-number">25+</div>
@@ -1018,8 +1086,9 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="cards-grid">
     <div class="learn-card">
       <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M16 8l-4 4-4-4"/>
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+        <line x1="8" y1="21" x2="16" y2="21"/>
+        <line x1="12" y1="17" x2="12" y2="21"/>
       </svg>
       <h3>FERS Pension Optimization</h3>
       <p>Calculate your optimal retirement date and discover advanced strategies to maximize your FERS pension payments throughout retirement.</p>
@@ -1029,7 +1098,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
       </svg>
-      <h3>TSP Maximization</h3>
+      <h3>TSP Maximization Strategies</h3>
       <p>Learn optimal contribution amounts, investment allocation strategies, and withdrawal sequences to get the most from your TSP.</p>
     </div>
     
@@ -1037,18 +1106,26 @@ document.addEventListener('DOMContentLoaded', function() {
       <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
       </svg>
-      <h3>Healthcare & Medicare Planning</h3>
+      <h3>FEHB Into Retirement</h3>
       <p>Navigate FEHB continuation, Medicare integration, and supplement insurance to ensure comprehensive coverage in retirement.</p>
     </div>
     
     <div class="learn-card">
       <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M9 12l2 2 4-4"/>
-        <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
-        <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+        <circle cx="12" cy="12" r="10"/>
       </svg>
-      <h3>FEGLI Analysis</h3>
+      <h3>FEGLI Review</h3>
       <p>Understand your life insurance options and make informed decisions about continuing coverage versus private alternatives.</p>
+    </div>
+    
+    <div class="learn-card">
+      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12,6 12,12 16,14"/>
+      </svg>
+      <h3>Social Security Coordination</h3>
+      <p>Coordinate Social Security benefits with your federal pension and TSP to maximize total retirement income streams.</p>
     </div>
     
     <div class="learn-card">
@@ -1056,63 +1133,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <line x1="12" y1="1" x2="12" y2="23"/>
         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
       </svg>
-      <h3>Social Security Integration</h3>
-      <p>Coordinate Social Security benefits with your federal pension and TSP to maximize total retirement income streams.</p>
-    </div>
-    
-    <div class="learn-card">
-      <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <line x1="22" y1="3" x2="2" y2="21"/>
-        <path d="M16 8h3a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h3"/>
-        <circle cx="12" cy="8" r="5"/>
-      </svg>
-      <h3>Tax Minimization Strategies</h3>
+      <h3>Tax Planning</h3>
       <p>Strategic withdrawal sequencing from different account types to minimize taxes and maximize your retirement spending power.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Free Retirement Analysis Section -->
-<section class="analysis-section">
-  <div class="analysis-content">
-    <div class="analysis-header">
-      <h2>Your Free Personalized Retirement Analysis</h2>
-      <div class="analysis-subtitle">Every workshop attendee receives a complimentary, personalized retirement analysis worth $500.</div>
-    </div>
-    
-    <div class="features-grid">
-      <div class="feature-item">
-        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="20" x2="18" y2="10"/>
-          <line x1="12" y1="20" x2="12" y2="4"/>
-          <line x1="6" y1="20" x2="6" y2="14"/>
-        </svg>
-        <h3>Custom Income Projection</h3>
-        <p>See exactly how your current savings and benefits will translate into monthly retirement income.</p>
-      </div>
-      
-      <div class="feature-item">
-        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8"/>
-          <path d="M21 21l-4.35-4.35"/>
-        </svg>
-        <h3>Tax Optimization Review</h3>
-        <p>Identify specific strategies to reduce your tax burden and keep more of your hard-earned money.</p>
-      </div>
-      
-      <div class="feature-item">
-        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M14.828 14.828a4 4 0 0 1-5.656 0"/>
-          <path d="M9 9a3 3 0 1 1 6 0c0 2-3 3-3 3"/>
-          <path d="M12 17h.01"/>
-        </svg>
-        <h3>Benefits Gap Analysis</h3>
-        <p>Discover potential blind spots in your current retirement plan and how to address them.</p>
-      </div>
-    </div>
-    
-    <div class="analysis-note">
-      <p><strong>Mike Stevens will personally review each analysis</strong> and provide specific recommendations tailored to your federal benefits and retirement goals.</p>
     </div>
   </div>
 </section>
@@ -1126,14 +1148,28 @@ document.addEventListener('DOMContentLoaded', function() {
     
     <div class="host-details">
       <h3>Mike Stevens</h3>
-      <div class="host-title">President & Founder, Capital Wealth</div>
+      <div class="host-title">President & Founder, Capital Wealth | Lehi, Utah</div>
       
       <div class="credentials">
         <div class="credential-item">
           <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M9 12l2 2 4-4"/>
           </svg>
-          <span>25+ years specializing in federal benefits</span>
+          <span>Fiduciary advisor with 25+ years experience</span>
+        </div>
+        
+        <div class="credential-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <span>500+ federal employees guided to retirement</span>
+        </div>
+        
+        <div class="credential-item">
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <span>$500M+ assets under guidance</span>
         </div>
         
         <div class="credential-item">
@@ -1147,28 +1183,14 @@ document.addEventListener('DOMContentLoaded', function() {
           <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M9 12l2 2 4-4"/>
           </svg>
-          <span>Author of Retire Right Retire Now</span>
+          <span>Author of "Retire Right Retire Now"</span>
         </div>
         
         <div class="credential-item">
           <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M9 12l2 2 4-4"/>
           </svg>
-          <span>1200+ federal employees helped</span>
-        </div>
-        
-        <div class="credential-item">
-          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M9 12l2 2 4-4"/>
-          </svg>
-          <span>$300M+ managed</span>
-        </div>
-        
-        <div class="credential-item">
-          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M9 12l2 2 4-4"/>
-          </svg>
-          <span>Series 66 IAR</span>
+          <span>Series 66 Investment Adviser Representative</span>
         </div>
       </div>
       
@@ -1179,24 +1201,107 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </section>
 
-<!-- SF-182 Note Section -->
-<section class="sf182-section">
-  <div class="sf182-content">
-    <p>Federal employees may be eligible to attend this workshop through SF-182 training authorization. Registration is not required to qualify for this educational opportunity.</p>
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+  <div class="section-header">
+    <h2>What Federal Employees Say</h2>
+    <p>Real feedback from federal employees who attended our workshops and are now enjoying secure retirements.</p>
+  </div>
+  
+  <div class="testimonials-grid">
+    <div class="testimonial">
+      <div class="testimonial-text">
+        "Mike's workshop completely changed how I view my federal benefits. I learned strategies I never knew existed for maximizing my FERS and TSP. Best financial education I've ever received."
+      </div>
+      <div class="testimonial-author">— Sarah M., DoD Civilian</div>
+    </div>
+    
+    <div class="testimonial">
+      <div class="testimonial-text">
+        "After 28 years in federal service, I thought I knew everything about my benefits. Mike showed me gaps in my planning that could have cost me thousands in retirement income."
+      </div>
+      <div class="testimonial-author">— James R., VA Employee</div>
+    </div>
+    
+    <div class="testimonial">
+      <div class="testimonial-text">
+        "The TSP strategies alone were worth attending. Mike's clear explanations helped me understand exactly how to optimize my investments for maximum growth."
+      </div>
+      <div class="testimonial-author">— Linda K., USDA</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="section-header">
+    <h2>Frequently Asked Questions</h2>
+  </div>
+  
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">
+        Who should attend this workshop?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-answer" style="display: none;">
+        This workshop is designed for Hill AFB federal employees who want to maximize their retirement benefits. It's especially valuable for those within 5-15 years of retirement, though all career stages will benefit from the information.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">
+        Will you try to sell me financial products?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-answer" style="display: none;">
+        Absolutely not. This is a purely educational workshop. You will not be sold any financial products or services. Our goal is to provide valuable education about federal benefits optimization.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">
+        Is there really no cost to attend?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-answer" style="display: none;">
+        Yes, the workshop is completely free. We even provide light breakfast and educational materials. There are no hidden fees or obligations.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I use SF-182 training authorization?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-answer" style="display: none;">
+        Federal employees may be eligible to attend through SF-182 training authorization. This qualifies as professional development related to retirement planning and personal financial management.
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">
+        What should I bring to the workshop?
+        <span class="faq-plus">+</span>
+      </button>
+      <div class="faq-answer" style="display: none;">
+        Just bring yourself and any specific questions about your federal benefits. We'll provide all materials, and breakfast will be available. You may want to bring a notepad for personal notes.
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Final CTA Section -->
 <section class="final-cta">
   <div class="cta-content">
-    <h2>Don't Miss This Opportunity</h2>
-    <p class="cta-description">This exclusive workshop is designed specifically for Hill AFB federal employees. Seats are limited to ensure personalized attention and maximum value.</p>
+    <h2>Don't Miss This Exclusive Opportunity</h2>
+    <p class="cta-description">This workshop is designed specifically for Hill AFB federal employees. Seats are limited to ensure personalized attention and maximum value for every attendee.</p>
     
     <div class="event-summary">
       <h3>Workshop Details</h3>
       <div class="event-summary-details">
         April 9, 2026 • 9:00 AM - 11:00 AM<br>
-        Weber State Davis Campus<br>
+        Weber State University Davis Campus<br>
         Light breakfast provided<br>
         <strong>Only 50 seats available</strong>
       </div>
@@ -1212,6 +1317,6 @@ document.addEventListener('DOMContentLoaded', function() {
       </a>
     </div>
     
-    <div class="urgency-note">50 seats only</div>
+    <div class="urgency-note">Limited to 50 federal employees</div>
   </div>
 </section>
