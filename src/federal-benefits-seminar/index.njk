@@ -667,6 +667,227 @@ bodyClass: "landing-page"
   opacity: 0.5;
 }
 
+/* SF-182 Section */
+.sem-sf182 {
+  padding: 128px 32px;
+  background: var(--surface-container-low);
+}
+
+.sem-sf182-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sem-sf182-content {
+  background: white;
+  padding: 64px;
+  border-radius: 8px;
+  border-left: 8px solid var(--secondary);
+}
+
+.sem-sf182 .sem-eyebrow {
+  color: var(--secondary);
+  margin-bottom: 16px;
+}
+
+.sem-sf182-title {
+  font-size: 2.5rem;
+  font-family: var(--font-serif-display), serif;
+  color: var(--primary);
+  margin-bottom: 32px;
+}
+
+.sem-sf182-description {
+  font-size: 18px;
+  color: var(--slate-600);
+  line-height: 1.6;
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sem-sf182-btn {
+  display: inline-block;
+  background: var(--secondary);
+  color: var(--on-secondary);
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-family: var(--font-serif-display), serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-bottom: 32px;
+}
+
+.sem-sf182-btn:hover {
+  background: var(--secondary-container);
+  transform: translateY(-2px);
+}
+
+.sem-sf182-disclosure {
+  font-size: 14px;
+  color: var(--slate-500);
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Training Details Section */
+.sem-training-details {
+  background: var(--secondary);
+  color: var(--on-secondary);
+  padding: 32px;
+  border-radius: 8px;
+  margin: 48px 0;
+}
+
+.sem-training-details .sem-eyebrow {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 16px;
+}
+
+.sem-training-details h3 {
+  font-size: 1.5rem;
+  font-family: var(--font-serif-display), serif;
+  margin-bottom: 24px;
+}
+
+.sem-training-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.sem-training-detail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sem-training-detail-icon {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.sem-capacity-warning {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 6px;
+  font-family: var(--font-mono), monospace;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+/* Venue Links */
+.sem-venue-links {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid var(--surface-container-low);
+}
+
+.sem-venue-links h4 {
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.sem-venue-links-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.sem-venue-link {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.sem-venue-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.sem-parking-note {
+  background: var(--surface);
+  padding: 24px;
+  border-radius: 8px;
+  margin-top: 32px;
+  border-left: 4px solid var(--secondary);
+}
+
+.sem-parking-note h4 {
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--secondary);
+  margin-bottom: 12px;
+}
+
+.sem-parking-note p {
+  color: var(--slate-600);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Registration Details */
+.sem-registration-details {
+  background: white;
+  padding: 48px;
+  border-radius: 8px;
+  margin: 48px 0;
+  border: 2px solid var(--surface-container-low);
+}
+
+.sem-registration-details .sem-eyebrow {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.sem-registration-details h3 {
+  font-size: 2rem;
+  font-family: var(--font-serif-display), serif;
+  color: var(--primary);
+  margin-bottom: 32px;
+}
+
+.sem-registration-details-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.sem-registration-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.sem-registration-detail-checkmark {
+  color: var(--secondary);
+  font-size: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.sem-registration-detail-text {
+  color: var(--slate-600);
+  font-weight: 500;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .sem-hero-content {
@@ -717,6 +938,16 @@ bodyClass: "landing-page"
     gap: 32px;
     justify-content: center;
   }
+  
+  .sem-training-details-grid,
+  .sem-registration-details-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .sem-venue-links-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -731,6 +962,15 @@ bodyClass: "landing-page"
   
   .sem-registration-form {
     padding: 24px 16px;
+  }
+  
+  .sem-sf182-content {
+    padding: 32px 24px;
+  }
+  
+  .sem-training-details,
+  .sem-registration-details {
+    padding: 32px 24px;
   }
 }
 </style>
@@ -827,11 +1067,11 @@ bodyClass: "landing-page"
         <div class="sem-curriculum-card">
           <span class="sem-chapter-number">CH. 01</span>
           <div>
-            <h4>FERS Optimization & The Three-Legged Stool</h4>
-            <p>Analyzing the critical interplay between your pension, Social Security, and TSP. We solve the 'gap' calculation that many Feds miss during early retirement planning.</p>
+            <h4>CSRS & FERS Pension Systems</h4>
+            <p>Understanding your pension calculation, survivor benefit options, and the strategic interplay between your pension, Social Security, and TSP in retirement planning.</p>
             <div class="sem-card-tags">
               <span class="sem-card-tag">Pension Logic</span>
-              <span class="sem-card-tag">FERS vs CSRS</span>
+              <span class="sem-card-tag">Survivor Benefits</span>
             </div>
           </div>
         </div>
@@ -839,11 +1079,11 @@ bodyClass: "landing-page"
         <div class="sem-curriculum-card">
           <span class="sem-chapter-number">CH. 02</span>
           <div>
-            <h4>TSP Management & The SDBA Window</h4>
-            <p>Moving beyond the L-Funds. Learn how the Mutual Fund Window and Self-Directed Brokerage Account (SDBA) can provide professional-grade portfolio management within the TSP.</p>
+            <h4>TSP & Social Security Optimization</h4>
+            <p>Advanced Thrift Savings Plan strategies, withdrawal timing, and coordinating with Social Security benefits including the FERS Supplement for early retirees.</p>
             <div class="sem-card-tags">
-              <span class="sem-card-tag">SDBA Logic</span>
-              <span class="sem-card-tag">Asset Allocation</span>
+              <span class="sem-card-tag">TSP Strategy</span>
+              <span class="sem-card-tag">FERS Supplement</span>
             </div>
           </div>
         </div>
@@ -851,11 +1091,11 @@ bodyClass: "landing-page"
         <div class="sem-curriculum-card">
           <span class="sem-chapter-number">CH. 03</span>
           <div>
-            <h4>FEGLI vs. Private Alternatives</h4>
-            <p>Is FEGLI Option B draining your retirement income? We perform a side-by-side cost analysis of federal life insurance versus private market precision alternatives.</p>
+            <h4>FEGLI & FLTCIP Analysis</h4>
+            <p>Federal life insurance optimization and long-term care planning. When to keep FEGLI vs. private alternatives and protecting against long-term care costs.</p>
             <div class="sem-card-tags">
-              <span class="sem-card-tag">Cost Analysis</span>
-              <span class="sem-card-tag">Risk Strategy</span>
+              <span class="sem-card-tag">Life Insurance</span>
+              <span class="sem-card-tag">Long-Term Care</span>
             </div>
           </div>
         </div>
@@ -863,15 +1103,32 @@ bodyClass: "landing-page"
         <div class="sem-curriculum-card">
           <span class="sem-chapter-number">CH. 04</span>
           <div>
-            <h4>FEHB & Medicare Coordination</h4>
-            <p>The definitive guide to Part B. When to keep FEHB, when to suspend it, and how to avoid the lifetime penalties while maximizing coverage for your spouse.</p>
+            <h4>FEHB & Retirement Planning</h4>
+            <p>Federal health benefits in retirement, Medicare coordination, and comprehensive retirement planning strategies that integrate all your federal benefits.</p>
             <div class="sem-card-tags">
-              <span class="sem-card-tag">Health Coverage</span>
-              <span class="sem-card-tag">Part B Strategy</span>
+              <span class="sem-card-tag">Health Benefits</span>
+              <span class="sem-card-tag">Medicare Timing</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SF-182 Training Authorization Section -->
+<section class="sem-sf182" id="sf182">
+  <div class="sem-sf182-container">
+    <div class="sem-sf182-content">
+      <span class="sem-eyebrow">Training Authorization</span>
+      <h2 class="sem-sf182-title">Request Paid Time Off to Attend</h2>
+      <p class="sem-sf182-description">
+        Federal employees may be eligible to attend using an SF-182 Training Authorization Form if approved by their agency.
+      </p>
+      <a href="/assets/docs/sf-182-federal-training-form.pdf" class="sem-sf182-btn" target="_blank" rel="noopener">SF-182 Form</a>
+      <p class="sem-sf182-disclosure">
+        Federal employees may be eligible to attend through their agency's SF-182 training authorization process if approved as job-related. Use of an SF-182 is optional and not required to register or attend. Approval, when applicable, is determined solely by each agency.
+      </p>
     </div>
   </div>
 </section>
@@ -918,25 +1175,93 @@ bodyClass: "landing-page"
   <div class="sem-venue-container">
     <div class="sem-venue-content">
       <div class="sem-venue-details">
-        <span class="sem-eyebrow">Location</span>
+        <span class="sem-eyebrow">Location & Logistics</span>
         <h3 class="sem-venue-title">Weber State University <br><span class="sem-venue-title-light">Davis Campus</span></h3>
         <div class="sem-venue-info">
           <p class="sem-venue-item">
             <svg class="sem-venue-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            2750 University Park Blvd, Layton, UT 84041
+            D2 Building, Room 117 (first floor, right inside main entrance)
           </p>
           <p class="sem-venue-item">
             <svg class="sem-venue-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Multiple Sessions Available
+            Thursday, April 9th, 2026
+          </p>
+          <p class="sem-venue-item">
+            <svg class="sem-venue-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            9:00 AM - 11:00 AM
           </p>
           <p class="sem-venue-item">
             <svg class="sem-venue-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-4"/><circle cx="8.5" cy="15.5" r="3.5"/><circle cx="18.5" cy="15.5" r="3.5"/></svg>
-            Complimentary Parking
+            Covered by Capital Wealth — Print your parking permit (sent after registration)
           </p>
+        </div>
+        
+        <div class="sem-venue-links">
+          <h4>Campus Maps & Navigation</h4>
+          <div class="sem-venue-links-grid">
+            <a href="https://www.weber.edu/maps/davis-campus.html" class="sem-venue-link" target="_blank" rel="noopener">Davis Campus Map</a>
+            <a href="https://www.weber.edu/wsuimages/WeberStateMap/wsudavis-sept2020.pdf" class="sem-venue-link" target="_blank" rel="noopener">Printable Campus PDF</a>
+            <a href="https://www.weber.edu/wsuimages/interiordesign/davismap.pdf" class="sem-venue-link" target="_blank" rel="noopener">D2 Interior Map (Room 117)</a>
+          </div>
+        </div>
+        
+        <div class="sem-parking-note">
+          <h4>Important Parking Information</h4>
+          <p>Parking permits must be PRINTED and placed on the driver's side dashboard. Digital display on phone will NOT work. Valid in DAVIS W LOTS ONLY.</p>
+        </div>
+        
+        <div class="sem-training-details">
+          <span class="sem-eyebrow">Training Details</span>
+          <h3>Session Information</h3>
+          <div class="sem-training-details-grid">
+            <div class="sem-training-detail">
+              <svg class="sem-training-detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 21-3-3m3 3 3-3m-3 3v-6"/></svg>
+              Room capacity: 25-50 seats
+            </div>
+            <div class="sem-training-detail">
+              <svg class="sem-training-detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 21-3-3m3 3 3-3m-3 3v-6"/></svg>
+              In-person session (not virtual)
+            </div>
+            <div class="sem-training-detail">
+              <svg class="sem-training-detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+              Arrive 15 minutes early
+            </div>
+            <div class="sem-training-detail">
+              <svg class="sem-training-detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+              Business casual dress code
+            </div>
+          </div>
+          <div class="sem-capacity-warning">
+            Seats are limited — register early to guarantee your spot
+          </div>
         </div>
       </div>
       <div class="sem-venue-image">
         <img src="/assets/images/photos/weber-state-davis-campus.jpg" alt="Weber State University Davis Campus">
+      </div>
+    </div>
+    
+    <!-- Registration Details -->
+    <div class="sem-registration-details">
+      <span class="sem-eyebrow">Registration Information</span>
+      <h3>What You Need to Know</h3>
+      <div class="sem-registration-details-list">
+        <div class="sem-registration-detail">
+          <span class="sem-registration-detail-checkmark">✓</span>
+          <p class="sem-registration-detail-text">Attendance is free of charge</p>
+        </div>
+        <div class="sem-registration-detail">
+          <span class="sem-registration-detail-checkmark">✓</span>
+          <p class="sem-registration-detail-text">Spouses/guests are encouraged to attend</p>
+        </div>
+        <div class="sem-registration-detail">
+          <span class="sem-registration-detail-checkmark">✓</span>
+          <p class="sem-registration-detail-text">Training covers both CSRS & FERS audiences</p>
+        </div>
+        <div class="sem-registration-detail">
+          <span class="sem-registration-detail-checkmark">✓</span>
+          <p class="sem-registration-detail-text">After the workshop, one-on-one help is available</p>
+        </div>
       </div>
     </div>
   </div>
