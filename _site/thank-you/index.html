@@ -389,13 +389,24 @@
   background-size: contain;
   opacity: 0.03;
 }
+.ty-hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FDD25E;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
 .ty-hero h1 {
+  font-family: var(--font-serif-display);
   font-size: 2.75rem;
   font-weight: 800;
   margin-bottom: 1rem;
   position: relative;
 }
 .ty-hero p {
+  font-family: var(--font-body);
   font-size: 1.15rem;
   color: rgba(255,255,255,0.85);
   max-width: 600px;
@@ -416,7 +427,7 @@
 .ty-check svg {
   width: 32px;
   height: 32px;
-  color: #22d3ee;
+  color: #FDD25E;
 }
 
 /* Steps Section */
@@ -429,9 +440,10 @@
   margin: 0 auto;
 }
 .ty-steps h2 {
+  font-family: var(--font-serif-display);
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--navy, #16253C);
+  color: #16253C;
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -451,8 +463,8 @@
 .ty-step-num {
   width: 40px;
   height: 40px;
-  background: var(--navy, #16253C);
-  color: #fff;
+  background: #FDD25E;
+  color: #0F1A2A;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -462,13 +474,15 @@
   margin: 0 auto 1rem;
 }
 .ty-step-card h3 {
+  font-family: var(--font-serif-display);
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--navy, #16253C);
+  color: #16253C;
   margin-bottom: 0.5rem;
 }
 .ty-step-card p {
-  color: #666;
+  font-family: var(--font-body);
+  color: #0F1A2A;
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
@@ -485,13 +499,15 @@
   text-align: center;
 }
 .ty-scheduler h2 {
+  font-family: var(--font-serif-display);
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--navy, #16253C);
+  color: #16253C;
   margin-bottom: 0.75rem;
 }
 .ty-scheduler > .ty-scheduler-inner > p {
-  color: #666;
+  font-family: var(--font-body);
+  color: #0F1A2A;
   margin-bottom: 2rem;
 }
 .ty-scheduler-embed {
@@ -512,7 +528,7 @@
   color: #888;
 }
 .ty-scheduler-fallback a {
-  color: var(--navy, #16253C);
+  color: #16253C;
   font-weight: 600;
 }
 
@@ -530,13 +546,15 @@
   align-items: start;
 }
 .ty-prepare-left h2 {
+  font-family: var(--font-serif-display);
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--navy, #16253C);
+  color: #16253C;
   margin-bottom: 0.5rem;
 }
 .ty-prepare-left > p {
-  color: #666;
+  font-family: var(--font-body);
+  color: #0F1A2A;
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
@@ -551,9 +569,10 @@
   gap: 12px;
   padding: 0.75rem 0;
   border-bottom: 1px solid rgba(0,0,0,0.06);
-  color: #333;
+  color: #0F1A2A;
   font-size: 1rem;
   line-height: 1.5;
+  font-family: var(--font-body);
 }
 .ty-checklist li:last-child {
   border-bottom: none;
@@ -561,7 +580,7 @@
 .ty-checklist-icon {
   width: 22px;
   height: 22px;
-  color: #22c55e;
+  color: #57A5F4;
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -573,13 +592,15 @@
   border: 1px solid rgba(0,0,0,0.06);
 }
 .ty-prepare-card h3 {
+  font-family: var(--font-serif-display);
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--navy, #16253C);
+  color: #16253C;
   margin-bottom: 1rem;
 }
 .ty-prepare-card p {
-  color: #666;
+  font-family: var(--font-body);
+  color: #0F1A2A;
   line-height: 1.7;
   font-size: 0.95rem;
   margin-bottom: 0.75rem;
@@ -590,18 +611,19 @@
 
 /* Contact fallback */
 .ty-contact {
-  background: var(--navy, #16253C);
+  background: #16253C;
   padding: 3rem 2rem;
   text-align: center;
   color: #fff;
 }
 .ty-contact p {
+  font-family: var(--font-body);
   font-size: 1.05rem;
   color: rgba(255,255,255,0.85);
   margin-bottom: 0.5rem;
 }
 .ty-contact a {
-  color: #fff;
+  color: #FDD25E;
   font-weight: 600;
 }
 
@@ -620,6 +642,7 @@
             <polyline points="20 6 9 17 4 12"/>
         </svg>
     </div>
+    <div class="ty-hero-eyebrow">Consultation Confirmed</div>
     <h1>You're In. Here's What Happens Next.</h1>
     <p>Thank you for reaching out to Capital Wealth. You've taken the first step toward a retirement plan that actually works. Now let's get your consultation on the calendar.</p>
 </section>
@@ -681,7 +704,7 @@
                 </li>
                 <li>
                     <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
-                    <span><strong>Social Security statement</strong> — available at <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener" style="color: var(--navy, #16253C); font-weight: 600;">ssa.gov/myaccount</a></span>
+                    <span><strong>Social Security statement</strong> — available at <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener" style="color: #16253C; font-weight: 600;">ssa.gov/myaccount</a></span>
                 </li>
                 <li>
                     <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
