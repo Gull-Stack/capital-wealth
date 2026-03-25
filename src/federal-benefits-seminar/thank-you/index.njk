@@ -1,0 +1,373 @@
+---
+layout: layouts/base-finpay.njk
+title: "You're Registered | Federal Benefits Workshop | Capital Wealth"
+description: "You're registered for the Federal Benefits Workshop at Weber State University. Schedule your follow-up consultation below."
+noindex: true
+excludeFromSitemap: true
+bodyClass: "landing-page"
+---
+
+<style>
+/* Kill main padding that accounts for fixed header */
+.landing-page main {
+  padding-top: 0 !important;
+}
+
+/* Hide nav on thank-you page */
+.landing-page .finpay-header {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
+
+.ty-hero {
+  background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%);
+  padding: 2.5rem 2rem 2rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.ty-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: url('/assets/images/logos/logo-icon-color.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.03;
+}
+.ty-hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FDD25E;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.ty-hero h1 {
+  font-family: var(--font-serif-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  position: relative;
+  color: #ffffff;
+}
+.ty-hero p {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  position: relative;
+}
+.ty-check {
+  width: 64px;
+  height: 64px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+.ty-check svg {
+  width: 32px;
+  height: 32px;
+  color: #FDD25E;
+}
+
+/* Steps Section */
+.ty-steps {
+  background: #f8f9fa;
+  padding: 3.5rem 2rem;
+}
+.ty-steps-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ty-steps h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #16253C;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.ty-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.ty-step-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.ty-step-num {
+  width: 40px;
+  height: 40px;
+  background: #FDD25E;
+  color: #0F1A2A;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 auto 1rem;
+}
+.ty-step-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #16253C;
+  margin-bottom: 0.5rem;
+}
+.ty-step-card p {
+  font-family: var(--font-body);
+  color: #0F1A2A;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Scheduler Embed */
+.ty-scheduler {
+  padding: 3.5rem 2rem;
+  background: #fff;
+}
+.ty-scheduler-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.ty-scheduler h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #16253C;
+  margin-bottom: 0.75rem;
+}
+.ty-scheduler > .ty-scheduler-inner > p {
+  font-family: var(--font-body);
+  color: #0F1A2A;
+  margin-bottom: 2rem;
+}
+.ty-scheduler-embed {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 600px;
+  background: #fafafa;
+}
+.ty-scheduler-embed iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+.ty-scheduler-fallback {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #888;
+}
+.ty-scheduler-fallback a {
+  color: #57A5F4;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Preparation Checklist */
+.ty-prepare {
+  padding: 3.5rem 2rem;
+  background: #f8f9fa;
+}
+.ty-prepare-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.ty-prepare-left h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #16253C;
+  margin-bottom: 0.5rem;
+}
+.ty-prepare-left > p {
+  font-family: var(--font-body);
+  color: #0F1A2A;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.ty-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ty-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  color: #0F1A2A;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: var(--font-body);
+}
+.ty-checklist li:last-child {
+  border-bottom: none;
+}
+.ty-checklist-icon {
+  width: 22px;
+  height: 22px;
+  color: #57A5F4;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.ty-prepare-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.ty-prepare-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #16253C;
+  margin-bottom: 1rem;
+}
+.ty-prepare-card p {
+  font-family: var(--font-body);
+  color: #0F1A2A;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+.ty-prepare-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact fallback */
+.ty-contact {
+  background: #16253C;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+.ty-contact p {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 0.5rem;
+}
+.ty-contact a {
+  color: #FDD25E;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .ty-hero { padding: 1.5rem 1rem 1rem; }
+  .ty-hero h1 { font-size: 1.5rem; }
+  .ty-hero p { font-size: 0.95rem; }
+  .ty-check { width: 48px; height: 48px; margin-bottom: 1rem; }
+  .ty-check svg { width: 24px; height: 24px; }
+  .ty-steps-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .ty-prepare-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .ty-scheduler { padding: 1rem !important; }
+  .ty-scheduler-inner { padding: 0; }
+  .ty-scheduler-embed { border: none; border-radius: 0; min-height: 500px; }
+  .ty-scheduler-embed iframe { height: 550px; }
+  .ty-prepare { padding: 2rem 1rem; }
+  .ty-contact { padding: 2rem 1rem; }
+}
+</style>
+
+{# ═══ HERO — Confirmation + Scheduler IMMEDIATELY ═══ #}
+<section class="ty-hero">
+    <div class="ty-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+        </svg>
+    </div>
+    <div class="ty-hero-eyebrow">Registration Confirmed</div>
+    <h1>You're In. April 9th, Weber State.</h1>
+    <p>You're confirmed for the Federal Benefits Workshop. While you're here — schedule a complimentary one-on-one consultation with Mike Stevens to review your specific situation.</p>
+</section>
+
+{# ═══ ZOOM SCHEDULER EMBED — RIGHT AFTER HERO ═══ #}
+<section class="ty-scheduler" style="padding-top: 2rem;">
+    <div class="ty-scheduler-inner">
+        <div class="ty-scheduler-embed">
+            <iframe src="https://scheduler.zoom.us/capital-wealth/discovery-visit?embed=true" title="Schedule a consultation with Capital Wealth" loading="lazy" allow="clipboard-write" style="width: 100%; height: 700px; border: none;"></iframe>
+        </div>
+        <p class="ty-scheduler-fallback">Having trouble? <a href="https://scheduler.zoom.us/capital-wealth/discovery-visit" target="_blank" rel="noopener">Open the scheduler in a new tab</a> or call us at <a href="tel:8012102800">801.210.2800</a></p>
+    </div>
+</section>
+
+{# ═══ PREPARATION CHECKLIST ═══ #}
+<section class="ty-prepare">
+    <div class="ty-prepare-inner">
+        <div class="ty-prepare-left">
+            <h2>How to Prepare for Your Meeting</h2>
+            <p>You don't need to bring anything to your first consultation. But if you'd like to get the most out of your time, here's what helps:</p>
+            <ul class="ty-checklist">
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Recent tax return</strong> — helps us identify tax-saving opportunities</span>
+                </li>
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Account balances</strong> — 401(k), IRA, TSP, savings, and any pensions</span>
+                </li>
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Target retirement date</strong> — even a rough idea helps us plan</span>
+                </li>
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Social Security statement</strong> — available at <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener" style="color: #16253C; font-weight: 600;">ssa.gov/myaccount</a></span>
+                </li>
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Bring your spouse</strong> — retirement decisions affect both of you</span>
+                </li>
+                <li>
+                    <svg class="ty-checklist-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Your questions</strong> — write down anything you've been wondering about</span>
+                </li>
+            </ul>
+        </div>
+        <div class="ty-prepare-card">
+            <h3>What to Expect</h3>
+            <p>Your first meeting is a 20-30 minute conversation — not a sales pitch. Mike will listen to your goals, review your situation at a high level, and give you an honest assessment.</p>
+            <p>You'll leave with a clear understanding of where you stand and whether Capital Wealth is the right fit for your family.</p>
+            <p><strong>No pressure. No obligation. Just clarity.</strong></p>
+        </div>
+    </div>
+</section>
+
+{# ═══ CONTACT FALLBACK ═══ #}
+<section class="ty-contact">
+    <p>Prefer to schedule by phone? Call us at <a href="tel:8012102800">801.210.2800</a></p>
+    <p>Monday – Friday, 9am – 5pm MST</p>
+</section>
