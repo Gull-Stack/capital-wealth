@@ -4,9 +4,22 @@ title: "Thank You | Schedule Your Visit | Capital Wealth"
 description: "Thank you for reaching out to Capital Wealth. Schedule your complimentary retirement consultation and learn how to prepare for your first meeting."
 noindex: true
 excludeFromSitemap: true
+bodyClass: "landing-page"
 ---
 
 <style>
+/* Hide nav on thank-you page */
+.landing-page .finpay-header {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
+
 .ty-hero {
   background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%);
   padding: 2.5rem 2rem 2rem;
@@ -268,10 +281,19 @@ excludeFromSitemap: true
 }
 
 @media (max-width: 768px) {
-  .ty-hero h1 { font-size: 2rem; }
+  .ty-hero { padding: 1.5rem 1rem 1rem; }
+  .ty-hero h1 { font-size: 1.5rem; }
+  .ty-hero p { font-size: 0.95rem; }
+  .ty-check { width: 48px; height: 48px; margin-bottom: 1rem; }
+  .ty-check svg { width: 24px; height: 24px; }
   .ty-steps-grid { grid-template-columns: 1fr; gap: 1rem; }
-  .ty-prepare-inner { grid-template-columns: 1fr; }
-  .ty-scheduler-embed iframe { height: 600px; }
+  .ty-prepare-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .ty-scheduler { padding: 1rem !important; }
+  .ty-scheduler-inner { padding: 0; }
+  .ty-scheduler-embed { border: none; border-radius: 0; min-height: 500px; }
+  .ty-scheduler-embed iframe { height: 550px; }
+  .ty-prepare { padding: 2rem 1rem; }
+  .ty-contact { padding: 2rem 1rem; }
 }
 </style>
 
