@@ -1083,8 +1083,8 @@
 }
 
 .sem-sf182 .sem-eyebrow {
-  color: #FDD25E;
-  border-bottom: 2px solid #FDD25E;
+  color: #57A5F4;
+  border-bottom: 2px solid #57A5F4;
   padding-bottom: 4px;
   margin-bottom: 16px;
 }
@@ -1302,58 +1302,124 @@
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  /* 1. Left-align ALL text on mobile (except stats) */
   .sem-hero-content {
     grid-template-columns: 1fr;
-    gap: 64px;
-    text-align: center;
+    gap: 32px;
+    text-align: left;
   }
   
   .sem-hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
+  /* 2. Form: left-align, less padding */
   .sem-form-row {
     grid-template-columns: 1fr;
   }
   
+  .sem-registration-form {
+    padding: 20px 16px;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .sem-form-title {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  
+  .sem-form-subtitle {
+    text-align: left;
+  }
+  
+  .sem-limited-seating {
+    text-align: center;
+  }
+  
+  .sem-privacy-text {
+    text-align: left;
+  }
+  
+  /* 3. SF-182 / Training authorization: left-align */
+  .sem-sf182 {
+    text-align: left;
+    padding: 32px 16px;
+  }
+  
+  .sem-sf182-container {
+    text-align: left;
+  }
+  
+  .sem-sf182-title {
+    font-size: 1.5rem;
+  }
+  
+  /* 4. Speaker section: left-align */
   .sem-curriculum-grid {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 32px;
   }
   
   .sem-speaker-container {
     grid-template-columns: 1fr;
-    text-align: center;
-    gap: 48px;
+    text-align: left;
+    gap: 32px;
   }
   
   .sem-speaker-image {
-    max-width: 350px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
   }
   
+  .sem-speaker-quote-card {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+  
+  /* 5. Venue: fix padding around Weber State photo */
   .sem-venue-content {
     flex-direction: column;
+    gap: 24px;
+  }
+  
+  .sem-venue-image {
+    min-height: 250px;
+    margin: 0 -16px;
+    border-radius: 0;
+    width: calc(100% + 32px);
+  }
+  
+  .sem-venue-details {
+    padding: 24px 0;
   }
   
   .sem-curriculum-card {
-    gap: 24px;
-    padding: 24px;
+    gap: 16px;
+    padding: 20px;
   }
   
-  .sem-registration-form {
-    padding: 32px 24px;
-    margin: 0 16px;
+  .sem-curriculum-sidebar {
+    text-align: left;
   }
   
   .sem-trust-stats {
-    gap: 32px;
+    gap: 24px;
     justify-content: center;
+    text-align: center;
   }
   
   .sem-training-details-grid,
   .sem-registration-details-list {
     grid-template-columns: 1fr;
+  }
+  
+  .sem-registration-details {
+    padding: 24px 16px;
+    text-align: left;
   }
   
   .sem-venue-links-grid {
