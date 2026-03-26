@@ -244,7 +244,25 @@ p {
 }
 
 /* Gradient Buttons */
-.finpay-nav-cta, .finpay-btn-primary {
+.finpay-nav-cta {
+  background: #F5C518;
+  color: var(--primary);
+  padding: 0.5rem 1.25rem;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-soft);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.finpay-btn-primary {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
   color: var(--surface-container-lowest);
   padding: 0.5rem 1.25rem;
@@ -262,7 +280,12 @@ p {
   gap: var(--space-2);
 }
 
-.finpay-nav-cta:hover, .finpay-btn-primary:hover {
+.finpay-nav-cta:hover {
+  background: #e0b215;
+  transform: scale(0.95);
+}
+
+.finpay-btn-primary:hover {
   opacity: 0.9;
   transform: scale(0.95);
 }
