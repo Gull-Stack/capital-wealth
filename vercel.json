@@ -4,6 +4,10 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.retireutah.com" }], "destination": "https://www.capitalwealth.com/l/retire-utah/", "permanent": false },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "retireutah.com" }], "destination": "https://www.capitalwealth.com/l/retire-utah/", "permanent": false },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.retireidaho.com" }], "destination": "https://www.capitalwealth.com/l/retire-idaho/", "permanent": false },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "retireidaho.com" }], "destination": "https://www.capitalwealth.com/l/retire-idaho/", "permanent": false },
     { "source": "/book", "destination": "https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book", "permanent": false },
     { "source": "/book/", "destination": "https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book", "permanent": false },
     { "source": "/federal", "destination": "/services/federal-benefits/", "permanent": true },
