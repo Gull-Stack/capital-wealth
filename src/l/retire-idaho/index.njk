@@ -1,0 +1,190 @@
+---
+layout: layouts/base-finpay.njk
+title: "Retire in Idaho | Fiduciary Retirement Planning | Capital Wealth"
+description: "Planning to retire in Idaho? Get expert fiduciary retirement planning — tax optimization, Social Security strategy, and income planning for Idaho retirees."
+permalink: /l/retire-idaho/
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Retire in Idaho", url: "/l/retire-idaho/" }
+faqSchema:
+  - question: "Is Idaho a good state to retire in?"
+    answer: "Idaho is one of the most tax-friendly states for retirees. Social Security benefits are not taxed, there's a retirement income deduction for qualifying pensions, no estate or inheritance tax, and the cost of living is lower than most western states. Combined with outdoor recreation and strong communities, Idaho consistently ranks as a top retirement destination."
+  - question: "Does Idaho tax Social Security or retirement income?"
+    answer: "Idaho does not tax Social Security benefits. For other retirement income like pensions and 401(k) withdrawals, Idaho allows a deduction for qualifying retirement benefits. We help clients structure withdrawals to minimize their overall Idaho tax burden."
+  - question: "Can I work with Capital Wealth if I live in Idaho?"
+    answer: "Yes. We serve Idaho clients through secure virtual meetings. You get the same comprehensive planning experience — screen sharing, document review, and personalized strategy — from the comfort of your home. Many of our Idaho clients prefer this to driving to an office."
+  - question: "What should I do with my 401(k) when I retire in Idaho?"
+    answer: "It depends on your full financial picture. Rolling over to an IRA can give you more investment options and flexibility, but timing and tax implications matter. We analyze your specific situation to determine the best rollover strategy for Idaho's tax environment."
+  - question: "How much do I need to retire in Idaho?"
+    answer: "There's no one-size-fits-all number, but Idaho's lower cost of living means your savings stretch further than in states like California, Oregon, or Washington. We build a personalized Retirement Money Map that shows exactly how much income you can generate and how long it will last."
+  - question: "Do you help with federal employee retirement in Idaho?"
+    answer: "Yes. We specialize in FERS retirement planning, TSP optimization, and FEHB decisions. Idaho has a significant federal workforce — INL, VA, USDA, Forest Service — and we understand the unique benefits and decisions federal employees face at retirement."
+---
+
+<style>
+.lp-hero { padding: 5rem 2rem 6rem; background: var(--surface-container-low); overflow: hidden; }
+.lp-hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr; gap: 4rem; align-items: center; }
+.lp-chapter-label { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--secondary); margin-bottom: 1.5rem; display: block; }
+.lp-hero-title { font-family: var(--font-serif-display); font-size: clamp(2.8rem, 5vw, 4rem); font-weight: 700; color: var(--primary); line-height: 1.08; margin-bottom: 0.5rem; }
+.lp-hero-title-italic { font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 400; font-style: italic; color: var(--on-surface-variant); line-height: 1.15; margin-bottom: 2rem; display: block; }
+.lp-hero-body { font-size: 1.1rem; line-height: 1.7; color: var(--on-surface-variant); max-width: 540px; margin-bottom: 2.5rem; }
+.lp-btn-primary { display: inline-block; padding: 0.85rem 2rem; border-radius: 16px; text-decoration: none; font-family: var(--font-body); font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; background: rgba(0, 56, 112, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(0, 56, 112, 0.3); color: white; }
+.lp-btn-primary:hover { background: rgba(0, 56, 112, 0.95); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15); }
+.lp-hero-image-wrap { position: relative; }
+.lp-hero-image { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; border-radius: 16px; }
+.lp-pull-quote { position: absolute; bottom: -2rem; left: -3rem; background: rgba(255, 255, 255, 0.45); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); border: 1px solid rgba(255, 255, 255, 0.35); border-left: 4px solid var(--secondary); border-radius: 16px; padding: 2rem; max-width: 320px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06); }
+.lp-pull-quote p { font-family: var(--font-serif-display); font-style: italic; font-size: 1.25rem; line-height: 1.45; color: var(--primary); margin: 0; }
+.lp-pull-quote cite { display: block; font-family: var(--font-mono); font-size: 0.7rem; font-style: normal; letter-spacing: 0.1em; text-transform: uppercase; color: var(--on-surface-variant); margin-top: 1rem; }
+.lp-section { padding: 4rem 2rem; }
+.lp-section-alt { background: var(--surface-container-low); }
+.lp-section-inner { max-width: 800px; margin: 0 auto; }
+.lp-section-wide { max-width: 1000px; margin: 0 auto; }
+.lp-card { background: var(--surface); border-radius: 12px; padding: 1.5rem 2rem; border-left: 4px solid var(--secondary); }
+.lp-card h3 { font-family: var(--font-body); font-weight: 600; color: var(--primary); margin-bottom: 0.5rem; }
+.lp-card p { color: var(--on-surface-variant); line-height: 1.7; margin: 0; }
+.lp-service-card { background: var(--surface-container-low); border-radius: 12px; padding: 2rem; }
+.lp-service-card h3 { font-family: var(--font-body); font-weight: 600; color: var(--primary); margin-bottom: 0.75rem; }
+.lp-service-card p { color: var(--on-surface-variant); line-height: 1.7; margin: 0; }
+.lp-step-num { font-family: var(--font-serif-display); font-size: 2.5rem; color: var(--primary); font-weight: 700; margin-bottom: 0.5rem; }
+.lp-step h3 { font-family: var(--font-body); font-weight: 600; color: var(--primary); margin-bottom: 0.5rem; }
+.lp-step p { color: var(--on-surface-variant); line-height: 1.6; font-size: 0.95rem; margin: 0; }
+.lp-cta { padding: 4rem 2rem; background: var(--surface); }
+.lp-cta-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.lp-cta-title { font-family: var(--font-serif-display); font-size: clamp(2.2rem, 4vw, 3rem); font-style: italic; font-weight: 400; color: var(--primary); margin-bottom: 1.5rem; }
+.lp-cta-body { font-size: 1.05rem; line-height: 1.7; color: var(--on-surface-variant); margin-bottom: 2rem; }
+.lp-cta-image { width: 100%; height: 400px; object-fit: cover; border-radius: 16px; }
+.lp-cta-promise { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--on-surface-variant); margin-top: 1.5rem; }
+@media (max-width: 768px) { .lp-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; } .lp-hero { padding: 4rem 1.5rem 3rem; } .lp-pull-quote { position: relative; bottom: auto; left: auto; margin-top: -2rem; max-width: 100%; } .lp-cta { padding: 3rem 1.5rem; } .lp-cta-inner { grid-template-columns: 1fr; gap: 2rem; } .lp-cta-image { height: 250px; } }
+</style>
+
+<section class="lp-hero">
+  <div class="lp-hero-inner">
+    <div>
+      <span class="lp-chapter-label">Retire in Idaho</span>
+      <h1 class="lp-hero-title">Your Idaho Retirement</h1>
+      <span class="lp-hero-title-italic">Deserves a Real Plan.</span>
+      <p class="lp-hero-body">Idaho is one of the best states to retire in — no Social Security tax, low cost of living, and incredible quality of life. But without the right plan, you could leave thousands on the table. We help Idaho retirees optimize every dollar.</p>
+      <a href="/contact/" class="lp-btn-primary">Get Your Free Retirement Assessment</a>
+    </div>
+    <div class="lp-hero-image-wrap">
+      <img src="/assets/images/services/estate-planning.jpg" alt="Retire in Idaho — fiduciary financial planning" class="lp-hero-image">
+      <div class="lp-pull-quote">
+        <p>"Your retirement income strategy should be as unique as your situation."</p>
+        <cite>Mike Stevens, Founder</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lp-section lp-section-alt">
+  <div class="lp-section-inner">
+    <span class="lp-chapter-label">Why Idaho</span>
+    <h2 style="font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--primary); margin-bottom: 2rem;">Idaho's Retirement Tax Advantages</h2>
+    <div style="display: grid; gap: 1.5rem;">
+      <div class="lp-card">
+        <h3>Social Security Is Tax-Free</h3>
+        <p>Idaho doesn't tax Social Security benefits — period. That's money in your pocket that many other states take.</p>
+      </div>
+      <div class="lp-card">
+        <h3>Retirement Income Deduction</h3>
+        <p>Qualifying pension and retirement plan income is eligible for deduction, reducing your Idaho taxable income.</p>
+      </div>
+      <div class="lp-card">
+        <h3>No Estate or Inheritance Tax</h3>
+        <p>Idaho won't take a cut when you pass wealth to your family. No state estate tax, no inheritance tax.</p>
+      </div>
+      <div class="lp-card">
+        <h3>Your Savings Go Further</h3>
+        <p>Idaho's cost of living is significantly lower than California, Oregon, and Washington — the states most people relocate from.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lp-section">
+  <div class="lp-section-wide">
+    <span class="lp-chapter-label">What We Do</span>
+    <h2 style="font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--primary); margin-bottom: 2rem;">Retirement Planning for Idaho Families</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+      <div class="lp-service-card">
+        <h3>Retirement Income Planning</h3>
+        <p>Turn your 401(k), IRA, pension, and Social Security into a reliable monthly income stream — optimized for Idaho taxes.</p>
+      </div>
+      <div class="lp-service-card">
+        <h3>Tax-Efficient Withdrawals</h3>
+        <p>The order you pull from accounts matters. We sequence withdrawals to keep you in the lowest possible tax bracket.</p>
+      </div>
+      <div class="lp-service-card">
+        <h3>Federal Employee Benefits</h3>
+        <p>FERS, TSP, FEHB — Idaho has a large federal workforce (INL, VA, USDA, Forest Service). We know these benefits inside out.</p>
+      </div>
+      <div class="lp-service-card">
+        <h3>Social Security Strategy</h3>
+        <p>When you claim matters more than most people think. We model the optimal filing strategy for your situation.</p>
+      </div>
+      <div class="lp-service-card">
+        <h3>401(k) & IRA Rollovers</h3>
+        <p>Leaving a job or consolidating accounts? We guide the rollover to avoid tax surprises and set up better investments.</p>
+      </div>
+      <div class="lp-service-card">
+        <h3>Estate & Legacy Planning</h3>
+        <p>Idaho's lack of estate tax is an advantage — but you still need a plan. We help protect and transfer wealth efficiently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lp-section lp-section-alt">
+  <div class="lp-section-inner" style="text-align: center;">
+    <span class="lp-chapter-label">How It Works</span>
+    <h2 style="font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--primary); margin-bottom: 2rem;">Three Steps to Clarity</h2>
+    <p style="color: var(--on-surface-variant); line-height: 1.7; font-size: 1.05rem; max-width: 640px; margin: 0 auto 3rem;">We serve Idaho families through secure virtual meetings. Same comprehensive planning — no drive to Utah required.</p>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: center;">
+      <div class="lp-step">
+        <div class="lp-step-num">1</div>
+        <h3>Free Consultation</h3>
+        <p>30 minutes with Mike Stevens. No cost, no sales pitch. Just an honest look at where you stand.</p>
+      </div>
+      <div class="lp-step">
+        <div class="lp-step-num">2</div>
+        <h3>Full Analysis</h3>
+        <p>We model your complete financial picture — income, taxes, Social Security, benefits, risk.</p>
+      </div>
+      <div class="lp-step">
+        <div class="lp-step-num">3</div>
+        <h3>Your Money Map</h3>
+        <p>A personalized Retirement Money Map showing exactly how to make your savings last.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lp-section" id="faq">
+  <div class="lp-section-inner">
+    <span class="lp-chapter-label">Common Questions</span>
+    <h2 style="font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--primary); margin-bottom: 2rem;">Frequently Asked Questions</h2>
+    <div style="display: grid; gap: 1rem;">
+      {% for item in faqSchema %}
+      <details style="background: var(--surface-container-low); border-radius: 12px; padding: 1.5rem 2rem; cursor: pointer;">
+        <summary style="font-family: var(--font-body); font-weight: 600; color: var(--primary); font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+          {{ item.question }}
+          <span style="font-size: 1.2rem; color: var(--on-surface-variant);">+</span>
+        </summary>
+        <p style="color: var(--on-surface-variant); line-height: 1.7; margin: 1rem 0 0; padding-top: 1rem; border-top: 1px solid var(--outline-variant);">{{ item.answer }}</p>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="lp-cta">
+  <div class="lp-cta-inner">
+    <div>
+      <h2 class="lp-cta-title">Ready for a retirement plan that actually works?</h2>
+      <p class="lp-cta-body">No pressure. No sales pitch. Just a clear-eyed look at your numbers with a fiduciary who's legally obligated to put your interests first.</p>
+      <a href="/contact/" class="lp-btn-primary">Schedule Your Free Assessment</a>
+      <p class="lp-cta-promise">Fiduciary. Fee-Only. Serving Idaho Families.</p>
+    </div>
+    <img src="/assets/images/photos/hero-alpenglow.jpg" alt="Idaho retirement planning" class="lp-cta-image">
+  </div>
+</section>
