@@ -1,4 +1,4 @@
-// Capital Wealth Advisors - Lead Submission API
+// Capital Wealth - Lead Submission API
 // Emails via SendGrid, stores in Supabase (if configured), syncs to Salesforce
 
 const SUPABASE_URL = process.env.SUPABASE_URL;
@@ -68,7 +68,7 @@ async function sendEmail({ to, from, fromName, subject, html, replyTo, cc }) {
     },
     body: JSON.stringify({
       personalizations: [{ to: [{ email: to }], ...(cc ? { cc: [{ email: cc }] } : {}) }],
-      from: { email: from, name: fromName || 'Capital Wealth Advisors' },
+      from: { email: from, name: fromName || 'Capital Wealth' },
       reply_to: replyTo ? { email: replyTo } : undefined,
       subject,
       content: [{ type: 'text/html', value: html }],
@@ -232,12 +232,12 @@ export default async function handler(req, res) {
               </div>
             </div>
             <div style="background: #1f2937; padding: 20px; text-align: center;">
-              <p style="color: #9ca3af; margin: 0; font-size: 14px;">Capital Wealth Advisors • Lehi, UT • (801) 210-2800</p>
+              <p style="color: #9ca3af; margin: 0; font-size: 14px;">Capital Wealth • Lehi, UT • (801) 210-2800</p>
             </div>
           </div>
         `;
       } else {
-        emailSubject = 'Your Consultation Request — Capital Wealth Advisors';
+        emailSubject = 'Your Consultation Request — Capital Wealth';
         confirmationHtml = `
           <div style="font-family: 'Georgia', serif; max-width: 600px; margin: 0 auto;">
             <div style="background: linear-gradient(135deg, #1a2332 0%, #2a3a4a 100%); padding: 30px; text-align: center;">
@@ -254,7 +254,7 @@ export default async function handler(req, res) {
               <p style="font-size: 16px; color: #333;">In the meantime, feel free to call us at <strong>801.210.2800</strong> if you have any questions.</p>
             </div>
             <div style="background: #1a2332; padding: 20px; text-align: center;">
-              <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 14px;">Capital Wealth Advisors &bull; Lehi, UT &bull; 801.210.2800</p>
+              <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 14px;">Capital Wealth &bull; Lehi, UT &bull; 801.210.2800</p>
             </div>
           </div>
         `;
