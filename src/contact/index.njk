@@ -109,6 +109,77 @@ breadcrumbs:
   top: 2rem;
 }
 
+/* Clean form header styling */
+.form-header-clean {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-eyebrow-accent {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FDD25E;
+  margin-bottom: 0.75rem;
+}
+
+/* Improved form styling to match seminar page */
+.seminar-form-clean .contact-form-input,
+.seminar-form-clean .contact-form-select,
+.seminar-form-clean .contact-form-textarea {
+  background: rgba(248, 249, 251, 0.8);
+  border: 1px solid rgba(22, 37, 60, 0.12);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.seminar-form-clean .contact-form-input::placeholder,
+.seminar-form-clean .contact-form-textarea::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.seminar-form-clean .contact-form-input:focus,
+.seminar-form-clean .contact-form-select:focus,
+.seminar-form-clean .contact-form-textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #16253C;
+  box-shadow: 0 0 0 3px rgba(22, 37, 60, 0.08);
+}
+
+.seminar-form-clean .contact-form-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.seminar-form-clean .contact-form-submit {
+  background: #16253C;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.seminar-form-clean .contact-form-submit:hover {
+  background: #0d1521;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(22, 37, 60, 0.3);
+}
+
 .contact-form-title {
   font-family: var(--font-serif-display);
   font-style: italic;
@@ -354,6 +425,17 @@ breadcrumbs:
     grid-column: span 1;
   }
   
+  .form-header-clean {
+    margin-bottom: 1.5rem;
+  }
+  
+  .seminar-form-clean .contact-form-input,
+  .seminar-form-clean .contact-form-select,
+  .seminar-form-clean .contact-form-textarea {
+    padding: 14px;
+    font-size: 16px;
+  }
+  
   .contact-hero-section {
     padding: 2rem 0 3rem;
   }
@@ -384,35 +466,38 @@ breadcrumbs:
     </div>
     
     <div class="contact-form-card">
-      <h2 class="contact-form-title">Request a Consultation</h2>
-      <p class="contact-form-subtitle">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
+      <div class="form-header-clean">
+        <div class="form-eyebrow-accent">LIMITED SEATING</div>
+        <h2 class="contact-form-title">Request a Consultation</h2>
+        <p class="contact-form-subtitle">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
+      </div>
       
-      <form id="contact-form">
+      <form id="contact-form" class="seminar-form-clean">
         <div class="contact-form-grid">
           <div class="contact-form-field">
-            <label for="first_name" class="contact-form-label">First Name *</label>
-            <input type="text" id="first_name" name="first_name" required class="contact-form-input">
+            <label for="first_name" class="contact-form-label">First Name</label>
+            <input type="text" id="first_name" name="first_name" placeholder="First Name" required class="contact-form-input">
           </div>
           
           <div class="contact-form-field">
-            <label for="last_name" class="contact-form-label">Last Name *</label>
-            <input type="text" id="last_name" name="last_name" required class="contact-form-input">
+            <label for="last_name" class="contact-form-label">Last Name</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Last Name" required class="contact-form-input">
           </div>
           
-          <div class="contact-form-field">
-            <label for="email" class="contact-form-label">Email Address *</label>
-            <input type="email" id="email" name="email" required class="contact-form-input">
+          <div class="contact-form-field full-width">
+            <label for="email" class="contact-form-label">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" required class="contact-form-input">
           </div>
           
-          <div class="contact-form-field">
-            <label for="phone" class="contact-form-label">Phone Number *</label>
-            <input type="tel" id="phone" name="phone" required class="contact-form-input">
+          <div class="contact-form-field full-width">
+            <label for="phone" class="contact-form-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required class="contact-form-input">
           </div>
           
-          <div class="contact-form-field">
-            <label for="savings" class="contact-form-label">Savings Amount</label>
+          <div class="contact-form-field full-width">
+            <label for="savings" class="contact-form-label">Savings Amount (Optional)</label>
             <select id="savings" name="savings" class="contact-form-select">
-              <option value="">Please select</option>
+              <option value="">Please select...</option>
               <option value="$250K - $500K">$250K - $500K</option>
               <option value="$500K - $1M">$500K - $1M</option>
               <option value="$1M - $2M">$1M - $2M</option>
@@ -420,21 +505,9 @@ breadcrumbs:
             </select>
           </div>
           
-          <div class="contact-form-field">
-            <label for="retirement-timeline" class="contact-form-label">Retirement Timeline</label>
-            <select id="retirement-timeline" name="retirement-timeline" class="contact-form-select">
-              <option value="">Please select</option>
-              <option value="Already retired">Already retired</option>
-              <option value="1-2 years">1-2 years</option>
-              <option value="3-5 years">3-5 years</option>
-              <option value="5-10 years">5-10 years</option>
-              <option value="10+ years">10+ years</option>
-            </select>
-          </div>
-          
           <div class="contact-form-field full-width">
-            <label for="questions" class="contact-form-label">Questions or Comments</label>
-            <textarea id="questions" name="questions" rows="4" placeholder="Tell us about your retirement planning goals or any specific questions you have..." class="contact-form-textarea"></textarea>
+            <label for="questions" class="contact-form-label">Questions or Planning Goals (Optional)</label>
+            <textarea id="questions" name="questions" rows="3" placeholder="Tell us about your retirement planning goals or any specific questions you have..." class="contact-form-textarea"></textarea>
           </div>
         </div>
         
