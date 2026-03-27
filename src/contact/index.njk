@@ -522,6 +522,24 @@ breadcrumbs:
             status.style.color = '#2d8a4e';
             status.textContent = "Thank you! Redirecting you to schedule your consultation...";
             this.reset();
+
+            // ── GA4 conversion event ──────────────────────────────────
+            if (typeof gtag === 'function') {
+              gtag('event', 'generate_lead', {
+                event_category: 'lead',
+                event_label: 'contact_form',
+                value: 1
+              });
+            }
+
+            // ── Meta Pixel Lead event ─────────────────────────────────
+            if (typeof fbq === 'function') {
+              fbq('track', 'Lead', {
+                content_name: 'Consultation Request',
+                content_category: 'Retirement Planning'
+              });
+            }
+
             setTimeout(function() {
               window.location.href = '/thank-you/';
             }, 1500);

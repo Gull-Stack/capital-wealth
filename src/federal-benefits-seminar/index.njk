@@ -1368,6 +1368,21 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(result => {
           if (result.success) {
+            // GA4 conversion event
+            if (typeof gtag === 'function') {
+              gtag('event', 'generate_lead', {
+                event_category: 'lead',
+                event_label: 'federal_workshop_registration',
+                value: 1
+              });
+            }
+            // Meta Pixel Lead event
+            if (typeof fbq === 'function') {
+              fbq('track', 'Lead', {
+                content_name: 'Federal Workshop Registration',
+                content_category: 'Federal Benefits'
+              });
+            }
             window.location.href = '/thank-you/';
           } else {
             submitBtn.textContent = 'Confirm Registration';
