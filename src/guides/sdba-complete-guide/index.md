@@ -1,6 +1,6 @@
 ---
 layout: layouts/guide.njk
-title: "Self-Directed Brokerage Accounts: The Complete Guide (2026) | Capital Wealth"
+title: "Self-Directed Brokerage Accounts Guide | Capital Wealth"
 description: "Everything you need to know about SDBAs — what they are, how they work, fees, pros/cons, and whether you should open one. Updated for 2026."
 breadcrumbs:
   - { name: "Home", url: "/" }

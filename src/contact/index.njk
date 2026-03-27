@@ -183,8 +183,9 @@ breadcrumbs:
   padding: 1.25rem;
   font-family: var(--font-body);
   font-size: 1rem;
-  font-weight: 600;
-  background: linear-gradient(135deg, #16253C 0%, #0052a3 100%);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: #16253C;
   color: white;
   border: none;
   border-radius: 12px;
@@ -375,7 +376,7 @@ breadcrumbs:
       
       <div class="advisory-team">
         <div class="team-photos">
-          <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Capital Wealth Advisor" class="team-photo">
+          <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Founder of Capital Wealth" class="team-photo">
           <div class="team-photo placeholder">+</div>
         </div>
         <div class="team-label">Dedicated Advisory Team</div>
@@ -465,10 +466,47 @@ breadcrumbs:
         // Honeypot check — bots auto-fill hidden fields
         if (this.querySelector('[name="website"]').value || this.querySelector('[name="company_url"]').value) return;
 
-        // Time-based check — reject if submitted in under 3 seconds (bots are instant)
+        // Time-based check — reject if submitted in under 5 seconds (bots are instant)
         var timeSinceLoad = (Date.now() - formLoadTime) / 1000;
-        if (timeSinceLoad < 3) {
+        if (timeSinceLoad < 5) {
           status.textContent = 'Please take a moment to fill out the form.';
+          status.style.color = '#ba1a1a';
+          return;
+        }
+
+        // Anti-spam: reject if first name equals last name (doubled name = bot pattern)
+        var firstName = document.getElementById('first_name').value.trim();
+        var lastName = document.getElementById('last_name').value.trim();
+        if (firstName && lastName && firstName.toLowerCase() === lastName.toLowerCase()) {
+          status.textContent = 'Please enter your first and last name separately.';
+          status.style.color = '#ba1a1a';
+          return;
+        }
+
+        // Anti-spam: reject if phone number is in the comments (pasted data = scraper)
+        var phone = document.getElementById('phone').value.trim().replace(/\D/g, '');
+        var questions = document.getElementById('questions').value.trim().replace(/\D/g, '');
+        if (phone && questions && questions === phone) {
+          status.textContent = 'Please use the comments field for questions, not your phone number.';
+          status.style.color = '#ba1a1a';
+          return;
+        }
+
+        // Anti-spam: reject disposable/suspicious email domains
+        var email = document.getElementById('email').value.trim().toLowerCase();
+        var suspiciousDomains = ['parallelaid.com', 'tempmail.com', 'guerrillamail.com', 'mailinator.com', 'throwaway.email', 'yopmail.com', 'sharklasers.com', 'guerrillamailblock.com', 'grr.la', 'dispostable.com'];
+        var emailDomain = email.split('@')[1] || '';
+        if (suspiciousDomains.indexOf(emailDomain) !== -1) {
+          status.textContent = 'Please use a valid email address.';
+          status.style.color = '#ba1a1a';
+          return;
+        }
+
+        // Anti-spam: require savings OR timeline to be selected (real prospects fill these out)
+        var savings = document.getElementById('savings').value;
+        var timeline = document.getElementById('retirement-timeline').value;
+        if (!savings && !timeline) {
+          status.textContent = 'Please select your savings range or retirement timeline so we can prepare for your consultation.';
           status.style.color = '#ba1a1a';
           return;
         }
@@ -556,7 +594,7 @@ breadcrumbs:
       });
       </script>
       
-      <p class="contact-form-disclaimer">By submitting this form, you agree to be contacted by Capital Wealth regarding your retirement planning needs. We respect your privacy and will never share your information.</p>
+      <p class="contact-form-disclaimer">By submitting this form, you agree to be contacted by Capital Wealth regarding your retirement planning needs including SMS outreach. We respect your privacy and will never share your information.</p>
     </div>
   </div>
 </section>

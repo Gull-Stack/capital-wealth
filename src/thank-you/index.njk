@@ -4,12 +4,30 @@ title: "Thank You | Schedule Your Visit | Capital Wealth"
 description: "Thank you for reaching out to Capital Wealth. Schedule your complimentary retirement consultation and learn how to prepare for your first meeting."
 noindex: true
 excludeFromSitemap: true
+bodyClass: "landing-page"
 ---
 
 <style>
+/* Kill main padding that accounts for fixed header */
+.landing-page main {
+  padding-top: 0 !important;
+}
+
+/* Hide nav on thank-you page */
+.landing-page .finpay-header {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
+
 .ty-hero {
   background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%);
-  padding: 4rem 2rem 3rem;
+  padding: 2.5rem 2rem 2rem;
   text-align: center;
   color: #fff;
   position: relative;
@@ -38,15 +56,16 @@ excludeFromSitemap: true
 }
 .ty-hero h1 {
   font-family: var(--font-serif-display);
-  font-size: 2.75rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
   position: relative;
+  color: #ffffff;
 }
 .ty-hero p {
   font-family: var(--font-body);
   font-size: 1.15rem;
-  color: rgba(255,255,255,0.85);
+  color: #ffffff;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.7;
@@ -267,14 +286,23 @@ excludeFromSitemap: true
 }
 
 @media (max-width: 768px) {
-  .ty-hero h1 { font-size: 2rem; }
+  .ty-hero { padding: 1.5rem 1rem 1rem; }
+  .ty-hero h1 { font-size: 1.5rem; }
+  .ty-hero p { font-size: 0.95rem; }
+  .ty-check { width: 48px; height: 48px; margin-bottom: 1rem; }
+  .ty-check svg { width: 24px; height: 24px; }
   .ty-steps-grid { grid-template-columns: 1fr; gap: 1rem; }
-  .ty-prepare-inner { grid-template-columns: 1fr; }
-  .ty-scheduler-embed iframe { height: 600px; }
+  .ty-prepare-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .ty-scheduler { padding: 1rem !important; }
+  .ty-scheduler-inner { padding: 0; }
+  .ty-scheduler-embed { border: none; border-radius: 0; min-height: 500px; }
+  .ty-scheduler-embed iframe { height: 550px; }
+  .ty-prepare { padding: 2rem 1rem; }
+  .ty-contact { padding: 2rem 1rem; }
 }
 </style>
 
-{# ═══ HERO — Confirmation ═══ #}
+{# ═══ HERO — Confirmation + Scheduler IMMEDIATELY ═══ #}
 <section class="ty-hero">
     <div class="ty-check">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
@@ -282,39 +310,13 @@ excludeFromSitemap: true
         </svg>
     </div>
     <div class="ty-hero-eyebrow">Consultation Confirmed</div>
-    <h1>You're In. Here's What Happens Next.</h1>
-    <p>Thank you for reaching out to Capital Wealth. You've taken the first step toward a retirement plan that actually works. Now let's get your consultation on the calendar.</p>
+    <h1>Now Pick a Time</h1>
+    <p>You're in. Choose a date below to schedule your complimentary consultation — virtual or in-person.</p>
 </section>
 
-{# ═══ THREE STEPS ═══ #}
-<section class="ty-steps">
-    <div class="ty-steps-inner">
-        <h2>Your Path to Clarity</h2>
-        <div class="ty-steps-grid">
-            <div class="ty-step-card">
-                <div class="ty-step-num">1</div>
-                <h3>Pick a Time</h3>
-                <p>Choose a date and time that works for you using the scheduler below. Virtual and in-person options available.</p>
-            </div>
-            <div class="ty-step-card">
-                <div class="ty-step-num">2</div>
-                <h3>Prepare</h3>
-                <p>Review the preparation checklist below so we can make the most of your 20-30 minute consultation.</p>
-            </div>
-            <div class="ty-step-card">
-                <div class="ty-step-num">3</div>
-                <h3>Meet Mike</h3>
-                <p>Get a clear, honest assessment of where you stand and what steps will make the biggest difference.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-{# ═══ ZOOM SCHEDULER EMBED ═══ #}
-<section class="ty-scheduler">
+{# ═══ ZOOM SCHEDULER EMBED — RIGHT AFTER HERO ═══ #}
+<section class="ty-scheduler" style="padding-top: 2rem;">
     <div class="ty-scheduler-inner">
-        <h2>Schedule Your Free Visit</h2>
-        <p style="color: #666; margin-bottom: 2rem;">Pick a time that works for you. Your consultation is complimentary and comes with zero obligation.</p>
         <div class="ty-scheduler-embed">
             <iframe src="https://scheduler.zoom.us/capital-wealth/discovery-visit?embed=true" title="Schedule a consultation with Capital Wealth" loading="lazy" allow="clipboard-write" style="width: 100%; height: 700px; border: none;"></iframe>
         </div>

@@ -1,4 +1,4 @@
-// Capital Wealth Advisors - Leads Dashboard API
+// Capital Wealth - Leads Dashboard API
 // Protected endpoint for viewing all leads
 
 const SUPABASE_URL = process.env.SUPABASE_URL;

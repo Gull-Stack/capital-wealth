@@ -381,6 +381,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.capitalwealth.com/federal-benefits-seminar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.capitalwealth.com/disclosures/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -536,6 +541,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.capitalwealth.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.capitalwealth.com/case-studies/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -626,12 +636,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/federal-benefits-seminar/</loc>
+    <loc>https://www.capitalwealth.com/l/federal/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
