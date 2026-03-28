@@ -473,6 +473,48 @@
   color: var(--secondary);
 }
 
+/* Weber State Campus Section */
+.sem-venue-campus {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.sem-venue-campus-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.sem-venue-campus-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sem-venue-campus:hover .sem-venue-campus-image img {
+  transform: scale(1.05);
+}
+
+.sem-venue-campus-content {
+  padding: 24px;
+}
+
+.sem-venue-campus-content h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.sem-venue-campus-content p {
+  font-size: 0.9rem;
+  color: var(--slate-600);
+  line-height: 1.4;
+  margin: 0;
+}
+
 /* Ann intro box - bottom left */
 .sem-ann-intro {
   position: absolute;
@@ -1026,9 +1068,10 @@
 }
 
 .sem-venue-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 64px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .sem-venue-details {
@@ -1069,8 +1112,10 @@
 
 .sem-venue-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
+  margin-bottom: 12px;
+  line-height: 1.3;
 }
 
 .sem-venue-icon {
@@ -1837,6 +1882,17 @@
           <div class="sem-capacity-warning">
             Seats are limited — register early to guarantee your spot
           </div>
+        </div>
+      </div>
+      
+      <!-- Weber State Campus Section -->
+      <div class="sem-venue-campus">
+        <div class="sem-venue-campus-image">
+          <img src="/assets/images/photos/weber-state-davis-campus.jpg" alt="Weber State University Davis Campus" loading="lazy">
+        </div>
+        <div class="sem-venue-campus-content">
+          <h4>Weber State University Davis Campus</h4>
+          <p>Beautiful modern campus nestled in the foothills of Northern Utah. Easily accessible from I-15 and I-84 with ample parking and convenient facilities for our federal benefits workshop.</p>
         </div>
       </div>
     </div>
