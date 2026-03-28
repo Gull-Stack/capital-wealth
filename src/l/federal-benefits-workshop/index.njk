@@ -110,46 +110,31 @@ bodyClass: "landing-page"
   color: var(--secondary);
 }
 
-/* Weber State Campus Section */
-.sem-venue-campus {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+/* Venue header with integrated image */
+.sem-venue-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
 }
 
-.sem-venue-campus-image {
-  height: 200px;
-  overflow: hidden;
+.sem-venue-title-section {
+  flex: 1;
 }
 
-.sem-venue-campus-image img {
+.sem-venue-image-small {
+  flex-shrink: 0;
+  width: 120px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sem-venue-image-small img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.sem-venue-campus:hover .sem-venue-campus-image img {
-  transform: scale(1.05);
-}
-
-.sem-venue-campus-content {
-  padding: 24px;
-}
-
-.sem-venue-campus-content h4 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 12px;
-}
-
-.sem-venue-campus-content p {
-  font-size: 0.9rem;
-  color: var(--slate-600);
-  line-height: 1.4;
-  margin: 0;
 }
 
 /* Ann hero intro section */
@@ -700,10 +685,9 @@ bodyClass: "landing-page"
 }
 
 .sem-venue-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: start;
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .sem-venue-details {
@@ -1181,15 +1165,20 @@ bodyClass: "landing-page"
   
   /* 5. Venue: fix padding around Weber State photo */
   .sem-venue-content {
-    flex-direction: column;
-    gap: 24px;
+    max-width: none;
+    padding: 0 16px;
   }
   
-  .sem-venue-image {
-    min-height: 250px;
-    margin: 0 -16px;
-    border-radius: 0;
-    width: calc(100% + 32px);
+  .sem-venue-header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .sem-venue-image-small {
+    width: 200px;
+    height: 120px;
+    margin: 0 auto;
   }
   
   .sem-venue-details {
@@ -1457,7 +1446,14 @@ bodyClass: "landing-page"
     <div class="sem-venue-content">
       <div class="sem-venue-details">
         <span class="sem-eyebrow">Location & Logistics</span>
-        <h3 class="sem-venue-title">Weber State University <br><span class="sem-venue-title-light">Davis Campus</span></h3>
+        <div class="sem-venue-header">
+          <div class="sem-venue-title-section">
+            <h3 class="sem-venue-title">Weber State University <br><span class="sem-venue-title-light">Davis Campus</span></h3>
+          </div>
+          <div class="sem-venue-image-small">
+            <img src="/assets/images/photos/weber-state-davis-campus.jpg" alt="Weber State Davis Campus" loading="lazy">
+          </div>
+        </div>
         <div class="sem-venue-info">
           <p class="sem-venue-item">
             <svg class="sem-venue-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -1515,17 +1511,6 @@ bodyClass: "landing-page"
           <div class="sem-capacity-warning">
             Seats are limited — register early to guarantee your spot
           </div>
-        </div>
-      </div>
-      
-      <!-- Weber State Campus Section -->
-      <div class="sem-venue-campus">
-        <div class="sem-venue-campus-image">
-          <img src="/assets/images/photos/weber-state-davis-campus.jpg" alt="Weber State University Davis Campus" loading="lazy">
-        </div>
-        <div class="sem-venue-campus-content">
-          <h4>Weber State University Davis Campus</h4>
-          <p>Beautiful modern campus nestled in the foothills of Northern Utah. Easily accessible from I-15 and I-84 with ample parking and convenient facilities for our federal benefits workshop.</p>
         </div>
       </div>
     </div>
