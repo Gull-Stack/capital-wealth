@@ -65,6 +65,46 @@ bodyClass: "landing-page"
   -webkit-backdrop-filter: blur(24px);
 }
 
+/* Hero Complimentary Badge */
+.sem-hero-complimentary-badge {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 32px;
+  max-width: 500px;
+}
+
+.sem-complimentary-title {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.sem-complimentary-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--slate-600);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sem-complimentary-features {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.sem-complimentary-feature {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--secondary);
+  text-align: center;
+}
+
 /* Editorial pull quote with orange left border */
 .sem-editorial-pull-quote {
   position: relative;
@@ -977,6 +1017,15 @@ bodyClass: "landing-page"
     text-align: center;
   }
   
+  .sem-hero-complimentary-badge {
+    margin-top: 24px;
+  }
+  
+  .sem-complimentary-features {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
   .sem-privacy-text {
     text-align: left;
   }
@@ -1112,18 +1161,13 @@ bodyClass: "landing-page"
       <p class="sem-hero-description">
         A comprehensive understanding of FERS, TSP, FEHB, FEGLI and Social Security will be presented for northern Utah federal employees. If you've ever found yourself wishing there was an actual person you could talk to about your federal benefits, this workshop is for you!
       </p>
-      <div class="sem-trust-stats">
-        <div class="sem-trust-stat">
-          <span class="sem-trust-stat-label">Trust Signal</span>
-          <span class="sem-trust-stat-value">Fiduciary Excellence</span>
-        </div>
-        <div class="sem-trust-stat">
-          <span class="sem-trust-stat-label">Track Record</span>
-          <span class="sem-trust-stat-value">Federal Focus</span>
-        </div>
-        <div class="sem-trust-stat">
-          <span class="sem-trust-stat-label">Event Type</span>
-          <span class="sem-trust-stat-value">No-Cost Educational</span>
+      <div class="sem-hero-complimentary-badge sem-liquid-glass">
+        <h3 class="sem-complimentary-title">100% Complimentary Workshop</h3>
+        <p class="sem-complimentary-description">Free admission for federal employees and spouses. No cost, no obligation, no sales pitch — just valuable education you can use immediately.</p>
+        <div class="sem-complimentary-features">
+          <span class="sem-complimentary-feature">✓ No hidden fees</span>
+          <span class="sem-complimentary-feature">✓ No products sold</span>
+          <span class="sem-complimentary-feature">✓ Pure education</span>
         </div>
       </div>
     </div>
@@ -1133,7 +1177,7 @@ bodyClass: "landing-page"
       <div class="sem-registration-form sem-liquid-glass">
         <div class="sem-limited-seating">Limited Seating</div>
         <h3 class="sem-form-title">Secure Your Briefing</h3>
-        <p class="sem-form-subtitle">Complimentary admission for federal employees and spouses.</p>
+        <p class="sem-form-subtitle">100% complimentary workshop — no cost, no obligation, no sales pitch.</p>
         <form id="sem-registration-form">
           <div class="sem-form-row">
             <div class="sem-form-group">
@@ -1256,7 +1300,7 @@ bodyClass: "landing-page"
   <div class="sem-speaker-container">
     <div class="sem-speaker-image-wrapper">
       <div class="sem-speaker-image">
-        <img src="/assets/images/photos/federal/capitalwealth-federal-office-analysis.jpg" alt="Ann Werts">
+        <img src="/assets/images/photos/federal/ann-werts-headshot.jpg" alt="Ann Werts">
       </div>
       <div class="sem-speaker-quote-card">
         <p class="sem-speaker-quote-label">Federal Benefits Specialist</p>
