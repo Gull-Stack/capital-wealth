@@ -606,6 +606,139 @@
   margin-bottom: 0;
 }
 
+.ty-parking-button-container {
+  margin: 20px 0;
+}
+
+.ty-parking-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #16253C;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+
+.ty-parking-button:hover {
+  background: #0F1A2A;
+  color: white;
+  text-decoration: none;
+}
+
+.ty-parking-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ty-parking-note {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 12px;
+}
+
+/* Team Contact Section */
+.ty-team-contact {
+  padding: 3rem 2rem;
+  background: #f8f9fa;
+}
+
+.ty-team-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ty-team-inner h2 {
+  font-family: var(--font-serif-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #16253C;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.ty-contact-steps {
+  margin-bottom: 3rem;
+}
+
+.ty-contact-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ty-step-number {
+  width: 32px;
+  height: 32px;
+  background: #C4A82A;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.ty-step-content h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #16253C;
+  margin: 0 0 8px;
+}
+
+.ty-step-content p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.ty-contact-info {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ty-contact-info h3 {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #16253C;
+  margin-bottom: 1rem;
+}
+
+.ty-contact-info a {
+  color: #C4A82A;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ty-contact-info a:hover {
+  text-decoration: underline;
+}
+
+.ty-contact-note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
 /* Federal Benefits Specific */
 .ty-federal-benefits {
   padding: 3.5rem 2rem;
@@ -718,6 +851,9 @@
   .ty-parking { padding: 1.5rem; }
   .ty-parking-inner { flex-direction: column; gap: 1rem; text-align: center; }
   .ty-parking-icon { margin: 0 auto; }
+  .ty-team-contact { padding: 2rem 1rem; }
+  .ty-contact-step { flex-direction: column; text-align: center; gap: 12px; }
+  .ty-step-number { margin: 0 auto; }
 }
 </style>
 
@@ -730,7 +866,7 @@
     </div>
     <div class="ty-hero-eyebrow">Workshop Registration Confirmed</div>
     <h1>You're All Set for the Federal Benefits Workshop</h1>
-    <p>Your spot is reserved. Now take the next step — schedule a private consultation to discuss your specific federal benefits strategy.</p>
+    <p>Your spot is reserved. Our team will reach out to confirm your attendance and answer any questions you have ahead of the workshop.</p>
 </section>
 
 
@@ -742,60 +878,56 @@
             </svg>
         </div>
         <div class="ty-parking-content">
-            <h3>Important Parking Instructions</h3>
-            <p><strong>Your parking permit will be emailed to you within 24 hours.</strong></p>
-            <p><strong>Critical:</strong> You must <em>print</em> your parking permit and display it on your driver's side dashboard. Digital display on phone will NOT work. Valid in DAVIS W LOTS ONLY.</p>
+            <h3>Weber State University Parking</h3>
+            <p>You'll need a parking permit to park on campus. <strong>Print and display on your dashboard</strong> — digital permits on phones will NOT work.</p>
+            <div class="ty-parking-button-container">
+                <a href="/assets/parking/weber-state-davis-parking-permit.pdf" download class="ty-parking-button" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download & Print Parking Permit
+                </a>
+            </div>
+            <p class="ty-parking-note">Valid in DAVIS W LOTS ONLY. Must be printed and displayed on driver's side dashboard.</p>
         </div>
     </div>
 </section>
 
 
-<section class="ty-value">
-    <div class="ty-value-inner">
-        <h2>Why Schedule Your Federal Benefits Consultation?</h2>
-        <p>The workshop covers general strategies. Your one-on-one consultation focuses on YOUR specific situation.</p>
-        <div class="ty-value-grid">
-            <div class="ty-value-card">
-                <div class="ty-value-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
-                </div>
-                <h3>Personalized Strategy</h3>
-                <p>Review your TSP, pension, Social Security, and health benefits in detail — not just general advice.</p>
-            </div>
-            <div class="ty-value-card">
-                <div class="ty-value-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"/>
-                        <polyline points="12,6 12,12 16,14"/>
-                    </svg>
-                </div>
-                <h3>Timing Optimization</h3>
-                <p>When should you retire? How do you maximize your federal benefits? We'll map out your timeline.</p>
-            </div>
-            <div class="ty-value-card">
-                <div class="ty-value-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                    </svg>
-                </div>
-                <h3>Your Questions Answered</h3>
-                <p>Bring your specific concerns about TSP withdrawals, FEHB in retirement, survivor benefits, and more.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 
-<section class="ty-scheduler">
-    <div class="ty-scheduler-inner">
-        <h2>Schedule Your Federal Benefits Consultation</h2>
-        <p>Complimentary 30-minute session to review your federal employee benefits and retirement strategy.</p>
-        <div class="ty-scheduler-embed">
-            <iframe src="https://scheduler.zoom.us/capital-wealth/federal-benefits-consultation?embed=true" title="Schedule Federal Benefits Consultation" loading="lazy" allow="clipboard-write" style="width: 100%; height: 700px; border: none;"></iframe>
+<section class="ty-team-contact">
+    <div class="ty-team-inner">
+        <h2>What Happens Next?</h2>
+        <div class="ty-contact-steps">
+            <div class="ty-contact-step">
+                <div class="ty-step-number">1</div>
+                <div class="ty-step-content">
+                    <h3>Our Team Will Contact You</h3>
+                    <p>Within 24 hours, a member of our team will reach out to confirm your attendance and answer any preliminary questions.</p>
+                </div>
+            </div>
+            <div class="ty-contact-step">
+                <div class="ty-step-number">2</div>
+                <div class="ty-step-content">
+                    <h3>Download Your Parking Permit</h3>
+                    <p>Use the download button above to get your Weber State parking permit. Print it and display on your dashboard.</p>
+                </div>
+            </div>
+            <div class="ty-contact-step">
+                <div class="ty-step-number">3</div>
+                <div class="ty-step-content">
+                    <h3>Prepare Your Questions</h3>
+                    <p>Think about your specific federal benefits questions. This workshop is interactive — Ann encourages questions!</p>
+                </div>
+            </div>
         </div>
-        <p class="ty-scheduler-fallback">Having trouble with the scheduler? <a href="https://scheduler.zoom.us/capital-wealth/federal-benefits-consultation" target="_blank" rel="noopener">Open it in a new tab</a> or call <a href="tel:8012102800">801.210.2800</a></p>
+        
+        <div class="ty-contact-info">
+            <h3>Questions Before the Workshop?</h3>
+            <p>Email us at <a href="mailto:info@capitalwealth.com">info@capitalwealth.com</a></p>
+            <p class="ty-contact-note">Our team will respond within a few hours and can address any concerns ahead of time.</p>
+        </div>
     </div>
 </section>
 
