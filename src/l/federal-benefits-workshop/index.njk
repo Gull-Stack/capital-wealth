@@ -629,6 +629,8 @@ bodyClass: "landing-page"
   border-bottom: 2px solid #C4A82A;
   padding-bottom: 4px;
   margin-bottom: 16px;
+  display: block;
+  width: fit-content;
 }
 
 .sem-speaker-name {
@@ -711,6 +713,8 @@ bodyClass: "landing-page"
   border-bottom: 2px solid #C4A82A;
   padding-bottom: 4px;
   margin-bottom: 16px;
+  display: block;
+  width: fit-content;
 }
 
 .sem-venue-title {
@@ -1076,7 +1080,21 @@ bodyClass: "landing-page"
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  /* 1. Left-align ALL text on mobile (except stats) */
+  /* GLOBAL MOBILE CONTAINER - Follow hero section padding */
+  .sem-curriculum,
+  .sem-speaker,
+  .sem-venue,
+  .sem-sf182,
+  .sem-faq {
+    padding: 48px 24px;
+  }
+  
+  /* Hero section perfect as is */
+  .sem-hero {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
   .sem-hero-content {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -1084,16 +1102,31 @@ bodyClass: "landing-page"
   }
   
   .sem-hero-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   
-  /* 2. Form: left-align, less padding */
+  /* Slightly larger mobile fonts */
+  .sem-hero-description {
+    font-size: 1.1rem !important;
+  }
+  
+  .sem-speaker-bio,
+  .sem-venue-item,
+  .sem-curriculum-card p {
+    font-size: 1rem;
+  }
+  
+  .sem-venue-title {
+    font-size: 1.8rem;
+  }
+  
+  /* Form: left-align, consistent padding */
   .sem-form-row {
     grid-template-columns: 1fr;
   }
   
   .sem-registration-form {
-    padding: 20px 16px;
+    padding: 24px;
     margin: 0;
     text-align: left;
   }
@@ -1168,26 +1201,73 @@ bodyClass: "landing-page"
     max-width: 100%;
   }
   
-  /* 5. Venue: fix padding around Weber State photo */
+  /* 5. VENUE SECTION - Complete mobile redesign */
   .sem-venue-content {
     max-width: none;
-    padding: 0 16px;
+    padding: 0;
+  }
+  
+  .sem-venue-details {
+    background: transparent;
+    padding: 0;
+    border: none;
+    border-left: none;
   }
   
   .sem-venue-header {
     flex-direction: column;
-    gap: 16px;
-    text-align: center;
+    gap: 24px;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  
+  .sem-venue-title-section {
+    order: 1;
+  }
+  
+  .sem-venue-title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  
+  .sem-venue-title-light {
+    color: var(--slate-600);
+    font-weight: 400;
   }
   
   .sem-venue-image-small {
-    width: 200px;
-    height: 120px;
-    margin: 0 auto;
+    order: 2;
+    width: 100%;
+    height: 180px;
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
   }
   
-  .sem-venue-details {
-    padding: 24px 0;
+  .sem-venue-image-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .sem-venue-info {
+    margin-top: 0;
+  }
+  
+  .sem-venue-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .sem-venue-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+    opacity: 0.7;
   }
   
   .sem-curriculum-card {
@@ -1211,13 +1291,40 @@ bodyClass: "landing-page"
   }
   
   .sem-registration-details {
-    padding: 24px 16px;
+    padding: 24px;
     text-align: left;
   }
   
   .sem-venue-links-grid {
     flex-direction: column;
     gap: 16px;
+  }
+  
+  .sem-venue-link {
+    padding: 16px 20px;
+    font-size: 1rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .sem-venue-links h4 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .sem-parking-note {
+    padding: 20px;
+    margin-top: 24px;
+    border-radius: 12px;
+    background: #FFF8DC;
+    border-left: 4px solid #FDD25E;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .sem-parking-note strong {
+    color: #16253C;
   }
 }
 
@@ -1236,12 +1343,12 @@ bodyClass: "landing-page"
   }
   
   .sem-sf182-content {
-    padding: 32px 24px;
+    padding: 24px;
   }
   
   .sem-training-details,
   .sem-registration-details {
-    padding: 32px 24px;
+    padding: 24px;
   }
 }
 </style>
