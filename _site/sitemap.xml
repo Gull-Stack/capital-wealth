@@ -481,11 +481,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/federal-benefits-seminar/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/federal-workshop-april-9/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -647,6 +642,16 @@
   </url>
   <url>
     <loc>https://www.capitalwealth.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/facebook-report/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/federal-benefits-seminar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
