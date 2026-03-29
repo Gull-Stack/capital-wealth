@@ -3,10 +3,14 @@
 
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY;
-const DASHBOARD_PASSWORD = 'cwa2026';
+const DASHBOARD_PASSWORD = process.env.DASHBOARD_API_KEY;
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  const ALLOWED_ORIGINS = ['https://www.capitalwealth.com', 'https://capitalwealth.com', 'https://capitalwealthfederal.com', 'https://www.capitalwealthfederal.com'];
+  const origin = req.headers.origin;
+  if (ALLOWED_ORIGINS.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
