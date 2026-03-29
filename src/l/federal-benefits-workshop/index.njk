@@ -1,7 +1,7 @@
 ---
 layout: layouts/base-finpay.njk
 title: "Federal Benefits Workshop: Weber State University"
-description: "Interactive federal benefits workshop with Ann Werts. Learn about FERS, TSP, FEHB, FEGLI and Social Security with personalized Q&A sessions for northern Utah federal employees."
+description: "Interactive federal benefits workshop with Ann Werts. Learn about FERS, TSP, FEHB, FEGLI and Social Security with educational Q&A sessions for federal employees."
 bodyClass: "landing-page"
 ---
 
@@ -273,9 +273,23 @@ bodyClass: "landing-page"
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.1;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   font-family: var(--font-serif-display), serif;
   color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.sem-workshop-date {
+  font-family: var(--font-mono), monospace;
+  font-size: 1.1rem;
+  color: #FDD25E;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
 }
 
 .sem-hero-title-accent {
@@ -286,10 +300,11 @@ bodyClass: "landing-page"
 
 .sem-hero-description {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4;
   max-width: 600px;
-  color: var(--primary-fixed);
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   opacity: 0.9;
   margin-bottom: 48px;
 }
@@ -1105,6 +1120,11 @@ bodyClass: "landing-page"
     font-size: 2.2rem;
   }
   
+  .sem-workshop-date {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+  
   /* Slightly larger mobile fonts */
   .sem-hero-description {
     font-size: 1.1rem !important;
@@ -1369,8 +1389,9 @@ bodyClass: "landing-page"
         Federal Benefits <br> <span class="sem-workshop-yellow">Workshop</span>: <br>
         <span class="sem-hero-title-accent">Weber State University</span>
       </h1>
+      <p class="sem-workshop-date">Thursday, April 9th • 9:00 AM - 11:00 AM</p>
       <p class="sem-hero-description">
-        Interactive workshop covering Federal Employees Retirement System (FERS), Thrift Savings Plan (TSP), Federal Employees Health Benefits (FEHB), Federal Employees Group Life Insurance (FEGLI) and Social Security for northern Utah federal employees.
+        Interactive workshop covering Federal Employees Retirement System (FERS), Thrift Savings Plan (TSP), Federal Employees Health Benefits (FEHB), Federal Employees Group Life Insurance (FEGLI) and Social Security for federal employees.
       </p>
       
       <!-- Ann Intro Section -->
@@ -1391,7 +1412,7 @@ bodyClass: "landing-page"
     <div class="sem-registration-card">
       <div class="sem-registration-form sem-liquid-glass">
         <div class="sem-limited-seating">Less than 25 seats remaining</div>
-        <h3 class="sem-form-title">Secure Your Briefing</h3>
+        <h3 class="sem-form-title">Reserve Your Seat</h3>
         <p class="sem-form-subtitle">100% complimentary workshop — no cost, no obligation, no sales pitch.</p>
         <form id="sem-registration-form">
           <div class="sem-form-row">
@@ -1417,7 +1438,8 @@ bodyClass: "landing-page"
             <label class="sem-checkbox-label" for="spouse">Are you bringing your spouse or a guest?</label>
           </div>
           <button class="sem-submit-btn" type="submit">Confirm Registration</button>
-          <p class="sem-privacy-text">Privacy Protected & No-Obligation Educational Event</p>
+          <p class="sem-privacy-text">Privacy Protected & No-Obligation Educational Event<br>
+          <small>We will not sell your information or send unsolicited communications. Capital Wealth is an SEC registered investment advisor.</small></p>
           
           <input type="hidden" name="source" value="federal-benefits-seminar">
           <input type="hidden" name="lead_type" value="federal-workshop-registration">
@@ -1435,10 +1457,7 @@ bodyClass: "landing-page"
     <div class="sem-curriculum-grid">
       <div class="sem-curriculum-sidebar">
         <span class="sem-eyebrow">Curriculum</span>
-        <h2>Mastering the Legacy of Your Service</h2>
-        <div class="sem-editorial-pull-quote">
-          <p class="sem-pull-quote">"Your federal benefits are more than a paycheck; they are a multi-generational legacy that requires active stewardship."</p>
-        </div>
+        <h2>Federal Benefits Workshop Agenda</h2>
       </div>
       <div class="sem-curriculum-cards">
         <!-- Chapter 01 -->
@@ -1446,7 +1465,7 @@ bodyClass: "landing-page"
           <span class="sem-chapter-number">CH. 01</span>
           <div>
             <h4>Federal Employees Retirement System (FERS)</h4>
-            <p>Deep dive into your three-part retirement system: Basic Benefit Plan, Social Security, and TSP. Learn pension calculations, survivor benefits, and strategic retirement timing. <strong>Interactive Q&A:</strong> Bring your specific FERS questions for personalized guidance from Ann.</p>
+            <p>Deep dive into your three-part retirement system: Basic Benefit Plan, Social Security, and TSP. Learn pension calculations, survivor benefits, and strategic retirement timing. <strong>Interactive Q&A:</strong> General questions about FERS strategies and timing.</p>
             <div class="sem-card-tags">
               <span class="sem-card-tag">Pension Calculations</span>
               <span class="sem-card-tag">Survivor Benefits</span>
@@ -1459,7 +1478,7 @@ bodyClass: "landing-page"
           <span class="sem-chapter-number">CH. 02</span>
           <div>
             <h4>Thrift Savings Plan (TSP)</h4>
-            <p>Master your TSP with contribution strategies, fund selection, withdrawal options, and rollover decisions. Learn about matching contributions and tax implications. <strong>1:1 Discussion:</strong> Get personalized TSP strategy recommendations based on your situation.</p>
+            <p>Master your TSP with contribution strategies, fund selection, withdrawal options, and rollover decisions. Learn about matching contributions and tax implications. <strong>Interactive Discussion:</strong> General TSP strategies and best practices.</p>
             <div class="sem-card-tags">
               <span class="sem-card-tag">Contributions</span>
               <span class="sem-card-tag">Investment Strategy</span>
@@ -1472,7 +1491,7 @@ bodyClass: "landing-page"
           <span class="sem-chapter-number">CH. 03</span>
           <div>
             <h4>Federal Employees Health Benefits (FEHB)</h4>
-            <p>Navigate health insurance in retirement, Medicare coordination, and enrollment decisions. Understand premium sharing and coverage continuation. <strong>Q&A Focus:</strong> Ask about your specific health benefits scenarios and Medicare timing questions.</p>
+            <p>Navigate health insurance in retirement, Medicare coordination, and enrollment decisions. Understand premium sharing and coverage continuation. <strong>Q&A Focus:</strong> General health benefits scenarios and Medicare timing considerations.</p>
             <div class="sem-card-tags">
               <span class="sem-card-tag">Health Benefits</span>
               <span class="sem-card-tag">Medicare Timing</span>
@@ -1485,7 +1504,7 @@ bodyClass: "landing-page"
           <span class="sem-chapter-number">CH. 04</span>
           <div>
             <h4>Federal Employees Group Life Insurance (FEGLI)</h4>
-            <p>Analyze your life insurance options: Basic Life, Option A, Option B, and Option C. Compare FEGLI costs with private alternatives and understand post-retirement coverage. <strong>Personal Review:</strong> Discuss your specific FEGLI situation with Ann.</p>
+            <p>Analyze your life insurance options: Basic Life, Option A, Option B, and Option C. Compare FEGLI costs with private alternatives and understand post-retirement coverage. <strong>General Review:</strong> Learn about FEGLI options and considerations.</p>
             <div class="sem-card-tags">
               <span class="sem-card-tag">Life Insurance</span>
               <span class="sem-card-tag">Coverage Options</span>
@@ -1523,7 +1542,6 @@ bodyClass: "landing-page"
         <img src="/assets/images/photos/federal/ann-werts-headshot.jpg" alt="Ann Werts">
       </div>
       <div class="sem-speaker-quote-card">
-        <p class="sem-speaker-quote-label">Federal Benefits Specialist</p>
         <p class="sem-speaker-quote">"15+ years helping federal employees understand their benefits."</p>
       </div>
     </div>
@@ -1545,7 +1563,7 @@ bodyClass: "landing-page"
         </div>
         <div class="sem-credential-item">
           <span class="sem-checkmark">✓</span>
-          <p class="sem-credential-text">Northern Utah federal benefits specialist</p>
+          <p class="sem-credential-text">Federal benefits education specialist</p>
         </div>
       </div>
     </div>
@@ -1673,7 +1691,7 @@ bodyClass: "landing-page"
     </div>
     <div class="sem-final-cta">
       <a class="sem-final-cta-btn" href="#register">Register for the Briefing</a>
-      <p class="sem-final-cta-note">Northern Utah's Leading Federal Education Event</p>
+      <p class="sem-final-cta-note">Federal Benefits Educational Workshop</p>
     </div>
   </div>
 </section>
