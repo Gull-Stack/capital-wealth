@@ -78,7 +78,7 @@ async function sendEmail({ to, from, fromName, subject, html, replyTo, cc }) {
 }
 
 export default async function handler(req, res) {
-  const ALLOWED_ORIGINS = ['https://www.capitalwealth.com', 'https://capitalwealth.com', 'https://capitalwealthfederal.com', 'https://www.capitalwealthfederal.com'];
+  const ALLOWED_ORIGINS = ['https://www.capitalwealth.com', 'https://capitalwealth.com', 'https://capitalwealthfederal.com', 'https://www.capitalwealthfederal.com', 'https://gullstack.com', 'https://www.gullstack.com'];
   const origin = req.headers.origin;
   if (ALLOWED_ORIGINS.includes(origin)) {
     res.setHeader('Access-Control-Allow-Origin', origin);
