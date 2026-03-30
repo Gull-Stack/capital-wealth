@@ -443,8 +443,8 @@ bodyClass: "landing-page"
 
 .sem-submit-btn {
   width: 100%;
-  background: #16253C;
-  color: #ffffff;
+  background: #FDD25E;
+  color: #0F1A2A;
   padding: 20px;
   border: none;
   border-radius: 8px;
@@ -458,7 +458,7 @@ bodyClass: "landing-page"
 }
 
 .sem-submit-btn:hover {
-  background: var(--primary-container);
+  background: #FCC82F;
   transform: translateY(-1px);
 }
 
@@ -610,15 +610,7 @@ bodyClass: "landing-page"
 }
 
 .sem-speaker-quote-card {
-  position: absolute;
-  bottom: -32px;
-  right: -32px;
-  background: var(--primary);
-  padding: 48px;
-  color: white;
-  z-index: 20;
-  border-radius: 8px;
-  max-width: 300px;
+  display: none; /* Hide the blue section as requested */
 }
 
 .sem-speaker-quote-label {
@@ -691,7 +683,7 @@ bodyClass: "landing-page"
 
 .sem-credential-text {
   color: var(--slate-600);
-  font-weight: 500;
+  font-weight: 700; /* Bold the credential text in circles */
 }
 
 /* Venue Section */
@@ -1552,6 +1544,15 @@ bodyClass: "landing-page"
       <p class="sem-speaker-bio">
         Ann has 15+ years of experience helping federal employees understand their benefits. Her expertise in federal benefits has provided education and guidance to thousands of government employees both while they're working and as they approach retirement.
       </p>
+      
+      <div style="display: flex; align-items: center; gap: 24px; margin: 24px 0;">
+        <img src="/assets/images/fedtelligence-book-cover.jpg" alt="FedTelligence 2.0 by Ann Vanderslice" style="width: 120px; height: auto; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+        <div>
+          <h4 style="margin: 0 0 8px 0; color: var(--primary); font-size: 18px; font-weight: 700;">Published Author</h4>
+          <p style="margin: 0; color: var(--slate-600); font-size: 16px; line-height: 1.4;"><strong>"FedTelligence 2.0"</strong><br>The ultimate guide to mastering your federal benefits</p>
+        </div>
+      </div>
+      
       <div class="sem-credentials-list">
         <div class="sem-credential-item">
           <span class="sem-checkmark">✓</span>
@@ -1564,6 +1565,10 @@ bodyClass: "landing-page"
         <div class="sem-credential-item">
           <span class="sem-checkmark">✓</span>
           <p class="sem-credential-text">Federal benefits education specialist</p>
+        </div>
+        <div class="sem-credential-item">
+          <span class="sem-checkmark">✓</span>
+          <p class="sem-credential-text">Published author - "FedTelligence 2.0"</p>
         </div>
       </div>
     </div>
@@ -1690,7 +1695,7 @@ bodyClass: "landing-page"
       </div>
     </div>
     <div class="sem-final-cta">
-      <a class="sem-final-cta-btn" href="#register">Register for the Briefing</a>
+      <a class="sem-final-cta-btn" href="#register">Confirm Registration</a>
       <p class="sem-final-cta-note">Federal Benefits Educational Workshop</p>
     </div>
   </div>
@@ -1714,7 +1719,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Validate form
       if (validateForm()) {
         const submitBtn = form.querySelector('.sem-submit-btn');
-        submitBtn.textContent = 'Securing Your Briefing...';
+        submitBtn.textContent = 'Securing Your Registration...';
         submitBtn.disabled = true;
         
         // Submit to API
@@ -1791,3 +1796,12 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+
+<!-- Government Disclaimer -->
+<footer style="background: #f8f9fb; padding: 40px 20px; text-align: center; margin-top: 40px;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <p style="font-size: 14px; color: #6B7280; line-height: 1.6; margin: 0;">
+      <strong>Important Disclaimer:</strong> This educational workshop is not affiliated with or endorsed by the U.S. Government, Social Security Administration, Office of Personnel Management, or any federal agency. This is an independent educational seminar provided by Capital Wealth, a registered investment advisor. All information presented is for educational purposes only and should not be considered official government guidance.
+    </p>
+  </div>
+</footer>
