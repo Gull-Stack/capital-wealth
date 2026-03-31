@@ -8,6 +8,45 @@ breadcrumbs:
 ---
 
 <style>
+/* Yellow attention bar — Workshop style */
+.contact-attention-bar {
+  background: linear-gradient(135deg, #FDD25E 0%, #F6C23E 100%);
+  color: #16253C;
+  text-align: center;
+  padding: 14px 20px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.contact-attention-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+  animation: attention-shimmer 3s ease-in-out infinite;
+}
+
+@keyframes attention-shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.attention-bar-icon {
+  font-size: 0.9rem;
+}
+
 /* Editorial contact page styles */
 .contact-hero-section {
   background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%);
@@ -97,31 +136,35 @@ breadcrumbs:
   color: #64748b;
 }
 
-/* Glass-style form card */
+/* Glass-style form card — tighter Workshop style */
 .contact-form-card {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 24px;
-  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 32px 64px rgba(0, 56, 112, 0.06);
+  border: 1px solid rgba(22, 37, 60, 0.08);
+  box-shadow: 0 24px 48px rgba(0, 56, 112, 0.08);
   position: sticky;
   top: 2rem;
 }
 
-/* Clean form header styling */
+/* Clean form header styling — tighter */
 .form-header-clean {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-eyebrow-accent {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #FDD25E;
+  color: #16253C;
+  background: #FDD25E;
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 20px;
   margin-bottom: 0.75rem;
 }
 
@@ -190,21 +233,21 @@ breadcrumbs:
 
 .contact-form-subtitle {
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #64748b;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   line-height: 1.5;
 }
 
 .contact-form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .contact-form-field {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .contact-form-field.full-width {
@@ -246,7 +289,7 @@ breadcrumbs:
 
 .contact-form-textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 80px;
 }
 
 .contact-form-submit {
@@ -404,6 +447,13 @@ breadcrumbs:
 /* Bottom CTA banner */
 
 
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .contact-attention-bar::before {
+    animation: none;
+  }
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .contact-hero-container,
@@ -447,6 +497,13 @@ breadcrumbs:
 
 }
 </style>
+
+{# Yellow attention bar #}
+<div class="contact-attention-bar">
+  <span class="attention-bar-icon">⚡</span>
+  <span>LESS THAN 25 CONSULTATION SPOTS REMAINING THIS QUARTER</span>
+  <span class="attention-bar-icon">⚡</span>
+</div>
 
 {# Hero section with editorial layout #}
 <section class="contact-hero-section">
@@ -575,11 +632,10 @@ breadcrumbs:
           return;
         }
 
-        // Anti-spam: require savings OR timeline to be selected (real prospects fill these out)
+        // Anti-spam: require savings to be selected (real prospects fill this out)
         var savings = document.getElementById('savings').value;
-        var timeline = document.getElementById('retirement-timeline').value;
-        if (!savings && !timeline) {
-          status.textContent = 'Please select your savings range or retirement timeline so we can prepare for your consultation.';
+        if (!savings) {
+          status.textContent = 'Please select your savings range so we can prepare for your consultation.';
           status.style.color = '#ba1a1a';
           return;
         }
@@ -616,7 +672,7 @@ breadcrumbs:
               email: document.getElementById('email').value,
               phone: document.getElementById('phone').value,
               savings: document.getElementById('savings').value,
-              retirementTimeline: document.getElementById('retirement-timeline').value,
+              retirementTimeline: '',
               questions: document.getElementById('questions').value,
               utm_source: trackingData.utm_source || '',
               utm_medium: trackingData.utm_medium || '',
