@@ -1,0 +1,635 @@
+---
+layout: layouts/base-finpay.njk
+title: "2025 Annual Update: Federal Benefits Facts & Figures | Capital Wealth"
+description: "Stay current with 2025 federal benefits data including CSRS & FERS pensions, Social Security, Medicare, FEHB premiums, and TSP contribution limits. Updated annually by Capital Wealth."
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Federal Benefits", url: "/services/federal-benefits/" }
+  - { name: "2025 Annual Update", url: "/annual-update/" }
+---
+
+<style>
+/* Annual Update page styles */
+.au-hero {
+  background: linear-gradient(135deg, #f8f9fb 0%, #eef1f5 100%);
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.au-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.au-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #16253C;
+  background: #FDD25E;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.au-title {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  color: #16253C;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.au-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+.au-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+/* Content area */
+.au-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+}
+
+.au-intro {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 3rem;
+  padding: 1.5rem 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  border-left: 4px solid #FDD25E;
+}
+
+/* Section styling */
+.au-section {
+  margin-bottom: 2.5rem;
+}
+
+.au-section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #16253C;
+}
+
+.au-section-icon {
+  width: 32px;
+  height: 32px;
+  background: #16253C;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.au-section-icon svg {
+  width: 18px;
+  height: 18px;
+  color: #FDD25E;
+}
+
+.au-section-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #16253C;
+  margin: 0;
+}
+
+/* Table styling */
+.au-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.au-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+}
+
+.au-table thead th {
+  background: #16253C;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 14px 18px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.au-table thead th:first-child {
+  text-align: left;
+  border-radius: 11px 0 0 0;
+}
+
+.au-table thead th:last-child {
+  border-radius: 0 11px 0 0;
+}
+
+.au-table tbody td {
+  padding: 12px 18px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  text-align: right;
+  line-height: 1.4;
+}
+
+.au-table tbody td:first-child {
+  text-align: left;
+  color: #16253C;
+  font-weight: 500;
+}
+
+.au-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.au-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Sub-header rows */
+.au-table tbody tr.au-subheader td {
+  background: #f1f5f9;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #64748b;
+  padding: 10px 18px;
+}
+
+/* Indented rows */
+.au-table tbody td.au-indent {
+  padding-left: 36px;
+  font-weight: 400;
+  color: #475569;
+}
+
+/* Highlight column */
+.au-table .au-highlight {
+  background: rgba(253, 210, 94, 0.08);
+  font-weight: 600;
+  color: #16253C;
+}
+
+/* Fund return rows with color coding */
+.au-positive {
+  color: #16a34a !important;
+}
+
+/* TSP fund labels */
+.au-fund-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.au-fund-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.au-fund-g { background: #94a3b8; }
+.au-fund-f { background: #3b82f6; }
+.au-fund-c { background: #16a34a; }
+.au-fund-s { background: #8b5cf6; }
+.au-fund-i { background: #f59e0b; }
+
+/* Disclaimer */
+.au-disclaimer {
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  background: #f8f9fb;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.au-disclaimer p {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.au-disclaimer p + p {
+  margin-top: 0.75rem;
+}
+
+/* CTA banner */
+.au-cta {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: #16253C;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.au-cta h3 {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.au-cta p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.au-cta-btn {
+  display: inline-block;
+  background: #FDD25E;
+  color: #16253C;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.au-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(253, 210, 94, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .au-hero {
+    padding: 3rem 0 2rem;
+  }
+  
+  .au-content {
+    padding: 2rem 1rem 3rem;
+  }
+  
+  .au-table {
+    font-size: 0.82rem;
+  }
+  
+  .au-table thead th,
+  .au-table tbody td {
+    padding: 10px 12px;
+  }
+  
+  .au-table tbody td.au-indent {
+    padding-left: 24px;
+  }
+  
+  .au-intro {
+    padding: 1.25rem 1.5rem;
+  }
+}
+</style>
+
+<section class="au-hero">
+  <div class="au-hero-container">
+    <div class="au-eyebrow">Member Resource</div>
+    <h1 class="au-title">2025 Annual Update: Facts & Figures</h1>
+    <p class="au-subtitle">The most current federal benefits data to help you plan confidently for retirement.</p>
+    <div class="au-meta">Revised January 2025</div>
+  </div>
+</section>
+
+<div class="au-content">
+  <div class="au-intro">
+    As a financial professional, your clients rely on you to have the most up-to-date and accurate information to assist them in planning for their financial future. Below, you will find the facts and figures for 2024, 2025 and a 10-year historical average when appropriate. Please consult with your firm's written planning guidance for the appropriate use of this data with respect to preparing a federal benefits report, or in the development of a financial plan.
+  </div>
+
+  {# ── CSRS & FERS PENSION ── #}
+  <div class="au-section">
+    <div class="au-section-header">
+      <div class="au-section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v16"/><path d="M12 11V3"/><path d="M8 11V7"/><path d="M16 11V7"/><path d="M2 21h20"/></svg>
+      </div>
+      <h2 class="au-section-title">CSRS & FERS Pension</h2>
+    </div>
+    <div class="au-table-wrapper">
+      <table class="au-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>2024</th>
+            <th class="au-highlight">2025</th>
+            <th>10-Year Avg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>National pay raise (without locality pay increase)</td>
+            <td>4.70%</td>
+            <td class="au-highlight">1.70%</td>
+            <td>2.11%</td>
+          </tr>
+          <tr>
+            <td>National pay raise (with average locality pay increase)</td>
+            <td>5.20%</td>
+            <td class="au-highlight">2.00%</td>
+            <td>2.49%</td>
+          </tr>
+          <tr>
+            <td>CSRS COLA in retirement</td>
+            <td>3.20%</td>
+            <td class="au-highlight">2.50%</td>
+            <td>2.83%</td>
+          </tr>
+          <tr>
+            <td>FERS COLA in retirement</td>
+            <td>2.20%</td>
+            <td class="au-highlight">2.00%</td>
+            <td>2.40%</td>
+          </tr>
+          <tr>
+            <td>Special Retirement Supplement earnings test limit</td>
+            <td>$22,320</td>
+            <td class="au-highlight">$23,400</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  {# ── CSRS & FERS DEATH BENEFITS ── #}
+  <div class="au-section">
+    <div class="au-section-header">
+      <div class="au-section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h2 class="au-section-title">CSRS & FERS Death Benefits</h2>
+    </div>
+    <div class="au-table-wrapper">
+      <table class="au-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>2024</th>
+            <th class="au-highlight">2025</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lump-sum, in-service death benefits (FERS)</td>
+            <td>$41,568</td>
+            <td class="au-highlight">$42,607</td>
+          </tr>
+          <tr class="au-subheader">
+            <td colspan="3">Children's Survivor Benefits (Monthly)</td>
+          </tr>
+          <tr>
+            <td class="au-indent">If no parent living (per child up to 3)</td>
+            <td>$787</td>
+            <td class="au-highlight">$806</td>
+          </tr>
+          <tr>
+            <td class="au-indent">If one parent living (per child up to 3)</td>
+            <td>$658</td>
+            <td class="au-highlight">$674</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  {# ── SOCIAL SECURITY & MEDICARE ── #}
+  <div class="au-section">
+    <div class="au-section-header">
+      <div class="au-section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      </div>
+      <h2 class="au-section-title">Social Security & Medicare</h2>
+    </div>
+    <div class="au-table-wrapper">
+      <table class="au-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>2024</th>
+            <th class="au-highlight">2025</th>
+            <th>10-Year Avg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Social Security COLA (CPI-W)</td>
+            <td>3.20%</td>
+            <td class="au-highlight">2.50%</td>
+            <td>2.83%</td>
+          </tr>
+          <tr>
+            <td>Social Security earnings test limit</td>
+            <td>$22,320</td>
+            <td class="au-highlight">$23,400</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>PIA formula (first bend)</td>
+            <td>$1,174</td>
+            <td class="au-highlight">$1,226</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>PIA formula (second bend)</td>
+            <td>$7,078</td>
+            <td class="au-highlight">$7,391</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Social Security Substantial Earnings Minimum</td>
+            <td>$31,613</td>
+            <td class="au-highlight">$33,019</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Social Security Maximum Taxable Earnings</td>
+            <td>$168,600</td>
+            <td class="au-highlight">$176,100</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Medicare Part B Premium (monthly)</td>
+            <td>$174.70</td>
+            <td class="au-highlight">$185.00</td>
+            <td>4.38%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  {# ── FEHB ── #}
+  <div class="au-section">
+    <div class="au-section-header">
+      <div class="au-section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      </div>
+      <h2 class="au-section-title">Federal Employee Health Benefits</h2>
+    </div>
+    <div class="au-table-wrapper">
+      <table class="au-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>2024</th>
+            <th class="au-highlight">2025</th>
+            <th>10-Year Avg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Average premium increase all carriers</td>
+            <td>7.70%</td>
+            <td class="au-highlight">13.50%</td>
+            <td>5.66%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  {# ── THRIFT SAVINGS PLAN ── #}
+  <div class="au-section">
+    <div class="au-section-header">
+      <div class="au-section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <h2 class="au-section-title">Thrift Savings Plan</h2>
+    </div>
+    <div class="au-table-wrapper">
+      <table class="au-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>2024</th>
+            <th class="au-highlight">2025</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Elective deferral limit (annual)</td>
+            <td>$23,000</td>
+            <td class="au-highlight">$23,500</td>
+          </tr>
+          <tr>
+            <td>Catch-up contribution limit for age 50+ (annual)</td>
+            <td>$7,500</td>
+            <td class="au-highlight">$7,500</td>
+          </tr>
+          <tr>
+            <td>Catch-up contribution limit for age 60–63 (annual)</td>
+            <td>N/A</td>
+            <td class="au-highlight">$11,250</td>
+          </tr>
+          <tr class="au-subheader">
+            <td>Rates of Return (Compound Annual)</td>
+            <td>EOY 2023</td>
+            <td class="au-highlight">EOY 2024</td>
+            <td style="background:#f1f5f9; font-family:var(--font-mono); font-size:0.75rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:#64748b;">10-Year</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="au-fund-label"><span class="au-fund-dot au-fund-g"></span> G Fund</span>
+            </td>
+            <td class="au-positive">+4.22%</td>
+            <td class="au-highlight au-positive">+4.40%</td>
+            <td>+2.52%</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="au-fund-label"><span class="au-fund-dot au-fund-f"></span> F Fund</span>
+            </td>
+            <td class="au-positive">+5.58%</td>
+            <td class="au-highlight au-positive">+1.33%</td>
+            <td>+1.49%</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="au-fund-label"><span class="au-fund-dot au-fund-c"></span> C Fund</span>
+            </td>
+            <td class="au-positive">+26.26%</td>
+            <td class="au-highlight au-positive">+24.96%</td>
+            <td>+13.09%</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="au-fund-label"><span class="au-fund-dot au-fund-s"></span> S Fund</span>
+            </td>
+            <td class="au-positive">+25.30%</td>
+            <td class="au-highlight au-positive">+16.93%</td>
+            <td>+9.52%</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="au-fund-label"><span class="au-fund-dot au-fund-i"></span> I Fund</span>
+            </td>
+            <td class="au-positive">+18.38%</td>
+            <td class="au-highlight au-positive">+4.27%</td>
+            <td>+5.63%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  {# ── CTA ── #}
+  <div class="au-cta">
+    <h3>Need Help Understanding Your Federal Benefits?</h3>
+    <p>Our advisors specialize in FERS retirement, TSP optimization, and tax-efficient withdrawal strategies for federal employees.</p>
+    <a href="/contact/" class="au-cta-btn">Schedule a Consultation</a>
+  </div>
+
+  {# ── DISCLAIMER ── #}
+  <div class="au-disclaimer">
+    <p>The information presented is for educational purposes only and should not be considered financial, tax, or legal advice. Please consult with a qualified financial professional before making any decisions regarding your federal benefits or retirement planning.</p>
+    <p>Data sourced from the Office of Personnel Management (OPM), Social Security Administration (SSA), Centers for Medicare & Medicaid Services (CMS), and the Federal Retirement Thrift Investment Board. 10-year averages are calculated from publicly available historical data where applicable.</p>
+    <p>&copy; {{ "now" | date: "%Y" }} Capital Wealth. All rights reserved.</p>
+  </div>
+</div>
