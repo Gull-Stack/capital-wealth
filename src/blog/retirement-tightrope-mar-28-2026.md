@@ -5,6 +5,8 @@ date: 2026-03-28
 dateModified: 2026-03-30
 author: "Mike Stevens"
 readTime: 15
+featuredImage: "/assets/images/blog/retirement-tightrope-hero-1200x630.jpg"
+featuredImageAlt: "Person walking tightrope over mountain valley - representing retirement balance"
 tags:
   - retirement planning
   - federal employees
