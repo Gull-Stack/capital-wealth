@@ -974,6 +974,24 @@ bodyClass: "landing-page"
   text-align: center;
 }
 
+/* Guest Fields */
+.guest-fields {
+  margin-top: 20px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(22, 37, 60, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.guest-fields h4 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #16253C;
+  font-family: var(--font-body);
+}
+
 /* Venue Links */
 .sem-venue-links {
   margin-top: 32px;
@@ -1430,9 +1448,40 @@ bodyClass: "landing-page"
             <label class="sem-form-label" for="phone">Phone Number</label>
             <input class="sem-form-input" type="tel" id="phone" name="phone" placeholder="Phone Number" required>
           </div>
-          <div class="sem-checkbox-group">
-            <input class="sem-checkbox" type="checkbox" id="spouse" name="spouse" value="yes">
-            <label class="sem-checkbox-label" for="spouse">Are you bringing your spouse or a guest?</label>
+          <div class="sem-form-group">
+            <label class="sem-form-label" for="bringing-guest">Will you be bringing a guest?</label>
+            <select class="sem-form-input" id="bringing-guest" name="bringing_guest" required>
+              <option value="">Select an option</option>
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </div>
+          
+          <!-- Guest information fields (hidden by default) -->
+          <div id="guest-info" class="guest-fields" style="display: none;">
+            <h4 style="font-size: 1.1rem; font-weight: 700; color: #16253C; margin-bottom: 16px;">Guest Information</h4>
+            
+            <div class="sem-form-row">
+              <div class="sem-form-group">
+                <label class="sem-form-label" for="guest-first-name">Guest First Name</label>
+                <input class="sem-form-input" type="text" id="guest-first-name" name="guest_first_name" placeholder="Guest First Name">
+              </div>
+              
+              <div class="sem-form-group">
+                <label class="sem-form-label" for="guest-last-name">Guest Last Name</label>
+                <input class="sem-form-input" type="text" id="guest-last-name" name="guest_last_name" placeholder="Guest Last Name">
+              </div>
+            </div>
+            
+            <div class="sem-form-group">
+              <label class="sem-form-label" for="guest-email">Guest Email</label>
+              <input class="sem-form-input" type="email" id="guest-email" name="guest_email" placeholder="Guest Email">
+            </div>
+            
+            <div class="sem-form-group">
+              <label class="sem-form-label" for="guest-phone">Guest Phone</label>
+              <input class="sem-form-input" type="tel" id="guest-phone" name="guest_phone" placeholder="Guest Phone">
+            </div>
           </div>
           <button class="sem-submit-btn" type="submit">Confirm Registration</button>
           <p class="sem-privacy-text">Privacy Protected & No-Obligation Educational Event<br>
@@ -1709,6 +1758,28 @@ bodyClass: "landing-page"
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('#sem-registration-form');
+  
+  // Guest field functionality
+  const bringingGuestSelect = document.getElementById('bringing-guest');
+  const guestInfoDiv = document.getElementById('guest-info');
+  const guestFields = guestInfoDiv.querySelectorAll('input');
+
+  bringingGuestSelect.addEventListener('change', function() {
+    if (this.value === 'yes') {
+      guestInfoDiv.style.display = 'block';
+      // Make guest fields required when shown
+      guestFields.forEach(field => {
+        field.setAttribute('required', 'required');
+      });
+    } else {
+      guestInfoDiv.style.display = 'none';
+      // Remove required attribute when hidden
+      guestFields.forEach(field => {
+        field.removeAttribute('required');
+        field.value = ''; // Clear values
+      });
+    }
+  });
   
   if (form) {
     form.addEventListener('submit', function(e) {
