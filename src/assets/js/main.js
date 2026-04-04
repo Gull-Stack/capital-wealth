@@ -21,7 +21,7 @@
         if (r.includes('bing.com')) return { source: 'bing', medium: 'organic' };
         if (r.includes('yahoo.com')) return { source: 'yahoo', medium: 'organic' };
         if (r.includes('duckduckgo.com')) return { source: 'duckduckgo', medium: 'organic' };
-        if (r.includes('facebook.com') || r.includes('fb.com')) return { source: 'facebook', medium: 'social' };
+        if (r.includes('facebook.com') || r.includes('fb.com')) return { source: 'facebook-organic', medium: 'social' };
         if (r.includes('instagram.com')) return { source: 'instagram', medium: 'social' };
         if (r.includes('linkedin.com')) return { source: 'linkedin', medium: 'social' };
         if (r.includes('twitter.com') || r.includes('t.co') || r.includes('x.com')) return { source: 'twitter', medium: 'social' };

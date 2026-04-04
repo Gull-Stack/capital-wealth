@@ -1,0 +1,423 @@
+---
+layout: layouts/base-finpay.njk
+title: "Workshop Confirmed | Federal Benefits Seminar | Capital Wealth"
+description: "Your Federal Benefits Seminar registration is confirmed. Schedule your complimentary federal benefits consultation below."
+noindex: true
+excludeFromSitemap: true
+bodyClass: "landing-page"
+---
+
+<style>
+/* Kill main padding that accounts for fixed header */
+.landing-page main {
+  padding-top: 0 !important;
+}
+
+/* Hide nav on thank-you page */
+.landing-page .finpay-header {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
+
+.ty-hero {
+  background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%);
+  padding: 2.5rem 2rem 2rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.ty-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: url('/assets/images/logos/logo-icon-color.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.03;
+}
+.ty-hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FDD25E;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.ty-hero h1 {
+  font-family: var(--font-serif-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  position: relative;
+  color: #ffffff;
+}
+.ty-hero p {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  position: relative;
+}
+.ty-check {
+  width: 64px;
+  height: 64px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+.ty-check svg {
+  width: 32px;
+  height: 32px;
+  color: #FDD25E;
+}
+
+/* Value Proposition Cards */
+.ty-value {
+  background: #f8f9fa;
+  padding: 3.5rem 2rem;
+}
+.ty-value-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.ty-value h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #16253C;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+.ty-value > .ty-value-inner > p {
+  font-family: var(--font-body);
+  color: #0F1A2A;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.05rem;
+}
+.ty-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.ty-value-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.ty-value-icon {
+  width: 48px;
+  height: 48px;
+  background: #FDD25E;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.ty-value-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #0F1A2A;
+}
+.ty-value-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #16253C;
+  margin-bottom: 0.5rem;
+}
+.ty-value-card p {
+  font-family: var(--font-body);
+  color: #0F1A2A;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Scheduler Embed */
+.ty-scheduler {
+  padding: 3.5rem 2rem;
+  background: #fff;
+}
+.ty-scheduler-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.ty-scheduler h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #16253C;
+  margin-bottom: 0.75rem;
+}
+.ty-scheduler > .ty-scheduler-inner > p {
+  font-family: var(--font-body);
+  color: #0F1A2A;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+.ty-scheduler-embed {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 600px;
+  background: #fafafa;
+}
+.ty-scheduler-embed iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+.ty-scheduler-fallback {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #888;
+}
+.ty-scheduler-fallback a {
+  color: #57A5F4;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Federal Benefits Specific */
+.ty-federal-benefits {
+  padding: 3.5rem 2rem;
+  background: #f8f9fa;
+}
+.ty-federal-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.ty-federal-left h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #16253C;
+  margin-bottom: 0.5rem;
+}
+.ty-federal-left > p {
+  font-family: var(--font-body);
+  color: #0F1A2A;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.ty-federal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ty-federal-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  color: #0F1A2A;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: var(--font-body);
+}
+.ty-federal-list li:last-child {
+  border-bottom: none;
+}
+.ty-federal-icon {
+  width: 22px;
+  height: 22px;
+  color: #57A5F4;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.ty-federal-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.ty-federal-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #16253C;
+  margin-bottom: 1rem;
+}
+.ty-federal-card p {
+  font-family: var(--font-body);
+  color: #0F1A2A;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+.ty-federal-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact fallback */
+.ty-contact {
+  background: #16253C;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+.ty-contact p {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 0.5rem;
+}
+.ty-contact a {
+  color: #FDD25E;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .ty-hero { padding: 1.5rem 1rem 1rem; }
+  .ty-hero h1 { font-size: 1.5rem; }
+  .ty-hero p { font-size: 0.95rem; }
+  .ty-check { width: 48px; height: 48px; margin-bottom: 1rem; }
+  .ty-check svg { width: 24px; height: 24px; }
+  .ty-value-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .ty-federal-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .ty-scheduler { padding: 1rem !important; }
+  .ty-scheduler-inner { padding: 0; }
+  .ty-scheduler-embed { border: none; border-radius: 0; min-height: 500px; }
+  .ty-scheduler-embed iframe { height: 550px; }
+  .ty-federal-benefits { padding: 2rem 1rem; }
+  .ty-contact { padding: 2rem 1rem; }
+}
+</style>
+
+{# ═══ HERO — Workshop Confirmation ═══ #}
+<section class="ty-hero">
+    <div class="ty-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+        </svg>
+    </div>
+    <div class="ty-hero-eyebrow">Workshop Registration Confirmed</div>
+    <h1>You're All Set for the Federal Benefits Seminar</h1>
+    <p>Your spot is reserved. Now take the next step — schedule a private consultation to discuss your specific federal benefits strategy.</p>
+</section>
+
+{# ═══ VALUE PROPOSITION — Why Schedule ═══ #}
+<section class="ty-value">
+    <div class="ty-value-inner">
+        <h2>Why Schedule Your Federal Benefits Consultation?</h2>
+        <p>The workshop covers general strategies. Your one-on-one consultation focuses on YOUR specific situation.</p>
+        <div class="ty-value-grid">
+            <div class="ty-value-card">
+                <div class="ty-value-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                </div>
+                <h3>Personalized Strategy</h3>
+                <p>Review your TSP, pension, Social Security, and health benefits in detail — not just general advice.</p>
+            </div>
+            <div class="ty-value-card">
+                <div class="ty-value-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                </div>
+                <h3>Timing Optimization</h3>
+                <p>When should you retire? How do you maximize your federal benefits? We'll map out your timeline.</p>
+            </div>
+            <div class="ty-value-card">
+                <div class="ty-value-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <h3>Your Questions Answered</h3>
+                <p>Bring your specific concerns about TSP withdrawals, FEHB in retirement, survivor benefits, and more.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# ═══ ZOOM SCHEDULER EMBED ═══ #}
+<section class="ty-scheduler">
+    <div class="ty-scheduler-inner">
+        <h2>Schedule Your Federal Benefits Consultation</h2>
+        <p>Complimentary 30-minute session to review your federal employee benefits and retirement strategy.</p>
+        <div class="ty-scheduler-embed">
+            <iframe src="https://scheduler.zoom.us/capital-wealth/federal-benefits-consultation?embed=true" title="Schedule Federal Benefits Consultation" loading="lazy" allow="clipboard-write" style="width: 100%; height: 700px; border: none;"></iframe>
+        </div>
+        <p class="ty-scheduler-fallback">Having trouble with the scheduler? <a href="https://scheduler.zoom.us/capital-wealth/federal-benefits-consultation" target="_blank" rel="noopener">Open it in a new tab</a> or call <a href="tel:8012102800">801.210.2800</a></p>
+    </div>
+</section>
+
+{# ═══ FEDERAL BENEFITS FOCUS ═══ #}
+<section class="ty-federal-benefits">
+    <div class="ty-federal-inner">
+        <div class="ty-federal-left">
+            <h2>What We'll Cover in Your Federal Benefits Session</h2>
+            <p>This isn't a sales meeting. It's a focused discussion about YOUR federal employee benefits and how to optimize them for retirement.</p>
+            <ul class="ty-federal-list">
+                <li>
+                    <svg class="ty-federal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>TSP Strategy</strong> — withdrawal options, Roth conversions, and tax planning</span>
+                </li>
+                <li>
+                    <svg class="ty-federal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>FERS vs CSRS</strong> — pension optimization and timing strategies</span>
+                </li>
+                <li>
+                    <svg class="ty-federal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Social Security</strong> — coordination with federal pension and timing</span>
+                </li>
+                <li>
+                    <svg class="ty-federal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>FEHB in Retirement</strong> — keeping your health benefits and planning for long-term care</span>
+                </li>
+                <li>
+                    <svg class="ty-federal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Survivor Benefits</strong> — protecting your spouse with federal survivor benefits</span>
+                </li>
+                <li>
+                    <svg class="ty-federal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Tax Strategy</strong> — minimizing taxes on federal retirement income</span>
+                </li>
+            </ul>
+        </div>
+        <div class="ty-federal-card">
+            <h3>Mike Stevens, CFP®</h3>
+            <p>Mike has spent over 15 years helping federal employees navigate the complex web of federal benefits, TSP decisions, and retirement timing.</p>
+            <p>He understands the unique challenges federal employees face — from FEHB continuation to TSP withdrawal strategies to coordinating multiple income sources in retirement.</p>
+            <p><strong>This consultation is complimentary and comes with no obligation.</strong> Come with your questions. Leave with clarity.</p>
+        </div>
+    </div>
+</section>
+
+{# ═══ CONTACT FALLBACK ═══ #}
+<section class="ty-contact">
+    <p>Prefer to schedule by phone? Call us at <a href="tel:8012102800">801.210.2800</a></p>
+    <p>Monday – Friday, 9am – 5pm MST</p>
+</section>

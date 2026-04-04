@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2025 Annual Update: Facts & Figures — Capital Wealth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Manrope:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #16253C;
+      --navy-light: #1e3352;
+      --gold: #FDD25E;
+      --gold-dark: #e6b93d;
+      --bg: #ffffff;
+      --bg-alt: #f8f9fb;
+      --text: #334155;
+      --text-light: #64748b;
+      --text-muted: #94a3b8;
+      --border: #e2e8f0;
+      --green: #16a34a;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Manrope', -apple-system, sans-serif;
+      --font-mono: 'Geist Mono', ui-monospace, monospace;
+    }
+
+    @page {
+      size: 8.5in 11in;
+      margin: 0;
+    }
+
+    html, body {
+      width: 8.5in;
+      min-height: 11in;
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--bg);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      padding: 0.5in 0.6in 0.5in;
+      position: relative;
+      page-break-after: always;
+    }
+
+    /* ─── Header ─── */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.3in;
+      border-bottom: 2px solid var(--navy);
+      margin-bottom: 0.25in;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-img {
+      height: 36px;
+      width: auto;
+    }
+
+    .header-tag {
+      font-family: var(--font-mono);
+      font-size: 7pt;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: var(--gold);
+      padding: 3px 10px;
+      border-radius: 10px;
+    }
+
+    /* ─── Title Block ─── */
+    .title-block {
+      text-align: center;
+      margin-bottom: 0.2in;
+    }
+
+    .title-block h1 {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 22pt;
+      font-weight: 400;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .title-block .subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      color: var(--text-light);
+      line-height: 1.4;
+    }
+
+    /* ─── Intro ─── */
+    .intro {
+      font-size: 7.5pt;
+      line-height: 1.5;
+      color: var(--text-light);
+      border-left: 3px solid var(--gold);
+      padding: 8px 12px;
+      background: var(--bg-alt);
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 0.2in;
+    }
+
+    /* ─── Section ─── */
+    .section {
+      margin-bottom: 0.18in;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 5px;
+      padding-bottom: 4px;
+      border-bottom: 1.5px solid var(--navy);
+    }
+
+    .section-num {
+      width: 20px;
+      height: 20px;
+      background: var(--navy);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-family: var(--font-mono);
+      font-size: 8pt;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-family: var(--font-mono);
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    /* ─── Tables ─── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8pt;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    thead th {
+      background: var(--navy);
+      color: #ffffff;
+      font-family: var(--font-mono);
+      font-size: 6.5pt;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 7px 10px;
+      text-align: right;
+    }
+
+    thead th:first-child {
+      text-align: left;
+    }
+
+    tbody td {
+      padding: 5px 10px;
+      border-bottom: 1px solid #f1f5f9;
+      text-align: right;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    tbody td:first-child {
+      text-align: left;
+      color: var(--navy);
+      font-weight: 500;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #fafbfc;
+    }
+
+    /* Highlight 2025 column */
+    .hl {
+      background: rgba(253, 210, 94, 0.1) !important;
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    /* Sub-header rows */
+    .sub td {
+      background: #eef1f5 !important;
+      font-family: var(--font-mono);
+      font-size: 6.5pt;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      padding: 5px 10px;
+    }
+
+    /* Indented rows */
+    .indent td:first-child {
+      padding-left: 24px;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    /* Positive returns */
+    .pos {
+      color: var(--green) !important;
+    }
+
+    /* Fund dot */
+    .fd {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    .fd-g { background: #94a3b8; }
+    .fd-f { background: #3b82f6; }
+    .fd-c { background: #16a34a; }
+    .fd-s { background: #8b5cf6; }
+    .fd-i { background: #f59e0b; }
+
+    /* ─── Footer ─── */
+    .footer {
+      margin-top: auto;
+      padding-top: 0.12in;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-disclaimer {
+      font-size: 6pt;
+      line-height: 1.4;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-brand {
+      font-family: var(--font-mono);
+      font-size: 6.5pt;
+      color: var(--text-light);
+    }
+
+    .footer-contact {
+      font-family: var(--font-mono);
+      font-size: 6.5pt;
+      color: var(--text-light);
+      text-align: right;
+    }
+
+    /* ─── Two-column layout for smaller sections ─── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.15in;
+    }
+
+    /* Print styles */
+    @media print {
+      html, body {
+        width: 8.5in;
+        height: 11in;
+      }
+      .page {
+        padding: 0.5in 0.6in 0.4in;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page" style="display: flex; flex-direction: column;">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <img src="https://www.capitalwealth.com/assets/images/logo-dark.png" alt="Capital Wealth" class="logo-img">
+    </div>
+    <div class="header-tag">Member Resource</div>
+  </div>
+
+  <!-- Title -->
+  <div class="title-block">
+    <h1>2025 Annual Update: Facts & Figures</h1>
+    <div class="subtitle">The most current federal benefits data for retirement planning &nbsp;|&nbsp; Revised January 2025</div>
+  </div>
+
+  <!-- Intro -->
+  <div class="intro">
+    Your clients rely on you to have the most up-to-date and accurate information to assist them in planning for their financial future. Below, you will find the facts and figures for 2024, 2025 and a 10-year historical average when appropriate. Please consult with your firm's written planning guidance for the appropriate use of this data.
+  </div>
+
+  <!-- 1. CSRS & FERS PENSION -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <div class="section-title">CSRS & FERS Pension</div>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>2024</th><th class="hl">2025</th><th>10-Year Avg</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>National pay raise (without locality pay increase)</td><td>4.70%</td><td class="hl">1.70%</td><td>2.11%</td></tr>
+        <tr><td>National pay raise (with average locality pay increase)</td><td>5.20%</td><td class="hl">2.00%</td><td>2.49%</td></tr>
+        <tr><td>CSRS COLA in retirement</td><td>3.20%</td><td class="hl">2.50%</td><td>2.83%</td></tr>
+        <tr><td>FERS COLA in retirement</td><td>2.20%</td><td class="hl">2.00%</td><td>2.40%</td></tr>
+        <tr><td>Special Retirement Supplement earnings test limit</td><td>$22,320</td><td class="hl">$23,400</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Two-column: Death Benefits + FEHB -->
+  <div class="two-col">
+
+    <!-- 2. DEATH BENEFITS -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">2</div>
+        <div class="section-title">CSRS & FERS Death Benefits</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Item</th><th>2024</th><th class="hl">2025</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lump-sum, in-service (FERS)</td><td>$41,568</td><td class="hl">$42,607</td></tr>
+          <tr class="sub"><td colspan="3">Children's Survivor Benefits (Monthly)</td></tr>
+          <tr class="indent"><td>No parent living (per child, up to 3)</td><td>$787</td><td class="hl">$806</td></tr>
+          <tr class="indent"><td>One parent living (per child, up to 3)</td><td>$658</td><td class="hl">$674</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 4. FEHB -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">4</div>
+        <div class="section-title">Federal Employee Health Benefits</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Item</th><th>2024</th><th class="hl">2025</th><th>10-Yr</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Avg premium increase (all carriers)</td><td>7.70%</td><td class="hl">13.50%</td><td>5.66%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- 3. SOCIAL SECURITY & MEDICARE -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <div class="section-title">Social Security & Medicare</div>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>2024</th><th class="hl">2025</th><th>10-Year Avg</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Social Security COLA (CPI-W)</td><td>3.20%</td><td class="hl">2.50%</td><td>2.83%</td></tr>
+        <tr><td>Social Security earnings test limit</td><td>$22,320</td><td class="hl">$23,400</td><td>—</td></tr>
+        <tr><td>PIA formula (first bend)</td><td>$1,174</td><td class="hl">$1,226</td><td>—</td></tr>
+        <tr><td>PIA formula (second bend)</td><td>$7,078</td><td class="hl">$7,391</td><td>—</td></tr>
+        <tr><td>Social Security Substantial Earnings Minimum</td><td>$31,613</td><td class="hl">$33,019</td><td>—</td></tr>
+        <tr><td>Social Security Maximum Taxable Earnings</td><td>$168,600</td><td class="hl">$176,100</td><td>—</td></tr>
+        <tr><td>Medicare Part B Premium (monthly)</td><td>$174.70</td><td class="hl">$185.00</td><td>4.38%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 5. TSP -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <div class="section-title">Thrift Savings Plan</div>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>2024</th><th class="hl">2025</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Elective deferral limit (annual)</td><td>$23,000</td><td class="hl">$23,500</td></tr>
+        <tr><td>Catch-up contribution limit for age 50+ (annual)</td><td>$7,500</td><td class="hl">$7,500</td></tr>
+        <tr><td>Catch-up contribution limit for age 60–63 (annual)</td><td>N/A</td><td class="hl">$11,250</td></tr>
+      </tbody>
+    </table>
+
+    <div style="height: 6px;"></div>
+
+    <table>
+      <thead>
+        <tr><th>Rates of Return (Compound Annual)</th><th>EOY 2023</th><th class="hl">EOY 2024</th><th>10-Year</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="fd fd-g"></span>G Fund</td><td class="pos">+4.22%</td><td class="hl pos">+4.40%</td><td>+2.52%</td></tr>
+        <tr><td><span class="fd fd-f"></span>F Fund</td><td class="pos">+5.58%</td><td class="hl pos">+1.33%</td><td>+1.49%</td></tr>
+        <tr><td><span class="fd fd-c"></span>C Fund</td><td class="pos">+26.26%</td><td class="hl pos">+24.96%</td><td>+13.09%</td></tr>
+        <tr><td><span class="fd fd-s"></span>S Fund</td><td class="pos">+25.30%</td><td class="hl pos">+16.93%</td><td>+9.52%</td></tr>
+        <tr><td><span class="fd fd-i"></span>I Fund</td><td class="pos">+18.38%</td><td class="hl pos">+4.27%</td><td>+5.63%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer" style="margin-top: auto;">
+    <div class="footer-disclaimer">
+      The information presented is for educational purposes only and should not be considered financial, tax, or legal advice. Please consult with a qualified financial professional before making any decisions regarding your federal benefits or retirement planning. Data sourced from the Office of Personnel Management (OPM), Social Security Administration (SSA), and the Federal Retirement Thrift Investment Board. 10-year averages are calculated from publicly available historical data where applicable.
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-brand">&copy; 2025 Capital Wealth. All rights reserved.</div>
+      <div class="footer-contact">capitalwealth.com &nbsp;|&nbsp; (801) 210-2800 &nbsp;|&nbsp; info@capitalwealth.com</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

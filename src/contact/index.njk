@@ -32,10 +32,10 @@ breadcrumbs:
 .contact-eyebrow {
   font-family: var(--font-mono);
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #FDD25E;
+  color: #16253C;
   margin-bottom: 1.5rem;
 }
 
@@ -97,32 +97,36 @@ breadcrumbs:
   color: #64748b;
 }
 
-/* Glass-style form card */
+/* Glass-style form card — tighter Workshop style */
 .contact-form-card {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 24px;
-  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 32px 64px rgba(0, 56, 112, 0.06);
+  border: 1px solid rgba(22, 37, 60, 0.08);
+  box-shadow: 0 24px 48px rgba(0, 56, 112, 0.08);
   position: sticky;
   top: 2rem;
 }
 
-/* Clean form header styling */
+/* Clean form header styling — tighter */
 .form-header-clean {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-eyebrow-accent {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #FDD25E;
-  margin-bottom: 0.75rem;
+  color: #16253C;
+  background: #FDD25E;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
 }
 
 /* Improved form styling to match seminar page */
@@ -190,21 +194,21 @@ breadcrumbs:
 
 .contact-form-subtitle {
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #64748b;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   line-height: 1.5;
 }
 
 .contact-form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 .contact-form-field {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .contact-form-field.full-width {
@@ -213,25 +217,25 @@ breadcrumbs:
 
 .contact-form-label {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #16253C;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .contact-form-input,
 .contact-form-select,
 .contact-form-textarea {
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 0.95rem;
   background: #f8f9fb;
-  border: none;
-  border-radius: 12px;
+  border: 1px solid rgba(22, 37, 60, 0.1);
+  border-radius: 10px;
   color: #16253C;
   transition: all 0.2s ease;
 }
@@ -246,7 +250,7 @@ breadcrumbs:
 
 .contact-form-textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 80px;
 }
 
 .contact-form-submit {
@@ -467,7 +471,7 @@ breadcrumbs:
     
     <div class="contact-form-card">
       <div class="form-header-clean">
-        <div class="form-eyebrow-accent">LIMITED SEATING</div>
+        <div class="form-eyebrow-accent">NO OBLIGATION</div>
         <h2 class="contact-form-title">Request a Consultation</h2>
         <p class="contact-form-subtitle">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
       </div>
@@ -575,11 +579,10 @@ breadcrumbs:
           return;
         }
 
-        // Anti-spam: require savings OR timeline to be selected (real prospects fill these out)
+        // Anti-spam: require savings to be selected (real prospects fill this out)
         var savings = document.getElementById('savings').value;
-        var timeline = document.getElementById('retirement-timeline').value;
-        if (!savings && !timeline) {
-          status.textContent = 'Please select your savings range or retirement timeline so we can prepare for your consultation.';
+        if (!savings) {
+          status.textContent = 'Please select your savings range so we can prepare for your consultation.';
           status.style.color = '#ba1a1a';
           return;
         }
@@ -616,7 +619,7 @@ breadcrumbs:
               email: document.getElementById('email').value,
               phone: document.getElementById('phone').value,
               savings: document.getElementById('savings').value,
-              retirementTimeline: document.getElementById('retirement-timeline').value,
+              retirementTimeline: '',
               questions: document.getElementById('questions').value,
               utm_source: trackingData.utm_source || '',
               utm_medium: trackingData.utm_medium || '',

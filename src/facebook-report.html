@@ -1,0 +1,183 @@
+---
+layout: layouts/base.njk
+title: Facebook Ads Campaign Report
+description: Capital Wealth Facebook advertising performance dashboard
+---
+
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-8">Facebook Ads Campaign Report</h1>
+    
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-semibold">Campaign Performance</h2>
+            <div class="flex gap-4">
+                <select id="dateRange" class="px-4 py-2 border rounded-lg">
+                    <option value="last_7d">Last 7 Days</option>
+                    <option value="last_14d">Last 14 Days</option>
+                    <option value="last_30d">Last 30 Days</option>
+                    <option value="this_month">This Month</option>
+                    <option value="last_month">Last Month</option>
+                </select>
+                <button id="refreshData" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                    Refresh Data
+                </button>
+            </div>
+        </div>
+        
+        <div id="loadingState" class="text-center py-8">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+            <p class="mt-2">Loading campaign data...</p>
+        </div>
+
+        <div id="errorState" class="hidden bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+            <p class="text-red-800">Error loading data: <span id="errorMessage"></span></p>
+        </div>
+
+        <div id="reportContent" class="hidden">
+            <!-- Summary Cards -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <h3 class="text-sm font-medium text-blue-800 mb-1">Total Spend</h3>
+                    <p id="totalSpend" class="text-2xl font-bold text-blue-900">$0</p>
+                </div>
+                <div class="bg-green-50 rounded-lg p-4">
+                    <h3 class="text-sm font-medium text-green-800 mb-1">Total Clicks</h3>
+                    <p id="totalClicks" class="text-2xl font-bold text-green-900">0</p>
+                </div>
+                <div class="bg-purple-50 rounded-lg p-4">
+                    <h3 class="text-sm font-medium text-purple-800 mb-1">Avg CPC</h3>
+                    <p id="avgCpc" class="text-2xl font-bold text-purple-900">$0</p>
+                </div>
+                <div class="bg-orange-50 rounded-lg p-4">
+                    <h3 class="text-sm font-medium text-orange-800 mb-1">Conversions</h3>
+                    <p id="totalConversions" class="text-2xl font-bold text-orange-900">0</p>
+                </div>
+            </div>
+
+            <!-- Campaign Details Table -->
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-200">
+                    <thead>
+                        <tr class="bg-gray-50">
+                            <th class="border border-gray-200 px-4 py-3 text-left">Campaign Name</th>
+                            <th class="border border-gray-200 px-4 py-3 text-right">Spend</th>
+                            <th class="border border-gray-200 px-4 py-3 text-right">Impressions</th>
+                            <th class="border border-gray-200 px-4 py-3 text-right">Clicks</th>
+                            <th class="border border-gray-200 px-4 py-3 text-right">CTR</th>
+                            <th class="border border-gray-200 px-4 py-3 text-right">CPC</th>
+                            <th class="border border-gray-200 px-4 py-3 text-right">Conversions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="campaignTableBody">
+                        <!-- Campaign rows will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .animate-spin {
+        animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const loadingState = document.getElementById('loadingState');
+    const errorState = document.getElementById('errorState');
+    const reportContent = document.getElementById('reportContent');
+    const dateRange = document.getElementById('dateRange');
+    const refreshBtn = document.getElementById('refreshData');
+
+    async function loadCampaignData() {
+        showLoading();
+        
+        try {
+            const preset = dateRange.value;
+            const response = await fetch(`/api/facebook-ads?date_preset=${preset}`);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                displayData(data);
+            } else {
+                throw new Error(data.message || 'Unknown error occurred');
+            }
+            
+        } catch (error) {
+            showError(error.message);
+        }
+    }
+
+    function showLoading() {
+        loadingState.classList.remove('hidden');
+        errorState.classList.add('hidden');
+        reportContent.classList.add('hidden');
+    }
+
+    function showError(message) {
+        loadingState.classList.add('hidden');
+        errorState.classList.remove('hidden');
+        reportContent.classList.add('hidden');
+        document.getElementById('errorMessage').textContent = message;
+    }
+
+    function displayData(data) {
+        loadingState.classList.add('hidden');
+        errorState.classList.add('hidden');
+        reportContent.classList.remove('hidden');
+
+        // Update summary cards
+        document.getElementById('totalSpend').textContent = `$${data.summary.total_spend}`;
+        document.getElementById('totalClicks').textContent = data.summary.total_clicks.toLocaleString();
+        document.getElementById('avgCpc').textContent = `$${data.summary.avg_cpc}`;
+        document.getElementById('totalConversions').textContent = data.summary.total_conversions;
+
+        // Update campaign table
+        const tbody = document.getElementById('campaignTableBody');
+        tbody.innerHTML = '';
+
+        data.campaigns.forEach(campaign => {
+            const row = document.createElement('tr');
+            row.className = 'hover:bg-gray-50';
+            row.innerHTML = `
+                <td class="border border-gray-200 px-4 py-3">${campaign.campaign_name || 'Unnamed Campaign'}</td>
+                <td class="border border-gray-200 px-4 py-3 text-right">$${parseFloat(campaign.spend || 0).toFixed(2)}</td>
+                <td class="border border-gray-200 px-4 py-3 text-right">${parseInt(campaign.impressions || 0).toLocaleString()}</td>
+                <td class="border border-gray-200 px-4 py-3 text-right">${parseInt(campaign.clicks || 0).toLocaleString()}</td>
+                <td class="border border-gray-200 px-4 py-3 text-right">${parseFloat(campaign.ctr || 0).toFixed(2)}%</td>
+                <td class="border border-gray-200 px-4 py-3 text-right">$${parseFloat(campaign.cpc || 0).toFixed(2)}</td>
+                <td class="border border-gray-200 px-4 py-3 text-right">${parseInt(campaign.conversions || 0)}</td>
+            `;
+            tbody.appendChild(row);
+        });
+
+        if (data.campaigns.length === 0) {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td colspan="7" class="border border-gray-200 px-4 py-8 text-center text-gray-500">
+                    No campaigns found for the selected date range
+                </td>
+            `;
+            tbody.appendChild(row);
+        }
+    }
+
+    // Event listeners
+    refreshBtn.addEventListener('click', loadCampaignData);
+    dateRange.addEventListener('change', loadCampaignData);
+
+    // Initial load
+    loadCampaignData();
+});
+</script>

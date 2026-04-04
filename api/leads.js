@@ -3,10 +3,14 @@
 
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY;
-const DASHBOARD_PASSWORD = 'cwa2026';
+const DASHBOARD_PASSWORD = process.env.DASHBOARD_API_KEY;
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  const ALLOWED_ORIGINS = ['https://www.capitalwealth.com', 'https://capitalwealth.com', 'https://capitalwealthfederal.com', 'https://www.capitalwealthfederal.com', 'https://gullstack.com', 'https://www.gullstack.com'];
+  const origin = req.headers.origin;
+  if (ALLOWED_ORIGINS.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
@@ -14,9 +18,9 @@ export default async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    // Check password
+    // Check password — reject if env var not configured (fail closed)
     const key = req.query.key;
-    if (key !== DASHBOARD_PASSWORD) {
+    if (!DASHBOARD_PASSWORD || key !== DASHBOARD_PASSWORD) {
       return res.status(401).json({ error: 'Unauthorized' });
     }
 

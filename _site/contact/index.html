@@ -39,11 +39,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '416279113963143');
+    fbq('init', '416279913963143');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=416279113963143&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=416279913963143&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
     
@@ -69,7 +69,7 @@
         "@type": ["FinancialService", "LocalBusiness", "Organization"],
         "@id": "https://www.capitalwealth.com/#organization",
         "name": "Capital Wealth",
-        "legalName": "Capital Wealth Advisors, LLC",
+        "legalName": "Capital Wealth, LLC",
         "description": "Fiduciary financial advisor in Lehi, Utah specializing in retirement income planning, tax-efficient strategies, 401(k) rollovers, and Social Security optimization.",
         "url": "https://www.capitalwealth.com",
         "telephone": "801.210.2800",
@@ -106,8 +106,8 @@
         "founder": {
             "@type": "Person",
             "name": "Michael Stevens",
-            "jobTitle": "IAR (Investment Adviser Representative)",
-            "description": "Investment Adviser Representative, fiduciary, host of Retire Right Radio, author of Retire Right Retire Now",
+            "jobTitle": "Founder",
+            "description": "Fiduciary financial advisor, host of Retire Right Radio, author of Retire Right Retire Now",
             "sameAs": "https://www.linkedin.com/in/mstevens317/"
         },
         "areaServed": [
@@ -116,7 +116,7 @@
             { "@type": "Country", "name": "United States" }
         ],
         "hasCredential": [
-            { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Series 66 Investment Adviser Representative" },
+            { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Series 66 Uniform Combined State Law Examination" },
             { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "California Insurance License #0G96805" }
         ],
         "hasOfferCatalog": {
@@ -211,7 +211,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "5.0",
-            "reviewCount": "8",
+            "reviewCount": "5",
             "bestRating": "5",
             "worstRating": "1"
         },
@@ -417,10 +417,10 @@
 .contact-eyebrow {
   font-family: var(--font-mono);
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #FDD25E;
+  color: #16253C;
   margin-bottom: 1.5rem;
 }
 
@@ -482,16 +482,91 @@
   color: #64748b;
 }
 
-/* Glass-style form card */
+/* Glass-style form card — tighter Workshop style */
 .contact-form-card {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 24px;
-  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 32px 64px rgba(0, 56, 112, 0.06);
+  border: 1px solid rgba(22, 37, 60, 0.08);
+  box-shadow: 0 24px 48px rgba(0, 56, 112, 0.08);
   position: sticky;
   top: 2rem;
+}
+
+/* Clean form header styling — tighter */
+.form-header-clean {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-eyebrow-accent {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #16253C;
+  background: #FDD25E;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+/* Improved form styling to match seminar page */
+.seminar-form-clean .contact-form-input,
+.seminar-form-clean .contact-form-select,
+.seminar-form-clean .contact-form-textarea {
+  background: rgba(248, 249, 251, 0.8);
+  border: 1px solid rgba(22, 37, 60, 0.12);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.seminar-form-clean .contact-form-input::placeholder,
+.seminar-form-clean .contact-form-textarea::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.seminar-form-clean .contact-form-input:focus,
+.seminar-form-clean .contact-form-select:focus,
+.seminar-form-clean .contact-form-textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #16253C;
+  box-shadow: 0 0 0 3px rgba(22, 37, 60, 0.08);
+}
+
+.seminar-form-clean .contact-form-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.seminar-form-clean .contact-form-submit {
+  background: #16253C;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.seminar-form-clean .contact-form-submit:hover {
+  background: #0d1521;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(22, 37, 60, 0.3);
 }
 
 .contact-form-title {
@@ -504,21 +579,21 @@
 
 .contact-form-subtitle {
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #64748b;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   line-height: 1.5;
 }
 
 .contact-form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 .contact-form-field {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .contact-form-field.full-width {
@@ -527,25 +602,25 @@
 
 .contact-form-label {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #16253C;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .contact-form-input,
 .contact-form-select,
 .contact-form-textarea {
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 0.95rem;
   background: #f8f9fb;
-  border: none;
-  border-radius: 12px;
+  border: 1px solid rgba(22, 37, 60, 0.1);
+  border-radius: 10px;
   color: #16253C;
   transition: all 0.2s ease;
 }
@@ -560,7 +635,7 @@
 
 .contact-form-textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 80px;
 }
 
 .contact-form-submit {
@@ -739,6 +814,17 @@
     grid-column: span 1;
   }
   
+  .form-header-clean {
+    margin-bottom: 1.5rem;
+  }
+  
+  .seminar-form-clean .contact-form-input,
+  .seminar-form-clean .contact-form-select,
+  .seminar-form-clean .contact-form-textarea {
+    padding: 14px;
+    font-size: 16px;
+  }
+  
   .contact-hero-section {
     padding: 2rem 0 3rem;
   }
@@ -761,7 +847,7 @@
       
       <div class="advisory-team">
         <div class="team-photos">
-          <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Capital Wealth Advisor" class="team-photo">
+          <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Founder of Capital Wealth" class="team-photo">
           <div class="team-photo placeholder">+</div>
         </div>
         <div class="team-label">Dedicated Advisory Team</div>
@@ -769,35 +855,38 @@
     </div>
     
     <div class="contact-form-card">
-      <h2 class="contact-form-title">Request a Consultation</h2>
-      <p class="contact-form-subtitle">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
+      <div class="form-header-clean">
+        <div class="form-eyebrow-accent">NO OBLIGATION</div>
+        <h2 class="contact-form-title">Request a Consultation</h2>
+        <p class="contact-form-subtitle">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
+      </div>
       
-      <form id="contact-form">
+      <form id="contact-form" class="seminar-form-clean">
         <div class="contact-form-grid">
           <div class="contact-form-field">
-            <label for="first_name" class="contact-form-label">First Name *</label>
-            <input type="text" id="first_name" name="first_name" required class="contact-form-input">
+            <label for="first_name" class="contact-form-label">First Name</label>
+            <input type="text" id="first_name" name="first_name" placeholder="First Name" required class="contact-form-input">
           </div>
           
           <div class="contact-form-field">
-            <label for="last_name" class="contact-form-label">Last Name *</label>
-            <input type="text" id="last_name" name="last_name" required class="contact-form-input">
+            <label for="last_name" class="contact-form-label">Last Name</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Last Name" required class="contact-form-input">
           </div>
           
-          <div class="contact-form-field">
-            <label for="email" class="contact-form-label">Email Address *</label>
-            <input type="email" id="email" name="email" required class="contact-form-input">
+          <div class="contact-form-field full-width">
+            <label for="email" class="contact-form-label">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" required class="contact-form-input">
           </div>
           
-          <div class="contact-form-field">
-            <label for="phone" class="contact-form-label">Phone Number *</label>
-            <input type="tel" id="phone" name="phone" required class="contact-form-input">
+          <div class="contact-form-field full-width">
+            <label for="phone" class="contact-form-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required class="contact-form-input">
           </div>
           
-          <div class="contact-form-field">
-            <label for="savings" class="contact-form-label">Savings Amount</label>
+          <div class="contact-form-field full-width">
+            <label for="savings" class="contact-form-label">Savings Amount (Optional)</label>
             <select id="savings" name="savings" class="contact-form-select">
-              <option value="">Please select</option>
+              <option value="">Please select...</option>
               <option value="$250K - $500K">$250K - $500K</option>
               <option value="$500K - $1M">$500K - $1M</option>
               <option value="$1M - $2M">$1M - $2M</option>
@@ -805,21 +894,9 @@
             </select>
           </div>
           
-          <div class="contact-form-field">
-            <label for="retirement-timeline" class="contact-form-label">Retirement Timeline</label>
-            <select id="retirement-timeline" name="retirement-timeline" class="contact-form-select">
-              <option value="">Please select</option>
-              <option value="Already retired">Already retired</option>
-              <option value="1-2 years">1-2 years</option>
-              <option value="3-5 years">3-5 years</option>
-              <option value="5-10 years">5-10 years</option>
-              <option value="10+ years">10+ years</option>
-            </select>
-          </div>
-          
           <div class="contact-form-field full-width">
-            <label for="questions" class="contact-form-label">Questions or Comments</label>
-            <textarea id="questions" name="questions" rows="4" placeholder="Tell us about your retirement planning goals or any specific questions you have..." class="contact-form-textarea"></textarea>
+            <label for="questions" class="contact-form-label">Questions or Planning Goals (Optional)</label>
+            <textarea id="questions" name="questions" rows="3" placeholder="Tell us about your retirement planning goals or any specific questions you have..." class="contact-form-textarea"></textarea>
           </div>
         </div>
         
@@ -887,11 +964,10 @@
           return;
         }
 
-        // Anti-spam: require savings OR timeline to be selected (real prospects fill these out)
+        // Anti-spam: require savings to be selected (real prospects fill this out)
         var savings = document.getElementById('savings').value;
-        var timeline = document.getElementById('retirement-timeline').value;
-        if (!savings && !timeline) {
-          status.textContent = 'Please select your savings range or retirement timeline so we can prepare for your consultation.';
+        if (!savings) {
+          status.textContent = 'Please select your savings range so we can prepare for your consultation.';
           status.style.color = '#ba1a1a';
           return;
         }
@@ -928,7 +1004,7 @@
               email: document.getElementById('email').value,
               phone: document.getElementById('phone').value,
               savings: document.getElementById('savings').value,
-              retirementTimeline: document.getElementById('retirement-timeline').value,
+              retirementTimeline: '',
               questions: document.getElementById('questions').value,
               utm_source: trackingData.utm_source || '',
               utm_medium: trackingData.utm_medium || '',
@@ -945,6 +1021,24 @@
             status.style.color = '#2d8a4e';
             status.textContent = "Thank you! Redirecting you to schedule your consultation...";
             this.reset();
+
+            // ── GA4 conversion event ──────────────────────────────────
+            if (typeof gtag === 'function') {
+              gtag('event', 'generate_lead', {
+                event_category: 'lead',
+                event_label: 'contact_form',
+                value: 1
+              });
+            }
+
+            // ── Meta Pixel Lead event ─────────────────────────────────
+            if (typeof fbq === 'function') {
+              fbq('track', 'Lead', {
+                content_name: 'Consultation Request',
+                content_category: 'Retirement Planning'
+              });
+            }
+
             setTimeout(function() {
               window.location.href = '/thank-you/';
             }, 1500);
@@ -1124,7 +1218,7 @@
         </div>
         
         <div class="finpay-footer-bottom">
-            <p>&copy; 2026 Capital Wealth. All rights reserved. | Investment advisory services offered through Capital Wealth. Michael Stevens, IAR. | <a href="/disclosures/" style="color: #737373;">Important Disclosures</a></p>
+            <p>&copy; 2026 Capital Wealth. All rights reserved. | Investment advisory services offered through Capital Wealth. Michael Stevens. | <a href="/disclosures/" style="color: #737373;">Important Disclosures</a></p>
         </div>
     </div>
 </footer>
