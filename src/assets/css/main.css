@@ -14,7 +14,7 @@
   
   /* Brand blue + orange accents */
   --accent-primary: #2b7bb9;
-  --accent-secondary: #FDD25E;
+  --accent-secondary: #C7A356;
   --accent-hover: #02528a;
   
   /* Text colors */
@@ -4281,7 +4281,7 @@ a:hover {
   display: block;
   width: 60px;
   height: 2px;
-  background: #FDD25E;
+  background: #C7A356;
   margin: 2rem auto 0;
 }
 .guide-blog-category {
@@ -4291,7 +4291,7 @@ a:hover {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: #FDD25E;
+  color: #C7A356;
   text-decoration: none;
   margin-bottom: 1.25rem;
   transition: opacity 0.2s;
@@ -4434,8 +4434,8 @@ a:hover {
   transition: border-color 0.2s;
 }
 .guide-blog-body a:hover {
-  border-bottom-color: #FDD25E;
-  color: #FDD25E;
+  border-bottom-color: #C7A356;
+  color: #C7A356;
 }
 .guide-blog-body .card {
   background: #f3f4f6;
@@ -4446,7 +4446,7 @@ a:hover {
 }
 .guide-blog-body .card h3 { margin-top: 0; }
 .guide-blog-body blockquote {
-  border-left: 4px solid #FDD25E;
+  border-left: 4px solid #C7A356;
   margin: 2.5rem 0;
   padding: 1.5rem 2rem;
   background: transparent;
@@ -4719,7 +4719,7 @@ a:hover {
   margin: 0 auto;
 }
 .fed-numbers .titan-section-label {
-  color: var(--accent-secondary, #FDD25E);
+  color: var(--accent-secondary, #C7A356);
 }
 .fed-numbers-h2 {
   font-family: var(--font-family);
@@ -4757,7 +4757,7 @@ a:hover {
   font-family: var(--font-family);
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--accent-secondary, #FDD25E);
+  color: var(--accent-secondary, #C7A356);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: 0 0 1.25rem;
@@ -4792,7 +4792,7 @@ a:hover {
   letter-spacing: 0.02em;
 }
 .fed-numbers-value.highlight {
-  color: var(--accent-secondary, #FDD25E);
+  color: var(--accent-secondary, #C7A356);
   font-size: 1.05rem;
 }
 .fed-numbers-note {
@@ -4831,7 +4831,7 @@ a:hover {
   margin: 1rem 0 0;
 }
 .fed-numbers-cta-phone a {
-  color: var(--accent-secondary, #FDD25E);
+  color: var(--accent-secondary, #C7A356);
   text-decoration: none;
   font-weight: 600;
 }
@@ -6239,7 +6239,7 @@ html { font-size: 18px; }
   content: '→';
   position: absolute;
   left: 0;
-  color: #FDD25E;
+  color: #C7A356;
   font-weight: 600;
 }
 
