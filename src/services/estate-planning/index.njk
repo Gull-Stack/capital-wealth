@@ -17,6 +17,12 @@ faqSchema:
     answer: "Review your estate plan annually and update it after major life events like marriage, divorce, births, deaths, significant asset changes, or moves to a different state. We conduct an annual beneficiary audit for all clients to ensure your designations still match your intentions."
   - question: "What happens to my beneficiaries if I don't have an estate plan?"
     answer: "Without an estate plan, state law decides who gets your assets, courts appoint guardians for minor children, and your family may face lengthy probate processes and unnecessary taxes. Proper planning ensures your wishes are honored and your loved ones are protected."
+  - question: "Do I need a trust if I have a will?"
+    answer: "A will requires probate — a public, court-supervised process that can take months and cost thousands. A revocable living trust avoids probate entirely, keeps your affairs private, and allows for seamless transfer of assets to your beneficiaries. For most retirees with significant assets, a trust is worth the upfront cost."
+  - question: "How often should I update my estate plan?"
+    answer: "Review your estate plan every 3-5 years, or sooner after major life events such as marriage, divorce, birth of a child or grandchild, death of a beneficiary, significant changes in net worth, or moving to a new state. Tax law changes can also necessitate updates."
+  - question: "What happens to my retirement accounts when I die?"
+    answer: "Non-spouse beneficiaries must withdraw all inherited retirement account funds within 10 years under the SECURE Act (with required annual distributions for most). A surviving spouse has more flexibility — they can roll the inherited IRA into their own IRA and delay distributions until their own RMD age. Proper beneficiary designations are critical because they override your will."
 ---
 
 <style>
@@ -1094,6 +1100,38 @@ faqSchema:
 </section>
 
 {# ═══════════════════════════════════════════════════════════
+   BENEFICIARY DESIGNATION WARNING — Content Section
+   ═══════════════════════════════════════════════════════════ #}
+<section style="padding: 4rem 2rem; background: var(--surface-container-low);">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <span class="ep-chapter-label">Critical Warning</span>
+    <h2 style="font-family: var(--font-serif-display); font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; color: var(--primary); line-height: 1.15; margin-bottom: 1.5rem;">Your Beneficiary Designations Override Your Will</h2>
+    <div style="background: var(--surface-container); border-radius: 12px; padding: 2rem; border-left: 4px solid var(--error, #c62828); margin-bottom: 1.5rem;">
+      <p style="font-size: 1.1rem; line-height: 1.8; color: var(--on-surface-variant); margin-bottom: 1rem; font-weight: 600;">
+        This is the most common and costly estate planning mistake we see.
+      </p>
+      <p style="font-size: 1.05rem; line-height: 1.8; color: var(--on-surface-variant);">
+        Your 401(k), IRA, life insurance, and annuity contracts all pass to whomever is named on the beneficiary designation form — regardless of what your will or trust says. If you named an ex-spouse 20 years ago and never updated it, they will inherit your retirement account. Your current spouse, children, or trust will have no legal claim.
+      </p>
+    </div>
+    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--on-surface-variant); margin-bottom: 1.5rem;">
+      <strong>Accounts with beneficiary designations that override your will:</strong>
+    </p>
+    <ul style="font-size: 1.05rem; line-height: 2; color: var(--on-surface-variant); padding-left: 1.5rem; margin-bottom: 1.5rem;">
+      <li>401(k) and 403(b) retirement plans</li>
+      <li>Traditional and Roth IRAs</li>
+      <li>Life insurance policies</li>
+      <li>Annuity contracts</li>
+      <li>Transfer-on-death (TOD) brokerage accounts</li>
+      <li>Payable-on-death (POD) bank accounts</li>
+    </ul>
+    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--on-surface-variant);">
+      We conduct an annual beneficiary audit for every client — reviewing each account to ensure designations are current, consistent with your estate plan, and aligned with your wishes. It takes one outdated form to undo years of careful planning.
+    </p>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
    7. FAQ — Editorial accordion
    ═══════════════════════════════════════════════════════════ #}
 <section class="ep-faq">
@@ -1124,6 +1162,18 @@ faqSchema:
       <button class="ep-faq-item" onclick="this.classList.toggle('active')">
         <span class="ep-faq-q">What happens without an estate plan? <span class="ep-faq-icon">+</span></span>
         <div class="ep-faq-a"><p>Without an estate plan, state law decides who gets your assets, courts appoint guardians for minor children, and your family may face lengthy probate processes and unnecessary taxes. Proper planning ensures your wishes are honored and your loved ones are protected.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Do I need a trust if I have a will? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>A will requires probate — a public, court-supervised process that can take months and cost thousands. A revocable living trust avoids probate entirely, keeps your affairs private, and allows for seamless transfer of assets to your beneficiaries. For most retirees with significant assets, a trust is worth the upfront cost.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How often should I update my estate plan? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Review your estate plan every 3-5 years, or sooner after major life events such as marriage, divorce, birth of a child or grandchild, death of a beneficiary, significant changes in net worth, or moving to a new state. Tax law changes can also necessitate updates.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What happens to my retirement accounts when I die? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Non-spouse beneficiaries must withdraw all inherited retirement account funds within 10 years under the SECURE Act (with required annual distributions for most). A surviving spouse has more flexibility — they can roll the inherited IRA into their own IRA and delay distributions until their own RMD age. Proper beneficiary designations are critical because they override your will.</p></div>
       </button>
     </div>
   </div>

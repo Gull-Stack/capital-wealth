@@ -1,0 +1,1070 @@
+---
+layout: layouts/service-subpage.njk
+title: "Federal Retirement Tax Planning: Avoid the Retirement Year Tax Trap | Capital Wealth"
+description: "Federal retirees face unique tax challenges. Learn about the retirement year tax trap, pension taxation, TSP withdrawal strategies, Roth conversions, IRMAA avoidance, and optimal retirement timing."
+serviceTag: "federal"
+breadcrumbs:
+  - { name: "Home", url: "/" }
+  - { name: "Services", url: "/services/" }
+  - { name: "Federal Employee Benefits", url: "/services/federal-benefits/" }
+  - { name: "Federal Retirement Taxes", url: "/services/federal-benefits/federal-retirement-taxes/" }
+faqSchema:
+  - question: "Is my FERS pension fully taxable?"
+    answer: "Nearly all of your FERS pension is taxable as ordinary income. A small portion of each payment represents a return of your after-tax employee contributions and is not taxed, but for most retirees this non-taxable portion is minimal. The vast majority of your FERS annuity will be reported as taxable income on your federal tax return each year, and potentially on your state return as well depending on where you live."
+  - question: "What is the best month to retire for tax purposes?"
+    answer: "December 31st is the optimal retirement date for most federal employees from a tax perspective. By retiring on the last day of the year, you push all pension income, TSP withdrawals, and Social Security benefits into the following calendar year — a year in which you have no salary income. This avoids stacking retirement income on top of a partial year of salary, which can push you into higher tax brackets and trigger Medicare IRMAA surcharges. The potential savings range from $5,000 to $15,000 or more in a single year."
+  - question: "How can I avoid IRMAA surcharges on Medicare?"
+    answer: "IRMAA surcharges are based on your modified adjusted gross income from two years prior. To avoid them, manage your income strategically in the years that will be used for IRMAA determination. This means carefully timing TSP withdrawals, Roth conversions, and other income events. If you experience a life-changing event such as retirement that significantly reduces your income, you can file Form SSA-44 to appeal and request that Medicare use your more recent, lower income instead of the higher income from two years ago."
+  - question: "Should federal employees do Roth conversions?"
+    answer: "Roth conversions can be extremely valuable for federal employees, especially during lower-income years between retirement and the start of Required Minimum Distributions at age 72-73. The window between retirement and RMDs often represents the lowest tax bracket years of your life. Converting traditional TSP funds to Roth during this period — while staying within lower tax brackets and below IRMAA thresholds — can save significant taxes over your lifetime. As of January 2026, in-plan Roth conversions are available directly within the TSP."
+  - question: "Are TSP withdrawals taxable?"
+    answer: "Traditional TSP withdrawals are 100% taxable as ordinary income. Every dollar you withdraw from your traditional TSP balance will be added to your taxable income for that year. Roth TSP withdrawals, however, are completely tax-free if they are qualified distributions — meaning your Roth account has been open for at least 5 years and you are age 59 and a half or older. This fundamental difference makes Roth conversion planning a critical component of federal retirement tax strategy."
+---
+
+<style>
+/* ═══════════════════════════════════════════
+   EDITORIAL SERVICE PAGE — Federal Retirement Taxes
+   ═══════════════════════════════════════════ */
+
+/* Page Layout with Sidebar */
+.ep-page-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ep-sidebar {
+  position: sticky;
+  top: 6rem;
+  height: fit-content;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+}
+
+.ep-sidebar-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.5rem;
+}
+
+.ep-sidebar-title {
+  font-family: var(--font-serif-display);
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.ep-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ep-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.ep-sidebar-link:hover {
+  color: var(--primary);
+  background: var(--surface-container-low);
+}
+
+.ep-sidebar-link.active {
+  color: var(--primary);
+  font-weight: 600;
+  border-left-color: var(--secondary);
+  background: var(--surface-container-low);
+}
+
+@media (max-width: 1024px) {
+  .ep-page-layout {
+    grid-template-columns: 1fr;
+  }
+  .ep-sidebar {
+    display: none;
+  }
+}
+
+/* Hero */
+.ep-hero {
+  padding: 2rem 2rem 5rem;
+  background: var(--surface-container-low);
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.ep-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.ep-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.ep-hero-title-italic {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--on-surface-variant);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.ep-hero-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons — match homepage hero-btn / hero-btn-secondary */
+.ep-btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(0, 56, 112, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 56, 112, 0.3);
+  color: white;
+}
+
+.ep-btn-primary:hover {
+  background: rgba(0, 56, 112, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
+}
+
+.ep-btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ep-btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ep-hero-image-wrap {
+  position: relative;
+}
+
+.ep-hero-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-pull-quote {
+  position: absolute;
+  bottom: -2rem;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-left: 4px solid var(--secondary);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+}
+
+.ep-pull-quote p {
+  font-family: var(--font-serif-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ep-pull-quote cite {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1rem;
+}
+
+/* Key Facts Row */
+.ep-facts {
+  padding: 2.5rem 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(194, 198, 210, 0.2);
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+}
+
+.ep-facts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ep-fact {
+  flex: 1;
+}
+
+.ep-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.4rem;
+}
+
+.ep-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+/* Framework Section */
+.ep-framework {
+  padding: 6rem 2rem;
+  background: var(--surface);
+}
+
+.ep-framework-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.ep-framework-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-framework-accent {
+  width: 3rem;
+  height: 3px;
+  background: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.ep-framework-desc {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: var(--on-surface-variant);
+}
+
+.ep-framework-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(194, 198, 210, 0.2);
+}
+
+.ep-framework-card {
+  padding: 2.5rem;
+  background: white;
+  transition: all 0.2s ease;
+  border-top: 3px solid transparent;
+}
+
+.ep-framework-card:hover {
+  background: var(--surface-container-low);
+  border-top-color: var(--secondary);
+}
+
+.ep-framework-card h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-framework-card p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--on-surface-variant);
+}
+
+/* Dark Section — Stats & Solution */
+.ep-dark {
+  padding: 6rem 2rem;
+  background: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.ep-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
+  z-index: 0;
+}
+
+.ep-dark-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ep-dark-header {
+  margin-bottom: 4rem;
+}
+
+.ep-dark-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: white;
+  line-height: 1.15;
+}
+
+.ep-dark-title em {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.ep-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.ep-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ep-glass-card:last-child {
+  margin-top: 0;
+}
+
+.ep-glass-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.ep-glass-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.ep-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ep-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ep-stat-number {
+  font-family: var(--font-serif-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.ep-stat-number small {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-left: 0.25rem;
+}
+
+.ep-glass-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.ep-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ep-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+}
+
+.ep-check-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Asymmetric Image + Text */
+.ep-transfer {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-transfer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ep-transfer-image-wrap {
+  flex: 0 0 45%;
+  position: relative;
+}
+
+.ep-transfer-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+
+.ep-transfer-image-accent {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 120px;
+  height: 120px;
+  background: var(--tertiary-fixed, #d9e4eb);
+  z-index: -1;
+}
+
+.ep-transfer-text {
+  flex: 1;
+}
+
+.ep-transfer-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--primary);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.ep-transfer-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2.5rem;
+}
+
+.ep-sub-feature {
+  margin-bottom: 1.5rem;
+  cursor: default;
+}
+
+.ep-sub-feature h4 {
+  font-family: var(--font-serif-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.ep-sub-feature:hover h4 {
+  color: var(--secondary);
+}
+
+.ep-sub-feature p {
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* FAQ */
+.ep-faq {
+  padding: 6rem 2rem;
+  background: var(--surface-container-low);
+}
+
+.ep-faq-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.ep-faq-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ep-faq-sub {
+  font-size: 0.95rem;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ep-faq-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ep-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.ep-faq-icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.ep-faq-item.active .ep-faq-icon {
+  transform: rotate(45deg);
+}
+
+.ep-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.ep-faq-item.active .ep-faq-a {
+  max-height: 300px;
+}
+
+.ep-faq-a p {
+  padding: 0 0 1.5rem;
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+/* CTA — matches homepage final-cta */
+.ep-cta {
+  padding: 4rem 2rem;
+  background: var(--surface);
+}
+
+.ep-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ep-cta-content {
+  max-width: 520px;
+}
+
+.ep-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.ep-cta-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  margin-bottom: 2rem;
+}
+
+.ep-cta-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ep-cta-promise {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ep-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ep-hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .ep-pull-quote {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: -2rem;
+    max-width: 100%;
+  }
+
+  .ep-facts-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .ep-fact {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .ep-framework-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-framework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-framework {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-dark-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-glass-card {
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .ep-glass-card:last-child {
+    margin-top: 0;
+  }
+
+  .ep-transfer {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-transfer-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ep-transfer-image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .ep-transfer-image {
+    height: 350px;
+  }
+
+  .ep-transfer-image-accent {
+    display: none;
+  }
+
+  .ep-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-faq {
+    padding: 4rem 1.5rem;
+  }
+
+  .ep-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .ep-cta-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ep-cta-image {
+    height: 250px;
+  }
+
+  .ep-btn-primary, .ep-btn-ghost {
+    text-align: center;
+  }
+}
+</style>
+
+<div class="ep-page-layout">
+  <nav class="ep-sidebar">
+    <div class="ep-sidebar-label">Navigation</div>
+    <h3 class="ep-sidebar-title">Retirement Taxes</h3>
+    <div class="ep-sidebar-nav">
+      <a href="#overview" class="ep-sidebar-link">Overview</a>
+      <a href="#tax-trap" class="ep-sidebar-link">The Tax Trap</a>
+      <a href="#december-strategy" class="ep-sidebar-link">December 31st Strategy</a>
+      <a href="#irmaa" class="ep-sidebar-link">IRMAA</a>
+      <a href="#roth" class="ep-sidebar-link">Roth Conversions</a>
+      <a href="#state-taxes" class="ep-sidebar-link">State Taxes</a>
+      <a href="#faq" class="ep-sidebar-link">FAQ</a>
+    </div>
+  </nav>
+
+  <main class="ep-main-content">
+{# ═══════════════════════════════════════════════════════════
+   1. HERO — Asymmetric editorial layout
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-hero" id="overview">
+  <div class="ep-hero-inner">
+    <div>
+      <span class="ep-chapter-label">Tax Planning</span>
+      <h1 class="ep-hero-title">Federal Retirement Taxes:</h1>
+      <span class="ep-hero-title-italic">The Surprise Most Retirees Don't See Coming</span>
+      <p class="ep-hero-body">Your FERS pension is 100% taxable. Your traditional TSP withdrawals are 100% taxable. Up to 85% of your Social Security may be taxable. And in the year you retire, all of these can stack — creating the highest-income tax year of your life.</p>
+      <a href="/contact/" class="ep-btn-primary">Plan My Tax Strategy</a>
+    </div>
+    <div class="ep-hero-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-department-building-flag.jpg"
+           alt="Federal building representing retirement tax planning expertise"
+           class="ep-hero-image">
+      <div class="ep-pull-quote">
+        <p>"The year you retire can become the highest-income tax year of your life."</p>
+        <cite>Mike Stevens</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   2. KEY FACTS — 2026 Reference Numbers
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-facts">
+  <div class="ep-facts-inner">
+    <div class="ep-fact">
+      <div class="ep-fact-label">Standard Deduction (MFJ)</div>
+      <div class="ep-fact-value">$31,500</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">Standard Deduction (Single)</div>
+      <div class="ep-fact-value">$24,150</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">22% Bracket Starts (MFJ)</div>
+      <div class="ep-fact-value">$96,951</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">IRMAA Threshold (MFJ)</div>
+      <div class="ep-fact-value">$218,000</div>
+    </div>
+    <div class="ep-fact">
+      <div class="ep-fact-label">TSP Roth Conversion</div>
+      <div class="ep-fact-value">In-plan available Jan 2026</div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   3. FRAMEWORK — The Retirement Year Tax Trap & December 31st Strategy
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-framework" id="tax-trap">
+  <div class="ep-framework-inner">
+    <div>
+      <h2 class="ep-framework-title">The Retirement Year Tax Trap</h2>
+      <div class="ep-framework-accent"></div>
+      <p class="ep-framework-desc">The most expensive tax mistake federal employees make is retiring mid-year without understanding how income stacking creates a massive tax bill. Strategic timing can save thousands.</p>
+    </div>
+    <div class="ep-framework-grid">
+      <div class="ep-framework-card" id="december-strategy">
+        <h4>Mid-Year Retirement Disaster</h4>
+        <p>A GS-13 couple retiring mid-year can easily stack 6 months of salary, annual leave payout, pension payments, and TSP withdrawals into a single year — totaling $200,000+ in taxable income and pushing them into higher brackets than any working year.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>The December 31st Strategy</h4>
+        <p>By retiring December 31st, all pension income, TSP withdrawals, and Social Security benefits are pushed into the following calendar year — a year with zero salary income. Potential one-year savings: $5,000-$15,000.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Annual Leave Payout Trap</h4>
+        <p>Your accumulated annual leave is paid out as a lump sum in the year you retire. Combined with your salary, this alone can push you into a higher bracket. Timing this payout strategically is critical to minimizing the tax impact.</p>
+      </div>
+      <div class="ep-framework-card">
+        <h4>Pension Taxation Reality</h4>
+        <p>Your FERS pension is nearly 100% taxable as ordinary income. When it begins in the same year as your final salary, the combined income often exceeds what you earned while working — creating the tax surprise most retirees never anticipated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   4. DARK SECTION — IRMAA & Roth Conversions
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-dark" id="irmaa">
+  <div class="ep-dark-inner">
+    <div class="ep-dark-header">
+      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">The Hidden Tax</span>
+      <h2 class="ep-dark-title">IRMAA: <em>The Tax on Your Tax.</em></h2>
+    </div>
+    <div class="ep-dark-grid">
+      <div class="ep-glass-card">
+        <span class="ep-glass-eyebrow">Medicare Premium Surcharges</span>
+        <h3>2026 IRMAA Thresholds</h3>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Single Threshold</span>
+          <span class="ep-stat-number">$109k</span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">MFJ Threshold</span>
+          <span class="ep-stat-number">$218k</span>
+        </div>
+        <div class="ep-stat-row">
+          <span class="ep-stat-label">Surcharge Range</span>
+          <span class="ep-stat-number">$81<small>-$487/mo</small></span>
+        </div>
+        <p class="ep-glass-body">IRMAA surcharges are based on your income from two years prior. At the first tier, Part B jumps to $284.10/month per person. Strategic retirement timing and income management can help you avoid these surcharges entirely.</p>
+      </div>
+      <div class="ep-glass-card" id="roth">
+        <span class="ep-glass-eyebrow">Tax-Free Growth Strategy</span>
+        <h3>Roth Conversions for Federal Employees</h3>
+        <p class="ep-glass-body">In-plan Roth conversions are now available as of January 2026. The window between retirement and RMDs at age 72-73 often represents the lowest-income years of your life — the ideal time to convert traditional TSP to Roth.</p>
+        <ul class="ep-check-list">
+          <li>In-plan TSP Roth conversion available 2026</li>
+          <li>Fill lower brackets without triggering IRMAA</li>
+          <li>Convert during low-income years before RMDs</li>
+          <li>Tax-free withdrawals in retirement</li>
+          <li>No RMDs on Roth balances</li>
+          <li>Reduce future taxable income</li>
+          <li>Mandatory Roth catch-up: $150,000 threshold</li>
+          <li>24% bracket starts at $206,701 (MFJ)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   5. ASYMMETRIC — State Tax Considerations
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-transfer" id="state-taxes">
+  <div class="ep-transfer-inner">
+    <div class="ep-transfer-image-wrap">
+      <img src="/assets/images/photos/federal/capitalwealth-federal-office-analysis.jpg"
+           alt="Federal office analysis representing retirement tax planning"
+           class="ep-transfer-image">
+      <div class="ep-transfer-image-accent"></div>
+    </div>
+    <div class="ep-transfer-text">
+      <span class="ep-chapter-label">State Tax Impact</span>
+      <h2 class="ep-transfer-title">Where You Live<br>Changes Everything</h2>
+      <p class="ep-transfer-body">State tax treatment of federal pensions varies dramatically. Some states fully tax your FERS pension, while others exempt it entirely. The difference can mean $5,000-$8,000 per year in additional taxes — or savings.</p>
+      <div class="ep-sub-feature">
+        <h4>No Income Tax States</h4>
+        <p>Texas, Florida, Nevada, and Wyoming impose no state income tax on any retirement income. For federal retirees considering relocation, these states offer the most straightforward tax savings on pensions, TSP withdrawals, and Social Security.</p>
+      </div>
+      <div class="ep-sub-feature">
+        <h4>Pension Exemption States</h4>
+        <p>Several states offer partial or full exemptions for government pensions even if they have an income tax. Understanding your state's specific treatment of FERS annuities is essential for accurate retirement income projections.</p>
+      </div>
+      <div class="ep-sub-feature">
+        <h4>Relocation Analysis</h4>
+        <p>Moving to a tax-friendly state in retirement could save tens of thousands over your lifetime. We help quantify the real impact so you can make an informed decision — factoring in cost of living, not just tax rates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   6. FAQ — Editorial accordion
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-faq" id="faq">
+  <div class="ep-faq-inner">
+    <div>
+      <span class="ep-chapter-label">Common Questions</span>
+      <h2 class="ep-faq-title">Retirement Tax FAQ</h2>
+      <p class="ep-faq-sub">Essential information about federal retirement taxation, IRMAA avoidance, Roth conversions, and strategic retirement timing.</p>
+      <a href="/contact/" class="ep-btn-ghost">Plan My Tax Strategy</a>
+    </div>
+    <div>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Is my FERS pension fully taxable? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Nearly all of your FERS pension is taxable as ordinary income. A small portion of each payment represents a return of your after-tax employee contributions and is not taxed, but for most retirees this non-taxable portion is minimal. The vast majority of your FERS annuity will be reported as taxable income on your federal and potentially state tax return each year.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is the best month to retire for tax purposes? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>December 31st is the optimal retirement date for most federal employees from a tax perspective. By retiring on the last day of the year, all pension income, TSP withdrawals, and Social Security benefits are pushed into the following calendar year — a year with zero salary income. This avoids stacking retirement income on top of a partial year of salary, which can push you into higher tax brackets and trigger Medicare IRMAA surcharges. The potential savings range from $5,000 to $15,000 or more in a single year.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How can I avoid IRMAA surcharges on Medicare? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>IRMAA surcharges are based on your modified adjusted gross income from two years prior. To avoid them, manage your income strategically in the years used for IRMAA determination — carefully timing TSP withdrawals, Roth conversions, and other income events. If you experience a life-changing event such as retirement that significantly reduces your income, you can file Form SSA-44 to appeal and request that Medicare use your more recent, lower income instead.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should federal employees do Roth conversions? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Roth conversions can be extremely valuable for federal employees, especially during lower-income years between retirement and the start of Required Minimum Distributions at age 72-73. This window often represents the lowest tax bracket years of your life. Converting traditional TSP funds to Roth during this period — while staying within lower brackets and below IRMAA thresholds — can save significant taxes over your lifetime. As of January 2026, in-plan Roth conversions are available directly within the TSP.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Are TSP withdrawals taxable? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Traditional TSP withdrawals are 100% taxable as ordinary income — every dollar withdrawn is added to your taxable income for that year. Roth TSP withdrawals, however, are completely tax-free if they are qualified distributions, meaning your Roth account has been open for at least 5 years and you are age 59 and a half or older. This fundamental difference makes Roth conversion planning a critical component of federal retirement tax strategy.</p></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   7. CTA — Centered editorial
+   ═══════════════════════════════════════════════════════════ #}
+<section class="ep-cta">
+  <div class="ep-cta-inner">
+    <div class="ep-cta-content">
+      <h2 class="ep-cta-title">Ready to minimize your retirement tax bill?</h2>
+      <p class="ep-cta-body">Don't let the retirement year tax trap cost you thousands. Schedule a comprehensive tax planning analysis to optimize your retirement timing, Roth conversion strategy, and income management for maximum after-tax retirement income.</p>
+      <a href="/contact/" class="ep-btn-primary">Plan My Tax Strategy</a>
+      <p class="ep-cta-promise">Federal Employee Specialists</p>
+    </div>
+    <img src="/assets/images/photos/federal/capitalwealth-federal-department-building.jpg" alt="Federal building representing retirement tax planning expertise" class="ep-cta-image">
+  </div>
+</section>
+  </main>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('.ep-sidebar-link');
+  const sections = [];
+  links.forEach(link => {
+    const id = link.getAttribute('href').replace('#', '');
+    const section = document.getElementById(id);
+    if (section) sections.push({ id, el: section, link });
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector('.ep-sidebar-link[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+
+  sections.forEach(s => observer.observe(s.el));
+});
+</script>

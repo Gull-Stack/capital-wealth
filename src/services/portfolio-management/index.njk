@@ -17,6 +17,12 @@ faqSchema:
     answer: "We believe in diversification, low-cost investments, tax efficiency, and active risk management. We don't chase returns or try to time the market. We build portfolios designed to support your retirement income needs while protecting against major downside risk."
   - question: "How often will you rebalance my portfolio?"
     answer: "We monitor portfolios continuously and rebalance strategically based on market conditions and allocation drift. This is typically quarterly, but can be more frequent during volatile markets or when tax-loss harvesting opportunities arise."
+  - question: "How should my portfolio change as I approach retirement?"
+    answer: "As you approach retirement, your portfolio should gradually shift from growth-oriented to income-oriented investments. However, with retirements lasting 25-30 years, you still need equity exposure to outpace inflation and sustain withdrawals. We build a glide path that balances income needs with long-term growth."
+  - question: "What is the bucket strategy for retirement investing?"
+    answer: "The bucket strategy divides your portfolio into three time-based segments: short-term (1-3 years of expenses in cash and CDs), medium-term (3-7 years in balanced bond and dividend funds), and long-term (7+ years in equities for growth). This approach ensures you always have accessible funds while giving your growth investments time to recover from downturns."
+  - question: "What is a safe withdrawal rate in retirement?"
+    answer: "The traditional 4% rule suggests withdrawing 4% of your portfolio in year one and adjusting for inflation each year. However, modern research suggests 3.5-3.8% may be more appropriate for early retirees or those facing extended retirements. A dynamic withdrawal strategy that adjusts based on market performance often produces better outcomes than a fixed rate."
 ---
 
 <style>
@@ -1098,6 +1104,28 @@ faqSchema:
 </section>
 
 {# ═══════════════════════════════════════════════════════════
+   SEQUENCE OF RETURNS RISK — Content Section
+   ═══════════════════════════════════════════════════════════ #}
+<section style="padding: 4rem 2rem; background: var(--surface-container-low);">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <span class="ep-chapter-label">Retirement Risk</span>
+    <h2 style="font-family: var(--font-serif-display); font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; color: var(--primary); line-height: 1.15; margin-bottom: 1.5rem;">The Biggest Threat to Your Retirement Portfolio</h2>
+    <p style="font-size: 1.15rem; line-height: 1.8; color: var(--on-surface-variant); margin-bottom: 1.5rem; font-style: italic; border-left: 3px solid var(--secondary); padding-left: 1.25rem;">
+      The biggest threat to a retirement portfolio isn't a bad year — it's a bad year at the wrong time.
+    </p>
+    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--on-surface-variant); margin-bottom: 1.5rem;">
+      <strong>Sequence of returns risk</strong> means that a major market downturn early in retirement — when you're withdrawing from your portfolio — can permanently damage your ability to sustain income for the rest of your life. A 30% drop at age 65 is far more damaging than the same drop at age 75, because you're selling shares at depressed prices to fund living expenses, leaving fewer shares to recover.
+    </p>
+    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--on-surface-variant); margin-bottom: 1.5rem;">
+      This is exactly why we use the <strong>bucket strategy</strong> as a defense. By keeping 1-3 years of expenses in cash and short-term instruments, you never have to sell equities during a downturn. Your medium-term bucket (3-7 years in bonds and balanced funds) provides a bridge, while your long-term bucket (7+ years in equities) has the time it needs to recover and grow.
+    </p>
+    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--on-surface-variant);">
+      The result: you can ride out market volatility without panic, without selling at the worst possible time, and without jeopardizing your retirement income. That's the peace of mind professional portfolio management delivers.
+    </p>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
    7. FAQ — Editorial accordion
    ═══════════════════════════════════════════════════════════ #}
 <section class="ep-faq">
@@ -1128,6 +1156,18 @@ faqSchema:
       <button class="ep-faq-item" onclick="this.classList.toggle('active')">
         <span class="ep-faq-q">How often will you rebalance my portfolio? <span class="ep-faq-icon">+</span></span>
         <div class="ep-faq-a"><p>We monitor portfolios continuously and rebalance strategically based on market conditions and allocation drift. This is typically quarterly, but can be more frequent during volatile markets or when tax-loss harvesting opportunities arise.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How should my portfolio change as I approach retirement? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>As you approach retirement, your portfolio should gradually shift from growth-oriented to income-oriented investments. However, with retirements lasting 25-30 years, you still need equity exposure to outpace inflation and sustain withdrawals. We build a glide path that balances income needs with long-term growth.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is the bucket strategy for retirement investing? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The bucket strategy divides your portfolio into three time-based segments: short-term (1-3 years of expenses in cash and CDs), medium-term (3-7 years in balanced bond and dividend funds), and long-term (7+ years in equities for growth). This approach ensures you always have accessible funds while giving your growth investments time to recover from downturns.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is a safe withdrawal rate in retirement? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The traditional 4% rule suggests withdrawing 4% of your portfolio in year one and adjusting for inflation each year. However, modern research suggests 3.5-3.8% may be more appropriate for early retirees or those facing extended retirements. A dynamic withdrawal strategy that adjusts based on market performance often produces better outcomes than a fixed rate.</p></div>
       </button>
     </div>
   </div>
