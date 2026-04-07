@@ -321,27 +321,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/blog/retirement-tightrope-mar-28-2026/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/brand-facts/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/case-studies/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -356,47 +336,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/facebook-report/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/faq/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/federal-benefits-seminar/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/federal-resources/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/federal-workshop-april-9/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/fers-retirement-planning-idaho/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/fers-retirement-planning-utah/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/financial-advisor-idaho/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/financial-advisor-utah/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -461,22 +401,87 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/guides/sdba-complete-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/guides/when-to-take-social-security/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/</loc>
+    <loc>https://www.capitalwealth.com/leads/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/l/federal-benefits-workshop/</loc>
+    <loc>https://www.capitalwealth.com/press/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/resources/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/sdba/401k-brokerage-window/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/sdba/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/services/sdba/tsp-mutual-fund-window/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/brand-facts/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/federal-resources/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/federal-workshop-april-9/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/fers-retirement-planning-idaho/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/fers-retirement-planning-utah/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/financial-advisor-idaho/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/financial-advisor-utah/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/guides/sdba-complete-guide/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -496,22 +501,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/leads/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/press/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/refer-a-friend/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/resources/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -631,21 +621,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/services/sdba/401k-brokerage-window/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/services/sdba/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.capitalwealth.com/services/sdba/tsp-mutual-fund-window/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/services/social-security/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -656,22 +631,37 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/terms/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.capitalwealth.com/who-we-serve/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/annual-update/</loc>
+    <loc>https://www.capitalwealth.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.capitalwealth.com/annual-update-print/</loc>
+    <loc>https://www.capitalwealth.com/facebook-report/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/federal-benefits-seminar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/l/federal-benefits-workshop/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.capitalwealth.com/federal-workshop-review/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

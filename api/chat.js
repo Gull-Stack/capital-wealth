@@ -1,6 +1,42 @@
 // Capital Wealth — Winchester Chat API
 // Proxies visitor messages to Winchester's OpenClaw gateway
 
+// PII sanitizer — strips identifiable data before sending to the model
+function sanitizePII(text) {
+  if (!text || typeof text !== 'string') return text;
+
+  // Email addresses → [EMAIL]
+  text = text.replace(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g, '[EMAIL]');
+
+  // SSN patterns (xxx-xx-xxxx) → [REDACTED]
+  text = text.replace(/\b\d{3}[-\s]?\d{2}[-\s]?\d{4}\b/g, '[REDACTED]');
+
+  // Phone numbers (10-digit with separators) → [PHONE]
+  text = text.replace(/(?:\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]\d{3}[-.\s]\d{4}\b/g, '[PHONE]');
+
+  // Specific dollar amounts → qualification ranges (model can still assess fit)
+  text = text.replace(/\$\s*[\d,]+(?:\.\d+)?(?:\s*(?:k|K|thousand|million|mil|m|M)\b)?/g, (match) => {
+    const num = parseFloat(match.replace(/[$,\s]/g, ''));
+    if (isNaN(num)) return match;
+    let val = num;
+    if (/million|mil|m/i.test(match)) val = num * 1000000;
+    else if (/k|thousand/i.test(match)) val = num * 1000;
+    if (val < 100000) return 'under $100K';
+    if (val < 250000) return 'in the $100K-$250K range';
+    if (val < 500000) return 'in the $250K-$500K range';
+    if (val < 1000000) return 'in the $500K-$1M range';
+    return 'over $1M';
+  });
+
+  return text;
+}
+
+function sanitizeMessages(messages) {
+  return messages
+    .filter(m => !m.content?.startsWith?.('[QUALIFIED_LEAD]'))
+    .map(m => ({ ...m, content: sanitizePII(m.content) }));
+}
+
 async function notifyLeadCapture(content, env) {
   if (!env.SENDGRID_API_KEY) return;
   try {
@@ -120,7 +156,7 @@ CRITICAL RULES:
       },
       body: JSON.stringify({
         model: 'openclaw:main',
-        messages: [systemPrompt, ...messages],
+        messages: [systemPrompt, ...sanitizeMessages(messages)],
         max_tokens: 150,
       }),
     });
