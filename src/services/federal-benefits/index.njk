@@ -1,939 +1,702 @@
 ---
 layout: layouts/service-subpage.njk
 title: "Federal Employee Benefits Planning | Capital Wealth"
-description: "Specialized retirement planning for federal employees. FERS optimization, TSP management, FEGLI analysis, FEHB coordination, and more. Lehi, Utah."
+description: "Specialized retirement planning for federal employees. FERS optimization, TSP management, FEGLI analysis, FEHB coordination, and more. Nationwide fiduciary service from Lehi, Utah."
 serviceTag: "federal"
 breadcrumbs:
   - { name: "Home", url: "/" }
   - { name: "Services", url: "/services/" }
   - { name: "Federal Employee Benefits", url: "/services/federal-benefits/" }
 faqSchema:
-  - question: "Should I roll over my TSP when I retire?"
-    answer: "It depends on your situation. TSP has very low fees and solid fund options (especially the G Fund). However, an IRA rollover gives you more investment flexibility, Roth conversion opportunities, and simplified beneficiary planning. We analyze both options and recommend what's best for your specific situation."
-  - question: "Is FEGLI worth keeping into retirement?"
-    answer: "Rarely. FEGLI costs increase dramatically after retirement, and most federal retirees can get better coverage at lower cost through private insurance. We analyze your coverage needs and compare FEGLI's post-retirement costs against private alternatives — many clients save thousands per year."
-  - question: "How do I coordinate FEHB with Medicare?"
-    answer: "If you keep FEHB into retirement (which you should), it coordinates with Medicare as your primary coverage. Medicare becomes your primary insurance, and FEHB acts as secondary, often covering your Medicare out-of-pocket costs. This combination provides excellent coverage at a reasonable cost."
-  - question: "When is the best time to retire as a federal employee?"
-    answer: "The optimal retirement date depends on your MRA (Minimum Retirement Age), years of service, and financial situation. You need 30 years for an unreduced pension at MRA, or age 60 with 20 years, or age 62 with 5 years. We model different retirement dates to show you the financial impact of retiring early versus waiting."
-  - question: "How much should I have saved in TSP before I retire?"
-    answer: "There's no one-size-fits-all number. Your TSP needs depend on your FERS pension amount, Social Security, retirement lifestyle, and other income sources. We create detailed projections showing exactly how much TSP you need based on your specific situation."
+  - question: "What makes Capital Wealth different from other federal benefits advisors?"
+    answer: "We are fee-only fiduciaries — we don't sell insurance products or earn commissions from seminars. Mike Stevens has spent his career exclusively focused on the federal benefits system, and our planning process covers the full picture: FERS pension optimization, TSP strategy, FEGLI analysis, FEHB coordination, Social Security timing, and tax planning. Most seminar presenters are licensed to sell annuities. We're licensed to give advice."
+  - question: "When should I start planning for federal retirement?"
+    answer: "Ideally, five years before your target retirement date. A five-year runway lets us model Roth TSP conversions, optimize your high-3 salary average, evaluate FEGLI reduction options, and coordinate your retirement date with Social Security and Medicare eligibility. That said, we help federal employees at every career stage — even those who retired years ago and want a second opinion on their benefit elections."
+  - question: "Do you offer a free consultation for federal employees?"
+    answer: "Yes. We offer a complimentary 30-minute introductory call where we review your current situation, identify the biggest gaps in your federal benefits strategy, and outline what a full planning engagement would look like. There's no obligation and no sales pitch — just an honest conversation about whether we're the right fit."
+  - question: "Can you help federal employees outside of Utah?"
+    answer: "Absolutely. We work with federal employees and retirees nationwide via secure video conferencing. Whether you're stationed at a military base in Virginia, a VA hospital in Texas, or a federal office in D.C., our planning process works the same way. About half of our federal clients are outside Utah."
+  - question: "How is fee-only planning different from the free seminars agencies offer?"
+    answer: "Free federal retirement seminars are typically sponsored by insurance companies. The presenters earn commissions when attendees purchase annuities or life insurance products after the event. Fee-only planning means you pay us directly for advice — we have no products to sell and no incentive other than giving you the best recommendation. Our advice is legally required to be in your best interest."
 ---
 
 <style>
-/* ═══════════════════════════════════════════
-   EDITORIAL SERVICE PAGE — Federal Benefits
-   ═══════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════════════════
+   FEDERAL BENEFITS HUB — BENTO GRID EDITORIAL
+   ═══════════════════════════════════════════════════════════ */
 
-/* Hero */
-.ep-hero {
-  padding: 2rem 2rem 5rem;
-  background: var(--surface-container-low);
-  overflow: hidden;
-  margin-top: -1rem;
-}
-
-.ep-hero-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.ep-chapter-label {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--secondary);
-  margin-bottom: 1.5rem;
-  display: block;
-}
-
-.ep-hero-title {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2.8rem, 5vw, 4rem);
-  font-weight: 700;
-  color: var(--primary);
-  line-height: 1.08;
-  margin-bottom: 0.5rem;
-}
-
-.ep-hero-title-italic {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 400;
-  font-style: italic;
-  color: var(--on-surface-variant);
-  line-height: 1.15;
-  margin-bottom: 2rem;
-  display: block;
-}
-
-.ep-hero-body {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: var(--on-surface-variant);
-  max-width: 540px;
-  margin-bottom: 2.5rem;
-}
-
-/* Buttons — match homepage hero-btn / hero-btn-secondary */
-.ep-btn-primary {
-  display: inline-block;
-  padding: 0.85rem 2rem;
-  border-radius: 16px;
-  text-decoration: none;
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-  background: rgba(0, 56, 112, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 56, 112, 0.3);
-  color: white;
-  margin-right: 1rem;
-}
-
-.ep-btn-primary:hover {
-  background: rgba(0, 56, 112, 0.95);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 56, 112, 0.15);
-}
-
-.ep-btn-ghost {
-  display: inline-block;
-  padding: 0.85rem 2rem;
-  border-radius: 16px;
-  text-decoration: none;
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-  background: transparent;
-  border: 2px solid var(--primary);
-  color: var(--primary);
-}
-
-.ep-btn-ghost:hover {
-  background: var(--primary);
-  color: white;
-  transform: translateY(-2px);
-}
-
-.ep-hero-image-wrap {
+/* ---------- HERO ---------- */
+.fb-hero {
   position: relative;
-}
-
-.ep-hero-image {
-  width: 100%;
-  aspect-ratio: 4/5;
-  object-fit: cover;
-  display: block;
-}
-
-.ep-pull-quote {
-  position: absolute;
-  bottom: -2rem;
-  left: -3rem;
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-left: 4px solid var(--secondary);
-  border-radius: 16px;
-  padding: 2rem;
-  max-width: 320px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
-}
-
-.ep-pull-quote p {
-  font-family: var(--font-serif-display);
-  font-style: italic;
-  font-size: 1.25rem;
-  line-height: 1.45;
-  color: var(--primary);
-  margin: 0;
-}
-
-.ep-pull-quote cite {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-style: normal;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--on-surface-variant);
-  margin-top: 1rem;
-}
-
-/* Key Facts Row */
-.ep-facts {
-  padding: 2.5rem 2rem;
-  background: var(--surface);
-  border-top: 1px solid rgba(194, 198, 210, 0.2);
-  border-bottom: 1px solid rgba(194, 198, 210, 0.2);
-}
-
-.ep-facts-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.ep-fact {
-  flex: 1;
-}
-
-.ep-fact-label {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--on-surface-variant);
-  margin-bottom: 0.4rem;
-}
-
-.ep-fact-value {
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--on-surface);
-}
-
-/* Framework Section */
-.ep-framework {
-  padding: 6rem 2rem;
-  background: var(--surface);
-}
-
-.ep-framework-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 4rem;
-}
-
-.ep-framework-title {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 400;
-  color: var(--primary);
-  margin-bottom: 1.5rem;
-}
-
-.ep-framework-accent {
-  width: 3rem;
-  height: 3px;
-  background: var(--secondary);
-  margin-bottom: 2rem;
-}
-
-.ep-framework-desc {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  line-height: 1.8;
-  color: var(--on-surface-variant);
-}
-
-.ep-framework-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  background: rgba(194, 198, 210, 0.2);
-}
-
-.ep-framework-card {
-  padding: 2.5rem;
-  background: white;
-  transition: all 0.2s ease;
-  border-top: 3px solid transparent;
-}
-
-.ep-framework-card:hover {
-  background: var(--surface-container-low);
-  border-top-color: var(--secondary);
-}
-
-.ep-framework-card h4 {
-  font-family: var(--font-serif-display);
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--primary);
-  margin-bottom: 1rem;
-}
-
-.ep-framework-card p {
-  font-size: 0.875rem;
-  line-height: 1.65;
-  color: var(--on-surface-variant);
-}
-
-/* Dark Section — Stats & Solution */
-.ep-dark {
-  padding: 6rem 2rem;
-  background: var(--primary);
-  position: relative;
+  padding: clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 6rem);
   overflow: hidden;
+  background: var(--primary);
 }
 
-.ep-dark::before {
-  content: '';
+.fb-hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0, 56, 112, 1) 0%, rgba(25, 79, 144, 0.8) 100%);
   z-index: 0;
 }
 
-.ep-dark-inner {
-  max-width: 1200px;
-  margin: 0 auto;
+.fb-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.fb-hero-inner {
   position: relative;
   z-index: 1;
-}
-
-.ep-dark-header {
-  margin-bottom: 4rem;
-}
-
-.ep-dark-title {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2.2rem, 4vw, 3rem);
-  font-weight: 400;
-  color: white;
-  line-height: 1.15;
-}
-
-.ep-dark-title em {
-  font-weight: 300;
-  opacity: 0.8;
-}
-
-.ep-dark-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: stretch;
-}
-
-.ep-glass-card {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 3rem;
-  min-height: 420px;
-  display: flex;
-  flex-direction: column;
-}
-
-.ep-glass-card:last-child {
-  margin-top: 0;
-}
-
-.ep-glass-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 1.5rem;
-}
-
-.ep-glass-card h3 {
-  font-family: var(--font-serif-display);
-  font-size: 1.75rem;
-  font-weight: 400;
-  color: white;
-  margin-bottom: 2rem;
-}
-
-.ep-stat-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-bottom: 1.25rem;
-  margin-bottom: 1.25rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.ep-stat-label {
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.ep-stat-number {
-  font-family: var(--font-serif-display);
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: white;
-}
-
-.ep-stat-number small {
-  font-size: 0.9rem;
-  opacity: 0.5;
-  margin-left: 0.25rem;
-}
-
-.ep-glass-body {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 2rem;
-  flex: 1;
-}
-
-.ep-glass-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin-top: auto;
-}
-
-.ep-glass-link:hover {
-  opacity: 0.8;
-}
-
-/* More Modules Section */
-.ep-modules {
-  padding: 6rem 2rem;
-  background: var(--surface-container-low);
-}
-
-.ep-modules-inner {
-  max-width: 1200px;
+  max-width: 860px;
   margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
 }
 
-.ep-modules-title {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 400;
-  color: var(--primary);
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.ep-modules-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.ep-module-card {
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 16px;
-  padding: 2.5rem;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: block;
-}
-
-.ep-module-card:hover {
-  background: rgba(255, 255, 255, 0.8);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
-}
-
-.ep-module-card h3 {
-  font-family: var(--font-serif-display);
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--primary);
-  margin-bottom: 1rem;
-}
-
-.ep-module-card p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--on-surface-variant);
-  margin-bottom: 1.5rem;
-}
-
-.ep-module-arrow {
-  color: var(--secondary);
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-/* Pull Quote Section */
-.ep-gap-quote {
-  padding: 6rem 2rem;
-  background: var(--surface);
-}
-
-.ep-gap-inner {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.ep-gap-pullquote {
-  font-family: var(--font-serif-display);
-  font-style: italic;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  line-height: 1.4;
-  color: var(--primary);
-  padding-left: 2rem;
-  border-left: 4px solid var(--secondary);
-  margin: 2rem 0;
-  text-align: left;
-}
-
-.ep-gap-body {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--on-surface-variant);
-  margin-top: 2rem;
-}
-
-/* Process Section */
-.ep-process {
-  padding: 6rem 2rem;
-  background: var(--surface-container-low);
-}
-
-.ep-process-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.ep-process-header {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.ep-process-title {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 400;
-  color: var(--primary);
-  margin-bottom: 1rem;
-}
-
-.ep-process-sub {
-  font-size: 1rem;
-  color: var(--on-surface-variant);
-  margin-bottom: 2rem;
-}
-
-.ep-steps-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.ep-step-card {
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 16px;
-  padding: 2rem;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.ep-step-card:hover {
-  background: rgba(255, 255, 255, 0.8);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
-}
-
-.ep-step-number {
+.fb-hero-badge {
+  display: inline-block;
   font-family: var(--font-mono);
   font-size: 0.65rem;
   font-weight: 600;
-  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--secondary);
-  margin-bottom: 1rem;
-}
-
-.ep-step-card h3 {
-  font-family: var(--font-body);
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--on-surface);
-  margin-bottom: 0.75rem;
-}
-
-.ep-step-card p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: var(--on-surface-variant);
-}
-
-/* CTA — matches homepage final-cta */
-.ep-cta {
-  padding: 4rem 2rem;
-  background: var(--surface);
-}
-
-.ep-cta-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.ep-cta-content {
-  max-width: 520px;
-}
-
-.ep-cta-title {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2.2rem, 4vw, 3rem);
-  font-style: italic;
-  font-weight: 400;
+  letter-spacing: 0.16em;
+  background: var(--secondary);
   color: var(--primary);
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
   margin-bottom: 1.5rem;
 }
 
-.ep-cta-body {
-  font-size: 1.05rem;
+.fb-hero-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(2.6rem, 5.5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.08;
+  color: #fff;
+  margin: 0 0 1.25rem;
+  max-width: 680px;
+}
+
+.fb-hero-sub {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
   line-height: 1.7;
-  color: var(--on-surface-variant);
+  color: rgba(255,255,255,0.75);
+  max-width: 560px;
   margin-bottom: 2rem;
 }
 
-.ep-cta-image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 16px;
+.fb-hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.ep-cta-promise {
+.fb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  border-radius: 14px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.fb-btn--gold {
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+.fb-btn--gold:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.fb-btn--ghost {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.35);
+}
+
+.fb-btn--ghost:hover { background: rgba(255,255,255,0.1); }
+
+/* ---------- BENTO GRID ---------- */
+.fb-bento {
+  padding: clamp(4rem, 7vw, 6rem) 0;
+  background: var(--surface);
+}
+
+.fb-bento-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+}
+
+.fb-bento-label {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--on-surface-variant);
-  margin-top: 1.5rem;
+  letter-spacing: 0.16em;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  display: block;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .ep-hero-inner {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
+.fb-bento-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.15;
+  margin: 0 0 2.5rem;
+}
 
-  .ep-hero {
-    padding: 4rem 1.5rem 3rem;
-  }
+.fb-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+}
 
-  .ep-pull-quote {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    margin-top: -2rem;
-    max-width: 100%;
-  }
+.fb-bento-card {
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 220px;
+  transition: transform 0.3s ease;
+}
 
-  .ep-facts-inner {
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
+.fb-bento-card:hover { transform: translateY(-3px); }
 
-  .ep-fact {
-    flex: 0 0 calc(50% - 0.75rem);
-  }
+.fb-bento-card--fers {
+  grid-column: span 8;
+  background: var(--surface-container-low);
+  border: 1px solid var(--outline-variant, #dde3ea);
+}
 
-  .ep-framework-inner {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+.fb-bento-card--tsp {
+  grid-column: span 4;
+  background: var(--primary);
+  color: #fff;
+}
 
-  .ep-framework-grid {
-    grid-template-columns: 1fr;
-  }
+.fb-bento-card--fegli {
+  grid-column: span 6;
+  background: #fff;
+  border: 1px solid var(--outline-variant, #dde3ea);
+}
 
-  .ep-framework {
-    padding: 4rem 1.5rem;
-  }
+.fb-bento-card--sce {
+  grid-column: span 6;
+  background: var(--surface-container-low);
+  border: 1px solid var(--outline-variant, #dde3ea);
+}
 
-  .ep-dark {
-    padding: 4rem 1.5rem;
-  }
+.fb-bento-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
 
-  .ep-dark-grid {
-    grid-template-columns: 1fr;
-  }
+.fb-bento-card--tsp h3 { color: #fff; }
 
-  .ep-glass-card {
-    padding: 2rem;
-    min-height: auto;
-  }
+.fb-bento-card p {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--on-surface-variant);
+}
 
-  .ep-modules {
-    padding: 4rem 1.5rem;
-  }
+.fb-bento-card--tsp p { color: rgba(255,255,255,0.65); }
 
-  .ep-modules-grid {
-    grid-template-columns: 1fr;
-  }
+.fb-bento-card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  display: block;
+}
 
-  .ep-gap-quote {
-    padding: 4rem 1.5rem;
-  }
+.fb-bento-link {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--secondary);
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: gap 0.2s;
+}
 
-  .ep-process {
-    padding: 4rem 1.5rem;
-  }
+.fb-bento-link:hover { gap: 0.6rem; }
 
-  .ep-steps-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+.fb-bento-card--tsp .fb-bento-link { color: var(--secondary); }
 
-  .ep-cta {
-    padding: 3rem 1.5rem;
-  }
+/* ---------- AUTHOR SPOTLIGHT ---------- */
+.fb-author {
+  padding: clamp(4rem, 7vw, 6rem) 0;
+  background: #fff;
+}
 
-  .ep-cta-inner {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+.fb-author-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  align-items: center;
+}
 
-  .ep-cta-image {
-    height: 250px;
-  }
+.fb-author-img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
 
-  .ep-btn-primary, .ep-btn-ghost {
-    text-align: center;
-    margin-right: 0;
-    margin-bottom: 1rem;
-    display: block;
-  }
+.fb-author-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.fb-author-name {
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 0.5rem;
+}
+
+.fb-author-role {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--on-surface-variant);
+  margin: 0 0 1.25rem;
+}
+
+.fb-author-book {
+  background: var(--surface-container-low);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-left: 3px solid var(--secondary);
+}
+
+.fb-author-book p {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--on-surface-variant);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.fb-author-quote {
+  font-family: var(--font-serif-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--primary);
+  line-height: 1.5;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fb-author-quote footer {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-style: normal;
+  color: var(--on-surface-variant);
+  margin-top: 0.5rem;
+}
+
+/* ---------- 2026 REFERENCE NUMBERS ---------- */
+.fb-numbers {
+  padding: clamp(3.5rem, 6vw, 5rem) 0;
+  background: var(--surface);
+}
+
+.fb-numbers-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+}
+
+.fb-numbers-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.fb-numbers-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 2rem;
+}
+
+.fb-numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.fb-num-card {
+  background: #fff;
+  border: 1px solid var(--outline-variant, #dde3ea);
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.fb-num-value {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.fb-num-label {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--on-surface-variant);
+  line-height: 1.4;
+}
+
+/* ---------- DARK CTA ---------- */
+.fb-cta {
+  background: var(--primary);
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  text-align: center;
+}
+
+.fb-cta-inner {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+}
+
+.fb-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.15;
+  color: #fff;
+  margin: 0 0 1.5rem;
+}
+
+.fb-cta-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---------- INTERNAL LINKS GRID ---------- */
+.fb-links {
+  padding: clamp(4rem, 7vw, 6rem) 0;
+  background: var(--surface);
+}
+
+.fb-links-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+}
+
+.fb-links-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.fb-links-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 2rem;
+}
+
+.fb-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.fb-link-card {
+  background: #fff;
+  border: 1px solid var(--outline-variant, #dde3ea);
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.fb-link-card:hover {
+  border-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.fb-link-card span {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.fb-link-card::after {
+  content: "\2192";
+  font-size: 1.1rem;
+  color: var(--secondary);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.fb-link-card:hover::after { transform: translateX(3px); }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .fb-bento-grid { grid-template-columns: 1fr; }
+  .fb-bento-card--fers,
+  .fb-bento-card--tsp,
+  .fb-bento-card--fegli,
+  .fb-bento-card--sce { grid-column: span 1; }
+  .fb-numbers-grid { grid-template-columns: repeat(2, 1fr); }
+  .fb-links-grid { grid-template-columns: 1fr; }
+  .fb-author-inner { grid-template-columns: 1fr; text-align: center; }
 }
 </style>
 
-{# ═══════════════════════════════════════════════════════════
-   1. HERO — Asymmetric editorial layout
-   ═══════════════════════════════════════════════════════════ #}
-<section class="ep-hero">
-  <div class="ep-hero-inner">
+<!-- ════════════ HERO ════════════ -->
+<section class="fb-hero">
+  <div class="fb-hero-bg">
+    <img src="/assets/images/photos/federal/capitalwealth-federal-capitol-golden-hour.jpg"
+         alt="U.S. Capitol at golden hour"
+         loading="eager" />
+  </div>
+  <div class="fb-hero-inner">
+    <span class="fb-hero-badge">Fiduciary Expertise</span>
+    <h1 class="fb-hero-title">Bridging The Federal Benefits Gap.</h1>
+    <p class="fb-hero-sub">
+      Your federal benefits package is one of the most valuable compensation systems
+      in the country — but only if you know how to use it. We help federal employees
+      and retirees turn complexity into confidence.
+    </p>
+    <div class="fb-hero-btns">
+      <a href="/book/" class="fb-btn fb-btn--gold">Book a Free Consultation</a>
+      <a href="/contact/" class="fb-btn fb-btn--ghost">Ask a Question</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ BENTO GRID ════════════ -->
+<section class="fb-bento">
+  <div class="fb-bento-inner">
+    <span class="fb-bento-label">What We Cover</span>
+    <h2 class="fb-bento-title">Your Benefits, Decoded</h2>
+
+    <div class="fb-bento-grid">
+
+      <!-- FERS — 8 col -->
+      <div class="fb-bento-card fb-bento-card--fers">
+        <span class="fb-bento-card-tag">Core Pension</span>
+        <h3>FERS Retirement System</h3>
+        <p>
+          Your FERS annuity is the foundation. We model your high-3 salary, service computation date,
+          survivor benefit elections, and the FERS Supplement to find the retirement date that
+          maximizes your lifetime income.
+        </p>
+        <a href="/services/federal-benefits/fers-retirement/" class="fb-bento-link">Explore FERS planning &rarr;</a>
+      </div>
+
+      <!-- TSP — 4 col dark -->
+      <div class="fb-bento-card fb-bento-card--tsp">
+        <span class="fb-bento-card-tag">Investment</span>
+        <h3>TSP Strategy</h3>
+        <p>
+          Allocation across L, C, S, I, F, and G funds. Roth TSP conversions.
+          Withdrawal sequencing. Mutual Fund Window access.
+        </p>
+        <a href="/services/federal-benefits/tsp-planning/" class="fb-bento-link">TSP deep dive &rarr;</a>
+      </div>
+
+      <!-- FEGLI — 6 col -->
+      <div class="fb-bento-card fb-bento-card--fegli">
+        <span class="fb-bento-card-tag">Insurance</span>
+        <h3>FEGLI Life Insurance</h3>
+        <p>
+          FEGLI premiums spike after retirement. We compare your post-retirement FEGLI costs
+          against private alternatives and recommend whether to keep, reduce, or replace coverage.
+        </p>
+        <a href="/services/federal-benefits/fegli/" class="fb-bento-link">Review FEGLI options &rarr;</a>
+      </div>
+
+      <!-- SCE Guidance — 6 col -->
+      <div class="fb-bento-card fb-bento-card--sce">
+        <span class="fb-bento-card-tag">Eligibility</span>
+        <h3>Service Computation &amp; Eligibility Guidance</h3>
+        <p>
+          MRA+30, 60+20, 62+5 — the rules are specific. We verify your service computation date,
+          identify buyback opportunities, and map out your earliest and optimal retirement windows.
+        </p>
+        <a href="/services/federal-benefits/fers-calculator/" class="fb-bento-link">Calculate your eligibility &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ AUTHOR SPOTLIGHT ════════════ -->
+<section class="fb-author">
+  <div class="fb-author-inner">
+
     <div>
-      <span class="ep-chapter-label">FEDERAL EMPLOYEE SPECIALISTS</span>
-      <h1 class="ep-hero-title">Your Service Deserves<br>a Secure</h1>
-      <span class="ep-hero-title-italic">Retirement.</span>
-      <p class="ep-hero-body">Federal employees have one of the most comprehensive benefits packages in America — but maximizing FERS, TSP, FEGLI, and FEHB requires specialized expertise most advisors don't have. We speak your language.</p>
-      <a href="/contact/" class="ep-btn-primary">Begin Your Federal Review</a>
-      <a href="/services/federal-benefits/fers-retirement/" class="ep-btn-ghost">Explore Benefits</a>
+      <img src="/assets/images/mike-stevens.jpg"
+           alt="Mike Stevens, Federal Benefits Specialist"
+           class="fb-author-img"
+           loading="lazy"
+           width="280" height="340" />
     </div>
-    <div class="ep-hero-image-wrap">
-      <img src="/assets/images/photos/federal/capitalwealth-federal-capitol-golden-hour.jpg"
-           alt="US Capitol building representing federal employee retirement planning"
-           class="ep-hero-image">
-      <div class="ep-pull-quote">
-        <p>"Precision in planning is the ultimate luxury."</p>
-        <cite>Mike Stevens</cite>
-      </div>
-    </div>
-  </div>
-</section>
 
-{# ═══════════════════════════════════════════════════════════
-   2. KEY FACTS — Technical precision row
-   ═══════════════════════════════════════════════════════════ #}
-<section class="ep-facts">
-  <div class="ep-facts-inner">
-    <div class="ep-fact">
-      <div class="ep-fact-label">Federal Employees Served</div>
-      <div class="ep-fact-value">500+</div>
-    </div>
-    <div class="ep-fact">
-      <div class="ep-fact-label">Avg. FEGLI Savings/Year</div>
-      <div class="ep-fact-value">$3,200</div>
-    </div>
-    <div class="ep-fact">
-      <div class="ep-fact-label">Average TSP at Retirement</div>
-      <div class="ep-fact-value">$780K</div>
-    </div>
-  </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   3. FRAMEWORK — Framework grid
-   ═══════════════════════════════════════════════════════════ #}
-<section class="ep-framework">
-  <div class="ep-framework-inner">
     <div>
-      <h2 class="ep-framework-title">The Federal Benefits Framework</h2>
-      <div class="ep-framework-accent"></div>
-      <p class="ep-framework-desc">Four specialized areas of federal employee retirement planning that require deep expertise beyond general financial advisory services.</p>
+      <span class="fb-author-label">Your Specialist</span>
+      <h2 class="fb-author-name">Mike Stevens</h2>
+      <p class="fb-author-role">Federal Benefits Advisor &amp; Published Author</p>
+
+      <div class="fb-author-book">
+        <p>
+          Mike is the author of <strong><em>Your Federal Retirement Guide</em></strong> — a comprehensive
+          resource that walks federal employees through every decision point from five years
+          before retirement through their first year as a retiree.
+        </p>
+      </div>
+
+      <blockquote class="fb-author-quote">
+        "Federal employees have one of the best benefits packages in the country, but most
+        retire without ever understanding what they have. My job is to change that."
+        <footer>— Mike Stevens</footer>
+      </blockquote>
     </div>
-    <div class="ep-framework-grid">
-      <div class="ep-framework-card">
-        <a href="/services/federal-benefits/fers-retirement/" style="text-decoration: none; color: inherit;">
-          <h4>FERS Masterclass</h4>
-          <p>Complete FERS pension optimization including annuity calculations, survivor benefits, and military buyback analysis. Master your retirement eligibility and timing.</p>
-        </a>
+
+  </div>
+</section>
+
+<!-- ════════════ 2026 REFERENCE NUMBERS ════════════ -->
+<section class="fb-numbers">
+  <div class="fb-numbers-inner">
+    <span class="fb-numbers-label">2026 Reference Numbers</span>
+    <h2 class="fb-numbers-title">Key Figures for Federal Planning</h2>
+
+    <div class="fb-numbers-grid">
+      <div class="fb-num-card">
+        <span class="fb-num-value">$24,500</span>
+        <span class="fb-num-label">TSP Elective Deferral Limit</span>
       </div>
-      <div class="ep-framework-card">
-        <a href="/services/federal-benefits/tsp-planning/" style="text-decoration: none; color: inherit;">
-          <h4>TSP Allocation Strategy</h4>
-          <p>Strategic Thrift Savings Plan management with fund allocation, contribution optimization, withdrawal sequencing, and rollover decision analysis.</p>
-        </a>
+      <div class="fb-num-card">
+        <span class="fb-num-value">$8,000</span>
+        <span class="fb-num-label">TSP Catch-Up (Age 50+)</span>
       </div>
-      <div class="ep-framework-card">
-        <a href="/services/federal-benefits/fegli/" style="text-decoration: none; color: inherit;">
-          <h4>FEGLI Efficiency Review</h4>
-          <p>Comprehensive life insurance analysis comparing FEGLI post-retirement costs with private alternatives. Most federal employees can save thousands annually.</p>
-        </a>
+      <div class="fb-num-card">
+        <span class="fb-num-value">$11,250</span>
+        <span class="fb-num-label">TSP Super Catch-Up (Age 60-63)</span>
       </div>
-      <div class="ep-framework-card">
-        <a href="/services/federal-benefits/fehb-retirement/" style="text-decoration: none; color: inherit;">
-          <h4>FEHB Continuity</h4>
-          <p>Health benefits coordination into retirement including Medicare integration, plan selection optimization, and 5-year rule compliance strategies.</p>
-        </a>
+      <div class="fb-num-card">
+        <span class="fb-num-value">4.4%</span>
+        <span class="fb-num-label">FERS-FRAE Employee Contribution</span>
       </div>
-      <div class="ep-framework-card">
-        <a href="/services/federal-benefits/tsp-mutual-fund-window/" style="text-decoration: none; color: inherit;">
-          <h4>TSP Mutual Fund Window</h4>
-          <p>Professional management of your TSP Mutual Fund Window with access to 5,000+ mutual funds beyond the standard G, F, C, S, and I funds for enhanced diversification.</p>
-        </a>
+      <div class="fb-num-card">
+        <span class="fb-num-value">+12.3%</span>
+        <span class="fb-num-label">FEHB Average Premium Increase</span>
+      </div>
+      <div class="fb-num-card">
+        <span class="fb-num-value">2.8%</span>
+        <span class="fb-num-label">Social Security COLA</span>
+      </div>
+      <div class="fb-num-card">
+        <span class="fb-num-value">2.0%</span>
+        <span class="fb-num-label">FERS COLA Adjustment</span>
+      </div>
+      <div class="fb-num-card">
+        <span class="fb-num-value">$202.90</span>
+        <span class="fb-num-label">Medicare Part B Monthly Premium</span>
       </div>
     </div>
   </div>
 </section>
 
-{# ═══════════════════════════════════════════════════════════
-   4. DARK SECTION — Interactive Intelligence
-   ═══════════════════════════════════════════════════════════ #}
-<section class="ep-dark">
-  <div class="ep-dark-inner">
-    <div class="ep-dark-header">
-      <span class="ep-chapter-label" style="color: rgba(255,255,255,0.5);">INTERACTIVE INTELLIGENCE</span>
-      <h2 class="ep-dark-title">Quantify Your <em>Federal Future.</em></h2>
-    </div>
-    <div class="ep-dark-grid">
-      <div class="ep-glass-card">
-        <span class="ep-glass-eyebrow">FERS Calculator</span>
-        <h3>Know Your Numbers</h3>
-        <div class="ep-stat-row">
-          <span class="ep-stat-label">Sample Monthly Annuity</span>
-          <span class="ep-stat-number">$8,450<small>/mo</small></span>
-        </div>
-        <div class="ep-stat-row">
-          <span class="ep-stat-label">Years of Service</span>
-          <span class="ep-stat-number">30<small>years</small></span>
-        </div>
-        <div class="ep-stat-row">
-          <span class="ep-stat-label">TSP Return Rate</span>
-          <span class="ep-stat-number">4.2%<small>annual</small></span>
-        </div>
-        <p class="ep-glass-body">Get precise FERS annuity calculations based on your years of service, high-3 salary, and retirement date scenarios. Plan with confidence.</p>
-        <a href="/services/federal-benefits/fers-calculator/" class="ep-glass-link">Calculate Your FERS Annuity →</a>
-      </div>
-      <div class="ep-glass-card">
-        <span class="ep-glass-eyebrow">Social Security Coordination</span>
-        <h3>Bridge the Gap</h3>
-        <p class="ep-glass-body">Federal employees have unique Social Security considerations including the FERS supplement bridge, WEP/GPO elimination benefits, and optimal claiming strategies that coordinate with your pension.</p>
-        <p class="ep-glass-body">Our specialized planning ensures you maximize both your FERS annuity and Social Security benefits through strategic timing and coordination.</p>
-        <a href="/services/federal-benefits/social-security-federal/" class="ep-glass-link">Optimize Social Security →</a>
-      </div>
+<!-- ════════════ DARK CTA ════════════ -->
+<section class="fb-cta">
+  <div class="fb-cta-inner">
+    <h2 class="fb-cta-title">Ready to secure your federal legacy?</h2>
+    <div class="fb-cta-btns">
+      <a href="/book/" class="fb-btn fb-btn--gold">Schedule Your Free Call</a>
+      <a href="/contact/" class="fb-btn fb-btn--ghost">Send Us a Message</a>
     </div>
   </div>
 </section>
 
-{# ═══════════════════════════════════════════════════════════
-   5. MORE MODULES — Additional federal resources
-   ═══════════════════════════════════════════════════════════ #}
-<section class="ep-modules">
-  <div class="ep-modules-inner">
-    <span class="ep-chapter-label">Additional Resources</span>
-    <h2 class="ep-modules-title">Complete Your Federal Plan</h2>
-    <div class="ep-modules-grid">
-      <a href="/services/federal-benefits/federal-retirement-checklist/" class="ep-module-card">
-        <h3>Federal Retirement Checklist</h3>
-        <p>Comprehensive timeline from 5 years out to your last day. Don't leave benefits on the table with our step-by-step retirement preparation guide.</p>
-        <span class="ep-module-arrow">Get Your Checklist →</span>
+<!-- ════════════ INTERNAL LINKS GRID ════════════ -->
+<section class="fb-links">
+  <div class="fb-links-inner">
+    <span class="fb-links-label">Explore Further</span>
+    <h2 class="fb-links-title">Federal Benefits Deep Dives</h2>
+
+    <div class="fb-links-grid">
+      <a href="/services/federal-benefits/fers-retirement/" class="fb-link-card">
+        <span>FERS Retirement</span>
       </a>
-      <a href="/contact/" class="ep-module-card">
-        <h3>Federal Benefits Seminar</h3>
-        <p>Join our monthly workshop covering FERS, TSP, FEGLI, and FEHB optimization. Learn alongside other federal employees planning their retirement.</p>
-        <span class="ep-module-arrow">Register for Workshop →</span>
+      <a href="/services/federal-benefits/tsp-planning/" class="fb-link-card">
+        <span>TSP Planning</span>
+      </a>
+      <a href="/services/federal-benefits/tsp-mutual-fund-window/" class="fb-link-card">
+        <span>TSP Mutual Fund Window</span>
+      </a>
+      <a href="/services/federal-benefits/fegli/" class="fb-link-card">
+        <span>FEGLI Life Insurance</span>
+      </a>
+      <a href="/services/federal-benefits/fehb-retirement/" class="fb-link-card">
+        <span>FEHB in Retirement</span>
+      </a>
+      <a href="/services/federal-benefits/fers-supplement/" class="fb-link-card">
+        <span>FERS Supplement</span>
+      </a>
+      <a href="/services/federal-benefits/fers-calculator/" class="fb-link-card">
+        <span>FERS Calculator</span>
+      </a>
+      <a href="/services/federal-benefits/social-security-federal/" class="fb-link-card">
+        <span>Social Security for Feds</span>
+      </a>
+      <a href="/services/federal-benefits/federal-retirement-taxes/" class="fb-link-card">
+        <span>Federal Retirement Taxes</span>
       </a>
     </div>
-  </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   6. THE GAP — Pull quote section
-   ═══════════════════════════════════════════════════════════ #}
-<section class="ep-gap-quote">
-  <div class="ep-gap-inner">
-    <span class="ep-chapter-label">The Gap</span>
-    <div class="ep-gap-pullquote">
-      "HR can help you understand your benefits, but they can't advise you on financial strategy. Most advisors understand investing, but they've never seen a FERS annuity calculation. We bridge that gap."
-    </div>
-    <p class="ep-gap-body">Federal employees need specialized advisors who understand the unique complexity of coordinating FERS pensions, TSP accounts, FEGLI insurance, FEHB health benefits, and Social Security. The knowledge gap between generalist advisors and federal-specific expertise costs retirees thousands in missed opportunities and suboptimal decisions.</p>
-  </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   7. PROCESS — Three steps
-   ═══════════════════════════════════════════════════════════ #}
-<section class="ep-process">
-  <div class="ep-process-inner">
-    <div class="ep-process-header">
-      <span class="ep-chapter-label">How We Work</span>
-      <h2 class="ep-process-title">Federal Benefits Strategy</h2>
-      <p class="ep-process-sub">Three specialized steps to maximize your federal retirement benefits.</p>
-    </div>
-    <div class="ep-steps-grid">
-      <div class="ep-step-card">
-        <span class="ep-step-number">Step 01</span>
-        <h3>Benefits Analysis</h3>
-        <p>Comprehensive review of your SF-50, TSP statement, FEGLI coverage, and FEHB options to understand your complete federal benefits package and retirement eligibility.</p>
-      </div>
-      <div class="ep-step-card">
-        <span class="ep-step-number">Step 02</span>
-        <h3>Retirement Projections</h3>
-        <p>Model your FERS annuity, Social Security, TSP withdrawals, and taxes under different retirement scenarios to identify your optimal retirement date and strategy.</p>
-      </div>
-      <div class="ep-step-card">
-        <span class="ep-step-number">Step 03</span>
-        <h3>Coordination Strategy</h3>
-        <p>Integrate all federal benefits with your outside assets into a comprehensive retirement income plan that maximizes your lifetime benefits and minimizes taxes.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-{# ═══════════════════════════════════════════════════════════
-   8. CTA — Centered editorial
-   ═══════════════════════════════════════════════════════════ #}
-<section class="ep-cta">
-  <div class="ep-cta-inner">
-    <div class="ep-cta-content">
-      <h2 class="ep-cta-title">Schedule Your Federal Benefits Review</h2>
-      <p class="ep-cta-body">Your decades of service have earned you exceptional benefits. Let our specialized expertise ensure you maximize every dollar of your federal retirement package.</p>
-      <a href="/contact/" class="ep-btn-primary">Begin Your Review</a>
-      <p class="ep-cta-promise">Federal Employee Specialists</p>
-    </div>
-    <img src="/assets/images/photos/federal/capitalwealth-federal-government-building-flag.jpg" alt="Federal government building representing specialized federal benefits expertise" class="ep-cta-image">
   </div>
 </section>
