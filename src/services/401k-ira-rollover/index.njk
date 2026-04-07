@@ -17,6 +17,12 @@ faqSchema:
     answer: "A direct rollover transfers funds directly between custodians with no taxes withheld. An indirect rollover sends you a check, and you have 60 days to deposit it into an IRA or face taxes and penalties. We only do direct rollovers to avoid complications."
   - question: "Can I roll my 401(k) into a Roth IRA?"
     answer: "Yes, but it creates a taxable event. We analyze whether the long-term tax-free growth in a Roth IRA outweighs the upfront tax cost based on your income, timeline, and retirement goals."
+  - question: "Should I roll my 401(k) to an IRA when I retire?"
+    answer: "An IRA typically offers more investment options, lower fees, and greater flexibility in withdrawal strategies. However, your 401(k) has unique benefits worth considering: the Rule of 55 allows penalty-free withdrawals if you leave your employer at age 55 or later, stable value funds are only available in employer plans, and Net Unrealized Appreciation (NUA) treatment on employer stock can save significant taxes. We compare both options for your specific situation."
+  - question: "Is a 401(k) rollover taxable?"
+    answer: "It depends on the type of rollover. A direct rollover from a traditional 401(k) to a traditional IRA is not taxable. A rollover to a Roth IRA is taxable — you owe income tax on the full converted amount. An indirect rollover (where you receive a check) gives you a 60-day window to deposit the funds into an IRA, but your employer withholds 20% for taxes, which you must make up out of pocket to avoid penalties."
+  - question: "Can I do a partial rollover?"
+    answer: "Yes, most employer plans allow partial rollovers. This can be a smart strategy — for example, you might roll part of your 401(k) to an IRA for better investment options while keeping the rest in the plan to take advantage of the Rule of 55 or stable value funds. We help you determine the right split."
 ---
 
 <style>
@@ -1094,6 +1100,44 @@ faqSchema:
 </section>
 
 {# ═══════════════════════════════════════════════════════════
+   STAY VS. ROLL COMPARISON — Content Section
+   ═══════════════════════════════════════════════════════════ #}
+<section style="padding: 4rem 2rem; background: var(--surface-container-low);">
+  <div style="max-width: 900px; margin: 0 auto;">
+    <span class="ep-chapter-label">Decision Framework</span>
+    <h2 style="font-family: var(--font-serif-display); font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; color: var(--primary); line-height: 1.15; margin-bottom: 1.5rem;">Stay in Your 401(k) or Roll to an IRA?</h2>
+    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--on-surface-variant); margin-bottom: 2rem;">
+      There is no universal answer. The right choice depends on your specific plan, fees, timeline, and tax situation. Here is how the two options compare:
+    </p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <div style="background: var(--surface-container); border-radius: 12px; padding: 2rem; border: 1px solid var(--outline-variant);">
+        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">Keep Your 401(k) When...</h3>
+        <ul style="font-size: 0.95rem; line-height: 1.9; color: var(--on-surface-variant); padding-left: 1.25rem;">
+          <li>You left your job between ages 55-59 and need penalty-free access (<strong>Rule of 55</strong>)</li>
+          <li>Your plan offers <strong>stable value funds</strong> with competitive rates not available in IRAs</li>
+          <li>You hold <strong>employer stock</strong> eligible for Net Unrealized Appreciation (NUA) treatment</li>
+          <li>Your plan has <strong>institutional share classes</strong> with lower expense ratios than retail equivalents</li>
+          <li>You need <strong>stronger creditor protection</strong> (ERISA protections are more robust than IRA protections in many states)</li>
+        </ul>
+      </div>
+      <div style="background: var(--surface-container); border-radius: 12px; padding: 2rem; border: 1px solid var(--outline-variant);">
+        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">Roll to an IRA When...</h3>
+        <ul style="font-size: 0.95rem; line-height: 1.9; color: var(--on-surface-variant); padding-left: 1.25rem;">
+          <li>You want <strong>unlimited investment options</strong> — individual stocks, bonds, ETFs, and funds from any provider</li>
+          <li>Your 401(k) has <strong>high fees</strong> or limited fund choices</li>
+          <li>You want to implement a <strong>Roth conversion strategy</strong> with more control over timing and amounts</li>
+          <li>You need to <strong>consolidate multiple accounts</strong> from different employers for simplicity</li>
+          <li>You want more flexible <strong>beneficiary designation options</strong> and estate planning strategies</li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--on-surface-variant); margin-top: 2rem;">
+      In many cases, a <strong>partial rollover</strong> is the best answer — keeping some funds in the 401(k) for specific benefits while rolling the rest to an IRA for flexibility. We analyze your plan documents, fee schedules, and personal situation to give you a clear recommendation.
+    </p>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
    7. FAQ — Editorial accordion
    ═══════════════════════════════════════════════════════════ #}
 <section class="ep-faq">
@@ -1124,6 +1168,18 @@ faqSchema:
       <button class="ep-faq-item" onclick="this.classList.toggle('active')">
         <span class="ep-faq-q">Can I roll my 401(k) into a Roth IRA? <span class="ep-faq-icon">+</span></span>
         <div class="ep-faq-a"><p>Yes, but it creates a taxable event. We analyze whether the long-term tax-free growth in a Roth IRA outweighs the upfront tax cost based on your income, timeline, and retirement goals.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should I roll my 401(k) to an IRA when I retire? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>An IRA typically offers more investment options, lower fees, and greater flexibility in withdrawal strategies. However, your 401(k) has unique benefits worth considering: the Rule of 55 allows penalty-free withdrawals if you leave your employer at age 55 or later, stable value funds are only available in employer plans, and Net Unrealized Appreciation (NUA) treatment on employer stock can save significant taxes. We compare both options for your specific situation.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Is a 401(k) rollover taxable? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>It depends on the type of rollover. A direct rollover from a traditional 401(k) to a traditional IRA is not taxable. A rollover to a Roth IRA is taxable — you owe income tax on the full converted amount. An indirect rollover (where you receive a check) gives you a 60-day window to deposit the funds into an IRA, but your employer withholds 20% for taxes, which you must make up out of pocket to avoid penalties.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Can I do a partial rollover? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Yes, most employer plans allow partial rollovers. This can be a smart strategy — for example, you might roll part of your 401(k) to an IRA for better investment options while keeping the rest in the plan to take advantage of the Rule of 55 or stable value funds. We help you determine the right split.</p></div>
       </button>
     </div>
   </div>
