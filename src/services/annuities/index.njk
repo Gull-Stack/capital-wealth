@@ -21,6 +21,10 @@ faqSchema:
     answer: "An immediate annuity (SPIA) starts paying income within a year of purchase — you trade a lump sum for guaranteed lifetime payments. A deferred annuity (including DIAs) delays income to a future date, allowing the principal to grow tax-deferred. Immediate annuities work well for those who need income now, while deferred annuities are better for those planning income needs 5-10+ years out."
   - question: "Should I buy an annuity inside my IRA?"
     answer: "Usually no. IRAs already have tax-deferred growth, so adding an annuity inside an IRA duplicates that benefit while adding fees and restrictions. The main reason to use an annuity in an IRA is for the guaranteed income feature, not tax deferral. If you don't need guaranteed income, a diversified portfolio inside the IRA is typically more cost-effective and flexible."
+  - question: "Should I buy an annuity in retirement?"
+    answer: "Ask yourself one question: does your guaranteed income (Social Security, pension) cover your essential expenses? If not, an annuity can fill that gap and provide peace of mind. If your guaranteed income already covers your needs, an annuity usually adds unnecessary cost and reduces your flexibility. We help you run the numbers to see if the guaranteed income is worth the trade-offs."
+  - question: "What's the difference between a fixed and variable annuity?"
+    answer: "A fixed annuity offers a guaranteed interest rate and predictable income payments — you know exactly what you will receive. A variable annuity ties your returns to underlying investment sub-accounts, meaning your income can go up or down with the market. A fixed index annuity (FIA) sits in between — it links returns to a market index with downside protection, giving you some upside potential without the risk of losing principal."
 ---
 
 <style>
@@ -1098,6 +1102,44 @@ faqSchema:
 </section>
 
 {# ═══════════════════════════════════════════════════════════
+   WHEN ANNUITIES MAKE SENSE — Decision Framework
+   ═══════════════════════════════════════════════════════════ #}
+<section style="padding: 4rem 2rem; background: var(--surface-container-low);">
+  <div style="max-width: 900px; margin: 0 auto;">
+    <span class="ep-chapter-label">Decision Framework</span>
+    <h2 style="font-family: var(--font-serif-display); font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; color: var(--primary); line-height: 1.15; margin-bottom: 1.5rem;">When Do Annuities Make Sense?</h2>
+    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--on-surface-variant); margin-bottom: 2rem;">
+      As fiduciaries, we don't sell annuities — we analyze whether they belong in your plan. Here is our honest framework:
+    </p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+      <div style="background: var(--surface-container); border-radius: 12px; padding: 2rem; border-top: 4px solid var(--secondary);">
+        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">An Annuity May Make Sense If...</h3>
+        <ul style="font-size: 0.95rem; line-height: 1.9; color: var(--on-surface-variant); padding-left: 1.25rem;">
+          <li>Your <strong>guaranteed income</strong> (Social Security + pension) does not cover essential living expenses</li>
+          <li>You have <strong>no pension</strong> and want to create one</li>
+          <li>You are deeply <strong>anxious about market volatility</strong> affecting your retirement income</li>
+          <li>You want to <strong>transfer longevity risk</strong> — the risk of outliving your money — to an insurance company</li>
+          <li>You have <strong>enough liquid assets</strong> outside the annuity to cover emergencies and unexpected expenses</li>
+        </ul>
+      </div>
+      <div style="background: var(--surface-container); border-radius: 12px; padding: 2rem; border-top: 4px solid var(--outline-variant);">
+        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">An Annuity Probably Does Not Make Sense If...</h3>
+        <ul style="font-size: 0.95rem; line-height: 1.9; color: var(--on-surface-variant); padding-left: 1.25rem;">
+          <li>Your Social Security and pension <strong>already cover your essential expenses</strong></li>
+          <li>You need <strong>liquidity and flexibility</strong> — annuities lock up your money for years</li>
+          <li>The <strong>fees exceed the value</strong> of the guaranteed income feature (common with variable annuities)</li>
+          <li>You are buying it <strong>inside an IRA</strong> purely for tax deferral (IRAs already provide that)</li>
+          <li>You were <strong>pressured by a salesperson</strong> rather than seeking it out based on a genuine income gap</li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--on-surface-variant);">
+      The bottom line: an annuity is a tool, not a strategy. It solves one specific problem — the risk of running out of guaranteed income. If you have that problem, it can be valuable. If you don't, it's an expensive product that reduces your flexibility. We run the numbers for every client before making a recommendation.
+    </p>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
    7. FAQ — Editorial accordion
    ═══════════════════════════════════════════════════════════ #}
 <section class="ep-faq">
@@ -1136,6 +1178,14 @@ faqSchema:
       <button class="ep-faq-item" onclick="this.classList.toggle('active')">
         <span class="ep-faq-q">Should I buy an annuity inside my IRA? <span class="ep-faq-icon">+</span></span>
         <div class="ep-faq-a"><p>Usually no. IRAs already have tax-deferred growth, so adding an annuity inside an IRA duplicates that benefit while adding fees and restrictions. The main reason to use an annuity in an IRA is for the guaranteed income feature, not tax deferral. If you don't need guaranteed income, a diversified portfolio inside the IRA is typically more cost-effective and flexible.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Should I buy an annuity in retirement? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Ask yourself one question: does your guaranteed income (Social Security, pension) cover your essential expenses? If not, an annuity can fill that gap and provide peace of mind. If your guaranteed income already covers your needs, an annuity usually adds unnecessary cost and reduces your flexibility. We help you run the numbers to see if the guaranteed income is worth the trade-offs.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What's the difference between a fixed and variable annuity? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>A fixed annuity offers a guaranteed interest rate and predictable income payments — you know exactly what you will receive. A variable annuity ties your returns to underlying investment sub-accounts, meaning your income can go up or down with the market. A fixed index annuity (FIA) sits in between — it links returns to a market index with downside protection, giving you some upside potential without the risk of losing principal.</p></div>
       </button>
     </div>
   </div>
