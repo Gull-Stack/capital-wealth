@@ -163,10 +163,9 @@ CRITICAL RULES:
 
     if (!response.ok) {
       const err = await response.text();
-      console.error('Winchester error:', response.status, response.statusText, err);
+      console.error('Winchester error:', response.status, err);
       return res.status(200).json({
-        reply: "I'd love to help — could you tell me a bit about your retirement plans? Are you looking for guidance on a specific topic?",
-        _debug: { status: response.status, statusText: response.statusText, body: err.substring(0, 500) }
+        reply: "I'd love to help — could you tell me a bit about your retirement plans? Are you looking for guidance on a specific topic?"
       });
     }
 
