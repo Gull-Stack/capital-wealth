@@ -853,75 +853,6 @@ bodyClass: "landing-page"
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* SF-182 Section */
-.sem-sf182 {
-  padding: 48px 32px;
-  background: var(--surface-container-low);
-}
-
-.sem-sf182-container {
-  max-width: 1024px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.sem-sf182-content {
-  background: white;
-  padding: 64px;
-  border-radius: 8px;
-  border-left: 8px solid var(--secondary);
-}
-
-.sem-sf182 .sem-eyebrow {
-  color: #57A5F4;
-  border-bottom: 2px solid #57A5F4;
-  padding-bottom: 4px;
-  margin-bottom: 16px;
-}
-
-.sem-sf182-title {
-  font-size: 2.5rem;
-  font-family: var(--font-serif-display), serif;
-  color: var(--primary);
-  margin-bottom: 32px;
-}
-
-.sem-sf182-description {
-  font-size: 18px;
-  color: var(--slate-600);
-  line-height: 1.6;
-  margin-bottom: 48px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sem-sf182-btn {
-  display: inline-block;
-  background: var(--secondary);
-  color: var(--on-secondary);
-  padding: 20px 40px;
-  border-radius: 8px;
-  font-family: var(--font-serif-display), serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  margin-bottom: 32px;
-}
-
-.sem-sf182-btn:hover {
-  background: var(--secondary-container);
-  transform: translateY(-2px);
-}
-
-.sem-sf182-disclosure {
-  font-size: 14px;
-  color: var(--slate-500);
-  line-height: 1.5;
-  max-width: 700px;
-  margin: 0 auto;
-}
 
 /* Training Details Section */
 .sem-training-details {
@@ -1114,7 +1045,6 @@ bodyClass: "landing-page"
   .sem-curriculum,
   .sem-speaker,
   .sem-venue,
-  .sem-sf182,
   .sem-faq {
     padding: 48px 24px;
   }
@@ -1195,20 +1125,6 @@ bodyClass: "landing-page"
   
   .sem-privacy-text {
     text-align: left;
-  }
-  
-  /* 3. SF-182 / Training authorization: left-align */
-  .sem-sf182 {
-    text-align: left;
-    padding: 32px 16px;
-  }
-  
-  .sem-sf182-container {
-    text-align: left;
-  }
-  
-  .sem-sf182-title {
-    font-size: 1.5rem;
   }
   
   /* 4. Speaker section: left-align */
@@ -1377,10 +1293,6 @@ bodyClass: "landing-page"
     padding: 24px 16px;
   }
   
-  .sem-sf182-content {
-    padding: 24px;
-  }
-  
   .sem-training-details,
   .sem-registration-details {
     padding: 24px;
@@ -1404,7 +1316,7 @@ bodyClass: "landing-page"
         Federal Benefits <br> <span class="sem-workshop-yellow">Workshop</span>: <br>
         <span class="sem-hero-title-accent">Weber State University</span>
       </h1>
-      <p class="sem-workshop-date">Thursday, April 9th • 9:00 AM - 11:00 AM</p>
+      <p class="sem-workshop-date">Thursday, April 9th â¢ 9:00 AM - 11:00 AM</p>
       <p class="sem-hero-description">
         Interactive workshop covering Federal Employees Retirement System (FERS), Thrift Savings Plan (TSP), Federal Employees Health Benefits (FEHB), Federal Employees Group Life Insurance (FEGLI) and Social Security for federal employees.
       </p>
@@ -1428,7 +1340,7 @@ bodyClass: "landing-page"
       <div class="sem-registration-form sem-liquid-glass">
         <div class="sem-limited-seating">Only 3 Seats Remaining</div>
         <h3 class="sem-form-title">Reserve Your Seat</h3>
-        <p class="sem-form-subtitle">100% complimentary workshop — no cost, no obligation, no sales pitch.</p>
+        <p class="sem-form-subtitle">100% complimentary workshop â no cost, no obligation, no sales pitch.</p>
         <form id="sem-registration-form">
           <div class="sem-form-row">
             <div class="sem-form-group">
@@ -1563,22 +1475,6 @@ bodyClass: "landing-page"
   </div>
 </section>
 
-<!-- SF-182 Training Authorization Section -->
-<section class="sem-sf182" id="sf182">
-  <div class="sem-sf182-container">
-    <div class="sem-sf182-content">
-      <span class="sem-eyebrow">Training Authorization</span>
-      <h2 class="sem-sf182-title">Request Paid Time Off to Attend</h2>
-      <p class="sem-sf182-description">
-        Federal employees may be eligible to attend using an SF-182 Training Authorization Form if approved by their agency.
-      </p>
-      <a href="/assets/docs/sf-182-form.pdf" class="sem-sf182-btn" target="_blank" rel="noopener">SF-182 Form</a>
-      <p class="sem-sf182-disclosure">
-        Federal employees may be eligible to attend through their agency's SF-182 training authorization process if approved as job-related. Use of an SF-182 is optional and not required to register or attend. Approval, when applicable, is determined solely by each agency.
-      </p>
-    </div>
-  </div>
-</section>
 
 <!-- Speaker Section -->
 <section class="sem-speaker" id="speakers">
@@ -1609,19 +1505,19 @@ bodyClass: "landing-page"
       
       <div class="sem-credentials-list">
         <div class="sem-credential-item">
-          <span class="sem-checkmark">✓</span>
+          <span class="sem-checkmark">â</span>
           <p class="sem-credential-text">15+ years federal benefits experience</p>
         </div>
         <div class="sem-credential-item">
-          <span class="sem-checkmark">✓</span>
+          <span class="sem-checkmark">â</span>
           <p class="sem-credential-text">Assisted thousands of federal employees</p>
         </div>
         <div class="sem-credential-item">
-          <span class="sem-checkmark">✓</span>
+          <span class="sem-checkmark">â</span>
           <p class="sem-credential-text">Federal benefits education specialist</p>
         </div>
         <div class="sem-credential-item">
-          <span class="sem-checkmark">✓</span>
+          <span class="sem-checkmark">â</span>
           <p class="sem-credential-text">Published author - "FedTelligence 2.0"</p>
         </div>
       </div>
@@ -1658,7 +1554,7 @@ bodyClass: "landing-page"
           </p>
           <p class="sem-venue-item">
             <svg class="sem-venue-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-4"/><circle cx="8.5" cy="15.5" r="3.5"/><circle cx="18.5" cy="15.5" r="3.5"/></svg>
-            Covered by Capital Wealth — Print your parking permit (sent after registration)
+            Covered by Capital Wealth â Print your parking permit (sent after registration)
           </p>
         </div>
         
@@ -1698,7 +1594,7 @@ bodyClass: "landing-page"
             </div>
           </div>
           <div class="sem-capacity-warning">
-            Seats are limited — register early to guarantee your spot
+            Seats are limited â register early to guarantee your spot
           </div>
         </div>
       </div>
@@ -1710,19 +1606,19 @@ bodyClass: "landing-page"
       <h3>What You Need to Know</h3>
       <div class="sem-registration-details-list">
         <div class="sem-registration-detail">
-          <span class="sem-registration-detail-checkmark">✓</span>
+          <span class="sem-registration-detail-checkmark">â</span>
           <p class="sem-registration-detail-text">Attendance is free of charge</p>
         </div>
         <div class="sem-registration-detail">
-          <span class="sem-registration-detail-checkmark">✓</span>
+          <span class="sem-registration-detail-checkmark">â</span>
           <p class="sem-registration-detail-text">Spouses/guests are encouraged to attend</p>
         </div>
         <div class="sem-registration-detail">
-          <span class="sem-registration-detail-checkmark">✓</span>
+          <span class="sem-registration-detail-checkmark">â</span>
           <p class="sem-registration-detail-text">Training covers FERS federal employees</p>
         </div>
         <div class="sem-registration-detail">
-          <span class="sem-registration-detail-checkmark">✓</span>
+          <span class="sem-registration-detail-checkmark">â</span>
           <p class="sem-registration-detail-text">After the workshop, one-on-one help is available</p>
         </div>
       </div>
