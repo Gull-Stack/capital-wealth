@@ -25,6 +25,25 @@ faqSchema:
    FEDERAL BENEFITS HUB — BENTO GRID EDITORIAL
    ═══════════════════════════════════════════════════════════ */
 
+/* ---------- GOV CONTRACTOR BAR ---------- */
+.fb-gov-bar {
+  background: var(--primary, #0A3161);
+  padding: 0.6rem 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.fb-gov-bar-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.85);
+}
+
 /* ---------- HERO ---------- */
 .fb-hero {
   position: relative;
@@ -121,6 +140,129 @@ faqSchema:
 
 .fb-btn--ghost:hover { background: rgba(255,255,255,0.1); }
 
+/* ---------- VILLAIN / HERO ---------- */
+.fb-vh {
+  padding: clamp(4rem, 7vw, 6rem) 0;
+  background: #fff;
+}
+
+.fb-vh-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+}
+
+.fb-vh-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  display: block;
+  text-align: center;
+}
+
+.fb-vh-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.fb-vh-subtitle {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--on-surface-variant);
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+.fb-vh-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.fb-vh-card {
+  border-radius: 16px;
+  padding: 2.25rem 2rem;
+}
+
+.fb-vh-card--villain {
+  background: #fdf2f2;
+  border: 1.5px solid #e8c4c4;
+}
+
+.fb-vh-card--hero {
+  background: #f0f7f0;
+  border: 1.5px solid #b8d4b8;
+}
+
+.fb-vh-card-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.fb-vh-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.fb-vh-card--villain h3 { color: #8b2020; }
+.fb-vh-card--hero h3 { color: #1a5c1a; }
+
+.fb-vh-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fb-vh-card ul li {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  padding: 0.35rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--on-surface-variant);
+}
+
+.fb-vh-card--villain ul li::before {
+  content: "\2717";
+  position: absolute;
+  left: 0;
+  color: #c0392b;
+  font-weight: 700;
+}
+
+.fb-vh-card--hero ul li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: 700;
+}
+
+.fb-vh-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+  .fb-vh-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- BENTO GRID ---------- */
 .fb-bento {
   padding: clamp(4rem, 7vw, 6rem) 0;
@@ -183,16 +325,32 @@ faqSchema:
 }
 
 .fb-bento-card--fegli {
+  grid-column: span 4;
+  background: #fff;
+  border: 1px solid var(--outline-variant, #dde3ea);
+}
+
+.fb-bento-card--fehb {
+  grid-column: span 4;
+  background: var(--surface-container-low);
+  border: 1px solid var(--outline-variant, #dde3ea);
+}
+
+.fb-bento-card--ss {
   grid-column: span 6;
   background: #fff;
   border: 1px solid var(--outline-variant, #dde3ea);
 }
 
-.fb-bento-card--sce {
+.fb-bento-card--medicare {
   grid-column: span 6;
-  background: var(--surface-container-low);
-  border: 1px solid var(--outline-variant, #dde3ea);
+  background: var(--primary);
+  color: #fff;
 }
+
+.fb-bento-card--medicare h3 { color: #fff; }
+.fb-bento-card--medicare p { color: rgba(255,255,255,0.65); }
+.fb-bento-card--medicare .fb-bento-link { color: var(--secondary); }
 
 .fb-bento-card h3 {
   font-family: var(--font-body);
@@ -354,7 +512,7 @@ faqSchema:
 
 .fb-numbers-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.25rem;
 }
 
@@ -488,12 +646,22 @@ faqSchema:
   .fb-bento-card--fers,
   .fb-bento-card--tsp,
   .fb-bento-card--fegli,
-  .fb-bento-card--sce { grid-column: span 1; }
+  .fb-bento-card--fehb,
+  .fb-bento-card--ss,
+  .fb-bento-card--medicare { grid-column: span 1; }
   .fb-numbers-grid { grid-template-columns: repeat(2, 1fr); }
+  .fb-num-card:last-child { grid-column: span 2; }
   .fb-links-grid { grid-template-columns: 1fr; }
   .fb-author-inner { grid-template-columns: 1fr; text-align: center; }
 }
 </style>
+
+<!-- ════════════ GOV CONTRACTOR BAR ════════════ -->
+<div class="fb-gov-bar">
+  <div class="fb-gov-bar-inner">
+    A Government Registered Contractor&ensp;|&ensp;DUNS # 000000000&ensp;|&ensp;Unique Entity ID: XXXXXXXXXXXX
+  </div>
+</div>
 
 <!-- ════════════ HERO ════════════ -->
 <section class="fb-hero">
@@ -517,10 +685,56 @@ faqSchema:
   </div>
 </section>
 
+<!-- ════════════ VILLAIN / HERO ════════════ -->
+<section class="fb-vh">
+  <div class="fb-vh-inner">
+    <span class="fb-vh-label">The Value of Having a Plan</span>
+    <h2 class="fb-vh-title">Coordinating All Federal Benefits Is Complicated</h2>
+    <p class="fb-vh-subtitle">
+      Your FERS pension, TSP, FEGLI, FEHB, Social Security, and Medicare all interact.
+      Without a coordinated strategy, gaps add up — and so do costly mistakes.
+    </p>
+
+    <div class="fb-vh-grid">
+      <!-- VILLAIN -->
+      <div class="fb-vh-card fb-vh-card--villain">
+        <span class="fb-vh-card-icon">&#9888;&#65039;</span>
+        <h3>Without a Plan</h3>
+        <ul>
+          <li>Overpaying for FEGLI coverage you may not need in retirement</li>
+          <li>Stuck in the most expensive FEHB plan because no one showed you alternatives</li>
+          <li>Missing the optimal retirement date by years</li>
+          <li>Leaving TSP money in the G Fund earning below inflation</li>
+          <li>Claiming Social Security too early — or too late</li>
+          <li>No idea how your FERS pension, Supplement, and Social Security fit together</li>
+        </ul>
+      </div>
+
+      <!-- HERO -->
+      <div class="fb-vh-card fb-vh-card--hero">
+        <span class="fb-vh-card-icon">&#9989;</span>
+        <h3>With a Plan</h3>
+        <ul>
+          <li>FEGLI analyzed against private alternatives — keep only what makes sense</li>
+          <li>FEHB plan reviewed annually to save hundreds per month in premiums</li>
+          <li>Retirement date modeled around your MRA, high-3 salary, and benefit eligibility</li>
+          <li>TSP allocated and managed with a withdrawal strategy for retirement income</li>
+          <li>Social Security timed to maximize your household's lifetime benefit</li>
+          <li>Every benefit coordinated into one clear, written retirement plan</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fb-vh-cta">
+      <a href="/book/" class="fb-btn fb-btn--gold" style="background: var(--secondary); color: var(--primary); margin-top: 0.5rem;">See Where You Stand — Free Consultation</a>
+    </div>
+  </div>
+</section>
+
 <!-- ════════════ BENTO GRID ════════════ -->
 <section class="fb-bento">
   <div class="fb-bento-inner">
-    <span class="fb-bento-label">What We Cover</span>
+    <span class="fb-bento-label">How We Serve Federal Employees</span>
     <h2 class="fb-bento-title">Your Benefits, Decoded</h2>
 
     <div class="fb-bento-grid">
@@ -531,8 +745,9 @@ faqSchema:
         <h3>FERS Retirement System</h3>
         <p>
           Your FERS annuity is the foundation. We model your high-3 salary, service computation date,
-          survivor benefit elections, and the FERS Supplement to find the retirement date that
-          maximizes your lifetime income.
+          survivor benefit elections, and the FERS Supplement (SRS) to find the retirement date that
+          maximizes your lifetime income. MRA+30, 60+20, 62+5 — we map out your earliest
+          and optimal retirement windows.
         </p>
         <a href="/services/federal-benefits/fers-retirement/" class="fb-bento-link">Explore FERS planning &rarr;</a>
       </div>
@@ -543,15 +758,15 @@ faqSchema:
         <h3>TSP Strategy</h3>
         <p>
           Allocation across L, C, S, I, F, and G funds. Roth TSP conversions.
-          Withdrawal sequencing. Mutual Fund Window access.
+          Withdrawal sequencing. Contribution optimization.
         </p>
         <a href="/services/federal-benefits/tsp-planning/" class="fb-bento-link">TSP deep dive &rarr;</a>
       </div>
 
-      <!-- FEGLI — 6 col -->
+      <!-- FEGLI — 4 col -->
       <div class="fb-bento-card fb-bento-card--fegli">
-        <span class="fb-bento-card-tag">Insurance</span>
-        <h3>FEGLI Life Insurance</h3>
+        <span class="fb-bento-card-tag">Life Insurance</span>
+        <h3>FEGLI</h3>
         <p>
           FEGLI premiums spike after retirement. We compare your post-retirement FEGLI costs
           against private alternatives and recommend whether to keep, reduce, or replace coverage.
@@ -559,15 +774,40 @@ faqSchema:
         <a href="/services/federal-benefits/fegli/" class="fb-bento-link">Review FEGLI options &rarr;</a>
       </div>
 
-      <!-- SCE Guidance — 6 col -->
-      <div class="fb-bento-card fb-bento-card--sce">
-        <span class="fb-bento-card-tag">Eligibility</span>
-        <h3>Service Computation &amp; Eligibility Guidance</h3>
+      <!-- FEHB — 4 col -->
+      <div class="fb-bento-card fb-bento-card--fehb">
+        <span class="fb-bento-card-tag">Health Insurance</span>
+        <h3>FEHB</h3>
         <p>
-          MRA+30, 60+20, 62+5 — the rules are specific. We verify your service computation date,
-          identify buyback opportunities, and map out your earliest and optimal retirement windows.
+          Over 50% of federal employees are in Blue Cross Plus — often the most expensive plan.
+          Nobody pulls their LES to see what they're actually paying. We help you compare plans
+          and potentially save hundreds per month in premiums.
         </p>
-        <a href="/services/federal-benefits/fers-calculator/" class="fb-bento-link">Calculate your eligibility &rarr;</a>
+        <a href="/services/federal-benefits/fehb-retirement/" class="fb-bento-link">Review FEHB options &rarr;</a>
+      </div>
+
+      <!-- Social Security — 4 col -->
+      <div class="fb-bento-card fb-bento-card--ss">
+        <span class="fb-bento-card-tag">Income Planning</span>
+        <h3>Social Security</h3>
+        <p>
+          When you claim matters. We model spousal strategies, earnings test impacts, and how
+          Social Security coordinates with your FERS pension and Supplement to maximize
+          your household's lifetime benefit.
+        </p>
+        <a href="/services/federal-benefits/social-security-federal/" class="fb-bento-link">Social Security planning &rarr;</a>
+      </div>
+
+      <!-- Medicare — 4 col -->
+      <div class="fb-bento-card fb-bento-card--medicare">
+        <span class="fb-bento-card-tag">Healthcare</span>
+        <h3>Medicare</h3>
+        <p>
+          Understanding how Medicare works alongside FEHB is critical. We help you navigate
+          enrollment timing, Part B decisions, and how to coordinate coverage
+          so you're not overpaying or leaving benefits on the table.
+        </p>
+        <a href="/services/federal-benefits/social-security-federal/" class="fb-bento-link">Medicare planning &rarr;</a>
       </div>
 
     </div>
@@ -593,9 +833,10 @@ faqSchema:
 
       <div class="fb-author-book">
         <p>
-          Mike is the author of <strong><em>Your Federal Retirement Guide</em></strong> — a comprehensive
+          Mike is the author of <strong><em>The Federal Benefit Gap</em></strong> — a comprehensive
           resource that walks federal employees through every decision point from five years
           before retirement through their first year as a retiree.
+          <a href="#" style="display:inline-block; margin-top: 0.5rem; font-weight: 600; color: var(--secondary); text-decoration: none;">Download a complimentary chapter &rarr;</a>
         </p>
       </div>
 
@@ -626,11 +867,11 @@ faqSchema:
       </div>
       <div class="fb-num-card">
         <span class="fb-num-value">$11,250</span>
-        <span class="fb-num-label">TSP Super Catch-Up (Age 60-63)</span>
+        <span class="fb-num-label">TSP Super Catch-Up (Age 60–63)</span>
       </div>
       <div class="fb-num-card">
-        <span class="fb-num-value">4.4%</span>
-        <span class="fb-num-label">FERS-FRAE Employee Contribution</span>
+        <span class="fb-num-value">$150,000</span>
+        <span class="fb-num-label">Mandatory Roth Catch-Up Threshold</span>
       </div>
       <div class="fb-num-card">
         <span class="fb-num-value">+12.3%</span>
@@ -648,6 +889,14 @@ faqSchema:
         <span class="fb-num-value">$202.90</span>
         <span class="fb-num-label">Medicare Part B Monthly Premium</span>
       </div>
+      <div class="fb-num-card">
+        <span class="fb-num-value">$24,480</span>
+        <span class="fb-num-label">Social Security Earnings Test (under FRA) — also applies to FERS Supplement</span>
+      </div>
+      <div class="fb-num-card">
+        <span class="fb-num-value">$4,300 / $8,550</span>
+        <span class="fb-num-label">HSA Contribution Limits (Individual / Family)</span>
+      </div>
     </div>
   </div>
 </section>
@@ -655,9 +904,9 @@ faqSchema:
 <!-- ════════════ DARK CTA ════════════ -->
 <section class="fb-cta">
   <div class="fb-cta-inner">
-    <h2 class="fb-cta-title">Ready to secure your federal legacy?</h2>
+    <h2 class="fb-cta-title">You served your country. Are your benefits serving you?</h2>
     <div class="fb-cta-btns">
-      <a href="/book/" class="fb-btn fb-btn--gold">Schedule Your Free Call</a>
+      <a href="/book/" class="fb-btn fb-btn--gold">Get Your Free Benefits Analysis</a>
       <a href="/contact/" class="fb-btn fb-btn--ghost">Send Us a Message</a>
     </div>
   </div>
@@ -676,14 +925,14 @@ faqSchema:
       <a href="/services/federal-benefits/tsp-planning/" class="fb-link-card">
         <span>TSP Planning</span>
       </a>
-      <a href="/services/federal-benefits/tsp-mutual-fund-window/" class="fb-link-card">
-        <span>TSP Mutual Fund Window</span>
-      </a>
       <a href="/services/federal-benefits/fegli/" class="fb-link-card">
         <span>FEGLI Life Insurance</span>
       </a>
       <a href="/services/federal-benefits/fehb-retirement/" class="fb-link-card">
-        <span>FEHB in Retirement</span>
+        <span>FEHB Health Insurance</span>
+      </a>
+      <a href="/services/federal-benefits/social-security-federal/" class="fb-link-card">
+        <span>Social Security for Feds</span>
       </a>
       <a href="/services/federal-benefits/fers-supplement/" class="fb-link-card">
         <span>FERS Supplement</span>
@@ -691,11 +940,11 @@ faqSchema:
       <a href="/services/federal-benefits/fers-calculator/" class="fb-link-card">
         <span>FERS Calculator</span>
       </a>
-      <a href="/services/federal-benefits/social-security-federal/" class="fb-link-card">
-        <span>Social Security for Feds</span>
-      </a>
       <a href="/services/federal-benefits/federal-retirement-taxes/" class="fb-link-card">
         <span>Federal Retirement Taxes</span>
+      </a>
+      <a href="/services/federal-benefits/federal-retirement-checklist/" class="fb-link-card">
+        <span>Federal Retirement Checklist</span>
       </a>
     </div>
   </div>
