@@ -40,6 +40,12 @@
 }
 .aso-bar-logos img:hover { opacity: 1; }
 
+.aso-bar-logos img.aso-invert {
+  filter: brightness(0) saturate(100%) opacity(0.6);
+}
+.aso-bar-logos img.aso-invert:hover {
+  filter: brightness(0) saturate(100%) opacity(0.85);
+}
 @media (max-width: 600px) {
   .aso-bar-logos { gap: 1.5rem; }
   .aso-bar-logos img { height: 20px; }
@@ -50,12 +56,12 @@
   <div class="aso-bar-inner">
     <span class="aso-bar-label">Also Seen On</span>
     <div class="aso-bar-logos">
-      <img src="/assets/images/media/ksl.png" alt="KSL NewsRadio 102.7 FM" loading="lazy" />
-      <img src="/assets/images/media/fortune.png" alt="Fortune" loading="lazy" />
-      <img src="/assets/images/media/cnn-money.png" alt="CNN Money" loading="lazy" />
-      <img src="/assets/images/media/knrs-2.png" alt="KNRS" loading="lazy" />
-      <img src="/assets/images/media/newstalk.png" alt="NewsTalk 107.9 FM" loading="lazy" />
-      <img src="/assets/images/media/KIDLogo-small.png" alt="KID Radio" loading="lazy" />
+      <img src="/assets/images/media/ksl.png" alt="KSL NewsRadio 102.7 FM" loading="lazy" class="aso-invert" />
+      <img src="/assets/images/media/fortune.png" alt="Fortune" loading="lazy" class="aso-invert" />
+      <img src="/assets/images/media/cnn-money.png" alt="CNN Money" loading="lazy" class="aso-invert" />
+      <img src="/assets/images/media/knrs-2.png" alt="KNRS" loading="lazy" class="aso-invert" />
+      <img src="/assets/images/media/newstalk.png" alt="NewsTalk 107.9 FM" loading="lazy" class="aso-invert" />
+      <img src="/assets/images/media/KIDLogo-small.png" alt="KID Radio" loading="lazy" class="aso-invert" />
     </div>
   </div>
 </div>
