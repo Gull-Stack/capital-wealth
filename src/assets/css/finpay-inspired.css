@@ -182,11 +182,10 @@ p {
 
 /* Glassmorphic Navigation */
 .finpay-header {
-  position: fixed;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  position: sticky;
+  top: 0;
   width: 95%;
+  margin: 1rem auto 0;
   max-width: 1280px;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.45);
@@ -200,9 +199,11 @@ p {
 }
 
 .finpay-header.scrolled {
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.92);
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 8px 30px -8px rgba(0, 56, 112, 0.1);
+  border-radius: 0 0 16px 16px;
+  margin-top: 0;
 }
 
 .finpay-header .container {
@@ -957,6 +958,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  margin: 1rem auto 0;
   right: 0;
   bottom: 0;
   background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.1) 100%);
@@ -996,6 +998,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  margin: 1rem auto 0;
   right: 0;
   bottom: 0;
   background: rgba(0,0,0,0.1);
@@ -1249,10 +1252,8 @@ p {
   position: absolute;
   top: var(--space-12);
   bottom: var(--space-12);
-  left: 50%;
   width: 1px;
   background: var(--outline-variant);
-  transform: translateX(-50%);
 }
 
 .comparison-left h3 {
@@ -1312,7 +1313,7 @@ p {
 
 /* Floating CTA */
 .premium-floating-cta {
-  position: fixed;
+  position: sticky;
   bottom: 20px;
   right: 20px;
   left: 20px;
@@ -1431,9 +1432,10 @@ p {
 
 .mobile-nav {
   display: none;
-  position: fixed;
+  position: sticky;
   top: 0; 
   left: 0; 
+  margin: 1rem auto 0;
   right: 0; 
   bottom: 0;
   background: rgba(255,255,255,0.98);
@@ -1776,7 +1778,6 @@ p {
   content: '';
   position: absolute;
   top: 50%;
-  left: 50%;
   width: 0;
   height: 0;
   background: rgba(255, 255, 255, 0.1);
