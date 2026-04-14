@@ -97,6 +97,98 @@ breadcrumbs:
   color: #64748b;
 }
 
+/* Team photos — three-up on contact hero */
+.team-photos { display: flex; gap: -8px; }
+.team-photos .team-photo {
+  margin-left: -12px;
+  transition: transform 0.2s ease;
+}
+.team-photos .team-photo:first-child { margin-left: 0; }
+.team-photos:hover .team-photo { transform: translateX(0); }
+
+/* Trust strip (#2 — social proof above form) */
+.trust-strip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  margin: -8px -8px 20px;
+  background: linear-gradient(180deg, #FAFAFB 0%, #F4F5F7 100%);
+  border: 1px solid rgba(16,24,40,0.06);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+.trust-rating {
+  display: flex; align-items: center; gap: 8px;
+  font-family: 'Inter', sans-serif; font-size: 13px;
+}
+.trust-stars { color: #D4A437; font-size: 15px; letter-spacing: 1px; }
+.trust-rating-text { color: #344054; font-weight: 500; }
+.trust-rating-text strong { color: #0B0F17; font-weight: 700; }
+.trust-divider { width: 1px; height: 20px; background: rgba(16,24,40,0.1); }
+.trust-badge-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.trust-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 10.5px; font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  background: #fff;
+  border: 1px solid rgba(16,24,40,0.1);
+  border-radius: 999px;
+  color: #344054;
+}
+
+/* What happens next (#3) */
+.next-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: grid;
+  gap: 10px;
+}
+.next-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 14px;
+  background: rgba(10, 49, 97, 0.03);
+  border: 1px solid rgba(10, 49, 97, 0.08);
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+}
+.next-steps .ns-n {
+  flex-shrink: 0;
+  width: 24px; height: 24px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #1a2e4f 0%, #0f1e36 100%);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2px;
+}
+.next-steps li strong {
+  font-weight: 600; color: #0B0F17;
+  font-size: 14px; letter-spacing: -0.005em;
+}
+.next-steps li span {
+  font-size: 13px; color: #667085;
+  line-height: 1.4;
+}
+
+/* Submit button glass style override (#10) */
+.contact-form-submit.cwh-glass-btn.cwh-primary {
+  width: 100%;
+  justify-content: center;
+  padding: 14px 22px !important;
+  font-size: 15px !important;
+  margin-top: 16px;
+  letter-spacing: -0.005em;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
 /* Direct contact channels — nested under Dedicated Advisory Team */
 .advisory-channels {
   margin-top: 1.75rem;
@@ -522,13 +614,14 @@ breadcrumbs:
   <div class="contact-hero-container">
     <div class="contact-hero-text">
       <div class="contact-eyebrow">PRIVATE CONSULTATION</div>
-      <h1 class="contact-hero-title">Start a Conversation About Your Retirement</h1>
-      <p class="contact-hero-subtitle">No pressure. No pitch. Just a conversation about your goals and whether we're the right fit. Initial consultations are complimentary for qualified families.</p>
-      
+      <h1 class="contact-hero-title">Let's build your Retirement Money Map.</h1>
+      <p class="contact-hero-subtitle">30 minutes. No pitch. No obligation. A real conversation about your goals and whether we're the right fit for your family.</p>
+
       <div class="advisory-team">
         <div class="team-photos">
-          <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Founder of Capital Wealth" class="team-photo">
-          <div class="team-photo placeholder">+</div>
+          <img src="/assets/images/team/mike-stevens.jpg" onerror="this.src='/assets/images/mike-stevens.jpg'" alt="Mike Stevens, Founder" class="team-photo">
+          <img src="/assets/images/team/brent.jpg" alt="Brent, Advisory Team" class="team-photo">
+          <img src="/assets/images/team/chad.jpg" alt="Chad, Advisory Team" class="team-photo">
         </div>
         <div class="team-label">Dedicated Advisory Team</div>
       </div>
@@ -558,12 +651,34 @@ breadcrumbs:
     </div>
     
     <div class="contact-form-card">
+
+      <!-- Social proof strip (#2) -->
+      <div class="trust-strip">
+        <div class="trust-rating">
+          <span class="trust-stars" aria-label="4.9 out of 5 stars">★★★★★</span>
+          <span class="trust-rating-text"><strong>4.9</strong> · Google Reviews</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-badge-row">
+          <span class="trust-badge">Fiduciary</span>
+          <span class="trust-badge">SEC-Registered</span>
+          <span class="trust-badge">Gov. Contractor</span>
+        </div>
+      </div>
+
       <div class="form-header-clean">
         <div class="form-eyebrow-accent">NO OBLIGATION</div>
-        <h2 class="contact-form-title">Request a Consultation</h2>
-        <p class="contact-form-subtitle">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
+        <h2 class="contact-form-title">Request Your Complimentary Consultation</h2>
+        <p class="contact-form-subtitle">Tell us a bit about yourself — we'll reach out within one business day to schedule a time that works for you.</p>
       </div>
-      
+
+      <!-- What happens next (#3) -->
+      <ol class="next-steps">
+        <li><span class="ns-n">1</span><div><strong>We call within 1 business day</strong><br><span>to schedule a time that fits your calendar</span></div></li>
+        <li><span class="ns-n">2</span><div><strong>30-minute discovery call</strong><br><span>about your goals — no pitch, no pressure</span></div></li>
+        <li><span class="ns-n">3</span><div><strong>Your Retirement Money Map</strong><br><span>if we're the right fit, we build your plan</span></div></li>
+      </ol>
+
       <form id="contact-form" class="seminar-form-clean">
         <div class="contact-form-grid">
           <div class="contact-form-field">
@@ -604,7 +719,10 @@ breadcrumbs:
         <div class="honeypot"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
         <div class="honeypot"><input type="text" name="company_url" tabindex="-1" autocomplete="off"></div>
         
-        <button type="submit" id="submit-btn" class="contact-form-submit">SCHEDULE YOUR VISIT →</button>
+        <button type="submit" id="submit-btn" class="contact-form-submit cwh-glass-btn cwh-primary">
+          Schedule Your Visit
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
         <div id="form-status" style="margin-top: 12px; text-align: center; font-weight: 500;"></div>
       </form>
       
