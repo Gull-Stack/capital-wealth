@@ -1,0 +1,429 @@
+/* =================================================================
+   Capital Wealth — Homepage Redesign Overlay
+   Unifies homepage visual language with the new glass header.
+   Loaded AFTER finpay-inspired.css and header-redesign.css.
+   Strategy: override existing classes rather than rewrite markup.
+   ================================================================= */
+
+:root {
+  --hr-ink:    #0B0F17;
+  --hr-ink-2:  #344054;
+  --hr-ink-3:  #667085;
+  --hr-line:   rgba(16, 24, 40, 0.08);
+  --hr-line-2: rgba(16, 24, 40, 0.05);
+  --hr-blue:   #0A3161;
+  --hr-red:    #B31942;
+  --hr-gold:   #D4A437;
+  --hr-card-shadow: 0 1px 2px rgba(16,24,40,0.04), 0 20px 60px -20px rgba(16,24,40,0.08);
+}
+
+/* ============================================================
+   TYPOGRAPHY — demote italic serif, promote Inter
+   ============================================================ */
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+
+/* Section headlines: swap Cormorant italic for Inter bold */
+.hero-title,
+.pillars-title,
+.pillar-title,
+.mike-title,
+.media-text-dark h2,
+.federal-title,
+.sdba-title,
+.sdba-dark-title,
+.book-text h2,
+.final-cta-title,
+.comparison-section h2,
+.testimonials-section h2,
+.final-cta .final-cta-title {
+  font-family: 'Inter', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.05 !important;
+}
+
+.hero-title { letter-spacing: -0.035em !important; font-weight: 700 !important; }
+
+/* Card-level headings */
+.federal-card h3,
+.sdba-dark-card h3 {
+  font-family: 'Inter', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.015em !important;
+}
+
+/* Eyebrows: kill mono font, use Inter semibold uppercase */
+.hero-eyebrow,
+.mike-eyebrow,
+.federal-eyebrow,
+.federal-card-eyebrow,
+.sdba-dark-eyebrow,
+.sdba-dark-card-eyebrow,
+.hero-stat-label,
+.federal-stat-label,
+.final-cta-glass span,
+.fiduciary-promise,
+.testimonials-header .eyebrow,
+.testimonial-author {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+/* Numbers stay in mono for that stat look */
+.hero-stat-number,
+.federal-stat-number,
+.sdba-stats-card .sdba-stat-number {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+  font-style: normal !important;
+}
+
+/* Pull-quote voice (preserved intentionally): Mike's quote + testimonials */
+.mike-quote-card p,
+.testimonial-quote {
+  font-family: 'Cormorant Garamond', 'Georgia', serif !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+}
+
+/* ============================================================
+   REMOVE ACCENT DOTS (except hero eyebrow)
+   ============================================================ */
+.mike-eyebrow::before,
+.credential-item::before,
+.final-cta-glass span::before {
+  display: none !important;
+}
+.credential-item { padding-left: 14px !important; }
+
+/* ============================================================
+   UNIFIED GLASS BUTTONS — repaint existing button classes
+   ============================================================ */
+
+/* Dark / primary glass button (the main CTA) */
+.hero-btn,
+.pillar-link,
+.final-cta-inner .hero-btn,
+.book-text .hero-btn,
+.comparison-why .hero-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px 22px !important;
+  border-radius: 999px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.005em !important;
+  background: linear-gradient(180deg, #1a2e4f 0%, #0f1e36 100%) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 1px 2px rgba(16,24,40,0.2), inset 0 1px 0 rgba(255,255,255,0.12) !important;
+  transition: all 0.2s !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  width: fit-content !important;
+}
+.hero-btn:hover,
+.pillar-link:hover,
+.final-cta-inner .hero-btn:hover,
+.book-text .hero-btn:hover {
+  background: linear-gradient(180deg, #22396b 0%, #142a4d 100%) !important;
+  transform: translateY(-1px) !important;
+  color: #fff !important;
+}
+
+/* Transparent / secondary glass button */
+.hero-btn-secondary,
+.book-text .hero-btn-secondary,
+.final-cta-inner .hero-btn-secondary {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px 22px !important;
+  border-radius: 999px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.005em !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+  color: var(--hr-ink) !important;
+  text-decoration: none !important;
+  border: 1px solid var(--hr-line) !important;
+  box-shadow: 0 1px 2px rgba(16,24,40,0.04), inset 0 1px 0 rgba(255,255,255,0.6) !important;
+  backdrop-filter: blur(12px) saturate(1.4) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(1.4) !important;
+  transition: all 0.2s !important;
+}
+.hero-btn-secondary:hover,
+.final-cta-inner .hero-btn-secondary:hover {
+  background: rgba(255,255,255,0.9) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* On-dark variant (used inside navy book section) */
+.book-text .hero-btn,
+.sdba-dark .hero-btn,
+.media-combined .hero-btn {
+  background: rgba(255,255,255,0.14) !important;
+  border-color: rgba(255,255,255,0.25) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2) !important;
+  color: #fff !important;
+}
+.book-text .hero-btn:hover,
+.sdba-dark .hero-btn:hover,
+.media-combined .hero-btn:hover {
+  background: rgba(255,255,255,0.24) !important;
+  color: #fff !important;
+}
+.book-text .hero-btn-secondary,
+.sdba-dark .hero-btn-secondary {
+  background: transparent !important;
+  color: rgba(255,255,255,0.9) !important;
+  border: 1px solid rgba(255,255,255,0.25) !important;
+  box-shadow: none !important;
+}
+
+/* ============================================================
+   SECTION BG SOFTENING — Federal Benefits (was heavy navy-over-photo)
+   ============================================================ */
+.federal-benefits {
+  background:
+    radial-gradient(1000px 500px at 10% -10%, rgba(179, 25, 66, 0.04), transparent 50%),
+    radial-gradient(1000px 500px at 90% 110%, rgba(10, 49, 97, 0.05), transparent 50%),
+    #fff !important;
+  color: var(--hr-ink) !important;
+}
+.federal-benefits::before { display: none !important; }
+.federal-title,
+.federal-benefits .federal-eyebrow { color: var(--hr-ink) !important; }
+.federal-eyebrow { color: var(--hr-red) !important; }
+
+/* Federal cards — repaint from glass-on-dark to white card */
+.federal-card {
+  background: #fff !important;
+  border: 1px solid var(--hr-line) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--hr-card-shadow) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  padding: 28px !important;
+}
+.federal-card:hover {
+  background: #fff !important;
+  border-color: var(--hr-line) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 4px 10px rgba(16,24,40,0.06), 0 30px 80px -20px rgba(16,24,40,0.12) !important;
+}
+.federal-card h3 { color: var(--hr-ink) !important; }
+.federal-card p  { color: var(--hr-ink-3) !important; }
+.federal-card-eyebrow { color: var(--hr-blue) !important; }
+
+/* Federal stats — light variant */
+.federal-stat {
+  background: #fff !important;
+  border: 1px solid var(--hr-line) !important;
+  box-shadow: var(--hr-card-shadow) !important;
+  backdrop-filter: none !important;
+}
+.federal-stat-number { color: var(--hr-blue) !important; }
+.federal-stat-label  { color: var(--hr-ink-3) !important; }
+
+/* ============================================================
+   MEDIA COMBINED (radio section) — softened from navy to tinted light
+   ============================================================ */
+.media-combined {
+  background: #FAFAFB !important;
+  color: var(--hr-ink) !important;
+  border-top: 1px solid var(--hr-line) !important;
+  border-bottom: 1px solid var(--hr-line) !important;
+}
+.media-text-dark h2 { color: var(--hr-ink) !important; }
+.media-text-dark p  { color: var(--hr-ink-2) !important; }
+.media-text-dark strong { color: var(--hr-ink) !important; }
+.media-logos {
+  border-bottom-color: var(--hr-line) !important;
+}
+.media-logos img {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  opacity: 0.55 !important;
+}
+.media-logos img:hover { opacity: 1 !important; }
+
+/* ============================================================
+   SDBA DARK — keep dark but subtler gradient
+   ============================================================ */
+.sdba-dark {
+  background: linear-gradient(180deg, #0a1628 0%, #0f1e36 100%) !important;
+}
+.sdba-dark::before { display: none !important; }
+
+.sdba-dark-card {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  border-radius: 16px !important;
+  padding: 28px !important;
+}
+.sdba-dark-card:hover {
+  background: rgba(255,255,255,0.08) !important;
+  border-color: rgba(255,255,255,0.18) !important;
+  transform: translateY(-3px) !important;
+}
+.sdba-dark-card-eyebrow { color: var(--hr-gold) !important; }
+
+/* ============================================================
+   PILLAR CARDS — white canonical card
+   ============================================================ */
+.pillar-card {
+  background: #fff !important;
+  border: 1px solid var(--hr-line) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--hr-card-shadow) !important;
+  border-right: 1px solid var(--hr-line) !important;
+  padding: 32px !important;
+}
+.pillar-card:last-child { border-right: 1px solid var(--hr-line) !important; }
+.pillar-card::after { display: none !important; }
+.pillars-grid {
+  background: transparent !important;
+  border-bottom: none !important;
+  gap: 20px !important;
+}
+.pillar-card:hover {
+  background: #fff !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 4px 10px rgba(16,24,40,0.06), 0 30px 80px -20px rgba(16,24,40,0.12) !important;
+}
+.pillar-title { color: var(--hr-ink) !important; }
+.pillar-card:hover .pillar-title { color: var(--hr-blue) !important; }
+.pillar-desc { color: var(--hr-ink-2) !important; }
+
+.pillar-bullets li { color: var(--hr-ink-2) !important; font-size: 14px !important; }
+.pillar-bullets li::before { background: var(--hr-blue) !important; }
+
+/* ============================================================
+   SDBA LIGHT SECTION + stats card
+   ============================================================ */
+.sdba-stats-card {
+  border-radius: 16px !important;
+  box-shadow: var(--hr-card-shadow) !important;
+  border-bottom: 1px solid var(--hr-line) !important;
+}
+
+/* ============================================================
+   MIKE SECTION + credential items
+   ============================================================ */
+.mike-photo { border-radius: 20px !important; filter: grayscale(0.1) !important; }
+.mike-quote-card {
+  background: rgba(255,255,255,0.85) !important;
+  border: 1px solid rgba(255,255,255,0.6) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--hr-card-shadow) !important;
+}
+.mike-quote-card p { color: var(--hr-ink) !important; }
+.credential-item {
+  background: #fff !important;
+  border: 1px solid var(--hr-line-2) !important;
+  border-radius: 10px !important;
+  padding: 10px 14px !important;
+  backdrop-filter: none !important;
+  font-weight: 500 !important;
+  color: var(--hr-ink-2) !important;
+}
+
+/* ============================================================
+   BOOK SECTION — keep dark but warm up the gradient a touch
+   ============================================================ */
+.book-section {
+  background: linear-gradient(135deg, #0a1628 0%, #0f1e36 60%, #16253C 100%) !important;
+}
+.book-section::before {
+  background-image:
+    radial-gradient(800px 500px at 15% 20%, rgba(212,164,55,0.12), transparent 60%),
+    radial-gradient(800px 500px at 85% 80%, rgba(179,25,66,0.06), transparent 60%) !important;
+  opacity: 1 !important;
+}
+
+/* ============================================================
+   COMPARISON SECTION
+   ============================================================ */
+.comparison-section::before { opacity: 0.01 !important; }
+.feature-item { border-radius: 10px !important; }
+.feature-item span { font-family: 'Inter', sans-serif !important; font-weight: 500 !important; }
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonial-card {
+  border-radius: 16px !important;
+  border-top: 4px solid var(--hr-blue) !important;
+  border-left: 1px solid var(--hr-line) !important;
+  border-right: 1px solid var(--hr-line) !important;
+  border-bottom: 1px solid var(--hr-line) !important;
+  box-shadow: var(--hr-card-shadow) !important;
+  padding: 28px !important;
+}
+.testimonial-quote { color: var(--hr-ink) !important; }
+.testimonial-author { color: var(--hr-ink-3) !important; font-weight: 600 !important; }
+
+/* ============================================================
+   FINAL CTA + glass chip
+   ============================================================ */
+.final-cta-image-wrap { border-radius: 20px !important; }
+.final-cta-glass {
+  background: rgba(255,255,255,0.85) !important;
+  border: 1px solid rgba(255,255,255,0.6) !important;
+  border-radius: 12px !important;
+  padding: 10px 16px !important;
+}
+.final-cta-glass span {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  color: var(--hr-blue) !important;
+}
+
+/* ============================================================
+   HERO — glass buttons + Inter titles (but keep the photo + overlay)
+   ============================================================ */
+.hero-eyebrow {
+  background: rgba(255,255,255,0.12) !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  backdrop-filter: blur(12px) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  letter-spacing: 0.06em !important;
+  padding: 6px 14px !important;
+  border-radius: 999px !important;
+}
+.hero-eyebrow::before {
+  width: 6px !important; height: 6px !important;
+  background: var(--hr-gold) !important;
+}
+.hero-title {
+  font-family: 'Inter', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.02 !important;
+}
+.hero-subtitle {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.55 !important;
+}
+
+/* ============================================================
+   PILLARS SECTION HEADER — tighten up
+   ============================================================ */
+.pillars-subtitle {
+  font-family: 'Inter', sans-serif !important;
+  color: var(--hr-ink-2) !important;
+  font-size: 17px !important;
+}
