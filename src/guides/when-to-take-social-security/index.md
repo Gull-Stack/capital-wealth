@@ -2,7 +2,8 @@
 layout: layouts/guide.njk
 readTime: 10
 category: "SOCIAL SECURITY"
-author: "Capital Wealth Team"title: When to Take Social Security - Age 62, 67, or 70? Complete Guide 2026
+author: "Capital Wealth Team"
+title: "When to Take Social Security - Age 62, 67, or 70? Complete Guide 2026"
 description: Discover the optimal Social Security claiming strategy. Compare benefits at 62 vs 67 vs 70, break-even analysis, spousal benefits, and tax implications.
 permalink: /guides/when-to-take-social-security/
 breadcrumbs:

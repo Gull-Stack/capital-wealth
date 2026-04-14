@@ -2,7 +2,8 @@
 layout: layouts/guide.njk
 readTime: 8
 category: "EARLY RETIREMENT"
-author: "Capital Wealth Team"title: Can I Retire at 62 with $500K? Complete Analysis & Strategies 2026
+author: "Capital Wealth Team"
+title: "Can I Retire at 62 with $500K? Complete Analysis & Strategies 2026"
 description: Honest assessment of retiring with $500,000 at age 62. Learn what $500K actually generates monthly, bridge strategies, and when it might be enough.
 permalink: /guides/can-i-retire-at-62-with-500k/
 breadcrumbs:

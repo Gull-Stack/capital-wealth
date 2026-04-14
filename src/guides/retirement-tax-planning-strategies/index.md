@@ -2,7 +2,8 @@
 layout: layouts/guide.njk
 readTime: 12
 category: "TAX PLANNING"
-author: "Capital Wealth Team"title: Retirement Tax Planning Strategies 2026 - Minimize Taxes in Retirement
+author: "Capital Wealth Team"
+title: "Retirement Tax Planning Strategies 2026 - Minimize Taxes in Retirement"
 description: Comprehensive retirement tax planning guide. Learn Roth conversions, tax bracket management, RMD strategies, capital gains harvesting, and Utah tax tips.
 permalink: /guides/retirement-tax-planning-strategies/
 breadcrumbs:

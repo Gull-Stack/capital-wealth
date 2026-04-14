@@ -2,7 +2,8 @@
 layout: layouts/guide.njk
 readTime: 12
 category: "401(K) & IRA"
-author: "Capital Wealth Team"title: 401(k) Rollover Guide 2026 - Complete Step-by-Step Process
+author: "Capital Wealth Team"
+title: "401(k) Rollover Guide 2026 - Complete Step-by-Step Process"
 description: Complete guide to 401k rollovers. Learn direct vs indirect rollovers, tax implications, common mistakes, and when to rollover vs leave your 401k.
 permalink: /guides/401k-rollover-complete-guide/
 breadcrumbs:

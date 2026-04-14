@@ -2,7 +2,8 @@
 layout: layouts/guide.njk
 readTime: 10
 category: "CHOOSING AN ADVISOR"
-author: "Capital Wealth Team"title: Fiduciary vs Commission Financial Advisor - Complete Comparison Guide 2026
+author: "Capital Wealth Team"
+title: "Fiduciary vs Commission Financial Advisor - Complete Comparison Guide 2026"
 description: Learn the critical differences between fiduciary and commission-based financial advisors. Discover red flags, fee structures, and how to verify fiduciary status.
 permalink: /guides/fiduciary-vs-commission-advisor/
 breadcrumbs:

@@ -2,7 +2,8 @@
 layout: layouts/guide.njk
 readTime: 10
 category: "UTAH RETIREMENT"
-author: "Capital Wealth Team"title: How Much Do I Need to Retire in Utah? Complete 2026 Guide
+author: "Capital Wealth Team"
+title: "How Much Do I Need to Retire in Utah? Complete 2026 Guide"
 description: Discover exactly how much money you need to retire comfortably in Utah. Get real cost data, scenarios for retiring at 62-67, and expert guidance.
 permalink: /guides/how-much-do-i-need-to-retire-in-utah/
 breadcrumbs:

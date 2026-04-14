@@ -2,7 +2,8 @@
 layout: layouts/guide.njk
 readTime: 15
 category: "FEDERAL EMPLOYEES"
-author: "Capital Wealth Team"title: FERS Retirement Planning Guide 2026 - Federal Employee Complete Guide
+author: "Capital Wealth Team"
+title: "FERS Retirement Planning Guide 2026 - Federal Employee Complete Guide"
 description: Complete FERS retirement guide for federal employees. Learn pension calculations, TSP strategies, FEHB benefits, FERS supplement, and Social Security coordination.
 permalink: /guides/fers-retirement-planning-guide/
 breadcrumbs:
