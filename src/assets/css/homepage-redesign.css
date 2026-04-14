@@ -249,11 +249,22 @@ body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
 .media-text-dark strong { color: var(--hr-ink) !important; }
 .media-logos {
   border-bottom-color: var(--hr-line) !important;
+  gap: clamp(2rem, 4vw, 3.5rem) !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  padding-bottom: 2.5rem !important;
+  margin-bottom: 2.5rem !important;
 }
 .media-logos img {
   filter: none !important;
   mix-blend-mode: normal !important;
-  opacity: 0.55 !important;
+  height: clamp(22px, 3vw, 32px) !important;
+  width: auto !important;
+  max-width: 140px !important;
+  object-fit: contain !important;
+  opacity: 0.85 !important;
+  transition: opacity 0.25s ease !important;
 }
 .media-logos img:hover { opacity: 1 !important; }
 
