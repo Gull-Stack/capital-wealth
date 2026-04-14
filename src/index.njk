@@ -1400,6 +1400,9 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
          class="hero-bg">
     <div class="hero-overlay"></div>
     <div class="hero-sunrays"></div>
+    <div class="hero-sun-flare" aria-hidden="true"></div>
+    <div class="hero-sun-rays-v2" aria-hidden="true"></div>
+    <div class="hero-motes" id="heroMotes" aria-hidden="true"></div>
 
     <div class="hero-content">
         <span class="hero-eyebrow">WEALTH MANAGEMENT & FINANCIAL PLANNING</span>
@@ -1413,6 +1416,25 @@ description: "Fiduciary financial advisor in Lehi, Utah. Mike Stevens and Capita
 
 
 </section>
+
+<script>
+// Populate hero motes (floating golden light particles)
+(function(){
+  var wrap = document.getElementById('heroMotes');
+  if (!wrap) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var sizes = ['', 'sm', 'lg', 'sm', '', 'sm'];
+  for (var i = 0; i < 22; i++) {
+    var m = document.createElement('div');
+    m.className = 'hero-mote ' + sizes[i % sizes.length];
+    m.style.left = (5 + Math.random() * 90) + '%';
+    m.style.top  = (40 + Math.random() * 50) + '%';
+    m.style.animationDelay = (Math.random() * 14) + 's';
+    m.style.animationDuration = (10 + Math.random() * 10) + 's';
+    wrap.appendChild(m);
+  }
+})();
+</script>
 
 {# ═══════════════════════════════════════════════════════════
    2. THREE PILLARS SECTION - Clean 3-column card grid

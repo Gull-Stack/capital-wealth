@@ -438,3 +438,143 @@ body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
   color: var(--hr-ink-2) !important;
   font-size: 17px !important;
 }
+
+/* ============================================================
+   HERO ANIMATION UPGRADE — golden-hour cinematic
+   - Ken Burns zoom on background photo
+   - Warm overlay gradient (amber top-right, rose lower-left, navy bottom)
+   - Visible sun flare + layered ray rotation
+   - Floating gold light motes
+   - Subtle warm color grade
+   ============================================================ */
+
+/* Hide legacy sun rays (replaced by new layered flare) */
+.hero-fullbleed .hero-sunrays { display: none !important; }
+
+/* Background: Ken Burns zoom + subtle warm grade */
+.hero-fullbleed .hero-bg {
+  inset: -4% !important;
+  width: calc(100% + 8%) !important;
+  height: calc(100% + 8%) !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  filter: saturate(1.1) contrast(1.04) brightness(1.02) !important;
+  animation: cwHeroKenBurns 32s ease-in-out infinite alternate !important;
+  transform-origin: 30% 60% !important;
+  z-index: 1 !important;
+}
+@keyframes cwHeroKenBurns {
+  0%   { transform: scale(1.0)  translate(0, 0); }
+  100% { transform: scale(1.08) translate(-1.8%, -1.2%); }
+}
+
+/* Warm golden-hour overlay — replaces the cold navy wash */
+.hero-fullbleed .hero-overlay {
+  background:
+    radial-gradient(120% 80% at 75% 0%,  rgba(255, 170, 80, 0.28) 0%, transparent 55%),
+    radial-gradient(80% 60%  at 10% 90%, rgba(180, 90, 70,  0.18) 0%, transparent 60%),
+    linear-gradient(180deg,
+      rgba(20, 30, 55, 0.15) 0%,
+      rgba(10, 20, 40, 0.25) 45%,
+      rgba(8, 14, 28, 0.7) 100%) !important;
+  z-index: 2 !important;
+}
+
+/* Visible sun disk — radial glow with screen blend */
+.hero-sun-flare {
+  position: absolute;
+  top: 8%; left: 18%;
+  width: 520px; height: 520px;
+  z-index: 3; pointer-events: none;
+  background: radial-gradient(circle,
+    rgba(255, 230, 180, 0.75) 0%,
+    rgba(255, 200, 130, 0.40) 15%,
+    rgba(255, 180, 100, 0.20) 30%,
+    transparent 55%);
+  filter: blur(16px);
+  mix-blend-mode: screen;
+  animation: cwHeroSunPulse 5s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes cwHeroSunPulse {
+  0%, 100% { opacity: 0.85; transform: scale(1); }
+  50%      { opacity: 1;    transform: scale(1.06); }
+}
+
+/* Layered ray rotation on top of the flare */
+.hero-sun-rays-v2 {
+  position: absolute;
+  top: 8%; left: 18%;
+  width: 520px; height: 520px;
+  z-index: 4; pointer-events: none;
+  background: conic-gradient(
+    from 210deg at 50% 50%,
+    transparent 0deg,
+    rgba(255, 220, 160, 0.18) 6deg,
+    transparent 14deg,
+    rgba(255, 210, 150, 0.14) 28deg,
+    transparent 36deg,
+    rgba(255, 230, 170, 0.16) 52deg,
+    transparent 60deg,
+    rgba(255, 215, 155, 0.12) 74deg,
+    transparent 82deg,
+    transparent 360deg
+  );
+  filter: blur(10px);
+  mix-blend-mode: screen;
+  animation: cwHeroRayRotate 24s ease-in-out infinite alternate;
+}
+@keyframes cwHeroRayRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(20deg); }
+}
+
+/* Floating gold motes */
+.hero-motes {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  overflow: hidden;
+}
+.hero-mote {
+  position: absolute;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(255, 220, 160, 0.9) 0%,
+    rgba(255, 200, 130, 0.3) 50%,
+    transparent 80%);
+  animation: cwHeroMoteDrift 14s ease-in-out infinite;
+  filter: blur(0.5px);
+  mix-blend-mode: screen;
+}
+.hero-mote.sm { width: 2.5px; height: 2.5px; opacity: 0.7; }
+.hero-mote.lg { width: 6px; height: 6px; filter: blur(1px); }
+@keyframes cwHeroMoteDrift {
+  0%   { transform: translate(0, 0);         opacity: 0; }
+  10%  {                                      opacity: 0.8; }
+  50%  { transform: translate(30px, -80px);  opacity: 1; }
+  90%  {                                      opacity: 0.6; }
+  100% { transform: translate(-20px, -180px); opacity: 0; }
+}
+
+/* Keep hero content on top of the new layers */
+.hero-fullbleed .hero-content { z-index: 10 !important; }
+
+/* Responsive tweaks for the flare on small screens */
+@media (max-width: 768px) {
+  .hero-sun-flare,
+  .hero-sun-rays-v2 {
+    width: 320px; height: 320px;
+    top: 2%; left: -10%;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-fullbleed .hero-bg,
+  .hero-sun-flare,
+  .hero-sun-rays-v2,
+  .hero-mote { animation: none !important; }
+}
