@@ -92,7 +92,7 @@ export default async function handler(req, res) {
   try {
     const {
       name, email, phone, savings, retirementTimeline, questions,
-      firstName, lastName, agency, source, workshop_date, lead_type,
+      firstName, lastName, agency, employer, source, workshop_date, lead_type,
       utm_source, utm_medium, utm_campaign, utm_content, utm_term,
       referrer, landing_page, submitted_from, website
     } = req.body;
@@ -127,6 +127,7 @@ export default async function handler(req, res) {
       first_name: firstName || fullName.split(' ')[0] || '',
       last_name: lastName || fullName.split(' ').slice(1).join(' ') || '',
       agency: agency || null,
+      employer: employer || null,
       savings: savings || null,
       retirement_timeline: retirementTimeline || null,
       message: questions?.trim() || null,
@@ -321,19 +322,39 @@ export default async function handler(req, res) {
           </div>
         `;
       } else {
-        notificationSubject = `New Consultation: ${leadData.name} — ${leadData.savings || 'General Inquiry'}`;
-        notificationHtml = `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <div style="background: #1a2332; padding: 20px; text-align: center;">
-              <h1 style="color: #c9a96e; margin: 0;">New Consultation Request</h1>
-            </div>
-            <div style="padding: 30px; background: #f9f9f9;">
-              <table style="width: 100%; border-collapse: collapse;">
+        // Detect SDBA leads by source / lead_type / utm_campaign
+        const isSdba = (leadData.source && leadData.source.includes('sdba'))
+          || (leadData.lead_type && leadData.lead_type.includes('sdba'))
+          || (leadData.utm_campaign && leadData.utm_campaign.includes('sdba'));
+
+        // Build the fields row — SDBA gets Employer, general keeps Savings/Timeline
+        const fieldsRows = isSdba
+          ? `
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Name:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.name}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Email:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="mailto:${leadData.email}">${leadData.email}</a></td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="tel:${leadData.phone}">${leadData.phone}</a></td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Employer:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.employer || 'Not specified'}</td></tr>`
+          : `
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Name:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.name}</td></tr>
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Email:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="mailto:${leadData.email}">${leadData.email}</a></td></tr>
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="tel:${leadData.phone}">${leadData.phone}</a></td></tr>
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Savings:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.savings || 'Not specified'}</td></tr>
-                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Timeline:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.retirement_timeline || 'Not specified'}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Timeline:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.retirement_timeline || 'Not specified'}</td></tr>`;
+
+        // Subject: SDBA gets branded LinkedIn briefcase + employer tag; general keeps legacy format
+        notificationSubject = isSdba
+          ? `💼 New SDBA Consultation Request: ${leadData.name}${leadData.employer ? ` — ${leadData.employer}` : ''}`
+          : `New Consultation: ${leadData.name} — ${leadData.savings || 'General Inquiry'}`;
+
+        const headerTitle = isSdba ? 'New SDBA Consultation Request' : 'New Consultation Request';
+
+        notificationHtml = `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <div style="background: #1a2332; padding: 20px; text-align: center;">
+              <h1 style="color: #c9a96e; margin: 0;">${headerTitle}</h1>
+            </div>
+            <div style="padding: 30px; background: #f9f9f9;">
+              <table style="width: 100%; border-collapse: collapse;">${fieldsRows}
               </table>
               ${leadData.message ? `<div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px; border: 1px solid #ddd;"><strong>Questions/Comments:</strong><br/><p style="margin: 10px 0 0 0;">${leadData.message}</p></div>` : ''}
               <div style="margin-top: 20px; padding: 15px; background: #e8f4f8; border-radius: 8px; border: 1px solid #b3d9e6;">
