@@ -1,7 +1,7 @@
 ---
 layout: layouts/base-finpay.njk
-title: "Unlock Your 401(k)'s Hidden Feature — Self-Directed Brokerage | Capital Wealth"
-description: "Your employer's 401(k) likely includes a Self-Directed Brokerage Account (SDBA) — giving you access to thousands of investments beyond your plan's default menu. Professional fiduciary management from Capital Wealth. Complimentary strategy call."
+title: "Unlock Your 401k's Hidden Feature — Self-Directed Brokerage | Capital Wealth"
+description: "Your employer's 401k likely includes a Self-Directed Brokerage Account (SDBA) — giving you access to thousands of investments beyond your plan's default menu. Professional fiduciary management from Capital Wealth. Complimentary strategy call."
 noindex: true
 excludeFromSitemap: true
 bodyClass: "landing-page"
@@ -79,7 +79,7 @@ permalink: "/l/sdba/"
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 80px 24px;
+  padding: 80px 48px;
   background: var(--surface-container-low);
   overflow: hidden;
 }
@@ -204,6 +204,8 @@ permalink: "/l/sdba/"
 
 /* Form Card */
 .lp-form-card {
+  max-width: 100%;
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -864,24 +866,31 @@ permalink: "/l/sdba/"
   visibility: hidden !important;
 }
 
-</style>
 
-<!-- Top Bar -->
-<div class="lp-topbar">
-  <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" loading="eager">
-</div>
+/* Hide site-wide gov-contractor banner on landing page */
+.landing-page .gov-bar {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+
+</style>
 
 <!-- Hero Section -->
 <section class="lp-hero">
   <div class="lp-hero-container">
     <!-- Left Side -->
     <div class="lp-hero-left">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="display:block;height:32px;width:auto;margin-bottom:24px;" loading="eager">
       <div class="lp-federal-badge">
-        Your 401(k)'s Hidden Feature
+        Your 401k&#39;s Hidden Feature
       </div>
 
       <h1 class="lp-hero-title">
-        Your 401(k) Has a Powerful Tool Most Employees <span class="lp-hero-title-accent">Will Never Unlock.</span>
+        Your 401k Has a Powerful Tool Most Employees <span class="lp-hero-title-accent">Will Never Unlock.</span>
       </h1>
 
       <p class="lp-hero-description">
@@ -977,7 +986,7 @@ permalink: "/l/sdba/"
       </h2>
 
       <div class="lp-pull-quote">
-        Your 401(k)'s default menu is designed for the lowest common denominator. The brokerage window is where the real strategy lives — but almost nobody uses it, because nobody tells you it's there.
+        Your 401k's default menu is designed for the lowest common denominator. The brokerage window is where the real strategy lives — but almost nobody uses it, because nobody tells you it's there.
       </div>
 
       <div class="lp-credentials-grid">
@@ -1009,7 +1018,7 @@ permalink: "/l/sdba/"
     </h2>
 
     <p class="lp-fiduciary-subtext">
-      A Self-Directed Brokerage Account is a feature inside your 401(k), 403(b), 457, or TSP that lets you invest far beyond the standard fund menu. Same tax benefits. Same employer match. Dramatically more options. Most plans have one — and most employees never use it.
+      A Self-Directed Brokerage Account is a feature inside your 401k, 403(b), 457, or TSP that lets you invest far beyond the standard fund menu. Same tax benefits. Same employer match. Dramatically more options. Most plans have one — and most employees never use it.
     </p>
 
     <div class="lp-pillars-grid">
@@ -1042,7 +1051,7 @@ permalink: "/l/sdba/"
           </svg>
         </div>
         <div class="lp-pillar-title">Pro Managed</div>
-        <div class="lp-pillar-description">Your fiduciary advisor can manage your SDBA — most advisors can't touch your 401(k)</div>
+        <div class="lp-pillar-description">Your fiduciary advisor can manage your SDBA — most advisors can't touch your 401k</div>
       </div>
 
       <div class="lp-pillar-card">
