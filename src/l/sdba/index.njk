@@ -73,25 +73,59 @@ permalink: "/l/sdba/"
   width: auto;
 }
 
-/* Hero Section */
+/* Top announcement banner */
+.lp-announce {
+  background: var(--secondary);
+  color: var(--ink-black);
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.lp-announce a {
+  color: var(--ink-black);
+  text-decoration: underline;
+  font-weight: 700;
+  margin-left: 6px;
+}
+.lp-announce a:hover { opacity: 0.85; }
+
+/* Hero Section — stacked layout: hero content top, form card below */
 .lp-hero {
   position: relative;
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 80px 48px;
+  padding: 48px 24px 64px;
   background: var(--surface-container-low);
   overflow: hidden;
 }
 
 .lp-hero-container {
-  max-width: 1280px;
+  max-width: 960px;
   margin: 0 auto;
   width: 100%;
-  display: grid;
-  grid-template-columns: 55% 45%;
-  gap: 64px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: stretch;
+  text-align: center;
+}
+
+.lp-hero-left,
+.lp-hero .lp-form-card {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.lp-hero-left {
+  text-align: center;
+}
+
+.lp-hero-left .lp-federal-badge,
+.lp-hero-left > img {
+  display: inline-block;
 }
 
 .lp-hero-left {
@@ -137,11 +171,13 @@ permalink: "/l/sdba/"
 }
 
 .lp-hero-description {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  max-width: 600px;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--slate-600);
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .lp-video-container {
@@ -879,12 +915,18 @@ permalink: "/l/sdba/"
 
 </style>
 
+<!-- Top Announcement Banner -->
+<div class="lp-announce">
+  Unlock your 401k's Hidden Feature — Complimentary SDBA Strategy Call
+  <a href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;">Book now →</a>
+</div>
+
 <!-- Hero Section -->
 <section class="lp-hero">
   <div class="lp-hero-container">
-    <!-- Left Side -->
+    <!-- Hero content: badge, headline, trimmed description, video -->
     <div class="lp-hero-left">
-      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="display:block;height:32px;width:auto;margin-bottom:24px;" loading="eager">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="display:block;height:32px;width:auto;margin:0 auto 20px;" loading="eager">
       <div class="lp-federal-badge">
         Your 401k&#39;s Hidden Feature
       </div>
@@ -894,7 +936,7 @@ permalink: "/l/sdba/"
       </h1>
 
       <p class="lp-hero-description">
-        If your employer's retirement plan includes a Self-Directed Brokerage Account, you have access to thousands of investments beyond your plan's default menu — with the same tax benefits and employer match. Most employees never know it's there. We'll show you how to use it — and whether it's right for you — in a complimentary 30-minute call.
+        If your employer's plan has a Self-Directed Brokerage Account, you have access to 5,000+ investments — with the same tax benefits and employer match. We'll show you how in a complimentary 30-minute call.
       </p>
 
       <div class="lp-video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;background:#000;">
@@ -913,7 +955,7 @@ permalink: "/l/sdba/"
       </div>
     </div>
 
-    <!-- Right Side - Form -->
+    <!-- Form, stacked directly below the hero content -->
     <div class="lp-form-card">
       <h3 class="lp-form-title">Unlock My SDBA Strategy</h3>
       <p class="lp-form-subtitle">Complimentary 30-Minute Call With a Fiduciary Advisor</p>
@@ -949,6 +991,10 @@ permalink: "/l/sdba/"
           GET MY COMPLIMENTARY SDBA REVIEW →
         </button>
 
+        <div class="lp-cta-assurance" style="margin-top:12px;text-align:center;font-family:var(--font-mono),monospace;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--slate-600);font-weight:600;">
+          No cost &nbsp;·&nbsp; No obligation &nbsp;·&nbsp; Fiduciary consultation
+        </div>
+
         <div class="lp-privacy-text">
           <svg class="lp-lock-icon" viewBox="0 0 24 24">
             <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
@@ -966,19 +1012,36 @@ permalink: "/l/sdba/"
   </div>
 </section>
 
+<!-- Featured On: media logo strip -->
+<section class="lp-featured" style="background:#ffffff;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;padding:28px 16px;">
+  <div style="max-width:1100px;margin:0 auto;text-align:center;">
+    <div style="font-family:var(--font-mono),monospace;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--slate-500);margin-bottom:16px;font-weight:600;">
+      As Featured On
+    </div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:36px 48px;opacity:0.85;">
+      <img src="/assets/images/media/fortune-color.png" alt="Fortune" style="height:26px;width:auto;object-fit:contain;" loading="lazy">
+      <img src="/assets/images/media/ksl-color.png" alt="KSL" style="height:32px;width:auto;object-fit:contain;" loading="lazy">
+      <img src="/assets/images/media/kslcom-color.png" alt="KSL.com" style="height:28px;width:auto;object-fit:contain;" loading="lazy">
+      <img src="/assets/images/media/knrs-color.png" alt="KNRS" style="height:30px;width:auto;object-fit:contain;" loading="lazy">
+      <img src="/assets/images/media/newstalk-color.png" alt="NewsTalk" style="height:30px;width:auto;object-fit:contain;" loading="lazy">
+      <img src="/assets/images/media/kid-color.png" alt="KID" style="height:30px;width:auto;object-fit:contain;" loading="lazy">
+    </div>
+  </div>
+</section>
+
 <!-- Authority/Team Section (Mike's photo removed; team-positioned) -->
 <section class="lp-authority">
   <div class="lp-authority-container">
     <div class="lp-speaker-image-wrapper">
       <div class="lp-speaker-image">
-        <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-autumn-walk.jpg" alt="Retirement planning with Capital Wealth" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+        <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-boardwalk-sunset.jpg" alt="Retirement planning with Capital Wealth — a couple walks a sunlit boardwalk through a mountain meadow" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
       </div>
     </div>
 
     <div class="lp-authority-content">
-      <div class="lp-eyebrow">About Capital Wealth</div>
+      <div class="lp-eyebrow">Why Capital Wealth</div>
       <h2 class="lp-authority-headline">
-        A Fiduciary Team Built for the Retirement You <span class="lp-authority-headline-accent">Actually Want.</span>
+        Why Savvy 401k Savers Choose Capital Wealth Over <span class="lp-authority-headline-accent">Big-Name Firms.</span>
       </h2>
 
       <div class="lp-pull-quote">
@@ -1166,6 +1229,10 @@ permalink: "/l/sdba/"
       <a href="/terms/" class="lp-footer-link">Terms of Service</a>
       <a href="/disclosures/" class="lp-footer-link">Disclosures</a>
     </div>
+
+    <a href="https://www.bbb.org/us/ut/lehi/profile/financial-planning-consultants/capital-wealth-advisors-1166-90025236" target="_blank" rel="noopener" class="lp-footer-bbb" style="display:inline-flex;align-items:center;">
+      <img src="/assets/images/badges/bbb2.png" alt="Better Business Bureau A+ Rating — Capital Wealth Advisors" style="height:40px;width:auto;" loading="lazy">
+    </a>
   </div>
 
   <div class="lp-footer-copyright">

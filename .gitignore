@@ -2,3 +2,8 @@
 .env*.local
 .env.prod
 .env.local
+
+# Raw source images (iStock originals) — optimized versions live in src/assets
+/iStock-*.jpg
+/iStock-*.jpeg
+/iStock-*.png
