@@ -355,8 +355,11 @@ export default async function handler(req, res) {
         `;
       }
 
+      // SDBA leads: CC Bryce for CMO visibility during campaign launch
+      const salesCc = (source && source.includes('sdba')) ? 'bryce@gullstack.com' : undefined;
       await sendEmail({
         to: SALES_EMAIL,
+        cc: salesCc,
         from: FROM_EMAIL,
         fromName: `${leadData.name} via Capital Wealth`,
         subject: notificationSubject,
