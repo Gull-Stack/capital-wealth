@@ -222,10 +222,10 @@ For more retirement planning insights and strategies, tune in to Retire Right Ra
 
 ### Related Articles
 
-- [Federal Employee Retirement Planning: FERS Coordination Strategies](/blog/fers-coordination-strategies/)
-- [TSP Withdrawal Strategies for Maximum Income](/blog/tsp-withdrawal-strategies/)
-- [Social Security Optimization for Utah Retirees](/blog/social-security-optimization-utah/)
-- [Healthcare Planning in Retirement: Medicare and Beyond](/blog/healthcare-planning-retirement/)
+- [Federal Employee Retirement Planning: FERS Coordination Strategies](/services/federal-benefits/fers-retirement/)
+- [TSP Withdrawal Strategies for Maximum Income](/services/federal-benefits/tsp-planning/)
+- [Social Security Optimization for Utah Retirees](/services/social-security/)
+- [Healthcare Planning in Retirement: Medicare and Beyond](/retirement-planning/)
 
 ### Listen to Retire Right Radio
 
