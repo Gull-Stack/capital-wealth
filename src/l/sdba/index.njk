@@ -91,38 +91,43 @@ permalink: "/l/sdba/"
 }
 .lp-announce a:hover { opacity: 0.85; }
 
-/* Hero Section — two-column: content left, video right */
+/* Hero Section — stacked: text on top, LARGE video below */
 .lp-hero {
   position: relative;
-  display: flex;
-  align-items: center;
+  display: block;
   padding: 56px 32px 72px;
   background: var(--surface-container-low);
   overflow: hidden;
 }
 
 .lp-hero-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   width: 100%;
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
-  gap: 56px;
-  align-items: center;
 }
 
-.lp-hero-left {
-  text-align: left;
+.lp-hero-top {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 40px;
 }
 
-.lp-hero-right {
+.lp-hero-top .lp-hero-description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lp-hero-video-block {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.lp-hero-cta-row {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.lp-hero-right .lp-video-container {
-  width: 100%;
+  gap: 20px;
+  margin-top: 32px;
 }
 
 /* Trust row: BBB + No-Obligation + Fiduciary */
@@ -174,16 +179,8 @@ permalink: "/l/sdba/"
 }
 
 @media (max-width: 900px) {
-  .lp-hero-container {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
-  .lp-hero-left { text-align: left; }
-}
-
-.lp-hero-left {
-  position: relative;
-  z-index: 10;
+  .lp-hero { padding: 32px 20px 48px; }
+  .lp-hero-top { text-align: left; }
 }
 
 .lp-federal-badge {
@@ -966,6 +963,250 @@ permalink: "/l/sdba/"
   overflow: hidden !important;
 }
 
+/* =========================================================
+   Calculator Section
+   ========================================================= */
+.lp-calc {
+  background: var(--surface);
+  padding: 72px 24px;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+.lp-calc-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.lp-calc-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.lp-calc-eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cool-horizon);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.lp-calc-title {
+  font-size: 2.25rem;
+  font-family: var(--font-serif-display), serif;
+  color: var(--primary);
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+.lp-calc-subtitle {
+  font-size: 1.05rem;
+  color: var(--slate-600);
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+.lp-calc-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(15, 26, 42, 0.08);
+  border: 1px solid rgba(22, 37, 60, 0.08);
+  padding: 40px;
+  display: grid;
+  grid-template-columns: minmax(260px, 360px) 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.lp-calc-form .lp-calc-label {
+  display: block;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--primary);
+  font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+.lp-calc-form .lp-calc-label:first-child { margin-top: 0; }
+.lp-calc-form .lp-calc-input {
+  width: 100%;
+  padding: 14px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(22, 37, 60, 0.2);
+  background: #fff;
+  font-size: 16px;
+  font-family: var(--font-body), sans-serif;
+  color: var(--primary);
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+.lp-calc-form .lp-calc-input:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(199, 163, 86, 0.15);
+}
+.lp-calc-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+}
+.lp-calc-btn {
+  display: block;
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-body), sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+.lp-calc-btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+.lp-calc-btn-primary:hover { background: var(--ink-black); transform: translateY(-1px); }
+.lp-calc-btn-accent {
+  background: var(--secondary);
+  color: var(--ink-black);
+}
+.lp-calc-btn-accent:hover { filter: brightness(1.05); transform: translateY(-1px); }
+.lp-calc-chart-col {
+  display: flex;
+  flex-direction: column;
+}
+.lp-calc-headline {
+  font-size: 1.75rem;
+  font-family: var(--font-serif-display), serif;
+  color: var(--primary);
+  text-align: center;
+  min-height: 44px;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+.lp-calc-headline .lp-calc-highlight {
+  color: var(--secondary);
+  font-weight: 700;
+  font-style: italic;
+}
+.lp-calc-chart-wrap {
+  position: relative;
+  width: 100%;
+  height: 340px;
+}
+.lp-calc-disclaimer {
+  margin-top: 24px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--slate-500);
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 900px) {
+  .lp-calc { padding: 48px 16px; }
+  .lp-calc-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 28px;
+  }
+  .lp-calc-title { font-size: 1.75rem; }
+  .lp-calc-chart-wrap { height: 280px; }
+}
+
+/* =========================================================
+   FAQ Section
+   ========================================================= */
+.lp-faq {
+  background: white;
+  padding: 96px 24px;
+}
+.lp-faq-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.lp-faq-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.lp-faq-eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cool-horizon);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.lp-faq-title {
+  font-size: 2.75rem;
+  font-family: var(--font-serif-display), serif;
+  color: var(--primary);
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.lp-faq-title-accent {
+  color: var(--cool-horizon);
+  font-style: italic;
+}
+.lp-faq-subtitle {
+  font-size: 1.05rem;
+  color: var(--slate-600);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+.lp-faq-item {
+  border-top: 1px solid rgba(22, 37, 60, 0.12);
+}
+.lp-faq-item:last-child { border-bottom: 1px solid rgba(22, 37, 60, 0.12); }
+.lp-faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 22px 44px 22px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  font-family: var(--font-serif-display), serif;
+  position: relative;
+  line-height: 1.35;
+}
+.lp-faq-item summary::-webkit-details-marker { display: none; }
+.lp-faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.75rem;
+  color: var(--cool-horizon);
+  font-weight: 300;
+  transition: transform 0.2s ease;
+}
+.lp-faq-item[open] summary::after { content: '−'; }
+.lp-faq-answer {
+  padding: 0 0 22px 0;
+  color: var(--slate-700);
+  line-height: 1.65;
+  font-size: 1rem;
+}
+.lp-faq-answer p { margin: 0 0 12px 0; }
+.lp-faq-answer p:last-child { margin-bottom: 0; }
+.lp-faq-answer ul {
+  margin: 8px 0 12px 20px;
+  padding: 0;
+}
+.lp-faq-answer li { margin-bottom: 6px; }
+@media (max-width: 768px) {
+  .lp-faq { padding: 64px 16px; }
+  .lp-faq-title { font-size: 2rem; }
+  .lp-faq-item summary { font-size: 1rem; padding-right: 36px; }
+}
 </style>
 
 <!-- Top Announcement Banner -->
@@ -974,12 +1215,12 @@ permalink: "/l/sdba/"
   <a href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;">Book now →</a>
 </div>
 
-<!-- Hero Section: two-column (content left, video right) -->
+<!-- Hero Section: stacked with LARGE centered video -->
 <section class="lp-hero">
   <div class="lp-hero-container">
-    <!-- Left column: hero copy + CTA + trust row -->
-    <div class="lp-hero-left">
-      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="display:block;height:32px;width:auto;margin:0 0 20px;" loading="eager">
+    <!-- Top: logo + badge + headline + description -->
+    <div class="lp-hero-top">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="display:block;height:32px;width:auto;margin:0 auto 20px;" loading="eager">
       <div class="lp-federal-badge">
         Your 401k&#39;s Hidden Feature
       </div>
@@ -989,15 +1230,34 @@ permalink: "/l/sdba/"
       </h1>
 
       <p class="lp-hero-description">
-        If your employer's plan has a Self-Directed Brokerage Account, you have access to 5,000+ investments — with the same tax benefits and employer match. We'll show you how in a complimentary 30-minute call.
+        If your employer's plan has a Self-Directed Brokerage Account, you have access to 5,000+ investments — with the same tax benefits and employer match. Watch Mike's 2-minute briefing, then book a complimentary 30-minute call.
       </p>
+    </div>
 
-      <a href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;" style="display:inline-block;background:var(--primary);color:#ffffff;padding:16px 36px;border-radius:8px;font-weight:700;text-decoration:none;font-size:1rem;letter-spacing:0.04em;text-transform:uppercase;">
+    <!-- BIG centered video -->
+    <div class="lp-hero-video-block">
+      <div class="lp-video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;background:#000;box-shadow:0 30px 60px rgba(15,26,42,0.22);">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/HcRMiemU53s?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0&playsinline=1&loop=1&playlist=HcRMiemU53s"
+          title="SDBA Strategy Briefing — Mike Stevens"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+        ></iframe>
+      </div>
+      <div class="lp-video-meta" style="margin-top:12px;">
+        SDBA STRATEGY BRIEFING // MIKE STEVENS
+      </div>
+    </div>
+
+    <!-- CTA + Trust row (centered under video) -->
+    <div class="lp-hero-cta-row">
+      <a href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;" style="display:inline-block;background:var(--primary);color:#ffffff;padding:18px 44px;border-radius:8px;font-weight:700;text-decoration:none;font-size:1rem;letter-spacing:0.04em;text-transform:uppercase;">
         Book My Complimentary SDBA Call →
       </a>
 
-      <!-- Trust row: BBB + No-Obligation + Fiduciary -->
-      <div class="lp-trust-row">
+      <div class="lp-trust-row" style="justify-content:center;">
         <a href="https://www.bbb.org/us/ut/lehi/profile/financial-planning-consultants/capital-wealth-advisors-1166-90025236" target="_blank" rel="noopener" class="lp-trust-item" aria-label="Better Business Bureau A+ Accredited Business">
           <img src="/assets/images/badges/bbb2.png" alt="BBB A+ Accredited Business — Capital Wealth Advisors">
         </a>
@@ -1016,25 +1276,55 @@ permalink: "/l/sdba/"
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Right column: video -->
-    <div class="lp-hero-right">
-      <div>
-        <div class="lp-video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;background:#000;">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/HcRMiemU53s?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0&playsinline=1&loop=1&playlist=HcRMiemU53s"
-            title="SDBA Strategy Briefing — Mike Stevens"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-          ></iframe>
+<!-- ============================================================
+     SDBA Advantage Calculator
+     ============================================================ -->
+<section class="lp-calc" id="sdba-calculator">
+  <div class="lp-calc-inner">
+    <div class="lp-calc-header">
+      <div class="lp-calc-eyebrow">See The Difference</div>
+      <h2 class="lp-calc-title">What could a <em>1% better</em> return do for your retirement?</h2>
+      <p class="lp-calc-subtitle">
+        Your default 401k menu often underperforms a thoughtfully-managed SDBA. Even a 1% annual edge — the kind our fiduciary team routinely targets through active management inside your brokerage window — compounds into a very different retirement.
+      </p>
+    </div>
+
+    <div class="lp-calc-card">
+      <!-- Inputs -->
+      <div class="lp-calc-form">
+        <label class="lp-calc-label" for="cw-calc-age">Age</label>
+        <input class="lp-calc-input" type="number" id="cw-calc-age" min="18" max="80" value="40" inputmode="numeric">
+
+        <label class="lp-calc-label" for="cw-calc-salary">Current Annual Salary</label>
+        <input class="lp-calc-input" type="text" id="cw-calc-salary" value="$125,000" inputmode="numeric">
+
+        <label class="lp-calc-label" for="cw-calc-balance">Current 401(k) Balance</label>
+        <input class="lp-calc-input" type="text" id="cw-calc-balance" value="$200,000" inputmode="numeric">
+
+        <label class="lp-calc-label" for="cw-calc-retire">Retirement Age</label>
+        <input class="lp-calc-input" type="number" id="cw-calc-retire" min="50" max="80" value="65" inputmode="numeric">
+
+        <div class="lp-calc-actions">
+          <button type="button" class="lp-calc-btn lp-calc-btn-primary" id="cw-calc-run">Calculate</button>
+          <a class="lp-calc-btn lp-calc-btn-accent" href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;">Book Free Adviser Call</a>
         </div>
-        <div class="lp-video-meta">
-          SDBA STRATEGY BRIEFING // MIKE STEVENS
+      </div>
+
+      <!-- Chart -->
+      <div class="lp-calc-chart-col">
+        <div class="lp-calc-headline" id="cw-calc-headline">&nbsp;</div>
+        <div class="lp-calc-chart-wrap">
+          <canvas id="cw-calc-chart"></canvas>
         </div>
       </div>
     </div>
+
+    <p class="lp-calc-disclaimer">
+      For illustrative purposes only. Assumes 3% annual salary growth, 12.4% annual contribution rate (combined employee + employer), and monthly compounding. "Default 401k" uses a 7% annual return — the long-run average for the S&amp;P 500. "Advised SDBA" assumes a 1% annual improvement through active management. Not a guarantee of future results. All investing carries risk, including loss of principal.
+    </p>
   </div>
 </section>
 
@@ -1292,6 +1582,134 @@ permalink: "/l/sdba/"
   </div>
 </section>
 
+<!-- ============================================================
+     Frequently Asked Questions
+     ============================================================ -->
+<section class="lp-faq">
+  <div class="lp-faq-container">
+    <div class="lp-faq-header">
+      <div class="lp-faq-eyebrow">Straight Answers</div>
+      <h2 class="lp-faq-title">
+        401,000 questions. <span class="lp-faq-title-accent">Real answers.</span>
+      </h2>
+      <p class="lp-faq-subtitle">
+        The Self-Directed Brokerage Account is one of the least-understood features in the entire 401k world. Here's what people ask us most.
+      </p>
+    </div>
+
+    <details class="lp-faq-item">
+      <summary>What exactly is a Self-Directed Brokerage Account (SDBA)?</summary>
+      <div class="lp-faq-answer">
+        <p>An SDBA is an optional feature inside many 401(k), 403(b), 457, and 401(a) plans. It opens a "brokerage window" alongside your default fund menu — giving you access to thousands of mutual funds, ETFs, and individual securities that the plan's core menu doesn't include. Your money stays inside your employer's retirement plan; you just gain a much wider set of investment choices, with the option to bring in a professional fiduciary to manage them.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>Does my retirement plan actually offer one?</summary>
+      <div class="lp-faq-answer">
+        <p>Most mid-to-large employer plans do — but they rarely advertise it. On your 30-minute call, a Capital Wealth advisor can quickly confirm whether your plan at Fidelity, Schwab, Empower, TIAA, Vanguard, or another provider includes an SDBA window, and walk you through what's available inside it.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>Who is eligible?</summary>
+      <div class="lp-faq-answer">
+        <p>If your plan offers an SDBA, every active participant is generally eligible — regardless of income, title, or investment experience. You don't have to be a senior executive or a high-net-worth investor to use it.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>Do I still control my 401(k)?</summary>
+      <div class="lp-faq-answer">
+        <p>Yes. You keep full ownership and full control. When you engage Capital Wealth, we manage the investments inside the brokerage window on your behalf under a fiduciary agreement — but you still decide how much to contribute, when to change jobs, and whether to stay on with us. You can adjust or end the engagement at any time, subject to your plan's rules.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>Does my money leave my employer's plan?</summary>
+      <div class="lp-faq-answer">
+        <p>No. This is one of the most important things to understand about an SDBA — your money never leaves your 401(k). The brokerage window is an account <em>inside</em> your existing plan. You keep your employer match, your pre-tax or Roth tax treatment, and your ERISA creditor protections. No rollover, no distribution, no taxable event.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>How is this different from a target-date fund?</summary>
+      <div class="lp-faq-answer">
+        <p>Target-date funds assume every participant of a given age has the same savings, the same risk tolerance, the same outside assets, and the same tax picture. They don't. A professionally managed SDBA lets us build an allocation around <em>your</em> actual timeline, <em>your</em> other accounts (IRAs, taxable brokerage, your spouse's plan), and <em>your</em> risk comfort — and then monitor it in real time rather than once a decade.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>What does "fiduciary" actually mean here?</summary>
+      <div class="lp-faq-answer">
+        <p>Capital Wealth Advisors is a Registered Investment Advisor. As a fiduciary, we are legally required to put your interests ahead of our own and to disclose any conflicts of interest. We don't earn commissions on fund choices. Our incentive is the same as yours — growing your retirement account responsibly over time.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>How often is my account reviewed?</summary>
+      <div class="lp-faq-answer">
+        <p>Continuously. We monitor portfolios in real time and rebalance when markets, your risk profile, or your plan circumstances change — not on a "set it and forget it" schedule. We also coach you semi-annually as life events (raises, kids, home purchases, job changes) reshape your plan.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>Will I still see my SDBA on my normal 401(k) statement?</summary>
+      <div class="lp-faq-answer">
+        <p>Yes. Your brokerage window balance appears alongside your core account on a consolidated statement, and you can view both online through your plan provider (Fidelity, Schwab, Empower, etc.). Specific features vary by platform.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>Can I roll in old 401(k)s from previous employers?</summary>
+      <div class="lp-faq-answer">
+        <p>In most cases, yes. Rollovers from previous employer plans into your current 401(k) are generally allowed. We can walk through the tradeoffs on your call — sometimes rolling in consolidates things beautifully, and sometimes leaving prior balances where they are (or moving them to an IRA) is the better choice.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>What happens if I leave my job?</summary>
+      <div class="lp-faq-answer">
+        <p>You generally have four options: leave the balance in your former employer's plan, roll it into your new employer's 401(k), roll it into an IRA, or take a distribution (usually not recommended due to taxes and penalties). Each has different implications for fees, investment options, creditor protection, and advice. We'll help you weigh them when the time comes.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>Is this only for high earners or experienced investors?</summary>
+      <div class="lp-faq-answer">
+        <p>No. Any employee whose plan offers an SDBA can participate — the feature is not limited to executives or high-income earners. That said, the benefit of professional management tends to scale with account size, so many participants explore this once their balance crosses the $100,000 mark.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>What are the 2026 contribution limits?</summary>
+      <div class="lp-faq-answer">
+        <p>For the 2026 tax year, the IRS limit for employee contributions to a traditional or Roth 401(k) (or a combination of both) is $24,500. Participants age 50 and older can contribute an additional $8,000 catch-up for a total of $32,500. Under SECURE 2.0, participants ages 60–63 may contribute an additional $11,250 catch-up (where the plan allows), for a combined total of $34,750. Employer match and profit-sharing are on top of those limits.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>What does the SDBA cost?</summary>
+      <div class="lp-faq-answer">
+        <p>Plan providers typically charge a small annual SDBA account fee (often in the $25–$50 range) — considerably less than many investors pay in hidden expense ratios on their default target-date fund. Capital Wealth's advisory fee for managing the account is transparent, disclosed upfront, and billed directly against the SDBA — never as a hidden commission inside a fund.</p>
+      </div>
+    </details>
+
+    <details class="lp-faq-item">
+      <summary>Can I stop SDBA management later?</summary>
+      <div class="lp-faq-answer">
+        <p>Yes. You can discontinue the advisory engagement at any time, subject to your plan's rules. Your money stays in your 401(k) throughout.</p>
+      </div>
+    </details>
+
+    <div style="text-align:center;margin-top:48px;">
+      <a href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;" style="display:inline-block;background:var(--primary);color:#fff;padding:16px 36px;border-radius:8px;font-weight:700;text-decoration:none;font-size:1rem;letter-spacing:0.04em;text-transform:uppercase;">
+        Still Have Questions? Let's Talk →
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- Final CTA -->
 <section class="lp-hero" style="min-height: auto; padding: 5rem 2rem; background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%);">
   <div style="max-width: 720px; margin: 0 auto; text-align: center;">
@@ -1386,4 +1804,199 @@ document.addEventListener('DOMContentLoaded', function() {
     return isValid;
   }
 });
+</script>
+
+<!-- Chart.js for calculator -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+
+<!-- SDBA Advantage Calculator -->
+<script>
+(function() {
+  // Helpers
+  function parseCurrency(val) {
+    if (val === null || val === undefined) return 0;
+    var cleaned = String(val).replace(/[^0-9.]/g, '');
+    var n = parseFloat(cleaned);
+    return isFinite(n) ? Math.max(0, Math.round(n)) : 0;
+  }
+  function fmtCurrency(n) {
+    return '$' + Math.round(n).toLocaleString('en-US');
+  }
+
+  var ageEl, salaryEl, balanceEl, retireEl, headlineEl, runBtn, canvas, chart;
+
+  function setupCurrencyFormatting(el) {
+    el.addEventListener('blur', function() {
+      var v = parseCurrency(el.value);
+      el.value = v ? fmtCurrency(v) : '';
+    });
+    el.addEventListener('focus', function() {
+      el.value = String(parseCurrency(el.value) || '');
+    });
+  }
+
+  function project(balance, ages, salary, rate) {
+    var contributionRate = 0.078 + 0.046; // 12.4%
+    var salaryGrowth = 0.03;
+    var monthlyRate = Math.pow(1 + rate, 1 / 12);
+    var monthlyFactor = Math.pow(monthlyRate, 12);
+    var contribMultiplier = (monthlyFactor - 1) / (monthlyRate - 1);
+
+    var total = balance;
+    var out = [balance];
+    for (var i = 0; i < ages.length - 1; i++) {
+      var yearsFromNow = i;
+      var thisYearSalary = salary * Math.pow(1 + salaryGrowth, yearsFromNow);
+      var thisYearContrib = thisYearSalary * contributionRate;
+      total = total * monthlyFactor + (thisYearContrib / 12) * contribMultiplier;
+      out.push(Math.round(Math.max(0, total)));
+    }
+    return out;
+  }
+
+  function renderChart(ages, withSdba, defaultPlan) {
+    if (!window.Chart) {
+      // Chart.js not ready — poll briefly
+      var t = setInterval(function() {
+        if (window.Chart) {
+          clearInterval(t);
+          renderChart(ages, withSdba, defaultPlan);
+        }
+      }, 150);
+      return;
+    }
+    if (chart) chart.destroy();
+    chart = new Chart(canvas.getContext('2d'), {
+      type: 'line',
+      data: {
+        labels: ages,
+        datasets: [
+          {
+            label: 'Advised SDBA (+1%)',
+            data: withSdba,
+            borderColor: '#C7A356',
+            backgroundColor: 'rgba(199,163,86,0.12)',
+            borderWidth: 3,
+            pointRadius: 0,
+            tension: 0.25,
+            fill: true
+          },
+          {
+            label: 'Default 401k (S&P 500, 7%)',
+            data: defaultPlan,
+            borderColor: '#16253C',
+            backgroundColor: 'rgba(22,37,60,0.04)',
+            borderWidth: 3,
+            pointRadius: 0,
+            tension: 0.25,
+            fill: true
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              color: '#16253C',
+              boxWidth: 16,
+              boxHeight: 10,
+              padding: 14,
+              font: { size: 12, weight: '600' }
+            }
+          },
+          tooltip: {
+            callbacks: {
+              title: function(items) { return 'Age ' + items[0].label; },
+              label: function(ctx) {
+                return ctx.dataset.label + ': ' + fmtCurrency(ctx.parsed.y);
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            ticks: {
+              callback: function(v) {
+                if (v >= 1e6) return '$' + (v / 1e6).toFixed(1) + 'M';
+                if (v >= 1e3) return '$' + (v / 1e3).toFixed(0) + 'K';
+                return '$' + v;
+              },
+              color: '#64748b'
+            },
+            grid: { color: 'rgba(22,37,60,0.08)' }
+          },
+          x: {
+            ticks: { color: '#64748b', maxTicksLimit: 8 },
+            grid: { display: false }
+          }
+        }
+      }
+    });
+  }
+
+  function run() {
+    var age = parseInt(ageEl.value, 10) || 0;
+    var retire = parseInt(retireEl.value, 10) || 65;
+    if (retire < 50) retire = 50;
+    if (retire > 80) retire = 80;
+    var salary = parseCurrency(salaryEl.value);
+    var balance = parseCurrency(balanceEl.value);
+
+    if (!age || age < 18 || age >= retire || salary <= 0) {
+      headlineEl.innerHTML = 'Enter your details to see your SDBA advantage.';
+      if (chart) { chart.destroy(); chart = null; }
+      return;
+    }
+
+    var years = retire - age;
+    var ages = [];
+    for (var i = 0; i <= years; i++) ages.push(age + i);
+
+    var rDefault = 0.07;   // S&P 500 long-run average
+    var rAdvised = 0.08;   // 1% better
+    var defaultPlan = project(balance, ages, salary, rDefault);
+    var withSdba = project(balance, ages, salary, rAdvised);
+
+    var diff = withSdba[withSdba.length - 1] - defaultPlan[defaultPlan.length - 1];
+    headlineEl.innerHTML =
+      'Could <span class="lp-calc-highlight">' + fmtCurrency(diff) + '</span> more change your retirement?';
+
+    renderChart(ages, withSdba, defaultPlan);
+  }
+
+  function init() {
+    ageEl = document.getElementById('cw-calc-age');
+    salaryEl = document.getElementById('cw-calc-salary');
+    balanceEl = document.getElementById('cw-calc-balance');
+    retireEl = document.getElementById('cw-calc-retire');
+    headlineEl = document.getElementById('cw-calc-headline');
+    runBtn = document.getElementById('cw-calc-run');
+    canvas = document.getElementById('cw-calc-chart');
+    if (!canvas) return;
+
+    setupCurrencyFormatting(salaryEl);
+    setupCurrencyFormatting(balanceEl);
+
+    runBtn.addEventListener('click', run);
+    [ageEl, salaryEl, balanceEl, retireEl].forEach(function(el) {
+      el.addEventListener('change', run);
+      el.addEventListener('keyup', function(e) {
+        if (e.key === 'Enter') run();
+      });
+    });
+
+    // Initial render
+    setTimeout(run, 250);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
 </script>
