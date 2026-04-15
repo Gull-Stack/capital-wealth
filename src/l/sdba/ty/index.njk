@@ -1,0 +1,380 @@
+---
+layout: layouts/base-finpay.njk
+title: "Schedule Your SDBA Strategy Call | Capital Wealth"
+description: "Your request is confirmed. Book your free 30-minute SDBA strategy call with a fiduciary advisor at Capital Wealth."
+noindex: true
+excludeFromSitemap: true
+bodyClass: "landing-page"
+permalink: "/l/sdba/ty/"
+---
+
+<style>
+/* Kill main padding + hide nav on landing */
+.landing-page main { padding-top: 0 !important; }
+.landing-page .finpay-header,
+.landing-page header,
+.landing-page .finpay-nav-wrapper,
+.landing-page .finpay-nav,
+.landing-page .finpay-nav-links,
+.landing-page .finpay-nav-right,
+.landing-page .desktop-cta,
+.landing-page .client-login-cta,
+.landing-page .mobile-menu-btn {
+  display: none !important; height: 0 !important; max-height: 0 !important;
+  padding: 0 !important; margin: 0 !important; overflow: hidden !important;
+  visibility: hidden !important; position: absolute !important;
+}
+
+/* Top bar logo */
+.sty-topbar {
+  background: white;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+.sty-topbar img { height: 40px; width: auto; }
+
+/* Hero */
+.sty-hero {
+  background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%);
+  padding: 3rem 2rem 2.5rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.sty-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px; height: 600px;
+  background: url('/assets/images/logos/logo-icon-color.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.03;
+}
+.sty-check {
+  width: 72px; height: 72px;
+  background: rgba(253, 210, 94, 0.15);
+  border: 2px solid #FDD25E;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.5rem;
+  position: relative;
+}
+.sty-check svg { width: 36px; height: 36px; color: #FDD25E; }
+.sty-eyebrow {
+  font-family: var(--font-mono, 'Roboto Mono', monospace);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FDD25E;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  position: relative;
+}
+.sty-hero h1 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  line-height: 1.15;
+  color: #fff;
+  position: relative;
+}
+.sty-hero p {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.85);
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Scheduler */
+.sty-scheduler {
+  background: #f8f9fb;
+  padding: 3rem 2rem 4rem;
+}
+.sty-scheduler-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.sty-scheduler h2 {
+  text-align: center;
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.9rem;
+  color: #16253C;
+  margin-bottom: 0.5rem;
+}
+.sty-scheduler > .sty-scheduler-inner > p {
+  text-align: center;
+  color: #475569;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sty-scheduler-embed {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+}
+.sty-scheduler-embed iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+  display: block;
+}
+.sty-scheduler-fallback {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+.sty-scheduler-fallback a {
+  color: #16253C;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* What to expect */
+.sty-expect {
+  background: white;
+  padding: 4rem 2rem;
+}
+.sty-expect-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.sty-expect-left h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.8rem;
+  color: #16253C;
+  margin-bottom: 0.75rem;
+}
+.sty-expect-left > p {
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+.sty-expect-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sty-expect-list li {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.875rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+.sty-expect-list li:last-child { border-bottom: none; }
+.sty-expect-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  color: #16253C;
+  margin-top: 2px;
+}
+.sty-advisor-card {
+  background: linear-gradient(135deg, #f8f9fb 0%, #f3f4f6 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+.sty-advisor-photo {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.sty-advisor-photo img { width: 100%; height: 100%; object-fit: cover; }
+.sty-advisor-card h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.3rem;
+  color: #16253C;
+  margin: 0 0 0.25rem;
+}
+.sty-advisor-title {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+.sty-advisor-card p {
+  color: #475569;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+.sty-advisor-card p:last-child { margin-bottom: 0; }
+.sty-advisor-card strong { color: #16253C; }
+
+/* Contact fallback */
+.sty-contact {
+  background: #f8f9fb;
+  padding: 2rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+.sty-contact a {
+  color: #16253C;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dotted #16253C;
+}
+
+/* Footer */
+.sty-footer {
+  background: #0F1A2A;
+  padding: 2rem;
+  text-align: center;
+}
+.sty-footer-logo img { height: 36px; opacity: 0.7; margin-bottom: 1rem; }
+.sty-footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.sty-footer-link {
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.sty-footer-copyright {
+  color: rgba(255,255,255,0.35);
+  font-size: 0.8rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sty-hero { padding: 2rem 1rem 2rem; }
+  .sty-hero h1 { font-size: 1.75rem; }
+  .sty-hero p { font-size: 1rem; }
+  .sty-scheduler { padding: 2rem 1rem 3rem; }
+  .sty-scheduler-inner { padding: 0; }
+  .sty-scheduler-embed { border: none; border-radius: 0; }
+  .sty-scheduler-embed iframe { height: 550px; }
+  .sty-expect { padding: 3rem 1rem; }
+  .sty-expect-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .sty-expect-left h2 { font-size: 1.5rem; }
+}
+</style>
+
+{# ═══ Top bar ═══ #}
+<div class="sty-topbar">
+  <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth">
+</div>
+
+{# ═══ Hero ═══ #}
+<section class="sty-hero">
+  <div class="sty-check">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+  </div>
+  <div class="sty-eyebrow">Request Received — One More Step</div>
+  <h1>Book Your Free 30-Minute SDBA Strategy Call</h1>
+  <p>Pick the time that works for you below. You'll meet with Mike Stevens — founder of Capital Wealth, fiduciary advisor, and SDBA specialist. No obligation, no sales pitch, no cost.</p>
+</section>
+
+{# ═══ Scheduler ═══ #}
+<section class="sty-scheduler">
+  <div class="sty-scheduler-inner">
+    <h2>Choose Your Time</h2>
+    <p>30-minute video call · Fiduciary advisor · Completely free</p>
+    <div class="sty-scheduler-embed">
+      <iframe
+        src="https://scheduler.zoom.us/capital-wealth/discovery-visit?embed=true"
+        title="Schedule your SDBA Strategy Call with Capital Wealth"
+        loading="lazy"
+        allow="clipboard-write"
+      ></iframe>
+    </div>
+    <p class="sty-scheduler-fallback">
+      Having trouble with the scheduler? <a href="https://scheduler.zoom.us/capital-wealth/discovery-visit" target="_blank" rel="noopener">Open it in a new tab</a>
+      or call us at <a href="tel:8012102800">801.210.2800</a>.
+    </p>
+  </div>
+</section>
+
+{# ═══ What to expect ═══ #}
+<section class="sty-expect">
+  <div class="sty-expect-inner">
+    <div class="sty-expect-left">
+      <h2>What We'll Cover On Your Call</h2>
+      <p>This isn't a sales meeting. It's a focused strategy conversation about your specific 401(k), your employer's plan, and whether the SDBA feature is right for your situation.</p>
+      <ul class="sty-expect-list">
+        <li>
+          <svg class="sty-expect-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          <span><strong>Plan Verification</strong> — We'll confirm whether your employer's plan offers an SDBA and what platform they use (Schwab PCRA, Fidelity BrokerageLink, Vanguard, etc.)</span>
+        </li>
+        <li>
+          <svg class="sty-expect-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          <span><strong>Cost Breakdown</strong> — Annual fees, trading costs, and expense ratios so you can actually see the math</span>
+        </li>
+        <li>
+          <svg class="sty-expect-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          <span><strong>Allocation Review</strong> — An honest look at your current plan investments and whether you're overconcentrated, overpaying, or off-strategy</span>
+        </li>
+        <li>
+          <svg class="sty-expect-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          <span><strong>Integration With The Rest of Your Plan</strong> — How the SDBA fits with your IRA, taxable accounts, and spouse's plan</span>
+        </li>
+        <li>
+          <svg class="sty-expect-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          <span><strong>Honest Recommendation</strong> — If an SDBA doesn't make sense for you, we'll tell you that. If it does, we'll explain exactly how it would work.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sty-advisor-card">
+      <div class="sty-advisor-photo">
+        <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Founder of Capital Wealth" loading="lazy">
+      </div>
+      <h3>Mike Stevens</h3>
+      <div class="sty-advisor-title">Founder · Fiduciary Advisor</div>
+      <p>Mike has spent 25+ years helping Fortune 500 employees and federal workers optimize their retirement plans — including the SDBAs that most employees never know they have.</p>
+      <p>Host of <em>Retire Right Radio</em> on KSL &amp; KNRS. Bestselling author of <em>Retire Right, Retire Now.</em></p>
+      <p><strong>This consultation is complimentary and carries no obligation.</strong></p>
+    </div>
+  </div>
+</section>
+
+{# ═══ Contact fallback ═══ #}
+<section class="sty-contact">
+  <p>Prefer to schedule by phone? Call <a href="tel:8012102800">801.210.2800</a> — Monday through Friday, 9am–5pm MT.</p>
+</section>
+
+{# ═══ Footer ═══ #}
+<footer class="sty-footer">
+  <div class="sty-footer-logo">
+    <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth">
+  </div>
+  <div class="sty-footer-links">
+    <a href="/privacy/" class="sty-footer-link">Privacy Policy</a>
+    <a href="/terms/" class="sty-footer-link">Terms of Service</a>
+    <a href="/disclosures/" class="sty-footer-link">Disclosures</a>
+  </div>
+  <div class="sty-footer-copyright">
+    © 2026 Capital Wealth. All rights reserved. Investment advisory services offered through Capital Wealth, a Registered Investment Advisor.
+  </div>
+</footer>

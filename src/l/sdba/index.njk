@@ -1,0 +1,1257 @@
+---
+layout: layouts/base-finpay.njk
+title: "Unlock Your 401(k)'s Hidden Feature — Self-Directed Brokerage | Capital Wealth"
+description: "Your employer's 401(k) likely includes a Self-Directed Brokerage Account (SDBA) — giving you access to thousands of investments beyond your plan's default menu. Professional fiduciary management from Capital Wealth. Free strategy call."
+noindex: true
+excludeFromSitemap: true
+bodyClass: "landing-page"
+permalink: "/l/sdba/"
+---
+<style>
+/* Landing Page CSS - All vanilla CSS, no Tailwind */
+/* Prefix all classes with 'lp-' for landing page */
+.lp-landing-page {
+  --primary: #16253C;
+  --secondary: #FDD25E;
+  --cool-horizon: #1B2A4A;
+  --ink-black: #0F1A2A;
+  --surface: #f8f9fb;
+  --surface-container-low: #f3f4f6;
+  --on-primary: #ffffff;
+  --on-secondary: #0F1A2A;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-500: #64748b;
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Kill main padding that accounts for fixed header */
+.landing-page main {
+  padding-top: 0 !important;
+}
+
+/* Hide entire site header/nav on landing page */
+.landing-page .finpay-header {
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
+
+.landing-page .finpay-header *,
+.landing-page header *,
+.landing-page .finpay-nav-wrapper,
+.landing-page .finpay-nav,
+.landing-page .finpay-nav-links,
+.landing-page .finpay-nav-right,
+.landing-page .finpay-nav-logo,
+.landing-page .desktop-cta,
+.landing-page .client-login-cta,
+.landing-page .mobile-menu-btn {
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Top Bar - Logo only */
+.lp-topbar {
+  background: white;
+  padding: 24px 0;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.lp-topbar img {
+  height: 44px;
+  width: auto;
+}
+
+/* Hero Section */
+.lp-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 24px;
+  background: var(--surface-container-low);
+  overflow: hidden;
+}
+
+.lp-hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 64px;
+  align-items: center;
+}
+
+.lp-hero-left {
+  position: relative;
+  z-index: 10;
+}
+
+.lp-federal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary);
+  color: var(--on-primary);
+  padding: 8px 16px;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 24px;
+  border-radius: 4px;
+}
+
+.lp-federal-badge::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--secondary);
+  border-radius: 50%;
+}
+
+.lp-hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  font-family: var(--font-serif-display), serif;
+  color: var(--primary);
+}
+
+.lp-hero-title-accent {
+  color: var(--cool-horizon);
+  font-style: italic;
+}
+
+.lp-hero-description {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 600px;
+  color: var(--slate-600);
+  margin-bottom: 48px;
+}
+
+.lp-video-container {
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+
+.lp-video-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.lp-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.lp-play-button {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.lp-play-button:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.lp-play-button svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--primary);
+  margin-left: 4px;
+}
+
+.lp-video-meta {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--slate-500);
+  text-align: center;
+}
+
+/* Form Card */
+.lp-form-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.lp-form-title {
+  font-size: 1.75rem;
+  font-family: var(--font-serif-display), serif;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.lp-form-subtitle {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cool-horizon);
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.lp-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.lp-form-group {
+  margin-bottom: 20px;
+}
+
+.lp-form-label {
+  display: block;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.lp-form-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(22, 37, 60, 0.1);
+  padding: 16px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.lp-form-input::placeholder {
+  color: #94a3b8;
+}
+
+.lp-form-input:focus {
+  outline: none;
+  border-color: var(--cool-horizon);
+  box-shadow: 0 0 0 2px rgba(253, 210, 94, 0.2);
+}
+
+.lp-submit-btn {
+  width: 100%;
+  background: var(--primary);
+  color: var(--on-primary);
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body), sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.lp-submit-btn:hover {
+  background: var(--ink-black);
+  transform: translateY(-1px);
+}
+
+.lp-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.lp-privacy-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  color: var(--slate-500);
+  text-align: center;
+  justify-content: center;
+}
+
+.lp-lock-icon {
+  width: 12px;
+  height: 12px;
+  fill: var(--slate-500);
+}
+
+/* Authority Section */
+.lp-authority {
+  padding: 96px 24px;
+  background: white;
+}
+
+.lp-authority-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: center;
+}
+
+.lp-speaker-image-wrapper {
+  position: relative;
+}
+
+.lp-speaker-image {
+  border-radius: 12px;
+  overflow: hidden;
+  filter: grayscale(0.3);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.lp-speaker-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lp-book-card {
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 220px;
+}
+
+.lp-book-badge {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cool-horizon);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.lp-book-title {
+  font-family: var(--font-serif-display), serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.3;
+}
+
+.lp-authority-content .lp-eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cool-horizon);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.lp-authority-headline {
+  font-size: 3.5rem;
+  font-family: var(--font-serif-display), serif;
+  color: var(--primary);
+  margin-bottom: 32px;
+  line-height: 1.1;
+}
+
+.lp-authority-headline-accent {
+  color: var(--cool-horizon);
+  font-style: italic;
+}
+
+.lp-pull-quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: var(--font-serif-display), serif;
+  color: var(--slate-700);
+  line-height: 1.4;
+  margin-bottom: 48px;
+  position: relative;
+  padding-left: 32px;
+}
+
+.lp-pull-quote::before {
+  content: '"';
+  position: absolute;
+  left: -8px;
+  top: -16px;
+  font-size: 4rem;
+  color: rgba(22, 37, 60, 0.1);
+  font-family: var(--font-serif-display), serif;
+  line-height: 1;
+}
+
+.lp-credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.lp-credential {
+  text-align: left;
+}
+
+.lp-credential-label {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cool-horizon);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.lp-credential-text {
+  color: var(--slate-600);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Fiduciary Protocol Section */
+.lp-fiduciary {
+  padding: 96px 24px;
+  background: #f3f4f6;
+}
+
+.lp-fiduciary-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lp-fiduciary .lp-eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cool-horizon);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.lp-fiduciary-headline {
+  font-size: 3rem;
+  font-family: var(--font-serif-display), serif;
+  color: var(--primary);
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.lp-fiduciary-headline-accent {
+  color: var(--cool-horizon);
+  font-style: italic;
+}
+
+.lp-fiduciary-subtext {
+  font-size: 1.25rem;
+  color: var(--slate-600);
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto 64px;
+}
+
+.lp-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.lp-pillar-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(22, 37, 60, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.lp-pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.lp-pillar-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(87, 165, 244, 0.1);
+  border-radius: 50%;
+}
+
+.lp-pillar-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--cool-horizon);
+}
+
+.lp-pillar-title {
+  font-size: 1.25rem;
+  font-family: var(--font-serif-display), serif;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.lp-pillar-description {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--slate-500);
+}
+
+.lp-fiduciary-banner {
+  background: var(--primary);
+  color: var(--on-primary);
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.lp-shield-icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--secondary);
+}
+
+.lp-banner-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Precision Benefits Section */
+.lp-precision {
+  padding: 96px 24px;
+  background: white;
+}
+
+.lp-precision-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.lp-precision .lp-eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cool-horizon);
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.lp-precision-headline {
+  font-size: 3rem;
+  font-family: var(--font-serif-display), serif;
+  color: var(--primary);
+  margin-bottom: 64px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.lp-precision-headline-accent {
+  color: var(--cool-horizon);
+  font-style: italic;
+}
+
+.lp-precision-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.lp-precision-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(22, 37, 60, 0.1);
+  border-radius: 12px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lp-precision-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--cool-horizon);
+}
+
+.lp-card-number {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: var(--font-mono), monospace;
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(22, 37, 60, 0.1);
+}
+
+.lp-precision-card-title {
+  font-size: 1.5rem;
+  font-family: var(--font-serif-display), serif;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.lp-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(22, 37, 60, 0.1);
+}
+
+.lp-stat-label {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--slate-500);
+}
+
+.lp-stat-value {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.lp-stat-callout {
+  background: rgba(87, 165, 244, 0.1);
+  border-left: 4px solid var(--cool-horizon);
+  padding: 20px;
+  margin-top: 24px;
+  border-radius: 0 8px 8px 0;
+}
+
+.lp-stat-callout-text {
+  font-size: 14px;
+  color: var(--slate-600);
+  line-height: 1.5;
+}
+
+.lp-stat-highlight {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.lp-fegli-bars {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+  height: 120px;
+  margin: 24px 0;
+}
+
+.lp-fegli-bar {
+  flex: 1;
+  background: var(--cool-horizon);
+  border-radius: 4px 4px 0 0;
+  position: relative;
+}
+
+.lp-fegli-bar:nth-child(5) {
+  background: var(--secondary);
+}
+
+.lp-fegli-bar:nth-child(6) {
+  background: #dc2626;
+}
+
+.lp-fegli-bar-label {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  font-family: var(--font-mono), monospace;
+  color: var(--slate-500);
+  white-space: nowrap;
+}
+
+.lp-risk-factor {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #dc2626;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 16px;
+}
+
+
+
+/* Footer */
+.lp-footer {
+  background: white;
+  padding: 48px 24px 32px;
+  border-top: 1px solid rgba(22, 37, 60, 0.1);
+}
+
+.lp-footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.lp-footer-logo img {
+  height: 32px;
+  width: auto;
+}
+
+.lp-footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.lp-footer-link {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--slate-500);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lp-footer-link:hover {
+  color: var(--primary);
+}
+
+.lp-footer-copyright {
+  font-size: 14px;
+  color: var(--slate-500);
+  text-align: center;
+  width: 100%;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(22, 37, 60, 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .lp-hero-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .lp-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .lp-form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .lp-authority-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .lp-book-card {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 24px;
+    max-width: 100%;
+  }
+  
+  .lp-credentials-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .lp-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .lp-precision-cards {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .lp-fiduciary-headline,
+  .lp-precision-headline,
+  .lp-authority-headline {
+    font-size: 2rem;
+  }
+  
+  .lp-footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .lp-footer-links {
+    justify-content: center;
+  }
+}
+</style>
+
+<!-- Top Bar -->
+<div class="lp-topbar">
+  <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" loading="eager">
+</div>
+
+<!-- Hero Section -->
+<section class="lp-hero">
+  <div class="lp-hero-container">
+    <!-- Left Side -->
+    <div class="lp-hero-left">
+      <div class="lp-federal-badge">
+        Your 401(k)'s Hidden Feature
+      </div>
+
+      <h1 class="lp-hero-title">
+        Your 401(k) Has a Powerful Tool Most Employees <span class="lp-hero-title-accent">Will Never Unlock.</span>
+      </h1>
+
+      <p class="lp-hero-description">
+        If you work at Apple, Google, Intel, Chevron, Boeing, Kaiser, Lockheed, Delta, Oracle, Amazon — or hundreds of other major employers — your retirement plan likely includes a Self-Directed Brokerage Account. It gives you access to thousands of investments beyond your plan's default menu. We'll show you how to use it — and whether it's right for you — in a free 30-minute call.
+      </p>
+
+      <div class="lp-video-container">
+        <img src="/assets/images/photos/sdba/self-directed-brokerage-account-sdba.jpg" alt="Self-Directed Brokerage Account" loading="eager">
+        <div class="lp-play-overlay">
+          <div class="lp-play-button">
+            <svg viewBox="0 0 24 24">
+              <polygon points="8,5 19,12 8,19"></polygon>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="lp-video-meta">
+        SDBA STRATEGY BRIEFING // 14:02 DURATION
+      </div>
+    </div>
+
+    <!-- Right Side - Form -->
+    <div class="lp-form-card">
+      <h3 class="lp-form-title">Unlock My SDBA Strategy</h3>
+      <p class="lp-form-subtitle">Free 30-Minute Call With a Fiduciary Advisor</p>
+
+      <form id="lp-lead-form">
+        <div class="lp-form-row">
+          <div class="lp-form-group">
+            <label class="lp-form-label" for="firstName">First Name</label>
+            <input class="lp-form-input" type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="lp-form-group">
+            <label class="lp-form-label" for="lastName">Last Name</label>
+            <input class="lp-form-input" type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+
+        <div class="lp-form-group">
+          <label class="lp-form-label" for="email">Work or Personal Email</label>
+          <input class="lp-form-input" type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="lp-form-group">
+          <label class="lp-form-label" for="phone">Phone Number</label>
+          <input class="lp-form-input" type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="lp-form-group">
+          <label class="lp-form-label" for="employer">Current Employer</label>
+          <input class="lp-form-input" type="text" id="employer" name="employer" placeholder="e.g., Chevron, Google, Kaiser" required>
+        </div>
+
+        <button class="lp-submit-btn" type="submit">
+          GET MY FREE SDBA REVIEW →
+        </button>
+
+        <div class="lp-privacy-text">
+          <svg class="lp-lock-icon" viewBox="0 0 24 24">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <circle cx="12" cy="7" r="4"></circle>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          Your information is secure. We're a fiduciary — your best interest comes first.
+        </div>
+
+        <input type="hidden" name="source" value="sdba-paid-landing">
+        <input type="hidden" name="lead_type" value="sdba-strategy-call">
+        <input type="hidden" name="utm_campaign" value="sdba-linkedin">
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Authority/Speaker Section -->
+<section class="lp-authority">
+  <div class="lp-authority-container">
+    <div class="lp-speaker-image-wrapper">
+      <div class="lp-speaker-image">
+        <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens" loading="lazy">
+      </div>
+      <div class="lp-book-card">
+        <div class="lp-book-badge">BESTSELLING AUTHOR</div>
+        <div class="lp-book-title">Retire Right, Retire Now</div>
+      </div>
+    </div>
+
+    <div class="lp-authority-content">
+      <div class="lp-eyebrow">Your Advisor</div>
+      <h2 class="lp-authority-headline">
+        The Advisor Most Plan Menus <span class="lp-authority-headline-accent">Hide From You.</span>
+      </h2>
+
+      <div class="lp-pull-quote">
+        Your 401(k)'s default menu is designed for the lowest common denominator. The brokerage window is where the real strategy lives — but almost nobody uses it, because nobody tells you it's there.
+      </div>
+
+      <div class="lp-credentials-grid">
+        <div class="lp-credential">
+          <div class="lp-credential-label">Broadcasting</div>
+          <div class="lp-credential-text">Host of Retire Right Radio on KSL &amp; KNRS</div>
+        </div>
+
+        <div class="lp-credential">
+          <div class="lp-credential-label">Fiduciary</div>
+          <div class="lp-credential-text">Independent fiduciary, legally bound to your best interest</div>
+        </div>
+
+        <div class="lp-credential">
+          <div class="lp-credential-label">Specialist</div>
+          <div class="lp-credential-text">25+ years managing SDBAs at Fortune 500 employer plans</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What Is SDBA Section (Fiduciary Protocol styled) -->
+<section class="lp-fiduciary">
+  <div class="lp-fiduciary-container">
+    <div class="lp-eyebrow">The SDBA Advantage</div>
+    <h2 class="lp-fiduciary-headline">
+      A Brokerage Window Inside Your <span class="lp-fiduciary-headline-accent">Retirement Plan</span>
+    </h2>
+
+    <p class="lp-fiduciary-subtext">
+      A Self-Directed Brokerage Account is a feature inside your 401(k), 403(b), 457, or TSP that lets you invest far beyond the standard fund menu. Same tax benefits. Same employer match. Dramatically more options. Most plans have one — and most employees never use it.
+    </p>
+
+    <div class="lp-pillars-grid">
+      <div class="lp-pillar-card">
+        <div class="lp-pillar-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 3v18h18"></path>
+            <path d="M7 12l4-4 4 4 6-6"></path>
+          </svg>
+        </div>
+        <div class="lp-pillar-title">5,000+</div>
+        <div class="lp-pillar-description">Mutual funds &amp; ETFs available vs. ~20 in your default menu</div>
+      </div>
+
+      <div class="lp-pillar-card">
+        <div class="lp-pillar-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+        </div>
+        <div class="lp-pillar-title">Same Tax</div>
+        <div class="lp-pillar-description">Pre-tax &amp; Roth treatment preserved. Employer match unaffected.</div>
+      </div>
+
+      <div class="lp-pillar-card">
+        <div class="lp-pillar-icon">
+          <svg viewBox="0 0 24 24">
+            <rect x="1" y="5" width="22" height="14" rx="3"></rect>
+            <line x1="1" y1="10" x2="23" y2="10"></line>
+          </svg>
+        </div>
+        <div class="lp-pillar-title">Pro Managed</div>
+        <div class="lp-pillar-description">Your fiduciary advisor can manage your SDBA — most advisors can't touch your 401(k)</div>
+      </div>
+
+      <div class="lp-pillar-card">
+        <div class="lp-pillar-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v7z"></path>
+          </svg>
+        </div>
+        <div class="lp-pillar-title">Protected</div>
+        <div class="lp-pillar-description">Money stays in your employer plan — ERISA creditor protection intact</div>
+      </div>
+
+      <div class="lp-pillar-card">
+        <div class="lp-pillar-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg>
+        </div>
+        <div class="lp-pillar-title">Risk-Tuned</div>
+        <div class="lp-pillar-description">Custom allocation aligned to your retirement timeline &amp; goals</div>
+      </div>
+    </div>
+
+    <div class="lp-fiduciary-banner">
+      <svg class="lp-shield-icon" viewBox="0 0 24 24">
+        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v7z"></path>
+        <polyline points="9 12 11 14 16 9"></polyline>
+      </svg>
+      <div class="lp-banner-text">No rollover required. Your money stays inside your employer plan — fully protected and fully invested.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Precision Section — SDBA Cost/Strategy -->
+<section class="lp-precision">
+  <div class="lp-precision-container">
+    <div class="lp-eyebrow">The Math Behind The Menu</div>
+    <h2 class="lp-precision-headline">
+      Strategy Over <span class="lp-precision-headline-accent">Selection</span>
+    </h2>
+
+    <div class="lp-precision-cards">
+      <!-- Opportunity Cost Card -->
+      <div class="lp-precision-card">
+        <div class="lp-card-number">01</div>
+        <h3 class="lp-precision-card-title">The Target-Date Trap</h3>
+
+        <div class="lp-stat-row">
+          <span class="lp-stat-label">Average Plan Menu Options</span>
+          <span class="lp-stat-value">15–25 Funds</span>
+        </div>
+
+        <div class="lp-stat-row">
+          <span class="lp-stat-label">Available Via SDBA</span>
+          <span class="lp-stat-value">5,000+ Funds &amp; ETFs</span>
+        </div>
+
+        <div class="lp-stat-row">
+          <span class="lp-stat-label">Typical SDBA Annual Fee</span>
+          <span class="lp-stat-value">$28.75–$50</span>
+        </div>
+
+        <div class="lp-stat-callout">
+          <div class="lp-stat-callout-text">
+            <span class="lp-stat-highlight">Advisor's Note:</span> A single default target-date fund can charge 2–3x more than a thoughtfully built SDBA portfolio — and deliver materially different risk in retirement.
+          </div>
+        </div>
+      </div>
+
+      <!-- Cost Visual Card -->
+      <div class="lp-precision-card">
+        <div class="lp-card-number">02</div>
+        <h3 class="lp-precision-card-title">Your Plan Menu Is Not Personal</h3>
+
+        <p style="color: var(--slate-600); line-height: 1.6; margin-bottom: 24px;">A 35-year-old and a 64-year-old get the exact same plan menu — and often the exact same "conservative" default. Your allocation should reflect your timeline, your other assets, and your tax picture. An SDBA lets us actually do that.</p>
+
+        <div class="lp-fegli-bars">
+          <div class="lp-fegli-bar" style="height: 20%;"><div class="lp-fegli-bar-label">Default<br><span style="font-size:9px;opacity:0.7">~20 funds</span></div></div>
+          <div class="lp-fegli-bar" style="height: 35%;"><div class="lp-fegli-bar-label">Basic SDBA<br><span style="font-size:9px;opacity:0.7">DIY</span></div></div>
+          <div class="lp-fegli-bar" style="height: 60%;"><div class="lp-fegli-bar-label">Advised<br><span style="font-size:9px;opacity:0.7">Pro-Managed</span></div></div>
+          <div class="lp-fegli-bar" style="height: 85%;"><div class="lp-fegli-bar-label">Custom<br><span style="font-size:9px;opacity:0.7">Risk-Tuned</span></div></div>
+          <div class="lp-fegli-bar" style="height: 100%;"><div class="lp-fegli-bar-label">Integrated<br><span style="font-size:9px;opacity:0.7">Full Plan</span></div></div>
+        </div>
+
+        <div style="background: rgba(22,37,60,0.04); padding: 16px; border-radius: 8px; border-left: 3px solid var(--cool-horizon); margin: 20px 0;">
+          <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem; margin: 0;">A properly managed SDBA integrates with your taxable accounts, IRAs, and spouse's plan — coordinated as one portfolio, not five disconnected silos.</p>
+        </div>
+
+        <div class="lp-risk-factor">
+          REVIEW RECOMMENDED // ANY PLAN BALANCE OVER $100K
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Employer Check Strip -->
+<section class="lp-fiduciary" style="background: #f8f9fb; padding-top: 4rem; padding-bottom: 4rem;">
+  <div class="lp-fiduciary-container">
+    <div class="lp-eyebrow">Is Your Employer On The List?</div>
+    <h2 class="lp-fiduciary-headline" style="margin-bottom: 1rem;">
+      Hundreds of Major Employers Offer <span class="lp-fiduciary-headline-accent">SDBAs</span>
+    </h2>
+
+    <p class="lp-fiduciary-subtext">
+      These are just a few of the companies whose retirement plans include a self-directed brokerage window. If yours isn't listed, book a call and we'll confirm for you in 5 minutes.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 2.5rem; max-width: 960px; margin-left: auto; margin-right: auto;">
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Apple</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Google (Alphabet)</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Intel</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Amazon</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Chevron</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Boeing</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Lockheed Martin</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Kaiser Permanente</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Delta Air Lines</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Oracle</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">ExxonMobil</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Stanford University</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">University of California</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Raytheon</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Northrop Grumman</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">UnitedHealth</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Procter &amp; Gamble</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">ConocoPhillips</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">IBM</div>
+      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Federal TSP</div>
+    </div>
+
+    <p style="text-align: center; color: var(--slate-500); font-size: 0.9rem; margin-top: 2rem; font-style: italic;">Plus hundreds more — including most Fortune 500 employers, large universities, state/municipal 457 plans, and hospital systems.</p>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="lp-hero" style="min-height: auto; padding: 5rem 2rem; background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%);">
+  <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+    <div style="font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: #FDD25E; margin-bottom: 1rem; font-weight: 600;">Ready To Unlock Yours?</div>
+    <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; color: white; margin-bottom: 1.25rem; line-height: 1.15;">A 30-minute call could reshape your retirement.</h2>
+    <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">No pressure, no cost, no obligation. We'll confirm whether your plan has an SDBA, explain exactly how it would work for your situation, and show you the numbers. You decide what — if anything — to do next.</p>
+    <a href="#top" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;" style="display: inline-block; background: #FDD25E; color: #0F1A2A; padding: 18px 42px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 1.1rem; letter-spacing: 0.02em;">BOOK MY FREE SDBA CALL →</a>
+  </div>
+</section>
+
+<!-- Minimal Footer -->
+<footer class="lp-footer">
+  <div class="lp-footer-container">
+    <div class="lp-footer-logo">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth">
+    </div>
+
+    <div class="lp-footer-links">
+      <a href="/privacy/" class="lp-footer-link">Privacy Policy</a>
+      <a href="/terms/" class="lp-footer-link">Terms of Service</a>
+      <a href="/disclosures/" class="lp-footer-link">Disclosures</a>
+    </div>
+  </div>
+
+  <div class="lp-footer-copyright">
+    © 2026 Capital Wealth. All rights reserved. Investment advisory services offered through Capital Wealth, a Registered Investment Advisor.
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('#lp-lead-form');
+
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const data = {};
+      formData.forEach((value, key) => { data[key] = value; });
+
+      if (validateForm()) {
+        const submitBtn = form.querySelector('.lp-submit-btn');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'SECURING YOUR CALL...';
+        submitBtn.disabled = true;
+
+        fetch('/api/submit-lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+          if (result.success) {
+            window.location.href = '/l/sdba/ty/';
+          } else {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            alert('There was an error submitting your request. Please try again.');
+          }
+        })
+        .catch(error => {
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          console.error('Error:', error);
+          alert('There was an error submitting your request. Please try again.');
+        });
+      }
+    });
+  }
+
+  function validateForm() {
+    const requiredFields = form.querySelectorAll('input[required]');
+    let isValid = true;
+
+    requiredFields.forEach(field => {
+      if (!field.value.trim()) {
+        isValid = false;
+        field.style.borderColor = '#DC2626';
+        field.style.boxShadow = '0 0 0 2px rgba(220, 38, 38, 0.2)';
+      } else {
+        field.style.borderColor = '';
+        field.style.boxShadow = '';
+      }
+    });
+
+    return isValid;
+  }
+});
+</script>
