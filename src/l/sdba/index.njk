@@ -894,7 +894,7 @@ permalink: "/l/sdba/"
       </h1>
 
       <p class="lp-hero-description">
-        If you work at Apple, Google, Intel, Chevron, Boeing, Kaiser, Lockheed, Delta, Oracle, Amazon — or hundreds of other major employers — your retirement plan likely includes a Self-Directed Brokerage Account. It gives you access to thousands of investments beyond your plan's default menu. We'll show you how to use it — and whether it's right for you — in a complimentary 30-minute call.
+        If your employer's retirement plan includes a Self-Directed Brokerage Account, you have access to thousands of investments beyond your plan's default menu — with the same tax benefits and employer match. Most employees never know it's there. We'll show you how to use it — and whether it's right for you — in a complimentary 30-minute call.
       </p>
 
       <div class="lp-video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;background:#000;">
@@ -942,7 +942,7 @@ permalink: "/l/sdba/"
 
         <div class="lp-form-group">
           <label class="lp-form-label" for="employer">Current Employer</label>
-          <input class="lp-form-input" type="text" id="employer" name="employer" placeholder="e.g., Chevron, Google, Kaiser" required>
+          <input class="lp-form-input" type="text" id="employer" name="employer" placeholder="Your employer" required>
         </div>
 
         <button class="lp-submit-btn" type="submit">
@@ -966,43 +966,39 @@ permalink: "/l/sdba/"
   </div>
 </section>
 
-<!-- Authority/Speaker Section -->
+<!-- Authority/Team Section (Mike's photo removed; team-positioned) -->
 <section class="lp-authority">
   <div class="lp-authority-container">
     <div class="lp-speaker-image-wrapper">
       <div class="lp-speaker-image">
-        <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens" loading="lazy">
-      </div>
-      <div class="lp-book-card">
-        <div class="lp-book-badge">BESTSELLING AUTHOR</div>
-        <div class="lp-book-title">Retire Right, Retire Now</div>
+        <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-autumn-walk.jpg" alt="Retirement planning with Capital Wealth" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
       </div>
     </div>
 
     <div class="lp-authority-content">
-      <div class="lp-eyebrow">Your Advisor</div>
+      <div class="lp-eyebrow">About Capital Wealth</div>
       <h2 class="lp-authority-headline">
-        The Advisor Most Plan Menus <span class="lp-authority-headline-accent">Hide From You.</span>
+        A Fiduciary Team Built for the Retirement You <span class="lp-authority-headline-accent">Actually Want.</span>
       </h2>
 
       <div class="lp-pull-quote">
-        Your 401k's default menu is designed for the lowest common denominator. The brokerage window is where the real strategy lives — but almost nobody uses it, because nobody tells you it's there.
+        Your 401k's default menu is designed for the lowest common denominator. The brokerage window is where real strategy lives &mdash; but almost nobody uses it, because nobody tells you it&rsquo;s there.
       </div>
 
       <div class="lp-credentials-grid">
         <div class="lp-credential">
-          <div class="lp-credential-label">Broadcasting</div>
-          <div class="lp-credential-text">Host of Retire Right Radio on KSL &amp; KNRS</div>
-        </div>
-
-        <div class="lp-credential">
           <div class="lp-credential-label">Fiduciary</div>
-          <div class="lp-credential-text">Independent fiduciary, legally bound to your best interest</div>
+          <div class="lp-credential-text">Independent fiduciary advisors &mdash; legally bound to your best interest, not commissions.</div>
         </div>
 
         <div class="lp-credential">
-          <div class="lp-credential-label">Specialist</div>
-          <div class="lp-credential-text">25+ years managing SDBAs at Fortune 500 employer plans</div>
+          <div class="lp-credential-label">Track Record</div>
+          <div class="lp-credential-text">Advising families with $500M+ under guidance across Utah, Idaho, and nationwide.</div>
+        </div>
+
+        <div class="lp-credential">
+          <div class="lp-credential-label">SDBA Specialists</div>
+          <div class="lp-credential-text">Dedicated team managing Self-Directed Brokerage Accounts at major employer retirement plans.</div>
         </div>
       </div>
     </div>
@@ -1145,53 +1141,6 @@ permalink: "/l/sdba/"
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Employer Check Strip -->
-<section class="lp-fiduciary" style="background: #f8f9fb; padding-top: 4rem; padding-bottom: 4rem;">
-  <div class="lp-fiduciary-container">
-    <div class="lp-eyebrow">Is Your Employer On The List?</div>
-    <h2 class="lp-fiduciary-headline" style="margin-bottom: 1rem;">
-      Hundreds of Major Employers Offer <span class="lp-fiduciary-headline-accent">SDBAs</span>
-    </h2>
-
-    <p class="lp-fiduciary-subtext">
-      These are just a few of the companies whose retirement plans include a self-directed brokerage window. If yours isn't listed, book a call and we'll confirm for you in 5 minutes.
-    </p>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px; margin-top: 2.5rem; max-width: 1040px; margin-left: auto; margin-right: auto;">
-      {% set employers = [
-        {"name": "Apple", "slug": "apple"},
-        {"name": "Google", "slug": "google"},
-        {"name": "Amazon", "slug": "amazon"},
-        {"name": "Intel", "slug": "intel"},
-        {"name": "Chevron", "slug": "chevron"},
-        {"name": "Boeing", "slug": "boeing"},
-        {"name": "Oracle", "slug": "oracle"},
-        {"name": "Delta", "slug": "delta"},
-        {"name": "IBM", "slug": "ibm"},
-        {"name": "ExxonMobil", "slug": "exxonmobil"},
-        {"name": "AT&T", "slug": "att"},
-        {"name": "Cisco", "slug": "cisco"},
-        {"name": "Lockheed Martin", "slug": "lockheed-martin"},
-        {"name": "Raytheon", "slug": "raytheon"},
-        {"name": "Northrop Grumman", "slug": "northrop-grumman"},
-        {"name": "Kaiser Permanente", "slug": "kaiser-permanente"},
-        {"name": "UnitedHealth", "slug": "unitedhealth"},
-        {"name": "Procter & Gamble", "slug": "pg"},
-        {"name": "Caterpillar", "slug": "caterpillar"},
-        {"name": "Federal TSP", "slug": "tsp"}
-      ] %}
-      {% for e in employers %}
-      <div style="background:white;border-radius:10px;border:1px solid #e5e7eb;height:90px;display:flex;align-items:center;justify-content:center;padding:14px;transition:all 0.2s;box-shadow:0 1px 3px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='';this.style.boxShadow='0 1px 3px rgba(0,0,0,0.03)';">
-        <img src="/assets/images/logos/employers/{{ e.slug }}.svg" alt="{{ e.name }}" style="max-height:38px;max-width:110px;width:auto;height:auto;filter:grayscale(1) brightness(0.4);opacity:0.85;" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-        <span style="display:none;font-weight:600;color:var(--primary);font-size:0.92rem;text-align:center;">{{ e.name }}</span>
-      </div>
-      {% endfor %}
-    </div>
-
-    <p style="text-align: center; color: var(--slate-500); font-size: 0.9rem; margin-top: 2rem; font-style: italic;">Plus hundreds more — including most Fortune 500 employers, large universities, state/municipal 457 plans, and hospital systems.</p>
   </div>
 </section>
 
