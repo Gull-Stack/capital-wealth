@@ -91,43 +91,39 @@ permalink: "/l/sdba/"
 }
 .lp-announce a:hover { opacity: 0.85; }
 
-/* Hero Section — stacked: text on top, LARGE video below */
+/* Hero Section — two-column: copy/CTA/trust left, video right */
 .lp-hero {
   position: relative;
   display: block;
-  padding: 56px 32px 72px;
+  padding: 48px 32px 56px;
   background: var(--surface-container-low);
   overflow: hidden;
 }
 
 .lp-hero-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.lp-hero-left {
+  text-align: left;
+}
+
+.lp-hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
-.lp-hero-top {
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto 40px;
-}
-
-.lp-hero-top .lp-hero-description {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.lp-hero-video-block {
-  max-width: 1040px;
-  margin: 0 auto;
-}
-
-.lp-hero-cta-row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  margin-top: 32px;
+.lp-hero-right .lp-video-container {
+  width: 100%;
+  max-width: 640px;
 }
 
 /* Trust row: BBB + No-Obligation + Fiduciary */
@@ -180,7 +176,11 @@ permalink: "/l/sdba/"
 
 @media (max-width: 900px) {
   .lp-hero { padding: 32px 20px 48px; }
-  .lp-hero-top { text-align: left; }
+  .lp-hero-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .lp-hero-left { text-align: left; }
 }
 
 .lp-federal-badge {
@@ -207,10 +207,10 @@ permalink: "/l/sdba/"
 }
 
 .lp-hero-title {
-  font-size: 3.5rem;
+  font-size: 2.75rem;
   font-weight: bold;
   line-height: 1.1;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-family: var(--font-serif-display), serif;
   color: var(--primary);
 }
@@ -221,13 +221,11 @@ permalink: "/l/sdba/"
 }
 
 .lp-hero-description {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   line-height: 1.55;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 560px;
   color: var(--slate-600);
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .lp-video-container {
@@ -1215,12 +1213,12 @@ permalink: "/l/sdba/"
   <a href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;">Book now →</a>
 </div>
 
-<!-- Hero Section: stacked with LARGE centered video -->
+<!-- Hero Section: two-column (copy left, video right) -->
 <section class="lp-hero">
   <div class="lp-hero-container">
-    <!-- Top: logo + badge + headline + description -->
-    <div class="lp-hero-top">
-      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="display:block;height:32px;width:auto;margin:0 auto 20px;" loading="eager">
+    <!-- Left column: copy + CTA + trust -->
+    <div class="lp-hero-left">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="display:block;height:32px;width:auto;margin:0 0 20px;" loading="eager">
       <div class="lp-federal-badge">
         Your 401k&#39;s Hidden Feature
       </div>
@@ -1230,40 +1228,22 @@ permalink: "/l/sdba/"
       </h1>
 
       <p class="lp-hero-description">
-        If your employer's plan has a Self-Directed Brokerage Account, you have access to 5,000+ investments — with the same tax benefits and employer match. Watch Mike's 2-minute briefing, then book a complimentary 30-minute call.
+        If your employer's plan has a Self-Directed Brokerage Account, you have access to 5,000+ investments — with the same tax benefits and employer match. We'll show you how in a complimentary 30-minute call.
       </p>
-    </div>
 
-    <!-- BIG centered video -->
-    <div class="lp-hero-video-block">
-      <div class="lp-video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;background:#000;box-shadow:0 30px 60px rgba(15,26,42,0.22);">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/HcRMiemU53s?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0&playsinline=1&loop=1&playlist=HcRMiemU53s"
-          title="SDBA Strategy Briefing — Mike Stevens"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-        ></iframe>
-      </div>
-      <div class="lp-video-meta" style="margin-top:12px;">
-        SDBA STRATEGY BRIEFING // MIKE STEVENS
-      </div>
-    </div>
-
-    <!-- CTA + Trust row (centered under video) -->
-    <div class="lp-hero-cta-row">
-      <a href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;" style="display:inline-block;background:var(--primary);color:#ffffff;padding:18px 44px;border-radius:8px;font-weight:700;text-decoration:none;font-size:1rem;letter-spacing:0.04em;text-transform:uppercase;">
+      <a href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;" style="display:inline-block;background:var(--primary);color:#ffffff;padding:16px 36px;border-radius:8px;font-weight:700;text-decoration:none;font-size:1rem;letter-spacing:0.04em;text-transform:uppercase;">
         Book My Complimentary SDBA Call →
       </a>
 
-      <div class="lp-trust-row" style="justify-content:center;">
+      <!-- Trust row -->
+      <div class="lp-trust-row">
         <a href="https://www.bbb.org/us/ut/lehi/profile/financial-planning-consultants/capital-wealth-advisors-1166-90025236" target="_blank" rel="noopener" class="lp-trust-item" aria-label="Better Business Bureau A+ Accredited Business">
           <img src="/assets/images/badges/bbb2.png" alt="BBB A+ Accredited Business — Capital Wealth Advisors">
         </a>
         <div class="lp-trust-item">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12 2 4 5v7c0 4.4 3.1 8.5 8 10 4.9-1.5 8-5.6 8-10V5l-8-3z"></path>
+            <polyline points="9 12 11 14 16 9"></polyline>
           </svg>
           <span>No-Obligation<br>Consultation</span>
         </div>
@@ -1273,6 +1253,25 @@ permalink: "/l/sdba/"
             <polyline points="9 12 11 14 16 9"></polyline>
           </svg>
           <span>Fiduciary<br>Consultation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column: video -->
+    <div class="lp-hero-right">
+      <div style="width:100%;max-width:640px;">
+        <div class="lp-video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;background:#000;box-shadow:0 25px 50px rgba(15,26,42,0.2);margin-bottom:0;">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/HcRMiemU53s?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0&playsinline=1&loop=1&playlist=HcRMiemU53s"
+            title="SDBA Strategy Briefing — Mike Stevens"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+          ></iframe>
+        </div>
+        <div class="lp-video-meta" style="margin-top:12px;text-align:center;">
+          SDBA STRATEGY BRIEFING // MIKE STEVENS
         </div>
       </div>
     </div>
