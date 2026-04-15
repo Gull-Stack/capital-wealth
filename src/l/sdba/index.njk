@@ -103,7 +103,7 @@ permalink: "/l/sdba/"
   align-items: center;
   gap: 8px;
   background: var(--primary);
-  color: var(--on-primary);
+  color: #ffffff;
   padding: 8px 16px;
   font-family: var(--font-mono), monospace;
   font-size: 10px;
@@ -850,6 +850,19 @@ permalink: "/l/sdba/"
     justify-content: center;
   }
 }
+
+/* Hide main site footer on landing page — we have our own .lp-footer */
+.landing-page .finpay-footer,
+.landing-page footer.finpay-footer {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+}
+
 </style>
 
 <!-- Top Bar -->
@@ -874,19 +887,19 @@ permalink: "/l/sdba/"
         If you work at Apple, Google, Intel, Chevron, Boeing, Kaiser, Lockheed, Delta, Oracle, Amazon — or hundreds of other major employers — your retirement plan likely includes a Self-Directed Brokerage Account. It gives you access to thousands of investments beyond your plan's default menu. We'll show you how to use it — and whether it's right for you — in a free 30-minute call.
       </p>
 
-      <div class="lp-video-container">
-        <img src="/assets/images/photos/sdba/self-directed-brokerage-account-sdba.jpg" alt="Self-Directed Brokerage Account" loading="eager">
-        <div class="lp-play-overlay">
-          <div class="lp-play-button">
-            <svg viewBox="0 0 24 24">
-              <polygon points="8,5 19,12 8,19"></polygon>
-            </svg>
-          </div>
-        </div>
+      <div class="lp-video-container" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;background:#000;">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/HcRMiemU53s?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0&playsinline=1&loop=1&playlist=HcRMiemU53s"
+          title="SDBA Strategy Briefing — Mike Stevens"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+        ></iframe>
       </div>
 
       <div class="lp-video-meta">
-        SDBA STRATEGY BRIEFING // 14:02 DURATION
+        SDBA STRATEGY BRIEFING // MIKE STEVENS
       </div>
     </div>
 
@@ -1137,27 +1150,35 @@ permalink: "/l/sdba/"
       These are just a few of the companies whose retirement plans include a self-directed brokerage window. If yours isn't listed, book a call and we'll confirm for you in 5 minutes.
     </p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 2.5rem; max-width: 960px; margin-left: auto; margin-right: auto;">
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Apple</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Google (Alphabet)</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Intel</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Amazon</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Chevron</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Boeing</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Lockheed Martin</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Kaiser Permanente</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Delta Air Lines</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Oracle</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">ExxonMobil</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Stanford University</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">University of California</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Raytheon</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Northrop Grumman</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">UnitedHealth</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Procter &amp; Gamble</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">ConocoPhillips</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">IBM</div>
-      <div style="background: white; padding: 14px 16px; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center; font-weight: 600; color: var(--primary); font-size: 0.95rem;">Federal TSP</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px; margin-top: 2.5rem; max-width: 1040px; margin-left: auto; margin-right: auto;">
+      {% set employers = [
+        {"name": "Apple", "slug": "apple"},
+        {"name": "Google", "slug": "google"},
+        {"name": "Amazon", "slug": "amazon"},
+        {"name": "Intel", "slug": "intel"},
+        {"name": "Chevron", "slug": "chevron"},
+        {"name": "Boeing", "slug": "boeing"},
+        {"name": "Oracle", "slug": "oracle"},
+        {"name": "Delta", "slug": "delta"},
+        {"name": "IBM", "slug": "ibm"},
+        {"name": "ExxonMobil", "slug": "exxonmobil"},
+        {"name": "AT&T", "slug": "att"},
+        {"name": "Cisco", "slug": "cisco"},
+        {"name": "Lockheed Martin", "slug": "lockheed-martin"},
+        {"name": "Raytheon", "slug": "raytheon"},
+        {"name": "Northrop Grumman", "slug": "northrop-grumman"},
+        {"name": "Kaiser Permanente", "slug": "kaiser-permanente"},
+        {"name": "UnitedHealth", "slug": "unitedhealth"},
+        {"name": "Procter & Gamble", "slug": "pg"},
+        {"name": "Caterpillar", "slug": "caterpillar"},
+        {"name": "Federal TSP", "slug": "tsp"}
+      ] %}
+      {% for e in employers %}
+      <div style="background:white;border-radius:10px;border:1px solid #e5e7eb;height:90px;display:flex;align-items:center;justify-content:center;padding:14px;transition:all 0.2s;box-shadow:0 1px 3px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='';this.style.boxShadow='0 1px 3px rgba(0,0,0,0.03)';">
+        <img src="/assets/images/logos/employers/{{ e.slug }}.svg" alt="{{ e.name }}" style="max-height:38px;max-width:110px;width:auto;height:auto;filter:grayscale(1) brightness(0.4);opacity:0.85;" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+        <span style="display:none;font-weight:600;color:var(--primary);font-size:0.92rem;text-align:center;">{{ e.name }}</span>
+      </div>
+      {% endfor %}
     </div>
 
     <p style="text-align: center; color: var(--slate-500); font-size: 0.9rem; margin-top: 2rem; font-style: italic;">Plus hundreds more — including most Fortune 500 employers, large universities, state/municipal 457 plans, and hospital systems.</p>
@@ -1167,10 +1188,10 @@ permalink: "/l/sdba/"
 <!-- Final CTA -->
 <section class="lp-hero" style="min-height: auto; padding: 5rem 2rem; background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%);">
   <div style="max-width: 720px; margin: 0 auto; text-align: center;">
-    <div style="font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: #FDD25E; margin-bottom: 1rem; font-weight: 600;">Ready To Unlock Yours?</div>
+    <div style="font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: #C7A356; margin-bottom: 1rem; font-weight: 600;">Ready To Unlock Yours?</div>
     <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; color: white; margin-bottom: 1.25rem; line-height: 1.15;">A 30-minute call could reshape your retirement.</h2>
     <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">No pressure, no cost, no obligation. We'll confirm whether your plan has an SDBA, explain exactly how it would work for your situation, and show you the numbers. You decide what — if anything — to do next.</p>
-    <a href="#top" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;" style="display: inline-block; background: #FDD25E; color: #0F1A2A; padding: 18px 42px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 1.1rem; letter-spacing: 0.02em;">BOOK MY FREE SDBA CALL →</a>
+    <a href="#top" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;" style="display: inline-block; background: #C7A356; color: #0F1A2A; padding: 18px 42px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 1.1rem; letter-spacing: 0.02em;">BOOK MY FREE SDBA CALL →</a>
   </div>
 </section>
 
