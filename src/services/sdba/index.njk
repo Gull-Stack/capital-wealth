@@ -1303,6 +1303,16 @@ faqSchema:
 }
 .ep-author-name strong { color: var(--primary); font-weight: 700; }
 .ep-author-date { font-size: 0.78rem; opacity: 0.85; }
+.ep-author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  flex-shrink: 0;
+  border: 2px solid white;
+  box-shadow: 0 2px 6px rgba(15, 26, 42, 0.12);
+}
 
 /* ═══════════════════════════════════════════
    Definition Block (AEO citation target)
@@ -1428,6 +1438,11 @@ faqSchema:
       <span class="ep-hero-title-italic">Fiduciary management inside your employer plan.</span>
       <p class="ep-hero-body">Fidelity BrokerageLink, Schwab PCRA, Empower, Vanguard, and the federal TSP Mutual Fund Window — unlocking thousands of funds and ETFs beyond the 15–25 in your standard plan lineup, with professional portfolio management wrapped around them.</p>
       <div class="ep-author-attribution">
+        <img src="/assets/images/team/mike-stevens.jpg"
+             alt="Mike Stevens, Founder of Capital Wealth"
+             class="ep-author-avatar"
+             loading="lazy"
+             width="48" height="48">
         <div class="ep-author-meta">
           <span class="ep-author-name">Reviewed by <strong>Mike Stevens</strong>, Founder, Capital Wealth</span>
           <span class="ep-author-date">15+ years advising 401(k) and TSP participants &nbsp;·&nbsp; Last updated: <time datetime="2026-04-15">April 15, 2026</time></span>
@@ -1436,9 +1451,11 @@ faqSchema:
       <a href="/contact/" class="ep-btn-primary">Schedule SDBA Review</a>
     </div>
     <div class="ep-hero-image-wrap">
-      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-planning-tablet.jpg"
-           alt="Couple reviewing their SDBA investment options"
-           class="ep-hero-image">
+      <img src="/assets/images/photos/sdba/mother-daughter-reviewing-401k-laptop.jpg"
+           alt="Mother and daughter reviewing 401(k) SDBA investment options on a laptop"
+           class="ep-hero-image"
+           width="1600" height="1066"
+           fetchpriority="high">
     </div>
   </div>
 </section>
@@ -1680,7 +1697,7 @@ faqSchema:
         <p class="ep-process-sub">Strategic analysis before implementation.</p>
         <a href="/contact/" class="ep-btn-primary">Schedule Your Visit</a>
       </div>
-      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-cooking.jpg" alt="Retired couple enjoying time together" class="ep-process-image">
+      <img src="/assets/images/photos/sdba/friends-retirement-freedom-mountains.jpg" alt="Friends enjoying retirement freedom in the mountains after SDBA-managed investment growth" class="ep-process-image" loading="lazy" width="1600" height="1066">
     </div>
     <div class="ep-steps-grid">
       <div class="ep-step-card">
@@ -1877,7 +1894,7 @@ faqSchema:
       <a href="/contact/" class="ep-btn-primary">Schedule Your Visit</a>
       <p class="ep-cta-promise">A Fiduciary Promise</p>
     </div>
-    <img src="/assets/images/photos/couple-boat.jpg" alt="Retired couple enjoying life on a boat" class="ep-cta-image">
+    <img src="/assets/images/photos/sdba/couple-retirement-sunset-fields.jpg" alt="Couple celebrating a well-planned retirement after professional SDBA management" class="ep-cta-image" loading="lazy" width="1600" height="1066">
   </div>
 </section>
 
