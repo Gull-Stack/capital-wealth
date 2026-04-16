@@ -40,6 +40,8 @@
     { "source": "/blog/healthcare-planning-retirement", "destination": "/retirement-planning/", "permanent": true },
     { "source": "/blog/healthcare-planning-retirement/", "destination": "/retirement-planning/", "permanent": true },
     { "source": "/blog/social-security-optimization-utah", "destination": "/services/social-security/", "permanent": true },
-    { "source": "/blog/social-security-optimization-utah/", "destination": "/services/social-security/", "permanent": true }
+    { "source": "/blog/social-security-optimization-utah/", "destination": "/services/social-security/", "permanent": true },
+    { "source": "/federal-benefits-workshop", "destination": "/l/federal-benefits-workshop/", "permanent": true },
+    { "source": "/federal-benefits-workshop/", "destination": "/l/federal-benefits-workshop/", "permanent": true }
   ]
 }
