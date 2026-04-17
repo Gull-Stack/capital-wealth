@@ -6,6 +6,7 @@ noindex: true
 excludeFromSitemap: true
 bodyClass: "landing-page lp-10-things"
 permalink: "/l/10-things-federal-retirement/ty-review/"
+hideGovBar: true
 ---
 
 <style>
@@ -21,7 +22,21 @@ permalink: "/l/10-things-federal-retirement/ty-review/"
   color: var(--cw-ink);
 }
 .lp-10-things main { padding-top: 0 !important; }
-.lp-10-things .finpay-header { display: none !important; height: 0 !important; padding: 0 !important; margin: 0 !important; visibility: hidden !important; position: absolute !important; }
+.lp-10-things .finpay-header,
+.lp-10-things .cwh-shell,
+.lp-10-things header.cwh-shell,
+.lp-10-things .gov-bar,
+.lp-10-things .finpay-footer,
+.lp-10-things footer.finpay-footer {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
 
 .ty10-hero {
   background: var(--cw-fed-blue);

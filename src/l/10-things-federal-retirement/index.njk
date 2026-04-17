@@ -5,6 +5,7 @@ description: "The 10 moves federal employees in Utah, Wyoming, and Idaho should 
 ogImage: "/assets/images/photos/federal/american-flag-hero.jpg"
 bodyClass: "landing-page lp-10-things"
 permalink: "/l/10-things-federal-retirement/"
+hideGovBar: true
 ---
 
 {% set lp = landing_pages["10-things"] %}
@@ -32,13 +33,20 @@ permalink: "/l/10-things-federal-retirement/"
   color: var(--cw-ink);
 }
 
-/* Kill sitewide header padding/nav on LP */
+/* Kill sitewide header/footer/banner on LP — covers both the old
+   .finpay-header and the redesigned .cwh-shell glass header. */
 .lp-10-things main { padding-top: 0 !important; }
 .lp-10-things .finpay-header,
 .lp-10-things header.finpay-header,
-.lp-10-things .finpay-nav-wrapper {
+.lp-10-things .finpay-nav-wrapper,
+.lp-10-things .cwh-shell,
+.lp-10-things header.cwh-shell,
+.lp-10-things .gov-bar,
+.lp-10-things .finpay-footer,
+.lp-10-things footer.finpay-footer {
   display: none !important;
   height: 0 !important;
+  max-height: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
   overflow: hidden !important;
@@ -173,8 +181,9 @@ permalink: "/l/10-things-federal-retirement/"
   z-index: 1;
 }
 .lp-hero-logo {
-  height: 36px;
-  width: auto;
+  height: 36px !important;
+  width: auto !important;
+  max-width: 220px !important;
   margin-bottom: 40px;
   display: block;
 }
