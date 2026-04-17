@@ -1,0 +1,201 @@
+{
+  "slug": "10-things-federal-retirement",
+  "meta": {
+    "title": "10 Things to Do Now for Federal Retirement | Capital Wealth",
+    "description": "The 10 moves federal employees in Utah, Wyoming, and Idaho should make before retirement. Free checklist plus a complimentary benefits review from a fiduciary team.",
+    "og_image": "/assets/images/photos/federal/american-flag-hero.jpg"
+  },
+  "hero": {
+    "eyebrow": "FOR FEDERAL EMPLOYEES IN UTAH, WYOMING & IDAHO",
+    "headline_a": "The 10 Things You Can Do",
+    "headline_emph": "Right Now",
+    "headline_b": "to Get Ready for Federal Retirement",
+    "lede": "If you couldn't make the live session, this page is the next best thing. Ann Werts walked 42 federal employees through their benefits at Weber State — FERS, TSP, FEHB, FEGLI, Social Security, and the dozen tactical moves most people find out about after it's too late. Here's the short list.",
+    "subhead": "Pulled straight from our April 9 workshop at Weber State — the moves most feds miss, the deadlines OPM won't remind you about, and what actually changes your pension the most. No fluff. No pitch.",
+    "primary_cta": "Book My Complimentary Benefits Review",
+    "secondary_cta": "Email Me the 10-Point Checklist",
+    "microcopy": "No products sold. No commitment. Just your numbers, reviewed by a fiduciary who does this every day."
+  },
+  "trust_bar": {
+    "as_seen_on": ["KSL Newsradio", "KNRS", "Retire Right Radio", "Weber State University"],
+    "badges": [
+      "BBB A+ Rating",
+      "FINRA BrokerCheck",
+      "Gov. Registered Contractor · UEI: L63FVVWAKXA8",
+      "Fiduciary Standard"
+    ]
+  },
+  "setup": {
+    "eyebrow": "THE WHY",
+    "headline": "If you feel like the system isn't helping you retire — you're not wrong.",
+    "body": [
+      "Somewhere along the way, your agency quit teaching benefits. HR got centralized or cut. You email a question, get a ticket number, wait four weeks for a generic answer. OPM sends you to a portal. The break-room coworker who used to explain all of this retired during COVID.",
+      "It's not your fault you feel behind. The system stopped helping. Federal employees are running a <em>YOYO retirement system</em> — <strong>You're On Your Own</strong> — right as the rules keep changing.",
+      "That's why we ran the workshop. And why we built this page for the folks who couldn't make it."
+    ],
+    "pull_quote": {
+      "text": "The average federal employee works two and a half years after they're eligible to retire — because they're not sure the numbers work. We fix that in a one-hour review.",
+      "attribution": "Ann Werts, author of FedTelligence 2.0 (from the April 9 Weber State workshop)"
+    }
+  },
+  "ten_items_intro": {
+    "eyebrow": "THE CHECKLIST",
+    "headline": "The 10 Moves That Make the Biggest Difference",
+    "intro": "Ordered roughly by urgency. If you do nothing else, do #1 and #8 this week."
+  },
+  "ten_items": [
+    {
+      "n": 1,
+      "title": "Download your eOPF before you walk out the door",
+      "body": "Your electronic Official Personnel File goes to OPM when you retire. Once you leave, <strong>you lose access.</strong> If OPM has a question about your work history later — a missing SF-50, a service computation date that doesn't add up — they can't call your old HR office, because that office probably doesn't exist anymore. Save a copy to a personal drive this week.",
+      "action": "Log into your agency's HR portal → eOPF → download the whole file."
+    },
+    {
+      "n": 2,
+      "title": "Audit your SF-50s and your beneficiary forms",
+      "body": "Pull every SF-50 and look for gaps. A missing promotion, a step increase that never posted, a break in service that wasn't coded right — each one can cost you real pension dollars. Same with your beneficiary forms. A shocking number of feds filled these out at orientation 25 years ago and never touched them. Ex-spouses. Deceased parents. Wrong addresses.",
+      "action": "The three forms to verify: SF-2823 (life insurance), SF-3102 (retirement contributions), TSP beneficiary designation."
+    },
+    {
+      "n": 3,
+      "title": "Price out a military buyback",
+      "body": "If you served in the military and you're not already drawing a military retirement, a buyback is almost always worth it. You pay <strong>3% of your military basic pay</strong>. You add those years to your federal service. Interest-free if you complete it inside your first 3 years of federal employment. We've seen buybacks cost $4,000 and unlock a year of extra pension — every year, for life.",
+      "action": "Request an RI 20-97 (\"Estimated Earnings During Military Service\") from your branch of service."
+    },
+    {
+      "n": 4,
+      "title": "Know which of the three doors you're walking through",
+      "body": "Full, unreduced FERS pension requires <strong>both</strong> age and years of service:<ul><li><strong>MRA + 30</strong> (Minimum Retirement Age, 56–57, with 30 years of service)</li><li><strong>Age 60 + 20 years</strong></li><li><strong>Age 62 + 5 years</strong></li></ul>There's a fourth door — <strong>MRA + 10</strong> — but it hits you with a 5% penalty for every year you're under 62. You can postpone to dodge the penalty. Most people don't realize they have the choice.",
+      "action": null
+    },
+    {
+      "n": 5,
+      "title": "Work the 1.1% multiplier",
+      "body": "Your pension formula is simple on paper: years of service × multiplier × high-3 salary. The multiplier is <strong>1.0%</strong> unless you retire at age 62+ with 20+ years — then it jumps to <strong>1.1%</strong>. That's a 10% raise on your pension, for life. One extra year at the office can fund a decade of retirement. Run the math before you pick a date.",
+      "action": null
+    },
+    {
+      "n": 6,
+      "title": "Convert your unused sick leave into creditable service",
+      "body": "Banking sick leave isn't just goodwill. At retirement, those hours convert into <strong>months and days of creditable federal service</strong> — meaning a bigger pension. Thousands of hours isn't unusual; a healthy balance can add a year or more to your formula. Stop burning sick leave you don't need.",
+      "action": null
+    },
+    {
+      "n": 7,
+      "title": "Pick the right retirement date (it's worth thousands)",
+      "body": "Three stacking rules:<ol><li><strong>Last day of the month</strong> — your salary runs through month-end, your pension starts the 1st.</li><li><strong>End of a pay period</strong> — you pick up extra leave accrual.</li><li><strong>December 31</strong> — your lump-sum annual leave payout lands in the following tax year (lower bracket for most retirees).</li></ol>Get all three to line up and you can pick up several extra paychecks' worth of money — just by picking the right Friday.",
+      "action": null
+    },
+    {
+      "n": 8,
+      "title": "Lock in FEHB for the rest of your life",
+      "body": "This one is the scariest to miss. To keep your Federal Employees Health Benefits in retirement, you need <strong>all three</strong>:<ul><li>Retire on an immediate annuity</li><li>10+ years of creditable service</li><li><strong>Continuously enrolled in FEHB for the 5 years</strong> right before you retire</li></ul>Drop coverage during an open season to save a few bucks and you can permanently lose the right to carry FEHB into retirement. No redo. Premiums jumped 13.5% in 2025 and another 12.3% in 2026 — the coverage still costs less than private Medicare supplements over a 25-year retirement.",
+      "action": null,
+      "pull_quote": {
+        "text": "Less than 5% of federal employees change health plans during Open Season. That's not because everybody's already in the best plan.",
+        "attribution": "Ann, Weber State Workshop"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Don't get blindsided by the Roth catch-up mandate",
+      "body": "For 2026 the TSP contribution limit is <strong>$24,500</strong>, with catch-ups of <strong>$32,500</strong> (ages 50–59 or 64+) and <strong>$36,000</strong> for the super-catch-up (ages 60–63). New rule: if you earned <strong>$150,000 or more in 2025</strong>, your catch-up contributions <strong>must</strong> go into Roth TSP — you can't make them pre-tax anymore. If you don't update your election before the year starts, your catch-up money gets rejected.<br><br>While we're here: Roth conversions are now allowed inside the TSP for the first time. Worth looking at if you have a low-income year.",
+      "action": null
+    },
+    {
+      "n": 10,
+      "title": "Set up your state tax withholding yourself — OPM won't",
+      "body": "This one catches people in Utah and Idaho every single year. OPM's federal retirement system <strong>does not automatically withhold state income tax from your pension.</strong> Once your claim is adjudicated, log into <strong>Services Online</strong> (servicesonline.opm.gov) and set your state withholding manually, or you'll owe a lump sum at tax time.<br><br><strong>Wyoming residents:</strong> no state income tax — nothing to set up. But still check your federal withholding.",
+      "action": null
+    }
+  ],
+  "midpage_cta": {
+    "headline": "Want these 10 reviewed against <em>your</em> numbers?",
+    "body": "Most feds need 30 minutes with someone who knows the rules. We'll pull up your SCD, high-3, TSP allocation, FEHB plan, and show you where you're leaving money on the table. No products sold. No homework assigned.",
+    "cta": "Book My Complimentary Benefits Review"
+  },
+  "ann_bio": {
+    "eyebrow": "YOUR WORKSHOP INSTRUCTOR",
+    "name": "Ann Werts",
+    "title": "Federal Benefits Specialist · Author, FedTelligence 2.0",
+    "bio": "For 15+ years Ann has been the person federal employees call when the HR ticket isn't getting answered. She's walked thousands of feds through FERS, TSP, FEHB, and FEGLI decisions — at agencies across the country and in workshops like the one at Weber State. Her book, <em>FedTelligence 2.0</em>, is the playbook she wishes every new hire received on day one.",
+    "quote": "Federal benefits aren't complicated. They're just hidden. Once you see the map, the moves are obvious."
+  },
+  "why_cw": {
+    "eyebrow": "WHY CAPITAL WEALTH",
+    "headline": "We're the fiduciary team federal employees wish their agency had.",
+    "pillars": [
+      {
+        "title": "Federal is our specialty, not our sideline",
+        "body": "Most advisors touch a FERS pension a few times a year. We see them every day. We know the forms, the deadlines, and the agency-specific quirks that generalist planners miss."
+      },
+      {
+        "title": "Fiduciary. Independent. No products pushed.",
+        "body": "We're legally required to act in your interest — not a broker-dealer's, not an insurance carrier's. You'll know exactly what we recommend and why."
+      },
+      {
+        "title": "Utah-based. Available across UT, WY, ID.",
+        "body": "Our office is in Lehi, we hold live workshops across the Mountain West, and we can meet by Zoom when that's easier."
+      }
+    ]
+  },
+  "review_process": {
+    "eyebrow": "WHAT HAPPENS NEXT",
+    "headline": "Your Complimentary Federal Benefits Review — start to finish",
+    "steps": [
+      {
+        "n": 1,
+        "title": "20-minute intro call",
+        "body": "You tell us your agency, service history, and what you're trying to figure out. We tell you whether a full review will actually help you — and if it won't, we say so."
+      },
+      {
+        "n": 2,
+        "title": "Full review (60–90 minutes)",
+        "body": "We pull up your real numbers: pension estimate, TSP allocation, FEHB plan, survivor benefit, Social Security coordination. We find the moves."
+      },
+      {
+        "n": 3,
+        "title": "Your written action plan",
+        "body": "You walk away with a one-page action plan, with or without us. No obligation, no hard pitch."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "QUESTIONS PEOPLE ASK FIRST",
+    "items": [
+      {
+        "q": "Is Capital Wealth affiliated with OPM or the federal government?",
+        "a": "No. We're an independent, fiduciary advisory firm. We hold workshops at federal facilities and universities like Weber State, but we don't work for OPM, your agency, or the government."
+      },
+      {
+        "q": "Am I going to get sold something?",
+        "a": "No. The review is educational. We do manage money for clients who eventually ask us to, but the review itself is free and unrelated. If we're not the right fit, we'll tell you — and often refer you to someone who is."
+      },
+      {
+        "q": "I already did my own research. Do I really need a review?",
+        "a": "Maybe not. But here's what we see most often: the research you did is correct for the person who wrote the article, not for you. The rules interact — FEHB eligibility changes your Social Security timing, which changes your Roth conversion window, which changes your TSP withdrawal order. We check the interactions."
+      },
+      {
+        "q": "Can my spouse attend?",
+        "a": "Strongly encouraged. FEHB and survivor benefit decisions affect both of you for the rest of your lives."
+      },
+      {
+        "q": "What do I need to bring?",
+        "a": "Nothing for the first call. For the full review: a recent leave and earnings statement, your latest TSP statement, your current FEHB plan name, and an SF-50 if you have one handy. We'll email a short checklist before the meeting."
+      },
+      {
+        "q": "Do you work with federal employees outside Utah?",
+        "a": "Yes. Most of our clients are in UT, WY, and ID, but we serve federal employees nationwide via Zoom."
+      }
+    ]
+  },
+  "final_cta": {
+    "eyebrow": "READY WHEN YOU ARE",
+    "headline": "30 minutes now can change the next 30 years.",
+    "body": "You've made it this far, which means you already know you want to get this right. Book a complimentary review and let's put actual numbers on your plan.",
+    "primary_cta": "Book My Complimentary Benefits Review",
+    "secondary_cta": "Or email me the 10-point checklist as a PDF",
+    "reassurance": "Fiduciary advice. No products sold on this call. Your data stays with us."
+  },
+  "disclaimer": "Capital Wealth is an independent fiduciary investment advisory firm and is not affiliated with, endorsed by, or sponsored by the Office of Personnel Management, the U.S. government, or any federal agency. Information on this page is educational and not personalized advice. Past performance does not guarantee future results. All retirement figures and rules referenced are current as of 2026 and subject to change. Government Contractor — Unique Entity ID: L63FVVWAKXA8."
+}
