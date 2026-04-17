@@ -94,6 +94,7 @@ export default async function handler(req, res) {
       name, email, phone, savings, retirementTimeline, questions,
       firstName, lastName, agency, employer, source, workshop_date, lead_type,
       utm_source, utm_medium, utm_campaign, utm_content, utm_term,
+      gclid, fbclid, state, variant,
       referrer, landing_page, submitted_from, website
     } = req.body;
 
@@ -104,9 +105,16 @@ export default async function handler(req, res) {
 
     // Handle both combined name and separate firstName/lastName
     const fullName = name || (firstName && lastName ? `${firstName} ${lastName}` : firstName || lastName || '');
-    
-    if (!fullName || !email || !phone) {
-      return res.status(400).json({ error: 'Name, email, and phone are required.' });
+
+    // The 10-Things checklist variant is email-only (no phone required).
+    // Everything else still requires name/email/phone.
+    const is10ThingsChecklist = lead_type === '10things-checklist' || variant === 'checklist';
+
+    if (!fullName || !email) {
+      return res.status(400).json({ error: 'Name and email are required.' });
+    }
+    if (!is10ThingsChecklist && !phone) {
+      return res.status(400).json({ error: 'Phone is required.' });
     }
 
     // Bot pattern detection — known spam patterns
@@ -120,14 +128,29 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Invalid email format.' });
     }
 
+    // 10-Things landing page: build a CRM-friendly tag like
+    // LP-10Things-UT-Review or LP-10Things-OTHER-Checklist.
+    const is10Things = landing_page === '10-things-federal-retirement'
+      || (lead_type && lead_type.startsWith('10things-'));
+    let tenThingsTag = null;
+    if (is10Things) {
+      const stateCode = (state || '').toUpperCase();
+      const statePart = ['UT', 'WY', 'ID'].includes(stateCode) ? stateCode : 'OTHER';
+      const variantPart = is10ThingsChecklist ? 'Checklist' : 'Review';
+      tenThingsTag = `LP-10Things-${statePart}-${variantPart}`;
+    }
+
     const leadData = {
       name: fullName.trim(),
       email: email.trim().toLowerCase(),
-      phone: phone.trim(),
+      phone: (phone || '').trim(),
       first_name: firstName || fullName.split(' ')[0] || '',
       last_name: lastName || fullName.split(' ').slice(1).join(' ') || '',
       agency: agency || null,
       employer: employer || null,
+      state: state || null,
+      variant: variant || null,
+      tag: tenThingsTag,
       savings: savings || null,
       retirement_timeline: retirementTimeline || null,
       message: questions?.trim() || null,
@@ -142,6 +165,8 @@ export default async function handler(req, res) {
       utm_campaign: utm_campaign || null,
       utm_content: utm_content || null,
       utm_term: utm_term || null,
+      gclid: gclid || null,
+      fbclid: fbclid || null,
       referrer: referrer || null,
       landing_page: landing_page || null,
       submitted_from: submitted_from || null,
@@ -198,10 +223,68 @@ export default async function handler(req, res) {
     if (SENDGRID_API_KEY) {
       // Federal Workshop specific email template
       const isFederalWorkshop = lead_type === 'federal-workshop-registration';
-      
+
       let confirmationHtml, emailSubject;
-      
-      if (isFederalWorkshop) {
+
+      if (is10Things) {
+        // 10 Things landing page — two flavors: review or checklist
+        if (is10ThingsChecklist) {
+          emailSubject = 'Your 10-Point Federal Retirement Checklist — Capital Wealth';
+          confirmationHtml = `
+            <div style="font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+              <div style="background: #0A3161; padding: 32px; text-align: center; color: white;">
+                <h1 style="color: #fff; margin: 0; font-size: 26px; font-weight: 700;">Here's your 10-point checklist.</h1>
+                <p style="color: rgba(255,255,255,0.88); margin: 12px 0 0 0; font-size: 16px;">Federal retirement moves most people miss — pulled from our Weber State workshop.</p>
+              </div>
+              <div style="padding: 32px; background: #ffffff;">
+                <p style="font-size: 16px; color: #1a1a1a; line-height: 1.65; margin: 0 0 20px;">Thanks for requesting the checklist, ${fullName.split(' ')[0]}. We're attaching the PDF — if you don't see it, reply and we'll resend.</p>
+                <p style="font-size: 16px; color: #1a1a1a; line-height: 1.65; margin: 0 0 24px;">Two reminders as you work through it:</p>
+                <ul style="font-size: 15px; color: #1a1a1a; line-height: 1.6; padding-left: 20px;">
+                  <li style="margin-bottom: 10px;"><strong>Item #1</strong> (download your eOPF) is the single highest-value 20 minutes you'll spend this month. Do it before you forget.</li>
+                  <li style="margin-bottom: 10px;"><strong>Item #8</strong> (FEHB 5-year rule) is the one that wipes out coverage for life if you miss it. Don't skip it.</li>
+                </ul>
+                <div style="background: #f8f9fb; padding: 20px; border-left: 4px solid #B31942; border-radius: 4px; margin: 24px 0;">
+                  <p style="margin: 0 0 12px 0; font-weight: 700; color: #0A3161;">Want these reviewed against your actual numbers?</p>
+                  <p style="margin: 0 0 16px 0; color: #4b5563; font-size: 14px; line-height: 1.55;">30 minutes. No products sold. No homework. We'll pull up your pension, TSP, FEHB, and Social Security numbers and walk through the moves.</p>
+                  <a href="https://www.capitalwealth.com/l/10-things-federal-retirement/#book-review" style="display: inline-block; background: #B31942; color: #fff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 700;">Book my complimentary review →</a>
+                </div>
+                <p style="font-size: 14px; color: #4b5563; margin: 24px 0 0;">Questions? Call <a href="tel:8012102800" style="color: #0A3161; font-weight: 600;">801.210.2800</a> or just reply to this email.</p>
+              </div>
+              <div style="background: #081f3f; padding: 20px; text-align: center;">
+                <p style="color: #9ca3af; margin: 0; font-size: 12px;">Capital Wealth · Lehi, UT · Fiduciary advice · Not affiliated with OPM or the U.S. government.</p>
+              </div>
+            </div>
+          `;
+        } else {
+          // 10-Things review request
+          emailSubject = 'Your Federal Benefits Review — we\'ll be in touch shortly';
+          confirmationHtml = `
+            <div style="font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+              <div style="background: #0A3161; padding: 32px; text-align: center; color: white;">
+                <h1 style="color: #fff; margin: 0; font-size: 26px; font-weight: 700;">You're on the list, ${fullName.split(' ')[0]}.</h1>
+                <p style="color: rgba(255,255,255,0.88); margin: 12px 0 0 0; font-size: 16px;">Complimentary federal benefits review — Capital Wealth.</p>
+              </div>
+              <div style="padding: 32px; background: #ffffff;">
+                <p style="font-size: 16px; color: #1a1a1a; line-height: 1.65; margin: 0 0 20px;">We've got your request. A member of our team will call or email within one business day to confirm your time.</p>
+                <div style="background: #f8f9fb; padding: 20px; border-radius: 8px; border-left: 4px solid #B31942; margin: 24px 0;">
+                  <h3 style="margin: 0 0 12px 0; color: #0A3161; font-size: 16px;">What we'll cover (60–90 min)</h3>
+                  <ul style="margin: 0; padding-left: 20px; color: #1a1a1a; font-size: 15px; line-height: 1.6;">
+                    <li>FERS pension estimate vs. your high-3</li>
+                    <li>TSP allocation + Roth catch-up rules for 2026</li>
+                    <li>FEHB 5-year rule check</li>
+                    <li>Social Security coordination timing</li>
+                    <li>Survivor benefit and retirement date stacking</li>
+                  </ul>
+                </div>
+                <p style="font-size: 16px; color: #1a1a1a; line-height: 1.65;">In the meantime, you can reach us at <a href="tel:8012102800" style="color: #0A3161; font-weight: 600;">801.210.2800</a> or reply to this email with any questions.</p>
+              </div>
+              <div style="background: #081f3f; padding: 20px; text-align: center;">
+                <p style="color: #9ca3af; margin: 0; font-size: 12px;">Capital Wealth · Lehi, UT · Fiduciary advice · Not affiliated with OPM or the U.S. government.</p>
+              </div>
+            </div>
+          `;
+        }
+      } else if (isFederalWorkshop) {
         emailSubject = 'Workshop Confirmed: April 9 Federal Benefits Workshop';
         confirmationHtml = `
           <div style="font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -274,8 +357,59 @@ export default async function handler(req, res) {
 
       // Send notification to Mike / sales team
       let notificationSubject, notificationHtml;
-      
-      if (isFederalWorkshop) {
+
+      if (is10Things) {
+        const variantLabel = is10ThingsChecklist ? 'Checklist Download' : 'Benefits Review Request';
+        const priority = is10ThingsChecklist ? '📬 Checklist Lead' : '🎯 Review Request';
+        notificationSubject = `${priority} — ${leadData.name}${leadData.state ? ` (${leadData.state})` : ''} · ${tenThingsTag}`;
+        notificationHtml = `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <div style="background: #0A3161; padding: 20px; text-align: center;">
+              <h1 style="color: #fff; margin: 0; font-size: 22px;">${priority}</h1>
+              <p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0;">10 Things Federal Retirement — ${variantLabel}</p>
+            </div>
+            <div style="padding: 28px; background: #f9f9f9;">
+              <div style="background: ${is10ThingsChecklist ? '#0A3161' : '#B31942'}; color: #fff; padding: 14px; border-radius: 8px; margin-bottom: 20px; text-align: center; font-weight: 700;">
+                CRM Tag: ${tenThingsTag}
+              </div>
+              <table style="width: 100%; border-collapse: collapse;">
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Name:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.name}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Email:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="mailto:${leadData.email}">${leadData.email}</a></td></tr>
+                ${leadData.phone ? `<tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="tel:${leadData.phone}">${leadData.phone}</a></td></tr>` : ''}
+                ${leadData.agency ? `<tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Agency:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.agency}</td></tr>` : ''}
+                ${leadData.state ? `<tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>State:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.state}</td></tr>` : ''}
+                ${leadData.retirement_timeline ? `<tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Timeline:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.retirement_timeline}</td></tr>` : ''}
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Variant:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${variantLabel}</td></tr>
+              </table>
+              <div style="background: #fff; padding: 16px; border-radius: 8px; margin-top: 20px; border: 1px solid #ddd;">
+                <h3 style="margin: 0 0 12px 0; color: #0A3161; font-size: 14px;">Attribution</h3>
+                <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                  ${leadData.utm_source ? `<tr><td style="padding: 4px;"><strong>UTM Source:</strong></td><td style="padding: 4px;">${leadData.utm_source}</td></tr>` : ''}
+                  ${leadData.utm_medium ? `<tr><td style="padding: 4px;"><strong>UTM Medium:</strong></td><td style="padding: 4px;">${leadData.utm_medium}</td></tr>` : ''}
+                  ${leadData.utm_campaign ? `<tr><td style="padding: 4px;"><strong>UTM Campaign:</strong></td><td style="padding: 4px;">${leadData.utm_campaign}</td></tr>` : ''}
+                  ${leadData.utm_content ? `<tr><td style="padding: 4px;"><strong>UTM Content:</strong></td><td style="padding: 4px;">${leadData.utm_content}</td></tr>` : ''}
+                  ${leadData.utm_term ? `<tr><td style="padding: 4px;"><strong>UTM Term:</strong></td><td style="padding: 4px;">${leadData.utm_term}</td></tr>` : ''}
+                  ${leadData.gclid ? `<tr><td style="padding: 4px;"><strong>gclid:</strong></td><td style="padding: 4px; font-family: monospace; font-size: 11px; word-break: break-all;">${leadData.gclid}</td></tr>` : ''}
+                  ${leadData.fbclid ? `<tr><td style="padding: 4px;"><strong>fbclid:</strong></td><td style="padding: 4px; font-family: monospace; font-size: 11px; word-break: break-all;">${leadData.fbclid}</td></tr>` : ''}
+                  ${leadData.referrer ? `<tr><td style="padding: 4px;"><strong>Referrer:</strong></td><td style="padding: 4px; font-size: 12px;">${leadData.referrer}</td></tr>` : ''}
+                </table>
+              </div>
+              ${is10ThingsChecklist ? `
+                <div style="background: #fff8dc; padding: 14px; border-radius: 8px; margin-top: 20px; border-left: 4px solid #B31942; font-size: 13px;">
+                  <strong>Next:</strong> Checklist PDF not yet attached to email. Add to 5-email nurture sequence in ESP once wired up.
+                </div>
+              ` : `
+                <div style="background: #e8f4f8; padding: 14px; border-radius: 8px; margin-top: 20px; border-left: 4px solid #0A3161; font-size: 13px;">
+                  <strong>Next:</strong> Call within 1 business day to confirm intro-call time. Review: 20 min intro → 60–90 min full review → written action plan.
+                </div>
+              `}
+            </div>
+            <div style="background: #081f3f; padding: 14px; text-align: center;">
+              <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 11px;">10 Things Federal Retirement · capitalwealth.com/l/10-things-federal-retirement/</p>
+            </div>
+          </div>
+        `;
+      } else if (isFederalWorkshop) {
         notificationSubject = `🎯 Federal Workshop Registration: ${leadData.name} — April 9, 2026`;
         notificationHtml = `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

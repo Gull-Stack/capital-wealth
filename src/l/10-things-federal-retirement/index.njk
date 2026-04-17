@@ -1,0 +1,1581 @@
+---
+layout: layouts/base-finpay.njk
+title: "10 Things to Do Now for Federal Retirement | Capital Wealth"
+description: "The 10 moves federal employees in Utah, Wyoming, and Idaho should make before retirement. Free checklist plus a complimentary benefits review from a fiduciary team."
+ogImage: "/assets/images/photos/federal/american-flag-hero.jpg"
+bodyClass: "landing-page lp-10-things"
+permalink: "/l/10-things-federal-retirement/"
+---
+
+{% set lp = landing_pages["10-things"] %}
+
+<style>
+/* ══════════════════════════════════════════════════════════════
+   LP — 10 Things Federal Retirement
+   Federal sub-brand palette ONLY: Old Glory Red / Blue / White.
+   Scoped under .lp-10-things to keep the sitewide navy/gold
+   palette off this page.
+   ══════════════════════════════════════════════════════════════ */
+
+.lp-10-things {
+  --cw-fed-red: #B31942;
+  --cw-fed-red-dark: #9a1538;
+  --cw-fed-blue: #0A3161;
+  --cw-fed-blue-dark: #081f3f;
+  --cw-fed-blue-ink: #0F2243;
+  --cw-white: #FFFFFF;
+  --cw-bg-subtle: #f8f9fb;
+  --cw-ink: #1a1a1a;
+  --cw-muted: #4b5563;
+  --cw-border: rgba(10, 49, 97, 0.12);
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--cw-ink);
+}
+
+/* Kill sitewide header padding/nav on LP */
+.lp-10-things main { padding-top: 0 !important; }
+.lp-10-things .finpay-header,
+.lp-10-things header.finpay-header,
+.lp-10-things .finpay-nav-wrapper {
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
+
+.lp-10-things img { max-width: 100%; height: auto; }
+.lp-10-things ul, .lp-10-things ol { line-height: 1.65; }
+.lp-10-things em { font-style: italic; }
+
+/* ─── Primitives ────────────────────────────────────────────── */
+.lp-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono, "Geist Mono", monospace);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--cw-fed-blue);
+  margin-bottom: 16px;
+}
+
+.lp-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--cw-fed-red);
+  color: var(--cw-white);
+  padding: 18px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  font-family: inherit;
+  line-height: 1.2;
+}
+.lp-btn-primary:hover,
+.lp-btn-primary:focus-visible {
+  background: var(--cw-fed-red-dark);
+  color: var(--cw-white);
+  transform: translateY(-1px);
+  outline: none;
+}
+.lp-btn-primary:focus-visible {
+  outline: 3px solid var(--cw-white);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--cw-fed-red);
+}
+
+.lp-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--cw-white);
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: border-color 0.2s, background 0.2s;
+  font-family: inherit;
+  cursor: pointer;
+}
+.lp-btn-ghost:hover,
+.lp-btn-ghost:focus-visible {
+  border-color: var(--cw-white);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--cw-white);
+  outline: none;
+}
+.lp-btn-ghost:focus-visible {
+  outline: 3px solid var(--cw-fed-red);
+  outline-offset: 2px;
+}
+
+.lp-btn-ghost-blue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--cw-fed-blue);
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border: 2px solid var(--cw-fed-blue);
+  font-family: inherit;
+  cursor: pointer;
+}
+.lp-btn-ghost-blue:hover,
+.lp-btn-ghost-blue:focus-visible {
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+  outline: none;
+}
+
+/* ─── HERO ──────────────────────────────────────────────────── */
+.lp-hero {
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+  padding: 64px 32px 80px;
+  position: relative;
+  overflow: hidden;
+}
+.lp-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(179, 25, 66, 0.15), transparent 50%),
+    radial-gradient(circle at 10% 80%, rgba(255, 255, 255, 0.06), transparent 40%);
+  pointer-events: none;
+}
+.lp-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 64px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.lp-hero-logo {
+  height: 36px;
+  width: auto;
+  margin-bottom: 40px;
+  display: block;
+}
+.lp-hero-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono, "Geist Mono", monospace);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--cw-white);
+  background: var(--cw-fed-red);
+  padding: 8px 14px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+.lp-hero h1 {
+  font-family: var(--font-serif-display, "Cormorant Garamond", Georgia, serif);
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.08;
+  margin: 0 0 20px;
+  color: var(--cw-white);
+  letter-spacing: -0.01em;
+}
+.lp-hero h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: #ffd9a1;
+}
+.lp-hero-subhead {
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 28px;
+  max-width: 600px;
+}
+.lp-hero-lede {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+.lp-hero-cta-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.lp-hero-micro {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 520px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.lp-hero-right {
+  position: relative;
+}
+.lp-hero-ann-card {
+  background: var(--cw-white);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+  color: var(--cw-ink);
+}
+.lp-hero-ann-card img.ann-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 20px;
+  object-fit: cover;
+  aspect-ratio: 4/5;
+}
+.lp-hero-ann-card .ann-name {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 4px;
+}
+.lp-hero-ann-card .ann-title {
+  font-size: 0.9rem;
+  color: var(--cw-muted);
+  margin: 0 0 16px;
+}
+.lp-hero-ann-card .ann-book {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--cw-border);
+}
+.lp-hero-ann-card .ann-book strong {
+  color: var(--cw-fed-blue);
+  font-size: 0.95rem;
+  display: block;
+}
+.lp-hero-ann-card .ann-book span {
+  font-size: 0.85rem;
+  color: var(--cw-muted);
+  line-height: 1.4;
+}
+
+/* ─── TRUST BAR ─────────────────────────────────────────────── */
+.lp-trust {
+  background: var(--cw-white);
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--cw-border);
+}
+.lp-trust-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.lp-trust-seen {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--cw-muted);
+}
+.lp-trust-seen-label {
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--cw-fed-blue);
+  font-weight: 700;
+}
+.lp-trust-seen-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: var(--cw-ink);
+  font-weight: 500;
+}
+.lp-trust-seen-items span::after {
+  content: "·";
+  margin-left: 20px;
+  color: var(--cw-fed-red);
+}
+.lp-trust-seen-items span:last-child::after { content: ""; }
+
+.lp-trust-badges {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.lp-trust-badge {
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  background: var(--cw-bg-subtle);
+  border: 1px solid var(--cw-border);
+  border-radius: 999px;
+  color: var(--cw-fed-blue);
+  font-weight: 600;
+}
+
+/* ─── SETUP / WHY ───────────────────────────────────────────── */
+.lp-setup {
+  background: var(--cw-bg-subtle);
+  padding: 80px 32px;
+}
+.lp-setup-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.lp-setup h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  line-height: 1.2;
+  margin: 0 0 32px;
+}
+.lp-setup p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--cw-ink);
+  margin: 0 0 20px;
+}
+.lp-setup-quote {
+  margin: 40px 0 0;
+  padding: 24px 28px;
+  background: var(--cw-white);
+  border-left: 4px solid var(--cw-fed-red);
+  border-radius: 4px;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  font-style: italic;
+  color: var(--cw-fed-blue-ink);
+}
+.lp-setup-quote cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--cw-muted);
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* ─── TEN ITEMS ─────────────────────────────────────────────── */
+.lp-ten {
+  background: var(--cw-white);
+  padding: 80px 32px;
+}
+.lp-ten-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.lp-ten-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.lp-ten-header h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+.lp-ten-header p {
+  font-size: 1.1rem;
+  color: var(--cw-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.lp-ten-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.lp-ten-item {
+  background: var(--cw-white);
+  border: 1px solid var(--cw-border);
+  border-radius: 12px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 24px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  scroll-margin-top: 24px;
+}
+.lp-ten-item:target {
+  border-color: var(--cw-fed-red);
+  box-shadow: 0 0 0 3px rgba(179, 25, 66, 0.15);
+}
+.lp-ten-item:hover {
+  box-shadow: 0 20px 40px rgba(10, 49, 97, 0.08);
+  transform: translateY(-1px);
+}
+.lp-ten-num {
+  width: 56px;
+  height: 56px;
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.lp-ten-body h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  line-height: 1.25;
+  margin: 0 0 16px;
+}
+.lp-ten-body p,
+.lp-ten-body ul,
+.lp-ten-body ol {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--cw-ink);
+  margin: 0 0 12px;
+}
+.lp-ten-body ul,
+.lp-ten-body ol {
+  padding-left: 24px;
+}
+.lp-ten-body li { margin-bottom: 6px; }
+.lp-do-now {
+  margin-top: 16px;
+  background: var(--cw-bg-subtle);
+  border-left: 4px solid var(--cw-fed-red);
+  padding: 14px 18px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: var(--cw-fed-blue-ink);
+}
+.lp-do-now strong {
+  display: block;
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cw-fed-red);
+  margin-bottom: 4px;
+}
+.lp-ten-inline-quote {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+  border-radius: 8px;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.lp-ten-inline-quote cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 8px;
+}
+
+/* ─── MIDPAGE CTA ───────────────────────────────────────────── */
+.lp-midcta {
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+  padding: 64px 32px;
+  text-align: center;
+}
+.lp-midcta-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.lp-midcta h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cw-white);
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+.lp-midcta p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+
+/* ─── LEAD FORM ─────────────────────────────────────────────── */
+.lp-form-wrap {
+  padding: 80px 32px;
+  background: var(--cw-bg-subtle);
+}
+.lp-form-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.lp-form {
+  background: var(--cw-white);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(10, 49, 97, 0.08);
+  border: 1px solid var(--cw-border);
+  scroll-margin-top: 24px;
+}
+.lp-form-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.lp-form-header h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 8px;
+}
+.lp-form-header p {
+  color: var(--cw-muted);
+  font-size: 1rem;
+  margin: 0;
+}
+.lp-form-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 6px;
+  background: var(--cw-bg-subtle);
+  border-radius: 10px;
+  margin-bottom: 28px;
+}
+.lp-form-tab {
+  flex: 1;
+  background: transparent;
+  color: var(--cw-muted);
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+.lp-form-tab[aria-selected="true"] {
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+}
+.lp-form-tab:focus-visible {
+  outline: 3px solid var(--cw-fed-red);
+  outline-offset: 2px;
+}
+.lp-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.lp-form-group { margin-bottom: 16px; }
+.lp-form-label {
+  display: block;
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--cw-fed-blue);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.lp-form-input,
+.lp-form-select {
+  width: 100%;
+  background: var(--cw-white);
+  border: 1.5px solid var(--cw-border);
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--cw-ink);
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.lp-form-input:focus,
+.lp-form-select:focus {
+  outline: none;
+  border-color: var(--cw-fed-blue);
+  box-shadow: 0 0 0 3px rgba(10, 49, 97, 0.15);
+}
+.lp-form-submit {
+  width: 100%;
+  padding: 18px 24px;
+  margin-top: 12px;
+  font-size: 1.05rem;
+}
+.lp-form-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+.lp-form-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--cw-muted);
+  margin: 16px 0 0;
+  line-height: 1.5;
+}
+.lp-form-honey {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px; height: 1px; opacity: 0;
+}
+
+/* ─── ANN BIO ───────────────────────────────────────────────── */
+.lp-ann {
+  padding: 80px 32px;
+  background: var(--cw-white);
+}
+.lp-ann-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.lp-ann-photo img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(10, 49, 97, 0.15);
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+.lp-ann-details h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 6px;
+  line-height: 1.1;
+}
+.lp-ann-subtitle {
+  font-size: 1.05rem;
+  color: var(--cw-fed-red);
+  font-weight: 600;
+  margin: 0 0 24px;
+}
+.lp-ann-bio-text {
+  font-size: 1.05rem;
+  color: var(--cw-ink);
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+.lp-ann-quote {
+  padding: 20px 24px;
+  background: var(--cw-bg-subtle);
+  border-left: 4px solid var(--cw-fed-red);
+  border-radius: 4px;
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-style: italic;
+  color: var(--cw-fed-blue-ink);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ─── WHY CW ────────────────────────────────────────────────── */
+.lp-why {
+  padding: 80px 32px;
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+}
+.lp-why-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.lp-why-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.lp-why .lp-eyebrow { color: #ffd9a1; }
+.lp-why h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--cw-white);
+  max-width: 720px;
+  margin: 0 auto;
+}
+.lp-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.lp-why-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 32px;
+  backdrop-filter: blur(8px);
+}
+.lp-why-card-num {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.85rem;
+  color: var(--cw-fed-red);
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: 0.1em;
+}
+.lp-why-card h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cw-white);
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+.lp-why-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+/* ─── REVIEW PROCESS ────────────────────────────────────────── */
+.lp-process {
+  padding: 80px 32px;
+  background: var(--cw-white);
+}
+.lp-process-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.lp-process-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.lp-process h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  line-height: 1.2;
+  margin: 0;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.lp-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.lp-process-card {
+  background: var(--cw-bg-subtle);
+  border-radius: 12px;
+  padding: 32px;
+  border-top: 4px solid var(--cw-fed-red);
+}
+.lp-process-step {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.8rem;
+  color: var(--cw-fed-red);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+.lp-process-card h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 12px;
+}
+.lp-process-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--cw-muted);
+  margin: 0;
+}
+
+/* ─── FAQ ───────────────────────────────────────────────────── */
+.lp-faq {
+  padding: 80px 32px;
+  background: var(--cw-bg-subtle);
+}
+.lp-faq-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.lp-faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.lp-faq h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  line-height: 1.2;
+  margin: 0;
+}
+.lp-faq-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.lp-faq-item {
+  background: var(--cw-white);
+  border: 1px solid var(--cw-border);
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.lp-faq-item[open] { border-color: var(--cw-fed-red); }
+.lp-faq-summary {
+  padding: 20px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--cw-fed-blue);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  line-height: 1.4;
+}
+.lp-faq-summary::-webkit-details-marker { display: none; }
+.lp-faq-summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  color: var(--cw-fed-red);
+  font-weight: 400;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.lp-faq-item[open] .lp-faq-summary::after {
+  content: "−";
+}
+.lp-faq-summary:focus-visible {
+  outline: 3px solid var(--cw-fed-red);
+  outline-offset: -3px;
+}
+.lp-faq-answer {
+  padding: 0 24px 20px;
+  color: var(--cw-ink);
+  line-height: 1.65;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* ─── FINAL CTA ─────────────────────────────────────────────── */
+.lp-final {
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+  padding: 80px 32px;
+  text-align: center;
+}
+.lp-final-inner { max-width: 720px; margin: 0 auto; }
+.lp-final h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--cw-white);
+  line-height: 1.15;
+  margin: 0 0 20px;
+}
+.lp-final p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 32px;
+}
+.lp-final-cta-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.lp-final-reassure {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 24px;
+}
+
+/* ─── DISCLAIMER ────────────────────────────────────────────── */
+.lp-disclaimer {
+  background: var(--cw-fed-blue-dark);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 32px 32px 48px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.lp-disclaimer p {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ─── MOBILE ────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .lp-hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .lp-hero h1 { font-size: 2.5rem; }
+  .lp-ann-inner { grid-template-columns: 1fr; gap: 24px; }
+  .lp-ann-photo { max-width: 280px; }
+  .lp-why-grid,
+  .lp-process-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .lp-hero { padding: 40px 20px 56px; }
+  .lp-hero h1 { font-size: 2rem; }
+  .lp-hero-subhead { font-size: 1rem; }
+  .lp-trust { padding: 20px; }
+  .lp-trust-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .lp-setup, .lp-ten, .lp-ann, .lp-why, .lp-process, .lp-faq, .lp-final, .lp-form-wrap { padding: 56px 20px; }
+  .lp-midcta { padding: 48px 20px; }
+  .lp-setup h2, .lp-ten-header h2, .lp-ann-details h2, .lp-why h2, .lp-process h2, .lp-faq h2, .lp-final h2, .lp-midcta h2 {
+    font-size: 1.75rem;
+  }
+  .lp-ten-item { grid-template-columns: 1fr; padding: 24px; gap: 16px; }
+  .lp-ten-body h3 { font-size: 1.25rem; }
+  .lp-form { padding: 24px; }
+  .lp-form-row { grid-template-columns: 1fr; }
+  .lp-hero-cta-row,
+  .lp-final-cta-row { flex-direction: column; align-items: stretch; }
+  .lp-hero-cta-row > *,
+  .lp-final-cta-row > * { width: 100%; }
+}
+
+/* ─── A11Y ──────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .lp-ten-item,
+  .lp-btn-primary,
+  .lp-btn-ghost { transition: none !important; transform: none !important; }
+}
+</style>
+
+{# ═══════════ HERO ═══════════ #}
+<section class="lp-hero" id="top">
+  <div class="lp-hero-inner">
+    <div class="lp-hero-left">
+      <img src="/assets/images/logos/logo-horizontal-white.png" alt="Capital Wealth" class="lp-hero-logo">
+      <span class="lp-hero-eyebrow">{{ lp.hero.eyebrow }}</span>
+      <h1>
+        {{ lp.hero.headline_a }}
+        <em>{{ lp.hero.headline_emph }}</em>
+        {{ lp.hero.headline_b }}
+      </h1>
+      <p class="lp-hero-subhead">{{ lp.hero.subhead }}</p>
+      <p class="lp-hero-lede">{{ lp.hero.lede }}</p>
+      <div class="lp-hero-cta-row">
+        <a href="#book-review" class="lp-btn-primary" data-cta="primary">
+          {{ lp.hero.primary_cta }} →
+        </a>
+        <a href="#get-checklist" class="lp-btn-ghost" data-cta="secondary">
+          {{ lp.hero.secondary_cta }}
+        </a>
+      </div>
+      <p class="lp-hero-micro">{{ lp.hero.microcopy }}</p>
+    </div>
+
+    <div class="lp-hero-right">
+      <div class="lp-hero-ann-card">
+        <img src="/assets/images/photos/federal/ann-werts-headshot.jpg" alt="Ann Werts presenting at the Weber State Federal Benefits Workshop" class="ann-photo" loading="eager" width="480" height="600">
+        <h3 class="ann-name">{{ lp.ann_bio.name }}</h3>
+        <p class="ann-title">{{ lp.ann_bio.title }}</p>
+        <div class="ann-book">
+          <img src="/assets/images/fedtelligence-book-cover.jpg" alt="FedTelligence 2.0 book cover" width="56" height="84" style="width: 56px; height: auto; border-radius: 4px; flex-shrink: 0;" loading="lazy">
+          <div>
+            <strong>Author, FedTelligence 2.0</strong>
+            <span>The playbook she wishes every new federal hire got on day one.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════ TRUST BAR ═══════════ #}
+<section class="lp-trust" aria-label="Trust indicators">
+  <div class="lp-trust-inner">
+    <div class="lp-trust-seen">
+      <span class="lp-trust-seen-label">As Seen On</span>
+      <div class="lp-trust-seen-items">
+        {% for item in lp.trust_bar.as_seen_on %}<span>{{ item }}</span>{% endfor %}
+      </div>
+    </div>
+    <div class="lp-trust-badges" aria-label="Credentials">
+      {% for badge in lp.trust_bar.badges %}
+        <span class="lp-trust-badge">{{ badge }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ═══════════ SETUP / WHY ═══════════ #}
+<section class="lp-setup">
+  <div class="lp-setup-inner">
+    <span class="lp-eyebrow">{{ lp.setup.eyebrow }}</span>
+    <h2>{{ lp.setup.headline }}</h2>
+    {% for para in lp.setup.body %}
+      <p>{{ para | safe }}</p>
+    {% endfor %}
+    <blockquote class="lp-setup-quote">
+      "{{ lp.setup.pull_quote.text }}"
+      <cite>— {{ lp.setup.pull_quote.attribution }}</cite>
+    </blockquote>
+  </div>
+</section>
+
+{# ═══════════ SCROLL SENTINEL (50% tracking) ═══════════ #}
+<div id="lp-scroll-sentinel" aria-hidden="true" style="height: 1px;"></div>
+
+{# ═══════════ THE 10 THINGS ═══════════ #}
+<section class="lp-ten" id="checklist">
+  <div class="lp-ten-inner">
+    <div class="lp-ten-header">
+      <span class="lp-eyebrow">{{ lp.ten_items_intro.eyebrow }}</span>
+      <h2>{{ lp.ten_items_intro.headline }}</h2>
+      <p>{{ lp.ten_items_intro.intro }}</p>
+    </div>
+    <ol class="lp-ten-list">
+      {% for item in lp.ten_items %}
+      <li class="lp-ten-item" id="item-{{ item.n }}">
+        <div class="lp-ten-num" aria-hidden="true">{{ item.n }}</div>
+        <div class="lp-ten-body">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.body | safe }}</p>
+          {% if item.action %}
+            <div class="lp-do-now">
+              <strong>Do now</strong>
+              {{ item.action | safe }}
+            </div>
+          {% endif %}
+          {% if item.pull_quote %}
+            <blockquote class="lp-ten-inline-quote">
+              "{{ item.pull_quote.text }}"
+              <cite>— {{ item.pull_quote.attribution }}</cite>
+            </blockquote>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+{# ═══════════ MIDPAGE CTA ═══════════ #}
+<section class="lp-midcta">
+  <div class="lp-midcta-inner">
+    <h2>{{ lp.midpage_cta.headline | safe }}</h2>
+    <p>{{ lp.midpage_cta.body }}</p>
+    <a href="#book-review" class="lp-btn-primary" data-cta="primary">{{ lp.midpage_cta.cta }} →</a>
+  </div>
+</section>
+
+{# ═══════════ LEAD FORM (dual-variant) ═══════════ #}
+<section class="lp-form-wrap" id="book-review">
+  <div class="lp-form-inner">
+    <div class="lp-form">
+      <div class="lp-form-header">
+        <h2 id="form-heading-review">Book Your Complimentary Benefits Review</h2>
+        <p id="form-sub-review">30 minutes. Your numbers. No products sold.</p>
+        <h2 id="form-heading-checklist" hidden>Email Me the 10-Point Checklist</h2>
+        <p id="form-sub-checklist" hidden>We'll send the full PDF to your inbox. No phone call required.</p>
+      </div>
+
+      <div class="lp-form-tabs" role="tablist" aria-label="Choose what you want">
+        <button type="button" class="lp-form-tab" role="tab" id="tab-review" aria-selected="true" aria-controls="form-panel" data-variant="review">
+          Book the Review
+        </button>
+        <button type="button" class="lp-form-tab" role="tab" id="tab-checklist" aria-selected="false" aria-controls="form-panel" data-variant="checklist">
+          Just the Checklist
+        </button>
+      </div>
+
+      <form id="lp-10things-form" novalidate role="tabpanel" id="form-panel" aria-labelledby="tab-review">
+        <div class="lp-form-row">
+          <div class="lp-form-group">
+            <label class="lp-form-label" for="lp-firstname">First Name</label>
+            <input class="lp-form-input" type="text" id="lp-firstname" name="firstName" required autocomplete="given-name">
+          </div>
+          <div class="lp-form-group">
+            <label class="lp-form-label" for="lp-lastname">Last Name</label>
+            <input class="lp-form-input" type="text" id="lp-lastname" name="lastName" required autocomplete="family-name">
+          </div>
+        </div>
+
+        <div class="lp-form-group">
+          <label class="lp-form-label" for="lp-email">Email Address</label>
+          <input class="lp-form-input" type="email" id="lp-email" name="email" required autocomplete="email">
+        </div>
+
+        {# Review-only fields #}
+        <div class="lp-form-review-only">
+          <div class="lp-form-group">
+            <label class="lp-form-label" for="lp-phone">Phone Number</label>
+            <input class="lp-form-input" type="tel" id="lp-phone" name="phone" autocomplete="tel" inputmode="tel">
+          </div>
+
+          <div class="lp-form-row">
+            <div class="lp-form-group">
+              <label class="lp-form-label" for="lp-agency">Federal Agency</label>
+              <input class="lp-form-input" type="text" id="lp-agency" name="agency" placeholder="e.g. VA, DoD, USPS">
+            </div>
+            <div class="lp-form-group">
+              <label class="lp-form-label" for="lp-state">State</label>
+              <select class="lp-form-select" id="lp-state" name="state">
+                <option value="">Select…</option>
+                <option value="UT">Utah</option>
+                <option value="WY">Wyoming</option>
+                <option value="ID">Idaho</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="lp-form-group">
+            <label class="lp-form-label" for="lp-timeline">Retirement Timeline</label>
+            <select class="lp-form-select" id="lp-timeline" name="retirementTimeline">
+              <option value="">Select…</option>
+              <option value="Within 12 months">Within 12 months</option>
+              <option value="1–3 years">1–3 years</option>
+              <option value="3–5 years">3–5 years</option>
+              <option value="5+ years">5+ years</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </div>
+        </div>
+
+        {# Honeypot #}
+        <div class="lp-form-honey" aria-hidden="true">
+          <label for="lp-website">Website</label>
+          <input type="text" id="lp-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        {# Hidden tracking fields (populated by JS on mount) #}
+        <input type="hidden" name="source" value="lp-10-things-federal-retirement">
+        <input type="hidden" name="lead_type" id="lp-lead-type" value="10things-review">
+        <input type="hidden" name="landing_page" value="10-things-federal-retirement">
+        <input type="hidden" name="variant" id="lp-variant" value="review">
+        <input type="hidden" name="utm_source" id="lp-utm-source">
+        <input type="hidden" name="utm_medium" id="lp-utm-medium">
+        <input type="hidden" name="utm_campaign" id="lp-utm-campaign">
+        <input type="hidden" name="utm_content" id="lp-utm-content">
+        <input type="hidden" name="utm_term" id="lp-utm-term">
+        <input type="hidden" name="gclid" id="lp-gclid">
+        <input type="hidden" name="fbclid" id="lp-fbclid">
+        <input type="hidden" name="referrer" id="lp-referrer">
+        <input type="hidden" name="submitted_from" id="lp-submitted-from">
+
+        <button type="submit" class="lp-btn-primary lp-form-submit" id="lp-form-submit">
+          <span data-submit-text="review">Book My Review</span>
+          <span data-submit-text="checklist" hidden>Send Me the Checklist</span>
+        </button>
+
+        <p class="lp-form-note">
+          Fiduciary advice. Your data stays with us. We never sell contact info or spam you.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  {# Deep link target for secondary CTA — same form, defaults tab to checklist #}
+  <span id="get-checklist" aria-hidden="true" style="display: block; height: 0;"></span>
+</section>
+
+{# ═══════════ ANN BIO ═══════════ #}
+<section class="lp-ann" id="instructor">
+  <div class="lp-ann-inner">
+    <div class="lp-ann-photo">
+      <img src="/assets/images/photos/federal/ann-werts-headshot.jpg" alt="Ann Werts, Federal Benefits Specialist and author of FedTelligence 2.0" loading="lazy" width="480" height="600">
+    </div>
+    <div class="lp-ann-details">
+      <span class="lp-eyebrow">{{ lp.ann_bio.eyebrow }}</span>
+      <h2>{{ lp.ann_bio.name }}</h2>
+      <p class="lp-ann-subtitle">{{ lp.ann_bio.title }}</p>
+      <p class="lp-ann-bio-text">{{ lp.ann_bio.bio | safe }}</p>
+      <blockquote class="lp-ann-quote">"{{ lp.ann_bio.quote }}"</blockquote>
+    </div>
+  </div>
+</section>
+
+{# ═══════════ WHY CW ═══════════ #}
+<section class="lp-why">
+  <div class="lp-why-inner">
+    <div class="lp-why-header">
+      <span class="lp-eyebrow">{{ lp.why_cw.eyebrow }}</span>
+      <h2>{{ lp.why_cw.headline }}</h2>
+    </div>
+    <div class="lp-why-grid">
+      {% for pillar in lp.why_cw.pillars %}
+      <div class="lp-why-card">
+        <div class="lp-why-card-num">0{{ loop.index }}</div>
+        <h3>{{ pillar.title }}</h3>
+        <p>{{ pillar.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ═══════════ REVIEW PROCESS ═══════════ #}
+<section class="lp-process">
+  <div class="lp-process-inner">
+    <div class="lp-process-header">
+      <span class="lp-eyebrow">{{ lp.review_process.eyebrow }}</span>
+      <h2>{{ lp.review_process.headline }}</h2>
+    </div>
+    <div class="lp-process-grid">
+      {% for step in lp.review_process.steps %}
+      <div class="lp-process-card">
+        <div class="lp-process-step">Step {{ step.n }}</div>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ═══════════ FAQ ═══════════ #}
+<section class="lp-faq" id="faq">
+  <div class="lp-faq-inner">
+    <div class="lp-faq-header">
+      <span class="lp-eyebrow">{{ lp.faq.eyebrow }}</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="lp-faq-list">
+      {% for item in lp.faq.items %}
+      <details class="lp-faq-item">
+        <summary class="lp-faq-summary">{{ item.q }}</summary>
+        <p class="lp-faq-answer">{{ item.a }}</p>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ═══════════ FINAL CTA ═══════════ #}
+<section class="lp-final">
+  <div class="lp-final-inner">
+    <span class="lp-eyebrow" style="color: #ffd9a1;">{{ lp.final_cta.eyebrow }}</span>
+    <h2>{{ lp.final_cta.headline }}</h2>
+    <p>{{ lp.final_cta.body }}</p>
+    <div class="lp-final-cta-row">
+      <a href="#book-review" class="lp-btn-primary" data-cta="primary">{{ lp.final_cta.primary_cta }} →</a>
+      <a href="#get-checklist" class="lp-btn-ghost" data-cta="secondary">{{ lp.final_cta.secondary_cta }}</a>
+    </div>
+    <p class="lp-final-reassure">{{ lp.final_cta.reassurance }}</p>
+  </div>
+</section>
+
+{# ═══════════ DISCLAIMER ═══════════ #}
+<footer class="lp-disclaimer">
+  <p>{{ lp.disclaimer }}</p>
+</footer>
+
+{# ═══════════ JSON-LD: FAQPage + Article ═══════════ #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in lp.faq.items %}
+    {
+      "@type": "Question",
+      "name": {{ item.q | dump | safe }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | dump | safe }}
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The 10 Things You Can Do Right Now to Get Ready for Federal Retirement",
+  "description": "The 10 moves federal employees in Utah, Wyoming, and Idaho should make before retirement. Pulled from Ann Werts' April 9, 2026 Weber State workshop.",
+  "author": {
+    "@type": "Person",
+    "name": "Ann Werts",
+    "description": "Federal Benefits Specialist; Author, FedTelligence 2.0"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Capital Wealth",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/images/logos/logo-horizontal-color.png"
+    }
+  },
+  "datePublished": "2026-04-09",
+  "dateModified": "2026-04-17",
+  "image": "{{ site.url }}/assets/images/photos/federal/american-flag-hero.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}/l/10-things-federal-retirement/"
+  }
+}
+</script>
+
+{# ═══════════ JS: tracking, UTM capture, form, accordion ═══════════ #}
+<script>
+(function () {
+  'use strict';
+
+  var STORAGE_KEY = 'cw_lp_10things_attrib';
+
+  // ─── UTM / attribution capture ─────────────────────────────
+  function captureAttribution() {
+    var params = new URLSearchParams(window.location.search);
+    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'];
+    var captured = {};
+
+    // Start from stored (sessionStorage) so nav between sections doesn't lose anchors from initial load
+    try {
+      var stored = sessionStorage.getItem(STORAGE_KEY);
+      if (stored) captured = JSON.parse(stored) || {};
+    } catch (e) { /* ignore */ }
+
+    keys.forEach(function (k) {
+      var v = params.get(k);
+      if (v) captured[k] = v;
+    });
+
+    if (!captured.referrer && document.referrer) captured.referrer = document.referrer;
+
+    try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(captured)); } catch (e) { /* ignore */ }
+
+    // Stamp hidden inputs
+    keys.forEach(function (k) {
+      var el = document.getElementById('lp-' + k.replace('_', '-'));
+      if (el && captured[k]) el.value = captured[k];
+    });
+    var refEl = document.getElementById('lp-referrer');
+    if (refEl) refEl.value = captured.referrer || '';
+    var srcEl = document.getElementById('lp-submitted-from');
+    if (srcEl) srcEl.value = window.location.pathname;
+  }
+
+  // ─── GA4 / dataLayer + Meta ViewContent on load ────────────
+  function trackPageView() {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'lp_10things_view' });
+    if (typeof fbq === 'function') {
+      fbq('track', 'ViewContent', {
+        content_name: 'lp_10things',
+        content_category: 'Federal Benefits'
+      });
+    }
+  }
+
+  // ─── 50% scroll tracker (IntersectionObserver) ─────────────
+  function trackScrollDepth() {
+    var sentinel = document.getElementById('lp-scroll-sentinel');
+    if (!sentinel || !('IntersectionObserver' in window)) return;
+    var fired = false;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !fired) {
+          fired = true;
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: 'lp_10things_scroll_50' });
+          io.disconnect();
+        }
+      });
+    });
+    io.observe(sentinel);
+  }
+
+  // ─── CTA click tracking ────────────────────────────────────
+  function trackCtaClicks() {
+    document.querySelectorAll('[data-cta]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'lp_10things_cta_click',
+          cta: el.getAttribute('data-cta')
+        });
+      });
+    });
+  }
+
+  // ─── Form variant switching ────────────────────────────────
+  function initFormTabs() {
+    var tabReview = document.getElementById('tab-review');
+    var tabChecklist = document.getElementById('tab-checklist');
+    var reviewOnlyBlock = document.querySelector('.lp-form-review-only');
+    var reviewOnlyInputs = reviewOnlyBlock ? reviewOnlyBlock.querySelectorAll('input, select') : [];
+    var variantInput = document.getElementById('lp-variant');
+    var leadTypeInput = document.getElementById('lp-lead-type');
+    var headingReview = document.getElementById('form-heading-review');
+    var subReview = document.getElementById('form-sub-review');
+    var headingChecklist = document.getElementById('form-heading-checklist');
+    var subChecklist = document.getElementById('form-sub-checklist');
+    var submitReview = document.querySelector('[data-submit-text="review"]');
+    var submitChecklist = document.querySelector('[data-submit-text="checklist"]');
+    var phoneInput = document.getElementById('lp-phone');
+
+    function setVariant(variant) {
+      var isReview = variant === 'review';
+      if (tabReview) tabReview.setAttribute('aria-selected', isReview ? 'true' : 'false');
+      if (tabChecklist) tabChecklist.setAttribute('aria-selected', isReview ? 'false' : 'true');
+      if (reviewOnlyBlock) reviewOnlyBlock.style.display = isReview ? '' : 'none';
+      // Phone is required for the review variant only
+      if (phoneInput) {
+        if (isReview) phoneInput.setAttribute('required', 'required');
+        else phoneInput.removeAttribute('required');
+      }
+      if (headingReview) headingReview.hidden = !isReview;
+      if (subReview) subReview.hidden = !isReview;
+      if (headingChecklist) headingChecklist.hidden = isReview;
+      if (subChecklist) subChecklist.hidden = isReview;
+      if (submitReview) submitReview.hidden = !isReview;
+      if (submitChecklist) submitChecklist.hidden = isReview;
+      if (variantInput) variantInput.value = variant;
+      if (leadTypeInput) leadTypeInput.value = '10things-' + variant;
+    }
+
+    if (tabReview) tabReview.addEventListener('click', function () { setVariant('review'); });
+    if (tabChecklist) tabChecklist.addEventListener('click', function () { setVariant('checklist'); });
+
+    // Default: review, but switch to checklist when arriving via #get-checklist
+    function syncVariantFromHash() {
+      if (window.location.hash === '#get-checklist') setVariant('checklist');
+    }
+    window.addEventListener('hashchange', syncVariantFromHash);
+    syncVariantFromHash();
+  }
+
+  // ─── Form submit ───────────────────────────────────────────
+  function initForm() {
+    var form = document.getElementById('lp-10things-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var variantInput = document.getElementById('lp-variant');
+      var variant = variantInput ? variantInput.value : 'review';
+      var submitBtn = document.getElementById('lp-form-submit');
+
+      // Native validation first
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      submitBtn.disabled = true;
+      var originalHtml = submitBtn.innerHTML;
+      submitBtn.innerHTML = 'Sending…';
+
+      var formData = new FormData(form);
+      var data = {};
+      formData.forEach(function (value, key) { data[key] = value; });
+
+      fetch('/api/submit-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (result) {
+        if (result.success) {
+          // dataLayer
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'lp_10things_form_submit',
+            form: variant
+          });
+          // Meta pixel Lead
+          if (typeof fbq === 'function') {
+            fbq('track', 'Lead', {
+              content_name: 'lp_10things',
+              content_category: variant,
+              value: variant === 'review' ? 50 : 10,
+              currency: 'USD'
+            });
+          }
+          var dest = variant === 'review'
+            ? '/l/10-things-federal-retirement/ty-review/'
+            : '/l/10-things-federal-retirement/ty-checklist/';
+          window.location.href = dest;
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalHtml;
+          alert(result.error || 'Something went wrong. Please try again.');
+        }
+      })
+      .catch(function (err) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalHtml;
+        console.error('Form submit error:', err);
+        alert('Something went wrong. Please try again, or call us at 801.210.2800.');
+      });
+    });
+  }
+
+  // ─── Smooth scroll for same-page anchors ───────────────────
+  function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href');
+        if (id.length < 2) return;
+        var el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.pushState(null, '', id);
+          // Dispatch hashchange so form-variant sync runs
+          window.dispatchEvent(new HashChangeEvent('hashchange'));
+        }
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    captureAttribution();
+    trackPageView();
+    trackScrollDepth();
+    trackCtaClicks();
+    initFormTabs();
+    initForm();
+    initSmoothScroll();
+  });
+})();
+</script>
