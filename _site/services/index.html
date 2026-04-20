@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K6XJQ9FG');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Advisory Services | Retirement Planning | Capital Wealth</title>
@@ -14,10 +22,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/services/">
     <meta property="og:image" content="https://www.capitalwealth.com/assets/images/photos/CWA-Mountain-Couple-home-header.webp">
+    
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://www.capitalwealth.com/assets/images/photos/CWA-Mountain-Couple-home-header.webp">
+    
     
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +57,7 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) — GA4 + Google Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNE17HRDX8"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -55,12 +65,17 @@
       gtag('js', new Date());
       gtag('config', 'G-XNE17HRDX8');
       gtag('config', 'G-LD4VE3SQNT');
+      gtag('config', 'AW-18091003527'); // Google Ads — Capital Wealth (402-760-5627)
     </script>
 
     <!-- Main styles (service subpages, federal benefits, etc.) -->
     <link rel="stylesheet" href="/assets/css/main.css">
     <!-- Finpay-inspired styles -->
     <link rel="stylesheet" href="/assets/css/finpay-inspired.css">
+    <!-- New glass header (Antigravity-inspired) — loaded AFTER finpay to override -->
+    <link rel="stylesheet" href="/assets/css/header-redesign.css">
+    <!-- Homepage redesign overlay — unifies homepage with glass header aesthetic -->
+    <link rel="stylesheet" href="/assets/css/homepage-redesign.css">
     
     <!-- Schema JSON-LD: Organization + LocalBusiness + FinancialService -->
     <script type="application/ld+json">
@@ -282,1120 +297,921 @@
     
     
     
+
+    
 </head>
 <body>
-    <!-- Finpay-inspired header -->
-    <header class="finpay-header">
-        <div class="container">
-            <nav class="finpay-nav">
-                <div class="finpay-nav-logo">
-                    <a href="/">
-                        <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="height: 44px; width: auto;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6XJQ9FG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ========= NEW GLASS HEADER (Antigravity-inspired) ========= -->
+    <header class="cwh-shell" id="cwhShell">
+        <div class="cwh-inner">
+            <a href="/" class="cwh-brand" aria-label="Capital Wealth home">
+                <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cwh-brand-logo">
+            </a>
+
+            <nav class="cwh-nav" aria-label="Primary">
+
+                <!-- Retirement Services -->
+                <div class="cwh-nav-item">
+                    <a href="/services/" class="cwh-trigger" aria-expanded="false">
+                        Retirement Services
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </a>
-                </div>
-                
-                <!-- Desktop Navigation -->
-                <div class="finpay-nav-links desktop-nav">
-                    <div class="nav-dropdown" style="position: relative;">
-                        <a href="/services/" class="finpay-nav-link" style="display: flex; align-items: center; gap: 4px;">
-                            Services 
-                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <div class="nav-dropdown-menu" style="
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            background: white;
-                            border-radius: 12px;
-                            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-                            padding: 1rem;
-                            min-width: 280px;
-                            opacity: 0;
-                            visibility: hidden;
-                            transform: translateY(-10px);
-                            transition: all 0.2s ease;
-                            z-index: 1000;">
-                            <a href="/services/tax-planning/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Tax-Efficient Strategies</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Minimize taxes with smart withdrawal sequencing.</span>
-                            </a>
-                            <a href="/services/portfolio-management/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Portfolio Management</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Diversified portfolios aligned with your timeline.</span>
-                            </a>
-                            <a href="/services/retirement-money-map/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Retirement Money Map</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">A clear plan for every dollar in retirement.</span>
-                            </a>
-                            <a href="/services/social-security/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Social Security Optimization</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Time your benefits to maximize lifetime income.</span>
-                            </a>
-                            <a href="/services/estate-planning/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Estate & Legacy Planning</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Protect your family and pass wealth efficiently.</span>
-                            </a>
+                    <div class="cwh-mega">
+                        <div class="cwh-mega-inner">
+                            <div class="cwh-mega-intro">
+                                <h3>Retirement Services</h3>
+                                <h2>A written plan for every dollar of your retirement.</h2>
+                                <p>Tax-efficient withdrawal sequencing, Social Security timing, portfolio design, and estate planning — built to work as one integrated strategy.</p>
+                                <a href="/services/" class="cwh-glass-btn">
+                                    See our approach
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <div class="cwh-mega-cols">
+                                <div class="cwh-mega-col">
+                                    <h4>Core Services</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/retirement-money-map/" class="cwh-mega-link"><span class="cwh-mega-title">Retirement Money Map</span><span class="cwh-mega-desc">A clear plan for every dollar in retirement</span></a>
+                                        <a href="/services/tax-planning/" class="cwh-mega-link"><span class="cwh-mega-title">Tax-Efficient Strategies</span><span class="cwh-mega-desc">Minimize taxes with smart withdrawal sequencing</span></a>
+                                        <a href="/services/portfolio-management/" class="cwh-mega-link"><span class="cwh-mega-title">Portfolio Management</span><span class="cwh-mega-desc">Diversified portfolios aligned with your timeline</span></a>
+                                        <a href="/services/social-security/" class="cwh-mega-link"><span class="cwh-mega-title">Social Security Optimization</span><span class="cwh-mega-desc">Time your benefits to maximize lifetime income</span></a>
+                                        <a href="/services/estate-planning/" class="cwh-mega-link"><span class="cwh-mega-title">Estate &amp; Legacy Planning</span><span class="cwh-mega-desc">Protect your family and pass wealth efficiently</span></a>
+                                    </div>
+                                </div>
+                                <div class="cwh-mega-col">
+                                    <h4>Specialty</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/401k-ira-rollover/" class="cwh-mega-link"><span class="cwh-mega-title">401(k) &amp; IRA Rollovers</span><span class="cwh-mega-desc">Move old accounts into a better plan</span></a>
+                                        <a href="/services/roth-conversions/" class="cwh-mega-link"><span class="cwh-mega-title">Roth Conversions</span><span class="cwh-mega-desc">Tax-free growth and withdrawal strategy</span></a>
+                                        <a href="/services/medicare-irmaa/" class="cwh-mega-link"><span class="cwh-mega-title">Medicare &amp; IRMAA</span><span class="cwh-mega-desc">Avoid hidden premium surcharges</span></a>
+                                        <a href="/services/annuities/" class="cwh-mega-link"><span class="cwh-mega-title">Annuities</span><span class="cwh-mega-desc">When they fit — and when they don't</span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <style>
-                            .nav-dropdown:hover .nav-dropdown-menu {
-                                opacity: 1 !important;
-                                visibility: visible !important;
-                                transform: translateY(0) !important;
-                            }
-                            .nav-dropdown-menu a:hover {
-                                background: #f5f5f5 !important;
-                            }
-                        </style>
-                    </div>
-                    <a href="/services/federal-benefits/" class="finpay-nav-link">Federal</a>
-                    <a href="/blog/" class="finpay-nav-link">Blog</a>
-                    <a href="/about/" class="finpay-nav-link">Our Team</a>
-                    <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
-                </div>
-                
-                <div class="finpay-nav-right">
-                    <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="client-login-cta desktop-cta">Client Login</a>
-                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Visit</a>
-                    
-                    <!-- Mobile Menu Button (GullStack Pattern) -->
-                    <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
                     </div>
                 </div>
+
+                <!-- Federal Benefits -->
+                <div class="cwh-nav-item">
+                    <a href="/services/federal-benefits/" class="cwh-trigger" aria-expanded="false">
+                        Federal Benefits
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <div class="cwh-mega">
+                        <div class="cwh-mega-inner">
+                            <div class="cwh-mega-intro">
+                                <h3>Federal Employee Benefits</h3>
+                                <h2>FERS done right. By people who actually know the system.</h2>
+                                <p>Pension timing, TSP strategy, FEHB vs. Medicare, survivor elections, and the mistakes that cost federal employees hundreds of thousands in retirement.</p>
+                                <a href="/services/federal-benefits/" class="cwh-glass-btn">
+                                    Explore federal hub
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <div class="cwh-mega-cols">
+                                <div class="cwh-mega-col">
+                                    <h4>Plan Your Benefits</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/federal-benefits/fers-retirement/" class="cwh-mega-link"><span class="cwh-mega-title">FERS Retirement</span><span class="cwh-mega-desc">Pension timing and computation</span></a>
+                                        <a href="/services/federal-benefits/fers-supplement/" class="cwh-mega-link"><span class="cwh-mega-title">FERS Supplement</span><span class="cwh-mega-desc">Bridge income before Social Security</span></a>
+                                        <a href="/services/federal-benefits/tsp-planning/" class="cwh-mega-link"><span class="cwh-mega-title">TSP Planning</span><span class="cwh-mega-desc">Optimize your Thrift Savings Plan</span></a>
+                                        <a href="/services/federal-benefits/fehb-retirement/" class="cwh-mega-link"><span class="cwh-mega-title">FEHB in Retirement</span><span class="cwh-mega-desc">FEHB vs. Medicare at 65</span></a>
+                                        <a href="/services/federal-benefits/fegli/" class="cwh-mega-link"><span class="cwh-mega-title">FEGLI Analysis</span><span class="cwh-mega-desc">Life insurance choices for federal retirees</span></a>
+                                    </div>
+                                </div>
+                                <div class="cwh-mega-col">
+                                    <h4>Tools &amp; Resources</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/federal-benefits/fers-calculator/" class="cwh-mega-link"><span class="cwh-mega-title">FERS Pension Calculator</span><span class="cwh-mega-desc">Estimate your pension in 60 seconds</span></a>
+                                        <a href="/services/federal-benefits/federal-retirement-taxes/" class="cwh-mega-link"><span class="cwh-mega-title">Federal Retirement Taxes</span><span class="cwh-mega-desc">State and federal tax strategy</span></a>
+                                        <a href="/services/federal-benefits/federal-retirement-checklist/" class="cwh-mega-link"><span class="cwh-mega-title">Retirement Checklist</span><span class="cwh-mega-desc">The essential pre-retirement walkthrough</span></a>
+                                        <a href="/l/federal-benefits-workshop/" class="cwh-mega-link"><span class="cwh-mega-title">Federal Benefits Workshop</span><span class="cwh-mega-desc">In-person and online training</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDBA -->
+                <div class="cwh-nav-item">
+                    <a href="/services/sdba/" class="cwh-trigger" aria-expanded="false">
+                        SDBA
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <div class="cwh-mega">
+                        <div class="cwh-mega-inner">
+                            <div class="cwh-mega-intro">
+                                <h3>Self-Directed Brokerage Accounts</h3>
+                                <h2>Take control of the money in your 401(k).</h2>
+                                <p>If your employer plan offers an SDBA window, you can move beyond the default fund menu into a professionally managed portfolio — without leaving your plan.</p>
+                                <a href="/services/sdba/" class="cwh-glass-btn">
+                                    Learn how SDBA works
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <div class="cwh-mega-cols">
+                                <div class="cwh-mega-col">
+                                    <h4>How SDBA Works</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/sdba/" class="cwh-mega-link"><span class="cwh-mega-title">SDBA Overview</span><span class="cwh-mega-desc">What it is and how to tell if you qualify</span></a>
+                                    </div>
+                                </div>
+                                <div class="cwh-mega-col">
+                                    <h4>Get Started</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/contact/" class="cwh-mega-link"><span class="cwh-mega-title">Schedule a Visit</span><span class="cwh-mega-desc">Talk to an advisor about your plan</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/about/" class="cwh-trigger">Our Team</a>
+                <a href="/resources/" class="cwh-trigger">Resources</a>
             </nav>
+
+            <div class="cwh-actions">
+                <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="cwh-ghost">Client Login</a>
+                <a href="/contact/" class="cwh-glass-btn cwh-primary">
+                    Schedule a Visit
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="cwh-ham" id="cwhHam" aria-label="Open menu" aria-expanded="false" aria-controls="cwhDrawer">
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Mobile Navigation (GullStack Pattern) - MOVED OUTSIDE HEADER TO FIX POSITIONING BUG -->
-    <div class="mobile-nav" id="mobileNav">
-        <button class="mobile-nav-close" onclick="closeMobileMenu()" aria-label="Close menu">&times;</button>
-        <div class="mobile-nav-group">
-            <span class="mobile-nav-label">Services</span>
-            <a href="/services/" onclick="closeMobileMenu()">All Services</a>
-            <a href="/services/tax-planning/" onclick="closeMobileMenu()">Tax-Efficient Strategies</a>
-            <a href="/services/portfolio-management/" onclick="closeMobileMenu()">Portfolio Management</a>
-            <a href="/services/retirement-money-map/" onclick="closeMobileMenu()">Retirement Money Map</a>
-            <a href="/services/social-security/" onclick="closeMobileMenu()">Social Security Optimization</a>
-            <a href="/services/estate-planning/" onclick="closeMobileMenu()">Estate & Legacy Planning</a>
+    <!-- Mobile Drawer -->
+    <div class="cwh-scrim" id="cwhScrim"></div>
+    <aside class="cwh-drawer" id="cwhDrawer" aria-hidden="true" aria-label="Mobile navigation">
+        <div class="cwh-drawer-head">
+            <a href="/" class="cwh-brand" aria-label="Capital Wealth home">
+                <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cwh-brand-logo">
+            </a>
+            <button class="cwh-drawer-close" id="cwhDrawerClose" aria-label="Close menu">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
         </div>
-        <a href="/services/federal-benefits/" onclick="closeMobileMenu()">Federal</a>
-        <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-        <a href="/about/" onclick="closeMobileMenu()">Our Team</a>
-        <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
-        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Visit</a>
-        <a href="https://login.orionadvisor.com/login.html" onclick="closeMobileMenu()" target="_blank" rel="noopener" class="client-login-mobile">Client Login</a>
-    </div>
+        <div class="cwh-drawer-body">
 
-    <main style="padding-top: 64px;">
+            <!-- Retirement Services -->
+            <div class="cwh-acc">
+                <button class="cwh-acc-trig" aria-expanded="false">
+                    Retirement Services
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="cwh-acc-panel">
+                    <div class="cwh-acc-inner">
+                        <p class="cwh-acc-desc">A written plan for every dollar of retirement — tax sequencing, Social Security timing, portfolio design, and estate planning working as one.</p>
+                        <div class="cwh-acc-label">Core Services</div>
+                        <a href="/services/retirement-money-map/" class="cwh-acc-link"><span class="cwh-acc-link-title">Retirement Money Map</span></a>
+                        <a href="/services/tax-planning/" class="cwh-acc-link"><span class="cwh-acc-link-title">Tax-Efficient Strategies</span></a>
+                        <a href="/services/portfolio-management/" class="cwh-acc-link"><span class="cwh-acc-link-title">Portfolio Management</span></a>
+                        <a href="/services/social-security/" class="cwh-acc-link"><span class="cwh-acc-link-title">Social Security Optimization</span></a>
+                        <a href="/services/estate-planning/" class="cwh-acc-link"><span class="cwh-acc-link-title">Estate &amp; Legacy Planning</span></a>
+                        <div class="cwh-acc-label">Specialty</div>
+                        <a href="/services/401k-ira-rollover/" class="cwh-acc-link"><span class="cwh-acc-link-title">401(k) &amp; IRA Rollovers</span></a>
+                        <a href="/services/roth-conversions/" class="cwh-acc-link"><span class="cwh-acc-link-title">Roth Conversions</span></a>
+                        <a href="/services/medicare-irmaa/" class="cwh-acc-link"><span class="cwh-acc-link-title">Medicare &amp; IRMAA</span></a>
+                        <a href="/services/annuities/" class="cwh-acc-link"><span class="cwh-acc-link-title">Annuities</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Federal Benefits -->
+            <div class="cwh-acc">
+                <button class="cwh-acc-trig" aria-expanded="false">
+                    Federal Benefits
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="cwh-acc-panel">
+                    <div class="cwh-acc-inner">
+                        <p class="cwh-acc-desc">FERS done right — pension timing, TSP strategy, FEHB vs. Medicare, and survivor elections. By people who know the system.</p>
+                        <div class="cwh-acc-label">Plan Your Benefits</div>
+                        <a href="/services/federal-benefits/" class="cwh-acc-link"><span class="cwh-acc-link-title">Federal Benefits Overview</span></a>
+                        <a href="/services/federal-benefits/fers-retirement/" class="cwh-acc-link"><span class="cwh-acc-link-title">FERS Retirement</span></a>
+                        <a href="/services/federal-benefits/fers-supplement/" class="cwh-acc-link"><span class="cwh-acc-link-title">FERS Supplement</span></a>
+                        <a href="/services/federal-benefits/tsp-planning/" class="cwh-acc-link"><span class="cwh-acc-link-title">TSP Planning</span></a>
+                        <a href="/services/federal-benefits/fehb-retirement/" class="cwh-acc-link"><span class="cwh-acc-link-title">FEHB Retirement</span></a>
+                        <a href="/services/federal-benefits/fegli/" class="cwh-acc-link"><span class="cwh-acc-link-title">FEGLI Analysis</span></a>
+                        <div class="cwh-acc-label">Tools &amp; Resources</div>
+                        <a href="/services/federal-benefits/fers-calculator/" class="cwh-acc-link"><span class="cwh-acc-link-title">FERS Pension Calculator</span></a>
+                        <a href="/services/federal-benefits/federal-retirement-taxes/" class="cwh-acc-link"><span class="cwh-acc-link-title">Federal Retirement Taxes</span></a>
+                        <a href="/services/federal-benefits/federal-retirement-checklist/" class="cwh-acc-link"><span class="cwh-acc-link-title">Retirement Checklist</span></a>
+                        <a href="/l/federal-benefits-workshop/" class="cwh-acc-link"><span class="cwh-acc-link-title">Federal Benefits Workshop</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDBA -->
+            <div class="cwh-acc">
+                <button class="cwh-acc-trig" aria-expanded="false">
+                    SDBA
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="cwh-acc-panel">
+                    <div class="cwh-acc-inner">
+                        <p class="cwh-acc-desc">Take control of the money in your 401(k). Move beyond the default fund menu into a professionally managed portfolio — without leaving your plan.</p>
+                        <a href="/services/sdba/" class="cwh-acc-link"><span class="cwh-acc-link-title">SDBA Overview</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/about/" class="cwh-flat-link">Our Team
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="/resources/" class="cwh-flat-link">Resources
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+        <div class="cwh-drawer-foot">
+            <a href="/contact/" class="cwh-glass-btn cwh-primary">
+                Schedule a Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="cwh-ghost">Client Login</a>
+        </div>
+    </aside>
+
+    <script>
+    (function(){
+        var shell = document.getElementById('cwhShell');
+        var ham   = document.getElementById('cwhHam');
+        var draw  = document.getElementById('cwhDrawer');
+        var scrim = document.getElementById('cwhScrim');
+        var close = document.getElementById('cwhDrawerClose');
+
+        if (shell) {
+            window.addEventListener('scroll', function(){
+                shell.classList.toggle('cwh-scrolled', window.scrollY > 12);
+            }, { passive: true });
+        }
+
+        function open(){
+            draw.classList.add('cwh-active');
+            scrim.classList.add('cwh-active');
+            ham.classList.add('cwh-active');
+            ham.setAttribute('aria-expanded', 'true');
+            draw.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+        function shut(){
+            draw.classList.remove('cwh-active');
+            scrim.classList.remove('cwh-active');
+            ham.classList.remove('cwh-active');
+            ham.setAttribute('aria-expanded', 'false');
+            draw.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        if (ham)   ham.addEventListener('click', function(){ draw.classList.contains('cwh-active') ? shut() : open(); });
+        if (close) close.addEventListener('click', shut);
+        if (scrim) scrim.addEventListener('click', shut);
+        document.addEventListener('keydown', function(e){ if (e.key === 'Escape') shut(); });
+
+        document.querySelectorAll('.cwh-acc-trig').forEach(function(trig){
+            trig.addEventListener('click', function(){
+                var acc = trig.closest('.cwh-acc');
+                var isOpen = acc.classList.contains('cwh-open');
+                document.querySelectorAll('.cwh-acc').forEach(function(a){
+                    a.classList.remove('cwh-open');
+                    var t = a.querySelector('.cwh-acc-trig');
+                    if (t) t.setAttribute('aria-expanded', 'false');
+                });
+                if (!isOpen) {
+                    acc.classList.add('cwh-open');
+                    trig.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <!-- Government Contractor Bar — shown only on federal-oriented pages -->
+    
+    
+
+    <main>
         
 <style>
 /* ═══════════════════════════════════════════════════════════
-   SERVICES PAGE - EDITORIAL SOPHISTICATION DESIGN
+   SERVICES HUB — 3-PILLAR OVERVIEW
    ═══════════════════════════════════════════════════════════ */
 
-/* COMPACT EDITORIAL HEADER */
-.svc-page-header {
+/* ---------- HERO ---------- */
+.svch-hero {
   background: var(--surface);
-  padding: var(--space-8) 0 var(--space-4);
+  padding: clamp(4rem, 8vw, 7rem) 0 clamp(3rem, 6vw, 5rem);
   text-align: center;
 }
 
-.svc-page-header-inner {
-  max-width: 720px;
+.svch-hero-inner {
+  max-width: 760px;
   margin: 0 auto;
-  padding: 0 var(--space-12);
+  padding: 0 var(--space-6, 1.5rem);
 }
 
-.svc-page-eyebrow {
+.svch-eyebrow {
   font-family: var(--font-mono);
   font-size: 0.7rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   color: var(--secondary);
-  margin-bottom: var(--space-4);
+  margin-bottom: 1.25rem;
+  display: block;
 }
 
-.svc-page-title {
+.svch-hero-title {
   font-family: var(--font-serif-display);
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
   font-weight: 300;
   font-style: italic;
-  line-height: 1.12;
+  line-height: 1.1;
   color: var(--primary);
-  margin: 0 0 var(--space-4);
+  margin: 0 0 1.25rem;
 }
 
-.svc-page-subtitle {
+.svch-hero-sub {
   font-family: var(--font-body);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--on-surface-variant);
-  max-width: 560px;
+  max-width: 580px;
   margin: 0 auto;
 }
 
-.hero-cta {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
-  border: none;
+/* ---------- SECTION SHARED ---------- */
+.svch-section {
+  padding: clamp(4rem, 7vw, 6rem) 0;
+}
+
+.svch-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+}
+
+.svch-section--surface { background: var(--surface); }
+.svch-section--white   { background: #fff; }
+.svch-section--navy    { background: var(--primary); }
+
+.svch-section-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.svch-section-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--primary);
+  margin: 0 0 1rem;
+}
+
+.svch-section-body {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+  max-width: 560px;
+}
+
+/* ---------- PILLAR 1 — TRADITIONAL RETIREMENT ---------- */
+.svch-trad-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.svch-trad-left {
+  border-left: 3px solid var(--secondary);
+  padding-left: 1.75rem;
+}
+
+.svch-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.75rem 0 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.svch-check-list li {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--on-surface);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.svch-check-list li::before {
+  content: "\2713";
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.svch-questions-card {
+  background: #fff;
+  border: 1px solid var(--outline-variant, #dde3ea);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.svch-questions-card h3 {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--on-surface-variant);
+  margin: 0 0 1.25rem;
+}
+
+.svch-q-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--outline-variant, #dde3ea);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--primary);
+  transition: color 0.2s;
+}
+
+.svch-q-link:last-child { border-bottom: none; }
+.svch-q-link:hover { color: var(--secondary); }
+
+.svch-q-link::after {
+  content: "\2192";
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.svch-q-link:hover::after { transform: translateX(3px); }
+
+/* ---------- PILLAR 2 — FEDERAL BENEFITS ---------- */
+.svch-fed-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.svch-fed-img-wrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.svch-fed-img-wrap img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  filter: saturate(1);
+  transition: filter 0.4s ease;
+}
+
+.svch-fed-img-wrap:hover img {
+  filter: grayscale(1);
+}
+
+.svch-fed-book-overlay {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
+  background: rgba(1, 15, 38, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-radius: 12px;
-  padding: var(--space-4) var(--space-8);
-  color: var(--surface-container-lowest);
+  padding: 1rem 1.25rem;
+  color: #fff;
+}
+
+.svch-fed-book-overlay small {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.svch-fed-book-overlay span {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.svch-fed-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.svch-fed-sub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.svch-fed-sub-card {
+  background: var(--surface);
+  border: 1px solid var(--outline-variant, #dde3ea);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.svch-fed-sub-card h4 {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 0.35rem;
+}
+
+.svch-fed-sub-card p {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--on-surface-variant);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.svch-fed-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--secondary);
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: gap 0.2s;
+}
+
+.svch-fed-link:hover { gap: 0.7rem; }
+
+/* ---------- PILLAR 3 — SDBA ---------- */
+.svch-sdba-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: #fff;
+  margin: 0 0 1rem;
+}
+
+.svch-sdba-body {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.7);
+  max-width: 560px;
+  margin-bottom: 2.5rem;
+}
+
+.svch-sdba-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.svch-sdba-card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.svch-sdba-card h4 {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.5rem;
+}
+
+.svch-sdba-card p {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.6);
+  margin: 0;
+  line-height: 1.55;
+}
+
+.svch-sdba-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--secondary);
+  text-decoration: none;
+  transition: gap 0.2s;
+}
+
+.svch-sdba-link:hover { gap: 0.7rem; }
+
+/* ---------- MEDIA LOGOS ---------- */
+.svch-media {
+  background: var(--surface-container-low);
+  padding: clamp(2.5rem, 4vw, 3.5rem) 0;
+}
+
+.svch-media-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+  text-align: center;
+}
+
+.svch-media-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--on-surface-variant);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.svch-media-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  flex-wrap: wrap;
+}
+
+.svch-media-row img {
+  height: 28px;
+  width: auto;
+  opacity: 0.5;
+  filter: grayscale(1);
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+.svch-media-row img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+/* ---------- FINAL CTA ---------- */
+.svch-cta {
+  background: var(--surface);
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  text-align: center;
+}
+
+.svch-cta-inner {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+}
+
+.svch-cta-title {
+  font-family: var(--font-serif-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.15;
+  color: var(--primary);
+  margin: 0 0 1.5rem;
+}
+
+.svch-cta-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.svch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  border-radius: 14px;
   text-decoration: none;
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.9rem;
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-3);
   transition: all 0.3s ease;
 }
 
-.hero-cta:hover {
+.svch-btn--primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+.svch-btn--primary:hover {
   opacity: 0.9;
   transform: translateY(-1px);
 }
 
-/* Chapter Navigation */
-.chapter-nav {
-  position: relative;
-  z-index: 3;
-  background: var(--surface);
-  padding: var(--space-4) 0;
-}
-
-.chapter-nav-inner {
-  max-width: var(--container-xl);
-  margin: 0 auto;
-  padding: 0 var(--space-12);
-  display: flex;
-  gap: var(--space-8);
-  border-bottom: 1px solid var(--outline-variant);
-}
-
-.chapter-tab {
-  padding: var(--space-4) 0;
-  border-bottom: 2px solid transparent;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--on-surface-variant);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.chapter-tab.active {
+.svch-btn--secondary {
+  background: transparent;
   color: var(--primary);
-  border-bottom-color: var(--secondary);
+  border: 1.5px solid var(--primary);
 }
 
-.chapter-tab:hover {
-  color: var(--primary);
-}
-
-/* CHAPTER I CONTENT - Your Retirement, Planned */
-.chapter-i {
-  padding: var(--space-8) 0 var(--space-12);
-  background: var(--surface);
-}
-
-.chapter-i-inner {
-  max-width: var(--container-xl);
-  margin: 0 auto;
-  padding: 0 var(--space-12);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-12);
-  align-items: center;
-}
-
-.chapter-i-left {
-  position: relative;
-}
-
-.chapter-i-image {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  border-radius: var(--radius-lg);
-}
-
-.quote-card {
-  position: absolute;
-  bottom: -2rem;
-  right: -2rem;
-  background: rgba(255,255,255,0.45);
-  backdrop-filter: blur(24px);
-  border: 1px solid rgba(255,255,255,0.3);
-  border-radius: 12px;
-  padding: var(--space-8);
-  max-width: 300px;
-}
-
-.quote-text {
-  font-family: var(--font-serif-display);
-  font-style: italic;
-  font-size: 1.125rem;
-  color: var(--primary);
-  margin-bottom: var(--space-4);
-}
-
-.quote-author {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--on-surface-variant);
-}
-
-.chapter-i-right h2 {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 400;
-  color: var(--primary);
-  margin-bottom: var(--space-8);
-}
-
-.chapter-i-text {
-  color: var(--on-surface-variant);
-  line-height: 1.7;
-  margin-bottom: var(--space-6);
-}
-
-.chapter-i-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-6);
-  margin-top: var(--space-12);
-}
-
-.service-mini-card {
-  background: var(--surface-container-low);
-  border-radius: var(--radius-lg);
-  padding: var(--space-8);
-  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-  text-decoration: none;
-  color: inherit;
-  border-bottom: 3px solid transparent;
-  position: relative;
-  overflow: hidden;
-}
-
-.service-mini-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: var(--secondary);
-  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.service-mini-card:hover {
-  background: var(--surface-container-lowest);
-  box-shadow: 0 12px 40px rgba(0, 56, 112, 0.08);
-  transform: translateY(-4px);
-}
-
-.service-mini-card:hover::after {
-  width: 100%;
-}
-
-.service-mini-card:hover .mini-card-icon {
-  stroke: var(--primary);
-  transform: scale(1.1);
-}
-
-.service-mini-card:hover .mini-card-title {
-  color: var(--secondary);
-}
-
-.mini-card-icon {
-  width: 32px;
-  height: 32px;
-  stroke: var(--secondary);
-  margin-bottom: var(--space-4);
-  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.mini-card-title {
-  font-family: var(--font-serif-display);
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--primary);
-  margin-bottom: var(--space-3);
-  transition: color 0.3s ease;
-}
-
-.mini-card-desc {
-  font-size: 0.875rem;
-  color: var(--on-surface-variant);
-  line-height: 1.6;
-}
-
-/* CHAPTER II - PROTECTION & GROWTH BENTO */
-.chapter-ii {
-  padding: var(--space-8) 0 var(--space-12);
-  background: var(--surface-container-low);
-}
-
-.chapter-ii-inner {
-  max-width: var(--container-xl);
-  margin: 0 auto;
-  padding: 0 var(--space-12);
-}
-
-.chapter-ii-header {
-  text-align: center;
-  margin-bottom: var(--space-8);
-}
-
-.chapter-ii-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--secondary);
-  margin-bottom: var(--space-4);
-}
-
-.chapter-ii h2 {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 400;
-  color: var(--primary);
-}
-
-.bento-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto auto;
-  gap: var(--space-6);
-}
-
-.bento-large {
-  grid-column: 1;
-  grid-row: 1 / 3;
-  background: linear-gradient(135deg, 
-    rgba(0, 56, 112, 0.8) 0%, 
-    rgba(25, 79, 144, 0.6) 100%),
-    url('/assets/images/photos/wide-services-capital-wealth.jpg') center/cover;
-  border-radius: var(--radius-lg);
-  padding: var(--space-20);
-  color: var(--surface-container-lowest);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 380px;
-}
-
-.bento-large h3 {
-  font-family: var(--font-serif-display);
-  font-size: 1.75rem;
-  font-weight: 400;
-  color: var(--surface-container-lowest);
-  margin-bottom: var(--space-6);
-}
-
-.bento-large p {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  margin-bottom: var(--space-8);
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.bento-cta {
-  background: rgba(255,255,255,0.45);
-  backdrop-filter: blur(24px);
-  border: 1px solid rgba(255,255,255,0.3);
-  border-radius: 12px;
-  padding: var(--space-4) var(--space-6);
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-3);
-  align-self: flex-start;
-}
-
-.bento-side {
-  background: var(--surface-container-lowest);
-  border-radius: var(--radius-lg);
-  padding: var(--space-8);
-}
-
-.bento-side h3 {
-  font-family: var(--font-serif-display);
-  font-size: 1.5rem;
-  color: var(--primary);
-  margin-bottom: var(--space-4);
-}
-
-.bento-side-icon {
-  width: 40px;
-  height: 40px;
-  stroke: var(--secondary);
-  margin-bottom: var(--space-6);
-}
-
-.bento-dark {
+.svch-btn--secondary:hover {
   background: var(--primary);
-  color: rgba(255, 255, 255, 0.9);
+  color: #fff;
 }
 
-.bento-dark h3 {
-  color: var(--surface-container-lowest);
-}
-
-.bento-dark .bento-side-icon {
-  stroke: var(--secondary);
-}
-
-.bento-dark p {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.bento-dark a {
-  color: var(--secondary);
-}
-
-.bento-stats {
-  background: var(--surface-container-lowest);
-  border-radius: var(--radius-lg);
-  padding: var(--space-10);
-  grid-column: 1 / -1;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-6);
-}
-
-.stat-item {
-  text-align: center;
-}
-
-.stat-number {
-  font-family: var(--font-serif-display);
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: var(--primary);
-  display: block;
-}
-
-.stat-label {
-  font-size: 0.875rem;
-  color: var(--on-surface-variant);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* CHAPTER III - LEGACY & ESTATE */
-.chapter-iii {
-  padding: var(--space-8) 0 var(--space-12);
-  background: var(--surface);
-}
-
-.chapter-iii-inner {
-  max-width: var(--container-xl);
-  margin: 0 auto;
-  padding: 0 var(--space-12);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-10);
-  align-items: stretch;
-}
-
-.chapter-iii-left {
-  padding-right: var(--space-8);
-}
-
-.chapter-iii-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--secondary);
-  margin-bottom: var(--space-4);
-}
-
-.chapter-iii h2 {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2rem, 3vw, 3rem);
-  font-weight: 400;
-  color: var(--primary);
-  margin-bottom: var(--space-6);
-}
-
-.legacy-list {
-  list-style: none;
-  padding: 0;
-}
-
-.legacy-item {
-  display: flex;
-  gap: var(--space-6);
-  margin-bottom: var(--space-6);
-  padding-bottom: var(--space-6);
-  border-bottom: 1px solid var(--outline-variant);
-}
-
-.legacy-item:last-child {
-  border-bottom: none;
-}
-
-.legacy-number {
-  font-family: var(--font-mono);
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--secondary);
-  min-width: 60px;
-}
-
-.legacy-content h3 {
-  font-family: var(--font-serif-display);
-  font-size: 1.5rem;
-  color: var(--primary);
-  margin-bottom: var(--space-4);
-}
-
-.legacy-content p {
-  color: var(--on-surface-variant);
-  line-height: 1.6;
-}
-
-.chapter-iii-right {
-  position: relative;
-}
-
-.chapter-iii-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: var(--radius-lg);
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-}
-
-.chapter-iii-image:hover {
-  filter: grayscale(0%);
-}
-
-.stat-bubble {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  background: rgba(255,255,255,0.45);
-  backdrop-filter: blur(24px);
-  border: 1px solid rgba(255,255,255,0.3);
-  border-radius: 12px;
-  width: 120px;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.bubble-number {
-  font-family: var(--font-serif-display);
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--primary);
-}
-
-.bubble-label {
-  font-size: 0.75rem;
-  color: var(--on-surface-variant);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* PULL QUOTE SECTION */
-.pull-quote-section {
-  padding: var(--space-12) 0;
-  background: var(--primary);
-  color: var(--surface-container-lowest);
-}
-
-.pull-quote-inner {
-  max-width: var(--container-lg);
-  margin: 0 auto;
-  padding: 0 var(--space-12);
-  text-align: center;
-}
-
-.pull-quote {
-  font-family: var(--font-serif-display);
-  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.3;
-  margin-bottom: var(--space-6);
-  color: white;
-}
-
-.pull-quote-author {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--secondary);
-}
-
-/* FINAL CTA */
-.final-cta {
-  padding: var(--space-20) 0;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
-  color: var(--surface-container-lowest);
-  text-align: center;
-}
-
-.final-cta-inner {
-  max-width: var(--container-lg);
-  margin: 0 auto;
-  padding: 0 var(--space-12);
-}
-
-.final-cta h2 {
-  font-family: var(--font-serif-display);
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 400;
-  color: var(--surface-container-lowest);
-  margin-bottom: var(--space-8);
-}
-
-.final-cta p {
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: var(--space-12);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* RESPONSIVE */
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
-  .chapter-i-inner,
-  .chapter-iii-inner {
-    grid-template-columns: 1fr;
-    gap: var(--space-16);
-  }
-  
-  .bento-grid {
+  .svch-trad-grid,
+  .svch-fed-grid {
     grid-template-columns: 1fr;
   }
-  
-  .chapter-i-grid {
+
+  .svch-sdba-cards {
     grid-template-columns: 1fr;
   }
-  
-  .stats-grid {
+
+  .svch-fed-sub-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-6);
-  }
-  
-  .chapter-nav-inner {
-    flex-direction: column;
-    gap: var(--space-4);
-  }
-  
-  .quote-card,
-  .stat-bubble {
-    position: static;
-    margin-top: var(--space-8);
   }
 }
 </style>
 
+<!-- ════════════ HERO ════════════ -->
+<section class="svch-hero">
+  <div class="svch-hero-inner">
+    <span class="svch-eyebrow">Fiduciary Grade Advisory</span>
+    <h1 class="svch-hero-title">Curating Wealth for Life's Next Chapter</h1>
+    <p class="svch-hero-sub">
+      Move beyond transactional planning. Our advisory practice integrates tax strategy,
+      investment management, and risk mitigation into a single, coordinated wealth plan
+      designed to outlast every market cycle.
+    </p>
+  </div>
+</section>
 
+<!-- ════════════ PILLAR 1 — TRADITIONAL RETIREMENT ════════════ -->
+<section class="svch-section svch-section--surface">
+  <div class="svch-container">
+    <div class="svch-trad-grid">
 
-
-
-<section id="chapter-i" class="chapter-i">
-  <div class="chapter-i-inner">
-    <div class="chapter-i-left">
-      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-autumn-walk.jpg" alt="Couple planning retirement together" class="chapter-i-image">
-      <div class="quote-card">
-        <p class="quote-text">"Will your money last as long as you do?"</p>
-        <div class="quote-author">Our job is to make sure the answer is yes</div>
+      <!-- Left: Content -->
+      <div class="svch-trad-left">
+        <span class="svch-section-eyebrow">Pillar One</span>
+        <h2 class="svch-section-title">Traditional Retirement Planning</h2>
+        <p class="svch-section-body">
+          Our Retirement Money Map brings clarity to every decision you face in the decade
+          before and after retirement. From tax-bracket management to estate coordination,
+          every piece works together.
+        </p>
+        <ul class="svch-check-list">
+          <li>Tax Planning &amp; Bracket Management</li>
+          <li>Social Security Optimization</li>
+          <li>Estate &amp; Legacy Planning</li>
+          <li>Medicare &amp; IRMAA Strategy</li>
+        </ul>
       </div>
-    </div>
-    <div class="chapter-i-right">
-      <h1>Your Retirement, Planned.</h1>
-      <p class="chapter-i-text">Most financial advisors stop at portfolio management. We start there. Capital Wealth builds comprehensive retirement plans that coordinate your income, taxes, healthcare, estate, and investments into a single strategy.</p>
-      <p class="chapter-i-text">We specialize in the transition from saving to spending — the most complex financial shift most families will ever face. With 25+ years of experience and over 650 clients served, our approach is built on real outcomes, not theoretical models.</p>
-      <p class="chapter-i-text">Every plan we build starts with the same question: <em>Will your money last as long as you do?</em> Our job is to make sure the answer is yes.</p>
-      
-      <div class="chapter-i-grid">
-        <a href="/services/retirement-money-map/" class="service-mini-card">
-          <svg class="mini-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M9 17H7A5 5 0 0 1 7 7h2m3 10h4a5 5 0 0 0 0-10h-4m-4 5h10"/>
-          </svg>
-          <h3 class="mini-card-title">Retirement Money Map</h3>
-          <p class="mini-card-desc">Visual roadmap showing exactly how your money will work throughout retirement</p>
-        </a>
-        <a href="/services/tax-planning/" class="service-mini-card">
-          <svg class="mini-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-          </svg>
-          <h3 class="mini-card-title">Tax-Efficient Withdrawal Strategies</h3>
-          <p class="mini-card-desc">Coordinate your income sources to minimize lifetime tax burden</p>
-        </a>
+
+      <!-- Right: Common Questions -->
+      <div class="svch-questions-card">
+        <h3>Common Questions We Answer</h3>
+        <a href="/services/social-security/" class="svch-q-link">When should I claim Social Security?</a>
+        <a href="/services/401k-ira-rollover/" class="svch-q-link">Should I roll over my 401(k)?</a>
+        <a href="/services/medicare-irmaa/" class="svch-q-link">How do I avoid IRMAA surcharges?</a>
+        <a href="/services/roth-conversions/" class="svch-q-link">Is a Roth conversion right for me?</a>
       </div>
+
     </div>
   </div>
 </section>
 
-
-<section id="chapter-ii" class="chapter-ii">
-  <div class="chapter-ii-inner">
-    <div class="chapter-ii-header">
-      <div class="chapter-ii-eyebrow">WHAT WE DO</div>
-      <h2>Core Services</h2>
-    </div>
-    
-    <div class="bento-grid">
-      <div class="bento-large">
-        <h3>Specialized Services</h3>
-        <p>We specialize in retirement income planning and tax optimization for families with $500K+ in retirement savings.</p>
-        <a href="/services/" class="bento-cta">
-          View All Services
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-          </svg>
-        </a>
-      </div>
-      
-      <div class="bento-side">
-        <svg class="bento-side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M12 2v6m6.4-7L17 12l5.4 1M8 21l4-7-4-7M2 12h6"/>
-        </svg>
-        <h3>Portfolio Management</h3>
-        <p>Professional investment management coordinated with your retirement income strategy for optimal outcomes.</p>
-        <a href="/services/portfolio-management/">Learn More →</a>
-      </div>
-      
-      <div class="bento-side bento-dark">
-        <svg class="bento-side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M12.5 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/>
-        </svg>
-        <h3>Social Security Optimization</h3>
-        <p>Maximize your lifetime Social Security benefits with strategic claiming timing and coordination with other income sources.</p>
-        <a href="/services/social-security/" style="color: var(--secondary);">Optimize Benefits →</a>
-      </div>
-      
-      <div class="bento-stats">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <span class="stat-number">650+</span>
-            <span class="stat-label">Clients</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">25+</span>
-            <span class="stat-label">Years</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Fiduciary</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">Full</span>
-            <span class="stat-label">Service</span>
-          </div>
+<!-- ════════════ PILLAR 2 — FEDERAL BENEFITS ════════════ -->
+<section class="meet-mike" style="padding: 4rem 2rem; background: var(--surface);">
+    <div class="mike-content" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center;">
+        <div class="mike-photo-container" style="position: relative;">
+            <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Founder of Capital Wealth" style="width: 100%; border-radius: 16px; filter: grayscale(0.15); box-shadow: 0 20px 50px rgba(0, 56, 112, 0.08);">
+            <div style="position: absolute; bottom: -1.5rem; right: -1.5rem; background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); padding: 1.5rem 2rem; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.35); max-width: 300px; box-shadow: 0 8px 32px rgba(0, 56, 112, 0.06);">
+                <p style="font-family: var(--font-serif-display); font-style: italic; margin: 0; color: var(--primary); font-size: 1rem; line-height: 1.5;">"Federal employees work their entire lives for their country. My mission is to ensure their country's benefits system works just as hard for them in retirement."</p>
+            </div>
         </div>
+
+        <div>
+            <span style="font-family: var(--font-mono); font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--on-surface-variant); display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0.9rem; background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 16px; margin-bottom: 1rem;"><span style="width:6px;height:6px;border-radius:50%;background:var(--secondary);display:inline-block;"></span>THE SPECIALIST</span>
+            <h2 style="font-family: var(--font-serif-display); font-size: 2.5rem; font-style: italic; font-weight: 300; color: var(--primary); margin-bottom: 0.35rem;">Authentic Fiduciary Expertise for Federal Employees</h2>
+            <p style="font-size: 1rem; color: var(--on-surface-variant); margin-bottom: 1.5rem;">Led by Mike Stevens, Author of <em>The Federal Benefits Gap</em></p>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-bottom: 1.5rem;">
+                <div style="font-size: 0.85rem; color: var(--on-surface-variant); display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(12px); border: 1px solid rgba(194, 198, 210, 0.25); border-radius: 16px;"><span style="width:5px;height:5px;border-radius:50%;background:var(--secondary);flex-shrink:0;display:inline-block;"></span>Host, Retire Right Radio</div>
+                <div style="font-size: 0.85rem; color: var(--on-surface-variant); display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.85rem; background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(12px); border: 1px solid rgba(194, 198, 210, 0.25); border-radius: 16px;"><span style="width:5px;height:5px;border-radius:50%;background:var(--secondary);flex-shrink:0;display:inline-block;"></span>Author, <em>The Federal Benefits Gap</em></div>
+            </div>
+
+            <p style="font-size: 0.95rem; line-height: 1.7; color: var(--on-surface); margin-bottom: 1.5rem;">Mike Stevens has dedicated two decades to navigating the intricate corridors of government retirement systems. His approach doesn't just manage assets — it orchestrates a comprehensive financial legacy. Unlike generic, seminar-driven models that treat federal employees as leads, Capital Wealth provides deep-dive fiduciary expertise.</p>
+            
+            <a href="/services/federal-benefits/" style="display: inline-block; padding: 0.85rem 2rem; border-radius: 16px; text-decoration: none; font-weight: 600; font-size: 0.9rem; background: rgba(0, 56, 112, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(0, 56, 112, 0.3); color: white; transition: all 0.3s ease;">Explore Federal Benefits</a>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════ PILLAR 3 — SDBA ════════════ -->
+<section class="svch-section svch-section--navy">
+  <div class="svch-container">
+    <span class="svch-section-eyebrow" style="color:var(--secondary);">The Opportunity</span>
+    <h2 class="svch-sdba-title">Unlock Your Current Workplace 401(k)</h2>
+    <p class="svch-sdba-body">
+      A Self-Directed Brokerage Account lets you invest beyond your plan's default menu —
+      without leaving your employer. We manage the window so you get institutional-quality
+      strategy inside your existing retirement plan.
+    </p>
+
+    <div class="svch-sdba-cards">
+      <div class="svch-sdba-card">
+        <h4>Broader Access</h4>
+        <p>Move beyond target-date funds to a diversified portfolio of ETFs, individual equities, and alternatives.</p>
       </div>
+      <div class="svch-sdba-card">
+        <h4>Active Management</h4>
+        <p>We monitor and rebalance your brokerage window alongside your total wealth picture.</p>
+      </div>
+      <div class="svch-sdba-card">
+        <h4>No Plan Change</h4>
+        <p>Your account stays with your current employer plan — no rollover, no disruption to payroll contributions.</p>
+      </div>
+    </div>
+
+    <a href="/services/sdba/" class="svch-sdba-link">Learn about SDBA management &rarr;</a>
+  </div>
+</section>
+
+<!-- ════════════ MEDIA LOGOS ════════════ -->
+<section class="svch-media">
+  <div class="svch-media-inner">
+    <span class="svch-media-label">As Featured In</span>
+    <div class="svch-media-row">
+      <img src="/assets/images/media/ksl.png" alt="KSL" loading="lazy" />
+      <img src="/assets/images/media/fortune.png" alt="Fortune" loading="lazy" />
+      <img src="/assets/images/media/cnn-money.png" alt="CNN Money" loading="lazy" />
+      <img src="/assets/images/media/knrs-2.png" alt="KNRS" loading="lazy" />
+      <img src="/assets/images/media/newstalk.png" alt="News Talk" loading="lazy" />
+      <img src="/assets/images/media/KIDLogo-small.png" alt="KID" loading="lazy" />
     </div>
   </div>
 </section>
 
-
-<section id="chapter-iii" class="chapter-iii">
-  <div class="chapter-iii-inner">
-    <div class="chapter-iii-left">
-      <div class="chapter-iii-eyebrow">HOW IT WORKS</div>
-      <h2>Our Planning Process</h2>
-      <ul class="legacy-list">
-        <li class="legacy-item">
-          <div class="legacy-number">01</div>
-          <div class="legacy-content">
-            <h3>Discovery & Analysis</h3>
-            <p>We gather all your financial information and analyze your current situation, goals, and risk tolerance. This includes reviewing your accounts, income sources, tax situation, insurance, and estate documents to build a complete picture.</p>
-          </div>
-        </li>
-        <li class="legacy-item">
-          <div class="legacy-number">02</div>
-          <div class="legacy-content">
-            <h3>Strategy Development</h3>
-            <p>We create a personalized retirement plan with tax-efficient withdrawal strategies, income optimization, Social Security timing, and healthcare cost projections — all coordinated into a single, actionable strategy.</p>
-          </div>
-        </li>
-        <li class="legacy-item">
-          <div class="legacy-number">03</div>
-          <div class="legacy-content">
-            <h3>Implementation</h3>
-            <p>We execute your plan with proper account structures, investment allocations, beneficiary designations, and legal documentation. Every piece is coordinated so nothing falls through the cracks.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="chapter-iii-right">
-      <img src="/assets/images/photos/retirement/capitalwealth-retirement-couple-beach.jpg" alt="Couple enjoying retirement at the beach" class="chapter-iii-image">
-      <div class="stat-bubble">
-        <div class="bubble-number">$500K+</div>
-        <div class="bubble-label">Minimum</div>
-      </div>
+<!-- ════════════ FINAL CTA ════════════ -->
+<section class="svch-cta">
+  <div class="svch-cta-inner">
+    <h2 class="svch-cta-title">Ready to curate your wealth journey?</h2>
+    <div class="svch-cta-btns">
+      <a href="/contact/" class="svch-btn svch-btn--primary">Start a Conversation</a>
+      <a href="/book/" class="svch-btn svch-btn--secondary">Book a Consultation</a>
     </div>
   </div>
 </section>
 
-
-<section class="chapter-ii" style="background: var(--surface-container-lowest);">
-  <div class="chapter-ii-inner">
-    <div class="chapter-ii-header">
-      <div class="chapter-ii-eyebrow">WHO WE SERVE</div>
-      <h2>Built for Families Approaching — or Already In — Retirement</h2>
-    </div>
-    
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(194,198,210,0.2); border-bottom: 3px solid var(--primary); margin-bottom: var(--space-12);">
-      
-      <div style="background: var(--surface-container-lowest); padding: var(--space-8); display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: background 0.3s ease;">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">1</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.2rem; color: var(--primary); margin-bottom: var(--space-3);">Retired or Close To It</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">You&#39;re approaching retirement or already retired and need strategic income planning to make your savings last.</p>
-        </div>
-        <a href="/who-we-serve/" style="color: var(--secondary); font-weight: 600; text-decoration: none; font-size: 0.85rem; margin-top: var(--space-4);">Learn More →</a>
-      </div>
-      
-      <div style="background: var(--surface-container-lowest); padding: var(--space-8); display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: background 0.3s ease;">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">2</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.2rem; color: var(--primary); margin-bottom: var(--space-3);">Diligent Savers ($500K+)</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">You&#39;ve built substantial savings and need professional guidance to optimize your retirement strategy.</p>
-        </div>
-        <a href="/who-we-serve/" style="color: var(--secondary); font-weight: 600; text-decoration: none; font-size: 0.85rem; margin-top: var(--space-4);">Learn More →</a>
-      </div>
-      
-      <div style="background: var(--surface-container-lowest); padding: var(--space-8); display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: background 0.3s ease;">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">3</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.2rem; color: var(--primary); margin-bottom: var(--space-3);">Tax-Conscious Planners</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">You understand the impact of taxes on retirement and want strategies to minimize your tax burden.</p>
-        </div>
-        <a href="/who-we-serve/" style="color: var(--secondary); font-weight: 600; text-decoration: none; font-size: 0.85rem; margin-top: var(--space-4);">Learn More →</a>
-      </div>
-      
-    </div>
-
-    <div class="chapter-ii-header">
-      <div class="chapter-ii-eyebrow">SPECIALIZED PLANNING</div>
-      <h2>Specialized Services</h2>
-    </div>
-    
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8);">
-      <div style="background: var(--surface-container-low); border-radius: var(--radius-lg); padding: var(--space-8);">
-        <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-6);">
-          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">FERS Planning</span>
-          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">TSP Optimization</span>
-          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">FEGLI Analysis</span>
-        </div>
-        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; color: var(--primary); margin-bottom: var(--space-4);">Federal Employee Benefits</h3>
-        <p style="color: var(--on-surface-variant); line-height: 1.6; margin-bottom: var(--space-8);">Specialized strategies for federal employees including FERS optimization, TSP management, FEGLI analysis, and coordination with other federal benefits. We're one of the few firms that specialize in federal retirement.</p>
-        <a href="/services/federal-benefits/" class="hero-cta" style="display: inline-flex;">Federal Benefits Planning →</a>
-      </div>
-      
-      <div style="background: var(--surface-container-low); border-radius: var(--radius-lg); padding: var(--space-8);">
-        <div style="display: flex; gap: var(--space-3); margin-bottom: var(--space-6);">
-          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">Visual Planning</span>
-          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">Cash Flow Analysis</span>
-          <span style="background: var(--secondary); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-default); font-size: 0.75rem; font-weight: 600;">Scenario Planning</span>
-        </div>
-        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; color: var(--primary); margin-bottom: var(--space-4);">Retirement Money Map</h3>
-        <p style="color: var(--on-surface-variant); line-height: 1.6; margin-bottom: var(--space-8);">Our signature planning tool that creates a visual roadmap of your financial future, showing exactly how your money will work throughout retirement. A clear plan for every dollar — income, expenses, taxes, and healthcare, all coordinated.</p>
-        <a href="/services/retirement-money-map/" class="hero-cta" style="display: inline-flex;">See the Money Map →</a>
-      </div>
-    </div>
-
-
-  </div>
-</section>
-
-
-<section class="chapter-ii">
-  <div class="chapter-ii-inner">
-    <div class="chapter-ii-header">
-      <div class="chapter-ii-eyebrow">ALL SERVICES</div>
-      <h2>Complete Service Portfolio</h2>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(194,198,210,0.2); border-bottom: 3px solid var(--primary);">
-      
-      <a href="/services/tax-planning/" style="background: var(--surface-container-lowest); padding: var(--space-8); text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='var(--surface-container-lowest)'">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">1</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.15rem; color: var(--primary); margin-bottom: var(--space-3); font-weight: 400;">Tax-Efficient Retirement Strategies</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">Minimize taxes in retirement with strategic planning and optimization.</p>
-        </div>
-        <span style="display: inline-flex; align-items: center; gap: 0.4rem; margin-top: var(--space-4); padding: 0.4rem 1rem; background: rgba(255,255,255,0.45); backdrop-filter: blur(12px); border: 1px solid rgba(194,198,210,0.3); border-radius: 10px; color: var(--primary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; width: fit-content;">Learn More →</span>
-      </a>
-      
-      <a href="/services/portfolio-management/" style="background: var(--surface-container-lowest); padding: var(--space-8); text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='var(--surface-container-lowest)'">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">2</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.15rem; color: var(--primary); margin-bottom: var(--space-3); font-weight: 400;">Comprehensive Portfolio Management</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">Professional investment management aligned with your retirement goals.</p>
-        </div>
-        <span style="display: inline-flex; align-items: center; gap: 0.4rem; margin-top: var(--space-4); padding: 0.4rem 1rem; background: rgba(255,255,255,0.45); backdrop-filter: blur(12px); border: 1px solid rgba(194,198,210,0.3); border-radius: 10px; color: var(--primary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; width: fit-content;">Learn More →</span>
-      </a>
-      
-      <a href="/services/retirement-money-map/" style="background: var(--surface-container-lowest); padding: var(--space-8); text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='var(--surface-container-lowest)'">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">3</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.15rem; color: var(--primary); margin-bottom: var(--space-3); font-weight: 400;">Personalized Retirement Money Map</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">Our proprietary planning tool creates your personalized financial blueprint.</p>
-        </div>
-        <span style="display: inline-flex; align-items: center; gap: 0.4rem; margin-top: var(--space-4); padding: 0.4rem 1rem; background: rgba(255,255,255,0.45); backdrop-filter: blur(12px); border: 1px solid rgba(194,198,210,0.3); border-radius: 10px; color: var(--primary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; width: fit-content;">Learn More →</span>
-      </a>
-      
-      <a href="/services/401k-ira-rollover/" style="background: var(--surface-container-lowest); padding: var(--space-8); text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='var(--surface-container-lowest)'">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">4</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.15rem; color: var(--primary); margin-bottom: var(--space-3); font-weight: 400;">401(k) &amp; IRA Rollovers</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">Strategic rollover guidance to maximize your retirement savings.</p>
-        </div>
-        <span style="display: inline-flex; align-items: center; gap: 0.4rem; margin-top: var(--space-4); padding: 0.4rem 1rem; background: rgba(255,255,255,0.45); backdrop-filter: blur(12px); border: 1px solid rgba(194,198,210,0.3); border-radius: 10px; color: var(--primary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; width: fit-content;">Learn More →</span>
-      </a>
-      
-      <a href="/services/social-security/" style="background: var(--surface-container-lowest); padding: var(--space-8); text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='var(--surface-container-lowest)'">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">5</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.15rem; color: var(--primary); margin-bottom: var(--space-3); font-weight: 400;">Social Security Optimization</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">Maximize your Social Security benefits with strategic claiming strategies.</p>
-        </div>
-        <span style="display: inline-flex; align-items: center; gap: 0.4rem; margin-top: var(--space-4); padding: 0.4rem 1rem; background: rgba(255,255,255,0.45); backdrop-filter: blur(12px); border: 1px solid rgba(194,198,210,0.3); border-radius: 10px; color: var(--primary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; width: fit-content;">Learn More →</span>
-      </a>
-      
-      <a href="/services/medicare-irmaa/" style="background: var(--surface-container-lowest); padding: var(--space-8); text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='var(--surface-container-lowest)'">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">6</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.15rem; color: var(--primary); margin-bottom: var(--space-3); font-weight: 400;">Medicare &amp; IRMAA Planning</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">Navigate Medicare options and minimize IRMAA surcharges.</p>
-        </div>
-        <span style="display: inline-flex; align-items: center; gap: 0.4rem; margin-top: var(--space-4); padding: 0.4rem 1rem; background: rgba(255,255,255,0.45); backdrop-filter: blur(12px); border: 1px solid rgba(194,198,210,0.3); border-radius: 10px; color: var(--primary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; width: fit-content;">Learn More →</span>
-      </a>
-      
-      <a href="/services/estate-planning/" style="background: var(--surface-container-lowest); padding: var(--space-8); text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='var(--surface-container-lowest)'">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">7</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.15rem; color: var(--primary); margin-bottom: var(--space-3); font-weight: 400;">Estate &amp; Legacy Planning</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">Protect and transfer your wealth to future generations efficiently.</p>
-        </div>
-        <span style="display: inline-flex; align-items: center; gap: 0.4rem; margin-top: var(--space-4); padding: 0.4rem 1rem; background: rgba(255,255,255,0.45); backdrop-filter: blur(12px); border: 1px solid rgba(194,198,210,0.3); border-radius: 10px; color: var(--primary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; width: fit-content;">Learn More →</span>
-      </a>
-      
-      <a href="/services/federal-benefits/" style="background: var(--surface-container-lowest); padding: var(--space-8); text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='var(--surface-container-lowest)'">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--secondary); display: block; margin-bottom: var(--space-3);">8</span>
-          <h3 style="font-family: var(--font-serif-display); font-size: 1.15rem; color: var(--primary); margin-bottom: var(--space-3); font-weight: 400;">Federal Employee Benefits</h3>
-          <p style="font-size: 0.85rem; color: var(--on-surface-variant); line-height: 1.6;">Specialized planning for federal employees and their unique benefits.</p>
-        </div>
-        <span style="display: inline-flex; align-items: center; gap: 0.4rem; margin-top: var(--space-4); padding: 0.4rem 1rem; background: rgba(255,255,255,0.45); backdrop-filter: blur(12px); border: 1px solid rgba(194,198,210,0.3); border-radius: 10px; color: var(--primary); font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; width: fit-content;">Learn More →</span>
-      </a>
-      
-    </div>
-  </div>
-</section>
-
-
-<section class="pull-quote-section">
-  <div class="pull-quote-inner">
-    <p class="pull-quote">A proven framework that turns complexity into clarity.</p>
-    <div class="pull-quote-author">Capital Wealth Planning Process</div>
-  </div>
-</section>
-
-
-<section class="chapter-ii" style="background: var(--surface-container-lowest);">
-  <div class="chapter-ii-inner">
-    <div class="chapter-ii-header">
-      <div class="chapter-ii-eyebrow">GET STARTED</div>
-      <h2>Three Steps to a Better Retirement</h2>
-    </div>
-    
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-12); margin-bottom: var(--space-10);">
-      <div style="text-align: center;">
-        <div style="background: var(--secondary); color: white; width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif-display); font-size: 1.5rem; font-weight: 600; margin: 0 auto var(--space-6) auto;">1</div>
-        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; color: var(--primary); margin-bottom: var(--space-4);">Schedule</h3>
-        <p style="color: var(--on-surface-variant); line-height: 1.6;">Call 801.210.2800 or use our online form to schedule your complimentary initial assessment.</p>
-      </div>
-      <div style="text-align: center;">
-        <div style="background: var(--secondary); color: white; width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif-display); font-size: 1.5rem; font-weight: 600; margin: 0 auto var(--space-6) auto;">2</div>
-        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; color: var(--primary); margin-bottom: var(--space-4);">Meet</h3>
-        <p style="color: var(--on-surface-variant); line-height: 1.6;">We'll discuss your goals, review your current situation, and explore how we can help optimize your retirement plan.</p>
-      </div>
-      <div style="text-align: center;">
-        <div style="background: var(--secondary); color: white; width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif-display); font-size: 1.5rem; font-weight: 600; margin: 0 auto var(--space-6) auto;">3</div>
-        <h3 style="font-family: var(--font-serif-display); font-size: 1.3rem; color: var(--primary); margin-bottom: var(--space-4);">Plan</h3>
-        <p style="color: var(--on-surface-variant); line-height: 1.6;">If we're a good fit, we'll create your personalized retirement strategy using our comprehensive planning process.</p>
-      </div>
-    </div>
-    
-    <div style="text-align: center;">
-      <a href="/contact/" class="hero-cta" style="display: inline-flex;">Schedule Your Free Assessment →</a>
-    </div>
-  </div>
-</section>
-
-
-
-<script>
-(function() {
-  // Smooth scrolling for chapter navigation
-  document.querySelectorAll('.chapter-tab').forEach(function(tab) {
-    tab.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-        
-        // Update active tab
-        document.querySelectorAll('.chapter-tab').forEach(t => t.classList.remove('active'));
-        this.classList.add('active');
-      }
-    });
-  });
-
-  // Update active tab on scroll
-  const sections = ['chapter-i', 'chapter-ii', 'chapter-iii'];
-  window.addEventListener('scroll', function() {
-    let current = '';
-    sections.forEach(function(section) {
-      const element = document.getElementById(section);
-      if (element && element.getBoundingClientRect().top < 200) {
-        current = section;
-      }
-    });
-    
-    if (current) {
-      document.querySelectorAll('.chapter-tab').forEach(function(tab) {
-        tab.classList.remove('active');
-        if (tab.getAttribute('href') === '#' + current) {
-          tab.classList.add('active');
-        }
-      });
-    }
-  });
-})();
-</script>
     </main>
 
     
@@ -1404,18 +1220,7 @@
         <div class="finpay-footer-content">
             <div class="finpay-footer-brand">
                 <a href="/"><img src="/assets/images/logos/logo-horizontal-white.png" alt="Capital Wealth" style="height: 36px; width: auto; margin-bottom: 1rem;"></a>
-                <p style="font-size: 1.1rem; font-weight: 600; color: #FDD25E; margin-bottom: 0.5rem;">Fiduciary. Always.</p>
                 <p>Strategic Income & Tax Planning for Your Retirement</p>
-                <div style="display: flex; gap: 1rem; margin: 1.5rem 0;">
-                    <div class="trust-badge" style="background: rgba(255,255,255,0.1); color: white;">
-                        <strong>Fiduciary</strong><br>
-                        <span style="font-size: 0.75rem;">Always</span>
-                    </div>
-                    <div class="trust-badge" style="background: rgba(255,255,255,0.1); color: white;">
-                        <strong>25+ Years</strong><br>
-                        <span style="font-size: 0.75rem;">Experience</span>
-                    </div>
-                </div>
                 
                 <!-- Contact Info with Real Lehi Address -->
                 <p style="color: #a3a3a3; font-size: 0.875rem; margin-bottom: 1rem;">
@@ -1453,6 +1258,7 @@
                 <a href="/services/federal-benefits/">Federal Overview</a>
                 <a href="/services/federal-benefits/fers-retirement/">FERS Retirement</a>
                 <a href="/services/federal-benefits/tsp-planning/">TSP Planning</a>
+                <a href="/services/federal-benefits/tsp-mutual-fund-window/">TSP Mutual Fund Window</a>
                 <a href="/services/federal-benefits/fegli/">FEGLI Analysis</a>
                 <a href="/services/federal-benefits/fehb-retirement/">FEHB Coordination</a>
                 <a href="/services/federal-benefits/social-security-federal/">SS + Federal</a>
@@ -1463,7 +1269,6 @@
             <div class="finpay-footer-links">
                 <h4>SDBA</h4>
                 <a href="/services/sdba/">SDBA Overview</a>
-                <a href="/services/sdba/tsp-mutual-fund-window/">TSP Mutual Fund Window</a>
                 <a href="/services/sdba/401k-brokerage-window/">401(k) Brokerage Window</a>
                 <a href="/guides/sdba-complete-guide/">SDBA Complete Guide</a>
             </div>
@@ -1480,7 +1285,6 @@
 
             <div class="finpay-footer-links">
                 <h4>Company</h4>
-                <a href="/about/">Our Team</a>
                 <a href="/contact/">Schedule a Visit</a>
                 <a href="/disclosures/">Disclosures</a>
                 <a href="/brand-facts/">Brand Facts</a>
@@ -1489,6 +1293,9 @@
             </div>
         </div>
         
+        
+        
+
         <div class="finpay-footer-bottom">
             <p>&copy; 2026 Capital Wealth. All rights reserved. | Investment advisory services offered through Capital Wealth. Michael Stevens. | <a href="/disclosures/" style="color: #737373;">Important Disclosures</a></p>
         </div>
@@ -1707,7 +1514,7 @@
   right: -2px;
   width: 18px;
   height: 18px;
-  background: #FDD25E;
+  background: #C7A356;
   border-radius: 50%;
   border: 2px solid #fff;
   display: none;
@@ -2076,6 +1883,27 @@
 })();
 </script>
 
+
+    
+    
+    <script type="text/javascript">
+    _linkedin_partner_id = "9922273";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script><script type="text/javascript">
+    (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+    window.lintrk.q=[]}
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})(window.lintrk);
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9922273&fmt=gif" />
+    </noscript>
+    
 
 </body>
 </html>

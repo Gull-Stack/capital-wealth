@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K6XJQ9FG');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Capital Wealth | Schedule Your Visit | Lehi, UT</title>
@@ -14,10 +22,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/contact/">
     <meta property="og:image" content="https://www.capitalwealth.com/assets/images/photos/CWA-Mountain-Couple-home-header.webp">
+    
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://www.capitalwealth.com/assets/images/photos/CWA-Mountain-Couple-home-header.webp">
+    
     
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +57,7 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) — GA4 + Google Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNE17HRDX8"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -55,12 +65,17 @@
       gtag('js', new Date());
       gtag('config', 'G-XNE17HRDX8');
       gtag('config', 'G-LD4VE3SQNT');
+      gtag('config', 'AW-18091003527'); // Google Ads — Capital Wealth (402-760-5627)
     </script>
 
     <!-- Main styles (service subpages, federal benefits, etc.) -->
     <link rel="stylesheet" href="/assets/css/main.css">
     <!-- Finpay-inspired styles -->
     <link rel="stylesheet" href="/assets/css/finpay-inspired.css">
+    <!-- New glass header (Antigravity-inspired) — loaded AFTER finpay to override -->
+    <link rel="stylesheet" href="/assets/css/header-redesign.css">
+    <!-- Homepage redesign overlay — unifies homepage with glass header aesthetic -->
+    <link rel="stylesheet" href="/assets/css/homepage-redesign.css">
     
     <!-- Schema JSON-LD: Organization + LocalBusiness + FinancialService -->
     <script type="application/ld+json">
@@ -282,115 +297,311 @@
     
     
     
+
+    
 </head>
 <body>
-    <!-- Finpay-inspired header -->
-    <header class="finpay-header">
-        <div class="container">
-            <nav class="finpay-nav">
-                <div class="finpay-nav-logo">
-                    <a href="/">
-                        <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="height: 44px; width: auto;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6XJQ9FG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ========= NEW GLASS HEADER (Antigravity-inspired) ========= -->
+    <header class="cwh-shell" id="cwhShell">
+        <div class="cwh-inner">
+            <a href="/" class="cwh-brand" aria-label="Capital Wealth home">
+                <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cwh-brand-logo">
+            </a>
+
+            <nav class="cwh-nav" aria-label="Primary">
+
+                <!-- Retirement Services -->
+                <div class="cwh-nav-item">
+                    <a href="/services/" class="cwh-trigger" aria-expanded="false">
+                        Retirement Services
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </a>
-                </div>
-                
-                <!-- Desktop Navigation -->
-                <div class="finpay-nav-links desktop-nav">
-                    <div class="nav-dropdown" style="position: relative;">
-                        <a href="/services/" class="finpay-nav-link" style="display: flex; align-items: center; gap: 4px;">
-                            Services 
-                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <div class="nav-dropdown-menu" style="
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            background: white;
-                            border-radius: 12px;
-                            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-                            padding: 1rem;
-                            min-width: 280px;
-                            opacity: 0;
-                            visibility: hidden;
-                            transform: translateY(-10px);
-                            transition: all 0.2s ease;
-                            z-index: 1000;">
-                            <a href="/services/tax-planning/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Tax-Efficient Strategies</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Minimize taxes with smart withdrawal sequencing.</span>
-                            </a>
-                            <a href="/services/portfolio-management/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Portfolio Management</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Diversified portfolios aligned with your timeline.</span>
-                            </a>
-                            <a href="/services/retirement-money-map/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Retirement Money Map</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">A clear plan for every dollar in retirement.</span>
-                            </a>
-                            <a href="/services/social-security/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Social Security Optimization</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Time your benefits to maximize lifetime income.</span>
-                            </a>
-                            <a href="/services/estate-planning/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Estate & Legacy Planning</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Protect your family and pass wealth efficiently.</span>
-                            </a>
+                    <div class="cwh-mega">
+                        <div class="cwh-mega-inner">
+                            <div class="cwh-mega-intro">
+                                <h3>Retirement Services</h3>
+                                <h2>A written plan for every dollar of your retirement.</h2>
+                                <p>Tax-efficient withdrawal sequencing, Social Security timing, portfolio design, and estate planning — built to work as one integrated strategy.</p>
+                                <a href="/services/" class="cwh-glass-btn">
+                                    See our approach
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <div class="cwh-mega-cols">
+                                <div class="cwh-mega-col">
+                                    <h4>Core Services</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/retirement-money-map/" class="cwh-mega-link"><span class="cwh-mega-title">Retirement Money Map</span><span class="cwh-mega-desc">A clear plan for every dollar in retirement</span></a>
+                                        <a href="/services/tax-planning/" class="cwh-mega-link"><span class="cwh-mega-title">Tax-Efficient Strategies</span><span class="cwh-mega-desc">Minimize taxes with smart withdrawal sequencing</span></a>
+                                        <a href="/services/portfolio-management/" class="cwh-mega-link"><span class="cwh-mega-title">Portfolio Management</span><span class="cwh-mega-desc">Diversified portfolios aligned with your timeline</span></a>
+                                        <a href="/services/social-security/" class="cwh-mega-link"><span class="cwh-mega-title">Social Security Optimization</span><span class="cwh-mega-desc">Time your benefits to maximize lifetime income</span></a>
+                                        <a href="/services/estate-planning/" class="cwh-mega-link"><span class="cwh-mega-title">Estate &amp; Legacy Planning</span><span class="cwh-mega-desc">Protect your family and pass wealth efficiently</span></a>
+                                    </div>
+                                </div>
+                                <div class="cwh-mega-col">
+                                    <h4>Specialty</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/401k-ira-rollover/" class="cwh-mega-link"><span class="cwh-mega-title">401(k) &amp; IRA Rollovers</span><span class="cwh-mega-desc">Move old accounts into a better plan</span></a>
+                                        <a href="/services/roth-conversions/" class="cwh-mega-link"><span class="cwh-mega-title">Roth Conversions</span><span class="cwh-mega-desc">Tax-free growth and withdrawal strategy</span></a>
+                                        <a href="/services/medicare-irmaa/" class="cwh-mega-link"><span class="cwh-mega-title">Medicare &amp; IRMAA</span><span class="cwh-mega-desc">Avoid hidden premium surcharges</span></a>
+                                        <a href="/services/annuities/" class="cwh-mega-link"><span class="cwh-mega-title">Annuities</span><span class="cwh-mega-desc">When they fit — and when they don't</span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <style>
-                            .nav-dropdown:hover .nav-dropdown-menu {
-                                opacity: 1 !important;
-                                visibility: visible !important;
-                                transform: translateY(0) !important;
-                            }
-                            .nav-dropdown-menu a:hover {
-                                background: #f5f5f5 !important;
-                            }
-                        </style>
-                    </div>
-                    <a href="/services/federal-benefits/" class="finpay-nav-link">Federal</a>
-                    <a href="/blog/" class="finpay-nav-link">Blog</a>
-                    <a href="/about/" class="finpay-nav-link">Our Team</a>
-                    <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
-                </div>
-                
-                <div class="finpay-nav-right">
-                    <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="client-login-cta desktop-cta">Client Login</a>
-                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Visit</a>
-                    
-                    <!-- Mobile Menu Button (GullStack Pattern) -->
-                    <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
                     </div>
                 </div>
+
+                <!-- Federal Benefits -->
+                <div class="cwh-nav-item">
+                    <a href="/services/federal-benefits/" class="cwh-trigger" aria-expanded="false">
+                        Federal Benefits
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <div class="cwh-mega">
+                        <div class="cwh-mega-inner">
+                            <div class="cwh-mega-intro">
+                                <h3>Federal Employee Benefits</h3>
+                                <h2>FERS done right. By people who actually know the system.</h2>
+                                <p>Pension timing, TSP strategy, FEHB vs. Medicare, survivor elections, and the mistakes that cost federal employees hundreds of thousands in retirement.</p>
+                                <a href="/services/federal-benefits/" class="cwh-glass-btn">
+                                    Explore federal hub
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <div class="cwh-mega-cols">
+                                <div class="cwh-mega-col">
+                                    <h4>Plan Your Benefits</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/federal-benefits/fers-retirement/" class="cwh-mega-link"><span class="cwh-mega-title">FERS Retirement</span><span class="cwh-mega-desc">Pension timing and computation</span></a>
+                                        <a href="/services/federal-benefits/fers-supplement/" class="cwh-mega-link"><span class="cwh-mega-title">FERS Supplement</span><span class="cwh-mega-desc">Bridge income before Social Security</span></a>
+                                        <a href="/services/federal-benefits/tsp-planning/" class="cwh-mega-link"><span class="cwh-mega-title">TSP Planning</span><span class="cwh-mega-desc">Optimize your Thrift Savings Plan</span></a>
+                                        <a href="/services/federal-benefits/fehb-retirement/" class="cwh-mega-link"><span class="cwh-mega-title">FEHB in Retirement</span><span class="cwh-mega-desc">FEHB vs. Medicare at 65</span></a>
+                                        <a href="/services/federal-benefits/fegli/" class="cwh-mega-link"><span class="cwh-mega-title">FEGLI Analysis</span><span class="cwh-mega-desc">Life insurance choices for federal retirees</span></a>
+                                    </div>
+                                </div>
+                                <div class="cwh-mega-col">
+                                    <h4>Tools &amp; Resources</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/federal-benefits/fers-calculator/" class="cwh-mega-link"><span class="cwh-mega-title">FERS Pension Calculator</span><span class="cwh-mega-desc">Estimate your pension in 60 seconds</span></a>
+                                        <a href="/services/federal-benefits/federal-retirement-taxes/" class="cwh-mega-link"><span class="cwh-mega-title">Federal Retirement Taxes</span><span class="cwh-mega-desc">State and federal tax strategy</span></a>
+                                        <a href="/services/federal-benefits/federal-retirement-checklist/" class="cwh-mega-link"><span class="cwh-mega-title">Retirement Checklist</span><span class="cwh-mega-desc">The essential pre-retirement walkthrough</span></a>
+                                        <a href="/l/federal-benefits-workshop/" class="cwh-mega-link"><span class="cwh-mega-title">Federal Benefits Workshop</span><span class="cwh-mega-desc">In-person and online training</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDBA -->
+                <div class="cwh-nav-item">
+                    <a href="/services/sdba/" class="cwh-trigger" aria-expanded="false">
+                        SDBA
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <div class="cwh-mega">
+                        <div class="cwh-mega-inner">
+                            <div class="cwh-mega-intro">
+                                <h3>Self-Directed Brokerage Accounts</h3>
+                                <h2>Take control of the money in your 401(k).</h2>
+                                <p>If your employer plan offers an SDBA window, you can move beyond the default fund menu into a professionally managed portfolio — without leaving your plan.</p>
+                                <a href="/services/sdba/" class="cwh-glass-btn">
+                                    Learn how SDBA works
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <div class="cwh-mega-cols">
+                                <div class="cwh-mega-col">
+                                    <h4>How SDBA Works</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/sdba/" class="cwh-mega-link"><span class="cwh-mega-title">SDBA Overview</span><span class="cwh-mega-desc">What it is and how to tell if you qualify</span></a>
+                                    </div>
+                                </div>
+                                <div class="cwh-mega-col">
+                                    <h4>Get Started</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/contact/" class="cwh-mega-link"><span class="cwh-mega-title">Schedule a Visit</span><span class="cwh-mega-desc">Talk to an advisor about your plan</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/about/" class="cwh-trigger">Our Team</a>
+                <a href="/resources/" class="cwh-trigger">Resources</a>
             </nav>
+
+            <div class="cwh-actions">
+                <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="cwh-ghost">Client Login</a>
+                <a href="/contact/" class="cwh-glass-btn cwh-primary">
+                    Schedule a Visit
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="cwh-ham" id="cwhHam" aria-label="Open menu" aria-expanded="false" aria-controls="cwhDrawer">
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Mobile Navigation (GullStack Pattern) - MOVED OUTSIDE HEADER TO FIX POSITIONING BUG -->
-    <div class="mobile-nav" id="mobileNav">
-        <button class="mobile-nav-close" onclick="closeMobileMenu()" aria-label="Close menu">&times;</button>
-        <div class="mobile-nav-group">
-            <span class="mobile-nav-label">Services</span>
-            <a href="/services/" onclick="closeMobileMenu()">All Services</a>
-            <a href="/services/tax-planning/" onclick="closeMobileMenu()">Tax-Efficient Strategies</a>
-            <a href="/services/portfolio-management/" onclick="closeMobileMenu()">Portfolio Management</a>
-            <a href="/services/retirement-money-map/" onclick="closeMobileMenu()">Retirement Money Map</a>
-            <a href="/services/social-security/" onclick="closeMobileMenu()">Social Security Optimization</a>
-            <a href="/services/estate-planning/" onclick="closeMobileMenu()">Estate & Legacy Planning</a>
+    <!-- Mobile Drawer -->
+    <div class="cwh-scrim" id="cwhScrim"></div>
+    <aside class="cwh-drawer" id="cwhDrawer" aria-hidden="true" aria-label="Mobile navigation">
+        <div class="cwh-drawer-head">
+            <a href="/" class="cwh-brand" aria-label="Capital Wealth home">
+                <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cwh-brand-logo">
+            </a>
+            <button class="cwh-drawer-close" id="cwhDrawerClose" aria-label="Close menu">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
         </div>
-        <a href="/services/federal-benefits/" onclick="closeMobileMenu()">Federal</a>
-        <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-        <a href="/about/" onclick="closeMobileMenu()">Our Team</a>
-        <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
-        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Visit</a>
-        <a href="https://login.orionadvisor.com/login.html" onclick="closeMobileMenu()" target="_blank" rel="noopener" class="client-login-mobile">Client Login</a>
-    </div>
+        <div class="cwh-drawer-body">
 
-    <main style="padding-top: 64px;">
+            <!-- Retirement Services -->
+            <div class="cwh-acc">
+                <button class="cwh-acc-trig" aria-expanded="false">
+                    Retirement Services
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="cwh-acc-panel">
+                    <div class="cwh-acc-inner">
+                        <p class="cwh-acc-desc">A written plan for every dollar of retirement — tax sequencing, Social Security timing, portfolio design, and estate planning working as one.</p>
+                        <div class="cwh-acc-label">Core Services</div>
+                        <a href="/services/retirement-money-map/" class="cwh-acc-link"><span class="cwh-acc-link-title">Retirement Money Map</span></a>
+                        <a href="/services/tax-planning/" class="cwh-acc-link"><span class="cwh-acc-link-title">Tax-Efficient Strategies</span></a>
+                        <a href="/services/portfolio-management/" class="cwh-acc-link"><span class="cwh-acc-link-title">Portfolio Management</span></a>
+                        <a href="/services/social-security/" class="cwh-acc-link"><span class="cwh-acc-link-title">Social Security Optimization</span></a>
+                        <a href="/services/estate-planning/" class="cwh-acc-link"><span class="cwh-acc-link-title">Estate &amp; Legacy Planning</span></a>
+                        <div class="cwh-acc-label">Specialty</div>
+                        <a href="/services/401k-ira-rollover/" class="cwh-acc-link"><span class="cwh-acc-link-title">401(k) &amp; IRA Rollovers</span></a>
+                        <a href="/services/roth-conversions/" class="cwh-acc-link"><span class="cwh-acc-link-title">Roth Conversions</span></a>
+                        <a href="/services/medicare-irmaa/" class="cwh-acc-link"><span class="cwh-acc-link-title">Medicare &amp; IRMAA</span></a>
+                        <a href="/services/annuities/" class="cwh-acc-link"><span class="cwh-acc-link-title">Annuities</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Federal Benefits -->
+            <div class="cwh-acc">
+                <button class="cwh-acc-trig" aria-expanded="false">
+                    Federal Benefits
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="cwh-acc-panel">
+                    <div class="cwh-acc-inner">
+                        <p class="cwh-acc-desc">FERS done right — pension timing, TSP strategy, FEHB vs. Medicare, and survivor elections. By people who know the system.</p>
+                        <div class="cwh-acc-label">Plan Your Benefits</div>
+                        <a href="/services/federal-benefits/" class="cwh-acc-link"><span class="cwh-acc-link-title">Federal Benefits Overview</span></a>
+                        <a href="/services/federal-benefits/fers-retirement/" class="cwh-acc-link"><span class="cwh-acc-link-title">FERS Retirement</span></a>
+                        <a href="/services/federal-benefits/fers-supplement/" class="cwh-acc-link"><span class="cwh-acc-link-title">FERS Supplement</span></a>
+                        <a href="/services/federal-benefits/tsp-planning/" class="cwh-acc-link"><span class="cwh-acc-link-title">TSP Planning</span></a>
+                        <a href="/services/federal-benefits/fehb-retirement/" class="cwh-acc-link"><span class="cwh-acc-link-title">FEHB Retirement</span></a>
+                        <a href="/services/federal-benefits/fegli/" class="cwh-acc-link"><span class="cwh-acc-link-title">FEGLI Analysis</span></a>
+                        <div class="cwh-acc-label">Tools &amp; Resources</div>
+                        <a href="/services/federal-benefits/fers-calculator/" class="cwh-acc-link"><span class="cwh-acc-link-title">FERS Pension Calculator</span></a>
+                        <a href="/services/federal-benefits/federal-retirement-taxes/" class="cwh-acc-link"><span class="cwh-acc-link-title">Federal Retirement Taxes</span></a>
+                        <a href="/services/federal-benefits/federal-retirement-checklist/" class="cwh-acc-link"><span class="cwh-acc-link-title">Retirement Checklist</span></a>
+                        <a href="/l/federal-benefits-workshop/" class="cwh-acc-link"><span class="cwh-acc-link-title">Federal Benefits Workshop</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDBA -->
+            <div class="cwh-acc">
+                <button class="cwh-acc-trig" aria-expanded="false">
+                    SDBA
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="cwh-acc-panel">
+                    <div class="cwh-acc-inner">
+                        <p class="cwh-acc-desc">Take control of the money in your 401(k). Move beyond the default fund menu into a professionally managed portfolio — without leaving your plan.</p>
+                        <a href="/services/sdba/" class="cwh-acc-link"><span class="cwh-acc-link-title">SDBA Overview</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/about/" class="cwh-flat-link">Our Team
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="/resources/" class="cwh-flat-link">Resources
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+        <div class="cwh-drawer-foot">
+            <a href="/contact/" class="cwh-glass-btn cwh-primary">
+                Schedule a Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="cwh-ghost">Client Login</a>
+        </div>
+    </aside>
+
+    <script>
+    (function(){
+        var shell = document.getElementById('cwhShell');
+        var ham   = document.getElementById('cwhHam');
+        var draw  = document.getElementById('cwhDrawer');
+        var scrim = document.getElementById('cwhScrim');
+        var close = document.getElementById('cwhDrawerClose');
+
+        if (shell) {
+            window.addEventListener('scroll', function(){
+                shell.classList.toggle('cwh-scrolled', window.scrollY > 12);
+            }, { passive: true });
+        }
+
+        function open(){
+            draw.classList.add('cwh-active');
+            scrim.classList.add('cwh-active');
+            ham.classList.add('cwh-active');
+            ham.setAttribute('aria-expanded', 'true');
+            draw.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+        function shut(){
+            draw.classList.remove('cwh-active');
+            scrim.classList.remove('cwh-active');
+            ham.classList.remove('cwh-active');
+            ham.setAttribute('aria-expanded', 'false');
+            draw.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        if (ham)   ham.addEventListener('click', function(){ draw.classList.contains('cwh-active') ? shut() : open(); });
+        if (close) close.addEventListener('click', shut);
+        if (scrim) scrim.addEventListener('click', shut);
+        document.addEventListener('keydown', function(e){ if (e.key === 'Escape') shut(); });
+
+        document.querySelectorAll('.cwh-acc-trig').forEach(function(trig){
+            trig.addEventListener('click', function(){
+                var acc = trig.closest('.cwh-acc');
+                var isOpen = acc.classList.contains('cwh-open');
+                document.querySelectorAll('.cwh-acc').forEach(function(a){
+                    a.classList.remove('cwh-open');
+                    var t = a.querySelector('.cwh-acc-trig');
+                    if (t) t.setAttribute('aria-expanded', 'false');
+                });
+                if (!isOpen) {
+                    acc.classList.add('cwh-open');
+                    trig.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <!-- Government Contractor Bar — shown only on federal-oriented pages -->
+    
+    
+
+    <main>
         
 <style>
 /* Editorial contact page styles */
@@ -474,12 +685,169 @@
 }
 
 .team-label {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #64748b;
+}
+
+/* Team photos — three-up on contact hero */
+.team-photos { display: flex; gap: -8px; }
+.team-photos .team-photo {
+  margin-left: -12px;
+  transition: transform 0.2s ease;
+}
+.team-photos .team-photo:first-child { margin-left: 0; }
+.team-photos:hover .team-photo { transform: translateX(0); }
+
+/* Trust strip (#2 — social proof above form) */
+.trust-strip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  margin: -8px -8px 20px;
+  background: linear-gradient(180deg, #FAFAFB 0%, #F4F5F7 100%);
+  border: 1px solid rgba(16,24,40,0.06);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+.trust-rating {
+  display: flex; align-items: center; gap: 8px;
+  font-family: 'Inter', sans-serif; font-size: 13px;
+}
+.trust-stars { color: #D4A437; font-size: 15px; letter-spacing: 1px; }
+.trust-rating-text { color: #344054; font-weight: 500; }
+.trust-rating-text strong { color: #0B0F17; font-weight: 700; }
+.trust-divider { width: 1px; height: 20px; background: rgba(16,24,40,0.1); }
+.trust-badge-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.trust-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 10.5px; font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  background: #fff;
+  border: 1px solid rgba(16,24,40,0.1);
+  border-radius: 999px;
+  color: #344054;
+}
+
+/* What happens next (#3) */
+.next-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: grid;
+  gap: 10px;
+}
+.next-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 14px;
+  background: rgba(10, 49, 97, 0.03);
+  border: 1px solid rgba(10, 49, 97, 0.08);
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+}
+.next-steps .ns-n {
+  flex-shrink: 0;
+  width: 24px; height: 24px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #1a2e4f 0%, #0f1e36 100%);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2px;
+}
+.next-steps li strong {
+  font-weight: 600; color: #0B0F17;
+  font-size: 14px; letter-spacing: -0.005em;
+}
+.next-steps li span {
+  font-size: 13px; color: #667085;
+  line-height: 1.4;
+}
+
+/* Submit button glass style override (#10) */
+.contact-form-submit.cwh-glass-btn.cwh-primary {
+  width: 100%;
+  justify-content: center;
+  padding: 14px 22px !important;
+  font-size: 15px !important;
+  margin-top: 16px;
+  letter-spacing: -0.005em;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Direct contact channels — nested under Dedicated Advisory Team */
+.advisory-channels {
+  margin-top: 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 560px;
+}
+.advisory-channel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(16, 24, 40, 0.08);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #0B0F17;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+  flex-wrap: wrap;
+}
+.advisory-channel:hover {
+  transform: translateY(-2px);
+  border-color: rgba(10, 49, 97, 0.2);
+  box-shadow: 0 6px 16px -4px rgba(16, 24, 40, 0.1);
+  color: #0B0F17;
+}
+.advisory-channel.no-link { cursor: default; }
+.advisory-channel.no-link:hover { transform: none; border-color: rgba(16, 24, 40, 0.08); box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04); }
+.advisory-channel svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: #0A3161;
+}
+.advisory-channel .ch-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #667085;
+  width: 100%;
+  order: 1;
+  margin-left: 30px;
+  margin-top: -2px;
+  line-height: 1;
+}
+.advisory-channel .ch-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0B0F17;
+  letter-spacing: -0.005em;
+  line-height: 1.35;
+  flex: 1;
+  min-width: 0;
+}
+.advisory-channel:hover .ch-value { color: #0A3161; }
+
+@media (max-width: 560px) {
+  .advisory-channels { grid-template-columns: 1fr; }
 }
 
 /* Glass-style form card — tighter Workshop style */
@@ -842,25 +1210,71 @@
   <div class="contact-hero-container">
     <div class="contact-hero-text">
       <div class="contact-eyebrow">PRIVATE CONSULTATION</div>
-      <h1 class="contact-hero-title">Start a Conversation About Your Retirement</h1>
-      <p class="contact-hero-subtitle">No pressure. No pitch. Just a conversation about your goals and whether we're the right fit. Initial consultations are complimentary for qualified families.</p>
-      
+      <h1 class="contact-hero-title">Let's build your Retirement Money Map.</h1>
+      <p class="contact-hero-subtitle">30 minutes. No pitch. No obligation. A real conversation about your goals and whether we're the right fit for your family.</p>
+
       <div class="advisory-team">
         <div class="team-photos">
-          <img src="/assets/images/mike-stevens.jpg" alt="Mike Stevens, Founder of Capital Wealth" class="team-photo">
-          <div class="team-photo placeholder">+</div>
+          <img src="/assets/images/team/mike-stevens.jpg" onerror="this.src='/assets/images/mike-stevens.jpg'" alt="Mike Stevens, Founder" class="team-photo">
+          <img src="/assets/images/team/brent.jpg" alt="Brent, Advisory Team" class="team-photo">
+          <img src="/assets/images/team/chad.jpg" alt="Chad, Advisory Team" class="team-photo">
         </div>
         <div class="team-label">Dedicated Advisory Team</div>
+      </div>
+
+      <div class="advisory-channels" aria-label="Direct contact channels">
+        <a href="tel:8012102800" class="advisory-channel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="ch-label">Phone</span>
+          <span class="ch-value">801.210.2800</span>
+        </a>
+        <a href="mailto:info@capitalwealth.com" class="advisory-channel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="ch-label">Email</span>
+          <span class="ch-value">info@capitalwealth.com</span>
+        </a>
+        <a href="https://maps.google.com/?q=1850+W+Ashton+Blvd+Suite+175+Lehi+UT+84043" target="_blank" rel="noopener" class="advisory-channel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span class="ch-label">Office</span>
+          <span class="ch-value">1850 W Ashton Blvd, Suite 175 · Lehi, UT</span>
+        </a>
+        <div class="advisory-channel no-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span class="ch-label">Hours</span>
+          <span class="ch-value">Mon–Fri, 9am–5pm MT · Virtual meetings nationwide</span>
+        </div>
       </div>
     </div>
     
     <div class="contact-form-card">
+
+      <!-- Social proof strip (#2) -->
+      <div class="trust-strip">
+        <div class="trust-rating">
+          <span class="trust-stars" aria-label="4.9 out of 5 stars">★★★★★</span>
+          <span class="trust-rating-text"><strong>4.9</strong> · Google Reviews</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-badge-row">
+          <span class="trust-badge">Fiduciary</span>
+          <span class="trust-badge">SEC-Registered</span>
+          <span class="trust-badge">Gov. Contractor</span>
+        </div>
+      </div>
+
       <div class="form-header-clean">
         <div class="form-eyebrow-accent">NO OBLIGATION</div>
-        <h2 class="contact-form-title">Request a Consultation</h2>
-        <p class="contact-form-subtitle">Fill out the form below and we'll contact you within one business day to schedule your complimentary consultation.</p>
+        <h2 class="contact-form-title">Request Your Complimentary Consultation</h2>
+        <p class="contact-form-subtitle">Tell us a bit about yourself — we'll reach out within one business day to schedule a time that works for you.</p>
       </div>
-      
+
+      <!-- What happens next (#3) -->
+      <ol class="next-steps">
+        <li><span class="ns-n">1</span><div><strong>We call within 1 business day</strong><br><span>to schedule a time that fits your calendar</span></div></li>
+        <li><span class="ns-n">2</span><div><strong>30-minute discovery call</strong><br><span>about your goals — no pitch, no pressure</span></div></li>
+        <li><span class="ns-n">3</span><div><strong>Your Retirement Money Map</strong><br><span>if we're the right fit, we build your plan</span></div></li>
+      </ol>
+
       <form id="contact-form" class="seminar-form-clean">
         <div class="contact-form-grid">
           <div class="contact-form-field">
@@ -884,17 +1298,6 @@
           </div>
           
           <div class="contact-form-field full-width">
-            <label for="savings" class="contact-form-label">Savings Amount (Optional)</label>
-            <select id="savings" name="savings" class="contact-form-select">
-              <option value="">Please select...</option>
-              <option value="$250K - $500K">$250K - $500K</option>
-              <option value="$500K - $1M">$500K - $1M</option>
-              <option value="$1M - $2M">$1M - $2M</option>
-              <option value="$2M+">$2M+</option>
-            </select>
-          </div>
-          
-          <div class="contact-form-field full-width">
             <label for="questions" class="contact-form-label">Questions or Planning Goals (Optional)</label>
             <textarea id="questions" name="questions" rows="3" placeholder="Tell us about your retirement planning goals or any specific questions you have..." class="contact-form-textarea"></textarea>
           </div>
@@ -912,7 +1315,10 @@
         <div class="honeypot"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
         <div class="honeypot"><input type="text" name="company_url" tabindex="-1" autocomplete="off"></div>
         
-        <button type="submit" id="submit-btn" class="contact-form-submit">SCHEDULE YOUR VISIT →</button>
+        <button type="submit" id="submit-btn" class="contact-form-submit cwh-glass-btn cwh-primary">
+          Schedule Your Visit
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
         <div id="form-status" style="margin-top: 12px; text-align: center; font-weight: 500;"></div>
       </form>
       
@@ -964,14 +1370,6 @@
           return;
         }
 
-        // Anti-spam: require savings to be selected (real prospects fill this out)
-        var savings = document.getElementById('savings').value;
-        if (!savings) {
-          status.textContent = 'Please select your savings range so we can prepare for your consultation.';
-          status.style.color = '#ba1a1a';
-          return;
-        }
-
         btn.disabled = true;
         btn.innerHTML = 'SENDING...';
         status.textContent = '';
@@ -1003,7 +1401,7 @@
               name: fullName,
               email: document.getElementById('email').value,
               phone: document.getElementById('phone').value,
-              savings: document.getElementById('savings').value,
+              savings: '',
               retirementTimeline: '',
               questions: document.getElementById('questions').value,
               utm_source: trackingData.utm_source || '',
@@ -1062,54 +1460,7 @@
 
 
 <section class="contact-details-section">
-  <div class="contact-details-container">
-    <div class="direct-channels">
-      <h2>Direct Channels</h2>
-      
-      <div class="contact-info-item">
-        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-        </svg>
-        <div class="contact-info-content">
-          <h3>Phone</h3>
-          <p><a href="tel:8012102800">801.210.2800</a></p>
-        </div>
-      </div>
-      
-      <div class="contact-info-item">
-        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-          <polyline points="22,6 12,13 2,6"/>
-        </svg>
-        <div class="contact-info-content">
-          <h3>Email</h3>
-          <p><a href="mailto:info@capitalwealth.com">info@capitalwealth.com</a></p>
-        </div>
-      </div>
-      
-      <div class="contact-info-item">
-        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
-        </svg>
-        <div class="contact-info-content">
-          <h3>Address</h3>
-          <p>1850 W Ashton Blvd, Suite 175<br>Lehi, UT 84043</p>
-        </div>
-      </div>
-      
-      <div class="contact-info-item">
-        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/>
-          <polyline points="12 6 12 12 16 14"/>
-        </svg>
-        <div class="contact-info-content">
-          <h3>Hours</h3>
-          <p>Monday-Friday 9am-5pm<br>Virtual meetings available nationwide</p>
-        </div>
-      </div>
-    </div>
-    
+  <div class="contact-details-container" style="grid-template-columns: 1fr;">
     <div class="editorial-content">
       <div class="editorial-quote">
         <blockquote>"The most important financial decision isn't which investment to choose—it's choosing the right advisor to guide you through retirement's complexities."</blockquote>
@@ -1132,18 +1483,7 @@
         <div class="finpay-footer-content">
             <div class="finpay-footer-brand">
                 <a href="/"><img src="/assets/images/logos/logo-horizontal-white.png" alt="Capital Wealth" style="height: 36px; width: auto; margin-bottom: 1rem;"></a>
-                <p style="font-size: 1.1rem; font-weight: 600; color: #FDD25E; margin-bottom: 0.5rem;">Fiduciary. Always.</p>
                 <p>Strategic Income & Tax Planning for Your Retirement</p>
-                <div style="display: flex; gap: 1rem; margin: 1.5rem 0;">
-                    <div class="trust-badge" style="background: rgba(255,255,255,0.1); color: white;">
-                        <strong>Fiduciary</strong><br>
-                        <span style="font-size: 0.75rem;">Always</span>
-                    </div>
-                    <div class="trust-badge" style="background: rgba(255,255,255,0.1); color: white;">
-                        <strong>25+ Years</strong><br>
-                        <span style="font-size: 0.75rem;">Experience</span>
-                    </div>
-                </div>
                 
                 <!-- Contact Info with Real Lehi Address -->
                 <p style="color: #a3a3a3; font-size: 0.875rem; margin-bottom: 1rem;">
@@ -1181,6 +1521,7 @@
                 <a href="/services/federal-benefits/">Federal Overview</a>
                 <a href="/services/federal-benefits/fers-retirement/">FERS Retirement</a>
                 <a href="/services/federal-benefits/tsp-planning/">TSP Planning</a>
+                <a href="/services/federal-benefits/tsp-mutual-fund-window/">TSP Mutual Fund Window</a>
                 <a href="/services/federal-benefits/fegli/">FEGLI Analysis</a>
                 <a href="/services/federal-benefits/fehb-retirement/">FEHB Coordination</a>
                 <a href="/services/federal-benefits/social-security-federal/">SS + Federal</a>
@@ -1191,7 +1532,6 @@
             <div class="finpay-footer-links">
                 <h4>SDBA</h4>
                 <a href="/services/sdba/">SDBA Overview</a>
-                <a href="/services/sdba/tsp-mutual-fund-window/">TSP Mutual Fund Window</a>
                 <a href="/services/sdba/401k-brokerage-window/">401(k) Brokerage Window</a>
                 <a href="/guides/sdba-complete-guide/">SDBA Complete Guide</a>
             </div>
@@ -1208,7 +1548,6 @@
 
             <div class="finpay-footer-links">
                 <h4>Company</h4>
-                <a href="/about/">Our Team</a>
                 <a href="/contact/">Schedule a Visit</a>
                 <a href="/disclosures/">Disclosures</a>
                 <a href="/brand-facts/">Brand Facts</a>
@@ -1217,6 +1556,9 @@
             </div>
         </div>
         
+        
+        
+
         <div class="finpay-footer-bottom">
             <p>&copy; 2026 Capital Wealth. All rights reserved. | Investment advisory services offered through Capital Wealth. Michael Stevens. | <a href="/disclosures/" style="color: #737373;">Important Disclosures</a></p>
         </div>
@@ -1435,7 +1777,7 @@
   right: -2px;
   width: 18px;
   height: 18px;
-  background: #FDD25E;
+  background: #C7A356;
   border-radius: 50%;
   border: 2px solid #fff;
   display: none;
@@ -1804,6 +2146,27 @@
 })();
 </script>
 
+
+    
+    
+    <script type="text/javascript">
+    _linkedin_partner_id = "9922273";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script><script type="text/javascript">
+    (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+    window.lintrk.q=[]}
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})(window.lintrk);
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9922273&fmt=gif" />
+    </noscript>
+    
 
 </body>
 </html>

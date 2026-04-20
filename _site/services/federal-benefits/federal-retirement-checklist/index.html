@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K6XJQ9FG');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Federal Retirement Checklist | Capital Wealth</title>
@@ -14,10 +22,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/services/federal-benefits/federal-retirement-checklist/">
     <meta property="og:image" content="https://www.capitalwealth.com/assets/images/photos/CWA-Mountain-Couple-home-header.webp">
+    
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://www.capitalwealth.com/assets/images/photos/CWA-Mountain-Couple-home-header.webp">
+    
     
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +57,7 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) — GA4 + Google Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNE17HRDX8"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -55,12 +65,17 @@
       gtag('js', new Date());
       gtag('config', 'G-XNE17HRDX8');
       gtag('config', 'G-LD4VE3SQNT');
+      gtag('config', 'AW-18091003527'); // Google Ads — Capital Wealth (402-760-5627)
     </script>
 
     <!-- Main styles (service subpages, federal benefits, etc.) -->
     <link rel="stylesheet" href="/assets/css/main.css">
     <!-- Finpay-inspired styles -->
     <link rel="stylesheet" href="/assets/css/finpay-inspired.css">
+    <!-- New glass header (Antigravity-inspired) — loaded AFTER finpay to override -->
+    <link rel="stylesheet" href="/assets/css/header-redesign.css">
+    <!-- Homepage redesign overlay — unifies homepage with glass header aesthetic -->
+    <link rel="stylesheet" href="/assets/css/homepage-redesign.css">
     
     <!-- Schema JSON-LD: Organization + LocalBusiness + FinancialService -->
     <script type="application/ld+json">
@@ -313,10 +328,46 @@
             
             {
                 "@type": "Question",
-                "name": "What forms do I need to submit for federal retirement?",
+                "name": "How far in advance should I submit my retirement application?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The primary form is SF-3107 (Application for Immediate Retirement - FERS) or SF-2801 for CSRS employees. You&#39;ll also need SF-3102 (Designation of Beneficiary - FERS), health insurance enrollment forms if making changes, TSP withdrawal forms, and potentially survivor benefit elections. Submit your retirement application to your HR office at least 60 days before your intended retirement date (90 days is recommended). Each agency may have additional forms or requirements, so check with your HR department early in the process."
+                    "text": "OPM recommends submitting your retirement application (SF-3107 for FERS) at least 60 days before your intended retirement date. However, many agencies prefer 90 days or more to ensure all paperwork is processed smoothly. Submitting early gives your HR office time to review your application, request any missing documentation, and resolve discrepancies before your effective date. Check with your specific agency for their preferred timeline."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How long does OPM take to process retirement?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "OPM typically takes 2 to 6 months to fully process a federal retirement application. During this processing period, you will receive an interim annuity — approximately 85% of your estimated pension — which usually begins within 4 to 8 weeks of your retirement effective date. Once OPM completes final adjudication, your annuity will be adjusted to the correct amount and you will receive any back pay owed."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can I change my mind after submitting my retirement application?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can withdraw your retirement application at any time before your effective retirement date by submitting a written request to your agency HR office. However, after your effective date has passed, reinstatement to federal service requires agency approval and is not guaranteed. Factors such as your position, agency needs, and the length of time since retirement all affect whether reinstatement is possible. Consider your decision carefully before your effective date."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What documents do I need for federal retirement?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Key documents for federal retirement include: SF-3107 (Application for Immediate Retirement - FERS), TSP-70 or online withdrawal request for TSP distributions, proof of birth (birth certificate or passport), marriage certificate if electing survivor benefits, DD-214 if claiming military service credit, and notarized spouse consent form if waiving or reducing survivor annuity. Each agency may require additional forms, so consult your HR office early to compile everything you need."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What is the interim annuity?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The interim annuity is a temporary payment of approximately 85% of your estimated FERS pension that OPM pays while your full retirement application is being processed. It typically begins within 4 to 8 weeks of your retirement effective date and continues for 2 to 6 months until OPM completes final adjudication. The interim payment does not include survivor benefit reductions or any other adjustments — those are applied once your case is fully processed, and you will receive retroactive adjustments at that time."
                 }
             },
             
@@ -325,7 +376,7 @@
                 "name": "How do I ensure I meet the 5-year FEHB rule?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "To carry FEHB into retirement, you must be enrolled for 5 consecutive years immediately before retirement. Check your personnel records to verify continuous enrollment. If you have any gaps (such as periods covered under a spouse&#39;s plan), you may not be eligible. Limited exceptions exist for military service or involuntary loss of spousal coverage. If you&#39;re close to but don&#39;t meet the 5-year requirement, consider extending your retirement date to qualify, as FEHB is extremely valuable in retirement."
+                    "text": "To carry FEHB into retirement, you must be enrolled for 5 consecutive years immediately before retirement. Check your personnel records to verify continuous enrollment. If you have any gaps (such as periods covered under a spouse&#39;s plan), you may not be eligible. Limited exceptions exist for military service or involuntary loss of spousal coverage. If you are close to but do not meet the 5-year requirement, consider extending your retirement date to qualify, as FEHB is extremely valuable in retirement."
                 }
             },
             
@@ -343,7 +394,7 @@
                 "name": "When should I claim Social Security as a federal retiree?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Federal employees have unique considerations for Social Security timing. Key factors include: (1) The FERS supplement ends at age 62, potentially creating an income gap if you delay Social Security, (2) Your FERS pension provides some income security, allowing flexibility in timing, (3) Delayed retirement credits (8% per year from full retirement age to 70), and (4) Tax implications of combined FERS and Social Security income. With WEP/GPO now eliminated, many federal retirees benefit from claiming at full retirement age (66-67) to bridge the gap when the FERS supplement ends, but individual situations vary significantly."
+                    "text": "Federal employees have unique considerations for Social Security timing. Key factors include: the FERS supplement ends at age 62 potentially creating an income gap if you delay Social Security, your FERS pension provides some income security allowing flexibility in timing, delayed retirement credits of 8% per year from full retirement age to 70, and tax implications of combined FERS and Social Security income. With WEP/GPO now eliminated, many federal retirees benefit from claiming at full retirement age (66-67) to bridge the gap when the FERS supplement ends, but individual situations vary significantly."
                 }
             }
             
@@ -351,115 +402,317 @@
     }
     </script>
     
+
+    
 </head>
 <body>
-    <!-- Finpay-inspired header -->
-    <header class="finpay-header">
-        <div class="container">
-            <nav class="finpay-nav">
-                <div class="finpay-nav-logo">
-                    <a href="/">
-                        <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="height: 44px; width: auto;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6XJQ9FG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ========= NEW GLASS HEADER (Antigravity-inspired) ========= -->
+    <header class="cwh-shell" id="cwhShell">
+        <div class="cwh-inner">
+            <a href="/" class="cwh-brand" aria-label="Capital Wealth home">
+                <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cwh-brand-logo">
+            </a>
+
+            <nav class="cwh-nav" aria-label="Primary">
+
+                <!-- Retirement Services -->
+                <div class="cwh-nav-item">
+                    <a href="/services/" class="cwh-trigger" aria-expanded="false">
+                        Retirement Services
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </a>
-                </div>
-                
-                <!-- Desktop Navigation -->
-                <div class="finpay-nav-links desktop-nav">
-                    <div class="nav-dropdown" style="position: relative;">
-                        <a href="/services/" class="finpay-nav-link" style="display: flex; align-items: center; gap: 4px;">
-                            Services 
-                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <div class="nav-dropdown-menu" style="
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            background: white;
-                            border-radius: 12px;
-                            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-                            padding: 1rem;
-                            min-width: 280px;
-                            opacity: 0;
-                            visibility: hidden;
-                            transform: translateY(-10px);
-                            transition: all 0.2s ease;
-                            z-index: 1000;">
-                            <a href="/services/tax-planning/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Tax-Efficient Strategies</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Minimize taxes with smart withdrawal sequencing.</span>
-                            </a>
-                            <a href="/services/portfolio-management/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Portfolio Management</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Diversified portfolios aligned with your timeline.</span>
-                            </a>
-                            <a href="/services/retirement-money-map/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Retirement Money Map</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">A clear plan for every dollar in retirement.</span>
-                            </a>
-                            <a href="/services/social-security/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; margin-bottom: 0.25rem; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Social Security Optimization</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Time your benefits to maximize lifetime income.</span>
-                            </a>
-                            <a href="/services/estate-planning/" style="display: block; padding: 0.75rem; text-decoration: none; border-radius: 8px; transition: background 0.2s;">
-                                <strong style="color: #404040; font-weight: 600;">Estate & Legacy Planning</strong>
-                                <span style="display: block; font-size: 0.875rem; color: #737373; margin-top: 0.25rem;">Protect your family and pass wealth efficiently.</span>
-                            </a>
+                    <div class="cwh-mega">
+                        <div class="cwh-mega-inner">
+                            <div class="cwh-mega-intro">
+                                <h3>Retirement Services</h3>
+                                <h2>A written plan for every dollar of your retirement.</h2>
+                                <p>Tax-efficient withdrawal sequencing, Social Security timing, portfolio design, and estate planning — built to work as one integrated strategy.</p>
+                                <a href="/services/" class="cwh-glass-btn">
+                                    See our approach
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <div class="cwh-mega-cols">
+                                <div class="cwh-mega-col">
+                                    <h4>Core Services</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/retirement-money-map/" class="cwh-mega-link"><span class="cwh-mega-title">Retirement Money Map</span><span class="cwh-mega-desc">A clear plan for every dollar in retirement</span></a>
+                                        <a href="/services/tax-planning/" class="cwh-mega-link"><span class="cwh-mega-title">Tax-Efficient Strategies</span><span class="cwh-mega-desc">Minimize taxes with smart withdrawal sequencing</span></a>
+                                        <a href="/services/portfolio-management/" class="cwh-mega-link"><span class="cwh-mega-title">Portfolio Management</span><span class="cwh-mega-desc">Diversified portfolios aligned with your timeline</span></a>
+                                        <a href="/services/social-security/" class="cwh-mega-link"><span class="cwh-mega-title">Social Security Optimization</span><span class="cwh-mega-desc">Time your benefits to maximize lifetime income</span></a>
+                                        <a href="/services/estate-planning/" class="cwh-mega-link"><span class="cwh-mega-title">Estate &amp; Legacy Planning</span><span class="cwh-mega-desc">Protect your family and pass wealth efficiently</span></a>
+                                    </div>
+                                </div>
+                                <div class="cwh-mega-col">
+                                    <h4>Specialty</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/401k-ira-rollover/" class="cwh-mega-link"><span class="cwh-mega-title">401(k) &amp; IRA Rollovers</span><span class="cwh-mega-desc">Move old accounts into a better plan</span></a>
+                                        <a href="/services/roth-conversions/" class="cwh-mega-link"><span class="cwh-mega-title">Roth Conversions</span><span class="cwh-mega-desc">Tax-free growth and withdrawal strategy</span></a>
+                                        <a href="/services/medicare-irmaa/" class="cwh-mega-link"><span class="cwh-mega-title">Medicare &amp; IRMAA</span><span class="cwh-mega-desc">Avoid hidden premium surcharges</span></a>
+                                        <a href="/services/annuities/" class="cwh-mega-link"><span class="cwh-mega-title">Annuities</span><span class="cwh-mega-desc">When they fit — and when they don't</span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <style>
-                            .nav-dropdown:hover .nav-dropdown-menu {
-                                opacity: 1 !important;
-                                visibility: visible !important;
-                                transform: translateY(0) !important;
-                            }
-                            .nav-dropdown-menu a:hover {
-                                background: #f5f5f5 !important;
-                            }
-                        </style>
-                    </div>
-                    <a href="/services/federal-benefits/" class="finpay-nav-link">Federal</a>
-                    <a href="/blog/" class="finpay-nav-link">Blog</a>
-                    <a href="/about/" class="finpay-nav-link">Our Team</a>
-                    <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" class="finpay-nav-link" target="_blank" rel="noopener">Book</a>
-                </div>
-                
-                <div class="finpay-nav-right">
-                    <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="client-login-cta desktop-cta">Client Login</a>
-                    <a href="/contact/" class="finpay-nav-cta desktop-cta">Schedule a Visit</a>
-                    
-                    <!-- Mobile Menu Button (GullStack Pattern) -->
-                    <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
                     </div>
                 </div>
+
+                <!-- Federal Benefits -->
+                <div class="cwh-nav-item">
+                    <a href="/services/federal-benefits/" class="cwh-trigger" aria-expanded="false">
+                        Federal Benefits
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <div class="cwh-mega">
+                        <div class="cwh-mega-inner">
+                            <div class="cwh-mega-intro">
+                                <h3>Federal Employee Benefits</h3>
+                                <h2>FERS done right. By people who actually know the system.</h2>
+                                <p>Pension timing, TSP strategy, FEHB vs. Medicare, survivor elections, and the mistakes that cost federal employees hundreds of thousands in retirement.</p>
+                                <a href="/services/federal-benefits/" class="cwh-glass-btn">
+                                    Explore federal hub
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <div class="cwh-mega-cols">
+                                <div class="cwh-mega-col">
+                                    <h4>Plan Your Benefits</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/federal-benefits/fers-retirement/" class="cwh-mega-link"><span class="cwh-mega-title">FERS Retirement</span><span class="cwh-mega-desc">Pension timing and computation</span></a>
+                                        <a href="/services/federal-benefits/fers-supplement/" class="cwh-mega-link"><span class="cwh-mega-title">FERS Supplement</span><span class="cwh-mega-desc">Bridge income before Social Security</span></a>
+                                        <a href="/services/federal-benefits/tsp-planning/" class="cwh-mega-link"><span class="cwh-mega-title">TSP Planning</span><span class="cwh-mega-desc">Optimize your Thrift Savings Plan</span></a>
+                                        <a href="/services/federal-benefits/fehb-retirement/" class="cwh-mega-link"><span class="cwh-mega-title">FEHB in Retirement</span><span class="cwh-mega-desc">FEHB vs. Medicare at 65</span></a>
+                                        <a href="/services/federal-benefits/fegli/" class="cwh-mega-link"><span class="cwh-mega-title">FEGLI Analysis</span><span class="cwh-mega-desc">Life insurance choices for federal retirees</span></a>
+                                    </div>
+                                </div>
+                                <div class="cwh-mega-col">
+                                    <h4>Tools &amp; Resources</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/federal-benefits/fers-calculator/" class="cwh-mega-link"><span class="cwh-mega-title">FERS Pension Calculator</span><span class="cwh-mega-desc">Estimate your pension in 60 seconds</span></a>
+                                        <a href="/services/federal-benefits/federal-retirement-taxes/" class="cwh-mega-link"><span class="cwh-mega-title">Federal Retirement Taxes</span><span class="cwh-mega-desc">State and federal tax strategy</span></a>
+                                        <a href="/services/federal-benefits/federal-retirement-checklist/" class="cwh-mega-link"><span class="cwh-mega-title">Retirement Checklist</span><span class="cwh-mega-desc">The essential pre-retirement walkthrough</span></a>
+                                        <a href="/l/federal-benefits-workshop/" class="cwh-mega-link"><span class="cwh-mega-title">Federal Benefits Workshop</span><span class="cwh-mega-desc">In-person and online training</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDBA -->
+                <div class="cwh-nav-item">
+                    <a href="/services/sdba/" class="cwh-trigger" aria-expanded="false">
+                        SDBA
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <div class="cwh-mega">
+                        <div class="cwh-mega-inner">
+                            <div class="cwh-mega-intro">
+                                <h3>Self-Directed Brokerage Accounts</h3>
+                                <h2>Take control of the money in your 401(k).</h2>
+                                <p>If your employer plan offers an SDBA window, you can move beyond the default fund menu into a professionally managed portfolio — without leaving your plan.</p>
+                                <a href="/services/sdba/" class="cwh-glass-btn">
+                                    Learn how SDBA works
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </a>
+                            </div>
+                            <div class="cwh-mega-cols">
+                                <div class="cwh-mega-col">
+                                    <h4>How SDBA Works</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/services/sdba/" class="cwh-mega-link"><span class="cwh-mega-title">SDBA Overview</span><span class="cwh-mega-desc">What it is and how to tell if you qualify</span></a>
+                                    </div>
+                                </div>
+                                <div class="cwh-mega-col">
+                                    <h4>Get Started</h4>
+                                    <div class="cwh-mega-list">
+                                        <a href="/contact/" class="cwh-mega-link"><span class="cwh-mega-title">Schedule a Visit</span><span class="cwh-mega-desc">Talk to an advisor about your plan</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/about/" class="cwh-trigger">Our Team</a>
+                <a href="/resources/" class="cwh-trigger">Resources</a>
             </nav>
+
+            <div class="cwh-actions">
+                <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="cwh-ghost">Client Login</a>
+                <a href="/contact/" class="cwh-glass-btn cwh-primary">
+                    Schedule a Visit
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="cwh-ham" id="cwhHam" aria-label="Open menu" aria-expanded="false" aria-controls="cwhDrawer">
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Mobile Navigation (GullStack Pattern) - MOVED OUTSIDE HEADER TO FIX POSITIONING BUG -->
-    <div class="mobile-nav" id="mobileNav">
-        <button class="mobile-nav-close" onclick="closeMobileMenu()" aria-label="Close menu">&times;</button>
-        <div class="mobile-nav-group">
-            <span class="mobile-nav-label">Services</span>
-            <a href="/services/" onclick="closeMobileMenu()">All Services</a>
-            <a href="/services/tax-planning/" onclick="closeMobileMenu()">Tax-Efficient Strategies</a>
-            <a href="/services/portfolio-management/" onclick="closeMobileMenu()">Portfolio Management</a>
-            <a href="/services/retirement-money-map/" onclick="closeMobileMenu()">Retirement Money Map</a>
-            <a href="/services/social-security/" onclick="closeMobileMenu()">Social Security Optimization</a>
-            <a href="/services/estate-planning/" onclick="closeMobileMenu()">Estate & Legacy Planning</a>
+    <!-- Mobile Drawer -->
+    <div class="cwh-scrim" id="cwhScrim"></div>
+    <aside class="cwh-drawer" id="cwhDrawer" aria-hidden="true" aria-label="Mobile navigation">
+        <div class="cwh-drawer-head">
+            <a href="/" class="cwh-brand" aria-label="Capital Wealth home">
+                <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="cwh-brand-logo">
+            </a>
+            <button class="cwh-drawer-close" id="cwhDrawerClose" aria-label="Close menu">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
         </div>
-        <a href="/services/federal-benefits/" onclick="closeMobileMenu()">Federal</a>
-        <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
-        <a href="/about/" onclick="closeMobileMenu()">Our Team</a>
-        <a href="https://www.retirerightbook.com/?utm_source=capitalwealth&utm_medium=website&utm_campaign=book" onclick="closeMobileMenu()" target="_blank" rel="noopener">Book</a>
-        <a href="/contact/" class="btn btn-primary" onclick="closeMobileMenu()">Schedule a Visit</a>
-        <a href="https://login.orionadvisor.com/login.html" onclick="closeMobileMenu()" target="_blank" rel="noopener" class="client-login-mobile">Client Login</a>
-    </div>
+        <div class="cwh-drawer-body">
 
-    <main style="padding-top: 64px;">
+            <!-- Retirement Services -->
+            <div class="cwh-acc">
+                <button class="cwh-acc-trig" aria-expanded="false">
+                    Retirement Services
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="cwh-acc-panel">
+                    <div class="cwh-acc-inner">
+                        <p class="cwh-acc-desc">A written plan for every dollar of retirement — tax sequencing, Social Security timing, portfolio design, and estate planning working as one.</p>
+                        <div class="cwh-acc-label">Core Services</div>
+                        <a href="/services/retirement-money-map/" class="cwh-acc-link"><span class="cwh-acc-link-title">Retirement Money Map</span></a>
+                        <a href="/services/tax-planning/" class="cwh-acc-link"><span class="cwh-acc-link-title">Tax-Efficient Strategies</span></a>
+                        <a href="/services/portfolio-management/" class="cwh-acc-link"><span class="cwh-acc-link-title">Portfolio Management</span></a>
+                        <a href="/services/social-security/" class="cwh-acc-link"><span class="cwh-acc-link-title">Social Security Optimization</span></a>
+                        <a href="/services/estate-planning/" class="cwh-acc-link"><span class="cwh-acc-link-title">Estate &amp; Legacy Planning</span></a>
+                        <div class="cwh-acc-label">Specialty</div>
+                        <a href="/services/401k-ira-rollover/" class="cwh-acc-link"><span class="cwh-acc-link-title">401(k) &amp; IRA Rollovers</span></a>
+                        <a href="/services/roth-conversions/" class="cwh-acc-link"><span class="cwh-acc-link-title">Roth Conversions</span></a>
+                        <a href="/services/medicare-irmaa/" class="cwh-acc-link"><span class="cwh-acc-link-title">Medicare &amp; IRMAA</span></a>
+                        <a href="/services/annuities/" class="cwh-acc-link"><span class="cwh-acc-link-title">Annuities</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Federal Benefits -->
+            <div class="cwh-acc">
+                <button class="cwh-acc-trig" aria-expanded="false">
+                    Federal Benefits
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="cwh-acc-panel">
+                    <div class="cwh-acc-inner">
+                        <p class="cwh-acc-desc">FERS done right — pension timing, TSP strategy, FEHB vs. Medicare, and survivor elections. By people who know the system.</p>
+                        <div class="cwh-acc-label">Plan Your Benefits</div>
+                        <a href="/services/federal-benefits/" class="cwh-acc-link"><span class="cwh-acc-link-title">Federal Benefits Overview</span></a>
+                        <a href="/services/federal-benefits/fers-retirement/" class="cwh-acc-link"><span class="cwh-acc-link-title">FERS Retirement</span></a>
+                        <a href="/services/federal-benefits/fers-supplement/" class="cwh-acc-link"><span class="cwh-acc-link-title">FERS Supplement</span></a>
+                        <a href="/services/federal-benefits/tsp-planning/" class="cwh-acc-link"><span class="cwh-acc-link-title">TSP Planning</span></a>
+                        <a href="/services/federal-benefits/fehb-retirement/" class="cwh-acc-link"><span class="cwh-acc-link-title">FEHB Retirement</span></a>
+                        <a href="/services/federal-benefits/fegli/" class="cwh-acc-link"><span class="cwh-acc-link-title">FEGLI Analysis</span></a>
+                        <div class="cwh-acc-label">Tools &amp; Resources</div>
+                        <a href="/services/federal-benefits/fers-calculator/" class="cwh-acc-link"><span class="cwh-acc-link-title">FERS Pension Calculator</span></a>
+                        <a href="/services/federal-benefits/federal-retirement-taxes/" class="cwh-acc-link"><span class="cwh-acc-link-title">Federal Retirement Taxes</span></a>
+                        <a href="/services/federal-benefits/federal-retirement-checklist/" class="cwh-acc-link"><span class="cwh-acc-link-title">Retirement Checklist</span></a>
+                        <a href="/l/federal-benefits-workshop/" class="cwh-acc-link"><span class="cwh-acc-link-title">Federal Benefits Workshop</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SDBA -->
+            <div class="cwh-acc">
+                <button class="cwh-acc-trig" aria-expanded="false">
+                    SDBA
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true"><path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="cwh-acc-panel">
+                    <div class="cwh-acc-inner">
+                        <p class="cwh-acc-desc">Take control of the money in your 401(k). Move beyond the default fund menu into a professionally managed portfolio — without leaving your plan.</p>
+                        <a href="/services/sdba/" class="cwh-acc-link"><span class="cwh-acc-link-title">SDBA Overview</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/about/" class="cwh-flat-link">Our Team
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="/resources/" class="cwh-flat-link">Resources
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+        <div class="cwh-drawer-foot">
+            <a href="/contact/" class="cwh-glass-btn cwh-primary">
+                Schedule a Visit
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://login.orionadvisor.com/login.html" target="_blank" rel="noopener" class="cwh-ghost">Client Login</a>
+        </div>
+    </aside>
+
+    <script>
+    (function(){
+        var shell = document.getElementById('cwhShell');
+        var ham   = document.getElementById('cwhHam');
+        var draw  = document.getElementById('cwhDrawer');
+        var scrim = document.getElementById('cwhScrim');
+        var close = document.getElementById('cwhDrawerClose');
+
+        if (shell) {
+            window.addEventListener('scroll', function(){
+                shell.classList.toggle('cwh-scrolled', window.scrollY > 12);
+            }, { passive: true });
+        }
+
+        function open(){
+            draw.classList.add('cwh-active');
+            scrim.classList.add('cwh-active');
+            ham.classList.add('cwh-active');
+            ham.setAttribute('aria-expanded', 'true');
+            draw.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+        function shut(){
+            draw.classList.remove('cwh-active');
+            scrim.classList.remove('cwh-active');
+            ham.classList.remove('cwh-active');
+            ham.setAttribute('aria-expanded', 'false');
+            draw.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        if (ham)   ham.addEventListener('click', function(){ draw.classList.contains('cwh-active') ? shut() : open(); });
+        if (close) close.addEventListener('click', shut);
+        if (scrim) scrim.addEventListener('click', shut);
+        document.addEventListener('keydown', function(e){ if (e.key === 'Escape') shut(); });
+
+        document.querySelectorAll('.cwh-acc-trig').forEach(function(trig){
+            trig.addEventListener('click', function(){
+                var acc = trig.closest('.cwh-acc');
+                var isOpen = acc.classList.contains('cwh-open');
+                document.querySelectorAll('.cwh-acc').forEach(function(a){
+                    a.classList.remove('cwh-open');
+                    var t = a.querySelector('.cwh-acc-trig');
+                    if (t) t.setAttribute('aria-expanded', 'false');
+                });
+                if (!isOpen) {
+                    acc.classList.add('cwh-open');
+                    trig.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    })();
+    </script>
+
+    <!-- Government Contractor Bar — shown only on federal-oriented pages -->
+    
+    
+    <div class="gov-bar" style="background: var(--primary, #0A3161); padding: 0.5rem 0; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1);">
+      <div style="max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; font-family: var(--font-body); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; color: rgba(255,255,255,0.85);">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="18" height="10" style="vertical-align: -1px; margin-right: 0.35em; border-radius: 1px;"><clipPath id="t"><rect width="60" height="30"/></clipPath><g clip-path="url(#t)"><rect width="60" height="30" fill="#B31942"/><rect y="2.31" width="60" height="2.31" fill="#fff"/><rect y="6.92" width="60" height="2.31" fill="#fff"/><rect y="11.54" width="60" height="2.31" fill="#fff"/><rect y="16.15" width="60" height="2.31" fill="#fff"/><rect y="20.77" width="60" height="2.31" fill="#fff"/><rect y="25.38" width="60" height="2.31" fill="#fff"/><rect width="24" height="16.15" fill="#0A3161"/></g></svg>An Official Government Registered Contractor&ensp;|&ensp;Unique Entity ID: <a href="https://cage.dla.mil/Search/Details?id=18320005" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.85); text-decoration: underline; text-underline-offset: 2px;">L63FVVWAKXA8</a>
+      </div>
+    </div>
+    
+
+    <main>
         
 <style>
 /* Service Subpage specific styles - using global CSS variables */
@@ -770,7 +1023,7 @@
   padding: 2rem 2rem 5rem;
   background: var(--surface-container-low);
   overflow: hidden;
-  margin-top: -1rem;
+
 }
 
 .ep-hero-inner {
@@ -1239,7 +1492,7 @@
       <span class="ep-chapter-label">Federal Retirement Checklist</span>
       <h1 class="ep-hero-title">Your Federal Retirement</h1>
       <span class="ep-hero-title-italic">Checklist.</span>
-      <p class="ep-hero-body">Federal retirement involves complex coordination of FERS, TSP, FEHB, FEGLI, and Social Security. This comprehensive timeline ensures you don't miss critical steps or deadlines that could cost you thousands in benefits.</p>
+      <p class="ep-hero-body">Federal retirement involves complex coordination of FERS, TSP, FEHB, FEGLI, and Social Security. This comprehensive timeline ensures you don't miss critical steps or deadlines that could cost you thousands in benefits. Step one: run your numbers through our <a href="/services/federal-benefits/fers-calculator/" style="color: var(--secondary); text-decoration: underline;">FERS retirement calculator</a>.</p>
       <a href="#timeline" class="ep-btn-primary">View Complete Checklist</a>
     </div>
     <div class="ep-hero-image-wrap">
@@ -1253,6 +1506,74 @@
     </div>
   </div>
 </section>
+
+
+
+<style>
+.aso-bar {
+  background: #f4f5f7;
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.aso-bar-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 var(--space-6, 1.5rem);
+  text-align: center;
+}
+.aso-bar-label {
+  font-family: var(--font-mono, 'SF Mono', 'Fira Code', monospace);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #7a7f8a;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+.aso-bar-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  flex-wrap: wrap;
+}
+.aso-bar-logos img {
+  height: clamp(22px, 3vw, 32px);
+  width: auto;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.25s ease;
+}
+.aso-bar-logos img:hover { opacity: 1; }
+
+.aso-bar-logos img.aso-invert {
+  filter: brightness(0) saturate(100%) opacity(0.6);
+}
+.aso-bar-logos img.aso-invert:hover {
+  filter: brightness(0) saturate(100%) opacity(0.85);
+}
+@media (max-width: 600px) {
+  .aso-bar-logos { gap: 1.5rem; }
+  .aso-bar-logos img { height: 20px; }
+}
+</style>
+
+<div class="aso-bar">
+  <div class="aso-bar-inner">
+    <span class="aso-bar-label">Also Seen On</span>
+    <div class="aso-bar-logos">
+      <img src="/assets/images/media/ksl-color.png" alt="KSL NewsRadio 102.7 FM" loading="lazy" />
+      <img src="/assets/images/media/fortune-color.png" alt="Fortune" loading="lazy" />
+      <img src="/assets/images/media/kslcom-color.png" alt="KSL.com" loading="lazy" />
+      <img src="/assets/images/media/knrs-color.png" alt="TalkRadio 1059 KNRS" loading="lazy" />
+      <img src="/assets/images/media/newstalk-color.png" alt="NewsTalk 107.9 FM" loading="lazy" />
+      <img src="/assets/images/media/kid-color.png" alt="KID Radio" loading="lazy" />
+    </div>
+  </div>
+</div>
+
+
 
 
 <section id="timeline" class="ep-timeline">
@@ -1271,36 +1592,43 @@
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Calculate Your FERS Projection</strong>
-              <span>Use our calculator or get professional analysis to understand your pension amount and identify optimization opportunities.</span>
+              <strong>Verify Your Service Computation Date (SCD)</strong>
+              <span>Request your Official Personnel Folder and confirm your SCD is accurate. Errors in creditable service can reduce your <a href="/services/federal-benefits/fers-retirement/">FERS pension</a> by thousands. Verify all prior federal positions, military service, and any periods of leave without pay are correctly reflected.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Verify FEHB Eligibility</strong>
-              <span>Ensure continuous enrollment for 5 years before retirement. This is critical — you cannot get FEHB back if you don't meet the requirement.</span>
+              <strong>Confirm FEHB 5-Year Enrollment Chain</strong>
+              <span>Verify you have been continuously enrolled in <a href="/services/federal-benefits/fehb-retirement/">FEHB</a> and will maintain enrollment for 5 consecutive years before retirement. Any gaps — including periods on a spouse's plan — can disqualify you from carrying health coverage into retirement.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Review Military Buyback Options</strong>
-              <span>If you have military service, analyze whether buying back time makes financial sense. This requires a 3% deposit plus interest if past 3 years of service.</span>
+              <strong>Investigate Military Buyback</strong>
+              <span>If you have military service, analyze whether buying back that time makes financial sense. The deposit is 3% of military base pay plus interest if more than 3 years have elapsed since separation. Military buyback adds creditable service to your <a href="/services/federal-benefits/fers-calculator/">FERS calculation</a> and can significantly increase your pension.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Maximize TSP Contributions</strong>
-              <span>Ensure you're at least getting full agency match (5%). Consider increasing contributions, especially if you're behind on retirement savings.</span>
+              <strong>Review TSP Allocation & Contributions</strong>
+              <span>Ensure you are at least contributing enough to capture the full 5% agency match. Review your <a href="/services/federal-benefits/tsp-planning/">TSP allocation</a> across the L, C, S, I, G, and F funds to confirm your investment mix aligns with your retirement timeline. Consider whether the <a href="/services/federal-benefits/tsp-mutual-fund-window/">TSP Mutual Fund Window</a> offers diversification benefits for your situation.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Analyze FEGLI Coverage</strong>
-              <span>Review your life insurance needs and costs. Option B can become extremely expensive in retirement — explore private alternatives now.</span>
+              <strong>Start Tracking Retirement Expenses</strong>
+              <span>Begin documenting your actual monthly spending to build a realistic retirement budget. Understanding your true cost of living — including healthcare, travel, and hobbies — is essential for determining whether your combined FERS pension, TSP withdrawals, and Social Security will support your lifestyle.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Consider a Federal Benefits Specialist</strong>
+              <span>A financial advisor who specializes in federal employee benefits can identify optimization opportunities you might miss, from military buyback decisions to <a href="/services/federal-benefits/federal-retirement-taxes/">tax-efficient withdrawal strategies</a>. Early engagement gives you time to implement multi-year strategies.</span>
             </div>
           </li>
         </ul>
@@ -1309,7 +1637,7 @@
 
     <div class="ep-timeline-item">
       <div class="ep-timeline-period">
-        <h3 class="ep-timeline-period-title">2 Years Before</h3>
+        <h3 class="ep-timeline-period-title">3 Years Before</h3>
         <p class="ep-timeline-period-subtitle">Optimization Phase</p>
       </div>
       <div class="ep-timeline-content">
@@ -1318,36 +1646,36 @@
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Optimize Your High-3 Salary</strong>
-              <span>Work toward promotions or step increases to maximize your highest 3-year average. Every dollar increase adds $10-11 annually to your pension.</span>
+              <strong>Get an Official Pension Estimate</strong>
+              <span>Request a formal benefits estimate from your agency HR office or use the <a href="/services/federal-benefits/fers-calculator/">FERS calculator</a> to model your projected annuity. Compare your high-3 salary trajectory and confirm the numbers match your expectations. This is also the time to verify that any military buyback or deposit service is correctly reflected.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Plan Social Security Strategy</strong>
-              <span>Understand how FERS supplement coordinates with Social Security. Plan claiming strategy considering WEP/GPO elimination benefits.</span>
+              <strong>Review FEGLI Costs in Retirement</strong>
+              <span><a href="/services/federal-benefits/fegli/">FEGLI</a> Option B and Option C premiums increase significantly at age 60+ and can become prohibitively expensive in retirement. Analyze whether your current coverage level is worth continuing and explore private term or whole life alternatives while you are still insurable. Locking in private coverage now can save tens of thousands over your retirement.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Review TSP Allocation</strong>
-              <span>Adjust investment strategy for your changing time horizon. Consider if you want to keep TSP after retirement or roll to IRA.</span>
+              <strong>Analyze Social Security Claiming Strategy</strong>
+              <span>Understand how the <a href="/services/federal-benefits/fers-supplement/">FERS supplement</a> bridges the gap between early retirement and age 62, and model different <a href="/services/federal-benefits/social-security-federal/">Social Security</a> claiming ages (62, full retirement age, or 70). With WEP/GPO now eliminated, many federal retirees have more flexibility. Each year of delay past full retirement age adds 8% in delayed retirement credits.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Estate Planning Update</strong>
-              <span>Review beneficiaries on all accounts, update wills, consider survivor benefit elections. Coordinate FERS survivor benefits with other assets.</span>
+              <strong>Update Estate Documents</strong>
+              <span>Review and update your will, powers of attorney, and beneficiary designations on all accounts including TSP, FEGLI, and FERS. Coordinate your FERS survivor benefit election with your overall estate plan. If you are married, discuss survivor annuity options — this decision is irrevocable at retirement and requires spousal consent to waive.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Healthcare Transition Planning</strong>
-              <span>Research FEHB plans for retirees, understand Medicare coordination at 65, plan for any needed medical care before retirement.</span>
+              <strong>Model Tax Scenarios for Retirement</strong>
+              <span>Project your <a href="/services/federal-benefits/federal-retirement-taxes/">retirement tax situation</a> by combining FERS annuity, TSP withdrawals, Social Security, and any other income. Evaluate whether Roth conversions in your final working years — when you may be in a lower bracket — could reduce your lifetime tax burden. Consider the impact of Required Minimum Distributions starting at age 73.</span>
             </div>
           </li>
         </ul>
@@ -1365,36 +1693,43 @@
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Attend Retirement Seminar</strong>
-              <span>Participate in your agency's retirement workshop or attend our federal benefits seminar for latest updates and procedures.</span>
+              <strong>Confirm Final Pension Calculation</strong>
+              <span>Request an updated <a href="/services/federal-benefits/fers-retirement/">FERS annuity estimate</a> that reflects your current high-3 salary and total creditable service including projected sick leave. Verify the calculation accounts for any special provisions (law enforcement, firefighter, air traffic controller) that apply to your position.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Accumulate Sick Leave</strong>
-              <span>Minimize sick leave usage to maximize service credit. All unused sick leave adds to your service time for annuity calculation.</span>
+              <strong>Choose Your FEHB Plan for Retirement</strong>
+              <span>Research <a href="/services/federal-benefits/fehb-retirement/">FEHB plans available to retirees</a> and compare premiums, networks, and prescription coverage. If you are approaching 65, evaluate how each plan coordinates with Medicare. You can change plans during Open Season or at retirement, but you cannot re-enroll if you ever drop coverage.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Final FEGLI Decision</strong>
-              <span>Make final decision on life insurance continuation. If switching to private insurance, secure coverage before canceling FEGLI.</span>
+              <strong>Make Final FEGLI Elections</strong>
+              <span>Decide which <a href="/services/federal-benefits/fegli/">FEGLI</a> options to continue into retirement. You must make this election at retirement — Basic coverage continues automatically with a 75% reduction, but Options A, B, and C require active election. If you secured private coverage, this is when you can drop FEGLI.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Tax Planning</strong>
-              <span>Consider Roth conversions in lower-income years, plan for required minimum distributions, understand tax impact of retirement income sources.</span>
+              <strong>Decide on Survivor Annuity</strong>
+              <span>Choose full (50% of pension to surviving spouse), partial (25%), or no survivor benefit. This election is irrevocable and requires notarized spousal consent if you choose less than full. The cost is 10% of your annuity for full or 5% for partial — factor this into your retirement income projections.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Budget for Retirement</strong>
-              <span>Create detailed retirement budget including all income sources (FERS, TSP, Social Security) and expenses including healthcare costs.</span>
+              <strong>Set Your Retirement Date</strong>
+              <span>Choose a strategic retirement date. The end of a leave period (typically end of month or end of pay period) maximizes your final paycheck and leave payout. If you are close to a step increase or within-grade date, waiting a few weeks can permanently increase your high-3 average and pension.</span>
+            </div>
+          </li>
+          <li class="ep-checklist-item">
+            <div class="ep-checklist-icon"></div>
+            <div class="ep-checklist-text">
+              <strong>Begin TSP Withdrawal Planning</strong>
+              <span>Develop your <a href="/services/federal-benefits/tsp-planning/">TSP withdrawal strategy</a> — monthly installments, partial lump sum, TSP life annuity, or a combination. Consider the <a href="/services/federal-benefits/federal-retirement-taxes/">tax implications</a> of each option and whether rolling part of your TSP to an IRA gives you more flexibility. Federal employees who separate at age 55+ avoid the 10% early withdrawal penalty.</span>
             </div>
           </li>
         </ul>
@@ -1403,7 +1738,7 @@
 
     <div class="ep-timeline-item">
       <div class="ep-timeline-period">
-        <h3 class="ep-timeline-period-title">6 Months Before</h3>
+        <h3 class="ep-timeline-period-title">Final 3 Months</h3>
         <p class="ep-timeline-period-subtitle">Application Phase</p>
       </div>
       <div class="ep-timeline-content">
@@ -1412,36 +1747,36 @@
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Submit Retirement Application</strong>
-              <span>File SF-3107 (FERS) or SF-2801 (CSRS) with your HR office. 90 days advance notice is recommended, 60 days minimum.</span>
+              <strong>Submit SF-3107 (60-90 Days Out)</strong>
+              <span>File your Application for Immediate Retirement with your agency HR office. OPM requires a minimum of 60 days notice; most agencies prefer 90 days or more. Include your marriage certificate, DD-214 (if applicable), birth certificate, and notarized spouse consent if electing less than full survivor benefit.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Complete Beneficiary Forms</strong>
-              <span>Submit SF-3102 (FERS) designation of beneficiary and update TSP beneficiaries. Ensure all forms are current and accurate.</span>
+              <strong>Elect TSP Withdrawal Method</strong>
+              <span>Submit your <a href="/services/federal-benefits/tsp-planning/">TSP withdrawal election</a> (TSP-70 or online request). You cannot process a withdrawal until after your retirement effective date, but having your strategy decided and paperwork ready prevents delays. Remember: TSP withdrawals are taxed as ordinary income in the year received.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Plan TSP Withdrawal</strong>
-              <span>Decide on TSP withdrawal strategy: monthly payments, partial lump sum, annuity, or combination. Submit appropriate forms.</span>
+              <strong>Prepare for the Interim Annuity Period</strong>
+              <span>OPM typically takes 2 to 6 months to fully process your retirement. During this time, you will receive an interim annuity of approximately 85% of your estimated pension within 4 to 8 weeks. Build a cash reserve to cover any gap between your last paycheck and the first interim payment, and budget for the reduced amount until final adjudication.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>FEHB Election</strong>
-              <span>Confirm FEHB plan selection for retirement. You can change plans during open season but cannot re-enroll if you drop coverage.</span>
+              <strong>Notify Relevant Parties</strong>
+              <span>Inform your supervisor, HR office, and any professional contacts of your retirement date. If you have a financial advisor, schedule a transition meeting to coordinate pension, TSP, <a href="/services/federal-benefits/social-security-federal/">Social Security</a>, and investment income in your first year of retirement.</span>
             </div>
           </li>
           <li class="ep-checklist-item">
             <div class="ep-checklist-icon"></div>
             <div class="ep-checklist-text">
-              <strong>Survivor Benefit Decision</strong>
-              <span>Make final decision on FERS survivor benefit election. This is irrevocable — choose full, partial, or no survivor benefit carefully.</span>
+              <strong>Document Leave Balances</strong>
+              <span>Verify your annual leave balance (you will receive a lump-sum payout for unused annual leave) and sick leave balance (which converts to additional creditable service for your annuity calculation). Every 174 hours of sick leave equals approximately one additional month of service credit under FERS.</span>
             </div>
           </li>
         </ul>
@@ -1545,6 +1880,134 @@
 </section>
 
 
+<section id="checklist" class="ep-timeline" style="background: var(--surface-container-low);">
+  <div class="ep-timeline-inner">
+    <span class="ep-chapter-label" style="display: block; text-align: center; margin-bottom: 1rem;">Quick Reference</span>
+    <h2 class="ep-timeline-title">2026 Key Deadlines & Filing Windows</h2>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <ul class="ep-checklist">
+        <li class="ep-checklist-item">
+          <div class="ep-checklist-icon"></div>
+          <div class="ep-checklist-text">
+            <strong>SF-3107 Submission</strong>
+            <span>File 60 to 90 days before your retirement effective date. OPM requires a minimum of 60 days; most agencies prefer 90 or more.</span>
+          </div>
+        </li>
+        <li class="ep-checklist-item">
+          <div class="ep-checklist-icon"></div>
+          <div class="ep-checklist-text">
+            <strong>TSP Withdrawal</strong>
+            <span>Cannot be processed until after your retirement effective date. Submit your election (TSP-70 or online) once separated. <a href="/services/federal-benefits/tsp-planning/">Learn more about TSP withdrawal options</a>.</span>
+          </div>
+        </li>
+        <li class="ep-checklist-item">
+          <div class="ep-checklist-icon"></div>
+          <div class="ep-checklist-text">
+            <strong>FEHB Election</strong>
+            <span>Change plans during Open Season (November-December) or at retirement. You cannot re-enroll once you drop coverage. <a href="/services/federal-benefits/fehb-retirement/">Review FEHB retirement rules</a>.</span>
+          </div>
+        </li>
+        <li class="ep-checklist-item">
+          <div class="ep-checklist-icon"></div>
+          <div class="ep-checklist-text">
+            <strong>FEGLI Election</strong>
+            <span>Made at the time of retirement. Basic coverage continues with a 75% reduction; Options A, B, and C require active election. <a href="/services/federal-benefits/fegli/">Review FEGLI costs and options</a>.</span>
+          </div>
+        </li>
+        <li class="ep-checklist-item">
+          <div class="ep-checklist-icon"></div>
+          <div class="ep-checklist-text">
+            <strong>Survivor Annuity</strong>
+            <span>Elected at retirement. Choosing less than full survivor benefit requires notarized spousal consent. This decision is irrevocable once your retirement is processed.</span>
+          </div>
+        </li>
+        <li class="ep-checklist-item">
+          <div class="ep-checklist-icon"></div>
+          <div class="ep-checklist-text">
+            <strong>Medicare Part B Enrollment</strong>
+            <span>Enroll within 8 months of losing employer group health coverage to avoid late-enrollment penalties. Most federal retirees with FEHB should still enroll in Part B at 65 to reduce out-of-pocket costs.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="ep-timeline" style="padding: 4rem 2rem;">
+  <div class="ep-timeline-inner">
+    <span class="ep-chapter-label" style="display: block; text-align: center; margin-bottom: 1rem;">Related Resources</span>
+    <h2 class="ep-timeline-title">Explore Your Federal Benefits</h2>
+    <p style="text-align: center; font-size: 1rem; color: var(--on-surface-variant); max-width: 640px; margin: -1.5rem auto 3rem; line-height: 1.7;">Each component of your federal retirement package has nuances that affect your overall outcome. Dive deeper into the topics that matter most to your situation.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto;">
+      <a href="/services/federal-benefits/fers-retirement/" class="ep-checklist-item" style="text-decoration: none; border-left-color: var(--primary);">
+        <div class="ep-checklist-icon" style="background: var(--primary);"></div>
+        <div class="ep-checklist-text">
+          <strong>FERS Retirement</strong>
+          <span>Understand your FERS pension formula, eligibility requirements, and strategies to maximize your annuity.</span>
+        </div>
+      </a>
+      <a href="/services/federal-benefits/fers-calculator/" class="ep-checklist-item" style="text-decoration: none; border-left-color: var(--primary);">
+        <div class="ep-checklist-icon" style="background: var(--primary);"></div>
+        <div class="ep-checklist-text">
+          <strong>FERS Calculator</strong>
+          <span>Estimate your FERS pension based on years of service, high-3 salary, and retirement age.</span>
+        </div>
+      </a>
+      <a href="/services/federal-benefits/fers-supplement/" class="ep-checklist-item" style="text-decoration: none; border-left-color: var(--primary);">
+        <div class="ep-checklist-icon" style="background: var(--primary);"></div>
+        <div class="ep-checklist-text">
+          <strong>FERS Supplement</strong>
+          <span>Learn how the Special Retirement Supplement bridges income between early retirement and Social Security at 62.</span>
+        </div>
+      </a>
+      <a href="/services/federal-benefits/tsp-planning/" class="ep-checklist-item" style="text-decoration: none; border-left-color: var(--primary);">
+        <div class="ep-checklist-icon" style="background: var(--primary);"></div>
+        <div class="ep-checklist-text">
+          <strong>TSP Planning</strong>
+          <span>Contribution strategies, fund allocation, and withdrawal options for your Thrift Savings Plan.</span>
+        </div>
+      </a>
+      <a href="/services/federal-benefits/tsp-mutual-fund-window/" class="ep-checklist-item" style="text-decoration: none; border-left-color: var(--primary);">
+        <div class="ep-checklist-icon" style="background: var(--primary);"></div>
+        <div class="ep-checklist-text">
+          <strong>TSP Mutual Fund Window</strong>
+          <span>Explore expanded investment options available through the TSP Mutual Fund Window.</span>
+        </div>
+      </a>
+      <a href="/services/federal-benefits/fehb-retirement/" class="ep-checklist-item" style="text-decoration: none; border-left-color: var(--primary);">
+        <div class="ep-checklist-icon" style="background: var(--primary);"></div>
+        <div class="ep-checklist-text">
+          <strong>FEHB in Retirement</strong>
+          <span>Eligibility rules, plan selection, and Medicare coordination for federal health benefits.</span>
+        </div>
+      </a>
+      <a href="/services/federal-benefits/fegli/" class="ep-checklist-item" style="text-decoration: none; border-left-color: var(--primary);">
+        <div class="ep-checklist-icon" style="background: var(--primary);"></div>
+        <div class="ep-checklist-text">
+          <strong>FEGLI</strong>
+          <span>Federal life insurance options, costs in retirement, and when private alternatives make sense.</span>
+        </div>
+      </a>
+      <a href="/services/federal-benefits/social-security-federal/" class="ep-checklist-item" style="text-decoration: none; border-left-color: var(--primary);">
+        <div class="ep-checklist-icon" style="background: var(--primary);"></div>
+        <div class="ep-checklist-text">
+          <strong>Social Security for Federal Employees</strong>
+          <span>Claiming strategies, coordination with FERS, and the impact of WEP/GPO repeal.</span>
+        </div>
+      </a>
+      <a href="/services/federal-benefits/federal-retirement-taxes/" class="ep-checklist-item" style="text-decoration: none; border-left-color: var(--primary);">
+        <div class="ep-checklist-icon" style="background: var(--primary);"></div>
+        <div class="ep-checklist-text">
+          <strong>Federal Retirement Taxes</strong>
+          <span>Tax planning strategies for FERS annuity, TSP withdrawals, and Social Security income.</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
 <section class="ep-faq" id="faq">
   <div class="ep-faq-inner">
     <div>
@@ -1559,20 +2022,36 @@
         <div class="ep-faq-a"><p>Start planning your federal retirement at least 5 years before your intended retirement date. This gives you time to optimize your FERS pension calculation, maximize TSP contributions, ensure FEHB eligibility, review FEGLI needs, plan Social Security coordination, and make any necessary adjustments to your federal benefits. Early planning allows you to take advantage of strategies like military buyback, sick leave maximization, and high-3 salary optimization that require time to implement properly.</p></div>
       </button>
       <button class="ep-faq-item" onclick="this.classList.toggle('active')">
-        <span class="ep-faq-q">What forms do I need to submit for federal retirement? <span class="ep-faq-icon">+</span></span>
-        <div class="ep-faq-a"><p>The primary form is SF-3107 (Application for Immediate Retirement - FERS) or SF-2801 for CSRS employees. You'll also need SF-3102 (Designation of Beneficiary - FERS), health insurance enrollment forms if making changes, TSP withdrawal forms, and potentially survivor benefit elections. Submit your retirement application to your HR office at least 60 days before your intended retirement date (90 days is recommended). Each agency may have additional forms or requirements, so check with your HR department early in the process.</p></div>
+        <span class="ep-faq-q">How far in advance should I submit my retirement application? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>OPM recommends submitting your retirement application (SF-3107 for FERS) at least 60 days before your intended retirement date. However, many agencies prefer 90 days or more to ensure all paperwork is processed smoothly. Submitting early gives your HR office time to review your application, request any missing documentation, and resolve discrepancies before your effective date. Check with your specific agency for their preferred timeline.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">How long does OPM take to process retirement? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>OPM typically takes 2 to 6 months to fully process a federal retirement application. During this processing period, you will receive an interim annuity &mdash; approximately 85% of your estimated pension &mdash; which usually begins within 4 to 8 weeks of your retirement effective date. Once OPM completes final adjudication, your annuity will be adjusted to the correct amount and you will receive any back pay owed.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">Can I change my mind after submitting my retirement application? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>You can withdraw your retirement application at any time before your effective retirement date by submitting a written request to your agency's HR office. However, after your effective date has passed, reinstatement to federal service requires agency approval and is not guaranteed. Factors such as your position, agency needs, and the length of time since retirement all affect whether reinstatement is possible. Consider your decision carefully before your effective date.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What documents do I need for federal retirement? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>Key documents for federal retirement include: SF-3107 (Application for Immediate Retirement &mdash; FERS), TSP-70 or online withdrawal request for TSP distributions, proof of birth (birth certificate or passport), marriage certificate if electing survivor benefits, DD-214 if claiming military service credit, and notarized spouse consent form if waiving or reducing survivor annuity. Each agency may require additional forms, so consult your HR office early to compile everything you need.</p></div>
+      </button>
+      <button class="ep-faq-item" onclick="this.classList.toggle('active')">
+        <span class="ep-faq-q">What is the interim annuity? <span class="ep-faq-icon">+</span></span>
+        <div class="ep-faq-a"><p>The interim annuity is a temporary payment of approximately 85% of your estimated FERS pension that OPM pays while your full retirement application is being processed. It typically begins within 4 to 8 weeks of your retirement effective date and continues for 2 to 6 months until OPM completes final adjudication. The interim payment does not include survivor benefit reductions or any other adjustments &mdash; those are applied once your case is fully processed, and you will receive retroactive adjustments at that time.</p></div>
       </button>
       <button class="ep-faq-item" onclick="this.classList.toggle('active')">
         <span class="ep-faq-q">How do I ensure I meet the 5-year FEHB rule? <span class="ep-faq-icon">+</span></span>
-        <div class="ep-faq-a"><p>To carry FEHB into retirement, you must be enrolled for 5 consecutive years immediately before retirement. Check your personnel records to verify continuous enrollment. If you have any gaps (such as periods covered under a spouse's plan), you may not be eligible. Limited exceptions exist for military service or involuntary loss of spousal coverage. If you're close to but don't meet the 5-year requirement, consider extending your retirement date to qualify, as FEHB is extremely valuable in retirement.</p></div>
+        <div class="ep-faq-a"><p>To carry <a href="/services/federal-benefits/fehb-retirement/">FEHB</a> into retirement, you must be enrolled for 5 consecutive years immediately before retirement. Check your personnel records to verify continuous enrollment. If you have any gaps (such as periods covered under a spouse's plan), you may not be eligible. Limited exceptions exist for military service or involuntary loss of spousal coverage. If you are close to but do not meet the 5-year requirement, consider extending your retirement date to qualify, as FEHB is extremely valuable in retirement.</p></div>
       </button>
       <button class="ep-faq-item" onclick="this.classList.toggle('active')">
         <span class="ep-faq-q">Should I take a lump sum TSP withdrawal or monthly payments? <span class="ep-faq-icon">+</span></span>
-        <div class="ep-faq-a"><p>This depends on your overall financial situation, other retirement income sources, investment knowledge, and estate planning goals. TSP offers four withdrawal options: lump sum, monthly installments, TSP annuity, or a combination. Consider factors like investment management capability, need for guaranteed income, tax implications, and estate planning. Many retirees benefit from keeping some money in the low-cost TSP while taking systematic withdrawals. Federal employees who separate at age 55+ can access TSP without the 10% early withdrawal penalty.</p></div>
+        <div class="ep-faq-a"><p>This depends on your overall financial situation, other retirement income sources, investment knowledge, and estate planning goals. <a href="/services/federal-benefits/tsp-planning/">TSP</a> offers four withdrawal options: lump sum, monthly installments, TSP annuity, or a combination. Consider factors like investment management capability, need for guaranteed income, <a href="/services/federal-benefits/federal-retirement-taxes/">tax implications</a>, and estate planning. Many retirees benefit from keeping some money in the low-cost TSP while taking systematic withdrawals. Federal employees who separate at age 55+ can access TSP without the 10% early withdrawal penalty.</p></div>
       </button>
       <button class="ep-faq-item" onclick="this.classList.toggle('active')">
         <span class="ep-faq-q">When should I claim Social Security as a federal retiree? <span class="ep-faq-icon">+</span></span>
-        <div class="ep-faq-a"><p>Federal employees have unique considerations for Social Security timing. Key factors include: (1) The FERS supplement ends at age 62, potentially creating an income gap if you delay Social Security, (2) Your FERS pension provides some income security, allowing flexibility in timing, (3) Delayed retirement credits (8% per year from full retirement age to 70), and (4) Tax implications of combined FERS and Social Security income. With WEP/GPO now eliminated, many federal retirees benefit from claiming at full retirement age (66-67) to bridge the gap when the FERS supplement ends, but individual situations vary significantly.</p></div>
+        <div class="ep-faq-a"><p>Federal employees have unique considerations for <a href="/services/federal-benefits/social-security-federal/">Social Security</a> timing. Key factors include: the <a href="/services/federal-benefits/fers-supplement/">FERS supplement</a> ends at age 62 potentially creating an income gap if you delay Social Security, your FERS pension provides some income security allowing flexibility in timing, delayed retirement credits of 8% per year from full retirement age to 70, and tax implications of combined FERS and Social Security income. With WEP/GPO now eliminated, many federal retirees benefit from claiming at full retirement age (66-67) to bridge the gap when the FERS supplement ends, but individual situations vary significantly.</p></div>
       </button>
     </div>
   </div>
@@ -2084,18 +2563,7 @@ document.querySelectorAll('.ep-faq-item').forEach(function(item) {
         <div class="finpay-footer-content">
             <div class="finpay-footer-brand">
                 <a href="/"><img src="/assets/images/logos/logo-horizontal-white.png" alt="Capital Wealth" style="height: 36px; width: auto; margin-bottom: 1rem;"></a>
-                <p style="font-size: 1.1rem; font-weight: 600; color: #FDD25E; margin-bottom: 0.5rem;">Fiduciary. Always.</p>
                 <p>Strategic Income & Tax Planning for Your Retirement</p>
-                <div style="display: flex; gap: 1rem; margin: 1.5rem 0;">
-                    <div class="trust-badge" style="background: rgba(255,255,255,0.1); color: white;">
-                        <strong>Fiduciary</strong><br>
-                        <span style="font-size: 0.75rem;">Always</span>
-                    </div>
-                    <div class="trust-badge" style="background: rgba(255,255,255,0.1); color: white;">
-                        <strong>25+ Years</strong><br>
-                        <span style="font-size: 0.75rem;">Experience</span>
-                    </div>
-                </div>
                 
                 <!-- Contact Info with Real Lehi Address -->
                 <p style="color: #a3a3a3; font-size: 0.875rem; margin-bottom: 1rem;">
@@ -2133,6 +2601,7 @@ document.querySelectorAll('.ep-faq-item').forEach(function(item) {
                 <a href="/services/federal-benefits/">Federal Overview</a>
                 <a href="/services/federal-benefits/fers-retirement/">FERS Retirement</a>
                 <a href="/services/federal-benefits/tsp-planning/">TSP Planning</a>
+                <a href="/services/federal-benefits/tsp-mutual-fund-window/">TSP Mutual Fund Window</a>
                 <a href="/services/federal-benefits/fegli/">FEGLI Analysis</a>
                 <a href="/services/federal-benefits/fehb-retirement/">FEHB Coordination</a>
                 <a href="/services/federal-benefits/social-security-federal/">SS + Federal</a>
@@ -2143,7 +2612,6 @@ document.querySelectorAll('.ep-faq-item').forEach(function(item) {
             <div class="finpay-footer-links">
                 <h4>SDBA</h4>
                 <a href="/services/sdba/">SDBA Overview</a>
-                <a href="/services/sdba/tsp-mutual-fund-window/">TSP Mutual Fund Window</a>
                 <a href="/services/sdba/401k-brokerage-window/">401(k) Brokerage Window</a>
                 <a href="/guides/sdba-complete-guide/">SDBA Complete Guide</a>
             </div>
@@ -2160,7 +2628,6 @@ document.querySelectorAll('.ep-faq-item').forEach(function(item) {
 
             <div class="finpay-footer-links">
                 <h4>Company</h4>
-                <a href="/about/">Our Team</a>
                 <a href="/contact/">Schedule a Visit</a>
                 <a href="/disclosures/">Disclosures</a>
                 <a href="/brand-facts/">Brand Facts</a>
@@ -2169,6 +2636,15 @@ document.querySelectorAll('.ep-faq-item').forEach(function(item) {
             </div>
         </div>
         
+        
+        
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding: 1rem 0 0; margin-bottom: 0.75rem; text-align: center;">
+            <p style="font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; color: rgba(255,255,255,0.55); margin: 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="18" height="10" style="vertical-align: -1px; margin-right: 0.35em; border-radius: 1px;"><clipPath id="tf"><rect width="60" height="30"/></clipPath><g clip-path="url(#tf)"><rect width="60" height="30" fill="#B31942"/><rect y="2.31" width="60" height="2.31" fill="#fff"/><rect y="6.92" width="60" height="2.31" fill="#fff"/><rect y="11.54" width="60" height="2.31" fill="#fff"/><rect y="16.15" width="60" height="2.31" fill="#fff"/><rect y="20.77" width="60" height="2.31" fill="#fff"/><rect y="25.38" width="60" height="2.31" fill="#fff"/><rect width="24" height="16.15" fill="#0A3161"/></g></svg>An Official Government Registered Contractor&ensp;|&ensp;Unique Entity ID: <a href="https://cage.dla.mil/Search/Details?id=18320005" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.55); text-decoration: underline; text-underline-offset: 2px;">L63FVVWAKXA8</a>
+            </p>
+        </div>
+        
+
         <div class="finpay-footer-bottom">
             <p>&copy; 2026 Capital Wealth. All rights reserved. | Investment advisory services offered through Capital Wealth. Michael Stevens. | <a href="/disclosures/" style="color: #737373;">Important Disclosures</a></p>
         </div>
@@ -2387,7 +2863,7 @@ document.querySelectorAll('.ep-faq-item').forEach(function(item) {
   right: -2px;
   width: 18px;
   height: 18px;
-  background: #FDD25E;
+  background: #C7A356;
   border-radius: 50%;
   border: 2px solid #fff;
   display: none;
@@ -2756,6 +3232,27 @@ document.querySelectorAll('.ep-faq-item').forEach(function(item) {
 })();
 </script>
 
+
+    
+    
+    <script type="text/javascript">
+    _linkedin_partner_id = "9922273";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script><script type="text/javascript">
+    (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+    window.lintrk.q=[]}
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})(window.lintrk);
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9922273&fmt=gif" />
+    </noscript>
+    
 
 </body>
 </html>
