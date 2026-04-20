@@ -566,10 +566,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Google Analytics conversion
+  // GA4 event — named so we can track registrations in GA4 reports.
+  // NOTE: This was previously firing a broken Google Ads 'conversion' event with a GA4
+  // property ID (G-XNE17HRDX8/federal_workshop_registration) instead of a proper
+  // AW-XXX/label — Google Ads never recorded it. If we start running paid search
+  // against the federal workshop, create a Google Ads conversion action and add a
+  // second gtag('event', 'conversion', { send_to: 'AW-XXX/YYY', ... }) call.
   if (typeof gtag !== 'undefined') {
-    gtag('event', 'conversion', {
-      send_to: 'G-XNE17HRDX8/federal_workshop_registration',
+    gtag('event', 'federal_workshop_registration', {
       value: 750,
       currency: 'USD',
       transaction_id: Date.now().toString()
