@@ -36,6 +36,17 @@ As a federal employee under the Federal Employees Retirement System (FERS), you 
 </ul>
 </div>
 
+<div style="margin: 2rem 0;">
+<a href="/services/federal-benefits/fers-calculator/" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 2rem; background: var(--surface-container-low, #f8f9fa); border-radius: 16px; border-left: 4px solid var(--secondary, #D4AF37); text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
+  <div style="flex: 1 1 400px;">
+    <div style="font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--secondary, #D4AF37); margin-bottom: 0.5rem;">Free Tool</div>
+    <h3 style="font-family: var(--font-serif-display); font-size: 1.5rem; color: var(--primary, #0A3161); margin: 0 0 0.5rem; font-weight: 400;">Calculate your FERS pension before you read further</h3>
+    <p style="font-family: var(--font-body); font-size: 1rem; line-height: 1.6; color: var(--on-surface-variant, #555); margin: 0;">Plug in your high-3 salary, years of service, sick leave, and retirement age to see your estimated annual and monthly pension. Then come back to this guide and you'll know exactly what each strategy is worth to you.</p>
+  </div>
+  <span style="font-family: var(--font-body); font-size: 1rem; font-weight: 500; color: var(--secondary, #D4AF37); white-space: nowrap;">Try the FERS calculator →</span>
+</a>
+</div>
+
 ## Understanding the FERS Three-Part System
 
 The Federal Employees Retirement System consists of three components designed to work together:
@@ -85,6 +96,8 @@ Your "high-3" is the average of your highest 36 consecutive months of basic pay,
 - Age 62+ with 20+ years: Enhanced 1.1% rate
 - Annual pension: $85,000 × 30 × 1.1% = $28,050
 - Monthly pension: $2,338
+
+> **Run your own numbers:** Use our [free FERS retirement calculator](/services/federal-benefits/fers-calculator/) to model your high-3, years of service, sick leave credit, military buyback, and retirement age — including the 1.1% enhanced multiplier and the 1.7% special category rate for law enforcement, ATC, and firefighters.
 
 ### FERS Retirement Eligibility
 
