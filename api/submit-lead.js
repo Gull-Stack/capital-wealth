@@ -9,6 +9,13 @@ const FROM_EMAIL = process.env.FROM_EMAIL || 'leads@gullstack.com';
 
 // Salesforce Web-to-Lead config
 const SF_OID = process.env.SALESFORCE_OID || '00DDm0000011JUMMA2';
+// Default Campaign ID used when the form does not send one.
+const SF_DEFAULT_CAMPAIGN_ID = '701VS00000dB91aYAC'; // Website Form 2026
+
+// Validate a Salesforce Campaign Id (15 or 18 chars, must start with "701").
+function isValidCampaignId(id) {
+  return typeof id === 'string' && /^701[A-Za-z0-9]{12}([A-Za-z0-9]{3})?$/.test(id);
+}
 
 async function syncToSalesforce(leadData) {
   try {
@@ -27,6 +34,12 @@ async function syncToSalesforce(leadData) {
     if (leadData.utm_medium) descParts.push(`UTM Medium: ${leadData.utm_medium}`);
     if (leadData.utm_campaign) descParts.push(`UTM Campaign: ${leadData.utm_campaign}`);
 
+    // Campaign routing: form can pass `campaign_id` via hidden input; otherwise
+    // fall back to the site-wide default. Invalid values are discarded.
+    const campaignId = isValidCampaignId(leadData.campaign_id)
+      ? leadData.campaign_id
+      : SF_DEFAULT_CAMPAIGN_ID;
+
     const params = new URLSearchParams();
     params.append('oid', SF_OID);
     params.append('retURL', 'https://capitalwealth.com/');
@@ -35,14 +48,9 @@ async function syncToSalesforce(leadData) {
     params.append('email', leadData.email || '');
     params.append('phone', leadData.phone || '');
     params.append('lead_source', 'Website Form');
-    // Campaign association — standard Web-to-Lead field
-    params.append('Campaign_ID', '701VS00000dB91aYAC');
-    // Also set as custom field in case Campaign__c is required on Lead object
-    params.append('Campaign__c', '701VS00000dB91aYAC');
+    params.append('Campaign_ID', campaignId);
+    params.append('member_status', 'Responded');
     params.append('description', descParts.join('\n'));
-    // Debug: sends Salesforce error details to email (remove after verification)
-    params.append('debug', '1');
-    params.append('debugEmail', 'bryce@gullstack.com');
 
     const response = await fetch(
       'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
@@ -94,7 +102,7 @@ export default async function handler(req, res) {
       name, email, phone, savings, retirementTimeline, questions,
       firstName, lastName, agency, employer, source, workshop_date, lead_type,
       utm_source, utm_medium, utm_campaign, utm_content, utm_term,
-      gclid, fbclid, state, variant,
+      gclid, fbclid, state, variant, campaign_id,
       referrer, landing_page, submitted_from, website
     } = req.body;
 
@@ -167,6 +175,7 @@ export default async function handler(req, res) {
       utm_term: utm_term || null,
       gclid: gclid || null,
       fbclid: fbclid || null,
+      campaign_id: campaign_id || null,
       referrer: referrer || null,
       landing_page: landing_page || null,
       submitted_from: submitted_from || null,
