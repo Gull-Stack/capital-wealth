@@ -1205,11 +1205,32 @@ permalink: "/l/sdba/"
   .lp-faq-title { font-size: 2rem; }
   .lp-faq-item summary { font-size: 1rem; padding-right: 36px; }
 }
+
+/* ============================================================
+   PCRA Variant — triggered by ?kw=schwab-pcra query param
+   Swap hero copy for Schwab PCRA message-match without FOUC
+   ============================================================ */
+.lp-variant-pcra { display: none; }
+html.lp-variant-pcra .lp-variant-default { display: none; }
+html.lp-variant-pcra .lp-variant-pcra { display: inline; }
 </style>
+
+<!-- PCRA variant detection — runs BEFORE hero renders to avoid flicker -->
+<script>
+(function(){
+  try {
+    var kw = new URLSearchParams(location.search).get('kw');
+    if (kw === 'schwab-pcra') {
+      document.documentElement.classList.add('lp-variant-pcra');
+    }
+  } catch(e) {}
+})();
+</script>
 
 <!-- Top Announcement Banner -->
 <div class="lp-announce">
-  Unlock your 401k's Hidden Feature — Complimentary SDBA Strategy Call
+  <span class="lp-variant-default">Unlock your 401k's Hidden Feature — Complimentary SDBA Strategy Call</span>
+  <span class="lp-variant-pcra">Put Your Schwab PCRA to Work — Complimentary Strategy Call</span>
   <a href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;">Book now →</a>
 </div>
 
@@ -1220,19 +1241,23 @@ permalink: "/l/sdba/"
     <div class="lp-hero-left">
       <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" style="display:block;height:32px;width:auto;margin:0 0 20px;" loading="eager">
       <div class="lp-federal-badge">
-        Your 401k&#39;s Hidden Feature
+        <span class="lp-variant-default">Your 401k&#39;s Hidden Feature</span>
+        <span class="lp-variant-pcra">Your Schwab PCRA, Professionally Managed</span>
       </div>
 
       <h1 class="lp-hero-title">
-        Your 401k Has a Powerful Tool Most Employees <span class="lp-hero-title-accent">Will Never Unlock.</span>
+        <span class="lp-variant-default">Your 401k Has a Powerful Tool Most Employees <span class="lp-hero-title-accent">Will Never Unlock.</span></span>
+        <span class="lp-variant-pcra">You Opened a Schwab PCRA for More Control. <span class="lp-hero-title-accent">Here's How to Use It.</span></span>
       </h1>
 
       <p class="lp-hero-description">
-        If your employer's plan has a Self-Directed Brokerage Account, you have access to 5,000+ investments — with the same tax benefits and employer match. We'll show you how in a complimentary 30-minute call.
+        <span class="lp-variant-default">If your employer's plan has a Self-Directed Brokerage Account, you have access to 5,000+ investments — with the same tax benefits and employer match. We'll show you how in a complimentary 30-minute call.</span>
+        <span class="lp-variant-pcra">Your Schwab Personal Choice Retirement Account gives you access to 5,000+ investments inside your existing plan — with the same tax benefits and employer match. We'll show you how to put your PCRA to work in a complimentary 30-minute call.</span>
       </p>
 
       <a href="#lp-lead-form" onclick="document.querySelector('#lp-lead-form').scrollIntoView({behavior:'smooth'});return false;" style="display:inline-block;background:var(--primary);color:#ffffff;padding:16px 36px;border-radius:8px;font-weight:700;text-decoration:none;font-size:1rem;letter-spacing:0.04em;text-transform:uppercase;">
-        Book My Complimentary SDBA Call →
+        <span class="lp-variant-default">Book My Complimentary SDBA Call →</span>
+        <span class="lp-variant-pcra">Book My Complimentary PCRA Call →</span>
       </a>
 
       <!-- Trust row -->
@@ -1271,7 +1296,8 @@ permalink: "/l/sdba/"
           ></iframe>
         </div>
         <div class="lp-video-meta" style="margin-top:12px;text-align:center;">
-          SDBA STRATEGY BRIEFING // MIKE STEVENS
+          <span class="lp-variant-default">SDBA STRATEGY BRIEFING // MIKE STEVENS</span>
+          <span class="lp-variant-pcra">PCRA STRATEGY BRIEFING // MIKE STEVENS</span>
         </div>
       </div>
     </div>
