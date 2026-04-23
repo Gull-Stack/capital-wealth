@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>Prospecting Accounts - Chad</name>
+    <description>Person accounts in Prospect stage, sorted by created date asc (oldest first).</description>
+    <format>Tabular</format>
+    <reportType>AccountList</reportType>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>PC_ADDRESS2_STATE</field>
+    </columns>
+    <columns>
+        <field>PC_ADDRESS2_CITY</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.command__Account_Stage__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.command__Prospecting_Status__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>PersonAccount.PersonAccount</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.command__Account_Stage__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Prospect</value>
+        </criteriaItems>
+    </filter>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+</Report>
