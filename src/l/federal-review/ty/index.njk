@@ -1,0 +1,404 @@
+---
+layout: layouts/base-finpay.njk
+title: "Review Request Received — We'll Call You Shortly | Capital Wealth"
+description: "Thanks for requesting a complimentary federal benefits review. Here's what happens next."
+bodyClass: "landing-page lp-ty lp-ty-review"
+permalink: "/l/federal-review/ty/"
+noindex: true
+---
+
+<style>
+.lp-ty {
+  --cw-fed-red: #B31942;
+  --cw-fed-red-dark: #9a1538;
+  --cw-fed-blue: #0A3161;
+  --cw-fed-blue-dark: #081f3f;
+  --cw-white: #FFFFFF;
+  --cw-bg-subtle: #f8f9fb;
+  --cw-ink: #1a1a1a;
+  --cw-muted: #4b5563;
+  --cw-border: rgba(10, 49, 97, 0.12);
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--cw-ink);
+}
+.lp-ty main { padding-top: 0 !important; }
+body.lp-ty .finpay-header, body.lp-ty header.finpay-header, body.lp-ty .finpay-nav-wrapper,
+body.lp-ty .cwh-shell, body.lp-ty header.cwh-shell, body.lp-ty #cwhShell,
+body.lp-ty .finpay-footer, body.lp-ty footer.finpay-footer {
+  display: none !important; height: 0 !important; max-height: 0 !important;
+  padding: 0 !important; margin: 0 !important; overflow: hidden !important;
+  visibility: hidden !important; position: absolute !important;
+}
+body.lp-ty .lp-ty-header, body.lp-ty .lp-ty-footer {
+  display: block !important; height: auto !important; max-height: none !important;
+  overflow: visible !important; visibility: visible !important; position: relative !important;
+}
+
+.lp-ty-header {
+  background: var(--cw-white);
+  border-bottom: 1px solid var(--cw-border);
+  padding: 14px 24px;
+}
+.lp-ty-header-inner {
+  max-width: 1120px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.lp-ty-header-logo { height: 36px; width: auto; display: block; }
+.lp-ty-header-phone {
+  font-family: var(--font-mono, monospace);
+  font-size: 13px; color: var(--cw-fed-blue); text-decoration: none; font-weight: 600;
+}
+
+.lp-ty-hero {
+  background:
+    linear-gradient(135deg, rgba(10, 49, 97, 0.97) 0%, rgba(8, 31, 63, 0.95) 60%),
+    url('/assets/images/photos/federal/american-flag-hero.jpg') center / cover no-repeat;
+  color: var(--cw-white);
+  padding: 72px 24px;
+  text-align: center;
+}
+.lp-ty-hero-inner { max-width: 720px; margin: 0 auto; }
+.lp-ty-hero-icon {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--cw-fed-red); color: var(--cw-white);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 24px; font-size: 36px; font-weight: 700;
+  box-shadow: 0 12px 32px rgba(179, 25, 66, 0.4);
+}
+.lp-ty-hero h1 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.5rem; font-weight: 700; line-height: 1.15;
+  margin: 0 0 16px; color: var(--cw-white); letter-spacing: -0.01em;
+}
+.lp-ty-hero-sub {
+  font-size: 1.15rem; line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92); margin: 0;
+}
+.lp-ty-source {
+  display: none;
+  margin-top: 28px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 24px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+.lp-ty-source.is-visible { display: inline-block; }
+
+.lp-ty-next {
+  background: var(--cw-white); padding: 64px 24px;
+}
+.lp-ty-next-inner { max-width: 820px; margin: 0 auto; }
+.lp-ty-next-header { text-align: center; margin-bottom: 36px; }
+.lp-ty-next-header h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2rem; font-weight: 700; color: var(--cw-fed-blue);
+  margin: 0 0 12px; line-height: 1.2;
+}
+.lp-ty-next-header p { color: var(--cw-muted); font-size: 1.02rem; margin: 0; line-height: 1.6; }
+
+.lp-ty-steps {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 16px;
+}
+.lp-ty-step {
+  display: grid; grid-template-columns: 56px 1fr; gap: 18px;
+  background: var(--cw-bg-subtle); border-radius: 12px;
+  padding: 24px; border-left: 4px solid var(--cw-fed-red);
+}
+.lp-ty-step-num {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--cw-fed-blue); color: var(--cw-white);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 16px; font-family: var(--font-mono, monospace);
+}
+.lp-ty-step h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.15rem; font-weight: 700;
+  color: var(--cw-fed-blue); margin: 0 0 8px; line-height: 1.3;
+}
+.lp-ty-step p { margin: 0; color: var(--cw-ink); line-height: 1.6; font-size: 0.98rem; }
+.lp-ty-step strong { color: var(--cw-fed-blue); }
+
+.lp-ty-prep {
+  background: var(--cw-bg-subtle); padding: 64px 24px;
+}
+.lp-ty-prep-inner { max-width: 720px; margin: 0 auto; text-align: center; }
+.lp-ty-prep h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.8rem; font-weight: 700; color: var(--cw-fed-blue);
+  margin: 0 0 12px; line-height: 1.25;
+}
+.lp-ty-prep p.intro { color: var(--cw-muted); margin: 0 0 24px; line-height: 1.6; }
+.lp-ty-prep ul {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+  text-align: left; max-width: 580px; margin: 0 auto;
+}
+.lp-ty-prep li {
+  background: var(--cw-white); padding: 14px 16px;
+  border-radius: 8px; font-size: 0.93rem; color: var(--cw-ink);
+  border-left: 3px solid var(--cw-fed-red);
+  display: flex; align-items: flex-start; gap: 10px;
+}
+.lp-ty-prep li svg { flex-shrink: 0; margin-top: 2px; }
+.lp-ty-prep .note {
+  margin-top: 20px; font-size: 0.88rem; color: var(--cw-muted); font-style: italic;
+}
+
+.lp-ty-upsell {
+  background: var(--cw-fed-blue); color: var(--cw-white);
+  padding: 56px 24px; text-align: center;
+}
+.lp-ty-upsell-inner { max-width: 680px; margin: 0 auto; }
+.lp-ty-upsell h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.8rem; font-weight: 700;
+  margin: 0 0 12px; color: var(--cw-white); line-height: 1.25;
+}
+.lp-ty-upsell p {
+  color: rgba(255, 255, 255, 0.88); font-size: 1rem;
+  line-height: 1.6; margin: 0 0 24px;
+}
+.lp-ty-upsell a {
+  display: inline-block; background: var(--cw-fed-red); color: var(--cw-white);
+  padding: 16px 32px; border-radius: 8px;
+  font-weight: 700; font-size: 1rem; text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.lp-ty-upsell a:hover { background: var(--cw-fed-red-dark); transform: translateY(-1px); }
+
+.lp-ty-footer {
+  background: var(--cw-fed-blue-dark); color: rgba(255, 255, 255, 0.75);
+  padding: 32px 24px 40px; font-size: 0.82rem; line-height: 1.6; text-align: center;
+}
+.lp-ty-footer-inner { max-width: 900px; margin: 0 auto; }
+.lp-ty-footer a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+.lp-ty-footer-links {
+  margin-top: 14px; display: flex; gap: 18px;
+  justify-content: center; flex-wrap: wrap; font-size: 0.8rem;
+}
+
+@media (max-width: 560px) {
+  .lp-ty-hero { padding: 56px 18px; }
+  .lp-ty-hero h1 { font-size: 1.75rem; }
+  .lp-ty-next, .lp-ty-prep, .lp-ty-upsell { padding: 48px 18px; }
+  .lp-ty-prep ul { grid-template-columns: 1fr; }
+  .lp-ty-next-header h2, .lp-ty-prep h2, .lp-ty-upsell h2 { font-size: 1.5rem; }
+}
+</style>
+
+<header class="lp-ty-header">
+  <div class="lp-ty-header-inner">
+    <a href="/" aria-label="Capital Wealth home">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="lp-ty-header-logo">
+    </a>
+    <a href="tel:8012102800" class="lp-ty-header-phone">(801) 210-2800</a>
+  </div>
+</header>
+
+<section class="lp-ty-hero">
+  <div class="lp-ty-hero-inner">
+    <div class="lp-ty-hero-icon" aria-hidden="true">✓</div>
+    <h1>Thanks — we'll be in touch shortly.</h1>
+    <p class="lp-ty-hero-sub">Your review request is in. Expect an email from <strong>info@capitalwealth.com</strong> within one business day to confirm a time. If you prefer to skip ahead, call us directly: <strong>(801) 210-2800</strong>.</p>
+    <div class="lp-ty-source" id="lp-ty-source" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="lp-ty-next">
+  <div class="lp-ty-next-inner">
+    <div class="lp-ty-next-header">
+      <h2>Here's exactly what happens next</h2>
+      <p>We keep this simple on purpose. No phone trees, no forms to fill out.</p>
+    </div>
+
+    <ol class="lp-ty-steps">
+      <li class="lp-ty-step">
+        <div class="lp-ty-step-num">1</div>
+        <div>
+          <h3>Confirmation email within 1 business day</h3>
+          <p>We'll email you a couple of time options for the 20-minute intro call. Pick whatever works. If nothing works, reply with what does — we'll find something.</p>
+        </div>
+      </li>
+      <li class="lp-ty-step">
+        <div class="lp-ty-step-num">2</div>
+        <div>
+          <h3>20-minute intro call (by phone or Zoom)</h3>
+          <p>You tell us your agency, service history, and what you're trying to figure out. <strong>We tell you whether a full review will actually help you</strong> — and if it won't, we say so and refer you somewhere that will.</p>
+        </div>
+      </li>
+      <li class="lp-ty-step">
+        <div class="lp-ty-step-num">3</div>
+        <div>
+          <h3>Full review if you want one (60–90 minutes)</h3>
+          <p>We pull up your real numbers: pension estimate, TSP allocation, FEHB plan, survivor benefit, Social Security coordination. You walk away with a one-page action plan — with or without us.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="lp-ty-prep">
+  <div class="lp-ty-prep-inner">
+    <h2>Want to make the review as useful as possible?</h2>
+    <p class="intro">Nothing required for the intro call. But if you want the full 60–90 minute review to be productive, having these handy helps:</p>
+    <ul>
+      <li>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B31942" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+        A recent Leave and Earnings Statement
+      </li>
+      <li>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B31942" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+        Your latest TSP statement
+      </li>
+      <li>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B31942" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+        Your current FEHB plan name
+      </li>
+      <li>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B31942" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+        An SF-50 (if you have one handy)
+      </li>
+    </ul>
+    <p class="note">We'll send a short checklist before the full review call. Don't hunt these down now.</p>
+  </div>
+</section>
+
+<section class="lp-ty-upsell">
+  <div class="lp-ty-upsell-inner">
+    <h2>While you wait — grab the 10-point checklist</h2>
+    <p>The 14-page PDF from Ann's Weber State workshop covers the tactical moves most feds miss. Free. No extra signup. Good reading before the call.</p>
+    <a href="/l/federal-checklist/" data-cta="review-ty-upsell">Get the Free Checklist →</a>
+  </div>
+</section>
+
+<footer class="lp-ty-footer">
+  <div class="lp-ty-footer-inner">
+    ©2026 Capital Wealth Advisors · Fiduciary Standard · (801) 210-2800<br>
+    Capital Wealth is an independent fiduciary investment advisory firm and is <strong>not affiliated with, endorsed by, or sponsored by the Office of Personnel Management, the U.S. government, or any federal agency</strong>. Government Contractor — Unique Entity ID: L63FVVWAKXA8.
+    <div class="lp-ty-footer-links">
+      <a href="/privacy/">Privacy</a>
+      <a href="/disclosures/">Disclosures</a>
+      <a href="/l/federal-checklist/">Free Checklist</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  function killChrome() {
+    ['.cwh-shell', '#cwhShell', 'header.cwh-shell', '.finpay-header', 'header.finpay-header',
+     '.finpay-nav-wrapper', '.finpay-footer', 'footer.finpay-footer'].forEach(function (sel) {
+      document.querySelectorAll(sel).forEach(function (el) {
+        if (el.closest('.lp-ty-header') || el.closest('.lp-ty-footer')) return;
+        if (el.classList.contains('lp-ty-header') || el.classList.contains('lp-ty-footer')) return;
+        el.style.display = 'none';
+        if (el.parentNode) el.parentNode.removeChild(el);
+      });
+    });
+  }
+
+  function getAttribution() {
+    var params = new URLSearchParams(window.location.search);
+    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'];
+    var attr = {};
+    keys.forEach(function (k) { var v = params.get(k); if (v) attr[k] = v; });
+    if (!attr.utm_source) {
+      ['cw_lp_federal_review_attrib', 'cw_lp_10things_attrib'].forEach(function (storageKey) {
+        try {
+          var stored = sessionStorage.getItem(storageKey);
+          if (stored) {
+            var parsed = JSON.parse(stored) || {};
+            keys.forEach(function (k) { if (parsed[k] && !attr[k]) attr[k] = parsed[k]; });
+          }
+        } catch (e) {}
+      });
+    }
+    return attr;
+  }
+
+  function showSource(attr) {
+    var src = attr.utm_source || (attr.fbclid ? 'facebook' : (attr.gclid ? 'google' : ''));
+    if (!src) return;
+    var map = {
+      'facebook': 'Facebook', 'fb': 'Facebook', 'meta': 'Facebook',
+      'google': 'Google', 'google_ads': 'Google Ads', 'googleads': 'Google Ads',
+      'reddit': 'Reddit', 'email': 'an email', 'newsletter': 'our newsletter',
+      'linkedin': 'LinkedIn', 'organic': 'search', 'direct': 'direct'
+    };
+    var display = map[src.toLowerCase()] || src;
+    var el = document.getElementById('lp-ty-source');
+    if (el && display) {
+      el.textContent = 'Thanks for visiting from ' + display + '.';
+      el.classList.add('is-visible');
+    }
+  }
+
+  function fireConversions(attr) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion_review_ty', {
+        event_category: 'conversion',
+        event_label: 'federal_review_booking',
+        value: 50,
+        currency: 'USD',
+        utm_source: attr.utm_source || '',
+        utm_medium: attr.utm_medium || '',
+        utm_campaign: attr.utm_campaign || '',
+        utm_content: attr.utm_content || '',
+        utm_term: attr.utm_term || ''
+      });
+      // Google Ads conversion — REPLACE 'AW-18091003527/REVIEW_LABEL'
+      gtag('event', 'conversion', {
+        send_to: 'AW-18091003527/REVIEW_LABEL',
+        value: 50,
+        currency: 'USD'
+      });
+    }
+
+    if (typeof fbq === 'function') {
+      fbq('track', 'Schedule', {
+        content_name: 'federal_review_booking',
+        content_category: 'Federal Benefits',
+        value: 50,
+        currency: 'USD'
+      });
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'lp_ty_view',
+      ty_page: 'federal_review',
+      utm_source: attr.utm_source || '',
+      utm_medium: attr.utm_medium || '',
+      utm_campaign: attr.utm_campaign || '',
+      value: 50,
+      currency: 'USD'
+    });
+
+    // Reddit Pixel placeholder
+    // if (typeof rdt === 'function') { rdt('track', 'Lead'); }
+  }
+
+  function init() {
+    killChrome();
+    var attr = getAttribution();
+    showSource(attr);
+    fireConversions(attr);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+  setTimeout(killChrome, 250);
+  setTimeout(killChrome, 1500);
+})();
+</script>

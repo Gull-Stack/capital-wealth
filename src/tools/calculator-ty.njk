@@ -1,0 +1,347 @@
+---
+pagination:
+  data: calculator_tools
+  size: 1
+  alias: tool
+permalink: "{{ tool.permalink }}ty/"
+layout: layouts/base-finpay.njk
+eleventyComputed:
+  title: "You're on the list — {{ tool.nav_label }} | Capital Wealth"
+  description: "Thanks for joining the waitlist for the {{ tool.nav_label }}. We'll email you when it launches."
+bodyClass: "landing-page lp-ty lp-ty-tool"
+noindex: true
+---
+
+<style>
+.lp-ty {
+  --cw-fed-red: #B31942;
+  --cw-fed-red-dark: #9a1538;
+  --cw-fed-blue: #0A3161;
+  --cw-fed-blue-dark: #081f3f;
+  --cw-white: #FFFFFF;
+  --cw-bg-subtle: #f8f9fb;
+  --cw-ink: #1a1a1a;
+  --cw-muted: #4b5563;
+  --cw-border: rgba(10, 49, 97, 0.12);
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--cw-ink);
+}
+.lp-ty main { padding-top: 0 !important; }
+body.lp-ty .finpay-header, body.lp-ty header.finpay-header, body.lp-ty .finpay-nav-wrapper,
+body.lp-ty .cwh-shell, body.lp-ty header.cwh-shell, body.lp-ty #cwhShell,
+body.lp-ty .finpay-footer, body.lp-ty footer.finpay-footer {
+  display: none !important; height: 0 !important; max-height: 0 !important;
+  padding: 0 !important; margin: 0 !important; overflow: hidden !important;
+  visibility: hidden !important; position: absolute !important;
+}
+body.lp-ty .lp-ty-header, body.lp-ty .lp-ty-footer {
+  display: block !important; height: auto !important; max-height: none !important;
+  overflow: visible !important; visibility: visible !important; position: relative !important;
+}
+
+.lp-ty-header {
+  background: var(--cw-white);
+  border-bottom: 1px solid var(--cw-border);
+  padding: 14px 24px;
+}
+.lp-ty-header-inner {
+  max-width: 1120px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.lp-ty-header-logo { height: 36px; width: auto; display: block; }
+.lp-ty-header-phone {
+  font-family: var(--font-mono, monospace);
+  font-size: 13px; color: var(--cw-fed-blue); text-decoration: none; font-weight: 600;
+}
+
+.lp-ty-hero {
+  background:
+    linear-gradient(135deg, rgba(10, 49, 97, 0.97) 0%, rgba(8, 31, 63, 0.95) 60%),
+    url('/assets/images/photos/federal/american-flag-hero.jpg') center / cover no-repeat;
+  color: var(--cw-white);
+  padding: 72px 24px;
+  text-align: center;
+}
+.lp-ty-hero-inner { max-width: 720px; margin: 0 auto; }
+.lp-ty-hero-icon {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--cw-fed-red); color: var(--cw-white);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 24px; font-size: 36px; font-weight: 700;
+  box-shadow: 0 12px 32px rgba(179, 25, 66, 0.4);
+}
+.lp-ty-hero h1 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.3rem; font-weight: 700; line-height: 1.15;
+  margin: 0 0 16px; color: var(--cw-white); letter-spacing: -0.01em;
+}
+.lp-ty-hero-sub {
+  font-size: 1.1rem; line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92); margin: 0;
+}
+.lp-ty-source {
+  display: none;
+  margin-top: 24px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 24px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+.lp-ty-source.is-visible { display: inline-block; }
+
+.lp-ty-meantime {
+  background: var(--cw-white); padding: 64px 24px;
+}
+.lp-ty-meantime-inner { max-width: 720px; margin: 0 auto; text-align: center; }
+.lp-ty-meantime h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.9rem; font-weight: 700; color: var(--cw-fed-blue);
+  margin: 0 0 16px; line-height: 1.25;
+}
+.lp-ty-meantime p {
+  color: var(--cw-muted); font-size: 1.02rem;
+  line-height: 1.7; margin: 0 auto 32px; max-width: 600px;
+}
+.lp-ty-meantime-links {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 16px; max-width: 600px; margin: 0 auto;
+}
+.lp-ty-meantime-card {
+  background: var(--cw-bg-subtle); border-radius: 12px;
+  padding: 20px; text-decoration: none; color: inherit;
+  border-left: 4px solid var(--cw-fed-red);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+.lp-ty-meantime-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(10, 49, 97, 0.08);
+}
+.lp-ty-meantime-card h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.05rem; font-weight: 700;
+  color: var(--cw-fed-blue); margin: 0 0 6px; line-height: 1.3;
+}
+.lp-ty-meantime-card p {
+  margin: 0; font-size: 0.88rem; color: var(--cw-muted); line-height: 1.5;
+}
+
+.lp-ty-upsell {
+  background: var(--cw-fed-blue); color: var(--cw-white);
+  padding: 56px 24px; text-align: center;
+}
+.lp-ty-upsell-inner { max-width: 680px; margin: 0 auto; }
+.lp-ty-upsell h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.6rem; font-weight: 700;
+  margin: 0 0 12px; color: var(--cw-white); line-height: 1.25;
+}
+.lp-ty-upsell p {
+  color: rgba(255, 255, 255, 0.88); font-size: 1rem;
+  line-height: 1.6; margin: 0 0 24px;
+}
+.lp-ty-upsell a {
+  display: inline-block; background: var(--cw-fed-red); color: var(--cw-white);
+  padding: 14px 28px; border-radius: 8px;
+  font-weight: 700; font-size: 0.98rem; text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.lp-ty-upsell a:hover { background: var(--cw-fed-red-dark); transform: translateY(-1px); }
+
+.lp-ty-footer {
+  background: var(--cw-fed-blue-dark); color: rgba(255, 255, 255, 0.75);
+  padding: 32px 24px 40px; font-size: 0.82rem; line-height: 1.6; text-align: center;
+}
+.lp-ty-footer-inner { max-width: 900px; margin: 0 auto; }
+.lp-ty-footer a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+.lp-ty-footer-links {
+  margin-top: 14px; display: flex; gap: 18px;
+  justify-content: center; flex-wrap: wrap; font-size: 0.8rem;
+}
+
+@media (max-width: 560px) {
+  .lp-ty-hero { padding: 56px 18px; }
+  .lp-ty-hero h1 { font-size: 1.65rem; }
+  .lp-ty-meantime, .lp-ty-upsell { padding: 48px 18px; }
+  .lp-ty-meantime-links { grid-template-columns: 1fr; }
+  .lp-ty-meantime h2 { font-size: 1.45rem; }
+  .lp-ty-upsell h2 { font-size: 1.35rem; }
+}
+</style>
+
+<header class="lp-ty-header">
+  <div class="lp-ty-header-inner">
+    <a href="/" aria-label="Capital Wealth home">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="lp-ty-header-logo">
+    </a>
+    <a href="tel:8012102800" class="lp-ty-header-phone">(801) 210-2800</a>
+  </div>
+</header>
+
+<section class="lp-ty-hero">
+  <div class="lp-ty-hero-inner">
+    <div class="lp-ty-hero-icon" aria-hidden="true">✓</div>
+    <h1>You're on the list — we'll email you when the {{ tool.nav_label }} launches.</h1>
+    <p class="lp-ty-hero-sub">In the meantime, keep an eye on your inbox for the companion PDF explainer (should arrive in the next few minutes). If it doesn't show, check spam.</p>
+    <div class="lp-ty-source" id="lp-ty-source" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="lp-ty-meantime">
+  <div class="lp-ty-meantime-inner">
+    <h2>While you're here — the rest of the stack</h2>
+    <p>The full 14-page federal retirement checklist covers the other 9 tactical moves we see feds miss. Free, no additional signup.</p>
+
+    <div class="lp-ty-meantime-links">
+      <a href="/l/federal-checklist/" class="lp-ty-meantime-card" data-cta="tool-ty-checklist">
+        <h3>Free 14-Page Checklist</h3>
+        <p>The 10 federal retirement moves OPM won't tell you about. From Ann's April 2026 Weber State workshop.</p>
+      </a>
+      <a href="/l/federal-review/" class="lp-ty-meantime-card" data-cta="tool-ty-review">
+        <h3>20-Minute Review</h3>
+        <p>Want someone to run the math against your real numbers today? Book a complimentary review.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="lp-ty-upsell">
+  <div class="lp-ty-upsell-inner">
+    <h2>Can't wait for May?</h2>
+    <p>If you want the calculation done on your specific numbers today — not the tool, just the answer — a 20-minute review with our team will run it live. Free, no obligation.</p>
+    <a href="/l/federal-review/" data-cta="tool-ty-urgent">Book a Review →</a>
+  </div>
+</section>
+
+<footer class="lp-ty-footer">
+  <div class="lp-ty-footer-inner">
+    ©2026 Capital Wealth Advisors · Fiduciary Standard · (801) 210-2800<br>
+    Capital Wealth is an independent fiduciary investment advisory firm and is <strong>not affiliated with, endorsed by, or sponsored by the Office of Personnel Management, the U.S. government, or any federal agency</strong>. Government Contractor — Unique Entity ID: L63FVVWAKXA8.
+    <div class="lp-ty-footer-links">
+      <a href="/privacy/">Privacy</a>
+      <a href="/disclosures/">Disclosures</a>
+      <a href="/l/federal-checklist/">Free Checklist</a>
+      <a href="/l/federal-review/">Book a Review</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  function killChrome() {
+    ['.cwh-shell', '#cwhShell', 'header.cwh-shell', '.finpay-header', 'header.finpay-header',
+     '.finpay-nav-wrapper', '.finpay-footer', 'footer.finpay-footer'].forEach(function (sel) {
+      document.querySelectorAll(sel).forEach(function (el) {
+        if (el.closest('.lp-ty-header') || el.closest('.lp-ty-footer')) return;
+        if (el.classList.contains('lp-ty-header') || el.classList.contains('lp-ty-footer')) return;
+        el.style.display = 'none';
+        if (el.parentNode) el.parentNode.removeChild(el);
+      });
+    });
+  }
+
+  function getAttribution() {
+    var params = new URLSearchParams(window.location.search);
+    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'];
+    var attr = {};
+    keys.forEach(function (k) { var v = params.get(k); if (v) attr[k] = v; });
+    if (!attr.utm_source) {
+      ['cw_lp_tool_{{ tool.slug }}_attrib'].forEach(function (storageKey) {
+        try {
+          var stored = sessionStorage.getItem(storageKey);
+          if (stored) {
+            var parsed = JSON.parse(stored) || {};
+            keys.forEach(function (k) { if (parsed[k] && !attr[k]) attr[k] = parsed[k]; });
+          }
+        } catch (e) {}
+      });
+    }
+    return attr;
+  }
+
+  function showSource(attr) {
+    var src = attr.utm_source || (attr.fbclid ? 'facebook' : (attr.gclid ? 'google' : ''));
+    if (!src) return;
+    var map = {
+      'facebook': 'Facebook', 'fb': 'Facebook', 'meta': 'Facebook',
+      'google': 'Google', 'google_ads': 'Google Ads', 'googleads': 'Google Ads',
+      'reddit': 'Reddit', 'email': 'an email', 'newsletter': 'our newsletter',
+      'linkedin': 'LinkedIn', 'organic': 'search', 'direct': 'direct'
+    };
+    var display = map[src.toLowerCase()] || src;
+    var el = document.getElementById('lp-ty-source');
+    if (el && display) {
+      el.textContent = 'Thanks for visiting from ' + display + '.';
+      el.classList.add('is-visible');
+    }
+  }
+
+  function fireConversions(attr) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion_tool_ty', {
+        event_category: 'conversion',
+        event_label: '{{ tool.lead_type }}',
+        value: 5,
+        currency: 'USD',
+        utm_source: attr.utm_source || '',
+        utm_medium: attr.utm_medium || '',
+        utm_campaign: attr.utm_campaign || '',
+        utm_content: attr.utm_content || '',
+        utm_term: attr.utm_term || ''
+      });
+      // Google Ads conversion — REPLACE 'AW-18091003527/TOOL_WAITLIST_LABEL'
+      gtag('event', 'conversion', {
+        send_to: 'AW-18091003527/TOOL_WAITLIST_LABEL',
+        value: 5,
+        currency: 'USD'
+      });
+    }
+
+    if (typeof fbq === 'function') {
+      fbq('track', 'CompleteRegistration', {
+        content_name: 'tool_{{ tool.slug }}',
+        content_category: 'Federal Tools',
+        status: 'waitlist',
+        value: 5,
+        currency: 'USD'
+      });
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'lp_ty_view',
+      ty_page: 'tool_{{ tool.slug }}',
+      utm_source: attr.utm_source || '',
+      utm_medium: attr.utm_medium || '',
+      utm_campaign: attr.utm_campaign || '',
+      value: 5,
+      currency: 'USD'
+    });
+
+    // Reddit Pixel placeholder
+    // if (typeof rdt === 'function') { rdt('track', 'Lead'); }
+  }
+
+  function init() {
+    killChrome();
+    var attr = getAttribution();
+    showSource(attr);
+    fireConversions(attr);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+  setTimeout(killChrome, 250);
+  setTimeout(killChrome, 1500);
+})();
+</script>

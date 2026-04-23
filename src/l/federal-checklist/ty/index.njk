@@ -1,0 +1,375 @@
+---
+layout: layouts/base-finpay.njk
+title: "Check Your Inbox — Federal Retirement Checklist on Its Way | Capital Wealth"
+description: "Your 14-page federal retirement checklist is in your inbox. Here's what's next."
+bodyClass: "landing-page lp-ty lp-ty-checklist"
+permalink: "/l/federal-checklist/ty/"
+noindex: true
+---
+
+<style>
+.lp-ty {
+  --cw-fed-red: #B31942;
+  --cw-fed-red-dark: #9a1538;
+  --cw-fed-blue: #0A3161;
+  --cw-fed-blue-dark: #081f3f;
+  --cw-white: #FFFFFF;
+  --cw-bg-subtle: #f8f9fb;
+  --cw-ink: #1a1a1a;
+  --cw-muted: #4b5563;
+  --cw-border: rgba(10, 49, 97, 0.12);
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--cw-ink);
+}
+.lp-ty main { padding-top: 0 !important; }
+body.lp-ty .finpay-header, body.lp-ty header.finpay-header, body.lp-ty .finpay-nav-wrapper,
+body.lp-ty .cwh-shell, body.lp-ty header.cwh-shell, body.lp-ty #cwhShell,
+body.lp-ty .finpay-footer, body.lp-ty footer.finpay-footer {
+  display: none !important; height: 0 !important; max-height: 0 !important;
+  padding: 0 !important; margin: 0 !important; overflow: hidden !important;
+  visibility: hidden !important; position: absolute !important;
+}
+body.lp-ty .lp-ty-header, body.lp-ty .lp-ty-footer {
+  display: block !important; height: auto !important; max-height: none !important;
+  overflow: visible !important; visibility: visible !important; position: relative !important;
+}
+
+.lp-ty-header {
+  background: var(--cw-white);
+  border-bottom: 1px solid var(--cw-border);
+  padding: 14px 24px;
+}
+.lp-ty-header-inner {
+  max-width: 1120px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.lp-ty-header-logo { height: 36px; width: auto; display: block; }
+.lp-ty-header-phone {
+  font-family: var(--font-mono, monospace);
+  font-size: 13px; color: var(--cw-fed-blue); text-decoration: none; font-weight: 600;
+}
+
+.lp-ty-hero {
+  background:
+    linear-gradient(135deg, rgba(10, 49, 97, 0.97) 0%, rgba(8, 31, 63, 0.95) 60%),
+    url('/assets/images/photos/federal/american-flag-hero.jpg') center / cover no-repeat;
+  color: var(--cw-white);
+  padding: 72px 24px;
+  text-align: center;
+}
+.lp-ty-hero-inner { max-width: 720px; margin: 0 auto; }
+.lp-ty-hero-icon {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--cw-fed-red); color: var(--cw-white);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 24px; font-size: 36px; font-weight: 700;
+  box-shadow: 0 12px 32px rgba(179, 25, 66, 0.4);
+}
+.lp-ty-hero h1 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.5rem; font-weight: 700; line-height: 1.15;
+  margin: 0 0 16px; color: var(--cw-white); letter-spacing: -0.01em;
+}
+.lp-ty-hero-sub {
+  font-size: 1.15rem; line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92); margin: 0;
+}
+.lp-ty-source {
+  display: none;
+  margin-top: 28px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 24px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+.lp-ty-source.is-visible { display: inline-block; }
+
+.lp-ty-next {
+  background: var(--cw-white); padding: 64px 24px;
+}
+.lp-ty-next-inner { max-width: 820px; margin: 0 auto; }
+.lp-ty-next-header { text-align: center; margin-bottom: 36px; }
+.lp-ty-next-header h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2rem; font-weight: 700; color: var(--cw-fed-blue);
+  margin: 0 0 12px; line-height: 1.2;
+}
+.lp-ty-next-header p { color: var(--cw-muted); font-size: 1.02rem; margin: 0; line-height: 1.6; }
+
+.lp-ty-steps {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 16px;
+}
+.lp-ty-step {
+  display: grid; grid-template-columns: 56px 1fr; gap: 18px;
+  background: var(--cw-bg-subtle); border-radius: 12px;
+  padding: 24px; border-left: 4px solid var(--cw-fed-red);
+}
+.lp-ty-step-num {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--cw-fed-blue); color: var(--cw-white);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 16px; font-family: var(--font-mono, monospace);
+}
+.lp-ty-step h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.15rem; font-weight: 700;
+  color: var(--cw-fed-blue); margin: 0 0 8px; line-height: 1.3;
+}
+.lp-ty-step p { margin: 0; color: var(--cw-ink); line-height: 1.6; font-size: 0.98rem; }
+.lp-ty-step strong { color: var(--cw-fed-blue); }
+
+.lp-ty-upsell {
+  background: var(--cw-fed-blue); color: var(--cw-white);
+  padding: 56px 24px; text-align: center;
+}
+.lp-ty-upsell-inner { max-width: 680px; margin: 0 auto; }
+.lp-ty-upsell h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.8rem; font-weight: 700;
+  margin: 0 0 12px; color: var(--cw-white); line-height: 1.25;
+}
+.lp-ty-upsell p {
+  color: rgba(255, 255, 255, 0.88); font-size: 1rem;
+  line-height: 1.6; margin: 0 0 24px;
+}
+.lp-ty-upsell a {
+  display: inline-block; background: var(--cw-fed-red); color: var(--cw-white);
+  padding: 16px 32px; border-radius: 8px;
+  font-weight: 700; font-size: 1rem; text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.lp-ty-upsell a:hover { background: var(--cw-fed-red-dark); transform: translateY(-1px); }
+
+.lp-ty-footer {
+  background: var(--cw-fed-blue-dark); color: rgba(255, 255, 255, 0.75);
+  padding: 32px 24px 40px; font-size: 0.82rem; line-height: 1.6; text-align: center;
+}
+.lp-ty-footer-inner { max-width: 900px; margin: 0 auto; }
+.lp-ty-footer a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+.lp-ty-footer-links {
+  margin-top: 14px; display: flex; gap: 18px;
+  justify-content: center; flex-wrap: wrap; font-size: 0.8rem;
+}
+
+@media (max-width: 560px) {
+  .lp-ty-hero { padding: 56px 18px; }
+  .lp-ty-hero h1 { font-size: 1.75rem; }
+  .lp-ty-hero-sub { font-size: 1rem; }
+  .lp-ty-next { padding: 48px 18px; }
+  .lp-ty-next-header h2 { font-size: 1.6rem; }
+  .lp-ty-upsell { padding: 48px 18px; }
+  .lp-ty-upsell h2 { font-size: 1.45rem; }
+}
+</style>
+
+{# ═══════════ HEADER ═══════════ #}
+<header class="lp-ty-header">
+  <div class="lp-ty-header-inner">
+    <a href="/" aria-label="Capital Wealth home">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="lp-ty-header-logo">
+    </a>
+    <a href="tel:8012102800" class="lp-ty-header-phone">(801) 210-2800</a>
+  </div>
+</header>
+
+{# ═══════════ HERO ═══════════ #}
+<section class="lp-ty-hero">
+  <div class="lp-ty-hero-inner">
+    <div class="lp-ty-hero-icon" aria-hidden="true">✓</div>
+    <h1>Check your inbox — your checklist is on the way.</h1>
+    <p class="lp-ty-hero-sub">Your 14-page "10 Federal Retirement Moves OPM Won't Tell You About" PDF is being emailed right now. It should arrive in 60 seconds or less.</p>
+    <div class="lp-ty-source" id="lp-ty-source" aria-live="polite"></div>
+  </div>
+</section>
+
+{# ═══════════ WHAT'S NEXT ═══════════ #}
+<section class="lp-ty-next">
+  <div class="lp-ty-next-inner">
+    <div class="lp-ty-next-header">
+      <h2>Here's what happens next</h2>
+      <p>Three simple steps. No pitch, no pressure.</p>
+    </div>
+
+    <ol class="lp-ty-steps">
+      <li class="lp-ty-step">
+        <div class="lp-ty-step-num">1</div>
+        <div>
+          <h3>Open the email from <strong>info@capitalwealth.com</strong></h3>
+          <p>If you don't see it in the next minute, check your spam or promotions folder. Feds on <strong>.gov</strong> addresses sometimes get it held in Outlook's quarantine — release and mark as trusted.</p>
+        </div>
+      </li>
+      <li class="lp-ty-step">
+        <div class="lp-ty-step-num">2</div>
+        <div>
+          <h3>Read the checklist in 15 minutes</h3>
+          <p>Items 1, 3, and 8 are the ones to act on this week. Everything else can wait until the end of the month, but those three have deadlines that get expensive if you miss them.</p>
+        </div>
+      </li>
+      <li class="lp-ty-step">
+        <div class="lp-ty-step-num">3</div>
+        <div>
+          <h3>If it's helpful — pass it along</h3>
+          <p>We built this for the folks who couldn't make the Weber State workshop. If a coworker could use it, forward the email. No sales pitch attached, so it won't make your life awkward.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+{# ═══════════ UPSELL (review booking) ═══════════ #}
+<section class="lp-ty-upsell">
+  <div class="lp-ty-upsell-inner">
+    <h2>Want someone to run these against <em>your</em> numbers?</h2>
+    <p>The checklist tells you what the 10 moves are. A complimentary benefits review tells you what <em>your</em> pension, TSP, FEHB, and Social Security look like if you actually make them. 20 minutes. No products sold.</p>
+    <a href="/l/federal-review/" data-cta="checklist-ty-upsell">Book a 20-Minute Review →</a>
+  </div>
+</section>
+
+{# ═══════════ FOOTER ═══════════ #}
+<footer class="lp-ty-footer">
+  <div class="lp-ty-footer-inner">
+    ©2026 Capital Wealth Advisors · Fiduciary Standard · (801) 210-2800<br>
+    Capital Wealth is an independent fiduciary investment advisory firm and is <strong>not affiliated with, endorsed by, or sponsored by the Office of Personnel Management, the U.S. government, or any federal agency</strong>. Government Contractor — Unique Entity ID: L63FVVWAKXA8.
+    <div class="lp-ty-footer-links">
+      <a href="/privacy/">Privacy</a>
+      <a href="/disclosures/">Disclosures</a>
+      <a href="/l/federal-review/">Book a Review</a>
+    </div>
+  </div>
+</footer>
+
+{# ═══════════ CONVERSION + ATTRIBUTION JS ═══════════ #}
+<script>
+(function () {
+  'use strict';
+
+  function killChrome() {
+    ['.cwh-shell', '#cwhShell', 'header.cwh-shell', '.finpay-header', 'header.finpay-header',
+     '.finpay-nav-wrapper', '.finpay-footer', 'footer.finpay-footer'].forEach(function (sel) {
+      document.querySelectorAll(sel).forEach(function (el) {
+        if (el.closest('.lp-ty-header') || el.closest('.lp-ty-footer')) return;
+        if (el.classList.contains('lp-ty-header') || el.classList.contains('lp-ty-footer')) return;
+        el.style.display = 'none';
+        if (el.parentNode) el.parentNode.removeChild(el);
+      });
+    });
+  }
+
+  // ─── Read UTM params from URL + sessionStorage fallback ────
+  function getAttribution() {
+    var params = new URLSearchParams(window.location.search);
+    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'];
+    var attr = {};
+    keys.forEach(function (k) { var v = params.get(k); if (v) attr[k] = v; });
+
+    // Fallback: read from the originating LP's sessionStorage
+    if (!attr.utm_source) {
+      ['cw_lp_federal_checklist_attrib', 'cw_lp_10things_attrib'].forEach(function (storageKey) {
+        try {
+          var stored = sessionStorage.getItem(storageKey);
+          if (stored) {
+            var parsed = JSON.parse(stored) || {};
+            keys.forEach(function (k) { if (parsed[k] && !attr[k]) attr[k] = parsed[k]; });
+          }
+        } catch (e) { /* ignore */ }
+      });
+    }
+    return attr;
+  }
+
+  // ─── Display "we see you came from X" pill ────────────────
+  function showSource(attr) {
+    var src = attr.utm_source || (attr.fbclid ? 'facebook' : (attr.gclid ? 'google' : ''));
+    if (!src) return;
+    var map = {
+      'facebook': 'Facebook', 'fb': 'Facebook', 'meta': 'Facebook',
+      'google': 'Google', 'google_ads': 'Google Ads', 'googleads': 'Google Ads',
+      'reddit': 'Reddit',
+      'email': 'an email', 'newsletter': 'our newsletter',
+      'linkedin': 'LinkedIn',
+      'organic': 'search',
+      'direct': 'direct'
+    };
+    var display = map[src.toLowerCase()] || src;
+    var el = document.getElementById('lp-ty-source');
+    if (el && display) {
+      el.textContent = 'Thanks for visiting from ' + display + '.';
+      el.classList.add('is-visible');
+    }
+  }
+
+  // ─── Fire conversions ──────────────────────────────────────
+  function fireConversions(attr) {
+    // GA4 conversion (generate_lead) — duplicate of form-submit event, OK
+    // for GA4 which dedupes; useful for platforms that key off URL.
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion_checklist_ty', {
+        event_category: 'conversion',
+        event_label: 'federal_checklist',
+        value: 10,
+        currency: 'USD',
+        utm_source: attr.utm_source || '',
+        utm_medium: attr.utm_medium || '',
+        utm_campaign: attr.utm_campaign || '',
+        utm_content: attr.utm_content || '',
+        utm_term: attr.utm_term || ''
+      });
+
+      // Google Ads conversion — REPLACE 'AW-18091003527/CHECKLIST_LABEL' with the
+      // actual conversion label from Google Ads > Tools > Conversions once created.
+      gtag('event', 'conversion', {
+        send_to: 'AW-18091003527/CHECKLIST_LABEL',
+        value: 10,
+        currency: 'USD'
+      });
+    }
+
+    // Facebook Pixel — CompleteRegistration on TY (Lead already fired on submit)
+    if (typeof fbq === 'function') {
+      fbq('track', 'CompleteRegistration', {
+        content_name: 'federal_checklist',
+        content_category: 'Federal Benefits',
+        status: 'completed',
+        value: 10,
+        currency: 'USD'
+      });
+    }
+
+    // dataLayer for GTM
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'lp_ty_view',
+      ty_page: 'federal_checklist',
+      utm_source: attr.utm_source || '',
+      utm_medium: attr.utm_medium || '',
+      utm_campaign: attr.utm_campaign || '',
+      value: 10,
+      currency: 'USD'
+    });
+
+    // Reddit Pixel placeholder — uncomment once rdt pixel is installed
+    // if (typeof rdt === 'function') { rdt('track', 'Lead'); }
+  }
+
+  function init() {
+    killChrome();
+    var attr = getAttribution();
+    showSource(attr);
+    fireConversions(attr);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+  setTimeout(killChrome, 250);
+  setTimeout(killChrome, 1500);
+})();
+</script>

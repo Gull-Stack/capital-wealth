@@ -985,7 +985,15 @@ body.lp-federal-checklist .lp-mini-footer {
           if (formContent) formContent.style.display = 'none';
           if (success) success.classList.add('is-visible');
           setTimeout(function () {
-            window.location.href = '/l/10-things-federal-retirement/ty-checklist/';
+            // Pass captured UTM params through to TY for conversion-tracking with attribution
+            var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'];
+            var utmQs = utmKeys
+              .map(function (k) {
+                var el = document.getElementById('lp-fc-' + k.replace('_', '-'));
+                return (el && el.value) ? encodeURIComponent(k) + '=' + encodeURIComponent(el.value) : null;
+              })
+              .filter(Boolean).join('&');
+            window.location.href = '/l/federal-checklist/ty/' + (utmQs ? '?' + utmQs : '');
           }, 1500);
         } else {
           submitBtn.disabled = false;

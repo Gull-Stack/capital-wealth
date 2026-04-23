@@ -918,7 +918,14 @@ body.lp-federal-review .lp-mini-footer {
           if (formContent) formContent.style.display = 'none';
           if (success) success.classList.add('is-visible');
           setTimeout(function () {
-            window.location.href = '/l/10-things-federal-retirement/ty-review/';
+            var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'];
+            var utmQs = utmKeys
+              .map(function (k) {
+                var el = document.getElementById('lp-fr-' + k.replace('_', '-'));
+                return (el && el.value) ? encodeURIComponent(k) + '=' + encodeURIComponent(el.value) : null;
+              })
+              .filter(Boolean).join('&');
+            window.location.href = '/l/federal-review/ty/' + (utmQs ? '?' + utmQs : '');
           }, 1500);
         } else {
           submitBtn.disabled = false;
