@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>Leadership - Meetings Held Today</name>
+    <description>Meetings held today (Meeting_Date=TODAY, Status in Meeting Kept / Rescheduled - Kept).</description>
+    <format>Summary</format>
+    <reportType>CustomEntity$Meeting__c@Meeting__c.Account__c</reportType>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Meeting__c.Meeting_Type__c</field>
+    </columns>
+    <columns>
+        <field>Meeting__c.Meeting_Date__c</field>
+    </columns>
+    <columns>
+        <field>Meeting__c.Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Meeting__c.Meeting_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Meeting__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Meeting Kept,Rescheduled - Kept</value>
+        </criteriaItems>
+    </filter>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Meeting__c.Meeting_Date__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>
