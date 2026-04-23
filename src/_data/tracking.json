@@ -1,0 +1,25 @@
+{
+  "_comment": "SINGLE source of truth for all ad-tech tracking IDs and conversion labels. Edit this file, rebuild, everything updates.",
+
+  "ga4_id": "G-XNE17HRDX8",
+  "ga4_id_secondary": "G-LD4VE3SQNT",
+
+  "meta_pixel_id": "416279913963143",
+
+  "google_ads_id": "AW-18091003527",
+  "google_ads_conversions": {
+    "_comment": "Create each in Google Ads > Tools > Conversions. Paste ONLY the label (the part AFTER the slash) below — e.g. if Google gives you 'AW-18091003527/AbC-D_eFgHi', paste AbC-D_eFgHi. Leave as empty string until created; the tracking code skips unconfigured conversions.",
+    "checklist_signup": "",
+    "review_booking": "",
+    "tool_waitlist": ""
+  },
+
+  "reddit_pixel_id": "",
+  "reddit_pixel_comment": "Paste your Reddit Ads pixel ID here (format: a2_XXXXXXXXXXXX). Leave empty to disable. Get it at https://ads.reddit.com > Assets > Tracking > Create new pixel.",
+
+  "linkedin_partner_id": "",
+  "linkedin_conversion_ids": {
+    "checklist_signup": "",
+    "review_booking": ""
+  }
+}

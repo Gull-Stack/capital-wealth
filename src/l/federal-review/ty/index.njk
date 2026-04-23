@@ -354,12 +354,14 @@ body.lp-ty .lp-ty-header, body.lp-ty .lp-ty-footer {
         utm_content: attr.utm_content || '',
         utm_term: attr.utm_term || ''
       });
-      // Google Ads conversion — REPLACE 'AW-18091003527/REVIEW_LABEL'
+      // Google Ads conversion — only fires if label is set in src/_data/tracking.json
+      {% if tracking.google_ads_conversions.review_booking %}
       gtag('event', 'conversion', {
-        send_to: 'AW-18091003527/REVIEW_LABEL',
+        send_to: '{{ tracking.google_ads_id }}/{{ tracking.google_ads_conversions.review_booking }}',
         value: 50,
         currency: 'USD'
       });
+      {% endif %}
     }
 
     if (typeof fbq === 'function') {
@@ -371,6 +373,13 @@ body.lp-ty .lp-ty-header, body.lp-ty .lp-ty-footer {
       });
     }
 
+    // Reddit Pixel — only fires if pixel ID is set in src/_data/tracking.json
+    {% if tracking.reddit_pixel_id %}
+    if (typeof rdt === 'function') {
+      rdt('track', 'Lead', { value: 50, currency: 'USD' });
+    }
+    {% endif %}
+
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: 'lp_ty_view',
@@ -381,9 +390,6 @@ body.lp-ty .lp-ty-header, body.lp-ty .lp-ty-footer {
       value: 50,
       currency: 'USD'
     });
-
-    // Reddit Pixel placeholder
-    // if (typeof rdt === 'function') { rdt('track', 'Lead'); }
   }
 
   function init() {

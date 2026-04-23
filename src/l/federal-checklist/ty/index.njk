@@ -321,13 +321,14 @@ body.lp-ty .lp-ty-header, body.lp-ty .lp-ty-footer {
         utm_term: attr.utm_term || ''
       });
 
-      // Google Ads conversion — REPLACE 'AW-18091003527/CHECKLIST_LABEL' with the
-      // actual conversion label from Google Ads > Tools > Conversions once created.
+      // Google Ads conversion — only fires if label is set in src/_data/tracking.json
+      {% if tracking.google_ads_conversions.checklist_signup %}
       gtag('event', 'conversion', {
-        send_to: 'AW-18091003527/CHECKLIST_LABEL',
+        send_to: '{{ tracking.google_ads_id }}/{{ tracking.google_ads_conversions.checklist_signup }}',
         value: 10,
         currency: 'USD'
       });
+      {% endif %}
     }
 
     // Facebook Pixel — CompleteRegistration on TY (Lead already fired on submit)
@@ -341,6 +342,13 @@ body.lp-ty .lp-ty-header, body.lp-ty .lp-ty-footer {
       });
     }
 
+    // Reddit Pixel — only fires if pixel ID is set in src/_data/tracking.json
+    {% if tracking.reddit_pixel_id %}
+    if (typeof rdt === 'function') {
+      rdt('track', 'Lead', { value: 10, currency: 'USD' });
+    }
+    {% endif %}
+
     // dataLayer for GTM
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
@@ -352,9 +360,6 @@ body.lp-ty .lp-ty-header, body.lp-ty .lp-ty-footer {
       value: 10,
       currency: 'USD'
     });
-
-    // Reddit Pixel placeholder — uncomment once rdt pixel is installed
-    // if (typeof rdt === 'function') { rdt('track', 'Lead'); }
   }
 
   function init() {
