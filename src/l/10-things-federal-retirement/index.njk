@@ -32,16 +32,19 @@ permalink: "/l/10-things-federal-retirement/"
   color: var(--cw-ink);
 }
 
-/* Kill sitewide header/footer/banner on LP — covers both the old
-   .finpay-header and the redesigned .cwh-shell glass header. */
+/* Kill sitewide header/footer/banner on LP — covers the old
+   .finpay-header and the redesigned .cwh-shell glass header.
+   Uses body. prefix + #cwhShell ID for higher specificity to beat
+   any late-loading overrides from header-redesign.css. */
 .lp-10-things main { padding-top: 0 !important; }
-.lp-10-things .finpay-header,
-.lp-10-things header.finpay-header,
-.lp-10-things .finpay-nav-wrapper,
-.lp-10-things .cwh-shell,
-.lp-10-things header.cwh-shell,
-.lp-10-things .finpay-footer,
-.lp-10-things footer.finpay-footer {
+body.lp-10-things .finpay-header,
+body.lp-10-things header.finpay-header,
+body.lp-10-things .finpay-nav-wrapper,
+body.lp-10-things .cwh-shell,
+body.lp-10-things header.cwh-shell,
+body.lp-10-things #cwhShell,
+body.lp-10-things .finpay-footer,
+body.lp-10-things footer.finpay-footer {
   display: none !important;
   height: 0 !important;
   max-height: 0 !important;
@@ -832,6 +835,86 @@ permalink: "/l/10-things-federal-retirement/"
   margin: 0;
 }
 
+/* ─── REVIEWS (Google 5-star social proof) ──────────────────── */
+.lp-reviews {
+  background: var(--cw-white);
+  padding: 72px 32px;
+  border-top: 1px solid var(--cw-border);
+}
+.lp-reviews-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.lp-reviews-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.lp-reviews h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+.lp-reviews-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: var(--cw-bg-subtle);
+  border-radius: 24px;
+  font-size: 0.92rem;
+  color: var(--cw-muted);
+  margin-top: 4px;
+}
+.lp-reviews-stars {
+  color: #f5a623;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+.lp-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.lp-review-card {
+  background: var(--cw-bg-subtle);
+  border-radius: 12px;
+  padding: 24px;
+  border-top: 4px solid var(--cw-fed-red);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.lp-review-stars {
+  color: #f5a623;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  line-height: 1;
+}
+.lp-review-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--cw-ink);
+  margin: 0;
+  flex: 1;
+}
+.lp-review-author {
+  font-size: 0.82rem;
+  color: var(--cw-muted);
+  border-top: 1px solid var(--cw-border);
+  padding-top: 12px;
+  margin: 0;
+}
+.lp-review-author strong {
+  color: var(--cw-fed-blue);
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 /* ─── FAQ ───────────────────────────────────────────────────── */
 .lp-faq {
   padding: 80px 32px;
@@ -1275,6 +1358,52 @@ permalink: "/l/10-things-federal-retirement/"
   </div>
 </section>
 
+{# ═══════════ REVIEWS (Google 5-star social proof) ═══════════ #}
+<section class="lp-reviews" id="reviews">
+  <div class="lp-reviews-inner">
+    <div class="lp-reviews-header">
+      <span class="lp-eyebrow">What Our Clients Say</span>
+      <h2>5.0 ★ on Google — from the people who've done this with us</h2>
+      <div class="lp-reviews-rating">
+        <span class="lp-reviews-stars" aria-hidden="true">★★★★★</span>
+        <span>5.0 rating · Verified Google reviews</span>
+      </div>
+    </div>
+
+    <div class="lp-reviews-grid">
+      <article class="lp-review-card">
+        <div class="lp-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="lp-review-body">"My wife and I, as well as my mother-in-law, have been working with the Capital Wealth team for over a year and have found Mike and his staff to be very welcoming and knowledgeable. They lay out the best advice and options for our financial well-being, and they make sure we understand the full picture before making decisions."</p>
+        <p class="lp-review-author"><strong>Julie E.</strong>Google Review · Verified Client</p>
+      </article>
+
+      <article class="lp-review-card">
+        <div class="lp-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="lp-review-body">"We've been extremely pleased with our experience at Capital Wealth. The team is professional, responsive, and truly invested in helping us achieve our financial goals. They take the time to explain everything clearly and make us feel confident about our retirement plan."</p>
+        <p class="lp-review-author"><strong>Cory M.</strong>Google Review · Verified Client</p>
+      </article>
+
+      <article class="lp-review-card">
+        <div class="lp-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="lp-review-body">"Mike and his staff are the best! We previously were with two other financial planners whose fees were too high and their investment ability had no comparison to Mike. He was also the only one who addressed taxes. Mike got our retirement finances completely organized and set up for the long haul."</p>
+        <p class="lp-review-author"><strong>Collette D.</strong>Google Review · Verified Client</p>
+      </article>
+
+      <article class="lp-review-card">
+        <div class="lp-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="lp-review-body">"I was nervous to find a financial advisor because I feel like all the ones we've used just cared about how they could make money off us. After reading reviews of Capital Wealth, I gave them a try. Mike has been above and beyond helpful year after year. I highly recommend them!"</p>
+        <p class="lp-review-author"><strong>Christina L.</strong>Google Review · Verified Client</p>
+      </article>
+
+      <article class="lp-review-card">
+        <div class="lp-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="lp-review-body">"Mike and his team at Capital Wealth are fantastic. They really take the time to understand your situation and build a plan that makes sense. I feel confident about my retirement for the first time."</p>
+        <p class="lp-review-author"><strong>Verified Google Client</strong>Google Review</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 {# ═══════════ FAQ ═══════════ #}
 <section class="lp-faq" id="faq">
   <div class="lp-faq-inner">
@@ -1367,6 +1496,24 @@ permalink: "/l/10-things-federal-retirement/"
   'use strict';
 
   var STORAGE_KEY = 'cw_lp_10things_attrib';
+
+  // ─── Belt-and-suspenders header/footer kill ────────────────
+  // CSS alone can be overridden by late-loading stylesheets; this
+  // also removes the chrome elements from the DOM entirely.
+  function killChrome() {
+    var killSelectors = [
+      '.cwh-shell', '#cwhShell', 'header.cwh-shell',
+      '.finpay-header', 'header.finpay-header', '.finpay-nav-wrapper',
+      '.finpay-footer', 'footer.finpay-footer'
+    ];
+    killSelectors.forEach(function (sel) {
+      document.querySelectorAll(sel).forEach(function (el) {
+        el.style.display = 'none';
+        el.setAttribute('aria-hidden', 'true');
+        if (el.parentNode) el.parentNode.removeChild(el);
+      });
+    });
+  }
 
   // ─── UTM / attribution capture ─────────────────────────────
   function captureAttribution() {
@@ -1575,7 +1722,12 @@ permalink: "/l/10-things-federal-retirement/"
     });
   }
 
+  // Run chrome-kill as early as possible (before DOMContentLoaded if scripts
+  // execute after body load) to minimize the flash of visible nav.
+  if (document.readyState !== 'loading') { killChrome(); }
+
   document.addEventListener('DOMContentLoaded', function () {
+    killChrome();
     captureAttribution();
     trackPageView();
     trackScrollDepth();
@@ -1584,5 +1736,9 @@ permalink: "/l/10-things-federal-retirement/"
     initForm();
     initSmoothScroll();
   });
+
+  // Re-run in case late-loading scripts re-inject chrome
+  setTimeout(killChrome, 250);
+  setTimeout(killChrome, 1500);
 })();
 </script>

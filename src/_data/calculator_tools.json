@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "military-buyback-calculator",
+    "permalink": "/tools/military-buyback-calculator/",
+    "nav_label": "Military Buyback Calculator",
+    "meta_title": "Military Buyback Calculator for Federal Employees | Capital Wealth",
+    "meta_description": "Calculate the exact cost of buying back your military service and the lifetime pension value it unlocks. Free tool for federal employees with military service. Built with Ann Werts.",
+    "hero_eyebrow": "FEDERAL RETIREMENT TOOLS · MILITARY SERVICE",
+    "hero_headline_a": "Military Buyback",
+    "hero_headline_em": "Calculator",
+    "hero_headline_b": "",
+    "hero_subhead": "See exactly what your military buyback costs — and what that $4,200 returns to you in lifetime federal pension dollars. Built for federal employees with prior military service.",
+    "status_badge": "COMING MAY 2026",
+    "status_copy": "We're finalizing the math with Ann Werts against the latest DFAS interest schedules. Drop your email below and we'll send you the calculator the day it launches — plus a 3-page explainer on the 3-year interest-free window most feds miss.",
+    "value_headline": "What this calculator will do",
+    "value_bullets": [
+      {
+        "title": "Calculate your exact buyback cost",
+        "body": "Enter your military basic pay history and we'll compute the 3% deposit — plus any accrued DFAS interest if you're past your 3-year window."
+      },
+      {
+        "title": "Project the lifetime pension ROI",
+        "body": "See what adding those years does to your FERS formula — at your high-3, at your service computation date, across a 25- or 30-year retirement horizon."
+      },
+      {
+        "title": "Find your break-even month",
+        "body": "Most military buybacks pay for themselves in year one of retirement. Yours might be faster. The calculator shows the exact month you break even."
+      },
+      {
+        "title": "Flag the interest-free deadline",
+        "body": "You have 2 years and 364 days of federal service to complete a buyback interest-free. After that, the math gets ugly fast. We'll tell you where you stand."
+      }
+    ],
+    "context_headline": "Why military buyback is almost always a win",
+    "context_paragraphs": [
+      "If you served in the military and you're not already drawing a military retirement, a buyback is usually one of the highest-ROI moves you can make as a federal employee. You pay <strong>3% of your military basic pay</strong> (not your civilian salary — your actual military pay for those years). In exchange, those years count toward your FERS service computation date, your pension formula, and your eligibility thresholds for retirement.",
+      "We've seen buybacks cost $4,000 and unlock a full additional year of federal pension — every year, for life. On a $75,000 high-3, that's <strong>roughly $750 more in annual pension</strong>, which over a 25-year retirement works out to about $18,750 in today's dollars. For a $4,000 outlay.",
+      "The catch is timing. You have <strong>2 years and 364 days of federal employment</strong> to complete the buyback interest-free. After that, DFAS starts charging variable interest — and the longer you wait, the more it compounds. The calculator flags whether you're inside or outside the window."
+    ],
+    "email_capture_headline": "Send me the calculator when it launches",
+    "email_capture_sub": "We'll email you the moment the tool goes live — plus a 3-page PDF explainer on the RI 20-97 process and the most common mistakes feds make with buyback timing.",
+    "email_capture_cta": "Email Me the Tool →",
+    "lead_type": "tool-military-buyback",
+    "cross_link_text": "Can't wait? Book a 20-minute review and we'll run the numbers with you live.",
+    "cross_link_href": "/l/federal-review/"
+  },
+  {
+    "slug": "sick-leave-conversion-calculator",
+    "permalink": "/tools/sick-leave-conversion-calculator/",
+    "nav_label": "Sick Leave Conversion Calculator",
+    "meta_title": "FERS Sick Leave Conversion Calculator | Capital Wealth",
+    "meta_description": "Your unused sick leave converts to creditable federal service at retirement. See exactly how many months it adds to your pension — and what that's worth in lifetime dollars. Free calculator.",
+    "hero_eyebrow": "FEDERAL RETIREMENT TOOLS · SICK LEAVE",
+    "hero_headline_a": "Sick Leave",
+    "hero_headline_em": "Conversion",
+    "hero_headline_b": "Calculator",
+    "hero_subhead": "Your unused sick leave hours convert to months and days of creditable federal service when you retire. That's extra pension — for life. See what yours is worth.",
+    "status_badge": "COMING MAY 2026",
+    "status_copy": "We're pairing this with OPM's official 2087-hour conversion chart and lifetime pension projections. Drop your email below — we'll send you the calculator the day it launches.",
+    "value_headline": "What this calculator will do",
+    "value_bullets": [
+      {
+        "title": "Convert your hours into creditable service",
+        "body": "Enter your current sick-leave balance. We'll show you exactly how many months and days OPM will add to your service computation date using the official conversion chart."
+      },
+      {
+        "title": "Project the pension impact",
+        "body": "See what the added months do to your FERS pension formula — at your high-3 and your service years. Most feds are surprised by how much it is."
+      },
+      {
+        "title": "Calculate the lifetime dollar value",
+        "body": "Across a 25- or 30-year retirement, a healthy sick-leave balance can be worth $15,000 to $50,000+ in additional pension. See your specific number."
+      },
+      {
+        "title": "Compare burn vs. bank scenarios",
+        "body": "The break-even math for taking sick leave now versus banking it for retirement. (Spoiler: banking usually wins by a lot, but the calculator tells you when it doesn't.)"
+      }
+    ],
+    "context_headline": "Why most feds leave thousands on the table here",
+    "context_paragraphs": [
+      "Banking sick leave isn't just goodwill. At retirement, every hour converts into <strong>creditable federal service</strong> — meaning a bigger pension check, for life. The conversion uses OPM's official 2,087-hour chart: roughly 174 hours = one month of service credit. A balance of 1,500 hours adds about 8.5 months to your service computation date.",
+      "On a typical FERS pension of $50,000/year, 8 extra months of service credit is worth <strong>about $330 in annual pension</strong>. Doesn't sound like much — until you multiply by 25 years of retirement. That's $8,250 in today's dollars, from leave you weren't going to use anyway.",
+      "Balances of 2,500+ hours aren't unusual for career feds. At that level you're adding more than a year of service credit — often $20,000 to $40,000+ in lifetime pension value. Stop burning sick leave you don't need."
+    ],
+    "email_capture_headline": "Send me the calculator when it launches",
+    "email_capture_sub": "We'll email you the moment the tool goes live — plus a 2-page explainer on OPM's sick-leave conversion rules and the common edge cases (CSRS offset, part-time service) that trip people up.",
+    "email_capture_cta": "Email Me the Tool →",
+    "lead_type": "tool-sick-leave",
+    "cross_link_text": "Want someone to run this plus your full pension review live? Book 20 minutes with us.",
+    "cross_link_href": "/l/federal-review/"
+  },
+  {
+    "slug": "fers-multiplier-decision-tool",
+    "permalink": "/tools/fers-multiplier-decision-tool/",
+    "nav_label": "FERS 1.1% Multiplier Decision Tool",
+    "meta_title": "FERS 1.1% Multiplier Decision Tool | Capital Wealth",
+    "meta_description": "Retiring at age 62 with 20+ years of service bumps your FERS pension multiplier from 1.0% to 1.1% — a 10% raise, for life. See if working a few more months is worth it. Free tool.",
+    "hero_eyebrow": "FEDERAL RETIREMENT TOOLS · FERS PENSION",
+    "hero_headline_a": "FERS 1.1% Multiplier",
+    "hero_headline_em": "Decision Tool",
+    "hero_headline_b": "",
+    "hero_subhead": "Retiring at age 62 with 20+ years of service bumps your multiplier from 1.0% to 1.1% — a 10% raise on your pension, for life. See if working a few extra months is worth it.",
+    "status_badge": "COMING MAY 2026",
+    "status_copy": "We're pairing the pension math with a realistic cost-of-working model (commute, FEHB while working, TSP contributions, lost Social Security) so you see the <em>net</em> picture, not just the pension side. Drop your email — we'll send you the tool the day it launches.",
+    "value_headline": "What this tool will do",
+    "value_bullets": [
+      {
+        "title": "Show your pension with and without the 1.1%",
+        "body": "At your current SCD and high-3, see the exact pension figure at 1.0% versus 1.1%. Monthly, annually, and across 25 and 30 years of retirement."
+      },
+      {
+        "title": "Calculate the break-even date",
+        "body": "How many extra months do you need to work to earn back the pension you gave up by not retiring today? For most feds it's 14–22 months. Yours is specific."
+      },
+      {
+        "title": "Factor in lost retirement income",
+        "body": "Working an extra year means a year of pension you didn't receive, a year without Social Security, and a year of continued FEHB premiums out of pocket. The tool nets it all out."
+      },
+      {
+        "title": "Flag the edge cases",
+        "body": "Special Retirement Supplement eligibility, MRA+30 interactions, and the cliff at 62 where the multiplier changes. We'll tell you if you're in one of them."
+      }
+    ],
+    "context_headline": "Why one extra year at the office can fund a decade of retirement",
+    "context_paragraphs": [
+      "Your FERS pension formula is simple on paper: <strong>years of service × multiplier × high-3 salary</strong>. The multiplier is <strong>1.0%</strong> unless you retire at age 62 or later with 20 or more years of service — then it jumps to <strong>1.1%</strong>. That's a 10% raise on your pension, for the rest of your life.",
+      "For a career fed with a $90,000 high-3 and 25 years of service, the difference is significant. 1.0% × 25 × $90,000 = $22,500/year. 1.1% × 25 × $90,000 = $24,750/year. Across a 25-year retirement, that extra 10% is <strong>$56,250 in today's dollars</strong> — just from picking a different retirement date.",
+      "The tradeoff: you have to keep working. For most feds, the math works out to 14–22 months of continued employment to break even, but your specific break-even depends on your commute costs, your TSP matching, and whether you'd be drawing Social Security in the alternative. The tool runs the whole thing."
+    ],
+    "email_capture_headline": "Send me the tool when it launches",
+    "email_capture_sub": "We'll email you the moment the tool goes live — plus a short PDF explainer on the 1.1% multiplier rules and the 3 edge cases (MRA+30, postponed annuity, disability retirement) where it doesn't apply.",
+    "email_capture_cta": "Email Me the Tool →",
+    "lead_type": "tool-multiplier-decision",
+    "cross_link_text": "Want someone to walk you through this on your real numbers? Book 20 minutes.",
+    "cross_link_href": "/l/federal-review/"
+  }
+]

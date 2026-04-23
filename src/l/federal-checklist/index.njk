@@ -1,0 +1,1024 @@
+---
+layout: layouts/base-finpay.njk
+title: "The 10 Federal Retirement Moves OPM Won't Tell You About | Capital Wealth"
+description: "Free 14-page PDF from Ann Werts' April 2026 Weber State workshop. Military buyback deadlines, the 1.1% multiplier, sick-leave conversion, FEHB's 5-year trap — the tactical checklist built from 20 years inside federal benefits."
+ogImage: "/assets/images/photos/federal/american-flag-hero.jpg"
+ogImageAlt: "10 Federal Retirement Moves OPM Won't Tell You About — free checklist from Capital Wealth"
+bodyClass: "landing-page lp-federal-checklist"
+permalink: "/l/federal-checklist/"
+noindex: true
+---
+
+<style>
+/* ══════════════════════════════════════════════════════════════
+   LP — Federal Checklist (FB/paid-traffic optimized)
+   Federal sub-brand palette ONLY: Old Glory Red / Blue / White.
+   Scoped under .lp-federal-checklist. Single-scroll hero,
+   3-field form above the fold, minimal chrome.
+   ══════════════════════════════════════════════════════════════ */
+
+.lp-federal-checklist {
+  --cw-fed-red: #B31942;
+  --cw-fed-red-dark: #9a1538;
+  --cw-fed-blue: #0A3161;
+  --cw-fed-blue-dark: #081f3f;
+  --cw-fed-blue-ink: #0F2243;
+  --cw-white: #FFFFFF;
+  --cw-bg-subtle: #f8f9fb;
+  --cw-ink: #1a1a1a;
+  --cw-muted: #4b5563;
+  --cw-border: rgba(10, 49, 97, 0.12);
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--cw-ink);
+}
+
+/* Kill sitewide header/footer on this LP — defensively covers every
+   variant we've shipped (old finpay, new cwh-shell glass, plain header). */
+.lp-federal-checklist main { padding-top: 0 !important; }
+body.lp-federal-checklist .finpay-header,
+body.lp-federal-checklist header.finpay-header,
+body.lp-federal-checklist .finpay-nav-wrapper,
+body.lp-federal-checklist .cwh-shell,
+body.lp-federal-checklist header.cwh-shell,
+body.lp-federal-checklist #cwhShell,
+body.lp-federal-checklist header,
+body.lp-federal-checklist .finpay-footer,
+body.lp-federal-checklist footer.finpay-footer {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
+/* Re-enable the LP's own in-page header + footer */
+body.lp-federal-checklist .lp-mini-header,
+body.lp-federal-checklist .lp-mini-footer {
+  display: block !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  position: relative !important;
+}
+
+.lp-federal-checklist img { max-width: 100%; height: auto; }
+.lp-federal-checklist em { font-style: italic; }
+
+/* ─── Primitives ────────────────────────────────────────────── */
+.lp-fc-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono, "Geist Mono", monospace);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--cw-fed-red);
+  margin-bottom: 16px;
+}
+
+.lp-fc-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--cw-fed-red);
+  color: var(--cw-white);
+  padding: 18px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  font-family: inherit;
+  line-height: 1.2;
+  width: 100%;
+}
+.lp-fc-btn-primary:hover:not(:disabled),
+.lp-fc-btn-primary:focus-visible {
+  background: var(--cw-fed-red-dark);
+  color: var(--cw-white);
+  transform: translateY(-1px);
+  outline: none;
+}
+.lp-fc-btn-primary:focus-visible {
+  outline: 3px solid var(--cw-white);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--cw-fed-red);
+}
+.lp-fc-btn-primary:disabled { opacity: 0.6; cursor: wait; transform: none; }
+
+.lp-fc-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--cw-fed-blue);
+  padding: 14px 24px;
+  border: 2px solid var(--cw-fed-blue);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-family: inherit;
+}
+.lp-fc-btn-ghost:hover,
+.lp-fc-btn-ghost:focus-visible {
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+  outline: none;
+}
+
+/* ─── Mini header (logo only) ───────────────────────────────── */
+.lp-mini-header {
+  background: var(--cw-white);
+  border-bottom: 1px solid var(--cw-border);
+  padding: 14px 24px;
+}
+.lp-mini-header-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.lp-mini-header-logo { height: 36px; width: auto; display: block; }
+.lp-mini-header-phone {
+  font-family: var(--font-mono, monospace);
+  font-size: 13px;
+  color: var(--cw-fed-blue);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.lp-mini-header-phone:hover { color: var(--cw-fed-red); }
+
+/* ─── HERO ──────────────────────────────────────────────────── */
+.lp-fc-hero {
+  position: relative;
+  background:
+    linear-gradient(135deg, rgba(10, 49, 97, 0.97) 0%, rgba(8, 31, 63, 0.95) 60%),
+    url('/assets/images/photos/federal/american-flag-hero.jpg') center / cover no-repeat;
+  color: var(--cw-white);
+  padding: 48px 24px 72px;
+}
+.lp-fc-hero-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.lp-fc-hero-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono, monospace);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--cw-white);
+  background: var(--cw-fed-red);
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+.lp-fc-hero h1 {
+  font-family: var(--font-serif-display, Georgia, "Times New Roman", serif);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 20px;
+  color: var(--cw-white);
+  letter-spacing: -0.01em;
+}
+.lp-fc-hero h1 em {
+  font-style: italic;
+  color: #ffd9a1;
+}
+.lp-fc-hero-subhead {
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0 0 28px;
+  max-width: 560px;
+}
+.lp-fc-hero-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.lp-fc-hero-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.95);
+}
+.lp-fc-hero-bullets svg { flex-shrink: 0; margin-top: 3px; }
+
+/* PDF cover mockup card (CSS-rendered; no image needed) */
+.lp-fc-hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.lp-fc-form-card {
+  background: var(--cw-white);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 440px;
+  color: var(--cw-ink);
+}
+.lp-fc-form-card h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 6px;
+  line-height: 1.2;
+}
+.lp-fc-form-card-sub {
+  font-size: 0.92rem;
+  color: var(--cw-muted);
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+.lp-fc-form-group { margin-bottom: 14px; }
+.lp-fc-form-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cw-fed-blue);
+  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+}
+.lp-fc-form-input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1.5px solid var(--cw-border);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  color: var(--cw-ink);
+  background: var(--cw-white);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  box-sizing: border-box;
+}
+.lp-fc-form-input:focus {
+  outline: none;
+  border-color: var(--cw-fed-red);
+  box-shadow: 0 0 0 3px rgba(179, 25, 66, 0.15);
+}
+.lp-fc-form-input::placeholder { color: #9ca3af; }
+.lp-fc-form-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.lp-fc-form-micro {
+  font-size: 0.78rem;
+  color: var(--cw-muted);
+  line-height: 1.5;
+  margin: 14px 0 0;
+  text-align: center;
+}
+
+/* ─── TRUST STRIP ───────────────────────────────────────────── */
+.lp-fc-trust {
+  background: var(--cw-white);
+  padding: 24px;
+  border-bottom: 1px solid var(--cw-border);
+}
+.lp-fc-trust-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+}
+.lp-fc-trust-label {
+  font-family: var(--font-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cw-muted);
+  font-weight: 600;
+}
+.lp-fc-trust-item {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--cw-fed-blue);
+  letter-spacing: 0.01em;
+}
+.lp-fc-trust-item + .lp-fc-trust-item::before {
+  content: "·";
+  color: var(--cw-border);
+  margin-right: 28px;
+  margin-left: -14px;
+}
+
+/* ─── WHAT'S INSIDE ─────────────────────────────────────────── */
+.lp-fc-inside {
+  background: var(--cw-bg-subtle);
+  padding: 72px 24px;
+}
+.lp-fc-inside-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.lp-fc-inside-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.lp-fc-inside-header h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+.lp-fc-inside-header p {
+  font-size: 1.05rem;
+  color: var(--cw-muted);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.lp-fc-inside-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 32px;
+  max-width: 860px;
+  margin: 0 auto 40px;
+}
+.lp-fc-inside-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--cw-white);
+  border-radius: 10px;
+  border-left: 4px solid var(--cw-fed-red);
+}
+.lp-fc-inside-num {
+  font-family: var(--font-mono, monospace);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--cw-fed-red);
+  flex-shrink: 0;
+  min-width: 28px;
+}
+.lp-fc-inside-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--cw-fed-blue);
+  line-height: 1.4;
+}
+
+.lp-fc-ann-block {
+  max-width: 860px;
+  margin: 0 auto;
+  background: var(--cw-white);
+  border-radius: 16px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 28px;
+  align-items: center;
+  border: 1px solid var(--cw-border);
+}
+.lp-fc-ann-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--cw-fed-red);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.lp-fc-ann-block h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 4px;
+}
+.lp-fc-ann-block p.title {
+  font-size: 0.88rem;
+  color: var(--cw-fed-red);
+  font-weight: 600;
+  margin: 0 0 12px;
+  letter-spacing: 0.02em;
+}
+.lp-fc-ann-block blockquote {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--cw-ink);
+  line-height: 1.55;
+  margin: 0;
+  padding: 0;
+  border-left: none;
+}
+
+/* ─── SOCIAL PROOF / REVIEWS ────────────────────────────────── */
+.lp-fc-proof {
+  background: var(--cw-white);
+  padding: 72px 24px;
+}
+.lp-fc-proof-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.lp-fc-proof-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.lp-fc-proof-header h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 12px;
+}
+.lp-fc-proof-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: var(--cw-bg-subtle);
+  border-radius: 24px;
+  font-size: 0.92rem;
+  color: var(--cw-muted);
+  margin-top: 8px;
+}
+.lp-fc-proof-stars {
+  color: #f5a623;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.lp-fc-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.lp-fc-review-card {
+  background: var(--cw-bg-subtle);
+  border-radius: 12px;
+  padding: 28px;
+  border-top: 4px solid var(--cw-fed-red);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.lp-fc-review-stars {
+  color: #f5a623;
+  letter-spacing: 2px;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+.lp-fc-review-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--cw-ink);
+  margin: 0;
+  flex: 1;
+}
+.lp-fc-review-author {
+  font-size: 0.85rem;
+  color: var(--cw-muted);
+  border-top: 1px solid var(--cw-border);
+  padding-top: 12px;
+  margin: 0;
+}
+.lp-fc-review-author strong {
+  color: var(--cw-fed-blue);
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.92rem;
+}
+
+/* ─── SECONDARY CTA (soft) ──────────────────────────────────── */
+.lp-fc-secondary {
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+  padding: 56px 24px;
+  text-align: center;
+}
+.lp-fc-secondary-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.lp-fc-secondary h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--cw-white);
+  line-height: 1.25;
+}
+.lp-fc-secondary p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+.lp-fc-secondary .lp-fc-btn-ghost {
+  color: var(--cw-white);
+  border-color: var(--cw-white);
+  background: transparent;
+  width: auto;
+  font-size: 1rem;
+}
+.lp-fc-secondary .lp-fc-btn-ghost:hover,
+.lp-fc-secondary .lp-fc-btn-ghost:focus-visible {
+  background: var(--cw-white);
+  color: var(--cw-fed-blue);
+}
+
+/* ─── MINI FOOTER ───────────────────────────────────────────── */
+.lp-mini-footer {
+  background: var(--cw-fed-blue-dark);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 32px 24px 40px;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.lp-mini-footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.lp-mini-footer a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-underline-offset: 3px;
+}
+.lp-mini-footer a:hover { color: var(--cw-white); text-decoration-color: var(--cw-white); }
+.lp-mini-footer-links {
+  margin-top: 14px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+
+/* ─── SUCCESS STATE ─────────────────────────────────────────── */
+.lp-fc-success {
+  display: none;
+  text-align: center;
+  padding: 20px 0;
+}
+.lp-fc-success.is-visible { display: block; }
+.lp-fc-success-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--cw-fed-red);
+  color: var(--cw-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.lp-fc-success h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.4rem;
+  color: var(--cw-fed-blue);
+  margin: 0 0 8px;
+}
+.lp-fc-success p {
+  color: var(--cw-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─── MOBILE ────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .lp-fc-hero-inner { grid-template-columns: 1fr; gap: 32px; }
+  .lp-fc-hero h1 { font-size: 2.1rem; }
+  .lp-fc-reviews-grid { grid-template-columns: 1fr; }
+  .lp-fc-inside-grid { grid-template-columns: 1fr; }
+  .lp-fc-ann-block { grid-template-columns: 1fr; text-align: center; }
+  .lp-fc-ann-photo { margin: 0 auto; }
+}
+
+@media (max-width: 560px) {
+  .lp-fc-hero { padding: 36px 18px 56px; }
+  .lp-fc-hero h1 { font-size: 1.8rem; }
+  .lp-fc-hero-subhead { font-size: 1rem; }
+  .lp-fc-inside, .lp-fc-proof { padding: 56px 18px; }
+  .lp-fc-inside-header h2, .lp-fc-proof-header h2 { font-size: 1.65rem; }
+  .lp-fc-form-card { padding: 24px; }
+  .lp-fc-secondary { padding: 48px 18px; }
+  .lp-fc-secondary h2 { font-size: 1.5rem; }
+  .lp-fc-trust-inner { justify-content: flex-start; }
+}
+
+/* ─── A11Y ──────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .lp-fc-btn-primary,
+  .lp-fc-btn-ghost { transition: none !important; transform: none !important; }
+}
+</style>
+
+{# ═══════════ MINI HEADER ═══════════ #}
+<header class="lp-mini-header">
+  <div class="lp-mini-header-inner">
+    <a href="/" aria-label="Capital Wealth home">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="lp-mini-header-logo">
+    </a>
+    <a href="tel:8012102800" class="lp-mini-header-phone">(801) 210-2800</a>
+  </div>
+</header>
+
+{# ═══════════ HERO + FORM (above fold) ═══════════ #}
+<section class="lp-fc-hero">
+  <div class="lp-fc-hero-inner">
+    <div class="lp-fc-hero-left">
+      <span class="lp-fc-hero-eyebrow">FREE · FEDERAL FIELD GUIDE · APRIL 2026</span>
+      <h1>The 10 Federal Retirement Moves <em>OPM Won't Tell You About</em></h1>
+      <p class="lp-fc-hero-subhead">Military buyback deadlines. The 1.1% multiplier. Sick-leave conversion. FEHB's 5-year trap. The tactical checklist we built from 20 years inside federal benefits — yours free.</p>
+      <ul class="lp-fc-hero-bullets">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffd9a1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          14-page PDF built from Ann Werts' Weber State workshop
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffd9a1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          The 10 moves most feds miss in their last 5 years
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffd9a1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          No products sold. No sales pitch. Just the checklist.
+        </li>
+      </ul>
+    </div>
+
+    <div class="lp-fc-hero-right">
+      <div class="lp-fc-form-card" id="form-card">
+        <div class="lp-fc-form-content">
+          <h2>Send me the free checklist</h2>
+          <p class="lp-fc-form-card-sub">PDF arrives in your inbox in 60 seconds. 3 fields, no phone required.</p>
+
+          <form id="lp-fc-form" novalidate>
+            <div class="lp-fc-form-group">
+              <label class="lp-fc-form-label" for="lp-fc-firstname">First Name</label>
+              <input class="lp-fc-form-input" type="text" id="lp-fc-firstname" name="firstName" required autocomplete="given-name" placeholder="First name">
+            </div>
+
+            <div class="lp-fc-form-group">
+              <label class="lp-fc-form-label" for="lp-fc-email">Email Address</label>
+              <input class="lp-fc-form-input" type="email" id="lp-fc-email" name="email" required autocomplete="email" placeholder="you@example.gov">
+            </div>
+
+            <div class="lp-fc-form-group">
+              <label class="lp-fc-form-label" for="lp-fc-agency">Federal Agency <span style="font-weight: 400; color: #9ca3af;">(optional)</span></label>
+              <input class="lp-fc-form-input" type="text" id="lp-fc-agency" name="agency" placeholder="e.g. VA, DoD, USPS">
+            </div>
+
+            {# Honeypot #}
+            <div class="lp-fc-form-honey" aria-hidden="true">
+              <label for="lp-fc-website">Website</label>
+              <input type="text" id="lp-fc-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            {# Hidden tracking fields #}
+            <input type="hidden" name="source" value="lp-federal-checklist">
+            <input type="hidden" name="lead_type" value="federal-checklist-fb">
+            <input type="hidden" name="landing_page" value="federal-checklist">
+            <input type="hidden" name="variant" value="checklist">
+            <input type="hidden" name="utm_source" id="lp-fc-utm-source">
+            <input type="hidden" name="utm_medium" id="lp-fc-utm-medium">
+            <input type="hidden" name="utm_campaign" id="lp-fc-utm-campaign">
+            <input type="hidden" name="utm_content" id="lp-fc-utm-content">
+            <input type="hidden" name="utm_term" id="lp-fc-utm-term">
+            <input type="hidden" name="gclid" id="lp-fc-gclid">
+            <input type="hidden" name="fbclid" id="lp-fc-fbclid">
+            <input type="hidden" name="referrer" id="lp-fc-referrer">
+
+            <button type="submit" class="lp-fc-btn-primary" id="lp-fc-submit">Send Me the Free Checklist →</button>
+
+            <p class="lp-fc-form-micro">No spam. Unsubscribe anytime. Fiduciary standard — your data stays with us.</p>
+          </form>
+        </div>
+
+        <div class="lp-fc-success" id="lp-fc-success" role="status" aria-live="polite">
+          <div class="lp-fc-success-icon" aria-hidden="true">✓</div>
+          <h3>Check your inbox</h3>
+          <p>Your 14-page Federal Retirement Checklist is on its way. If you don't see it in 60 seconds, check spam — it comes from <strong>info@capitalwealth.com</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════ TRUST STRIP ═══════════ #}
+<section class="lp-fc-trust" aria-label="Credentials and press">
+  <div class="lp-fc-trust-inner">
+    <span class="lp-fc-trust-label">As Seen On</span>
+    <span class="lp-fc-trust-item">KSL Newsradio</span>
+    <span class="lp-fc-trust-item">KNRS</span>
+    <span class="lp-fc-trust-item">Weber State University</span>
+    <span class="lp-fc-trust-item">BBB A+</span>
+    <span class="lp-fc-trust-item">FINRA BrokerCheck</span>
+    <span class="lp-fc-trust-item">Fiduciary Standard</span>
+  </div>
+</section>
+
+{# ═══════════ WHAT'S INSIDE ═══════════ #}
+<section class="lp-fc-inside">
+  <div class="lp-fc-inside-inner">
+    <div class="lp-fc-inside-header">
+      <span class="lp-fc-eyebrow">What's Inside the 14-Page Guide</span>
+      <h2>The 10 moves, by urgency</h2>
+      <p>Built from Ann Werts' April 9, 2026 Weber State workshop — where 42 federal employees got walked through the exact moves most feds miss in the 5 years before retirement.</p>
+    </div>
+
+    <div class="lp-fc-inside-grid">
+      <div class="lp-fc-inside-item"><span class="lp-fc-inside-num">01</span><span class="lp-fc-inside-title">Download your eOPF before you walk out the door</span></div>
+      <div class="lp-fc-inside-item"><span class="lp-fc-inside-num">02</span><span class="lp-fc-inside-title">Audit your SF-50s and beneficiary forms</span></div>
+      <div class="lp-fc-inside-item"><span class="lp-fc-inside-num">03</span><span class="lp-fc-inside-title">Price out a military buyback (often pays for itself in year 1)</span></div>
+      <div class="lp-fc-inside-item"><span class="lp-fc-inside-num">04</span><span class="lp-fc-inside-title">Know which of the three doors you're walking through</span></div>
+      <div class="lp-fc-inside-item"><span class="lp-fc-inside-num">05</span><span class="lp-fc-inside-title">Work the 1.1% multiplier — a 10% raise on your pension, for life</span></div>
+      <div class="lp-fc-inside-item"><span class="lp-fc-inside-num">06</span><span class="lp-fc-inside-title">Convert unused sick leave into creditable service</span></div>
+      <div class="lp-fc-inside-item"><span class="lp-fc-inside-num">07</span><span class="lp-fc-inside-title">Pick the right retirement date (worth thousands)</span></div>
+      <div class="lp-fc-inside-item"><span class="lp-fc-inside-num">08</span><span class="lp-fc-inside-title">Lock in FEHB for the rest of your life — the 5-year rule</span></div>
+      <div class="lp-fc-inside-item"><span class="lp-fc-inside-num">09</span><span class="lp-fc-inside-title">Don't get blindsided by the 2026 Roth catch-up mandate</span></div>
+      <div class="lp-fc-inside-item"><span class="lp-fc-inside-num">10</span><span class="lp-fc-inside-title">Set up your state tax withholding yourself — OPM won't</span></div>
+    </div>
+
+    <div class="lp-fc-ann-block">
+      <img src="/assets/images/photos/federal/ann-werts-headshot.jpg" alt="Ann Werts, Federal Benefits Specialist" class="lp-fc-ann-photo" loading="lazy" width="140" height="140">
+      <div>
+        <h3>Ann Werts</h3>
+        <p class="title">Federal Benefits Specialist · Author, FedTelligence 2.0</p>
+        <blockquote>"The average federal employee works 2.5 years longer than they need to. Usually because nobody told them about the three doors."</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══════════ SOCIAL PROOF ═══════════ #}
+<section class="lp-fc-proof">
+  <div class="lp-fc-proof-inner">
+    <div class="lp-fc-proof-header">
+      <span class="lp-fc-eyebrow">Why feds trust us with this decision</span>
+      <h2>5.0 ★ on Google — from clients who've done this with us</h2>
+      <div class="lp-fc-proof-rating">
+        <span class="lp-fc-proof-stars" aria-hidden="true">★★★★★</span>
+        <span>5.0 rating · Verified Google reviews</span>
+      </div>
+    </div>
+
+    <div class="lp-fc-reviews-grid">
+      <article class="lp-fc-review-card">
+        <div class="lp-fc-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="lp-fc-review-body">"Mike and his staff are the best! We previously were with two other financial planners whose fees were too high and their investment ability had no comparison to Mike. He was also the only one who addressed taxes. Mike got our retirement finances completely organized and set up for the long haul."</p>
+        <p class="lp-fc-review-author"><strong>Collette D.</strong>Google Review · Verified Client</p>
+      </article>
+
+      <article class="lp-fc-review-card">
+        <div class="lp-fc-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="lp-fc-review-body">"My wife and I, as well as my mother-in-law, have been working with the Capital Wealth team for over a year and have found Mike and his staff to be very welcoming and knowledgeable. They lay out the best advice and options for our financial well-being, and they make sure we understand the full picture before making decisions."</p>
+        <p class="lp-fc-review-author"><strong>Julie E.</strong>Google Review · Verified Client</p>
+      </article>
+
+      <article class="lp-fc-review-card">
+        <div class="lp-fc-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="lp-fc-review-body">"We've been extremely pleased with our experience at Capital Wealth. The team is professional, responsive, and truly invested in helping us achieve our financial goals. They take the time to explain everything clearly and make us feel confident about our retirement plan."</p>
+        <p class="lp-fc-review-author"><strong>Cory M.</strong>Google Review · Verified Client</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+{# ═══════════ SOFT SECONDARY CTA ═══════════ #}
+<section class="lp-fc-secondary">
+  <div class="lp-fc-secondary-inner">
+    <h2>Already know you want a personal review? Skip the PDF.</h2>
+    <p>If you're inside 5 years of retirement and you'd rather have someone pull up <em>your</em> numbers — pension, TSP, FEHB, SCD — we'll do that for free. 20-minute intro call. No products sold.</p>
+    <a href="/l/federal-review/" class="lp-fc-btn-ghost" data-cta="secondary-booking">Book a 20-Minute Benefits Review →</a>
+  </div>
+</section>
+
+{# ═══════════ MINI FOOTER ═══════════ #}
+<footer class="lp-mini-footer">
+  <div class="lp-mini-footer-inner">
+    ©2026 Capital Wealth Advisors · Fiduciary Standard · (801) 210-2800<br>
+    Capital Wealth is an independent fiduciary investment advisory firm and is <strong>not affiliated with, endorsed by, or sponsored by the Office of Personnel Management, the U.S. government, or any federal agency</strong>. Information on this page is educational and not personalized advice. Government Contractor — Unique Entity ID: L63FVVWAKXA8.
+    <div class="lp-mini-footer-links">
+      <a href="/privacy/">Privacy</a>
+      <a href="/disclosures/">Disclosures</a>
+      <a href="https://brokercheck.finra.org/" rel="noopener" target="_blank">FINRA BrokerCheck</a>
+    </div>
+  </div>
+</footer>
+
+{# ═══════════ JSON-LD: Offer + Reviews ═══════════ #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Offer",
+  "name": "Free: 10 Federal Retirement Moves OPM Won't Tell You About",
+  "description": "14-page PDF checklist from Ann Werts' April 2026 Weber State workshop for federal employees.",
+  "price": "0",
+  "priceCurrency": "USD",
+  "availability": "https://schema.org/InStock",
+  "offeredBy": {
+    "@type": "Organization",
+    "name": "Capital Wealth",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
+
+{# ═══════════ JS: tracking, UTM capture, form, header-kill fallback ═══════════ #}
+<script>
+(function () {
+  'use strict';
+
+  // ─── Belt-and-suspenders header kill (defensive, in case CSS is overridden) ─
+  function killChrome() {
+    var killSelectors = [
+      '.cwh-shell', '#cwhShell', 'header.cwh-shell',
+      '.finpay-header', 'header.finpay-header', '.finpay-nav-wrapper',
+      '.finpay-footer', 'footer.finpay-footer'
+    ];
+    killSelectors.forEach(function (sel) {
+      document.querySelectorAll(sel).forEach(function (el) {
+        // Don't nuke the LP's own in-page header/footer
+        if (el.closest('.lp-mini-header') || el.closest('.lp-mini-footer')) return;
+        if (el.classList.contains('lp-mini-header') || el.classList.contains('lp-mini-footer')) return;
+        el.style.display = 'none';
+        el.setAttribute('aria-hidden', 'true');
+        if (el.parentNode) el.parentNode.removeChild(el);
+      });
+    });
+  }
+
+  var STORAGE_KEY = 'cw_lp_federal_checklist_attrib';
+
+  // ─── UTM / attribution capture ─────────────────────────────
+  function captureAttribution() {
+    var params = new URLSearchParams(window.location.search);
+    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'];
+    var captured = {};
+    try {
+      var stored = sessionStorage.getItem(STORAGE_KEY);
+      if (stored) captured = JSON.parse(stored) || {};
+    } catch (e) { /* ignore */ }
+
+    keys.forEach(function (k) {
+      var v = params.get(k);
+      if (v) captured[k] = v;
+    });
+    if (!captured.referrer && document.referrer) captured.referrer = document.referrer;
+
+    try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(captured)); } catch (e) { /* ignore */ }
+
+    keys.forEach(function (k) {
+      var el = document.getElementById('lp-fc-' + k.replace('_', '-'));
+      if (el && captured[k]) el.value = captured[k];
+    });
+    var refEl = document.getElementById('lp-fc-referrer');
+    if (refEl) refEl.value = captured.referrer || '';
+  }
+
+  // ─── GA4 / Meta ViewContent on load ────────────────────────
+  function trackPageView() {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'lp_federal_checklist_view' });
+    if (typeof fbq === 'function') {
+      fbq('track', 'ViewContent', {
+        content_name: 'lp_federal_checklist',
+        content_category: 'Federal Benefits'
+      });
+    }
+  }
+
+  // ─── Form submit ───────────────────────────────────────────
+  function initForm() {
+    var form = document.getElementById('lp-fc-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Honeypot — silently drop bots
+      var honey = document.getElementById('lp-fc-website');
+      if (honey && honey.value) return;
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      var submitBtn = document.getElementById('lp-fc-submit');
+      var originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      var formData = new FormData(form);
+      var data = {};
+      formData.forEach(function (value, key) { data[key] = value; });
+
+      fetch('/api/submit-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (result) {
+        if (result.success) {
+          // GA4
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+              event_category: 'lead',
+              event_label: 'federal_checklist_fb',
+              value: 10
+            });
+          }
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'lp_federal_checklist_form_submit',
+            form: 'checklist'
+          });
+          // Meta pixel Lead
+          if (typeof fbq === 'function') {
+            fbq('track', 'Lead', {
+              content_name: 'lp_federal_checklist',
+              content_category: 'Federal Benefits',
+              value: 10,
+              currency: 'USD'
+            });
+          }
+          // Show inline success + redirect to TY page after 1.5s
+          var formContent = form.closest('.lp-fc-form-card').querySelector('.lp-fc-form-content');
+          var success = document.getElementById('lp-fc-success');
+          if (formContent) formContent.style.display = 'none';
+          if (success) success.classList.add('is-visible');
+          setTimeout(function () {
+            window.location.href = '/l/10-things-federal-retirement/ty-checklist/';
+          }, 1500);
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          alert(result.error || 'Something went wrong. Please try again, or call us at (801) 210-2800.');
+        }
+      })
+      .catch(function (err) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        console.error('Form submit error:', err);
+        alert('Something went wrong. Please try again, or call us at (801) 210-2800.');
+      });
+    });
+  }
+
+  // Run immediately where possible (kill chrome before first paint of JS)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      killChrome();
+      captureAttribution();
+      trackPageView();
+      initForm();
+    });
+  } else {
+    killChrome();
+    captureAttribution();
+    trackPageView();
+    initForm();
+  }
+
+  // Re-run kill after 250ms in case late scripts re-insert chrome
+  setTimeout(killChrome, 250);
+  setTimeout(killChrome, 1500);
+})();
+</script>

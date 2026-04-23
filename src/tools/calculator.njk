@@ -1,0 +1,703 @@
+---
+pagination:
+  data: calculator_tools
+  size: 1
+  alias: tool
+permalink: "{{ tool.permalink }}"
+layout: layouts/base-finpay.njk
+eleventyComputed:
+  title: "{{ tool.meta_title }}"
+  description: "{{ tool.meta_description }}"
+bodyClass: "landing-page lp-tool"
+ogImage: "/assets/images/photos/federal/american-flag-hero.jpg"
+---
+
+<style>
+/* ══════════════════════════════════════════════════════════════
+   Federal Retirement Tools — SEO-indexed calculator stubs with
+   email capture. Scoped under .lp-tool. Federal palette.
+   ══════════════════════════════════════════════════════════════ */
+
+.lp-tool {
+  --cw-fed-red: #B31942;
+  --cw-fed-red-dark: #9a1538;
+  --cw-fed-blue: #0A3161;
+  --cw-fed-blue-dark: #081f3f;
+  --cw-white: #FFFFFF;
+  --cw-bg-subtle: #f8f9fb;
+  --cw-ink: #1a1a1a;
+  --cw-muted: #4b5563;
+  --cw-border: rgba(10, 49, 97, 0.12);
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--cw-ink);
+}
+
+.lp-tool main { padding-top: 0 !important; }
+body.lp-tool .finpay-header,
+body.lp-tool header.finpay-header,
+body.lp-tool .finpay-nav-wrapper,
+body.lp-tool .cwh-shell,
+body.lp-tool header.cwh-shell,
+body.lp-tool #cwhShell,
+body.lp-tool .finpay-footer,
+body.lp-tool footer.finpay-footer {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
+body.lp-tool .lp-tool-header,
+body.lp-tool .lp-tool-footer {
+  display: block !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  position: relative !important;
+}
+
+.lp-tool img { max-width: 100%; height: auto; }
+.lp-tool em { font-style: italic; }
+
+/* ─── Primitives ────────────────────────────────────────────── */
+.lp-tool-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono, "Geist Mono", monospace);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--cw-fed-red);
+  margin-bottom: 16px;
+}
+
+.lp-tool-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--cw-fed-red);
+  color: var(--cw-white);
+  padding: 16px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  font-family: inherit;
+  line-height: 1.2;
+}
+.lp-tool-btn-primary:hover:not(:disabled),
+.lp-tool-btn-primary:focus-visible {
+  background: var(--cw-fed-red-dark);
+  transform: translateY(-1px);
+  outline: none;
+  color: var(--cw-white);
+}
+.lp-tool-btn-primary:disabled { opacity: 0.6; cursor: wait; transform: none; }
+
+/* ─── Header ─────────────────────────────────────────────── */
+.lp-tool-header {
+  background: var(--cw-white);
+  border-bottom: 1px solid var(--cw-border);
+  padding: 14px 24px;
+}
+.lp-tool-header-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.lp-tool-header-logo { height: 36px; width: auto; display: block; }
+.lp-tool-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.lp-tool-header-nav a {
+  font-size: 14px;
+  color: var(--cw-fed-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+.lp-tool-header-nav a:hover { color: var(--cw-fed-red); }
+.lp-tool-header-phone {
+  font-family: var(--font-mono, monospace);
+  font-size: 13px;
+  color: var(--cw-fed-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+.lp-tool-header-phone:hover { color: var(--cw-fed-red); }
+
+/* ─── Hero ──────────────────────────────────────────────── */
+.lp-tool-hero {
+  background:
+    linear-gradient(135deg, rgba(10, 49, 97, 0.97) 0%, rgba(8, 31, 63, 0.95) 60%),
+    url('/assets/images/photos/federal/american-flag-hero.jpg') center / cover no-repeat;
+  color: var(--cw-white);
+  padding: 64px 24px;
+}
+.lp-tool-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-tool-hero-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono, monospace);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--cw-white);
+  background: var(--cw-fed-red);
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+.lp-tool-hero h1 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 20px;
+  color: var(--cw-white);
+  letter-spacing: -0.01em;
+}
+.lp-tool-hero h1 em { color: #ffd9a1; font-style: italic; }
+.lp-tool-hero-sub {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ─── Status / coming-soon banner ───────────────────────── */
+.lp-tool-status {
+  background: #fff8e8;
+  border: 1.5px solid #f3c97b;
+  border-radius: 12px;
+  padding: 24px 28px;
+  max-width: 860px;
+  margin: -32px auto 48px;
+  position: relative;
+  z-index: 2;
+}
+.lp-tool-status-badge {
+  display: inline-block;
+  background: var(--cw-fed-red);
+  color: var(--cw-white);
+  font-family: var(--font-mono, monospace);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.lp-tool-status p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--cw-ink);
+}
+
+/* ─── Value bullets ─────────────────────────────────────── */
+.lp-tool-value {
+  background: var(--cw-white);
+  padding: 24px 24px 80px;
+}
+.lp-tool-value-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.lp-tool-value h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 32px;
+  text-align: center;
+  line-height: 1.2;
+}
+.lp-tool-value-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.lp-tool-value-card {
+  background: var(--cw-bg-subtle);
+  border-radius: 12px;
+  padding: 26px;
+  border-left: 4px solid var(--cw-fed-red);
+}
+.lp-tool-value-card h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+.lp-tool-value-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--cw-muted);
+  margin: 0;
+}
+
+/* ─── Context / educational block ───────────────────────── */
+.lp-tool-context {
+  background: var(--cw-bg-subtle);
+  padding: 80px 24px;
+}
+.lp-tool-context-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.lp-tool-context h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cw-fed-blue);
+  margin: 0 0 24px;
+  line-height: 1.25;
+}
+.lp-tool-context p {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--cw-ink);
+  margin: 0 0 20px;
+}
+.lp-tool-context strong { color: var(--cw-fed-blue); }
+
+/* ─── Email capture form ────────────────────────────────── */
+.lp-tool-email {
+  background: var(--cw-fed-blue);
+  color: var(--cw-white);
+  padding: 72px 24px;
+}
+.lp-tool-email-inner {
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-tool-email h2 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--cw-white);
+  line-height: 1.2;
+}
+.lp-tool-email-sub {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+.lp-tool-email-form {
+  background: var(--cw-white);
+  border-radius: 12px;
+  padding: 24px;
+  color: var(--cw-ink);
+  text-align: left;
+}
+.lp-tool-form-group { margin-bottom: 14px; }
+.lp-tool-form-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cw-fed-blue);
+  margin-bottom: 6px;
+}
+.lp-tool-form-input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1.5px solid var(--cw-border);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  color: var(--cw-ink);
+  background: var(--cw-white);
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.lp-tool-form-input:focus {
+  outline: none;
+  border-color: var(--cw-fed-red);
+  box-shadow: 0 0 0 3px rgba(179, 25, 66, 0.15);
+}
+.lp-tool-form-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.lp-tool-form-submit { width: 100%; }
+.lp-tool-form-micro {
+  font-size: 0.78rem;
+  color: var(--cw-muted);
+  line-height: 1.5;
+  margin: 14px 0 0;
+  text-align: center;
+}
+.lp-tool-email-crosslink {
+  margin-top: 24px;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+.lp-tool-email-crosslink a {
+  color: #ffd9a1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.lp-tool-email-crosslink a:hover { color: var(--cw-white); }
+
+.lp-tool-success {
+  display: none;
+  text-align: center;
+  padding: 24px 0;
+}
+.lp-tool-success.is-visible { display: block; }
+.lp-tool-success-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--cw-fed-red);
+  color: var(--cw-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.lp-tool-success h3 {
+  font-family: var(--font-serif-display, Georgia, serif);
+  font-size: 1.3rem;
+  color: var(--cw-fed-blue);
+  margin: 0 0 8px;
+}
+.lp-tool-success p {
+  color: var(--cw-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─── Footer ────────────────────────────────────────────── */
+.lp-tool-footer {
+  background: var(--cw-fed-blue-dark);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 32px 24px 40px;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.lp-tool-footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.lp-tool-footer a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+.lp-tool-footer a:hover { color: var(--cw-white); }
+.lp-tool-footer-links {
+  margin-top: 14px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+
+/* ─── Mobile ────────────────────────────────────────────── */
+@media (max-width: 720px) {
+  .lp-tool-hero h1 { font-size: 2.1rem; }
+  .lp-tool-hero-sub { font-size: 1rem; }
+  .lp-tool-value-grid { grid-template-columns: 1fr; }
+  .lp-tool-value h2, .lp-tool-context h2, .lp-tool-email h2 { font-size: 1.6rem; }
+  .lp-tool-hero { padding: 48px 18px; }
+  .lp-tool-value, .lp-tool-context, .lp-tool-email { padding: 56px 18px; }
+  .lp-tool-header-nav a:not(.lp-tool-header-phone) { display: none; }
+}
+</style>
+
+{# ═══════════ HEADER ═══════════ #}
+<header class="lp-tool-header">
+  <div class="lp-tool-header-inner">
+    <a href="/" aria-label="Capital Wealth home">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" class="lp-tool-header-logo">
+    </a>
+    <div class="lp-tool-header-nav">
+      <a href="/l/federal-review/">Book a Review</a>
+      <a href="tel:8012102800" class="lp-tool-header-phone">(801) 210-2800</a>
+    </div>
+  </div>
+</header>
+
+{# ═══════════ HERO ═══════════ #}
+<section class="lp-tool-hero">
+  <div class="lp-tool-hero-inner">
+    <span class="lp-tool-hero-eyebrow">{{ tool.hero_eyebrow }}</span>
+    <h1>
+      {{ tool.hero_headline_a }}
+      {% if tool.hero_headline_em %}<em>{{ tool.hero_headline_em }}</em>{% endif %}
+      {% if tool.hero_headline_b %}{{ tool.hero_headline_b }}{% endif %}
+    </h1>
+    <p class="lp-tool-hero-sub">{{ tool.hero_subhead }}</p>
+  </div>
+</section>
+
+{# ═══════════ STATUS ═══════════ #}
+<div class="lp-tool-status">
+  <span class="lp-tool-status-badge">{{ tool.status_badge }}</span>
+  <p>{{ tool.status_copy | safe }}</p>
+</div>
+
+{# ═══════════ VALUE BULLETS ═══════════ #}
+<section class="lp-tool-value">
+  <div class="lp-tool-value-inner">
+    <h2>{{ tool.value_headline }}</h2>
+    <div class="lp-tool-value-grid">
+      {% for b in tool.value_bullets %}
+      <div class="lp-tool-value-card">
+        <h3>{{ b.title }}</h3>
+        <p>{{ b.body | safe }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ═══════════ CONTEXT ═══════════ #}
+<section class="lp-tool-context">
+  <div class="lp-tool-context-inner">
+    <span class="lp-tool-eyebrow">Why this matters</span>
+    <h2>{{ tool.context_headline }}</h2>
+    {% for p in tool.context_paragraphs %}
+      <p>{{ p | safe }}</p>
+    {% endfor %}
+  </div>
+</section>
+
+{# ═══════════ EMAIL CAPTURE ═══════════ #}
+<section class="lp-tool-email" id="notify">
+  <div class="lp-tool-email-inner">
+    <h2>{{ tool.email_capture_headline }}</h2>
+    <p class="lp-tool-email-sub">{{ tool.email_capture_sub }}</p>
+
+    <div class="lp-tool-email-form" id="lp-tool-form-card">
+      <div class="lp-tool-form-content">
+        <form id="lp-tool-form" novalidate>
+          <div class="lp-tool-form-group">
+            <label class="lp-tool-form-label" for="lp-tool-firstname">First Name</label>
+            <input class="lp-tool-form-input" type="text" id="lp-tool-firstname" name="firstName" required autocomplete="given-name">
+          </div>
+          <div class="lp-tool-form-group">
+            <label class="lp-tool-form-label" for="lp-tool-email-input">Email Address</label>
+            <input class="lp-tool-form-input" type="email" id="lp-tool-email-input" name="email" required autocomplete="email" placeholder="you@example.gov">
+          </div>
+          <div class="lp-tool-form-group">
+            <label class="lp-tool-form-label" for="lp-tool-agency">Federal Agency <span style="font-weight: 400; color: #9ca3af;">(optional)</span></label>
+            <input class="lp-tool-form-input" type="text" id="lp-tool-agency" name="agency" placeholder="e.g. VA, DoD, USPS">
+          </div>
+
+          <div class="lp-tool-form-honey" aria-hidden="true">
+            <label for="lp-tool-website">Website</label>
+            <input type="text" id="lp-tool-website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <input type="hidden" name="source" value="tool-{{ tool.slug }}">
+          <input type="hidden" name="lead_type" value="{{ tool.lead_type }}">
+          <input type="hidden" name="landing_page" value="{{ tool.slug }}">
+          <input type="hidden" name="variant" value="tool-notify">
+          <input type="hidden" name="utm_source" id="lp-tool-utm-source">
+          <input type="hidden" name="utm_medium" id="lp-tool-utm-medium">
+          <input type="hidden" name="utm_campaign" id="lp-tool-utm-campaign">
+          <input type="hidden" name="utm_content" id="lp-tool-utm-content">
+          <input type="hidden" name="utm_term" id="lp-tool-utm-term">
+          <input type="hidden" name="gclid" id="lp-tool-gclid">
+          <input type="hidden" name="fbclid" id="lp-tool-fbclid">
+          <input type="hidden" name="referrer" id="lp-tool-referrer">
+
+          <button type="submit" class="lp-tool-btn-primary lp-tool-form-submit" id="lp-tool-submit">{{ tool.email_capture_cta }}</button>
+          <p class="lp-tool-form-micro">No spam. Unsubscribe anytime. Your data stays with us.</p>
+        </form>
+      </div>
+
+      <div class="lp-tool-success" id="lp-tool-success" role="status" aria-live="polite">
+        <div class="lp-tool-success-icon" aria-hidden="true">✓</div>
+        <h3>You're on the list</h3>
+        <p>We'll email you the moment the tool launches — plus the companion PDF explainer we mentioned.</p>
+      </div>
+    </div>
+
+    <p class="lp-tool-email-crosslink">{{ tool.cross_link_text }} <a href="{{ tool.cross_link_href }}">Book a complimentary review →</a></p>
+  </div>
+</section>
+
+{# ═══════════ FOOTER ═══════════ #}
+<footer class="lp-tool-footer">
+  <div class="lp-tool-footer-inner">
+    ©2026 Capital Wealth Advisors · Fiduciary Standard · (801) 210-2800<br>
+    Capital Wealth is an independent fiduciary investment advisory firm and is <strong>not affiliated with, endorsed by, or sponsored by the Office of Personnel Management, the U.S. government, or any federal agency</strong>. Tools and information on this page are educational only; outputs are estimates and not personalized advice. Government Contractor — Unique Entity ID: L63FVVWAKXA8.
+    <div class="lp-tool-footer-links">
+      <a href="/privacy/">Privacy</a>
+      <a href="/disclosures/">Disclosures</a>
+      <a href="/l/federal-review/">Book a Review</a>
+      <a href="/l/federal-checklist/">Free Checklist</a>
+    </div>
+  </div>
+</footer>
+
+{# JSON-LD for SEO #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ tool.meta_title | dump | safe }},
+  "description": {{ tool.meta_description | dump | safe }},
+  "url": "{{ site.url }}{{ tool.permalink }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Capital Wealth",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  function killChrome() {
+    ['.cwh-shell', '#cwhShell', 'header.cwh-shell', '.finpay-header', 'header.finpay-header',
+     '.finpay-nav-wrapper', '.finpay-footer', 'footer.finpay-footer'].forEach(function (sel) {
+      document.querySelectorAll(sel).forEach(function (el) {
+        if (el.closest('.lp-tool-header') || el.closest('.lp-tool-footer')) return;
+        if (el.classList.contains('lp-tool-header') || el.classList.contains('lp-tool-footer')) return;
+        el.style.display = 'none';
+        if (el.parentNode) el.parentNode.removeChild(el);
+      });
+    });
+  }
+
+  var STORAGE_KEY = 'cw_lp_tool_{{ tool.slug }}_attrib';
+  function captureAttribution() {
+    var params = new URLSearchParams(window.location.search);
+    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'];
+    var captured = {};
+    try { var s = sessionStorage.getItem(STORAGE_KEY); if (s) captured = JSON.parse(s) || {}; } catch (e) {}
+    keys.forEach(function (k) { var v = params.get(k); if (v) captured[k] = v; });
+    if (!captured.referrer && document.referrer) captured.referrer = document.referrer;
+    try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(captured)); } catch (e) {}
+    keys.forEach(function (k) {
+      var el = document.getElementById('lp-tool-' + k.replace('_', '-'));
+      if (el && captured[k]) el.value = captured[k];
+    });
+    var refEl = document.getElementById('lp-tool-referrer');
+    if (refEl) refEl.value = captured.referrer || '';
+  }
+
+  function trackPageView() {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'lp_tool_view', tool: '{{ tool.slug }}' });
+    if (typeof fbq === 'function') {
+      fbq('track', 'ViewContent', { content_name: 'tool_{{ tool.slug }}', content_category: 'Federal Tools' });
+    }
+  }
+
+  function initForm() {
+    var form = document.getElementById('lp-tool-form');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var honey = document.getElementById('lp-tool-website');
+      if (honey && honey.value) return;
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+
+      var submitBtn = document.getElementById('lp-tool-submit');
+      var originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Adding you…';
+
+      var formData = new FormData(form);
+      var data = {};
+      formData.forEach(function (v, k) { data[k] = v; });
+
+      fetch('/api/submit-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (result) {
+        if (result.success) {
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', { event_category: 'lead', event_label: '{{ tool.lead_type }}', value: 5 });
+          }
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: 'lp_tool_form_submit', tool: '{{ tool.slug }}' });
+          if (typeof fbq === 'function') {
+            fbq('track', 'Lead', {
+              content_name: 'tool_{{ tool.slug }}',
+              content_category: 'Federal Tools',
+              value: 5,
+              currency: 'USD'
+            });
+          }
+          var formContent = form.closest('.lp-tool-email-form').querySelector('.lp-tool-form-content');
+          var success = document.getElementById('lp-tool-success');
+          if (formContent) formContent.style.display = 'none';
+          if (success) success.classList.add('is-visible');
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          alert(result.error || 'Something went wrong. Please try again, or call us at (801) 210-2800.');
+        }
+      })
+      .catch(function (err) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        console.error('Form submit error:', err);
+        alert('Something went wrong. Please try again, or call us at (801) 210-2800.');
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      killChrome();
+      captureAttribution();
+      trackPageView();
+      initForm();
+    });
+  } else {
+    killChrome();
+    captureAttribution();
+    trackPageView();
+    initForm();
+  }
+  setTimeout(killChrome, 250);
+  setTimeout(killChrome, 1500);
+})();
+</script>
