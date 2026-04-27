@@ -17,6 +17,14 @@ function isValidCampaignId(id) {
   return typeof id === 'string' && /^701[A-Za-z0-9]{12}([A-Za-z0-9]{3})?$/.test(id);
 }
 
+// LeadSource picklist values the form is allowed to set. Anything else falls
+// back to 'Website Form'. Keep in sync with the Lead.LeadSource picklist.
+const ALLOWED_LEAD_SOURCES = new Set([
+  'Website Form',
+  'Client Ambassador Referral',
+  'COI Referral',
+]);
+
 async function syncToSalesforce(leadData) {
   try {
     // Split name into first/last
@@ -40,6 +48,10 @@ async function syncToSalesforce(leadData) {
       ? leadData.campaign_id
       : SF_DEFAULT_CAMPAIGN_ID;
 
+    const leadSource = ALLOWED_LEAD_SOURCES.has(leadData.lead_source)
+      ? leadData.lead_source
+      : 'Website Form';
+
     const params = new URLSearchParams();
     params.append('oid', SF_OID);
     params.append('retURL', 'https://capitalwealth.com/');
@@ -47,7 +59,7 @@ async function syncToSalesforce(leadData) {
     params.append('last_name', lastName);
     params.append('email', leadData.email || '');
     params.append('phone', leadData.phone || '');
-    params.append('lead_source', 'Website Form');
+    params.append('lead_source', leadSource);
     params.append('Campaign_ID', campaignId);
     params.append('member_status', 'Responded');
     params.append('description', descParts.join('\n'));
@@ -102,7 +114,7 @@ export default async function handler(req, res) {
       name, email, phone, savings, retirementTimeline, questions,
       firstName, lastName, agency, employer, source, workshop_date, lead_type,
       utm_source, utm_medium, utm_campaign, utm_content, utm_term,
-      gclid, fbclid, state, variant, campaign_id,
+      gclid, fbclid, state, variant, campaign_id, lead_source,
       referrer, landing_page, submitted_from, website
     } = req.body;
 
@@ -176,6 +188,7 @@ export default async function handler(req, res) {
       gclid: gclid || null,
       fbclid: fbclid || null,
       campaign_id: campaign_id || null,
+      lead_source: lead_source || null,
       referrer: referrer || null,
       landing_page: landing_page || null,
       submitted_from: submitted_from || null,
