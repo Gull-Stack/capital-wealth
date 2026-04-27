@@ -2,6 +2,7 @@
 title: "FERS High-3 Salary Explained: How to Maximize the Foundation of Your Pension"
 description: "Your high-3 average salary is the single biggest driver of your FERS pension. Learn what counts, what doesn't, and how to maximize your high-3 before retirement."
 date: 2026-04-24
+dateModified: 2026-04-24
 author: "Mike Stevens"
 readTime: 10
 tags:

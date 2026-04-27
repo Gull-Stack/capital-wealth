@@ -2,6 +2,7 @@
 title: "How to Calculate Your FERS Pension: A Step-by-Step Guide for 2026"
 description: "Learn exactly how to calculate your FERS pension using the OPM formula — high-3 salary, creditable service, sick leave credit, and the 1% vs 1.1% multiplier — with 2026 examples."
 date: 2026-04-24
+dateModified: 2026-04-24
 author: "Mike Stevens"
 readTime: 12
 tags:
