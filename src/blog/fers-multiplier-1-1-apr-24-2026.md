@@ -2,6 +2,7 @@
 title: "The FERS 1.1% Multiplier: Is Waiting Until Age 62 Worth It?"
 description: "The 1.1% FERS multiplier adds 10% to your pension — but only if you retire at 62 with 20+ years. Learn how much it's worth, who qualifies, and when to wait."
 date: 2026-04-24
+dateModified: 2026-04-24
 author: "Mike Stevens"
 readTime: 11
 tags:
