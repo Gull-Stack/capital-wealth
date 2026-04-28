@@ -1,0 +1,88 @@
+{# ═══════════════════════════════════════════════════════════
+   HEADER — Money Map design
+   Sticky white nav with gold-underline hover; dropdowns on first two
+   ═══════════════════════════════════════════════════════════ #}
+<nav class="mm-nav" id="mmNav">
+  <div class="inner">
+    <a class="logo" href="/" aria-label="Capital Wealth home">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" />
+    </a>
+
+    <ul role="menubar">
+      <li>
+        <a href="/services/" aria-haspopup="true">Retirement Planning <span class="mm-caret" aria-hidden="true">▾</span></a>
+        <div class="mm-dropdown" role="menu">
+          <span class="dd-eyebrow">Core</span>
+          <a href="/services/retirement-money-map/" role="menuitem">The Retirement Money Map&trade;</a>
+          <a href="/services/tax-planning/" role="menuitem">Tax-Efficient Strategies</a>
+          <a href="/services/portfolio-management/" role="menuitem">Portfolio Management</a>
+          <a href="/services/social-security/" role="menuitem">Social Security Optimization</a>
+          <a href="/services/estate-planning/" role="menuitem">Estate &amp; Legacy Planning</a>
+          <span class="dd-divider"></span>
+          <span class="dd-eyebrow">Specialty</span>
+          <a href="/services/401k-ira-rollover/" role="menuitem">401(k) &amp; IRA Rollovers</a>
+          <a href="/services/roth-conversions/" role="menuitem">Roth Conversions</a>
+          <a href="/services/medicare-irmaa/" role="menuitem">Medicare &amp; IRMAA</a>
+          <a href="/services/annuities/" role="menuitem">Annuities</a>
+        </div>
+      </li>
+      <li>
+        <a href="/services/federal-benefits/" aria-haspopup="true">Federal Benefits <span class="mm-caret" aria-hidden="true">▾</span></a>
+        <div class="mm-dropdown" role="menu">
+          <span class="dd-eyebrow">Plan your benefits</span>
+          <a href="/services/federal-benefits/fers-retirement/" role="menuitem">FERS Retirement</a>
+          <a href="/services/federal-benefits/fers-supplement/" role="menuitem">FERS Supplement</a>
+          <a href="/services/federal-benefits/tsp-planning/" role="menuitem">TSP Planning</a>
+          <a href="/services/federal-benefits/fehb-retirement/" role="menuitem">FEHB in Retirement</a>
+          <a href="/services/federal-benefits/fegli/" role="menuitem">FEGLI Analysis</a>
+          <span class="dd-divider"></span>
+          <span class="dd-eyebrow">Tools &amp; resources</span>
+          <a href="/services/federal-benefits/fers-calculator/" role="menuitem">FERS Pension Calculator</a>
+          <a href="/services/federal-benefits/federal-retirement-checklist/" role="menuitem">Retirement Checklist</a>
+          <a href="/l/federal-benefits-workshop/" role="menuitem">Federal Benefits Workshop</a>
+        </div>
+      </li>
+      <li><a href="/services/sdba/">SDBA</a></li>
+      <li><a href="/resources/">Learn</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+
+    <div class="right">
+      <span class="phone">Call <b>(801) 210-2800</b></span>
+      <a class="cta-mini" href="/contact/">Contact Us</a>
+      <button class="ham" id="mmHam" aria-label="Open menu" aria-expanded="false" aria-controls="mmDrawer">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<aside class="mm-drawer" id="mmDrawer" aria-hidden="true">
+  <ul>
+    <li><a href="/services/">Retirement Planning</a></li>
+    <li><a href="/services/federal-benefits/">Federal Benefits</a></li>
+    <li><a href="/services/sdba/">SDBA</a></li>
+    <li><a href="/resources/">Learn</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/contact/">Contact</a></li>
+  </ul>
+  <div class="drawer-cta">
+    <a class="btn-gold" href="/contact/">Contact Us →</a>
+  </div>
+  <div class="drawer-phone">Call <b>(801) 210-2800</b></div>
+</aside>
+
+<script>
+  (function () {
+    var nav = document.getElementById('mmNav');
+    var ham = document.getElementById('mmHam');
+    var drawer = document.getElementById('mmDrawer');
+    if (!nav || !ham || !drawer) return;
+    ham.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      ham.setAttribute('aria-expanded', open ? 'true' : 'false');
+      drawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+  })();
+</script>

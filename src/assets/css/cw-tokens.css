@@ -1,0 +1,144 @@
+/* =============================================================
+   Capital Wealth — Design Tokens (v2 / Money Map)
+   Single source of truth for colors, typography, spacing, radii.
+   ============================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ---------- BRAND CORE (six brand colors) ---------- */
+  --cw-ink:             #0F1A2A;  /* Ink Black */
+  --cw-prussian:        #16253D;  /* Prussian Blue */
+  --cw-horizon:         #57A6FB;  /* Cool Horizon */
+  --cw-gold:            #C8A456;  /* Gold */
+  --cw-grey:            #7C868D;  /* Brand Grey */
+  --cw-light-grey:      #F1F1F3;
+
+  /* ---------- TINTS / SHADES ---------- */
+  --cw-prussian-2:      #1F3352;
+  --cw-prussian-3:      #2A4267;
+  --cw-prussian-deep:   #0C1A2E;
+  --cw-horizon-soft:    #B4D6FD;
+  --cw-horizon-deep:    #2E7FD8;
+  --cw-gold-soft:       #EBDBB4;
+  --cw-gold-deep:       #A4873F;
+  --cw-gold-warm:       #A4873F;
+
+  /* ---------- NEUTRALS ---------- */
+  --cw-white:           #ffffff;
+  --cw-stone-50:        #F7F7F9;
+  --cw-stone-100:       #F1F1F3;
+  --cw-stone-200:       #DEDFE3;
+  --cw-stone-300:       #B8BBC2;
+  --cw-stone-500:       #7C868D;
+  --cw-stone-600:       #5A6068;
+  --cw-stone-700:       #3A4048;
+
+  /* ---------- SEMANTIC ---------- */
+  --bg:                 var(--cw-stone-50);
+  --bg-elevated:        var(--cw-white);
+  --surface-dark:       var(--cw-prussian);
+  --text:               var(--cw-ink);
+  --text-muted:         var(--cw-grey);
+  --text-on-dark:       var(--cw-white);
+  --text-on-dark-muted: #B8BBC2;
+  --rule:               var(--cw-light-grey);
+  --accent:             var(--cw-gold);
+  --accent-hover:       var(--cw-gold-deep);
+  --link:               var(--cw-horizon-deep);
+
+  /* Back-compat */
+  --cw-navy:            var(--cw-prussian);
+  --cw-navy-2:          var(--cw-prussian-2);
+  --cw-navy-3:          var(--cw-prussian-3);
+  --cw-navy-deep:       var(--cw-prussian-deep);
+  --cw-cream:           var(--cw-stone-50);
+
+  /* Federal accents (used in fragment + book cards) */
+  --fed-red:            #B31942;
+  --fed-blue:           #0A3161;
+
+  /* ---------- TYPE ---------- */
+  --font-display: 'Cormorant Garamond', 'Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-lg:   1.125rem;
+  --fs-xl:   1.25rem;
+  --fs-2xl:  1.5rem;
+  --fs-3xl:  1.875rem;
+  --fs-4xl:  2.25rem;
+  --fs-5xl:  3rem;
+  --fs-6xl:  3.75rem;
+  --fs-7xl:  4.5rem;
+
+  --lh-tight: 1.15;
+  --lh-snug:  1.25;
+  --lh-body:  1.6;
+  --lh-loose: 1.75;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.08em;
+  --tracking-wider:   0.18em;
+
+  /* ---------- SPACE ---------- */
+  --sp-0:   0;
+  --sp-1:   0.25rem;
+  --sp-2:   0.5rem;
+  --sp-3:   0.75rem;
+  --sp-4:   1rem;
+  --sp-5:   1.5rem;
+  --sp-6:   2rem;
+  --sp-7:   3rem;
+  --sp-8:   4rem;
+  --sp-9:   6rem;
+  --sp-10:  8rem;
+
+  /* ---------- RADII ---------- */
+  --radius-xs:   4px;
+  --radius-sm:   8px;
+  --radius:      12px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 999px;
+
+  /* ---------- SHADOWS ---------- */
+  --shadow-sm: 0 1px 2px rgba(22, 37, 60, 0.06);
+  --shadow:    0 2px 8px rgba(22, 37, 60, 0.08);
+  --shadow-md: 0 8px 24px rgba(22, 37, 60, 0.10);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.30);
+
+  /* ---------- BORDERS ---------- */
+  --border-thin:  1px solid var(--rule);
+
+  /* ---------- LAYOUT ---------- */
+  --container:        1200px;
+  --container-narrow: 840px;
+
+  /* ---------- GRADIENTS ---------- */
+  --grad-prussian:  linear-gradient(180deg, #1F3352 0%, #0C1A2E 100%);
+  --grad-horizon:   linear-gradient(135deg, #57A6FB 0%, #2E7FD8 100%);
+  --grad-editorial: linear-gradient(180deg, #16253D 0%, #0F1A2A 100%);
+}
+
+/* =============================================================
+   BASE RESETS — scoped to .mm-page so we don't disturb existing pages
+   ============================================================= */
+.mm-page *, .mm-page *::before, .mm-page *::after { box-sizing: border-box; }
+.mm-page {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  color: var(--text);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+.mm-page a { color: inherit; text-decoration: none; }
+.mm-page img { display: block; max-width: 100%; }

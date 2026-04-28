@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K6XJQ9FG');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or site.title }}{% if title and "Capital Wealth" not in title %}{{ brandSuffix if brandSuffix else " | Capital Wealth" }}{% endif %}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    {% if noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ title or site.title }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}{{ ogImage or '/assets/images/photos/CWA-Mountain-Couple-home-header.webp' }}">
+    {% if ogImageAlt %}<meta property="og:image:alt" content="{{ ogImageAlt }}">{% endif %}
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ site.url }}{{ ogImage or '/assets/images/photos/CWA-Mountain-Couple-home-header.webp' }}">
+    {% if ogImageAlt %}<meta name="twitter:image:alt" content="{{ ogImageAlt }}">{% endif %}
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/logos/favicon.png">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '416279913963143');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=416279913963143&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    {% if tracking.reddit_pixel_id %}
+    <script>
+      !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
+      rdt('init','{{ tracking.reddit_pixel_id }}');
+      rdt('track', 'PageVisit');
+    </script>
+    {% endif %}
+
+    <!-- Google tag (gtag.js) — GA4 + Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNE17HRDX8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XNE17HRDX8');
+      gtag('config', 'G-LD4VE3SQNT');
+      gtag('config', 'AW-18091003527');
+    </script>
+
+    <!-- Money Map design system: tokens (loaded first), then chrome (nav/footer) -->
+    <link rel="stylesheet" href="/assets/css/cw-tokens.css">
+    <link rel="stylesheet" href="/assets/css/cw-chrome.css">
+
+    <!-- Schema JSON-LD: Organization + LocalBusiness + FinancialService -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["FinancialService", "LocalBusiness", "Organization"],
+        "@id": "{{ site.url }}/#organization",
+        "name": "{{ site.title }}",
+        "legalName": "Capital Wealth Advisors, LLC",
+        "description": "{{ site.description }}",
+        "url": "{{ site.url }}",
+        "telephone": "{{ site.phone }}",
+        "email": "{{ site.email }}",
+        "foundingDate": "2009",
+        "numberOfEmployees": { "@type": "QuantitativeValue", "value": 5 },
+        "slogan": "The plan you were never given.",
+        "knowsAbout": ["Retirement Planning", "FERS Federal Benefits", "TSP Planning", "Roth Conversions", "Social Security Optimization", "Medicare IRMAA", "Tax-Efficient Withdrawals", "Estate Planning", "401k Rollovers", "Fiduciary Financial Advice", "Self-Directed Brokerage Accounts"],
+        "logo": "{{ site.url }}/assets/images/logos/logo-horizontal-color.png",
+        "image": "{{ site.url }}/assets/images/photos/CWA-Mountain-Couple-home-header.webp",
+        "sameAs": ["https://www.linkedin.com/in/mstevens317/", "https://podcasts.apple.com/us/podcast/retire-right-radio/id1574930019"],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ site.address.street }}",
+            "addressLocality": "{{ site.address.city }}",
+            "addressRegion": "{{ site.address.state }}",
+            "postalCode": "{{ site.address.zip }}",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.4167,
+            "longitude": -111.8908
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Advisory Fee",
+        "founder": {
+            "@type": "Person",
+            "name": "{{ site.founder.name }}",
+            "jobTitle": "{{ site.founder.title }}",
+            "description": "Fiduciary financial advisor, host of Retire Right Radio, author of Retire Right Retire Now and The Federal Benefits Gap",
+            "sameAs": "https://www.linkedin.com/in/mstevens317/"
+        },
+        "areaServed": [
+            { "@type": "State", "name": "Utah" },
+            { "@type": "State", "name": "Idaho" },
+            { "@type": "Country", "name": "United States" }
+        ]
+    }
+    </script>
+
+    {% if breadcrumbs %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {% for crumb in breadcrumbs %}
+            { "@type": "ListItem", "position": {{ loop.index }}, "name": "{{ crumb.name }}", "item": "{{ site.url }}{{ crumb.url }}" }{% if not loop.last %},{% endif %}
+            {% endfor %}
+        ]
+    }
+    </script>
+    {% endif %}
+
+    {% if faqSchema %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {% for faq in faqSchema %}
+            { "@type": "Question", "name": "{{ faq.question }}", "acceptedAnswer": { "@type": "Answer", "text": "{{ faq.answer }}" } }{% if not loop.last %},{% endif %}
+            {% endfor %}
+        ]
+    }
+    </script>
+    {% endif %}
+
+    {% if extraSchema %}{{ extraSchema | safe }}{% endif %}
+</head>
+<body class="mm-page{% if bodyClass %} {{ bodyClass }}{% endif %}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6XJQ9FG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    {% include "components/header-mm.njk" %}
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    {% include "components/footer-mm.njk" %}
+
+    {% include "chat-widget.njk" %}
+</body>
+</html>
