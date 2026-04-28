@@ -60,6 +60,8 @@ Once funds are in the SDBA, you can invest in thousands of mutual funds and ETFs
 ### Step 5: Ongoing Management
 The SDBA operates like any brokerage account — you can buy, sell, and rebalance investments. However, all assets remain within your employer plan.
 
+> **Want a fiduciary to manage this for you?** [Capital Wealth's SDBA management service](/services/sdba/) covers Fidelity BrokerageLink, Schwab PCRA, Empower, Vanguard, and the TSP Mutual Fund Window — same fiduciary care as your other accounts, without leaving your employer plan.
+
 ## Types of SDBAs
 
 ### TSP Mutual Fund Window
@@ -186,6 +188,9 @@ Compare this to core plan funds averaging 0.15% expense ratios to determine if t
 - **One-size-fits-all approach** — strategy should be customized
 - **Doesn't coordinate with existing plan** — SDBA should complement, not replace core funds
 
+### How Capital Wealth Manages SDBAs
+Capital Wealth provides [fiduciary SDBA management for 401(k) and TSP participants](/services/sdba/) — including a fee analysis to confirm the SDBA actually adds value before you open one, integration with your broader retirement and tax strategy, and active monitoring across all major platforms. See our [SDBA service overview](/services/sdba/) for the full process, supported plans, and how to get started.
+
 ## FAQ
 
 ### What is a Self-Directed Brokerage Account (SDBA)?
@@ -214,4 +219,4 @@ Check your plan website or contact your plan administrator. Look for terms like 
 
 ---
 
-*Capital Wealth is a fiduciary financial advisor serving clients in Utah and nationwide. We specialize in SDBA management, TSP planning, and comprehensive retirement strategies. [Schedule Your Visit](/contact/) to discuss whether an SDBA makes sense for your situation.*
+*Capital Wealth is a fiduciary financial advisor serving clients in Utah and nationwide. We specialize in [SDBA management](/services/sdba/), TSP planning, and comprehensive retirement strategies. [Learn about our SDBA management service](/services/sdba/) or [schedule your visit](/contact/) to discuss whether an SDBA makes sense for your situation.*
