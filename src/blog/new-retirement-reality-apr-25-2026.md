@@ -5,8 +5,8 @@ date: 2026-04-25
 dateModified: 2026-04-28
 author: "Mike Stevens"
 readTime: 18
-featuredImage: "/assets/images/photos/blog-featured-couple-dock.jpg"
-featuredImageAlt: "Couple looking out over a Utah lake at sunset - representing the new retirement reality"
+featuredImage: "/assets/images/blog/new-retirement-reality-hero-1200x630.jpg"
+featuredImageAlt: "Older couple at home reviewing their retirement plan together on a laptop"
 tags:
   - retirement planning
   - sequence of returns risk
