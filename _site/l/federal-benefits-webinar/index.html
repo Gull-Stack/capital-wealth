@@ -798,8 +798,36 @@
 .sem-hero-description {
   font-size: 1.5rem; font-weight: 400; line-height: 1.4;
   max-width: 600px; color: rgba(255, 255, 255, 0.95);
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); opacity: 0.9; margin-bottom: 32px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); opacity: 0.9; margin-bottom: 16px;
 }
+
+.sem-hero-subheadline {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.85rem; line-height: 1.5;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  color: #FDD25E; max-width: 600px;
+  margin: 0 0 32px; padding-left: 12px;
+  border-left: 3px solid #FDD25E;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Special category checkbox (LEO/FF/ATC etc.) */
+.sem-checkbox-row {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px 16px; margin: 0 0 20px;
+  background: rgba(196, 168, 42, 0.06);
+  border: 1px solid rgba(196, 168, 42, 0.25);
+  border-radius: 8px;
+}
+.sem-checkbox-row input[type="checkbox"] {
+  width: 18px; height: 18px; margin-top: 2px;
+  accent-color: var(--secondary); flex-shrink: 0;
+}
+.sem-checkbox-row label {
+  font-family: var(--font-body); font-size: 0.92rem;
+  line-height: 1.45; color: var(--slate-700); margin: 0;
+}
+.sem-checkbox-row label strong { color: var(--primary); }
 
 /* Registration Form */
 .sem-registration-card { position: relative; }
@@ -1063,6 +1091,7 @@
       <p class="sem-hero-description">
         Interactive live webinar covering the Federal Employees Retirement System (FERS), Thrift Savings Plan (TSP), Federal Employees Health Benefits (FEHB), Federal Employees Group Life Insurance (FEGLI), and Social Security — plus open Q&amp;A with Ann Werts.
       </p>
+      <p class="sem-hero-subheadline">Open to all federal employees — VA, DoD, IRS, USDA, DOI, DHS and beyond.</p>
 
       <!-- Ann Intro Section -->
       <div class="sem-ann-hero-intro sem-liquid-glass">
@@ -1159,6 +1188,11 @@
               <label class="sem-form-label" for="guest-email">Guest Email</label>
               <input class="sem-form-input" type="email" id="guest-email" name="guest_email" placeholder="Guest Email">
             </div>
+          </div>
+
+          <div class="sem-checkbox-row">
+            <input type="checkbox" id="special-category" name="special_category" value="true">
+            <label for="special-category"><strong>Special category employee?</strong> I am a 6c / Special Category employee (LEO, Firefighter, ATC, etc.)</label>
           </div>
 
           <button class="sem-submit-btn" type="submit">Confirm Registration</button>
