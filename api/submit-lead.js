@@ -23,6 +23,7 @@ const ALLOWED_LEAD_SOURCES = new Set([
   'Website Form',
   'Client Ambassador Referral',
   'COI Referral',
+  'Webinar',
 ]);
 
 async function syncToSalesforce(leadData) {
@@ -41,6 +42,20 @@ async function syncToSalesforce(leadData) {
     if (leadData.utm_source) descParts.push(`UTM Source: ${leadData.utm_source}`);
     if (leadData.utm_medium) descParts.push(`UTM Medium: ${leadData.utm_medium}`);
     if (leadData.utm_campaign) descParts.push(`UTM Campaign: ${leadData.utm_campaign}`);
+    if (leadData.utm_content) descParts.push(`UTM Content: ${leadData.utm_content}`);
+    if (leadData.utm_term) descParts.push(`UTM Term: ${leadData.utm_term}`);
+    if (leadData.referrer) descParts.push(`Referrer: ${leadData.referrer}`);
+    // Federal webinar (May 14, 2026) extras — until custom Lead fields are
+    // mapped in Web-to-Lead, dump these into description so nothing is lost.
+    if (leadData.retirement_system) descParts.push(`Retirement System: ${leadData.retirement_system}`);
+    if (leadData.years_to_retirement) descParts.push(`Years to Retirement: ${leadData.years_to_retirement}`);
+    if (leadData.agency) descParts.push(`Federal Agency: ${leadData.agency}`);
+    if (leadData.bringing_guest) descParts.push(`Bringing Guest: ${leadData.bringing_guest}`);
+    if (leadData.guest_first_name || leadData.guest_last_name || leadData.guest_email) {
+      const guestName = [leadData.guest_first_name, leadData.guest_last_name].filter(Boolean).join(' ');
+      descParts.push(`Guest: ${guestName || '—'}${leadData.guest_email ? ` <${leadData.guest_email}>` : ''}`);
+    }
+    if (leadData.event_date) descParts.push(`Event Date: ${leadData.event_date}`);
 
     // Campaign routing: form can pass `campaign_id` via hidden input; otherwise
     // fall back to the site-wide default. Invalid values are discarded.
@@ -48,9 +63,12 @@ async function syncToSalesforce(leadData) {
       ? leadData.campaign_id
       : SF_DEFAULT_CAMPAIGN_ID;
 
-    const leadSource = ALLOWED_LEAD_SOURCES.has(leadData.lead_source)
-      ? leadData.lead_source
-      : 'Website Form';
+    // Federal webinar submissions always set LeadSource = 'Webinar' regardless
+    // of what the form sends, per CMO requirement.
+    const isWebinarLead = leadData.lead_type === 'federal-webinar-registration';
+    const leadSource = isWebinarLead
+      ? 'Webinar'
+      : (ALLOWED_LEAD_SOURCES.has(leadData.lead_source) ? leadData.lead_source : 'Website Form');
 
     const params = new URLSearchParams();
     params.append('oid', SF_OID);
@@ -115,7 +133,12 @@ export default async function handler(req, res) {
       firstName, lastName, agency, employer, source, workshop_date, lead_type,
       utm_source, utm_medium, utm_campaign, utm_content, utm_term,
       gclid, fbclid, state, variant, campaign_id, lead_source,
-      referrer, landing_page, submitted_from, website
+      referrer, landing_page, submitted_from, website,
+      // Federal webinar (May 14, 2026) fields — additive, optional except
+      // when lead_type === 'federal-webinar-registration'.
+      retirement_system, years_to_retirement,
+      bringing_guest, guest_first_name, guest_last_name, guest_email, guest_phone,
+      event_date,
     } = req.body;
 
     // Honeypot — hidden field that bots auto-fill
@@ -135,6 +158,19 @@ export default async function handler(req, res) {
     }
     if (!is10ThingsChecklist && !phone) {
       return res.status(400).json({ error: 'Phone is required.' });
+    }
+
+    // Federal webinar requires retirement_system + years_to_retirement server-side.
+    const isFederalWebinar = lead_type === 'federal-webinar-registration';
+    if (isFederalWebinar) {
+      const allowedSystems = ['FERS', 'CSRS', 'CSRS-Offset', 'Unsure'];
+      const allowedYears = ['lt-2', '2-5', '5-10', '10-plus', 'already-retired'];
+      if (!retirement_system || !allowedSystems.includes(retirement_system)) {
+        return res.status(400).json({ error: 'Retirement system is required.' });
+      }
+      if (!years_to_retirement || !allowedYears.includes(years_to_retirement)) {
+        return res.status(400).json({ error: 'Years to retirement is required.' });
+      }
     }
 
     // Bot pattern detection — known spam patterns
@@ -192,6 +228,15 @@ export default async function handler(req, res) {
       referrer: referrer || null,
       landing_page: landing_page || null,
       submitted_from: submitted_from || null,
+      // Federal webinar fields (null for non-webinar submissions)
+      retirement_system: retirement_system || null,
+      years_to_retirement: years_to_retirement || null,
+      bringing_guest: bringing_guest || null,
+      guest_first_name: guest_first_name || null,
+      guest_last_name: guest_last_name || null,
+      guest_email: guest_email || null,
+      guest_phone: guest_phone || null,
+      event_date: event_date || null,
     };
 
     // Insert into Supabase (if configured)
@@ -306,6 +351,36 @@ export default async function handler(req, res) {
             </div>
           `;
         }
+      } else if (isFederalWebinar) {
+        emailSubject = 'You\'re Registered: Federal Benefits Webinar — May 14, 2026';
+        confirmationHtml = `
+          <div style="font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <div style="background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%); padding: 32px; text-align: center; color: white;">
+              <h1 style="color: #FDD25E; margin: 0; font-size: 28px; font-weight: 700;">You're Registered.</h1>
+              <p style="color: rgba(255,255,255,0.92); margin: 12px 0 0 0; font-size: 16px;">Federal Benefits Webinar — Live Online Masterclass</p>
+            </div>
+            <div style="padding: 32px; background: #ffffff;">
+              <p style="font-size: 16px; color: #1a1a1a; line-height: 1.65; margin: 0 0 16px;">Thanks ${fullName.split(' ')[0]} — your seat is reserved.</p>
+              <div style="background: #f8f9fb; padding: 20px; border-radius: 8px; border-left: 4px solid #C4A82A; margin: 16px 0 24px;">
+                <h3 style="margin: 0 0 12px 0; color: #16253C; font-size: 16px;">Event Details</h3>
+                <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Date:</strong> Thursday, May 14, 2026</p>
+                <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Time:</strong> 6:00 PM – 8:00 PM Mountain (8 PM ET / 5 PM PT)</p>
+                <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Platform:</strong> Zoom Webinars (no Zoom account required)</p>
+                <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Instructor:</strong> Ann Werts</p>
+              </div>
+              <p style="font-size: 15px; color: #4b5563; line-height: 1.65;">We'll send a reminder 3 days out and your unique Zoom join link the morning of May 14. If you can't attend live, the full replay will be emailed to you within 48 hours.</p>
+              <div style="background: #16253C; color: #fff; padding: 18px 20px; border-radius: 8px; margin: 24px 0; text-align: center;">
+                <p style="margin: 0 0 12px 0; color: #FDD25E; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase;">Optional Next Step</p>
+                <p style="margin: 0 0 14px 0; color: #fff; font-size: 15px; line-height: 1.5;">Want Ann's team to apply this to your specific FERS / TSP / FEHB numbers? Book a complimentary Federal Retirement Money Map.</p>
+                <a href="https://www.capitalwealth.com/contact/" style="display: inline-block; background: #FDD25E; color: #0F1A2A; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 700;">Schedule My Money Map →</a>
+              </div>
+              <p style="font-size: 14px; color: #4b5563; margin: 24px 0 0;">Questions? Call <a href="tel:8012102800" style="color: #16253C; font-weight: 600;">801.210.2800</a> or just reply to this email.</p>
+            </div>
+            <div style="background: #0F1A2A; padding: 18px; text-align: center;">
+              <p style="color: #9ca3af; margin: 0; font-size: 12px; line-height: 1.55;">Capital Wealth · Lehi, UT · Fiduciary advice · Not affiliated with OPM or the U.S. government.</p>
+            </div>
+          </div>
+        `;
       } else if (isFederalWorkshop) {
         emailSubject = 'Workshop Confirmed: April 9 Federal Benefits Workshop';
         confirmationHtml = `
@@ -428,6 +503,53 @@ export default async function handler(req, res) {
             </div>
             <div style="background: #081f3f; padding: 14px; text-align: center;">
               <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 11px;">10 Things Federal Retirement · capitalwealth.com/l/10-things-federal-retirement/</p>
+            </div>
+          </div>
+        `;
+      } else if (isFederalWebinar) {
+        const yearsLabel = {
+          'lt-2': '<2 yrs',
+          '2-5': '2–5 yrs',
+          '5-10': '5–10 yrs',
+          '10-plus': '10+ yrs',
+          'already-retired': 'Already retired'
+        }[leadData.years_to_retirement] || leadData.years_to_retirement || '—';
+        const guestRow = leadData.bringing_guest === 'yes'
+          ? `<tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Guest:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${[leadData.guest_first_name, leadData.guest_last_name].filter(Boolean).join(' ') || '—'}${leadData.guest_email ? ` &lt;${leadData.guest_email}&gt;` : ''}</td></tr>`
+          : '';
+        const isHotLead = ['lt-2', '2-5'].includes(leadData.years_to_retirement);
+        notificationSubject = `${isHotLead ? '🔥' : '🎯'} Federal Webinar Registration: ${leadData.name} — May 14, 2026 (${yearsLabel})`;
+        notificationHtml = `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <div style="background: #16253C; padding: 20px; text-align: center;">
+              <h1 style="color: #FDD25E; margin: 0; font-size: 22px;">Federal Webinar Registration</h1>
+              <p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0;">May 14, 2026 — Live Online Masterclass</p>
+            </div>
+            <div style="padding: 28px; background: #f9f9f9;">
+              ${isHotLead ? `<div style="background: #B31942; color: #fff; padding: 12px; border-radius: 8px; margin-bottom: 20px; text-align: center; font-weight: 700;">HOT LEAD — ${yearsLabel} to retirement, call within 1 business day</div>` : ''}
+              <table style="width: 100%; border-collapse: collapse;">
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Name:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.name}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Email:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="mailto:${leadData.email}">${leadData.email}</a></td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="tel:${leadData.phone}">${leadData.phone}</a></td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Retirement System:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.retirement_system || '—'}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Years to Retirement:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${yearsLabel}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Federal Agency:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.agency || '—'}</td></tr>
+                ${guestRow}
+              </table>
+              <div style="background: #fff; padding: 16px; border-radius: 8px; margin-top: 20px; border: 1px solid #ddd;">
+                <h3 style="margin: 0 0 12px 0; color: #16253C; font-size: 14px;">Attribution</h3>
+                <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                  ${leadData.utm_source ? `<tr><td style="padding: 4px;"><strong>UTM Source:</strong></td><td style="padding: 4px;">${leadData.utm_source}</td></tr>` : ''}
+                  ${leadData.utm_medium ? `<tr><td style="padding: 4px;"><strong>UTM Medium:</strong></td><td style="padding: 4px;">${leadData.utm_medium}</td></tr>` : ''}
+                  ${leadData.utm_campaign ? `<tr><td style="padding: 4px;"><strong>UTM Campaign:</strong></td><td style="padding: 4px;">${leadData.utm_campaign}</td></tr>` : ''}
+                  ${leadData.utm_content ? `<tr><td style="padding: 4px;"><strong>UTM Content:</strong></td><td style="padding: 4px;">${leadData.utm_content}</td></tr>` : ''}
+                  ${leadData.utm_term ? `<tr><td style="padding: 4px;"><strong>UTM Term:</strong></td><td style="padding: 4px;">${leadData.utm_term}</td></tr>` : ''}
+                  ${leadData.referrer ? `<tr><td style="padding: 4px;"><strong>Referrer:</strong></td><td style="padding: 4px; font-size: 12px;">${leadData.referrer}</td></tr>` : ''}
+                </table>
+              </div>
+            </div>
+            <div style="background: #0F1A2A; padding: 14px; text-align: center;">
+              <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 11px;">Federal Webinar Registration · capitalwealth.com/l/federal-benefits-webinar/</p>
             </div>
           </div>
         `;
