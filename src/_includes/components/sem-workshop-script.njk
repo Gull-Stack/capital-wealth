@@ -1,0 +1,112 @@
+{# Shared submit-form JS for in-person federal benefits workshop pages.
+   Page must define a constant `tyUrl` and `gaLabel` before including. #}
+document.addEventListener('DOMContentLoaded', function() {
+  // Capture UTM + referrer on page load into hidden fields if present
+  (function(){
+    var p = new URLSearchParams(window.location.search);
+    ['utm_source','utm_medium','utm_content','utm_term'].forEach(function(k){
+      var el = document.getElementById(k);
+      if (el && p.get(k)) el.value = p.get(k);
+    });
+    var ref = document.getElementById('referrer');
+    if (ref) ref.value = document.referrer || '';
+  })();
+
+  var form = document.querySelector('#sem-registration-form');
+
+  // Conditional guest fields
+  var bringingGuestSelect = document.getElementById('bringing-guest');
+  var guestInfoDiv = document.getElementById('guest-info');
+  var guestFields = guestInfoDiv ? guestInfoDiv.querySelectorAll('input') : [];
+
+  if (bringingGuestSelect) {
+    bringingGuestSelect.addEventListener('change', function() {
+      if (this.value === 'yes') {
+        guestInfoDiv.style.display = 'block';
+        guestFields.forEach(function(field){ field.setAttribute('required', 'required'); });
+      } else {
+        guestInfoDiv.style.display = 'none';
+        guestFields.forEach(function(field){
+          field.removeAttribute('required');
+          field.value = '';
+        });
+      }
+    });
+  }
+
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (!validateForm()) return;
+
+      var formData = new FormData(form);
+      var data = {};
+      formData.forEach(function(value, key){ data[key] = value; });
+      // FormData omits unchecked boxes; explicitly set false so the API sees it.
+      if (!('special_category' in data)) data.special_category = false;
+
+      var submitBtn = form.querySelector('.sem-submit-btn');
+      submitBtn.textContent = 'Securing Your Registration...';
+      submitBtn.disabled = true;
+
+      fetch('/api/submit-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function(response){ return response.json(); })
+      .then(function(result){
+        if (result.success) {
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+              event_category: 'lead',
+              event_label: window.__gaLabel || 'federal_workshop_registration',
+              value: 1
+            });
+          }
+          if (typeof fbq === 'function') {
+            fbq('track', 'Lead', {
+              content_name: window.__metaContentName || 'Federal Workshop Registration',
+              content_category: 'Federal Benefits'
+            });
+          }
+          window.location.href = window.__tyUrl;
+        } else {
+          submitBtn.textContent = 'Confirm Registration';
+          submitBtn.disabled = false;
+          alert('There was an error submitting your registration. Please try again.');
+        }
+      })
+      .catch(function(error){
+        submitBtn.textContent = 'Confirm Registration';
+        submitBtn.disabled = false;
+        console.error('Error:', error);
+        alert('There was an error submitting your registration. Please try again.');
+      });
+    });
+  }
+
+  function validateForm() {
+    var requiredFields = form.querySelectorAll('[required]');
+    var isValid = true;
+    requiredFields.forEach(function(field){
+      field.classList.remove('error');
+      if (!String(field.value || '').trim()) {
+        field.classList.add('error');
+        field.style.borderColor = '#DC2626';
+        isValid = false;
+      } else {
+        field.style.borderColor = '';
+      }
+    });
+    return isValid;
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+});

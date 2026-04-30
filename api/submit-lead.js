@@ -56,6 +56,10 @@ async function syncToSalesforce(leadData) {
       descParts.push(`Guest: ${guestName || '—'}${leadData.guest_email ? ` <${leadData.guest_email}>` : ''}`);
     }
     if (leadData.event_date) descParts.push(`Event Date: ${leadData.event_date}`);
+    // Special category (6c / LEO / Firefighter / ATC). Once the
+    // `special_category__c` custom field exists on the SF Lead object, swap this
+    // to a real Web-to-Lead field POST instead of stuffing it into description.
+    if (leadData.special_category === true) descParts.push(`Special Category (6c): YES`);
 
     // Campaign routing: form can pass `campaign_id` via hidden input; otherwise
     // fall back to the site-wide default. Invalid values are discarded.
@@ -139,6 +143,8 @@ export default async function handler(req, res) {
       retirement_system, years_to_retirement,
       bringing_guest, guest_first_name, guest_last_name, guest_email, guest_phone,
       event_date,
+      // 6c / Special Category employee (LEO, FF, ATC) — federal events only.
+      special_category,
     } = req.body;
 
     // Honeypot — hidden field that bots auto-fill
@@ -237,6 +243,11 @@ export default async function handler(req, res) {
       guest_email: guest_email || null,
       guest_phone: guest_phone || null,
       event_date: event_date || null,
+      // Coerce common truthy form values ("true", true, "on") to a real boolean.
+      special_category:
+        special_category === true || special_category === 'true' || special_category === 'on'
+          ? true
+          : false,
     };
 
     // Insert into Supabase (if configured)
@@ -382,42 +393,98 @@ export default async function handler(req, res) {
           </div>
         `;
       } else if (isFederalWorkshop) {
-        emailSubject = 'Workshop Confirmed: April 9 Federal Benefits Workshop';
+        // Per-event venue / date / parking. Add a new event by adding a new
+        // entry keyed by `source` (matches the hidden form field on each landing).
+        // Fallback covers legacy / April 9 Weber State submissions.
+        const SITE = 'https://www.capitalwealth.com';
+        const WORKSHOP_EVENTS = {
+          'federal-benefits-workshop-ogden': {
+            heading: 'Federal Benefits Workshop — Ogden',
+            dateLabel: 'Tuesday, May 19, 2026',
+            time: '4:30 PM – 6:30 PM Mountain',
+            venue: 'Weber County Main Library',
+            address: '2464 Jefferson Ave, Ogden, UT 84401',
+            parkingHtml: '<p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Parking:</strong> Free on-site parking — no permit required.</p>',
+            extraSectionHtml: '',
+            icsUrl: SITE + '/assets/webinars/federal-benefits-workshop-ogden-2026-05-19.ics',
+            mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Weber+County+Main+Library+2464+Jefferson+Ave+Ogden+UT',
+            subjectDate: 'May 19'
+          },
+          'federal-benefits-workshop-slc': {
+            heading: 'Federal Benefits Workshop — Salt Lake City',
+            dateLabel: 'Wednesday, May 20, 2026',
+            time: '4:00 PM – 6:00 PM Mountain',
+            venue: 'University Guest House (University of Utah)',
+            address: '110 S Fort Douglas Blvd, Salt Lake City, UT 84113',
+            parkingHtml: '<p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Parking:</strong> Visitor parking available on-site at the Guest House.</p>',
+            extraSectionHtml: '',
+            icsUrl: SITE + '/assets/webinars/federal-benefits-workshop-slc-2026-05-20.ics',
+            mapsUrl: 'https://www.google.com/maps/search/?api=1&query=University+Guest+House+110+S+Fort+Douglas+Blvd+Salt+Lake+City+UT',
+            subjectDate: 'May 20'
+          },
+          'federal-benefits-workshop-hill-afb': {
+            heading: 'Federal Benefits Workshop — Hill AFB / Weber State Davis Campus',
+            dateLabel: 'Thursday, May 21, 2026',
+            time: '6:00 PM – 8:00 PM Mountain',
+            venue: 'Weber State University — Davis Campus, D2 Building, Room 117',
+            address: '2750 University Park Blvd, Layton, UT 84041',
+            parkingHtml: '<p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Parking:</strong> Permit covered by Capital Wealth — must be PRINTED and placed on driver\'s side dashboard. Digital phone display will not work. Valid in DAVIS W LOTS ONLY.</p>',
+            // Hill AFB attendees need the Weber State printable parking permit
+            // featured prominently in the email body.
+            extraSectionHtml: `
+              <div style="background: #fff8dc; border-left: 4px solid #C4A82A; padding: 18px 20px; border-radius: 6px; margin-top: 20px;">
+                <h3 style="margin: 0 0 8px 0; color: #16253C; font-size: 16px;">Action required: print your parking permit</h3>
+                <p style="margin: 0 0 12px 0; color: #4b5563; font-size: 14px; line-height: 1.55;">Weber State requires a printed parking permit on the dashboard. Please print this before the event:</p>
+                <a href="${SITE}/assets/parking/weber-state-davis-parking-permit.pdf" style="display: inline-block; background: #16253C; color: #fff; padding: 12px 22px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 14px;">Download &amp; Print Parking Permit (PDF)</a>
+              </div>
+            `,
+            icsUrl: SITE + '/assets/webinars/federal-benefits-workshop-hill-afb-2026-05-21.ics',
+            mapsUrl: 'https://www.weber.edu/maps/davis-campus.html',
+            subjectDate: 'May 21'
+          }
+        };
+        const fallbackEvent = {
+          heading: 'Federal Benefits Workshop',
+          dateLabel: 'Thursday, April 9, 2026',
+          time: '9:00 AM – 11:00 AM Mountain',
+          venue: 'Weber State University — Davis Campus',
+          address: '2750 University Park Blvd, Layton, UT 84041',
+          parkingHtml: '<p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Parking:</strong> Permit covered by Capital Wealth — must be printed.</p>',
+          extraSectionHtml: '',
+          icsUrl: '',
+          mapsUrl: '',
+          subjectDate: 'April 9'
+        };
+        const evt = WORKSHOP_EVENTS[source] || fallbackEvent;
+
+        emailSubject = `Workshop Confirmed: ${evt.heading} — ${evt.subjectDate}`;
         confirmationHtml = `
           <div style="font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <div style="background: linear-gradient(135deg, #194F90 0%, #15437a 100%); padding: 30px; text-align: center; color: white;">
-              <h1 style="color: white; margin: 0; font-size: 28px; font-weight: 700;">You're Registered!</h1>
-              <p style="color: rgba(255,255,255,0.9); margin: 15px 0 0 0; font-size: 18px;">Federal Employee Benefits Workshop</p>
+            <div style="background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%); padding: 30px; text-align: center; color: white;">
+              <h1 style="color: #FDD25E; margin: 0; font-size: 28px; font-weight: 700;">You're Registered!</h1>
+              <p style="color: rgba(255,255,255,0.9); margin: 12px 0 0 0; font-size: 16px;">${evt.heading}</p>
             </div>
             <div style="padding: 30px; background: #ffffff;">
-              <div style="background: #f8fafc; padding: 25px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid #F09F54;">
-                <h2 style="color: #194F90; margin: 0 0 15px 0; font-size: 20px;">📅 Workshop Details</h2>
-                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Date:</strong> Thursday, April 9, 2026</p>
-                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Time:</strong> 9:00 AM - 11:00 AM</p>
-                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Location:</strong> Weber State University - Davis Campus</p>
-                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Address:</strong> 2750 University Park Blvd, Layton, UT 84041</p>
-                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Arrival:</strong> Please arrive 10-15 minutes early</p>
+              <p style="font-size: 16px; color: #1a1a1a; line-height: 1.65; margin: 0 0 16px;">Thanks ${fullName.split(' ')[0]} — your seat is reserved.</p>
+              <div style="background: #f8fafc; padding: 22px; border-radius: 12px; margin-bottom: 22px; border-left: 4px solid #C4A82A;">
+                <h2 style="color: #16253C; margin: 0 0 14px 0; font-size: 18px;">Event Details</h2>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Date:</strong> ${evt.dateLabel}</p>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Time:</strong> ${evt.time}</p>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Venue:</strong> ${evt.venue}</p>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Address:</strong> ${evt.address}</p>
+                ${evt.parkingHtml}
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Arrival:</strong> Please arrive 10–15 minutes early.</p>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Instructor:</strong> Ann Werts</p>
+                ${evt.icsUrl ? `<p style="margin: 14px 0 0 0;"><a href="${evt.icsUrl}" style="display: inline-block; background: #FDD25E; color: #0F1A2A; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 14px;">Add to Calendar (.ics)</a>${evt.mapsUrl ? ` &nbsp;<a href="${evt.mapsUrl}" style="display: inline-block; background: #16253C; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px;">Get Directions</a>` : ''}</p>` : ''}
               </div>
-              
-              <h3 style="color: #194F90; margin: 25px 0 15px 0;">Before the Workshop</h3>
-              <div style="background: #f9fafb; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-                <p style="margin: 0 0 10px 0; color: #374151; font-weight: 600;">1. Request Official Time</p>
-                <p style="margin: 0 0 15px 0; color: #6b7280; font-size: 14px;">Download and submit your SF-182 form to attend this professional development workshop.</p>
-                
-                <p style="margin: 15px 0 10px 0; color: #374151; font-weight: 600;">2. Add to Calendar</p>
-                <p style="margin: 0 0 15px 0; color: #6b7280; font-size: 14px;">Block your calendar for April 9, 9:00-11:00 AM.</p>
-                
-                <p style="margin: 15px 0 10px 0; color: #374151; font-weight: 600;">3. Invite Colleagues</p>
-                <p style="margin: 0; color: #6b7280; font-size: 14px;">Share this opportunity with fellow federal employees.</p>
-              </div>
-              
-              <div style="background: #194F90; color: white; padding: 20px; border-radius: 8px; text-align: center; margin-top: 25px;">
-                <h4 style="margin: 0 0 10px 0; color: white;">Questions?</h4>
-                <p style="margin: 0; color: rgba(255,255,255,0.9);">Call us at <strong>(801) 210-2800</strong> or email info@capitalwealth.com</p>
+              ${evt.extraSectionHtml}
+              <div style="background: #16253C; color: white; padding: 20px; border-radius: 8px; text-align: center; margin-top: 24px;">
+                <h4 style="margin: 0 0 8px 0; color: #FDD25E;">Questions?</h4>
+                <p style="margin: 0; color: rgba(255,255,255,0.9);">Call <strong>(801) 210-2800</strong> or just reply to this email.</p>
               </div>
             </div>
-            <div style="background: #1f2937; padding: 20px; text-align: center;">
-              <p style="color: #9ca3af; margin: 0; font-size: 14px;">Capital Wealth • Lehi, UT • (801) 210-2800</p>
+            <div style="background: #0F1A2A; padding: 18px; text-align: center;">
+              <p style="color: #9ca3af; margin: 0; font-size: 12px; line-height: 1.55;">Capital Wealth · Lehi, UT · Fiduciary advice · Not affiliated with OPM or the U.S. government.</p>
             </div>
           </div>
         `;
@@ -534,6 +601,7 @@ export default async function handler(req, res) {
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Retirement System:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.retirement_system || '—'}</td></tr>
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Years to Retirement:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${yearsLabel}</td></tr>
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Federal Agency:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.agency || '—'}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Special Category (6c):</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.special_category ? '<strong>YES — LEO / FF / ATC</strong>' : 'No'}</td></tr>
                 ${guestRow}
               </table>
               <div style="background: #fff; padding: 16px; border-radius: 8px; margin-top: 20px; border: 1px solid #ddd;">
@@ -554,23 +622,30 @@ export default async function handler(req, res) {
           </div>
         `;
       } else if (isFederalWorkshop) {
-        notificationSubject = `🎯 Federal Workshop Registration: ${leadData.name} — April 9, 2026`;
+        const eventLabel = leadData.workshop_date || 'Federal Workshop';
+        const sourceLabel = (source || '').replace(/^federal-benefits-workshop-?/, '').toUpperCase() || 'WEBER STATE';
+        const specialCatBadge = leadData.special_category
+          ? `<div style="background: #C4A82A; color: #0F1A2A; padding: 12px; border-radius: 8px; margin-bottom: 20px; text-align: center; font-weight: 700;">⭐ 6c / Special Category Employee (LEO / FF / ATC)</div>`
+          : '';
+        notificationSubject = `🎯 Federal Workshop Registration: ${leadData.name} — ${sourceLabel} (${eventLabel})`;
         notificationHtml = `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <div style="background: #194F90; padding: 20px; text-align: center;">
               <h1 style="color: white; margin: 0;">🎯 Federal Workshop Registration</h1>
-              <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0;">April 9, 2026 Workshop</p>
+              <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0;">${eventLabel} · ${sourceLabel}</p>
             </div>
             <div style="padding: 30px; background: #f9f9f9;">
               <div style="background: #F09F54; color: white; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
                 <h2 style="margin: 0; font-size: 18px;">HIGH-VALUE FEDERAL EMPLOYEE LEAD</h2>
               </div>
+              ${specialCatBadge}
               <table style="width: 100%; border-collapse: collapse;">
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Name:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.name}</td></tr>
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Email:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="mailto:${leadData.email}">${leadData.email}</a></td></tr>
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="tel:${leadData.phone}">${leadData.phone}</a></td></tr>
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Agency:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.agency || 'Not specified'}</td></tr>
-                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Workshop Date:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.workshop_date || 'April 9, 2026'}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Workshop:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.workshop_date || 'Not specified'} · ${sourceLabel}</td></tr>
+                <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Special Category (6c):</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${leadData.special_category ? '<strong>YES — LEO / FF / ATC</strong>' : 'No'}</td></tr>
                 <tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Lead Type:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">Federal Workshop Registration</td></tr>
               </table>
               
