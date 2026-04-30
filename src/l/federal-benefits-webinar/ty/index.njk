@@ -1,0 +1,319 @@
+---
+layout: layouts/base-finpay.njk
+title: "Webinar Confirmed | Federal Benefits Webinar | Capital Wealth"
+description: "Your registration for the May 14 Federal Benefits Webinar is confirmed. Add to calendar, save your Zoom link, and book your complimentary Federal Retirement Money Map."
+noindex: true
+excludeFromSitemap: true
+bodyClass: "landing-page"
+permalink: "/l/federal-benefits-webinar/ty/"
+---
+
+<style>
+.landing-page main { padding-top: 0 !important; }
+.landing-page .finpay-header {
+  display: none !important; height: 0 !important; max-height: 0 !important;
+  padding: 0 !important; margin: 0 !important; overflow: hidden !important;
+  visibility: hidden !important; position: absolute !important;
+}
+
+.ty-hero {
+  background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%);
+  padding: 2.5rem 2rem 2rem; text-align: center; color: #fff;
+  position: relative; overflow: hidden;
+}
+.ty-hero::before {
+  content: ''; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px; height: 600px;
+  background: url('/assets/images/logos/logo-icon-color.png') no-repeat center;
+  background-size: contain; opacity: 0.03;
+}
+.ty-hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: #FDD25E; margin-bottom: 0.5rem; font-weight: 600;
+}
+.ty-hero h1 {
+  font-family: var(--font-serif-display);
+  font-size: 2.25rem; font-weight: 700;
+  margin-bottom: 0.5rem; position: relative; color: #ffffff;
+}
+.ty-hero p {
+  font-family: var(--font-body); font-size: 1.15rem; color: #ffffff;
+  max-width: 600px; margin: 0 auto; line-height: 1.7; position: relative;
+}
+.ty-check {
+  width: 64px; height: 64px;
+  background: rgba(255,255,255,0.1); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+.ty-check svg { width: 32px; height: 32px; color: #FDD25E; }
+
+/* Event Detail Card */
+.ty-event-detail {
+  padding: 2.5rem 2rem; background: #f8f9fa;
+}
+.ty-event-detail-inner {
+  max-width: 900px; margin: 0 auto;
+  background: #fff; border-radius: 12px;
+  padding: 2.25rem; border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+.ty-event-detail h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.6rem; font-weight: 700;
+  color: #16253C; margin: 0 0 1rem;
+}
+.ty-event-rows {
+  display: grid; grid-template-columns: 120px 1fr;
+  gap: 0.5rem 1.25rem; align-items: baseline;
+  margin-bottom: 1.5rem;
+}
+.ty-event-rows dt {
+  font-family: var(--font-mono); font-size: 0.7rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: #6b7280; padding-top: 4px;
+}
+.ty-event-rows dd { margin: 0; font-family: var(--font-body); color: #0F1A2A; font-size: 1rem; line-height: 1.6; }
+.ty-event-rows dd small { color: #6b7280; font-size: 0.85rem; }
+
+.ty-actions {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  margin-top: 1.5rem; padding-top: 1.5rem;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+.ty-action-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #16253C; color: #fff; padding: 14px 22px;
+  border-radius: 8px; text-decoration: none;
+  font-family: var(--font-body); font-weight: 600;
+  font-size: 0.95rem; transition: background 0.2s, transform 0.2s;
+}
+.ty-action-btn:hover { background: #0F1A2A; color: #fff; transform: translateY(-1px); }
+.ty-action-btn.ty-action-primary { background: #FDD25E; color: #0F1A2A; }
+.ty-action-btn.ty-action-primary:hover { background: #FCC82F; color: #0F1A2A; }
+.ty-action-btn svg { width: 18px; height: 18px; }
+.ty-zoom-pending {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono); font-size: 0.75rem;
+  color: #6b7280; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 14px 22px; border: 1px dashed #d1d5db; border-radius: 8px;
+}
+
+/* What Happens Next */
+.ty-next { padding: 3rem 2rem; background: #fff; }
+.ty-next-inner { max-width: 800px; margin: 0 auto; }
+.ty-next h2 {
+  font-family: var(--font-serif-display);
+  font-size: 2rem; font-weight: 700;
+  color: #16253C; margin-bottom: 2rem; text-align: center;
+}
+.ty-next-step {
+  display: flex; align-items: flex-start; gap: 20px;
+  margin-bottom: 1.25rem; padding: 1.25rem 1.5rem;
+  background: #f8f9fa; border-radius: 12px;
+}
+.ty-next-step-num {
+  width: 32px; height: 32px;
+  background: #C4A82A; color: #fff;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1rem; flex-shrink: 0;
+}
+.ty-next-step-content h3 {
+  font-family: var(--font-body); font-size: 1.05rem; font-weight: 700;
+  color: #16253C; margin: 0 0 6px;
+}
+.ty-next-step-content p {
+  font-size: 0.95rem; color: #4b5563; line-height: 1.55; margin: 0;
+}
+
+/* Money Map CTA */
+.ty-mm-cta { padding: 3.5rem 2rem; background: #16253C; color: #fff; }
+.ty-mm-cta-inner {
+  max-width: 800px; margin: 0 auto; text-align: center;
+}
+.ty-mm-cta .ty-eyebrow {
+  font-family: var(--font-mono); font-size: 0.7rem;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: #FDD25E; margin-bottom: 0.75rem; display: inline-block;
+}
+.ty-mm-cta h2 {
+  font-family: var(--font-serif-display); font-size: 2rem;
+  font-weight: 700; color: #fff; margin: 0 0 0.75rem;
+}
+.ty-mm-cta p {
+  color: rgba(255,255,255,0.85); font-size: 1.05rem;
+  line-height: 1.65; max-width: 600px; margin: 0 auto 1.5rem;
+}
+.ty-mm-cta-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #FDD25E; color: #0F1A2A;
+  padding: 16px 32px; border-radius: 8px;
+  font-family: var(--font-body); font-weight: 700;
+  text-decoration: none; font-size: 1rem;
+  transition: transform 0.2s, background 0.2s;
+}
+.ty-mm-cta-btn:hover { background: #FCC82F; transform: translateY(-1px); }
+.ty-mm-cta-btn svg { width: 16px; height: 16px; }
+
+/* Contact fallback */
+.ty-contact { background: #f8f9fa; padding: 2rem; text-align: center; }
+.ty-contact p {
+  font-family: var(--font-body); font-size: 1rem; color: #4b5563; margin: 0.25rem 0;
+}
+.ty-contact a { color: #16253C; font-weight: 600; }
+
+@media (max-width: 768px) {
+  .ty-hero { padding: 1.75rem 1rem 1.25rem; }
+  .ty-hero h1 { font-size: 1.5rem; }
+  .ty-hero p { font-size: 0.95rem; }
+  .ty-event-detail { padding: 1.5rem 1rem; }
+  .ty-event-detail-inner { padding: 1.5rem; }
+  .ty-event-rows { grid-template-columns: 1fr; gap: 0.25rem; }
+  .ty-event-rows dt { padding-top: 0.75rem; }
+  .ty-actions { flex-direction: column; }
+  .ty-action-btn, .ty-zoom-pending { width: 100%; justify-content: center; }
+  .ty-next { padding: 2rem 1rem; }
+  .ty-next-step { flex-direction: row; padding: 1rem; }
+  .ty-mm-cta { padding: 2.5rem 1rem; }
+  .ty-mm-cta h2 { font-size: 1.5rem; }
+}
+</style>
+
+{# ═══ HERO — Webinar Confirmation ═══ #}
+<section class="ty-hero">
+  <div class="ty-check">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+  </div>
+  <div class="ty-hero-eyebrow">Webinar Registration Confirmed</div>
+  <h1>You're All Set for the May 14 Federal Benefits Webinar</h1>
+  <p>Your seat is reserved. Add the event to your calendar below — and look for a confirmation email with your unique Zoom join link the day of the event. The replay will be sent within 48 hours after the live session.</p>
+</section>
+
+{# ═══ EVENT DETAIL CARD ═══ #}
+<section class="ty-event-detail">
+  <div class="ty-event-detail-inner">
+    <h2>Event Details</h2>
+    <dl class="ty-event-rows">
+      <dt>Date</dt>
+      <dd>Thursday, May 14, 2026</dd>
+
+      <dt>Time</dt>
+      <dd>6:00 PM – 8:00 PM Mountain<br><small>(8:00 PM ET / 5:00 PM PT)</small></dd>
+
+      <dt>Platform</dt>
+      <dd>Zoom Webinars — works on phone, tablet, or desktop. No Zoom account required.</dd>
+
+      <dt>Instructor</dt>
+      <dd>Ann Werts — federal benefits specialist with 15+ years of experience.</dd>
+    </dl>
+
+    <div class="ty-actions">
+      <a href="{{ webinar.may14FederalBenefits.icsUrl }}" download class="ty-action-btn ty-action-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        Add to Calendar (.ics)
+      </a>
+
+      {% if webinar.may14FederalBenefits.zoomUrl %}
+      <a href="{{ webinar.may14FederalBenefits.zoomUrl }}" target="_blank" rel="noopener" class="ty-action-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="23 7 16 12 23 17 23 7"/>
+          <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+        </svg>
+        Save Zoom Join Link
+      </a>
+      {% else %}
+      <span class="ty-zoom-pending">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
+          <circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/>
+        </svg>
+        Zoom join link emailed before the event
+      </span>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{# ═══ WHAT HAPPENS NEXT ═══ #}
+<section class="ty-next">
+  <div class="ty-next-inner">
+    <h2>What Happens Next?</h2>
+    <div class="ty-next-step">
+      <div class="ty-next-step-num">1</div>
+      <div class="ty-next-step-content">
+        <h3>Confirmation email + calendar invite</h3>
+        <p>You'll get an email confirmation in the next few minutes. Use the .ics download above to block your calendar now.</p>
+      </div>
+    </div>
+    <div class="ty-next-step">
+      <div class="ty-next-step-num">2</div>
+      <div class="ty-next-step-content">
+        <h3>Reminders the week of the event</h3>
+        <p>We'll send a reminder 3 days out, then a final note the morning of May 14 with your unique Zoom join link.</p>
+      </div>
+    </div>
+    <div class="ty-next-step">
+      <div class="ty-next-step-num">3</div>
+      <div class="ty-next-step-content">
+        <h3>Replay within 48 hours</h3>
+        <p>Whether or not you can attend live, we'll send the full webinar replay to your inbox within 48 hours.</p>
+      </div>
+    </div>
+    <div class="ty-next-step">
+      <div class="ty-next-step-num">4</div>
+      <div class="ty-next-step-content">
+        <h3>Optional: book your Federal Retirement Money Map</h3>
+        <p>If you'd like Ann's team to apply this to your specific FERS / TSP / FEHB / FEGLI numbers, book a complimentary 1:1 below.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ═══ MONEY MAP CTA ═══ #}
+<section class="ty-mm-cta">
+  <div class="ty-mm-cta-inner">
+    <span class="ty-eyebrow">Optional Next Step</span>
+    <h2>Book Your Federal Retirement Money Map</h2>
+    <p>30 minutes, complimentary, no obligation. We'll pull up your FERS pension, TSP, FEHB, and Social Security numbers and walk through the moves on a single page — your personal Federal Retirement Money Map.</p>
+    <a href="/contact/" class="ty-mm-cta-btn">
+      Schedule My Money Map
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14m-6-6 6 6-6 6"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+{# ═══ CONTACT FALLBACK ═══ #}
+<section class="ty-contact">
+  <p>Questions before the webinar? Email us at <a href="mailto:info@capitalwealth.com">info@capitalwealth.com</a> or call <a href="tel:8012102800">801.210.2800</a></p>
+  <p>Monday – Friday, 9am – 5pm MT</p>
+</section>
+
+<script>
+  // Fire Meta Pixel CompleteRegistration on page load (post-registration TY page).
+  (function() {
+    if (typeof fbq === 'function') {
+      fbq('track', 'CompleteRegistration', {
+        content_name: 'Federal Webinar May 14',
+        content_category: 'Federal Benefits',
+        currency: 'USD',
+        value: 0
+      });
+    }
+    if (typeof gtag === 'function') {
+      gtag('event', 'sign_up', {
+        event_category: 'lead',
+        event_label: 'federal_webinar_may14'
+      });
+    }
+  })();
+</script>

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Capital Wealth//Federal Benefits Webinar 2026-05-14//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Denver
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0600
+TZNAME:MDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0700
+TZNAME:MST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:may14-federal-benefits-webinar@capitalwealth.com
+DTSTAMP:20260415T000000Z
+DTSTART;TZID=America/Denver:20260514T180000
+DTEND;TZID=America/Denver:20260514T200000
+SUMMARY:Federal Benefits Webinar — Live Online Masterclass
+DESCRIPTION:Live online federal benefits webinar with Ann Werts. Covers FERS\, TSP\, FEHB\, FEGLI and Social Security with interactive Q&A.\n\nJoin link will be emailed to registrants the day of the event.\n\nMore info: https://www.capitalwealth.com/l/federal-benefits-webinar/
+URL:https://www.capitalwealth.com/l/federal-benefits-webinar/
+LOCATION:Online (Zoom Webinar)
+ORGANIZER;CN=Capital Wealth:mailto:vip@capitalwealth.com
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
