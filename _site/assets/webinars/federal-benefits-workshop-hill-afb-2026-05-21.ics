@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Capital Wealth//Federal Benefits Workshop Hill AFB 2026-05-21//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Denver
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0600
+TZNAME:MDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0700
+TZNAME:MST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:may21-federal-benefits-workshop-hill-afb@capitalwealth.com
+DTSTAMP:20260430T000000Z
+DTSTART;TZID=America/Denver:20260521T180000
+DTEND;TZID=America/Denver:20260521T200000
+SUMMARY:Federal Benefits Workshop — Hill AFB / Weber State Davis Campus
+DESCRIPTION:Federal benefits workshop with Ann Werts. Covers FERS\, TSP\, FEHB\, FEGLI and Social Security with interactive Q&A.\n\nVenue: Weber State University Davis Campus\, D2 Building\, Room 117 — 2750 University Park Blvd\, Layton\, UT 84041\n\nParking permit required — print and display on dashboard. Permit: https://www.capitalwealth.com/assets/parking/weber-state-davis-parking-permit.pdf\n\nMore info: https://www.capitalwealth.com/l/federal-benefits-workshop-hill-afb/
+URL:https://www.capitalwealth.com/l/federal-benefits-workshop-hill-afb/
+LOCATION:Weber State Davis Campus, D2 Bldg Rm 117, 2750 University Park Blvd, Layton, UT 84041
+ORGANIZER;CN=Capital Wealth:mailto:vip@capitalwealth.com
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

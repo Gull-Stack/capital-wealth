@@ -1,0 +1,440 @@
+{# Shared CSS for in-person federal benefits workshop landing pages.
+   Used by: Ogden, SLC, Hill AFB, and (future) any other in-person event.
+   Page-specific overrides should go AFTER this include in the page's <style> block. #}
+.sem-landing-page {
+  --primary: #16253C;
+  --primary-container: #16253C;
+  --secondary: #C4A82A;
+  --secondary-container: #ffac60;
+  --surface: #f8f9fb;
+  --surface-container-low: #f3f4f6;
+  --on-primary: #ffffff;
+  --on-primary-container: #9fc2ff;
+  --on-secondary: #ffffff;
+  --primary-fixed: #d5e3ff;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-500: #64748b;
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.landing-page main { padding-top: 0 !important; }
+
+.landing-page .finpay-header {
+  display: none !important;
+  height: 0 !important; min-height: 0 !important; max-height: 0 !important;
+  padding: 0 !important; margin: 0 !important;
+  overflow: hidden !important; visibility: hidden !important; position: absolute !important;
+}
+
+.landing-page .finpay-header *,
+.landing-page header *,
+.landing-page .finpay-nav-wrapper,
+.landing-page .finpay-nav,
+.landing-page .finpay-nav-links,
+.landing-page .finpay-nav-right,
+.landing-page .finpay-nav-logo,
+.landing-page .desktop-cta,
+.landing-page .client-login-cta,
+.landing-page .mobile-menu-btn {
+  display: none !important;
+  height: 0 !important; padding: 0 !important; margin: 0 !important;
+}
+
+.sem-liquid-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.sem-workshop-yellow { color: var(--secondary); }
+
+.sem-ann-hero-intro {
+  margin-top: 32px; padding: 24px;
+  border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 400px; background: rgba(255, 255, 255, 0.95);
+}
+.sem-ann-intro-header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+.sem-ann-photo {
+  width: 60px; height: 60px; border-radius: 50%;
+  object-fit: cover; border: 3px solid var(--secondary); flex-shrink: 0;
+}
+.sem-ann-title { font-size: 1.1rem; font-weight: 700; color: #16253C; line-height: 1.2; margin: 0; }
+.sem-ann-subtitle { font-size: 0.85rem; color: #C4A82A; font-weight: 600; margin: 0; }
+.sem-ann-description { font-size: 0.9rem; color: #475569; line-height: 1.4; margin: 0; }
+
+/* Hero */
+.sem-hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 0 32px 80px; overflow: hidden;
+}
+.sem-hero-bg { position: absolute; inset: 0; z-index: 0; }
+.sem-hero-bg img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.2) contrast(1.1); }
+.sem-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(0, 56, 112, 0.9) 0%, rgba(0, 56, 112, 0.4) 50%, transparent 100%);
+}
+.sem-hero-content {
+  position: relative; z-index: 10; max-width: 1280px;
+  margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+}
+.sem-hero-left { color: white; }
+
+.sem-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono), monospace;
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em;
+  margin-bottom: 24px; color: #FDD25E;
+  border-bottom: 2px solid #FDD25E; padding-bottom: 4px;
+}
+
+.sem-hero-title {
+  font-size: 3.5rem; font-weight: bold; line-height: 1.1;
+  margin-bottom: 16px;
+  font-family: var(--font-serif-display), serif;
+  color: #ffffff; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.sem-workshop-date {
+  font-family: var(--font-mono), monospace; font-size: 1.1rem;
+  color: #FDD25E; font-weight: 600; margin-bottom: 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3); padding: 8px 16px;
+  border-radius: 6px; display: inline-block;
+}
+
+.sem-hero-title-accent { color: #ffffff; font-style: italic; font-weight: 300; }
+
+.sem-hero-description {
+  font-size: 1rem; line-height: 1.55;
+  max-width: 600px; color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); opacity: 0.92; margin-bottom: 16px;
+}
+
+.sem-hero-subheadline {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.85rem; line-height: 1.5;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  color: #FDD25E; max-width: 600px;
+  margin: 0 0 32px; padding-left: 12px;
+  border-left: 3px solid #FDD25E;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Registration Form */
+.sem-registration-card { position: relative; }
+.sem-registration-form {
+  padding: 32px; border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+.sem-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.sem-limited-seating {
+  background: var(--secondary); color: var(--on-secondary);
+  padding: 10px 16px; border-radius: 8px;
+  font-family: var(--font-mono), monospace; font-size: 12px;
+  text-transform: uppercase; letter-spacing: 0.05em;
+  text-align: center; margin-bottom: 16px;
+}
+.sem-form-title { font-size: 1.75rem; font-family: var(--font-serif-display), serif; color: #0F1A2A; margin-bottom: 8px; }
+.sem-form-subtitle { color: var(--slate-600); margin-bottom: 32px; font-family: var(--font-body); }
+.sem-form-group { margin-bottom: 16px; }
+.sem-form-row .sem-form-group { margin-bottom: 0; }
+.sem-form-label {
+  display: block; font-family: var(--font-mono), monospace;
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--primary); margin-bottom: 8px;
+}
+.sem-form-input {
+  width: 100%; background: rgba(255, 255, 255, 0.5);
+  border: none; box-shadow: inset 0 0 0 1px rgba(0, 56, 112, 0.1);
+  padding: 16px; border-radius: 8px;
+  font-family: var(--font-body); font-size: 16px; box-sizing: border-box;
+}
+.sem-form-input::placeholder { color: #94a3b8; }
+.sem-form-input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--secondary); }
+.sem-form-input.error { box-shadow: inset 0 0 0 2px #DC2626; }
+
+.sem-submit-btn {
+  width: 100%; background: #FDD25E; color: #0F1A2A;
+  padding: 20px; border: none; border-radius: 8px;
+  font-family: var(--font-body), sans-serif;
+  font-weight: 700; letter-spacing: 0.02em;
+  font-size: 18px; cursor: pointer; transition: all 0.2s ease;
+}
+.sem-submit-btn:hover { background: #FCC82F; transform: translateY(-1px); }
+.sem-submit-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+
+.sem-privacy-text {
+  text-align: center; font-family: var(--font-mono), monospace;
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--slate-500); margin-top: 16px;
+}
+
+/* Special category checkbox (LEO/FF/ATC etc.) */
+.sem-checkbox-row {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px 16px; margin: 0 0 20px;
+  background: rgba(196, 168, 42, 0.06);
+  border: 1px solid rgba(196, 168, 42, 0.25);
+  border-radius: 8px;
+}
+.sem-checkbox-row input[type="checkbox"] {
+  width: 18px; height: 18px; margin-top: 2px;
+  accent-color: var(--secondary); flex-shrink: 0;
+}
+.sem-checkbox-row label {
+  font-family: var(--font-body); font-size: 0.92rem;
+  line-height: 1.45; color: var(--slate-700); margin: 0;
+}
+.sem-checkbox-row label strong { color: var(--primary); }
+
+/* Curriculum */
+.sem-curriculum { padding: 64px 32px; background: var(--surface-container-low); }
+.sem-curriculum-container { max-width: 1280px; margin: 0 auto; }
+.sem-curriculum-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; }
+.sem-curriculum-sidebar h2 {
+  font-size: 3rem; font-family: var(--font-serif-display), serif;
+  color: var(--primary); margin-bottom: 32px; line-height: 1.1;
+}
+.sem-curriculum-sidebar .sem-eyebrow {
+  color: #16253C; border-bottom: 2px solid #C4A82A;
+  padding-bottom: 4px; margin-bottom: 16px;
+}
+.sem-curriculum-cards { display: flex; flex-direction: column; gap: 16px; }
+.sem-curriculum-card {
+  background: white; padding: 40px; border-radius: 8px;
+  display: flex; align-items: flex-start; gap: 48px;
+  transition: all 0.3s ease;
+}
+.sem-curriculum-card:hover { box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); }
+.sem-chapter-number {
+  font-family: var(--font-mono), monospace; font-size: 14px;
+  color: #57A5F4; letter-spacing: -0.05em; opacity: 0.7; flex-shrink: 0;
+}
+.sem-curriculum-card h4 {
+  font-size: 24px; font-family: var(--font-serif-display), serif;
+  font-weight: bold; color: var(--primary); margin-bottom: 16px;
+}
+.sem-curriculum-card p { color: var(--slate-600); line-height: 1.5; margin-bottom: 24px; }
+.sem-card-tags { display: flex; gap: 16px; flex-wrap: wrap; }
+.sem-card-tag {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px; text-transform: uppercase;
+  padding: 4px 12px; background: var(--surface-container-low);
+  color: var(--primary); border-radius: 999px;
+}
+
+/* Speaker */
+.sem-speaker { padding: 48px 32px; background: #f8f9fb; }
+.sem-speaker-container {
+  max-width: 1000px; margin: 0 auto;
+  display: grid; grid-template-columns: 300px 1fr;
+  gap: 48px; align-items: center;
+}
+.sem-speaker-image-wrapper { position: relative; }
+.sem-speaker-image {
+  overflow: hidden; border-radius: 8px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  position: relative; z-index: 10; line-height: 0;
+}
+.sem-speaker-image img { width: 100%; height: auto; display: block; }
+.sem-speaker-details .sem-eyebrow {
+  color: #16253C; border-bottom: 2px solid #C4A82A;
+  padding-bottom: 4px; margin-bottom: 16px;
+  display: block; width: fit-content;
+}
+.sem-speaker-name {
+  font-size: 3rem; font-family: var(--font-serif-display), serif;
+  color: var(--primary); margin-bottom: 32px; line-height: 1.1;
+}
+.sem-speaker-bio { font-size: 20px; color: var(--slate-700); line-height: 1.4; margin-bottom: 32px; }
+.sem-credentials-list { display: flex; flex-direction: column; gap: 8px; }
+.sem-credential-item { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+.sem-checkmark { color: var(--secondary); font-size: 16px; flex-shrink: 0; line-height: 1.4; margin-top: 1px; }
+.sem-credential-text { color: var(--slate-600); font-weight: 700; line-height: 1.4; margin: 0; font-size: 18px; }
+
+/* Venue Section */
+.sem-venue { padding: 64px 32px; background: var(--surface); overflow: hidden; }
+.sem-venue-container { max-width: 1280px; margin: 0 auto; }
+.sem-venue-content { display: block; max-width: 800px; margin: 0 auto; }
+.sem-venue-details {
+  flex: 1; background: white; padding: 48px; border-radius: 8px;
+  border-left: 8px solid var(--primary);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.sem-venue-details .sem-eyebrow {
+  color: #16253C; border-bottom: 2px solid #C4A82A;
+  padding-bottom: 4px; margin-bottom: 16px;
+  display: block; width: fit-content;
+}
+.sem-venue-header {
+  display: flex; align-items: flex-start;
+  gap: 24px; margin-bottom: 32px;
+}
+.sem-venue-title-section { flex: 1; }
+.sem-venue-image-small {
+  flex-shrink: 0; width: 120px; height: 80px;
+  border-radius: 8px; overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.sem-venue-image-small img { width: 100%; height: 100%; object-fit: cover; }
+.sem-venue-title {
+  font-size: 2.5rem; font-family: var(--font-serif-display), serif;
+  color: var(--primary); margin-bottom: 32px;
+}
+.sem-venue-title-light { font-weight: 300; }
+.sem-venue-info { display: flex; flex-direction: column; gap: 24px; color: var(--slate-600); }
+.sem-venue-item {
+  display: flex; align-items: flex-start;
+  gap: 16px; margin-bottom: 8px; line-height: 1.4; font-size: 0.95rem;
+}
+.sem-venue-icon { font-size: 20px; width: 20px; height: 20px; flex-shrink: 0; }
+
+.sem-venue-links {
+  margin-top: 32px; padding-top: 32px;
+  border-top: 1px solid var(--surface-container-low);
+}
+.sem-venue-links h4 {
+  font-family: var(--font-mono), monospace;
+  font-size: 12px; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--primary); margin-bottom: 16px;
+}
+.sem-venue-links-grid { display: flex; gap: 24px; flex-wrap: wrap; }
+.sem-venue-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #16253C; color: #ffffff;
+  text-decoration: none; font-weight: 600;
+  font-size: 0.85rem; padding: 10px 20px;
+  border-radius: 50px; transition: all 0.2s ease;
+}
+.sem-venue-link:hover { background: #57A5F4; color: #ffffff; transform: translateY(-1px); }
+.sem-venue-link svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+.sem-parking-note {
+  background: var(--surface); padding: 24px;
+  border-radius: 8px; margin-top: 32px;
+  border-left: 4px solid var(--secondary);
+}
+.sem-parking-note h4 {
+  font-family: var(--font-mono), monospace;
+  font-size: 12px; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--secondary); margin-bottom: 12px;
+}
+.sem-parking-note p { color: var(--slate-600); line-height: 1.5; margin: 0; }
+
+/* Yellow training/session details */
+.sem-training-details {
+  background: var(--secondary); color: var(--on-secondary);
+  padding: 32px; border-radius: 8px; margin: 48px 0;
+}
+.sem-training-details .sem-eyebrow {
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom-color: rgba(255,255,255,0.6);
+  margin-bottom: 16px;
+}
+.sem-training-details h3 { font-size: 1.5rem; font-family: var(--font-serif-display), serif; margin-bottom: 24px; color: #fff; }
+.sem-training-details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+.sem-training-detail { display: flex; align-items: center; gap: 12px; color: #fff; font-weight: 500; }
+.sem-training-detail-icon { font-size: 16px; width: 16px; height: 16px; flex-shrink: 0; opacity: 0.85; }
+.sem-capacity-warning {
+  background: rgba(255, 255, 255, 0.15); padding: 16px;
+  border-radius: 6px; font-family: var(--font-mono), monospace;
+  font-size: 14px; text-transform: uppercase;
+  letter-spacing: 0.05em; text-align: center;
+}
+
+/* Registration Details */
+.sem-registration-details {
+  background: white; padding: 48px;
+  border-radius: 8px; margin: 48px 0;
+  border: 2px solid var(--surface-container-low);
+}
+.sem-registration-details .sem-eyebrow { color: var(--primary); margin-bottom: 16px; }
+.sem-registration-details h3 {
+  font-size: 2rem; font-family: var(--font-serif-display), serif;
+  color: var(--primary); margin-bottom: 32px;
+}
+.sem-registration-details-list { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.sem-registration-detail { display: flex; align-items: flex-start; gap: 12px; }
+.sem-registration-detail-checkmark { color: var(--secondary); font-size: 16px; margin-top: 2px; flex-shrink: 0; }
+.sem-registration-detail-text { color: var(--slate-600); font-weight: 500; }
+
+/* FAQ */
+.sem-faq { padding: 64px 32px; background: var(--primary); color: white; }
+.sem-faq-container { max-width: 1024px; margin: 0 auto; text-align: center; }
+.sem-faq-title { font-size: 2.5rem; font-family: var(--font-serif-display), serif; margin-bottom: 64px; color: #ffffff; }
+.sem-faq-list { display: flex; flex-direction: column; gap: 32px; text-align: left; margin-bottom: 80px; }
+.sem-faq-item { border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 32px; }
+.sem-faq-question { font-size: 20px; font-family: var(--font-serif-display), serif; margin-bottom: 16px; color: #ffffff; }
+.sem-faq-answer { color: rgba(255, 255, 255, 0.8); line-height: 1.6; }
+
+.sem-final-cta { text-align: center; }
+.sem-final-cta-btn {
+  display: inline-block; background: #FDD25E; color: #0F1A2A;
+  padding: 24px 48px; border-radius: 8px;
+  font-family: var(--font-serif-display), serif;
+  font-size: 20px; font-weight: bold; text-decoration: none;
+  transition: all 0.2s ease;
+}
+.sem-final-cta-btn:hover { background: #ffffff; color: #0F1A2A; transform: scale(1.05); }
+.sem-final-cta-note {
+  margin-top: 32px; font-family: var(--font-mono), monospace;
+  font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.3em; color: rgba(255, 255, 255, 0.6);
+}
+
+/* Guest Fields */
+.guest-fields {
+  margin-top: 20px; padding: 24px;
+  background: rgba(255, 255, 255, 0.7); border-radius: 12px;
+  border: 1px solid rgba(22, 37, 60, 0.1);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+.guest-fields h4 { margin-top: 0; margin-bottom: 16px; color: #16253C; font-family: var(--font-body); }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sem-curriculum, .sem-speaker, .sem-venue, .sem-faq { padding: 48px 24px; }
+  .sem-hero { padding-left: 24px; padding-right: 24px; }
+  .sem-hero-content { grid-template-columns: 1fr; gap: 32px; text-align: left; }
+  .sem-hero-title { font-size: 2.2rem; }
+  .sem-workshop-date { font-size: 1rem; padding: 6px 12px; }
+  .sem-hero-description { font-size: 1.1rem; }
+
+  .sem-form-row { grid-template-columns: 1fr; }
+  .sem-registration-form { padding: 24px; margin: 0; text-align: left; }
+  .sem-form-title { text-align: left; font-size: 1.4rem; }
+  .sem-form-subtitle { text-align: left; }
+  .sem-limited-seating { text-align: center; }
+  .sem-ann-hero-intro { margin-top: 24px; max-width: none; }
+  .sem-privacy-text { text-align: left; }
+
+  .sem-curriculum-grid { grid-template-columns: 1fr; gap: 32px; }
+  .sem-speaker-container { grid-template-columns: 1fr; text-align: left; gap: 32px; }
+  .sem-speaker-image { max-width: 100%; margin: 0; }
+
+  .sem-venue-content { max-width: none; padding: 0; }
+  .sem-venue-details { background: transparent; padding: 0; border: none; border-left: none; }
+  .sem-venue-header { flex-direction: column; gap: 24px; text-align: left; margin-bottom: 32px; }
+  .sem-venue-title { font-size: 1.75rem; line-height: 1.2; margin-bottom: 4px; }
+  .sem-venue-image-small { width: 100%; height: 180px; margin: 0; border-radius: 12px; }
+  .sem-venue-item { font-size: 1rem; line-height: 1.5; }
+
+  .sem-training-details-grid, .sem-registration-details-list { grid-template-columns: 1fr; }
+  .sem-curriculum-card { gap: 16px; padding: 20px; flex-direction: column; }
+  .sem-curriculum-sidebar { text-align: left; }
+
+  .sem-venue-links-grid { flex-direction: column; gap: 16px; }
+  .sem-venue-link { padding: 16px 20px; font-size: 1rem; border-radius: 12px; text-align: center; }
+  .sem-parking-note { padding: 20px; margin-top: 24px; border-radius: 12px; }
+  .sem-registration-details { padding: 24px; text-align: left; }
+}
+
+@media (max-width: 480px) {
+  .sem-hero-title { font-size: 2.5rem; }
+  .sem-registration-form { padding: 24px 16px; }
+  .sem-training-details, .sem-registration-details { padding: 24px; }
+}

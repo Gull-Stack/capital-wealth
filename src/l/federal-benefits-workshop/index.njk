@@ -916,6 +916,24 @@ bodyClass: "landing-page"
   -webkit-backdrop-filter: blur(8px);
 }
 
+/* Special category checkbox (LEO/FF/ATC etc.) */
+.sem-checkbox-row {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px 16px; margin: 0 0 20px;
+  background: rgba(196, 168, 42, 0.06);
+  border: 1px solid rgba(196, 168, 42, 0.25);
+  border-radius: 8px;
+}
+.sem-checkbox-row input[type="checkbox"] {
+  width: 18px; height: 18px; margin-top: 2px;
+  accent-color: var(--secondary); flex-shrink: 0;
+}
+.sem-checkbox-row label {
+  font-family: var(--font-body); font-size: 0.92rem;
+  line-height: 1.45; color: var(--slate-700); margin: 0;
+}
+.sem-checkbox-row label strong { color: var(--primary); }
+
 .guest-fields h4 {
   margin-top: 0;
   margin-bottom: 16px;
@@ -1395,6 +1413,12 @@ bodyClass: "landing-page"
               <input class="sem-form-input" type="tel" id="guest-phone" name="guest_phone" placeholder="Guest Phone">
             </div>
           </div>
+
+          <div class="sem-checkbox-row">
+            <input type="checkbox" id="special-category" name="special_category" value="true">
+            <label for="special-category"><strong>Special category employee?</strong> I am a 6c / Special Category employee (LEO, Firefighter, ATC, etc.)</label>
+          </div>
+
           <button class="sem-submit-btn" type="submit">Confirm Registration</button>
           <p class="sem-privacy-text">Privacy Protected & No-Obligation Educational Event<br>
           <small>We will not sell your information or send unsolicited communications.</small></p>
