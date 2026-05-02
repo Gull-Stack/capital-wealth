@@ -11,14 +11,14 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Federal Benefits Workshop — Ogden, May 19 | Capital Wealth</title>
-    <meta name="description" content="Free 2-hour federal benefits workshop at Weber County Main Library. May 19, 2026, 4:30 PM – 6:30 PM. Built for Ogden-area federal employees — IRS Service Center, VA, U.S. Forest Service, and other agencies.">
+    <title>Federal Benefits Workshop — Ogden, May 19, 2026 | Capital Wealth</title>
+    <meta name="description" content="Complimentary 2-hour federal benefits workshop at Weber County Main Library, Ogden, UT. Tuesday, May 19, 2026, 4:30–6:30 PM. Covers FERS, TSP, FEHB, FEGLI, and Social Security with Ann Werts.">
     
     <link rel="canonical" href="https://www.capitalwealth.com/l/federal-benefits-workshop-ogden/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Federal Benefits Workshop — Ogden, May 19 | Capital Wealth">
-    <meta property="og:description" content="Free 2-hour federal benefits workshop at Weber County Main Library. May 19, 2026, 4:30 PM – 6:30 PM. Built for Ogden-area federal employees — IRS Service Center, VA, U.S. Forest Service, and other agencies.">
+    <meta property="og:title" content="Federal Benefits Workshop — Ogden, May 19, 2026 | Capital Wealth">
+    <meta property="og:description" content="Complimentary 2-hour federal benefits workshop at Weber County Main Library, Ogden, UT. Tuesday, May 19, 2026, 4:30–6:30 PM. Covers FERS, TSP, FEHB, FEGLI, and Social Security with Ann Werts.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/l/federal-benefits-workshop-ogden/">
     <meta property="og:image" content="https://www.capitalwealth.com/assets/images/photos/federal/american-flag-hero.jpg">
@@ -283,19 +283,10 @@
             
             {
                 "@type": "Question",
-                "name": "Is this affiliated with OPM?",
+                "name": "Is this affiliated with OPM or my agency?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No, this is an independent educational workshop. We provide non-biased, fiduciary guidance that is not limited by government handbook scripts."
-                }
-            },
-            
-            {
-                "@type": "Question",
-                "name": "Can I bring my spouse?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Absolutely — we encourage it. Retirement is a joint decision, especially regarding FEHB, Survivor Benefits, and Social Security claiming."
+                    "text": "No. This is independent fiduciary education — not limited by handbook scripts and not endorsed by any federal agency."
                 }
             },
             
@@ -304,16 +295,25 @@
                 "name": "Will I be sold financial products?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "This session is purely educational. No financial products will be offered or sold during the workshop. Our goal is clarity, not solicitation."
+                    "text": "No products are offered or sold during the workshop. If you want a one-on-one conversation afterward, that is your call."
                 }
             },
             
             {
                 "@type": "Question",
-                "name": "Where exactly is the venue?",
+                "name": "Can I bring my spouse?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Weber County Main Library, 2464 Jefferson Avenue, Ogden, UT 84401. Free parking on-site."
+                    "text": "Please do — we encourage it. Survivor elections, FEHB, and SS claiming are joint decisions, not solo ones."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "I&#39;m a 6c special-category employee (LEO, FF, ATC). Will the math apply to me?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes — we cover where 6c rules diverge from standard FERS, including the mandatory retirement age and the supplement difference."
                 }
             }
             
@@ -336,7 +336,7 @@
     "name": "Weber County Main Library",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "2464 Jefferson Ave",
+      "streetAddress": "2464 Jefferson Avenue",
       "addressLocality": "Ogden",
       "addressRegion": "UT",
       "postalCode": "84401",
@@ -344,12 +344,8 @@
     }
   },
   "image": "https://www.capitalwealth.com/assets/images/photos/federal/american-flag-hero.jpg",
-  "description": "Free 2-hour federal benefits workshop covering FERS, TSP, FEHB, FEGLI and Social Security for federal employees, with interactive Q&A led by Ann Werts.",
-  "organizer": {
-    "@type": "Organization",
-    "name": "Capital Wealth",
-    "url": "https://www.capitalwealth.com"
-  },
+  "description": "Complimentary 2-hour federal benefits workshop covering FERS, TSP, FEHB, FEGLI and Social Security, with open Q&A led by Ann Werts.",
+  "organizer": { "@type": "Organization", "name": "Capital Wealth", "url": "https://www.capitalwealth.com" },
   "performer": { "@type": "Person", "name": "Ann Werts" },
   "offers": {
     "@type": "Offer",
@@ -671,545 +667,859 @@
 
     <main>
         
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
 <style>
+/* === LAYOUT OVERRIDES — hide site chrome on this landing page === */
+.landing-page .finpay-header,
+.landing-page .finpay-footer { display: none !important; }
+.landing-page main { padding: 0 !important; margin: 0 !important; max-width: none !important; }
 
-.sem-landing-page {
-  --primary: #16253C;
-  --primary-container: #16253C;
-  --secondary: #C4A82A;
-  --secondary-container: #ffac60;
-  --surface: #f8f9fb;
-  --surface-container-low: #f3f4f6;
-  --on-primary: #ffffff;
-  --on-primary-container: #9fc2ff;
-  --on-secondary: #ffffff;
-  --primary-fixed: #d5e3ff;
-  --slate-600: #475569;
-  --slate-700: #334155;
-  --slate-500: #64748b;
-  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
-}
+  :root {
+    /* Capital Wealth tokens (mirrors src/assets/css/main.css) */
+    --cw-ink:           #0F1A2A;
+    --cw-stone-200:     #DEDFE3;
+    --cw-stone-300:     #B8BBC2;
+    --cw-stone-700:     #3A4048;
+    --cw-grey:          #7C868D;
+    --cw-prussian:      #16253D;
 
-.landing-page main { padding-top: 0 !important; }
+    /* Federal-event scoped tokens */
+    --fed-red:          #B31942;  /* Old Glory Red */
+    --fed-red-deep:     #8E122F;
+    --fed-blue:         #0A3161;  /* Old Glory Blue */
+    --fed-blue-deep:    #081F3F;
+    --fed-cream:        #FAF7F0;
+    --fed-gold:         #E8C77E;
 
-.landing-page .finpay-header {
-  display: none !important;
-  height: 0 !important; min-height: 0 !important; max-height: 0 !important;
-  padding: 0 !important; margin: 0 !important;
-  overflow: hidden !important; visibility: hidden !important; position: absolute !important;
-}
+    --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-.landing-page .finpay-header *,
-.landing-page header *,
-.landing-page .finpay-nav-wrapper,
-.landing-page .finpay-nav,
-.landing-page .finpay-nav-links,
-.landing-page .finpay-nav-right,
-.landing-page .finpay-nav-logo,
-.landing-page .desktop-cta,
-.landing-page .client-login-cta,
-.landing-page .mobile-menu-btn {
-  display: none !important;
-  height: 0 !important; padding: 0 !important; margin: 0 !important;
-}
+    --container: 1200px;
+    --radius: 2px;
+  }
 
-.sem-liquid-glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-}
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-sans);
+    color: var(--cw-ink);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  button { font-family: inherit; }
 
-.sem-workshop-yellow { color: var(--secondary); }
+  /* ============ TOP BAR — federal contractor banner ============ */
+  .gov-bar {
+    background: var(--fed-blue-deep);
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .gov-bar .inner {
+    max-width: var(--container); margin: 0 auto;
+    padding: 8px 40px;
+    display: flex; align-items: center; justify-content: center;
+    gap: 14px; flex-wrap: wrap;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: rgba(255,255,255,0.82);
+    font-weight: 500;
+  }
+  .gov-bar .star { color: var(--fed-gold); font-size: 10px; }
+  .gov-bar .pipe { color: rgba(255,255,255,0.35); }
+  .gov-bar .id { color: #fff; font-weight: 600; letter-spacing: 0.1em; }
 
-.sem-ann-hero-intro {
-  margin-top: 32px; padding: 24px;
-  border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.3);
-  max-width: 400px; background: rgba(255, 255, 255, 0.95);
-}
-.sem-ann-intro-header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
-.sem-ann-photo {
-  width: 60px; height: 60px; border-radius: 50%;
-  object-fit: cover; border: 3px solid var(--secondary); flex-shrink: 0;
-}
-.sem-ann-title { font-size: 1.1rem; font-weight: 700; color: #16253C; line-height: 1.2; margin: 0; }
-.sem-ann-subtitle { font-size: 0.85rem; color: #C4A82A; font-weight: 600; margin: 0; }
-.sem-ann-description { font-size: 0.9rem; color: #475569; line-height: 1.4; margin: 0; }
+  /* ============ FLAG STRIPE ============ */
+  .flag-stripe {
+    display: block; height: 4px; width: 100%;
+    background: linear-gradient(90deg,
+      var(--fed-red) 0% 20%, #fff 20% 40%,
+      var(--fed-red) 40% 60%, #fff 60% 80%,
+      var(--fed-red) 80% 100%);
+  }
 
-/* Hero */
-.sem-hero {
-  position: relative; min-height: 100vh;
-  display: flex; align-items: center;
-  padding: 0 32px 80px; overflow: hidden;
-}
-.sem-hero-bg { position: absolute; inset: 0; z-index: 0; }
-.sem-hero-bg img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.2) contrast(1.1); }
-.sem-hero-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to right, rgba(0, 56, 112, 0.9) 0%, rgba(0, 56, 112, 0.4) 50%, transparent 100%);
-}
-.sem-hero-content {
-  position: relative; z-index: 10; max-width: 1280px;
-  margin: 0 auto; width: 100%;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
-}
-.sem-hero-left { color: white; }
+  /* ============ NAV ============ */
+  .nav {
+    background: #fff;
+    border-bottom: 1px solid var(--cw-stone-200);
+  }
+  .nav .inner {
+    max-width: var(--container); margin: 0 auto;
+    padding: 18px 40px;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 24px;
+  }
+  .nav .logo img { height: 32px; }
+  .nav .crumb {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--cw-grey);
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+  }
+  .nav .crumb b { color: var(--fed-blue); font-weight: 600; }
+  .nav .crumb .sep { color: var(--cw-stone-300); }
+  .nav .right { font-size: 13px; color: var(--cw-grey); white-space: nowrap; }
+  .nav .right b { color: var(--cw-prussian); font-weight: 600; letter-spacing: 0.02em; }
+  .nav .right a:hover b { color: var(--fed-red); }
 
-.sem-eyebrow {
-  display: inline-block;
-  font-family: var(--font-mono), monospace;
-  font-size: 12px; text-transform: uppercase; letter-spacing: 0.2em;
-  margin-bottom: 24px; color: #FDD25E;
-  border-bottom: 2px solid #FDD25E; padding-bottom: 4px;
-}
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    background: var(--fed-blue);
+    color: #fff;
+    padding: 56px 40px 64px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 75% 40%, rgba(87,166,251,0.18), transparent 60%),
+      linear-gradient(180deg, var(--fed-blue) 0%, var(--fed-blue-deep) 100%);
+    z-index: 0;
+  }
+  .hero::after {
+    content: "★ ★ ★ ★ ★";
+    position: absolute; top: 38px; right: 40px;
+    color: rgba(255,255,255,0.18);
+    letter-spacing: 0.5em;
+    font-size: 14px;
+    z-index: 1;
+  }
+  .hero-inner {
+    position: relative; z-index: 2;
+    max-width: var(--container); margin: 0 auto;
+    display: grid; grid-template-columns: 1.35fr 1fr; gap: 56px; align-items: start;
+  }
+  .hero .classif {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    margin-bottom: 28px;
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+  }
+  .hero .classif .tag {
+    background: var(--fed-red); color: #fff;
+    padding: 5px 10px; font-weight: 700;
+    border-radius: var(--radius);
+  }
+  .hero .classif .meta { color: rgba(255,255,255,0.7); }
+  .hero h1 {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 64px; line-height: 1.05; letter-spacing: -0.02em;
+    margin: 0 0 24px;
+  }
+  .hero h1 em { font-style: italic; color: var(--fed-gold); font-weight: 400; }
+  .hero .deck {
+    font-size: 18px; line-height: 1.6;
+    color: rgba(255,255,255,0.82);
+    max-width: 56ch;
+    margin: 0 0 32px;
+  }
+  .hero .docket {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+    padding: 22px 0;
+    margin-bottom: 32px;
+  }
+  .hero .docket .item .lab {
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 6px;
+  }
+  .hero .docket .item .val {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 22px; line-height: 1.15;
+    color: #fff;
+  }
+  .hero .docket .item .val small {
+    display: block; font-family: var(--font-sans);
+    font-size: 12px; color: rgba(255,255,255,0.65);
+    margin-top: 3px; letter-spacing: 0;
+  }
 
-.sem-hero-title {
-  font-size: 3.5rem; font-weight: bold; line-height: 1.1;
-  margin-bottom: 16px;
-  font-family: var(--font-serif-display), serif;
-  color: #ffffff; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-}
+  .hero .cta-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .btn-red {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 16px 28px;
+    background: var(--fed-red); color: #fff;
+    font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+    border: 0; border-radius: var(--radius);
+    transition: background 0.15s ease, transform 0.15s ease;
+    cursor: pointer;
+  }
+  .btn-red:hover, .btn-red:focus-visible {
+    background: var(--fed-red-deep);
+    transform: translateY(-1px);
+    outline: 0;
+  }
+  .btn-red:focus-visible { box-shadow: 0 0 0 3px rgba(232,199,126,0.55); }
+  .hero .cta-sub {
+    font-size: 12px; color: rgba(255,255,255,0.65);
+    letter-spacing: 0.04em;
+  }
 
-.sem-workshop-date {
-  font-family: var(--font-mono), monospace; font-size: 1.1rem;
-  color: #FDD25E; font-weight: 600; margin-bottom: 20px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-  background: rgba(0, 0, 0, 0.3); padding: 8px 16px;
-  border-radius: 6px; display: inline-block;
-}
+  /* RSVP card on right */
+  .rsvp {
+    background: #fff;
+    color: var(--cw-ink);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .rsvp .head {
+    background: var(--fed-cream);
+    border-bottom: 1px solid var(--cw-stone-200);
+    padding: 18px 24px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 12px;
+  }
+  .rsvp .head .eb {
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-blue); font-weight: 700;
+  }
+  .rsvp .head .seats {
+    font-size: 11px; color: var(--cw-grey); letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  .rsvp .head .seats b { color: var(--fed-red); font-weight: 700; }
+  .rsvp .body { padding: 24px; }
+  .rsvp h3 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 24px; margin: 0 0 4px; color: var(--fed-blue);
+    letter-spacing: -0.01em;
+  }
+  .rsvp .sub { font-size: 13px; color: var(--cw-grey); margin: 0 0 18px; }
+  .rsvp form { display: grid; gap: 12px; }
+  .rsvp .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .rsvp .field label,
+  .rsvp .field-checkbox {
+    display: block; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--cw-grey); font-weight: 600; margin-bottom: 5px;
+  }
+  .rsvp input[type="text"],
+  .rsvp input[type="email"],
+  .rsvp input[type="tel"] {
+    width: 100%; padding: 11px 13px;
+    border: 1px solid var(--cw-stone-200); border-radius: var(--radius);
+    font: 14px var(--font-sans); color: var(--cw-ink);
+    background: #fff;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .rsvp input:focus {
+    outline: 0;
+    border-color: var(--fed-blue);
+    box-shadow: 0 0 0 3px rgba(10,49,97,0.12);
+  }
+  .rsvp .field.error input {
+    border-color: var(--fed-red);
+    box-shadow: 0 0 0 3px rgba(179,25,66,0.12);
+  }
+  .rsvp .errmsg {
+    display: none;
+    font-size: 11px; color: var(--fed-red); margin-top: 6px;
+    letter-spacing: 0.02em; font-weight: 500;
+  }
+  .rsvp .field.error .errmsg { display: block; }
 
-.sem-hero-title-accent { color: #ffffff; font-style: italic; font-weight: 300; }
+  .rsvp .more {
+    font-size: 12px; color: var(--cw-grey);
+    border-top: 1px dashed var(--cw-stone-200);
+    padding-top: 12px; margin-top: 4px;
+  }
+  .rsvp .more button {
+    background: 0; border: 0; padding: 0;
+    color: var(--fed-blue); font-weight: 600;
+    border-bottom: 1px solid currentColor;
+    cursor: pointer; font-size: 12px;
+  }
+  .rsvp .more button:hover { color: var(--fed-red); }
+  .rsvp .guest-fields[hidden] { display: none; }
 
-.sem-hero-description {
-  font-size: 1rem; line-height: 1.55;
-  max-width: 600px; color: rgba(255, 255, 255, 0.95);
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); opacity: 0.92; margin-bottom: 16px;
-}
+  .rsvp .checkbox-row {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 12px; color: var(--cw-stone-700);
+    line-height: 1.5;
+    border-top: 1px dashed var(--cw-stone-200);
+    padding-top: 12px;
+  }
+  .rsvp .checkbox-row input { margin-top: 2px; flex: 0 0 auto; }
+  .rsvp .checkbox-row label {
+    margin: 0; text-transform: none; letter-spacing: 0; font-size: 12px;
+    color: var(--cw-stone-700); font-weight: 500;
+  }
 
-.sem-hero-subheadline {
-  font-family: var(--font-mono), monospace;
-  font-size: 0.85rem; line-height: 1.5;
-  letter-spacing: 0.04em; text-transform: uppercase;
-  color: #FDD25E; max-width: 600px;
-  margin: 0 0 32px; padding-left: 12px;
-  border-left: 3px solid #FDD25E;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-}
+  .rsvp .form-banner {
+    display: none;
+    background: rgba(179,25,66,0.08);
+    border: 1px solid rgba(179,25,66,0.25);
+    color: var(--fed-red-deep);
+    padding: 10px 12px; border-radius: var(--radius);
+    font-size: 12px; line-height: 1.5;
+  }
+  .rsvp.has-error .form-banner { display: block; }
 
-/* Registration Form */
-.sem-registration-card { position: relative; }
-.sem-registration-form {
-  padding: 32px; border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
-}
-.sem-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
-.sem-limited-seating {
-  background: var(--secondary); color: var(--on-secondary);
-  padding: 10px 16px; border-radius: 8px;
-  font-family: var(--font-mono), monospace; font-size: 12px;
-  text-transform: uppercase; letter-spacing: 0.05em;
-  text-align: center; margin-bottom: 16px;
-}
-.sem-form-title { font-size: 1.75rem; font-family: var(--font-serif-display), serif; color: #0F1A2A; margin-bottom: 8px; }
-.sem-form-subtitle { color: var(--slate-600); margin-bottom: 32px; font-family: var(--font-body); }
-.sem-form-group { margin-bottom: 16px; }
-.sem-form-row .sem-form-group { margin-bottom: 0; }
-.sem-form-label {
-  display: block; font-family: var(--font-mono), monospace;
-  font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;
-  color: var(--primary); margin-bottom: 8px;
-}
-.sem-form-input {
-  width: 100%; background: rgba(255, 255, 255, 0.5);
-  border: none; box-shadow: inset 0 0 0 1px rgba(0, 56, 112, 0.1);
-  padding: 16px; border-radius: 8px;
-  font-family: var(--font-body); font-size: 16px; box-sizing: border-box;
-}
-.sem-form-input::placeholder { color: #94a3b8; }
-.sem-form-input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--secondary); }
-.sem-form-input.error { box-shadow: inset 0 0 0 2px #DC2626; }
+  .rsvp button[type="submit"] {
+    margin-top: 6px; padding: 14px;
+    background: var(--fed-red); color: #fff;
+    border: 0; border-radius: var(--radius);
+    font: 700 13px var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .rsvp button[type="submit"]:hover { background: var(--fed-red-deep); }
+  .rsvp button[type="submit"][disabled] { opacity: 0.6; cursor: progress; }
+  .rsvp .legal {
+    font-size: 11px; color: var(--cw-grey); line-height: 1.5;
+    border-top: 1px solid var(--cw-stone-200); padding-top: 12px; margin-top: 6px;
+  }
+  .rsvp .legal b { color: var(--cw-stone-700); font-weight: 600; }
 
-.sem-submit-btn {
-  width: 100%; background: #FDD25E; color: #0F1A2A;
-  padding: 20px; border: none; border-radius: 8px;
-  font-family: var(--font-body), sans-serif;
-  font-weight: 700; letter-spacing: 0.02em;
-  font-size: 18px; cursor: pointer; transition: all 0.2s ease;
-}
-.sem-submit-btn:hover { background: #FCC82F; transform: translateY(-1px); }
-.sem-submit-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+  /* RSVP success state */
+  .rsvp-success { display: none; padding: 32px 24px; text-align: left; }
+  .rsvp.is-confirmed .rsvp-success { display: block; }
+  .rsvp.is-confirmed form,
+  .rsvp.is-confirmed h3,
+  .rsvp.is-confirmed .sub { display: none; }
+  .rsvp-success .check {
+    width: 44px; height: 44px; border-radius: var(--radius);
+    background: var(--fed-blue); color: #fff;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 22px; line-height: 1;
+    margin-bottom: 16px;
+  }
+  .rsvp-success h3 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 26px; margin: 0 0 8px; color: var(--fed-blue);
+  }
+  .rsvp-success p {
+    font-size: 14px; line-height: 1.6; color: var(--cw-stone-700); margin: 0 0 12px;
+  }
+  .rsvp-success p b { color: var(--cw-ink); }
 
-.sem-privacy-text {
-  text-align: center; font-family: var(--font-mono), monospace;
-  font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;
-  color: var(--slate-500); margin-top: 16px;
-}
+  /* ============ TARGETING STRIP ============ */
+  .targeting {
+    background: var(--fed-cream);
+    border-bottom: 1px solid var(--cw-stone-200);
+    padding: 24px 40px;
+  }
+  .targeting .inner {
+    max-width: var(--container); margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 32px; flex-wrap: wrap;
+  }
+  .targeting .lab {
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-blue); font-weight: 700;
+    border-left: 3px solid var(--fed-red); padding-left: 12px;
+  }
+  .targeting .agencies {
+    display: flex; gap: 28px; flex-wrap: wrap;
+    font-size: 13px; color: var(--cw-stone-700); font-weight: 500;
+  }
+  .targeting .agencies span { display: inline-flex; align-items: center; gap: 6px; }
+  .targeting .agencies span::before { content: "▸"; color: var(--fed-red); font-size: 10px; }
 
-/* Special category checkbox (LEO/FF/ATC etc.) */
-.sem-checkbox-row {
-  display: flex; align-items: flex-start; gap: 12px;
-  padding: 14px 16px; margin: 0 0 20px;
-  background: rgba(196, 168, 42, 0.06);
-  border: 1px solid rgba(196, 168, 42, 0.25);
-  border-radius: 8px;
-}
-.sem-checkbox-row input[type="checkbox"] {
-  width: 18px; height: 18px; margin-top: 2px;
-  accent-color: var(--secondary); flex-shrink: 0;
-}
-.sem-checkbox-row label {
-  font-family: var(--font-body); font-size: 0.92rem;
-  line-height: 1.45; color: var(--slate-700); margin: 0;
-}
-.sem-checkbox-row label strong { color: var(--primary); }
+  /* ============ OUTCOMES ============ */
+  .outcomes {
+    padding: 80px 40px;
+    max-width: var(--container); margin: 0 auto;
+  }
+  .outcomes .header {
+    display: grid; grid-template-columns: 1fr 1.6fr; gap: 56px;
+    margin-bottom: 48px; align-items: end;
+  }
+  .outcomes .eb {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-red); font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .outcomes h2 {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 48px; line-height: 1.1; letter-spacing: -0.02em;
+    margin: 0; color: var(--fed-blue);
+  }
+  .outcomes h2 em { font-style: italic; color: var(--fed-red); }
+  .outcomes .lede {
+    font-size: 17px; line-height: 1.65; color: var(--cw-stone-700);
+    margin: 0; max-width: 56ch;
+  }
 
-/* Curriculum */
-.sem-curriculum { padding: 64px 32px; background: var(--surface-container-low); }
-.sem-curriculum-container { max-width: 1280px; margin: 0 auto; }
-.sem-curriculum-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; }
-.sem-curriculum-sidebar h2 {
-  font-size: 3rem; font-family: var(--font-serif-display), serif;
-  color: var(--primary); margin-bottom: 32px; line-height: 1.1;
-}
-.sem-curriculum-sidebar .sem-eyebrow {
-  color: #16253C; border-bottom: 2px solid #C4A82A;
-  padding-bottom: 4px; margin-bottom: 16px;
-}
-.sem-curriculum-cards { display: flex; flex-direction: column; gap: 16px; }
-.sem-curriculum-card {
-  background: white; padding: 40px; border-radius: 8px;
-  display: flex; align-items: flex-start; gap: 48px;
-  transition: all 0.3s ease;
-}
-.sem-curriculum-card:hover { box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); }
-.sem-chapter-number {
-  font-family: var(--font-mono), monospace; font-size: 14px;
-  color: #57A5F4; letter-spacing: -0.05em; opacity: 0.7; flex-shrink: 0;
-}
-.sem-curriculum-card h4 {
-  font-size: 24px; font-family: var(--font-serif-display), serif;
-  font-weight: bold; color: var(--primary); margin-bottom: 16px;
-}
-.sem-curriculum-card p { color: var(--slate-600); line-height: 1.5; margin-bottom: 24px; }
-.sem-card-tags { display: flex; gap: 16px; flex-wrap: wrap; }
-.sem-card-tag {
-  font-family: var(--font-mono), monospace;
-  font-size: 10px; text-transform: uppercase;
-  padding: 4px 12px; background: var(--surface-container-low);
-  color: var(--primary); border-radius: 999px;
-}
+  .out-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+    border-top: 2px solid var(--fed-blue);
+    border-left: 1px solid var(--cw-stone-200);
+  }
+  .out {
+    border-right: 1px solid var(--cw-stone-200);
+    border-bottom: 1px solid var(--cw-stone-200);
+    padding: 32px 32px 36px;
+    display: grid; grid-template-columns: 64px 1fr; gap: 24px; align-items: start;
+    background: #fff;
+    transition: background 0.2s ease;
+  }
+  .out:hover { background: var(--fed-cream); }
+  .out .num {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 56px; line-height: 1; color: var(--fed-red);
+    letter-spacing: -0.04em;
+  }
+  .out .lab {
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-blue); font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .out h3 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 22px; line-height: 1.2; letter-spacing: -0.01em;
+    margin: 0 0 12px; color: var(--cw-ink);
+  }
+  .out p {
+    font-size: 14px; line-height: 1.6; color: var(--cw-stone-700);
+    margin: 0 0 14px;
+  }
+  .out .walk {
+    font-size: 12px; color: var(--fed-blue); font-weight: 600;
+    line-height: 1.5;
+    border-left: 2px solid var(--fed-red);
+    padding: 6px 0 6px 12px;
+  }
 
-/* Speaker */
-.sem-speaker { padding: 48px 32px; background: #f8f9fb; }
-.sem-speaker-container {
-  max-width: 1000px; margin: 0 auto;
-  display: grid; grid-template-columns: 300px 1fr;
-  gap: 48px; align-items: center;
-}
-.sem-speaker-image-wrapper { position: relative; }
-.sem-speaker-image {
-  overflow: hidden; border-radius: 8px;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-  position: relative; z-index: 10; line-height: 0;
-}
-.sem-speaker-image img { width: 100%; height: auto; display: block; }
-.sem-speaker-details .sem-eyebrow {
-  color: #16253C; border-bottom: 2px solid #C4A82A;
-  padding-bottom: 4px; margin-bottom: 16px;
-  display: block; width: fit-content;
-}
-.sem-speaker-name {
-  font-size: 3rem; font-family: var(--font-serif-display), serif;
-  color: var(--primary); margin-bottom: 32px; line-height: 1.1;
-}
-.sem-speaker-bio { font-size: 20px; color: var(--slate-700); line-height: 1.4; margin-bottom: 32px; }
-.sem-credentials-list { display: flex; flex-direction: column; gap: 8px; }
-.sem-credential-item { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
-.sem-checkmark { color: var(--secondary); font-size: 16px; flex-shrink: 0; line-height: 1.4; margin-top: 1px; }
-.sem-credential-text { color: var(--slate-600); font-weight: 700; line-height: 1.4; margin: 0; font-size: 18px; }
+  /* ============ TESTIMONY STRIP ============ */
+  .testimony {
+    background: var(--fed-blue); color: #fff;
+    padding: 64px 40px;
+    border-top: 1px solid var(--cw-stone-200);
+  }
+  .testimony .inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 280px; gap: 56px; align-items: center;
+  }
+  .testimony .eb {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-gold); font-weight: 700; margin-bottom: 18px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .testimony .eb .rule {
+    width: 28px; height: 2px; background: var(--fed-gold); display: inline-block;
+  }
+  .testimony .quote {
+    font-family: var(--font-display); font-weight: 300; font-style: italic;
+    font-size: 32px; line-height: 1.3; letter-spacing: -0.01em;
+    margin: 0 0 20px; color: #fff;
+  }
+  .testimony .by {
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(255,255,255,0.65); font-weight: 600;
+  }
+  .testimony .by b { color: var(--fed-gold); }
+  .testimony .stats {
+    display: grid; gap: 20px;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    padding-left: 32px;
+  }
+  .testimony .stats .num {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 38px; line-height: 1; color: var(--fed-gold);
+    letter-spacing: -0.02em;
+  }
+  .testimony .stats .lbl {
+    font-size: 12px; color: rgba(255,255,255,0.7);
+    margin-top: 4px; line-height: 1.4;
+  }
 
-/* Venue Section */
-.sem-venue { padding: 64px 32px; background: var(--surface); overflow: hidden; }
-.sem-venue-container { max-width: 1280px; margin: 0 auto; }
-.sem-venue-content { display: block; max-width: 800px; margin: 0 auto; }
-.sem-venue-details {
-  flex: 1; background: white; padding: 48px; border-radius: 8px;
-  border-left: 8px solid var(--primary);
-  display: flex; flex-direction: column; justify-content: center;
-}
-.sem-venue-details .sem-eyebrow {
-  color: #16253C; border-bottom: 2px solid #C4A82A;
-  padding-bottom: 4px; margin-bottom: 16px;
-  display: block; width: fit-content;
-}
-.sem-venue-header {
-  display: flex; align-items: flex-start;
-  gap: 24px; margin-bottom: 32px;
-}
-.sem-venue-title-section { flex: 1; }
-.sem-venue-image-small {
-  flex-shrink: 0; width: 120px; height: 80px;
-  border-radius: 8px; overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-.sem-venue-image-small img { width: 100%; height: 100%; object-fit: cover; }
-.sem-venue-title {
-  font-size: 2.5rem; font-family: var(--font-serif-display), serif;
-  color: var(--primary); margin-bottom: 32px;
-}
-.sem-venue-title-light { font-weight: 300; }
-.sem-venue-info { display: flex; flex-direction: column; gap: 24px; color: var(--slate-600); }
-.sem-venue-item {
-  display: flex; align-items: flex-start;
-  gap: 16px; margin-bottom: 8px; line-height: 1.4; font-size: 0.95rem;
-}
-.sem-venue-icon { font-size: 20px; width: 20px; height: 20px; flex-shrink: 0; }
+  /* ============ INSTRUCTOR ============ */
+  .instructor {
+    background: var(--fed-cream);
+    border-top: 1px solid var(--cw-stone-200);
+    border-bottom: 1px solid var(--cw-stone-200);
+    padding: 80px 40px;
+  }
+  .instructor .inner {
+    max-width: var(--container); margin: 0 auto;
+    display: grid; grid-template-columns: 360px 1fr; gap: 64px; align-items: start;
+  }
+  .instructor .photo-frame {
+    background: #fff;
+    padding: 16px 16px 20px;
+    border: 1px solid var(--cw-stone-200);
+    box-shadow: 0 12px 32px rgba(15,26,42,0.10);
+  }
+  .instructor .photo {
+    width: 100%; aspect-ratio: 1/1.1; object-fit: cover;
+    background: var(--cw-stone-200);
+    filter: saturate(0.95);
+  }
+  .instructor .photo-frame .stamp {
+    margin-top: 14px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--cw-grey);
+  }
+  .instructor .photo-frame .stamp b { color: var(--fed-blue); font-weight: 700; }
 
-.sem-venue-links {
-  margin-top: 32px; padding-top: 32px;
-  border-top: 1px solid var(--surface-container-low);
-}
-.sem-venue-links h4 {
-  font-family: var(--font-mono), monospace;
-  font-size: 12px; text-transform: uppercase;
-  letter-spacing: 0.1em; color: var(--primary); margin-bottom: 16px;
-}
-.sem-venue-links-grid { display: flex; gap: 24px; flex-wrap: wrap; }
-.sem-venue-link {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: #16253C; color: #ffffff;
-  text-decoration: none; font-weight: 600;
-  font-size: 0.85rem; padding: 10px 20px;
-  border-radius: 50px; transition: all 0.2s ease;
-}
-.sem-venue-link:hover { background: #57A5F4; color: #ffffff; transform: translateY(-1px); }
-.sem-venue-link svg { width: 16px; height: 16px; flex-shrink: 0; }
+  .instructor .body .eb {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-red); font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .instructor .body h2 {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 56px; line-height: 1.05; letter-spacing: -0.02em;
+    margin: 0 0 8px; color: var(--fed-blue);
+  }
+  .instructor .body .role {
+    font-size: 14px; color: var(--cw-grey); margin: 0 0 28px;
+    letter-spacing: 0.04em;
+  }
+  .instructor .quote {
+    font-family: var(--font-display); font-weight: 400; font-style: italic;
+    font-size: 26px; line-height: 1.4; letter-spacing: -0.01em;
+    color: var(--cw-ink);
+    margin: 0 0 24px;
+    padding-left: 20px;
+    border-left: 3px solid var(--fed-red);
+  }
+  .instructor .creds {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+    border-top: 1px solid var(--cw-stone-200);
+    padding-top: 24px;
+  }
+  .instructor .creds .c {
+    font-size: 13px; color: var(--cw-stone-700); line-height: 1.5;
+  }
+  .instructor .creds .c b {
+    display: block; font-family: var(--font-display); font-weight: 400;
+    font-size: 32px; color: var(--fed-blue); margin-bottom: 4px;
+    letter-spacing: -0.02em;
+  }
 
-.sem-parking-note {
-  background: var(--surface); padding: 24px;
-  border-radius: 8px; margin-top: 32px;
-  border-left: 4px solid var(--secondary);
-}
-.sem-parking-note h4 {
-  font-family: var(--font-mono), monospace;
-  font-size: 12px; text-transform: uppercase;
-  letter-spacing: 0.1em; color: var(--secondary); margin-bottom: 12px;
-}
-.sem-parking-note p { color: var(--slate-600); line-height: 1.5; margin: 0; }
+  /* ============ VENUE ============ */
+  .venue {
+    padding: 80px 40px;
+    max-width: var(--container); margin: 0 auto;
+  }
+  .venue .grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; }
+  .venue .card {
+    background: #fff;
+    border: 1px solid var(--cw-stone-200);
+    padding: 40px;
+    position: relative;
+  }
+  .venue .card::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+      var(--fed-red) 0% 33%, #fff 33% 66%, var(--fed-blue) 66% 100%);
+  }
+  .venue .eb {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-blue); font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .venue h3 {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 36px; line-height: 1.1; letter-spacing: -0.02em;
+    margin: 0 0 16px; color: var(--cw-ink);
+  }
+  .venue .addr {
+    font-size: 15px; line-height: 1.6; color: var(--cw-stone-700);
+    margin: 0 0 24px;
+  }
+  .venue .addr b { color: var(--cw-ink); }
+  .venue .meta-rows {
+    border-top: 1px solid var(--cw-stone-200);
+    padding-top: 18px;
+    display: grid; gap: 12px;
+  }
+  .venue .meta-rows .r {
+    display: grid; grid-template-columns: 130px 1fr; gap: 16px;
+    font-size: 13px;
+  }
+  .venue .meta-rows .r .k {
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--cw-grey); font-weight: 600; padding-top: 2px;
+  }
+  .venue .meta-rows .r .v { color: var(--cw-ink); font-weight: 500; }
 
-/* Yellow training/session details */
-.sem-training-details {
-  background: var(--secondary); color: var(--on-secondary);
-  padding: 32px; border-radius: 8px; margin: 48px 0;
-}
-.sem-training-details .sem-eyebrow {
-  color: rgba(255, 255, 255, 0.85);
-  border-bottom-color: rgba(255,255,255,0.6);
-  margin-bottom: 16px;
-}
-.sem-training-details h3 { font-size: 1.5rem; font-family: var(--font-serif-display), serif; margin-bottom: 24px; color: #fff; }
-.sem-training-details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
-.sem-training-detail { display: flex; align-items: center; gap: 12px; color: #fff; font-weight: 500; }
-.sem-training-detail-icon { font-size: 16px; width: 16px; height: 16px; flex-shrink: 0; opacity: 0.85; }
-.sem-capacity-warning {
-  background: rgba(255, 255, 255, 0.15); padding: 16px;
-  border-radius: 6px; font-family: var(--font-mono), monospace;
-  font-size: 14px; text-transform: uppercase;
-  letter-spacing: 0.05em; text-align: center;
-}
+  .venue .map {
+    background: var(--fed-blue);
+    color: #fff;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .venue .map::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(135deg, transparent 30%, rgba(87,166,251,0.12) 100%),
+      repeating-linear-gradient(45deg,
+        transparent 0, transparent 18px,
+        rgba(255,255,255,0.04) 18px, rgba(255,255,255,0.04) 19px);
+  }
+  .venue .map > * { position: relative; }
+  .venue .map .eb { color: var(--fed-gold); }
+  .venue .map h3 { color: #fff; font-size: 28px; }
+  .venue .map p {
+    font-size: 14px; line-height: 1.6;
+    color: rgba(255,255,255,0.78); margin: 0;
+  }
+  .venue .map .pin {
+    margin-top: 28px; padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 13px; gap: 16px; flex-wrap: wrap;
+  }
+  .venue .map .pin a {
+    background: #fff; color: var(--fed-blue);
+    padding: 10px 18px; font-weight: 700; font-size: 11px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    border-radius: var(--radius);
+    transition: transform 0.15s ease;
+  }
+  .venue .map .pin a:hover { transform: translateY(-1px); }
+  .venue .map .coords {
+    font-family: 'Courier New', ui-monospace, monospace;
+    font-size: 11px; color: rgba(255,255,255,0.65);
+    letter-spacing: 0.04em;
+  }
 
-/* Registration Details */
-.sem-registration-details {
-  background: white; padding: 48px;
-  border-radius: 8px; margin: 48px 0;
-  border: 2px solid var(--surface-container-low);
-}
-.sem-registration-details .sem-eyebrow { color: var(--primary); margin-bottom: 16px; }
-.sem-registration-details h3 {
-  font-size: 2rem; font-family: var(--font-serif-display), serif;
-  color: var(--primary); margin-bottom: 32px;
-}
-.sem-registration-details-list { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-.sem-registration-detail { display: flex; align-items: flex-start; gap: 12px; }
-.sem-registration-detail-checkmark { color: var(--secondary); font-size: 16px; margin-top: 2px; flex-shrink: 0; }
-.sem-registration-detail-text { color: var(--slate-600); font-weight: 500; }
+  /* ============ FAQ ============ */
+  .faq {
+    background: var(--fed-cream);
+    border-top: 1px solid var(--cw-stone-200);
+    padding: 80px 40px;
+  }
+  .faq .inner {
+    max-width: var(--container); margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.6fr; gap: 56px;
+  }
+  .faq h2 {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 44px; line-height: 1.05; letter-spacing: -0.02em;
+    margin: 0; color: var(--fed-blue);
+  }
+  .faq .eb {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-red); font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .faq .qa { display: grid; gap: 0; }
+  .faq .q {
+    border-top: 1px solid var(--cw-stone-200);
+    padding: 22px 0;
+  }
+  .faq .q:last-child { border-bottom: 1px solid var(--cw-stone-200); }
+  .faq .q h4 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 20px; margin: 0 0 8px; color: var(--cw-ink);
+    display: grid; grid-template-columns: 32px 1fr; gap: 8px;
+  }
+  .faq .q h4 .n {
+    font-family: var(--font-sans); font-size: 11px; font-weight: 700;
+    color: var(--fed-red); letter-spacing: 0.1em;
+    padding-top: 6px;
+  }
+  .faq .q p {
+    font-size: 14px; line-height: 1.65; color: var(--cw-stone-700);
+    margin: 0; padding-left: 40px;
+  }
 
-/* FAQ */
-.sem-faq { padding: 64px 32px; background: var(--primary); color: white; }
-.sem-faq-container { max-width: 1024px; margin: 0 auto; text-align: center; }
-.sem-faq-title { font-size: 2.5rem; font-family: var(--font-serif-display), serif; margin-bottom: 64px; color: #ffffff; }
-.sem-faq-list { display: flex; flex-direction: column; gap: 32px; text-align: left; margin-bottom: 80px; }
-.sem-faq-item { border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 32px; }
-.sem-faq-question { font-size: 20px; font-family: var(--font-serif-display), serif; margin-bottom: 16px; color: #ffffff; }
-.sem-faq-answer { color: rgba(255, 255, 255, 0.8); line-height: 1.6; }
+  /* ============ CTA FINALE ============ */
+  .cta-foot {
+    background: var(--fed-blue-deep);
+    color: #fff;
+    padding: 72px 40px;
+    text-align: center;
+  }
+  .cta-foot .inner { max-width: 720px; margin: 0 auto; }
+  .cta-foot .eb {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-gold); font-weight: 700;
+    margin-bottom: 18px;
+  }
+  .cta-foot h2 {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 44px; line-height: 1.1; letter-spacing: -0.02em;
+    margin: 0 0 16px;
+  }
+  .cta-foot h2 em { font-style: italic; color: var(--fed-gold); }
+  .cta-foot p {
+    font-size: 16px; color: rgba(255,255,255,0.72); line-height: 1.6;
+    max-width: 52ch; margin: 0 auto 28px;
+  }
 
-.sem-final-cta { text-align: center; }
-.sem-final-cta-btn {
-  display: inline-block; background: #FDD25E; color: #0F1A2A;
-  padding: 24px 48px; border-radius: 8px;
-  font-family: var(--font-serif-display), serif;
-  font-size: 20px; font-weight: bold; text-decoration: none;
-  transition: all 0.2s ease;
-}
-.sem-final-cta-btn:hover { background: #ffffff; color: #0F1A2A; transform: scale(1.05); }
-.sem-final-cta-note {
-  margin-top: 32px; font-family: var(--font-mono), monospace;
-  font-size: 10px; text-transform: uppercase;
-  letter-spacing: 0.3em; color: rgba(255, 255, 255, 0.6);
-}
+  /* ============ DISCLAIMER ============ */
+  .disc {
+    background: #fff;
+    border-top: 1px solid var(--cw-stone-200);
+    padding: 24px 40px;
+  }
+  .disc .inner {
+    max-width: var(--container); margin: 0 auto;
+    font-size: 11px; line-height: 1.6; color: var(--cw-grey);
+  }
+  .disc b { color: var(--cw-stone-700); font-weight: 600; }
 
-/* Guest Fields */
-.guest-fields {
-  margin-top: 20px; padding: 24px;
-  background: rgba(255, 255, 255, 0.7); border-radius: 12px;
-  border: 1px solid rgba(22, 37, 60, 0.1);
-  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-}
-.guest-fields h4 { margin-top: 0; margin-bottom: 16px; color: #16253C; font-family: var(--font-body); }
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 1024px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .outcomes .header { grid-template-columns: 1fr; gap: 16px; align-items: start; }
+    .faq .inner { grid-template-columns: 1fr; gap: 32px; }
+    .testimony .inner { grid-template-columns: 1fr; gap: 32px; }
+    .testimony .stats { border-left: 0; padding-left: 0; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 24px; }
+    .instructor .inner { grid-template-columns: 280px 1fr; gap: 40px; }
+    .venue .grid { grid-template-columns: 1fr; gap: 32px; }
+  }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .sem-curriculum, .sem-speaker, .sem-venue, .sem-faq { padding: 48px 24px; }
-  .sem-hero { padding-left: 24px; padding-right: 24px; }
-  .sem-hero-content { grid-template-columns: 1fr; gap: 32px; text-align: left; }
-  .sem-hero-title { font-size: 2.2rem; }
-  .sem-workshop-date { font-size: 1rem; padding: 6px 12px; }
-  .sem-hero-description { font-size: 1.1rem; }
+  @media (max-width: 768px) {
+    .gov-bar .inner { padding: 8px 20px; gap: 8px; font-size: 10px; letter-spacing: 0.1em; }
+    .gov-bar .pipe { display: none; }
+    .nav .inner { padding: 14px 20px; flex-wrap: wrap; gap: 12px; }
+    .nav .crumb { font-size: 10px; gap: 6px; }
+    .nav .right { font-size: 12px; }
 
-  .sem-form-row { grid-template-columns: 1fr; }
-  .sem-registration-form { padding: 24px; margin: 0; text-align: left; }
-  .sem-form-title { text-align: left; font-size: 1.4rem; }
-  .sem-form-subtitle { text-align: left; }
-  .sem-limited-seating { text-align: center; }
-  .sem-ann-hero-intro { margin-top: 24px; max-width: none; }
-  .sem-privacy-text { text-align: left; }
+    .hero { padding: 40px 20px 48px; }
+    .hero::after { right: 20px; top: 20px; }
+    .hero h1 { font-size: 40px; }
+    .hero .deck { font-size: 16px; }
+    .hero .docket { grid-template-columns: 1fr; gap: 16px; }
+    .hero .docket .item .val { font-size: 20px; }
 
-  .sem-curriculum-grid { grid-template-columns: 1fr; gap: 32px; }
-  .sem-speaker-container { grid-template-columns: 1fr; text-align: left; gap: 32px; }
-  .sem-speaker-image { max-width: 100%; margin: 0; }
+    .targeting { padding: 20px; }
+    .targeting .inner { gap: 16px; }
+    .targeting .agencies { gap: 14px; font-size: 12px; }
 
-  .sem-venue-content { max-width: none; padding: 0; }
-  .sem-venue-details { background: transparent; padding: 0; border: none; border-left: none; }
-  .sem-venue-header { flex-direction: column; gap: 24px; text-align: left; margin-bottom: 32px; }
-  .sem-venue-title { font-size: 1.75rem; line-height: 1.2; margin-bottom: 4px; }
-  .sem-venue-image-small { width: 100%; height: 180px; margin: 0; border-radius: 12px; }
-  .sem-venue-item { font-size: 1rem; line-height: 1.5; }
+    .outcomes { padding: 48px 20px; }
+    .outcomes h2 { font-size: 34px; }
+    .out-grid { grid-template-columns: 1fr; }
+    .out { padding: 24px 20px 28px; grid-template-columns: 48px 1fr; gap: 16px; }
+    .out .num { font-size: 44px; }
 
-  .sem-training-details-grid, .sem-registration-details-list { grid-template-columns: 1fr; }
-  .sem-curriculum-card { gap: 16px; padding: 20px; flex-direction: column; }
-  .sem-curriculum-sidebar { text-align: left; }
+    .testimony { padding: 48px 20px; }
+    .testimony .quote { font-size: 22px; }
 
-  .sem-venue-links-grid { flex-direction: column; gap: 16px; }
-  .sem-venue-link { padding: 16px 20px; font-size: 1rem; border-radius: 12px; text-align: center; }
-  .sem-parking-note { padding: 20px; margin-top: 24px; border-radius: 12px; }
-  .sem-registration-details { padding: 24px; text-align: left; }
-}
+    .instructor { padding: 48px 20px; }
+    .instructor .inner { grid-template-columns: 1fr; gap: 32px; }
+    .instructor .photo-frame { max-width: 280px; margin: 0 auto; }
+    .instructor .body h2 { font-size: 40px; text-align: left; }
+    .instructor .quote { font-size: 20px; }
+    .instructor .creds { grid-template-columns: 1fr; gap: 16px; }
+    .instructor .creds .c b { font-size: 26px; }
 
-@media (max-width: 480px) {
-  .sem-hero-title { font-size: 2.5rem; }
-  .sem-registration-form { padding: 24px 16px; }
-  .sem-training-details, .sem-registration-details { padding: 24px; }
-}
+    .venue { padding: 48px 20px; }
+    .venue .card, .venue .map { padding: 28px 20px; }
+    .venue h3 { font-size: 28px; }
+    .venue .map h3 { font-size: 24px; }
+    .venue .meta-rows .r { grid-template-columns: 100px 1fr; gap: 12px; }
 
+    .faq { padding: 48px 20px; }
+    .faq h2 { font-size: 32px; }
+    .faq .q p { padding-left: 0; }
+
+    .cta-foot { padding: 56px 20px; }
+    .cta-foot h2 { font-size: 32px; }
+
+    .disc { padding: 20px; }
+
+    .rsvp .row2 { grid-template-columns: 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+    .btn-red:hover { transform: none; }
+  }
 </style>
 
-<!-- Hero Section -->
-<section class="sem-hero" id="register">
-  <div class="sem-hero-bg">
-    <img src="/assets/images/photos/federal/american-flag-hero.jpg" alt="Federal Benefits Workshop — American Flag" loading="eager">
-    <div class="sem-hero-overlay"></div>
+
+<!-- TOP BAR — Government Contractor banner -->
+<div class="gov-bar" role="region" aria-label="Government contractor registration">
+  <div class="inner">
+    <span class="star" aria-hidden="true">★</span>
+    <span>An Official Government Registered Contractor</span>
+    <span class="pipe" aria-hidden="true">|</span>
+    <span>Unique ID: <span class="id">L63FVVWAKXA8</span></span>
+    <span class="pipe" aria-hidden="true">|</span>
+    <span>CAGE: <span class="id">9LHS8</span></span>
   </div>
+</div>
 
-  <div class="sem-hero-content">
-    <div class="sem-hero-left">
-      <img src="/assets/images/logos/logo-horizontal-white.png" alt="Capital Wealth" style="height: 40px; width: auto; margin-bottom: 2rem; display: block;">
-      <span class="sem-eyebrow">100% Complimentary Workshop</span>
-      <h1 class="sem-hero-title">
-        Federal Benefits <br><span class="sem-workshop-yellow">Workshop:</span> <br>
-        <span class="sem-hero-title-accent">Weber County Library</span>
-      </h1>
-      <p class="sem-workshop-date">Tuesday, May 19th • 4:30 PM – 6:30 PM</p>
-      <p class="sem-hero-description">
-        Two hours of focused education covering Federal Employees Retirement System (FERS), Thrift Savings Plan (TSP), Federal Employees Health Benefits (FEHB), Federal Employees Group Life Insurance (FEGLI) and Social Security — plus open Q&amp;A with Ann Werts.
-      </p>
-      <p class="sem-hero-subheadline">Built for Ogden-area federal employees — IRS Service Center, VA, U.S. Forest Service, and other agencies.</p>
+<span class="flag-stripe" aria-hidden="true"></span>
 
-      <div class="sem-ann-hero-intro sem-liquid-glass">
-        <div class="sem-ann-intro-header">
-          <img src="/assets/images/photos/federal/ann-werts-headshot.jpg" alt="Ann Werts" class="sem-ann-photo">
-          <div>
-            <h4 class="sem-ann-title">Ann Werts</h4>
-            <p class="sem-ann-subtitle">Workshop Instructor</p>
-          </div>
+<!-- NAV -->
+<nav class="nav" aria-label="Primary">
+  <div class="inner">
+    <a class="logo" href="https://www.capitalwealth.com/" aria-label="Capital Wealth — home">
+      <!-- TODO: swap to production logo URL when integrating into the site -->
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" />
+    </a>
+    <div class="crumb">
+      <span>Federal Practice</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <span>Workshops</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <b>Ogden · May 19</b>
+    </div>
+    <div class="right">
+      Call <a href="tel:+18012102800"><b>(801) 210-2800</b></a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-inner">
+    <div class="left">
+      <div class="classif">
+        <span class="tag">★ Educational Workshop</span>
+        <span class="meta">Complimentary · No products sold · 2-hour session</span>
+      </div>
+      <h1 id="hero-title">Two hours that change <em>thirty years</em> of your federal retirement.</h1>
+      <p class="deck">FERS, TSP, FEHB, FEGLI, Social Security — five intricate systems, one retirement, and a window of decisions you only get to make once. Spend a Tuesday evening in Ogden with Ann Werts and walk out with the math done.</p>
+
+      <div class="docket" role="list">
+        <div class="item" role="listitem">
+          <div class="lab">Date</div>
+          <div class="val">Tue · May 19<small>2026</small></div>
         </div>
-        <p class="sem-ann-description">15+ years helping federal employees understand their benefits with personalized guidance and interactive Q&amp;A.</p>
+        <div class="item" role="listitem">
+          <div class="lab">Time · Doors</div>
+          <div class="val">4:30–6:30 PM<small>Doors at 4:15</small></div>
+        </div>
+        <div class="item" role="listitem">
+          <div class="lab">Venue</div>
+          <div class="val">Weber County Library<small>2464 Jefferson Ave, Ogden</small></div>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn-red" href="#rsvp" data-cta="hero">Reserve a seat →</a>
+        <span class="cta-sub"><b id="seats-remaining-1">17</b> seats remaining · Spouses welcome</span>
       </div>
     </div>
 
-    <div class="sem-registration-card">
-      <div class="sem-registration-form sem-liquid-glass">
-        <div class="sem-limited-seating">Limited Seating — Register Early</div>
-        <h3 class="sem-form-title">Reserve Your Seat</h3>
-        <p class="sem-form-subtitle">100% complimentary workshop — no cost, no obligation, no sales pitch.</p>
-        <form id="sem-registration-form" novalidate>
-          <div class="sem-form-row">
-            <div class="sem-form-group">
-              <label class="sem-form-label" for="firstName">First Name</label>
-              <input class="sem-form-input" type="text" id="firstName" name="firstName" placeholder="First Name" required>
-            </div>
-            <div class="sem-form-group">
-              <label class="sem-form-label" for="lastName">Last Name</label>
-              <input class="sem-form-input" type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-            </div>
-          </div>
-          <div class="sem-form-group">
-            <label class="sem-form-label" for="email">Email Address</label>
-            <input class="sem-form-input" type="email" id="email" name="email" placeholder="Email Address" required>
-          </div>
-          <div class="sem-form-group">
-            <label class="sem-form-label" for="phone">Phone Number</label>
-            <input class="sem-form-input" type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-          </div>
-          <div class="sem-form-group">
-            <label class="sem-form-label" for="bringing-guest">Will you be bringing a guest?</label>
-            <select class="sem-form-input" id="bringing-guest" name="bringing_guest" required>
-              <option value="">Select an option</option>
-              <option value="no">No</option>
-              <option value="yes">Yes</option>
-            </select>
-          </div>
+    <!-- RSVP CARD -->
+    <aside class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="head">
+        <span class="eb">Reserve · Form FBW-2026</span>
+        <span class="seats"><b id="seats-remaining-2">17</b> seats remaining</span>
+      </div>
+      <div class="body">
+        <h3 id="rsvp-title">Save your seat</h3>
+        <p class="sub">2 minutes. We'll email confirmation and parking notes.</p>
 
-          <div id="guest-info" class="guest-fields" style="display: none;">
-            <h4 style="font-size: 1.1rem; font-weight: 700; color: #16253C; margin-bottom: 16px;">Guest Information</h4>
-            <div class="sem-form-row">
-              <div class="sem-form-group">
-                <label class="sem-form-label" for="guest-first-name">Guest First Name</label>
-                <input class="sem-form-input" type="text" id="guest-first-name" name="guest_first_name" placeholder="Guest First Name">
-              </div>
-              <div class="sem-form-group">
-                <label class="sem-form-label" for="guest-last-name">Guest Last Name</label>
-                <input class="sem-form-input" type="text" id="guest-last-name" name="guest_last_name" placeholder="Guest Last Name">
-              </div>
-            </div>
-            <div class="sem-form-group">
-              <label class="sem-form-label" for="guest-email">Guest Email</label>
-              <input class="sem-form-input" type="email" id="guest-email" name="guest_email" placeholder="Guest Email">
-            </div>
-            <div class="sem-form-group">
-              <label class="sem-form-label" for="guest-phone">Guest Phone</label>
-              <input class="sem-form-input" type="tel" id="guest-phone" name="guest_phone" placeholder="Guest Phone">
-            </div>
-          </div>
+        <div class="form-banner" id="form-banner" role="alert">
+          Something went wrong submitting your registration. Please check your details and try again, or call <a href="tel:+18012102800">(801) 210-2800</a>.
+        </div>
 
-          <div class="sem-checkbox-row">
-            <input type="checkbox" id="special-category" name="special_category" value="true">
-            <label for="special-category"><strong>Special category employee?</strong> I am a 6c / Special Category employee (LEO, Firefighter, ATC, etc.)</label>
-          </div>
-
-          <button class="sem-submit-btn" type="submit">Confirm Registration</button>
-          <p class="sem-privacy-text">Privacy Protected &amp; No-Obligation Educational Event<br>
-          <small>We will not sell your information or send unsolicited communications.</small></p>
-
+        <form id="rsvp-form" novalidate>
+          <!-- Lead routing + UTM tracking (consumed by /api/submit-lead) -->
           <input type="hidden" name="source" value="federal-benefits-workshop-ogden">
           <input type="hidden" name="lead_type" value="federal-workshop-registration">
           <input type="hidden" name="utm_campaign" value="ogden-library-federal">
@@ -1219,343 +1529,430 @@
           <input type="hidden" name="utm_term" id="utm_term" value="">
           <input type="hidden" name="referrer" id="referrer" value="">
           <input type="hidden" name="event_date" value="2026-05-19">
-          <input type="hidden" name="workshop_date" value="May 19, 2026">
+
+          <div class="row2">
+            <div class="field">
+              <label for="f-first">First name</label>
+              <input type="text" id="f-first" name="firstName" placeholder="Jane" autocomplete="given-name" required>
+              <div class="errmsg">Please enter your first name.</div>
+            </div>
+            <div class="field">
+              <label for="f-last">Last name</label>
+              <input type="text" id="f-last" name="lastName" placeholder="Doe" autocomplete="family-name" required>
+              <div class="errmsg">Please enter your last name.</div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" placeholder="jane@example.com" autocomplete="email" required />
+            <div class="errmsg">Please enter a valid email address.</div>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="(801) 555-0100" autocomplete="tel" required />
+            <div class="errmsg">Please enter a 10-digit phone number.</div>
+          </div>
+
+          <div class="more">
+            Bringing a guest?
+            <button type="button" id="guest-toggle" aria-expanded="false" aria-controls="guest-fields">Add their info →</button>
+          </div>
+
+          <div class="guest-fields" id="guest-fields" hidden>
+            <div class="row2">
+              <div class="field">
+                <label for="g-first">Guest first</label>
+                <input type="text" id="g-first" name="guest_first_name" placeholder="Pat" autocomplete="off">
+              </div>
+              <div class="field">
+                <label for="g-last">Guest last</label>
+                <input type="text" id="g-last" name="guest_last_name" placeholder="Doe" autocomplete="off">
+              </div>
+            </div>
+          </div>
+
+          <div class="checkbox-row">
+            <input type="checkbox" id="f-6c" name="special_category" value="true">
+            <label for="f-6c">I'm a 6c / Special Category employee (LEO, Firefighter, ATC, etc.)</label>
+          </div>
+
+          <button type="submit" id="rsvp-submit">Confirm Registration</button>
+          <p class="legal"><b>Privacy-protected · No sales pitch.</b> We won't sell your info or send unsolicited communications. This is an educational event.</p>
         </form>
+
+        <div class="rsvp-success" role="status" aria-live="polite">
+          <div class="check" aria-hidden="true">✓</div>
+          <h3>You're in.</h3>
+          <p>We'll email confirmation to <b id="success-email"></b> within 5 minutes — keep an eye out for parking notes and a calendar invite.</p>
+          <p class="legal"><b>Tuesday, May 19 · 4:30–6:30 PM</b><br/>Weber County Library · 2464 Jefferson Avenue, Ogden, UT 84401</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- TARGETING STRIP -->
+<div class="targeting">
+  <div class="inner">
+    <span class="lab">Open to federal employees in the Ogden area</span>
+    <div class="agencies">
+      <span>All federal agencies welcome</span>
+    </div>
+  </div>
+</div>
+
+<!-- OUTCOMES -->
+<section class="outcomes" aria-labelledby="outcomes-title">
+  <div class="header">
+    <div>
+      <div class="eb">What you walk out knowing</div>
+      <h2 id="outcomes-title">Not an agenda. <em>Decisions.</em></h2>
+    </div>
+    <p class="lede">Other workshops read you the OPM handbook. We don't have time for that — and neither do you. Each block ends with a specific decision you'll know how to make by the end of the night.</p>
+  </div>
+
+  <div class="out-grid">
+    <article class="out">
+      <div class="num" aria-hidden="true">I</div>
+      <div>
+        <div class="lab">FERS · Pension Timing</div>
+        <h3>Whether to take the FERS supplement at 57 — or wait.</h3>
+        <p>MRA + 10 vs. immediate retirement, the supplement earnings test, the survivor election (and why it's irrevocable on the day you sign).</p>
+        <div class="walk">→ Walk out knowing your earliest unreduced retirement date.</div>
+      </div>
+    </article>
+
+    <article class="out">
+      <div class="num" aria-hidden="true">II</div>
+      <div>
+        <div class="lab">TSP · Withdrawal Sequence</div>
+        <h3>Whether to leave money at TSP — or roll out for flexibility.</h3>
+        <p>The G Fund argument, the Mutual Fund Window, the order of withdrawals across TSP, IRA, and taxable, and how Roth fits in.</p>
+        <div class="walk">→ Walk out with a sequence, not a "we'll figure it out."</div>
+      </div>
+    </article>
+
+    <article class="out">
+      <div class="num" aria-hidden="true">III</div>
+      <div>
+        <div class="lab">FEHB & Medicare</div>
+        <h3>Whether you actually need Part B at 65 — or just FEHB.</h3>
+        <p>The 5-year rule, premium-sharing math, IRMAA brackets, and what changes if your spouse has separate coverage.</p>
+        <div class="walk">→ Walk out knowing the right Medicare election for your case.</div>
+      </div>
+    </article>
+
+    <article class="out">
+      <div class="num" aria-hidden="true">IV</div>
+      <div>
+        <div class="lab">FEGLI & Social Security</div>
+        <h3>Whether FEGLI is still worth it past 65 — and when to claim SS.</h3>
+        <p>The post-65 cost cliff on Option B, when private term wins, plus claiming windows, WEP/GPO, and integrating with your FERS pension.</p>
+        <div class="walk">→ Walk out with a claiming age and a coverage plan.</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- TESTIMONY STRIP -->
+<section class="testimony" aria-label="From a past attendee">
+  <div class="inner">
+    <div>
+      <div class="eb">
+        <span class="rule" aria-hidden="true"></span>
+        From the workshop floor
+      </div>
+      <p class="quote">"We had two months until retirement and no idea whether to take the supplement or wait. Two hours later we knew the answer — and the math behind it. My wife came too, and we both walked out lighter."</p>
+      <div class="by"><b>Federal Retiree</b> · 32 yrs of service · IRS Service Center</div>
+    </div>
+    <div class="stats">
+      <div>
+        <div class="num">1,400+</div>
+        <div class="lbl">Federal households served since 2009</div>
+      </div>
+      <div>
+        <div class="num">15+</div>
+        <div class="lbl">Years teaching federal benefits</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Curriculum Section -->
-<section class="sem-curriculum" id="agenda">
-  <div class="sem-curriculum-container">
-    <div class="sem-curriculum-grid">
-      <div class="sem-curriculum-sidebar">
-        <span class="sem-eyebrow">Curriculum</span>
-        <h2>Federal Benefits Workshop Agenda</h2>
-        <p style="margin-top:18px;color:var(--slate-600);line-height:1.7">Two hours of focused education plus live Q&amp;A. We cover the four pillars of your federal benefits package and how they integrate with Social Security in retirement.</p>
+<!-- INSTRUCTOR -->
+<section class="instructor" aria-labelledby="instructor-title">
+  <div class="inner">
+    <div class="photo-frame">
+      <!-- TODO: swap to production photo URL when integrating into the site -->
+      <img class="photo" src="/assets/images/team/ann.jpg" alt="Ann Werts, federal benefits specialist at Capital Wealth" />
+      <div class="stamp">
+        <span><b>Practice Lead</b></span>
+        <span>EST. 2009</span>
       </div>
-      <div class="sem-curriculum-cards">
-        <div class="sem-curriculum-card">
-          <span class="sem-chapter-number">CH. 01</span>
-          <div>
-            <h4>Federal Employees Retirement System (FERS)</h4>
-            <p>Pension calculations, MRA + 10 vs. immediate retirement, the FERS supplement, survivor benefits, and timing your retirement window. <strong>Interactive Q&amp;A:</strong> general FERS strategies and timing.</p>
-            <div class="sem-card-tags">
-              <span class="sem-card-tag">Pension Calculations</span>
-              <span class="sem-card-tag">FERS Supplement</span>
-              <span class="sem-card-tag">Survivor Benefits</span>
-            </div>
-          </div>
-        </div>
-        <div class="sem-curriculum-card">
-          <span class="sem-chapter-number">CH. 02</span>
-          <div>
-            <h4>Thrift Savings Plan (TSP)</h4>
-            <p>Contribution and matching strategies, fund selection, the Mutual Fund Window, withdrawal options, Roth vs. traditional, and rollover considerations. <strong>Interactive Discussion:</strong> general TSP strategies and best practices.</p>
-            <div class="sem-card-tags">
-              <span class="sem-card-tag">Contributions</span>
-              <span class="sem-card-tag">Investment Strategy</span>
-              <span class="sem-card-tag">Withdrawals</span>
-            </div>
-          </div>
-        </div>
-        <div class="sem-curriculum-card">
-          <span class="sem-chapter-number">CH. 03</span>
-          <div>
-            <h4>FEHB &amp; Medicare</h4>
-            <p>Carrying FEHB into retirement, the 5-year rule, Medicare coordination, premium-sharing math, and how FEHB interacts with Part A, Part B, and IRMAA brackets. <strong>Q&amp;A Focus:</strong> general health benefits scenarios.</p>
-            <div class="sem-card-tags">
-              <span class="sem-card-tag">FEHB</span>
-              <span class="sem-card-tag">Medicare Timing</span>
-              <span class="sem-card-tag">IRMAA</span>
-            </div>
-          </div>
-        </div>
-        <div class="sem-curriculum-card">
-          <span class="sem-chapter-number">CH. 04</span>
-          <div>
-            <h4>FEGLI &amp; Social Security</h4>
-            <p>Basic Life, Option A/B/C, the post-65 cost cliff, and when private term beats FEGLI; plus Social Security strategy: WEP/GPO, claiming windows, and integrating Social Security with your FERS pension.</p>
-            <div class="sem-card-tags">
-              <span class="sem-card-tag">Life Insurance</span>
-              <span class="sem-card-tag">Social Security</span>
-              <span class="sem-card-tag">WEP/GPO</span>
-            </div>
-          </div>
-        </div>
+    </div>
+    <div class="body">
+      <div class="eb">Your Workshop Instructor</div>
+      <h2 id="instructor-title">Ann Werts</h2>
+      <p class="role">Federal Benefits Specialist · Capital Wealth</p>
+      <p class="quote">"FERS, TSP, FEHB, Medicare — none of these decisions stand alone. We line them up against your tax bracket, your spouse's coverage, and your timeline. Then we write it down."</p>
+      <div class="creds">
+        <div class="c"><b>15+</b>years guiding federal employees through retirement</div>
+        <div class="c"><b>1,400+</b>federal households served by the practice</div>
+        <div class="c"><b>FedTelligence 2.0</b>contributing author on federal benefits</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Speaker Section -->
-<section class="sem-speaker" id="speakers">
-  <div class="sem-speaker-container">
-    <div class="sem-speaker-image-wrapper">
-      <div class="sem-speaker-image">
-        <img src="/assets/images/photos/federal/ann-werts-headshot.jpg" alt="Ann Werts">
+<!-- VENUE -->
+<section class="venue" aria-labelledby="venue-title">
+  <div class="grid">
+    <div class="card">
+      <div class="eb">Location · Logistics</div>
+      <h3 id="venue-title">Weber County Main Library</h3>
+      <p class="addr"><b>2464 Jefferson Avenue · Ogden, UT 84401</b><br/>On-site parking, no permit required. Arrive 10–15 minutes early to settle in.</p>
+      <div class="meta-rows">
+        <div class="r"><div class="k">Format</div><div class="v">In-person (not virtual)</div></div>
+        <div class="r"><div class="k">Cost</div><div class="v">Complimentary · No products sold</div></div>
+        <div class="r"><div class="k">Spouses</div><div class="v">Encouraged — retirement is a joint decision</div></div>
+        <div class="r"><div class="k">Audience</div><div class="v">FERS, CSRS, and CSRS Offset employees</div></div>
       </div>
     </div>
-    <div class="sem-speaker-details">
-      <span class="sem-eyebrow">Your Workshop Instructor</span>
-      <h2 class="sem-speaker-name">Ann Werts</h2>
-      <p class="sem-speaker-bio">
-        Ann has 15+ years of experience helping federal employees understand their benefits. Her expertise has provided education and guidance to thousands of government employees both while they're working and as they approach retirement.
-      </p>
-      <div style="display: flex; align-items: center; gap: 24px; margin: 24px 0;">
-        <img src="/assets/images/fedtelligence-book-cover.jpg" alt="FedTelligence 2.0" style="width: 120px; height: auto; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
-        <div>
-          <h4 style="margin: 0 0 8px 0; color: var(--primary); font-size: 18px; font-weight: 700;">Featured Resource</h4>
-          <p style="margin: 0; color: var(--slate-600); font-size: 16px; line-height: 1.4;"><strong>"FedTelligence 2.0"</strong><br>The ultimate guide to mastering your federal benefits</p>
-        </div>
-      </div>
-      <div class="sem-credentials-list">
-        <div class="sem-credential-item"><span class="sem-checkmark">✓</span><p class="sem-credential-text">15+ years federal benefits experience</p></div>
-        <div class="sem-credential-item"><span class="sem-checkmark">✓</span><p class="sem-credential-text">Assisted thousands of federal employees</p></div>
-        <div class="sem-credential-item"><span class="sem-checkmark">✓</span><p class="sem-credential-text">Federal benefits education specialist</p></div>
-        <div class="sem-credential-item"><span class="sem-checkmark">✓</span><p class="sem-credential-text">Featured in "FedTelligence 2.0"</p></div>
+    <div class="map">
+      <div class="eb">Maps · Directions</div>
+      <h3>Find the room.</h3>
+      <p>Main floor meeting room, signage at the entrance. We'll have coffee and water on the table.</p>
+      <div class="pin">
+        <span class="coords">41.2330° N, 111.9738° W</span>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Weber+County+Main+Library%2C+2464+Jefferson+Avenue%2C+Ogden%2C+UT+84401" target="_blank" rel="noopener">Open in Maps →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Venue Section -->
-<section class="sem-venue" id="venue">
-  <div class="sem-venue-container">
-    <div class="sem-venue-content">
-      <div class="sem-venue-details">
-        <span class="sem-eyebrow">Location &amp; Logistics</span>
-        <div class="sem-venue-header">
-          <div class="sem-venue-title-section">
-            <h3 class="sem-venue-title">Weber County Main Library <br><span class="sem-venue-title-light">Ogden, Utah</span></h3>
-          </div>
-        </div>
-        <div class="sem-venue-info">
-          <p class="sem-venue-item">
-            <svg class="sem-venue-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span><strong>2464 Jefferson Avenue, Ogden, UT 84401</strong></span>
-          </p>
-          <p class="sem-venue-item">
-            <svg class="sem-venue-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Tuesday, May 19, 2026
-          </p>
-          <p class="sem-venue-item">
-            <svg class="sem-venue-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-            4:30 PM – 6:30 PM
-          </p>
-          <p class="sem-venue-item">
-            <svg class="sem-venue-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-4"/><circle cx="8.5" cy="15.5" r="3.5"/><circle cx="18.5" cy="15.5" r="3.5"/></svg>
-            Free on-site parking — no permit required
-          </p>
-        </div>
-
-        <div class="sem-venue-links">
-          <h4>Maps &amp; Directions</h4>
-          <div class="sem-venue-links-grid">
-            <a href="https://www.google.com/maps/search/?api=1&query=Weber+County+Main+Library+2464+Jefferson+Ave+Ogden+UT" class="sem-venue-link" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Open in Google Maps
-            </a>
-          </div>
-        </div>
-
-        <div class="sem-training-details">
-          <span class="sem-eyebrow">Training Details</span>
-          <h3>Session Information</h3>
-          <div class="sem-training-details-grid">
-            <div class="sem-training-detail">
-              <svg class="sem-training-detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-              In-person session (not virtual)
-            </div>
-            <div class="sem-training-detail">
-              <svg class="sem-training-detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-              Arrive 10–15 minutes early
-            </div>
-            <div class="sem-training-detail">
-              <svg class="sem-training-detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-              Spouses &amp; partners encouraged to join
-            </div>
-            <div class="sem-training-detail">
-              <svg class="sem-training-detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
-              Business casual dress code
-            </div>
-          </div>
-          <div class="sem-capacity-warning">
-            Seats are limited — register early to guarantee your spot
-          </div>
-        </div>
-      </div>
+<!-- FAQ -->
+<section class="faq" aria-labelledby="faq-title">
+  <div class="inner">
+    <div>
+      <div class="eb">Frequently Asked</div>
+      <h2 id="faq-title">Quick clarifications.</h2>
     </div>
-
-    <div class="sem-registration-details">
-      <span class="sem-eyebrow">Registration Information</span>
-      <h3>What You Need to Know</h3>
-      <div class="sem-registration-details-list">
-        <div class="sem-registration-detail"><span class="sem-registration-detail-checkmark">✓</span><p class="sem-registration-detail-text">Attendance is free of charge</p></div>
-        <div class="sem-registration-detail"><span class="sem-registration-detail-checkmark">✓</span><p class="sem-registration-detail-text">Spouses/guests are encouraged to attend</p></div>
-        <div class="sem-registration-detail"><span class="sem-registration-detail-checkmark">✓</span><p class="sem-registration-detail-text">Built for FERS, CSRS, and CSRS Offset employees</p></div>
-        <div class="sem-registration-detail"><span class="sem-registration-detail-checkmark">✓</span><p class="sem-registration-detail-text">After the workshop, one-on-one help is available</p></div>
+    <div class="qa">
+      <div class="q">
+        <h4><span class="n" aria-hidden="true">Q1</span><span>Is this affiliated with OPM or my agency?</span></h4>
+        <p>No. This is independent fiduciary education — not limited by handbook scripts and not endorsed by any federal agency.</p>
+      </div>
+      <div class="q">
+        <h4><span class="n" aria-hidden="true">Q2</span><span>Will I be sold financial products?</span></h4>
+        <p>No products are offered or sold during the workshop. Period. If you want a one-on-one conversation afterward, that's your call.</p>
+      </div>
+      <div class="q">
+        <h4><span class="n" aria-hidden="true">Q3</span><span>Can I bring my spouse?</span></h4>
+        <p>Please do — we encourage it. Survivor elections, FEHB, and SS claiming are joint decisions, not solo ones.</p>
+      </div>
+      <div class="q">
+        <h4><span class="n" aria-hidden="true">Q4</span><span>I'm a 6c special-category employee (LEO, FF, ATC). Will the math apply to me?</span></h4>
+        <p>Yes — we'll cover where 6c rules diverge from standard FERS, including the mandatory retirement age and the supplement difference.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ Section -->
-<section class="sem-faq" id="faq">
-  <div class="sem-faq-container">
-    <h2 class="sem-faq-title">Frequently Asked Questions</h2>
-    <div class="sem-faq-list">
-      <div class="sem-faq-item">
-        <h4 class="sem-faq-question">Is this affiliated with OPM?</h4>
-        <p class="sem-faq-answer">No, this is an independent educational workshop. We provide non-biased, fiduciary guidance that is not limited by government handbook scripts.</p>
-      </div>
-      <div class="sem-faq-item">
-        <h4 class="sem-faq-question">Can I bring my spouse?</h4>
-        <p class="sem-faq-answer">Absolutely — we encourage it. Retirement is a joint decision, especially regarding FEHB, Survivor Benefits, and Social Security claiming.</p>
-      </div>
-      <div class="sem-faq-item">
-        <h4 class="sem-faq-question">Will I be sold financial products?</h4>
-        <p class="sem-faq-answer">This session is purely educational. No financial products will be offered or sold during the workshop. Our goal is clarity, not solicitation.</p>
-      </div>
-      <div class="sem-faq-item">
-        <h4 class="sem-faq-question">Where exactly is the venue?</h4>
-        <p class="sem-faq-answer">Weber County Main Library, 2464 Jefferson Avenue, Ogden, UT 84401. Free parking on-site.</p>
-      </div>
-    </div>
-    <div class="sem-final-cta">
-      <a class="sem-final-cta-btn" href="#register">Confirm Registration</a>
-      <p class="sem-final-cta-note">Federal Benefits Educational Workshop</p>
-    </div>
+<!-- CTA FOOT -->
+<section class="cta-foot" aria-labelledby="cta-title">
+  <div class="inner">
+    <div class="eb">★ ★ ★  Reserve Your Seat  ★ ★ ★</div>
+    <h2 id="cta-title">Two hours. Five systems. <em>One retirement.</em></h2>
+    <p>Limited seating. The math works the same whether you attend or not — but it's a lot easier to read once someone has done it for you.</p>
+    <a class="btn-red" href="#rsvp" data-cta="finale">Confirm Registration →</a>
   </div>
 </section>
+
+<!-- DISCLAIMER -->
+<div class="disc">
+  <div class="inner">
+    <b>Important:</b> Capital Wealth is not affiliated with or endorsed by the U.S. Government, Social Security Administration, Office of Personnel Management, or any federal agency. This is an independent educational workshop. All information presented is for educational purposes only and should not be considered official government guidance. Advisory services offered through Capital Wealth, LLC, a State of Utah Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC.
+  </div>
+</div>
 
 <script>
-window.__tyUrl = '/l/federal-benefits-workshop-ogden/ty/';
-window.__gaLabel = 'federal_workshop_ogden_may19';
-window.__metaContentName = 'Federal Workshop Ogden May 19';
+  (function () {
+    'use strict';
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Capture UTM + referrer on page load into hidden fields if present
-  (function(){
-    var p = new URLSearchParams(window.location.search);
-    ['utm_source','utm_medium','utm_content','utm_term'].forEach(function(k){
-      var el = document.getElementById(k);
-      if (el && p.get(k)) el.value = p.get(k);
-    });
-    var ref = document.getElementById('referrer');
-    if (ref) ref.value = document.referrer || '';
-  })();
-
-  var form = document.querySelector('#sem-registration-form');
-
-  // Conditional guest fields
-  var bringingGuestSelect = document.getElementById('bringing-guest');
-  var guestInfoDiv = document.getElementById('guest-info');
-  var guestFields = guestInfoDiv ? guestInfoDiv.querySelectorAll('input') : [];
-
-  if (bringingGuestSelect) {
-    bringingGuestSelect.addEventListener('change', function() {
-      if (this.value === 'yes') {
-        guestInfoDiv.style.display = 'block';
-        guestFields.forEach(function(field){ field.setAttribute('required', 'required'); });
-      } else {
-        guestInfoDiv.style.display = 'none';
-        guestFields.forEach(function(field){
-          field.removeAttribute('required');
-          field.value = '';
-        });
-      }
-    });
-  }
-
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      if (!validateForm()) return;
-
-      var formData = new FormData(form);
-      var data = {};
-      formData.forEach(function(value, key){ data[key] = value; });
-      // FormData omits unchecked boxes; explicitly set false so the API sees it.
-      if (!('special_category' in data)) data.special_category = false;
-
-      var submitBtn = form.querySelector('.sem-submit-btn');
-      submitBtn.textContent = 'Securing Your Registration...';
-      submitBtn.disabled = true;
-
-      fetch('/api/submit-lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      })
-      .then(function(response){ return response.json(); })
-      .then(function(result){
-        if (result.success) {
-          if (typeof gtag === 'function') {
-            gtag('event', 'generate_lead', {
-              event_category: 'lead',
-              event_label: window.__gaLabel || 'federal_workshop_registration',
-              value: 1
-            });
-          }
-          if (typeof fbq === 'function') {
-            fbq('track', 'Lead', {
-              content_name: window.__metaContentName || 'Federal Workshop Registration',
-              content_category: 'Federal Benefits'
-            });
-          }
-          window.location.href = window.__tyUrl;
-        } else {
-          submitBtn.textContent = 'Confirm Registration';
-          submitBtn.disabled = false;
-          alert('There was an error submitting your registration. Please try again.');
+    // Analytics shim — replace with site's existing tracker (gtag, segment, etc.)
+    function track(event, payload) {
+      try {
+        if (typeof window.dataLayer !== 'undefined') {
+          window.dataLayer.push(Object.assign({ event: event }, payload || {}));
         }
-      })
-      .catch(function(error){
-        submitBtn.textContent = 'Confirm Registration';
-        submitBtn.disabled = false;
-        console.error('Error:', error);
-        alert('There was an error submitting your registration. Please try again.');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', event, payload || {});
+        }
+      } catch (e) { /* swallow */ }
+    }
+
+    // CTA tracking
+    document.querySelectorAll('a.btn-red[data-cta]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        track('cta_click', { source: el.dataset.cta, page: 'ogden-may-2026' });
       });
     });
-  }
 
-  function validateForm() {
-    var requiredFields = form.querySelectorAll('[required]');
-    var isValid = true;
-    requiredFields.forEach(function(field){
-      field.classList.remove('error');
-      if (!String(field.value || '').trim()) {
-        field.classList.add('error');
-        field.style.borderColor = '#DC2626';
-        isValid = false;
-      } else {
-        field.style.borderColor = '';
-      }
-    });
-    return isValid;
-  }
+    // Guest progressive disclosure
+    var guestToggle = document.getElementById('guest-toggle');
+    var guestFields = document.getElementById('guest-fields');
+    if (guestToggle && guestFields) {
+      guestToggle.addEventListener('click', function () {
+        var expanded = guestToggle.getAttribute('aria-expanded') === 'true';
+        guestToggle.setAttribute('aria-expanded', String(!expanded));
+        if (expanded) {
+          guestFields.setAttribute('hidden', '');
+          guestToggle.textContent = 'Add their info →';
+        } else {
+          guestFields.removeAttribute('hidden');
+          guestToggle.textContent = 'Hide guest info';
+          var firstGuest = guestFields.querySelector('input');
+          if (firstGuest) firstGuest.focus();
+        }
+      });
+    }
 
-  document.querySelectorAll('a[href^="#"]').forEach(function(link){
-    link.addEventListener('click', function(e){
-      e.preventDefault();
-      var target = document.querySelector(this.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
-});
+    // Phone formatter — light touch, allows international too
+    var phoneInput = document.getElementById('f-phone');
+    if (phoneInput) {
+      phoneInput.addEventListener('input', function () {
+        var digits = phoneInput.value.replace(/\D/g, '').slice(0, 10);
+        if (digits.length === 10) {
+          phoneInput.value = '(' + digits.slice(0,3) + ') ' + digits.slice(3,6) + '-' + digits.slice(6);
+        } else if (digits.length >= 7) {
+          phoneInput.value = '(' + digits.slice(0,3) + ') ' + digits.slice(3,6) + '-' + digits.slice(6);
+        } else if (digits.length >= 4) {
+          phoneInput.value = '(' + digits.slice(0,3) + ') ' + digits.slice(3);
+        } else {
+          phoneInput.value = digits;
+        }
+      });
+    }
 
+    // Form validation + submission
+    var form = document.getElementById('rsvp-form');
+    var rsvpRoot = document.getElementById('rsvp');
+    var submitBtn = document.getElementById('rsvp-submit');
+    var banner = document.getElementById('form-banner');
+
+    function setError(input, hasError) {
+      var field = input.closest('.field');
+      if (!field) return;
+      field.classList.toggle('error', !!hasError);
+    }
+
+    function clearErrors() {
+      form.querySelectorAll('.field').forEach(function (f) { f.classList.remove('error'); });
+      rsvpRoot.classList.remove('has-error');
+    }
+
+    function validate() {
+      var first = document.getElementById('f-first');
+      var last  = document.getElementById('f-last');
+      var email = document.getElementById('f-email');
+      var phone = document.getElementById('f-phone');
+
+      var ok = true;
+      setError(first, !first.value.trim()); if (!first.value.trim()) ok = false;
+      setError(last,  !last.value.trim());  if (!last.value.trim())  ok = false;
+
+      var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+      setError(email, !emailOk); if (!emailOk) ok = false;
+
+      var phoneDigits = (phone.value || '').replace(/\D/g, '');
+      var phoneOk = phoneDigits.length === 10;
+      setError(phone, !phoneOk); if (!phoneOk) ok = false;
+
+      return ok;
+    }
+
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        clearErrors();
+
+        if (!validate()) {
+          rsvpRoot.classList.add('has-error');
+          banner.textContent = 'Please fix the highlighted fields and try again.';
+          var firstError = form.querySelector('.field.error input');
+          if (firstError) firstError.focus();
+          return;
+        }
+
+        submitBtn.setAttribute('disabled', '');
+        submitBtn.textContent = 'Reserving…';
+
+        try {
+          var qp = new URLSearchParams(window.location.search);
+          ['utm_source','utm_medium','utm_content','utm_term'].forEach(function (k) {
+            var el = document.getElementById(k);
+            if (el && qp.get(k)) el.value = qp.get(k);
+          });
+          var refEl = document.getElementById('referrer');
+          if (refEl) refEl.value = document.referrer || '';
+        } catch (_) {}
+
+        var data = new FormData(form);
+        var payload = {};
+        data.forEach(function (v, k) { payload[k] = v; });
+        payload.name = ((payload.firstName || '') + ' ' + (payload.lastName || '')).trim();
+
+        track('rsvp_submit', { source: 'federal-benefits-workshop-ogden' });
+
+        fetch('/api/submit-lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+        .then(function (r) { return r.json(); })
+        .then(function (result) {
+          if (result && result.success) {
+            if (typeof window.gtag === 'function') {
+              window.gtag('event', 'generate_lead', {
+                event_category: 'lead',
+                event_label: 'federal_workshop_ogden_may19',
+                value: 1
+              });
+            }
+            if (typeof window.fbq === 'function') {
+              window.fbq('track', 'Lead', {
+                content_name: 'Federal Workshop Ogden May 19',
+                content_category: 'Federal Benefits'
+              });
+            }
+            window.location.href = '/l/federal-benefits-workshop-ogden/ty/';
+          } else {
+            submitBtn.removeAttribute('disabled');
+            submitBtn.textContent = 'Confirm Registration';
+            rsvpRoot.classList.add('has-error');
+            banner.textContent = 'Something went wrong submitting your registration. Please try again, or call (801) 210-2800.';
+          }
+        })
+        .catch(function (err) {
+          submitBtn.removeAttribute('disabled');
+          submitBtn.textContent = 'Confirm Registration';
+          rsvpRoot.classList.add('has-error');
+          banner.textContent = 'Something went wrong submitting your registration. Please try again, or call (801) 210-2800.';
+          console.error('rsvp submit error:', err);
+        });
+      });
+
+      // Real-time error clearing
+      ['f-first','f-last','f-email','f-phone'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.addEventListener('input', function () {
+          var field = el.closest('.field');
+          if (field) field.classList.remove('error');
+        });
+      });
+    }
+  })();
 </script>
-
-<!-- Government / Federal Disclaimer -->
-<footer style="background: #f8f9fb; padding: 40px 20px; text-align: center; margin-top: 40px;">
-  <div style="max-width: 800px; margin: 0 auto;">
-    <p style="font-size: 14px; color: #6B7280; line-height: 1.6; margin: 0;">
-      <strong>Important Disclaimer:</strong> This educational workshop is not affiliated with or endorsed by the U.S. Government, Social Security Administration, Office of Personnel Management, or any federal agency. This is an independent educational event provided by Capital Wealth, a registered investment advisor. All information presented is for educational purposes only and should not be considered official government guidance.
-    </p>
-  </div>
-</footer>
 
     </main>
 
