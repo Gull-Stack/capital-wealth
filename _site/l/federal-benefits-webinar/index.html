@@ -651,12 +651,6 @@
     <!-- Government Contractor Bar — shown only on federal-oriented pages -->
     
     
-    <div class="gov-bar" style="background: var(--primary, #0A3161); padding: 0.5rem 0; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1);">
-      <div style="max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; font-family: var(--font-body); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; color: rgba(255,255,255,0.85);">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="18" height="10" style="vertical-align: -1px; margin-right: 0.35em; border-radius: 1px;"><clipPath id="t"><rect width="60" height="30"/></clipPath><g clip-path="url(#t)"><rect width="60" height="30" fill="#B31942"/><rect y="2.31" width="60" height="2.31" fill="#fff"/><rect y="6.92" width="60" height="2.31" fill="#fff"/><rect y="11.54" width="60" height="2.31" fill="#fff"/><rect y="16.15" width="60" height="2.31" fill="#fff"/><rect y="20.77" width="60" height="2.31" fill="#fff"/><rect y="25.38" width="60" height="2.31" fill="#fff"/><rect width="24" height="16.15" fill="#0A3161"/></g></svg>An Official Government Registered Contractor&ensp;|&ensp;Unique Entity ID/CAGE: <a href="https://cage.dla.mil/Search/Details?id=18320005" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.85); text-decoration: underline; text-underline-offset: 2px;">L63FVVWAKXA8 / 9LHS8</a>
-      </div>
-    </div>
-    
 
     <main>
         
@@ -666,8 +660,23 @@
 <style>
 /* === LAYOUT OVERRIDES — hide site chrome on this landing page === */
 .landing-page .finpay-header,
-.landing-page .finpay-footer { display: none !important; }
-.landing-page main { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+.landing-page .finpay-footer,
+.landing-page .cwh-shell,
+.landing-page #cwhShell,
+body > .gov-bar { display: none !important; }
+.landing-page main { padding: 0 !important; margin: 0 !important; max-width: none !important; text-align: left !important; }
+/* Force left-align on hero text (override any inherited centering) */
+.landing-page .hero,
+.landing-page .hero .left,
+.landing-page .hero .classif,
+.landing-page .hero h1,
+.landing-page .hero .deck,
+.landing-page .hero .cta-row { text-align: left !important; }
+/* CTA-finale needs explicit white — layout's global h2 color was winning */
+.landing-page .cta-foot,
+.landing-page .cta-foot h2 { color: #fff !important; }
+.landing-page .cta-foot p { color: rgba(255,255,255,0.72) !important; }
+.landing-page .cta-foot h2 em { color: var(--fed-gold) !important; }
 
   :root {
     /* Capital Wealth tokens (mirrors src/assets/css/main.css) */
@@ -1435,7 +1444,7 @@
 <!-- TOP BAR — Government Contractor banner -->
 <div class="gov-bar" role="region" aria-label="Government contractor registration">
   <div class="inner">
-    <span class="star" aria-hidden="true">★</span>
+    <span class="flag" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="11" focusable="false" style="display:block;border-radius:1px;"><clipPath id="govbar-flag-w"><rect width="60" height="30"/></clipPath><g clip-path="url(#govbar-flag-w)"><rect width="60" height="30" fill="#B31942"/><rect y="2.31" width="60" height="2.31" fill="#fff"/><rect y="6.92" width="60" height="2.31" fill="#fff"/><rect y="11.54" width="60" height="2.31" fill="#fff"/><rect y="16.15" width="60" height="2.31" fill="#fff"/><rect y="20.77" width="60" height="2.31" fill="#fff"/><rect y="25.38" width="60" height="2.31" fill="#fff"/><rect width="24" height="16.15" fill="#0A3161"/></g></svg></span>
     <span>An Official Government Registered Contractor</span>
     <span class="pipe" aria-hidden="true">|</span>
     <span>Unique ID: <span class="id">L63FVVWAKXA8</span></span>

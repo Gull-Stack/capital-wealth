@@ -3,6 +3,7 @@ layout: layouts/base-finpay.njk
 title: "Federal Benefits Workshop — Ogden, May 19, 2026 | Capital Wealth"
 description: "Complimentary 2-hour federal benefits workshop at Weber County Main Library, Ogden, UT. Tuesday, May 19, 2026, 4:30–6:30 PM. Covers FERS, TSP, FEHB, FEGLI, and Social Security with Ann Werts."
 bodyClass: "landing-page"
+hideGovBar: true
 ogImage: "/assets/images/photos/federal/american-flag-hero.jpg"
 ogImageAlt: "Federal Benefits Workshop — Ogden, May 19, 2026 with Ann Werts"
 extraSchema: |
@@ -56,8 +57,23 @@ faqSchema:
 <style>
 /* === LAYOUT OVERRIDES — hide site chrome on this landing page === */
 .landing-page .finpay-header,
-.landing-page .finpay-footer { display: none !important; }
-.landing-page main { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+.landing-page .finpay-footer,
+.landing-page .cwh-shell,
+.landing-page #cwhShell,
+body > .gov-bar { display: none !important; }
+.landing-page main { padding: 0 !important; margin: 0 !important; max-width: none !important; text-align: left !important; }
+/* Force left-align on hero text (override any inherited centering) */
+.landing-page .hero,
+.landing-page .hero .left,
+.landing-page .hero .classif,
+.landing-page .hero h1,
+.landing-page .hero .deck,
+.landing-page .hero .cta-row { text-align: left !important; }
+/* CTA-finale needs explicit white — layout's global h2 color was winning */
+.landing-page .cta-foot,
+.landing-page .cta-foot h2 { color: #fff !important; }
+.landing-page .cta-foot p { color: rgba(255,255,255,0.72) !important; }
+.landing-page .cta-foot h2 em { color: var(--fed-gold) !important; }
 
   :root {
     /* Capital Wealth tokens (mirrors src/assets/css/main.css) */
@@ -825,7 +841,7 @@ faqSchema:
 <!-- TOP BAR — Government Contractor banner -->
 <div class="gov-bar" role="region" aria-label="Government contractor registration">
   <div class="inner">
-    <span class="star" aria-hidden="true">★</span>
+    <span class="flag" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="11" focusable="false" style="display:block;border-radius:1px;"><clipPath id="govbar-flag-o"><rect width="60" height="30"/></clipPath><g clip-path="url(#govbar-flag-o)"><rect width="60" height="30" fill="#B31942"/><rect y="2.31" width="60" height="2.31" fill="#fff"/><rect y="6.92" width="60" height="2.31" fill="#fff"/><rect y="11.54" width="60" height="2.31" fill="#fff"/><rect y="16.15" width="60" height="2.31" fill="#fff"/><rect y="20.77" width="60" height="2.31" fill="#fff"/><rect y="25.38" width="60" height="2.31" fill="#fff"/><rect width="24" height="16.15" fill="#0A3161"/></g></svg></span>
     <span>An Official Government Registered Contractor</span>
     <span class="pipe" aria-hidden="true">|</span>
     <span>Unique ID: <span class="id">L63FVVWAKXA8</span></span>
