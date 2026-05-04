@@ -17,6 +17,43 @@ function isValidCampaignId(id) {
   return typeof id === 'string' && /^701[A-Za-z0-9]{12}([A-Za-z0-9]{3})?$/.test(id);
 }
 
+// Salesforce Web-to-Lead Field IDs for custom Lead fields.
+// Get these from Setup → Object Manager → Lead → Fields & Relationships → <field>
+// → "Web-to-Lead Field ID" attribute (or via Tooling API CustomField.Id).
+const SF_FIELD_ID_ARE_YOU_FEDERAL = '00NVS00000HcWuk2AF'; // Lead.Are_You_Federal__c
+
+// Federal Campaign IDs that imply Are_You_Federal=Yes when no explicit answer
+// is provided. Mirrors the Lead.Is_Federal__c formula on the SF side.
+const FEDERAL_CAMPAIGN_IDS = new Set([
+  '701VS00000dHgah',
+  '701VS00000dQ7Vd',
+  '701VS00000dtwD0',
+  '701VS00000dT09R',
+  '701VS00000dT06D',
+  '701VS00000dIBlY',
+]);
+
+// Resolve Are_You_Federal value from form data + URL path + campaign signal.
+// Returns 'Yes', 'No', 'Unknown', or null (don't send if null).
+function resolveAreYouFederal(leadData) {
+  // 1. Explicit form answer wins
+  if (leadData.are_you_federal === 'Yes' || leadData.are_you_federal === 'No' || leadData.are_you_federal === 'Unknown') {
+    return leadData.are_you_federal;
+  }
+  // 2. Federal webinar / federal-flagged form types
+  if (leadData.lead_type === 'federal-webinar-registration') return 'Yes';
+  // 3. Submitting page path — anything under /federal/* or /l/federal-* is a federal-channel form
+  const path = (leadData.submitted_from || '').toLowerCase();
+  if (/(?:^|\/)federal(?:-|\/|$)/i.test(path) || /\/l\/federal-/.test(path)) return 'Yes';
+  // 4. Campaign ID from one of the 6 known federal campaigns
+  const campaignId = (leadData.campaign_id || '').slice(0, 15);
+  if (FEDERAL_CAMPAIGN_IDS.has(campaignId)) return 'Yes';
+  // 5. Form sent an agency (the federal-webinar form collects this)
+  if (leadData.agency) return 'Yes';
+  // 6. No signal — leave it Unknown so the SF default takes effect
+  return null;
+}
+
 // LeadSource picklist values the form is allowed to set. Anything else falls
 // back to 'Website Form'. Keep in sync with the Lead.LeadSource picklist.
 const ALLOWED_LEAD_SOURCES = new Set([
@@ -85,6 +122,14 @@ async function syncToSalesforce(leadData) {
     params.append('Campaign_ID', campaignId);
     params.append('member_status', 'Responded');
     params.append('description', descParts.join('\n'));
+
+    // Federal tagging — Are_You_Federal__c picklist on Lead.
+    // Resolves from explicit form answer, /federal* URL path, federal Campaign ID,
+    // or presence of an agency field. Leaves Unknown when no signal.
+    const areYouFederal = resolveAreYouFederal(leadData);
+    if (areYouFederal) {
+      params.append(SF_FIELD_ID_ARE_YOU_FEDERAL, areYouFederal);
+    }
 
     const response = await fetch(
       'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
