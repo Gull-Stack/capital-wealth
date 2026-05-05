@@ -162,7 +162,11 @@ body > .gov-bar { display: none !important; }
   /* ============ HERO ============ */
   .hero {
     position: relative;
-    background: var(--fed-blue);
+    background-color: var(--fed-blue);
+    background-image: url('/assets/images/photos/federal/american-flag-hero.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
     color: #fff;
     padding: 56px 40px 64px;
     overflow: hidden;
@@ -171,8 +175,8 @@ body > .gov-bar { display: none !important; }
     content: "";
     position: absolute; inset: 0;
     background:
-      radial-gradient(ellipse at 75% 40%, rgba(87,166,251,0.18), transparent 60%),
-      linear-gradient(180deg, var(--fed-blue) 0%, var(--fed-blue-deep) 100%);
+      radial-gradient(ellipse at 75% 40%, rgba(87,166,251,0.18), transparent 55%),
+      linear-gradient(180deg, rgba(8,31,63,0.94) 0%, rgba(8,31,63,0.98) 100%);
     z-index: 0;
   }
   .hero::after {
