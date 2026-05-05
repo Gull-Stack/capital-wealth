@@ -166,16 +166,18 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Phone is required.' });
     }
 
-    // Federal webinar requires retirement_system + years_to_retirement server-side.
+    // Federal webinar: retirement_system + years_to_retirement are optional —
+    // the public form doesn't collect them. If the form ever sends them,
+    // validate the picklist values; otherwise let them through as null.
     const isFederalWebinar = lead_type === 'federal-webinar-registration';
     if (isFederalWebinar) {
       const allowedSystems = ['FERS', 'CSRS', 'CSRS-Offset', 'Unsure'];
       const allowedYears = ['lt-2', '2-5', '5-10', '10-plus', 'already-retired'];
-      if (!retirement_system || !allowedSystems.includes(retirement_system)) {
-        return res.status(400).json({ error: 'Retirement system is required.' });
+      if (retirement_system && !allowedSystems.includes(retirement_system)) {
+        return res.status(400).json({ error: 'Invalid retirement system.' });
       }
-      if (!years_to_retirement || !allowedYears.includes(years_to_retirement)) {
-        return res.status(400).json({ error: 'Years to retirement is required.' });
+      if (years_to_retirement && !allowedYears.includes(years_to_retirement)) {
+        return res.status(400).json({ error: 'Invalid years to retirement.' });
       }
     }
 
