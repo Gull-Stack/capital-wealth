@@ -1327,6 +1327,18 @@ body > .gov-bar { display: none !important; }
                 content_category: 'Federal Benefits'
               });
             }
+            // Stash the personalized Zoom join URL so the TY page can render
+            // a per-registrant "Join the Webinar" button. sessionStorage is
+            // tab-scoped and clears on browser close — the email is the
+            // durable record, this is just for the immediate hand-off.
+            try {
+              if (result.join_url) {
+                sessionStorage.setItem('cw_zoom_join_url', result.join_url);
+              }
+              if (result.registrant_id) {
+                sessionStorage.setItem('cw_zoom_registrant_id', result.registrant_id);
+              }
+            } catch (_) {}
             window.location.href = '/l/federal-benefits-webinar/ty/';
           } else {
             submitBtn.removeAttribute('disabled');

@@ -12,6 +12,72 @@ const SF_OID = process.env.SALESFORCE_OID || '00DDm0000011JUMMA2';
 // Default Campaign ID used when the form does not send one.
 const SF_DEFAULT_CAMPAIGN_ID = '701VS00000dB91aYAC'; // Website Form 2026
 
+// Zoom Server-to-Server OAuth config (federal webinar registration)
+const ZOOM_ACCOUNT_ID = process.env.ZOOM_ACCOUNT_ID;
+const ZOOM_CLIENT_ID = process.env.ZOOM_CLIENT_ID;
+const ZOOM_CLIENT_SECRET = process.env.ZOOM_CLIENT_SECRET;
+const ZOOM_WEBINAR_ID = process.env.ZOOM_WEBINAR_ID;
+
+async function getZoomAccessToken() {
+  if (!ZOOM_ACCOUNT_ID || !ZOOM_CLIENT_ID || !ZOOM_CLIENT_SECRET) return null;
+  const basic = Buffer.from(`${ZOOM_CLIENT_ID}:${ZOOM_CLIENT_SECRET}`).toString('base64');
+  const response = await fetch(
+    `https://zoom.us/oauth/token?grant_type=account_credentials&account_id=${encodeURIComponent(ZOOM_ACCOUNT_ID)}`,
+    { method: 'POST', headers: { 'Authorization': `Basic ${basic}` } }
+  );
+  if (!response.ok) {
+    const detail = await response.text().catch(() => '');
+    throw new Error(`Zoom token failed (${response.status}): ${detail}`);
+  }
+  const json = await response.json();
+  return json.access_token;
+}
+
+// Register an attendee on the configured Zoom webinar. Returns
+// { registrant_id, join_url } on success, or null on misconfiguration / error.
+// Errors are logged but do not block the rest of the lead flow.
+async function registerZoomWebinarAttendee({ email, first_name, last_name, phone }) {
+  if (!ZOOM_WEBINAR_ID) {
+    console.warn('Zoom webinar ID not configured — skipping registration.');
+    return null;
+  }
+  try {
+    const token = await getZoomAccessToken();
+    if (!token) {
+      console.warn('Zoom credentials not configured — skipping registration.');
+      return null;
+    }
+    const response = await fetch(
+      `https://api.zoom.us/v2/webinars/${encodeURIComponent(ZOOM_WEBINAR_ID)}/registrants`,
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          first_name: first_name || '',
+          last_name: last_name || '',
+          phone: phone || undefined,
+        }),
+      }
+    );
+    if (!response.ok) {
+      const detail = await response.text().catch(() => '');
+      throw new Error(`Zoom registrant create failed (${response.status}): ${detail}`);
+    }
+    const json = await response.json();
+    return {
+      registrant_id: json.registrant_id || json.id || null,
+      join_url: json.join_url || null,
+    };
+  } catch (e) {
+    console.error('Zoom registration failed:', e.message);
+    return null;
+  }
+}
+
 // Validate a Salesforce Campaign Id (15 or 18 chars, must start with "701").
 function isValidCampaignId(id) {
   return typeof id === 'string' && /^701[A-Za-z0-9]{12}([A-Za-z0-9]{3})?$/.test(id);
@@ -60,6 +126,10 @@ async function syncToSalesforce(leadData) {
     // `special_category__c` custom field exists on the SF Lead object, swap this
     // to a real Web-to-Lead field POST instead of stuffing it into description.
     if (leadData.special_category === true) descParts.push(`Special Category (6c): YES`);
+    // Zoom registration (webinar leads only — until custom Lead fields exist
+    // for `zoom_registrant_id__c` / `zoom_join_url__c`, dump into description).
+    if (leadData.zoom_registrant_id) descParts.push(`Zoom Registrant ID: ${leadData.zoom_registrant_id}`);
+    if (leadData.zoom_join_url) descParts.push(`Zoom Join URL: ${leadData.zoom_join_url}`);
 
     // Campaign routing: form can pass `campaign_id` via hidden input; otherwise
     // fall back to the site-wide default. Invalid values are discarded.
@@ -297,6 +367,25 @@ export default async function handler(req, res) {
       }
     }
 
+    // Federal webinar: register the attendee on Zoom BEFORE SF sync so the
+    // join_url + registrant_id flow through to the Lead's description. We
+    // await this — if it fails we log and continue (lead is still captured),
+    // but we want the join_url in the SF record and confirmation email when
+    // the call succeeds.
+    let zoomRegistration = null;
+    if (isFederalWebinar) {
+      zoomRegistration = await registerZoomWebinarAttendee({
+        email: leadData.email,
+        first_name: leadData.first_name,
+        last_name: leadData.last_name,
+        phone: leadData.phone,
+      });
+      if (zoomRegistration) {
+        leadData.zoom_registrant_id = zoomRegistration.registrant_id;
+        leadData.zoom_join_url = zoomRegistration.join_url;
+      }
+    }
+
     // Sync to Salesforce Web-to-Lead (fire-and-forget, don't block on failure)
     syncToSalesforce(leadData).catch(err => console.error('Salesforce sync error:', err.message));
 
@@ -381,7 +470,15 @@ export default async function handler(req, res) {
                 <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Platform:</strong> Zoom Webinars (no Zoom account required)</p>
                 <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Instructor:</strong> Ann Werts</p>
               </div>
+              ${zoomRegistration && zoomRegistration.join_url ? `
+              <div style="background: #16253C; color: #fff; padding: 18px 20px; border-radius: 8px; margin: 0 0 24px; text-align: center;">
+                <p style="margin: 0 0 12px 0; color: #FDD25E; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;">Your Unique Zoom Join Link</p>
+                <a href="${zoomRegistration.join_url}" style="display: inline-block; background: #FDD25E; color: #0F1A2A; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 700;">Join the Webinar →</a>
+                <p style="margin: 12px 0 0 0; color: rgba(255,255,255,0.72); font-size: 12px; line-height: 1.5;">Save this email — we'll also send a reminder the morning of May 14 with the same link.</p>
+              </div>
+              ` : `
               <p style="font-size: 15px; color: #4b5563; line-height: 1.65;">We'll send a reminder 3 days out and your unique Zoom join link the morning of May 14. If you can't attend live, the full replay will be emailed to you within 48 hours.</p>
+              `}
               <div style="background: #16253C; color: #fff; padding: 18px 20px; border-radius: 8px; margin: 24px 0; text-align: center;">
                 <p style="margin: 0 0 12px 0; color: #FDD25E; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase;">Optional Next Step</p>
                 <p style="margin: 0 0 14px 0; color: #fff; font-size: 15px; line-height: 1.5;">Want Ann's team to apply this to your specific FERS / TSP / FEHB numbers? Book a complimentary Federal Retirement Money Map.</p>
@@ -761,6 +858,11 @@ export default async function handler(req, res) {
     return res.status(200).json({
       success: true,
       message: "Thank you! We'll contact you within one business day to schedule your consultation.",
+      // Federal webinar leads get a unique Zoom join_url + registrant_id from
+      // the Zoom Webinars API. The TY page reads `join_url` from sessionStorage
+      // to render the personalized "Join the Webinar" button.
+      join_url: zoomRegistration?.join_url || null,
+      registrant_id: zoomRegistration?.registrant_id || null,
     });
 
   } catch (error) {

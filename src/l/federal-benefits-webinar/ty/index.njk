@@ -222,22 +222,23 @@ permalink: "/l/federal-benefits-webinar/ty/"
         Add to Calendar (.ics)
       </a>
 
-      {% if webinar.may14FederalBenefits.zoomUrl %}
-      <a href="{{ webinar.may14FederalBenefits.zoomUrl }}" target="_blank" rel="noopener" class="ty-action-btn">
+      {# Personalized Zoom join link (rendered by JS from sessionStorage when
+         the form returns a per-registrant URL). Server-rendered fallback
+         shows the static webinar URL if configured, else a "pending"
+         message that the link is in the confirmation email. #}
+      <a id="ty-zoom-join-link" href="{{ webinar.may14FederalBenefits.zoomUrl or '#' }}" target="_blank" rel="noopener" class="ty-action-btn"{% if not webinar.may14FederalBenefits.zoomUrl %} hidden{% endif %}>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polygon points="23 7 16 12 23 17 23 7"/>
           <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
         </svg>
-        Save Zoom Join Link
+        <span id="ty-zoom-join-label">Save Zoom Join Link</span>
       </a>
-      {% else %}
-      <span class="ty-zoom-pending">
+      <span id="ty-zoom-pending" class="ty-zoom-pending"{% if webinar.may14FederalBenefits.zoomUrl %} hidden{% endif %}>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
           <circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/>
         </svg>
         Zoom join link emailed before the event
       </span>
-      {% endif %}
     </div>
   </div>
 </section>
@@ -315,5 +316,23 @@ permalink: "/l/federal-benefits-webinar/ty/"
         event_label: 'federal_webinar_may14'
       });
     }
+
+    // Surface the per-registrant Zoom join URL stashed by the form.
+    // Stays a no-op when the page is opened directly (no sessionStorage
+    // entry) — the static fallback then handles the rendering.
+    try {
+      var joinUrl = sessionStorage.getItem('cw_zoom_join_url');
+      if (joinUrl) {
+        var link = document.getElementById('ty-zoom-join-link');
+        var label = document.getElementById('ty-zoom-join-label');
+        var pending = document.getElementById('ty-zoom-pending');
+        if (link) {
+          link.setAttribute('href', joinUrl);
+          link.removeAttribute('hidden');
+        }
+        if (label) label.textContent = 'Join the Webinar';
+        if (pending) pending.setAttribute('hidden', '');
+      }
+    } catch (_) {}
   })();
 </script>
