@@ -144,11 +144,23 @@ async function syncToSalesforce(leadData) {
       ? 'Webinar'
       : (ALLOWED_LEAD_SOURCES.has(leadData.lead_source) ? leadData.lead_source : 'Website Form');
 
+    // Salesforce Lead.Company is a REQUIRED standard field. Without it, the
+    // Web-to-Lead POST returns 200 OK but silently drops the Lead. Derive a
+    // sensible value from what the form gave us; never leave this blank.
+    const isFederalLead = isWebinarLead
+      || leadData.lead_type === 'federal-workshop-registration'
+      || (leadData.lead_type && leadData.lead_type.startsWith('10things-'))
+      || leadData.landing_page === '10-things-federal-retirement';
+    const company = leadData.agency
+      || leadData.employer
+      || (isFederalLead ? 'Federal Employee (Pending Qualification)' : 'Pending Qualification');
+
     const params = new URLSearchParams();
     params.append('oid', SF_OID);
     params.append('retURL', 'https://capitalwealth.com/');
     params.append('first_name', firstName);
     params.append('last_name', lastName);
+    params.append('company', company);
     params.append('email', leadData.email || '');
     params.append('phone', leadData.phone || '');
     params.append('lead_source', leadSource);
