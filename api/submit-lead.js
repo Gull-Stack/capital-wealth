@@ -7,10 +7,49 @@ const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
 const SALES_EMAIL = process.env.SITE_EMAIL || 'info@capitalwealth.com';
 const FROM_EMAIL = process.env.FROM_EMAIL || 'leads@gullstack.com';
 
-// Salesforce Web-to-Lead config
-const SF_OID = process.env.SALESFORCE_OID || '00DDm0000011JUMMA2';
+// Salesforce REST API config (OAuth refresh-token flow). Replaces the legacy
+// Web-to-Lead servlet, which silently dropped submissions on validation/trigger
+// failures with no error visibility — broken silently for ~16 days in 2026-04
+// before this rewrite. REST API surfaces 4xx/5xx and lets us upsert by email.
+const SF_CLIENT_ID = process.env.SF_CLIENT_ID;
+const SF_REFRESH_TOKEN = process.env.SF_REFRESH_TOKEN;
+const SF_INSTANCE_URL = process.env.SF_INSTANCE_URL || 'https://capitalwealth.my.salesforce.com';
+const SF_LOGIN_URL = process.env.SF_LOGIN_URL || 'https://login.salesforce.com';
+const SF_API_VERSION = 'v62.0';
 // Default Campaign ID used when the form does not send one.
 const SF_DEFAULT_CAMPAIGN_ID = '701VS00000dB91aYAC'; // Website Form 2026
+
+// Warm-function token cache. Refresh tokens never expire; access tokens TTL ~2h.
+let cachedSfToken = null;
+let cachedSfTokenExpiresAt = 0;
+
+async function getSFAccessToken() {
+  if (cachedSfToken && Date.now() < cachedSfTokenExpiresAt) return cachedSfToken;
+  if (!SF_CLIENT_ID || !SF_REFRESH_TOKEN) {
+    throw new Error('SF_CLIENT_ID or SF_REFRESH_TOKEN env var missing');
+  }
+  const params = new URLSearchParams();
+  params.append('grant_type', 'refresh_token');
+  params.append('client_id', SF_CLIENT_ID);
+  params.append('refresh_token', SF_REFRESH_TOKEN);
+  const r = await fetch(`${SF_LOGIN_URL}/services/oauth2/token`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: params.toString(),
+  });
+  if (!r.ok) {
+    throw new Error(`SF token refresh failed: ${r.status} ${await r.text()}`);
+  }
+  const j = await r.json();
+  cachedSfToken = { accessToken: j.access_token, instanceUrl: j.instance_url || SF_INSTANCE_URL };
+  cachedSfTokenExpiresAt = Date.now() + 90 * 60 * 1000;
+  return cachedSfToken;
+}
+
+// SOQL string-literal escape — backslashes and single quotes only.
+function sfEscape(s) {
+  return String(s || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+}
 
 // Zoom Server-to-Server OAuth config (federal webinar registration)
 const ZOOM_ACCOUNT_ID = process.env.ZOOM_ACCOUNT_ID;
@@ -93,94 +132,137 @@ const ALLOWED_LEAD_SOURCES = new Set([
 ]);
 
 async function syncToSalesforce(leadData) {
-  try {
-    // Split name into first/last
-    const nameParts = (leadData.name || '').trim().split(/\s+/);
-    const firstName = nameParts[0] || '';
-    const lastName = nameParts.slice(1).join(' ') || nameParts[0] || '';
+  // Split name into first/last
+  const nameParts = (leadData.name || '').trim().split(/\s+/);
+  const firstName = nameParts[0] || '';
+  const lastName = nameParts.slice(1).join(' ') || nameParts[0] || '';
 
-    // Build description from all extra fields
-    const descParts = [];
-    if (leadData.savings) descParts.push(`Savings: ${leadData.savings}`);
-    if (leadData.retirement_timeline) descParts.push(`Timeline: ${leadData.retirement_timeline}`);
-    if (leadData.message) descParts.push(`Questions: ${leadData.message}`);
-    if (leadData.submitted_from) descParts.push(`Page: ${leadData.submitted_from}`);
-    if (leadData.utm_source) descParts.push(`UTM Source: ${leadData.utm_source}`);
-    if (leadData.utm_medium) descParts.push(`UTM Medium: ${leadData.utm_medium}`);
-    if (leadData.utm_campaign) descParts.push(`UTM Campaign: ${leadData.utm_campaign}`);
-    if (leadData.utm_content) descParts.push(`UTM Content: ${leadData.utm_content}`);
-    if (leadData.utm_term) descParts.push(`UTM Term: ${leadData.utm_term}`);
-    if (leadData.referrer) descParts.push(`Referrer: ${leadData.referrer}`);
-    // Federal webinar (May 14, 2026) extras — until custom Lead fields are
-    // mapped in Web-to-Lead, dump these into description so nothing is lost.
-    if (leadData.retirement_system) descParts.push(`Retirement System: ${leadData.retirement_system}`);
-    if (leadData.years_to_retirement) descParts.push(`Years to Retirement: ${leadData.years_to_retirement}`);
-    if (leadData.agency) descParts.push(`Federal Agency: ${leadData.agency}`);
-    if (leadData.bringing_guest) descParts.push(`Bringing Guest: ${leadData.bringing_guest}`);
-    if (leadData.guest_first_name || leadData.guest_last_name || leadData.guest_email) {
-      const guestName = [leadData.guest_first_name, leadData.guest_last_name].filter(Boolean).join(' ');
-      descParts.push(`Guest: ${guestName || '—'}${leadData.guest_email ? ` <${leadData.guest_email}>` : ''}`);
-    }
-    if (leadData.event_date) descParts.push(`Event Date: ${leadData.event_date}`);
-    // Special category (6c / LEO / Firefighter / ATC). Once the
-    // `special_category__c` custom field exists on the SF Lead object, swap this
-    // to a real Web-to-Lead field POST instead of stuffing it into description.
-    if (leadData.special_category === true) descParts.push(`Special Category (6c): YES`);
-    // Zoom registration (webinar leads only — until custom Lead fields exist
-    // for `zoom_registrant_id__c` / `zoom_join_url__c`, dump into description).
-    if (leadData.zoom_registrant_id) descParts.push(`Zoom Registrant ID: ${leadData.zoom_registrant_id}`);
-    if (leadData.zoom_join_url) descParts.push(`Zoom Join URL: ${leadData.zoom_join_url}`);
-
-    // Campaign routing: form can pass `campaign_id` via hidden input; otherwise
-    // fall back to the site-wide default. Invalid values are discarded.
-    const campaignId = isValidCampaignId(leadData.campaign_id)
-      ? leadData.campaign_id
-      : SF_DEFAULT_CAMPAIGN_ID;
-
-    // Federal webinar submissions always set LeadSource = 'Webinar' regardless
-    // of what the form sends, per CMO requirement.
-    const isWebinarLead = leadData.lead_type === 'federal-webinar-registration';
-    const leadSource = isWebinarLead
-      ? 'Webinar'
-      : (ALLOWED_LEAD_SOURCES.has(leadData.lead_source) ? leadData.lead_source : 'Website Form');
-
-    // Salesforce Lead.Company is a REQUIRED standard field. Without it, the
-    // Web-to-Lead POST returns 200 OK but silently drops the Lead. Derive a
-    // sensible value from what the form gave us; never leave this blank.
-    const isFederalLead = isWebinarLead
-      || leadData.lead_type === 'federal-workshop-registration'
-      || (leadData.lead_type && leadData.lead_type.startsWith('10things-'))
-      || leadData.landing_page === '10-things-federal-retirement';
-    const company = leadData.agency
-      || leadData.employer
-      || (isFederalLead ? 'Federal Employee (Pending Qualification)' : 'Pending Qualification');
-
-    const params = new URLSearchParams();
-    params.append('oid', SF_OID);
-    params.append('retURL', 'https://capitalwealth.com/');
-    params.append('first_name', firstName);
-    params.append('last_name', lastName);
-    params.append('company', company);
-    params.append('email', leadData.email || '');
-    params.append('phone', leadData.phone || '');
-    params.append('lead_source', leadSource);
-    params.append('Campaign_ID', campaignId);
-    params.append('member_status', 'Responded');
-    params.append('description', descParts.join('\n'));
-
-    const response = await fetch(
-      'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8',
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: params.toString(),
-      }
-    );
-    return response.ok;
-  } catch (e) {
-    console.error('Salesforce Web-to-Lead sync failed:', e.message);
-    return false;
+  // Build description from all extra fields
+  const descParts = [];
+  if (leadData.savings) descParts.push(`Savings: ${leadData.savings}`);
+  if (leadData.retirement_timeline) descParts.push(`Timeline: ${leadData.retirement_timeline}`);
+  if (leadData.message) descParts.push(`Questions: ${leadData.message}`);
+  if (leadData.submitted_from) descParts.push(`Page: ${leadData.submitted_from}`);
+  if (leadData.utm_source) descParts.push(`UTM Source: ${leadData.utm_source}`);
+  if (leadData.utm_medium) descParts.push(`UTM Medium: ${leadData.utm_medium}`);
+  if (leadData.utm_campaign) descParts.push(`UTM Campaign: ${leadData.utm_campaign}`);
+  if (leadData.utm_content) descParts.push(`UTM Content: ${leadData.utm_content}`);
+  if (leadData.utm_term) descParts.push(`UTM Term: ${leadData.utm_term}`);
+  if (leadData.referrer) descParts.push(`Referrer: ${leadData.referrer}`);
+  if (leadData.retirement_system) descParts.push(`Retirement System: ${leadData.retirement_system}`);
+  if (leadData.years_to_retirement) descParts.push(`Years to Retirement: ${leadData.years_to_retirement}`);
+  if (leadData.agency) descParts.push(`Federal Agency: ${leadData.agency}`);
+  if (leadData.bringing_guest) descParts.push(`Bringing Guest: ${leadData.bringing_guest}`);
+  if (leadData.guest_first_name || leadData.guest_last_name || leadData.guest_email) {
+    const guestName = [leadData.guest_first_name, leadData.guest_last_name].filter(Boolean).join(' ');
+    descParts.push(`Guest: ${guestName || '—'}${leadData.guest_email ? ` <${leadData.guest_email}>` : ''}`);
   }
+  if (leadData.event_date) descParts.push(`Event Date: ${leadData.event_date}`);
+  if (leadData.special_category === true) descParts.push(`Special Category (6c): YES`);
+  if (leadData.zoom_registrant_id) descParts.push(`Zoom Registrant ID: ${leadData.zoom_registrant_id}`);
+  if (leadData.zoom_join_url) descParts.push(`Zoom Join URL: ${leadData.zoom_join_url}`);
+
+  // Campaign routing
+  const campaignId = isValidCampaignId(leadData.campaign_id)
+    ? leadData.campaign_id
+    : SF_DEFAULT_CAMPAIGN_ID;
+
+  // Federal webinar submissions always set LeadSource = 'Webinar' per CMO requirement.
+  const isWebinarLead = leadData.lead_type === 'federal-webinar-registration';
+  const leadSource = isWebinarLead
+    ? 'Webinar'
+    : (ALLOWED_LEAD_SOURCES.has(leadData.lead_source) ? leadData.lead_source : 'Website Form');
+
+  // Lead.Company is required.
+  const isFederalLead = isWebinarLead
+    || leadData.lead_type === 'federal-workshop-registration'
+    || (leadData.lead_type && leadData.lead_type.startsWith('10things-'))
+    || leadData.landing_page === '10-things-federal-retirement';
+  const company = leadData.agency
+    || leadData.employer
+    || (isFederalLead ? 'Federal Employee (Pending Qualification)' : 'Pending Qualification');
+
+  const email = (leadData.email || '').trim().toLowerCase();
+  const description = descParts.join('\n');
+
+  const { accessToken, instanceUrl } = await getSFAccessToken();
+  const headers = { 'Authorization': `Bearer ${accessToken}`, 'Content-Type': 'application/json' };
+  const API = `${instanceUrl}/services/data/${SF_API_VERSION}`;
+
+  // Look up existing unconverted Lead by email — drives upsert behavior so the
+  // `Lead - Web to Lead Upsert` flow's silent merge-and-delete becomes a no-op.
+  let leadId = null;
+  let isNew = false;
+  if (email) {
+    const q = `SELECT Id, Phone, Description, Campaign__c FROM Lead WHERE Email='${sfEscape(email)}' AND IsConverted=false ORDER BY CreatedDate DESC LIMIT 1`;
+    const lookupResp = await fetch(`${API}/query/?q=${encodeURIComponent(q)}`, { headers });
+    if (lookupResp.ok) {
+      const j = await lookupResp.json();
+      if (j.records && j.records.length > 0) {
+        const existing = j.records[0];
+        leadId = existing.Id;
+        // Append fresh description to preserve prior context; only fill blank fields.
+        const updates = {};
+        if (description) {
+          const stamp = new Date().toISOString().slice(0, 19) + 'Z';
+          updates.Description = existing.Description
+            ? `${existing.Description}\n\n--- ${stamp} re-engagement ---\n${description}`
+            : description;
+        }
+        if (!existing.Phone && leadData.phone) updates.Phone = leadData.phone;
+        if (!existing.Campaign__c && campaignId) updates.Campaign__c = campaignId;
+        if (Object.keys(updates).length > 0) {
+          const pr = await fetch(`${API}/sobjects/Lead/${leadId}`, {
+            method: 'PATCH', headers, body: JSON.stringify(updates),
+          });
+          if (!pr.ok) {
+            throw new Error(`Lead update failed: ${pr.status} ${await pr.text()}`);
+          }
+        }
+      }
+    }
+  }
+
+  if (!leadId) {
+    const leadBody = {
+      FirstName: firstName || null,
+      LastName: lastName || 'Unknown',
+      Email: email || null,
+      Phone: leadData.phone || null,
+      Company: company,
+      LeadSource: leadSource,
+      Campaign__c: campaignId,
+      Description: description || null,
+    };
+    const ir = await fetch(`${API}/sobjects/Lead`, {
+      method: 'POST', headers, body: JSON.stringify(leadBody),
+    });
+    if (!ir.ok) {
+      throw new Error(`Lead insert failed: ${ir.status} ${await ir.text()}`);
+    }
+    leadId = (await ir.json()).id;
+    isNew = true;
+  }
+
+  // CampaignMember — idempotent: skip if already linked to this campaign.
+  if (campaignId && leadId) {
+    const cmQ = `SELECT Id FROM CampaignMember WHERE LeadId='${leadId}' AND CampaignId='${campaignId}' LIMIT 1`;
+    const cmCheck = await fetch(`${API}/query/?q=${encodeURIComponent(cmQ)}`, { headers });
+    const cmJson = await cmCheck.json();
+    if ((cmJson.records || []).length === 0) {
+      const cmResp = await fetch(`${API}/sobjects/CampaignMember`, {
+        method: 'POST', headers,
+        body: JSON.stringify({ LeadId: leadId, CampaignId: campaignId, Status: 'Responded' }),
+      });
+      if (!cmResp.ok) {
+        // Non-fatal — log but don't block the Lead. Most common cause is the
+        // Campaign lacking the requested Status value.
+        console.warn(`CampaignMember create failed (non-fatal): ${cmResp.status} ${await cmResp.text()}`);
+      }
+    }
+  }
+
+  return { leadId, isNew };
 }
 
 async function sendEmail({ to, from, fromName, subject, html, replyTo, cc }) {
@@ -398,8 +480,17 @@ export default async function handler(req, res) {
       }
     }
 
-    // Sync to Salesforce Web-to-Lead (fire-and-forget, don't block on failure)
-    syncToSalesforce(leadData).catch(err => console.error('Salesforce sync error:', err.message));
+    // Sync to Salesforce REST API. Awaited so we know the outcome and can
+    // surface a real sf_lead_id (vs. the legacy fire-and-forget Web-to-Lead
+    // servlet that silently dropped failures).
+    let sfResult = { leadId: null, isNew: false };
+    let sfError = null;
+    try {
+      sfResult = await syncToSalesforce(leadData);
+    } catch (e) {
+      sfError = e.message;
+      console.error('SF sync FAILED for', leadData.email, '—', e.message);
+    }
 
     if (SENDGRID_API_KEY) {
       // Federal Workshop specific email template
@@ -875,6 +966,10 @@ export default async function handler(req, res) {
       // to render the personalized "Join the Webinar" button.
       join_url: zoomRegistration?.join_url || null,
       registrant_id: zoomRegistration?.registrant_id || null,
+      sf_lead_id: sfResult.leadId,
+      sf_lead_is_new: sfResult.isNew,
+      sf_synced: !sfError,
+      ...(sfError ? { sf_error: sfError } : {}),
     });
 
   } catch (error) {
