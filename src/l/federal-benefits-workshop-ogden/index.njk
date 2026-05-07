@@ -222,26 +222,34 @@ body > .gov-bar { display: none !important; }
     margin: 0 0 32px;
   }
   .hero .docket {
-    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px;
-    border-top: 1px solid rgba(255,255,255,0.18);
-    border-bottom: 1px solid rgba(255,255,255,0.18);
-    padding: 22px 0;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0;
+    background: var(--fed-cream);
+    border: 1px solid rgba(232,199,126,0.45);
+    border-left: 4px solid var(--fed-gold);
+    border-radius: var(--radius);
+    padding: 22px 4px;
     margin-bottom: 32px;
+    box-shadow: 0 14px 36px rgba(0,0,0,0.32);
   }
+  .hero .docket .item {
+    padding: 4px 24px;
+    border-right: 1px solid rgba(10,49,97,0.12);
+  }
+  .hero .docket .item:last-child { border-right: 0; }
   .hero .docket .item .lab {
-    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
-    color: rgba(255,255,255,0.55);
-    margin-bottom: 6px;
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-red); font-weight: 700;
+    margin-bottom: 8px;
   }
   .hero .docket .item .val {
-    font-family: var(--font-display); font-weight: 400;
-    font-size: 22px; line-height: 1.15;
-    color: #fff;
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 28px; line-height: 1.1; letter-spacing: -0.01em;
+    color: var(--fed-blue);
   }
   .hero .docket .item .val small {
-    display: block; font-family: var(--font-sans);
-    font-size: 12px; color: rgba(255,255,255,0.65);
-    margin-top: 3px; letter-spacing: 0;
+    display: block; font-family: var(--font-sans); font-weight: 500;
+    font-size: 12px; color: var(--cw-stone-700);
+    margin-top: 6px; letter-spacing: 0.02em;
   }
 
   .hero .cta-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
@@ -792,8 +800,10 @@ body > .gov-bar { display: none !important; }
     .hero::after { right: 20px; top: 20px; }
     .hero h1 { font-size: 40px; }
     .hero .deck { font-size: 16px; }
-    .hero .docket { grid-template-columns: 1fr; gap: 16px; }
-    .hero .docket .item .val { font-size: 20px; }
+    .hero .docket { grid-template-columns: 1fr; gap: 0; padding: 8px 4px; }
+    .hero .docket .item { padding: 14px 20px; border-right: 0; border-bottom: 1px solid rgba(10,49,97,0.12); }
+    .hero .docket .item:last-child { border-bottom: 0; }
+    .hero .docket .item .val { font-size: 22px; }
 
     .targeting { padding: 20px; }
     .targeting .inner { gap: 16px; }
