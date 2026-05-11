@@ -194,7 +194,7 @@ async function syncToSalesforce(leadData) {
   let leadId = null;
   let isNew = false;
   if (email) {
-    const q = `SELECT Id, Phone, Description, Campaign__c FROM Lead WHERE Email='${sfEscape(email)}' AND IsConverted=false ORDER BY CreatedDate DESC LIMIT 1`;
+    const q = `SELECT Id, Phone, Description, Campaign__c, How_did_you_hear_about_us__c FROM Lead WHERE Email='${sfEscape(email)}' AND IsConverted=false ORDER BY CreatedDate DESC LIMIT 1`;
     const lookupResp = await fetch(`${API}/query/?q=${encodeURIComponent(q)}`, { headers });
     if (lookupResp.ok) {
       const j = await lookupResp.json();
@@ -211,6 +211,9 @@ async function syncToSalesforce(leadData) {
         }
         if (!existing.Phone && leadData.phone) updates.Phone = leadData.phone;
         if (!existing.Campaign__c && campaignId) updates.Campaign__c = campaignId;
+        // SF validation rule requires this on update — backfill when blank
+        // so older Leads (created before the rule existed) don't 400 here.
+        if (!existing.How_did_you_hear_about_us__c) updates.How_did_you_hear_about_us__c = 'Website';
         if (Object.keys(updates).length > 0) {
           const pr = await fetch(`${API}/sobjects/Lead/${leadId}`, {
             method: 'PATCH', headers, body: JSON.stringify(updates),
