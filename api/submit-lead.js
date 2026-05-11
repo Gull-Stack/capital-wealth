@@ -51,6 +51,25 @@ function sfEscape(s) {
   return String(s || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'");
 }
 
+// Strip non-digits and the leading US country code. Returns digits-only string.
+function normalizePhone(raw) {
+  let d = String(raw == null ? '' : raw).replace(/\D/g, '');
+  if (d.length === 11 && d.charAt(0) === '1') d = d.slice(1);
+  return d;
+}
+
+// NANP rules + obvious junk: rejects (141)239-8060, 5555555555, 1234567890,
+// 555-01XX fictional block, etc. Defense-in-depth mirror of window.CWPhone.isValid.
+function isValidPhone(d) {
+  if (!d || d.length !== 10) return false;
+  if (!/^[2-9]/.test(d)) return false;
+  if (!/^.{3}[2-9]/.test(d)) return false;
+  if (/^(\d)\1{9}$/.test(d)) return false;
+  if (d === '1234567890' || d === '0123456789' || d === '9876543210') return false;
+  if (/^\d{3}5550[01]\d{2}$/.test(d)) return false;
+  return true;
+}
+
 // Zoom Server-to-Server OAuth config (federal webinar registration)
 const ZOOM_ACCOUNT_ID = process.env.ZOOM_ACCOUNT_ID;
 const ZOOM_CLIENT_ID = process.env.ZOOM_CLIENT_ID;
@@ -329,8 +348,27 @@ export default async function handler(req, res) {
     if (!fullName || !email) {
       return res.status(400).json({ error: 'Name and email are required.' });
     }
-    if (!is10ThingsChecklist && !phone) {
+
+    // Normalize and validate phone numbers. Defense-in-depth mirror of the
+    // client-side window.CWPhone in src/assets/js/main.js — direct API callers
+    // (or anyone who pokes /api/submit-lead with curl) can't bypass NANP rules.
+    let normalizedPhone = null;
+    if (phone) {
+      normalizedPhone = normalizePhone(phone);
+      if (!isValidPhone(normalizedPhone)) {
+        return res.status(400).json({ error: 'Please enter a valid US phone number.' });
+      }
+    }
+    if (!is10ThingsChecklist && !normalizedPhone) {
       return res.status(400).json({ error: 'Phone is required.' });
+    }
+
+    // Guest phone is optional — silently drop an invalid value rather than
+    // rejecting the whole registration (the registrant can still attend).
+    let normalizedGuestPhone = null;
+    if (guest_phone) {
+      const gp = normalizePhone(guest_phone);
+      normalizedGuestPhone = isValidPhone(gp) ? gp : null;
     }
 
     // Federal webinar: retirement_system + years_to_retirement are optional —
@@ -374,7 +412,7 @@ export default async function handler(req, res) {
     const leadData = {
       name: fullName.trim(),
       email: email.trim().toLowerCase(),
-      phone: (phone || '').trim(),
+      phone: normalizedPhone || null,
       first_name: firstName || fullName.split(' ')[0] || '',
       last_name: lastName || fullName.split(' ').slice(1).join(' ') || '',
       agency: agency || null,
@@ -410,7 +448,7 @@ export default async function handler(req, res) {
       guest_first_name: guest_first_name || null,
       guest_last_name: guest_last_name || null,
       guest_email: guest_email || null,
-      guest_phone: guest_phone || null,
+      guest_phone: normalizedGuestPhone,
       event_date: event_date || null,
       // Coerce common truthy form values ("true", true, "on") to a real boolean.
       special_category:
