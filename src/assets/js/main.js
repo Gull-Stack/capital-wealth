@@ -278,20 +278,67 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Phone Number Formatting
-document.addEventListener('DOMContentLoaded', function() {
-    const phoneInputs = document.querySelectorAll('input[type="tel"]');
-    
-    phoneInputs.forEach(input => {
-        input.addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length >= 6) {
-                value = value.substring(0, 3) + '-' + value.substring(3, 6) + '-' + value.substring(6, 10);
-            } else if (value.length >= 3) {
-                value = value.substring(0, 3) + '-' + value.substring(3, 6);
-            }
-            e.target.value = value;
+// Phone helpers — exposed globally for inline page scripts.
+// Strips US country code, formats as (NPA) NXX-XXXX, validates against
+// NANP rules and obvious junk (all-same-digit, simple sequences, 555-01XX).
+window.CWPhone = (function () {
+    function normalize(raw) {
+        var d = String(raw == null ? '' : raw).replace(/\D/g, '');
+        if (d.length === 11 && d.charAt(0) === '1') d = d.slice(1);
+        return d;
+    }
+    function isValid(value) {
+        var d = normalize(value);
+        if (d.length !== 10) return false;
+        if (!/^[2-9]/.test(d)) return false;
+        if (!/^.{3}[2-9]/.test(d)) return false;
+        if (/^(\d)\1{9}$/.test(d)) return false;
+        if (d === '1234567890' || d === '0123456789' || d === '9876543210') return false;
+        if (/^\d{3}5550[01]\d{2}$/.test(d)) return false;
+        return true;
+    }
+    function format(value) {
+        var d = normalize(value).slice(0, 10);
+        if (d.length >= 7) return '(' + d.slice(0, 3) + ') ' + d.slice(3, 6) + '-' + d.slice(6);
+        if (d.length >= 4) return '(' + d.slice(0, 3) + ') ' + d.slice(3);
+        return d;
+    }
+    return { normalize: normalize, isValid: isValid, format: format };
+})();
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('input[type="tel"]').forEach(function (input) {
+        input.addEventListener('input', function () {
+            input.value = window.CWPhone.format(input.value);
+            if (input.validationMessage) input.setCustomValidity('');
         });
+    });
+
+    // Capture-phase submit guard: validate every tel input on a form before
+    // any page-specific submit handler runs. Normalizes valid values to
+    // digits-only so what we send to /api/submit-lead is clean (and the
+    // resulting tel: links in admin notification emails actually dial).
+    document.querySelectorAll('form').forEach(function (form) {
+        form.addEventListener('submit', function (e) {
+            var bad = false;
+            form.querySelectorAll('input[type="tel"]').forEach(function (input) {
+                var val = (input.value || '').trim();
+                var isRequired = input.hasAttribute('required');
+                if (!val && !isRequired) return;
+                if (!window.CWPhone.isValid(val)) {
+                    input.setCustomValidity('Please enter a valid US phone number.');
+                    bad = true;
+                } else {
+                    input.setCustomValidity('');
+                    input.value = window.CWPhone.normalize(val);
+                }
+            });
+            if (bad) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (typeof form.reportValidity === 'function') form.reportValidity();
+            }
+        }, true);
     });
 });
 

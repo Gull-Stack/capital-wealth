@@ -777,7 +777,11 @@ body > .gov-bar { display: none !important; }
   /* ============ HERO ============ */
   .hero {
     position: relative;
-    background: var(--fed-blue);
+    background-color: var(--fed-blue);
+    background-image: url('/assets/images/photos/federal/american-flag-hero.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
     color: #fff;
     padding: 56px 40px 64px;
     overflow: hidden;
@@ -786,8 +790,8 @@ body > .gov-bar { display: none !important; }
     content: "";
     position: absolute; inset: 0;
     background:
-      radial-gradient(ellipse at 75% 40%, rgba(87,166,251,0.18), transparent 60%),
-      linear-gradient(180deg, var(--fed-blue) 0%, var(--fed-blue-deep) 100%);
+      radial-gradient(ellipse at 75% 40%, rgba(87,166,251,0.18), transparent 55%),
+      linear-gradient(180deg, rgba(8,31,63,0.94) 0%, rgba(8,31,63,0.98) 100%);
     z-index: 0;
   }
   .hero::after {
@@ -827,26 +831,34 @@ body > .gov-bar { display: none !important; }
     margin: 0 0 32px;
   }
   .hero .docket {
-    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px;
-    border-top: 1px solid rgba(255,255,255,0.18);
-    border-bottom: 1px solid rgba(255,255,255,0.18);
-    padding: 22px 0;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0;
+    background: var(--fed-cream);
+    border: 1px solid rgba(232,199,126,0.45);
+    border-left: 4px solid var(--fed-gold);
+    border-radius: var(--radius);
+    padding: 22px 4px;
     margin-bottom: 32px;
+    box-shadow: 0 14px 36px rgba(0,0,0,0.32);
   }
+  .hero .docket .item {
+    padding: 4px 24px;
+    border-right: 1px solid rgba(10,49,97,0.12);
+  }
+  .hero .docket .item:last-child { border-right: 0; }
   .hero .docket .item .lab {
-    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
-    color: rgba(255,255,255,0.55);
-    margin-bottom: 6px;
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fed-red); font-weight: 700;
+    margin-bottom: 8px;
   }
   .hero .docket .item .val {
-    font-family: var(--font-display); font-weight: 400;
-    font-size: 22px; line-height: 1.15;
-    color: #fff;
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 28px; line-height: 1.1; letter-spacing: -0.01em;
+    color: var(--fed-blue);
   }
   .hero .docket .item .val small {
-    display: block; font-family: var(--font-sans);
-    font-size: 12px; color: rgba(255,255,255,0.65);
-    margin-top: 3px; letter-spacing: 0;
+    display: block; font-family: var(--font-sans); font-weight: 500;
+    font-size: 12px; color: var(--cw-stone-700);
+    margin-top: 6px; letter-spacing: 0.02em;
   }
 
   .hero .cta-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
@@ -1397,8 +1409,10 @@ body > .gov-bar { display: none !important; }
     .hero::after { right: 20px; top: 20px; }
     .hero h1 { font-size: 40px; }
     .hero .deck { font-size: 16px; }
-    .hero .docket { grid-template-columns: 1fr; gap: 16px; }
-    .hero .docket .item .val { font-size: 20px; }
+    .hero .docket { grid-template-columns: 1fr; gap: 0; padding: 8px 4px; }
+    .hero .docket .item { padding: 14px 20px; border-right: 0; border-bottom: 1px solid rgba(10,49,97,0.12); }
+    .hero .docket .item:last-child { border-bottom: 0; }
+    .hero .docket .item .val { font-size: 22px; }
 
     .targeting { padding: 20px; }
     .targeting .inner { gap: 16px; }
@@ -1559,7 +1573,7 @@ body > .gov-bar { display: none !important; }
           <div class="field">
             <label for="f-phone">Phone</label>
             <input type="tel" id="f-phone" name="phone" placeholder="(801) 555-0100" autocomplete="tel" required />
-            <div class="errmsg">Please enter a 10-digit phone number.</div>
+            <div class="errmsg">Please enter a valid US phone number.</div>
           </div>
 
           <div class="more">
@@ -1825,22 +1839,8 @@ body > .gov-bar { display: none !important; }
       });
     }
 
-    // Phone formatter — light touch, allows international too
-    var phoneInput = document.getElementById('f-phone');
-    if (phoneInput) {
-      phoneInput.addEventListener('input', function () {
-        var digits = phoneInput.value.replace(/\D/g, '').slice(0, 10);
-        if (digits.length === 10) {
-          phoneInput.value = '(' + digits.slice(0,3) + ') ' + digits.slice(3,6) + '-' + digits.slice(6);
-        } else if (digits.length >= 7) {
-          phoneInput.value = '(' + digits.slice(0,3) + ') ' + digits.slice(3,6) + '-' + digits.slice(6);
-        } else if (digits.length >= 4) {
-          phoneInput.value = '(' + digits.slice(0,3) + ') ' + digits.slice(3);
-        } else {
-          phoneInput.value = digits;
-        }
-      });
-    }
+    // Phone live-formatting + NANP validation is handled globally by
+    // window.CWPhone in src/assets/js/main.js.
 
     // Form validation + submission
     var form = document.getElementById('rsvp-form');
@@ -1872,8 +1872,7 @@ body > .gov-bar { display: none !important; }
       var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
       setError(email, !emailOk); if (!emailOk) ok = false;
 
-      var phoneDigits = (phone.value || '').replace(/\D/g, '');
-      var phoneOk = phoneDigits.length === 10;
+      var phoneOk = window.CWPhone && window.CWPhone.isValid(phone.value);
       setError(phone, !phoneOk); if (!phoneOk) ok = false;
 
       return ok;

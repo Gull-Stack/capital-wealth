@@ -61,3 +61,14 @@ Capital Wealth is a registered investment advisor in Utah doing $100M/year in re
 - Create feature branches for large changes, PR for review
 - Small fixes can go direct to main
 - Commit messages: short, descriptive, no emoji
+
+## Session Log
+
+### 2026-05-11 — Phone number validation, site-wide
+
+- **What shipped** (branch `claude/laughing-carson-c4a0c2`, not yet committed): one shared `window.CWPhone` helper in [src/assets/js/main.js](src/assets/js/main.js) (normalize/isValid/format) plus a capture-phase form-submit guard. The four event landing pages (webinar + SLC/Ogden/Hill AFB workshops) had their duplicated inline phone formatters removed and their validators switched to `CWPhone.isValid`. Server-side mirror added to [api/submit-lead.js](api/submit-lead.js) (`normalizePhone` + `isValidPhone` near `sfEscape`).
+- **Policy change:** phone numbers are now stored as 10-digit digit-only strings (e.g. `8012102800`). The leading `1` country code is stripped on input. Numbers are rejected if the area code or exchange starts with `0` or `1`, if all digits are the same, if they're an obvious sequence (`1234567890` etc.), or if they fall in the `555-01XX` fictional block. The screenshot case `(141) 239-8060` is the canonical reject example.
+- **Side benefit:** `tel:${leadData.phone}` links in admin notification emails now render as `tel:8012102800` and actually dial — previously they were `tel:(801) 210-2800` which most mail clients silently dropped.
+- **Pending:** branch is not yet pushed. Verify locally with `npm run dev`, push to `main` (or open PR) to deploy. The webinar form is the easiest smoke test: try typing `1412398060` → should reject, `1 801 210 2800` → should display `(801) 210-2800` and submit cleanly.
+- **Out of scope (next time):** historical Supabase / Salesforce records still have parens/dashes in the Phone field. No backfill done — new submissions are clean, old ones stay as-is. If we ever need uniform phones across the dataset, write a one-shot migration.
+- **Plan file:** `~/.claude/plans/we-need-to-update-logical-karp.md`.
