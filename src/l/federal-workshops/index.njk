@@ -1,0 +1,387 @@
+---
+layout: layouts/base-finpay.njk
+title: "Federal Benefits Workshops — Pick the workshop in your area | Capital Wealth"
+description: "Three complimentary federal benefits workshops across northern Utah this May. Salt Lake City, Layton (Hill AFB), and Ogden — FERS, TSP, FEHB, FEGLI, and Social Security with Ann Werts."
+bodyClass: "landing-page"
+hideGovBar: true
+ogImage: "/assets/images/photos/federal/american-flag-hero.jpg"
+ogImageAlt: "Federal Benefits Workshops — Capital Wealth"
+extraSchema: |
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Federal Benefits Workshops — May 2026",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Event",
+          "name": "Federal Benefits Workshop — Ogden",
+          "startDate": "2026-05-19T16:30:00-06:00",
+          "endDate": "2026-05-19T18:30:00-06:00",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": {
+            "@type": "Place",
+            "name": "Weber County Main Library",
+            "address": { "@type": "PostalAddress", "streetAddress": "2464 Jefferson Avenue", "addressLocality": "Ogden", "addressRegion": "UT", "postalCode": "84401", "addressCountry": "US" }
+          },
+          "organizer": { "@type": "Organization", "name": "Capital Wealth", "url": "https://www.capitalwealth.com" },
+          "performer": { "@type": "Person", "name": "Ann Werts" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://www.capitalwealth.com/l/federal-benefits-workshop-ogden/" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Event",
+          "name": "Federal Benefits Workshop — Salt Lake City",
+          "startDate": "2026-05-20T16:00:00-06:00",
+          "endDate": "2026-05-20T18:00:00-06:00",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": {
+            "@type": "Place",
+            "name": "University Guest House",
+            "address": { "@type": "PostalAddress", "streetAddress": "110 S Fort Douglas Blvd", "addressLocality": "Salt Lake City", "addressRegion": "UT", "postalCode": "84113", "addressCountry": "US" }
+          },
+          "organizer": { "@type": "Organization", "name": "Capital Wealth", "url": "https://www.capitalwealth.com" },
+          "performer": { "@type": "Person", "name": "Ann Werts" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://www.capitalwealth.com/l/federal-benefits-workshop-slc/" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Event",
+          "name": "Federal Benefits Workshop — Hill Air Force Base",
+          "startDate": "2026-05-21T18:00:00-06:00",
+          "endDate": "2026-05-21T20:00:00-06:00",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": {
+            "@type": "Place",
+            "name": "Weber State University Davis Campus",
+            "address": { "@type": "PostalAddress", "streetAddress": "2750 University Park Blvd, D2 Building, Room 117", "addressLocality": "Layton", "addressRegion": "UT", "postalCode": "84041", "addressCountry": "US" }
+          },
+          "organizer": { "@type": "Organization", "name": "Capital Wealth", "url": "https://www.capitalwealth.com" },
+          "performer": { "@type": "Person", "name": "Ann Werts" },
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://www.capitalwealth.com/l/federal-benefits-workshop-hill-afb/" }
+        }
+      }
+    ]
+  }
+  </script>
+---
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+
+<style>
+/* === LAYOUT OVERRIDES — hide site chrome, mirrors the workshop pages === */
+.landing-page .finpay-header,
+.landing-page .finpay-footer,
+.landing-page .cwh-shell,
+.landing-page #cwhShell,
+body > .gov-bar { display: none !important; }
+.landing-page main { padding: 0 !important; margin: 0 !important; max-width: none !important; text-align: left !important; }
+
+:root {
+  --cw-ink:        #0F1A2A;
+  --cw-prussian:   #16253D;
+  --cw-grey:       #7C868D;
+  --fed-red:       #B31942;
+  --fed-red-deep:  #8E122F;
+  --fed-blue:      #0A3161;
+  --fed-blue-deep: #081F3F;
+  --fed-cream:     #FAF7F0;
+  --fed-gold:      #E8C77E;
+  --font-display:  'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans:     'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --container:     1200px;
+  --radius:        2px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html, body { margin: 0; padding: 0; }
+body { font-family: var(--font-sans); color: var(--cw-ink); background: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+button { font-family: inherit; }
+
+/* ============ TOP BAR — federal contractor banner ============ */
+.gov-bar {
+  background: var(--fed-blue-deep);
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  padding: 8px 0;
+}
+.gov-bar .inner { max-width: var(--container); margin: 0 auto; padding: 0 24px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.gov-bar .pipe { opacity: 0.4; }
+.gov-bar .id { font-weight: 600; letter-spacing: 0.08em; }
+.flag-stripe {
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, var(--fed-red) 0%, var(--fed-red) 33%, #fff 33%, #fff 66%, var(--fed-blue) 66%);
+}
+
+/* ============ NAV ============ */
+.nav { border-bottom: 1px solid #e5e7eb; background: #fff; }
+.nav .inner { max-width: var(--container); margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.nav .logo img { height: 36px; width: auto; }
+.nav .crumb { font-size: 13px; color: var(--cw-grey); letter-spacing: 0.04em; text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
+.nav .crumb b { color: var(--cw-ink); font-weight: 600; }
+.nav .crumb .sep { opacity: 0.4; }
+.nav .right { font-size: 14px; color: var(--cw-prussian); }
+.nav .right a { color: var(--fed-red); }
+
+/* ============ HERO ============ */
+.hero { background: var(--fed-cream); padding: 80px 24px 64px; border-bottom: 1px solid rgba(10,49,97,0.08); }
+.hero .inner { max-width: var(--container); margin: 0 auto; }
+.hero .tag { display: inline-block; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fed-red); font-weight: 700; margin-bottom: 16px; }
+.hero h1 { font-family: var(--font-display); font-size: 64px; line-height: 1.05; color: var(--fed-blue-deep); margin: 0 0 20px; font-weight: 500; letter-spacing: -0.01em; max-width: 920px; }
+.hero h1 em { font-style: italic; color: var(--fed-red); }
+.hero .deck { font-size: 19px; line-height: 1.55; color: var(--cw-prussian); max-width: 720px; margin: 0 0 12px; }
+.hero .sub { font-size: 14px; color: var(--cw-grey); letter-spacing: 0.04em; }
+
+/* ============ CARDS ============ */
+.cards { padding: 64px 24px 40px; background: #fff; }
+.cards .inner { max-width: var(--container); margin: 0 auto; }
+.cards .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.card {
+  display: flex; flex-direction: column;
+  border: 1px solid rgba(10,49,97,0.12);
+  background: #fff;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(10,49,97,0.10); border-color: var(--fed-red); }
+.card .date-badge {
+  background: var(--fed-blue-deep);
+  color: #fff;
+  padding: 18px 22px;
+  display: flex; align-items: baseline; gap: 10px;
+  border-bottom: 3px solid var(--fed-red);
+}
+.card .date-badge .dow { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fed-gold); font-weight: 700; }
+.card .date-badge .day { font-family: var(--font-display); font-size: 32px; font-weight: 500; line-height: 1; }
+.card .date-badge .mon { font-size: 13px; color: rgba(255,255,255,0.78); letter-spacing: 0.08em; text-transform: uppercase; }
+.card .body { padding: 24px 22px 18px; flex: 1; display: flex; flex-direction: column; }
+.card .city { font-family: var(--font-display); font-size: 30px; color: var(--fed-blue-deep); margin: 0 0 4px; font-weight: 600; line-height: 1.15; }
+.card .meta { font-size: 13px; color: var(--cw-grey); letter-spacing: 0.04em; margin: 0 0 18px; }
+.card .row { display: flex; gap: 10px; font-size: 14px; color: var(--cw-prussian); margin-bottom: 8px; line-height: 1.4; }
+.card .row .lab { width: 56px; flex-shrink: 0; text-transform: uppercase; font-size: 11px; letter-spacing: 0.1em; color: var(--cw-grey); padding-top: 2px; }
+.card .row .val { flex: 1; }
+.card .row .val b { color: var(--fed-blue-deep); font-weight: 600; }
+.card .best { font-size: 13px; color: var(--cw-prussian); border-top: 1px dashed rgba(10,49,97,0.18); padding: 14px 0 0; margin: 16px 0 18px; line-height: 1.5; }
+.card .cta {
+  display: block; text-align: center;
+  background: var(--fed-red);
+  color: #fff;
+  font-size: 15px; font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 14px 18px;
+  text-transform: uppercase;
+  transition: background .15s ease;
+  margin: auto 22px 22px;
+  border-radius: var(--radius);
+}
+.card .cta:hover { background: var(--fed-red-deep); }
+
+/* ============ WHAT TO EXPECT ============ */
+.expect { background: var(--fed-cream); padding: 56px 24px; }
+.expect .inner { max-width: var(--container); margin: 0 auto; }
+.expect h2 { font-family: var(--font-display); font-size: 36px; color: var(--fed-blue-deep); margin: 0 0 12px; font-weight: 500; }
+.expect .lede { font-size: 17px; color: var(--cw-prussian); max-width: 720px; margin: 0 0 36px; line-height: 1.6; }
+.expect .topics { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.expect .topic { padding: 18px; background: #fff; border-left: 3px solid var(--fed-red); }
+.expect .topic b { display: block; font-size: 14px; color: var(--fed-blue-deep); font-weight: 700; letter-spacing: 0.02em; margin-bottom: 4px; }
+.expect .topic span { font-size: 12px; color: var(--cw-grey); line-height: 1.4; }
+
+/* ============ COMPLIANCE FOOTER ============ */
+.foot { background: var(--fed-blue-deep); color: rgba(255,255,255,0.78); padding: 48px 24px; font-size: 13px; line-height: 1.6; }
+.foot .inner { max-width: var(--container); margin: 0 auto; }
+.foot .row1 { display: flex; justify-content: space-between; align-items: center; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.12); margin-bottom: 24px; flex-wrap: wrap; gap: 16px; }
+.foot .row1 img { height: 28px; }
+.foot .row1 .contact { color: rgba(255,255,255,0.86); font-size: 14px; }
+.foot .row1 .contact a { color: var(--fed-gold); }
+.foot .legal { font-size: 12px; color: rgba(255,255,255,0.6); max-width: 880px; }
+.foot .legal p { margin: 0 0 10px; }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 960px) {
+  .hero { padding: 56px 20px 48px; }
+  .hero h1 { font-size: 44px; }
+  .cards { padding: 40px 20px 24px; }
+  .cards .grid { grid-template-columns: 1fr; gap: 18px; }
+  .expect { padding: 40px 20px; }
+  .expect .topics { grid-template-columns: repeat(2, 1fr); }
+  .nav .crumb { display: none; }
+}
+@media (max-width: 540px) {
+  .hero h1 { font-size: 34px; }
+  .hero .deck { font-size: 16px; }
+  .expect .topics { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+  .card:hover { transform: none; }
+}
+</style>
+
+<!-- TOP BAR — federal contractor banner -->
+<div class="gov-bar" role="region" aria-label="Government contractor registration">
+  <div class="inner">
+    <span class="flag" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="20" height="11" focusable="false" style="display:block;border-radius:1px;"><clipPath id="govbar-flag-h"><rect width="60" height="30"/></clipPath><g clip-path="url(#govbar-flag-h)"><rect width="60" height="30" fill="#B31942"/><rect y="2.31" width="60" height="2.31" fill="#fff"/><rect y="6.92" width="60" height="2.31" fill="#fff"/><rect y="11.54" width="60" height="2.31" fill="#fff"/><rect y="16.15" width="60" height="2.31" fill="#fff"/><rect y="20.77" width="60" height="2.31" fill="#fff"/><rect y="25.38" width="60" height="2.31" fill="#fff"/><rect width="24" height="16.15" fill="#0A3161"/></g></svg></span>
+    <span>An Official Government Registered Contractor</span>
+    <span class="pipe" aria-hidden="true">|</span>
+    <span>Unique ID: <span class="id">L63FVVWAKXA8</span></span>
+    <span class="pipe" aria-hidden="true">|</span>
+    <span>CAGE: <span class="id">9LHS8</span></span>
+  </div>
+</div>
+
+<span class="flag-stripe" aria-hidden="true"></span>
+
+<!-- NAV -->
+<nav class="nav" aria-label="Primary">
+  <div class="inner">
+    <a class="logo" href="https://www.capitalwealth.com/" aria-label="Capital Wealth — home">
+      <img src="/assets/images/logos/logo-horizontal-color.png" alt="Capital Wealth" />
+    </a>
+    <div class="crumb">
+      <span>Federal Practice</span>
+      <span class="sep" aria-hidden="true">/</span>
+      <b>Workshops</b>
+    </div>
+    <div class="right">
+      Call <a href="tel:+18012102800"><b>(801) 210-2800</b></a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="inner">
+    <span class="tag">★ Three Workshops · One Week · May 2026</span>
+    <h1 id="hero-title">Pick the federal benefits workshop <em>in your area</em>.</h1>
+    <p class="deck">Three complimentary 2-hour evenings in northern Utah with Ann Werts. FERS, TSP, FEHB, FEGLI, and Social Security — five intricate systems, one retirement, and a window of decisions you only get to make once.</p>
+    <p class="sub">No products sold. Spouses welcome. Open to all federal agencies.</p>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="cards" aria-labelledby="cards-title">
+  <h2 id="cards-title" style="position:absolute;left:-9999px;">Upcoming workshops</h2>
+  <div class="inner">
+    <div class="grid">
+
+      <!-- OGDEN -->
+      <article class="card" aria-labelledby="card-ogden-title">
+        <div class="date-badge">
+          <span class="dow">Tue</span>
+          <span class="day">19</span>
+          <span class="mon">May · 2026</span>
+        </div>
+        <div class="body">
+          <h3 id="card-ogden-title" class="city">Ogden</h3>
+          <p class="meta">Weber County · Northern Wasatch Front</p>
+          <div class="row">
+            <span class="lab">Time</span>
+            <span class="val"><b>4:30 – 6:30 PM</b><br>Doors at 4:15</span>
+          </div>
+          <div class="row">
+            <span class="lab">Venue</span>
+            <span class="val"><b>Weber County Main Library</b><br>2464 Jefferson Avenue, Ogden, UT 84401</span>
+          </div>
+          <p class="best">Best fit for federal employees in Ogden, North Ogden, Roy, Clearfield, and the broader Weber County area.</p>
+        </div>
+        <a class="cta" href="/l/federal-benefits-workshop-ogden/?lead_source=Billboard" data-workshop="ogden">Reserve a seat →</a>
+      </article>
+
+      <!-- SLC -->
+      <article class="card" aria-labelledby="card-slc-title">
+        <div class="date-badge">
+          <span class="dow">Wed</span>
+          <span class="day">20</span>
+          <span class="mon">May · 2026</span>
+        </div>
+        <div class="body">
+          <h3 id="card-slc-title" class="city">Salt Lake City</h3>
+          <p class="meta">University of Utah · Fort Douglas area</p>
+          <div class="row">
+            <span class="lab">Time</span>
+            <span class="val"><b>4:00 – 6:00 PM</b><br>Doors at 3:45</span>
+          </div>
+          <div class="row">
+            <span class="lab">Venue</span>
+            <span class="val"><b>University Guest House</b><br>110 S Fort Douglas Blvd, Salt Lake City, UT 84113</span>
+          </div>
+          <p class="best">Best fit for federal employees in Salt Lake City, Sandy, West Jordan, and the broader Salt Lake Valley.</p>
+        </div>
+        <a class="cta" href="/l/federal-benefits-workshop-slc/?lead_source=Billboard" data-workshop="slc">Reserve a seat →</a>
+      </article>
+
+      <!-- HILL AFB -->
+      <article class="card" aria-labelledby="card-hill-title">
+        <div class="date-badge">
+          <span class="dow">Thu</span>
+          <span class="day">21</span>
+          <span class="mon">May · 2026</span>
+        </div>
+        <div class="body">
+          <h3 id="card-hill-title" class="city">Hill AFB · Layton</h3>
+          <p class="meta">Davis County · Tailored for Hill AFB civilians</p>
+          <div class="row">
+            <span class="lab">Time</span>
+            <span class="val"><b>6:00 – 8:00 PM</b><br>Doors at 5:45</span>
+          </div>
+          <div class="row">
+            <span class="lab">Venue</span>
+            <span class="val"><b>WSU Davis Campus · D2 Bldg, Rm 117</b><br>2750 University Park Blvd, Layton, UT 84041</span>
+          </div>
+          <p class="best">Best fit for Hill AFB civilians, DoD employees, and federal workers in Layton, Kaysville, Clinton, and Davis County.</p>
+        </div>
+        <a class="cta" href="/l/federal-benefits-workshop-hill-afb/?lead_source=Billboard" data-workshop="hill-afb">Reserve a seat →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT TO EXPECT -->
+<section class="expect" aria-labelledby="expect-title">
+  <div class="inner">
+    <h2 id="expect-title">What every workshop covers</h2>
+    <p class="lede">The agenda is identical at all three locations. Ann Werts — a 25+ year federal benefits expert — walks through the five systems that decide how your federal retirement actually plays out.</p>
+    <div class="topics">
+      <div class="topic"><b>FERS</b><span>Pension timing, computation, and the math behind early vs. full retirement.</span></div>
+      <div class="topic"><b>TSP</b><span>Withdrawal sequencing, rollovers, and the tax cost of common mistakes.</span></div>
+      <div class="topic"><b>FEHB</b><span>FEHB in retirement, FEHB vs. Medicare at 65, and survivor coverage.</span></div>
+      <div class="topic"><b>FEGLI</b><span>What FEGLI actually costs over time — and when to replace it.</span></div>
+      <div class="topic"><b>Social Security</b><span>Claiming strategy, the WEP/GPO repeal, and coordination with FERS.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE FOOTER -->
+<footer class="foot" role="contentinfo">
+  <div class="inner">
+    <div class="row1">
+      <img src="/assets/images/logos/logo-horizontal-white.png" alt="Capital Wealth">
+      <div class="contact">
+        1850 W Ashton Blvd, Suite 175 · Lehi, UT 84043 &nbsp;·&nbsp; <a href="tel:+18012102800">(801) 210-2800</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p>Advisory services offered through Capital Wealth, LLC, a State of Utah Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC.</p>
+      <p>Capital Wealth is not affiliated with or endorsed by the U.S. Government, Social Security Administration, Office of Personnel Management, or any federal agency. These workshops are independent fiduciary education — no products are offered or sold during the session.</p>
+    </div>
+  </div>
+</footer>
