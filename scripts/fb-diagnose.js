@@ -33,12 +33,16 @@ const INSIGHT_FIELDS = [
     'actions', 'cost_per_action_type', 'action_values',
 ];
 
-const LEAD_ACTION_TYPES = new Set([
-    'lead',
+// Meta's Marketing API returns the same Lead conversion event under multiple
+// action_type aliases (lead, offsite_conversion.fb_pixel_lead, onsite_web_lead,
+// offsite_lead_add_20_s_calls) — all with identical values. Summing them produces
+// a 2-4× phantom inflation. Take the MAX across these aliases instead.
+const LEAD_ACTION_TYPES = [
     'offsite_conversion.fb_pixel_lead',
+    'lead',
     'onsite_conversion.lead_grouped',
     'leadgen.other',
-]);
+];
 
 main().catch((err) => {
     console.error('Fatal:', err.message);
@@ -171,10 +175,13 @@ function getJson(url) {
 // ---------- Metric helpers ----------
 
 function leadCount(row) {
-    if (!row.actions) return 0;
-    return row.actions
-        .filter((a) => LEAD_ACTION_TYPES.has(a.action_type))
-        .reduce((sum, a) => sum + parseFloat(a.value || 0), 0);
+    if (!row || !row.actions) return 0;
+    let max = 0;
+    for (const t of LEAD_ACTION_TYPES) {
+        const action = row.actions.find((a) => a.action_type === t);
+        if (action) max = Math.max(max, parseFloat(action.value || 0));
+    }
+    return max;
 }
 
 function leadCost(row) {
