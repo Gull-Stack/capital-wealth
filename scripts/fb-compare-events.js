@@ -27,12 +27,14 @@ if (!FB_ACCESS_TOKEN || !FB_AD_ACCOUNT_ID) {
     process.exit(1);
 }
 
-const LEAD_ACTION_TYPES = new Set([
-    'lead',
+// Meta's API reports the same Lead event under multiple action_type aliases
+// (all with identical values). Take MAX across them, never SUM.
+const LEAD_ACTION_TYPES = [
     'offsite_conversion.fb_pixel_lead',
+    'lead',
     'onsite_conversion.lead_grouped',
     'leadgen.other',
-]);
+];
 
 main().catch((e) => { console.error('Fatal:', e.message); process.exit(1); });
 
@@ -140,9 +142,12 @@ function getJson(url) {
 
 function leadCount(row) {
     if (!row || !row.actions) return 0;
-    return row.actions
-        .filter((a) => LEAD_ACTION_TYPES.has(a.action_type))
-        .reduce((s, a) => s + parseFloat(a.value || 0), 0);
+    let max = 0;
+    for (const t of LEAD_ACTION_TYPES) {
+        const action = row.actions.find((a) => a.action_type === t);
+        if (action) max = Math.max(max, parseFloat(action.value || 0));
+    }
+    return max;
 }
 
 function renderMarkdown(buckets) {
