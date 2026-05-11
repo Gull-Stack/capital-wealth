@@ -941,6 +941,7 @@ body > .gov-bar { display: none !important; }
           <input type="hidden" name="utm_medium" id="utm_medium" value="">
           <input type="hidden" name="utm_content" id="utm_content" value="">
           <input type="hidden" name="utm_term" id="utm_term" value="">
+          <input type="hidden" name="lead_source" id="lead_source" value="">
           <input type="hidden" name="referrer" id="referrer" value="">
           <input type="hidden" name="event_date" value="2026-05-20">
 
@@ -1287,7 +1288,7 @@ body > .gov-bar { display: none !important; }
 
         try {
           var qp = new URLSearchParams(window.location.search);
-          ['utm_source','utm_medium','utm_content','utm_term'].forEach(function (k) {
+          ['utm_source','utm_medium','utm_content','utm_term','lead_source'].forEach(function (k) {
             var el = document.getElementById(k);
             if (el && qp.get(k)) el.value = qp.get(k);
           });

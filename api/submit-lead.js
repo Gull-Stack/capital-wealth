@@ -148,6 +148,7 @@ const ALLOWED_LEAD_SOURCES = new Set([
   'Client Ambassador Referral',
   'COI Referral',
   'Webinar',
+  'Billboard',
 ]);
 
 async function syncToSalesforce(leadData) {
