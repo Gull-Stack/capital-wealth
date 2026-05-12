@@ -4,7 +4,8 @@ Live marketing dashboard for Mike: see today's / this week's lead volume by chan
 
 ## Live URLs
 
-- **Dashboard:** [CW — Marketing Live](https://capitalwealth.lightning.force.com/lightning/r/Dashboard/01ZVS000002sdBJ2AY/view)
+- **SF Dashboard:** [CW — Marketing Live](https://capitalwealth.lightning.force.com/lightning/r/Dashboard/01ZVS000002sdBJ2AY/view)
+- **Looker Studio (GA4 brand awareness):** [CW Brand Awareness Live](https://lookerstudio.google.com/reporting/f08fd886-91f2-4c0f-a28b-179a3dba0dfb)
 - **Folder:** `4 - Marketing` (dashboards) / `4 - Marketing Reports` (reports)
 - **Running user:** `jcohen@capitalwealth.com` (so all viewers see full-org lead data)
 - **Folder access:** All Internal Users (Mike included)
@@ -77,20 +78,17 @@ cd salesforce && sf project retrieve start -o cw \
 
 ### Linking it from the Salesforce dashboard
 
-After Looker Studio is built and you have its URL:
-
-1. Open the [CW — Marketing Live dashboard](https://capitalwealth.lightning.force.com/lightning/r/Dashboard/01ZVS000002sdBJ2AY/view).
+1. Open [CW — Marketing Live](https://capitalwealth.lightning.force.com/lightning/r/Dashboard/01ZVS000002sdBJ2AY/view).
 2. Click **Edit** (top-right pencil icon).
 3. **+ Component** → **Rich Text** → drag to the top row, full width.
 4. Title: `Brand Awareness — Google Analytics`
-5. Paste this HTML (replace `LOOKER_URL`):
+5. Paste this HTML (already wired to the live Looker Studio report):
    ```html
    <h3 style="margin:0 0 8px;color:#0f2742;font-family:Arial,sans-serif">Top of Funnel — Brand Awareness</h3>
    <p style="margin:0 0 12px;color:#475569">Live website visits, pages, and referral sources from Google Analytics.</p>
-   <p style="margin:0"><a href="LOOKER_URL" target="_blank" rel="noopener" style="background:#fdd25e;color:#0f2742;padding:10px 18px;font-weight:bold;text-decoration:none;border-radius:4px;display:inline-block;font-family:Arial,sans-serif">View Live GA4 Dashboard ↗</a></p>
+   <p style="margin:0"><a href="https://lookerstudio.google.com/reporting/f08fd886-91f2-4c0f-a28b-179a3dba0dfb" target="_blank" rel="noopener" style="background:#fdd25e;color:#0f2742;padding:10px 18px;font-weight:bold;text-decoration:none;border-radius:4px;display:inline-block;font-family:Arial,sans-serif">View Live GA4 Dashboard ↗</a></p>
    ```
 6. **Save** the dashboard.
-7. Run `cd salesforce && sf project retrieve start -o cw --metadata "Dashboard:X5MarketingMarketing/CW_Marketing_Live"` and commit the diff so the rich text is captured in metadata (note: SF may strip the rich text XML on retrieve — that's fine, it stays in the org).
 
 ## Backfill script
 
