@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Mike's marketing one-pager — GA4 brand-awareness embed on top, link to lead-tracking dashboard below.</description>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>flexipage:visualforcePage</componentName>
+                <componentInstanceProperties>
+                    <name>pageName</name>
+                    <value>CW_Brand_Awareness_Embed</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>760</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Brand Awareness — Google Analytics</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showLabel</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <identifier>brand_awareness_embed</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>flexipage:richText</componentName>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div style=&quot;padding:18px;text-align:center;&quot;&gt;&lt;h2 style=&quot;margin:0 0 10px;color:#0f2742;font-family:Arial,sans-serif;font-size:20px;&quot;&gt;Live Lead Tracking&lt;/h2&gt;&lt;p style=&quot;margin:0 0 14px;color:#475569;font-size:14px;&quot;&gt;Per-channel lead counts (today, this week, 30-day trend) and today&apos;s leads table.&lt;/p&gt;&lt;p style=&quot;margin:0;&quot;&gt;&lt;a href=&quot;/lightning/r/Dashboard/01ZVS000002sdBJ2AY/view&quot; style=&quot;background:#fdd25e;color:#0f2742;padding:12px 24px;font-weight:bold;text-decoration:none;border-radius:4px;display:inline-block;font-family:Arial,sans-serif;font-size:14px;&quot;&gt;Open CW — Marketing Live Dashboard →&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <identifier>dashboard_link</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>CW — Marketing Hub</masterLabel>
+    <template>
+        <name>flexipage:defaultAppHomeTemplate</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>
