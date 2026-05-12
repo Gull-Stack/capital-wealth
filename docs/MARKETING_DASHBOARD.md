@@ -4,11 +4,22 @@ Live marketing dashboard for Mike: see today's / this week's lead volume by chan
 
 ## Live URLs
 
-- **SF Dashboard:** [CW — Marketing Live](https://capitalwealth.lightning.force.com/lightning/r/Dashboard/01ZVS000002sdBJ2AY/view)
-- **Looker Studio (GA4 brand awareness):** [CW Brand Awareness Live](https://lookerstudio.google.com/reporting/f08fd886-91f2-4c0f-a28b-179a3dba0dfb)
+- **Marketing Hub (one-pager):** [CW — Marketing Hub](https://capitalwealth.lightning.force.com/lightning/n/CW_Marketing_Hub) — Looker Studio GA4 embed + link to the dashboard. **This is the URL to give Mike.**
+- **SF Dashboard alone:** [CW — Marketing Live](https://capitalwealth.lightning.force.com/lightning/r/Dashboard/01ZVS000002sdBJ2AY/view)
+- **Looker Studio direct:** [CW Brand Awareness Live](https://lookerstudio.google.com/reporting/f08fd886-91f2-4c0f-a28b-179a3dba0dfb)
 - **Folder:** `4 - Marketing` (dashboards) / `4 - Marketing Reports` (reports)
 - **Running user:** `jcohen@capitalwealth.com` (so all viewers see full-org lead data)
 - **Folder access:** All Internal Users (Mike included)
+
+## Adding the Marketing Hub to the nav bar
+
+The tab is already accessible via the **App Launcher** (9-dot grid icon, top-left) → search "Marketing Hub". To pin it to the top nav alongside Dashboards/Leads/etc:
+
+1. Open any page in the Capital Wealth app.
+2. Click the **pencil icon** at the right end of the nav bar ("Edit Capital Wealth navigation items").
+3. Click **+ Add More Items**, search for **Marketing Hub**, add it, click **Save**.
+
+This is a per-user setting (each user does it once for their own nav). To make it appear by default for everyone, edit the app via Setup → App Manager → Capital Wealth → Edit → Navigation Items → add Marketing Hub → Save.
 
 ## What's on it
 

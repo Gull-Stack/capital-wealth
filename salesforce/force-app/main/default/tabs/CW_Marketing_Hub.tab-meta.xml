@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Marketing one-pager — GA4 brand-awareness embed + live lead-tracking dashboard.</description>
+    <flexiPage>CW_Marketing_Hub</flexiPage>
+    <label>Marketing Hub</label>
+    <motif>Custom20: Heart</motif>
+</CustomTab>
