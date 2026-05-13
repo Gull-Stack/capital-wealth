@@ -301,26 +301,42 @@ permalink: "/l/federal-benefits-webinar/ty/"
 </section>
 
 <script>
-  // Fire Meta Pixel CompleteRegistration on page load (post-registration TY page).
+  // Fire CompleteRegistration only when there's a fresh session marker set
+  // by the landing-page form submit. Without this gate, every TY page load
+  // (refresh, bookmark, share, back-button, bot crawl) inflates the count.
+  // The eventID matches the landing-page Lead fire so Meta dedupes
+  // server-side. Same fix as the workshop TY pages.
   (function() {
-    if (typeof fbq === 'function') {
-      fbq('track', 'CompleteRegistration', {
-        content_name: 'Federal Webinar May 14',
-        content_category: 'Federal Benefits',
-        currency: 'USD',
-        value: 0
-      });
-    }
-    if (typeof gtag === 'function') {
-      gtag('event', 'sign_up', {
-        event_category: 'lead',
-        event_label: 'federal_webinar_may14'
-      });
+    var marker = null;
+    try {
+      var raw = sessionStorage.getItem('cw_lead_event');
+      if (raw) marker = JSON.parse(raw);
+    } catch (_) {}
+    var fresh = marker && marker.id && (Date.now() - marker.ts < 5 * 60 * 1000);
+
+    if (fresh) {
+      if (typeof fbq === 'function') {
+        fbq('track', 'CompleteRegistration', {
+          content_name: 'Federal Webinar May 14',
+          content_category: 'Federal Benefits',
+          currency: 'USD',
+          value: 0
+        }, { eventID: marker.id });
+      }
+      if (typeof gtag === 'function') {
+        gtag('event', 'sign_up', {
+          event_category: 'lead',
+          event_label: 'federal_webinar_may14'
+        });
+      }
+      // Clear the marker so a refresh of this TY page doesn't re-fire.
+      try { sessionStorage.removeItem('cw_lead_event'); } catch (_) {}
     }
 
-    // Surface the per-registrant Zoom join URL stashed by the form.
-    // Stays a no-op when the page is opened directly (no sessionStorage
-    // entry) — the static fallback then handles the rendering.
+    // Surface the per-registrant Zoom join URL stashed by the form. Runs
+    // independently of the pixel gate above — must survive TY-page refresh,
+    // so we DON'T clear cw_zoom_join_url here. Stays a no-op when the page
+    // is opened directly (no sessionStorage entry).
     try {
       var joinUrl = sessionStorage.getItem('cw_zoom_join_url');
       if (joinUrl) {
