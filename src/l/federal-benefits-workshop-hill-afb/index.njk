@@ -1303,6 +1303,22 @@ body > .gov-bar { display: none !important; }
         .then(function (r) { return r.json(); })
         .then(function (result) {
           if (result && result.success) {
+            // Generate a unique eventID and stash a session marker. The TY
+            // page re-fires Lead/CompleteRegistration with the SAME eventID
+            // so Meta dedupes server-side, and without the marker the TY
+            // page does nothing — kills the over-counting from refreshes,
+            // bookmarks, back-button visits, and bot crawls of the TY URL.
+            var eventId = (window.crypto && window.crypto.randomUUID)
+              ? window.crypto.randomUUID()
+              : ('cw-' + Date.now() + '-' + Math.random().toString(36).slice(2));
+            try {
+              sessionStorage.setItem('cw_lead_event', JSON.stringify({
+                id: eventId,
+                ts: Date.now(),
+                label: 'federal_workshop_hill_afb_may21',
+                content_name: 'Federal Workshop Hill Air Force Base May 21'
+              }));
+            } catch (_) {}
             if (typeof window.gtag === 'function') {
               window.gtag('event', 'generate_lead', {
                 event_category: 'lead',
@@ -1314,7 +1330,7 @@ body > .gov-bar { display: none !important; }
               window.fbq('track', 'Lead', {
                 content_name: 'Federal Workshop Hill Air Force Base May 21',
                 content_category: 'Federal Benefits'
-              });
+              }, { eventID: eventId });
             }
             window.location.href = '/l/federal-benefits-workshop-hill-afb/ty/';
           } else {

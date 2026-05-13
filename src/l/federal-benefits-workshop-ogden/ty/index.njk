@@ -117,18 +117,31 @@ permalink: "/l/federal-benefits-workshop-ogden/ty/"
 </section>
 
 <script>
+  // Only fire Lead/CompleteRegistration when there's a fresh session marker
+  // set by the landing-page form submit. Without this gate, every TY page
+  // load (refresh, bookmark, share, back-button, bot crawl) inflates the
+  // Meta lead count — 3–4× over-attribution observed on the May 2026 run.
   (function() {
+    var marker = null;
+    try {
+      var raw = sessionStorage.getItem('cw_lead_event');
+      if (raw) marker = JSON.parse(raw);
+    } catch (_) {}
+    var fresh = marker && marker.id && (Date.now() - marker.ts < 5 * 60 * 1000);
+    if (!fresh) return;
+
     if (typeof fbq === 'function') {
+      // Same eventID as the landing-page fire → Meta dedupes server-side.
       fbq('track', 'CompleteRegistration', {
         content_name: 'Federal Workshop Ogden May 19',
         content_category: 'Federal Benefits',
         currency: 'USD',
         value: 0
-      });
+      }, { eventID: marker.id });
       fbq('track', 'Lead', {
         content_name: 'Federal Workshop Ogden May 19',
         content_category: 'Federal Benefits'
-      });
+      }, { eventID: marker.id });
     }
     if (typeof gtag === 'function') {
       gtag('event', 'sign_up', {
@@ -141,5 +154,7 @@ permalink: "/l/federal-benefits-workshop-ogden/ty/"
         value: 1
       });
     }
+    // Clear the marker so a TY-page refresh in the same tab doesn't re-fire.
+    try { sessionStorage.removeItem('cw_lead_event'); } catch (_) {}
   })();
 </script>

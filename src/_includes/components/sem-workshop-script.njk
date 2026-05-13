@@ -57,6 +57,22 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(function(response){ return response.json(); })
       .then(function(result){
         if (result.success) {
+          // Generate a unique eventID and stash a session marker. The TY page
+          // re-fires Lead/CompleteRegistration with the SAME eventID so Meta
+          // dedupes server-side. Without the marker, the TY page does nothing
+          // — that's what kills the over-counting from refreshes, bookmarks,
+          // back-button visits, and bot crawls of the TY URL.
+          var eventId = (window.crypto && window.crypto.randomUUID)
+            ? window.crypto.randomUUID()
+            : ('cw-' + Date.now() + '-' + Math.random().toString(36).slice(2));
+          try {
+            sessionStorage.setItem('cw_lead_event', JSON.stringify({
+              id: eventId,
+              ts: Date.now(),
+              label: window.__gaLabel || 'federal_workshop_registration',
+              content_name: window.__metaContentName || 'Federal Workshop Registration'
+            }));
+          } catch (_) {}
           if (typeof gtag === 'function') {
             gtag('event', 'generate_lead', {
               event_category: 'lead',
@@ -68,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             fbq('track', 'Lead', {
               content_name: window.__metaContentName || 'Federal Workshop Registration',
               content_category: 'Federal Benefits'
-            });
+            }, { eventID: eventId });
           }
           window.location.href = window.__tyUrl;
         } else {
