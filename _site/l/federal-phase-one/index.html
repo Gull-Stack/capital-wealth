@@ -588,6 +588,21 @@
     <main>
         
 <style>
+/* Local color tokens — premium brand palette, no federal red/blue */
+.fp-section {
+  --fp-ink: #0F1A2A;
+  --fp-prussian: #16253D;
+  --fp-prussian-deep: #0C1A2E;
+  --fp-prussian-2: #1F3352;
+  --fp-gold: #C8A456;
+  --fp-gold-soft: #EBDBB4;
+  --fp-gold-deep: #A4873F;
+  --fp-grey: #7C868D;
+  --fp-stone-50: #F7F7F9;
+  --fp-stone-100: #F1F1F3;
+  --fp-stone-200: #DEDFE3;
+}
+
 /* Kill main padding that accounts for fixed header */
 .landing-page main { padding-top: 0 !important; }
 
@@ -611,8 +626,8 @@
 
 /* ═══ HERO ═══ */
 .fp-hero {
-  background: linear-gradient(135deg, #0A3161 0%, #16253C 65%, #081f3f 100%);
-  padding: 2.75rem 1.5rem 2.25rem;
+  background: linear-gradient(135deg, #16253D 0%, #0C1A2E 65%, #0F1A2A 100%);
+  padding: 2.5rem 1.5rem 2rem;
   text-align: center;
   color: #fff;
   position: relative;
@@ -628,17 +643,17 @@
   height: 600px;
   background: url('/assets/images/logos/logo-icon-color.png') no-repeat center;
   background-size: contain;
-  opacity: 0.035;
+  opacity: 0.04;
 }
 .fp-hero-eyebrow {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #B31942;
-  background: #fff;
+  color: #16253D;
+  background: #C8A456;
   display: inline-block;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 4px;
   margin-bottom: 0.85rem;
   font-weight: 700;
@@ -656,7 +671,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.fp-hero h1 em { font-style: italic; color: #FDD25E; }
+.fp-hero h1 em { font-style: italic; color: #C8A456; }
 .fp-hero p {
   font-family: var(--font-body);
   font-size: 1.08rem;
@@ -670,7 +685,7 @@
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  margin-top: 1.35rem;
+  margin-top: 1.25rem;
   padding: 8px 18px;
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.15);
@@ -682,12 +697,61 @@
   color: rgba(255,255,255,0.92);
   position: relative;
 }
-.fp-hero-meta b { color: #FDD25E; font-weight: 700; letter-spacing: 0.12em; }
+.fp-hero-meta b { color: #C8A456; font-weight: 700; letter-spacing: 0.12em; }
+
+/* ═══ SCHEDULER (moved up — primary action above the fold) ═══ */
+.fp-scheduler {
+  padding: 2.5rem 1.5rem 2.5rem;
+  background: #fff;
+}
+.fp-scheduler-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+.fp-scheduler h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #16253D;
+  margin: 0 0 0.5rem;
+}
+.fp-scheduler > .fp-scheduler-inner > p {
+  font-family: var(--font-body);
+  color: #5A6068;
+  margin: 0 auto 1.5rem;
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.fp-scheduler-embed {
+  border: 1px solid #DEDFE3;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 600px;
+  background: #F7F7F9;
+  box-shadow: 0 4px 20px rgba(15, 26, 42, 0.06);
+}
+.fp-scheduler-embed iframe {
+  width: 100%;
+  height: 720px;
+  border: none;
+}
+.fp-scheduler-fallback {
+  margin-top: 1.25rem;
+  font-size: 0.92rem;
+  color: #5A6068;
+}
+.fp-scheduler-fallback a {
+  color: #16253D;
+  font-weight: 600;
+  text-decoration: underline;
+}
 
 /* ═══ MEET THE TEAM ═══ */
 .fp-team-strip {
-  background: #fff;
-  padding: 2.5rem 1.5rem 1.5rem;
+  background: #F7F7F9;
+  padding: 2.5rem 1.5rem 2.5rem;
   text-align: center;
 }
 .fp-team-strip-inner { max-width: 920px; margin: 0 auto; }
@@ -695,12 +759,12 @@
   font-family: var(--font-serif-display);
   font-size: 1.55rem;
   font-weight: 700;
-  color: #16253C;
+  color: #16253D;
   margin: 0 0 0.5rem;
 }
 .fp-team-strip > .fp-team-strip-inner > p {
   font-family: var(--font-body);
-  color: #4b5563;
+  color: #5A6068;
   margin: 0 auto 1.75rem;
   max-width: 640px;
   font-size: 1.02rem;
@@ -713,13 +777,13 @@
   flex-wrap: wrap;
 }
 .fp-team-photo {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   overflow: hidden;
-  background: #f3f4f6;
+  background: #F1F1F3;
   border: 3px solid #fff;
-  box-shadow: 0 4px 16px rgba(10, 49, 97, 0.12);
+  box-shadow: 0 4px 16px rgba(15, 26, 42, 0.10);
 }
 .fp-team-photo img {
   width: 100%;
@@ -731,7 +795,7 @@
 
 /* ═══ VALUE PROPS ═══ */
 .fp-value {
-  background: #f8f9fa;
+  background: #fff;
   padding: 2.5rem 1.5rem 3rem;
 }
 .fp-value-inner { max-width: 1000px; margin: 0 auto; }
@@ -739,13 +803,13 @@
   font-family: var(--font-serif-display);
   font-size: 1.6rem;
   font-weight: 700;
-  color: #16253C;
+  color: #16253D;
   text-align: center;
   margin: 0 0 0.5rem;
 }
 .fp-value > .fp-value-inner > p {
   font-family: var(--font-body);
-  color: #4b5563;
+  color: #5A6068;
   text-align: center;
   margin: 0 auto 2rem;
   max-width: 640px;
@@ -758,91 +822,43 @@
   gap: 1.25rem;
 }
 .fp-value-card {
-  background: #fff;
+  background: #F7F7F9;
   border-radius: 12px;
   padding: 1.5rem 1.25rem;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  border: 1px solid rgba(10, 49, 97, 0.08);
+  border: 1px solid #DEDFE3;
 }
 .fp-value-icon {
-  width: 44px;
-  height: 44px;
-  background: #FDD25E;
+  width: 46px;
+  height: 46px;
+  background: #fff;
+  border: 1.5px solid #C8A456;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 0.85rem;
 }
-.fp-value-icon svg { width: 22px; height: 22px; color: #0F1A2A; }
+.fp-value-icon svg { width: 22px; height: 22px; color: #A4873F; }
 .fp-value-card h3 {
   font-family: var(--font-serif-display);
   font-size: 1.05rem;
   font-weight: 700;
-  color: #16253C;
+  color: #16253D;
   margin: 0 0 0.4rem;
 }
 .fp-value-card p {
   font-family: var(--font-body);
-  color: #4b5563;
+  color: #5A6068;
   font-size: 0.9rem;
   line-height: 1.55;
   margin: 0;
 }
 
-/* ═══ SCHEDULER ═══ */
-.fp-scheduler {
-  padding: 3rem 1.5rem 3.25rem;
-  background: #fff;
-}
-.fp-scheduler-inner {
-  max-width: 920px;
-  margin: 0 auto;
-  text-align: center;
-}
-.fp-scheduler h2 {
-  font-family: var(--font-serif-display);
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: #16253C;
-  margin: 0 0 0.5rem;
-}
-.fp-scheduler > .fp-scheduler-inner > p {
-  font-family: var(--font-body);
-  color: #4b5563;
-  margin: 0 auto 1.5rem;
-  max-width: 600px;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-.fp-scheduler-embed {
-  border: 1px solid rgba(10, 49, 97, 0.1);
-  border-radius: 12px;
-  overflow: hidden;
-  min-height: 600px;
-  background: #fafafa;
-}
-.fp-scheduler-embed iframe {
-  width: 100%;
-  height: 720px;
-  border: none;
-}
-.fp-scheduler-fallback {
-  margin-top: 1.25rem;
-  font-size: 0.92rem;
-  color: #6b7280;
-}
-.fp-scheduler-fallback a {
-  color: #0A3161;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
 /* ═══ WHAT TO EXPECT ═══ */
 .fp-expect {
   padding: 3rem 1.5rem 3.25rem;
-  background: #f8f9fa;
+  background: #F7F7F9;
 }
 .fp-expect-inner {
   max-width: 760px;
@@ -853,12 +869,12 @@
   font-family: var(--font-serif-display);
   font-size: 1.55rem;
   font-weight: 700;
-  color: #16253C;
+  color: #16253D;
   margin: 0 0 0.6rem;
 }
 .fp-expect-intro {
   font-family: var(--font-body);
-  color: #374151;
+  color: #3A4048;
   line-height: 1.65;
   margin: 0 auto 1.5rem;
   max-width: 620px;
@@ -876,8 +892,8 @@
   align-items: flex-start;
   gap: 12px;
   padding: 0.7rem 0;
-  border-bottom: 1px solid rgba(10, 49, 97, 0.08);
-  color: #1a1a1a;
+  border-bottom: 1px solid #DEDFE3;
+  color: #0F1A2A;
   font-size: 0.98rem;
   line-height: 1.55;
   font-family: var(--font-body);
@@ -886,16 +902,16 @@
 .fp-expect-icon {
   width: 22px;
   height: 22px;
-  color: #0A3161;
+  color: #A4873F;
   flex-shrink: 0;
   margin-top: 2px;
 }
 .fp-expect-tag {
   display: inline-block;
   margin-top: 1.5rem;
-  padding: 6px 14px;
-  background: #FDD25E;
-  color: #16253C;
+  padding: 7px 16px;
+  background: #16253D;
+  color: #C8A456;
   border-radius: 999px;
   font-family: var(--font-mono);
   font-size: 0.7rem;
@@ -906,7 +922,7 @@
 
 /* ═══ CONTACT FALLBACK ═══ */
 .fp-contact {
-  background: #0A3161;
+  background: #16253D;
   padding: 2.25rem 1.5rem;
   text-align: center;
   color: #fff;
@@ -917,7 +933,7 @@
   color: rgba(255,255,255,0.88);
   margin: 0 0 0.35rem;
 }
-.fp-contact a { color: #FDD25E; font-weight: 600; }
+.fp-contact a { color: #C8A456; font-weight: 600; }
 
 /* ═══ MOBILE ═══ */
 @media (max-width: 768px) {
@@ -925,17 +941,17 @@
   .fp-hero h1 { font-size: 1.65rem; max-width: 22ch; }
   .fp-hero p { font-size: 0.97rem; }
   .fp-hero-meta { font-size: 0.65rem; gap: 12px; padding: 6px 14px; }
-  .fp-team-strip { padding: 2rem 1rem 1rem; }
+  .fp-scheduler { padding: 1.75rem 0.75rem 2rem; }
+  .fp-scheduler-inner h2 { font-size: 1.4rem; }
+  .fp-scheduler-embed { border: none; border-radius: 0; min-height: 540px; }
+  .fp-scheduler-embed iframe { height: 600px; }
+  .fp-team-strip { padding: 2rem 1rem 2.25rem; }
   .fp-team-strip h2 { font-size: 1.3rem; }
   .fp-team-photos { gap: 0.9rem; }
   .fp-team-photo { width: 100px; height: 100px; }
   .fp-value { padding: 2rem 1rem 2.25rem; }
   .fp-value h2 { font-size: 1.35rem; }
   .fp-value-grid { grid-template-columns: 1fr; gap: 0.85rem; }
-  .fp-scheduler { padding: 2rem 0.75rem 2.25rem; }
-  .fp-scheduler-inner h2 { font-size: 1.4rem; }
-  .fp-scheduler-embed { border: none; border-radius: 0; min-height: 540px; }
-  .fp-scheduler-embed iframe { height: 600px; }
   .fp-expect { padding: 2rem 1rem 2.25rem; }
   .fp-expect h2 { font-size: 1.3rem; }
   .fp-contact { padding: 1.75rem 1rem; }
@@ -943,7 +959,7 @@
 </style>
 
 
-<section class="fp-hero">
+<section class="fp-hero fp-section">
     <div class="fp-hero-eyebrow">Your Retirement Money Map · Step 1</div>
     <h1>Let's start your <em>Retirement Money Map</em>.</h1>
     <p>Pick a time below for a friendly 30-minute call with our team. No products, no pitch — just a chance to talk through your federal benefits and answer the questions you've been sitting on.</p>
@@ -951,7 +967,19 @@
 </section>
 
 
-<section class="fp-team-strip">
+<section class="fp-scheduler fp-section" id="schedule">
+    <div class="fp-scheduler-inner">
+        <h2>Pick a time that works for you</h2>
+        <p>Click a 30-minute slot below. You'll get an email confirmation with the phone number for your call.</p>
+        <div class="fp-scheduler-embed">
+            <iframe src="https://scheduler.zoom.us/capital-wealth/federal-benefits-30-minute-phone-call?embed=true" title="Schedule your 30-minute federal benefits call" loading="lazy" allow="clipboard-write" style="width: 100%; height: 720px; border: none;"></iframe>
+        </div>
+        <p class="fp-scheduler-fallback">Trouble loading the scheduler? <a href="https://scheduler.zoom.us/capital-wealth/federal-benefits-30-minute-phone-call" target="_blank" rel="noopener">Open it in a new tab</a> or call <a href="tel:8012102800">801.210.2800</a>.</p>
+    </div>
+</section>
+
+
+<section class="fp-team-strip fp-section">
     <div class="fp-team-strip-inner">
         <h2>You'll be talking to a real human.</h2>
         <p>Our team has spent years working with federal employees on FERS, TSP, FEHB, FEGLI, and Social Security. We're fee-only fiduciaries — so this call is just a conversation, not a sales meeting.</p>
@@ -964,7 +992,7 @@
 </section>
 
 
-<section class="fp-value">
+<section class="fp-value fp-section">
     <div class="fp-value-inner">
         <h2>What to expect from your call</h2>
         <p>Thirty minutes is plenty of time to get clarity on where you stand — and decide whether the next step in your Retirement Money Map makes sense.</p>
@@ -995,19 +1023,7 @@
 </section>
 
 
-<section class="fp-scheduler" id="schedule">
-    <div class="fp-scheduler-inner">
-        <h2>Pick a time that works for you</h2>
-        <p>Click below to grab a 30-minute slot. You'll get an email confirmation with the phone number for your call.</p>
-        <div class="fp-scheduler-embed">
-            <iframe src="https://scheduler.zoom.us/capital-wealth/federal-benefits-30-minute-phone-call?embed=true" title="Schedule your 30-minute federal benefits call" loading="lazy" allow="clipboard-write" style="width: 100%; height: 720px; border: none;"></iframe>
-        </div>
-        <p class="fp-scheduler-fallback">Trouble loading the scheduler? <a href="https://scheduler.zoom.us/capital-wealth/federal-benefits-30-minute-phone-call" target="_blank" rel="noopener">Open it in a new tab</a> or call <a href="tel:8012102800">801.210.2800</a>.</p>
-    </div>
-</section>
-
-
-<section class="fp-expect">
+<section class="fp-expect fp-section">
     <div class="fp-expect-inner">
         <h2>What we'll cover in 30 minutes</h2>
         <p class="fp-expect-intro">Come with the questions you've been sitting on. Leave with a clearer picture of your retirement — and a plan for what comes next.</p>
@@ -1029,12 +1045,12 @@
                 <span><strong>Next step — only if it makes sense</strong> — a deeper planning session, or simply the resources to keep going on your own</span>
             </li>
         </ul>
-        <div class="fp-expect-tag">100% Complimentary · No Obligation</div>
+        <div class="fp-expect-tag">Complimentary · No Obligation</div>
     </div>
 </section>
 
 
-<section class="fp-contact">
+<section class="fp-contact fp-section">
     <p>Prefer to schedule by phone? Call <a href="tel:8012102800">801.210.2800</a></p>
     <p>Monday – Friday, 8:30 AM – 5:30 PM Mountain</p>
 </section>
