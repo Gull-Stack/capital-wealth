@@ -33,9 +33,9 @@ This is the single most important question. A fiduciary is legally required to a
 
 ## 2. Are you fee-only or fee-based?
 
-Fee-only advisors charge you directly — no commissions from product sales. Fee-based advisors may charge fees *and* earn commissions, creating conflicts of interest you'll never see on your statement.
+Fee-only advisors charge you directly — their compensation comes from clients, not product commissions. Fee-based advisors may charge fees *and* earn commissions, which can create conflicts of interest that often don't appear on your statement.
 
-**Red flag:** "Our services are complimentary" usually means they're earning commissions on insurance or annuity products behind the scenes.
+**Red flag:** When an advisor says their ongoing services or financial plans are "complimentary," they're often earning commissions on insurance or annuity products behind the scenes.
 
 ## 3. What percentage of your clients are retirees?
 

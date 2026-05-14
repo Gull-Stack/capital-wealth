@@ -12,13 +12,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop Confirmed — Hill AFB / Weber State Davis, May 21 | Capital Wealth</title>
-    <meta name="description" content="Your registration for the Hill AFB Federal Benefits Workshop on May 21, 2026 is confirmed. Download your parking permit, add to calendar, and find venue details.">
+    <meta name="description" content="Your registration for the Hill AFB Federal Benefits Workshop on May 21, 2026 is confirmed. Add to calendar and find venue details.">
     <meta name="robots" content="noindex, nofollow">
     <link rel="canonical" href="https://www.capitalwealth.com/l/federal-benefits-workshop-hill-afb/ty/">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Workshop Confirmed — Hill AFB / Weber State Davis, May 21 | Capital Wealth">
-    <meta property="og:description" content="Your registration for the Hill AFB Federal Benefits Workshop on May 21, 2026 is confirmed. Download your parking permit, add to calendar, and find venue details.">
+    <meta property="og:description" content="Your registration for the Hill AFB Federal Benefits Workshop on May 21, 2026 is confirmed. Add to calendar and find venue details.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.capitalwealth.com/l/federal-benefits-workshop-hill-afb/ty/">
     <meta property="og:image" content="https://www.capitalwealth.com/assets/images/photos/CWA-Mountain-Couple-home-header.webp">
@@ -796,31 +796,7 @@
   </div>
   <div class="ty-hero-eyebrow">Workshop Registration Confirmed</div>
   <h1>You're All Set — See You Thursday, May 21</h1>
-  <p>Your seat is reserved at Weber State Davis Campus, D2 Building, Room 117. <strong>Print your parking permit below before you go</strong> — digital phone display will not work.</p>
-</section>
-
-<!-- Parking permit (Hill AFB only) -->
-<section class="ty-parking">
-  <div class="ty-parking-inner">
-    <div class="ty-parking-icon">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-4"/><circle cx="8.5" cy="15.5" r="3.5"/><circle cx="18.5" cy="15.5" r="3.5"/>
-      </svg>
-    </div>
-    <div class="ty-parking-content">
-      <h3>Weber State University Parking</h3>
-      <p>You'll need a parking permit to park on campus. <strong>Print and display on your dashboard</strong> — digital permits on phones will NOT work.</p>
-      <div class="ty-parking-button-container">
-        <a href="/assets/parking/weber-state-davis-parking-permit.pdf" download class="ty-parking-button" target="_blank">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
-          Download &amp; Print Parking Permit
-        </a>
-      </div>
-      <p class="ty-parking-note">Valid in DAVIS W LOTS ONLY. Must be printed and displayed on driver's side dashboard.</p>
-    </div>
-  </div>
+  <p>Your seat is reserved at Weber State Davis Campus, D2 Building, Room 117. We'll email your confirmation and calendar invite shortly.</p>
 </section>
 
 <section class="ty-event-detail">
@@ -837,7 +813,7 @@
       <dd>Weber State University — Davis Campus<br>D2 Building, Room 117 (first floor, right inside main entrance)<br>2750 University Park Blvd, Layton, UT 84041</dd>
 
       <dt>Parking</dt>
-      <dd>Permit covered by Capital Wealth (download above). Valid in DAVIS W LOTS ONLY — must be printed.</dd>
+      <dd>Complimentary — park in any DAVIS W LOT. No permit required.</dd>
 
       <dt>Instructor</dt>
       <dd>Ann Werts — federal benefits specialist with 15+ years of experience.</dd>
@@ -869,8 +845,8 @@
     <div class="ty-next-step">
       <div class="ty-next-step-num">1</div>
       <div class="ty-next-step-content">
-        <h3>Confirmation email + calendar invite + parking permit</h3>
-        <p>You'll get an email confirmation in the next few minutes that includes the parking permit. Print and place on your driver's side dashboard before you arrive.</p>
+        <h3>Confirmation email + calendar invite</h3>
+        <p>You'll get an email confirmation in the next few minutes with your calendar invite and venue details.</p>
       </div>
     </div>
     <div class="ty-next-step">
@@ -917,18 +893,31 @@
 </section>
 
 <script>
+  // Only fire Lead/CompleteRegistration when there's a fresh session marker
+  // set by the landing-page form submit. Without this gate, every TY page
+  // load (refresh, bookmark, share, back-button, bot crawl) inflates the
+  // Meta lead count — 3–4× over-attribution observed on the May 2026 run.
   (function() {
+    var marker = null;
+    try {
+      var raw = sessionStorage.getItem('cw_lead_event');
+      if (raw) marker = JSON.parse(raw);
+    } catch (_) {}
+    var fresh = marker && marker.id && (Date.now() - marker.ts < 5 * 60 * 1000);
+    if (!fresh) return;
+
     if (typeof fbq === 'function') {
+      // Same eventID as the landing-page fire → Meta dedupes server-side.
       fbq('track', 'CompleteRegistration', {
         content_name: 'Federal Workshop Hill AFB May 21',
         content_category: 'Federal Benefits',
         currency: 'USD',
         value: 0
-      });
+      }, { eventID: marker.id });
       fbq('track', 'Lead', {
         content_name: 'Federal Workshop Hill AFB May 21',
         content_category: 'Federal Benefits'
-      });
+      }, { eventID: marker.id });
     }
     if (typeof gtag === 'function') {
       gtag('event', 'sign_up', {
@@ -941,6 +930,8 @@
         value: 1
       });
     }
+    // Clear the marker so a TY-page refresh in the same tab doesn't re-fire.
+    try { sessionStorage.removeItem('cw_lead_event'); } catch (_) {}
   })();
 </script>
 
@@ -1012,7 +1003,7 @@
                 <a href="/faq/">FAQ</a>
                 <a href="/case-studies/">Case Studies</a>
                 <a href="/reviews/">Client Reviews</a>
-                <a href="/book/">Free Book Chapter</a>
+                <a href="/book/">Sample Book Chapter</a>
             </div>
 
             <div class="finpay-footer-links">
@@ -1451,12 +1442,12 @@
   </div>
   <div class="cw-chat-messages" id="cwChatMessages"></div>
   <div class="cw-chat-scheduler" id="cwScheduler">
-    <a href="/thank-you/" target="_blank">Schedule Your Free Visit</a>
+    <a href="/thank-you/" target="_blank">Schedule Your Visit</a>
     <p>20-30 minutes. No obligation.</p>
   </div>
   <div class="cw-chat-resources" id="cwResources">
-    <p style="font-size:0.85rem;color:#666;margin:0 0 6px;">Explore our free resources:</p>
-    <a href="/book/">Free Book Chapter</a>
+    <p style="font-size:0.85rem;color:#666;margin:0 0 6px;">Explore our complimentary resources:</p>
+    <a href="/book/">Sample Book Chapter</a>
     <a href="/resources/">Retirement Guides</a>
   </div>
   <div class="cw-chat-input-wrap">
@@ -1642,6 +1633,9 @@
     <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9922273&fmt=gif" />
     </noscript>
     
+
+    <!-- Site-wide helpers (window.CWPhone phone validation, etc.) -->
+    <script src="/assets/js/main.js"></script>
 
 </body>
 </html>

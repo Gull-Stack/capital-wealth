@@ -1503,7 +1503,7 @@ body > .gov-bar { display: none !important; }
         <span class="tag">★ Educational Workshop</span>
         <span class="meta">Complimentary · No products sold · 2-hour session</span>
       </div>
-      <h1 id="hero-title">Two hours that change <em>thirty years</em> of your federal retirement.</h1>
+      <h1 id="hero-title">Two hours that could shape <em>thirty years</em> of your federal retirement.</h1>
       <p class="deck">FERS, TSP, FEHB, FEGLI, Social Security — five intricate systems, one retirement, and a window of decisions you only get to make once. Spend a Wednesday afternoon in Salt Lake with Ann Werts and walk out with the math done.</p>
 
       <div class="docket" role="list">
@@ -1545,11 +1545,13 @@ body > .gov-bar { display: none !important; }
           <!-- Lead routing + UTM tracking (consumed by /api/submit-lead) -->
           <input type="hidden" name="source" value="federal-benefits-workshop-slc">
           <input type="hidden" name="lead_type" value="federal-workshop-registration">
+          <input type="hidden" name="campaign_id" value="701VS00000eWe58YAC">
           <input type="hidden" name="utm_campaign" value="slc-guesthouse-federal">
           <input type="hidden" name="utm_source" id="utm_source" value="">
           <input type="hidden" name="utm_medium" id="utm_medium" value="">
           <input type="hidden" name="utm_content" id="utm_content" value="">
           <input type="hidden" name="utm_term" id="utm_term" value="">
+          <input type="hidden" name="lead_source" id="lead_source" value="">
           <input type="hidden" name="referrer" id="referrer" value="">
           <input type="hidden" name="event_date" value="2026-05-20">
 
@@ -1896,7 +1898,7 @@ body > .gov-bar { display: none !important; }
 
         try {
           var qp = new URLSearchParams(window.location.search);
-          ['utm_source','utm_medium','utm_content','utm_term'].forEach(function (k) {
+          ['utm_source','utm_medium','utm_content','utm_term','lead_source'].forEach(function (k) {
             var el = document.getElementById(k);
             if (el && qp.get(k)) el.value = qp.get(k);
           });
@@ -1919,6 +1921,22 @@ body > .gov-bar { display: none !important; }
         .then(function (r) { return r.json(); })
         .then(function (result) {
           if (result && result.success) {
+            // Generate a unique eventID and stash a session marker. The TY
+            // page re-fires Lead/CompleteRegistration with the SAME eventID
+            // so Meta dedupes server-side, and without the marker the TY
+            // page does nothing — kills the over-counting from refreshes,
+            // bookmarks, back-button visits, and bot crawls of the TY URL.
+            var eventId = (window.crypto && window.crypto.randomUUID)
+              ? window.crypto.randomUUID()
+              : ('cw-' + Date.now() + '-' + Math.random().toString(36).slice(2));
+            try {
+              sessionStorage.setItem('cw_lead_event', JSON.stringify({
+                id: eventId,
+                ts: Date.now(),
+                label: 'federal_workshop_slc_may20',
+                content_name: 'Federal Workshop SLC May 20'
+              }));
+            } catch (_) {}
             if (typeof window.gtag === 'function') {
               window.gtag('event', 'generate_lead', {
                 event_category: 'lead',
@@ -1930,7 +1948,7 @@ body > .gov-bar { display: none !important; }
               window.fbq('track', 'Lead', {
                 content_name: 'Federal Workshop SLC May 20',
                 content_category: 'Federal Benefits'
-              });
+              }, { eventID: eventId });
             }
             window.location.href = '/l/federal-benefits-workshop-slc/ty/';
           } else {
@@ -2030,7 +2048,7 @@ body > .gov-bar { display: none !important; }
                 <a href="/faq/">FAQ</a>
                 <a href="/case-studies/">Case Studies</a>
                 <a href="/reviews/">Client Reviews</a>
-                <a href="/book/">Free Book Chapter</a>
+                <a href="/book/">Sample Book Chapter</a>
             </div>
 
             <div class="finpay-footer-links">
@@ -2469,12 +2487,12 @@ body > .gov-bar { display: none !important; }
   </div>
   <div class="cw-chat-messages" id="cwChatMessages"></div>
   <div class="cw-chat-scheduler" id="cwScheduler">
-    <a href="/thank-you/" target="_blank">Schedule Your Free Visit</a>
+    <a href="/thank-you/" target="_blank">Schedule Your Visit</a>
     <p>20-30 minutes. No obligation.</p>
   </div>
   <div class="cw-chat-resources" id="cwResources">
-    <p style="font-size:0.85rem;color:#666;margin:0 0 6px;">Explore our free resources:</p>
-    <a href="/book/">Free Book Chapter</a>
+    <p style="font-size:0.85rem;color:#666;margin:0 0 6px;">Explore our complimentary resources:</p>
+    <a href="/book/">Sample Book Chapter</a>
     <a href="/resources/">Retirement Guides</a>
   </div>
   <div class="cw-chat-input-wrap">
@@ -2660,6 +2678,9 @@ body > .gov-bar { display: none !important; }
     <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9922273&fmt=gif" />
     </noscript>
     
+
+    <!-- Site-wide helpers (window.CWPhone phone validation, etc.) -->
+    <script src="/assets/js/main.js"></script>
 
 </body>
 </html>

@@ -83,7 +83,7 @@ High commission products often have ongoing fees that reduce your returns by 1-3
 
 **How It Works:**
 - Advisors are paid directly by clients
-- No commissions from product sales
+- Compensation comes from client fees, not product commissions
 - Compensation aligned with client success
 - Transparent fee structure
 
@@ -265,12 +265,12 @@ Whole life insurance might be sold as an investment when term life plus separate
 
 ### Our Fiduciary Commitment
 
-At Capital Wealth, we operate under the fiduciary standard at all times. Here's what this means for you:
+At Capital Wealth, we operate under the fiduciary standard. Here's what this means for you:
 
 **Fee-Only Structure:**
-- We're compensated only by our clients
-- No commissions or third-party payments
-- Complete transparency in all fees
+- We're compensated by our clients
+- Compensation is paid by clients, not by third-party payments
+- Transparency in all fees
 
 **Investment Philosophy:**
 - Evidence-based investment strategies

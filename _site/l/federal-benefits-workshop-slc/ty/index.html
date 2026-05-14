@@ -893,18 +893,31 @@
 </section>
 
 <script>
+  // Only fire Lead/CompleteRegistration when there's a fresh session marker
+  // set by the landing-page form submit. Without this gate, every TY page
+  // load (refresh, bookmark, share, back-button, bot crawl) inflates the
+  // Meta lead count — 3–4× over-attribution observed on the May 2026 run.
   (function() {
+    var marker = null;
+    try {
+      var raw = sessionStorage.getItem('cw_lead_event');
+      if (raw) marker = JSON.parse(raw);
+    } catch (_) {}
+    var fresh = marker && marker.id && (Date.now() - marker.ts < 5 * 60 * 1000);
+    if (!fresh) return;
+
     if (typeof fbq === 'function') {
+      // Same eventID as the landing-page fire → Meta dedupes server-side.
       fbq('track', 'CompleteRegistration', {
         content_name: 'Federal Workshop SLC May 20',
         content_category: 'Federal Benefits',
         currency: 'USD',
         value: 0
-      });
+      }, { eventID: marker.id });
       fbq('track', 'Lead', {
         content_name: 'Federal Workshop SLC May 20',
         content_category: 'Federal Benefits'
-      });
+      }, { eventID: marker.id });
     }
     if (typeof gtag === 'function') {
       gtag('event', 'sign_up', {
@@ -917,6 +930,8 @@
         value: 1
       });
     }
+    // Clear the marker so a TY-page refresh in the same tab doesn't re-fire.
+    try { sessionStorage.removeItem('cw_lead_event'); } catch (_) {}
   })();
 </script>
 
@@ -988,7 +1003,7 @@
                 <a href="/faq/">FAQ</a>
                 <a href="/case-studies/">Case Studies</a>
                 <a href="/reviews/">Client Reviews</a>
-                <a href="/book/">Free Book Chapter</a>
+                <a href="/book/">Sample Book Chapter</a>
             </div>
 
             <div class="finpay-footer-links">
@@ -1427,12 +1442,12 @@
   </div>
   <div class="cw-chat-messages" id="cwChatMessages"></div>
   <div class="cw-chat-scheduler" id="cwScheduler">
-    <a href="/thank-you/" target="_blank">Schedule Your Free Visit</a>
+    <a href="/thank-you/" target="_blank">Schedule Your Visit</a>
     <p>20-30 minutes. No obligation.</p>
   </div>
   <div class="cw-chat-resources" id="cwResources">
-    <p style="font-size:0.85rem;color:#666;margin:0 0 6px;">Explore our free resources:</p>
-    <a href="/book/">Free Book Chapter</a>
+    <p style="font-size:0.85rem;color:#666;margin:0 0 6px;">Explore our complimentary resources:</p>
+    <a href="/book/">Sample Book Chapter</a>
     <a href="/resources/">Retirement Guides</a>
   </div>
   <div class="cw-chat-input-wrap">
@@ -1618,6 +1633,9 @@
     <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9922273&fmt=gif" />
     </noscript>
     
+
+    <!-- Site-wide helpers (window.CWPhone phone validation, etc.) -->
+    <script src="/assets/js/main.js"></script>
 
 </body>
 </html>

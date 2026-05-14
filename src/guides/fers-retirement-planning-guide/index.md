@@ -97,7 +97,7 @@ Your "high-3" is the average of your highest 36 consecutive months of basic pay,
 - Annual pension: $85,000 × 30 × 1.1% = $28,050
 - Monthly pension: $2,338
 
-> **Run your own numbers:** Use our [free FERS retirement calculator](/services/federal-benefits/fers-calculator/) to model your high-3, years of service, sick leave credit, military buyback, and retirement age — including the 1.1% enhanced multiplier and the 1.7% special category rate for law enforcement, ATC, and firefighters.
+> **Run your own numbers:** Use our [FERS retirement calculator](/services/federal-benefits/fers-calculator/) to model your high-3, years of service, sick leave credit, military buyback, and retirement age — including the 1.1% enhanced multiplier and the 1.7% special category rate for law enforcement, ATC, and firefighters.
 
 ### FERS Retirement Eligibility
 
