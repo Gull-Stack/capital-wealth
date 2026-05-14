@@ -46,6 +46,20 @@
     { "source": "/blog/social-security-optimization-utah", "destination": "/services/social-security/", "permanent": true },
     { "source": "/blog/social-security-optimization-utah/", "destination": "/services/social-security/", "permanent": true },
     { "source": "/federal-benefits-workshop", "destination": "/l/federal-benefits-workshop/", "permanent": true },
-    { "source": "/federal-benefits-workshop/", "destination": "/l/federal-benefits-workshop/", "permanent": true }
+    { "source": "/federal-benefits-workshop/", "destination": "/l/federal-benefits-workshop/", "permanent": true },
+    { "source": "/services/sdba/overview", "destination": "/services/sdba/", "permanent": true },
+    { "source": "/services/sdba/overview/", "destination": "/services/sdba/", "permanent": true },
+    { "source": "/services/sdba/how-to-enroll", "destination": "/services/sdba/#sdba-fit", "permanent": true },
+    { "source": "/services/sdba/how-to-enroll/", "destination": "/services/sdba/#sdba-fit", "permanent": true },
+    { "source": "/services/sdba/fees-and-costs", "destination": "/services/sdba/#contribution-limits", "permanent": true },
+    { "source": "/services/sdba/fees-and-costs/", "destination": "/services/sdba/#contribution-limits", "permanent": true },
+    { "source": "/services/sdba/risk-management", "destination": "/services/sdba/", "permanent": true },
+    { "source": "/services/sdba/risk-management/", "destination": "/services/sdba/", "permanent": true },
+    { "source": "/services/sdba/fidelity-brokeragelink", "destination": "/services/sdba/#sdba-platforms", "permanent": true },
+    { "source": "/services/sdba/fidelity-brokeragelink/", "destination": "/services/sdba/#sdba-platforms", "permanent": true },
+    { "source": "/services/sdba/schwab-pcra", "destination": "/services/sdba/#sdba-platforms", "permanent": true },
+    { "source": "/services/sdba/schwab-pcra/", "destination": "/services/sdba/#sdba-platforms", "permanent": true },
+    { "source": "/services/sdba/empower-brokerage", "destination": "/services/sdba/#sdba-platforms", "permanent": true },
+    { "source": "/services/sdba/empower-brokerage/", "destination": "/services/sdba/#sdba-platforms", "permanent": true }
   ]
 }
