@@ -55,7 +55,7 @@ const WORKSHOPS = [
         end_time: '2026-05-20T13:00:00-0600',
         landing_url: 'https://www.capitalwealth.com/l/federal-benefits-workshop-slc/',
         date_human: 'Wednesday, May 20',
-        time_human: '4:00–6:00 PM',
+        time_human: '4:30–6:30 PM',
         venue_human: 'University Guest House, Salt Lake City',
     },
     {

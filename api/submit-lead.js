@@ -659,7 +659,7 @@ export default async function handler(req, res) {
           'federal-benefits-workshop-slc': {
             heading: 'Federal Benefits Workshop — Salt Lake City',
             dateLabel: 'Wednesday, May 20, 2026',
-            time: '4:00 PM – 6:00 PM Mountain',
+            time: '4:30 PM – 6:30 PM Mountain',
             venue: 'University Guest House (University of Utah)',
             address: '110 S Fort Douglas Blvd, Salt Lake City, UT 84113',
             parkingHtml: '<p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Parking:</strong> Visitor parking available on-site at the Guest House.</p>',

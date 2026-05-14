@@ -17,7 +17,7 @@ module.exports = {
   },
   slcMay20: {
     date: "2026-05-20",
-    timeMt: "4:00 PM – 6:00 PM Mountain",
+    timeMt: "4:30 PM – 6:30 PM Mountain",
     icsUrl: "/assets/webinars/federal-benefits-workshop-slc-2026-05-20.ics"
   },
   hillAfbMay21: {
