@@ -1,0 +1,414 @@
+---
+layout: layouts/base-finpay.njk
+title: "Book a 15-Minute Federal Phase One Call | Capital Wealth"
+description: "Schedule a complimentary 15-minute Phase One call with our federal benefits team. No products, no pitch — just a focused look at your FERS, TSP, FEHB, and Social Security picture."
+noindex: true
+excludeFromSitemap: true
+bodyClass: "landing-page"
+permalink: "/l/federal-phase-one/"
+ogImage: "/assets/images/photos/federal/american-flag-hero.jpg"
+ogImageAlt: "Book a 15-Minute Federal Phase One Call with Capital Wealth"
+---
+
+<style>
+/* Kill main padding that accounts for fixed header */
+.landing-page main { padding-top: 0 !important; }
+
+/* Hide sitewide nav/footer chrome on this LP */
+.landing-page .finpay-header,
+.landing-page .finpay-nav-wrapper,
+.landing-page .cwh-shell,
+.landing-page #cwhShell,
+.landing-page header.cwh-shell,
+.landing-page .finpay-footer,
+.landing-page footer.finpay-footer {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  position: absolute !important;
+}
+
+/* ═══ HERO ═══ */
+.fp-hero {
+  background: linear-gradient(135deg, #0A3161 0%, #16253C 65%, #081f3f 100%);
+  padding: 2.75rem 1.5rem 2.25rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.fp-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: url('/assets/images/logos/logo-icon-color.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.035;
+}
+.fp-hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #B31942;
+  background: #fff;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 0.85rem;
+  font-weight: 700;
+  position: relative;
+}
+.fp-hero h1 {
+  font-family: var(--font-serif-display);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.12;
+  margin: 0 0 0.65rem;
+  color: #fff;
+  position: relative;
+  max-width: 18ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fp-hero h1 em { font-style: italic; color: #FDD25E; }
+.fp-hero p {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.6;
+  position: relative;
+}
+.fp-hero-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 1.25rem;
+  padding: 8px 18px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.92);
+  position: relative;
+}
+.fp-hero-meta b { color: #FDD25E; font-weight: 700; letter-spacing: 0.12em; }
+
+/* ═══ VALUE PROPS ═══ */
+.fp-value {
+  background: #f8f9fa;
+  padding: 2.5rem 1.5rem 3rem;
+}
+.fp-value-inner { max-width: 1000px; margin: 0 auto; }
+.fp-value h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #16253C;
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+.fp-value > .fp-value-inner > p {
+  font-family: var(--font-body);
+  color: #4b5563;
+  text-align: center;
+  margin: 0 auto 2rem;
+  max-width: 640px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.fp-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.fp-value-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border: 1px solid rgba(10, 49, 97, 0.08);
+}
+.fp-value-icon {
+  width: 44px;
+  height: 44px;
+  background: #FDD25E;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.85rem;
+}
+.fp-value-icon svg { width: 22px; height: 22px; color: #0F1A2A; }
+.fp-value-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #16253C;
+  margin: 0 0 0.4rem;
+}
+.fp-value-card p {
+  font-family: var(--font-body);
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ═══ SCHEDULER ═══ */
+.fp-scheduler {
+  padding: 3rem 1.5rem 3.25rem;
+  background: #fff;
+}
+.fp-scheduler-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+.fp-scheduler h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #16253C;
+  margin: 0 0 0.5rem;
+}
+.fp-scheduler > .fp-scheduler-inner > p {
+  font-family: var(--font-body);
+  color: #4b5563;
+  margin: 0 auto 1.5rem;
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.fp-scheduler-embed {
+  border: 1px solid rgba(10, 49, 97, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 600px;
+  background: #fafafa;
+}
+.fp-scheduler-embed iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+.fp-scheduler-fallback {
+  margin-top: 1.25rem;
+  font-size: 0.92rem;
+  color: #6b7280;
+}
+.fp-scheduler-fallback a {
+  color: #0A3161;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ═══ TEAM / WHAT TO EXPECT ═══ */
+.fp-team {
+  padding: 3rem 1.5rem 3.25rem;
+  background: #f8f9fa;
+}
+.fp-team-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+.fp-team-left h2 {
+  font-family: var(--font-serif-display);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #16253C;
+  margin: 0 0 0.6rem;
+}
+.fp-team-left > p {
+  font-family: var(--font-body);
+  color: #374151;
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+}
+.fp-team-list { list-style: none; padding: 0; margin: 0; }
+.fp-team-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(10, 49, 97, 0.08);
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-family: var(--font-body);
+}
+.fp-team-list li:last-child { border-bottom: none; }
+.fp-team-icon {
+  width: 20px;
+  height: 20px;
+  color: #0A3161;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.fp-team-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.6rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border: 1px solid rgba(10, 49, 97, 0.08);
+}
+.fp-team-card h3 {
+  font-family: var(--font-serif-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #16253C;
+  margin: 0 0 0.8rem;
+}
+.fp-team-card p {
+  font-family: var(--font-body);
+  color: #374151;
+  line-height: 1.6;
+  font-size: 0.92rem;
+  margin: 0 0 0.65rem;
+}
+.fp-team-card p:last-child { margin-bottom: 0; }
+.fp-team-card strong { color: #16253C; }
+
+/* ═══ CONTACT FALLBACK ═══ */
+.fp-contact {
+  background: #0A3161;
+  padding: 2.25rem 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+.fp-contact p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.88);
+  margin: 0 0 0.35rem;
+}
+.fp-contact a { color: #FDD25E; font-weight: 600; }
+
+/* ═══ MOBILE (QR scans are mobile-first) ═══ */
+@media (max-width: 768px) {
+  .fp-hero { padding: 2rem 1rem 1.75rem; }
+  .fp-hero h1 { font-size: 1.6rem; max-width: 22ch; }
+  .fp-hero p { font-size: 0.95rem; }
+  .fp-hero-meta { font-size: 0.65rem; gap: 12px; padding: 6px 14px; }
+  .fp-value { padding: 2rem 1rem 2.25rem; }
+  .fp-value h2 { font-size: 1.35rem; }
+  .fp-value-grid { grid-template-columns: 1fr; gap: 0.85rem; }
+  .fp-scheduler { padding: 2rem 0.75rem 2.25rem; }
+  .fp-scheduler-inner h2 { font-size: 1.4rem; }
+  .fp-scheduler-embed { border: none; border-radius: 0; min-height: 520px; }
+  .fp-scheduler-embed iframe { height: 580px; }
+  .fp-team { padding: 2rem 1rem 2.25rem; }
+  .fp-team-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .fp-team-left h2 { font-size: 1.3rem; }
+  .fp-contact { padding: 1.75rem 1rem; }
+}
+</style>
+
+{# ═══ HERO ═══ #}
+<section class="fp-hero">
+    <div class="fp-hero-eyebrow">Federal Phase One · 15 Minutes</div>
+    <h1>A short call to see if we're a <em>fit</em>.</h1>
+    <p>Phase One is the discovery call — no products, no pitch, no commitment. Fifteen minutes to talk through your federal benefits picture and decide if a deeper conversation makes sense.</p>
+    <div class="fp-hero-meta"><span><b>15 min</b> · Phone or Zoom</span><span>Chad · Ann · or the team</span></div>
+</section>
+
+{# ═══ VALUE PROPS ═══ #}
+<section class="fp-value">
+    <div class="fp-value-inner">
+        <h2>What Phase One Is — and Isn't</h2>
+        <p>Most federal employees have never had a focused conversation with someone who actually knows FERS, TSP, FEHB, and Social Security in detail. Fifteen minutes to fix that.</p>
+        <div class="fp-value-grid">
+            <div class="fp-value-card">
+                <div class="fp-value-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                </div>
+                <h3>Short by Design</h3>
+                <p>Fifteen minutes is plenty for a first read on where you stand and whether we're worth more of your time.</p>
+            </div>
+            <div class="fp-value-card">
+                <div class="fp-value-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <h3>No Sales Pitch</h3>
+                <p>We're fee-only fiduciaries — no commissions, no products to push. Whether to take a next step is your call.</p>
+            </div>
+            <div class="fp-value-card">
+                <div class="fp-value-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <h3>Federal-Specific</h3>
+                <p>FERS, TSP, FEHB, FEGLI, Social Security coordination — the systems your typical advisor isn't trained on.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# ═══ ZOOM SCHEDULER EMBED ═══ #}
+<section class="fp-scheduler" id="schedule">
+    <div class="fp-scheduler-inner">
+        <h2>Pick a time</h2>
+        <p>Choose any 15-minute slot below. You'll get a calendar invite with a phone number or Zoom link.</p>
+        <div class="fp-scheduler-embed">
+            <iframe src="https://scheduler.zoom.us/capital-wealth/federal-benefits-consultation?embed=true" title="Schedule your 15-minute Federal Phase One call" loading="lazy" allow="clipboard-write" style="width: 100%; height: 700px; border: none;"></iframe>
+        </div>
+        <p class="fp-scheduler-fallback">Trouble loading the scheduler? <a href="https://scheduler.zoom.us/capital-wealth/federal-benefits-consultation" target="_blank" rel="noopener">Open it in a new tab</a> or call <a href="tel:8012102800">801.210.2800</a>.</p>
+    </div>
+</section>
+
+{# ═══ WHAT TO EXPECT / TEAM ═══ #}
+<section class="fp-team">
+    <div class="fp-team-inner">
+        <div class="fp-team-left">
+            <h2>What we'll cover in 15 minutes</h2>
+            <p>Phase One is a first read — not a full plan. Come with the questions you've been sitting on. Leave knowing whether a deeper look is worth scheduling.</p>
+            <ul class="fp-team-list">
+                <li>
+                    <svg class="fp-team-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Where you stand</strong> — career stage, FERS years, target retirement date</span>
+                </li>
+                <li>
+                    <svg class="fp-team-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>What's on your mind</strong> — TSP, pension, survivor election, FEHB-to-Medicare, anything you're stuck on</span>
+                </li>
+                <li>
+                    <svg class="fp-team-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Whether we're a fit</strong> — what a deeper planning engagement would look like, and whether it's worth your time</span>
+                </li>
+                <li>
+                    <svg class="fp-team-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    <span><strong>Next step (only if it makes sense)</strong> — a longer session to walk through your numbers in detail</span>
+                </li>
+            </ul>
+        </div>
+        <div class="fp-team-card">
+            <h3>Who you'll be talking to</h3>
+            <p>Phase One calls are handled by <strong>Chad Austin</strong>, our Lead Advisor; <strong>Ann Werts</strong>, our federal benefits specialist; or another member of our planning team — whichever calendar fits your time.</p>
+            <p>All three are fiduciary, fee-only, and have spent years working with federal employees on FERS pension, TSP, FEHB, and Social Security coordination.</p>
+            <p><strong>This call is complimentary and comes with no obligation.</strong> If we're not the right fit, we'll say so.</p>
+        </div>
+    </div>
+</section>
+
+{# ═══ CONTACT FALLBACK ═══ #}
+<section class="fp-contact">
+    <p>Prefer to schedule by phone? Call <a href="tel:8012102800">801.210.2800</a></p>
+    <p>Monday – Friday, 8:30 AM – 5:30 PM Mountain</p>
+</section>
