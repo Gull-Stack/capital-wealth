@@ -23,8 +23,8 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:may20-federal-benefits-workshop-slc@capitalwealth.com
 DTSTAMP:20260430T000000Z
-DTSTART;TZID=America/Denver:20260520T160000
-DTEND;TZID=America/Denver:20260520T180000
+DTSTART;TZID=America/Denver:20260520T163000
+DTEND;TZID=America/Denver:20260520T183000
 SUMMARY:Federal Benefits Workshop — Salt Lake City
 DESCRIPTION:Federal benefits workshop with Ann Werts. Covers FERS\, TSP\, FEHB\, FEGLI and Social Security with interactive Q&A.\n\nVenue: University Guest House\, 110 S Fort Douglas Blvd\, Salt Lake City\, UT 84113\n\nMore info: https://www.capitalwealth.com/l/federal-benefits-workshop-slc/
 URL:https://www.capitalwealth.com/l/federal-benefits-workshop-slc/
