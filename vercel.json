@@ -49,6 +49,8 @@
     { "source": "/federal-benefits-workshop/", "destination": "/l/federal-benefits-workshop/", "permanent": true },
     { "source": "/l/federal-phase-one", "destination": "/start/", "permanent": true },
     { "source": "/l/federal-phase-one/", "destination": "/start/", "permanent": true },
+    { "source": "/schedule-a-meeting", "destination": "/contact/", "permanent": true },
+    { "source": "/schedule-a-meeting/", "destination": "/contact/", "permanent": true },
     { "source": "/services/sdba/overview", "destination": "/services/sdba/", "permanent": true },
     { "source": "/services/sdba/overview/", "destination": "/services/sdba/", "permanent": true },
     { "source": "/services/sdba/how-to-enroll", "destination": "/services/sdba/#sdba-fit", "permanent": true },
