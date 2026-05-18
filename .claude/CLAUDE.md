@@ -64,6 +64,12 @@ Capital Wealth is a registered investment advisor in Utah doing $100M/year in re
 
 ## Session Log
 
+### 2026-05-18 — Aliased `/schedule-a-meeting/` → `/contact/` (301)
+
+- **What shipped:** Two paired 301 redirect entries added to [vercel.json](../vercel.json) so `capitalwealth.com/schedule-a-meeting/` (and the no-slash form) resolve to the existing `/contact/` page. Placed right after the `/l/federal-phase-one` pair. `permanent: true` → Vercel emits a 308.
+- **Why an alias, not a move:** `/contact/` is already the site's "Schedule Your Visit" page (title is literally "Contact Capital Wealth | Schedule Your Visit") and is linked from ~70 files site-wide (nav, footers, every service page). User confirmed: keep `/contact/` where it is, just alias the new marketing URL. No file moves, no internal-link changes, no `_site/` rebuild (`vercel.json` is config, not build output).
+- **What to pick up next:** (1) Open PR for this change. (2) After Vercel deploy: `curl -sI https://www.capitalwealth.com/schedule-a-meeting/` should return 308 with `location: /contact/`; same for the no-slash form; `/contact/` itself should still 200 directly.
+
 ### 2026-05-14 — Moved `/l/federal-phase-one/` → `/start/`
 
 - **What shipped:** Page that lived at `/l/federal-phase-one/` (30-min federal benefits scheduler — Zoom embed above the fold, team strip, value props, "what we'll cover") now lives at the shorter, brandable `/start/`. Source file moved [src/l/federal-phase-one/index.njk](../src/l/federal-phase-one/index.njk) → [src/start/index.njk](../src/start/index.njk) with one frontmatter line changed: `permalink: "/start/"`. All page content (premium brand palette work from `d60ccdeb`, `4ff89526`, `f43a88ce`, `6eedbad2` earlier this week) carried over untouched.
