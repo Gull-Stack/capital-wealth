@@ -6,7 +6,7 @@
 module.exports = {
   may28FederalBenefits: {
     date: "2026-05-28",
-    timeMt: "6:00 PM – 8:00 PM Mountain",
+    timeMt: "5:00 PM – 6:00 PM Mountain",
     zoomUrl: process.env.ZOOM_WEBINAR_URL || "",
     icsUrl: "/assets/webinars/federal-benefits-webinar-2026-05-28.ics"
   },

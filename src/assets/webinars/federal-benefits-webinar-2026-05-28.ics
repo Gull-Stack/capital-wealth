@@ -23,8 +23,8 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:may28-federal-benefits-webinar@capitalwealth.com
 DTSTAMP:20260518T000000Z
-DTSTART;TZID=America/Denver:20260528T180000
-DTEND;TZID=America/Denver:20260528T200000
+DTSTART;TZID=America/Denver:20260528T170000
+DTEND;TZID=America/Denver:20260528T180000
 SUMMARY:Federal Benefits Webinar — VERA, VSIP & RIF
 DESCRIPTION:Live online federal benefits webinar with Ann Werts on evaluating an early-out offer — VERA early retirement\, VSIP buyouts\, and Reduction in Force — with interactive Q&A.\n\nJoin link will be emailed to registrants the day of the event.\n\nMore info: https://www.capitalwealth.com/l/federal-benefits-webinar/
 URL:https://www.capitalwealth.com/l/federal-benefits-webinar/

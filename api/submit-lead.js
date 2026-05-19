@@ -613,7 +613,7 @@ export default async function handler(req, res) {
               <div style="background: #f8f9fb; padding: 20px; border-radius: 8px; border-left: 4px solid #C4A82A; margin: 16px 0 24px;">
                 <h3 style="margin: 0 0 12px 0; color: #16253C; font-size: 16px;">Event Details</h3>
                 <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Date:</strong> Thursday, May 28, 2026</p>
-                <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Time:</strong> 6:00 PM – 8:00 PM Mountain (8 PM ET / 5 PM PT)</p>
+                <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Time:</strong> 5:00 PM – 6:00 PM Mountain, with live Q&amp;A to follow (7 PM ET / 4 PM PT)</p>
                 <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Platform:</strong> Zoom Webinars (no Zoom account required)</p>
                 <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Instructor:</strong> Ann Werts</p>
               </div>
