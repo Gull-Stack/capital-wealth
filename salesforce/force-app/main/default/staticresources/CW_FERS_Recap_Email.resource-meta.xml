@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Private</cacheControl>
+    <contentType>text/html</contentType>
+    <description>HTML body for the FERS webinar recap email (2026-05-14 webinar). Used by the campaign send to Campaign 701VS00000eWrYVYA0.</description>
+</StaticResource>
