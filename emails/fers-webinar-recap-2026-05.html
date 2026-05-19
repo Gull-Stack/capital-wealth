@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--
+  Capital Wealth | Webinar recap email
+  Campaign: The Federal Benefits Gap webinar (2026-05-14) | FERS pension
+  Audience: all webinar registrants (SF Campaign 701VS00000eWrYVYA0, LeadSource 'Webinar')
+  Send from: vip@capitalwealth.com via Salesforce List Email
+  Subject:   Your FERS pension recap &mdash; and your next step
+  Preheader: Five things worth remembering from last week's webinar, plus how to get your personal Federal Benefit Comparison.
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light only">
+  <meta name="supported-color-schemes" content="light only">
+  <title>Your FERS pension recap</title>
+  <!--[if mso]>
+  <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+  <![endif]-->
+  <style>
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; line-height: 100%; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #f8fafc; }
+    a { color: #0f2742; }
+    @media only screen and (max-width: 620px) {
+      .cw-container { width: 100% !important; }
+      .cw-pad { padding-left: 24px !important; padding-right: 24px !important; }
+      .cw-h1 { font-size: 24px !important; line-height: 32px !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f8fafc;">
+
+  <!-- Preheader (hidden) -->
+  <div style="display:none; max-height:0; overflow:hidden; mso-hide:all; font-size:1px; line-height:1px; color:#f8fafc;">
+    Five things worth remembering from last week's webinar, plus how to get your personal Federal Benefit Comparison.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f8fafc;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+
+        <table role="presentation" class="cw-container" width="680" cellpadding="0" cellspacing="0" border="0" style="width:680px; max-width:680px; background-color:#ffffff;">
+
+          <!-- Header -->
+          <tr>
+            <td align="center" bgcolor="#0f2742" style="background-color:#0f2742; padding:28px 24px;">
+              <img src="https://www.capitalwealth.com/assets/images/logos/logo-horizontal-white.png" width="220" alt="Capital Wealth" style="display:block; width:220px; max-width:220px; height:auto;">
+            </td>
+          </tr>
+
+          <!-- Gold rule -->
+          <tr><td bgcolor="#fdd25e" style="background-color:#fdd25e; font-size:0; line-height:0; height:4px;">&nbsp;</td></tr>
+
+          <!-- Intro -->
+          <tr>
+            <td class="cw-pad" style="padding:40px 48px 8px 48px; font-family:Arial, Helvetica, sans-serif;">
+              <p style="margin:0 0 6px 0; font-size:13px; line-height:18px; letter-spacing:1px; text-transform:uppercase; color:#fdd25e; font-weight:bold;">
+                The Federal Benefits Gap
+              </p>
+              <h1 class="cw-h1" style="margin:0 0 18px 0; font-size:28px; line-height:36px; color:#0f2742; font-weight:bold;">
+                Thanks for joining us. Here&rsquo;s your FERS pension recap.
+              </h1>
+              <p style="margin:0 0 16px 0; font-size:16px; line-height:26px; color:#33414f;">
+                Hi there,
+              </p>
+              <p style="margin:0 0 16px 0; font-size:16px; line-height:26px; color:#33414f;">
+                Thank you for registering for last week&rsquo;s webinar on the FERS pension.
+                Federal benefits expert Ann Werts covered a lot of ground &mdash; the records
+                you should be keeping, the three versions of FERS, when you can actually
+                retire, and how your pension is calculated.
+              </p>
+              <p style="margin:0 0 8px 0; font-size:16px; line-height:26px; color:#33414f;">
+                If you only keep five things in front of you, make it these.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Webinar replay -->
+          <tr>
+            <td class="cw-pad" style="padding:8px 48px 16px 48px; font-family:Arial, Helvetica, sans-serif;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f1f1f3" style="background-color:#f1f1f3; border-radius:8px;">
+                <tr>
+                  <td style="padding:24px 28px;">
+                    <p style="margin:0 0 5px 0; font-size:12px; line-height:17px; letter-spacing:1px; text-transform:uppercase; color:#a4873f; font-weight:bold;">
+                      Webinar replay
+                    </p>
+                    <p style="margin:0 0 6px 0; font-size:17px; line-height:24px; color:#0f2742; font-weight:bold;">
+                      Couldn&rsquo;t make it, or want to watch it again?
+                    </p>
+                    <p style="margin:0 0 16px 0; font-size:14px; line-height:22px; color:#33414f;">
+                      The full recording is available to watch any time &mdash; about 90 minutes.
+                    </p>
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center" bgcolor="#0f2742" style="background-color:#0f2742; border-radius:6px;">
+                          <a href="https://capitalwealth.zoom.us/rec/share/I6phLnTuZEvBw6X3xV3p9Z5inyMM_hrlK7ic6C-R1TgxHqgA294EwuL6UFK0wDtp.luh45RG4qgDv5EJ8?pwd=DHu_YokXR9vwmfltdQAAIAAAAEQV2fCqen8YS6y-GZQRLxBfFgR7idFesaMUf6xvUCyPz8afY6d811JRN_94UtH_3zAwMDAwNA" target="_blank" style="display:inline-block; padding:13px 28px; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; letter-spacing:0.5px; text-transform:uppercase; color:#ffffff; text-decoration:none;">
+                            Watch the Recording
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Takeaways -->
+          <tr>
+            <td class="cw-pad" style="padding:16px 48px 8px 48px; font-family:Arial, Helvetica, sans-serif;">
+
+              <!-- 1 -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+                <tr>
+                  <td width="44" valign="top">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr><td width="36" height="36" align="center" valign="middle" bgcolor="#fdd25e" style="background-color:#fdd25e; border-radius:18px; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; color:#0f2742;">1</td></tr>
+                    </table>
+                  </td>
+                  <td valign="top" style="padding-left:14px;">
+                    <p style="margin:0 0 4px 0; font-size:17px; line-height:24px; color:#0f2742; font-weight:bold;">Keep your own records.</p>
+                    <p style="margin:0; font-size:15px; line-height:24px; color:#33414f;">
+                      Download your eOPF &mdash; every SF-50 and your DD-214 &mdash; plus your
+                      Social Security statement, and keep them somewhere safe. After you
+                      retire, HR can no longer pull these for you, and OPM uses them to
+                      calculate your years of creditable service.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 2 -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+                <tr>
+                  <td width="44" valign="top">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr><td width="36" height="36" align="center" valign="middle" bgcolor="#fdd25e" style="background-color:#fdd25e; border-radius:18px; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; color:#0f2742;">2</td></tr>
+                    </table>
+                  </td>
+                  <td valign="top" style="padding-left:14px;">
+                    <p style="margin:0 0 4px 0; font-size:17px; line-height:24px; color:#0f2742; font-weight:bold;">Know when you can retire.</p>
+                    <p style="margin:0; font-size:15px; line-height:24px; color:#33414f;">
+                      A full, unreduced pension takes <em>both</em> your Minimum Retirement
+                      Age <em>and</em> the service: MRA with 30 years, age 60 with 20 years,
+                      or age 62 with any length of service. Leaving at MRA with 10 years is
+                      an option, but it can reduce your pension by roughly 5% for each year
+                      you are under 62.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 3 -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+                <tr>
+                  <td width="44" valign="top">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr><td width="36" height="36" align="center" valign="middle" bgcolor="#fdd25e" style="background-color:#fdd25e; border-radius:18px; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; color:#0f2742;">3</td></tr>
+                    </table>
+                  </td>
+                  <td valign="top" style="padding-left:14px;">
+                    <p style="margin:0 0 4px 0; font-size:17px; line-height:24px; color:#0f2742; font-weight:bold;">The pension formula is simpler than it looks.</p>
+                    <p style="margin:0; font-size:15px; line-height:24px; color:#33414f;">
+                      Years of creditable service &times; 1% &times; your high-3 average
+                      salary. That 1% becomes 1.1% if you retire at 62 or later with at
+                      least 20 years of service. Your high-3 is your three highest
+                      consecutive years of basic pay (base plus locality &mdash; nothing
+                      extra).
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 4 -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+                <tr>
+                  <td width="44" valign="top">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr><td width="36" height="36" align="center" valign="middle" bgcolor="#fdd25e" style="background-color:#fdd25e; border-radius:18px; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; color:#0f2742;">4</td></tr>
+                    </table>
+                  </td>
+                  <td valign="top" style="padding-left:14px;">
+                    <p style="margin:0 0 4px 0; font-size:17px; line-height:24px; color:#0f2742; font-weight:bold;">Your unused sick leave counts.</p>
+                    <p style="margin:0; font-size:15px; line-height:24px; color:#33414f;">
+                      At retirement, unused sick leave converts into extra months of
+                      creditable service and increases your pension &mdash; a benefit you
+                      never paid a premium for. It is worth doing that conversion math once,
+                      as you approach your retirement date.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- 5 -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;">
+                <tr>
+                  <td width="44" valign="top">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr><td width="36" height="36" align="center" valign="middle" bgcolor="#fdd25e" style="background-color:#fdd25e; border-radius:18px; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; color:#0f2742;">5</td></tr>
+                    </table>
+                  </td>
+                  <td valign="top" style="padding-left:14px;">
+                    <p style="margin:0 0 4px 0; font-size:17px; line-height:24px; color:#0f2742; font-weight:bold;">Protect your spouse.</p>
+                    <p style="margin:0; font-size:15px; line-height:24px; color:#33414f;">
+                      If you are married, electing a survivor benefit is the only way your
+                      spouse keeps your federal health insurance after you pass away. And
+                      when it comes to picking a date, retiring at the end of the month
+                      &mdash; often December 31 if you have a lot of annual leave &mdash;
+                      can help you make the most of your final benefits.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- CTA -->
+          <tr>
+            <td class="cw-pad" style="padding:24px 48px 8px 48px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0f2742" style="background-color:#0f2742; border-radius:8px;">
+                <tr>
+                  <td style="padding:32px 32px 28px 32px; font-family:Arial, Helvetica, sans-serif;" align="center">
+                    <h2 style="margin:0 0 12px 0; font-size:22px; line-height:30px; color:#ffffff; font-weight:bold;">
+                      Ready to put this into a plan?
+                    </h2>
+                    <p style="margin:0 0 24px 0; font-size:15px; line-height:24px; color:#d6dee8;">
+                      Education is the easy part &mdash; the harder part is applying it to
+                      your situation. Schedule a complimentary 30-minute call with our team.
+                      No products, no pitch &mdash; just a chance to walk through your
+                      benefits and build your personal Federal Benefit Comparison, a
+                      side-by-side review of your numbers using our proprietary system.
+                    </p>
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center" bgcolor="#fdd25e" style="background-color:#fdd25e; border-radius:6px;">
+                          <a href="https://www.capitalwealth.com/start" target="_blank" style="display:inline-block; padding:16px 36px; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; letter-spacing:0.5px; text-transform:uppercase; color:#0f2742; text-decoration:none;">
+                            Schedule Your 30-Minute Call
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin:22px 0 0 0; font-size:13px; line-height:20px; color:#9fb0c2;">
+                      Or call us directly at
+                      <a href="tel:8012102800" style="color:#fdd25e; text-decoration:none;">801.210.2800</a>.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Sign-off -->
+          <tr>
+            <td class="cw-pad" style="padding:28px 48px 36px 48px; font-family:Arial, Helvetica, sans-serif;">
+              <p style="margin:0 0 4px 0; font-size:16px; line-height:26px; color:#33414f;">
+                We look forward to helping you chart your path to retirement.
+              </p>
+              <p style="margin:0; font-size:16px; line-height:26px; color:#0f2742; font-weight:bold;">
+                The Capital Wealth Team
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td bgcolor="#0f2742" style="background-color:#0f2742; padding:32px 48px; font-family:Arial, Helvetica, sans-serif;">
+              <p style="margin:0 0 14px 0; font-size:12px; line-height:19px; color:#9fb0c2;">
+                Advisory services offered through Capital Wealth, LLC, a State of Utah
+                Registered Investment Advisor. Insurance services offered through CWA
+                Insurance Services, LLC.
+              </p>
+              <p style="margin:0 0 14px 0; font-size:12px; line-height:19px; color:#9fb0c2;">
+                Capital Wealth is not affiliated with or endorsed by the U.S. Government,
+                Social Security Administration, Office of Personnel Management, or any
+                federal agency.
+              </p>
+              <p style="margin:0 0 14px 0; font-size:12px; line-height:19px; color:#9fb0c2;">
+                This email is for educational purposes only and is not financial, tax, or
+                legal advice. Capital Wealth does not guarantee any specific result or
+                outcome.
+              </p>
+              <p style="margin:0 0 6px 0; font-size:12px; line-height:19px; color:#c8d2dd;">
+                Capital Wealth &middot; 1850 W Ashton Blvd, Suite 175, Lehi, UT 84043 &middot;
+                <a href="tel:8012102800" style="color:#c8d2dd; text-decoration:none;">801.210.2800</a>
+              </p>
+              <p style="margin:0; font-size:12px; line-height:19px; color:#9fb0c2;">
+                You received this email because you registered for a Capital Wealth federal
+                benefits webinar.
+                <a href="mailto:vip@capitalwealth.com?subject=Unsubscribe" style="color:#fdd25e; text-decoration:underline;">Unsubscribe</a>.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
