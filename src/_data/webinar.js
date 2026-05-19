@@ -2,13 +2,13 @@
 // the Zoom join link can be set in Vercel without committing it.
 //
 // Vercel env keys to set (any environment that should render the join link):
-//   ZOOM_WEBINAR_URL   — full Zoom join URL for May 14, 2026 federal webinar
+//   ZOOM_WEBINAR_URL   — full Zoom join URL for May 28, 2026 federal webinar
 module.exports = {
-  may14FederalBenefits: {
-    date: "2026-05-14",
+  may28FederalBenefits: {
+    date: "2026-05-28",
     timeMt: "6:00 PM – 8:00 PM Mountain",
     zoomUrl: process.env.ZOOM_WEBINAR_URL || "",
-    icsUrl: "/assets/webinars/federal-benefits-webinar-2026-05-14.ics"
+    icsUrl: "/assets/webinars/federal-benefits-webinar-2026-05-28.ics"
   },
   ogdenMay19: {
     date: "2026-05-19",

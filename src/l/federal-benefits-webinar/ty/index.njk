@@ -1,7 +1,7 @@
 ---
 layout: layouts/base-finpay.njk
 title: "Webinar Confirmed | Federal Benefits Webinar | Capital Wealth"
-description: "Your registration for the May 14 Federal Benefits Webinar is confirmed. Add to calendar, save your Zoom link, and book your complimentary Federal Retirement Money Map."
+description: "Your registration for the May 28 Federal Benefits Webinar is confirmed. Add to calendar, save your Zoom link, and book your complimentary Federal Retirement Money Map."
 noindex: true
 excludeFromSitemap: true
 bodyClass: "landing-page"
@@ -190,7 +190,7 @@ permalink: "/l/federal-benefits-webinar/ty/"
     </svg>
   </div>
   <div class="ty-hero-eyebrow">Webinar Registration Confirmed</div>
-  <h1>You're All Set for the May 14 Federal Benefits Webinar</h1>
+  <h1>You're All Set for the May 28 Federal Benefits Webinar</h1>
   <p>Your seat is reserved. Add the event to your calendar below — and look for a confirmation email with your unique Zoom join link the day of the event. The replay will be sent within 48 hours after the live session.</p>
 </section>
 
@@ -200,7 +200,7 @@ permalink: "/l/federal-benefits-webinar/ty/"
     <h2>Event Details</h2>
     <dl class="ty-event-rows">
       <dt>Date</dt>
-      <dd>Thursday, May 14, 2026</dd>
+      <dd>Thursday, May 28, 2026</dd>
 
       <dt>Time</dt>
       <dd>6:00 PM – 8:00 PM Mountain<br><small>(8:00 PM ET / 5:00 PM PT)</small></dd>
@@ -208,12 +208,15 @@ permalink: "/l/federal-benefits-webinar/ty/"
       <dt>Platform</dt>
       <dd>Zoom Webinars — works on phone, tablet, or desktop. No Zoom account required.</dd>
 
+      <dt>Topic</dt>
+      <dd>VERA, VSIP &amp; RIF — evaluating an early-out offer.</dd>
+
       <dt>Instructor</dt>
       <dd>Ann Werts — federal benefits specialist with 15+ years of experience.</dd>
     </dl>
 
     <div class="ty-actions">
-      <a href="{{ webinar.may14FederalBenefits.icsUrl }}" download class="ty-action-btn ty-action-primary">
+      <a href="{{ webinar.may28FederalBenefits.icsUrl }}" download class="ty-action-btn ty-action-primary">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
           <line x1="16" y1="2" x2="16" y2="6"/>
@@ -227,14 +230,14 @@ permalink: "/l/federal-benefits-webinar/ty/"
          the form returns a per-registrant URL). Server-rendered fallback
          shows the static webinar URL if configured, else a "pending"
          message that the link is in the confirmation email. #}
-      <a id="ty-zoom-join-link" href="{{ webinar.may14FederalBenefits.zoomUrl or '#' }}" target="_blank" rel="noopener" class="ty-action-btn"{% if not webinar.may14FederalBenefits.zoomUrl %} hidden{% endif %}>
+      <a id="ty-zoom-join-link" href="{{ webinar.may28FederalBenefits.zoomUrl or '#' }}" target="_blank" rel="noopener" class="ty-action-btn"{% if not webinar.may28FederalBenefits.zoomUrl %} hidden{% endif %}>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polygon points="23 7 16 12 23 17 23 7"/>
           <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
         </svg>
         <span id="ty-zoom-join-label">Save Zoom Join Link</span>
       </a>
-      <span id="ty-zoom-pending" class="ty-zoom-pending"{% if webinar.may14FederalBenefits.zoomUrl %} hidden{% endif %}>
+      <span id="ty-zoom-pending" class="ty-zoom-pending"{% if webinar.may28FederalBenefits.zoomUrl %} hidden{% endif %}>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
           <circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/>
         </svg>
@@ -259,7 +262,7 @@ permalink: "/l/federal-benefits-webinar/ty/"
       <div class="ty-next-step-num">2</div>
       <div class="ty-next-step-content">
         <h3>Reminders the week of the event</h3>
-        <p>We'll send a reminder 3 days out, then a final note the morning of May 14 with your unique Zoom join link.</p>
+        <p>We'll send a reminder 3 days out, then a final note the morning of May 28 with your unique Zoom join link.</p>
       </div>
     </div>
     <div class="ty-next-step">
@@ -317,7 +320,7 @@ permalink: "/l/federal-benefits-webinar/ty/"
     if (fresh) {
       if (typeof fbq === 'function') {
         fbq('track', 'CompleteRegistration', {
-          content_name: 'Federal Webinar May 14',
+          content_name: 'Federal Webinar May 28',
           content_category: 'Federal Benefits',
           currency: 'USD',
           value: 0
@@ -326,7 +329,7 @@ permalink: "/l/federal-benefits-webinar/ty/"
       if (typeof gtag === 'function') {
         gtag('event', 'sign_up', {
           event_category: 'lead',
-          event_label: 'federal_webinar_may14'
+          event_label: 'federal_webinar_may28'
         });
       }
       // Clear the marker so a refresh of this TY page doesn't re-fire.
