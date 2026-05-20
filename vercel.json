@@ -3,6 +3,9 @@
   "outputDirectory": "_site",
   "cleanUrls": true,
   "trailingSlash": true,
+  "crons": [
+    { "path": "/api/sync-fb-spend", "schedule": "0 7 * * *" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
