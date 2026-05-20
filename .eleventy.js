@@ -5,6 +5,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/brand-facts.json": "brand-facts.json"});
   eleventyConfig.addPassthroughCopy({"src/llms.txt": "llms.txt"});
 
+  // Workshop slide deck — self-contained presentation served at /workshop/.
+  // Passthrough-copied verbatim; ignored to prevent template processing of the HTML.
+  eleventyConfig.addPassthroughCopy("src/workshop");
+  eleventyConfig.ignores.add("src/workshop/**");
+
   // Collections
   eleventyConfig.addCollection("blog", function(collection) {
     return collection.getFilteredByTag("blog").sort((a, b) => {
