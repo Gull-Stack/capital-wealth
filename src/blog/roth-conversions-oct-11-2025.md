@@ -107,7 +107,7 @@ With federal debt exceeding $38 trilliona number so large that one trillion seco
 
 ---
 
-## Mike's Personal Story: Why the Retirement Money Map„ Exists
+## Mike's Personal Story: Why the Retirement Money Mapï¿½ Exists
 
 ### A Family Crisis That Changed Everything
 
@@ -122,7 +122,7 @@ Mike's journey into retirement planning began with personal tragedy. At just 49 
 **The Transformation:**
 This experience led Mike to switch from medical school to financial planning, with a mission: "I will never allow what happened to my mom and dad to happen to myself or anyone I care about."
 
-### The Birth of the Retirement Money Map„
+### The Birth of the Retirement Money Mapï¿½
 
 **What Makes It Different:**
 - Plans to age 100 (not typical life expectancy)
@@ -132,7 +132,7 @@ This experience led Mike to switch from medical school to financial planning, wi
 - Comprehensive approach vs. portfolio-only focus
 
 **Special Offer for Utah Listeners:**
-The next five callers to 801-210-5500 receive a complimentary Retirement Money Map„typically requiring 5-10 hours of professional analysisat no cost with no obligation.
+The next five callers to 801-210-5500 receive a complimentary Retirement Money Mapï¿½typically requiring 5-10 hours of professional analysisat no cost with no obligation.
 
 ---
 
@@ -584,7 +584,7 @@ When one spouse dies, the survivor loses married filing jointly status and becom
 **Capital Wealth's Fiduciary Standard:**
 - Legal obligation to act in client's best interest
 - No sales pressure or quotas
-- Comprehensive fee-only planning available
+- Comprehensive fee-based fiduciary planning, with conflicts disclosed in writing
 - Coordination with existing professional relationships
 
 ---
@@ -840,7 +840,7 @@ Don't let another tax year pass without understanding your opportunities. Whethe
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysis plus Roth conversion assessmenttypically requiring extensive professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysis plus Roth conversion assessmenttypically requiring extensive professional analysis.
 
 **What's included:**
 - Current tax situation analysis

@@ -68,7 +68,7 @@ After nearly two decades of helping Utah retirees optimize large retirement acco
 **Professional services advantage:**
 - **Top-tier tax professionals** familiar with large account strategies
 - **Estate planning attorneys** specializing in Utah law
-- **Fee-only advisors** who can navigate large account complexities
+- **Fiduciary advisors** who can navigate large account complexities
 - **CPA networks** experienced with high-net-worth Utah families
 
 ---
@@ -366,9 +366,9 @@ After nearly two decades of helping Utah retirees optimize large retirement acco
 
 ### Essential Utah Professional Team Members
 
-**Fee-only financial advisor:**
+**Fiduciary financial advisor:**
 - **Fiduciary standard:** Advisor legally required to act in your best interest
-- **Compensation transparency:** Fee-only advisors don't receive commissions
+- **Compensation transparency:** Confirm in writing how your advisor is paid and any commissions or referral fees they may earn
 - **Large account experience:** Demonstrated experience with complex situations
 - **Utah knowledge:** Familiar with state-specific opportunities and challenges
 
@@ -573,7 +573,7 @@ After nearly two decades of helping Utah retirees optimize large retirement acco
 ### Short-term Actions (Do This Month)
 
 1. **Assemble your Utah professional team**
-   - Interview fee-only financial advisors with large IRA experience
+   - Interview fiduciary financial advisors with large IRA experience
    - Find CPA with multi-state and large account expertise
    - Identify estate planning attorney familiar with Utah law
 
