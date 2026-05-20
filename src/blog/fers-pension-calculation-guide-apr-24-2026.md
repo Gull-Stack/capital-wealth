@@ -22,7 +22,7 @@ If you're a federal employee nearing retirement, few numbers matter more than yo
 
 The good news: the FERS formula is public, transparent, and straightforward. In this guide, we'll walk you through exactly how to calculate your FERS pension using the same rules OPM uses, with 2026 salary examples so you can follow along with your own numbers.
 
-If you'd rather skip the math, our [FERS Retirement Calculator](/services/federal-benefits/fers-calculator/) does all four steps below automatically.
+If you'd rather skip the math, our [FERS Retirement Calculator](/services/federal-benefits/fers-calculator/) does all four steps below automatically. Or watch the same material in video: our [free FERS pension webinar replay](/blog/fers-pension-explained/) is 92 minutes with federal benefits expert Ann Werts.
 
 ---
 

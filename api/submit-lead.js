@@ -327,7 +327,7 @@ export default async function handler(req, res) {
       utm_source, utm_medium, utm_campaign, utm_content, utm_term,
       gclid, fbclid, state, variant, campaign_id, lead_source,
       referrer, landing_page, submitted_from, website,
-      // Federal webinar (May 14, 2026) fields — additive, optional except
+      // Federal webinar (May 28, 2026) fields — additive, optional except
       // when lead_type === 'federal-webinar-registration'.
       retirement_system, years_to_retirement,
       bringing_guest, guest_first_name, guest_last_name, guest_email, guest_phone,
@@ -601,19 +601,19 @@ export default async function handler(req, res) {
           `;
         }
       } else if (isFederalWebinar) {
-        emailSubject = 'You\'re Registered: Federal Benefits Webinar — May 14, 2026';
+        emailSubject = 'You\'re Registered: Federal Benefits Webinar — May 28, 2026';
         confirmationHtml = `
           <div style="font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <div style="background: linear-gradient(135deg, #16253C 0%, #0f2b4a 100%); padding: 32px; text-align: center; color: white;">
               <h1 style="color: #FDD25E; margin: 0; font-size: 28px; font-weight: 700;">You're Registered.</h1>
-              <p style="color: rgba(255,255,255,0.92); margin: 12px 0 0 0; font-size: 16px;">Federal Benefits Webinar — Live Online Masterclass</p>
+              <p style="color: rgba(255,255,255,0.92); margin: 12px 0 0 0; font-size: 16px;">Federal Benefits Webinar — VERA, VSIP &amp; RIF</p>
             </div>
             <div style="padding: 32px; background: #ffffff;">
               <p style="font-size: 16px; color: #1a1a1a; line-height: 1.65; margin: 0 0 16px;">Thanks ${fullName.split(' ')[0]} — your seat is reserved.</p>
               <div style="background: #f8f9fb; padding: 20px; border-radius: 8px; border-left: 4px solid #C4A82A; margin: 16px 0 24px;">
                 <h3 style="margin: 0 0 12px 0; color: #16253C; font-size: 16px;">Event Details</h3>
-                <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Date:</strong> Thursday, May 14, 2026</p>
-                <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Time:</strong> 6:00 PM – 8:00 PM Mountain (8 PM ET / 5 PM PT)</p>
+                <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Date:</strong> Thursday, May 28, 2026</p>
+                <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Time:</strong> 5:00 PM – 6:00 PM Mountain, with live Q&amp;A to follow (7 PM ET / 4 PM PT)</p>
                 <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Platform:</strong> Zoom Webinars (no Zoom account required)</p>
                 <p style="margin: 6px 0; font-size: 15px; color: #1a1a1a;"><strong>Instructor:</strong> Ann Werts</p>
               </div>
@@ -621,10 +621,10 @@ export default async function handler(req, res) {
               <div style="background: #16253C; color: #fff; padding: 18px 20px; border-radius: 8px; margin: 0 0 24px; text-align: center;">
                 <p style="margin: 0 0 12px 0; color: #FDD25E; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;">Your Unique Zoom Join Link</p>
                 <a href="${zoomRegistration.join_url}" style="display: inline-block; background: #FDD25E; color: #0F1A2A; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 700;">Join the Webinar →</a>
-                <p style="margin: 12px 0 0 0; color: rgba(255,255,255,0.72); font-size: 12px; line-height: 1.5;">Save this email — we'll also send a reminder the morning of May 14 with the same link.</p>
+                <p style="margin: 12px 0 0 0; color: rgba(255,255,255,0.72); font-size: 12px; line-height: 1.5;">Save this email — we'll also send a reminder the morning of May 28 with the same link.</p>
               </div>
               ` : `
-              <p style="font-size: 15px; color: #4b5563; line-height: 1.65;">We'll send a reminder 3 days out and your unique Zoom join link the morning of May 14. If you can't attend live, the full replay will be emailed to you within 48 hours.</p>
+              <p style="font-size: 15px; color: #4b5563; line-height: 1.65;">We'll send a reminder 3 days out and your unique Zoom join link the morning of May 28. If you can't attend live, the full replay will be emailed to you within 48 hours.</p>
               `}
               <div style="background: #16253C; color: #fff; padding: 18px 20px; border-radius: 8px; margin: 24px 0; text-align: center;">
                 <p style="margin: 0 0 12px 0; color: #FDD25E; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase;">Optional Next Step</p>
@@ -831,12 +831,12 @@ export default async function handler(req, res) {
           ? `<tr><td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>Guest:</strong></td><td style="padding: 10px; border-bottom: 1px solid #ddd;">${[leadData.guest_first_name, leadData.guest_last_name].filter(Boolean).join(' ') || '—'}${leadData.guest_email ? ` &lt;${leadData.guest_email}&gt;` : ''}</td></tr>`
           : '';
         const isHotLead = ['lt-2', '2-5'].includes(leadData.years_to_retirement);
-        notificationSubject = `${isHotLead ? '🔥' : '🎯'} Federal Webinar Registration: ${leadData.name} — May 14, 2026 (${yearsLabel})`;
+        notificationSubject = `${isHotLead ? '🔥' : '🎯'} Federal Webinar Registration: ${leadData.name} — May 28, 2026 (${yearsLabel})`;
         notificationHtml = `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <div style="background: #16253C; padding: 20px; text-align: center;">
               <h1 style="color: #FDD25E; margin: 0; font-size: 22px;">Federal Webinar Registration</h1>
-              <p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0;">May 14, 2026 — Live Online Masterclass</p>
+              <p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0;">May 28, 2026 — VERA, VSIP &amp; RIF</p>
             </div>
             <div style="padding: 28px; background: #f9f9f9;">
               ${isHotLead ? `<div style="background: #B31942; color: #fff; padding: 12px; border-radius: 8px; margin-bottom: 20px; text-align: center; font-weight: 700;">HOT LEAD — ${yearsLabel} to retirement, call within 1 business day</div>` : ''}
