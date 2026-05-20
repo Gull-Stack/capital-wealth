@@ -127,3 +127,96 @@ After PR #28 was deployed (May 11, 2026), all new federal-event leads automatica
 - **Adding a new federal event:** create the SF Campaign in the Lightning UI, then add a `<input type="hidden" name="campaign_id" value="<new-id>">` to that event's landing page (model after [src/l/federal-benefits-workshop-ogden/index.njk:939](../src/l/federal-benefits-workshop-ogden/index.njk)). Update the R1/R2/R3 reports' filter to include the new Campaign Id by editing the report XML in this repo and redeploying.
 - **When an event ends:** the Campaign keeps its data forever; remove the Campaign Id from the R1–R3 report filter values if you want the dashboard to stop showing it.
 - **For GA4 changes:** edit the Looker Studio report directly — no code or SF changes needed.
+
+---
+
+# MARKETING: Spend & ROI Dashboard
+
+A second, separate marketing dashboard — Dashboard 3 of the SF Dashboard Overhaul.
+"CW — Marketing Live" (above) answers *how many leads, by channel*. **Spend & ROI**
+answers *was the spend worth it* — cost per lead / appointment / meeting / closed won,
+total spend, channel mix, and funnel-by-channel.
+
+- **Dashboard:** [MARKETING: Spend & ROI](https://capitalwealth.lightning.force.com/lightning/r/Dashboard/01ZVS000002uXhh2AE/view) — id `01ZVS000002uXhh2AE`, folder `4 - Marketing`.
+- **Reports:** `M1`–`M9` in the `4 - Marketing Reports` folder, version-controlled at [salesforce/force-app/main/default/reports/](../salesforce/).
+- **Running user:** `jcohen@capitalwealth.com`.
+
+## Tiles
+
+| Tile | Report | How it is computed |
+|------|--------|--------------------|
+| Total Marketing Spend | M3 | SUM `ActualCost`, campaigns with `Is_Bottom_Campaign__c`, `StartDate` this quarter |
+| Cost Per Lead | M1 | `ActualCost ÷ NumberOfLeads` (report summary formula) |
+| Cost Per Closed Won | M2 | existing `Cost_Per_Won__c` field (`ActualCost ÷ NumberOfWonOpportunities`) |
+| Cost Per Appointment Requested | M6 | `ActualCost ÷ X1st_Sets__c` (first discovery booked) |
+| Cost Per Discovery Held | M7 | `ActualCost ÷ X1st_Kepts__c` (first discovery kept) |
+| Cost Per Investment Held | M8 | `ActualCost ÷ X3rd_Kepts__c` (investment meeting kept) |
+| Channel Mix Trend | M5 | Lead count by `LeadSource` per month, last 6 months |
+| Funnel by Channel | M9 | Leads → Attended → Sets → Kepts → Onboarded, by campaign type |
+| Lead Source Within Campaign | M4 | Lead `LeadSource` × `Campaign__c` matrix, last 6 months |
+
+All cost tiles read `Campaign.ActualCost`. Cost-per-stage denominators map to CW's
+funnel terms: "Appointment Requested" = 1st Set, "Discovery Held" = 1st Kept,
+"Investment Held" = 3rd Kept. **Confirm this funnel mapping with Josh.**
+
+## Cost data — where it comes from
+
+`ActualCost` is the single cost source for every tile. Today ~34% of campaigns
+(147 / 430) have it populated; seminars/radio were entered manually. Facebook ad
+spend is synced automatically (below). Google Ads and radio invoices still need
+manual entry on the Campaign record.
+
+> **Known divergence (flag for the team):** `ActualCost` and the itemized
+> `Total_Campaign_Cost__c` (Mailer + Venue + Food + Advertisement + Social +
+> Speaker) are two parallel totals. The Marketing dashboard standardizes on
+> `ActualCost`. Pick one canonical source so the Marketing, Campaigns and
+> Operations dashboards agree.
+
+## Facebook ad-spend sync
+
+FB spend flows into `Campaign.ActualCost` automatically. Each FB-funded SF
+Campaign stores its FB source id(s) in the `Platform_Spend_Source__c` text field,
+comma-separated. Token format: `facebook:campaign:<id>` or `facebook:adset:<id>`.
+
+Current mapping (set once on these campaigns):
+
+| SF Campaign | Id | Platform_Spend_Source__c |
+|---|---|---|
+| Federal Benefits Webinar 5.14.26 | `701VS00000eWrYVYA0` | `facebook:campaign:120241615030540665` |
+| Federal Benefits Workshop 5.19.26 | `701VS00000eWgMsYAK` | `facebook:adset:120241962936030665,facebook:adset:120241693236520665` |
+| Federal Benefits Workshop 5.20.26 | `701VS00000eWe58YAC` | `facebook:adset:120241963276230665,facebook:adset:120241692540170665` |
+| Federal Benefits Workshop 5.21.26 | `701VS00000eWqE8YAK` | `facebook:adset:120241963280110665,facebook:adset:120241692632300665` |
+| Facebook Ads - Federal | `701VS00000dT09RYAS` | `facebook:campaign:120239341718590665` |
+| Facebook Ads - CW | `701VS00000dSmACYA0` | `facebook:campaign:120242226310950665` |
+
+Workshop SF campaigns map to FB **ad sets** (one per city) because the FB
+workshop campaigns cover all three events — ad-set granularity keeps each event's
+cost accurate.
+
+**Manual sync** ([scripts/sf-sync-fb-spend.js](../scripts/sf-sync-fb-spend.js)):
+
+```bash
+node scripts/sf-sync-fb-spend.js --dry-run   # preview, no writes
+node scripts/sf-sync-fb-spend.js             # apply
+```
+
+Reads `FB_ACCESS_TOKEN` / `FB_AD_ACCOUNT_ID` from `.env`; writes via the `sf` CLI.
+
+**Scheduled sync** ([api/sync-fb-spend.js](../api/sync-fb-spend.js)): a Vercel
+cron (`vercel.json` → `crons`, daily 07:00 UTC) hits `/api/sync-fb-spend`, which
+refreshes `ActualCost` for every campaign with a `Platform_Spend_Source__c`. Test
+it live with `/api/sync-fb-spend?dry=1`. Requires `SF_CLIENT_ID`,
+`SF_REFRESH_TOKEN`, `FB_ACCESS_TOKEN`, `FB_AD_ACCOUNT_ID` (and optionally
+`CRON_SECRET`) in Vercel env — all already set except `CRON_SECRET`.
+
+## Adding a new FB-funded campaign
+
+Set `Platform_Spend_Source__c` on the SF Campaign to the FB campaign or ad-set
+id(s) (`node scripts/fb-report.js this_year` lists them). The next sync run picks
+it up — no code change.
+
+## Not yet automated
+
+- **Google Ads / radio / email spend** — manual entry on `Campaign.ActualCost`.
+- **"vs. prior period" arrows** — Salesforce dashboards don't support
+  period-comparison indicators on all component types; revisit per tile.
