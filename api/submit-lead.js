@@ -149,6 +149,8 @@ const ALLOWED_LEAD_SOURCES = new Set([
   'COI Referral',
   'Webinar',
   'Billboard',
+  'Newsletter',
+  'Webinar Replay',
 ]);
 
 async function syncToSalesforce(leadData) {
@@ -196,6 +198,8 @@ async function syncToSalesforce(leadData) {
   // Lead.Company is required.
   const isFederalLead = isWebinarLead
     || leadData.lead_type === 'federal-workshop-registration'
+    || leadData.lead_type === 'newsletter-signup'
+    || leadData.lead_type === 'webinar-replay'
     || (leadData.lead_type && leadData.lead_type.startsWith('10things-'))
     || leadData.landing_page === '10-things-federal-retirement';
   const company = leadData.agency
@@ -308,6 +312,47 @@ async function sendEmail({ to, from, fromName, subject, html, replyTo, cc }) {
   return response.ok;
 }
 
+// Shared, compliant footer for the lightweight newsletter / replay confirmations.
+function cwEmailFooter() {
+  return `
+    <tr><td style="background:#0f2742;padding:24px 32px;font-family:Arial,Helvetica,sans-serif;">
+      <p style="margin:0 0 12px 0;font-size:12px;line-height:18px;color:#9fb0c2;">Advisory services offered through Capital Wealth, LLC, a State of Utah Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC.</p>
+      <p style="margin:0 0 12px 0;font-size:12px;line-height:18px;color:#9fb0c2;">Capital Wealth is not affiliated with or endorsed by the U.S. Government, Social Security Administration, Office of Personnel Management, or any federal agency. Educational only; not financial, tax, or legal advice.</p>
+      <p style="margin:0 0 6px 0;font-size:12px;line-height:18px;color:#c8d2dd;">Capital Wealth &middot; 1850 W Ashton Blvd, Suite 175, Lehi, UT 84043 &middot; 801.210.2800</p>
+      <p style="margin:0;font-size:12px;line-height:18px;color:#9fb0c2;"><a href="mailto:vip@capitalwealth.com?subject=Unsubscribe" style="color:#fdd25e;text-decoration:underline;">Unsubscribe</a></p>
+    </td></tr>`;
+}
+function cwEmailShell(innerHtml) {
+  return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="color-scheme" content="light only"></head>
+  <body style="margin:0;padding:0;background:#f8fafc;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f8fafc;"><tr><td align="center" style="padding:24px 12px;">
+  <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;background:#ffffff;">
+    <tr><td align="center" style="background:#0f2742;padding:24px;"><img src="https://www.capitalwealth.com/assets/images/logos/logo-horizontal-white.png" width="200" alt="Capital Wealth" style="display:block;width:200px;height:auto;"></td></tr>
+    <tr><td style="background:#fdd25e;font-size:0;line-height:0;height:4px;">&nbsp;</td></tr>
+    ${innerHtml}
+    ${cwEmailFooter()}
+  </table></td></tr></table></body></html>`;
+}
+function newsletterWelcomeHtml(leadData) {
+  const first = (leadData.first_name || '').trim();
+  return cwEmailShell(`
+    <tr><td style="padding:36px 40px;font-family:Arial,Helvetica,sans-serif;">
+      <h1 style="margin:0 0 16px 0;font-size:24px;line-height:32px;color:#0f2742;">You&rsquo;re in${first ? `, ${first}` : ''}.</h1>
+      <p style="margin:0 0 16px 0;font-size:16px;line-height:26px;color:#33414f;">Welcome to <strong>The Federal Benefit Gap</strong> &mdash; plain-English insights on FERS, TSP, FEHB, Social Security, and the federal retirement decisions that matter, plus invitations to our free live webinars with Ann Werts.</p>
+      <p style="margin:0 0 24px 0;font-size:16px;line-height:26px;color:#33414f;">Want to get a head start? Browse our upcoming webinar schedule and past replays:</p>
+      <table role="presentation" cellpadding="0" cellspacing="0"><tr><td align="center" bgcolor="#fdd25e" style="border-radius:6px;"><a href="https://www.capitalwealth.com/webinars/" style="display:inline-block;padding:14px 32px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:#0f2742;text-decoration:none;">See the webinar series</a></td></tr></table>
+    </td></tr>`);
+}
+function replayConfirmHtml(leadData) {
+  const first = (leadData.first_name || '').trim();
+  return cwEmailShell(`
+    <tr><td style="padding:36px 40px;font-family:Arial,Helvetica,sans-serif;">
+      <h1 style="margin:0 0 16px 0;font-size:24px;line-height:32px;color:#0f2742;">Your replay is ready${first ? `, ${first}` : ''}.</h1>
+      <p style="margin:0 0 16px 0;font-size:16px;line-height:26px;color:#33414f;">Here&rsquo;s the full <strong>FERS Pension Explained</strong> webinar with federal benefits specialist Ann Werts &mdash; watch any time:</p>
+      <table role="presentation" cellpadding="0" cellspacing="0"><tr><td align="center" bgcolor="#fdd25e" style="border-radius:6px;"><a href="https://www.capitalwealth.com/blog/fers-pension-explained/" style="display:inline-block;padding:14px 32px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:#0f2742;text-decoration:none;">Watch the replay</a></td></tr></table>
+      <p style="margin:24px 0 0 0;font-size:16px;line-height:26px;color:#33414f;">We run a new free webinar every other Thursday. See what&rsquo;s coming up and register at <a href="https://www.capitalwealth.com/webinars/" style="color:#0f2742;font-weight:bold;">capitalwealth.com/webinars</a>.</p>
+    </td></tr>`);
+}
+
 export default async function handler(req, res) {
   const ALLOWED_ORIGINS = ['https://www.capitalwealth.com', 'https://capitalwealth.com', 'https://capitalwealthfederal.com', 'https://www.capitalwealthfederal.com', 'https://gullstack.com', 'https://www.gullstack.com'];
   const origin = req.headers.origin;
@@ -347,6 +392,10 @@ export default async function handler(req, res) {
     // The 10-Things checklist variant is email-only (no phone required).
     // Everything else still requires name/email/phone.
     const is10ThingsChecklist = lead_type === '10things-checklist' || variant === 'checklist';
+    // Email-only captures (no phone required): checklist download, newsletter, replay gate.
+    const isEmailOnly = is10ThingsChecklist
+      || lead_type === 'newsletter-signup'
+      || lead_type === 'webinar-replay';
 
     if (!fullName || !email) {
       return res.status(400).json({ error: 'Name and email are required.' });
@@ -362,7 +411,7 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'Please enter a valid US phone number.' });
       }
     }
-    if (!is10ThingsChecklist && !normalizedPhone) {
+    if (!isEmailOnly && !normalizedPhone) {
       return res.status(400).json({ error: 'Phone is required.' });
     }
 
@@ -503,6 +552,36 @@ export default async function handler(req, res) {
       if (response.ok) {
         savedLead = await response.json();
       }
+    }
+
+    // Newsletter signup + webinar replay gate — lightweight, email-only captures.
+    // Self-contained: sync to Salesforce, send a tailored confirmation, then return
+    // early so the webinar/workshop/contact flows below are never touched.
+    if (lead_type === 'newsletter-signup' || lead_type === 'webinar-replay') {
+      let sfOk = false;
+      try {
+        const r = await syncToSalesforce(leadData);
+        sfOk = !!(r && r.leadId);
+      } catch (e) {
+        console.error('SF sync (newsletter/replay) failed:', e.message);
+      }
+      try {
+        await sendEmail({
+          to: leadData.email,
+          from: FROM_EMAIL,
+          fromName: 'Capital Wealth',
+          replyTo: 'vip@capitalwealth.com',
+          subject: lead_type === 'newsletter-signup'
+            ? "You're in: The Federal Benefit Gap newsletter"
+            : 'Your FERS Pension webinar replay',
+          html: lead_type === 'newsletter-signup'
+            ? newsletterWelcomeHtml(leadData)
+            : replayConfirmHtml(leadData),
+        });
+      } catch (e) {
+        console.error('Confirmation email (newsletter/replay) failed:', e.message);
+      }
+      return res.status(200).json({ success: true, message: 'Thank you!', salesforce: sfOk });
     }
 
     // Federal webinar: register the attendee on Zoom BEFORE SF sync so the

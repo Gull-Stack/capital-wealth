@@ -1,0 +1,1534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Purchased List</fullName>
+        <default>false</default>
+        <label>Purchased List</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Ambassador Referral</fullName>
+        <default>false</default>
+        <label>Client Ambassador Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legalees Boot Camp Workshop</fullName>
+        <default>false</default>
+        <label>Legalees Boot Camp Workshop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sweet Summer Bash 7/29/16</fullName>
+        <default>false</default>
+        <label>Sweet Summer Bash 7/29/16</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cowboy Classic Golf  6/22/16</fullName>
+        <default>false</default>
+        <label>Cowboy Classic Golf  6/22/16</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Radio Show (KSL - Utah)</fullName>
+        <default>false</default>
+        <label>Radio Show (KSL - Utah)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Radio Show (KID FM - Idaho)</fullName>
+        <default>false</default>
+        <label>Radio Show (KID FM - Idaho)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.22.19 SS</fullName>
+        <default>false</default>
+        <label>10.22.19 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Security Workshop</fullName>
+        <default>false</default>
+        <label>Social Security Workshop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CWA Website</fullName>
+        <default>false</default>
+        <label>CWA Website</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RetireIdaho.com</fullName>
+        <default>false</default>
+        <label>RetireIdaho.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.18.2022 TIR</fullName>
+        <default>false</default>
+        <label>1.18.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>6.23.2020 SS</fullName>
+        <default>false</default>
+        <label>6.23.2020 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RetireUtah.com</fullName>
+        <default>false</default>
+        <label>RetireUtah.com</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Radio Commercials (KSL - Utah)</fullName>
+        <default>false</default>
+        <label>Radio Commercials (KSL - Utah)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR Millcreek 10/23/18</fullName>
+        <default>false</default>
+        <label>TIR Millcreek 10/23/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medicare</fullName>
+        <default>false</default>
+        <label>Medicare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR Millcreek 8/28/18</fullName>
+        <default>false</default>
+        <label>TIR Millcreek 8/28/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSLAMJS060222</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSLAMJS060222</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bonneville</fullName>
+        <default>false</default>
+        <label>Bonneville</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.19.19 SWFR</fullName>
+        <default>false</default>
+        <label>3.19.19 SWFR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.21.19 SWFR</fullName>
+        <default>false</default>
+        <label>2.21.19 SWFR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5.21.19 TIR</fullName>
+        <default>false</default>
+        <label>5.21.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RMD Dinner Seminar</fullName>
+        <default>false</default>
+        <label>RMD Dinner Seminar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR Draper 9/18/18</fullName>
+        <default>false</default>
+        <label>TIR Draper 9/18/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.08.19 SS</fullName>
+        <default>false</default>
+        <label>8.08.19 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5.23.19 TIR</fullName>
+        <default>false</default>
+        <label>5.23.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSLRMJS080222</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSLRMJS080222</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SWFR 1/24/19</fullName>
+        <default>false</default>
+        <label>SWFR 1/24/19</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Facts About Annuities Workshop</fullName>
+        <default>false</default>
+        <label>Facts About Annuities Workshop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.06.19 SS</fullName>
+        <default>false</default>
+        <label>8.06.19 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.10.19 TIR</fullName>
+        <default>false</default>
+        <label>9.10.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.14.2020 SWFR</fullName>
+        <default>false</default>
+        <label>1.14.2020 SWFR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.11.2022 TIR</fullName>
+        <default>false</default>
+        <label>1.11.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.19.19 SWFR</fullName>
+        <default>false</default>
+        <label>2.19.19 SWFR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.28.2020 SS</fullName>
+        <default>false</default>
+        <label>1.28.2020 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR Millcreek 10/25/18</fullName>
+        <default>false</default>
+        <label>TIR Millcreek 10/25/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.17.2020 TIR</fullName>
+        <default>false</default>
+        <label>3.17.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Taxes In Retirement 2/6/18</fullName>
+        <default>false</default>
+        <label>Taxes In Retirement 2/6/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR Millcreek 8/30/18</fullName>
+        <default>false</default>
+        <label>TIR Millcreek 8/30/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMWFRLEBMJS01222019</fullName>
+        <default>false</default>
+        <label>SEMWFRLEBMJS01222019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENLES102021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENLES102021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSLRMJS061422</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSLRMJS061422</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Taxes In Retirement 3/8/18</fullName>
+        <default>false</default>
+        <label>Taxes In Retirement 3/8/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Center</fullName>
+        <default>false</default>
+        <label>Call Center</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.19.2020 TIR</fullName>
+        <default>false</default>
+        <label>3.19.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Radio Show (KAOX 107.9FM - Idaho)</fullName>
+        <default>false</default>
+        <label>Radio Show (KAOX 107.9FM - Idaho)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENFLMMJS051922</fullName>
+        <default>false</default>
+        <label>SEMTAXGENFLMMJS051922</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Taxes In Retirement 2/8/18</fullName>
+        <default>false</default>
+        <label>Taxes In Retirement 2/8/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Taxes In Retirement 3/6/18</fullName>
+        <default>false</default>
+        <label>Taxes In Retirement 3/6/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>11.5.19 TIR</fullName>
+        <default>false</default>
+        <label>11.5.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.16.2020 SWFR</fullName>
+        <default>false</default>
+        <label>1.16.2020 SWFR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENHOTMJS040722</fullName>
+        <default>false</default>
+        <label>SEMTAXGENHOTMJS040722</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSLRMJS080422</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSLRMJS080422</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSLFMJS09272022</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSLFMJS09272022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>4.16.19 SS</fullName>
+        <default>false</default>
+        <label>4.16.19 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.30.2020 SS</fullName>
+        <default>false</default>
+        <label>1.30.2020 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.25.2021 TIR</fullName>
+        <default>false</default>
+        <label>1.25.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENDRTMJS041222</fullName>
+        <default>false</default>
+        <label>SEMTAXGENDRTMJS041222</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.02.2022 TIR</fullName>
+        <default>false</default>
+        <label>2.02.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENLESMJS060922</fullName>
+        <default>false</default>
+        <label>SEMTAXGENLESMJS060922</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXWJAMJS08092022</fullName>
+        <default>false</default>
+        <label>SEMTAXWJAMJS08092022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.26.19 TIR</fullName>
+        <default>false</default>
+        <label>3.26.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5.09.19 SWFR</fullName>
+        <default>false</default>
+        <label>5.09.19 SWFR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMWFRCHTMJS03212019</fullName>
+        <default>false</default>
+        <label>SEMWFRCHTMJS03212019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.15.19 SS</fullName>
+        <default>false</default>
+        <label>10.15.19 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.27.2020 TIR</fullName>
+        <default>false</default>
+        <label>2.27.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.24.2020 TIR</fullName>
+        <default>false</default>
+        <label>3.24.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENHOTMJS040522</fullName>
+        <default>false</default>
+        <label>SEMTAXGENHOTMJS040522</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENFLMMJS051722</fullName>
+        <default>false</default>
+        <label>SEMTAXGENFLMMJS051722</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.19.19</fullName>
+        <default>false</default>
+        <label>9.19.19</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.25.2020 TIR</fullName>
+        <default>false</default>
+        <label>2.25.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.06.2020 TIR</fullName>
+        <default>false</default>
+        <label>8.06.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.22.2020 TIR</fullName>
+        <default>false</default>
+        <label>9.22.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.24.2020 TIR</fullName>
+        <default>false</default>
+        <label>9.24.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSLFMJS01312023</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSLFMJS01312023</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Annuity Gator</fullName>
+        <default>false</default>
+        <label>Annuity Gator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legalees Boot Camp 6/25/18</fullName>
+        <default>false</default>
+        <label>Legalees Boot Camp 6/25/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SCFR 7/12/18</fullName>
+        <default>false</default>
+        <label>SCFR 7/12/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Theresa Koenig Retirement Party</fullName>
+        <default>false</default>
+        <label>Theresa Koenig Retirement Party</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.17.19 SS</fullName>
+        <default>false</default>
+        <label>10.17.19 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>7.28.2020 TIR</fullName>
+        <default>false</default>
+        <label>7.28.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.27.2020TIR</fullName>
+        <default>false</default>
+        <label>10.27.2020TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Workfront Seminar</fullName>
+        <default>false</default>
+        <label>Workfront Seminar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.16.2021 TIR</fullName>
+        <default>false</default>
+        <label>2.16.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENMDHMJS042122</fullName>
+        <default>false</default>
+        <label>SEMTAXGENMDHMJS042122</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENCHMMJS051222</fullName>
+        <default>false</default>
+        <label>SEMTAXGENCHMMJS051222</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENCHMMJS09132022</fullName>
+        <default>false</default>
+        <label>SEMTAXGENCHMMJS09132022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legalees Boot Camp 3/18/18</fullName>
+        <default>false</default>
+        <label>Legalees Boot Camp 3/18/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR Draper 9/20/18</fullName>
+        <default>false</default>
+        <label>TIR Draper 9/20/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>11.12.19 TIR</fullName>
+        <default>false</default>
+        <label>11.12.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>11.14.19 TIR</fullName>
+        <default>false</default>
+        <label>11.14.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>7.30.2020 TIR</fullName>
+        <default>false</default>
+        <label>7.30.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.25.2020 TIR</fullName>
+        <default>false</default>
+        <label>8.25.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5.24.2021 TIR</fullName>
+        <default>false</default>
+        <label>5.24.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXCHMMJS02082022</fullName>
+        <default>false</default>
+        <label>SEMTAXCHMMJS02082022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENCHMMJS051022</fullName>
+        <default>false</default>
+        <label>SEMTAXGENCHMMJS051022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Carvers 10/20/2016</fullName>
+        <default>false</default>
+        <label>Carvers 10/20/2016</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dental Business Advisors</fullName>
+        <default>false</default>
+        <label>Dental Business Advisors</label>
+    </standardValue>
+    <standardValue>
+        <fullName>4.04.19 TIR</fullName>
+        <default>false</default>
+        <label>4.04.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMWFRLEBMJS05072019</fullName>
+        <default>false</default>
+        <label>SEMWFRLEBMJS05072019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.20.19 HCP</fullName>
+        <default>false</default>
+        <label>8.20.19 HCP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Taxes 10.1.19</fullName>
+        <default>false</default>
+        <label>Taxes 10.1.19</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.14.2021 TIR</fullName>
+        <default>false</default>
+        <label>1.14.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>6.24.2021 TIR</fullName>
+        <default>false</default>
+        <label>6.24.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENMDHMJS041922</fullName>
+        <default>false</default>
+        <label>SEMTAXGENMDHMJS041922</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSLFMJS09292022</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSLFMJS09292022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.12.19 TIR</fullName>
+        <default>false</default>
+        <label>9.12.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.04.2020 TIR</fullName>
+        <default>false</default>
+        <label>2.04.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>6.25.2020 SS</fullName>
+        <default>false</default>
+        <label>6.25.2020 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.22.2022 TIR</fullName>
+        <default>false</default>
+        <label>2.22.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENDRTMJS041422</fullName>
+        <default>false</default>
+        <label>SEMTAXGENDRTMJS041422</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.29.19 SS</fullName>
+        <default>false</default>
+        <label>1.29.19 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.27.2020 TIR</fullName>
+        <default>false</default>
+        <label>8.27.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.17.2020 TIR</fullName>
+        <default>false</default>
+        <label>9.17.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.21.2021 TIR</fullName>
+        <default>false</default>
+        <label>9.21.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.19.2022 TIR</fullName>
+        <default>false</default>
+        <label>1.19.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.03.2022 TIR</fullName>
+        <default>false</default>
+        <label>2.03.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENCHMMJS09152022</fullName>
+        <default>false</default>
+        <label>SEMTAXGENCHMMJS09152022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legalees Boot Camp 3/27/17</fullName>
+        <default>false</default>
+        <label>Legalees Boot Camp 3/27/17</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WTWDD 5/2/17</fullName>
+        <default>false</default>
+        <label>WTWDD 5/2/17</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.28.19 TIR</fullName>
+        <default>false</default>
+        <label>3.28.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medicare 10.03.2019 Millcreek</fullName>
+        <default>false</default>
+        <label>Medicare 10.03.2019 Millcreek</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.18.2020 TIR</fullName>
+        <default>false</default>
+        <label>8.18.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.30.2021 TIR</fullName>
+        <default>false</default>
+        <label>3.30.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>4.20.2021 TIR</fullName>
+        <default>false</default>
+        <label>4.20.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>7.13.2021 TIR</fullName>
+        <default>false</default>
+        <label>7.13.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.06.2021 TIR</fullName>
+        <default>false</default>
+        <label>10.06.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>11.09.2021 SS</fullName>
+        <default>false</default>
+        <label>11.09.2021 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXCHMMJS02102022</fullName>
+        <default>false</default>
+        <label>SEMTAXCHMMJS02102022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.24.2022 TIR</fullName>
+        <default>false</default>
+        <label>2.24.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>4.02.19 TIR</fullName>
+        <default>false</default>
+        <label>4.02.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR 8.15.19</fullName>
+        <default>false</default>
+        <label>TIR 8.15.19</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.30.19 Medicare</fullName>
+        <default>false</default>
+        <label>9.30.19 Medicare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENHOT092021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENHOT092021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.11.2020 TIR</fullName>
+        <default>false</default>
+        <label>8.11.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.23.2021 TIR</fullName>
+        <default>false</default>
+        <label>9.23.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENDRT102021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENDRT102021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSLFMJS02022023</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSLFMJS02022023</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ladies Day Luncheon</fullName>
+        <default>false</default>
+        <label>Ladies Day Luncheon</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR 8.13.19</fullName>
+        <default>false</default>
+        <label>TIR 8.13.19</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR 10.08.2019</fullName>
+        <default>false</default>
+        <label>TIR 10.08.2019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.04.2020 TIR</fullName>
+        <default>false</default>
+        <label>8.04.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.14.2020 TIR</fullName>
+        <default>false</default>
+        <label>9.14.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.19.2021 TIR</fullName>
+        <default>false</default>
+        <label>1.19.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.25.2021 TIR</fullName>
+        <default>false</default>
+        <label>2.25.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>4.01.2021 TIR</fullName>
+        <default>false</default>
+        <label>4.01.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.28.2021 TIR</fullName>
+        <default>false</default>
+        <label>9.28.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.21.21 TIR</fullName>
+        <default>false</default>
+        <label>10.21.21 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.13.2022 TIR</fullName>
+        <default>false</default>
+        <label>1.13.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.28.2022 TIR</fullName>
+        <default>false</default>
+        <label>1.28.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Shane Turner</fullName>
+        <default>false</default>
+        <label>Shane Turner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WTWDD 5/11/17</fullName>
+        <default>false</default>
+        <label>WTWDD 5/11/17</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.31.19 SS</fullName>
+        <default>false</default>
+        <label>1.31.19 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.19.19 Medicare</fullName>
+        <default>false</default>
+        <label>9.19.19 Medicare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.06.2020</fullName>
+        <default>false</default>
+        <label>2.06.2020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.26.2021 TIR</fullName>
+        <default>false</default>
+        <label>1.26.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.18.2021 TIR</fullName>
+        <default>false</default>
+        <label>2.18.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>4.22.2021 TIR</fullName>
+        <default>false</default>
+        <label>4.22.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5.13.2021 TIR</fullName>
+        <default>false</default>
+        <label>5.13.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.05.2021 TIR</fullName>
+        <default>false</default>
+        <label>8.05.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>11/11.2021 TIR</fullName>
+        <default>false</default>
+        <label>11/11.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.27.2022 TIR</fullName>
+        <default>false</default>
+        <label>1.27.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSAC102021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSAC102021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.13.2020 TIR</fullName>
+        <default>false</default>
+        <label>10.13.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.14.2020 TIR</fullName>
+        <default>false</default>
+        <label>10.14.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.20.2020 TIR</fullName>
+        <default>false</default>
+        <label>10.20.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.29.2020 TIR</fullName>
+        <default>false</default>
+        <label>10.29.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.21.2021 TIR</fullName>
+        <default>false</default>
+        <label>1.21.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.04.2021 TIR</fullName>
+        <default>false</default>
+        <label>3.04.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENMILMBO032222</fullName>
+        <default>false</default>
+        <label>SEMTAXGENMILMBO032222</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSLFMJS11012022</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSLFMJS11012022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSAC062021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSAC062021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>11.09.19 TIR</fullName>
+        <default>false</default>
+        <label>11.09.19 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5.11.2021 TIR</fullName>
+        <default>false</default>
+        <label>5.11.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>6.30.2021 TIR</fullName>
+        <default>false</default>
+        <label>6.30.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.29.2021 TIR</fullName>
+        <default>false</default>
+        <label>9.29.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>11.11.2021 SS</fullName>
+        <default>false</default>
+        <label>11.11.2021 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Radio Commercials (KAOX 107.9FM - Idaho)</fullName>
+        <default>false</default>
+        <label>Radio Commercials (KAOX 107.9FM - Idaho)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WTWDD 5/9/17</fullName>
+        <default>false</default>
+        <label>WTWDD 5/9/17</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medicare 10.1.19</fullName>
+        <default>false</default>
+        <label>Medicare 10.1.19</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medicare 10.03.19</fullName>
+        <default>false</default>
+        <label>Medicare 10.03.19</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR 10.03.2019</fullName>
+        <default>false</default>
+        <label>TIR 10.03.2019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TIR 10.10.2019</fullName>
+        <default>false</default>
+        <label>TIR 10.10.2019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENHOT022021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENHOT022021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.21.2020 TIR</fullName>
+        <default>false</default>
+        <label>10.21.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSJW012021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSJW012021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.23.2021 TIR</fullName>
+        <default>false</default>
+        <label>2.23.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.02.2021 TIR</fullName>
+        <default>false</default>
+        <label>3.02.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.16.2021 TIR</fullName>
+        <default>false</default>
+        <label>3.16.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3.18.2021 TIR</fullName>
+        <default>false</default>
+        <label>3.18.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENHOT052021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENHOT052021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>6.07.-2021 TIR</fullName>
+        <default>false</default>
+        <label>6.07.-2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENMDH082021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENMDH082021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.13.21 TIR</fullName>
+        <default>false</default>
+        <label>10.13.21 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.14.21 TIR</fullName>
+        <default>false</default>
+        <label>10.14.21 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENMDH112021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENMDH112021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>11.02.21 TIR</fullName>
+        <default>false</default>
+        <label>11.02.21 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSAC032021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSAC032021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>8.13.2020 TIR</fullName>
+        <default>false</default>
+        <label>8.13.2020 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2.09.2021 TIR</fullName>
+        <default>false</default>
+        <label>2.09.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSJW042021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSJW042021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>4.27.2021 TIR</fullName>
+        <default>false</default>
+        <label>4.27.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENCHM092021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENCHM092021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENDRT072020</fullName>
+        <default>false</default>
+        <label>SEMTAXGENDRT072020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENMDH092020</fullName>
+        <default>false</default>
+        <label>SEMTAXGENMDH092020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSAL032018</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSAL032018</label>
+    </standardValue>
+    <standardValue>
+        <fullName>4.29.2021 TIR</fullName>
+        <default>false</default>
+        <label>4.29.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UTRCMPGENNON092021</fullName>
+        <default>false</default>
+        <label>UTRCMPGENNON092021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>INTCMPGENNON112021</fullName>
+        <default>false</default>
+        <label>INTCMPGENNON112021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Radio Commercials (KID FM - Idaho)</fullName>
+        <default>false</default>
+        <label>Radio Commercials (KID FM - Idaho)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSLFMJS11082022</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSLFMJS11082022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>6.29.2021 TIR</fullName>
+        <default>false</default>
+        <label>6.29.2021 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Beauty &amp; The Beast 3/17/17</fullName>
+        <default>false</default>
+        <label>Beauty &amp; The Beast 3/17/17</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WTWDD 5/4/17</fullName>
+        <default>false</default>
+        <label>WTWDD 5/4/17</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fox Peterson CPA</fullName>
+        <default>false</default>
+        <label>Fox Peterson CPA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SCFR 7/10/18</fullName>
+        <default>false</default>
+        <label>SCFR 7/10/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>9.18.19 Medicare</fullName>
+        <default>false</default>
+        <label>9.18.19 Medicare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UNA 09.21.19</fullName>
+        <default>false</default>
+        <label>UNA 09.21.19</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENMDH042021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENMDH042021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENCHM062021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENCHM062021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WBKTAXGENNON092021</fullName>
+        <default>false</default>
+        <label>WBKTAXGENNON092021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UTRRCDGENNON102021</fullName>
+        <default>false</default>
+        <label>UTRRCDGENNON102021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UTRCMPGENNON102021</fullName>
+        <default>false</default>
+        <label>UTRCMPGENNON102021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WBKCMPGENNON112021</fullName>
+        <default>false</default>
+        <label>WBKCMPGENNON112021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UTRCMPGENNON112021</fullName>
+        <default>false</default>
+        <label>UTRCMPGENNON112021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IDRCMPGENNON112021</fullName>
+        <default>false</default>
+        <label>IDRCMPGENNON112021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMSOSCHTMJS09192019</fullName>
+        <default>false</default>
+        <label>SEMSOSCHTMJS09192019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSJW092020</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSJW092020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSAC102020</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSAC102020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>INTNONGENNON102020</fullName>
+        <default>false</default>
+        <label>INTNONGENNON102020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSSRROPR112020</fullName>
+        <default>false</default>
+        <label>REFELSSRROPR112020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>INTNONGENNON112020</fullName>
+        <default>false</default>
+        <label>INTNONGENNON112020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENDRT012021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENDRT012021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMSOSGENSLC042015</fullName>
+        <default>false</default>
+        <label>SEMSOSGENSLC042015</label>
+    </standardValue>
+    <standardValue>
+        <fullName>INTNONGENNON032021</fullName>
+        <default>false</default>
+        <label>INTNONGENNON032021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PODCMPWMANON032021</fullName>
+        <default>false</default>
+        <label>PODCMPWMANON032021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSAT052021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSAT052021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENMUR062021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENMUR062021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENLES072021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENLES072021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFMIKCNRNON022021</fullName>
+        <default>false</default>
+        <label>REFMIKCNRNON022021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>INTWMTGENNON092021</fullName>
+        <default>false</default>
+        <label>INTWMTGENNON092021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.26.21 TIR</fullName>
+        <default>false</default>
+        <label>10.26.21 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMSOSGENDRT112021</fullName>
+        <default>false</default>
+        <label>SEMSOSGENDRT112021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSOBRIOF062020</fullName>
+        <default>false</default>
+        <label>REFELSOBRIOF062020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFMYLOBRIOF112022</fullName>
+        <default>false</default>
+        <label>REFMYLOBRIOF112022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Entrata 1/28/16</fullName>
+        <default>false</default>
+        <label>Entrata 1/28/16</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SNKNMLGEN44440</fullName>
+        <default>false</default>
+        <label>SNKNMLGEN44440</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSOBROPR012021</fullName>
+        <default>false</default>
+        <label>REFELSOBROPR012021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>COI Referral</fullName>
+        <default>false</default>
+        <label>COI Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PODNONGENNON032021</fullName>
+        <default>false</default>
+        <label>PODNONGENNON032021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UTASAVGENNON082021</fullName>
+        <default>false</default>
+        <label>UTASAVGENNON082021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SNKNMLGENNON082021</fullName>
+        <default>false</default>
+        <label>SNKNMLGENNON082021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lehi Senior Center 4/12/17</fullName>
+        <default>false</default>
+        <label>Lehi Senior Center 4/12/17</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSCEROPR092021</fullName>
+        <default>false</default>
+        <label>REFELSCEROPR092021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSCERDRT102021</fullName>
+        <default>false</default>
+        <label>REFELSCERDRT102021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legalees Boot Camp 9/18/17</fullName>
+        <default>false</default>
+        <label>Legalees Boot Camp 9/18/17</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SCFR Client Dinner 7/26/18</fullName>
+        <default>false</default>
+        <label>SCFR Client Dinner 7/26/18</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5.01.19 SS</fullName>
+        <default>false</default>
+        <label>5.01.19 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lehi Senior Center 3/8/17</fullName>
+        <default>false</default>
+        <label>Lehi Senior Center 3/8/17</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMSOSGENSAS082019</fullName>
+        <default>false</default>
+        <label>SEMSOSGENSAS082019</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Mail</fullName>
+        <default>false</default>
+        <label>Direct Mail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Online</fullName>
+        <default>false</default>
+        <label>Online</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ResSvc</fullName>
+        <default>false</default>
+        <label>ResSvc</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10.24.19 SS</fullName>
+        <default>false</default>
+        <label>10.24.19 SS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENHOT082020</fullName>
+        <default>false</default>
+        <label>SEMTAXGENHOT082020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFMIKCNRNON042021</fullName>
+        <default>false</default>
+        <label>REFMIKCNRNON042021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFMIKOBRNON072021</fullName>
+        <default>false</default>
+        <label>REFMIKOBRNON072021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MAITAXRETCOT44440</fullName>
+        <default>false</default>
+        <label>MAITAXRETCOT44440</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFLTSSRROPR072021</fullName>
+        <default>false</default>
+        <label>REFLTSSRROPR072021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IDRCMPGENNON092021</fullName>
+        <default>false</default>
+        <label>IDRCMPGENNON092021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSSRROPR092021</fullName>
+        <default>false</default>
+        <label>REFELSSRROPR092021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSRBSHOT102021</fullName>
+        <default>false</default>
+        <label>REFELSRBSHOT102021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSSRROPR102021</fullName>
+        <default>false</default>
+        <label>REFELSSRROPR102021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSSRROPR121899</fullName>
+        <default>false</default>
+        <label>REFELSSRROPR121899</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSGENCER102021</fullName>
+        <default>false</default>
+        <label>REFELSGENCER102021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SEMTAXGENSAC112021</fullName>
+        <default>false</default>
+        <label>SEMTAXGENSAC112021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>INTCMPGENNON012022</fullName>
+        <default>false</default>
+        <label>INTCMPGENNON012022</label>
+    </standardValue>
+    <standardValue>
+        <fullName>1.20.2022 TIR</fullName>
+        <default>false</default>
+        <label>1.20.2022 TIR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ADPHCPGENNON102020</fullName>
+        <default>false</default>
+        <label>ADPHCPGENNON102020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFMIKOBRIOF122020</fullName>
+        <default>false</default>
+        <label>REFMIKOBRIOF122020</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFELSOBRNON062021</fullName>
+        <default>false</default>
+        <label>REFELSOBRNON062021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFMIKNONNON022021</fullName>
+        <default>false</default>
+        <label>REFMIKNONNON022021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFMIKCNRIOF102021</fullName>
+        <default>false</default>
+        <label>REFMIKCNRIOF102021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WBKICPGENNON121899</fullName>
+        <default>false</default>
+        <label>WBKICPGENNON121899</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFMYLCNROPR112021</fullName>
+        <default>false</default>
+        <label>REFMYLCNROPR112021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>REFLTSSRROPR112021</fullName>
+        <default>false</default>
+        <label>REFLTSSRROPR112021</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lehi Chamber of Commerce</fullName>
+        <default>false</default>
+        <label>Lehi Chamber of Commerce</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Spread the Wealth Event</fullName>
+        <default>false</default>
+        <label>Spread the Wealth Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paid Social (Meta)</fullName>
+        <default>false</default>
+        <label>Paid Social (Meta)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Advertisement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Federal Employee 2026</fullName>
+        <default>false</default>
+        <label>Federal Employee 2026</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Federal Workshop</fullName>
+        <default>false</default>
+        <label>Federal Workshop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Radio</fullName>
+        <default>false</default>
+        <label>Radio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Retire Right Book</fullName>
+        <default>false</default>
+        <label>Retire Right Book</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WFR April 2026</fullName>
+        <default>false</default>
+        <label>WFR April 2026</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webly</fullName>
+        <default>false</default>
+        <label>Webly</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website Form</fullName>
+        <default>false</default>
+        <label>Website Form</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Radio Look Live - Utah</fullName>
+        <default>false</default>
+        <label>Radio Look Live - Utah</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Radio Look Live - Idaho</fullName>
+        <default>false</default>
+        <label>Radio Look Live - Idaho</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Newsletter</fullName>
+        <default>false</default>
+        <label>Newsletter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar Replay</fullName>
+        <default>false</default>
+        <label>Webinar Replay</label>
+    </standardValue>
+</StandardValueSet>
