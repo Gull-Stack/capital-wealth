@@ -494,8 +494,8 @@ Your retirement should be the best years of your life. With Utah's unique advant
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **The bottom line:** You've worked too hard and saved too diligently to let the wrong advisor jeopardize your retirement dreams. Take action today.

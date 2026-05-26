@@ -1052,9 +1052,9 @@ We're offering our **complimentary Retirement Money Map�** to Utah residents r
 
 ### How to Get Started
 
-** Call us at 801-210-5500** to schedule your complimentary Utah-focused consultation
+** Call us at 801-210-2800** to schedule your complimentary Utah-focused consultation
 
-**� Text "VISIT" to 801-210-5500** for quick scheduling with our Utah retirement specialists
+**� Text "VISIT" to 801-210-2800** for quick scheduling with our Utah retirement specialists
 
 ** Visit us online at capitalwealth.com** for Utah retirement resources and planning tools
 
@@ -1068,7 +1068,7 @@ Your Utah retirement dreams don't have to remain dreams. With comprehensive plan
 
 **The best time to plan for retirement was 20 years ago. The second-best time is today.**
 
-Call 801-210-5500 now and take the first step toward the confident, secure Utah retirement you've earned and deserve.
+Call 801-210-2800 now and take the first step toward the confident, secure Utah retirement you've earned and deserve.
 
 ---
 

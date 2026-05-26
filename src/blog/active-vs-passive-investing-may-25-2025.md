@@ -690,8 +690,8 @@ Remember: **There's no award for being the wealthiest person in the cemetery.** 
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The strongest investment strategies aren't the most aggressive ones - they're the most prepared ones.

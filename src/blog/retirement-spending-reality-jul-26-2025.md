@@ -631,8 +631,8 @@ The families who successfully navigate retirement spending don't just preserve t
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500  
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800  
 - **Website:** capitalwealth.com
 
 **Remember:** Retirement spending planning is about funding your dreams, not limiting them. Let's make sure you can afford the retirement you've earned.

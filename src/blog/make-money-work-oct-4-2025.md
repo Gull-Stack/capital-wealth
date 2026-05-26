@@ -723,8 +723,8 @@ The strongest retirement plans aren't the most optimistic onesthey're the most p
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** You don't need perfect organization to get started. Bring what you have, and professional guidance will help you create the comprehensive plan you need for Utah retirement success.

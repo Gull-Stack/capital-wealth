@@ -448,8 +448,8 @@ Remember Mike Stevens' fundamental truth: "A portfolio will create fear, but a p
 - Coordination with existing professional team
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The goal isn't to have the most moneyit's to have enough peace of mind to enjoy your Utah retirement fully.

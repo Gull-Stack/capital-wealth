@@ -262,8 +262,8 @@ Research consistently shows that retirees who work with a financial advisor end 
 
 We do five complimentary Retirement Money Map™ engagements per show. No obligation. No sales pitch. Just a real plan.
 
-**Phone:** 801-210-5500
-**Text:** "VISIT" to 801-210-5500
+**Phone:** 801-210-2800
+**Text:** "VISIT" to 801-210-2800
 **Web:** [capitalwealth.com](https://www.capitalwealth.com)
 
 Meetings are in-office in Utah or via Zoom — we work with clients across the country.
@@ -322,4 +322,4 @@ Meetings are in-office in Utah or via Zoom — we work with clients across the c
 
 ---
 
-*Advisory Services offered through Capital Wealth Advisors LLC, a State of Utah Registered Investment Advisor. Insurance Services offered through CWA Insurance Services LLC. Investing involves risk, including the potential loss of principal. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims-paying ability of the issuing carrier. Capital Wealth Advisors does not offer tax or legal advice. Our firm is not affiliated with or endorsed by the United States government or any governmental agency.*
+*Advisory Services offered through Capital Wealth, LLC, an SEC Registered Investment Advisor. Insurance Services offered through CWA Insurance Services LLC. Investing involves risk, including the potential loss of principal. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims-paying ability of the issuing carrier. Capital Wealth does not offer tax or legal advice. Our firm is not affiliated with or endorsed by the United States government or any governmental agency.*

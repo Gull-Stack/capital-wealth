@@ -539,8 +539,8 @@ Remember the key insights from today's show:
 
 **Ready to make your money work as hard for you as you worked for it?**
 
- **Call:** 801-210-5500
-� **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800
+� **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2010.*

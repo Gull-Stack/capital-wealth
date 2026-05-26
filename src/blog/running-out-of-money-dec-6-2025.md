@@ -621,8 +621,8 @@ To maximize the value of your consultation, please gather:
 
 Ready to conquer your fear of running out of money? Contact Capital Wealth today:
 
-**Phone:** 801-210-5500  
-**Text:** "VISIT" to 801-210-5500  
+**Phone:** 801-210-2800  
+**Text:** "VISIT" to 801-210-2800  
 **Website:** capitalwealth.com
 
 Don't let another night of worry pass. The tools and strategies exist to create unshakeable confidence in your retirement income. The only question is whether you'll take action to implement them.

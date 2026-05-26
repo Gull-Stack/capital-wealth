@@ -458,15 +458,15 @@ Estate planning isn't about death  it's about life. It's about ensuring your fam
 - Ongoing support for plan implementation
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Special offer:** Next five callers receive complimentary Retirement Money Map� including estate planning analysis.
 
 ---
 
-*This content is based on the March 2, 2026 episode of Retire Right Radio. For personalized estate planning advice, consult with qualified Utah legal professionals. Advisory services offered through Capital Wealth LLC, a State of Utah Registered Investment Advisor.*
+*This content is based on the March 2, 2026 episode of Retire Right Radio. For personalized estate planning advice, consult with qualified Utah legal professionals. Advisory services offered through Capital Wealth LLC, an SEC Registered Investment Advisor.*
 
 ## Tags
 - Utah Estate Planning

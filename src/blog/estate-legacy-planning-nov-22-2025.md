@@ -349,7 +349,7 @@ Mike references George Steinbrenner: "The joke among estate attorneys is that Ge
 - Income preservation for surviving spouses
 - Multi-generational wealth transfer
 
-**Mike's offer:** "The next five callers that call 801-210-5500, we will do a complimentary retirement money map where we're going to look at your taxes, inflation, investments, risk tolerance, healthcare, legacy planning, etc."
+**Mike's offer:** "The next five callers that call 801-210-2800, we will do a complimentary retirement money map where we're going to look at your taxes, inflation, investments, risk tolerance, healthcare, legacy planning, etc."
 
 ### Professional Network Coordination
 
@@ -538,8 +538,8 @@ The question isn't whether you can afford estate planning - it's whether your fa
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Mike's commitment:** "Whether we work together or not, if you are one of the next five callers, we will commit to you having your very own personalized retirement money map done just for you."

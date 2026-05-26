@@ -627,8 +627,8 @@ Whether you're approaching retirement or already enjoying your golden years, und
 - Specific steps to improve your financial decision-making
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The strongest retirement plans aren't the most optimistic ones  they're the ones that account for human behavior and psychology.

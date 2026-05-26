@@ -412,8 +412,8 @@ Your retirement years should be the best of your life. Utah's combination of nat
 - Tax-efficient income planning coordination
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The best interest rate strategy isn't the most aggressive or the most conservativeit's the most appropriate for your specific Utah retirement goals.

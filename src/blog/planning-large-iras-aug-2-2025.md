@@ -596,8 +596,8 @@ Your IRA doesn't have to become a tax time bomb. But the window to defuse it is 
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The best time to plan was 10 years ago. The second-best time is now.

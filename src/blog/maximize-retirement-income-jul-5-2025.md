@@ -547,8 +547,8 @@ Your retirement income should provide not just money, but confidence, security, 
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500  
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800  
 - **Website:** capitalwealth.com
 
 **Remember:** Independence Day celebrates freedom. Your retirement income plan should provide financial freedom. Let's make sure yours does.

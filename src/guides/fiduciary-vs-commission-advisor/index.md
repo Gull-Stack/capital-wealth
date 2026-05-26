@@ -284,7 +284,6 @@ At Capital Wealth, we operate under the fiduciary standard. Here's what this mea
 
 ### Our Regulatory Status
 
-<!-- COMPLIANCE: confirm SEC vs State of Utah registration from Form ADV before publishing; see docs/COMPLIANCE_AUDIT_2026-05-26.md theme A -->
 - **Registered Investment Advisor**
 - **Fiduciary duty when providing advisory services**
 - **Form ADV available for review**

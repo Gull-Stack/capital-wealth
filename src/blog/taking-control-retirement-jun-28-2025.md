@@ -494,8 +494,8 @@ We'll analyze your situation and provide specific, actionable recommendations  r
 
 If you're tired of worrying about market volatility, wondering whether your current advisor is truly looking out for your best interests, or simply want a second opinion on your retirement strategy, we invite you to reach out.
 
-** Call: 801-210-5500**  
-**� Text "VISIT" to: 801-210-5500**  
+** Call: 801-210-2800**  
+**� Text "VISIT" to: 801-210-2800**  
 ** Visit: capitalwealth.com**
 
 Our team is standing by to answer your questions and help you determine if our approach might be a good fit for your situation.

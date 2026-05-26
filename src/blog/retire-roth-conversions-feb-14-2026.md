@@ -529,8 +529,8 @@ Mike Stevens closed this Valentine's Day episode with a powerful message: **"Giv
 **Special Valentine's Day offer:** First five callers receive this analysis completely complimentary.
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **What to expect:**

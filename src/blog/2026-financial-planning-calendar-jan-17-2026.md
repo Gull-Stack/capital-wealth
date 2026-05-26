@@ -570,7 +570,7 @@ Robert from Ogden reduced his annual costs by switching from a Medicare Suppleme
 
 ### Special Offer for Utah Residents
 
-**Complimentary Retirement Money Map�:** For the next five callers to 801-210-5500, Capital Wealth will provide a comprehensive 2026 planning analysis including:
+**Complimentary Retirement Money Map�:** For the next five callers to 801-210-2800, Capital Wealth will provide a comprehensive 2026 planning analysis including:
 
 - Month-by-month planning calendar customized for your situation
 - Tax optimization strategies specific to Utah advantages
@@ -579,8 +579,8 @@ Robert from Ogden reduced his annual costs by switching from a Medicare Suppleme
 - Estate planning coordination and legacy planning
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 ---

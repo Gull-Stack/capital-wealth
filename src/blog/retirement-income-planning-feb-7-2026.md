@@ -532,8 +532,8 @@ Capital Wealth offers complimentary Retirement Money Map� analysis for qualify
 - Estate planning coordination
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Additional Resources:**

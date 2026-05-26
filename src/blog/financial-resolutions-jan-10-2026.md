@@ -605,7 +605,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 
 **For Utah residents committed to 2026 financial resolution success:**
 
-**Complimentary Retirement Money Map�** for the next five callers to 801-210-5500, including:
+**Complimentary Retirement Money Map�** for the next five callers to 801-210-2800, including:
 - Comprehensive analysis of your resolution goals
 - Utah-specific optimization strategies
 - Systematic implementation plan
@@ -620,8 +620,8 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 - Automation system setup and monitoring
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Commitment:** Capital Wealth will provide the professional partnership, systematic approach, and Utah expertise needed to make your 2026 financial resolutions actually succeed.

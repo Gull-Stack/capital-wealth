@@ -447,8 +447,8 @@ Capital Wealth has helped thousands of Utah families create retirement plans des
 
 **Your retirement money should work as hard as you did to earn it.** Let our experienced team help you create a plan that provides both security and growth throughout your retirement years.
 
- **Call:** 801-210-5500
-� **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800
+� **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2012.*

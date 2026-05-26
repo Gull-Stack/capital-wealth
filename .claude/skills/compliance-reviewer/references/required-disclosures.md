@@ -1,11 +1,11 @@
 # Required disclosures — exact text by content type
 
-Use this language verbatim (adjust registration status once confirmed — see SKILL.md open item).
+Use this language verbatim.
 
 ## 1. Advisory disclaimer — every client-facing page and email
-> Advisory services offered through Capital Wealth, LLC, a State of Utah Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC.
+> Advisory services offered through Capital Wealth, LLC, an SEC Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC.
 
-⚠️ The live footer currently reads "SEC Registered Investment Advisor" and omits the CWA Insurance Services line. Confirm actual registration with compliance; then make every instance identical. A mismatch between pages is itself a Critical finding.
+Registration status confirmed 2026-05-26: **SEC-registered**, legal entity **Capital Wealth, LLC**. Use this exact wording everywhere; a mismatch between pages is itself a Critical finding.
 
 ## 2. Risk / past-performance — anywhere investing benefits appear
 > All investments involve risk, including the possible loss of principal. Past performance is not a guarantee of future results. Diversification and asset allocation do not ensure a profit or protect against loss. Registration does not imply a certain level of skill or training.

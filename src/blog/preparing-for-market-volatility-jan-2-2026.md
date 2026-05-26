@@ -477,8 +477,8 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 - Estate planning coordination
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 - **Local Office:** Serving Salt Lake City, Provo, Ogden, and surrounding areas
 

@@ -344,8 +344,8 @@ faqSchema: [
 Have questions not covered here? Capital Wealth specializes in federal employee retirement planning.
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500  
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800  
 - **Website:** capitalwealth.com
 
 *Free initial consultation for federal employees. Get personalized answers to your specific retirement questions.*

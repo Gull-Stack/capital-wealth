@@ -716,8 +716,8 @@ President Trump's "Big Beautiful Bill" signed in July 2025 created several new o
 - **Risk management evaluation:** Long-term care, market volatility, and inflation protection
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The strongest retirement plans aren't the most optimistic ones - they're the most prepared ones for Utah's unique opportunities and challenges.

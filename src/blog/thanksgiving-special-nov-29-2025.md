@@ -451,8 +451,8 @@ To make the most of your complimentary consultation, gather:
 
 Ready to create your perfect retirement planning feast? Contact Capital Wealth today:
 
-**Phone:** 801-210-5500  
-**Text:** "VISIT" to 801-210-5500  
+**Phone:** 801-210-2800  
+**Text:** "VISIT" to 801-210-2800  
 **Website:** capitalwealth.com
 
 Our offices are conveniently located to serve Utah families throughout the Wasatch Front and beyond. We also offer virtual consultations for clients in rural areas or those who prefer meeting from home.

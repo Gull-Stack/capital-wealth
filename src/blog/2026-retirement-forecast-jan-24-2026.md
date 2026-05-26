@@ -151,7 +151,7 @@ Mike Stevens emphasizes: "Retirees are very focused on strategies that balance g
 
 ### Special Offer for Utah Listeners
 
-For the next five callers to 801-210-5500: Complimentary Retirement Money Map analysis covering:
+For the next five callers to 801-210-2800: Complimentary Retirement Money Map analysis covering:
 - Tax optimization strategies
 - Income planning analysis
 - Investment risk assessment
@@ -517,7 +517,7 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 
 ### Special Opportunity for Utah Residents
 
-**Limited-time offer:** For the next five callers to 801-210-5500, Capital Wealth will provide a complimentary Retirement Money Map� analysistypically requiring 5-10 hours of professional analysis.
+**Limited-time offer:** For the next five callers to 801-210-2800, Capital Wealth will provide a complimentary Retirement Money Map� analysistypically requiring 5-10 hours of professional analysis.
 
 **Comprehensive review includes:**
 - Tax optimization strategies specific to Utah
@@ -528,8 +528,8 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 ---

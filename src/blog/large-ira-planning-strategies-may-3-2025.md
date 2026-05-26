@@ -462,8 +462,8 @@ Don't let complacency cost you hundreds of thousands in unnecessary taxes and fe
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 - **Additional resources:** retireutah.com
 

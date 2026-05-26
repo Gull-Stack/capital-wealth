@@ -461,8 +461,8 @@ The choice between government-controlled and personally-directed Social Security
 - Family legacy planning with inheritable personal accounts
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The best Social Security strategy isn't the most aggressive or the most conservativeit's the one that fits your Utah retirement goals and family values.

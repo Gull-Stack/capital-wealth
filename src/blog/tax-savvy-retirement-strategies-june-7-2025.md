@@ -293,7 +293,7 @@ This admission should shake every Utah retiree to their core. While advisors pro
 - Flexibility for various care scenarios
 - Any guarantees are based on the claims-paying ability of the issuing insurance company
 
-**Action step:** "This is something we're passionate about helping people figure out. Call 801-210-5500 and let's take the mystery out of whether you should consider long-term care insurance or explore alternatives."
+**Action step:** "This is something we're passionate about helping people figure out. Call 801-210-2800 and let's take the mystery out of whether you should consider long-term care insurance or explore alternatives."
 
 ### Glenn from Utah Valley: "Forced Early Retirement Fears"
 
@@ -582,8 +582,8 @@ The question isn't whether you can afford to implement these tax strategies - it
 This isn't a time-share presentation - it's a genuine opportunity to see how sophisticated tax planning could transform your Utah retirement.
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500  
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800  
 - **Website:** capitalwealth.com
 - **Download free resources:** retireutah.com
 

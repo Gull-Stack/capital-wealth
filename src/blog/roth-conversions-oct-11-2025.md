@@ -132,7 +132,7 @@ This experience led Mike to switch from medical school to financial planning, wi
 - Comprehensive approach vs. portfolio-only focus
 
 **Special Offer for Utah Listeners:**
-The next five callers to 801-210-5500 receive a complimentary Retirement Money Map�at no cost with no obligation.
+The next five callers to 801-210-2800 receive a complimentary Retirement Money Map�at no cost with no obligation.
 
 ---
 
@@ -634,7 +634,7 @@ Utah's position as a medical research hub means residents have access to cutting
 - Multi-year strategy development
 
 **Complimentary Analysis Offer:**
-Call 801-210-5500 or visit retireutah.com for educational resources including "Are You Paying Too Much Taxes in Retirement?" and "Tax Strategies for Retirement."
+Call 801-210-2800 or visit retireutah.com for educational resources including "Are You Paying Too Much Taxes in Retirement?" and "Tax Strategies for Retirement."
 
 ---
 
@@ -852,8 +852,8 @@ Don't let another tax year pass without understanding your opportunities. Whethe
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 - **Educational Resources:** retireutah.com
 

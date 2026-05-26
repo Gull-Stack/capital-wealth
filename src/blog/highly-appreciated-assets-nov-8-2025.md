@@ -633,8 +633,8 @@ Utah designated 46 Qualified Opportunity Zones, including several in high-growth
 
 **Ready to optimize your appreciated assets and minimize tax consequences?**
 
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500  
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800  
 - **Website:** capitalwealth.com
 - **Complimentary Consultation:** Retirement Money Map� analysis for qualified Utah families
 

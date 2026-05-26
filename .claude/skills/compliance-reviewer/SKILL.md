@@ -56,6 +56,6 @@ Draft, then self-review against `references/audit-checklist.md` before presentin
 - `references/state-insurance.md` — NAIC advertising/suitability rules for the CWA Insurance side.
 
 ## Known firm facts (verify, don't assume)
-- Required advisory line: **"Advisory services offered through Capital Wealth, LLC, a State of Utah Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC."** (per project compliance policy.)
-- ⚠️ **Open verification item:** the live site footer currently says **"SEC Registered Investment Advisor."** SEC vs. state (Utah) registration is mutually exclusive and driven by AUM (~$100M line). The firm must state its *actual* status everywhere, identically. Treat any SEC-vs-Utah mismatch as **Critical** and escalate to a human/compliance officer — do not silently pick one.
+- Required advisory line: **"Advisory services offered through Capital Wealth, LLC, an SEC Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC."** (Registration confirmed 2026-05-26: SEC-registered; legal entity Capital Wealth, LLC.)
+- Use the registration wording **identically** everywhere. SEC vs. state registration is mutually exclusive; the firm is SEC-registered, so never describe it as state/Utah-registered. Pair registration mentions with "Registration does not imply a certain level of skill or training."
 - Insurance commissions flow through the affiliate **CWA Insurance Services, LLC**; the firm is therefore fee-**based**, not fee-only.

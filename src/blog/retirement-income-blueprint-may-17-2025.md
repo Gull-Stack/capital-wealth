@@ -669,8 +669,8 @@ Mike references "The Psychology of Money" by Morgan Housel, highlighting the psy
 
 ### Contact Information for Utah Residents
 
-**Phone:** 801-210-5500
-**Text:** "VISIT" to 801-210-5500
+**Phone:** 801-210-2800
+**Text:** "VISIT" to 801-210-2800
 **Website:** capitalwealth.com
 
 **Important:** This offer is limited to the next five callers to ensure quality time and attention for each analysis.
@@ -829,7 +829,7 @@ The transformation from saver to spender represents one of the most challenging 
 4. **Confidence building:** Develop spending guardrails that provide security and freedom
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
+- **Phone:** 801-210-2800
 - **Text:** "VISIT" to get started
 - **Website:** capitalwealth.com
 

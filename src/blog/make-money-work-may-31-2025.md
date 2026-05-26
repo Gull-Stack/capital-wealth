@@ -792,8 +792,8 @@ Remember: **The goal isn't to pay zero taxes - it's to pay your fair share and n
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The strongest tax strategies aren't the most complex ones - they're the most prepared ones.

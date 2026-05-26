@@ -599,8 +599,8 @@ The healthcare component of retirement planning has become too complex and too e
 - **Peace of mind** knowing you're prepared
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 - **Specialization:** Utah retirement and healthcare planning
 

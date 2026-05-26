@@ -1000,10 +1000,10 @@ Whether you're already retired and want to optimize your current situation, appr
 
 ## Connect with Capital Wealth Today
 
-** Call us immediately**: 801-210-5500  
+** Call us immediately**: 801-210-2800  
 *Remember, we can only provide the complimentary Retirement Money Map� to the next five callers*
 
-**� Text "VISIT"**: 801-210-5500  
+**� Text "VISIT"**: 801-210-2800  
 *Convenient option if you prefer texting to schedule your appointment*
 
 ** Visit our website**: [capitalwealth.com](https://capitalwealth.com)  
@@ -1018,7 +1018,7 @@ Whether you're already retired and want to optimize your current situation, appr
 
 Your retirement security is too important to leave to chance. Don't spend another sleepless night wondering if you're going to be okay financially. Don't let fear prevent you from enjoying the retirement you've earned. And don't let uncertainty rob you of the peace of mind you deserve.
 
-Pick up the phone right now and call 801-210-5500. Whether you're one of the five callers who receives a complimentary Retirement Money Map� or you simply want to schedule a consultation to explore your options, taking action today is the first step toward the secure, fulfilling retirement you've always envisioned.
+Pick up the phone right now and call 801-210-2800. Whether you're one of the five callers who receives a complimentary Retirement Money Map� or you simply want to schedule a consultation to explore your options, taking action today is the first step toward the secure, fulfilling retirement you've always envisioned.
 
 Your future self will thank you for making this call today.
 

@@ -716,8 +716,8 @@ Your retirement should be a time of enjoyment, not anxiety. With proper planning
 
 If you're ready to create your own Retirement Money Map and want to see if we can add value to your retirement planning, here are three ways to connect with us:
 
- **Call:** 801-210-5500  
-� **Text:** Send "VISIT" to 801-210-5500  
+ **Call:** 801-210-2800  
+� **Text:** Send "VISIT" to 801-210-2800  
  **Web:** capitalwealth.com
 
 We offer complimentary, no-obligation consultations where we can review your current situation and show you how our Retirement Money Map approach might benefit your specific circumstances.

@@ -608,8 +608,8 @@ The sooner you take action, the more time compound growth has to work in your fa
 
 **Don't let your 401(k) be just another account  make it the cornerstone of your retirement security.**
 
- **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800
+± **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 » **401(k) Resources:** [capitalwealth401k.com](https://capitalwealth401k.com)
 

@@ -566,8 +566,8 @@ Mike Stevens' journey from personal tragedy to retirement advisor offers a power
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** Mike Stevens learned firsthand that tragedy strikes without warning. Don't let your family experience what his did. The time to plan is now, while you have the luxury of time and options.

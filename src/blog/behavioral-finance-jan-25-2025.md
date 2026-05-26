@@ -518,8 +518,8 @@ The intersection of psychology and money doesn't have to be your weakness  with 
 
 **Don't let emotions derail your financial future. Take control through systematic planning and professional guidance.**
 
- **Call:** 801-210-5500
-� **Text "VISIT"** to 801-210-5500
+ **Call:** 801-210-2800
+� **Text "VISIT"** to 801-210-2800
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families navigate the psychology of money and build lasting retirement security since 2008.*

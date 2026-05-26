@@ -467,8 +467,8 @@ Remember: There's no award for being the wealthiest person in the cemetery, but 
 - Family support fund planning and coordination
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The best retirement plan isn't the one with the biggest numberit's the one that creates the most reliable monthly paycheck for your Utah lifestyle.

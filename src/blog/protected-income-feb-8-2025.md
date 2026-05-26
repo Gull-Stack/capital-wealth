@@ -580,8 +580,8 @@ Remember, 75% of Americans don't have a written retirement income plan. Don't be
 
 **Ready to build your protected income strategy?**
 
- **Call:** 801-210-5500
-� **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800
+� **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2010.*

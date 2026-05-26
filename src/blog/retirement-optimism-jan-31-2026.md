@@ -373,8 +373,8 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The strongest retirement plans aren't built on hopethey're built on knowledge, strategy, and Utah's unique advantages.

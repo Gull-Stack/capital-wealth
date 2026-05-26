@@ -643,8 +643,8 @@ The families who successfully navigate large IRA planning don't just preserve we
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500  
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800  
 - **Website:** capitalwealth.com
 
 **Remember:** Large IRAs create large opportunities - and large risks. Make sure you're optimizing both.

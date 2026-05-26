@@ -501,8 +501,8 @@ As Stevens notes, "There's no do-overs you got to get it right the first time."
 
 **Remember:** The goal isn't just avoiding taxesit's optimizing your lifetime tax burden so you can legally reduce the taxes you pay and shift from tax-deferred into tax-free.
 
- **Call:** 801-210-5500  
-� **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800  
+� **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)  
  **Tax Resources:** [retireutah.com](https://retireutah.com)
 

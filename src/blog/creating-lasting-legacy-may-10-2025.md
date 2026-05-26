@@ -578,8 +578,8 @@ Utah's health-conscious culture, combined with medical advances, means many Utah
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The wealthiest person in the cemetery isn't the winnerit's the person who enjoyed life while leaving the greatest positive impact on their family and community.
@@ -772,7 +772,7 @@ Mike Stevens' father never intended to leave his family in financial chaos. At 4
 
 **Your next steps are simple:**
 
-1. **Call 801-210-5500** for your complimentary Retirement Money Map� analysis
+1. **Call 801-210-2800** for your complimentary Retirement Money Map� analysis
 2. **Text "VISIT"** to start the conversation about your family's future
 3. **Visit capitalwealth.com** for additional resources and planning tools
 

@@ -527,8 +527,8 @@ Capital Wealth has helped thousands of Utah families navigate the complex inters
 - Estate planning integration
 - Healthcare cost planning specific to Utah
 
- **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500
+ **Call:** 801-210-2800
+± **Text "VISIT"** to 801-210-2800
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2006, with offices serving the greater Salt Lake City area and clients throughout Utah.*

@@ -13,7 +13,7 @@ Capital Wealth is a registered investment advisor in Utah doing $100M/year in re
 - **VIP Email:** vip@capitalwealth.com
 
 ## Compliance (MUST follow)
-- Every client-facing email and page MUST include: "Advisory services offered through Capital Wealth, LLC, a State of Utah Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC."
+- Every client-facing email and page MUST include: "Advisory services offered through Capital Wealth, LLC, an SEC Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC." (Registration confirmed 2026-05-26: SEC-registered; legal entity Capital Wealth, LLC. Firm phone of record: (801) 210-2800.)
 - Federal content MUST include: "Capital Wealth is not affiliated with or endorsed by the U.S. Government, Social Security Administration, Office of Personnel Management, or any federal agency."
 - Never guarantee returns. Never promise specific outcomes. Use "may", "can", "designed to help" language.
 - All emails must have an unsubscribe link and physical mailing address.

@@ -483,8 +483,8 @@ Utah women face unique retirement challenges, but with proper planning, these ch
 
 Whether you're a teacher in Murray planning for retirement on a pension, a tech worker in Lehi with substantial 401(k) assets, a homemaker in St. George who's never worked outside the home, or a divorced professional in Salt Lake City starting over, understanding and planning for your unique circumstances as a woman is critical to your financial security.
 
- **Call:** 801-210-5500  
-� **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800  
+� **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)  
  **Additional Resources:** [retireutah.com](https://retireutah.com)
 
