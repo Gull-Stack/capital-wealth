@@ -192,7 +192,7 @@ This personal story from Mike Stevens, founder of Capital Wealth, illustrates wh
 ### Strategic Planning Options
 **Roth conversions:** Pay taxes now at lower rates
 **Charitable remainder trusts:** Reduce tax burden while supporting causes
-**Life insurance:** Replace retirement account values tax-free
+**Life insurance:** Replace retirement account values with a death benefit that is generally income-tax-free to beneficiaries
 
 ### Utah Public Employee Considerations
 **Utah Retirement Systems (URS):** Specific beneficiary rules
@@ -300,14 +300,14 @@ This personal story from Mike Stevens, founder of Capital Wealth, illustrates wh
 **No economic benefit:** Referrals based on client needs, not commissions
 **Ongoing support:** Help implement and maintain plans
 
-### The Retirement Money Map„ Integration
+### The Retirement Money Mapï¿½ Integration
 **Estate planning component:** 
 - Current document review
 - Beneficiary designation analysis
 - Tax planning coordination
 - Legacy goal clarification
 
-**Next five callers:** Complimentary Retirement Money Map„ including estate planning review
+**Next five callers:** Complimentary Retirement Money Mapï¿½ including estate planning review
 
 ---
 
@@ -458,15 +458,15 @@ Estate planning isn't about death  it's about life. It's about ensuring your fam
 - Ongoing support for plan implementation
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
-**Special offer:** Next five callers receive complimentary Retirement Money Map„ including estate planning analysis.
+**Special offer:** Next five callers receive complimentary Retirement Money Mapï¿½ including estate planning analysis.
 
 ---
 
-*This content is based on the March 2, 2026 episode of Retire Right Radio. For personalized estate planning advice, consult with qualified Utah legal professionals. Advisory services offered through Capital Wealth LLC, a State of Utah Registered Investment Advisor.*
+*This content is based on the March 2, 2026 episode of Retire Right Radio. For personalized estate planning advice, consult with qualified Utah legal professionals. Advisory services offered through Capital Wealth LLC, an SEC Registered Investment Advisor.*
 
 ## Tags
 - Utah Estate Planning

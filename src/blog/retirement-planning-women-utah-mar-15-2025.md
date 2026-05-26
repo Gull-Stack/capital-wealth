@@ -232,7 +232,7 @@ Stevens clarifies the difference: "Once you turn 65, you need to go on Medicare.
 **Tier 2: Long-term Care Planning**
 Rather than traditional long-term care insurance, Stevens advocates creative life insurance strategies:
 
-"We actually do some creative planning with life insurance where depending on the carrier, if something happens where you can't do two of the six activities of daily living... some of these life insurance carriers will allow you to tap into your death benefit while you're living tax-free, penalty-free withdrawals to use for supplemental long-term care."
+"We actually do some creative planning with life insurance where depending on the carrier, if something happens where you can't do two of the six activities of daily living... some of these life insurance carriers will allow you to tap into your death benefit while you're living, with withdrawals that can be tax-free and penalty-free if IRS requirements are met, to use for supplemental long-term care. Any guarantees are based on the claims-paying ability of the issuing insurance company."
 
 **Tier 3: Health Savings Account Maximization (if eligible)**
 - Triple tax advantage: deductible, growth, qualified withdrawals
@@ -262,9 +262,9 @@ Stevens explains: "When the market is down, you really actually only have a loss
 - Pay conversion taxes with non-retirement funds
 - Create tax-free inheritance for surviving spouse
 
-**Life Insurance as Tax-Free Wealth Transfer:**
+**Life Insurance as Tax-Advantaged Wealth Transfer:**
 - Provides immediate liquidity upon death
-- Tax-free death benefits
+- Generally income-tax-free death benefits
 - Can supplement reduced Social Security income
 
 ### Strategy #5: Building Financial Confidence Through Education
@@ -483,8 +483,8 @@ Utah women face unique retirement challenges, but with proper planning, these ch
 
 Whether you're a teacher in Murray planning for retirement on a pension, a tech worker in Lehi with substantial 401(k) assets, a homemaker in St. George who's never worked outside the home, or a divorced professional in Salt Lake City starting over, understanding and planning for your unique circumstances as a woman is critical to your financial security.
 
- **Call:** 801-210-5500  
-± **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800  
+ï¿½ **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)  
  **Additional Resources:** [retireutah.com](https://retireutah.com)
 

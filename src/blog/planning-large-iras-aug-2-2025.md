@@ -45,7 +45,7 @@ As Mike Stevens explains, "It's not about how much you accumulateit's about how 
 
  **567 Social Security Filing Strategies**  Married couples filing jointly have over 567 different optimization combinations to maximize lifetime benefits
 
- **Tax-Free Alternatives Available**  Properly structured life insurance policies allow unlimited contributions with no caps, creating tax-free generational wealth
+ **Tax-Advantaged Alternatives Available**  Properly structured life insurance policies allow contributions without the caps that apply to retirement accounts, and can create a death benefit that is generally income-tax-free to beneficiaries
 
  **QCD Opportunity at 70Â½**  Qualified Charitable Distributions can begin 2Â½ years before RMDs are required, creating immediate tax savings for Utah's generous charitable community
 
@@ -158,12 +158,14 @@ Utah offers unique advantages for strategic Roth conversions:
 
 **For high-net-worth Utah families where Roth conversions may not be optimal:**
 
-"If you had to take money out of your account and you couldn't do a Roth conversion and you paid the taxes and the money's sitting in your bank account, yes, as long as you could qualify for the insurance policy, you could turn around and take all of that money with no contribution caps. You could put that into a tax-free life insurance policy." - Mike Stevens
+"If you had to take money out of your account and you couldn't do a Roth conversion and you paid the taxes and the money's sitting in your bank account, yes, as long as you could qualify for the insurance policy, you could turn around and take all of that money with no contribution caps. You could put that into a tax-advantaged life insurance policy." - Mike Stevens
+
+(Cash value in a properly structured life insurance policy can grow on a tax-advantaged basis, and the death benefit is generally income-tax-free to beneficiaries, subject to the policy staying in force and applicable IRS requirements.)
 
 **Key advantages:**
 - **Unlimited contributions** (no caps like Roth IRAs)
-- **Tax-free growth** of cash value
-- **Tax-free death benefit**
+- **Potentially tax-advantaged growth** of cash value
+- **Death benefit generally income-tax-free** to beneficiaries
 - **No required distributions** during lifetime
 - **Creditor protection** under Utah law
 
@@ -387,12 +389,12 @@ Run comprehensive analysis considering all 567 filing combinations for married c
 **For Utah retirees not ready for Roth conversions:**
 
 Using index annuities with systematic withdrawals:
-- "Can't lose money when the index goes down"
+- Designed to limit downside when the index goes down, with guarantees based on the claims-paying ability of the issuing insurance company
 - Capture partial upside when markets rise
 - Take penalty-free withdrawals up to 10% annually
 - Provide income floor while markets recover
 
-**Example:** $500,000 index annuity allowing 10% annual withdrawals provides $50,000 yearly income floor while remaining principal stays protected.
+**Example:** A $500,000 index annuity allowing 10% annual withdrawals could provide a $50,000 yearly income floor, with guarantees backed by the issuing insurance company.
 
 ### Estate Planning Under Utah Law
 
@@ -422,9 +424,9 @@ Using index annuities with systematic withdrawals:
 
 ---
 
-## The Capital Wealth Retirement Money Map„ Process
+## The Capital Wealth Retirement Money Mapï¿½ Process
 
-### Comprehensive Planning Beyond Product Sales
+### Comprehensive, Planning-First Guidance
 
 **What makes Capital Wealth's approach different:**
 
@@ -583,7 +585,7 @@ Your IRA doesn't have to become a tax time bomb. But the window to defuse it is 
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysis PLUS complimentary retirement tax analysisa comprehensive review typically taking 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysis PLUS complimentary retirement tax analysisa comprehensive review.
 
 **What's included:**
 - Complete IRA tax projection under current laws
@@ -594,8 +596,8 @@ Your IRA doesn't have to become a tax time bomb. But the window to defuse it is 
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The best time to plan was 10 years ago. The second-best time is now.

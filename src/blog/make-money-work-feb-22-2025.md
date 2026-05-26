@@ -127,7 +127,7 @@ On the opposite extreme, some retirees put everything in "safe" investments like
 **Purpose:** Provide reliable income during market downturns and peace of mind during volatility.
 
 **Characteristics:**
-- Principal protection (0% floor)
+- Downside protection (0% floor), with guarantees based on the claims-paying ability of the issuing insurance company
 - Growth potential linked to market indexes
 - Income availability when needed
 - No forced selling during market declines
@@ -240,7 +240,7 @@ The transition from accumulation to distribution requires completely different t
 
 As Mike emphasizes, "You can only count on yourself." This means creating multiple income streams that you control:
 
-**Protected Income Stream:** Through fixed index annuities or similar products that guarantee principal while providing growth potential.
+**Protected Income Stream:** Through fixed index annuities or similar products designed to limit downside while providing growth potential, with guarantees based on the claims-paying ability of the issuing insurance company.
 
 **Growth Income Stream:** Through dividend-paying stocks and diversified portfolio withdrawals during good market years.
 
@@ -279,13 +279,13 @@ Your risk tolerance (how much volatility you can emotionally handle) might be di
 We start with your desired legacy amount and work backward. If you want to leave $50,000 to each child and $25,000 to each grandchild, we factor those amounts into your retirement money map, adding layers for inflation, taxes, and healthcare costs.
 
 **Life Insurance as a Legacy Tool:**
-One powerful strategy is using life insurance for legacy planning. If set up properly, life insurance provides tax-free money to beneficiaries. This allows you to spend more of your retirement savings on yourself while still ensuring a meaningful inheritance.
+One powerful strategy is using life insurance for legacy planning. If set up properly, life insurance can provide a death benefit that is generally income-tax-free to beneficiaries. This may allow you to spend more of your retirement savings on yourself while still planning for a meaningful inheritance.
 
 **Trust Distribution Strategy:**
 To avoid family conflicts, consider having life insurance proceeds distributed through a trust that specifies exactly how much each beneficiary receives. This eliminates arguments about "who gets what" and ensures your wishes are followed.
 
 **Tax-Free vs. Taxable Legacy:**
-Most people haven't considered whether they want to leave taxable or tax-free money to their family. With tax rates likely increasing, leaving tax-free Roth IRA money or life insurance proceeds can be far more valuable than traditional 401(k) funds that will be fully taxable to your heirs.
+Most people haven't considered whether they want to leave taxable or tax-advantaged money to their family. With tax rates likely increasing, leaving tax-free Roth IRA money or generally income-tax-free life insurance proceeds can be far more valuable than traditional 401(k) funds that will be fully taxable to your heirs.
 
 **Utah Estate Planning Advantage:**
 Utah doesn't impose state estate taxes, which simplifies legacy planning compared to many other states. This allows more of your wealth to pass to family members rather than being consumed by taxes.
@@ -539,8 +539,8 @@ Remember the key insights from today's show:
 
 **Ready to make your money work as hard for you as you worked for it?**
 
- **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800
+ï¿½ **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2010.*

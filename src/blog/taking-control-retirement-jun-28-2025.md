@@ -65,10 +65,10 @@ Most financial advisors talk about diversification in terms of stocks, bonds, an
 Here's how this strategy works in practice:
 
 **Protected Money:**
-- Fixed index annuities with a floor of zero (you can't lose money when markets decline)
-- Cap rates typically between 8-9% on the upside
+- Fixed index annuities with a floor of zero, designed to protect principal from market declines, with guarantees based on the claims-paying ability of the issuing insurance company
+- Cap rates that limit the credited upside
 - Little to no fees
-- Provides stable income source during market volatility
+- Designed to provide a stable income source during market volatility
 
 **Growth Money:**
 - Traditional market investments (stocks, stock mutual funds, ETFs)
@@ -101,14 +101,14 @@ The same principle applies to annuities:
 - High fees (often 2-3% annually)
 - No guarantee against losses
 
-**High-Commission Fixed Annuities:**
+**Some Fixed Annuities:**
 - Often come with surrender charges
-- May have caps as low as 3-4%
-- Sales-driven rather than client-focused
+- May have lower caps
+- May carry higher commissions
 
 **Quality Fixed Index Annuities:**
-- Floor of zero (no losses in down markets)
-- Caps of 8-9% in good markets  
+- Floor of zero, designed to protect principal in down markets, with guarantees based on the claims-paying ability of the issuing insurance company
+- Caps that limit the credited upside  
 - Low to no annual fees
 - No direct market risk
 
@@ -160,10 +160,10 @@ Here's where market volatility creates a unique planning opportunity. Let's say 
 
 1. Convert the depressed $440,000 balance (instead of the original $500,000)
 2. Pay taxes on the lower amount
-3. Move the money into a tax-free Roth IRA
-4. When the market recovers, enjoy 100% tax-free growth forever
+3. Move the money into a Roth IRA
+4. When the market recovers, the growth can be tax-free if IRS requirements are met
 
-**"We can't control the stock market  that's the dirty secret every financial advisor knows. But we can control taxes with intentional planning."**
+**"We can't control the stock market  no advisor can. But we can control taxes with intentional planning."**
 
 ### Utah-Specific Considerations
 
@@ -473,7 +473,7 @@ This proprietary planning process typically takes our team several hours to comp
 - **Risk assessment** highlighting potential challenges and solutions
 - **Written action plan** with specific next steps
 
-**This is not a sales presentation.** We will not try to sell you anything during this process. It's a genuine planning service we're extending to Utah radio listeners who want to explore whether better strategies exist for their situation.
+**Educational, no high-pressure pitch.** It's a genuine planning service we're extending to Utah radio listeners who want to explore whether better strategies exist for their situation.
 
 ### What to Expect During Your Visit
 
@@ -494,8 +494,8 @@ We'll analyze your situation and provide specific, actionable recommendations  r
 
 If you're tired of worrying about market volatility, wondering whether your current advisor is truly looking out for your best interests, or simply want a second opinion on your retirement strategy, we invite you to reach out.
 
-** Call: 801-210-5500**  
-**± Text "VISIT" to: 801-210-5500**  
+** Call: 801-210-2800**  
+**ï¿½ Text "VISIT" to: 801-210-2800**  
 ** Visit: capitalwealth.com**
 
 Our team is standing by to answer your questions and help you determine if our approach might be a good fit for your situation.

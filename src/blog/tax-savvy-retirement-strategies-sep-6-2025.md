@@ -59,7 +59,7 @@ Barbara's fear about medical costs resonates with retirees nationwide, but Utah 
 - **Healthy Culture**: Utah's outdoor lifestyle and community support reduce some health risks
 
 **Mike Stevens' Response Strategy:**
-"Here's the goodnessthat's exactly what planning is for. We can put these strategies in place for healthcare costs, long-term care, and income that's guaranteed for life so you don't have to wonder if the money will last."
+"Here's the goodnessthat's exactly what planning is for. We can put these strategies in place for healthcare costs, long-term care, and income designed to help support you for life so you don't have to wonder if the money will last. Income guarantees from insurance products are based on the claims-paying ability of the issuing carrier."
 
 **The Healthcare Bucket Approach for Utah Retirees:**
 - Set aside dedicated funds specifically for medical expenses
@@ -237,7 +237,7 @@ Utah's moderate state income tax rates make Roth conversions more attractive tha
 
 **Asset Placement for Utah Retirees:**
 - **Tax-Deferred Accounts**: High-growth investments, ordinary income assets
-- **Roth Accounts**: Growth investments, tax-free family legacy assets
+- **Roth Accounts**: Growth investments, potentially tax-free family legacy assets (if IRS requirements are met)
 - **Taxable Accounts**: Utah municipal bonds, qualified dividends, long-term growth
 
 **Municipal Bond Strategy:**
@@ -438,7 +438,7 @@ Remember Mike Stevens' fundamental truth: "A portfolio will create fear, but a p
 
 ### Special Offer for Utah Retirees
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysis - the comprehensive review Mike Stevens mentioned that typically takes 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysis - the comprehensive review Mike Stevens mentioned.
 
 **What's included:**
 - RMD strategy analysis and optimization recommendations
@@ -448,8 +448,8 @@ Remember Mike Stevens' fundamental truth: "A portfolio will create fear, but a p
 - Coordination with existing professional team
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The goal isn't to have the most moneyit's to have enough peace of mind to enjoy your Utah retirement fully.

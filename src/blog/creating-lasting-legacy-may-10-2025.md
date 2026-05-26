@@ -220,7 +220,7 @@ IRAs and 401(k)s represent most Utah retirees' wealth, but poor beneficiary plan
 
 ---
 
-## The Capital Wealth Retirement Money Map„: Legacy Integration
+## The Capital Wealth Retirement Money Mapï¿½: Legacy Integration
 
 ### Why Legacy Planning Can't Be Separated from Retirement Planning
 
@@ -270,7 +270,7 @@ Most financial advisors focus on accumulation: "How much can we grow your money?
 **Roth Conversion Planning:**
 - **Before RMD age:** Convert traditional IRA funds to Roth
 - **Tax timing:** Pay taxes now at potentially lower rates
-- **Inheritance benefit:** Heirs receive tax-free Roth distributions
+- **Inheritance benefit:** Heirs may receive potentially tax-free Roth distributions if IRS requirements are met
 - **Utah consideration:** No state tax on conversions
 
 ---
@@ -300,7 +300,7 @@ Robert thought he needed to take RMDs from every account separately, creating:
 - **Beneficiary optimization:** Named grandchildren as contingent beneficiaries for stretch opportunities
 
 **Results after two years:**
-- Reduced annual taxes by $3,200
+- Reduced annual taxes
 - Avoided Medicare premium increases
 - Simplified estate administration
 - Created tax-free giving to favorite charities
@@ -369,8 +369,8 @@ Robert thought he needed to take RMDs from every account separately, creating:
 **With Roth conversion planning:**
 - Parents convert $50,000 annually to Roth during retirement
 - Pay taxes at their lower retirement tax rates
-- Son inherits tax-free Roth IRA
-- Family saves: $40,000+ in taxes
+- Son inherits a Roth IRA with potentially tax-free distributions if IRS requirements are met
+- Family may reduce its overall tax burden
 - Plus: no required distributions for inherited Roth IRAs
 
 ### Utah Charitable Giving Strategies
@@ -551,7 +551,7 @@ Utah's health-conscious culture, combined with medical advances, means many Utah
 - Healthcare cost integration
 - Multi-generational family planning
 
-### The Retirement Money Map„ Approach to Legacy Planning
+### The Retirement Money Mapï¿½ Approach to Legacy Planning
 
 **Comprehensive analysis includes:**
 - **Income planning:** How much you can spend safely
@@ -568,7 +568,7 @@ Utah's health-conscious culture, combined with medical advances, means many Utah
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysisa comprehensive review typically requiring 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysisa comprehensive review typically requiring 5-10 hours of professional analysis.
 
 **What's included:**
 - Complete legacy planning assessment
@@ -578,8 +578,8 @@ Utah's health-conscious culture, combined with medical advances, means many Utah
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The wealthiest person in the cemetery isn't the winnerit's the person who enjoyed life while leaving the greatest positive impact on their family and community.
@@ -772,7 +772,7 @@ Mike Stevens' father never intended to leave his family in financial chaos. At 4
 
 **Your next steps are simple:**
 
-1. **Call 801-210-5500** for your complimentary Retirement Money Map„ analysis
+1. **Call 801-210-2800** for your complimentary Retirement Money Mapï¿½ analysis
 2. **Text "VISIT"** to start the conversation about your family's future
 3. **Visit capitalwealth.com** for additional resources and planning tools
 

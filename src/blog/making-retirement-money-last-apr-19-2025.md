@@ -130,7 +130,7 @@ Understanding market cycles helps retirees maintain perspective during volatile 
 For Utah retirees implementing age-appropriate allocations:
 
 **Safe Money Component (60-70% of portfolio):**
-- Fixed indexed annuities with principal protection
+- Fixed indexed annuities with downside protection (guarantees based on the claims-paying ability of the issuing insurance company)
 - High-grade corporate and government bonds
 - CDs and money market accounts
 - Treasury Inflation-Protected Securities (TIPS)
@@ -447,8 +447,8 @@ Capital Wealth has helped thousands of Utah families create retirement plans des
 
 **Your retirement money should work as hard as you did to earn it.** Let our experienced team help you create a plan that provides both security and growth throughout your retirement years.
 
- **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800
+ï¿½ **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2012.*

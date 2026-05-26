@@ -39,7 +39,7 @@ This episode of Retire Right Radio with Mike Stevens tackled one of the most ove
 
 ** Utah Real Estate Reality:** **Lake cabin bought for $250,000, sold for $900,000** = $650,000 gain potentially creating $200,000+ tax bill without proper planning
 
-**– Estate Tax Double Whammy:** **Large IRA balances face both income tax AND estate tax** on the same dollarspotentially reducing inheritance by 60-70%
+**ï¿½ Estate Tax Double Whammy:** **Large IRA balances face both income tax AND estate tax** on the same dollarspotentially reducing inheritance by 60-70%
 
 ** The Secure Act Destruction:** **Most heirs must empty inherited IRAs within 10 years** or face 25% penaltiesthe highest in the tax code
 
@@ -85,7 +85,7 @@ Utah's technology boom creates unique planning opportunities:
 - Trust sold shares with zero immediate tax
 - Receives $240,000 annually for life
 - $800,000 charitable deduction reduced current taxes
-- **Tax savings:** Over $750,000 vs. outright sale
+- **Tax impact:** May meaningfully reduce taxes versus an outright sale
 
 ---
 
@@ -137,10 +137,10 @@ The Setting Every Community Up for Retirement Enhancement (SECURE) Act fundament
 - **Five-year tax cost:** $202,125
 
 **Benefits:**
-- **$750,000 converted** to tax-free Roth
+- **$750,000 converted** to a Roth IRA with potentially tax-free growth if IRS requirements are met
 - **Remaining $1.55 million** stays in traditional IRA with lower RMDs
-- **Children inherit tax-free Roth** accounts
-- **Tax savings for family:** Over $475,000
+- **Children inherit Roth** accounts with potentially tax-free distributions if IRS requirements are met
+- **May reduce the family's overall tax burden**
 
 **Utah-Specific Advantage:** 
 - **Moderate state tax rate** makes conversions more attractive than high-tax states
@@ -180,8 +180,8 @@ For Utah real estate investors, 1031 exchanges provide the holy grail of tax def
 
 **Tax Results:**
 - **Total deferred capital gains:** Over $1.2 million
-- **Tax savings:** Approximately $300,000
-- **Reinvestment power:** Additional $300,000 working in real estate
+- **Tax impact:** May reduce or defer taxes owed
+- **Reinvestment power:** More capital available to work in real estate
 
 ### Installment Sales: Spreading the Tax Pain
 
@@ -208,7 +208,7 @@ When outright sale is necessary, installment sale structures can dramatically re
 - **Stays in 20% federal bracket** (vs. jumping to higher rates)
 - **Annual tax:** Approximately $125,000
 - **Total tax over five years:** $625,000
-- **Tax savings:** $122,900 plus time value of money
+- **Tax impact:** May reduce taxes owed, plus the benefit of time value of money
 
 ### Charitable Remainder Trusts: The Ultimate Win-Win
 
@@ -247,7 +247,7 @@ For Utah families with charitable intentions, Charitable Remainder Trusts (CRTs)
 - **Charitable remainder:** University of Utah Medical School
 
 **Benefits:**
-- **Immediate deduction:** $425,000 (reduced current taxes by $140,000)
+- **Immediate deduction:** $425,000 (which may help reduce current taxes)
 - **Annual income:** $90,000 for life
 - **Tax-free asset sale** inside trust
 - **Legacy impact:** Endowed scholarship for Utah medical students
@@ -282,13 +282,13 @@ Ideal for volatile assets like Utah real estate or growth company stock:
 - **Appreciation above hurdle rate** passes to beneficiaries gift-tax-free
 - **Risk mitigation:** If asset doesn't appreciate, it returns to grantor
 
-**Utah Real Estate GRAT Example:**
+**Utah Real Estate GRAT Example (hypothetical illustration):**
 *Park City development land worth $2 million:*
-- **Two-year GRAT term** (perfect for development projects)
+- **Two-year GRAT term** (well-suited for development projects)
 - **IRS hurdle rate:** 5.6%
-- **Actual appreciation:** 25% annually
+- **Assumed appreciation:** above the IRS hurdle rate
 - **Gift tax value:** Minimal due to valuation discounts
-- **Result:** $1.5 million in appreciation passes to children gift-tax-free
+- **Result:** Appreciation above the hurdle rate can pass to children free of additional gift tax
 
 **Qualified Personal Residence Trusts (QPRTs)**
 
@@ -319,7 +319,7 @@ Utah's business-friendly environment makes Family Limited Partnerships (FLPs) pa
 - **Valuation discounts:** 30% for minority interests, 20% for marketability
 - **Effective discount:** 44% combined
 - **Gift tax value:** $4.5 million vs. $8 million actual economic value
-- **Estate tax savings:** Over $2 million for family
+- **Estate tax impact:** May meaningfully reduce the family's estate tax exposure
 
 ---
 
@@ -353,7 +353,7 @@ Utah's healthcare landscape creates unique planning opportunities:
 
 **Hybrid Life Insurance Approach:**
 - **Life insurance policy** with long-term care rider
-- **Tax-free benefits** for care expenses
+- **Benefits that may be received income-tax-free** for qualified care expenses if requirements are met
 - **Unused benefits** pass as death benefit
 - **Premium financing** available for large policies
 
@@ -365,7 +365,7 @@ Utah's healthcare landscape creates unique planning opportunities:
 - **$1.5 million life insurance policy** with LTC rider
 - **Annual premiums:** $45,000 (funded by rental income)
 - **LTC benefit:** $150,000 annually for each spouse
-- **Death benefit:** $1.5 million tax-free to children
+- **Death benefit:** $1.5 million, generally income-tax-free to children
 - **Asset protection:** Real estate preserved for inheritance
 
 **Coordination with Asset Planning:**
@@ -391,10 +391,10 @@ Utah's healthcare landscape creates unique planning opportunities:
 4. **Family limited partnership** for diversified portfolio management
 
 **Results:**
-- **Tax savings:** Over $2.1 million vs. outright sale
+- **Tax impact:** May meaningfully reduce taxes versus an outright sale
 - **Charity impact:** $500,000 to Utah Food Bank and Primary Children's Hospital
 - **Family income:** $380,000 annually from CRT
-- **Legacy preservation:** $6.1 million preserved for children vs. $4.2 million after taxes
+- **Legacy preservation:** Designed to preserve more wealth for children than an after-tax outright sale
 
 ### Case Study 2: The Multi-Generational Ranch
 
@@ -410,7 +410,7 @@ Utah's healthcare landscape creates unique planning opportunities:
 
 **Results:**
 - **Valuation reduction:** From $18 million to $8.2 million
-- **Estate tax savings:** $3.9 million for family
+- **Estate tax impact:** May meaningfully reduce the family's estate tax exposure
 - **Ranch preservation:** 1,800 acres in permanent conservation
 - **Income generation:** $240,000 annually from development parcels
 - **Family legacy:** Fourth generation actively involved in operations
@@ -428,8 +428,8 @@ Utah's healthcare landscape creates unique planning opportunities:
 4. **Geographic arbitrage** to Nevada (no state income tax) during sale period
 
 **Results:**
-- **Total tax savings:** $890,000 vs. lump sum sale
-- **Cash flow management:** $614,000 annually for seven years
+- **Tax impact:** May meaningfully reduce taxes versus a lump-sum sale
+- **Cash flow management:** Spreads income across seven years
 - **Retirement acceleration:** Five years earlier than originally planned
 - **Philanthropic goals:** $500,000 to Utah State University veterinary program
 
@@ -471,7 +471,7 @@ Utah's healthcare landscape creates unique planning opportunities:
 - **Insurance specialists** for risk management
 - **Family office services** for ongoing coordination
 
-**The Retirement Money Map„ Integration:**
+**The Retirement Money Mapï¿½ Integration:**
 - **Income planning:** Coordinated withdrawal strategies
 - **Tax optimization:** Multi-year planning horizons
 - **Estate coordination:** Wealth transfer integration
@@ -479,7 +479,7 @@ Utah's healthcare landscape creates unique planning opportunities:
 - **Legacy planning:** Charitable and family goals alignment
 
 **Client Results:**
-- **Average tax savings:** 18-25% vs. traditional approaches
+- **Tax impact:** May reduce taxes versus traditional approaches
 - **Planning integration:** All strategies working in harmony
 - **Ongoing adjustment:** Quarterly reviews and annual updates
 - **Family education:** Next generation prepared for wealth responsibilities
@@ -542,10 +542,8 @@ Utah designated 46 Qualified Opportunity Zones, including several in high-growth
 
 - **Deferred tax:** $450,000 until 2026
 - **Basis step-up:** $180,000 after five years
-- **Tax-free growth:** All appreciation in QOZ investment after 10 years
-- **Total project value after 10 years:** $4.2 million
-- **Tax on QOZ gains:** $0
-- **Net wealth creation:** $2.4 million vs. traditional reinvestment
+- **Potentially tax-free growth:** Appreciation in a QOZ investment held 10 years may be excluded from tax if program requirements are met
+- **Potential benefit:** Holding the QOZ investment long enough may reduce or eliminate tax on the investment's appreciation versus a traditional reinvestment (results vary and are not guaranteed)
 
 ---
 
@@ -635,10 +633,10 @@ Utah designated 46 Qualified Opportunity Zones, including several in high-growth
 
 **Ready to optimize your appreciated assets and minimize tax consequences?**
 
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500  
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800  
 - **Website:** capitalwealth.com
-- **Complimentary Consultation:** Retirement Money Map„ analysis for qualified Utah families
+- **Complimentary Consultation:** Retirement Money Mapï¿½ analysis for qualified Utah families
 
 **Remember:** The best tax strategies must be implemented BEFORE you sell. Don't let poor timing cost your family hundreds of thousands in unnecessary taxes.
 

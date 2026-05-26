@@ -608,7 +608,7 @@ The 80% retirement spending rule is a relic of a bygone era when retirement mean
 
 **The Utah advantage for retirement spending is real:** We have access to world-class recreation at reasonable costs, lower housing expenses than coastal areas, no state tax on Social Security, and a family culture that provides support and meaning. But these advantages only benefit retirees who plan for the reality of how they'll actually spend money in retirement.
 
-**Remember:** The goal of retirement planning isn't to spend as little as possible - it's to spend appropriately on the things that make retirement meaningful while ensuring your money lasts as long as you do. With Utah's advantages and realistic planning, most retirees can afford to live their retirement dreams.
+**Remember:** The goal of retirement planning isn't to spend as little as possible - it's to spend appropriately on the things that make retirement meaningful while pursuing a plan designed to help your money last throughout retirement. With Utah's advantages and realistic planning, most retirees can pursue their retirement dreams.
 
 The families who successfully navigate retirement spending don't just preserve their wealth - they use it purposefully to create the retirement experiences they worked decades to afford. Make sure yours is one of them.
 
@@ -631,8 +631,8 @@ The families who successfully navigate retirement spending don't just preserve t
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500  
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800  
 - **Website:** capitalwealth.com
 
 **Remember:** Retirement spending planning is about funding your dreams, not limiting them. Let's make sure you can afford the retirement you've earned.

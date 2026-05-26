@@ -100,9 +100,11 @@ Our safe bucket strategy uses index annuities with a 0% floor  these aren't the 
 
 **Key Features:**
 - Upside participation in S&P 500 growth
-- Complete protection from market downturns (0% floor)
+- A 0% floor designed to protect principal from market downturns
 - No management fees eating into your returns
-- Guaranteed income stream when needed
+- An income stream designed to be available when needed
+
+These features and any guarantees are based on the claims-paying ability of the issuing insurance company.
 
 **How It Works in Practice:**
 When the stock market is down  whether due to political uncertainty, economic turmoil, or any other factor  we don't force you to sell investments at a loss. Instead, we draw your needed income from the safe bucket, allowing your market investments to recover.
@@ -132,7 +134,7 @@ Here's something most financial advisors won't admit: we can't control your rate
 With current tax rates relatively low by historical standards and the Tax Cuts and Jobs Act potentially expiring, we believe taxes are essentially "on sale" right now. This creates a unique opportunity for strategic Roth conversions.
 
 **How Roth Conversions Work:**
-Instead of leaving all your money in tax-deferred accounts to be taxed at unknown future rates, you voluntarily pay taxes now at today's rates to convert some funds to a Roth IRA. All future growth and withdrawals from the Roth are completely tax-free.
+Instead of leaving all your money in tax-deferred accounts to be taxed at unknown future rates, you voluntarily pay taxes now at today's rates to convert some funds to a Roth IRA. Future growth and qualified withdrawals from the Roth can be tax-free if IRS requirements are met.
 
 **The Goldilocks Principle:**
 We don't recommend going "all in" on Roth conversions. Like Goldilocks finding the porridge that's "just right," every Utah retiree needs their own customized strategy. Some considerations include:
@@ -171,7 +173,7 @@ Quality companies often increase their dividends over time, providing some infla
 With Utah's strong real estate market, REITs can provide exposure to property values and rental income that typically rise with inflation.
 
 **Index Annuities:**
-Our safe bucket strategy helps ensure you have guaranteed growth potential without the risk of losing principal to market volatility.
+Our safe bucket strategy is designed to provide growth potential while protecting principal from market volatility, with guarantees based on the claims-paying ability of the issuing insurance company.
 
 ### The Rebalancing Strategy
 
@@ -210,7 +212,7 @@ For someone in Logan making good money at 62, we'd typically recommend partial R
 
 **Mike's Answer:** Karen, you've hit on one of the biggest risks in retirement  sequence of returns risk. This is when you experience poor market performance early in retirement when you're taking withdrawals. It can devastate a portfolio even if markets recover later.
 
-This is exactly why we use our two-bucket approach. When markets crashed in 2008, retirees who had to sell their 401(k) investments to pay bills locked in those losses permanently. But with our strategy, you would have taken your income from the safe bucket  the index annuities with the 0% floor  while leaving your stock investments alone to recover.
+This is exactly why we use our two-bucket approach. When markets crashed in 2008, retirees who had to sell their 401(k) investments to pay bills locked in those losses permanently. But with our strategy, you would have taken your income from the safe bucket  the index annuities with the 0% floor, which is designed to protect principal in down markets (with guarantees based on the claims-paying ability of the issuing carrier)  while leaving your stock investments alone to recover.
 
 By 2012, most diversified stock portfolios had not only recovered but exceeded their 2007 highs. Our clients who used the two-bucket strategy participated in that recovery because they never had to sell at the bottom.
 
@@ -394,7 +396,7 @@ Our retirement money map creates specific guidelines:
 
 ### Q: Is it too late to start Roth conversions if I'm already 65 and retired?
 
-**A:** It's rarely too late for strategic Roth conversions. Even at 65, you potentially have 30+ years for the tax-free growth to benefit you and your heirs. The key is implementing conversions gradually and strategically, often during the gap years between retirement and required minimum distributions (RMDs) at age 73.
+**A:** It's rarely too late for strategic Roth conversions. Even at 65, you potentially have 30+ years for the potentially tax-free growth (if IRS requirements are met) to benefit you and your heirs. The key is implementing conversions gradually and strategically, often during the gap years between retirement and required minimum distributions (RMDs) at age 73.
 
 ### Q: How much of my retirement portfolio should be in "safe" versus "growth" investments?
 
@@ -428,8 +430,8 @@ Our comprehensive retirement planning process addresses every aspect of your fin
 
 **Ready to take control of your retirement future?**
 
- **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800
+ï¿½ **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2010.*

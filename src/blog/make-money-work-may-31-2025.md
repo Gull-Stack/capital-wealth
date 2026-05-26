@@ -275,15 +275,15 @@ Many HSA holders don't realize they can invest HSA funds beyond basic money mark
 **Post-65 considerations:**
 - Can no longer contribute once on Medicare
 - Can withdraw for any purpose (taxed as ordinary income if not medical)
-- Medical withdrawals remain tax-free for life
+- Medical withdrawals are tax-free when used for qualified medical expenses
 
 ---
 
-## The Retirement Money Map„: Comprehensive Tax Planning
+## The Retirement Money Mapï¿½: Comprehensive Tax Planning
 
 ### Beyond Portfolio Management
 
-Capital Wealth' proprietary Retirement Money Map„ addresses the comprehensive nature of retirement tax planning. This isn't a product for sale but a planning process that addresses:
+Capital Wealth' proprietary Retirement Money Mapï¿½ addresses the comprehensive nature of retirement tax planning. This isn't a product for sale but a planning process that addresses:
 
 **Income planning:** Coordinating multiple income sources for tax efficiency
 **Tax strategy:** Federal and Utah-specific optimization
@@ -349,7 +349,7 @@ Capital Wealth' proprietary Retirement Money Map„ addresses the comprehensive na
 - Utah municipal bond allocation for tax-free income
 - Charitable Qualified Distributions to satisfy RMDs
 
-**Results:** Reduced lifetime tax burden by estimated $75,000 while maintaining desired lifestyle
+**Results:** A coordinated plan that may help reduce their lifetime tax burden while maintaining desired lifestyle
 
 ### Case Study 2: The Small Business Owner
 
@@ -366,7 +366,7 @@ Capital Wealth' proprietary Retirement Money Map„ addresses the comprehensive na
 - Charitable remainder trust for legacy and tax planning
 - Coordination with Utah estate planning laws
 
-**Outcome:** Reduced projected lifetime tax burden by over $200,000
+**Outcome:** A coordinated plan that may help reduce their projected lifetime tax burden
 
 ### Case Study 3: The Healthcare Professional
 
@@ -622,8 +622,8 @@ Medicare doesn't cover all healthcare expenses, leaving retirees responsible for
 ### Understanding the Bucket Approach
 
 **Protected buckets:**
-- Insurance-based products providing principal protection
-- Zero returns during market downturns instead of losses
+- Insurance-based products designed to limit downside, with guarantees based on the claims-paying ability of the issuing insurance company
+- Zero returns during market downturns instead of index losses
 - Income source during market declines
 - Caps on upside growth in exchange for downside protection
 
@@ -668,7 +668,7 @@ Medicare doesn't cover all healthcare expenses, leaving retirees responsible for
 - Utah's healthy lifestyle culture and excellent healthcare
 
 **Capital Wealth's approach:**
-- Retirement Money Map„ plans extend to age 100
+- Retirement Money Mapï¿½ plans extend to age 100
 - Built-in flexibility for longevity adjustments
 - Regular plan reviews and updates
 - Coordination with medical advances
@@ -781,7 +781,7 @@ Remember: **The goal isn't to pay zero taxes - it's to pay your fair share and n
 
 ## Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysis - a comprehensive review.
 
 **What's included:**
 - Complete income and tax strategy analysis
@@ -792,8 +792,8 @@ Remember: **The goal isn't to pay zero taxes - it's to pay your fair share and n
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The strongest tax strategies aren't the most complex ones - they're the most prepared ones.

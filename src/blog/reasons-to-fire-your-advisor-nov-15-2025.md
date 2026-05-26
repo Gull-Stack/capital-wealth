@@ -125,7 +125,7 @@ This example illustrates why Mike Stevens emphasizes: "At Capital Wealth, we hav
 
 **Modern solutions for Utah retirees:**
 - Hybrid life insurance policies with accelerated death benefits
-- Tax-free care benefits integrated with legacy planning
+- Potentially tax-free care benefits (if IRS requirements are met) integrated with legacy planning
 - Coordination with Utah's excellent healthcare systems (Intermountain Healthcare, University of Utah)
 
 ### Danger Zone #5: Estate Planning Avoidance
@@ -182,7 +182,7 @@ Most Utah retirees have no idea what they're paying for financial advice. Mike S
 
 **Critical question to ask:** "Are you acting as a fiduciary when giving me advice?"
 
-**Mike Stevens' commitment:** "Capital Wealth, we are true fiduciaries. We make it clear when we're acting in a fiduciary role and disclose all costs and potential conflicts."
+**Mike Stevens' commitment:** "Capital Wealth, we are fiduciaries. We make it clear when we're acting in a fiduciary role and disclose all costs and potential conflicts."
 
 **Additional transparency questions:**
 - How are you compensated?
@@ -199,7 +199,7 @@ Most Utah retirees have no idea what they're paying for financial advice. Mike S
 
 **Utah retirement reality:** Preservation and income matter more than aggressive growth once you stop working.
 
-**Capital Wealth's approach:** Using data and conversation to build personalized risk profiles through their Retirement Money Map„, which shows:
+**Capital Wealth's approach:** Using data and conversation to build personalized risk profiles through their Retirement Money Mapï¿½, which shows:
 - How much risk you think you're taking vs. actual risk
 - Morningstar analysis of portfolio composition
 - Balanced growth with protection strategies
@@ -222,7 +222,7 @@ A qualified advisor should ask:
 
 **Situation:** Concerned about longevity vs. enjoying retirement now
 **Previous advisor approach:** Generic life expectancy calculations
-**Capital Wealth solution:** Built "permission to spend" into the plan with income floors lasting regardless of longevity
+**Capital Wealth solution:** Built "permission to spend" into the plan with income floors designed to help income last throughout retirement
 
 **Results:**
 - Confidence to enjoy Utah's recreation opportunities
@@ -402,7 +402,7 @@ Mike Stevens respects people who manage their own finances but notes: "Retiremen
 
 ## The Capital Wealth Difference: Why Utah Retirees Choose Professional Guidance
 
-### The Retirement Money Map„ Approach
+### The Retirement Money Mapï¿½ Approach
 
 Capital Wealth's signature process addresses all critical retirement areas:
 
@@ -480,9 +480,9 @@ Your retirement should be the best years of your life. With Utah's unique advant
 
 ---
 
-## Special Offer: Complimentary Retirement Money Map„
+## Special Offer: Complimentary Retirement Money Mapï¿½
 
-**For the next five Utah retirees who call:** Complete Retirement Money Map„ analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
+**For the next five Utah retirees who call:** Complete Retirement Money Mapï¿½ analysis - a comprehensive review.
 
 **What's included:**
 - Risk assessment using Morningstar data
@@ -494,8 +494,8 @@ Your retirement should be the best years of your life. With Utah's unique advant
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **The bottom line:** You've worked too hard and saved too diligently to let the wrong advisor jeopardize your retirement dreams. Take action today.

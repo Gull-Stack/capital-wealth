@@ -608,8 +608,8 @@ The sooner you start, the more time your money has to compound and grow. Whether
 
 **Your 2025 financial success starts with a single phone call.**
 
- **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500
+ **Call:** 801-210-2800
+± **Text "VISIT"** to 801-210-2800
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families build wealth and retire with confidence since 2008.*

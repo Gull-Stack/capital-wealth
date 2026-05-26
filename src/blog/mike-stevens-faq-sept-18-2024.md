@@ -178,7 +178,7 @@ faqSchema: [
 **A:** It can be, but it needs to make financial sense for your overall situation.
 
 **Life Insurance Advantages:**
-- Tax-free death benefit to beneficiaries
+- Death benefit that is generally income-tax-free to beneficiaries
 - Provides liquidity for estate taxes
 - Income replacement for surviving spouse
 - Can equalize inheritance among children
@@ -230,7 +230,7 @@ faqSchema: [
 
 ---
 
-## ¥ Healthcare & Long-Term Care Questions
+## ï¿½ Healthcare & Long-Term Care Questions
 
 ### Q: "Will Medicare cover my long-term care needs?"
 
@@ -265,7 +265,7 @@ faqSchema: [
 
 ---
 
-## „ Withdrawal Strategy Questions
+## ï¿½ Withdrawal Strategy Questions
 
 ### Q: "What's wrong with the 4% withdrawal rule?"
 
@@ -344,8 +344,8 @@ faqSchema: [
 Have questions not covered here? Capital Wealth specializes in federal employee retirement planning.
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500  
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800  
 - **Website:** capitalwealth.com
 
 *Free initial consultation for federal employees. Get personalized answers to your specific retirement questions.*

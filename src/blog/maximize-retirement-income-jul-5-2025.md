@@ -147,9 +147,9 @@ Most Utah retirees can optimize their tax situation by targeting specific income
 
 **Results after 3 years:**
 - **Current income:** $125,000/year (above target)
-- **Tax savings:** $8,000+ annually due to Utah optimization
-- **Security:** 70% of income now guaranteed regardless of market performance
-- **Legacy:** On track to leave $800,000+ to children despite higher spending
+- **Tax efficiency:** Utah optimization that may help reduce annual taxes
+- **Security:** A larger share of income now coming from sources designed to be less dependent on market performance, with any annuity guarantees based on the claims-paying ability of the issuing insurance company
+- **Legacy:** On track to leave a meaningful inheritance to children despite higher spending
 
 ### Case Study: The Williams - St. George Retirement Haven
 
@@ -170,8 +170,8 @@ Most Utah retirees can optimize their tax situation by targeting specific income
 4. **Healthcare transition:** Coordinated California COBRA with Utah Medicare supplements
 
 **Five-year results:**
-- **Tax savings:** $120,000+ compared to staying in California
-- **Income increase:** Effectively boosted spending power by 30%
+- **Tax efficiency:** A plan that may help reduce taxes compared to staying in California
+- **Income increase:** Improved spending power
 - **Quality of life:** Maintained lifestyle with lower stress and costs
 
 ### Case Study: The Andersons - Logan Valley Pension Optimization
@@ -193,9 +193,9 @@ Most Utah retirees can optimize their tax situation by targeting specific income
 4. **Social Security coordination:** Optimized spousal claiming strategies
 
 **Outcome:**
-- **Guaranteed income:** $8,900/month from pensions and Social Security
+- **Pension and Social Security income:** $8,900/month from these guaranteed sources
 - **Supplemental income:** $1,800/month from optimized investments
-- **Total income:** $128,400/year with 75% guaranteed
+- **Total income:** $128,400/year, much of it from pension and Social Security
 - **Utah tax optimization:** Paying only $2,200/year in Utah income tax
 
 ---
@@ -547,8 +547,8 @@ Your retirement income should provide not just money, but confidence, security, 
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500  
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800  
 - **Website:** capitalwealth.com
 
 **Remember:** Independence Day celebrates freedom. Your retirement income plan should provide financial freedom. Let's make sure yours does.

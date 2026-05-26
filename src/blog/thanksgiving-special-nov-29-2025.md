@@ -426,7 +426,7 @@ As we finish our Thanksgiving feast and look ahead to the holiday season, now is
 
 ### The Thanksgiving Special Offer
 
-For our Retire Right Radio listeners, I'm extending a special Thanksgiving offer. For the next five callers who mention this blog post, we'll provide a complimentary retirement money map  a comprehensive analysis of your financial situation valued at $750.
+For our Retire Right Radio listeners, I'm extending a special Thanksgiving offer. For the next five callers who mention this blog post, we'll provide a complimentary retirement money map  a comprehensive analysis of your financial situation.
 
 This retirement money map includes:
 - Analysis of all your income sources
@@ -451,8 +451,8 @@ To make the most of your complimentary consultation, gather:
 
 Ready to create your perfect retirement planning feast? Contact Capital Wealth today:
 
-**Phone:** 801-210-5500  
-**Text:** "VISIT" to 801-210-5500  
+**Phone:** 801-210-2800  
+**Text:** "VISIT" to 801-210-2800  
 **Website:** capitalwealth.com
 
 Our offices are conveniently located to serve Utah families throughout the Wasatch Front and beyond. We also offer virtual consultations for clients in rural areas or those who prefer meeting from home.

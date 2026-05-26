@@ -258,9 +258,9 @@ This may be the most honest and important question of all.
 Rather than putting all retirement funds in the stock market or keeping everything in "safe" accounts, successful Utah retirees employ a layered approach:
 
 **Layer 1: Safety and Protection**
-- Index annuities with no fees
-- Protection against market downturns
-- Guaranteed income options
+- Index annuities
+- Designed to limit downside in market declines
+- Income options with guarantees based on the claims-paying ability of the issuing insurance company
 
 **Layer 2: Growth and Opportunity**
 - Diversified market investments
@@ -434,7 +434,7 @@ For Utah residents in higher tax brackets, Utah municipal bonds offer:
 Utah's moderate tax environment creates opportunities for strategic Roth conversions:
 - **Lower current tax rates** may not persist
 - **No state tax** on conversion amounts
-- **Future tax-free growth** and distributions
+- **Potentially tax-free growth** and distributions if IRS requirements are met
 - **Estate planning benefits** for heirs
 
 ---
@@ -563,11 +563,11 @@ The most successful Utah retirees combine technological efficiency with personal
 
 ---
 
-## The Retirement Money Map„ Advantage
+## The Retirement Money Mapï¿½ Advantage
 
-Capital Wealth has developed a proprietary process called the Retirement Money Map„ that goes far beyond traditional portfolio management.
+Capital Wealth has developed a proprietary process called the Retirement Money Mapï¿½ that goes far beyond traditional portfolio management.
 
-### Components of the Retirement Money Map„
+### Components of the Retirement Money Mapï¿½
 
 **Comprehensive analysis:**
 - Income needs assessment
@@ -644,13 +644,13 @@ Capital Wealth has developed a proprietary process called the Retirement Money M
 ### Professional Consultation Benefits
 
 **What to expect from a comprehensive review:**
-- Retirement Money Map„ analysis
+- Retirement Money Mapï¿½ analysis
 - Fee and tax optimization review
 - Income planning coordination
 - Utah-specific advantage identification
 
 **The complimentary consultation process:**
-- No sales pressure or product pushing
+- Educational, no high-pressure pitch
 - Educational focus on opportunities
 - Honest assessment of whether assistance is needed
 - Clear explanation of potential strategies
@@ -680,7 +680,7 @@ Remember: **There's no award for being the wealthiest person in the cemetery.** 
 
 ## Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
 
 **What's included:**
 - Comprehensive income and expense analysis
@@ -690,8 +690,8 @@ Remember: **There's no award for being the wealthiest person in the cemetery.** 
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The strongest investment strategies aren't the most aggressive ones - they're the most prepared ones.

@@ -1263,7 +1263,7 @@ html.lp-variant-pcra .lp-variant-pcra { display: inline; }
       <!-- Trust row -->
       <div class="lp-trust-row">
         <a href="https://www.bbb.org/us/ut/lehi/profile/financial-planning-consultants/capital-wealth-advisors-1166-90025236" target="_blank" rel="noopener" class="lp-trust-item" aria-label="Better Business Bureau A+ Accredited Business">
-          <img src="/assets/images/badges/bbb2.png" alt="BBB A+ Accredited Business — Capital Wealth Advisors">
+          <img src="/assets/images/badges/bbb2.png" alt="BBB A+ Accredited Business — Capital Wealth">
         </a>
         <div class="lp-trust-item">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -1311,9 +1311,9 @@ html.lp-variant-pcra .lp-variant-pcra { display: inline; }
   <div class="lp-calc-inner">
     <div class="lp-calc-header">
       <div class="lp-calc-eyebrow">See The Difference</div>
-      <h2 class="lp-calc-title">What could a <em>1% better</em> return do for your retirement?</h2>
+      <h2 class="lp-calc-title">What could a <em>1% difference</em> in return do over time?</h2>
       <p class="lp-calc-subtitle">
-        Your default 401k menu often underperforms a thoughtfully-managed SDBA. Even a 1% annual edge — the kind our fiduciary team routinely targets through active management inside your brokerage window — compounds into a very different retirement.
+        A self-directed brokerage window gives you access to investments beyond the default 401k menu. This calculator illustrates how even a hypothetical 1% difference in annual return can compound over time. It is for illustration only &mdash; not a projection of Capital Wealth's results, not a representation that any particular return will be achieved, and not a guarantee of any outcome. All investing involves risk, including loss of principal.
       </p>
     </div>
 
@@ -1348,7 +1348,7 @@ html.lp-variant-pcra .lp-variant-pcra { display: inline; }
     </div>
 
     <p class="lp-calc-disclaimer">
-      For illustrative purposes only. Assumes 3% annual salary growth, 12.4% annual contribution rate (combined employee + employer), and monthly compounding. "Default 401k" uses a 7% annual return — the long-run average for the S&amp;P 500. "Advised SDBA" assumes a 1% annual improvement through active management. Not a guarantee of future results. All investing carries risk, including loss of principal.
+      For illustrative purposes only. Assumes 3% annual salary growth, 12.4% annual contribution rate (combined employee + employer), and monthly compounding. The "7% return" line reflects the long-run average for the S&amp;P 500; the "Hypothetical +1%" line simply assumes a 1% higher annual return to show the compounding effect. This is not a projection of Capital Wealth's results, not a representation that any particular return will be achieved, and not a guarantee of future results. All investing carries risk, including loss of principal.
     </p>
   </div>
 </section>
@@ -1667,7 +1667,7 @@ html.lp-variant-pcra .lp-variant-pcra { display: inline; }
     <details class="lp-faq-item">
       <summary>What does "fiduciary" actually mean here?</summary>
       <div class="lp-faq-answer">
-        <p>Capital Wealth Advisors is a Registered Investment Advisor. As a fiduciary, we are legally required to put your interests ahead of our own and to disclose any conflicts of interest. We don't earn commissions on fund choices. Our incentive is the same as yours — growing your retirement account responsibly over time.</p>
+        <p>Capital Wealth is an SEC Registered Investment Advisor. As a fiduciary, we are legally required to put your interests ahead of our own and to disclose any conflicts of interest. We're paid a transparent advisory fee on the assets we manage — not commissions on fund choices. Any insurance product we might separately recommend is offered through our affiliate, CWA Insurance Services, LLC, with any commission disclosed.</p>
       </div>
     </details>
 
@@ -1759,12 +1759,12 @@ html.lp-variant-pcra .lp-variant-pcra { display: inline; }
     </div>
 
     <a href="https://www.bbb.org/us/ut/lehi/profile/financial-planning-consultants/capital-wealth-advisors-1166-90025236" target="_blank" rel="noopener" class="lp-footer-bbb" style="display:inline-flex;align-items:center;">
-      <img src="/assets/images/badges/bbb2.png" alt="Better Business Bureau A+ Rating — Capital Wealth Advisors" style="height:40px;width:auto;" loading="lazy">
+      <img src="/assets/images/badges/bbb2.png" alt="Better Business Bureau A+ Rating — Capital Wealth" style="height:40px;width:auto;" loading="lazy">
     </a>
   </div>
 
   <div class="lp-footer-copyright">
-    © 2026 Capital Wealth. All rights reserved. Investment advisory services offered through Capital Wealth, a Registered Investment Advisor.
+    © 2026 Capital Wealth. All rights reserved. Investment advisory services offered through Capital Wealth, an SEC Registered Investment Advisor.
   </div>
 </footer>
 
@@ -1897,7 +1897,7 @@ document.addEventListener('DOMContentLoaded', function() {
         labels: ages,
         datasets: [
           {
-            label: 'Advised SDBA (+1%)',
+            label: 'Hypothetical +1% return',
             data: withSdba,
             borderColor: '#C7A356',
             backgroundColor: 'rgba(199,163,86,0.12)',
@@ -1982,13 +1982,13 @@ document.addEventListener('DOMContentLoaded', function() {
     for (var i = 0; i <= years; i++) ages.push(age + i);
 
     var rDefault = 0.07;   // S&P 500 long-run average
-    var rAdvised = 0.08;   // 1% better
+    var rAdvised = 0.08;   // hypothetical 1% higher, for illustration only
     var defaultPlan = project(balance, ages, salary, rDefault);
     var withSdba = project(balance, ages, salary, rAdvised);
 
     var diff = withSdba[withSdba.length - 1] - defaultPlan[defaultPlan.length - 1];
     headlineEl.innerHTML =
-      'Could <span class="lp-calc-highlight">' + fmtCurrency(diff) + '</span> more change your retirement?';
+      'A hypothetical 1% higher annual return compounds to <span class="lp-calc-highlight">' + fmtCurrency(diff) + '</span> more over this period.';
 
     renderChart(ages, withSdba, defaultPlan);
   }

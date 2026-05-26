@@ -42,7 +42,7 @@ For Utah retirees, this potential change carries unique implications. With our s
  **Utah Tax Advantage:** No state taxation of Social Security benefits saves couples $3,000-$5,000+ annually compared to surrounding states
  **401(k) Participation Reality:** 40% of eligible workers don't contribute to employer plansindicating potential challenges with mandated personal investment responsibility
  **Average Social Security Benefit:** $1,907 monthly for Utah retirees (January 2025), representing 30-40% of pre-retirement income for most workers
- **Professional Management Value:** Properly managed retirement accounts historically outperform by 1.5-3% annually compared to default or self-directed options
+ **Professional Management Value:** Working with a financial professional can help coordinate investment decisions within a broader retirement plan
 
 ---
 
@@ -117,7 +117,7 @@ Mike Stevens highlights a sobering reality: "I've met people who are like, yeah,
 **401(k) Participation Lessons:**
 - **Default Options Matter**: Auto-enrollment dramatically increases participation
 - **Investment Education Needed**: Many workers don't understand investment basics
-- **Professional Guidance Valuable**: Managed accounts consistently outperform self-directed options
+- **Professional Guidance Valuable**: Professional coordination can help align investment decisions with a broader retirement plan
 - **Regular Review Required**: "Set it and forget it" often leads to poor outcomes
 
 ### Utah-Focused Personal Account Strategy
@@ -165,10 +165,10 @@ Given Utah's risk-averse culture and family-centered values:
 
 **Roth Personal Account Strategy:**
 If personal accounts offer Roth options, Utah retirees could benefit:
-- **Tax-Free Growth**: No taxes on investment gains during accumulation
-- **Tax-Free Withdrawals**: No federal or Utah state taxes in retirement  
-- **Estate Benefits**: Roth accounts pass to heirs without taxation
-- **Medicare Considerations**: Roth withdrawals don't affect Medicare premium calculations
+- **Tax-Advantaged Growth**: Potentially no taxes on investment gains during accumulation if IRS requirements are met
+- **Tax-Advantaged Withdrawals**: Qualified withdrawals can be free of federal and Utah state taxes if IRS requirements are met  
+- **Estate Benefits**: Roth accounts may pass to heirs potentially tax-free if IRS requirements are met
+- **Medicare Considerations**: Qualified Roth withdrawals generally don't affect Medicare premium calculations
 
 **Asset Location Optimization:**
 Coordinate personal accounts with other retirement vehicles:
@@ -461,8 +461,8 @@ The choice between government-controlled and personally-directed Social Security
 - Family legacy planning with inheritable personal accounts
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The best Social Security strategy isn't the most aggressive or the most conservativeit's the one that fits your Utah retirement goals and family values.

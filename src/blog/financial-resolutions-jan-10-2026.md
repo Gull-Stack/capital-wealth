@@ -38,8 +38,8 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 - **SMART Goals Framework:** Specific, Measurable, Achievable, Relevant, and Time-bound resolutions that actually stick
 - **Utah Tax Advantages:** No Social Security tax saves average couple $4,800+ annually, creating reinvestment opportunities
 - **The 1% Rule:** Small, consistent improvements compound into massive long-term benefits
-- **Automation Success:** Automated strategies remove willpower from the equation and guarantee progress
-- **Professional Partnership:** Working with fiduciary advisors increases success rates by over 300%
+- **Automation Success:** Automated strategies remove willpower from the equation and can support consistent progress
+- **Professional Partnership:** Working with a fiduciary advisor may help improve your likelihood of staying on track
 
 ---
 
@@ -62,7 +62,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 ### The Resolution vs. System Approach
 
 **Failed resolution example:** "I will manage my money better this year"
-**Successful system example:** "I will review my retirement portfolio quarterly with my advisor, implement tax-loss harvesting monthly, and optimize my withdrawal strategy to reduce taxes by $5,000 annually"
+**Successful system example:** "I will review my retirement portfolio quarterly with my advisor, implement tax-loss harvesting monthly, and optimize my withdrawal strategy to help reduce my annual taxes"
 
 ---
 
@@ -70,7 +70,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 
 ### The Specific Goal
 
-**Resolution:** "I will reduce my 2026 tax burden by at least $3,000 by optimizing Utah's retirement tax advantages."
+**Resolution:** "I will work to reduce my 2026 tax burden by optimizing Utah's retirement tax advantages."
 
 ### Why This Matters for Utah Retirees
 
@@ -101,10 +101,10 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 **Utah Strategy:** Systematic Roth conversions combined with charitable distributions
 
 **Results:**
-- Reduced annual taxes by $8,200
+- Worked to reduce annual taxes
 - Utilized Utah's no Social Security tax advantage
-- Created tax-free legacy for children
-- Increased after-tax spendable income by 12%
+- Created a potentially tax-free legacy for children if IRS requirements are met
+- Aimed to increase after-tax spendable income
 
 **The key to success:** They made it specific, measurable, and automated with professional guidance.
 
@@ -114,12 +114,12 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 
 ### The Specific Goal
 
-**Resolution:** "I will reduce my healthcare costs by $2,400 annually while improving my coverage through Utah's excellent healthcare systems."
+**Resolution:** "I will work to reduce my healthcare costs while improving my coverage through Utah's excellent healthcare systems."
 
 ### Utah's Healthcare Advantages
 
 **Why Utah retirees have unique opportunities:**
-- Intermountain Healthcare system consistently ranked #1 nationally
+- Intermountain Healthcare is widely regarded as a leading health system
 - University of Utah Health provides world-class specialty care
 - Competitive healthcare costs compared to coastal areas
 - Strong network of home health care providers supporting aging in place
@@ -151,7 +151,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 4. Created long-term care plan leveraging family support
 
 **Results:**
-- Saved $3,100 annually on insurance premiums
+- Reduced their insurance premium costs
 - Improved coverage for preferred Utah providers  
 - Created systematic approach to healthcare planning
 - Gained peace of mind about future care needs
@@ -204,14 +204,14 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 3. **Flexibility layer:** Business sale proceeds = $2,300/month
 
 **Utah optimizations:**
-- No Social Security tax saved $840/month
+- Utah's lack of state tax on Social Security may help reduce taxes
 - Utah municipal bonds provided tax-free income
 - Strategic Roth conversions reduced future tax burden
 - Planned for Utah recreation and lifestyle expenses
 
 **Results:** 
-- Achieved 103% income replacement
-- Reduced tax burden by 35%
+- Achieved strong income replacement
+- Worked to reduce their overall tax burden
 - Created systematic approach allowing confident retirement
 - Maintained desired Utah lifestyle with recreation budget
 
@@ -225,10 +225,10 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 
 ### Why Professional Guidance Matters
 
-**Research shows:**
-- DIY retirees underperform professional guidance by 2.9% annually
-- Professional advice increases retirement success probability by 67%
-- Regular reviews and adjustments prevent costly mistakes
+**Research suggests:**
+- DIY retirees may underperform those who work with professional guidance
+- Professional advice may help improve the likelihood of retirement success
+- Regular reviews and adjustments can help avoid costly mistakes
 - Fiduciary standard ensures advisor acts in client's best interest
 
 **Utah-specific advantages of professional guidance:**
@@ -248,7 +248,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 
 **Quarter 1 (January-March):**
 - Establish advisor relationship and complete comprehensive analysis
-- Develop personalized Retirement Money Map„
+- Develop personalized Retirement Money Mapï¿½
 - Implement immediate optimization opportunities
 - Create systematic monitoring and review process
 
@@ -270,8 +270,8 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 - Anxiety about retirement security
 
 **After establishing professional partnership:**
-- Saved $15,000 annually through tax optimization
-- Increased lifetime Social Security benefits by $127,000
+- Worked to reduce annual taxes through tax optimization
+- Optimized their Social Security claiming strategy for greater lifetime benefits
 - Streamlined estate planning for family security
 - Gained confidence and peace of mind
 
@@ -333,7 +333,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 4. **Utah municipal bonds:** Provided tax-free income for family trust
 
 **Results:**
-- Eliminated $950,000 in potential estate taxes
+- Worked to reduce potential estate taxes
 - Created systematic wealth transfer to next generations
 - Supported Utah charities through planned giving
 - Maintained family control and involvement in business
@@ -555,7 +555,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 ### Pitfall #1: Vague Goals
 
 **Failed approach:** "I want to do better with money"
-**Successful approach:** "I will reduce my tax burden by $3,000 through strategic Roth conversions and Utah tax optimization"
+**Successful approach:** "I will work to reduce my tax burden through strategic Roth conversions and Utah tax optimization"
 
 ### Pitfall #2: All-or-Nothing Thinking
 
@@ -605,7 +605,7 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 
 **For Utah residents committed to 2026 financial resolution success:**
 
-**Complimentary Retirement Money Map„** for the next five callers to 801-210-5500, including:
+**Complimentary Retirement Money Mapï¿½** for the next five callers to 801-210-2800, including:
 - Comprehensive analysis of your resolution goals
 - Utah-specific optimization strategies
 - Systematic implementation plan
@@ -620,8 +620,8 @@ This isn't about generic financial advice or pie-in-the-sky promises. These are 
 - Automation system setup and monitoring
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Commitment:** Capital Wealth will provide the professional partnership, systematic approach, and Utah expertise needed to make your 2026 financial resolutions actually succeed.

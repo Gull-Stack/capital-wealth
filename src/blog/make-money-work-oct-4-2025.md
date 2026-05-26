@@ -163,9 +163,9 @@ When you're working, accumulating money in 401(k)s and IRAs is straightforward. 
 - No cap on upside potential
 
 **Protected Bucket (Safe Money):**
-- Insurance company products with principal protection
+- Insurance company products designed to limit downside, with guarantees based on the claims-paying ability of the issuing insurance company
 - Zero returns during market downturns (vs. losses)
-- Capped upside but guaranteed principal
+- Capped upside in exchange for downside protection
 - Utah's insurance-friendly regulatory environment provides options
 
 **The Ping-Pong Strategy:**
@@ -337,15 +337,15 @@ If you can check all these boxes, you're in the top 0.1% of prepared retirees.
 
 For protected income buckets, insurance companies offer unique advantages:
 
-**Guaranteed Principal Protection:**
-- No losses during market downturns
+**Downside Protection:**
+- Designed to avoid index losses during market downturns, with guarantees based on the claims-paying ability of the issuing insurance company
 - Zero returns vs. negative returns in bad years
 - Utah's insurance regulations provide strong consumer protections
 - Long-term stability from established, A+ rated carriers
 
 **Upside Participation:**
 - Participate in market gains (with caps)
-- No risk of principal loss
+- Designed to limit exposure to principal loss, backed by the issuing insurance company
 - Suitable for income needs within 5-7 years
 
 ### Planning for Longevity
@@ -359,7 +359,7 @@ With AI advancing medical treatments, Utah retirees may live longer than histori
 - Utah's healthcare excellence positions residents for longer, healthier lives
 
 **Plan to Age 100:**
-Capital Wealth's Retirement Money Map„ plans to age 100, with built-in flexibility to adjust if lifespans extend further.
+Capital Wealth's Retirement Money Mapï¿½ plans to age 100, with built-in flexibility to adjust if lifespans extend further.
 
 ---
 
@@ -469,7 +469,7 @@ CPAs do tax preparation, not tax planning. Investment advisors focus on returns,
 
 ### Professional Planning Steps
 
-**Retirement Money Map„ Process:**
+**Retirement Money Mapï¿½ Process:**
 1. Comprehensive financial organization
 2. Income planning and withdrawal optimization
 3. Tax strategy development
@@ -499,7 +499,7 @@ CPAs do tax preparation, not tax planning. Investment advisors focus on returns,
 - Utah municipal bond laddering for tax-free income
 - Healthcare cost planning using Utah system advantages
 
-**Results:** Converted single-asset-class risk into diversified income plan, reduced tax burden by estimated $75,000 over 10 years
+**Results:** Converted single-asset-class risk into a diversified income plan that may help reduce their tax burden over time
 
 ### Case Study: Utah County Retirees
 
@@ -711,7 +711,7 @@ The strongest retirement plans aren't the most optimistic onesthey're the most p
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysisa comprehensive review typically requiring 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysisa comprehensive review.
 
 **What's included:**
 - Income and withdrawal strategy analysis
@@ -723,8 +723,8 @@ The strongest retirement plans aren't the most optimistic onesthey're the most p
 - Completely complimentary with no obligation
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** You don't need perfect organization to get started. Bring what you have, and professional guidance will help you create the comprehensive plan you need for Utah retirement success.

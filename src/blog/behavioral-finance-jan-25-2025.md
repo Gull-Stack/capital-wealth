@@ -385,7 +385,7 @@ The hardest part is the first sale. Once you start the diversification process, 
 Your fear of running out of money is completely rational  it's one of the biggest risks retirees face. Your husband's concern about growth is also valid because being too conservative can actually create the very problem you're trying to avoid if inflation erodes your purchasing power over a 25-30 year retirement.
 
 Here's how we solve this dilemma at Capital Wealth:
-First, we implement what I call the bucket strategy. We create different "buckets" of money for different purposes and timeframes. Some money goes in very safe buckets (CDs, high-yield savings, Treasury bills) that will never lose money. Other money goes in growth buckets (diversified stock investments) for long-term inflation protection.
+First, we implement what I call the bucket strategy. We create different "buckets" of money for different purposes and timeframes. Some money goes in very safe buckets (CDs, high-yield savings, Treasury bills) designed to preserve principal. Other money goes in growth buckets (diversified stock investments) for long-term inflation protection.
 
 The beauty of this approach is that it satisfies both your fears. When the market goes down, you know you have safe money for your immediate needs, so you don't feel pressure to sell the growth investments. When inflation hits, you have growth investments that can help your money keep up with rising costs.
 
@@ -518,8 +518,8 @@ The intersection of psychology and money doesn't have to be your weakness  with 
 
 **Don't let emotions derail your financial future. Take control through systematic planning and professional guidance.**
 
- **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500
+ **Call:** 801-210-2800
+ï¿½ **Text "VISIT"** to 801-210-2800
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families navigate the psychology of money and build lasting retirement security since 2008.*

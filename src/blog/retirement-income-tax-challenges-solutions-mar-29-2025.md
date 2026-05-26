@@ -22,7 +22,7 @@ tags:
 
 ## Introduction: The $274,000 Household Debt and What It Means for Your Retirement
 
-Picture the headline that should terrify every Utah retiree: **"National Debt Reaches 36 Trillion: $274,000 per Household."**
+Picture the headline that should concern every Utah retiree: **"National Debt Reaches 36 Trillion: $274,000 per Household."**
 
 While you were saving diligently in your 401(k), contributing to your IRA, and building what you thought was a secure retirement, the federal government was accumulating debt at an unprecedented pace. Mike Stevens delivers the sobering mathematics: "It only took months for the debt to grow from 35 trillion to 36 trillion... We spend roughly about $3 billion per day on interest on that debt."
 
@@ -195,8 +195,8 @@ His immediate follow-up: "Most people are 100% the same kind of feeling that tax
 **The Mechanics:**
 "The thing about a Roth conversion not contribution so we're not putting new money into a Roth IRA we're taking an existing tax deferred account we're telling the government hey we're going to pay some taxes and convert this from tax deferred into tax-free."
 
-**The Forever Benefit:**
-"You're telling the government hands off forever... once you get it into the tax-free account hands off keep your mits off IRS this is tax-free money."
+**The Long-Term Benefit:**
+"Once you get it into the Roth account, qualified withdrawals can be tax-free if IRS requirements are met."
 
 ### The Three Major Advantages
 
@@ -206,8 +206,8 @@ His immediate follow-up: "Most people are 100% the same kind of feeling that tax
 **2. No Required Minimum Distributions:**
 "There's no required minimum distributions for the original account holder... that's the largest penalty you can hit in the tax code... 25% penalty plus the taxes if you don't."
 
-**3. Tax-Free Legacy:**
-"If you don't spend everything and the money is in a tax-free account that money goes 100% tax-free to your beneficiaries."
+**3. Tax-Advantaged Legacy:**
+"If you don't spend everything and the money is in a Roth account, that money can pass to your beneficiaries potentially tax-free if IRS requirements are met."
 
 ### The Medicare Two-Year Look-Back Trap
 
@@ -285,7 +285,7 @@ Stevens clarifies the crucial difference: "The tax preparation... is looking bac
 "A CPA's job is to do tax planning. It's to be reactive and say, 'Okay, cool. This is what you've done in the last year. So let's go ahead and we'll plug these numbers in and we'll file your tax return off.'"
 
 **Financial Advisor's Role (Tax Planning):**
-"The advisor job is to be proactive and it's to say, 'Okay, looking forward, here's how much money you have in tax-free accounts. Here's how much money you have in tax-deferred accounts. What is the best way to morally, legally, and ethically disinherit the IRS from your life and shift from tax-deferred into tax-free?'"
+"The advisor job is to be proactive and it's to say, 'Okay, looking forward, here's how much money you have in tax-free accounts. Here's how much money you have in tax-deferred accounts. What is the best way to morally, legally, and ethically reduce the taxes you pay over your lifetime and shift from tax-deferred into tax-free?'"
 
 ### The Coordination Imperative
 
@@ -499,10 +499,10 @@ As Stevens notes, "There's no do-overs you got to get it right the first time."
 - "Glossy colorful easy to read" tax guides (not "onion thin legal jargon")
 - Comprehensive tax strategy visits
 
-**Remember:** The goal isn't just avoiding taxesit's optimizing your lifetime tax burden so you can "disinherit the IRS from your life and shift from tax-deferred into tax-free."
+**Remember:** The goal isn't just avoiding taxesit's optimizing your lifetime tax burden so you can legally reduce the taxes you pay and shift from tax-deferred into tax-free.
 
- **Call:** 801-210-5500  
-± **Text "VISIT"** to 801-210-5500  
+ **Call:** 801-210-2800  
+ï¿½ **Text "VISIT"** to 801-210-2800  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)  
  **Tax Resources:** [retireutah.com](https://retireutah.com)
 

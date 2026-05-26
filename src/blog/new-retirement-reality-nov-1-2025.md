@@ -41,7 +41,7 @@ For Utah retirees, this gap represents both a crisis and an opportunity. With ou
 
 ** Million-Dollar Gap:** **Average retirement need: $1+ million** while most Utahns have saved less than $100,000 - a 10x shortfall
 
-**¥ Healthcare Cost Reality:** **Utah nursing care averages $8,000-$10,000 monthly** with assisted living at $4,000-$5,000 per month
+**ï¿½ Healthcare Cost Reality:** **Utah nursing care averages $8,000-$10,000 monthly** with assisted living at $4,000-$5,000 per month
 
 ** Social Security Cliff:** **By 2035, benefits may drop to 83% of scheduled amounts** without Congressional intervention - affecting every Utah retiree
 
@@ -74,7 +74,7 @@ Utah consistently ranks among the healthiest states in America, and our resident
 
 **Their challenge:** Robert's entire retirement depends on 401(k) performance and Social Security, while Carol's pension helps but won't cover their desired $85,000 annual lifestyle.
 
-**The solution:** Strategic withdrawal planning, Roth conversions during early retirement years, and Utah-specific tax optimization turned their 68% success probability into 93% confidence.
+**The solution:** Strategic withdrawal planning, Roth conversions during early retirement years, and Utah-specific tax optimization were used to help improve the projected sustainability of their plan.
 
 ### Social Security: Utah's Wobbly Leg
 
@@ -131,7 +131,7 @@ The Social Security trustees' latest report delivers sobering news for Utah reti
 
 ---
 
-## The Retirement Money Map„: Utah-Specific Strategic Planning
+## The Retirement Money Mapï¿½: Utah-Specific Strategic Planning
 
 ### Building Your Income Foundation
 
@@ -146,10 +146,10 @@ The Social Security trustees' latest report delivers sobering news for Utah reti
 *Former Silicon Slopes executives, ages 65 and 63.* Combined Social Security of $5,400 monthly, but lifestyle costs of $12,000 monthly in Park City.
 
 **Strategy implemented:**
-- **Fixed index annuity** providing $3,500 monthly guaranteed income
+- **Fixed index annuity** providing $3,500 monthly in income, with guarantees based on the claims-paying ability of the issuing insurance company
 - **Utah municipal bond ladder** generating $1,800 monthly tax-free
 - **Part-time consulting** leveraging tech expertise for $1,300 monthly
-- **Result:** $12,000 monthly guaranteed income foundation
+- **Result:** A roughly $12,000 monthly income foundation
 
 ### Layer 2: Growth and Protection Balance
 
@@ -219,10 +219,10 @@ The sequence of returns risk represents one of the most dangerous threats to Uta
 ### Protection Strategies for Utah Retirees
 
 **Fixed Index Annuities with 0% Floor**
-- **How they work:** Gains when market rises, protected when it falls
+- **How they work:** Gains when market rises, designed to limit losses when it falls
 - **Utah advantage:** Many Utah residents prefer insurance products over pure market risk
-- **Typical structure:** 80% of S&P 500 gains up to 7-8% cap, never lose principal
-- **Best use:** Portion of bridge money for guaranteed growth
+- **Typical structure:** 80% of S&P 500 gains up to 7-8% cap, with downside protection based on the claims-paying ability of the issuing insurance company
+- **Best use:** Portion of bridge money, with growth guarantees backed by the issuing insurance company
 
 **Conservative Bond Ladders**
 - **Utah municipal bonds:** Tax-free interest for Utah residents
@@ -474,7 +474,7 @@ President Trump's "Big Beautiful Bill" signed in July 2025 created several new o
 
 **Investment Strategy Assessment:**
 - Bucket approach implementation for sequence of returns protection
-- Fixed index annuity evaluation for principal protection
+- Fixed index annuity evaluation for downside protection (guarantees based on the claims-paying ability of the issuing insurance company)
 - Utah-focused investment opportunities (REITs, municipal bonds)
 - Diversification review for 35-40 year retirement horizon
 
@@ -507,13 +507,13 @@ President Trump's "Big Beautiful Bill" signed in July 2025 created several new o
 **Strategy implemented:**
 - **Social Security optimization:** Delayed Dave's benefits to age 70 for maximum spousal benefits
 - **Roth conversions:** $40,000 annually during early retirement gap years
-- **Fixed index annuity:** $200,000 allocation for principal protection during sequence of returns risk
+- **Fixed index annuity:** $200,000 allocation for downside protection during sequence of returns risk, backed by the issuing insurance company
 - **Utah municipal bonds:** $150,000 allocation for tax-free income
 
 **Results:** 
-- **Increased success probability** from 67% to 94%
-- **Annual tax savings** of $4,100 through strategic planning
-- **Peace of mind** with guaranteed income floor of $6,800 monthly
+- **Improved projected plan sustainability** through strategic planning
+- **Reduced tax exposure** through strategic planning
+- **Peace of mind** with an income floor of about $6,800 monthly, with guarantees based on the claims-paying ability of the issuing insurance company
 - **Preserved inheritance** for three Utah children
 
 ### Case Study: The Peterson Family - Logan Valley Planning
@@ -554,7 +554,7 @@ President Trump's "Big Beautiful Bill" signed in July 2025 created several new o
 
 **Irrevocable Life Insurance Trusts (ILITs)**
 - Remove life insurance from taxable estate
-- Provide tax-free income for surviving spouse
+- Can provide potentially tax-advantaged income for a surviving spouse
 - Benefit Utah's multi-generational family culture
 - Coordinate with federal estate tax exemptions
 
@@ -706,7 +706,7 @@ President Trump's "Big Beautiful Bill" signed in July 2025 created several new o
 
 ### Special Offer for Utah Residents
 
-**Retirement Money Map„ Analysis - Complimentary for Next Five Callers**
+**Retirement Money Mapï¿½ Analysis - Complimentary for Next Five Callers**
 
 **What's included in your comprehensive assessment:**
 - **Income gap analysis:** How much additional income needed beyond Social Security and pensions
@@ -716,8 +716,8 @@ President Trump's "Big Beautiful Bill" signed in July 2025 created several new o
 - **Risk management evaluation:** Long-term care, market volatility, and inflation protection
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Remember:** The strongest retirement plans aren't the most optimistic ones - they're the most prepared ones for Utah's unique opportunities and challenges.

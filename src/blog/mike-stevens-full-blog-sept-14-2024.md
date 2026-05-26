@@ -96,7 +96,7 @@ You've paid into the Social Security program, so it would be too valuable to ign
 
 Think about a jigsaw puzzle with a thousand pieces. That's what retirement planning feels like to most people  overwhelming. But when you have someone who's done that puzzle hundreds of times, they know what the picture looks like and can work alongside you.
 
-### The Retirement Money Map„ Approach
+### The Retirement Money Mapï¿½ Approach
 
 Our proprietary planning process starts at age 100 and reverse engineers your retirement:
 
@@ -277,7 +277,7 @@ The old advice of "don't take out more than 4%" is dead. Inflation alone has bro
 ### Legacy Planning Strategies
 
 **Life Insurance Benefits:**
-- Tax-free death benefit
+- Death benefit that is generally income-tax-free
 - Liquidity for estate taxes
 - Income replacement for surviving spouse
 - Equalization among heirs
@@ -445,11 +445,11 @@ Remember: You don't have to figure this out alone. Professional advisors who spe
 **Ready to optimize your retirement strategy?**
 
 Contact Capital Wealth for a complimentary consultation:
-- **Phone:** 801-210-5500
-- **Text:** Send "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** Send "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
-*For the next five callers, we'll provide a complimentary Retirement Money Map„ analysis  our proprietary planning tool that shows you exactly where you stand and what your future could look like.*
+*For the next five callers, we'll provide a complimentary Retirement Money Mapï¿½ analysis  our proprietary planning tool that shows you exactly where you stand and what your future could look like.*
 
 ---
 
@@ -471,7 +471,7 @@ A: This varies by age, risk tolerance, and time horizon. Generally, younger empl
 A: Consider your current tax bracket vs. expected retirement bracket, need for tax diversification, and legacy planning goals. Many federal employees benefit from a mix of both.
 
 **Q: How do I calculate my FERS pension?**
-A: FERS pension = Years of Service Ã High-3 Salary Ã Multiplier (usually 1% or 1.1%). The actual calculation has nuances based on your retirement age and service length.
+A: FERS pension = Years of Service ï¿½ High-3 Salary ï¿½ Multiplier (usually 1% or 1.1%). The actual calculation has nuances based on your retirement age and service length.
 
 **Q: What happens to my TSP when I retire?**
 A: You can leave it in TSP, roll it to an IRA, take distributions, or buy an annuity. Each option has different advantages depending on your situation.
@@ -482,4 +482,4 @@ A: You can leave it in TSP, roll it to an IRA, take distributions, or buy an ann
 
 **About the Author:** Mike Stevens is the founder and president of Capital Wealth, specializing in retirement planning for federal employees. He hosts Retire Right Radio every weekend on KAOX, KID, KNRS, and KSL. His expertise comes from both professional experience and personal necessity  after his father's unexpected death at 49, Mike stepped into the financial industry to help his mother navigate retirement planning.
 
-**Advisory Services:** Advisory services offered through Capital Wealth LLC, a State of Utah Registered Investment Advisor. Investing involves risk, including the potential loss of principal. This article is for informational purposes only and should not be considered personalized investment advice.
+**Advisory Services:** Advisory services offered through Capital Wealth LLC, an SEC Registered Investment Advisor. Investing involves risk, including the potential loss of principal. This article is for informational purposes only and should not be considered personalized investment advice.

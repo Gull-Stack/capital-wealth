@@ -121,7 +121,7 @@ Here is the math, stripped down:
 
 This is why we call the five years before and the five years after retirement the **red zone**. Volatility inside that window can permanently impair the rest of your retirement.
 
-Protections matter. We use two-to-three years of expenses in conservative, non-correlated accounts so retirees are never forced to sell growth assets in a downturn. We use protected-growth strategies — for example, fixed indexed annuities with a zero floor and no annual fee — that participate in market upside but cannot lose principal in a market drop. And we use the bucket strategy so the long-term money has the time it needs to recover.
+Protections matter. We use two-to-three years of expenses in conservative, non-correlated accounts so retirees are not forced to sell growth assets in a downturn. We use protected-growth strategies — for example, fixed indexed annuities with a zero floor and no annual fee — that participate in market upside while being designed to limit losses in a market drop, with guarantees based on the claims-paying ability of the issuing insurance company. And we use the bucket strategy so the long-term money has the time it needs to recover.
 
 The goal is not to avoid risk. The goal is to manage *which* risk hits you and *when*.
 
@@ -229,7 +229,7 @@ If you are in this transition right now, a few things matter more than the rest.
 
 A portfolio is a toolbox. It tells you what you own. A plan is the blueprint. It tells you how it all works together.
 
-The Retirement Money Map™ is our process for building that blueprint. It is not for sale and there is no obligation. It is comprehensive enough that it typically takes our team five to ten hours of work per household, which is why we limit it to a handful of complimentary engagements per show. What it covers:
+The Retirement Money Map™ is our process for building that blueprint. It is not for sale and there is no obligation. It is comprehensive enough that we limit it to a handful of complimentary engagements per show. What it covers:
 
 - Income reliability across 30+ years
 - Investment structure built around the bucket strategy
@@ -262,8 +262,8 @@ Research consistently shows that retirees who work with a financial advisor end 
 
 We do five complimentary Retirement Money Map™ engagements per show. No obligation. No sales pitch. Just a real plan.
 
-**Phone:** 801-210-5500
-**Text:** "VISIT" to 801-210-5500
+**Phone:** 801-210-2800
+**Text:** "VISIT" to 801-210-2800
 **Web:** [capitalwealth.com](https://www.capitalwealth.com)
 
 Meetings are in-office in Utah or via Zoom — we work with clients across the country.
@@ -322,4 +322,4 @@ Meetings are in-office in Utah or via Zoom — we work with clients across the c
 
 ---
 
-*Advisory Services offered through Capital Wealth Advisors LLC, a State of Utah Registered Investment Advisor. Insurance Services offered through CWA Insurance Services LLC. Investing involves risk, including the potential loss of principal. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims-paying ability of the issuing carrier. Capital Wealth Advisors does not offer tax or legal advice. Our firm is not affiliated with or endorsed by the United States government or any governmental agency.*
+*Advisory Services offered through Capital Wealth, LLC, an SEC Registered Investment Advisor. Insurance Services offered through CWA Insurance Services LLC. Investing involves risk, including the potential loss of principal. Any references to protection, safety, or lifetime income generally refer to fixed insurance products, never securities or investments. Insurance guarantees are backed by the financial strength and claims-paying ability of the issuing carrier. Capital Wealth does not offer tax or legal advice. Our firm is not affiliated with or endorsed by the United States government or any governmental agency.*

@@ -123,11 +123,11 @@ When one Utah spouse retires while the other continues working, several financia
 
 **The trade-off:** Pay taxes now at known rates to avoid taxes later at potentially higher rates.
 
-**The payoff:** Once money is in a Roth:
-- All future growth is tax-free
-- All withdrawals are tax-free  
-- All inheritance is tax-free
-- No required minimum distributions
+**The payoff:** Once money is in a Roth, and IRS requirements are met:
+- Future growth can be tax-free
+- Qualified withdrawals can be tax-free  
+- Inheritance may pass tax-free
+- No required minimum distributions during the owner's lifetime
 
 ### Why Utah Couples Should Pay Attention Now
 
@@ -152,7 +152,7 @@ When one Utah spouse retires while the other continues working, several financia
 - Created tax-free income pool for unexpected expenses
 - Provided flexibility for changing tax laws
 
-**The outcome:** Estimated $150,000+ in lifetime tax savings
+**The outcome:** A meaningful reduction in their projected lifetime tax burden
 
 ---
 
@@ -242,7 +242,7 @@ When one Utah spouse retires while the other continues working, several financia
 - Medicare coordination becomes more critical
 
 **Long-term care considerations:**
-- Roth accounts provide tax-free care funding
+- Roth accounts can provide potentially tax-free care funding if IRS requirements are met
 - Don't count against means-tested benefits
 - Preserve other assets for legacy
 
@@ -256,7 +256,7 @@ When one Utah spouse retires while the other continues working, several financia
 **Not too little:** Miss opportunities while rates are favorable
 **Just right:** Systematic approach based on comprehensive analysis
 
-### Capital Wealth's Retirement Money Map„ Process
+### Capital Wealth's Retirement Money Mapï¿½ Process
 
 **Comprehensive analysis includes:**
 - Current and projected income sources
@@ -286,7 +286,7 @@ When one Utah spouse retires while the other continues working, several financia
 - Minimize Utah state tax impact
 - Reduce future RMDs by 60%
 
-**Projected savings:** Over $200,000 in lifetime taxes
+**Projected result:** A meaningful reduction in their projected lifetime taxes
 
 ---
 
@@ -416,7 +416,7 @@ When one Utah spouse retires while the other continues working, several financia
 
 **Results:** 
 - Early retirement achieved without financial stress
-- Estimated $75,000 in lifetime tax savings
+- A meaningful reduction in their projected lifetime tax burden
 - Confident path for teacher's eventual retirement
 
 ### Case Study: The Lees - St. George Retirees
@@ -436,7 +436,7 @@ When one Utah spouse retires while the other continues working, several financia
 
 **Results:**
 - Reduced lifetime RMDs by 70%
-- Created $800,000 in tax-free legacy
+- Created a substantial, potentially tax-free legacy (if IRS requirements are met)
 - Optimized retirement lifestyle in southern Utah
 
 ---
@@ -482,8 +482,8 @@ When one Utah spouse retires while the other continues working, several financia
 - Limited Utah provider networks
 
 **Roth-funded self-insurance:**
-- Complete flexibility and control
-- Tax-free funding source
+- Flexibility and control
+- Potentially tax-free funding source if IRS requirements are met
 - No benefit restrictions
 - Integration with overall retirement plan
 
@@ -517,10 +517,10 @@ Mike Stevens closed this Valentine's Day episode with a powerful message: **"Giv
 
 ## Take Action: Special Valentine's Day Offer
 
-### Complimentary Retirement Money Map„
+### Complimentary Retirement Money Mapï¿½
 
 **For Utah couples with $250,000 or more in retirement savings:**
-- Comprehensive analysis typically taking 5-10 hours
+- Comprehensive analysis
 - Navigation of different retirement dates
 - Household Social Security optimization
 - Tax and inflation planning
@@ -529,13 +529,12 @@ Mike Stevens closed this Valentine's Day episode with a powerful message: **"Giv
 **Special Valentine's Day offer:** First five callers receive this analysis completely complimentary.
 
 **Contact Capital Wealth:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **What to expect:**
-- No sales pitch or high-pressure tactics
-- Focus on people, not products
+- Educational, no high-pressure pitch
 - Comprehensive Utah-specific analysis
 - Clear recommendations and action steps
 

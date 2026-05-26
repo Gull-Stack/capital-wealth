@@ -350,11 +350,11 @@ For married couples, Social Security offers 567 different filing strategies. For
 
 ---
 
-## The Retirement Money Map„: Healthcare Integration
+## The Retirement Money Mapï¿½: Healthcare Integration
 
 ### How Healthcare Fits Into Comprehensive Utah Retirement Planning
 
-The Capital Wealth Retirement Money Map„ doesn't treat healthcare as a separate issue - it's woven throughout every aspect of your retirement income plan.
+The Capital Wealth Retirement Money Mapï¿½ doesn't treat healthcare as a separate issue - it's woven throughout every aspect of your retirement income plan.
 
 **Income layer integration:**
 - **Social Security timing** optimized for healthcare premium management
@@ -565,7 +565,7 @@ Utah retirees need healthcare-specific emergency reserves separate from general 
 
 ### Special Healthcare Planning Offer
 
-For Utah residents ready to take control of their healthcare retirement planning, Capital Wealth is offering comprehensive Healthcare-Integrated Retirement Money Map„ analysis.
+For Utah residents ready to take control of their healthcare retirement planning, Capital Wealth is offering comprehensive Healthcare-Integrated Retirement Money Mapï¿½ analysis.
 
 **What's included in your healthcare assessment:**
 - **Medical cost projection** specific to Utah providers and facilities
@@ -589,7 +589,7 @@ The healthcare component of retirement planning has become too complex and too e
 
 ### Contact Capital Wealth
 
-**For the next five callers:** Complimentary Healthcare-Integrated Retirement Money Map„ - a comprehensive analysis typically requiring 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Healthcare-Integrated Retirement Money Mapï¿½ - a comprehensive analysis.
 
 **What to expect:**
 - **No sales pressure** - pure educational consultation
@@ -599,8 +599,8 @@ The healthcare component of retirement planning has become too complex and too e
 - **Peace of mind** knowing you're prepared
 
 **Contact Information:**
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 - **Specialization:** Utah retirement and healthcare planning
 

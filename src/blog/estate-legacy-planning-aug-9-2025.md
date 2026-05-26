@@ -575,7 +575,7 @@ Mike shares his own potential family challenge:
 ### Immediate Action Items (Next 30 Days)
 
 **– Schedule estate planning review**
-- Call Capital Wealth at 801-210-5500 for complimentary consultation
+- Call Capital Wealth at 801-210-2800 for complimentary consultation
 - Gather existing documents for review
 - List all family members and intended beneficiaries
 
@@ -670,7 +670,7 @@ The brutal truth is that **life is unpredictable, but death is inevitable**. Mik
 **The Utah advantage is real:** We live in a state with favorable tax laws, strong family values, and a culture that supports planning and preparation. Take advantage of these benefits while you can.
 
 **Your action steps are simple:**
-1. **Call 801-210-5500** for a complimentary estate planning review
+1. **Call 801-210-2800** for a complimentary estate planning review
 2. **Schedule your visit** and begin the planning process
 3. **Update your beneficiaries** today (takes 30 seconds)
 4. **Create your "Guarding Your Legacy"** document this weekend
@@ -685,8 +685,8 @@ Don't let your family's story become another preventable tragedy. The time to pl
 
 ### Contact Capital Wealth
 
-**Phone:** 801-210-5500  
-**Text:** "VISIT" to 801-210-5500  
+**Phone:** 801-210-2800  
+**Text:** "VISIT" to 801-210-2800  
 **Website:** capitalwealth.com
 
 ### Why Choose Capital Wealth for Estate Planning?

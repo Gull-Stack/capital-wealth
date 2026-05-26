@@ -125,7 +125,7 @@ After running their retirement money map analysis, we discovered that Carlos sho
 - **Optimized tax efficiency:** Allowed for strategic Roth conversions during Carlos's delay period
 - **Leveraged Utah's advantage:** No state tax on their eventual $66,648 annual Social Security income
 
-**The result:** This timing strategy added approximately $180,000 to their lifetime Social Security benefits while creating tax-saving opportunities worth an additional $35,000.
+**The result:** This timing strategy was designed to meaningfully increase their lifetime Social Security benefits while creating additional tax-saving opportunities.
 
 ## Beyond the 4% Rule: Modern Withdrawal Strategies
 
@@ -215,7 +215,7 @@ Same returns in different order, but Scenario A ends with $201,946 more after ju
 To address this risk, we implement what we call the "protected growth strategy" specifically designed for Utah retirees:
 
 **Protected Growth Accounts (40-50% of portfolio):**
-- Fixed index annuities with upside participation
+- Fixed index annuities, which are designed to provide protection based on the claims-paying ability of the issuing insurance company
 - High-yield savings for immediate liquidity
 - CDs laddered for predictable income
 - Utah municipal bonds (tax-free for Utah residents)
@@ -269,7 +269,7 @@ Taxes represent one of the most significant yet controllable expenses in retirem
 ### Strategic Tax Planning for Utah Retirees
 
 **Roth Conversion Strategies:**
-During our show, I emphasized the power of Roth conversions: "Roth conversions let you move money from a tax-deferred account where Uncle Sam is waiting to take a share into a Roth IRA where the growth and withdrawals can be tax-free for life."
+During our show, I emphasized the power of Roth conversions: "Roth conversions let you move money from a tax-deferred account where Uncle Sam is waiting to take a share into a Roth IRA where the growth and qualified withdrawals can be tax-free if IRS requirements are met."
 
 **Optimal conversion timing for Utah retirees:**
 - **Early retirement years** (before Social Security and RMDs begin)
@@ -299,12 +299,12 @@ From ages 62-67, they had a five-year window with relatively low income, creatin
 - Total tax cost: $110,000
 
 **Long-term benefit:**
-- $450,000 now growing tax-free for life
+- $450,000 now positioned for potentially tax-free growth if IRS requirements are met
 - Reduced future RMDs by 40%
-- Estimated tax savings over 30-year retirement: $275,000
+- A meaningful projected reduction in lifetime taxes
 - Enhanced legacy planning for children and grandchildren
 
-"Paying $110,000 in taxes to save $275,000 was an easy decision," Tom told me. "Plus, we love knowing that a large portion of our retirement accounts will never be taxed again."
+"Paying the conversion taxes now was an easy decision for us," Tom told me. "Plus, we love knowing that a large portion of our retirement accounts can grow and be withdrawn tax-free if IRS requirements are met."
 
 ## Healthcare Planning: Protecting Your Utah Retirement
 
@@ -587,7 +587,7 @@ At Capital Wealth, we specialize in helping Utah families transition confidently
 
 ### Special Reader Offer
 
-For readers of this blog post, I'm extending a special offer. For the next five people who mention this article when calling, we'll provide a complimentary retirement money map analysisa comprehensive review valued at $750.
+For readers of this blog post, I'm extending a special offer. For the next five people who mention this article when calling, we'll provide a complimentary retirement money map analysisa comprehensive review.
 
 This analysis includes:
 - Social Security optimization strategy
@@ -621,8 +621,8 @@ To maximize the value of your consultation, please gather:
 
 Ready to conquer your fear of running out of money? Contact Capital Wealth today:
 
-**Phone:** 801-210-5500  
-**Text:** "VISIT" to 801-210-5500  
+**Phone:** 801-210-2800  
+**Text:** "VISIT" to 801-210-2800  
 **Website:** capitalwealth.com
 
 Don't let another night of worry pass. The tools and strategies exist to create unshakeable confidence in your retirement income. The only question is whether you'll take action to implement them.
@@ -665,7 +665,7 @@ David and Linda Chen represented a different challengehigh earners with substant
 - Established charitable giving plan for tax efficiency
 
 **Results after two years:**
-- Reduced projected lifetime tax bill by $340,000
+- A meaningful projected reduction in their lifetime tax bill
 - Created confidence to retire two years earlier than planned
 - Established clear legacy plan for children
 - Maintained desired lifestyle while building additional wealth

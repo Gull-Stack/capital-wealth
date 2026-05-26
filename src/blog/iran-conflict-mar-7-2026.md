@@ -443,8 +443,8 @@ The Iran conflict, like all geopolitical crises, reminds us that uncertainty is 
 
 ### Contact Capital Wealth
 
-- **Phone:** 801-210-5500
-- **Text:** "VISIT" to 801-210-5500
+- **Phone:** 801-210-2800
+- **Text:** "VISIT" to 801-210-2800
 - **Website:** capitalwealth.com
 
 **Meeting options:** In-office or Zoom, whatever's convenient

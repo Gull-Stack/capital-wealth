@@ -267,15 +267,15 @@ Whole life insurance might be sold as an investment when term life plus separate
 
 At Capital Wealth, we operate under the fiduciary standard. Here's what this means for you:
 
-**Fee-Only Structure:**
-- We're compensated by our clients
-- Compensation is paid by clients, not by third-party payments
-- Transparency in all fees
+**Fee-Based Structure:**
+- We're compensated primarily through transparent advisory fees
+- Any insurance commission is earned only through our affiliate, CWA Insurance Services, LLC, and is separately disclosed
+- We disclose conflicts of interest
 
 **Investment Philosophy:**
 - Evidence-based investment strategies
 - Low-cost, diversified portfolios
-- No proprietary products or hidden fees
+- Transparent fees
 
 **Comprehensive Planning:**
 - Your entire financial picture, not just investments
@@ -284,10 +284,10 @@ At Capital Wealth, we operate under the fiduciary standard. Here's what this mea
 
 ### Our Regulatory Status
 
-- **SEC-Registered Investment Advisor**
-- **Fiduciary duty at all times**
+- **Registered Investment Advisor**
+- **Fiduciary duty when providing advisory services**
 - **Form ADV available for review**
-- **No sales quotas or product pressures**
+- **Conflicts of interest disclosed**
 
 ## The Cost of Poor Advice
 
@@ -363,11 +363,11 @@ Choosing between a fiduciary and commission-based advisor isn't just about feesâ
 {{ site.founder.name }} and the team at Capital Wealth are proud to serve as fiduciary advisors for our Utah clients. We believe transparency, honesty, and putting your interests first aren't just good business practicesâ€”they're ethical obligations.
 
 Our fiduciary commitment includes:
-- Fee-only compensation structure
+- Fee-based compensation, with any insurance commission earned only through our affiliate, CWA Insurance Services, LLC, and separately disclosed
 - Complete transparency in all costs and conflicts
 - Evidence-based investment strategies
 - Comprehensive financial planning approach
 - Written fiduciary acknowledgment
-- SEC registration and oversight
+- Registration as an investment advisor and the oversight that comes with it
 
 [Contact us today](/contact/) to experience the difference of working with a true fiduciary advisor who puts your success above all else.
