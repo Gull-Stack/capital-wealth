@@ -29,7 +29,7 @@ At Capital Wealth, we've guided thousands of Utah families through retirement pl
 - **Healthcare costs average over $315,000** for a 65-year-old couple in retirement, according to Fidelity studies, making healthcare planning essential
 - **Market stress testing** using eight different scenarios ensures your plan can withstand economic volatility and unexpected downturns
 - **Category-specific inflation planning** provides more accurate projections than generic inflation rates, accounting for different spending patterns
-- **Living benefits riders** on life insurance can provide tax-free access to funds for long-term care needs without the hassles of traditional policies
+- **Living benefits riders** on life insurance can provide potentially tax-free access to funds for long-term care needs (if IRS requirements are met), with guarantees based on the claims-paying ability of the issuing carrier
 - **Family involvement** in estate planning prevents confusion and creates unity rather than division among loved ones
 - **Utah's unique advantages** include favorable tax treatment for retirees, reasonable cost of living, and excellent healthcare infrastructure
 
@@ -43,7 +43,7 @@ These calculators assume retirement is linear  that you'll spend the exact same 
 
 Modern retirement can span **two or even three decades**. To put that in perspective, that's longer than many people's entire careers. Would you use the same career strategy at 25 that you'd use at 45? Would you approach parenting a toddler the same way you'd approach parenting a teenager? Then why would you approach all of retirement with the same financial strategy?
 
-This is precisely why we developed our **Retirement Money Map„**  a comprehensive planning tool that accounts for the natural ebb and flow of retirement spending across all three distinct phases. Unlike those simplistic calculators that treat retirement as one flat line, our approach recognizes that retirement is a dynamic journey requiring flexible, adaptive planning that evolves with your changing needs and circumstances.
+This is precisely why we developed our **Retirement Money Mapï¿½**  a comprehensive planning tool that accounts for the natural ebb and flow of retirement spending across all three distinct phases. Unlike those simplistic calculators that treat retirement as one flat line, our approach recognizes that retirement is a dynamic journey requiring flexible, adaptive planning that evolves with your changing needs and circumstances.
 
 ### The Utah Advantage in Retirement Planning
 
@@ -221,7 +221,7 @@ Initially, their adult children (living in Provo and Salt Lake City) assumed the
 2. **Professional memory care** required specialized training and environment modifications beyond what family could provide
 3. **The financial impact** was significant  between hired care, home modifications, and Margaret's medical issues from caregiver stress
 
-Fortunately, the Johnsons had planned ahead using life insurance with living benefits riders. When Harold qualified for long-term care (unable to perform two activities of daily living), they were able to access $150,000 from his life insurance death benefit  tax-free and penalty-free. This provided funds for Harold's memory care facility while preserving other assets for Margaret's ongoing needs.
+Fortunately, the Johnsons had planned ahead using life insurance with living benefits riders. When Harold qualified for long-term care (unable to perform two activities of daily living), they were able to access $150,000 from his life insurance death benefit  potentially tax-free and penalty-free if IRS requirements are met. This provided funds for Harold's memory care facility while preserving other assets for Margaret's ongoing needs.
 
 ## Advanced Planning Strategies: Stress Testing Your Retirement Plan
 
@@ -284,7 +284,7 @@ When the S&P 500 experienced its greatest one-month fall in history  **down 34% 
 
 Instead of calling clients to reassure them to "ride it out" (what many advisors do), we contacted clients with specific **strategic opportunities**:
 
-**Roth Conversion Strategy**: If a client had a favorite stock in their traditional IRA that was down 20%, we could help them pay taxes on that reduced value and convert it to a Roth IRA. When the stock rebounded (and then some), all that growth became **100% tax-free**.
+**Roth Conversion Strategy**: If a client had a favorite stock in their traditional IRA that was down 20%, we could help them pay taxes on that reduced value and convert it to a Roth IRA. When the stock rebounded (and then some), that growth could be **tax-free if IRS requirements are met**.
 
 **Tax Loss Harvesting**: In taxable accounts, we realized losses on underperforming investments to offset gains, providing immediate tax benefits.
 
@@ -304,7 +304,7 @@ Different categories of expenses experience dramatically different inflation rat
 
 ### Our Category-Specific Inflation Planning
 
-At Capital Wealth, we use **detailed category-specific inflation rates** in our Retirement Money Map„. This provides much more accurate long-term projections:
+At Capital Wealth, we use **detailed category-specific inflation rates** in our Retirement Money Mapï¿½. This provides much more accurate long-term projections:
 
 | **Expense Category** | **Inflation Rate** | **Utah-Specific Considerations** |
 |----------------------|-------------------|----------------------------------|
@@ -331,7 +331,7 @@ At Capital Wealth, we use **detailed category-specific inflation rates** in our 
 
 ### The Emotional Impact of Proper Inflation Planning
 
-When I show clients their personalized Retirement Money Map„ with category-specific inflation planning, the response is often overwhelming. I've had grown men cry right there in the office  not from sadness, but from pure relief and joy.
+When I show clients their personalized Retirement Money Mapï¿½ with category-specific inflation planning, the response is often overwhelming. I've had grown men cry right there in the office  not from sadness, but from pure relief and joy.
 
 Their wives often look confused at first. "I've seen him cry maybe four times in our entire marriage  what's going on?"
 
@@ -355,7 +355,7 @@ Traditional long-term care insurance has significant drawbacks that I've witness
 
 **Here's a typical scenario I've witnessed**: A client needs a wheelchair, but the insurance company says they can only reimburse for "the basic version," not the medically necessary model their doctor recommended for their specific condition. The client ends up paying out-of-pocket for the appropriate equipment while still paying premiums for coverage that doesn't actually cover their needs.
 
-**That's why I'm not a fan of traditional long-term care insurance.**
+**That's why traditional long-term care insurance may not be the best fit for everyone.**
 
 ### The Living Benefits Alternative
 
@@ -363,7 +363,7 @@ Instead, we often recommend **living benefits riders** on life insurance policie
 
 **Here's how it works**:
 
-If you can't perform **two of the six activities of daily living** or if you have **severe cognitive impairment**, you can access a portion of your life insurance death benefit while you're still living  **tax-free and penalty-free**.
+If you can't perform **two of the six activities of daily living** or if you have **severe cognitive impairment**, you can access a portion of your life insurance death benefit while you're still living  **potentially tax-free and penalty-free if IRS requirements are met**. Any guarantees are based on the claims-paying ability of the issuing insurance company.
 
 **The Six Activities of Daily Living**:
 1. **Feeding**  Ability to get nourishment into your body
@@ -381,7 +381,7 @@ My wife jokes that I already qualify for living benefits because she both feeds 
 
 **Flexible Use**: Funds can pay for any type of care  family caregivers, home modifications, assisted living, or memory care facilities.
 
-**Tax Benefits**: Accelerated death benefits for long-term care are typically received tax-free.
+**Tax Benefits**: Accelerated death benefits for long-term care are typically received tax-free if IRS requirements are met.
 
 **Dual Purpose**: If you never need long-term care, your beneficiaries receive the full death benefit. You're not paying for coverage you might never use.
 
@@ -552,7 +552,7 @@ Living in Utah provides unique advantages and considerations for retirement plan
 
 Your situation perfectly illustrates why having a written plan is so crucial. Without clear guidelines about sustainable spending levels, you're left to guess  and that uncertainty breeds anxiety.
 
-Here's what we would do in your situation: First, we'd create a comprehensive Retirement Money Map„ that shows you exactly how much you can spend in each phase of retirement. This isn't a generic calculation, but a detailed analysis that accounts for:
+Here's what we would do in your situation: First, we'd create a comprehensive Retirement Money Mapï¿½ that shows you exactly how much you can spend in each phase of retirement. This isn't a generic calculation, but a detailed analysis that accounts for:
 
 - Your specific income sources (Social Security, pensions, investment returns)
 - Category-specific inflation rates (healthcare costs rise faster than travel costs)
@@ -620,7 +620,7 @@ Most husbands appreciate this conversation once they understand it's about partn
 
 ### Robert from Ogden asks: "We're 67 and 65, both healthy, and thinking about long-term care insurance. I've gotten quotes ranging from $2,500 to $4,500 annually for both of us combined. Some friends swear by it, others say it's a waste of money because the insurance companies make it hard to collect. What's your take on whether it's worth it?"
 
-**Mike's Answer**: Robert, I appreciate your question because it highlights one of the most confusing areas of retirement planning. Let me be direct: I'm not a fan of traditional long-term care insurance, and I'll tell you why.
+**Mike's Answer**: Robert, I appreciate your question because it highlights one of the most confusing areas of retirement planning. Let me be direct: traditional long-term care insurance has meaningful drawbacks, and I'll tell you why.
 
 Your friends who say insurance companies make it hard to collect are absolutely right. Here's what I've witnessed:
 
@@ -634,7 +634,7 @@ Your friends who say insurance companies make it hard to collect are absolutely 
 
 **Better Alternative**: Life insurance with living benefits riders.
 
-Here's how it works: If you can't perform two of the six activities of daily living or have severe cognitive impairment, you can access a portion of your life insurance death benefit while living  tax-free and penalty-free.
+Here's how it works: If you can't perform two of the six activities of daily living or have severe cognitive impairment, you can access a portion of your life insurance death benefit while living  potentially tax-free and penalty-free if IRS requirements are met. Any guarantees are based on the claims-paying ability of the issuing insurance company.
 
 **Advantages**:
 - No reimbursement hassles  you receive cash directly
@@ -949,9 +949,9 @@ That's the real value of comprehensive planning  not just financial security, bu
 
 If what I've shared resonates with you  if you recognize that you might have a portfolio but not a comprehensive plan  I encourage you to take decisive action today rather than hoping things will work out on their own.
 
-### The Retirement Money Map„ Opportunity
+### The Retirement Money Mapï¿½ Opportunity
 
-For the **next five callers**, we'll create a personalized Retirement Money Map„ at no cost and with no obligation whatsoever. This comprehensive analysis typically requires 20-40 hours of detailed work from our planning team and covers every aspect of your retirement security:
+For the **next five callers**, we'll create a personalized Retirement Money Mapï¿½ at no cost and with no obligation whatsoever. This comprehensive analysis covers every aspect of your retirement security:
 
 **Tax Planning Strategies**: We'll analyze your specific situation to minimize lifetime tax payments through strategic withdrawal planning, Roth conversion opportunities, and coordination with Utah's favorable tax environment.
 
@@ -965,7 +965,7 @@ For the **next five callers**, we'll create a personalized Retirement Money Map„
 
 **Family Communication Strategy**: Guidance on involving adult children in planning discussions and creating family unity around financial decisions.
 
-**This comprehensive analysis is not for sale**  it's something we do complimentarily for our clients as part of our relationship, and we're extending it to the next five callers as an introduction to our comprehensive planning approach.
+**This comprehensive analysis is complimentary**  it's something we do for our clients as part of our relationship, and we're extending it to the next five callers as an introduction to our comprehensive planning approach. Educational, no high-pressure pitch.
 
 ### What Makes Capital Wealth Different
 
@@ -1001,9 +1001,9 @@ Whether you're already retired and want to optimize your current situation, appr
 ## Connect with Capital Wealth Today
 
 ** Call us immediately**: 801-210-5500  
-*Remember, we can only provide the complimentary Retirement Money Map„ to the next five callers*
+*Remember, we can only provide the complimentary Retirement Money Mapï¿½ to the next five callers*
 
-**± Text "VISIT"**: 801-210-5500  
+**ï¿½ Text "VISIT"**: 801-210-5500  
 *Convenient option if you prefer texting to schedule your appointment*
 
 ** Visit our website**: [capitalwealth.com](https://capitalwealth.com)  
@@ -1018,7 +1018,7 @@ Whether you're already retired and want to optimize your current situation, appr
 
 Your retirement security is too important to leave to chance. Don't spend another sleepless night wondering if you're going to be okay financially. Don't let fear prevent you from enjoying the retirement you've earned. And don't let uncertainty rob you of the peace of mind you deserve.
 
-Pick up the phone right now and call 801-210-5500. Whether you're one of the five callers who receives a complimentary Retirement Money Map„ or you simply want to schedule a consultation to explore your options, taking action today is the first step toward the secure, fulfilling retirement you've always envisioned.
+Pick up the phone right now and call 801-210-5500. Whether you're one of the five callers who receives a complimentary Retirement Money Mapï¿½ or you simply want to schedule a consultation to explore your options, taking action today is the first step toward the secure, fulfilling retirement you've always envisioned.
 
 Your future self will thank you for making this call today.
 

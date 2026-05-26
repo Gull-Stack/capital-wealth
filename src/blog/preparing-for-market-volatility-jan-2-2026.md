@@ -126,7 +126,7 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 **Utah-Appropriate Stability Options:**
 - **Municipal Bonds:** Utah municipal bonds provide tax advantages for residents
 - **FDIC-Insured Accounts:** Credit unions and banks with Utah presence
-- **Index Annuities:** Protected growth that locks in gains, never loses to market drops
+- **Index Annuities:** Growth designed to lock in credited gains and limit losses from market drops, with guarantees based on the claims-paying ability of the issuing insurance company
 
 ### Layer 2: Strategic Growth Positions
 
@@ -193,7 +193,7 @@ As Mike Stevens, founder of Capital Wealth, puts it: *"Everyone has a plan until
 **Tax Diversification Strategy:**
 - **Taxable Accounts:** Immediate access, capital gains treatment
 - **Tax-Deferred:** Traditional 401(k)s and IRAs
-- **Tax-Free:** Roth accounts and life insurance
+- **Tax-Advantaged:** Roth accounts (tax-free if IRS requirements are met) and life insurance (death benefit generally income-tax-free)
 
 **Utah Tax Considerations:**
 - No Social Security taxation at state level

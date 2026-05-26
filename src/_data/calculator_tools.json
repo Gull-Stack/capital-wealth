@@ -33,8 +33,8 @@
     ],
     "context_headline": "Why military buyback is almost always a win",
     "context_paragraphs": [
-      "If you served in the military and you're not already drawing a military retirement, a buyback is usually one of the highest-ROI moves you can make as a federal employee. You pay <strong>3% of your military basic pay</strong> (not your civilian salary — your actual military pay for those years). In exchange, those years count toward your FERS service computation date, your pension formula, and your eligibility thresholds for retirement.",
-      "We've seen buybacks cost $4,000 and unlock a full additional year of federal pension — every year, for life. On a $75,000 high-3, that's <strong>roughly $750 more in annual pension</strong>, which over a 25-year retirement works out to about $18,750 in today's dollars. For a $4,000 outlay.",
+      "If you served in the military and you're not already drawing a military retirement, a buyback can be one of the more valuable moves available to a federal employee. You pay <strong>3% of your military basic pay</strong> (not your civilian salary — your actual military pay for those years). In exchange, those years count toward your FERS service computation date, your pension formula, and your eligibility thresholds for retirement.",
+      "As an illustration only: a buyback might cost around $4,000 and add a year of service credit. On a $75,000 high-3 that could mean <strong>roughly $750 more in annual pension</strong> — about $18,750 over a 25-year retirement. Your actual cost and benefit depend on your military pay, salary history, age, and retirement date; individual results vary.",
       "The catch is timing. You have <strong>2 years and 364 days of federal employment</strong> to complete the buyback interest-free. After that, DFAS starts charging variable interest — and the longer you wait, the more it compounds. The calculator flags whether you're inside or outside the window."
     ],
     "email_capture_headline": "Send me the calculator when it launches",
@@ -79,7 +79,7 @@
     "context_headline": "Why most feds leave thousands on the table here",
     "context_paragraphs": [
       "Banking sick leave isn't just goodwill. At retirement, every hour converts into <strong>creditable federal service</strong> — meaning a bigger pension check, for life. The conversion uses OPM's official 2,087-hour chart: roughly 174 hours = one month of service credit. A balance of 1,500 hours adds about 8.5 months to your service computation date.",
-      "On a typical FERS pension of $50,000/year, 8 extra months of service credit is worth <strong>about $330 in annual pension</strong>. Doesn't sound like much — until you multiply by 25 years of retirement. That's $8,250 in today's dollars, from leave you weren't going to use anyway.",
+      "As an illustration only: on a FERS pension of $50,000/year, 8 extra months of service credit might be worth <strong>about $330 in annual pension</strong> — roughly $8,250 across a 25-year retirement. Your actual figures depend on your salary, service, and unused sick leave; individual results vary.",
       "Balances of 2,500+ hours aren't unusual for career feds. At that level you're adding more than a year of service credit — often $20,000 to $40,000+ in lifetime pension value. Stop burning sick leave you don't need."
     ],
     "email_capture_headline": "Send me the calculator when it launches",
@@ -121,10 +121,10 @@
         "body": "Special Retirement Supplement eligibility, MRA+30 interactions, and the cliff at 62 where the multiplier changes. We'll tell you if you're in one of them."
       }
     ],
-    "context_headline": "Why one extra year at the office can fund a decade of retirement",
+    "context_headline": "How your retirement date can affect your pension multiplier",
     "context_paragraphs": [
       "Your FERS pension formula is simple on paper: <strong>years of service × multiplier × high-3 salary</strong>. The multiplier is <strong>1.0%</strong> unless you retire at age 62 or later with 20 or more years of service — then it jumps to <strong>1.1%</strong>. That's a 10% raise on your pension, for the rest of your life.",
-      "For a career fed with a $90,000 high-3 and 25 years of service, the difference is significant. 1.0% × 25 × $90,000 = $22,500/year. 1.1% × 25 × $90,000 = $24,750/year. Across a 25-year retirement, that extra 10% is <strong>$56,250 in today's dollars</strong> — just from picking a different retirement date.",
+      "As an illustration only: for a career fed with a $90,000 high-3 and 25 years of service, 1.0% × 25 × $90,000 = $22,500/year, while 1.1% × 25 × $90,000 = $24,750/year. Across a 25-year retirement that difference is <strong>about $56,250</strong>. Your actual figures depend on your salary, service, and retirement date; individual results vary.",
       "The tradeoff: you have to keep working. For most feds, the math works out to 14–22 months of continued employment to break even, but your specific break-even depends on your commute costs, your TSP matching, and whether you'd be drawing Social Security in the alternative. The tool runs the whole thing."
     ],
     "email_capture_headline": "Send me the tool when it launches",

@@ -32,7 +32,7 @@ During a recent episode of Retire Right Radio, we explored the four biggest unkn
 - **The average monthly Social Security payment is $1,885** (2024), highlighting the need for additional income sources
 - **Healthcare costs for retiring couples average over $315,000** after taxes (excluding long-term care)
 - **Women represent 95% of Social Security survivor beneficiaries**, making spousal planning essential
-- **Fixed index annuities with zero fees** can provide market upside with principal protection
+- **Fixed index annuities** are designed to provide market-linked upside while limiting downside, based on the claims-paying ability of the issuing insurance company
 
 ---
 
@@ -111,7 +111,7 @@ Utah's economy presents unique considerations:
 
 ### Protected vs. Market Accounts Strategy
 
-"You should have some money in a protected account. And we like using **fixed index annuities with no fees**, plain vanilla, but accounts that get a decent earning potential, anything usually between **zero to up to 10% per year** based on the S&P 500," Stevens explains.
+"You should have some money in a protected account. And we like using **fixed index annuities**, plain vanilla, but accounts that have decent earning potential linked to an index such as the S&P 500, with a floor designed to limit downside in negative years," Stevens explains. (Crediting caps, floors, and any guarantees are based on the claims-paying ability of the issuing insurance company; fees and terms vary by product.)
 
 **The Rule of 100 for Utah Retirees:**
 - **Age 65**: 35% equities, 65% protected accounts
@@ -154,7 +154,7 @@ Utah offers unique tax planning opportunities:
 **Utah-Specific Roth Strategy:**
 - **State tax savings**: Pay Utah's 4.85% now vs. potentially 8-10% later
 - **No required distributions**: Particularly valuable for Utah's longer-living population
-- **Tax-free inheritance**: Crucial for Utah's family-focused culture
+- **Potentially tax-free inheritance** (if IRS requirements are met): Valuable for Utah's family-focused culture
 - **Flexibility**: Access principal without penalties
 
 ## Mom's Rules: The Four Pillars of Retirement Security
@@ -188,7 +188,7 @@ These "Mom's Rules" translate perfectly to Utah retirement planning:
 - **Pension income**: Strong for Utah's public employees
 - **401(k) distributions**: Plan carefully for tax efficiency
 - **Investment income**: Dividends and interest
-- **Annuity payments**: Guaranteed income floor
+- **Annuity payments**: Income guarantees based on the claims-paying ability of the issuing insurance company
 
 ### Rule #4: Keep It Simple
 **Complexity kills in retirement**. Utah retirees should focus on understanding their plan rather than managing daily market movements.
@@ -387,7 +387,7 @@ For Utah families, legacy planning carries special significance due to the state
 
 **Arguments for paying it off:**
 - **Peace of mind**: Fixed housing costs in retirement
-- **Guaranteed return**: Eliminating mortgage payment equals guaranteed savings
+- **Interest savings**: Eliminating the mortgage payment removes that interest expense
 - **Simplified budgeting**: Reduced monthly obligations
 - **Interest rate environment**: Rising rates make payoff more attractive
 
@@ -437,7 +437,7 @@ For Utah families, legacy planning carries special significance due to the state
 **Stevens' warning**: "They're not all equal. They're not all the same. Some are phenomenal. And majority of them are lousy and they're garbage."
 
 **Good annuity characteristics:**
-- **No fees**: Avoid complex products with high internal costs
+- **Low costs**: Avoid complex products with high internal fees
 - **Reasonable caps**: 8-10% annual cap on index-linked products
 - **Simple structure**: Easy to understand and explain
 - **Strong insurance company**: A.M. Best rating of A or better
@@ -557,9 +557,9 @@ Utah retirees enjoy significant advantages:
 3. **Lifestyle planning**: Balance current enjoyment with future security
 4. **Legacy optimization**: Ensure your values and wealth transfer efficiently
 
-### The Retirement Money MapÂ Advantage
+### The Retirement Money Mapï¿½ Advantage
 
-Capital Wealth' **trademarked Retirement Money MapÂ** addresses all four unknowns with Utah-specific strategies:
+Capital Wealth' **trademarked Retirement Money Mapï¿½** addresses all four unknowns with Utah-specific strategies:
 
 **Longevity planning**: Reverse engineering from age 100 to ensure money lasts
 **Healthcare preparation**: Factoring Utah's $315,000+ healthcare reality
@@ -575,9 +575,9 @@ Capital Wealth' **trademarked Retirement Money MapÂ** addresses all four unknown
 Ready to create your Utah retirement plan? The next step is simple.
 
 ###  **Call 801-210-5500**
-Speak directly with our Utah retirement planning team to schedule your complimentary Retirement Money MapÂ consultation.
+Speak directly with our Utah retirement planning team to schedule your complimentary Retirement Money Mapï¿½ consultation.
 
-### ± **Text "VISIT" to 801-210-5500**
+### ï¿½ **Text "VISIT" to 801-210-5500**
 Quick and easy scheduling via text message for busy Utah professionals.
 
 ###  **Visit capitalwealth.com**

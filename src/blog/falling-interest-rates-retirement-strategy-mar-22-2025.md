@@ -43,7 +43,7 @@ This comprehensive guide will show you how falling interest rates could actually
 > **The Interest Rate Reality:** Since 1929, 12 of 14 Fed rate cuts led to positive S&P 500 returns over the following year
 > **Healthcare Cost Crisis:** Healthcare expenses inflate at 3.65% annually vs. 3.27% general inflation rate over 110 years
 > **The Portfolio vs. Plan Trap:** Most retirees have portfolios but lack comprehensive retirement plansthe difference is critical  
-> **Fixed Index Annuity Advantage:** Zero loss floors with 8-9% upside caps currently available with no fees
+> **Fixed Index Annuity Consideration:** Designed to limit downside with capped upside potential; product terms and any guarantees are based on the claims-paying ability of the issuing insurance company
 > **The 567 Social Security Trap:** Married couples have 567 different filing combinationsoptimization is crucial
 > **Pension Analysis Gold Mine:** Many pension holders can optimize through lump-sum IRA rollovers vs. monthly payments
 
@@ -136,9 +136,9 @@ Stevens explains his firm's approach: "We deliberately have our protected accoun
 
 **How They Work:**
 - Growth linked to S&P 500 performance
-- Cap at 8-9% (if S&P gains 12%, you get 8-9%)
-- Floor at 0% (if S&P drops 14%, you get 0%)
-- No fees on quality products
+- Growth subject to a cap (e.g., if the S&P gains more than the cap, your credited interest is limited to the cap)
+- A floor designed to limit downside in negative years, based on the claims-paying ability of the issuing insurance company
+- Fee structures vary by product; review the contract carefully
 - 7-10 year commitment vs. 20-30 for bonds
 
 Stevens emphasizes: "If the S&P is negative 14 percent, then it has a floor of zero. So you got a safety net, and you would get everything in between zero to eight to nine. So if it made 7.4, then you got 7.4."
@@ -457,7 +457,7 @@ As Stevens notes, "No financial advisor can control the stock market... But the 
 **Your retirement success isn't about predicting interest ratesit's about building a plan that works in any rate environment.**
 
  **Call:** 801-210-5500  
-± **Text "VISIT"** to 801-210-5500  
+ï¿½ **Text "VISIT"** to 801-210-5500  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)  
  **Additional Resources:** [retireutah.com](https://retireutah.com)
 

@@ -21,10 +21,10 @@ tags:
 ## Key Takeaways
 
 - **Personal tragedy led to professional purpose:** Mike Stevens switched from pre-med to finance after his father's unexpected death at 49 left his mother without an estate plan or financial guidance
-- **The Retirement Money Map„ has five critical components:** income planning, tax planning, inflation planning, legacy planning, and investment management
+- **The Retirement Money Mapï¿½ has five critical components:** income planning, tax planning, inflation planning, legacy planning, and investment management
 - **Plan to age 100, not 85:** Most retirement plans underestimate longevity, potentially leaving retirees financially vulnerable in their later years
 - **Bucket strategy is essential:** Combine growth accounts (stocks) with protected accounts (fixed index annuities with 0% floor, ~10% cap) to weather market volatility
-- **Taxes are "on sale" now:** With federal deficit over **$36 trillion** and historic low tax rates, strategic tax planning today can save tens or hundreds of thousands in future tax costs
+- **Taxes are "on sale" now:** With federal deficit over **$36 trillion** and historic low tax rates, strategic tax planning today may help reduce future tax costs
 - **Medicare Plan G supplements are identical across carriers:** The only difference is price - shop for the lowest cost since all federally mandated plans offer exactly the same benefits
 - **Tax planning vs. tax preparation:** Most CPAs do tax preparation work, not tax planning - you need both for optimal retirement outcomes
 
@@ -74,7 +74,7 @@ I quickly realized that most people were in this camp. Most people had a portfol
 
 You've heard the saying: necessity is the mother of invention. My mom really needed a plan. She had a portfolio from my dad, but that wasn't enough.
 
-### Creating the Retirement Money Map„
+### Creating the Retirement Money Mapï¿½
 
 That's when I put my head down and started figuring out: How do we create an income plan? A tax plan? A legacy plan? A healthcare plan? How do we optimize Social Security and navigate taxes strategically?
 
@@ -142,7 +142,7 @@ But here's what we can control: how we structure your investments to weather mar
 - Subject to market volatility
 
 **Protected Buckets (Fixed Index Annuities):**
-- **0% floor** - you never lose money when markets decline
+- **0% floor** - designed to limit downside when markets decline, with guarantees based on the claims-paying ability of the issuing insurance company
 - **~10% cap** on upside when markets perform well
 - Backed by reputable, A+ rated insurance companies that have been around for decades
 
@@ -376,7 +376,7 @@ Tom and Susan from Salt Lake City have **$800,000** in traditional IRAs and 401(
 
 **With strategic planning:** We implement a three-year Roth conversion strategy during their early retirement years (65-68) when they're in lower tax brackets. They pay taxes at today's rates and eliminate future RMD requirements.
 
-**Potential savings:** **$150,000-$250,000** in lifetime tax savings.
+**Potential benefit:** Strategic Roth conversion planning like this may help reduce a household's lifetime tax burden, depending on individual circumstances.
 
 **Example 2 - The Provo Business Owner:**
 Janet sold her Provo-based business and has a large lump sum to manage. Without proper planning, she could trigger:
@@ -717,7 +717,7 @@ Your retirement should be a time of enjoyment, not anxiety. With proper planning
 If you're ready to create your own Retirement Money Map and want to see if we can add value to your retirement planning, here are three ways to connect with us:
 
  **Call:** 801-210-5500  
-± **Text:** Send "VISIT" to 801-210-5500  
+ï¿½ **Text:** Send "VISIT" to 801-210-5500  
  **Web:** capitalwealth.com
 
 We offer complimentary, no-obligation consultations where we can review your current situation and show you how our Retirement Money Map approach might benefit your specific circumstances.

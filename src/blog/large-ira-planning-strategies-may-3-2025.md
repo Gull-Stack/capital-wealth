@@ -55,7 +55,7 @@ Mike Stevens prefers calling it an "expense plan" rather than a budget  and for 
 
 ---
 
-## The Hidden Fee Crisis: How Wall Street Steals Utah Retirement Dreams
+## The Hidden Fee Crisis: How Investment Fees Can Erode Utah Retirement Savings
 
 ### The Shocking Math on Investment Fees
 
@@ -190,13 +190,13 @@ Utah's strong charitable giving culture creates unique opportunities for tax-eff
 **The life insurance strategy for large IRAs:**
 - Purchase life insurance policy during lifetime
 - Death benefit pays taxes on inherited IRA
-- Converts taxable inheritance to tax-free inheritance
+- Can convert a taxable inheritance into a death benefit that is generally income-tax-free to beneficiaries
 - Creates generational wealth beyond just covering taxes
 
 **Built-in long-term care benefits:**
 - If unable to perform 2 of 6 activities of daily living
 - Access death benefit while living
-- Tax-free supplemental long-term care coverage
+- Potentially tax-advantaged supplemental long-term care coverage
 - Critical for Utah's aging-in-place preferences
 
 **Utah estate planning considerations:**
@@ -451,7 +451,7 @@ Don't let complacency cost you hundreds of thousands in unnecessary taxes and fe
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysis - a comprehensive review typically requiring 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysis - a comprehensive review.
 
 **What's included:**
 - Complete fee analysis across all accounts

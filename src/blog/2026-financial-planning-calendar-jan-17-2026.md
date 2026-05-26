@@ -73,7 +73,7 @@ Whether you're five years from retirement or already enjoying your golden years,
 
 ### Real Utah Client Example: The Hendersons from Murray
 
-The Hendersons, ages 68 and 65, used January to reorganize their entire tax strategy. By planning strategic Roth conversions throughout 2026, they projected saving $34,000 in lifetime taxes while maintaining their desired income level.
+The Hendersons, ages 68 and 65, used January to reorganize their entire tax strategy. By planning strategic Roth conversions throughout 2026, they sought to reduce their projected lifetime taxes while maintaining their desired income level.
 
 ---
 
@@ -107,7 +107,7 @@ The Hendersons, ages 68 and 65, used January to reorganize their entire tax stra
 
 ### Case Study: Single Retiree from Salt Lake City
 
-Patricia, age 71, used February to restructure her charitable giving. By switching from cash donations to Qualified Charitable Distributions from her IRA, she satisfied her RMD requirements while supporting local Utah charities tax-free, saving $4,200 annually.
+Patricia, age 71, used February to restructure her charitable giving. By switching from cash donations to Qualified Charitable Distributions from her IRA, she satisfied her RMD requirements while supporting local Utah charities, which may help reduce her annual tax bill.
 
 ---
 
@@ -231,7 +231,7 @@ Patricia, age 71, used February to restructure her charitable giving. By switchi
 
 ### Case Study: The Johnsons from Park City
 
-Mid-year review revealed the Johnsons were ahead of their income projection by $12,000. Instead of increasing spending, they used this surplus for additional Roth conversions, saving an estimated $18,000 in future taxes.
+Mid-year review revealed the Johnsons were ahead of their income projection. Instead of increasing spending, they used this surplus for additional Roth conversions, which may help reduce their future taxes.
 
 ---
 
@@ -357,7 +357,7 @@ Mid-year review revealed the Johnsons were ahead of their income projection by $
 
 ### Real Client Example: Medicare Optimization
 
-Robert from Ogden saved $3,800 annually by switching from a Medicare Supplement plan to a Medicare Advantage plan that better covered his Utah healthcare providers while providing additional benefits like dental and vision coverage.
+Robert from Ogden reduced his annual costs by switching from a Medicare Supplement plan to a Medicare Advantage plan that better covered his Utah healthcare providers while providing additional benefits like dental and vision coverage.
 
 ---
 
@@ -496,9 +496,9 @@ Robert from Ogden saved $3,800 annually by switching from a Medicare Supplement 
 **October-December:** Selected optimal Medicare coverage for Tom's January retirement
 
 **Results:**
-- Reduced lifetime tax burden by $89,000
-- Increased after-tax retirement income by 15%
-- Secured optimal healthcare coverage
+- Worked to reduce their lifetime tax burden
+- Aimed to increase after-tax retirement income
+- Secured suitable healthcare coverage
 - Created systematic approach for ongoing planning
 
 ### Case Study: Single Retiree - Advanced Planning
@@ -570,7 +570,7 @@ Robert from Ogden saved $3,800 annually by switching from a Medicare Supplement 
 
 ### Special Offer for Utah Residents
 
-**Complimentary Retirement Money Map„:** For the next five callers to 801-210-5500, Capital Wealth will provide a comprehensive 2026 planning analysis including:
+**Complimentary Retirement Money Mapï¿½:** For the next five callers to 801-210-5500, Capital Wealth will provide a comprehensive 2026 planning analysis including:
 
 - Month-by-month planning calendar customized for your situation
 - Tax optimization strategies specific to Utah advantages

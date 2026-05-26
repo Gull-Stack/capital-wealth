@@ -34,7 +34,7 @@ The challenge isn't just mathematical; it's emotional. As Mike Stevens, presiden
 
 > **Market Reality Check:** Healthy markets naturally cycle up and down - expecting continuous growth is unrealistic and dangerous for retirement planning
 > **Income Foundation:** Retirees need guaranteed income sources as the bedrock of their retirement strategy, not market-dependent portfolios alone
-> **Expense Planning Precision:** A proper retirement money map requires 46+ hours of detailed analysis to account for inflation, taxes, and changing needs
+> **Expense Planning Precision:** A proper retirement money map requires a comprehensive, detailed analysis to account for inflation, taxes, and changing needs
 > **Tax Bracket Shifts:** The lowest tax bracket could increase from 10% to 17% historically, making current tax rates appear "on sale"
 > **Withdrawal Rate Reality:** The traditional 4% withdrawal rule is broken in today's environment of higher inflation and tax uncertainty
 
@@ -110,7 +110,7 @@ Creating dependable retirement income requires a systematic approach that addres
 
 Every Utah retirement plan should start with an analysis of guaranteed income sources. These typically include:
 
-**Social Security Benefits:** For most Utah retirees, Social Security represents the largest source of guaranteed income. However, optimization strategies can significantly impact lifetime benefits. "Social security is the only thing that you can get a guaranteed increase on your investments," Stevens explains. "Every single year that I wait after the full retirement age to a maximum of age 70, social security will pay me a guaranteed 8% increase per year for the rest of my life."
+**Social Security Benefits:** For most Utah retirees, Social Security represents the largest source of guaranteed income. However, optimization strategies can significantly impact lifetime benefits. "Social Security delayed retirement credits provide an increase of roughly 8% per year up to age 70 &mdash; a benefit-formula adjustment, not an investment return," Stevens explains. "Every single year that I wait after full retirement age, up to a maximum of age 70, my benefit increases for the rest of my life."
 
 **Pension Benefits:** While rare in the private sector, some Utah retirees still have pension benefits from previous employers, military service, or public sector employment. These benefits typically provide cost-of-living adjustments and survivor benefits that make them valuable components of retirement income planning.
 
@@ -173,7 +173,7 @@ The foundation of retirement income security comes from guaranteed, safe money p
 
 Current safe money options include:
 
-**Fixed Indexed Annuities:** These provide principal protection with upside potential linked to market indices. They offer guaranteed income options and protection against market downturns.
+**Fixed Indexed Annuities:** These are designed to limit downside with upside potential linked to market indices. Any income and downside guarantees are based on the claims-paying ability of the issuing insurance company.
 
 **Treasury Securities:** Government bonds provide guaranteed returns with various maturity options. I-Bonds offer inflation protection for smaller amounts.
 
@@ -261,9 +261,9 @@ Key considerations for Roth conversions include:
 
 **Future Tax Expectations:** Conversions make most sense when current tax rates are lower than expected future rates.
 
-**Time Horizon:** Converted assets should have time to grow tax-free to justify the upfront tax cost.
+**Time Horizon:** Converted assets should have time to grow on a potentially tax-free basis (if IRS requirements are met) to justify the upfront tax cost.
 
-**Estate Planning Impact:** Roth accounts provide tax-free inheritances for beneficiaries, unlike traditional accounts that create tax burdens for heirs.
+**Estate Planning Impact:** Roth accounts can provide potentially tax-free inheritances for beneficiaries if IRS requirements are met, unlike traditional accounts that may create tax burdens for heirs.
 
 ## Real Questions from Our Utah Listeners
 
@@ -320,7 +320,7 @@ The solution involves comprehensive planning that addresses these specific risks
 ## Frequently Asked Questions
 
 ### Q: How do I know if my current retirement income strategy will provide enough money for my entire retirement?
-**A:** A comprehensive retirement money map analysis examines your current assets, projected expenses (including inflation), healthcare costs, tax implications, and longevity expectations. This typically requires 46+ hours of detailed analysis to properly stress-test various scenarios. Key indicators include having enough guaranteed income to cover essential expenses and sufficient growth assets to maintain purchasing power over time.
+**A:** A comprehensive retirement money map analysis examines your current assets, projected expenses (including inflation), healthcare costs, tax implications, and longevity expectations. This typically requires a comprehensive, detailed analysis to properly stress-test various scenarios. Key indicators include having enough guaranteed income to cover essential expenses and sufficient growth assets to maintain purchasing power over time.
 
 ### Q: What's the difference between having a portfolio and having a retirement plan?
 **A:** A portfolio is simply a collection of investments. A retirement plan is a comprehensive strategy that includes income sequencing, tax planning, healthcare preparation, estate planning, and regular monitoring. Portfolios respond to market conditions; plans provide direction regardless of market conditions. Think of it as the difference between owning a boat versus having a navigation system with a destination.
@@ -360,7 +360,7 @@ The retirement money map includes:
 **Don't let market volatility dictate your retirement lifestyle.** Create a plan that works regardless of market conditions.
 
  **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500
+ï¿½ **Text "VISIT"** to 801-210-5500
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2012.*

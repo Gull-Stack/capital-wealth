@@ -121,7 +121,7 @@ Here is the math, stripped down:
 
 This is why we call the five years before and the five years after retirement the **red zone**. Volatility inside that window can permanently impair the rest of your retirement.
 
-Protections matter. We use two-to-three years of expenses in conservative, non-correlated accounts so retirees are never forced to sell growth assets in a downturn. We use protected-growth strategies — for example, fixed indexed annuities with a zero floor and no annual fee — that participate in market upside but cannot lose principal in a market drop. And we use the bucket strategy so the long-term money has the time it needs to recover.
+Protections matter. We use two-to-three years of expenses in conservative, non-correlated accounts so retirees are not forced to sell growth assets in a downturn. We use protected-growth strategies — for example, fixed indexed annuities with a zero floor and no annual fee — that participate in market upside while being designed to limit losses in a market drop, with guarantees based on the claims-paying ability of the issuing insurance company. And we use the bucket strategy so the long-term money has the time it needs to recover.
 
 The goal is not to avoid risk. The goal is to manage *which* risk hits you and *when*.
 
@@ -229,7 +229,7 @@ If you are in this transition right now, a few things matter more than the rest.
 
 A portfolio is a toolbox. It tells you what you own. A plan is the blueprint. It tells you how it all works together.
 
-The Retirement Money Map™ is our process for building that blueprint. It is not for sale and there is no obligation. It is comprehensive enough that it typically takes our team five to ten hours of work per household, which is why we limit it to a handful of complimentary engagements per show. What it covers:
+The Retirement Money Map™ is our process for building that blueprint. It is not for sale and there is no obligation. It is comprehensive enough that we limit it to a handful of complimentary engagements per show. What it covers:
 
 - Income reliability across 30+ years
 - Investment structure built around the bucket strategy

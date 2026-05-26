@@ -36,7 +36,7 @@ But even this "lifeline" comes with tax implications that many Utah retirees nev
 > **Tax Planning vs. Preparation:** Most tax professionals focus on rear-view mirror tax preparation rather than forward-looking tax planning that can save thousands annually
 > **Required Minimum Distribution Trap:** The largest penalty in the tax code (25% plus taxes) awaits those who mismanage RMDs starting at age 73
 > **Roth Conversion Opportunity:** Current historically low tax rates create limited-time opportunities to move from tax-deferred to tax-free accounts before rates increase
-> **Index Universal Life Strategy:** Alternative tax-free vehicles beyond Roth IRAs can provide long-term care benefits and tax-free legacy wealth transfer
+> **Index Universal Life Strategy:** Alternative tax-advantaged vehicles beyond Roth IRAs can provide long-term care benefits and a potentially tax-advantaged legacy wealth transfer
 
 ---
 
@@ -48,7 +48,7 @@ Social Security represents far more than a monthly check for Utah retirees - it'
 
 "Everybody has a full retirement age," Stevens explains, "and if you're not sure what it is, you want to log on to ssa.gov." This full retirement age (FRA) varies based on birth year, but for most current retirees, it falls between 66 and 67.
 
-The mathematical beauty of Social Security lies in its guaranteed 8% annual increase for each year benefits are delayed beyond FRA, up to age 70. "Think about from most people's full retirement age as say 67. So to go from 67 to age 70, that's 32% more in social security benefits," Stevens emphasizes.
+A notable feature of Social Security is the delayed retirement credit of roughly 8% per year for each year benefits are delayed beyond FRA, up to age 70 (a benefit-formula adjustment, not an investment return). "Think about from most people's full retirement age as say 67. So to go from 67 to age 70, that's 32% more in social security benefits," Stevens emphasizes.
 
 Consider a Utah retiree entitled to $3,000 monthly at FRA of 67. By waiting until age 70, that benefit increases to $3,960 per month - an extra $960 monthly or $11,520 annually for life. Over a 20-year retirement, this delay strategy provides an additional $230,400 in benefits.
 
@@ -176,13 +176,13 @@ Retirees need to coordinate Roth conversion timing with Medicare enrollment to a
 
 **Asset Selection:** Market volatility creates optimal conversion opportunities. Converting depreciated assets allows retirees to pay taxes on temporarily reduced values while positioning assets for tax-free recovery and future growth.
 
-### Alternative Tax-Free Strategies
+### Alternative Tax-Advantaged Strategies
 
-Beyond traditional Roth IRAs, Utah retirees can implement alternative tax-free strategies for specific situations:
+Beyond traditional Roth IRAs, Utah retirees can implement alternative tax-advantaged strategies for specific situations:
 
-**Index Universal Life (IUL) Policies:** "There are actual other opportunities to be tax-free other than just a Roth IRA," Stevens explains. IUL policies provide tax-free growth potential with additional benefits including tax-free loans and long-term care riders.
+**Index Universal Life (IUL) Policies:** "There are actual other opportunities to be tax-advantaged other than just a Roth IRA," Stevens explains. IUL policies provide potentially tax-advantaged growth with additional benefits including policy loans and long-term care riders.
 
-These policies can serve multiple purposes: tax-free retirement income, long-term care coverage, and tax-free death benefits for beneficiaries. While more complex than Roth IRAs, IULs offer additional flexibility for certain situations.
+These policies can serve multiple purposes: supplemental retirement income, long-term care coverage, and a death benefit for beneficiaries that is generally income-tax-free if the policy stays in force. While more complex than Roth IRAs, IULs offer additional flexibility for certain situations.
 
 **Charitable Remainder Trusts:** For philanthropically minded retirees with significant estates, charitable remainder trusts provide tax-free income streams while creating charitable deductions and legacy benefits.
 
@@ -196,13 +196,13 @@ Index Universal Life (IUL) insurance provides unique benefits that traditional R
 
 IUL policies offer several distinctive advantages:
 
-**Tax-Free Growth:** Like Roth accounts, IUL cash values grow tax-free, but without required minimum distributions or contribution limitations.
+**Potentially Tax-Advantaged Growth:** Like Roth accounts, IUL cash values can grow on a tax-deferred basis, without required minimum distributions or contribution limitations.
 
-**Tax-Free Access:** "You can take out a tax-free loan on your money... any loan that you take out, the guarantee a 0% loan provision, which means that when you borrow money against that tax-free IUL, you don't have to pay any money back, and it doesn't cost you one cent in tax," Stevens explains.
+**Policy Loan Access:** IUL policies generally allow you to access cash value through policy loans that are income-tax-free if the policy stays in force. It is important to understand that policy loans accrue interest and reduce the cash value and death benefit, and if a policy lapses with a loan outstanding, taxes may apply.
 
-**Long-Term Care Benefits:** Modern IUL policies often include riders allowing access to death benefits for long-term care needs. "If you can't do two of the six activities of daily living or have severe cognitive impairment, you can tap into the death benefit tax-free."
+**Long-Term Care Benefits:** Modern IUL policies often include riders allowing access to death benefits for long-term care needs. "If you can't do two of the six activities of daily living or have severe cognitive impairment, you can tap into the death benefit," typically on a tax-advantaged basis.
 
-**Legacy Planning:** Unused funds provide tax-free death benefits to beneficiaries, unlike traditional retirement accounts that create tax obligations for heirs.
+**Legacy Planning:** Unused funds provide a death benefit to beneficiaries that is generally income-tax-free, unlike traditional retirement accounts that create tax obligations for heirs.
 
 ### Estate Tax Optimization
 
@@ -297,7 +297,7 @@ The analysis becomes more complex at your age, requiring coordination with Medic
 - High-income earners who've maximized traditional retirement plan contributions
 - Retirees seeking tax diversification beyond Roth IRAs and taxable accounts
 - Families with long-term care concerns who want multi-purpose planning tools
-- Estate planning situations requiring tax-free wealth transfer
+- Estate planning situations seeking potentially tax-advantaged wealth transfer
 
 IUL policies are complex financial instruments that require professional analysis to determine appropriateness. They're not suitable for everyone, but can provide significant benefits for the right situations.
 
@@ -354,7 +354,7 @@ IUL policies are complex financial instruments that require professional analysi
 **Preserve more of your retirement for yourself and your family.**
 
  **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500
+ï¿½ **Text "VISIT"** to 801-210-5500
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2012.*

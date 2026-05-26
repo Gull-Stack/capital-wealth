@@ -245,7 +245,7 @@ Whether you're approaching retirement or already enjoying your golden years, und
 
 ---
 
-## The Capital Wealth Retirement Money Map„: Behavioral Finance Applied
+## The Capital Wealth Retirement Money Mapï¿½: Behavioral Finance Applied
 
 ### Layer 1: Addressing Behavioral Biases in Planning
 
@@ -374,7 +374,7 @@ Whether you're approaching retirement or already enjoying your golden years, und
 
 **The overwhelming answer:** Up
 
-**The logical response:** Convert tax-deferred to tax-free when rates are "on sale"
+**The logical response:** Convert tax-deferred to potentially tax-free (if IRS requirements are met) when rates are "on sale"
 
 **The behavioral barrier:** Loss aversion makes people reluctant to pay taxes now, even to save more later.
 
@@ -413,7 +413,7 @@ Whether you're approaching retirement or already enjoying your golden years, und
 ### Long-Term Care: Insurance vs. Self-Insurance
 
 **The behavioral decision:**
-- **Loss averse personalities:** Prefer insurance (guaranteed protection)
+- **Loss averse personalities:** Prefer insurance (coverage backed by the issuing insurer's claims-paying ability)
 - **Control-focused personalities:** Prefer self-insurance (flexibility)
 - **Family-oriented personalities:** Consider family burden impact
 
@@ -541,7 +541,7 @@ Whether you're approaching retirement or already enjoying your golden years, und
 
 **Why fiduciary matters:** Legal obligation to put client interests first eliminates conflicts that exploit behavioral biases.
 
-**The sales vs. advice difference:** Product salespeople profit from behavioral exploitation; fiduciaries profit from behavioral awareness.
+**The sales vs. advice difference:** A commission-based sales model and a fiduciary advice model can create different incentives around client behavior.
 
 ### The Discovery Visit Process
 
@@ -554,7 +554,7 @@ Whether you're approaching retirement or already enjoying your golden years, und
 
 **Outcome:** Personalized behavioral finance strategy addressing your specific psychological patterns.
 
-### The Retirement Money Map„ Process
+### The Retirement Money Mapï¿½ Process
 
 **Behavioral integration:** Every aspect of the plan accounts for human psychology:
 - Income planning reduces loss aversion anxiety
@@ -613,7 +613,7 @@ Whether you're approaching retirement or already enjoying your golden years, und
 
 **For the next five callers:** Complimentary Behavioral Finance Assessment including:
 - Personal behavioral profile analysis
-- Retirement Money Map„ review
+- Retirement Money Mapï¿½ review
 - Tax efficiency evaluation
 - Risk capacity assessment
 - Values-based planning discussion

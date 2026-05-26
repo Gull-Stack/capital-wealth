@@ -33,7 +33,7 @@ As Mike Stevens, president and founder of Capital Wealth, explains: "What we fin
 ##  Key Takeaways
 
 > **Tax Strategy Impact:** Without proper tax planning, retirees could pay 25% penalties plus taxation on required minimum distribution mistakes - the largest penalty in the tax code
-> **Social Security Optimization:** Deferring Social Security to age 70 can provide up to 32% more guaranteed income for life compared to taking benefits early
+> **Social Security Optimization:** Deferring Social Security to age 70 can increase your monthly benefit by roughly 8% per year past full retirement age &mdash; a benefit-formula adjustment, not an investment return
 > **Healthcare Cost Crisis:** Healthcare expenses are outpacing regular inflation, making long-term care planning essential for Utah retirees
 > **Market Timing Risk:** 2008-style market crashes of 40% can devastate retirement portfolios when retirees are forced to sell during downturns
 > **Hidden Scam Threats:** The IRS "Dirty Dozen" tax scams spike during filing season, targeting Utah retirees with phishing emails and fake charity schemes
@@ -134,7 +134,7 @@ Social Security optimization represents one of the most overlooked hidden obstac
 
 ### The 32% Solution
 
-"Social security is the only thing that you can get a guaranteed increase on your investments," Stevens explains. "Every single year that I wait after the full retirement age to a maximum of age 70, social security will pay me a guaranteed 8% increase per year for the rest of my life. So for a lot of people, it could be up to 32% more income just by deferring social security."
+"Social Security delayed retirement credits provide an increase of roughly 8% per year up to age 70 &mdash; a benefit-formula adjustment, not an investment return," Stevens explains. "Every single year that I wait after full retirement age, up to a maximum of age 70, my benefit increases for the rest of my life. So for a lot of people, that can add up to meaningfully more income just by deferring Social Security."
 
 For a Utah retiree entitled to $2,500 per month at full retirement age, delaying until age 70 could increase that benefit to $3,300 per month - an extra $800 monthly for life. Over a 20-year retirement, this delay could provide an additional $192,000 in benefits.
 
@@ -171,7 +171,7 @@ To protect against these hidden obstacles, Capital Wealth employs a bucket strat
 The foundation of this strategy involves maintaining a substantial portion of retirement assets in guaranteed, safe money positions. "You only have a loss if you sell when the market goes down," Stevens explains. "We want people to understand that you should go into retirement and enjoy retirement and not looking at your stock portfolio on a daily basis."
 
 This safe money bucket serves multiple purposes:
-- Provides guaranteed income during market downturns
+- Provides a stable source of income to draw on during market downturns
 - Eliminates the need to sell investments at the worst possible time
 - Reduces emotional stress and market-watching behavior
 - Creates opportunities to buy investments "on sale" during market declines
@@ -275,7 +275,7 @@ The retirement money map process includes:
 - Regular strategic reviews and plan adjustments
 
  **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500
+ï¿½ **Text "VISIT"** to 801-210-5500
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2012.*

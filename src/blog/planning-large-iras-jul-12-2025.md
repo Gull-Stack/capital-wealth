@@ -117,7 +117,7 @@ After nearly two decades of helping Utah retirees optimize large retirement acco
 - **Roth balance:** $650,000 (tax-free growth)
 - **Remaining traditional IRA:** $1.1 million (reduced RMD burden)
 - **Tax paid on conversions:** $180,000 (at favorable rates)
-- **Projected lifetime tax savings:** $350,000+
+- **Projected outcome:** A coordinated conversion plan that may help reduce lifetime taxes
 - **Legacy benefit:** $650,000 passes tax-free to children
 
 ---
@@ -322,7 +322,7 @@ After nearly two decades of helping Utah retirees optimize large retirement acco
 5. **Professional management:** Utah-based team coordinating all beneficiaries
 
 **Outstanding results:**
-- **Tax savings:** Projected $800,000+ savings vs. uncoordinated distributions
+- **Tax efficiency:** A coordinated distribution plan that may help reduce taxes versus an uncoordinated approach
 - **Family harmony:** Clear distribution plan avoiding family conflicts
 - **Legacy preservation:** $1.2 million directed to charitable remainder trust
 - **Utah continuity:** Keeping wealth management within Utah professional network
@@ -386,11 +386,11 @@ After nearly two decades of helping Utah retirees optimize large retirement acco
 
 ### Red Flags: Professionals to Avoid
 
-**Commission-based advisors selling products:**
-- **Annuity pushers:** Trying to move entire IRA into expensive annuity products
-- **Insurance salespeople:** Positioning life insurance as cure-all for large IRAs
-- **Product peddlers:** More interested in selling than planning
-- **Conflict of interest:** Compensation tied to products sold rather than advice quality
+**Watch for a product-first approach:**
+- **Annuity-only recommendations:** Proposing to move an entire IRA into a single annuity product without a broader plan
+- **One-size-fits-all insurance:** Positioning life insurance as a cure-all for large IRAs
+- **Selling ahead of planning:** A focus on a product rather than your overall situation
+- **Conflicts of interest:** Make sure any potential conflicts and compensation are clearly disclosed to you
 
 **Inadequately credentialed professionals:**
 - **No fiduciary standard:** Advisors not legally required to act in your interest

@@ -133,7 +133,7 @@ Mike Stevens shares a client's humorous observation: "That's actually just my gr
 - **Social Security**: Optimized claiming strategy for maximum lifetime benefits
 - **Utah Retirement Systems**: For public employees, coordinated with Social Security
 - **Pension Income**: Traditional employer pensions (increasingly rare)
-- **Guaranteed Annuity Income**: Fixed or inflation-adjusted payments for life
+- **Annuity Income**: Fixed or inflation-adjusted payments designed to last for life, with guarantees based on the claims-paying ability of the issuing insurance company
 
 **Layer 2: Flexible Growth Assets**
 - **401(k) and IRA Accounts**: Growth investments with systematic withdrawal strategies
@@ -158,7 +158,7 @@ Mike Stevens shares a client's humorous observation: "That's actually just my gr
 **Utah Social Security Benefits:**
 - **No State Taxation**: Utah doesn't tax Social Security benefits, unlike some neighboring states
 - **Federal Coordination**: Strategic planning can minimize federal taxation of benefits
-- **Optimization Strategies**: Proper timing can increase lifetime benefits by $100,000+
+- **Optimization Strategies**: Proper timing may meaningfully increase lifetime benefits
 
 **Utah Social Security Optimization Example:**
 Robert and Susan from Murray, both age 62:
@@ -177,9 +177,9 @@ With average Social Security benefits around $2,000 monthly and average spending
 - **Sequence Risk**: Poor early returns can devastate long-term sustainability
 
 **Guaranteed Income Approach:**
-- **Annuity Purchase**: $600,000 can generate $3,000+ monthly for life with modern annuities
-- **Risk Reduction**: Guaranteed payments regardless of market conditions
-- **Inflation Options**: Available to protect purchasing power over time
+- **Annuity Purchase**: An annuity can be designed to provide lifetime income, with guarantees based on the claims-paying ability of the issuing insurance company
+- **Risk Reduction**: Income designed to continue regardless of market conditions, subject to the issuing carrier's claims-paying ability
+- **Inflation Options**: Available to help protect purchasing power over time
 
 ---
 
@@ -264,7 +264,7 @@ With average Social Security benefits around $2,000 monthly and average spending
 - Desire to support nieces' and nephews' education
 
 **Strategy Implemented:**
-- **Immediate Income Annuity**: $400,000 generating $2,400 monthly for life
+- **Immediate Income Annuity**: An annuity designed to provide monthly lifetime income, with guarantees based on the claims-paying ability of the issuing insurance company
 - **Growth Portfolio**: $600,000 in diversified investments for future needs and inflation
 - **Emergency Reserve**: $100,000 in liquid accounts for opportunities and emergencies
 - **Family Support Fund**: $100,000 earmarked for family assistance and education support
@@ -281,24 +281,24 @@ With average Social Security benefits around $2,000 monthly and average spending
 
 ### Beyond Social Security: Creating Pension-Like Income
 
-"You want to have, 'hey, I'm going into the best years of my life. Here's predictable income. It's going to last forever,'" Mike Stevens emphasizes.
+"You want to have, 'hey, I'm going into the best years of my life. Here's predictable income designed to help support me throughout retirement,'" Mike Stevens emphasizes.
 
 **Modern Guaranteed Income Options:**
 
 **Fixed Immediate Annuities:**
-- **Guaranteed Payments**: Fixed monthly income for life regardless of market conditions
+- **Payments**: Designed to provide fixed monthly income for life, with guarantees based on the claims-paying ability of the issuing insurance company
 - **Utah Advantage**: Coordinate with state's favorable retirement income taxation
-- **Inflation Option**: Available to protect purchasing power over time
-- **Family Protection**: Joint life options ensure spousal security
+- **Inflation Option**: Available to help protect purchasing power over time
+- **Family Protection**: Joint life options designed to support spousal security
 
 **Deferred Income Annuities:**
-- **Future Security**: Guarantee income starting at specified future date
+- **Future Security**: Designed to provide income starting at a specified future date, with guarantees based on the claims-paying ability of the issuing insurance company
 - **Lower Cost**: Less expensive than immediate annuities due to deferral period
 - **Longevity Insurance**: Protection against outliving other retirement assets
 - **Utah Planning**: Coordinate with expected Social Security and pension income
 
 **Variable Annuities with Income Riders:**
-- **Growth Potential**: Market participation with income guarantees
+- **Growth Potential**: Market participation with income guarantees based on the claims-paying ability of the issuing insurance company
 - **Flexibility**: More options but higher complexity and costs
 - **Utah Consideration**: Coordinate with professional financial advice
 - **Risk Balance**: Growth opportunity with downside protection
@@ -445,11 +445,11 @@ Mike Stevens' message is clear: "It's not about hitting some magical number. It'
 4. **Risk Management**: Address sequence, inflation, longevity, and healthcare risks
 5. **Family Integration**: Plan income that supports Utah's family-centered values
 
-**The Utah Opportunity**: Our state's combination of retirement income tax advantages, excellent healthcare systems, strong family networks, and conservative financial culture creates an ideal environment for building sustainable retirement income. With proper planning, Utah retirees can create "the best years of your life" with "predictable income that's going to last forever."
+**The Utah Opportunity**: Our state's combination of retirement income tax advantages, excellent healthcare systems, strong family networks, and conservative financial culture creates an ideal environment for building sustainable retirement income. With proper planning, Utah retirees can create "the best years of your life" with predictable income designed to help support them throughout retirement.
 
 The myth of the million-dollar retirement needs to be replaced with the reality of income security. Whether your magic number is $500,000 or $5 million, what matters is how effectively you can convert those assets into the monthly paycheck that supports your Utah retirement dreams.
 
-Remember: There's no award for being the wealthiest person in the cemetery, but there is immense value in having the confidence that your money will last at least as long as you dowhile supporting the family and community values that make Utah retirement special.
+Remember: There's no award for being the wealthiest person in the cemetery, but there is immense value in having the confidence that comes from a plan designed to help your income last throughout retirementwhile supporting the family and community values that make Utah retirement special.
 
 ---
 

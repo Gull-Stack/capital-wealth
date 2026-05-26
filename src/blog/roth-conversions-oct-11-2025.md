@@ -82,10 +82,10 @@ At its core, a Roth conversion shifts money from one type of retirement bucket t
 - Required Minimum Distributions starting at age 73
 - Forced to take money whether needed or not
 
-**Roth IRA - "Tax Free":**
+**Roth IRA - "Tax Advantaged":**
 - Pay taxes upfront during conversion
-- Tax-free growth for life
-- Tax-free qualified withdrawals
+- Potentially tax-free growth if IRS requirements are met
+- Qualified withdrawals can be tax-free if IRS requirements are met
 - No RMDs during your lifetime
 - More flexible for legacy planning
 
@@ -132,7 +132,7 @@ This experience led Mike to switch from medical school to financial planning, wi
 - Comprehensive approach vs. portfolio-only focus
 
 **Special Offer for Utah Listeners:**
-The next five callers to 801-210-5500 receive a complimentary Retirement Money Map�typically requiring 5-10 hours of professional analysisat no cost with no obligation.
+The next five callers to 801-210-5500 receive a complimentary Retirement Money Map�at no cost with no obligation.
 
 ---
 
@@ -340,7 +340,7 @@ When markets drop, convert more shares at reduced valuations, then benefit from 
 ### Legacy Planning Through Conversions
 
 **Multi-Generational Benefits:**
-- Leave tax-free assets to children/grandchildren
+- Leave potentially tax-free assets to children/grandchildren (if IRS requirements are met)
 - Avoid "tax bomb" inheritance problems
 - Utah family culture supports legacy planning
 - Educational funding through Roth assets
@@ -510,10 +510,10 @@ When one spouse dies, the survivor loses married filing jointly status and becom
 ### Roth Conversion Protection
 
 **How It Helps:**
-- Creates tax-free income for surviving spouse
+- Creates potentially tax-free income for surviving spouse (if IRS requirements are met)
 - Reduces RMD requirements from traditional accounts
 - Provides more flexible withdrawal options
-- Protects against widow/widower tax penalty
+- Helps protect against widow/widower tax penalty
 
 **Utah Advantages for Surviving Spouses:**
 - Strong family support systems
@@ -538,8 +538,8 @@ When one spouse dies, the survivor loses married filing jointly status and becom
 - Optimized around Social Security claiming
 
 **Results:** 
-- Estimated $300,000+ in lifetime tax savings
-- Created tax-free legacy for children
+- A meaningful reduction in their projected lifetime taxes
+- Created a potentially tax-free legacy for children (if IRS requirements are met)
 - Maintained desired lifestyle throughout
 
 ### The Salt Lake Teacher
@@ -738,7 +738,7 @@ Call 801-210-5500 or visit retireutah.com for educational resources including "A
 - Convert amounts above RMD requirements
 - Use RMDs to fund conversion taxes
 - Reduce future RMD requirements
-- Create tax-free growth for heirs
+- Create potentially tax-free growth for heirs (if IRS requirements are met)
 
 ### "My CPA Says Don't Do It"
 

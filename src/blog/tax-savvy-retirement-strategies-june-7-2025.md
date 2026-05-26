@@ -51,7 +51,7 @@ Whether you're nearing retirement or already enjoying your golden years in Utah'
 
 ## Why Most Retirement Tax Planning Fails: The Professional Advisor Blind Spot
 
-### The Dirty Secret Financial Advisors Don't Want You to Know
+### What Many Investors Overlook About Tax Planning
 
 **"We can't control the stock market right now."** - Mike Stevens
 
@@ -62,7 +62,7 @@ This admission should shake every Utah retiree to their core. While advisors pro
 - No advisor can guarantee investment performance
 - BUT you CAN identify missed tax opportunities by analyzing actual tax returns
 - You CAN plan for future tax law changes
-- You CAN implement strategies that are virtually guaranteed to save money
+- You CAN implement strategies designed to help reduce taxes
 
 ### Why Most Advisors Avoid Tax Planning
 
@@ -104,9 +104,9 @@ This admission should shake every Utah retiree to their core. While advisors pro
 
 **Tax-Free Accounts (Roth IRAs/Life Insurance):**
 - Pay taxes upfront or convert from tax-deferred
-- Grow and withdraw tax-free
-- No required minimum distributions
-- Protected from future tax rate increases
+- Growth and qualified withdrawals can be tax-free if IRS requirements are met
+- No required minimum distributions (Roth IRAs)
+- Help protect against future tax rate increases
 
 ### The Strategic Withdrawal Game Plan
 
@@ -151,7 +151,7 @@ This admission should shake every Utah retiree to their core. While advisors pro
 **Example scenario:** Utah couple, ages 62-65, early retirement from tech industry
 - Traditional approach: Wait until RMDs force large distributions
 - Strategic approach: Convert systematically during lower-income early retirement years
-- Potential savings: $200,000+ in lifetime tax reduction while maintaining Utah lifestyle
+- Potential benefit: A meaningful reduction in lifetime taxes while maintaining Utah lifestyle
 
 ---
 
@@ -261,10 +261,10 @@ This admission should shake every Utah retiree to their core. While advisors pro
 - "Use it or lose it" concerns
 
 **Alternative strategy: Overfunded Index Universal Life**
-- Tax-free access to death benefit for qualifying care needs
-- No cost if care isn't needed
+- Potentially tax-free access to death benefit for qualifying care needs if IRS requirements are met
 - Larger death benefit than cash value
 - Flexibility for various care scenarios
+- Any guarantees are based on the claims-paying ability of the issuing insurance company
 
 **Utah long-term care costs to consider:**
 - Average nursing home: $110,000+ annually
@@ -288,10 +288,10 @@ This admission should shake every Utah retiree to their core. While advisors pro
 - **Family support system:** Utah's family-centered culture provides natural care advantages
 
 **Alternative approach - Overfunded life insurance:**
-- Access death benefit tax-free for qualifying care needs
-- No cost if care isn't needed
-- Significantly larger benefit than traditional long-term care policies
+- Potentially tax-free access to death benefit for qualifying care needs if IRS requirements are met
+- Larger benefit than many traditional long-term care policies
 - Flexibility for various care scenarios
+- Any guarantees are based on the claims-paying ability of the issuing insurance company
 
 **Action step:** "This is something we're passionate about helping people figure out. Call 801-210-5500 and let's take the mystery out of whether you should consider long-term care insurance or explore alternatives."
 
@@ -568,7 +568,7 @@ The question isn't whether you can afford to implement these tax strategies - it
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysis - a comprehensive review typically requiring 20-40 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysis - a comprehensive review.
 
 **What's included:**
 - Complete tax return analysis for missed opportunities  

@@ -144,6 +144,16 @@ layout: layouts/base-finpay.njk
         <main class="bp-article" id="blogBody">
             <p class="bp-attribution"><em>Originally aired on KAOX, KID, KNRS, and KSL</em></p>
             {{ content | safe }}
+
+            {# COMPLIANCE: standard disclosure block for all blog posts. Federal disclaimer shows conditionally on federal-topic posts. Registration jurisdiction (SEC vs State of Utah) pending Form ADV confirmation — see docs/COMPLIANCE_AUDIT_2026-05-26.md. #}
+            <div class="bp-disclosure" style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb; font-size: 0.78rem; line-height: 1.6; color: #6b7280;">
+                {% set _tagstr = ((tags or []) | join(" ") + " " + (title or "")) | lower %}
+                {% if "federal" in _tagstr or "fers" in _tagstr or "tsp" in _tagstr or "fehb" in _tagstr or "fegli" in _tagstr or "csrs" in _tagstr or "opm" in _tagstr %}
+                <p style="margin: 0 0 0.75rem;">Capital Wealth is not affiliated with or endorsed by the U.S. Government, the Social Security Administration, the Office of Personnel Management, the Thrift Savings Plan, or any federal agency.</p>
+                {% endif %}
+                <p style="margin: 0 0 0.75rem;">This article is for general educational purposes only and does not constitute investment, tax, or legal advice. Capital Wealth does not provide tax or legal advice; consult your own qualified professionals regarding your specific situation. Any hypothetical examples are illustrative only, do not represent actual client results, and are not a guarantee of future outcomes; individual results vary.</p>
+                <p style="margin: 0;">Advisory services offered through Capital Wealth, LLC, a Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC. Registration does not imply a certain level of skill or training. All investments involve risk, including the possible loss of principal. Past performance is not a guarantee of future results. Annuity and insurance guarantees are based on the claims-paying ability of the issuing insurance company.</p>
+            </div>
         </main>
 
         {# RIGHT SIDEBAR #}

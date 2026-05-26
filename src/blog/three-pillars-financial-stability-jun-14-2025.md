@@ -137,7 +137,7 @@ The retirement landscape has transformed dramatically since our grandparents' er
 - Bond ladders and CD strategies
 - Utah-focused real estate opportunities
 
-**The Capital Wealth Retirement Money Map„ Approach:**
+**The Capital Wealth Retirement Money Mapï¿½ Approach:**
 
 **Layer 1: Essential Income (Must be guaranteed)**
 - Social Security
@@ -382,7 +382,7 @@ Mike Stevens' father died unexpectedly at age 49. While he was an excellent plan
 
 ---
 
-## The Capital Wealth Retirement Money Map„: Your Utah Advantage
+## The Capital Wealth Retirement Money Mapï¿½: Your Utah Advantage
 
 ### What Makes This Planning Different
 
@@ -400,7 +400,7 @@ Mike Stevens' father died unexpectedly at age 49. While he was an excellent plan
 
 **First meeting focus:** Understanding your unique situation and concerns
 
-**No product sales:** First visit is purely educational and assessment
+**Educational, no high-pressure pitch:** First visit is purely educational and assessment
 
 **Customized strategy:** Built specifically for your Utah retirement goals
 
@@ -425,7 +425,7 @@ Mike Stevens' father died unexpectedly at age 49. While he was an excellent plan
 - Long-term care planning for Utah facilities
 - Estate planning for Utah laws
 
-**Results:** Reduced lifetime tax burden by estimated $150,000+ while maintaining desired lifestyle
+**Results:** A meaningful reduction in their lifetime tax burden while maintaining desired lifestyle
 
 ### Case Study: The Thompson Couple - Park City Area
 
@@ -442,7 +442,7 @@ Mike Stevens' father died unexpectedly at age 49. While he was an excellent plan
 - Healthcare planning for premium Utah facilities
 - Recreation budget for Park City lifestyle
 
-**Results:** On track to save over $300,000 in taxes while enjoying mountain lifestyle
+**Results:** On track for a meaningful reduction in taxes while enjoying mountain lifestyle
 
 ---
 
@@ -528,7 +528,7 @@ Your retirement should be the best years of your life. With Utah's advantages an
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysisa comprehensive review typically taking 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysisa comprehensive review.
 
 **What's included:**
 - Three-pillar stability assessment

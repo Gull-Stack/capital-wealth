@@ -235,7 +235,7 @@ This episode reveals how Utah retirees can create multiple income streams, stres
 - Healthcare cost integration
 - Stress-testing for various scenarios
 
-### Capital Wealth's Retirement Money Map„
+### Capital Wealth's Retirement Money Mapï¿½
 
 **Comprehensive approach:**
 - Income sources coordination
@@ -325,7 +325,7 @@ This episode reveals how Utah retirees can create multiple income streams, stres
 - Wife claims spousal benefits
 - Coordinate with other retirement income
 
-**Impact:** Additional $180,000 in lifetime Social Security benefits
+**Impact:** A meaningful increase in their projected lifetime Social Security benefits
 
 ---
 
@@ -518,11 +518,11 @@ Remember: accumulation is just one step of your journey. The goal is enjoying th
 
 ---
 
-## Take Action: Complimentary Retirement Money Map„
+## Take Action: Complimentary Retirement Money Mapï¿½
 
 **For Utah residents ready to build a comprehensive retirement income plan:**
 
-Capital Wealth offers complimentary Retirement Money Map„ analysis for qualifying individuals. This comprehensive review typically takes 5-10 hours of professional analysis and includes:
+Capital Wealth offers complimentary Retirement Money Mapï¿½ analysis for qualifying individuals. This comprehensive review includes:
 
 - Income source coordination and optimization
 - Tax-efficient withdrawal strategy development

@@ -183,17 +183,17 @@ Each serves different purposes and has different characteristics. Similarly, ann
 
 At Capital Wealth, we primarily use fixed index annuities for our protected income bucket because they offer:
 
-**Zero Market Risk:** If the S&P 500 drops 20%, your account doesn't lose a penny
+**Limited Market Downside:** Designed so that if the S&P 500 drops 20%, your account is shielded from that index loss, with guarantees based on the claims-paying ability of the issuing insurance company
 **Growth Potential:** Your gains are typically linked to market index performance (with caps)
 **Low/No Fees:** Many quality products have 0% annual fees
 **Liquidity Options:** Access to portions of your money when needed
-**Income Guarantees:** Options for guaranteed lifetime income streams
+**Income Options:** Optional lifetime income riders, with guarantees based on the claims-paying ability of the issuing insurance company
 
 **How the Growth Mechanism Works:**
 - Your gains are linked to an index (like the S&P 500)
 - If the index goes up 15%, you might earn 10% (due to a cap)
-- If the index drops 25%, you earn 0% (protected by the floor)
-- Your previous gains are locked in and can never be lost
+- If the index drops 25%, you earn 0% (limited by the floor)
+- Previously credited gains are generally locked in, subject to the terms and claims-paying ability of the issuing insurance company
 
 ### Protected vs. Unprotected Income Sources
 
@@ -221,11 +221,11 @@ At Capital Wealth, we primarily use fixed index annuities for our protected inco
 
 **Bucket #1: Protected Income (40-60% of Portfolio)**
 
-This bucket uses fixed index annuities and other protected income sources to provide:
+This bucket uses fixed index annuities and other protected income sources to seek:
 - Monthly income during market downturns
-- Principal protection against market losses
+- Protection from index losses, backed by the claims-paying ability of the issuing insurance company
 - Some growth potential during good market years
-- Peace of mind knowing this money is safe
+- Peace of mind, with guarantees backed by the issuing insurance company
 
 **Bucket #2: Growth Investments (40-60% of Portfolio)**  
 
@@ -581,7 +581,7 @@ Remember, 75% of Americans don't have a written retirement income plan. Don't be
 **Ready to build your protected income strategy?**
 
  **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500  
+ï¿½ **Text "VISIT"** to 801-210-5500  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2010.*

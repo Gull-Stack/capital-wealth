@@ -112,7 +112,7 @@ The transition from go-go to slow-go years often coincides with the first signif
 
 **Smart Strategies for Slow-Go Healthcare Costs:**
 
-**Living Benefits Insurance:** As Mike explains, properly structured life insurance policies or index annuities with long-term care riders can provide tax-free access to benefits if you can't perform two of the six activities of daily living (feeding yourself, dressing, bathing, transferring, toileting, continence) or if you develop severe cognitive impairment.
+**Living Benefits Insurance:** As Mike explains, properly structured life insurance policies or index annuities with long-term care riders can provide potentially tax-free access to benefits (if IRS requirements are met) if you can't perform two of the six activities of daily living (feeding yourself, dressing, bathing, transferring, toileting, continence) or if you develop severe cognitive impairment. Any guarantees are based on the claims-paying ability of the issuing insurance company.
 
 **Health Savings Account (HSA) Maximization:** If you're still working or have access to an HSA, maximize contributions. After age 65, HSA funds can be withdrawn penalty-free for any purpose (though non-medical withdrawals are taxable).
 
@@ -343,12 +343,12 @@ When Mike asks clients whether they want to leave money to family members tax-fr
 
 **Traditional 401(k)/IRA Inheritance:** Recipients must pay income tax on all withdrawals at their current tax rates. With tax rates likely increasing, this could be a significant burden.
 
-**Roth IRA Inheritance:** Recipients can withdraw money completely tax-free for up to 10 years (for most non-spouse beneficiaries).
+**Roth IRA Inheritance:** Recipients can generally withdraw money tax-free for up to 10 years (for most non-spouse beneficiaries) if IRS requirements are met.
 
 **Example: Provo Family Legacy**
 David from Provo has $500,000 in traditional 401(k) funds that he plans to leave to his two adult children. If tax rates increase to 35% by the time he passes away, his children will pay $175,000 in taxes on their inheritance, receiving only $325,000.
 
-If David completes strategic Roth conversions over several years while tax rates are relatively low, his children could inherit the full $500,000 tax-free.
+If David completes strategic Roth conversions over several years while tax rates are relatively low, his children could inherit the full $500,000 potentially tax-free if IRS requirements are met.
 
 **The Utah Estate Tax Advantage:**
 Utah doesn't impose state estate taxes, which simplifies legacy planning compared to many other states. However, federal estate taxes still apply to estates over $13.61 million (in 2025), and this exemption is scheduled to decrease significantly in 2026.
@@ -446,7 +446,7 @@ Fidelity's research shows that the average 65-year-old couple can expect to spen
 ### Innovative Healthcare Funding Strategies
 
 **Living Benefits Life Insurance:**
-As Mike explains, his personal life insurance policy includes riders that allow tax-free, penalty-free access to the death benefit if he can't perform two of the six activities of daily living or develops severe cognitive impairment. This provides long-term care coverage without the restrictions of traditional long-term care insurance.
+As Mike explains, his personal life insurance policy includes riders that allow potentially tax-free, penalty-free access to the death benefit (if IRS requirements are met) if he can't perform two of the six activities of daily living or develops severe cognitive impairment. This provides long-term care coverage without the restrictions of traditional long-term care insurance, with any guarantees based on the claims-paying ability of the issuing insurance company.
 
 **Index Annuities with Care Riders:**
 Some index annuities offer care riders that provide enhanced benefits for long-term care needs while still providing principal protection and growth potential.
@@ -558,7 +558,7 @@ Whether you're concerned about front-loading your go-go years without running ou
 **Ready to create your three-stage retirement plan?**
 
  **Call:** 801-210-5500
-± **Text "VISIT"** to 801-210-5500  
+ï¿½ **Text "VISIT"** to 801-210-5500  
  **Visit:** [capitalwealth.com](https://capitalwealth.com)
 
 *Capital Wealth  helping Utah families retire right since 2010.*

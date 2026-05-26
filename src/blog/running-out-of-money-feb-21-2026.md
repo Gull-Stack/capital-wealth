@@ -98,7 +98,7 @@ Not all Olympic hosts fail financially. Great Britain's approach offers a bluepr
 - World-class recreation without California prices
 - Strong family support networks
 
-### The Capital Wealth Retirement Money Map„
+### The Capital Wealth Retirement Money Mapï¿½
 
 Rather than making Olympic-style emotional decisions, Utah retirees need layered strategies:
 
@@ -181,7 +181,7 @@ Rather than making Olympic-style emotional decisions, Utah retirees need layered
 - Evaluate coverage needs based on Utah's cost structure
 - Consider legacy planning for Utah estate laws
 - Review existing policies for appropriateness
-- Avoid high-commission products that benefit the agent more than you
+- Make sure any product you consider fits your specific financial plan and that costs are fully disclosed
 
 ---
 
@@ -370,7 +370,7 @@ Your retirement should be the best years of your life. With Utah's advantages an
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysis - a comprehensive review typically taking 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysis - a comprehensive review.
 
 **What's included:**
 - Inflation and tax planning analysis

@@ -426,7 +426,7 @@ As we finish our Thanksgiving feast and look ahead to the holiday season, now is
 
 ### The Thanksgiving Special Offer
 
-For our Retire Right Radio listeners, I'm extending a special Thanksgiving offer. For the next five callers who mention this blog post, we'll provide a complimentary retirement money map  a comprehensive analysis of your financial situation valued at $750.
+For our Retire Right Radio listeners, I'm extending a special Thanksgiving offer. For the next five callers who mention this blog post, we'll provide a complimentary retirement money map  a comprehensive analysis of your financial situation.
 
 This retirement money map includes:
 - Analysis of all your income sources

@@ -131,7 +131,7 @@ Mike Stevens emphasizes: "Retirees are very focused on strategies that balance g
 
 ---
 
-## The Retirement Money Map„: Your 2026 Navigation System
+## The Retirement Money Mapï¿½: Your 2026 Navigation System
 
 ### How Capital Wealth's Proprietary Process Works
 
@@ -151,7 +151,7 @@ Mike Stevens emphasizes: "Retirees are very focused on strategies that balance g
 
 ### Special Offer for Utah Listeners
 
-For the next five callers to 801-210-5500: Complimentary Retirement Money Map analysistypically a $2,500 value covering:
+For the next five callers to 801-210-5500: Complimentary Retirement Money Map analysis covering:
 - Tax optimization strategies
 - Income planning analysis
 - Investment risk assessment
@@ -177,7 +177,7 @@ For the next five callers to 801-210-5500: Complimentary Retirement Money Map an
 **Components of Utah-optimized portfolios:**
 - **Stocks:** Growth component for inflation protection
 - **Bonds:** Stability and income generation
-- **Indexed annuities:** Principal protection with growth potential
+- **Indexed annuities:** Designed to limit downside with growth potential, based on the claims-paying ability of the issuing insurance company
 - **Alternative investments:** Real estate, commodities for diversification
 - **Utah-specific opportunities:** Municipal bonds, local REITs
 
@@ -227,7 +227,7 @@ Utah's moderate state income tax makes Roth conversions particularly attractive 
 - Desire to leave legacy for children and grandchildren
 
 **Utah advantages utilized:**
-- No Social Security tax saved $4,800 annually
+- Utah's lack of state tax on Social Security may help reduce annual taxes
 - Strategic Roth conversions during early retirement years
 - Local healthcare providers reduced insurance gap concerns
 - Family proximity reduced long-term care insurance needs
@@ -239,8 +239,8 @@ Utah's moderate state income tax makes Roth conversions particularly attractive 
 - Legacy planning optimized for Utah estate law
 
 **Results:**
-- Increased after-tax income by $18,000 annually
-- Reduced lifetime tax burden by estimated $240,000
+- Aimed to increase after-tax income
+- Worked to reduce their lifetime tax burden
 - Created systematic approach for market volatility
 - Peace of mind through comprehensive planning
 
@@ -261,7 +261,7 @@ Utah's moderate state income tax makes Roth conversions particularly attractive 
 - Healthcare cost management with local providers
 
 **Results:**
-- Reduced annual taxes by $12,000
+- Worked to reduce annual taxes
 - Maintained desired charitable giving levels
 - Stabilized Medicare premiums
 - Created predictable income stream
@@ -493,14 +493,14 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 
 ### Question: Blended Family Estate Planning
 
-**From Joe:** "I'm getting remarried. I have two sons, my fiancÃ has four kids. I want my estate to go to my boys but don't want to hurt feelings. Should I get separate life insurance for her kids?"
+**From Joe:** "I'm getting remarried. I have two sons, my fiancï¿½ has four kids. I want my estate to go to my boys but don't want to hurt feelings. Should I get separate life insurance for her kids?"
 
 **Mike's guidance:** "This is such a real question for blended families becoming the new normal. Life insurance can be a beautiful solution."
 
 **Strategic approach:**
 - Keep existing assets directed to your boys (totally fair)
 - Create second legacy through life insurance policy
-- Death benefit is income-tax-free and goes exactly where you direct it
+- Death benefit is generally income-tax-free to beneficiaries and goes exactly where you direct it
 - Talk to estate planning attorney for document coordination
 - **Key principle:** "Clarity is kindness when it comes to legacy planning"
 
@@ -517,7 +517,7 @@ Traditional withdrawal rules assume automatic spending reduction in retirement. 
 
 ### Special Opportunity for Utah Residents
 
-**Limited-time offer:** For the next five callers to 801-210-5500, Capital Wealth will provide a complimentary Retirement Money Map„ analysistypically requiring 5-10 hours of professional analysis.
+**Limited-time offer:** For the next five callers to 801-210-5500, Capital Wealth will provide a complimentary Retirement Money Mapï¿½ analysistypically requiring 5-10 hours of professional analysis.
 
 **Comprehensive review includes:**
 - Tax optimization strategies specific to Utah

@@ -252,7 +252,7 @@ Mike references George Steinbrenner: "The joke among estate attorneys is that Ge
 **Modern approach:** "What we're using a lot of is hybrid life insurance policies that include [long-term care] within the death benefit."
 
 **Benefits for Utah families:**
-- Tax-free death benefits
+- Death benefits that are generally income-tax-free to beneficiaries
 - Living benefits for long-term care
 - Legacy protection from healthcare costs
 - Asset protection features
@@ -265,7 +265,7 @@ Mike references George Steinbrenner: "The joke among estate attorneys is that Ge
 
 **Utah advantages:**
 - Lower state income taxes during conversion years
-- Tax-free growth for beneficiaries
+- Potentially tax-free growth for beneficiaries if IRS requirements are met
 - Reduced future RMD burdens
 
 **Timing considerations:** Coordinate with overall income and tax planning
@@ -338,7 +338,7 @@ Mike references George Steinbrenner: "The joke among estate attorneys is that Ge
 
 ## The Capital Wealth Difference: Comprehensive Estate Integration
 
-### The Retirement Money Map„ Estate Component
+### The Retirement Money Mapï¿½ Estate Component
 
 **Beyond basic planning:** Capital Wealth's proprietary process integrates estate planning with comprehensive retirement planning
 
@@ -524,9 +524,9 @@ The question isn't whether you can afford estate planning - it's whether your fa
 
 ---
 
-## Special Offer: Complimentary Retirement Money Map„
+## Special Offer: Complimentary Retirement Money Mapï¿½
 
-**For the next five Utah families who call:** Complete Retirement Money Map„ analysis including comprehensive estate planning coordination.
+**For the next five Utah families who call:** Complete Retirement Money Mapï¿½ analysis including comprehensive estate planning coordination.
 
 **What's included:**
 - Complete asset and legacy analysis

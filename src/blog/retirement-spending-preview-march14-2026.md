@@ -154,7 +154,7 @@ Retirement should be the best years of your life, not a time of financial restri
 **Roth Conversion Opportunities:**
 - Take advantage of lower current tax brackets
 - Avoid future required minimum distributions
-- Create tax-free legacy for heirs
+- Create a potentially tax-free legacy for heirs if IRS requirements are met
 - **Caution:** Coordinate with Medicare premium impacts
 
 **Asset Location Strategies:**
@@ -196,7 +196,7 @@ Retirement should be the best years of your life, not a time of financial restri
 
 ## Utah-Specific Retirement Income Planning
 
-### Capital Wealth's Retirement Money Map„
+### Capital Wealth's Retirement Money Mapï¿½
 
 **Comprehensive analysis includes:**
 - **Income gap calculations**  Social Security + pensions + investments
@@ -231,7 +231,7 @@ Retirement should be the best years of your life, not a time of financial restri
 - **Confidence to spend** appropriately during active years
 
 ### Special Offer for Utah Residents
-**For the next five callers:** Complimentary Retirement Money Map„ analysis
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysis
 - **Phone:** 801-210-5500  
 - **Text:** "VISIT" to 801-210-5500
 - **Completely complimentary**  no obligation or commitment required

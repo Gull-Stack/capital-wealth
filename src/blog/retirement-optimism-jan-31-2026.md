@@ -75,9 +75,9 @@ The American College of Financial Services quiz results show concerning gaps in 
 
 ### Real Utah Impact
 
-**Salt Lake County Example:** Meet Sarah from Murray. At 62, she thought she understood her retirement benefits. But when we analyzed her situation, she discovered she could save $47,000 in taxes over her lifetime through strategic Roth conversions and Social Security timing.
+**Salt Lake County Example:** Meet Sarah from Murray. At 62, she thought she understood her retirement benefits. But when we analyzed her situation, she discovered she could meaningfully reduce her lifetime taxes through strategic Roth conversions and Social Security timing.
 
-**Cache Valley Success:** Robert and Linda from Logan learned their Medicare supplement choice could save them $28,000 in healthcare costs over the next decade.
+**Cache Valley Success:** Robert and Linda from Logan learned their Medicare supplement choice could meaningfully reduce their healthcare costs over the next decade.
 
 ---
 
@@ -132,12 +132,12 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 **Case 1: The Andersons from Park City**
 - **Challenge:** High earners worried about Social Security taxation
 - **Solution:** Strategic IRA withdrawals before Social Security claiming
-- **Result:** Reduced lifetime tax burden by $89,000
+- **Result:** A meaningful reduction in their lifetime tax burden
 
 **Case 2: The Millers from Ogden Valley**
 - **Challenge:** Teacher pension coordination with Social Security
 - **Solution:** Delayed Social Security claiming, strategic pension timing
-- **Result:** Increased lifetime income by $156,000
+- **Result:** A meaningful increase in their projected lifetime income
 
 ---
 
@@ -213,7 +213,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 
 ### The Capital Wealth Approach
 
-**Retirement Money Map„:** Proprietary planning process starting at age 100, working backward
+**Retirement Money Mapï¿½:** Proprietary planning process starting at age 100, working backward
 **Stress testing:** Planning for market volatility, inflation, healthcare costs
 **Regular reviews:** Quarterly check-ins to adjust for life changes
 
@@ -266,7 +266,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 
 **Estate planning:** Creating liquidity for estate taxes or equalizing inheritances
 **Income replacement:** Protecting surviving spouse's lifestyle
-**Legacy creation:** Leveraging tax-free death benefits for charity or family
+**Legacy creation:** Leveraging generally income-tax-free death benefits for charity or family
 **Long-term care funding:** Some policies include LTC riders
 
 ### Utah-Specific Considerations
@@ -295,7 +295,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 
 ---
 
-## Retirement Money Map„: Your GPS to Financial Freedom
+## Retirement Money Mapï¿½: Your GPS to Financial Freedom
 
 ### What Makes This Planning Different
 
@@ -325,7 +325,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 - Strategic Roth conversions during low-income early retirement years
 - Local healthcare coordination reduced insurance gaps
 
-**Results:** Increased confidence, $67,000 tax savings over retirement, healthcare strategy providing security
+**Results:** Increased confidence, a meaningful reduction in projected lifetime taxes, healthcare strategy providing security
 
 ### Case Study: The Chens - Sugar House Entrepreneurs  
 
@@ -336,7 +336,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 - Utah municipal bonds for ongoing income
 - Charitable giving aligned with local community support
 
-**Results:** Reduced tax impact by 40%, maintained desired lifestyle, supported local charities
+**Results:** Meaningfully reduced their tax impact, maintained desired lifestyle, supported local charities
 
 ---
 
@@ -363,7 +363,7 @@ Most Utah retirees approaching retirement are far more aggressive in their inves
 
 ### Special Offer for Utah Residents
 
-**For the next five callers:** Complimentary Retirement Money Map„ analysisa comprehensive review typically taking 5-10 hours of professional analysis.
+**For the next five callers:** Complimentary Retirement Money Mapï¿½ analysisa comprehensive review.
 
 **What's included:**
 - Complete income and tax planning analysis
