@@ -640,7 +640,7 @@ export default async function handler(req, res) {
                 </ul>
                 <div style="background: #f8f9fb; padding: 20px; border-left: 4px solid #B31942; border-radius: 4px; margin: 24px 0;">
                   <p style="margin: 0 0 12px 0; font-weight: 700; color: #0A3161;">Want these reviewed against your actual numbers?</p>
-                  <p style="margin: 0 0 16px 0; color: #4b5563; font-size: 14px; line-height: 1.55;">30 minutes. No products sold. No homework. We'll pull up your pension, TSP, FEHB, and Social Security numbers and walk through the moves.</p>
+                  <p style="margin: 0 0 16px 0; color: #4b5563; font-size: 14px; line-height: 1.55;">30 minutes. Educational, no high-pressure pitch. No homework. We'll pull up your pension, TSP, FEHB, and Social Security numbers and walk through the moves.</p>
                   <a href="https://www.capitalwealth.com/l/10-things-federal-retirement/#book-review" style="display: inline-block; background: #B31942; color: #fff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 700;">Book my complimentary review →</a>
                 </div>
                 <p style="font-size: 14px; color: #4b5563; margin: 24px 0 0;">Questions? Call <a href="tel:8012102800" style="color: #0A3161; font-weight: 600;">801.210.2800</a> or just reply to this email.</p>
