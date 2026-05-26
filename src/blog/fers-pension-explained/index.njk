@@ -268,21 +268,66 @@ extraSchema: |
 
   <div class="fbgr-wrap">
     <div class="fbgr-replay">
-      <div class="fbgr-replay-video">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/Bd-eW4XrztA?rel=0"
-          title="FERS Pension Explained &mdash; Capital Wealth"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          loading="lazy"></iframe>
+
+      <!-- Light gate: register to watch (captures the viewer into Salesforce) -->
+      <div id="fbgrGate" style="background:#0f2742;border-radius:12px;padding:2.75rem 1.75rem;text-align:center;color:#fff;">
+        <p style="margin:0 0 .5rem;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fdd25e;">Free replay &middot; 92 minutes</p>
+        <h3 style="margin:0 0 .6rem;font-size:1.5rem;line-height:1.25;color:#fff;">Register to watch the full webinar</h3>
+        <p style="margin:0 auto 1.4rem;max-width:34rem;font-size:1rem;line-height:1.55;color:rgba(255,255,255,.78);">Enter your name and email and we&rsquo;ll unlock the replay instantly &mdash; plus email you the link so you can finish it any time.</p>
+        <form id="fbgrGateForm" novalidate style="max-width:420px;margin:0 auto;display:flex;flex-direction:column;gap:.7rem;text-align:left;">
+          <div style="display:flex;gap:.7rem;flex-wrap:wrap;">
+            <input type="text" name="first" placeholder="First name" autocomplete="given-name" required style="flex:1;min-width:120px;padding:.8rem 1rem;border:0;border-radius:8px;font-size:1rem;">
+            <input type="text" name="last" placeholder="Last name" autocomplete="family-name" required style="flex:1;min-width:120px;padding:.8rem 1rem;border:0;border-radius:8px;font-size:1rem;">
+          </div>
+          <input type="email" name="email" placeholder="Email address" autocomplete="email" required style="padding:.8rem 1rem;border:0;border-radius:8px;font-size:1rem;">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;">
+          <button type="submit" style="padding:.9rem 1.6rem;border:0;border-radius:10px;background:#fdd25e;color:#0f2742;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:.03em;cursor:pointer;">Watch the replay &rarr;</button>
+          <p id="fbgrGateMsg" role="status" aria-live="polite" style="margin:.1rem 0 0;font-size:.88rem;color:rgba(255,255,255,.7);"></p>
+        </form>
       </div>
-      <div class="fbgr-replay-actions">
-        <a class="fbgr-btn fbgr-btn-primary" href="/start/">Book a 30-min Call</a>
-        <a class="fbgr-btn fbgr-btn-ghost" href="https://www.youtube.com/watch?v=Bd-eW4XrztA" target="_blank" rel="noopener">Watch on YouTube</a>
-        <p>92 min &middot; chapters &amp; captions baked in</p>
+
+      <!-- Revealed after registering -->
+      <div id="fbgrReplayContent" style="display:none;">
+        <div class="fbgr-replay-video">
+          <iframe
+            data-src="https://www.youtube-nocookie.com/embed/Bd-eW4XrztA?rel=0&amp;autoplay=1"
+            title="FERS Pension Explained &mdash; Capital Wealth"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"></iframe>
+        </div>
+        <div class="fbgr-replay-actions">
+          <a class="fbgr-btn fbgr-btn-primary" href="/start/">Book a 30-min Call</a>
+          <a class="fbgr-btn fbgr-btn-ghost" href="https://www.youtube.com/watch?v=Bd-eW4XrztA" target="_blank" rel="noopener">Watch on YouTube</a>
+          <p>92 min &middot; chapters &amp; captions baked in</p>
+        </div>
       </div>
+
     </div>
   </div>
+  <script>
+  (function(){
+    var gate=document.getElementById('fbgrGate'),content=document.getElementById('fbgrReplayContent');
+    var form=document.getElementById('fbgrGateForm'),msg=document.getElementById('fbgrGateMsg');
+    if(!gate||!content) return;
+    function reveal(){var fr=content.querySelector('iframe');if(fr&&fr.dataset.src&&!fr.src){fr.src=fr.dataset.src;}gate.style.display='none';content.style.display='';}
+    try{if(localStorage.getItem('cw_fers_replay')==='1'){reveal();}}catch(e){}
+    if(form){form.addEventListener('submit',async function(e){
+      e.preventDefault();
+      if(form.website.value)return;
+      var first=form.first.value.trim(),last=form.last.value.trim(),email=form.email.value.trim();
+      if(!first||!email){msg.textContent='Please enter your name and email.';msg.style.color='#ffd1d1';return;}
+      var btn=form.querySelector('button');btn.disabled=true;var orig=btn.textContent;btn.textContent='Unlocking…';
+      try{
+        var r=await fetch('/api/submit-lead',{method:'POST',headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({name:(first+' '+last).trim(),firstName:first,lastName:last,email:email,
+            lead_type:'webinar-replay',lead_source:'Webinar Replay',submitted_from:'/blog/fers-pension-explained/'})});
+        if(r.ok){try{localStorage.setItem('cw_fers_replay','1');}catch(e){}reveal();}
+        else{var j=await r.json().catch(function(){return{};});msg.textContent=(j&&j.error)||'Something went wrong — please try again.';msg.style.color='#ffd1d1';btn.disabled=false;btn.textContent=orig;}
+      }catch(err){msg.textContent='Network error — please try again.';msg.style.color='#ffd1d1';btn.disabled=false;btn.textContent=orig;}
+    });}
+  })();
+  </script>
 
   <section class="fbgr-section">
     <div class="fbgr-wrap">
