@@ -3,6 +3,8 @@ layout: layouts/service-subpage.njk
 title: "FERS Retirement Calculator 2026 — Estimate Your Federal Pension | Capital Wealth"
 description: "Complimentary FERS retirement calculator for federal employees. Estimate your pension using your high-3 salary, years of service, and sick leave credit. Includes 1.1% multiplier and LEO/Fire calculations."
 serviceTag: "federal"
+ogImage: "/assets/images/photos/federal/capitalwealth-federal-calculator-analysis.jpg"
+ogImageAlt: "FERS retirement calculator for federal employees — estimate your federal pension"
 breadcrumbs:
   - { name: "Home", url: "/" }
   - { name: "Services", url: "/services/" }
@@ -556,6 +558,7 @@ faqSchema:
     <div class="ep-sidebar-nav">
       <a href="#overview" class="ep-sidebar-link">Overview</a>
       <a href="#calculator" class="ep-sidebar-link">Calculator</a>
+      <a href="#how-to" class="ep-sidebar-link">How-To</a>
       <a href="#formula" class="ep-sidebar-link">Formula</a>
       <a href="#examples" class="ep-sidebar-link">Examples</a>
       <a href="#supplement" class="ep-sidebar-link">Supplement</a>
@@ -574,6 +577,7 @@ faqSchema:
       <h1 class="ep-hero-title">FERS Retirement Calculator <span class="ep-hero-title-italic" style="display:block;">Estimate Your Federal Pension.</span></h1>
       <p class="ep-hero-body">Use our FERS calculator to estimate your federal pension based on years of service, high-3 salary, sick leave, and retirement age. Whether you're 5 years out or 5 months away, understanding your FERS annuity is the first step to a confident <a href="/services/federal-benefits/fers-retirement/" style="color: var(--secondary); text-decoration: underline;">federal retirement</a>.</p>
       <a href="#calculator" class="ep-btn-primary">Calculate My FERS</a>
+      <p style="font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--on-surface-variant); margin-top: 1.25rem;">Reviewed &amp; updated for 2026 &middot; reflects current OPM rules and 2026 GS pay tables</p>
     </div>
     <div class="ep-hero-image-wrap">
       <img src="/assets/images/photos/federal/capitalwealth-federal-state-capitol.jpg"
@@ -641,8 +645,33 @@ faqSchema:
           <div style="font-size: 1.2rem;" id="monthly-amount">$0 per month</div>
           <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;" id="supplement-note"></div>
         </div>
+        <div style="margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.25);">
+          <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.92; margin: 0 0 1rem;">This is an estimate. Want a federal specialist to check your actual numbers? In a complimentary <strong>Federal Benefit Comparison</strong> we review your real documents &mdash; your LES, TSP statement, and SF-50 &mdash; against this estimate and walk you through the gaps, with no obligation.</p>
+          <a href="/start/" style="display: inline-block; background: var(--secondary); color: var(--primary); padding: 0.85rem 1.75rem; border-radius: 8px; font-family: var(--font-body); font-weight: 700; font-size: 0.95rem; text-decoration: none;">Request your free Federal Benefit Comparison</a>
+        </div>
       </div>
     </form>
+  </div>
+</section>
+
+{# ═══════════════════════════════════════════════════════════
+   2-HOWTO — Featured-snippet target: how to calculate FERS in 4 steps
+   ═══════════════════════════════════════════════════════════ #}
+<section id="how-to" style="padding: 4rem 2rem; background: var(--surface-container-low);">
+  <div style="max-width: 760px; margin: 0 auto;">
+    <span class="ep-chapter-label" style="display: block; margin-bottom: 1rem;">Quick Answer</span>
+    <h2 style="font-family: var(--font-serif-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 400; color: var(--primary); margin-bottom: 1.5rem; line-height: 1.15;">How to Calculate Your FERS Pension in 4 Steps</h2>
+    <p style="font-family: var(--font-body); font-size: 1.05rem; line-height: 1.75; color: var(--on-surface); margin-bottom: 1.5rem;">Your FERS annuity follows one formula set by the Office of Personnel Management (OPM): <strong>High-3 Average Salary &times; Years of Creditable Service &times; Multiplier</strong>. Here is how to work it out.</p>
+    <ol style="font-family: var(--font-body); font-size: 1.05rem; line-height: 1.8; color: var(--on-surface); margin: 0 0 1.5rem 1.5rem; padding-left: 0.5rem;">
+      <li style="margin-bottom: 0.75rem;"><strong>Find your high-3 average salary.</strong> Average your highest 36 consecutive months of basic pay (base salary plus locality &mdash; not overtime or bonuses).</li>
+      <li style="margin-bottom: 0.75rem;"><strong>Total your creditable service.</strong> Add your FERS-covered years, unused sick leave (2,087 hours = 1 year of credit), and any military service you have bought back.</li>
+      <li style="margin-bottom: 0.75rem;"><strong>Determine your multiplier.</strong> Use 1.0% &mdash; or 1.1% if you retire at age 62 or later with at least 20 years of service. Law enforcement officers, firefighters, and air traffic controllers use 1.7% for their first 20 years.</li>
+      <li style="margin-bottom: 0.75rem;"><strong>Multiply the three together.</strong> High-3 &times; Years &times; Multiplier = your estimated annual FERS pension. Divide by 12 for the monthly amount.</li>
+    </ol>
+    <div style="background: var(--background); padding: 1.5rem 1.75rem; border-radius: 12px; border-left: 4px solid var(--secondary); margin-bottom: 1.25rem;">
+      <p style="font-family: var(--font-body); font-size: 1rem; line-height: 1.7; color: var(--on-surface); margin: 0;"><strong>Example:</strong> a $100,000 high-3 with 25 years of service at the 1.1% multiplier works out to $100,000 &times; 25 &times; 1.1% = <strong>$27,500 per year ($2,292 per month)</strong>. Enter your own numbers in the <a href="#calculator" style="color: var(--secondary); text-decoration: underline;">calculator above</a> to see your estimate.</p>
+    </div>
+    <p style="font-family: var(--font-body); font-size: 0.85rem; line-height: 1.6; color: var(--on-surface-variant); margin: 0;">Estimates are for educational purposes only and are not a guarantee of your actual benefit. Your official figures come from OPM and your agency.</p>
   </div>
 </section>
 
@@ -918,6 +947,10 @@ faqSchema:
         <strong style="color: var(--primary); font-size: 1rem; display: block; margin-bottom: 0.5rem;">Federal Retirement Checklist</strong>
         <span style="color: var(--on-surface-variant); font-size: 0.9rem; line-height: 1.5;">Step-by-step guide to everything you need before, during, and after retirement.</span>
       </a>
+      <a href="/blog/fers-pension-explained/" style="display: block; padding: 1.5rem; background: var(--surface-container-low); border-radius: 12px; text-decoration: none; border-left: 4px solid var(--secondary); transition: transform 0.2s ease;">
+        <strong style="color: var(--primary); font-size: 1rem; display: block; margin-bottom: 0.5rem;">Watch: FERS Pension Explained (Webinar)</strong>
+        <span style="color: var(--on-surface-variant); font-size: 0.9rem; line-height: 1.5;">See the formula walked through on video, with the most common federal retirement questions answered live.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -1098,5 +1131,40 @@ document.querySelectorAll('.ep-faq-item').forEach(function(item) {
     "price": "0",
     "priceCurrency": "USD"
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Calculate Your FERS Pension",
+  "description": "Estimate your FERS annuity in four steps using your high-3 average salary, years of creditable service, and the OPM multiplier.",
+  "totalTime": "PT5M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Find your high-3 average salary",
+      "text": "Average your highest 36 consecutive months of basic pay (base salary plus locality, not overtime or bonuses)."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Total your creditable service",
+      "text": "Add your FERS-covered years, unused sick leave (2,087 hours equals one year of credit), and any military service you have bought back."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Determine your multiplier",
+      "text": "Use 1.0%, or 1.1% if you retire at age 62 or later with at least 20 years of service. Law enforcement officers, firefighters, and air traffic controllers use 1.7% for their first 20 years."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Multiply the three together",
+      "text": "High-3 multiplied by years of service multiplied by your multiplier equals your estimated annual FERS pension. Divide by 12 for the monthly amount."
+    }
+  ]
 }
 </script>
