@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Capital Wealth — Your early-out offer, decoded.</title>
+<script src="../deck-stage.js"></script>
+<link rel="stylesheet" href="../slides.css?v=3" />
+<style>
+  /* Local refinements specific to the VERA/VSIP/RIF deck */
+
+  /* Three-column "moment" intro layout */
+  .moment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 8px;
+  }
+  .moment-col {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--fed-red);
+    padding: 30px 30px 28px;
+  }
+  .moment-col .lb {
+    font-family: var(--sans);
+    font-size: 14px; font-weight: 700;
+    letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--fed-red);
+    margin: 0 0 12px;
+  }
+  .moment-col h3 {
+    font-family: var(--serif);
+    font-weight: 500; font-size: 36px;
+    color: var(--fed-blue);
+    line-height: 1.15;
+    margin: 0 0 14px;
+  }
+  .moment-col p {
+    font-family: var(--sans);
+    font-size: 22px; line-height: 1.5;
+    color: var(--grey-2);
+    margin: 0;
+  }
+
+  /* "Two-column eligibility" — stats on left, bullets on right */
+  .elig-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: start;
+    margin-top: 8px;
+  }
+  .elig-grid .elig-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+  .elig-grid .elig-bullets {
+    padding-top: 4px;
+  }
+
+  /* Decision matrix table — wider columns, more breathing */
+  table.t.matrix tbody th {
+    width: 28%;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--fed-blue);
+    line-height: 1.25;
+  }
+  table.t.matrix tbody td {
+    font-size: 22px;
+    line-height: 1.45;
+    color: var(--grey-2);
+  }
+  table.t.matrix tbody td.accent {
+    color: var(--fed-blue);
+    font-weight: 600;
+  }
+
+  /* Worked-example table — light, friendly */
+  table.t.worked tbody th {
+    width: 30%;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--fed-blue);
+  }
+  table.t.worked tbody td {
+    font-family: var(--sans);
+    font-size: 22px;
+    color: var(--grey-2);
+  }
+  table.t.worked tbody td.result {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--fed-red);
+    text-align: right;
+    letter-spacing: -0.01em;
+  }
+
+  /* Six-questions list */
+  .qs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 44px;
+    margin: 4px 0 0;
+    counter-reset: qs;
+  }
+  .qs-item {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 18px;
+    align-items: baseline;
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+  }
+  .qs-item:nth-child(1), .qs-item:nth-child(2) { border-top: 0; }
+  .qs-item .qn {
+    font-family: var(--serif);
+    font-style: italic; font-weight: 400;
+    font-size: 38px;
+    color: var(--fed-red);
+    line-height: 1;
+  }
+  .qs-item .qt {
+    font-family: var(--sans);
+    font-size: 24px;
+    line-height: 1.45;
+    color: var(--fed-blue);
+    font-weight: 500;
+  }
+  .qs-item .qt b { color: var(--fed-red); font-weight: 700; }
+
+  /* Upcoming webinars — 4 cards with date pills */
+  .sched-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+  }
+  .sched-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--gold);
+    padding: 26px 26px 24px;
+    display: flex; flex-direction: column;
+  }
+  .sched-card .date {
+    font-family: var(--sans);
+    font-size: 14px; font-weight: 700;
+    letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--fed-red);
+    margin: 0 0 12px;
+    display: inline-flex; align-items: center; gap: 12px;
+  }
+  .sched-card .date::before {
+    content: ""; width: 24px; height: 2px; background: var(--fed-red);
+  }
+  .sched-card .h {
+    font-family: var(--serif);
+    font-weight: 500; font-size: 30px;
+    color: var(--fed-blue);
+    line-height: 1.15;
+    margin: 0 0 14px;
+  }
+  .sched-card .t {
+    font-family: var(--sans);
+    font-size: 20px; line-height: 1.5;
+    color: var(--grey-2);
+    margin: 0;
+  }
+
+  /* Disclosures slide */
+  section.slide.disclosures {
+    background: var(--fed-blue);
+    color: rgba(255,255,255,0.88);
+    padding: 110px 130px 100px;
+  }
+  .disclosures .top-stripe {
+    position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg,
+      var(--fed-red)  0%, var(--fed-red)  20%,
+      #fff            20%, #fff            40%,
+      var(--fed-red)  40%, var(--fed-red)  60%,
+      #fff            60%, #fff            80%,
+      var(--fed-red)  80%, var(--fed-red) 100%);
+  }
+  .disclosures .eyebrow {
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+  .disclosures .eyebrow::before { background: var(--gold); }
+  .disclosures h1 {
+    font-family: var(--serif); font-weight: 300;
+    font-size: 86px; line-height: 1.0;
+    color: var(--gold);
+    letter-spacing: -0.02em;
+    margin: 0 0 48px;
+  }
+  .disclosures .disc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px 64px;
+  }
+  .disclosures .disc {
+    font-family: var(--sans);
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.84);
+  }
+  .disclosures .disc.full { grid-column: 1 / -1; }
+  .disclosures .disc .lb {
+    display: block;
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 10px;
+  }
+  .disclosures .fbar-gold {
+    position: absolute; left: 130px; right: 130px; bottom: 60px;
+    height: 1px; background: rgba(200,164,86,0.45);
+  }
+  .disclosures .disc-foot {
+    position: absolute; bottom: 28px; left: 130px; right: 130px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--sans);
+    font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+  }
+  .disclosures .disc-foot .br { display: flex; align-items: center; gap: 12px; font-weight: 600; }
+  .disclosures .disc-foot .br::before { content: "★"; color: var(--fed-red); font-size: 12px; }
+  .disclosures .disc-foot .pg { color: var(--gold); font-weight: 700; }
+
+  /* Section divider — 4-item progress strip with one "now" */
+  /* The base .sec-bar is laid out for 5 — for this 4-part deck we narrow gaps slightly */
+  .divider.parts4 .sec-bar { gap: 16px; }
+  .divider.parts4 .sec-bar .item { font-size: 15px; }
+
+  /* Make-stack: numbered cards used on slides 11/20 */
+  .stacked-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .stacked-cards.four { grid-template-columns: repeat(4, 1fr); }
+
+  /* Two-stat tile row for "VERA who qualifies" — bigger, two only */
+  .stat-row.two { grid-template-columns: 1fr 1fr; }
+  .stat-row.two .stat .v { font-size: 120px; }
+
+  /* ============================================================
+     LOGO MARK — bottom-left of every slide
+     Content slides: swap .fmeta .br breadcrumb text for the
+     horizontal color logo. The gold hairline is shortened so it
+     starts *after* the logo (no overlap).
+     Cover / dividers / closing / disclosures: an absolute
+     .slide-logo element (white variant) is placed manually.
+     ============================================================ */
+  .fmeta .br {
+    font-size: 0 !important;
+    letter-spacing: 0 !important;
+    background: url('../assets/logo-horizontal-color.png') no-repeat left center;
+    background-size: contain;
+    width: 220px;
+    height: 40px;
+    color: transparent;
+  }
+  .fmeta .br::before { display: none !important; }
+  /* Lift the footer band so the logo doesn't crash into the hairline */
+  .fmeta { bottom: 36px; }
+  /* Shorten the gold hairline — start it AFTER the logo */
+  .fbar { left: 340px; bottom: 92px; }
+
+  /* Absolute logo placement for non-fmeta slides */
+  .slide-logo {
+    position: absolute;
+    bottom: 60px;
+    left: 92px;
+    height: 40px;
+    width: auto;
+    z-index: 5;
+  }
+  .cover .slide-logo { bottom: 90px; left: 130px; height: 46px; }
+  .closing .slide-logo { bottom: 70px; left: 140px; height: 44px; }
+  .disclosures .slide-logo { bottom: 28px; left: 130px; height: 36px; }
+  .divider .slide-logo { bottom: 60px; left: 140px; height: 40px; }
+
+  /* ============================================================
+     READABILITY BUMPS — webinar audience reads from laptops/projectors
+     Bigger eyebrows, body, and card type across the deck.
+     ============================================================ */
+  .eyebrow { font-size: 22px; letter-spacing: 0.22em; margin-bottom: 22px; }
+  .body-text { font-size: 32px; line-height: 1.5; }
+  .lede { font-size: 42px; }
+  .callout { font-size: 34px; line-height: 1.42; padding: 30px 36px; }
+  .callout-light .tx { font-size: 28px; line-height: 1.5; }
+  .callout-light .lb { font-size: 18px; }
+
+  /* Moment cards (slide 02) */
+  .moment-col { padding: 34px 32px 32px; }
+  .moment-col .lb { font-size: 17px; margin-bottom: 14px; letter-spacing: 0.22em; }
+  .moment-col h3 { font-size: 42px; margin-bottom: 16px; }
+  .moment-col p { font-size: 26px; line-height: 1.5; }
+
+  /* Card body text & headline (slides 03, 07, 11, 13, 14, 20, 21) */
+  .card .h { font-size: 34px; }
+  .card .num { font-size: 32px; }
+  .card .t { font-size: 24px; line-height: 1.5; }
+
+  /* Bulleted lists */
+  ul.bullets li { font-size: 30px; line-height: 1.5; }
+  .card li { font-size: 23px; }
+
+  /* Six-questions list */
+  .qs-item .qt { font-size: 28px; line-height: 1.45; }
+  .qs-item .qn { font-size: 42px; }
+
+  /* Upcoming-webinar cards */
+  .sched-card .h { font-size: 32px; }
+  .sched-card .t { font-size: 23px; line-height: 1.5; }
+  .sched-card .date { font-size: 16px; }
+
+  /* Decision matrix */
+  table.t.matrix tbody th { font-size: 28px; }
+  table.t.matrix tbody td { font-size: 24px; }
+
+  /* Worked example */
+  table.t.worked tbody th { font-size: 26px; }
+  table.t.worked tbody td { font-size: 24px; }
+  table.t.worked tbody td.result { font-size: 32px; }
+
+  /* Disclosures */
+  .disclosures .disc { font-size: 22px; line-height: 1.6; }
+  .disclosures .disc .lb { font-size: 14px; }
+
+  /* Cover badge tweak — LIVE WEBINAR pill */
+  .cover .live-pill {
+    align-self: flex-start;
+    display: inline-flex; align-items: center;
+    gap: 14px;
+    padding: 12px 22px 12px 18px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(200,164,86,0.45);
+    font-family: var(--sans);
+    font-size: 14px; font-weight: 700;
+    letter-spacing: 0.3em; text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 36px;
+  }
+  .cover .live-pill .live-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--fed-red);
+    box-shadow: 0 0 0 4px rgba(179,25,66,0.22);
+  }
+</style>
+</head>
+<body>
+<deck-stage width="1920" height="1080">
+
+<!-- ============================================================
+     01 · COVER
+     ============================================================ -->
+<section class="slide cover" data-label="01 Cover">
+  <div class="bg"></div>
+  <div class="wash"></div>
+  <div class="top-stripe"></div>
+  <div class="inner cover-split">
+    <div class="cover-left">
+      <div class="top">
+        <div class="logo-mark">
+          <img src="../assets/logo-horizontal-white.png" alt="Capital Wealth" />
+        </div>
+      </div>
+      <div class="cover-body">
+        <div class="cover-kicker"><span class="dash"></span>A Capital Wealth Federal Webinar</div>
+        <h1>Your early-out offer,<br/><em>decoded.</em></h1>
+        <p class="deck">VERA, VSIP &amp; RIF — what an early-retirement, buyout, or reduction-in-force offer really means for your pension, your benefits, and your next move.</p>
+        <div class="live-pill"><span class="live-dot"></span>Live Webinar · May 28, 2026</div>
+      </div>
+      <div class="cover-foot">
+        <img class="cover-logo" src="../assets/logo-horizontal-white.png" alt="Capital Wealth" style="height: 44px; width: auto; display: block;" />
+      </div>
+    </div>
+    <div class="cover-right">
+      <div class="cover-portrait"></div>
+      <div class="cover-caption">
+        <span class="cap-nm">Ann Werts</span>
+        <span class="cap-role">Federal Benefits Specialist · 25+ Years</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     02 · THE MOMENT
+     ============================================================ -->
+<section class="slide" data-label="02 The Moment">
+  <div class="hbar"><span class="l">Opening</span><span class="r">Webinar · <b>01</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">Why we're here tonight</div>
+    <h1 class="headline">The offer packet is <em>not</em> the paycheck.</h1>
+    <p class="body-text" style="max-width: 78ch;">Early-out and reduction-in-force offers are landing across federal agencies — often with a short window to decide. The number on the page rarely tells the whole story.</p>
+  </div>
+  <div class="moment-grid">
+    <div class="moment-col">
+      <div class="lb">The pressure</div>
+      <h3>Tight deadlines.</h3>
+      <p>Many offers carry a tight deadline — sometimes days. The decision is usually irreversible.</p>
+    </div>
+    <div class="moment-col">
+      <div class="lb">The confusion</div>
+      <h3>Choices that cancel each other.</h3>
+      <p>VERA, VSIP, and severance interact in ways that surprise people. One choice can cancel out another.</p>
+    </div>
+    <div class="moment-col">
+      <div class="lb">Tonight's goal</div>
+      <h3>Decide calmly, not guess.</h3>
+      <p>Leave knowing your options — so if an offer comes, you can evaluate it calmly instead of guessing.</p>
+    </div>
+  </div>
+  <div class="callout" style="margin-top: 32px;">This is an <b>educational session</b> — no products, no pitch. The goal is simply that you <b>know your options</b> before you have to choose.</div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">Capital Wealth · Federal Benefits Group</span><span class="pg">02</span></div>
+</section>
+
+<!-- ============================================================
+     03 · THREE LETTERS — VERA / VSIP / RIF
+     ============================================================ -->
+<section class="slide" data-label="03 Three Letters">
+  <div class="hbar"><span class="l">The vocabulary</span><span class="r">Webinar · <b>02</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">The vocabulary of a downsizing</div>
+    <h1 class="headline">Three letters, <em>three</em> very different things.</h1>
+  </div>
+  <div class="cards three">
+    <div class="card fed">
+      <div class="num">VERA</div>
+      <div class="h">Voluntary Early Retirement</div>
+      <p class="t">An agency-authorized chance to retire earlier than normal eligibility — and collect your pension now, with <b>no age reduction</b>.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">VSIP</div>
+      <div class="h">Voluntary Separation Incentive</div>
+      <p class="t">A lump-sum <b>buyout</b> — cash to leave voluntarily. Often paired with VERA during a downsizing.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">RIF</div>
+      <div class="h">Reduction in Force</div>
+      <p class="t">An <b>involuntary</b> separation when positions are cut. May come with severance pay if you are not yet retirement-eligible.</p>
+    </div>
+  </div>
+  <div class="callout-light" style="margin-top: 28px;">
+    <div class="lb">One more you may hear</div>
+    <p class="tx"><b>DRP — Deferred Resignation Program.</b> A separate "resign now, stay on the rolls for a period" offer. Same rule: read exactly what it does to your pay status, benefits, and retirement eligibility before you sign.</p>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">The vocabulary · VERA · VSIP · RIF</span><span class="pg">03</span></div>
+</section>
+
+<!-- ============================================================
+     04 · AGENDA
+     ============================================================ -->
+<section class="slide" data-label="04 Agenda">
+  <div class="hbar"><span class="l">Agenda</span><span class="r">Four parts · One hour</span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block tight">
+    <div class="eyebrow">What we'll cover tonight</div>
+    <h1 class="headline">From the three letters to <em>your</em> decision.</h1>
+  </div>
+  <div class="agenda" style="grid-template-columns: repeat(4, 1fr);">
+    <div class="col">
+      <div class="num">I</div>
+      <div class="ti">VERA</div>
+      <ul>
+        <li>Who qualifies</li>
+        <li>No age reduction</li>
+        <li>Supplement timing</li>
+        <li>FEHB &amp; FEGLI for life</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="num">II</div>
+      <div class="ti">VSIP</div>
+      <ul>
+        <li>How much, and when</li>
+        <li>How it is taxed</li>
+        <li>The 5-year repay rule</li>
+        <li>Pairing with VERA</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="num">III</div>
+      <div class="ti">RIF &amp; Severance</div>
+      <ul>
+        <li>How a RIF works</li>
+        <li>Who gets severance</li>
+        <li>The severance formula</li>
+        <li>A worked example</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="num">IV</div>
+      <div class="ti">Your Decision</div>
+      <ul>
+        <li>A simple matrix</li>
+        <li>Questions to ask</li>
+        <li>Common mistakes</li>
+        <li>How to run your numbers</li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">Agenda</span><span class="pg">04</span></div>
+</section>
+
+<!-- ============================================================
+     05 · DIVIDER · Part I — VERA
+     ============================================================ -->
+<section class="slide divider parts4" data-label="05 Part I VERA">
+  <div class="bg" style="background-image: url('../assets/lifestyle-hiking-sunset.jpg');"></div>
+  <div class="wash"></div>
+  <div class="stripes"></div>
+  <div class="inner">
+    <div class="sec-num">Part I</div>
+    <h1>VERA — retire <em>early,</em><br/>without the penalty.</h1>
+    <p class="sec-deck">Voluntary Early Retirement Authority lets an agency lower the eligibility bar during a downsizing — so you can start your pension years sooner.</p>
+    <div class="sec-bar">
+      <div class="item now">I · VERA</div>
+      <div class="item">II · VSIP</div>
+      <div class="item">III · RIF &amp; Severance</div>
+      <div class="item">IV · Your Decision</div>
+    </div>
+  </div>
+  <img class="slide-logo" src="../assets/logo-horizontal-white.png" alt="Capital Wealth" />
+</section>
+
+<!-- ============================================================
+     06 · VERA — WHO QUALIFIES
+     ============================================================ -->
+<section class="slide" data-label="06 VERA Who Qualifies">
+  <div class="hbar"><span class="l">Part I · VERA</span><span class="r">VERA · <b>01 / 03</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">Two paths to early eligibility</div>
+    <h1 class="headline">Age 50 with 20 — or <em>any age</em> with 25.</h1>
+  </div>
+  <div class="elig-grid">
+    <div class="elig-stats">
+      <div class="stat">
+        <div class="lb">Path 1</div>
+        <div class="v">50 <span style="font-size: 0.5em; color: var(--grey-2);">/</span> 20</div>
+        <div class="sub">Age 50 + 20 years of service</div>
+      </div>
+      <div class="stat">
+        <div class="lb">Path 2</div>
+        <div class="v red">25</div>
+        <div class="sub">Any age + 25 years of service</div>
+      </div>
+    </div>
+    <div class="elig-bullets">
+      <div class="label blue">It is the agency's offer, not yours</div>
+      <ul class="bullets" style="margin-top: 12px;">
+        <li>Your agency must be <b>authorized by OPM</b> to offer VERA — usually during a reorg, downsizing, or RIF</li>
+        <li>It is offered in a <b>defined window</b> to a defined group — not a benefit you can request on your own</li>
+        <li>You still need the <b>service time</b> above on the agency's chosen date</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout-light" style="margin-top: 28px;">
+    <div class="lb">Why it matters</div>
+    <p class="tx">VERA is the only common way to start an <b>unreduced FERS pension</b> well before your Minimum Retirement Age — which is what makes an early-out worth a serious look.</p>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">VERA · Eligibility</span><span class="pg">06</span></div>
+</section>
+
+<!-- ============================================================
+     07 · VERA — PENSION & BENEFITS
+     ============================================================ -->
+<section class="slide" data-label="07 VERA Pension and Benefits">
+  <div class="hbar"><span class="l">Part I · VERA</span><span class="r">VERA · <b>02 / 03</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">What VERA does — and does not — change</div>
+    <h1 class="headline">No age reduction. <em>One</em> timing catch.</h1>
+  </div>
+  <div class="cards three">
+    <div class="card fed">
+      <div class="num">Pension</div>
+      <div class="h">Computed normally.</div>
+      <p class="t">Your FERS annuity uses the standard formula — <b>years × 1.0% × High-3</b>. There is no early-retirement reduction like MRA+10.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">Supplement</div>
+      <div class="h">Waits until your MRA.</div>
+      <p class="t">The FERS Supplement is payable — but generally <b>not until you reach your Minimum Retirement Age</b>, not your VERA date. Plan for that gap.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">Insurance</div>
+      <div class="h">FEHB &amp; FEGLI for life.</div>
+      <p class="t">If you were enrolled for the <b>5 years before retiring</b>, you can generally carry FEHB and FEGLI into retirement — a major reason VERA is valuable.</p>
+    </div>
+  </div>
+  <div class="callout" style="margin-top: 32px;">For most people, keeping <b>lifetime health coverage</b> is worth more than the pension dollars themselves. Confirm your <b>5-year enrollment</b> before you commit.</div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">VERA · Pension &amp; benefits</span><span class="pg">07</span></div>
+</section>
+
+<!-- ============================================================
+     08 · VERA — REALITY CHECK
+     ============================================================ -->
+<section class="slide" data-label="08 VERA Reality Check">
+  <div class="hbar"><span class="l">Part I · VERA</span><span class="r">VERA · <b>03 / 03</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">An honest look</div>
+    <h1 class="headline">A great <em>supplement</em> — not always a full paycheck.</h1>
+    <p class="body-text" style="max-width: 78ch;">Retiring at 50 or 52 means a smaller pension than retiring at 60 — fewer years in the formula, and the Supplement not yet flowing. For many, the math works because they keep working in a second career while the pension and health coverage run underneath.</p>
+  </div>
+  <div class="row-2">
+    <div>
+      <div class="label blue">What you keep — for life</div>
+      <ul class="bullets" style="margin-top: 10px;">
+        <li>A pension that pays <b>for life</b>, with annual cost-of-living adjustments</li>
+        <li><b>Federal health insurance</b> you can carry into retirement</li>
+        <li>The freedom to take another job <b>without losing the pension</b></li>
+      </ul>
+    </div>
+    <div>
+      <div class="label">What to plan around</div>
+      <ul class="bullets" style="margin-top: 10px;">
+        <li>A <b>smaller pension</b> than waiting would produce</li>
+        <li>A <b>gap</b> before the FERS Supplement begins at your MRA</li>
+        <li>Replacing income until Social Security and the Supplement arrive</li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">VERA · Reality check</span><span class="pg">08</span></div>
+</section>
+
+<!-- ============================================================
+     09 · DIVIDER · Part II — VSIP
+     ============================================================ -->
+<section class="slide divider parts4" data-label="09 Part II VSIP">
+  <div class="bg" style="background-image: url('../assets/lifestyle-legacy.jpg');"></div>
+  <div class="wash"></div>
+  <div class="stripes"></div>
+  <div class="inner">
+    <div class="sec-num">Part II</div>
+    <h1>VSIP — the<br/><em>buyout</em> on the table.</h1>
+    <p class="sec-deck">A Voluntary Separation Incentive Payment is a lump sum to leave on your own. Useful — but it is taxed, capped, and comes with strings.</p>
+    <div class="sec-bar">
+      <div class="item">I · VERA</div>
+      <div class="item now">II · VSIP</div>
+      <div class="item">III · RIF &amp; Severance</div>
+      <div class="item">IV · Your Decision</div>
+    </div>
+  </div>
+  <img class="slide-logo" src="../assets/logo-horizontal-white.png" alt="Capital Wealth" />
+</section>
+
+<!-- ============================================================
+     10 · VSIP — THE BASICS
+     ============================================================ -->
+<section class="slide" data-label="10 VSIP Basics">
+  <div class="hbar"><span class="l">Part II · VSIP</span><span class="r">VSIP · <b>01 / 02</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">How much, and the strings attached</div>
+    <h1 class="headline">Up to <em>$25,000</em> — or $40,000 at Defense.</h1>
+  </div>
+  <div class="elig-grid">
+    <div class="elig-stats">
+      <div class="stat">
+        <div class="lb">Most agencies</div>
+        <div class="v">$25K</div>
+        <div class="sub">Typical statutory maximum payment</div>
+      </div>
+      <div class="stat">
+        <div class="lb">Dept. of Defense</div>
+        <div class="v red">$40K</div>
+        <div class="sub">Higher cap authorized for DOD</div>
+      </div>
+    </div>
+    <div class="elig-bullets">
+      <div class="label">The strings</div>
+      <ul class="bullets" style="margin-top: 12px;">
+        <li>Paid as a <b>lump sum</b> — and taxed as <b>ordinary income</b></li>
+        <li>If you <b>return to federal service within 5 years</b>, you generally must <b>repay it in full</b></li>
+        <li>It does <b>not</b> increase your High-3 or your pension</li>
+        <li>Offered in a <b>limited window</b>, like VERA</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout-light" style="margin-top: 26px;">
+    <div class="lb">Note</div>
+    <p class="tx">Your agency may offer <b>less than the maximum</b> — the cap is a ceiling, not a promise.</p>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">VSIP · The basics</span><span class="pg">10</span></div>
+</section>
+
+<!-- ============================================================
+     11 · VSIP — THE FINE PRINT
+     ============================================================ -->
+<section class="slide" data-label="11 VSIP Fine Print">
+  <div class="hbar"><span class="l">Part II · VSIP</span><span class="r">VSIP · <b>02 / 02</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">The part the packet skips</div>
+    <h1 class="headline">$25,000 is not <em>$25,000</em> in your pocket.</h1>
+  </div>
+  <div class="cards three">
+    <div class="card fed">
+      <div class="num">01</div>
+      <div class="h">The tax bite is real.</div>
+      <p class="t">A lump sum lands in <b>one tax year</b> and can push you into a higher bracket. What you keep may be noticeably less than the headline number.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">02</div>
+      <div class="h">It can stack with VERA.</div>
+      <p class="t">When an agency offers both, you may take <b>VERA and VSIP together</b> — the early pension plus the cash. Often the strongest version of an early-out.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">03</div>
+      <div class="h">It is not severance.</div>
+      <p class="t">VSIP is a <b>voluntary incentive</b>. Severance pay is a separate involuntary benefit — and you generally cannot collect both for the same separation.</p>
+    </div>
+  </div>
+  <div class="callout-light" style="margin-top: 32px;">
+    <div class="lb">The question to ask</div>
+    <p class="tx">"After taxes, is the buyout worth more to me than what I would receive another way?" Run the <b>after-tax number</b>, not the headline number.</p>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">VSIP · Fine print</span><span class="pg">11</span></div>
+</section>
+
+<!-- ============================================================
+     12 · DIVIDER · Part III — RIF & Severance
+     ============================================================ -->
+<section class="slide divider parts4" data-label="12 Part III RIF">
+  <div class="bg" style="background-image: url('../assets/hero-wildflowers.jpg');"></div>
+  <div class="wash"></div>
+  <div class="stripes"></div>
+  <div class="inner">
+    <div class="sec-num">Part III</div>
+    <h1>RIF &amp; severance —<br/>the <em>involuntary</em> path.</h1>
+    <p class="sec-deck">If the choice is made for you, the rules change. A Reduction in Force has its own order of who stays — and severance pay for those who are not yet retirement-eligible.</p>
+    <div class="sec-bar">
+      <div class="item">I · VERA</div>
+      <div class="item">II · VSIP</div>
+      <div class="item now">III · RIF &amp; Severance</div>
+      <div class="item">IV · Your Decision</div>
+    </div>
+  </div>
+  <img class="slide-logo" src="../assets/logo-horizontal-white.png" alt="Capital Wealth" />
+</section>
+
+<!-- ============================================================
+     13 · WHAT A RIF ACTUALLY IS
+     ============================================================ -->
+<section class="slide" data-label="13 What a RIF Is">
+  <div class="hbar"><span class="l">Part III · RIF &amp; Severance</span><span class="r">RIF · <b>01 / 04</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">How the order is decided</div>
+    <h1 class="headline">A RIF follows <em>rules,</em> not just headcount.</h1>
+    <p class="body-text" style="max-width: 78ch;">When positions are eliminated, who stays is set by a <b>retention order</b> — not by a manager's preference. Four factors decide your place on the list.</p>
+  </div>
+  <div class="cards four">
+    <div class="card fed">
+      <div class="num">01</div>
+      <div class="h">Tenure</div>
+      <p class="t">Permanent/career employees rank above term and probationary.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">02</div>
+      <div class="h">Veterans' Preference</div>
+      <p class="t">Eligible veterans receive added retention standing.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">03</div>
+      <div class="h">Length of Service</div>
+      <p class="t">Creditable service — including credited military time — improves standing.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">04</div>
+      <div class="h">Performance</div>
+      <p class="t">Recent performance ratings can add service credit toward retention.</p>
+    </div>
+  </div>
+  <div class="callout-light" style="margin-top: 28px;">
+    <div class="lb">Know your rights</div>
+    <p class="tx">A RIF usually comes with a <b>written notice (often 60 days)</b> and may grant <b>"bump and retreat" rights</b> to move into a position held by someone with lower standing. Read the notice carefully — the clock starts when it arrives.</p>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">RIF · The retention order</span><span class="pg">13</span></div>
+</section>
+
+<!-- ============================================================
+     14 · SEVERANCE — WHO QUALIFIES
+     ============================================================ -->
+<section class="slide" data-label="14 Severance Who Qualifies">
+  <div class="hbar"><span class="l">Part III · RIF &amp; Severance</span><span class="r">RIF · <b>02 / 04</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">Four conditions — all must be true</div>
+    <h1 class="headline">Severance is for those <em>not</em> yet retirement-eligible.</h1>
+  </div>
+  <div class="cards four">
+    <div class="card fed">
+      <div class="num">01</div>
+      <div class="h">Involuntary</div>
+      <p class="t">RIF, abolished position, or removal not for cause.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">02</div>
+      <div class="h">12+ months</div>
+      <p class="t">At least 12 months of continuous federal service.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">03</div>
+      <div class="h">Not retirement-eligible</div>
+      <p class="t">Not eligible for an immediate annuity — including VERA.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">04</div>
+      <div class="h">No declined offer</div>
+      <p class="t">Did not turn down a reasonable offer in the same commuting area.</p>
+    </div>
+  </div>
+  <div class="callout" style="margin-top: 36px;">The pivotal rule: <b>if you qualify for an immediate pension — including VERA — you generally do not get severance.</b> You take the pension instead. That is usually the better deal, but it changes the whole comparison.</div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">RIF · Severance eligibility</span><span class="pg">14</span></div>
+</section>
+
+<!-- ============================================================
+     15 · SEVERANCE — THE FORMULA
+     ============================================================ -->
+<section class="slide" data-label="15 Severance Formula">
+  <div class="hbar"><span class="l">Part III · RIF &amp; Severance</span><span class="r">RIF · <b>03 / 04</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">How severance pay is built</div>
+    <h1 class="headline">Weeks of pay — <em>boosted</em> after age 40.</h1>
+  </div>
+  <div class="row-2">
+    <div>
+      <div class="label blue">Basic severance allowance</div>
+      <ul class="bullets" style="margin-top: 10px;">
+        <li><b>1 week</b> of pay for each of the first <b>10 years</b></li>
+        <li><b>2 weeks</b> of pay for each year <b>beyond 10</b></li>
+        <li>Partial years add <b>25% per full quarter</b></li>
+      </ul>
+      <div class="formula" style="margin-top: 24px; padding: 24px 28px;">
+        <span><span class="term" style="font-size: 42px;">Weekly pay</span><span class="lb">how it's set</span></span>
+        <span class="op" style="font-size: 42px;">=</span>
+        <span><span class="term acc" style="font-size: 42px;">Annual salary</span><span class="lb">basic pay</span></span>
+        <span class="op" style="font-size: 42px;">÷</span>
+        <span><span class="term" style="font-size: 42px;">52</span><span class="lb">weeks/year</span></span>
+      </div>
+    </div>
+    <div>
+      <div class="label">Age adjustment &amp; cap</div>
+      <ul class="bullets" style="margin-top: 10px;">
+        <li>Over age 40: add <b>2.5% for each full quarter</b> beyond 40</li>
+        <li>At age 45 that is roughly a <b>+50%</b> boost; at 55, about <b>+150%</b></li>
+        <li>Lifetime maximum: <b>52 weeks</b> of pay total</li>
+      </ul>
+      <div class="callout-light" style="margin-top: 24px;">
+        <div class="lb">Run your own number</div>
+        <p class="tx">Estimate yours with the <b>Capital Wealth severance calculator</b> — capitalwealth.com/services/federal-benefits/severance-calculator.</p>
+      </div>
+    </div>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">RIF · Severance formula</span><span class="pg">15</span></div>
+</section>
+
+<!-- ============================================================
+     16 · SEVERANCE — A WORKED EXAMPLE
+     ============================================================ -->
+<section class="slide" data-label="16 Severance Worked Example">
+  <div class="hbar"><span class="l">Part III · RIF &amp; Severance</span><span class="r">RIF · <b>04 / 04</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">An illustration · figures rounded for teaching</div>
+    <h1 class="headline">How the weeks <em>add up.</em></h1>
+  </div>
+  <table class="t worked">
+    <thead>
+      <tr><th style="width: 30%;">Step</th><th style="width: 45%;">For this example</th><th style="width: 25%; text-align: right;">Result</th></tr>
+    </thead>
+    <tbody>
+      <tr><th>Salary &amp; service</th><td>$78,000 / year · 15 years · age 48</td><td class="result" style="color: var(--grey);">—</td></tr>
+      <tr><th>Weekly pay</th><td>$78,000 ÷ 52</td><td class="result">$1,500 / wk</td></tr>
+      <tr><th>Base weeks</th><td>(10 × 1) + (5 × 2) = 20 weeks</td><td class="result">$30,000</td></tr>
+      <tr><th>Age adjustment</th><td>Age 48 → about +80%</td><td class="result">× 1.80</td></tr>
+      <tr><th>Estimated severance</th><td>Before the 52-week cap</td><td class="result" style="color: var(--fed-red); font-size: 38px;">≈ $54,000</td></tr>
+    </tbody>
+  </table>
+  <div class="callout-light" style="margin-top: 18px;">
+    <div class="lb">Why this matters next to VSIP</div>
+    <p class="tx">An involuntary severance like this can be <b>larger than a $25,000 VSIP</b> — which is exactly why you compare the paths before choosing one. Your real numbers will differ; this is an illustration only.</p>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">RIF · Worked example</span><span class="pg">16</span></div>
+</section>
+
+<!-- ============================================================
+     17 · DIVIDER · Part IV — Your Decision
+     ============================================================ -->
+<section class="slide divider parts4" data-label="17 Part IV Your Decision">
+  <div class="bg" style="background-image: url('../assets/lifestyle-mountain-overlook.jpg');"></div>
+  <div class="wash"></div>
+  <div class="stripes"></div>
+  <div class="inner">
+    <div class="sec-num">Part IV</div>
+    <h1>Putting it<br/><em>together.</em></h1>
+    <p class="sec-deck">VERA, VSIP, RIF, and severance are not four separate choices — they interact. The right move depends on one question: are you retirement-eligible?</p>
+    <div class="sec-bar">
+      <div class="item">I · VERA</div>
+      <div class="item">II · VSIP</div>
+      <div class="item">III · RIF &amp; Severance</div>
+      <div class="item now">IV · Your Decision</div>
+    </div>
+  </div>
+  <img class="slide-logo" src="../assets/logo-horizontal-white.png" alt="Capital Wealth" />
+</section>
+
+<!-- ============================================================
+     18 · THE DECISION MATRIX
+     ============================================================ -->
+<section class="slide" data-label="18 Decision Matrix">
+  <div class="hbar"><span class="l">Part IV · Your Decision</span><span class="r">Decision · <b>01 / 04</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">A starting framework — not advice</div>
+    <h1 class="headline">Your situation points to a <em>path.</em></h1>
+  </div>
+  <table class="t matrix">
+    <thead>
+      <tr>
+        <th style="width: 28%;">Your situation</th>
+        <th style="width: 36%;">What is usually on the table</th>
+        <th>What to weigh first</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Already retirement-eligible</th>
+        <td>Immediate pension, possibly + VSIP</td>
+        <td class="accent">Take the lifetime pension &amp; FEHB; severance does not apply</td>
+      </tr>
+      <tr>
+        <th>VERA offered &amp; you qualify</th>
+        <td>Unreduced early pension, possibly + VSIP</td>
+        <td class="accent">The Supplement gap; carrying FEHB for life</td>
+      </tr>
+      <tr>
+        <th>Not eligible, VSIP offered</th>
+        <td>Buyout to leave voluntarily</td>
+        <td class="accent">After-tax value vs. waiting; the 5-year repay rule</td>
+      </tr>
+      <tr>
+        <th>Not eligible, facing a RIF</th>
+        <td>Severance + unemployment; maybe a deferred annuity</td>
+        <td class="accent">Severance size; MRA+10 or age-62 deferred pension</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="callout" style="margin-top: 18px;">The dividing line is almost always <b>retirement eligibility.</b> Confirm exactly where you stand <b>before</b> you read an offer — it determines which column you are in.</div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">Decision · Matrix</span><span class="pg">18</span></div>
+</section>
+
+<!-- ============================================================
+     19 · SIX QUESTIONS BEFORE YOU SIGN
+     ============================================================ -->
+<section class="slide" data-label="19 Six Questions">
+  <div class="hbar"><span class="l">Part IV · Your Decision</span><span class="r">Decision · <b>02 / 04</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">Bring these to any offer</div>
+    <h1 class="headline">Six questions before you <em>sign.</em></h1>
+  </div>
+  <div class="qs-grid">
+    <div class="qs-item">
+      <div class="qn">01</div>
+      <div class="qt">Am I <b>retirement-eligible</b> — regularly, or only under VERA?</div>
+    </div>
+    <div class="qs-item">
+      <div class="qn">02</div>
+      <div class="qt">What happens to my <b>FEHB and FEGLI</b> — do I meet the 5-year rule?</div>
+    </div>
+    <div class="qs-item">
+      <div class="qn">03</div>
+      <div class="qt">Which is larger for me: <b>severance or the VSIP</b> buyout?</div>
+    </div>
+    <div class="qs-item">
+      <div class="qn">04</div>
+      <div class="qt">What is the <b>after-tax</b> value of a lump-sum payment?</div>
+    </div>
+    <div class="qs-item">
+      <div class="qn">05</div>
+      <div class="qt">When does my <b>FERS Supplement</b> actually begin?</div>
+    </div>
+    <div class="qs-item">
+      <div class="qn">06</div>
+      <div class="qt">What is the <b>deadline,</b> and is the decision reversible?</div>
+    </div>
+  </div>
+  <div class="callout-light" style="margin-top: 28px;">
+    <div class="lb">The one to never skip</div>
+    <p class="tx">"What is my <b>deadline</b>?" Most offers give a short window. The worst outcome is making a permanent decision under time pressure with numbers you have not checked.</p>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">Decision · Six questions</span><span class="pg">19</span></div>
+</section>
+
+<!-- ============================================================
+     20 · COMMON MISTAKES
+     ============================================================ -->
+<section class="slide" data-label="20 Common Mistakes">
+  <div class="hbar"><span class="l">Part IV · Your Decision</span><span class="r">Decision · <b>03 / 04</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">What we see go wrong</div>
+    <h1 class="headline">Four <em>avoidable</em> mistakes.</h1>
+  </div>
+  <div class="cards four">
+    <div class="card fed">
+      <div class="num">01</div>
+      <div class="h">Taking the buyout blind</div>
+      <p class="t">Accepting a $25K VSIP when an involuntary severance would have paid more — or when the after-tax amount is smaller than it looks.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">02</div>
+      <div class="h">Missing the 5-year rule</div>
+      <p class="t">Walking away without confirming <b>FEHB and FEGLI</b> eligibility — and losing lifetime coverage that is hard to replace.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">03</div>
+      <div class="h">Forgetting the gap</div>
+      <p class="t">Not planning for the <b>income gap</b> before the FERS Supplement and Social Security begin.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">04</div>
+      <div class="h">Beating the deadline</div>
+      <p class="t">Signing under pressure on the last day instead of <b>running the numbers</b> as soon as the offer appears.</p>
+    </div>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">Decision · Common mistakes</span><span class="pg">20</span></div>
+</section>
+
+<!-- ============================================================
+     21 · HOW WE HELP (Federal Benefit Comparison)
+     ============================================================ -->
+<section class="slide" data-label="21 How We Help">
+  <div class="hbar"><span class="l">Part IV · Your Decision</span><span class="r">Decision · <b>04 / 04</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">Where Capital Wealth fits</div>
+    <h1 class="headline">We run <em>your</em> numbers — side by side.</h1>
+    <p class="body-text" style="max-width: 78ch;">This session is educational. When you want to see your specific options compared — VERA vs. waiting, VSIP vs. severance, the after-tax picture — that is the <b>Federal Benefit Comparison.</b> No products are sold, and there is no obligation.</p>
+  </div>
+  <div class="cards three">
+    <div class="card fed">
+      <div class="num">Bring</div>
+      <div class="h">Your records.</div>
+      <p class="t">Latest <b>SF-50</b>, eOPF, SSA statement, TSP balance — and any offer you've received.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">We build</div>
+      <div class="h">A side-by-side.</div>
+      <p class="t">Eligibility, pension, supplement timing, and the <b>after-tax value</b> of each path.</p>
+    </div>
+    <div class="card fed">
+      <div class="num">You leave</div>
+      <div class="h">With clarity.</div>
+      <p class="t">A clear view of your options — so any decision is <b>yours</b>, made with real numbers.</p>
+    </div>
+  </div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">Federal Benefit Comparison</span><span class="pg">21</span></div>
+</section>
+
+<!-- ============================================================
+     22 · CLOSING CTA
+     ============================================================ -->
+<section class="slide closing" data-label="22 Closing CTA">
+  <div class="bg"></div>
+  <div class="wash"></div>
+  <div class="top-stripe" style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--fed-red) 0%, var(--fed-red) 20%, #fff 20%, #fff 40%, var(--fed-red) 40%, var(--fed-red) 60%, #fff 60%, #fff 80%, var(--fed-red) 80%, var(--fed-red) 100%);"></div>
+  <div class="inner closing-split">
+    <div class="closing-left">
+      <div class="closing-kicker">★ Your next step</div>
+      <h1>Know your <em>options.</em></h1>
+      <p class="deck">Whether or not an offer is on your desk, the time to run the numbers is now — not in the short window you get to decide.</p>
+      <div class="cta">
+        <div class="lb">Request your complimentary</div>
+        <div class="tx">Federal Benefit Comparison</div>
+      </div>
+      <div class="closing-meta">
+        <div>
+          <span class="lb">No obligation</span>
+          <span class="v">Always confidential</span>
+        </div>
+        <div>
+          <span class="lb">Bring</span>
+          <span class="v">SF-50 · SSA · TSP · any offer</span>
+        </div>
+      </div>
+    </div>
+    <div class="closing-right">
+      <div class="qr-eyebrow">Scan to book</div>
+      <div class="qr-card">
+        <img src="../assets/qr-phase1-call.svg" alt="QR code linking to capitalwealth.com/start — book your 30-minute phone call" />
+      </div>
+      <div class="qr-label">30-Minute Phone Call</div>
+      <div class="qr-url-row">
+        <span class="qr-or">or visit</span>
+        <span class="qr-url">capitalwealth.com<span class="slash">/</span>start</span>
+      </div>
+    </div>
+  </div>
+  <img class="slide-logo" src="../assets/logo-horizontal-white.png" alt="Capital Wealth" />
+</section>
+
+<!-- ============================================================
+     23 · UPCOMING WEBINAR SCHEDULE
+     ============================================================ -->
+<section class="slide" data-label="23 Upcoming Webinars">
+  <div class="hbar"><span class="l">Mark your calendar</span><span class="r">Upcoming · <b>Summer 2026</b></span></div>
+  <div class="flag-stripe top"></div>
+  <div class="hdr-block">
+    <div class="eyebrow">Mark your calendar</div>
+    <h1 class="headline">Our next sessions — <em>free</em> to attend.</h1>
+  </div>
+  <div class="sched-grid">
+    <div class="sched-card">
+      <div class="date">Jun 11</div>
+      <div class="h">FERS Benefits: The Full Picture</div>
+      <p class="t">Your complete federal benefits package — what you have and how the pieces fit.</p>
+    </div>
+    <div class="sched-card">
+      <div class="date">Jun 25</div>
+      <div class="h">FERS Supplement &amp; Social Security</div>
+      <p class="t">The bridge before 62 — and how the two work together.</p>
+    </div>
+    <div class="sched-card">
+      <div class="date">Jul 9</div>
+      <div class="h">TSP 101: The Basics</div>
+      <p class="t">Funds, contributions, and the foundations of your Thrift Savings Plan.</p>
+    </div>
+    <div class="sched-card">
+      <div class="date">Jul 23</div>
+      <div class="h">TSP 201: Allocating in Uncertain Times</div>
+      <p class="t">Putting your TSP to work with a strategy, not a guess.</p>
+    </div>
+  </div>
+  <div class="callout" style="margin-top: 36px;">Register for any upcoming session — or watch a past one on demand — at <b>capitalwealth.com/webinars.</b></div>
+  <div class="fbar"></div>
+  <div class="fmeta"><span class="br">Upcoming webinars</span><span class="pg">23</span></div>
+</section>
+
+<!-- ============================================================
+     24 · IMPORTANT DISCLOSURES
+     ============================================================ -->
+<section class="slide disclosures" data-label="24 Disclosures">
+  <div class="top-stripe"></div>
+  <div class="eyebrow">Required disclosures</div>
+  <h1>Important Disclosures</h1>
+  <div class="disc-grid">
+    <div class="disc">
+      <span class="lb">01 · Independence</span>
+      Capital Wealth is not affiliated with or endorsed by the U.S. Government, the Social Security Administration, the Office of Personnel Management, the Thrift Savings Plan, or any federal agency.
+    </div>
+    <div class="disc">
+      <span class="lb">02 · Advisory &amp; insurance services</span>
+      Advisory services offered through Capital Wealth, LLC, an SEC Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC. Registration does not imply a certain level of skill or training.
+    </div>
+    <div class="disc full">
+      <span class="lb">03 · Educational use only</span>
+      This presentation is for general educational purposes only and is not investment, tax, or legal advice. VERA, VSIP, RIF, and severance rules are set by federal statute and your agency, are subject to change, and may apply differently to your situation; confirm details with OPM and your agency. All examples are hypothetical and for illustration only. All investments involve risk, including the possible loss of principal. Past performance is not a guarantee of future results.
+    </div>
+  </div>
+  <div class="fbar-gold"></div>
+  <img class="slide-logo" src="../assets/logo-horizontal-white.png" alt="Capital Wealth" />
+  <div class="disc-foot">
+    <span class="br" style="visibility: hidden;">Capital Wealth · Federal Benefits Group</span>
+    <span class="pg">24</span>
+  </div>
+</section>
+
+</deck-stage>
+
+</body>
+</html>
