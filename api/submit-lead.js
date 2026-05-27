@@ -218,7 +218,7 @@ async function syncToSalesforce(leadData) {
   let leadId = null;
   let isNew = false;
   if (email) {
-    const q = `SELECT Id, Phone, Description, Campaign__c, How_did_you_hear_about_us__c, Are_You_Federal__c FROM Lead WHERE Email='${sfEscape(email)}' AND IsConverted=false ORDER BY CreatedDate DESC LIMIT 1`;
+    const q = `SELECT Id, MobilePhone, Description, Campaign__c, How_did_you_hear_about_us__c, Are_You_Federal__c, Attendance__c FROM Lead WHERE Email='${sfEscape(email)}' AND IsConverted=false ORDER BY CreatedDate DESC LIMIT 1`;
     const lookupResp = await fetch(`${API}/query/?q=${encodeURIComponent(q)}`, { headers });
     if (lookupResp.ok) {
       const j = await lookupResp.json();
@@ -233,12 +233,18 @@ async function syncToSalesforce(leadData) {
             ? `${existing.Description}\n\n--- ${stamp} re-engagement ---\n${description}`
             : description;
         }
-        if (!existing.Phone && leadData.phone) updates.Phone = leadData.phone;
+        if (!existing.MobilePhone && leadData.phone) updates.MobilePhone = leadData.phone;
         if (!existing.Campaign__c && campaignId) updates.Campaign__c = campaignId;
         // SF validation rule requires this on update — backfill when blank
         // so older Leads (created before the rule existed) don't 400 here.
         if (!existing.How_did_you_hear_about_us__c) updates.How_did_you_hear_about_us__c = 'Website';
         if (isFederalLead && !existing.Are_You_Federal__c) updates.Are_You_Federal__c = 'Yes';
+        // Webinar registrants are "Booked" on the Attendance funnel. Only advance
+        // from the unset/default state so a prior event's progress (Confirmed,
+        // Attended, etc.) is never downgraded on re-registration.
+        if (isWebinarLead && (!existing.Attendance__c || existing.Attendance__c === 'Not Signed Up')) {
+          updates.Attendance__c = 'Booked';
+        }
         if (Object.keys(updates).length > 0) {
           const pr = await fetch(`${API}/sobjects/Lead/${leadId}`, {
             method: 'PATCH', headers, body: JSON.stringify(updates),
@@ -256,12 +262,13 @@ async function syncToSalesforce(leadData) {
       FirstName: firstName || null,
       LastName: lastName || 'Unknown',
       Email: email || null,
-      Phone: leadData.phone || null,
+      MobilePhone: leadData.phone || null,
       Company: company,
       LeadSource: leadSource,
       Campaign__c: campaignId,
       Description: description || null,
       ...(isFederalLead ? { Are_You_Federal__c: 'Yes' } : {}),
+      ...(isWebinarLead ? { Attendance__c: 'Booked' } : {}),
     };
     const ir = await fetch(`${API}/sobjects/Lead`, {
       method: 'POST', headers, body: JSON.stringify(leadBody),
