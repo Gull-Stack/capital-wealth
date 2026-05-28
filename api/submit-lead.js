@@ -174,6 +174,7 @@ async function syncToSalesforce(leadData) {
   if (leadData.retirement_system) descParts.push(`Retirement System: ${leadData.retirement_system}`);
   if (leadData.years_to_retirement) descParts.push(`Years to Retirement: ${leadData.years_to_retirement}`);
   if (leadData.agency) descParts.push(`Federal Agency: ${leadData.agency}`);
+  if (leadData.employer) descParts.push(`Employer: ${leadData.employer}`);
   if (leadData.bringing_guest) descParts.push(`Bringing Guest: ${leadData.bringing_guest}`);
   if (leadData.guest_first_name || leadData.guest_last_name || leadData.guest_email) {
     const guestName = [leadData.guest_first_name, leadData.guest_last_name].filter(Boolean).join(' ');
@@ -195,16 +196,12 @@ async function syncToSalesforce(leadData) {
     ? 'Webinar'
     : (ALLOWED_LEAD_SOURCES.has(leadData.lead_source) ? leadData.lead_source : 'Website Form');
 
-  // Lead.Company is required.
   const isFederalLead = isWebinarLead
     || leadData.lead_type === 'federal-workshop-registration'
     || leadData.lead_type === 'newsletter-signup'
     || leadData.lead_type === 'webinar-replay'
     || (leadData.lead_type && leadData.lead_type.startsWith('10things-'))
     || leadData.landing_page === '10-things-federal-retirement';
-  const company = leadData.agency
-    || leadData.employer
-    || (isFederalLead ? 'Federal Employee (Pending Qualification)' : 'Pending Qualification');
 
   const email = (leadData.email || '').trim().toLowerCase();
   const description = descParts.join('\n');
@@ -263,7 +260,10 @@ async function syncToSalesforce(leadData) {
       LastName: lastName || 'Unknown',
       Email: email || null,
       MobilePhone: leadData.phone || null,
-      Company: company,
+      // Must stay blank: a populated Company makes lead conversion create a
+      // Business Account instead of a Person Account. Agency/employer are kept
+      // in Description instead.
+      Company: null,
       LeadSource: leadSource,
       Campaign__c: campaignId,
       Description: description || null,
