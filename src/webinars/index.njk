@@ -269,8 +269,10 @@ faqSchema:
           <div class="act">
             {% if ep.status == "next" %}
               <a href="{{ ep.registerUrl }}" class="wb-link register" data-cta="series-{{ ep.slug }}">Reserve your seat →</a>
-            {% elif ep.status == "past" %}
+            {% elif ep.status == "past" and ep.replayUrl %}
               <a href="{{ ep.replayUrl }}" class="wb-link replay" data-cta="series-{{ ep.slug }}">▶ Watch the replay</a>
+            {% elif ep.status == "past" %}
+              <span class="wb-soon">Replay coming soon</span>
             {% else %}
               <span class="wb-soon">{{ ep.dateDisplay | replace(", 2026", "") }} · Registration opens soon</span>
             {% endif %}
@@ -288,7 +290,7 @@ faqSchema:
       <p class="sub">Missed one? Catch the full recording any time — free, no registration required.</p>
       <div class="wb-replay-grid">
         {% set replayCount = 0 %}
-        {% for ep in webinars.episodes %}{% if ep.status == "past" %}
+        {% for ep in webinars.episodes %}{% if ep.status == "past" and ep.replayUrl and ep.youtubeId %}
         {% set replayCount = replayCount + 1 %}
         <a class="wb-replay" href="{{ ep.replayUrl }}" data-cta="replay-{{ ep.slug }}">
           <div class="wb-thumb">

@@ -50,10 +50,11 @@ module.exports = {
       blurb: "With early-retirement and buyout offers still coming from agencies, being prepared matters more than ever. Learn how to read your numbers — VERA early retirement, VSIP buyouts, and a Reduction in Force — and make sound choices if an offer comes your way.",
       date: "2026-05-28", mon: "MAY", day: "28", dateDisplay: "Thursday, May 28, 2026",
       timeMt: "5:00 – 6:00 PM Mountain",
-      status: "next",
-      registerUrl: "/l/federal-benefits-webinar/",
+      status: "past",
       campaignId: "701VS00000fQz8OYAS",
       icsUrl: "/assets/webinars/federal-benefits-webinar-2026-05-28.ics"
+      // TODO: add replayUrl + youtubeId once the May 28 recording is published.
+      // Until then it shows "Replay coming soon" and is held out of the replay grid.
     },
     {
       slug: "fers-benefits",
@@ -61,7 +62,10 @@ module.exports = {
       tag: "FERS",
       blurb: "An overview of the entire FERS system — pension, survivor benefits, the FERS Supplement, and TSP basics — woven into one useable retirement strategy.",
       date: "2026-06-11", mon: "JUN", day: "11", dateDisplay: "Thursday, June 11, 2026",
-      status: "scheduled"
+      timeMt: "5:00 – 6:00 PM Mountain",
+      status: "next",
+      registerUrl: "/l/federal-benefits-webinar/",
+      icsUrl: "/assets/webinars/federal-benefits-webinar-2026-06-11.ics"
     },
     {
       slug: "fers-supplement-social-security",
