@@ -1,5 +1,45 @@
 # Capital Wealth — Project Context
 
+## Session Log
+
+### 2026-06-08 — Open June 11 webinar registration + ads prep
+- **Shipped (code, on `main` @ 96390707):** Re-pointed the evergreen federal
+  webinar funnel from May 28 (VERA/VSIP/RIF) to **June 11 "FERS Benefits: The
+  Full Picture."** Rewrote `src/l/federal-benefits-webinar/index.njk`
+  (title/schema/hero/docket/outcomes/FAQ/testimony/tracking), flipped
+  `src/_data/webinars.js` (May 28→past, June 11→next), updated the June 11
+  confirmation + internal emails in `api/submit-lead.js`, added the June 11
+  `.ics`, and guarded `src/webinars/index.njk` so a past webinar with no replay
+  shows "Replay coming soon" instead of a broken card. Build verified.
+- **`campaign_id` left blank** on the landing form on purpose — the June 11
+  Salesforce campaign doesn't exist yet; `submit-lead` nulls invalid IDs and
+  still registers the lead. Backfill the real `701…` ID when the SF campaign is
+  made (SF CLI tokens for org `cw` are expired — needs re-auth).
+- **DEPLOY BLOCKER (live site not updated):** Build is correct and live on the
+  accessible Vercel production alias `capital-wealth-neon.vercel.app`, but
+  **`www.capitalwealth.com` still serves the old May 28 build.** The domain is
+  owned by a Vercel account this machine's login (bmorgan via team
+  `capitalwealthvercel`) can't manage — `domains ls` shows 0 domains, `alias
+  set` is denied, and there are no GitHub deploy statuses on the repo. The
+  GitHub→Vercel auto-deploy for the production project did NOT fire. A
+  CLI `vercel --prod` + `promote` under `capitalwealthvercel` succeeded but does
+  NOT control `www`. **Next session / Bryce:** redeploy or purge cache on
+  whatever Vercel project actually owns `www.capitalwealth.com`, or fix its
+  git integration.
+- **ZOOM BLOCKER (registration not functional):** Site registers attendees to a
+  single `ZOOM_WEBINAR_ID` env var (still pointed at the past May 28 webinar). A
+  **June 11 Zoom webinar must be created and `ZOOM_WEBINAR_ID` updated in
+  Vercel** before real registration works. Until then leads are still captured
+  in SF (recoverable) but get no Zoom join link. Couldn't create it here — Zoom
+  creds are in Vercel prod env and pulling them was blocked.
+- **Ads (ready, NOT launched):** Channel = Meta, account `956377226671159`
+  (Capital Wealth). Proven predecessor = campaign **"CW — May 28 Webinar —
+  VERA/VSIP/RIF — Leads"** (`120242455510520665`, OUTCOME_LEADS, $3.2k spent),
+  2 audiences (`fed-employees-lal`, `paid-social-converters`), evergreen "Ann
+  Authority" creative → same landing page. Plan: clone it for June 11,
+  **$1,800/day** CBO, activate once www is live + Zoom is set. Bryce wanted it
+  launched live immediately; held only on those two gates.
+
 ## About
 Capital Wealth is a registered investment advisor in Utah doing $100M/year in revenue. We serve federal employees, retirees, and high-net-worth individuals with retirement planning, tax strategy, and wealth management.
 
