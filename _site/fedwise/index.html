@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FedWise — Federal benefits, decoded.</title>
+  <meta name="description" content="A guided walkthrough of FERS, TSP, FEHB, Social Security, and every retirement decision you&#39;ll actually face — built with a 25-year federal benefits expert.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap">
+
+  <meta property="og:title" content="FedWise — Federal benefits, decoded.">
+  <meta property="og:description" content="A guided walkthrough of FERS, TSP, FEHB, Social Security, and every retirement decision you&#39;ll actually face — built with a 25-year federal benefits expert.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --paper:        #FAF7EF;
+      --paper-2:      #F2EDE0;
+      --ink:          #0F1A2A;
+      --ink-2:        #243345;
+      --muted:        #5A6675;
+      --rule:         #E0D9C7;
+      --gold:         #B8800C;
+      --gold-soft:    #E8C77E;
+      --red:          #B31942;
+      --blue:         #0A3161;
+      --shadow:       0 24px 64px -28px rgba(15,26,42,0.22);
+
+      --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+      --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: var(--ink); text-decoration: none; }
+    a:hover { color: var(--gold); }
+
+    .fw-wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ---------- Top utility bar ---------- */
+    .fw-util {
+      background: var(--ink);
+      color: rgba(255,255,255,0.78);
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      padding: 0.55rem 0;
+      text-align: center;
+    }
+    .fw-util strong { color: #fff; font-weight: 600; }
+
+    /* ---------- Header / nav ---------- */
+    .fw-header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(250,247,239,0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .fw-nav { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; }
+    .fw-brand { font-family: var(--font-display); font-size: 1.55rem; font-weight: 600; letter-spacing: -0.01em; display: flex; align-items: baseline; gap: 0.05rem; }
+    .fw-brand .star { font-family: var(--font-sans); color: var(--gold); font-size: 0.7em; line-height: 1; margin-right: 0.15rem; transform: translateY(-0.15rem); display: inline-block; }
+    .fw-brand em { font-style: italic; font-weight: 500; color: var(--ink-2); }
+    .fw-nav-links { display: flex; align-items: center; gap: 2rem; }
+    .fw-nav-links a { font-size: 0.93rem; font-weight: 500; color: var(--ink-2); }
+    .fw-nav-cta {
+      padding: 0.55rem 1.1rem; border-radius: 999px; background: var(--ink); color: #fff !important;
+      font-size: 0.88rem; font-weight: 600; transition: transform .12s ease, background .12s ease;
+    }
+    .fw-nav-cta:hover { background: var(--ink-2); transform: translateY(-1px); color: #fff !important; }
+
+    /* ---------- Buttons ---------- */
+    .fw-btn { display: inline-flex; align-items: center; gap: 0.55rem; font-family: var(--font-sans); font-weight: 600; border: 0; cursor: pointer; transition: transform .12s ease, box-shadow .12s ease, background .12s ease; }
+    .fw-btn-primary {
+      background: var(--ink); color: #fff;
+      padding: 1.05rem 1.8rem; border-radius: 999px;
+      font-size: 1rem; letter-spacing: 0.005em;
+      box-shadow: 0 10px 28px -10px rgba(15,26,42,0.45);
+    }
+    .fw-btn-primary:hover { background: #000; transform: translateY(-2px); color: #fff; }
+    .fw-btn-ghost {
+      background: transparent; color: var(--ink);
+      padding: 1.05rem 1.4rem; border-radius: 999px;
+      font-size: 1rem; border: 1.5px solid var(--ink);
+    }
+    .fw-btn-ghost:hover { background: var(--ink); color: #fff; }
+    .fw-btn-gold {
+      background: var(--gold); color: #fff;
+      padding: 0.95rem 1.6rem; border-radius: 999px;
+      font-size: 0.95rem;
+    }
+    .fw-btn-gold:hover { background: #9A6A09; color: #fff; transform: translateY(-2px); }
+    .fw-arrow { display: inline-block; transition: transform .15s ease; }
+    .fw-btn:hover .fw-arrow { transform: translateX(3px); }
+
+    /* ---------- Footer ---------- */
+    .fw-footer { background: var(--ink); color: rgba(255,255,255,0.78); padding: 3.5rem 0 2rem; margin-top: 4rem; }
+    .fw-footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.12); }
+    .fw-footer h4 { font-family: var(--font-sans); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold-soft); margin: 0 0 1rem; font-weight: 600; }
+    .fw-footer ul { list-style: none; padding: 0; margin: 0; }
+    .fw-footer li { margin-bottom: 0.55rem; font-size: 0.92rem; }
+    .fw-footer a { color: rgba(255,255,255,0.78); }
+    .fw-footer a:hover { color: var(--gold-soft); }
+    .fw-footer-brand { font-family: var(--font-display); font-size: 1.6rem; color: #fff; margin-bottom: 0.6rem; font-weight: 600; }
+    .fw-footer-brand em { font-style: italic; color: rgba(255,255,255,0.85); font-weight: 500; }
+    .fw-footer p { font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.7); margin: 0 0 0.85rem; }
+    .fw-disclaimer { padding-top: 2rem; font-size: 0.78rem; color: rgba(255,255,255,0.58); line-height: 1.65; max-width: 940px; }
+    .fw-disclaimer p { margin: 0 0 0.7rem; font-size: 0.78rem; color: rgba(255,255,255,0.58); }
+    .fw-disclaimer strong { color: rgba(255,255,255,0.78); }
+    .fw-flag-stripe { display: flex; height: 4px; margin-top: 2rem; }
+    .fw-flag-stripe span { flex: 1; }
+    .fw-flag-stripe .r { background: var(--red); }
+    .fw-flag-stripe .w { background: #fff; }
+    .fw-flag-stripe .b { background: var(--blue); }
+
+    /* ---------- Chat widget ---------- */
+    .fw-chat-launcher {
+      position: fixed; bottom: 24px; right: 24px; z-index: 100;
+      background: var(--ink); color: #fff;
+      padding: 0.85rem 1.3rem 0.85rem 0.85rem;
+      border-radius: 999px;
+      display: flex; align-items: center; gap: 0.65rem;
+      font-family: var(--font-sans); font-weight: 600; font-size: 0.95rem;
+      box-shadow: 0 18px 40px -10px rgba(15,26,42,0.45);
+      cursor: pointer; border: 0;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .fw-chat-launcher:hover { transform: translateY(-2px); box-shadow: 0 24px 50px -12px rgba(15,26,42,0.5); }
+    .fw-chat-launcher .ico {
+      width: 32px; height: 32px; border-radius: 50%; background: var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1.05rem; color: #fff; font-style: italic; font-weight: 600;
+    }
+    .fw-chat-launcher .dot {
+      width: 8px; height: 8px; border-radius: 50%; background: #2EC07A;
+      box-shadow: 0 0 0 3px rgba(46,192,122,0.25);
+      margin-left: 0.25rem;
+    }
+    .fw-chat-panel {
+      position: fixed; bottom: 88px; right: 24px; z-index: 100;
+      width: 380px; max-width: calc(100vw - 32px);
+      background: #fff; border-radius: 16px;
+      box-shadow: 0 30px 80px -20px rgba(15,26,42,0.4);
+      display: none; flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--rule);
+    }
+    .fw-chat-panel.open { display: flex; }
+    .fw-chat-head { background: var(--ink); color: #fff; padding: 1.1rem 1.2rem; display: flex; align-items: center; gap: 0.75rem; }
+    .fw-chat-head .av { width: 38px; height: 38px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-style: italic; font-weight: 600; }
+    .fw-chat-head .who { font-family: var(--font-sans); font-weight: 600; font-size: 0.97rem; }
+    .fw-chat-head .status { font-size: 0.75rem; color: rgba(255,255,255,0.7); margin-top: 1px; }
+    .fw-chat-head .status .pulse { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #2EC07A; margin-right: 5px; vertical-align: middle; }
+    .fw-chat-close { margin-left: auto; background: transparent; border: 0; color: rgba(255,255,255,0.65); font-size: 1.3rem; cursor: pointer; line-height: 1; }
+    .fw-chat-close:hover { color: #fff; }
+    .fw-chat-body { padding: 1.2rem; height: 360px; overflow-y: auto; background: var(--paper); }
+    .fw-msg { margin-bottom: 0.85rem; font-size: 0.9rem; line-height: 1.55; max-width: 86%; }
+    .fw-msg.bot { background: #fff; padding: 0.75rem 0.95rem; border-radius: 14px 14px 14px 4px; border: 1px solid var(--rule); color: var(--ink-2); }
+    .fw-msg.user { background: var(--ink); color: #fff; padding: 0.7rem 0.95rem; border-radius: 14px 14px 4px 14px; margin-left: auto; }
+    .fw-chip-row { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.75rem; }
+    .fw-chip { font-size: 0.78rem; padding: 0.35rem 0.7rem; border-radius: 999px; background: #fff; border: 1px solid var(--rule); color: var(--ink-2); cursor: pointer; transition: background .12s ease; font-family: inherit; }
+    .fw-chip:hover { background: var(--paper-2); }
+    .fw-chat-input-wrap { border-top: 1px solid var(--rule); padding: 0.85rem; background: #fff; }
+    .fw-chat-input-wrap form { display: flex; gap: 0.5rem; }
+    .fw-chat-input { flex: 1; border: 1px solid var(--rule); border-radius: 999px; padding: 0.7rem 1rem; font-family: inherit; font-size: 0.9rem; outline: none; background: var(--paper); }
+    .fw-chat-input:focus { border-color: var(--ink); background: #fff; }
+    .fw-chat-send { background: var(--ink); color: #fff; border: 0; border-radius: 999px; padding: 0 1.1rem; font-weight: 600; font-size: 0.88rem; cursor: pointer; }
+    .fw-chat-send:hover { background: #000; }
+    .fw-chat-foot { padding: 0.45rem 1rem; font-size: 0.7rem; color: var(--muted); text-align: center; background: #fff; border-top: 1px solid var(--rule); }
+    .fw-handoff { background: #fff; border: 1px solid var(--rule); border-radius: 12px; padding: 0.9rem 1rem; margin-top: 0.75rem; }
+    .fw-handoff p { font-size: 0.85rem; color: var(--ink-2); margin: 0 0 0.65rem; }
+    .fw-handoff label { display: block; font-size: 0.75rem; color: var(--muted); margin: 0.55rem 0 0.25rem; font-weight: 500; }
+    .fw-handoff input { width: 100%; padding: 0.55rem 0.8rem; border: 1px solid var(--rule); border-radius: 8px; font-family: inherit; font-size: 0.85rem; background: var(--paper); }
+    .fw-handoff input:focus { outline: none; border-color: var(--ink); background: #fff; }
+    .fw-handoff button { margin-top: 0.75rem; width: 100%; background: var(--gold); color: #fff; border: 0; border-radius: 999px; padding: 0.7rem; font-weight: 600; font-size: 0.88rem; cursor: pointer; }
+    .fw-handoff button:hover { background: #9A6A09; }
+
+    @media (max-width: 760px) {
+      .fw-nav-links { display: none; }
+      .fw-nav-links.show-cta { display: flex; gap: 0.5rem; }
+      .fw-nav-links.show-cta a:not(.fw-nav-cta) { display: none; }
+      .fw-footer-grid { grid-template-columns: 1fr 1fr; gap: 1.75rem; }
+      .fw-chat-launcher { padding: 0.7rem 1rem 0.7rem 0.7rem; font-size: 0.85rem; }
+      .fw-chat-launcher .ico { width: 28px; height: 28px; }
+    }
+  </style>
+
+  
+</head>
+<body>
+
+  <div class="fw-util">
+    A <strong>Capital Wealth</strong> initiative · Built with 25-year federal benefits specialist <strong>Ann Werts</strong>
+  </div>
+
+  <header class="fw-header">
+    <div class="fw-wrap fw-nav">
+      <a href="/fedwise/" class="fw-brand">
+        <span class="star">★</span>Fed<em>Wise</em>
+      </a>
+      <nav class="fw-nav-links show-cta">
+        <a href="/fedwise/walkthrough/">Walkthrough</a>
+        <a href="/fedwise/#topics">Topics</a>
+        <a href="/fedwise/#how-it-works">How it works</a>
+        <a href="/fedwise/walkthrough/" class="fw-nav-cta">Start free <span class="fw-arrow">→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+<style>
+  .fw-home {
+    --section-pad: 6rem;
+  }
+
+  /* ---------- HERO ---------- */
+  .fw-hero {
+    position: relative;
+    padding: 5.5rem 0 6rem;
+    background:
+      radial-gradient(circle at 12% 8%, rgba(184,128,12,0.10), transparent 45%),
+      radial-gradient(circle at 88% 6%, rgba(10,49,97,0.07), transparent 50%),
+      var(--paper);
+    overflow: hidden;
+  }
+  .fw-hero::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--rule), transparent);
+  }
+  .fw-hero-inner { display: grid; grid-template-columns: 1.15fr 1fr; gap: 4rem; align-items: center; }
+  .fw-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.55rem;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.4rem;
+  }
+  .fw-eyebrow::before {
+    content: ""; display: inline-block; width: 24px; height: 1.5px; background: var(--gold);
+  }
+  .fw-hero h1 {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: clamp(2.6rem, 5.8vw, 4.6rem); line-height: 1.02; letter-spacing: -0.02em;
+    margin: 0 0 1.5rem; color: var(--ink);
+  }
+  .fw-hero h1 em { font-style: italic; font-weight: 500; color: var(--gold); }
+  .fw-hero h1 .underline {
+    background-image: linear-gradient(transparent 80%, rgba(184,128,12,0.25) 80%);
+    padding: 0 0.05em;
+  }
+  .fw-hero .lede {
+    font-size: 1.18rem; line-height: 1.62; color: var(--ink-2); margin: 0 0 2rem; max-width: 38rem;
+  }
+  .fw-hero .ctas { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-bottom: 2.4rem; }
+  .fw-hero-meta { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; font-size: 0.86rem; color: var(--muted); }
+  .fw-hero-meta strong { color: var(--ink); font-weight: 600; }
+  .fw-hero-meta span::before { content: "✓"; color: var(--gold); font-weight: 700; margin-right: 0.4rem; }
+
+  /* Hero visual (right side) */
+  .fw-hero-card {
+    position: relative;
+    background: #fff; border-radius: 22px; padding: 0;
+    box-shadow: 0 30px 80px -20px rgba(15,26,42,0.22);
+    border: 1px solid var(--rule);
+    overflow: hidden;
+  }
+  .fw-hero-card-head {
+    background: var(--ink); color: #fff; padding: 1.1rem 1.4rem;
+    display: flex; align-items: center; gap: 0.7rem;
+    font-family: var(--font-sans); font-weight: 600; font-size: 0.92rem;
+  }
+  .fw-hero-card-head .dots { display: flex; gap: 0.35rem; margin-right: 0.5rem; }
+  .fw-hero-card-head .dots span { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,0.18); }
+  .fw-hero-card-head .label { color: var(--gold-soft); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; }
+  .fw-hero-card-body { padding: 1.5rem 1.5rem 1.8rem; }
+  .fw-hero-card-q { font-family: var(--font-display); font-size: 1.45rem; line-height: 1.25; color: var(--ink); margin: 0 0 1.1rem; font-weight: 600; }
+  .fw-hero-card-q em { font-style: italic; color: var(--gold); }
+  .fw-path { display: flex; flex-direction: column; gap: 0.55rem; }
+  .fw-path-item {
+    display: flex; align-items: center; gap: 0.85rem;
+    padding: 0.85rem 1rem; background: var(--paper); border-radius: 12px;
+    border: 1px solid var(--rule); font-size: 0.92rem; color: var(--ink-2); font-weight: 500;
+    transition: background .15s ease, transform .15s ease;
+  }
+  .fw-path-item:hover { background: var(--paper-2); transform: translateX(3px); cursor: default; }
+  .fw-path-item .num { width: 28px; height: 28px; border-radius: 8px; background: var(--ink); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.78rem; font-weight: 700; flex: none; }
+  .fw-path-item.active { background: #FFF8E6; border-color: var(--gold-soft); }
+  .fw-path-item.active .num { background: var(--gold); }
+  .fw-path-arrow { margin-left: auto; color: var(--muted); transition: color .15s ease, transform .15s ease; }
+  .fw-path-item:hover .fw-path-arrow { color: var(--ink); transform: translateX(2px); }
+
+  /* ---------- TRUST BAND ---------- */
+  .fw-trust {
+    background: var(--ink); color: #fff; padding: 3rem 0;
+    position: relative;
+  }
+  .fw-trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+  .fw-stat { text-align: center; }
+  .fw-stat .num {
+    font-family: var(--font-display); font-size: clamp(2.4rem, 4vw, 3.2rem); font-weight: 600;
+    color: var(--gold-soft); line-height: 1; margin-bottom: 0.55rem; letter-spacing: -0.01em;
+  }
+  .fw-stat .num em { font-style: italic; }
+  .fw-stat .label { font-size: 0.82rem; color: rgba(255,255,255,0.72); letter-spacing: 0.04em; line-height: 1.5; max-width: 200px; margin: 0 auto; }
+  .fw-stat .label strong { color: #fff; font-weight: 600; }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section.fw-section { padding: var(--section-pad) 0; }
+  .fw-section-head { text-align: center; max-width: 720px; margin: 0 auto 4rem; }
+  .fw-section-eyebrow { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block; }
+  .fw-section-title { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; line-height: 1.1; letter-spacing: -0.015em; color: var(--ink); margin: 0 0 1.1rem; }
+  .fw-section-title em { font-style: italic; color: var(--gold); }
+  .fw-section-sub { font-size: 1.06rem; line-height: 1.6; color: var(--ink-2); margin: 0; }
+
+  /* ---------- WALKTHROUGH (situations grid) ---------- */
+  .fw-walk { background: var(--paper-2); position: relative; }
+  .fw-walk::before, .fw-walk::after {
+    content: ""; position: absolute; left: 0; right: 0; height: 1px;
+    background: var(--rule);
+  }
+  .fw-walk::before { top: 0; } .fw-walk::after { bottom: 0; }
+  .fw-walk-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .fw-walk-card {
+    background: #fff; border-radius: 18px; padding: 2rem 1.7rem 1.8rem;
+    border: 1px solid var(--rule);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    display: flex; flex-direction: column; gap: 0.9rem;
+    text-decoration: none; color: inherit;
+  }
+  .fw-walk-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--gold-soft); }
+  .fw-walk-card .ic {
+    width: 44px; height: 44px; border-radius: 12px; background: var(--paper);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); font-style: italic; font-weight: 600; font-size: 1.3rem; color: var(--gold);
+    border: 1px solid var(--rule);
+  }
+  .fw-walk-card h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.5rem; line-height: 1.2; margin: 0; color: var(--ink); letter-spacing: -0.01em; }
+  .fw-walk-card p { font-size: 0.94rem; line-height: 1.55; color: var(--muted); margin: 0; }
+  .fw-walk-card .go { font-size: 0.85rem; font-weight: 600; color: var(--ink); margin-top: auto; padding-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.4rem; }
+  .fw-walk-card:hover .go { color: var(--gold); }
+  .fw-walk-card:hover .go .fw-arrow { transform: translateX(4px); }
+
+  /* ---------- TOPICS GRID ---------- */
+  .fw-topics { background: var(--paper); }
+  .fw-topics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .fw-topic {
+    background: #fff; border: 1px solid var(--rule); border-radius: 14px;
+    padding: 1.4rem 1.2rem; display: flex; flex-direction: column; gap: 0.6rem;
+    text-decoration: none; color: inherit;
+    transition: border-color .15s ease, transform .15s ease;
+    min-height: 130px;
+  }
+  .fw-topic:hover { border-color: var(--ink); transform: translateY(-2px); }
+  .fw-topic .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+  .fw-topic h4 { font-family: var(--font-display); font-weight: 600; font-size: 1.18rem; margin: 0; color: var(--ink); line-height: 1.2; }
+  .fw-topic p { font-size: 0.82rem; line-height: 1.45; color: var(--muted); margin: 0; }
+
+  /* ---------- HOW IT WORKS ---------- */
+  .fw-how { background: var(--paper-2); position: relative; }
+  .fw-how::before, .fw-how::after { content: ""; position: absolute; left: 0; right: 0; height: 1px; background: var(--rule); }
+  .fw-how::before { top: 0; } .fw-how::after { bottom: 0; }
+  .fw-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; position: relative; }
+  .fw-step { text-align: left; padding: 0 0.5rem; }
+  .fw-step .step-num {
+    font-family: var(--font-display); font-style: italic; font-weight: 600;
+    font-size: 4rem; line-height: 1; color: var(--gold-soft); margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+  .fw-step h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.6rem; margin: 0 0 0.7rem; color: var(--ink); line-height: 1.15; }
+  .fw-step p { font-size: 1rem; line-height: 1.6; color: var(--ink-2); margin: 0; }
+
+  /* ---------- TESTIMONIAL ---------- */
+  .fw-test { padding: var(--section-pad) 0; background: var(--ink); color: #fff; position: relative; overflow: hidden; }
+  .fw-test::before {
+    content: "❝"; position: absolute; top: -1rem; left: 50%; transform: translateX(-50%);
+    font-family: var(--font-display); font-size: 22rem; line-height: 1; color: rgba(184,128,12,0.07); pointer-events: none;
+  }
+  .fw-test-inner { max-width: 880px; margin: 0 auto; text-align: center; position: relative; }
+  .fw-test blockquote {
+    font-family: var(--font-display); font-style: italic; font-weight: 500;
+    font-size: clamp(1.55rem, 3vw, 2.2rem); line-height: 1.35; margin: 0 0 2rem;
+    color: #fff; letter-spacing: -0.005em;
+  }
+  .fw-test blockquote .pull { color: var(--gold-soft); }
+  .fw-test .att {
+    display: flex; align-items: center; justify-content: center; gap: 0.85rem; font-size: 0.9rem;
+  }
+  .fw-test .att .avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--gold); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 600; font-style: italic; }
+  .fw-test .att .who { text-align: left; }
+  .fw-test .att .who strong { color: #fff; font-weight: 600; display: block; }
+  .fw-test .att .who span { color: rgba(255,255,255,0.66); font-size: 0.82rem; }
+
+  /* ---------- FINAL CTA ---------- */
+  .fw-final {
+    background: var(--paper); padding: 5rem 0 6rem; text-align: center;
+  }
+  .fw-final-inner {
+    max-width: 760px; margin: 0 auto;
+    background: linear-gradient(135deg, #fff 0%, #FFF8E6 100%);
+    border: 1px solid var(--gold-soft); border-radius: 24px;
+    padding: 3.5rem 3rem;
+    box-shadow: var(--shadow);
+  }
+  .fw-final h2 { font-family: var(--font-display); font-weight: 600; font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.1; letter-spacing: -0.015em; margin: 0 0 1rem; color: var(--ink); }
+  .fw-final h2 em { font-style: italic; color: var(--gold); }
+  .fw-final p { font-size: 1.06rem; line-height: 1.6; color: var(--ink-2); margin: 0 0 2rem; }
+  .fw-final .ctas { display: flex; flex-wrap: wrap; gap: 0.85rem; justify-content: center; }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 980px) {
+    .fw-home { --section-pad: 4.5rem; }
+    .fw-hero-inner { grid-template-columns: 1fr; }
+    .fw-trust-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .fw-walk-grid { grid-template-columns: 1fr 1fr; }
+    .fw-topics-grid { grid-template-columns: 1fr 1fr; }
+    .fw-steps { grid-template-columns: 1fr; gap: 2.5rem; }
+  }
+  @media (max-width: 560px) {
+    .fw-home { --section-pad: 3.5rem; }
+    .fw-walk-grid, .fw-topics-grid { grid-template-columns: 1fr; }
+    .fw-trust-grid { grid-template-columns: 1fr; }
+    .fw-final-inner { padding: 2.5rem 1.5rem; }
+  }
+</style>
+
+<div class="fw-home">
+
+  <!-- ============== HERO ============== -->
+  <section class="fw-hero">
+    <div class="fw-wrap fw-hero-inner">
+      <div>
+        <span class="fw-eyebrow">For federal employees</span>
+        <h1>Federal benefits,<br><em>decoded</em><span style="color:var(--ink);">.</span></h1>
+        <p class="lede">A guided walkthrough of every retirement decision you&rsquo;ll actually face &mdash; FERS, TSP, FEHB, Social Security, survivor benefits, VERA/VSIP &mdash; built with a federal benefits expert who&rsquo;s been doing this for 25 years.</p>
+        <div class="ctas">
+          <a href="/fedwise/walkthrough/" class="fw-btn fw-btn-primary">Start your walkthrough <span class="fw-arrow">→</span></a>
+          <a href="#topics" class="fw-btn fw-btn-ghost">Browse topics</a>
+        </div>
+        <div class="fw-hero-meta">
+          <span><strong>Free</strong> &nbsp;to use</span>
+          <span><strong>No sales pitch</strong></span>
+          <span>Real experts on chat, <strong>not a bot</strong></span>
+        </div>
+      </div>
+
+      <div class="fw-hero-card" aria-hidden="true">
+        <div class="fw-hero-card-head">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="label">Your walkthrough</div>
+        </div>
+        <div class="fw-hero-card-body">
+          <h3 class="fw-hero-card-q">Where are you in your federal career, <em>really</em>?</h3>
+          <div class="fw-path">
+            <div class="fw-path-item">
+              <span class="num">1</span><span>5+ years away from retirement</span>
+              <span class="fw-path-arrow">→</span>
+            </div>
+            <div class="fw-path-item active">
+              <span class="num">2</span><span>Within 5 years of retiring</span>
+              <span class="fw-path-arrow">→</span>
+            </div>
+            <div class="fw-path-item">
+              <span class="num">3</span><span>I was offered a VERA / VSIP</span>
+              <span class="fw-path-arrow">→</span>
+            </div>
+            <div class="fw-path-item">
+              <span class="num">4</span><span>Already retired &mdash; managing TSP</span>
+              <span class="fw-path-arrow">→</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TRUST BAND ============== -->
+  <section class="fw-trust">
+    <div class="fw-wrap">
+      <div class="fw-trust-grid">
+        <div class="fw-stat">
+          <div class="num">25<em>+</em></div>
+          <div class="label"><strong>Years</strong><br>inside federal benefits</div>
+        </div>
+        <div class="fw-stat">
+          <div class="num">3,200<em>+</em></div>
+          <div class="label"><strong>Federal employees</strong><br>educated to date</div>
+        </div>
+        <div class="fw-stat">
+          <div class="num">12</div>
+          <div class="label"><strong>Topics</strong> covered<br>in plain English</div>
+        </div>
+        <div class="fw-stat">
+          <div class="num">$0</div>
+          <div class="label"><strong>To use it.</strong><br>Always.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WALKTHROUGH ============== -->
+  <section class="fw-section fw-walk">
+    <div class="fw-wrap">
+      <div class="fw-section-head">
+        <span class="fw-section-eyebrow">The walkthrough</span>
+        <h2 class="fw-section-title">Pick your situation &mdash; we&rsquo;ll <em>build the path</em>.</h2>
+        <p class="fw-section-sub">Most federal benefits sites dump every topic on every visitor. FedWise asks where you actually are, then walks you through only what matters for <em>you</em>.</p>
+      </div>
+      <div class="fw-walk-grid">
+        <a href="/fedwise/walkthrough/" class="fw-walk-card">
+          <div class="ic">A</div>
+          <h3>Early career</h3>
+          <p>Set your TSP allocation right, understand what you&rsquo;re building, and avoid the mistakes that cost decades.</p>
+          <span class="go">Start here <span class="fw-arrow">→</span></span>
+        </a>
+        <a href="/fedwise/walkthrough/" class="fw-walk-card">
+          <div class="ic">B</div>
+          <h3>5+ years from retirement</h3>
+          <p>Run the real pension math, decide when you can actually retire, and pre-plan your survivor election.</p>
+          <span class="go">Start here <span class="fw-arrow">→</span></span>
+        </a>
+        <a href="/fedwise/walkthrough/" class="fw-walk-card">
+          <div class="ic">C</div>
+          <h3>Within 5 years</h3>
+          <p>Lock the best retirement date, finalize FEHB vs. Medicare, and time your TSP withdrawal strategy.</p>
+          <span class="go">Start here <span class="fw-arrow">→</span></span>
+        </a>
+        <a href="/fedwise/walkthrough/" class="fw-walk-card">
+          <div class="ic">D</div>
+          <h3>Offered VERA / VSIP</h3>
+          <p>Short decision window, big consequences. Run the numbers before you sign.</p>
+          <span class="go">Start here <span class="fw-arrow">→</span></span>
+        </a>
+        <a href="/fedwise/walkthrough/" class="fw-walk-card">
+          <div class="ic">E</div>
+          <h3>Already retired</h3>
+          <p>Manage your TSP draw, Roth conversions, Social Security timing, and Medicare.</p>
+          <span class="go">Start here <span class="fw-arrow">→</span></span>
+        </a>
+        <a href="/fedwise/walkthrough/" class="fw-walk-card">
+          <div class="ic">F</div>
+          <h3>Open Season</h3>
+          <p>Pick the right FEHB plan in 20 minutes &mdash; without reading 200 pages of plan brochures.</p>
+          <span class="go">Start here <span class="fw-arrow">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TOPICS ============== -->
+  <section class="fw-section fw-topics" id="topics">
+    <div class="fw-wrap">
+      <div class="fw-section-head">
+        <span class="fw-section-eyebrow">Every topic</span>
+        <h2 class="fw-section-title">In <em>plain English</em>. No HR-handbook script.</h2>
+        <p class="fw-section-sub">The decisions you actually have to make, explained by someone who&rsquo;s been answering them for 25 years.</p>
+      </div>
+      <div class="fw-topics-grid">
+        <a href="#" class="fw-topic"><span class="tag">FERS</span><h4>FERS Pension</h4><p>When you can retire, the formula, sick leave, survivor election.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">TSP</span><h4>TSP Basics</h4><p>Funds, contributions, transfers, loans &mdash; how it actually works.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">TSP</span><h4>TSP in Retirement</h4><p>Generate monthly income without running out.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">TSP</span><h4>Roth Conversions</h4><p>New for 2026: when conversions make sense, when they don&rsquo;t.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">FERS</span><h4>FERS Supplement</h4><p>The bridge to Social Security at 62 &mdash; and how it ends.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">Income</span><h4>Social Security</h4><p>When to start, single vs. married, taxes on benefits.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">FEHB</span><h4>FEHB Plan Choice</h4><p>Cut through 200 pages of brochures in Open Season.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">Medicare</span><h4>Medicare &amp; FEHB</h4><p>The one chance you get at 65. Don&rsquo;t blow it.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">FEGLI</span><h4>FEGLI</h4><p>What to keep, what to cancel, what to replace.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">RIF</span><h4>VERA / VSIP / RIF</h4><p>Run the numbers before an offer arrives.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">Process</span><h4>Retirement Application</h4><p>The full process &mdash; application to final adjudication.</p></a>
+        <a href="#" class="fw-topic"><span class="tag">Estate</span><h4>Survivor Benefits</h4><p>The choice you can&rsquo;t take back. Get it right.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== HOW IT WORKS ============== -->
+  <section class="fw-section fw-how" id="how-it-works">
+    <div class="fw-wrap">
+      <div class="fw-section-head">
+        <span class="fw-section-eyebrow">How it works</span>
+        <h2 class="fw-section-title">Three steps to a plan that&rsquo;s actually <em>yours</em>.</h2>
+      </div>
+      <div class="fw-steps">
+        <div class="fw-step">
+          <div class="step-num">01</div>
+          <h3>Pick your situation</h3>
+          <p>Tell us where you are in your federal career. We skip everything that doesn&rsquo;t apply to you.</p>
+        </div>
+        <div class="fw-step">
+          <div class="step-num">02</div>
+          <h3>Walk through your decisions</h3>
+          <p>Plain-English explanations, real numbers, and the trade-offs nobody else lays out for you.</p>
+        </div>
+        <div class="fw-step">
+          <div class="step-num">03</div>
+          <h3>Get expert help when you need it</h3>
+          <p>Stuck on a specific decision? Open the chat and talk to a real federal benefits specialist. No bots.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TESTIMONIAL ============== -->
+  <section class="fw-test">
+    <div class="fw-wrap fw-test-inner">
+      <blockquote>
+        &ldquo;I&rsquo;ve been to three different financial advisors who claimed they understood federal benefits. <span class="pull">None of them actually did.</span> FedWise was the first place that explained my FERS Supplement in a way that made sense in five minutes.&rdquo;
+      </blockquote>
+      <div class="att">
+        <div class="avatar">M</div>
+        <div class="who">
+          <strong>Maria, IRS Ogden</strong>
+          <span>27 years of federal service</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FINAL CTA ============== -->
+  <section class="fw-final">
+    <div class="fw-wrap">
+      <div class="fw-final-inner">
+        <h2>Stop guessing about <em>your</em> federal benefits.</h2>
+        <p>The walkthrough takes about 15 minutes and you&rsquo;ll come out with a real understanding of your situation &mdash; and a real expert ready to answer the questions that came up along the way.</p>
+        <div class="ctas">
+          <a href="/fedwise/walkthrough/" class="fw-btn fw-btn-primary">Start your walkthrough <span class="fw-arrow">→</span></a>
+          <a href="#" class="fw-btn fw-btn-ghost" onclick="document.getElementById('fwChatLauncher').click(); return false;">Just ask a question</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+  </main>
+
+  <footer class="fw-footer">
+    <div class="fw-wrap">
+      <div class="fw-footer-grid">
+        <div>
+          <div class="fw-footer-brand"><span style="color:var(--gold-soft);font-family:var(--font-sans);font-size:0.7em;vertical-align:0.2em;margin-right:0.1rem;">★</span>Fed<em>Wise</em></div>
+          <p>The federal benefits walkthrough you should have gotten on day one.</p>
+          <p>Built with Ann Werts &mdash; 25+ years inside the federal benefits system.</p>
+        </div>
+        <div>
+          <h4>Walkthrough</h4>
+          <ul>
+            <li><a href="/fedwise/walkthrough/">Start the walkthrough</a></li>
+            <li><a href="/fedwise/#topics">Browse all topics</a></li>
+            <li><a href="/fedwise/walkthrough/">Open Season help</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="/fedwise/#topics">FERS Pension</a></li>
+            <li><a href="/fedwise/#topics">Thrift Savings Plan</a></li>
+            <li><a href="/fedwise/#topics">FEHB &amp; Medicare</a></li>
+            <li><a href="/fedwise/#topics">VERA &amp; VSIP</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="tel:8012102800">801.210.2800</a></li>
+            <li><a href="mailto:vip@capitalwealth.com">vip@capitalwealth.com</a></li>
+            <li><a href="/fedwise/walkthrough/">Talk to an expert</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fw-disclaimer">
+        <p><strong>Important:</strong> FedWise is an educational service of Capital Wealth, LLC. We are not affiliated with or endorsed by the U.S. Government, Social Security Administration, Office of Personnel Management, or any federal agency.</p>
+        <p>Advisory services offered through Capital Wealth, LLC, a State of Utah Registered Investment Advisor. Insurance services offered through CWA Insurance Services, LLC. Educational content only &mdash; not financial, tax, or legal advice. Capital Wealth does not guarantee any specific result or outcome.</p>
+        <p>Capital Wealth &middot; 1850 W Ashton Blvd, Suite 175, Lehi, UT 84043 &middot; 801.210.2800</p>
+      </div>
+
+      <div class="fw-flag-stripe" aria-hidden="true">
+        <span class="r"></span><span class="w"></span><span class="b"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat widget -->
+  <button class="fw-chat-launcher" id="fwChatLauncher" aria-label="Open chat">
+    <span class="ico">A</span>
+    <span>Ask FedWise<span class="dot" aria-hidden="true"></span></span>
+  </button>
+
+  <aside class="fw-chat-panel" id="fwChatPanel" role="dialog" aria-label="FedWise chat">
+    <div class="fw-chat-head">
+      <div class="av">A</div>
+      <div>
+        <div class="who">FedWise expert chat</div>
+        <div class="status"><span class="pulse"></span>Experts online · replies in &lt; 1 hr</div>
+      </div>
+      <button class="fw-chat-close" id="fwChatClose" aria-label="Close chat">&times;</button>
+    </div>
+
+    <div class="fw-chat-body" id="fwChatBody">
+      <div class="fw-msg bot">
+        Hi &mdash; I&rsquo;m here to help you make sense of your federal benefits. What&rsquo;s on your mind?
+      </div>
+      <div class="fw-chip-row" id="fwChatChips">
+        <button class="fw-chip" data-q="When can I retire under FERS?">When can I retire?</button>
+        <button class="fw-chip" data-q="How is my FERS pension calculated?">How my pension works</button>
+        <button class="fw-chip" data-q="Should I keep my FEHB or take Medicare at 65?">FEHB vs. Medicare</button>
+        <button class="fw-chip" data-q="I was offered a VERA / VSIP — should I take it?">VERA / VSIP offer</button>
+      </div>
+    </div>
+
+    <div class="fw-chat-input-wrap">
+      <form id="fwChatForm" autocomplete="off">
+        <input class="fw-chat-input" id="fwChatInput" type="text" placeholder="Ask a question…" required>
+        <button type="submit" class="fw-chat-send">Send</button>
+      </form>
+    </div>
+    <div class="fw-chat-foot">Real federal benefits experts — not a bot. We typically reply within an hour.</div>
+  </aside>
+
+  <script>
+  (function(){
+    var launcher = document.getElementById('fwChatLauncher');
+    var panel    = document.getElementById('fwChatPanel');
+    var closeBtn = document.getElementById('fwChatClose');
+    var body     = document.getElementById('fwChatBody');
+    var form     = document.getElementById('fwChatForm');
+    var input    = document.getElementById('fwChatInput');
+    var chips    = document.getElementById('fwChatChips');
+    var handoffShown = false;
+
+    function open() { panel.classList.add('open'); launcher.style.display = 'none'; }
+    function close() { panel.classList.remove('open'); launcher.style.display = 'flex'; }
+    launcher.addEventListener('click', open);
+    closeBtn.addEventListener('click', close);
+
+    function append(role, html) {
+      var div = document.createElement('div');
+      div.className = 'fw-msg ' + role;
+      div.innerHTML = html;
+      body.appendChild(div);
+      body.scrollTop = body.scrollHeight;
+    }
+
+    var CANNED = {
+      'when can i retire under fers?':
+        'Under FERS you can retire with a <strong>full, unreduced pension</strong> at: <br><br>• Your <strong>Minimum Retirement Age</strong> (usually 57) with 30 years of service<br>• Age 60 with 20 years<br>• Age 62 with 5+ years<br><br>You can also retire at MRA with 10 years (the "MRA+10" option), but your pension is reduced by 5% per year you&rsquo;re under 62. Want me to walk through which path fits your situation?',
+      'how is my fers pension calculated?':
+        'Simple formula: <strong>years of service × 1% × your high-3 average salary</strong>. The 1% becomes <strong>1.1%</strong> if you retire at 62+ with at least 20 years of service. Your "high-3" is your three highest consecutive years of basic pay (base + locality, no overtime). Unused sick leave converts to extra service time and boosts the pension. Want a personalized estimate?',
+      'should i keep my fehb or take medicare at 65?':
+        'FEHB is the <strong>only</strong> group health plan in the country that lets you opt out of Medicare Part B at 65 and keep your coverage for life. Whether to also enroll in Part B depends on your plan, your spouse, and how much you can save on premiums. We cover all the math in our Medicare &amp; FEHB walkthrough &mdash; want to start there?',
+      'i was offered a vera / vsip — should i take it?':
+        'VERA and VSIP offers come with short decision windows, so don&rsquo;t panic &mdash; run the numbers. Key things to check: do you keep <strong>FEHB for life</strong> (5-year rule), what happens to your <strong>FERS Supplement</strong>, the tax hit on a VSIP lump sum, and whether you actually <em>need</em> to retire or just stop working there. Drop your details and a benefits expert will walk you through it.'
+    };
+
+    function ask(q) {
+      append('user', q.replace(/</g,'&lt;'));
+      var key = q.trim().toLowerCase();
+      var answer = CANNED[key];
+      if (chips) { chips.style.display = 'none'; }
+      setTimeout(function(){
+        if (answer) {
+          append('bot', answer);
+          setTimeout(showHandoff, 600);
+        } else {
+          append('bot', 'Good question. Leave your name and email and a federal benefits specialist will walk you through it personally &mdash; usually within the hour.');
+          showHandoff();
+        }
+      }, 480);
+    }
+
+    function showHandoff() {
+      if (handoffShown) return;
+      handoffShown = true;
+      var d = document.createElement('div');
+      d.className = 'fw-handoff';
+      d.innerHTML = '<p><strong>Want a real expert to walk through your numbers?</strong> Leave your info and we&rsquo;ll be in touch.</p>'
+        + '<label>Your name</label><input type="text" name="name" required>'
+        + '<label>Email</label><input type="email" name="email" required>'
+        + '<button type="button">Get a personal answer</button>'
+        + '<p style="margin:0.65rem 0 0;font-size:0.72rem;color:var(--muted);">Educational only. Not financial, tax, or legal advice.</p>';
+      body.appendChild(d);
+      body.scrollTop = body.scrollHeight;
+      d.querySelector('button').addEventListener('click', function(){
+        var name = d.querySelector('input[name="name"]').value.trim();
+        var email = d.querySelector('input[name="email"]').value.trim();
+        if (!name || !email) return;
+        var lastQ = '';
+        var userMsgs = body.querySelectorAll('.fw-msg.user');
+        if (userMsgs.length) lastQ = userMsgs[userMsgs.length - 1].textContent;
+        fetch('/api/submit-lead/', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: name, firstName: name.split(' ')[0], lastName: (name.split(' ').slice(1).join(' ') || 'Unknown'),
+            email: email, lead_type: 'fedwise-chat', lead_source: 'FedWise Chat',
+            submitted_from: '/fedwise/', questions: lastQ
+          })
+        }).catch(function(){});
+        d.innerHTML = '<p style="margin:0;font-size:0.9rem;color:var(--ink);"><strong>Got it.</strong> A federal benefits specialist will reach out shortly. Anything else I can answer?</p>';
+      });
+    }
+
+    if (chips) {
+      chips.addEventListener('click', function(e){
+        var btn = e.target.closest('.fw-chip');
+        if (!btn) return;
+        ask(btn.getAttribute('data-q'));
+      });
+    }
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var q = input.value.trim();
+      if (!q) return;
+      input.value = '';
+      ask(q);
+    });
+  })();
+  </script>
+
+</body>
+</html>

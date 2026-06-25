@@ -151,6 +151,8 @@ const ALLOWED_LEAD_SOURCES = new Set([
   'Billboard',
   'Newsletter',
   'Webinar Replay',
+  'FedWise Chat',
+  'FedWise Walkthrough',
 ]);
 
 async function syncToSalesforce(leadData) {
@@ -200,6 +202,8 @@ async function syncToSalesforce(leadData) {
     || leadData.lead_type === 'federal-workshop-registration'
     || leadData.lead_type === 'newsletter-signup'
     || leadData.lead_type === 'webinar-replay'
+    || leadData.lead_type === 'fedwise-chat'
+    || leadData.lead_type === 'fedwise-walkthrough'
     || (leadData.lead_type && leadData.lead_type.startsWith('10things-'))
     || leadData.landing_page === '10-things-federal-retirement';
 
@@ -402,7 +406,9 @@ export default async function handler(req, res) {
     // Email-only captures (no phone required): checklist download, newsletter, replay gate.
     const isEmailOnly = is10ThingsChecklist
       || lead_type === 'newsletter-signup'
-      || lead_type === 'webinar-replay';
+      || lead_type === 'webinar-replay'
+      || lead_type === 'fedwise-chat'
+      || lead_type === 'fedwise-walkthrough';
 
     if (!fullName || !email) {
       return res.status(400).json({ error: 'Name and email are required.' });
@@ -564,29 +570,42 @@ export default async function handler(req, res) {
     // Newsletter signup + webinar replay gate — lightweight, email-only captures.
     // Self-contained: sync to Salesforce, send a tailored confirmation, then return
     // early so the webinar/workshop/contact flows below are never touched.
-    if (lead_type === 'newsletter-signup' || lead_type === 'webinar-replay') {
+    if (
+      lead_type === 'newsletter-signup'
+      || lead_type === 'webinar-replay'
+      || lead_type === 'fedwise-chat'
+      || lead_type === 'fedwise-walkthrough'
+    ) {
       let sfOk = false;
       try {
         const r = await syncToSalesforce(leadData);
         sfOk = !!(r && r.leadId);
       } catch (e) {
-        console.error('SF sync (newsletter/replay) failed:', e.message);
+        console.error('SF sync (early-return) failed:', e.message);
       }
       try {
+        let subject = "You're in: The Federal Benefit Gap newsletter";
+        let html = newsletterWelcomeHtml(leadData);
+        if (lead_type === 'webinar-replay') {
+          subject = 'Your FERS Pension webinar replay';
+          html = replayConfirmHtml(leadData);
+        } else if (lead_type === 'fedwise-chat') {
+          subject = "Your FedWise expert is on it";
+          html = newsletterWelcomeHtml(leadData);
+        } else if (lead_type === 'fedwise-walkthrough') {
+          subject = "Your FedWise walkthrough is on its way";
+          html = newsletterWelcomeHtml(leadData);
+        }
         await sendEmail({
           to: leadData.email,
           from: FROM_EMAIL,
-          fromName: 'Capital Wealth',
+          fromName: 'FedWise · Capital Wealth',
           replyTo: 'vip@capitalwealth.com',
-          subject: lead_type === 'newsletter-signup'
-            ? "You're in: The Federal Benefit Gap newsletter"
-            : 'Your FERS Pension webinar replay',
-          html: lead_type === 'newsletter-signup'
-            ? newsletterWelcomeHtml(leadData)
-            : replayConfirmHtml(leadData),
+          subject,
+          html,
         });
       } catch (e) {
-        console.error('Confirmation email (newsletter/replay) failed:', e.message);
+        console.error('Confirmation email (early-return) failed:', e.message);
       }
       return res.status(200).json({ success: true, message: 'Thank you!', salesforce: sfOk });
     }
