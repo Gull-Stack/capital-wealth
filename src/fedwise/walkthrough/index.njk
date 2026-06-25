@@ -1,0 +1,222 @@
+---
+layout: layouts/fedwise-base.njk
+permalink: "/fedwise/walkthrough/"
+title: "Start your walkthrough — FedWise"
+description: "Tell us where you are in your federal career and we'll build a personalized walkthrough of the decisions that actually matter for you."
+noindex: true
+---
+
+<style>
+  .fwk-hero {
+    background:
+      radial-gradient(circle at 12% 8%, rgba(184,128,12,0.10), transparent 45%),
+      var(--paper);
+    padding: 4rem 0 2rem;
+    text-align: center;
+  }
+  .fwk-hero .step-pill {
+    display: inline-flex; align-items: center; gap: 0.55rem;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.3rem;
+  }
+  .fwk-hero .step-pill::before { content: ""; width: 24px; height: 1.5px; background: var(--gold); }
+  .fwk-hero h1 {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: clamp(2.3rem, 5vw, 3.6rem); line-height: 1.05; letter-spacing: -0.02em;
+    margin: 0 0 1.1rem; color: var(--ink);
+  }
+  .fwk-hero h1 em { font-style: italic; color: var(--gold); }
+  .fwk-hero p { font-size: 1.08rem; line-height: 1.6; color: var(--ink-2); max-width: 620px; margin: 0 auto; }
+
+  .fwk-grid {
+    max-width: 1080px; margin: 3rem auto 5rem; padding: 0 1.5rem;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
+  }
+  .fwk-card {
+    background: #fff; border: 1px solid var(--rule); border-radius: 18px;
+    padding: 2rem 1.7rem 1.7rem;
+    cursor: pointer; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+    display: flex; flex-direction: column; gap: 0.7rem; text-align: left;
+    font-family: inherit;
+  }
+  .fwk-card:hover, .fwk-card.selected { transform: translateY(-3px); box-shadow: 0 24px 60px -28px rgba(15,26,42,0.22); border-color: var(--gold); }
+  .fwk-card.selected { background: #FFFBF0; }
+  .fwk-card .letter {
+    width: 40px; height: 40px; border-radius: 10px; background: var(--paper);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); font-style: italic; font-weight: 600; font-size: 1.2rem; color: var(--gold);
+    border: 1px solid var(--rule);
+  }
+  .fwk-card h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.4rem; line-height: 1.2; margin: 0; color: var(--ink); letter-spacing: -0.005em; }
+  .fwk-card p { font-size: 0.92rem; line-height: 1.55; color: var(--muted); margin: 0; }
+
+  /* ---------- Capture (revealed after card pick) ---------- */
+  .fwk-capture {
+    max-width: 640px; margin: -2.5rem auto 5rem; padding: 0 1.5rem;
+    display: none;
+  }
+  .fwk-capture.show { display: block; animation: fwkReveal 0.45s ease both; }
+  @keyframes fwkReveal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  .fwk-capture-inner {
+    background: #fff; border: 1px solid var(--rule); border-radius: 22px;
+    padding: 2.5rem 2.2rem;
+    box-shadow: var(--shadow);
+  }
+  .fwk-capture-inner h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.8rem; line-height: 1.15; margin: 0 0 0.55rem; color: var(--ink); }
+  .fwk-capture-inner h2 em { font-style: italic; color: var(--gold); }
+  .fwk-capture-inner .sub { font-size: 1rem; line-height: 1.55; color: var(--ink-2); margin: 0 0 1.6rem; }
+  .fwk-field { margin-bottom: 1.1rem; }
+  .fwk-field label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--ink-2); margin-bottom: 0.4rem; letter-spacing: 0.02em; }
+  .fwk-field input, .fwk-field textarea {
+    width: 100%; padding: 0.85rem 1rem; font-family: inherit; font-size: 0.96rem;
+    background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; color: var(--ink);
+    outline: none; transition: border-color .12s ease, background .12s ease;
+  }
+  .fwk-field input:focus, .fwk-field textarea:focus { border-color: var(--ink); background: #fff; }
+  .fwk-field textarea { min-height: 90px; resize: vertical; }
+  .fwk-capture-cta { display: flex; gap: 0.85rem; align-items: center; margin-top: 1.5rem; flex-wrap: wrap; }
+  .fwk-capture-cta button { background: var(--ink); color: #fff; border: 0; padding: 0.95rem 1.7rem; border-radius: 999px; font-family: inherit; font-weight: 600; font-size: 0.96rem; cursor: pointer; transition: background .12s ease, transform .12s ease; }
+  .fwk-capture-cta button:hover { background: #000; transform: translateY(-1px); }
+  .fwk-capture-cta .legal { font-size: 0.78rem; color: var(--muted); }
+  .fwk-success {
+    text-align: center; padding: 3rem 2rem;
+    background: linear-gradient(135deg, #fff 0%, #FFF8E6 100%);
+    border: 1px solid var(--gold-soft); border-radius: 22px;
+  }
+  .fwk-success .check { width: 64px; height: 64px; border-radius: 50%; background: var(--gold); color: #fff; font-size: 2rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; font-family: var(--font-display); font-weight: 700; }
+  .fwk-success h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.9rem; line-height: 1.15; margin: 0 0 0.6rem; color: var(--ink); }
+  .fwk-success h2 em { font-style: italic; color: var(--gold); }
+  .fwk-success p { font-size: 1rem; line-height: 1.6; color: var(--ink-2); margin: 0; max-width: 460px; margin-left: auto; margin-right: auto; }
+
+  @media (max-width: 880px) {
+    .fwk-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .fwk-grid { grid-template-columns: 1fr; }
+    .fwk-capture-inner { padding: 1.75rem 1.4rem; }
+  }
+</style>
+
+<section class="fwk-hero">
+  <div class="fw-wrap">
+    <span class="step-pill">Step 1 of 3</span>
+    <h1>Where are you in your federal career, <em>really</em>?</h1>
+    <p>Pick the situation that fits you best. We&rsquo;ll build a walkthrough around the decisions that actually matter for <em>you</em>.</p>
+  </div>
+</section>
+
+<div class="fwk-grid" id="fwkGrid">
+  <button class="fwk-card" data-key="early" data-label="Early career — focused on building TSP">
+    <div class="letter">A</div>
+    <h3>Early career</h3>
+    <p>Set the TSP right, understand what you&rsquo;re building, avoid the mistakes that cost decades.</p>
+  </button>
+  <button class="fwk-card" data-key="5plus" data-label="5+ years from retirement">
+    <div class="letter">B</div>
+    <h3>5+ years from retirement</h3>
+    <p>Run the real pension math, decide when you can actually retire, and plan the survivor election.</p>
+  </button>
+  <button class="fwk-card" data-key="within5" data-label="Within 5 years of retiring">
+    <div class="letter">C</div>
+    <h3>Within 5 years</h3>
+    <p>Lock the retirement date, finalize FEHB vs. Medicare, time your TSP withdrawals.</p>
+  </button>
+  <button class="fwk-card" data-key="vera" data-label="Offered VERA / VSIP">
+    <div class="letter">D</div>
+    <h3>Offered VERA / VSIP</h3>
+    <p>Short window, big consequences. Run the numbers before you sign.</p>
+  </button>
+  <button class="fwk-card" data-key="retired" data-label="Already retired — managing TSP">
+    <div class="letter">E</div>
+    <h3>Already retired</h3>
+    <p>Manage TSP withdrawals, Roth conversions, Social Security timing, Medicare.</p>
+  </button>
+  <button class="fwk-card" data-key="open" data-label="Open Season help">
+    <div class="letter">F</div>
+    <h3>Open Season</h3>
+    <p>Pick the right FEHB plan in 20 minutes &mdash; without reading 200 pages of brochures.</p>
+  </button>
+</div>
+
+<div class="fwk-capture" id="fwkCapture">
+  <div class="fwk-capture-inner" id="fwkCaptureInner">
+    <h2>Almost there. Where should we send your <em>walkthrough</em>?</h2>
+    <p class="sub">We&rsquo;ll email you a personalized walkthrough for &ldquo;<span id="fwkSituation"></span>&rdquo; in the next minute. A real federal benefits specialist is also on standby if you want to ask anything specific.</p>
+    <form id="fwkForm" novalidate>
+      <div class="fwk-field">
+        <label for="fwk-first">First name</label>
+        <input id="fwk-first" name="firstName" type="text" autocomplete="given-name" required>
+      </div>
+      <div class="fwk-field">
+        <label for="fwk-last">Last name</label>
+        <input id="fwk-last" name="lastName" type="text" autocomplete="family-name" required>
+      </div>
+      <div class="fwk-field">
+        <label for="fwk-email">Email</label>
+        <input id="fwk-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="fwk-field">
+        <label for="fwk-q">Anything specific you want the expert to look at? <span style="color:var(--muted);font-weight:400;">(optional)</span></label>
+        <textarea id="fwk-q" name="questions" placeholder="e.g. I&rsquo;m 56, FERS, 28 years in, weighing a deferred retirement…"></textarea>
+      </div>
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;">
+      <div class="fwk-capture-cta">
+        <button type="submit">Send my walkthrough <span class="fw-arrow">→</span></button>
+        <span class="legal">Educational only. Not financial, tax, or legal advice.</span>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  var grid = document.getElementById('fwkGrid');
+  var captureWrap = document.getElementById('fwkCapture');
+  var captureInner = document.getElementById('fwkCaptureInner');
+  var situationSpan = document.getElementById('fwkSituation');
+  var form = document.getElementById('fwkForm');
+  var pickedKey = '', pickedLabel = '';
+
+  grid.addEventListener('click', function(e){
+    var btn = e.target.closest('.fwk-card');
+    if (!btn) return;
+    Array.prototype.forEach.call(grid.querySelectorAll('.fwk-card'), function(b){ b.classList.remove('selected'); });
+    btn.classList.add('selected');
+    pickedKey = btn.getAttribute('data-key');
+    pickedLabel = btn.getAttribute('data-label');
+    situationSpan.textContent = pickedLabel;
+    captureWrap.classList.add('show');
+    setTimeout(function(){ captureWrap.scrollIntoView({behavior:'smooth', block:'center'}); }, 100);
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var fd = new FormData(form);
+    if (fd.get('website')) return; // honeypot
+    var first = (fd.get('firstName')||'').trim(), last = (fd.get('lastName')||'').trim(), email = (fd.get('email')||'').trim();
+    if (!first || !last || !email) return;
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true; btn.textContent = 'Sending…';
+    var payload = {
+      name: first + ' ' + last, firstName: first, lastName: last, email: email,
+      lead_type: 'fedwise-walkthrough', lead_source: 'FedWise Walkthrough',
+      submitted_from: '/fedwise/walkthrough/',
+      questions: (fd.get('questions')||'').trim(),
+      message: 'Situation: ' + pickedLabel + ' (' + pickedKey + ')'
+    };
+    fetch('/api/submit-lead/', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(payload)
+    }).then(function(){
+      captureInner.outerHTML =
+        '<div class="fwk-success">' +
+          '<div class="check">✓</div>' +
+          '<h2>You&rsquo;re <em>in</em>.</h2>' +
+          '<p>Your personalized walkthrough is on its way. A federal benefits specialist will also reach out personally &mdash; usually within the hour.</p>' +
+        '</div>';
+    }).catch(function(){
+      btn.disabled = false; btn.textContent = 'Send my walkthrough →';
+    });
+  });
+})();
+</script>
