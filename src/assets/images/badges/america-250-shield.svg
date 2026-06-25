@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 132" width="120" height="132" role="img" aria-label="Celebrating America's 250th, 1776 to 2026">
+  <defs><clipPath id="sh250"><path d="M4,4 L116,4 L116,58 Q116,104 60,128 Q4,104 4,58 Z"/></clipPath></defs>
+  <g clip-path="url(#sh250)">
+    <rect x="4" y="30" width="22.4" height="98" fill="#B31942"/>
+    <rect x="26.4" y="30" width="22.4" height="98" fill="#FFFFFF"/>
+    <rect x="48.8" y="30" width="22.4" height="98" fill="#B31942"/>
+    <rect x="71.2" y="30" width="22.4" height="98" fill="#FFFFFF"/>
+    <rect x="93.6" y="30" width="22.4" height="98" fill="#B31942"/>
+    <rect x="4" y="4" width="112" height="26" fill="#0A3161"/>
+  </g>
+  <g fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif">
+    <text x="32" y="23" font-size="13" text-anchor="middle">★</text>
+    <text x="60" y="23" font-size="13" text-anchor="middle">★</text>
+    <text x="88" y="23" font-size="13" text-anchor="middle">★</text>
+  </g>
+  <path d="M4,4 L116,4 L116,58 Q116,104 60,128 Q4,104 4,58 Z" fill="none" stroke="#0A3161" stroke-width="3"/>
+  <circle cx="60" cy="80" r="30" fill="#FFFFFF" stroke="#B31942" stroke-width="2"/>
+  <text x="60" y="91" fill="#0A3161" font-size="31" font-weight="700" text-anchor="middle" letter-spacing="0.5" font-family="Arial, Helvetica, sans-serif">250</text>
+</svg>
