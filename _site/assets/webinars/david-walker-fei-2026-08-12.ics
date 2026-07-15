@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Capital Wealth//Federal Employee Institute - David Walker 2026-08-12//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Denver
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0600
+TZNAME:MDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0700
+TZNAME:MST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:david-walker-fei-aug12-2026@capitalwealth.com
+DTSTAMP:20260714T000000Z
+DTSTART;TZID=America/Denver:20260812T180000
+DTEND;TZID=America/Denver:20260812T193000
+SUMMARY:An Evening with David Walker — The Fiscal Outlook & Your Federal Retirement
+DESCRIPTION:A complimentary educational evening with David M. Walker\, former U.S. Comptroller General\, presented by the Federal Employee Institute. The national fiscal outlook and what it means for your federal benefits — FERS\, TSP\, and the retirement decisions ahead — followed by open Q&A.\n\nDoors open at 5:30 PM. The Hill Aerospace Museum sits outside the base gates — no ID check or base pass required.\n\nMore info: https://www.capitalwealth.com/l/david-walker/
+URL:https://www.capitalwealth.com/l/david-walker/
+LOCATION:Hill Aerospace Museum — Skaggs Gallery\, 7961 Wardleigh Road\, Hill AFB\, UT 84056
+ORGANIZER;CN=Federal Employee Institute:mailto:vip@capitalwealth.com
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -792,6 +792,19 @@ export default async function handler(req, res) {
             icsUrl: SITE + '/assets/webinars/federal-benefits-workshop-hill-afb-2026-05-21.ics',
             mapsUrl: 'https://www.weber.edu/maps/davis-campus.html',
             subjectDate: 'May 21'
+          },
+          'david-walker': {
+            heading: 'An Evening with David Walker — Hill Aerospace Museum',
+            dateLabel: 'Wednesday, August 12, 2026',
+            time: '6:00 PM – 7:30 PM Mountain (doors at 5:30)',
+            venue: 'Hill Aerospace Museum — Skaggs Gallery',
+            address: '7961 Wardleigh Road, Hill AFB, UT 84056',
+            parkingHtml: '<p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Parking:</strong> Complimentary on-site — no permit required. The museum sits outside the base gates; no ID check or base pass needed.</p>',
+            extraSectionHtml: '',
+            icsUrl: SITE + '/assets/webinars/david-walker-fei-2026-08-12.ics',
+            mapsUrl: 'https://www.google.com/maps/dir/?api=1&destination=Hill+Aerospace+Museum%2C+7961+Wardleigh+Road%2C+Hill+AFB%2C+UT+84056',
+            subjectDate: 'Aug 12',
+            speaker: 'David M. Walker, former U.S. Comptroller General'
           }
         };
         const fallbackEvent = {
@@ -825,7 +838,7 @@ export default async function handler(req, res) {
                 <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Address:</strong> ${evt.address}</p>
                 ${evt.parkingHtml}
                 <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Arrival:</strong> Please arrive 10–15 minutes early.</p>
-                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>Instructor:</strong> Ann Werts</p>
+                <p style="margin: 8px 0; font-size: 16px; color: #374151;"><strong>${evt.speaker ? 'Speaker' : 'Instructor'}:</strong> ${evt.speaker || 'Ann Werts'}</p>
                 ${evt.icsUrl ? `<p style="margin: 14px 0 0 0;"><a href="${evt.icsUrl}" style="display: inline-block; background: #FDD25E; color: #0F1A2A; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 14px;">Add to Calendar (.ics)</a>${evt.mapsUrl ? ` &nbsp;<a href="${evt.mapsUrl}" style="display: inline-block; background: #16253C; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px;">Get Directions</a>` : ''}</p>` : ''}
               </div>
               ${evt.extraSectionHtml}
