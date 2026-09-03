@@ -1,16 +1,26 @@
 {
+  "name": "Capital Wealth",
   "brand": "Capital Wealth",
   "legal_name": "Capital Wealth",
+  "type": "FinancialService",
   "tagline": "Strategic Income & Tax Planning for Your Retirement",
   "founded": "2010",
   "founder": "Michael Stevens",
   "founder_credentials": "Series 66 certified, fiduciary standard, BS Business Management from Utah Valley University, California insurance license #0G96805, Board member Junior Achievement of Utah",
-  "fiduciary": true,
-  "fee_only": false,
-  "independent": true,
-  "industry": "Financial Advisory / Wealth Management",
-  "specialization": "Retirement income planning for families with $500K+ in savings",
-  "url": "https://www.capitalwealth.com",
+  "location": "Lehi, Utah",
+  "url": "https://capitalwealth.com",
+  "NAP": {
+    "name": "Capital Wealth",
+    "address": {
+      "street": "1850 W Ashton Blvd, Ste 175",
+      "city": "Lehi",
+      "state": "UT",
+      "zip": "84043",
+      "country": "US"
+    },
+    "phone": "801.210.2800",
+    "email": "info@capitalwealth.com"
+  },
   "phone": "801.210.2800",
   "email": "info@capitalwealth.com",
   "address": {
@@ -20,6 +30,11 @@
     "zip": "84043",
     "country": "US"
   },
+  "fiduciary": true,
+  "fee_only": false,
+  "independent": true,
+  "industry": "Financial Advisory / Wealth Management",
+  "specialization": "Retirement income planning for families with $500K+ in savings",
   "service_area": {
     "primary": "Utah — Salt Lake Valley, Utah County (Lehi, Provo, Orem, Sandy, Draper, South Jordan, West Jordan, American Fork, Pleasant Grove, Salt Lake City)",
     "secondary": "Nationwide via virtual consultations"
@@ -113,5 +128,38 @@
     "booking_url": "https://capitalwealth.com/contact/",
     "response_time": "Within one business day"
   },
-  "last_updated": "2026-03-12"
+  "last_updated": "2026-09-02",
+  "credentials": [
+    "Series 66 certified, fiduciary standard, BS Business Management from Utah Valley University, California insurance license #0G96805, Board member Junior Achievement of Utah",
+    "Series 66 certified",
+    "Better Business Bureau accredited",
+    "BrokerCheck verified",
+    "Junior Achievement of Utah board member"
+  ],
+  "serviceArea": [
+    "Utah — Salt Lake Valley, Utah County (Lehi, Provo, Orem, Sandy, Draper, South Jordan, West Jordan, American Fork, Pleasant Grove, Salt Lake City)",
+    "Nationwide via virtual consultations"
+  ],
+  "FAQs": [
+    {
+      "q": "What is a fiduciary financial advisor?",
+      "a": "A fiduciary is legally required to act in your best interest, not sell you products for commissions. Capital Wealth operates under the fiduciary standard 100% of the time."
+    },
+    {
+      "q": "What is the minimum to work with Capital Wealth?",
+      "a": "We primarily serve families with $500,000 or more in retirement savings. Initial consultations are complimentary for qualified families."
+    },
+    {
+      "q": "Do you serve clients outside of Utah?",
+      "a": "Yes. While we're based in Lehi, Utah, we serve clients nationwide through virtual meetings, digital planning tools, and our secure client portal."
+    },
+    {
+      "q": "What is the Retirement Money Map?",
+      "a": "The Retirement Money Map is our proprietary planning process that creates a personalized financial blueprint showing exactly how your money will work for you in retirement, including income sources, tax strategies, and estate planning."
+    },
+    {
+      "q": "Do you help federal employees with FERS retirement?",
+      "a": "Yes. We specialize in federal employee benefits including FERS pension planning, TSP rollover strategies, FEHB optimization, and Social Security coordination for federal retirees."
+    }
+  ]
 }
