@@ -40,7 +40,7 @@ function walk(dir, acc = []) {
   return acc;
 }
 
-const wanted = [/^\/$/, /^\/about\/$/, /^\/services\//, /^\/faq\/$/, /^\/guides\//, /^\/blog\//, /^\/case-studies\/$/, /^\/fers-retirement-planning-/, /^\/financial-advisor-/, /^\/federal-resources\/$/, /^\/brand-facts\/$/, /^\/contact\/$/];
+const wanted = [/^\/blog\/$/, /^\/$/, /^\/about\/$/, /^\/services\//, /^\/faq\/$/, /^\/guides\//, /^\/case-studies\/$/, /^\/fers-retirement-planning-/, /^\/financial-advisor-/, /^\/federal-resources\/$/, /^\/brand-facts\/$/, /^\/contact\/$/];
 const pages = walk(OUT)
   .map((p) => ({ url: p.slice(OUT.length).replace(/index\.html$/, "").replace(/\\/g, "/"), file: p }))
   .filter((p) => wanted.some((re) => re.test(p.url)))
