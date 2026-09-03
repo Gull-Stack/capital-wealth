@@ -132,6 +132,9 @@
         ]
     }
     </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "WebSite", "url": "{{ site.url }}/", "name": "{{ site.title }}", "publisher": {"@id": "{{ site.url }}/#organization"}}
+    </script>
 
     {% if breadcrumbs %}
     <script type="application/ld+json">

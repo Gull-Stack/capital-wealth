@@ -5,4 +5,36 @@ eleventyExcludeFromCollections: true
 User-agent: *
 Allow: /
 
+# AI crawlers are welcome. Named explicitly so a future blanket rule cannot
+# quietly cut off ChatGPT, Claude, Perplexity or Google's AI features.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: {{ site.url }}/sitemap.xml
